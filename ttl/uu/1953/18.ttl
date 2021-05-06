@@ -1,0 +1,50 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1953/18> legal:documentHasBabSet <http://example.org/legal/document/uu/1953/18/bab> .
+<http://example.org/legal/document/uu/1953/18> legal:documentHasDisahkanDate "1953-06-03"^^xsd:date .
+<http://example.org/legal/document/uu/1953/18> legal:documentMengingat <http://example.org/legal/document/uu/1953/18/mengingat> .
+<http://example.org/legal/document/uu/1953/18/mengingat/text> legal:textHasTextString "Pasal 42 dan Pasal 89 Undang - undang Dasar Sementara Republik Indonesia; Dengan persetudjuan Dewan Perwakilan Rakjat : MEMUTUSKAN: Dengan mentjabut ordonansi dalam Staatsblad 1928 Nr 540, jang terakhir diubah (dengan Staatsblad 1949 Nr 213; PRESIDEN REPUBLIK INDONESIA - 2 - Menetapkan : UNDANG - UNDANG TENTANG PENUNJUKAN RUMAH SAKIT RUMAH SAKIT PARTIKULIR JANG MERAWAT ORANG - ORANG JANG MISKIN DAN ORANG - ORANG JANG KURANG MAMPU." .
+<http://example.org/legal/document/uu/1953/18/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/1953/18/mengingat/text> .
+<http://example.org/legal/document/uu/1953/18> legal:documentMenimbang <http://example.org/legal/document/uu/1953/18/menimbang> .
+<http://example.org/legal/document/uu/1953/18/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/1953/18/menimbang/point> .
+<http://example.org/legal/document/uu/1953/18/menimbang/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1953/18/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1953/18/menimbang/point/description> .
+<http://example.org/legal/document/uu/1953/18/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1953/18/menimbang/point/a> .
+<http://example.org/legal/document/uu/1953/18/menimbang/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1953/18/menimbang/point/a/text> legal:textHasTextString "bahwa Pemerintah berkewajiban untuk senantiasa berusaha meninggikan dera d jat kesehatan rak j at;" .
+<http://example.org/legal/document/uu/1953/18/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/1953/18/menimbang/point/a/text> .
+<http://example.org/legal/document/uu/1953/18/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1953/18/menimbang/point/b> .
+<http://example.org/legal/document/uu/1953/18/menimbang/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1953/18/menimbang/point/b/text> legal:textHasTextString "bahwa dalam hal itu penting sekali usaha - usaha kuratip bagi perawatan orang - orang j ang miskin dan orang - orang j ang kurang mampu;" .
+<http://example.org/legal/document/uu/1953/18/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/1953/18/menimbang/point/b/text> .
+<http://example.org/legal/document/uu/1953/18/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1953/18/menimbang/point/c> .
+<http://example.org/legal/document/uu/1953/18/menimbang/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1953/18/menimbang/point/c/text> legal:textHasTextString "bahwa pe rawatan orang - orang jang miskin dan orang - orang jang kurang mampu dalam tahun - tahun jang akan datang tidak cukup dapat diselenggarakan oleh Pemerintah;" .
+<http://example.org/legal/document/uu/1953/18/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/1953/18/menimbang/point/c/text> .
+<http://example.org/legal/document/uu/1953/18/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1953/18/menimbang/point/d> .
+<http://example.org/legal/document/uu/1953/18/menimbang/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1953/18/menimbang/point/d/text> legal:textHasTextString "bahwa oleh karena itu dalam hal ini perlu mempergunakan usaha rumah sakit - rumah sakit partikuli r dalam perawatan tersebut;" .
+<http://example.org/legal/document/uu/1953/18/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/1953/18/menimbang/point/d/text> .
+<http://example.org/legal/document/uu/1953/18> legal:documentHasDisahkanPengesah "SUKARNO" .
+<http://example.org/legal/document/uu/1953/18> legal:documentHasDisahkanLocation "Djakarta" .
+<http://example.org/legal/document/uu/1953/18> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/1953/18> a legal:Document .
+<http://example.org/legal/document/uu/1953/18/mengingat/text> a legal:Text .
+<http://example.org/legal/document/uu/1953/18/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1953/18/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1953/18/menimbang/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1953/18/menimbang/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1953/18/menimbang/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1953/18/menimbang/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1953/18/menimbang/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1953/18/menimbang/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1953/18/menimbang/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1953/18/menimbang/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1953/18/menimbang/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1953/18/menimbang/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1953/18/bab> legal:partOf <http://example.org/legal/document/uu/1953/18> .
+<http://example.org/legal/document/uu/1953/18/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1953/18/menimbang/point> .
+<http://example.org/legal/document/uu/1953/18/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1953/18/menimbang/point> .
+<http://example.org/legal/document/uu/1953/18/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/1953/18/menimbang/point> .
+<http://example.org/legal/document/uu/1953/18/menimbang/point/d> legal:partOf <http://example.org/legal/document/uu/1953/18/menimbang/point> .

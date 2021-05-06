@@ -1,0 +1,719 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1975/3> legal:documentHasBabSet <http://example.org/legal/document/uu/1975/3/bab> .
+<http://example.org/legal/document/uu/1975/3/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1975/3/bab/0001> .
+<http://example.org/legal/document/uu/1975/3/bab/0001> legal:babHasKey 1 .
+<http://example.org/legal/document/uu/1975/3/bab/0001> legal:babHasTitle "KETENTUAN UMUM" .
+<http://example.org/legal/document/uu/1975/3/bab/0001> legal:babHasPasalSet <http://example.org/legal/document/uu/1975/3/bab/0001/pasals> .
+<http://example.org/legal/document/uu/1975/3/bab/0001/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0001> .
+<http://example.org/legal/document/uu/1975/3/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1975/3/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827> .
+<http://example.org/legal/document/uu/1975/3> legal:documentHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0001> .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827> legal:pasalVersionHasVersionDate "1975-08-27"^^xsd:date .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827> legal:pasalVersionHasRawText "(Jd) Dalam Undang-undang ini yang dimaksud dengan Partai Politik dan Golongan Karya adalah organisasi kekuatan sosial politik yang merupakan, hasil pembaharuan, dan penyederhanaan kehidupan politik di Indonesia, yaitu :\na. dua Partai Politik yang pada saat berlakunya Undang-undang ini bernama :\n1. Partai Persatuan Pembangunan,\n2. Partai Demokrasi Indonesia,\n\nb. satu Golongan Karya yang pada saat berlakunya Undang-undang ini bernama Golongan Karya. (2) Partai Politik dan Golongan Karya sebagai organisasi yang dibentuk oleh anggota masyarakat Warganegara Republik Indonesia atas dasar persamaan kehendak, mempunyai kedudukan, fungsi, hak dan kewajiban yang sama dan sederajat sesuai dengan Undang-undang ini dan kedaulatannya berada di tangan anggota. PRESIDEN REPUBLIK INDONESIA -3- (3) Partai Politik dan Golongan Karya yang dimaksud dalam ayat (1) pasal ini wajib melaksanakan ketentuan-ketentuan dalam Undang- undang ini dengan sebaik-baiknya.\n" .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/description> legal:textHasTextString "(Jd) Dalam Undang-undang ini yang dimaksud dengan Partai Politik dan Golongan Karya adalah organisasi kekuatan sosial politik yang merupakan, hasil pembaharuan, dan penyederhanaan kehidupan politik di Indonesia, yaitu :" .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/description> .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a> .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a> legal:pointHasPointSet <http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a/point/description> legal:textHasTextString "dua Partai Politik yang pada saat berlakunya Undang-undang ini bernama :" .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a/point/description> .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a/point/0001> .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a/point/0001/text> legal:textHasTextString "Partai Persatuan Pembangunan," .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a/point/0001/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a/point/0002> .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a/point/0002/text> legal:textHasTextString "Partai Demokrasi Indonesia," .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a/point/0002/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/b> .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/b/text> legal:textHasTextString "satu Golongan Karya yang pada saat berlakunya Undang-undang ini bernama Golongan Karya. (2) Partai Politik dan Golongan Karya sebagai organisasi yang dibentuk oleh anggota masyarakat Warganegara Republik Indonesia atas dasar persamaan kehendak, mempunyai kedudukan, fungsi, hak dan kewajiban yang sama dan sederajat sesuai dengan Undang-undang ini dan kedaulatannya berada di tangan anggota. PRESIDEN REPUBLIK INDONESIA -3- (3) Partai Politik dan Golongan Karya yang dimaksud dalam ayat (1) pasal ini wajib melaksanakan ketentuan-ketentuan dalam Undang- undang ini dengan sebaik-baiknya." .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/b> legal:pointHasText <http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/b/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/b/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/ayat/0001> .
+<http://example.org/legal/document/uu/1975/3/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1975/3/bab/0002> .
+<http://example.org/legal/document/uu/1975/3/bab/0002> legal:babHasKey 2 .
+<http://example.org/legal/document/uu/1975/3/bab/0002> legal:babHasTitle "AZAS DAN TUJUAN" .
+<http://example.org/legal/document/uu/1975/3/bab/0002> legal:babHasPasalSet <http://example.org/legal/document/uu/1975/3/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1975/3/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0002> .
+<http://example.org/legal/document/uu/1975/3/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1975/3/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827> .
+<http://example.org/legal/document/uu/1975/3> legal:documentHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0002> .
+<http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827> legal:pasalVersionHasVersionDate "1975-08-27"^^xsd:date .
+<http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827> legal:pasalVersionHasRawText "(1). Azas Partai Politik dan Golongan Karya adalah Pancasila dan Undang-Undang Dasar 1945.\n(2). Selain ketentuan tersebut dalam ayat (1) pasal ini, azas/ciri Partai Politik dan Golongan Karya yang telah ada pada saat diundangkannya Undang-undang ini adalah juga azas/ciri Partai Politik dan Golongan Karya." .
+<http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827/ayat> .
+<http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827/ayat/0001> .
+<http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827/ayat/0001> legal:ayatHasRawText "Azas Partai Politik dan Golongan Karya adalah Pancasila dan Undang-Undang Dasar 1945." .
+<http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827/ayat/0001/text> legal:textHasTextString "Azas Partai Politik dan Golongan Karya adalah Pancasila dan Undang-Undang Dasar 1945." .
+<http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827/ayat/0001/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827/ayat/0002> .
+<http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827/ayat/0002> legal:ayatHasRawText "Selain ketentuan tersebut dalam ayat (1) pasal ini, azas/ciri Partai Politik dan Golongan Karya yang telah ada pada saat diundangkannya Undang-undang ini adalah juga azas/ciri Partai Politik dan Golongan Karya." .
+<http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827/ayat/0002/text> legal:textHasTextString "Selain ketentuan tersebut dalam ayat (1) pasal ini, azas/ciri Partai Politik dan Golongan Karya yang telah ada pada saat diundangkannya Undang-undang ini adalah juga azas/ciri Partai Politik dan Golongan Karya." .
+<http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827/ayat/0002/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827/ayat/0001> .
+<http://example.org/legal/document/uu/1975/3/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0003> .
+<http://example.org/legal/document/uu/1975/3/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/1975/3/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827> .
+<http://example.org/legal/document/uu/1975/3> legal:documentHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0003> .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827> legal:pasalVersionHasVersionDate "1975-08-27"^^xsd:date .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827> legal:pasalVersionHasRawText "(1). Tujuan Partai Politik dan Golongan karya adalah:\na. mewujudkan cita-cita Bangsa seperti dimaksud dalam Undang- Undang Dasar 1945,\nb. menciptakan masyarakat adil dan makmur yang merata spirituil dan meteriil berdasarkan Pancasila dan Undang-Undang Dasar 1945 dalam wadah Negara Kesatuan Republik Indonesia,\nc. mengembangkan kehidupan Demokrasi Pancasila.\n\n(2). Partai Politik dan Golongan Karya memperjuangkan tercapainya tujuan tersebut dalam ayat (1) pasal ini dengan jiwa/semangat kekeluargaan, musyawarah dan gotong-royong, serta cara lain selama tidak bertentangan dengan ketentuan-ketentuan yang tercantum dalam semua Undang-undang yang berlaku. PRESIDEN REPUBLIK INDONESIA -4-" .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat> .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001> .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001> legal:ayatHasRawText "Tujuan Partai Politik dan Golongan karya adalah:\na. mewujudkan cita-cita Bangsa seperti dimaksud dalam Undang- Undang Dasar 1945,\nb. menciptakan masyarakat adil dan makmur yang merata spirituil dan meteriil berdasarkan Pancasila dan Undang-Undang Dasar 1945 dalam wadah Negara Kesatuan Republik Indonesia,\nc. mengembangkan kehidupan Demokrasi Pancasila.\n" .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point/description> legal:textHasTextString "Tujuan Partai Politik dan Golongan karya adalah:" .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point/description> .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point/a> .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point/a/text> legal:textHasTextString "mewujudkan cita-cita Bangsa seperti dimaksud dalam Undang- Undang Dasar 1945," .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point/a/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point/b> .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point/b/text> legal:textHasTextString "menciptakan masyarakat adil dan makmur yang merata spirituil dan meteriil berdasarkan Pancasila dan Undang-Undang Dasar 1945 dalam wadah Negara Kesatuan Republik Indonesia," .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point/b> legal:pointHasText <http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point/b/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point/c> .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point/c/text> legal:textHasTextString "mengembangkan kehidupan Demokrasi Pancasila." .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point/c> legal:pointHasText <http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point/c/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0002> .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0002> legal:ayatHasRawText "Partai Politik dan Golongan Karya memperjuangkan tercapainya tujuan tersebut dalam ayat (1) pasal ini dengan jiwa/semangat kekeluargaan, musyawarah dan gotong-royong, serta cara lain selama tidak bertentangan dengan ketentuan-ketentuan yang tercantum dalam semua Undang-undang yang berlaku. PRESIDEN REPUBLIK INDONESIA -4-" .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0002/text> legal:textHasTextString "Partai Politik dan Golongan Karya memperjuangkan tercapainya tujuan tersebut dalam ayat (1) pasal ini dengan jiwa/semangat kekeluargaan, musyawarah dan gotong-royong, serta cara lain selama tidak bertentangan dengan ketentuan-ketentuan yang tercantum dalam semua Undang-undang yang berlaku. PRESIDEN REPUBLIK INDONESIA -4-" .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0002/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001> .
+<http://example.org/legal/document/uu/1975/3/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0004> .
+<http://example.org/legal/document/uu/1975/3/pasal/0004> legal:pasalHasKey 4 .
+<http://example.org/legal/document/uu/1975/3/pasal/0004> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1975/3/pasal/0004/version/19750827> .
+<http://example.org/legal/document/uu/1975/3> legal:documentHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0004> .
+<http://example.org/legal/document/uu/1975/3/pasal/0004/version/19750827> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1975/3/pasal/0004/version/19750827> legal:pasalVersionHasVersionDate "1975-08-27"^^xsd:date .
+<http://example.org/legal/document/uu/1975/3/pasal/0004/version/19750827> legal:pasalVersionHasRawText "Partai Politik dan Golongan Karya wajib mencantumkan azas dan tujuan seperti yang dimaksud dalam Pasal 2 dan Pasal 3 Undang-undang ini dalam Anggaran Dasarnya." .
+<http://example.org/legal/document/uu/1975/3/pasal/0004/version/19750827/text> legal:textHasTextString "Partai Politik dan Golongan Karya wajib mencantumkan azas dan tujuan seperti yang dimaksud dalam Pasal 2 dan Pasal 3 Undang-undang ini dalam Anggaran Dasarnya." .
+<http://example.org/legal/document/uu/1975/3/pasal/0004/version/19750827> legal:pasalVersionHasText <http://example.org/legal/document/uu/1975/3/pasal/0004/version/19750827/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0004/version/19750827/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1975/3/pasal/0003> .
+<http://example.org/legal/document/uu/1975/3/pasal/0004/version/19750827/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1975/3/pasal/0002> .
+<http://example.org/legal/document/uu/1975/3/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1975/3/bab/0003> .
+<http://example.org/legal/document/uu/1975/3/bab/0003> legal:babHasKey 3 .
+<http://example.org/legal/document/uu/1975/3/bab/0003> legal:babHasTitle "FUNGSI, HAK DAN KEWAJIBAN" .
+<http://example.org/legal/document/uu/1975/3/bab/0003> legal:babHasPasalSet <http://example.org/legal/document/uu/1975/3/bab/0003/pasals> .
+<http://example.org/legal/document/uu/1975/3/bab/0003/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0005> .
+<http://example.org/legal/document/uu/1975/3/pasal/0005> legal:pasalHasKey 5 .
+<http://example.org/legal/document/uu/1975/3/pasal/0005> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827> .
+<http://example.org/legal/document/uu/1975/3> legal:documentHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0005> .
+<http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827> legal:pasalVersionHasVersionDate "1975-08-27"^^xsd:date .
+<http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827> legal:pasalVersionHasRawText "Partai Politik dan Golongan Karya berfungsi:\na. sebagai salah satu Lembaga Demokrasi Pancasila menyalurkan pendapat dan aspirasi masyarakat secara sehat dan mewujudkan hak- hak politik rakyat,\nb. membina anggota-anggotanya menjadi Warganegara Indonesia yang bermoral Pancasila, setia terhadap Undang-Undang Dasar 1915 dan sebagai salah satu wadah untuk mendidik kesadaran politik rakyat.\n" .
+<http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827/point/description> legal:textHasTextString "Partai Politik dan Golongan Karya berfungsi:" .
+<http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827/point/description> .
+<http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827/point/a> .
+<http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827/point/a/text> legal:textHasTextString "sebagai salah satu Lembaga Demokrasi Pancasila menyalurkan pendapat dan aspirasi masyarakat secara sehat dan mewujudkan hak- hak politik rakyat," .
+<http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827/point/a> legal:pointHasText <http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827/point/a/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827/point/b> .
+<http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827/point/b/text> legal:textHasTextString "membina anggota-anggotanya menjadi Warganegara Indonesia yang bermoral Pancasila, setia terhadap Undang-Undang Dasar 1915 dan sebagai salah satu wadah untuk mendidik kesadaran politik rakyat." .
+<http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827/point/b> legal:pointHasText <http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827/point/b/text> .
+<http://example.org/legal/document/uu/1975/3/bab/0003/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0006> .
+<http://example.org/legal/document/uu/1975/3/pasal/0006> legal:pasalHasKey 6 .
+<http://example.org/legal/document/uu/1975/3/pasal/0006> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827> .
+<http://example.org/legal/document/uu/1975/3> legal:documentHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0006> .
+<http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827> legal:pasalVersionHasVersionDate "1975-08-27"^^xsd:date .
+<http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827> legal:pasalVersionHasRawText "Partai Politik dan Golongan Karya berhak :\na. mempertahankan dan mengisi Kemerdekaan Negara Kesatuan Republik Indonesia,\nb. ikut serta dalam Pemilihan Umum.\n" .
+<http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827/point/description> legal:textHasTextString "Partai Politik dan Golongan Karya berhak :" .
+<http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827/point/description> .
+<http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827/point/a> .
+<http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827/point/a/text> legal:textHasTextString "mempertahankan dan mengisi Kemerdekaan Negara Kesatuan Republik Indonesia," .
+<http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827/point/a> legal:pointHasText <http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827/point/a/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827/point/b> .
+<http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827/point/b/text> legal:textHasTextString "ikut serta dalam Pemilihan Umum." .
+<http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827/point/b> legal:pointHasText <http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827/point/b/text> .
+<http://example.org/legal/document/uu/1975/3/bab/0003/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0007> .
+<http://example.org/legal/document/uu/1975/3/pasal/0007> legal:pasalHasKey 7 .
+<http://example.org/legal/document/uu/1975/3/pasal/0007> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827> .
+<http://example.org/legal/document/uu/1975/3> legal:documentHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0007> .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827> legal:pasalVersionHasVersionDate "1975-08-27"^^xsd:date .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827> legal:pasalVersionHasRawText "Partai Politik dan Golongan Karya berkewajiban:\na. melaksanakan,mengamalkan dan mengamankan Pancasila serta Undang-Undang Dasar 1945,\nb. mempertahankan dan mengisi Kemerdekaan Negara Kesatuan Republik Indonesia, PRESIDEN REPUBLIK INDONESIA -5-\nc. mengamankan dan melaksanakan Garis-garis Besar Haluan Negara dan Ketetapan Majelis Permusyawaratan Rakyat lainnya,\nd. memelihara persatuan dan kesatuan Bangsa, serta memelihara stabilitas nasional yang tertib dan dinamis sebagai prasarat mutlak untuk berhasilnya pelaksanaan pembangunan Bangsa di segala bidang,\ne. turut memelihara persahabatan antara Republik Indonesia dengan negara lain atas dasar saling hormat menghormati dan atas dasar kerjasama menuju terwujudnya perdamaian dunia yang abadi,\nf. mensukseskan pelaksanaan Pemilihan Umum.\n" .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/description> legal:textHasTextString "Partai Politik dan Golongan Karya berkewajiban:" .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/description> .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/a> .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/a/text> legal:textHasTextString "melaksanakan,mengamalkan dan mengamankan Pancasila serta Undang-Undang Dasar 1945," .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/a> legal:pointHasText <http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/a/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/b> .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/b/text> legal:textHasTextString "mempertahankan dan mengisi Kemerdekaan Negara Kesatuan Republik Indonesia, PRESIDEN REPUBLIK INDONESIA -5-" .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/b> legal:pointHasText <http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/b/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/c> .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/c/text> legal:textHasTextString "mengamankan dan melaksanakan Garis-garis Besar Haluan Negara dan Ketetapan Majelis Permusyawaratan Rakyat lainnya," .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/c> legal:pointHasText <http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/c/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/d> .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/d/text> legal:textHasTextString "memelihara persatuan dan kesatuan Bangsa, serta memelihara stabilitas nasional yang tertib dan dinamis sebagai prasarat mutlak untuk berhasilnya pelaksanaan pembangunan Bangsa di segala bidang," .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/d> legal:pointHasText <http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/d/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/e> .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/e/text> legal:textHasTextString "turut memelihara persahabatan antara Republik Indonesia dengan negara lain atas dasar saling hormat menghormati dan atas dasar kerjasama menuju terwujudnya perdamaian dunia yang abadi," .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/e> legal:pointHasText <http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/e/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/f> .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/f> legal:pointHasKey "f" .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/f/text> legal:textHasTextString "mensukseskan pelaksanaan Pemilihan Umum." .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/f> legal:pointHasText <http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/f/text> .
+<http://example.org/legal/document/uu/1975/3/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1975/3/bab/0004> .
+<http://example.org/legal/document/uu/1975/3/bab/0004> legal:babHasKey 4 .
+<http://example.org/legal/document/uu/1975/3/bab/0004> legal:babHasTitle "KEANGGOTAAN DAN KEPENGURUSAN" .
+<http://example.org/legal/document/uu/1975/3/bab/0004> legal:babHasPasalSet <http://example.org/legal/document/uu/1975/3/bab/0004/pasals> .
+<http://example.org/legal/document/uu/1975/3/bab/0004/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0008> .
+<http://example.org/legal/document/uu/1975/3/pasal/0008> legal:pasalHasKey 8 .
+<http://example.org/legal/document/uu/1975/3/pasal/0008> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827> .
+<http://example.org/legal/document/uu/1975/3> legal:documentHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0008> .
+<http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827> legal:pasalVersionHasVersionDate "1975-08-27"^^xsd:date .
+<http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827> legal:pasalVersionHasRawText "(Jl) Yang dapat menjadi anggota Partai Politik dan Golongan Karya adalah Warganegara Indonesia yang telah melalui penelitian/penyaringan oleh Pengurus Partai Politik dan Golongan Karya yang bersangkutan dan telah memenuhi persyaratan antara lain\na. telah berumur 17 (tujuh belas) tahun atau telah kawin,\nb. dapat membaca dan menulis,\nc. . sanggup aktif mengikuti kegiatan yang ditentukan oleh Partai Politik dan Golongan Karya. (2) a. Pegawai Negeri Sipil dapat menjadi anggota Partai Politik atau Golongan Karya dengan sepengetahuan pejabat yang berwenang: b. Pegawai Negeri Sipil yang memegang jabatan-jabatan tertentu tidak dapat menjadi anggota Partai Politik atau Golongan Karya, kecuali dengan izin tertulis dari Pejabat yang berwenang. PRESIDEN REPUBLIK INDONESIA -6-\n" .
+<http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point/description> legal:textHasTextString "(Jl) Yang dapat menjadi anggota Partai Politik dan Golongan Karya adalah Warganegara Indonesia yang telah melalui penelitian/penyaringan oleh Pengurus Partai Politik dan Golongan Karya yang bersangkutan dan telah memenuhi persyaratan antara lain" .
+<http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point/description> .
+<http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point/a> .
+<http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point/a/text> legal:textHasTextString "telah berumur 17 (tujuh belas) tahun atau telah kawin," .
+<http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point/a> legal:pointHasText <http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point/a/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point/b> .
+<http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point/b/text> legal:textHasTextString "dapat membaca dan menulis," .
+<http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point/b> legal:pointHasText <http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point/b/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point/c> .
+<http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point/c/text> legal:textHasTextString ". sanggup aktif mengikuti kegiatan yang ditentukan oleh Partai Politik dan Golongan Karya. (2) a. Pegawai Negeri Sipil dapat menjadi anggota Partai Politik atau Golongan Karya dengan sepengetahuan pejabat yang berwenang: b. Pegawai Negeri Sipil yang memegang jabatan-jabatan tertentu tidak dapat menjadi anggota Partai Politik atau Golongan Karya, kecuali dengan izin tertulis dari Pejabat yang berwenang. PRESIDEN REPUBLIK INDONESIA -6-" .
+<http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point/c> legal:pointHasText <http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point/c/text> .
+<http://example.org/legal/document/uu/1975/3/bab/0004/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0009> .
+<http://example.org/legal/document/uu/1975/3/pasal/0009> legal:pasalHasKey 9 .
+<http://example.org/legal/document/uu/1975/3/pasal/0009> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1975/3/pasal/0009/version/19750827> .
+<http://example.org/legal/document/uu/1975/3> legal:documentHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0009> .
+<http://example.org/legal/document/uu/1975/3/pasal/0009/version/19750827> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1975/3/pasal/0009/version/19750827> legal:pasalVersionHasVersionDate "1975-08-27"^^xsd:date .
+<http://example.org/legal/document/uu/1975/3/pasal/0009/version/19750827> legal:pasalVersionHasRawText "Partai Politik dan Golongan Karya mendaftar anggota-anggotanya dan memelihara daftar anggotanya." .
+<http://example.org/legal/document/uu/1975/3/pasal/0009/version/19750827/text> legal:textHasTextString "Partai Politik dan Golongan Karya mendaftar anggota-anggotanya dan memelihara daftar anggotanya." .
+<http://example.org/legal/document/uu/1975/3/pasal/0009/version/19750827> legal:pasalVersionHasText <http://example.org/legal/document/uu/1975/3/pasal/0009/version/19750827/text> .
+<http://example.org/legal/document/uu/1975/3/bab/0004/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0010> .
+<http://example.org/legal/document/uu/1975/3/pasal/0010> legal:pasalHasKey 10 .
+<http://example.org/legal/document/uu/1975/3/pasal/0010> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827> .
+<http://example.org/legal/document/uu/1975/3> legal:documentHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0010> .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827> legal:pasalVersionHasVersionDate "1975-08-27"^^xsd:date .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827> legal:pasalVersionHasRawText "(1). Partai Politik dan Golongan Karya mempunyai kepengurusan di :\na. Ibukota Negara Republik Indonesia untuk Tingkat Pusat:\nb. Ibukota Propinsi untuk Daerah Tingkat I:\nc. Ibukota Kabupaten/Kotamadya untuk Daerah Tingkat II: di tiap kota Kecamatan dan Desa ada/dapat ditetapkan seorang Komisaris sebagai pelaksana Pengurus Daerah Tingkat II. Komisaris dibantu oleh beberapa pembantu.\n\n(2). Kepengurusan untuk Daerah Administratif di lingkungan Daerah Khusus Ibukota Jakarta Raya dan lainnya dipersamakan dengan Daerah Tingkat II sebagaimana tersebut pada ayat (1) pasal ini." .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat> .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001> .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001> legal:ayatHasRawText "Partai Politik dan Golongan Karya mempunyai kepengurusan di :\na. Ibukota Negara Republik Indonesia untuk Tingkat Pusat:\nb. Ibukota Propinsi untuk Daerah Tingkat I:\nc. Ibukota Kabupaten/Kotamadya untuk Daerah Tingkat II: di tiap kota Kecamatan dan Desa ada/dapat ditetapkan seorang Komisaris sebagai pelaksana Pengurus Daerah Tingkat II. Komisaris dibantu oleh beberapa pembantu.\n" .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point/description> legal:textHasTextString "Partai Politik dan Golongan Karya mempunyai kepengurusan di :" .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point/description> .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point/a> .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point/a/text> legal:textHasTextString "Ibukota Negara Republik Indonesia untuk Tingkat Pusat:" .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point/a/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point/b> .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point/b/text> legal:textHasTextString "Ibukota Propinsi untuk Daerah Tingkat I:" .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point/b> legal:pointHasText <http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point/b/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point/c> .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point/c/text> legal:textHasTextString "Ibukota Kabupaten/Kotamadya untuk Daerah Tingkat II: di tiap kota Kecamatan dan Desa ada/dapat ditetapkan seorang Komisaris sebagai pelaksana Pengurus Daerah Tingkat II. Komisaris dibantu oleh beberapa pembantu." .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point/c> legal:pointHasText <http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point/c/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0002> .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0002> legal:ayatHasRawText "Kepengurusan untuk Daerah Administratif di lingkungan Daerah Khusus Ibukota Jakarta Raya dan lainnya dipersamakan dengan Daerah Tingkat II sebagaimana tersebut pada ayat (1) pasal ini." .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0002/text> legal:textHasTextString "Kepengurusan untuk Daerah Administratif di lingkungan Daerah Khusus Ibukota Jakarta Raya dan lainnya dipersamakan dengan Daerah Tingkat II sebagaimana tersebut pada ayat (1) pasal ini." .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0002/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001> .
+<http://example.org/legal/document/uu/1975/3/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1975/3/bab/0005> .
+<http://example.org/legal/document/uu/1975/3/bab/0005> legal:babHasKey 5 .
+<http://example.org/legal/document/uu/1975/3/bab/0005> legal:babHasTitle "KEUANGAN" .
+<http://example.org/legal/document/uu/1975/3/bab/0005> legal:babHasPasalSet <http://example.org/legal/document/uu/1975/3/bab/0005/pasals> .
+<http://example.org/legal/document/uu/1975/3/bab/0005/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0011> .
+<http://example.org/legal/document/uu/1975/3/pasal/0011> legal:pasalHasKey 11 .
+<http://example.org/legal/document/uu/1975/3/pasal/0011> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827> .
+<http://example.org/legal/document/uu/1975/3> legal:documentHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0011> .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827> legal:pasalVersionHasVersionDate "1975-08-27"^^xsd:date .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827> legal:pasalVersionHasRawText "Keuangan Partai Politik dan Golongan Karya diperoleh dari :\na. Turan anggota,\nb. sumbangan yang tidak mengikat,\nc. usaha lain yang sah,\nd. bantuan dari Negara/Pemerintah. PRESIDEN REPUBLIK INDONESIA -7-\n" .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/description> legal:textHasTextString "Keuangan Partai Politik dan Golongan Karya diperoleh dari :" .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/description> .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/a> .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/a/text> legal:textHasTextString "Turan anggota," .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/a> legal:pointHasText <http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/a/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/b> .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/b/text> legal:textHasTextString "sumbangan yang tidak mengikat," .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/b> legal:pointHasText <http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/b/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/c> .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/c/text> legal:textHasTextString "usaha lain yang sah," .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/c> legal:pointHasText <http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/c/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/d> .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/d/text> legal:textHasTextString "bantuan dari Negara/Pemerintah. PRESIDEN REPUBLIK INDONESIA -7-" .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/d> legal:pointHasText <http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/d/text> .
+<http://example.org/legal/document/uu/1975/3/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1975/3/bab/0006> .
+<http://example.org/legal/document/uu/1975/3/bab/0006> legal:babHasKey 6 .
+<http://example.org/legal/document/uu/1975/3/bab/0006> legal:babHasTitle "LARANGAN DAN PENGAWASAN" .
+<http://example.org/legal/document/uu/1975/3/bab/0006> legal:babHasPasalSet <http://example.org/legal/document/uu/1975/3/bab/0006/pasals> .
+<http://example.org/legal/document/uu/1975/3/bab/0006/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0012> .
+<http://example.org/legal/document/uu/1975/3/pasal/0012> legal:pasalHasKey 12 .
+<http://example.org/legal/document/uu/1975/3/pasal/0012> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827> .
+<http://example.org/legal/document/uu/1975/3> legal:documentHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0012> .
+<http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827> legal:pasalVersionHasVersionDate "1975-08-27"^^xsd:date .
+<http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827> legal:pasalVersionHasRawText "Partai Politik dan Golongan Karya dilarang :\na. menganut, mengembangkan dan menyebarkan faham atau ajaran Komunisme/Marxisme-Leninisme serta faham atau ajaran lain yang bertentangan dengan Pancasila dan Undang-Undang Dasar 1945 dalam segala bentuk dan perwujudannya,\nb. menerima bantuan dari pihak asing,\nc. memberikan bantuan kepada pihak asing yang merugikan kepentingan Bangsa dan Negara.\n" .
+<http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point/description> legal:textHasTextString "Partai Politik dan Golongan Karya dilarang :" .
+<http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point/description> .
+<http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point/a> .
+<http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point/a/text> legal:textHasTextString "menganut, mengembangkan dan menyebarkan faham atau ajaran Komunisme/Marxisme-Leninisme serta faham atau ajaran lain yang bertentangan dengan Pancasila dan Undang-Undang Dasar 1945 dalam segala bentuk dan perwujudannya," .
+<http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point/a> legal:pointHasText <http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point/a/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point/b> .
+<http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point/b/text> legal:textHasTextString "menerima bantuan dari pihak asing," .
+<http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point/b> legal:pointHasText <http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point/b/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point/c> .
+<http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point/c/text> legal:textHasTextString "memberikan bantuan kepada pihak asing yang merugikan kepentingan Bangsa dan Negara." .
+<http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point/c> legal:pointHasText <http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point/c/text> .
+<http://example.org/legal/document/uu/1975/3/bab/0006/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0013> .
+<http://example.org/legal/document/uu/1975/3/pasal/0013> legal:pasalHasKey 13 .
+<http://example.org/legal/document/uu/1975/3/pasal/0013> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1975/3/pasal/0013/version/19750827> .
+<http://example.org/legal/document/uu/1975/3> legal:documentHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0013> .
+<http://example.org/legal/document/uu/1975/3/pasal/0013/version/19750827> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1975/3/pasal/0013/version/19750827> legal:pasalVersionHasVersionDate "1975-08-27"^^xsd:date .
+<http://example.org/legal/document/uu/1975/3/pasal/0013/version/19750827> legal:pasalVersionHasRawText "(Jl) Dengan tidak mengurangi berlakunya ketentuan-ketentuan dalam semua Undang-undang yang berlaku, pengawasan terhadap Pasal 4, Pasal 7a dan Pasal 12 dilakukan oleh Presiden/Mandataris Majelis Permusyawaratan Rakyat. (2) Presiden/Mandataris Majelis Permusyawaratan Rakyat dalam melaksanakan pengawasan terhadap pelaksanaan Pasal 4,Pasal 7a dan Pasal 12 dapat meminta keterangan kepada Pengurus Tingkat Pusat Partai Politik atau Golongan Karya." .
+<http://example.org/legal/document/uu/1975/3/pasal/0013/version/19750827/text> legal:textHasTextString "(Jl) Dengan tidak mengurangi berlakunya ketentuan-ketentuan dalam semua Undang-undang yang berlaku, pengawasan terhadap Pasal 4, Pasal 7a dan Pasal 12 dilakukan oleh Presiden/Mandataris Majelis Permusyawaratan Rakyat. (2) Presiden/Mandataris Majelis Permusyawaratan Rakyat dalam melaksanakan pengawasan terhadap pelaksanaan Pasal 4,Pasal 7a dan Pasal 12 dapat meminta keterangan kepada Pengurus Tingkat Pusat Partai Politik atau Golongan Karya." .
+<http://example.org/legal/document/uu/1975/3/pasal/0013/version/19750827> legal:pasalVersionHasText <http://example.org/legal/document/uu/1975/3/pasal/0013/version/19750827/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0013/version/19750827/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1975/3/pasal/0012> .
+<http://example.org/legal/document/uu/1975/3/pasal/0013/version/19750827/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1975/3/pasal/0007> .
+<http://example.org/legal/document/uu/1975/3/pasal/0013/version/19750827/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1975/3/pasal/0004> .
+<http://example.org/legal/document/uu/1975/3/bab/0006/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0014> .
+<http://example.org/legal/document/uu/1975/3/pasal/0014> legal:pasalHasKey 14 .
+<http://example.org/legal/document/uu/1975/3/pasal/0014> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827> .
+<http://example.org/legal/document/uu/1975/3> legal:documentHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0014> .
+<http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827> legal:pasalVersionHasVersionDate "1975-08-27"^^xsd:date .
+<http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827> legal:pasalVersionHasRawText "(1). Dengan kewenangan yang ada padanya, Presiden/Mandataris Majelis Permusyawaratan Rakyat dapat membekukan Pengurus Tingkat Pusat Partai Politik atau Golongan Karya yang ternyata melakukan tindakan-tindakan yang bertentangan dengan Pasal 4, Pasal 7a dan Pasal 12 Undang-undang ini. PRESIDEN REPUBLIK INDONESIA -8-\n(2). Pembekuan yang dimaksud ayat (1) pasal ini dilakukan setelah mendengar keterangan dari Pengurus 'Tingkat Pusat yang bersangkutan dan sesudah mendengar pertimbangan Mahkamah Agung." .
+<http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat> .
+<http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat/0001> .
+<http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat/0001> legal:ayatHasRawText "Dengan kewenangan yang ada padanya, Presiden/Mandataris Majelis Permusyawaratan Rakyat dapat membekukan Pengurus Tingkat Pusat Partai Politik atau Golongan Karya yang ternyata melakukan tindakan-tindakan yang bertentangan dengan Pasal 4, Pasal 7a dan Pasal 12 Undang-undang ini. PRESIDEN REPUBLIK INDONESIA -8-" .
+<http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat/0001/text> legal:textHasTextString "Dengan kewenangan yang ada padanya, Presiden/Mandataris Majelis Permusyawaratan Rakyat dapat membekukan Pengurus Tingkat Pusat Partai Politik atau Golongan Karya yang ternyata melakukan tindakan-tindakan yang bertentangan dengan Pasal 4, Pasal 7a dan Pasal 12 Undang-undang ini. PRESIDEN REPUBLIK INDONESIA -8-" .
+<http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat/0001/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1975/3/pasal/0012> .
+<http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1975/3/pasal/0007> .
+<http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1975/3/pasal/0004> .
+<http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat/0002> .
+<http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat/0002> legal:ayatHasRawText "Pembekuan yang dimaksud ayat (1) pasal ini dilakukan setelah mendengar keterangan dari Pengurus 'Tingkat Pusat yang bersangkutan dan sesudah mendengar pertimbangan Mahkamah Agung." .
+<http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat/0002/text> legal:textHasTextString "Pembekuan yang dimaksud ayat (1) pasal ini dilakukan setelah mendengar keterangan dari Pengurus 'Tingkat Pusat yang bersangkutan dan sesudah mendengar pertimbangan Mahkamah Agung." .
+<http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat/0002/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat/0001> .
+<http://example.org/legal/document/uu/1975/3/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1975/3/bab/0007> .
+<http://example.org/legal/document/uu/1975/3/bab/0007> legal:babHasKey 7 .
+<http://example.org/legal/document/uu/1975/3/bab/0007> legal:babHasTitle "KETENTUAN PERALIHAN" .
+<http://example.org/legal/document/uu/1975/3/bab/0007> legal:babHasPasalSet <http://example.org/legal/document/uu/1975/3/bab/0007/pasals> .
+<http://example.org/legal/document/uu/1975/3/bab/0007/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0015> .
+<http://example.org/legal/document/uu/1975/3/pasal/0015> legal:pasalHasKey 15 .
+<http://example.org/legal/document/uu/1975/3/pasal/0015> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1975/3/pasal/0015/version/19750827> .
+<http://example.org/legal/document/uu/1975/3> legal:documentHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0015> .
+<http://example.org/legal/document/uu/1975/3/pasal/0015/version/19750827> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1975/3/pasal/0015/version/19750827> legal:pasalVersionHasVersionDate "1975-08-27"^^xsd:date .
+<http://example.org/legal/document/uu/1975/3/pasal/0015/version/19750827> legal:pasalVersionHasRawText "Dengan berlakunya Undang-undang ini kepada Partai Politik dan Golongan Karya diberikan kesempatan untuk menyesuaikan diri dengan ketentuan-ketentuan Undang-undang ini yang harus sudah selesai selambat-lambatnya satu tahun setelah berlakunya Undang-undang ini." .
+<http://example.org/legal/document/uu/1975/3/pasal/0015/version/19750827/text> legal:textHasTextString "Dengan berlakunya Undang-undang ini kepada Partai Politik dan Golongan Karya diberikan kesempatan untuk menyesuaikan diri dengan ketentuan-ketentuan Undang-undang ini yang harus sudah selesai selambat-lambatnya satu tahun setelah berlakunya Undang-undang ini." .
+<http://example.org/legal/document/uu/1975/3/pasal/0015/version/19750827> legal:pasalVersionHasText <http://example.org/legal/document/uu/1975/3/pasal/0015/version/19750827/text> .
+<http://example.org/legal/document/uu/1975/3/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1975/3/bab/0008> .
+<http://example.org/legal/document/uu/1975/3/bab/0008> legal:babHasKey 8 .
+<http://example.org/legal/document/uu/1975/3/bab/0008> legal:babHasTitle "KETENTUAN PENUTUP" .
+<http://example.org/legal/document/uu/1975/3/bab/0008> legal:babHasPasalSet <http://example.org/legal/document/uu/1975/3/bab/0008/pasals> .
+<http://example.org/legal/document/uu/1975/3/bab/0008/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0016> .
+<http://example.org/legal/document/uu/1975/3/pasal/0016> legal:pasalHasKey 16 .
+<http://example.org/legal/document/uu/1975/3/pasal/0016> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1975/3/pasal/0016/version/19750827> .
+<http://example.org/legal/document/uu/1975/3> legal:documentHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0016> .
+<http://example.org/legal/document/uu/1975/3/pasal/0016/version/19750827> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1975/3/pasal/0016/version/19750827> legal:pasalVersionHasVersionDate "1975-08-27"^^xsd:date .
+<http://example.org/legal/document/uu/1975/3/pasal/0016/version/19750827> legal:pasalVersionHasRawText "Pelaksanaan dari Undang-undang ini diatur dengan Peraturan Pemerintah." .
+<http://example.org/legal/document/uu/1975/3/pasal/0016/version/19750827/text> legal:textHasTextString "Pelaksanaan dari Undang-undang ini diatur dengan Peraturan Pemerintah." .
+<http://example.org/legal/document/uu/1975/3/pasal/0016/version/19750827> legal:pasalVersionHasText <http://example.org/legal/document/uu/1975/3/pasal/0016/version/19750827/text> .
+<http://example.org/legal/document/uu/1975/3/bab/0008/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0017> .
+<http://example.org/legal/document/uu/1975/3/pasal/0017> legal:pasalHasKey 17 .
+<http://example.org/legal/document/uu/1975/3/pasal/0017> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827> .
+<http://example.org/legal/document/uu/1975/3> legal:documentHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0017> .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827> legal:pasalVersionHasVersionDate "1975-08-27"^^xsd:date .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827> legal:pasalVersionHasRawText "(1). Pada saat mulai berlakunya Undang-undang ini, dinyatakan tidak berlaku lagi :\na. Undang-undang Nomor 7 Pnps Tahun 1959 tentang Syarat-syarat dan Penyederhanaan Kepartaian (Lembaran Negara Republik Indonesia Tahun 1959 Nomor 149),\nb. Undang-undang Nomor 13 Prps Tahun 1960 tentang Pengakuan, Pengawasan dan Pembubaran Partai-partai (Lembaran Negara Republik Indonesia Tahun 1960 Nomor 79): PRESIDEN REPUBLIK INDONESIA -9-\nc. Undang-undang Nomor 25 Prps Tahun 1960 tentang Perobahan Peraturan Presiden Nomor 13 Tahun 1960 (Lembaran Negara Republik Indonesia Tahun 1960 Nomor 139).\n\n(2). Segala ketentuan dalam peraturan perundang-undangan yang bertentangan dengan Undang-undang ini disesuaikan/dicabut." .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat> .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001> .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001> legal:ayatHasRawText "Pada saat mulai berlakunya Undang-undang ini, dinyatakan tidak berlaku lagi :\na. Undang-undang Nomor 7 Pnps Tahun 1959 tentang Syarat-syarat dan Penyederhanaan Kepartaian (Lembaran Negara Republik Indonesia Tahun 1959 Nomor 149),\nb. Undang-undang Nomor 13 Prps Tahun 1960 tentang Pengakuan, Pengawasan dan Pembubaran Partai-partai (Lembaran Negara Republik Indonesia Tahun 1960 Nomor 79): PRESIDEN REPUBLIK INDONESIA -9-\nc. Undang-undang Nomor 25 Prps Tahun 1960 tentang Perobahan Peraturan Presiden Nomor 13 Tahun 1960 (Lembaran Negara Republik Indonesia Tahun 1960 Nomor 139).\n" .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point/description> legal:textHasTextString "Pada saat mulai berlakunya Undang-undang ini, dinyatakan tidak berlaku lagi :" .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point/description> .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point/a> .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point/a/text> legal:textHasTextString "Undang-undang Nomor 7 Pnps Tahun 1959 tentang Syarat-syarat dan Penyederhanaan Kepartaian (Lembaran Negara Republik Indonesia Tahun 1959 Nomor 149)," .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point/a/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point/b> .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point/b/text> legal:textHasTextString "Undang-undang Nomor 13 Prps Tahun 1960 tentang Pengakuan, Pengawasan dan Pembubaran Partai-partai (Lembaran Negara Republik Indonesia Tahun 1960 Nomor 79): PRESIDEN REPUBLIK INDONESIA -9-" .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point/b> legal:pointHasText <http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point/b/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point/c> .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point/c/text> legal:textHasTextString "Undang-undang Nomor 25 Prps Tahun 1960 tentang Perobahan Peraturan Presiden Nomor 13 Tahun 1960 (Lembaran Negara Republik Indonesia Tahun 1960 Nomor 139)." .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point/c> legal:pointHasText <http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point/c/text> .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0002> .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0002> legal:ayatHasRawText "Segala ketentuan dalam peraturan perundang-undangan yang bertentangan dengan Undang-undang ini disesuaikan/dicabut." .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0002/text> legal:textHasTextString "Segala ketentuan dalam peraturan perundang-undangan yang bertentangan dengan Undang-undang ini disesuaikan/dicabut." .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0002/text> .
+<http://example.org/legal/document/uu/1975/3/bab/0008/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0018> .
+<http://example.org/legal/document/uu/1975/3/pasal/0018> legal:pasalHasKey 18 .
+<http://example.org/legal/document/uu/1975/3/pasal/0018> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1975/3/pasal/0018/version/19750827> .
+<http://example.org/legal/document/uu/1975/3> legal:documentHasPasal <http://example.org/legal/document/uu/1975/3/pasal/0018> .
+<http://example.org/legal/document/uu/1975/3/pasal/0018/version/19750827> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1975/3/pasal/0018/version/19750827> legal:pasalVersionHasVersionDate "1975-08-27"^^xsd:date .
+<http://example.org/legal/document/uu/1975/3/pasal/0018/version/19750827> legal:pasalVersionHasRawText "Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1975/3/pasal/0018/version/19750827/text> legal:textHasTextString "Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1975/3/pasal/0018/version/19750827> legal:pasalVersionHasText <http://example.org/legal/document/uu/1975/3/pasal/0018/version/19750827/text> .
+<http://example.org/legal/document/uu/1975/3> legal:documentHasDisahkanDate "1975-08-27"^^xsd:date .
+<http://example.org/legal/document/uu/1975/3> legal:documentMengingat <http://example.org/legal/document/uu/1975/3/mengingat> .
+<http://example.org/legal/document/uu/1975/3/mengingat/text> legal:textHasTextString " Dasar 1945, PRESIDEN REPUBLIK INDONESIA 2- 2. Ketetapan Majelis Permusyawaratan Rakyat Nomor IV/MPR/1973 tentang Garis-garis Besar Haluan Negara, Dengan persetujuan Dewan Perwakilan Rakyat Republik Indonesia, MEMUTUSKAN : Menetapkan : UNDANG-UNDANG TENTANG PARTAI POLITIK DAN GOLONGAN KARYA." .
+<http://example.org/legal/document/uu/1975/3/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/1975/3/mengingat/text> .
+<http://example.org/legal/document/uu/1975/3> legal:documentMenimbang <http://example.org/legal/document/uu/1975/3/menimbang> .
+<http://example.org/legal/document/uu/1975/3/menimbang/text> legal:textHasTextString "a2. bahwa dalam rangka penyederhanaan dan pendayagunaan kehidupan politik, dewasa ini organisasi-organisasi kekuatan sosial politik yang telah ada telah mengelompokkan diri menjadi dua Partai Politik dan satu Golongan Karya, seperti yang telah dinyatakan dalam Garis-garis Besar Haluan Negara, b. bahwa dengan adanya tiga organisasi kekuatan sosial politik tersebut, diharapkan agar Partai-partai Politik dan Golongan Karya benar-benar dapat menjamin terpeliharanya persatuan dan kesatuan Bangsa, stabilitas nasional serta terlaksananya percepatan pembangunan, c. bahwa agar supaya kenyataan-kenyataan yang positif itu dapat tumbuh semakin kuat dan mantap, perlu diatur tata kehidupan Partai-partai Politik dan Golongan Karya tersebut, yang sekaligus memberikan kepastian tentang kedudukan, fungsi, hak dan kewajiban yang sama dan sederajat dari organisasi-organisasi kekuatan sosial politik yang bersangkutan yang memadai serta sesuai dengan prinsip-prinsip Demokrasi Pancasila serta pelaksanaan pembangunan Bangsa, d. Pasal 27 dan Pasal 29 Undang-Undang Dasar 1945," .
+<http://example.org/legal/document/uu/1975/3/menimbang> legal:menimbangHasText <http://example.org/legal/document/uu/1975/3/menimbang/text> .
+<http://example.org/legal/document/uu/1975/3> legal:documentHasDisahkanPengesah "SOEHARTO" .
+<http://example.org/legal/document/uu/1975/3> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/1975/3> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/1975/3> a legal:Document .
+<http://example.org/legal/document/uu/1975/3/bab> a legal:BabSet .
+<http://example.org/legal/document/uu/1975/3/bab/0001> a legal:Bab .
+<http://example.org/legal/document/uu/1975/3/bab/0001/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1975/3/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/bab/0002> a legal:Bab .
+<http://example.org/legal/document/uu/1975/3/bab/0002/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1975/3/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0004> a legal:Pasal .
+<http://example.org/legal/document/uu/1975/3/pasal/0004/version/19750827> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1975/3/pasal/0004/version/19750827/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/bab/0003> a legal:Bab .
+<http://example.org/legal/document/uu/1975/3/bab/0003/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1975/3/pasal/0005> a legal:Pasal .
+<http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0006> a legal:Pasal .
+<http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0007> a legal:Pasal .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/e> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/f> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/f/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/bab/0004> a legal:Bab .
+<http://example.org/legal/document/uu/1975/3/bab/0004/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1975/3/pasal/0008> a legal:Pasal .
+<http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0009> a legal:Pasal .
+<http://example.org/legal/document/uu/1975/3/pasal/0009/version/19750827> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1975/3/pasal/0009/version/19750827/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0010> a legal:Pasal .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/bab/0005> a legal:Bab .
+<http://example.org/legal/document/uu/1975/3/bab/0005/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1975/3/pasal/0011> a legal:Pasal .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/bab/0006> a legal:Bab .
+<http://example.org/legal/document/uu/1975/3/bab/0006/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1975/3/pasal/0012> a legal:Pasal .
+<http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0013> a legal:Pasal .
+<http://example.org/legal/document/uu/1975/3/pasal/0013/version/19750827> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1975/3/pasal/0013/version/19750827/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0014> a legal:Pasal .
+<http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/bab/0007> a legal:Bab .
+<http://example.org/legal/document/uu/1975/3/bab/0007/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1975/3/pasal/0015> a legal:Pasal .
+<http://example.org/legal/document/uu/1975/3/pasal/0015/version/19750827> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1975/3/pasal/0015/version/19750827/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/bab/0008> a legal:Bab .
+<http://example.org/legal/document/uu/1975/3/bab/0008/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1975/3/pasal/0016> a legal:Pasal .
+<http://example.org/legal/document/uu/1975/3/pasal/0016/version/19750827> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1975/3/pasal/0016/version/19750827/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0017> a legal:Pasal .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/pasal/0018> a legal:Pasal .
+<http://example.org/legal/document/uu/1975/3/pasal/0018/version/19750827> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1975/3/pasal/0018/version/19750827/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/mengingat/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1975/3/menimbang/text> a legal:Text .
+<http://example.org/legal/document/uu/1975/3/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1975/3/bab> legal:partOf <http://example.org/legal/document/uu/1975/3> .
+<http://example.org/legal/document/uu/1975/3/bab/0001> legal:partOf <http://example.org/legal/document/uu/1975/3/bab> .
+<http://example.org/legal/document/uu/1975/3/bab/0001/pasals> legal:partOf <http://example.org/legal/document/uu/1975/3/bab/0001> .
+<http://example.org/legal/document/uu/1975/3/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1975/3/bab/0001/pasals> .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0001> .
+<http://example.org/legal/document/uu/1975/3/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1975/3> .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827> .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a/point> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a> .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a/point/0001> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a/point/0002> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/a/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point/b> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0001/version/19750827/point> .
+<http://example.org/legal/document/uu/1975/3/bab/0002> legal:partOf <http://example.org/legal/document/uu/1975/3/bab> .
+<http://example.org/legal/document/uu/1975/3/bab/0002/pasals> legal:partOf <http://example.org/legal/document/uu/1975/3/bab/0002> .
+<http://example.org/legal/document/uu/1975/3/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1975/3/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0002> .
+<http://example.org/legal/document/uu/1975/3/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1975/3> .
+<http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827/ayat> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827> .
+<http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827/ayat> .
+<http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827/ayat/0001> .
+<http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827/ayat> .
+<http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0002/version/19750827/ayat/0002> .
+<http://example.org/legal/document/uu/1975/3/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1975/3/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0003> .
+<http://example.org/legal/document/uu/1975/3/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1975/3> .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827> .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat> .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001> .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point/a> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point/b> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point/c> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0001/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat> .
+<http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0003/version/19750827/ayat/0002> .
+<http://example.org/legal/document/uu/1975/3/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1975/3/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1975/3/pasal/0004/version/19750827> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0004> .
+<http://example.org/legal/document/uu/1975/3/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1975/3> .
+<http://example.org/legal/document/uu/1975/3/bab/0003> legal:partOf <http://example.org/legal/document/uu/1975/3/bab> .
+<http://example.org/legal/document/uu/1975/3/bab/0003/pasals> legal:partOf <http://example.org/legal/document/uu/1975/3/bab/0003> .
+<http://example.org/legal/document/uu/1975/3/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1975/3/bab/0003/pasals> .
+<http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0005> .
+<http://example.org/legal/document/uu/1975/3/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1975/3> .
+<http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827/point> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827> .
+<http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827/point/a> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827/point/b> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0005/version/19750827/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0006> legal:partOf <http://example.org/legal/document/uu/1975/3/bab/0003/pasals> .
+<http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0006> .
+<http://example.org/legal/document/uu/1975/3/pasal/0006> legal:partOf <http://example.org/legal/document/uu/1975/3> .
+<http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827/point> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827> .
+<http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827/point/a> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827/point/b> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0006/version/19750827/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0007> legal:partOf <http://example.org/legal/document/uu/1975/3/bab/0003/pasals> .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0007> .
+<http://example.org/legal/document/uu/1975/3/pasal/0007> legal:partOf <http://example.org/legal/document/uu/1975/3> .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827> .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/a> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/b> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/c> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/d> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/e> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point/f> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0007/version/19750827/point> .
+<http://example.org/legal/document/uu/1975/3/bab/0004> legal:partOf <http://example.org/legal/document/uu/1975/3/bab> .
+<http://example.org/legal/document/uu/1975/3/bab/0004/pasals> legal:partOf <http://example.org/legal/document/uu/1975/3/bab/0004> .
+<http://example.org/legal/document/uu/1975/3/pasal/0008> legal:partOf <http://example.org/legal/document/uu/1975/3/bab/0004/pasals> .
+<http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0008> .
+<http://example.org/legal/document/uu/1975/3/pasal/0008> legal:partOf <http://example.org/legal/document/uu/1975/3> .
+<http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827> .
+<http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point/a> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point/b> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point/c> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0008/version/19750827/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0009> legal:partOf <http://example.org/legal/document/uu/1975/3/bab/0004/pasals> .
+<http://example.org/legal/document/uu/1975/3/pasal/0009/version/19750827> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0009> .
+<http://example.org/legal/document/uu/1975/3/pasal/0009> legal:partOf <http://example.org/legal/document/uu/1975/3> .
+<http://example.org/legal/document/uu/1975/3/pasal/0010> legal:partOf <http://example.org/legal/document/uu/1975/3/bab/0004/pasals> .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0010> .
+<http://example.org/legal/document/uu/1975/3/pasal/0010> legal:partOf <http://example.org/legal/document/uu/1975/3> .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827> .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat> .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001> .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point/a> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point/b> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point/c> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0001/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat> .
+<http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0010/version/19750827/ayat/0002> .
+<http://example.org/legal/document/uu/1975/3/bab/0005> legal:partOf <http://example.org/legal/document/uu/1975/3/bab> .
+<http://example.org/legal/document/uu/1975/3/bab/0005/pasals> legal:partOf <http://example.org/legal/document/uu/1975/3/bab/0005> .
+<http://example.org/legal/document/uu/1975/3/pasal/0011> legal:partOf <http://example.org/legal/document/uu/1975/3/bab/0005/pasals> .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0011> .
+<http://example.org/legal/document/uu/1975/3/pasal/0011> legal:partOf <http://example.org/legal/document/uu/1975/3> .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827> .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/a> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/b> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/c> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point/d> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0011/version/19750827/point> .
+<http://example.org/legal/document/uu/1975/3/bab/0006> legal:partOf <http://example.org/legal/document/uu/1975/3/bab> .
+<http://example.org/legal/document/uu/1975/3/bab/0006/pasals> legal:partOf <http://example.org/legal/document/uu/1975/3/bab/0006> .
+<http://example.org/legal/document/uu/1975/3/pasal/0012> legal:partOf <http://example.org/legal/document/uu/1975/3/bab/0006/pasals> .
+<http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0012> .
+<http://example.org/legal/document/uu/1975/3/pasal/0012> legal:partOf <http://example.org/legal/document/uu/1975/3> .
+<http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827> .
+<http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point/a> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point/b> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point/c> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0012/version/19750827/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0013> legal:partOf <http://example.org/legal/document/uu/1975/3/bab/0006/pasals> .
+<http://example.org/legal/document/uu/1975/3/pasal/0013/version/19750827> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0013> .
+<http://example.org/legal/document/uu/1975/3/pasal/0013> legal:partOf <http://example.org/legal/document/uu/1975/3> .
+<http://example.org/legal/document/uu/1975/3/pasal/0014> legal:partOf <http://example.org/legal/document/uu/1975/3/bab/0006/pasals> .
+<http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0014> .
+<http://example.org/legal/document/uu/1975/3/pasal/0014> legal:partOf <http://example.org/legal/document/uu/1975/3> .
+<http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827> .
+<http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat> .
+<http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat/0001> .
+<http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat> .
+<http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0014/version/19750827/ayat/0002> .
+<http://example.org/legal/document/uu/1975/3/bab/0007> legal:partOf <http://example.org/legal/document/uu/1975/3/bab> .
+<http://example.org/legal/document/uu/1975/3/bab/0007/pasals> legal:partOf <http://example.org/legal/document/uu/1975/3/bab/0007> .
+<http://example.org/legal/document/uu/1975/3/pasal/0015> legal:partOf <http://example.org/legal/document/uu/1975/3/bab/0007/pasals> .
+<http://example.org/legal/document/uu/1975/3/pasal/0015/version/19750827> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0015> .
+<http://example.org/legal/document/uu/1975/3/pasal/0015> legal:partOf <http://example.org/legal/document/uu/1975/3> .
+<http://example.org/legal/document/uu/1975/3/bab/0008> legal:partOf <http://example.org/legal/document/uu/1975/3/bab> .
+<http://example.org/legal/document/uu/1975/3/bab/0008/pasals> legal:partOf <http://example.org/legal/document/uu/1975/3/bab/0008> .
+<http://example.org/legal/document/uu/1975/3/pasal/0016> legal:partOf <http://example.org/legal/document/uu/1975/3/bab/0008/pasals> .
+<http://example.org/legal/document/uu/1975/3/pasal/0016/version/19750827> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0016> .
+<http://example.org/legal/document/uu/1975/3/pasal/0016> legal:partOf <http://example.org/legal/document/uu/1975/3> .
+<http://example.org/legal/document/uu/1975/3/pasal/0017> legal:partOf <http://example.org/legal/document/uu/1975/3/bab/0008/pasals> .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0017> .
+<http://example.org/legal/document/uu/1975/3/pasal/0017> legal:partOf <http://example.org/legal/document/uu/1975/3> .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827> .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat> .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001> .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point/a> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point/b> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point/c> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0001/point> .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat> .
+<http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0017/version/19750827/ayat/0002> .
+<http://example.org/legal/document/uu/1975/3/pasal/0018> legal:partOf <http://example.org/legal/document/uu/1975/3/bab/0008/pasals> .
+<http://example.org/legal/document/uu/1975/3/pasal/0018/version/19750827> legal:partOf <http://example.org/legal/document/uu/1975/3/pasal/0018> .
+<http://example.org/legal/document/uu/1975/3/pasal/0018> legal:partOf <http://example.org/legal/document/uu/1975/3> .

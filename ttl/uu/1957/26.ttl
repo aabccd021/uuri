@@ -1,0 +1,36 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1957/26> legal:documentHasBabSet <http://example.org/legal/document/uu/1957/26/bab> .
+<http://example.org/legal/document/uu/1957/26> legal:documentHasDisahkanDate "1957-07-27"^^xsd:date .
+<http://example.org/legal/document/uu/1957/26> legal:documentMengingat <http://example.org/legal/document/uu/1957/26/mengingat> .
+<http://example.org/legal/document/uu/1957/26/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1957/26/mengingat/point> .
+<http://example.org/legal/document/uu/1957/26/mengingat/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1957/26/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1957/26/mengingat/point/description> .
+<http://example.org/legal/document/uu/1957/26/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1957/26/mengingat/point/a> .
+<http://example.org/legal/document/uu/1957/26/mengingat/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1957/26/mengingat/point/a/text> legal:textHasTextString "Pasal 5 ayat (2) d an Pasal 12 ayat (1) Undang - undang tentang Penyelesaian Perselisihan Perburuhan." .
+<http://example.org/legal/document/uu/1957/26/mengingat/point/a> legal:pointHasText <http://example.org/legal/document/uu/1957/26/mengingat/point/a/text> .
+<http://example.org/legal/document/uu/1957/26/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1957/26/mengingat/point/b> .
+<http://example.org/legal/document/uu/1957/26/mengingat/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1957/26/mengingat/point/b/text> legal:textHasTextString "Pasal 89 Undang - undang Dasar Sementara Republik Indonesia, Dengan persetujuan Dewan Perwakilan Rakyat, MEMUTUSKAN : Menetapkan : UNDANG - UNDANG PERUBAHAN UNDANG - UNDANG TENTANG PENYELESAIAN PERSELISIHAN PERBURUHAN." .
+<http://example.org/legal/document/uu/1957/26/mengingat/point/b> legal:pointHasText <http://example.org/legal/document/uu/1957/26/mengingat/point/b/text> .
+<http://example.org/legal/document/uu/1957/26> legal:documentMenimbang <http://example.org/legal/document/uu/1957/26/menimbang> .
+<http://example.org/legal/document/uu/1957/26/menimbang/text> legal:textHasTextString "bahwa de ngan terjadinya perubahan Kementerian - kementerian, perlu diadakan penggantian mengenai keanggotaan wakil Kementerian Perekonomian dan Kementerian Perhubungan dalam Panitia Penyelesaian Perselisihan Perburuhan Pusat/Daerah," .
+<http://example.org/legal/document/uu/1957/26/menimbang> legal:menimbangHasText <http://example.org/legal/document/uu/1957/26/menimbang/text> .
+<http://example.org/legal/document/uu/1957/26> legal:documentHasDisahkanPengesah "SUKARNO" .
+<http://example.org/legal/document/uu/1957/26> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/1957/26> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/1957/26> a legal:Document .
+<http://example.org/legal/document/uu/1957/26/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1957/26/mengingat/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1957/26/mengingat/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1957/26/mengingat/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1957/26/mengingat/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1957/26/mengingat/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1957/26/mengingat/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1957/26/menimbang/text> a legal:Text .
+<http://example.org/legal/document/uu/1957/26/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1957/26/bab> legal:partOf <http://example.org/legal/document/uu/1957/26> .
+<http://example.org/legal/document/uu/1957/26/mengingat/point/a> legal:partOf <http://example.org/legal/document/uu/1957/26/mengingat/point> .
+<http://example.org/legal/document/uu/1957/26/mengingat/point/b> legal:partOf <http://example.org/legal/document/uu/1957/26/mengingat/point> .

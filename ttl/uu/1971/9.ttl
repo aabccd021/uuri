@@ -1,0 +1,52 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1971/9> legal:documentHasBabSet <http://example.org/legal/document/uu/1971/9/bab> .
+<http://example.org/legal/document/uu/1971/9> legal:documentHasDisahkanDate "1971-09-18"^^xsd:date .
+<http://example.org/legal/document/uu/1971/9> legal:documentMengingat <http://example.org/legal/document/uu/1971/9/mengingat> .
+<http://example.org/legal/document/uu/1971/9/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1971/9/mengingat/point> .
+<http://example.org/legal/document/uu/1971/9/mengingat/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1971/9/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1971/9/mengingat/point/description> .
+<http://example.org/legal/document/uu/1971/9/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1971/9/mengingat/point/0001> .
+<http://example.org/legal/document/uu/1971/9/mengingat/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/1971/9/mengingat/point/0001/text> legal:textHasTextString "Pasal S ayat (1), pasal 11 dan pasal 20 ayat (1) Undang-undang Dasar 1945," .
+<http://example.org/legal/document/uu/1971/9/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1971/9/mengingat/point/0001/text> .
+<http://example.org/legal/document/uu/1971/9/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1971/9/mengingat/point/0002> .
+<http://example.org/legal/document/uu/1971/9/mengingat/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/1971/9/mengingat/point/0002/text> legal:textHasTextString "Amanat Presiden Republik Indonesia kepada Ketua Dewan Perwakilan Rakyat tanggal 22 Agustus 1960 No. 2826/HK/ 1960. Dengan persetujuan Dewan Perwakilan Rakyat Gotong Royong. MEMUTUSKAN : Menetapkan : UNDANG-UNDANG TENTANG PERJANJIAN PERSAHABATAN ANTARA REPUBLIK INDONESIA DAN KERAJAAN SAUDI ARABIA." .
+<http://example.org/legal/document/uu/1971/9/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1971/9/mengingat/point/0002/text> .
+<http://example.org/legal/document/uu/1971/9> legal:documentMenimbang <http://example.org/legal/document/uu/1971/9/menimbang> .
+<http://example.org/legal/document/uu/1971/9/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/1971/9/menimbang/point> .
+<http://example.org/legal/document/uu/1971/9/menimbang/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1971/9/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1971/9/menimbang/point/description> .
+<http://example.org/legal/document/uu/1971/9/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1971/9/menimbang/point/a> .
+<http://example.org/legal/document/uu/1971/9/menimbang/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1971/9/menimbang/point/a/text> legal:textHasTextString "bahwa pada tanggal 24 Nopember 1970 telah ditanda-tangani Perjanjian Persahabatan antara Republik Indonesia dan Kerajaan Saudi Arabia:" .
+<http://example.org/legal/document/uu/1971/9/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/1971/9/menimbang/point/a/text> .
+<http://example.org/legal/document/uu/1971/9/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1971/9/menimbang/point/b> .
+<http://example.org/legal/document/uu/1971/9/menimbang/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1971/9/menimbang/point/b/text> legal:textHasTextString "bahwa Perjanjian Persahabatan ini perlu disetujui dengan Undang-undang." .
+<http://example.org/legal/document/uu/1971/9/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/1971/9/menimbang/point/b/text> .
+<http://example.org/legal/document/uu/1971/9> legal:documentHasDisahkanPengesah "Jenderal TNI" .
+<http://example.org/legal/document/uu/1971/9> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/1971/9> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/1971/9> a legal:Document .
+<http://example.org/legal/document/uu/1971/9/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1971/9/mengingat/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1971/9/mengingat/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1971/9/mengingat/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/1971/9/mengingat/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1971/9/mengingat/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/1971/9/mengingat/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1971/9/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1971/9/menimbang/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1971/9/menimbang/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1971/9/menimbang/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1971/9/menimbang/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1971/9/menimbang/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1971/9/menimbang/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1971/9/bab> legal:partOf <http://example.org/legal/document/uu/1971/9> .
+<http://example.org/legal/document/uu/1971/9/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1971/9/mengingat/point> .
+<http://example.org/legal/document/uu/1971/9/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1971/9/mengingat/point> .
+<http://example.org/legal/document/uu/1971/9/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1971/9/menimbang/point> .
+<http://example.org/legal/document/uu/1971/9/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1971/9/menimbang/point> .

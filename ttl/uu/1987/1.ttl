@@ -1,0 +1,542 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1987/1> legal:documentHasBabSet <http://example.org/legal/document/uu/1987/1/bab> .
+<http://example.org/legal/document/uu/1987/1/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1987/1/bab/0001> .
+<http://example.org/legal/document/uu/1987/1/bab/0001> legal:babHasKey 1 .
+<http://example.org/legal/document/uu/1987/1/bab/0001> legal:babHasTitle "KETENTUAN UMUM" .
+<http://example.org/legal/document/uu/1987/1/bab/0001> legal:babHasPasalSet <http://example.org/legal/document/uu/1987/1/bab/0001/pasals> .
+<http://example.org/legal/document/uu/1987/1/bab/0001/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1987/1/pasal/0001> .
+<http://example.org/legal/document/uu/1987/1/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1987/1/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128> .
+<http://example.org/legal/document/uu/1987/1> legal:documentHasPasal <http://example.org/legal/document/uu/1987/1/pasal/0001> .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128> legal:pasalVersionHasVersionDate "1987-01-28"^^xsd:date .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128> legal:pasalVersionHasRawText "Dalam Undang-undang ini yang dimaksud dengan:\na. Kamar Dagang dan Industri adalah wadah bagi pengusaha Indonesia dan bergerak dalam bidang perekonomian;\nb. Pengusaha adalah setiap orang perseorangan atau persekutuan atau badan hukum yang menjalankan sesuatu jenis perusahaan;\nc. Perusahaan adalah setiap bentuk usaha yang menjalankan setiap jenis usaha yang bersifat tetap dan terus-menerus, yang didirikan dan bekerja serta berkedudukan dalam wilayah Negara Republik Indonesia untuk tujuan memperoleh keuntungan dan/atau laba;\nd. Usaha adalah setiap tindakan, perbuatan, atau kegiatan apapun dalam bidang perekonomian, yang dilakukan oleh setiap pengusaha untuk tujuan memperoleh keuntungan dan/atau laba;\ne. Organisasi Pengusaha adalah wadah persatuan dan kesatuan bagi pengusaha Indonesia yang didirikan secara sah atas dasar kesamaan tujuan, aspirasi, strata kepengurusan, atau ciri-ciri alamiah tertentu;\nf. Organisasi Perusahaan adalah wadah persatuan dan kesatuan bagi perusahaan Indonesia yang didirikan secara sah atas dasar kesamaan jenis usaha, mata dagangan, atau jasa yang dihasilkan ataupun yang diperdagangkan.\n" .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point> .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/description> legal:textHasTextString "Dalam Undang-undang ini yang dimaksud dengan:" .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/description> .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/a> .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/a/text> legal:textHasTextString "Kamar Dagang dan Industri adalah wadah bagi pengusaha Indonesia dan bergerak dalam bidang perekonomian;" .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/a> legal:pointHasText <http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/a/text> .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/b> .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/b/text> legal:textHasTextString "Pengusaha adalah setiap orang perseorangan atau persekutuan atau badan hukum yang menjalankan sesuatu jenis perusahaan;" .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/b> legal:pointHasText <http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/b/text> .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/c> .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/c/text> legal:textHasTextString "Perusahaan adalah setiap bentuk usaha yang menjalankan setiap jenis usaha yang bersifat tetap dan terus-menerus, yang didirikan dan bekerja serta berkedudukan dalam wilayah Negara Republik Indonesia untuk tujuan memperoleh keuntungan dan/atau laba;" .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/c> legal:pointHasText <http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/c/text> .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/d> .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/d/text> legal:textHasTextString "Usaha adalah setiap tindakan, perbuatan, atau kegiatan apapun dalam bidang perekonomian, yang dilakukan oleh setiap pengusaha untuk tujuan memperoleh keuntungan dan/atau laba;" .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/d> legal:pointHasText <http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/d/text> .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/e> .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/e/text> legal:textHasTextString "Organisasi Pengusaha adalah wadah persatuan dan kesatuan bagi pengusaha Indonesia yang didirikan secara sah atas dasar kesamaan tujuan, aspirasi, strata kepengurusan, atau ciri-ciri alamiah tertentu;" .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/e> legal:pointHasText <http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/e/text> .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/f> .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/f> legal:pointHasKey "f" .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/f/text> legal:textHasTextString "Organisasi Perusahaan adalah wadah persatuan dan kesatuan bagi perusahaan Indonesia yang didirikan secara sah atas dasar kesamaan jenis usaha, mata dagangan, atau jasa yang dihasilkan ataupun yang diperdagangkan." .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/f> legal:pointHasText <http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/f/text> .
+<http://example.org/legal/document/uu/1987/1/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1987/1/bab/0002> .
+<http://example.org/legal/document/uu/1987/1/bab/0002> legal:babHasKey 2 .
+<http://example.org/legal/document/uu/1987/1/bab/0002> legal:babHasTitle "ASAS DAN TUJUAN" .
+<http://example.org/legal/document/uu/1987/1/bab/0002> legal:babHasPasalSet <http://example.org/legal/document/uu/1987/1/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1987/1/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1987/1/pasal/0002> .
+<http://example.org/legal/document/uu/1987/1/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1987/1/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128> .
+<http://example.org/legal/document/uu/1987/1> legal:documentHasPasal <http://example.org/legal/document/uu/1987/1/pasal/0002> .
+<http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128> legal:pasalVersionHasVersionDate "1987-01-28"^^xsd:date .
+<http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128> legal:pasalVersionHasRawText "(1). Kamar Dagang dan Industri berasaskan Pancasila sebagai satu-satunya asas.\n(2). Asas sebagaimana dimaksud dalam ayat (1) wajib dicantumkan dalam Pasal Anggaran Dasar." .
+<http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128/ayat> .
+<http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128/ayat/0001> .
+<http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128/ayat/0001> legal:ayatHasRawText "Kamar Dagang dan Industri berasaskan Pancasila sebagai satu-satunya asas." .
+<http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128/ayat/0001/text> legal:textHasTextString "Kamar Dagang dan Industri berasaskan Pancasila sebagai satu-satunya asas." .
+<http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128/ayat/0001/text> .
+<http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128/ayat/0002> .
+<http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128/ayat/0002> legal:ayatHasRawText "Asas sebagaimana dimaksud dalam ayat (1) wajib dicantumkan dalam Pasal Anggaran Dasar." .
+<http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128/ayat/0002/text> legal:textHasTextString "Asas sebagaimana dimaksud dalam ayat (1) wajib dicantumkan dalam Pasal Anggaran Dasar." .
+<http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128/ayat/0002/text> .
+<http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128/ayat/0001> .
+<http://example.org/legal/document/uu/1987/1/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1987/1/pasal/0003> .
+<http://example.org/legal/document/uu/1987/1/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/1987/1/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128> .
+<http://example.org/legal/document/uu/1987/1> legal:documentHasPasal <http://example.org/legal/document/uu/1987/1/pasal/0003> .
+<http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128> legal:pasalVersionHasVersionDate "1987-01-28"^^xsd:date .
+<http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128> legal:pasalVersionHasRawText "Kamar Dagang dan Industri bertujuan :\na. membina dan mengembangkan kemampuan, kegiatan, dan kepentingan pengusaha Indonesia di bidang usaha negara, usaha koperasi, dan usaha swasta dalam kedudukannya sebagai pelaku-pelaku ekonomi nasional dalam rangka mewujudkan kehidupan ekonomi dan dunia usaha nasional yang sehat dan tertib beradasarkan Pasal 33 Undang-Undang Dasar 1945;\nb. menciptakan dan mengembangkan iklim dunia usaha yang memungkinkan keikutsertaan yang seluas-luasnya secara efektif dalam Pembangunan Nasional. PRESIDEN REPUBLIK INDONESIA - 3 -\n" .
+<http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128/point> .
+<http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128/point/description> legal:textHasTextString "Kamar Dagang dan Industri bertujuan :" .
+<http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128/point/description> .
+<http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128/point/a> .
+<http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128/point/a/text> legal:textHasTextString "membina dan mengembangkan kemampuan, kegiatan, dan kepentingan pengusaha Indonesia di bidang usaha negara, usaha koperasi, dan usaha swasta dalam kedudukannya sebagai pelaku-pelaku ekonomi nasional dalam rangka mewujudkan kehidupan ekonomi dan dunia usaha nasional yang sehat dan tertib beradasarkan Pasal 33 Undang-Undang Dasar 1945;" .
+<http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128/point/a> legal:pointHasText <http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128/point/a/text> .
+<http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128/point/a/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1987/1/pasal/0033> .
+<http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128/point/b> .
+<http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128/point/b/text> legal:textHasTextString "menciptakan dan mengembangkan iklim dunia usaha yang memungkinkan keikutsertaan yang seluas-luasnya secara efektif dalam Pembangunan Nasional. PRESIDEN REPUBLIK INDONESIA - 3 -" .
+<http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128/point/b> legal:pointHasText <http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128/point/b/text> .
+<http://example.org/legal/document/uu/1987/1/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1987/1/bab/0003> .
+<http://example.org/legal/document/uu/1987/1/bab/0003> legal:babHasKey 3 .
+<http://example.org/legal/document/uu/1987/1/bab/0003> legal:babHasTitle "BENTUK DAN SIFAT" .
+<http://example.org/legal/document/uu/1987/1/bab/0003> legal:babHasPasalSet <http://example.org/legal/document/uu/1987/1/bab/0003/pasals> .
+<http://example.org/legal/document/uu/1987/1/bab/0003/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1987/1/pasal/0004> .
+<http://example.org/legal/document/uu/1987/1/pasal/0004> legal:pasalHasKey 4 .
+<http://example.org/legal/document/uu/1987/1/pasal/0004> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1987/1/pasal/0004/version/19870128> .
+<http://example.org/legal/document/uu/1987/1> legal:documentHasPasal <http://example.org/legal/document/uu/1987/1/pasal/0004> .
+<http://example.org/legal/document/uu/1987/1/pasal/0004/version/19870128> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1987/1/pasal/0004/version/19870128> legal:pasalVersionHasVersionDate "1987-01-28"^^xsd:date .
+<http://example.org/legal/document/uu/1987/1/pasal/0004/version/19870128> legal:pasalVersionHasRawText "Dengan Undang-undang ini ditetapkan adanya satu Kamar Dagang dan Industri yang merupakan wadah bagi pengusaha Indonesia, baik yang tidak bergabung maupun yang bergabung dalam organisasi pengusaha dan/atau organisasi perusahaan." .
+<http://example.org/legal/document/uu/1987/1/pasal/0004/version/19870128/text> legal:textHasTextString "Dengan Undang-undang ini ditetapkan adanya satu Kamar Dagang dan Industri yang merupakan wadah bagi pengusaha Indonesia, baik yang tidak bergabung maupun yang bergabung dalam organisasi pengusaha dan/atau organisasi perusahaan." .
+<http://example.org/legal/document/uu/1987/1/pasal/0004/version/19870128> legal:pasalVersionHasText <http://example.org/legal/document/uu/1987/1/pasal/0004/version/19870128/text> .
+<http://example.org/legal/document/uu/1987/1/bab/0003/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1987/1/pasal/0005> .
+<http://example.org/legal/document/uu/1987/1/pasal/0005> legal:pasalHasKey 5 .
+<http://example.org/legal/document/uu/1987/1/pasal/0005> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1987/1/pasal/0005/version/19870128> .
+<http://example.org/legal/document/uu/1987/1> legal:documentHasPasal <http://example.org/legal/document/uu/1987/1/pasal/0005> .
+<http://example.org/legal/document/uu/1987/1/pasal/0005/version/19870128> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1987/1/pasal/0005/version/19870128> legal:pasalVersionHasVersionDate "1987-01-28"^^xsd:date .
+<http://example.org/legal/document/uu/1987/1/pasal/0005/version/19870128> legal:pasalVersionHasRawText "Kamar Dagang dan Industri bersifat mandiri, bukan organisasi pemerintah dan bukan organisasi politik serta dalam melakukan kegiatannya tidak mencari keuntungan." .
+<http://example.org/legal/document/uu/1987/1/pasal/0005/version/19870128/text> legal:textHasTextString "Kamar Dagang dan Industri bersifat mandiri, bukan organisasi pemerintah dan bukan organisasi politik serta dalam melakukan kegiatannya tidak mencari keuntungan." .
+<http://example.org/legal/document/uu/1987/1/pasal/0005/version/19870128> legal:pasalVersionHasText <http://example.org/legal/document/uu/1987/1/pasal/0005/version/19870128/text> .
+<http://example.org/legal/document/uu/1987/1/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1987/1/bab/0004> .
+<http://example.org/legal/document/uu/1987/1/bab/0004> legal:babHasKey 4 .
+<http://example.org/legal/document/uu/1987/1/bab/0004> legal:babHasTitle "FUNGSI DAN KEGIATAN" .
+<http://example.org/legal/document/uu/1987/1/bab/0004> legal:babHasPasalSet <http://example.org/legal/document/uu/1987/1/bab/0004/pasals> .
+<http://example.org/legal/document/uu/1987/1/bab/0004/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1987/1/pasal/0006> .
+<http://example.org/legal/document/uu/1987/1/pasal/0006> legal:pasalHasKey 6 .
+<http://example.org/legal/document/uu/1987/1/pasal/0006> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1987/1/pasal/0006/version/19870128> .
+<http://example.org/legal/document/uu/1987/1> legal:documentHasPasal <http://example.org/legal/document/uu/1987/1/pasal/0006> .
+<http://example.org/legal/document/uu/1987/1/pasal/0006/version/19870128> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1987/1/pasal/0006/version/19870128> legal:pasalVersionHasVersionDate "1987-01-28"^^xsd:date .
+<http://example.org/legal/document/uu/1987/1/pasal/0006/version/19870128> legal:pasalVersionHasRawText "Kamar Dagang dan Industri merupakan wadah komunikasi dan konsultasi antar pengusaha Indonesia dan antara pengusaha Indonesia dan Pemerintah mengenai hal-hal yang berkaitan dengan masalah perdagangan, perindustrian, dan jasa." .
+<http://example.org/legal/document/uu/1987/1/pasal/0006/version/19870128/text> legal:textHasTextString "Kamar Dagang dan Industri merupakan wadah komunikasi dan konsultasi antar pengusaha Indonesia dan antara pengusaha Indonesia dan Pemerintah mengenai hal-hal yang berkaitan dengan masalah perdagangan, perindustrian, dan jasa." .
+<http://example.org/legal/document/uu/1987/1/pasal/0006/version/19870128> legal:pasalVersionHasText <http://example.org/legal/document/uu/1987/1/pasal/0006/version/19870128/text> .
+<http://example.org/legal/document/uu/1987/1/bab/0004/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1987/1/pasal/0007> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007> legal:pasalHasKey 7 .
+<http://example.org/legal/document/uu/1987/1/pasal/0007> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128> .
+<http://example.org/legal/document/uu/1987/1> legal:documentHasPasal <http://example.org/legal/document/uu/1987/1/pasal/0007> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128> legal:pasalVersionHasVersionDate "1987-01-28"^^xsd:date .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128> legal:pasalVersionHasRawText "Untuk mewujudkan tujuan sebagaimana dimaksud dalam Pasal 3 Kamar Dagang dan Industri melakukan kegiatan-kegiatan, antara lain, sebagai berikut :\na. penyebarluasan informasi mengenai kebijaksanaan Pemerintah di bidang ekonomi kepada pengusaha Indonesia;\nb. penyampaian informasi mengenai perma salahan dan perkembangan perekonomian dunia, yang dapat berpegaruh terhadap kehidupan ekonomi dan dunia usaha nasional, kepada Pemerintah dan para pengusaha;\nc. penyaluran aspirasi dan kepentingan para pengusaha di bidang perdagangan, perindustrian, dan jasa dalam rangka keikutsertaannya dalam pembangunan di bidang ekonomi;\nd. penyelenggaraan pdndidikan, latihan, dan kegiatan-kegiatan lain yang bermanfaat dalam rangka pembinaan dan pengembangan kemampuan pengusaha Indonesia;\ne. penyelenggaraan dan peningkatan hubungan dan kerja sama yang saling menunjang dan saling menguntungkan antarpengusaha Indonesia, termasuk pengembangan keterkaitan antarbidang usaha industri dan bidang usaha sektor ekonomi lainnya;\nf. penyelenggaraan upaya memelihara kerukunan di satu pihak serta upaya mencegah yang tidak sehat di pihak lain di antara pengusaha Indonesia, dan mewujudkan kerjsama yang serasi antara usaha negara, koperasi, dan usaha swasta serta menciptakan pemerataan kesempatan berusaha;\ng. penyelenggaraan dan peningkatan hubungan dan kerja sama antara pengusaha Indonesia dan pengusaha luar negeri seiring dengan kebutuhan dan kepentingan pembangunan di bidang ekonomi sesuai dengan tujuan Pembangunan Nasional;\nh. penyelenggaraan promosi dalam dan luar negeri, analisis statistik, dan pusat informasi usaha; PRESIDEN REPUBLIK INDONESIA - 4 -\ni. pembinaan hubungan kerja yang serasi antara pekerja dan pengusaha;\nj. penyelenggaraan upaya menyeimbangkan dan melestarikan alam serta mencegah timbulnya kerusakan dan pencemaran terhadap lingkungan hidup;\n" .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/description> legal:textHasTextString "Untuk mewujudkan tujuan sebagaimana dimaksud dalam Pasal 3 Kamar Dagang dan Industri melakukan kegiatan-kegiatan, antara lain, sebagai berikut :" .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/description> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/a> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/a/text> legal:textHasTextString "penyebarluasan informasi mengenai kebijaksanaan Pemerintah di bidang ekonomi kepada pengusaha Indonesia;" .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/a> legal:pointHasText <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/a/text> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/b> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/b/text> legal:textHasTextString "penyampaian informasi mengenai perma salahan dan perkembangan perekonomian dunia, yang dapat berpegaruh terhadap kehidupan ekonomi dan dunia usaha nasional, kepada Pemerintah dan para pengusaha;" .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/b> legal:pointHasText <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/b/text> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/c> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/c/text> legal:textHasTextString "penyaluran aspirasi dan kepentingan para pengusaha di bidang perdagangan, perindustrian, dan jasa dalam rangka keikutsertaannya dalam pembangunan di bidang ekonomi;" .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/c> legal:pointHasText <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/c/text> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/d> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/d/text> legal:textHasTextString "penyelenggaraan pdndidikan, latihan, dan kegiatan-kegiatan lain yang bermanfaat dalam rangka pembinaan dan pengembangan kemampuan pengusaha Indonesia;" .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/d> legal:pointHasText <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/d/text> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/e> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/e/text> legal:textHasTextString "penyelenggaraan dan peningkatan hubungan dan kerja sama yang saling menunjang dan saling menguntungkan antarpengusaha Indonesia, termasuk pengembangan keterkaitan antarbidang usaha industri dan bidang usaha sektor ekonomi lainnya;" .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/e> legal:pointHasText <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/e/text> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/f> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/f> legal:pointHasKey "f" .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/f/text> legal:textHasTextString "penyelenggaraan upaya memelihara kerukunan di satu pihak serta upaya mencegah yang tidak sehat di pihak lain di antara pengusaha Indonesia, dan mewujudkan kerjsama yang serasi antara usaha negara, koperasi, dan usaha swasta serta menciptakan pemerataan kesempatan berusaha;" .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/f> legal:pointHasText <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/f/text> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/g> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/g> legal:pointHasKey "g" .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/g/text> legal:textHasTextString "penyelenggaraan dan peningkatan hubungan dan kerja sama antara pengusaha Indonesia dan pengusaha luar negeri seiring dengan kebutuhan dan kepentingan pembangunan di bidang ekonomi sesuai dengan tujuan Pembangunan Nasional;" .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/g> legal:pointHasText <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/g/text> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/h> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/h> legal:pointHasKey "h" .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/h/text> legal:textHasTextString "penyelenggaraan promosi dalam dan luar negeri, analisis statistik, dan pusat informasi usaha; PRESIDEN REPUBLIK INDONESIA - 4 -" .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/h> legal:pointHasText <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/h/text> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/i> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/i> legal:pointHasKey "i" .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/i/text> legal:textHasTextString "pembinaan hubungan kerja yang serasi antara pekerja dan pengusaha;" .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/i> legal:pointHasText <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/i/text> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/j> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/j> legal:pointHasKey "j" .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/j/text> legal:textHasTextString "penyelenggaraan upaya menyeimbangkan dan melestarikan alam serta mencegah timbulnya kerusakan dan pencemaran terhadap lingkungan hidup;" .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/j> legal:pointHasText <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/j/text> .
+<http://example.org/legal/document/uu/1987/1/bab/0004/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1987/1/pasal/0008> .
+<http://example.org/legal/document/uu/1987/1/pasal/0008> legal:pasalHasKey 8 .
+<http://example.org/legal/document/uu/1987/1/pasal/0008> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128> .
+<http://example.org/legal/document/uu/1987/1> legal:documentHasPasal <http://example.org/legal/document/uu/1987/1/pasal/0008> .
+<http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128> legal:pasalVersionHasVersionDate "1987-01-28"^^xsd:date .
+<http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128> legal:pasalVersionHasRawText "Selain kegiatan-kegiatan sebagaimana dima ksud dalam Pasal 7, dalam rangka pembinaan pengusaha Indonesia dan penciptaan iklim usaha yang sehat dan tertib, Kamar Dagang dan Industri dapat pula melakukan :\na. jasa-jasa baik dalam bentuk pemberian surat keterangan, penengahan, arbitrasi dan rekomendasi mengenai usaha pengusaha Indonesia, termasuk legalisasi surat-surat yang diperlukan bagi kelancaran usahanya;\nb. tugas-tugas lain yang diberikan oleh Pemerintah.\n" .
+<http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128/point> .
+<http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128/point/description> legal:textHasTextString "Selain kegiatan-kegiatan sebagaimana dima ksud dalam Pasal 7, dalam rangka pembinaan pengusaha Indonesia dan penciptaan iklim usaha yang sehat dan tertib, Kamar Dagang dan Industri dapat pula melakukan :" .
+<http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128/point/description> .
+<http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128/point/a> .
+<http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128/point/a/text> legal:textHasTextString "jasa-jasa baik dalam bentuk pemberian surat keterangan, penengahan, arbitrasi dan rekomendasi mengenai usaha pengusaha Indonesia, termasuk legalisasi surat-surat yang diperlukan bagi kelancaran usahanya;" .
+<http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128/point/a> legal:pointHasText <http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128/point/a/text> .
+<http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128/point/b> .
+<http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128/point/b/text> legal:textHasTextString "tugas-tugas lain yang diberikan oleh Pemerintah." .
+<http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128/point/b> legal:pointHasText <http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128/point/b/text> .
+<http://example.org/legal/document/uu/1987/1/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1987/1/bab/0005> .
+<http://example.org/legal/document/uu/1987/1/bab/0005> legal:babHasKey 5 .
+<http://example.org/legal/document/uu/1987/1/bab/0005> legal:babHasTitle "ORGANISASI DAN KEANGGOTAAN" .
+<http://example.org/legal/document/uu/1987/1/bab/0005> legal:babHasPasalSet <http://example.org/legal/document/uu/1987/1/bab/0005/pasals> .
+<http://example.org/legal/document/uu/1987/1/bab/0005/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1987/1/pasal/0009> .
+<http://example.org/legal/document/uu/1987/1/pasal/0009> legal:pasalHasKey 9 .
+<http://example.org/legal/document/uu/1987/1/pasal/0009> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1987/1/pasal/0009/version/19870128> .
+<http://example.org/legal/document/uu/1987/1> legal:documentHasPasal <http://example.org/legal/document/uu/1987/1/pasal/0009> .
+<http://example.org/legal/document/uu/1987/1/pasal/0009/version/19870128> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1987/1/pasal/0009/version/19870128> legal:pasalVersionHasVersionDate "1987-01-28"^^xsd:date .
+<http://example.org/legal/document/uu/1987/1/pasal/0009/version/19870128> legal:pasalVersionHasRawText "Organisasi yang dibentuk oleh pengusaha Indonesia yang memenuhi ketentuan untuk disebut Kamar Dagang dan Industri sebagaimana dimaksud dalam Undang-undang ini, ditetapkan dengan Keputusan Presiden." .
+<http://example.org/legal/document/uu/1987/1/pasal/0009/version/19870128/text> legal:textHasTextString "Organisasi yang dibentuk oleh pengusaha Indonesia yang memenuhi ketentuan untuk disebut Kamar Dagang dan Industri sebagaimana dimaksud dalam Undang-undang ini, ditetapkan dengan Keputusan Presiden." .
+<http://example.org/legal/document/uu/1987/1/pasal/0009/version/19870128> legal:pasalVersionHasText <http://example.org/legal/document/uu/1987/1/pasal/0009/version/19870128/text> .
+<http://example.org/legal/document/uu/1987/1/bab/0005/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1987/1/pasal/0010> .
+<http://example.org/legal/document/uu/1987/1/pasal/0010> legal:pasalHasKey 10 .
+<http://example.org/legal/document/uu/1987/1/pasal/0010> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128> .
+<http://example.org/legal/document/uu/1987/1> legal:documentHasPasal <http://example.org/legal/document/uu/1987/1/pasal/0010> .
+<http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128> legal:pasalVersionHasVersionDate "1987-01-28"^^xsd:date .
+<http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128> legal:pasalVersionHasRawText "(1). Bentuk dan susunan organisasi, keanggotaan dan lain-lainnya yang berkaitan dengan organisasi Kamar Dagang dan Industri, diatur lebih lanjut dalam Anggaran Dasar dan Anggaran Rumah Tangga.\n(2). Ruang lingkup keanggotaan sebagaimana dimaksud dalam ayat (1) meliputi usaha negara, usaha koperasi dan usaha swasta." .
+<http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128/ayat> .
+<http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128/ayat/0001> .
+<http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128/ayat/0001> legal:ayatHasRawText "Bentuk dan susunan organisasi, keanggotaan dan lain-lainnya yang berkaitan dengan organisasi Kamar Dagang dan Industri, diatur lebih lanjut dalam Anggaran Dasar dan Anggaran Rumah Tangga." .
+<http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128/ayat/0001/text> legal:textHasTextString "Bentuk dan susunan organisasi, keanggotaan dan lain-lainnya yang berkaitan dengan organisasi Kamar Dagang dan Industri, diatur lebih lanjut dalam Anggaran Dasar dan Anggaran Rumah Tangga." .
+<http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128/ayat/0001/text> .
+<http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128/ayat/0002> .
+<http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128/ayat/0002> legal:ayatHasRawText "Ruang lingkup keanggotaan sebagaimana dimaksud dalam ayat (1) meliputi usaha negara, usaha koperasi dan usaha swasta." .
+<http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128/ayat/0002/text> legal:textHasTextString "Ruang lingkup keanggotaan sebagaimana dimaksud dalam ayat (1) meliputi usaha negara, usaha koperasi dan usaha swasta." .
+<http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128/ayat/0002/text> .
+<http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128/ayat/0001> .
+<http://example.org/legal/document/uu/1987/1/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1987/1/bab/0006> .
+<http://example.org/legal/document/uu/1987/1/bab/0006> legal:babHasKey 6 .
+<http://example.org/legal/document/uu/1987/1/bab/0006> legal:babHasTitle "PENGAWASAN" .
+<http://example.org/legal/document/uu/1987/1/bab/0006> legal:babHasPasalSet <http://example.org/legal/document/uu/1987/1/bab/0006/pasals> .
+<http://example.org/legal/document/uu/1987/1/bab/0006/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1987/1/pasal/0011> .
+<http://example.org/legal/document/uu/1987/1/pasal/0011> legal:pasalHasKey 11 .
+<http://example.org/legal/document/uu/1987/1/pasal/0011> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1987/1/pasal/0011/version/19870128> .
+<http://example.org/legal/document/uu/1987/1> legal:documentHasPasal <http://example.org/legal/document/uu/1987/1/pasal/0011> .
+<http://example.org/legal/document/uu/1987/1/pasal/0011/version/19870128> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1987/1/pasal/0011/version/19870128> legal:pasalVersionHasVersionDate "1987-01-28"^^xsd:date .
+<http://example.org/legal/document/uu/1987/1/pasal/0011/version/19870128> legal:pasalVersionHasRawText "Pemerintah melakukan pengawasan terhadap Kamar Dagang dan Industri mengenai pelaksanaan ketentuan dalam Undang-undang ini, ketentuan peraturan perundang-undangan lainnya, dan kebijaksanaan Pemerintah di bidang pembangunan ekonomi." .
+<http://example.org/legal/document/uu/1987/1/pasal/0011/version/19870128/text> legal:textHasTextString "Pemerintah melakukan pengawasan terhadap Kamar Dagang dan Industri mengenai pelaksanaan ketentuan dalam Undang-undang ini, ketentuan peraturan perundang-undangan lainnya, dan kebijaksanaan Pemerintah di bidang pembangunan ekonomi." .
+<http://example.org/legal/document/uu/1987/1/pasal/0011/version/19870128> legal:pasalVersionHasText <http://example.org/legal/document/uu/1987/1/pasal/0011/version/19870128/text> .
+<http://example.org/legal/document/uu/1987/1/bab/0006/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1987/1/pasal/0012> .
+<http://example.org/legal/document/uu/1987/1/pasal/0012> legal:pasalHasKey 12 .
+<http://example.org/legal/document/uu/1987/1/pasal/0012> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1987/1/pasal/0012/version/19870128> .
+<http://example.org/legal/document/uu/1987/1> legal:documentHasPasal <http://example.org/legal/document/uu/1987/1/pasal/0012> .
+<http://example.org/legal/document/uu/1987/1/pasal/0012/version/19870128> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1987/1/pasal/0012/version/19870128> legal:pasalVersionHasVersionDate "1987-01-28"^^xsd:date .
+<http://example.org/legal/document/uu/1987/1/pasal/0012/version/19870128> legal:pasalVersionHasRawText "Apabila kemudian hari ternyata terjadi peny impangan dari ketentuan sebagaimana diatur dalam Undang-undang ini; Pemerintah dapat mencabut Keputusan Presiden sebagaimana dimaksud dalam Pasal 9." .
+<http://example.org/legal/document/uu/1987/1/pasal/0012/version/19870128/text> legal:textHasTextString "Apabila kemudian hari ternyata terjadi peny impangan dari ketentuan sebagaimana diatur dalam Undang-undang ini; Pemerintah dapat mencabut Keputusan Presiden sebagaimana dimaksud dalam Pasal 9." .
+<http://example.org/legal/document/uu/1987/1/pasal/0012/version/19870128> legal:pasalVersionHasText <http://example.org/legal/document/uu/1987/1/pasal/0012/version/19870128/text> .
+<http://example.org/legal/document/uu/1987/1/pasal/0012/version/19870128/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1987/1/pasal/0009> .
+<http://example.org/legal/document/uu/1987/1/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1987/1/bab/0007> .
+<http://example.org/legal/document/uu/1987/1/bab/0007> legal:babHasKey 7 .
+<http://example.org/legal/document/uu/1987/1/bab/0007> legal:babHasTitle "KETENTUAN PERALIHAN" .
+<http://example.org/legal/document/uu/1987/1/bab/0007> legal:babHasPasalSet <http://example.org/legal/document/uu/1987/1/bab/0007/pasals> .
+<http://example.org/legal/document/uu/1987/1/bab/0007/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1987/1/pasal/0013> .
+<http://example.org/legal/document/uu/1987/1/pasal/0013> legal:pasalHasKey 13 .
+<http://example.org/legal/document/uu/1987/1/pasal/0013> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128> .
+<http://example.org/legal/document/uu/1987/1> legal:documentHasPasal <http://example.org/legal/document/uu/1987/1/pasal/0013> .
+<http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128> legal:pasalVersionHasVersionDate "1987-01-28"^^xsd:date .
+<http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128> legal:pasalVersionHasRawText "(1). Selambat-lambatnya dalam waktu 1 (satu) tahun sejak berlakunya Undang-undang ini, Kamar Dagang dan Industri yang berdasarkan Undang-undang ini telah dibentuk oleh pengusaha Indonesia. PRESIDEN REPUBLIK INDONESIA - 5 -\n(2). Keputusan Presiden Nomor 49 Tahun 1973 tentang Kamar Dagang dan Industri (KADIN) tetap berlaku sampai dibentuknya Kamar Dagang dan Industri berdasarkan Undang-undang ini." .
+<http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128/ayat> .
+<http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128/ayat/0001> .
+<http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128/ayat/0001> legal:ayatHasRawText "Selambat-lambatnya dalam waktu 1 (satu) tahun sejak berlakunya Undang-undang ini, Kamar Dagang dan Industri yang berdasarkan Undang-undang ini telah dibentuk oleh pengusaha Indonesia. PRESIDEN REPUBLIK INDONESIA - 5 -" .
+<http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128/ayat/0001/text> legal:textHasTextString "Selambat-lambatnya dalam waktu 1 (satu) tahun sejak berlakunya Undang-undang ini, Kamar Dagang dan Industri yang berdasarkan Undang-undang ini telah dibentuk oleh pengusaha Indonesia. PRESIDEN REPUBLIK INDONESIA - 5 -" .
+<http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128/ayat/0001/text> .
+<http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128/ayat/0002> .
+<http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128/ayat/0002> legal:ayatHasRawText "Keputusan Presiden Nomor 49 Tahun 1973 tentang Kamar Dagang dan Industri (KADIN) tetap berlaku sampai dibentuknya Kamar Dagang dan Industri berdasarkan Undang-undang ini." .
+<http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128/ayat/0002/text> legal:textHasTextString "Keputusan Presiden Nomor 49 Tahun 1973 tentang Kamar Dagang dan Industri (KADIN) tetap berlaku sampai dibentuknya Kamar Dagang dan Industri berdasarkan Undang-undang ini." .
+<http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128/ayat/0002/text> .
+<http://example.org/legal/document/uu/1987/1/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1987/1/bab/0008> .
+<http://example.org/legal/document/uu/1987/1/bab/0008> legal:babHasKey 8 .
+<http://example.org/legal/document/uu/1987/1/bab/0008> legal:babHasTitle "KETENTUAN PENUTUP" .
+<http://example.org/legal/document/uu/1987/1/bab/0008> legal:babHasPasalSet <http://example.org/legal/document/uu/1987/1/bab/0008/pasals> .
+<http://example.org/legal/document/uu/1987/1/bab/0008/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1987/1/pasal/0014> .
+<http://example.org/legal/document/uu/1987/1/pasal/0014> legal:pasalHasKey 14 .
+<http://example.org/legal/document/uu/1987/1/pasal/0014> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1987/1/pasal/0014/version/19870128> .
+<http://example.org/legal/document/uu/1987/1> legal:documentHasPasal <http://example.org/legal/document/uu/1987/1/pasal/0014> .
+<http://example.org/legal/document/uu/1987/1/pasal/0014/version/19870128> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1987/1/pasal/0014/version/19870128> legal:pasalVersionHasVersionDate "1987-01-28"^^xsd:date .
+<http://example.org/legal/document/uu/1987/1/pasal/0014/version/19870128> legal:pasalVersionHasRawText "Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1987/1/pasal/0014/version/19870128/text> legal:textHasTextString "Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1987/1/pasal/0014/version/19870128> legal:pasalVersionHasText <http://example.org/legal/document/uu/1987/1/pasal/0014/version/19870128/text> .
+<http://example.org/legal/document/uu/1987/1> legal:documentHasDisahkanDate "1987-01-28"^^xsd:date .
+<http://example.org/legal/document/uu/1987/1> legal:documentMengingat <http://example.org/legal/document/uu/1987/1/mengingat> .
+<http://example.org/legal/document/uu/1987/1/mengingat/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 20 ayat (1), dan Pasal 33 Undang-Undang Dasar 1945; Dengan persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN : Menetapkan : UNDANG-UNDANG TENTANG KAMAR DAGANG DAN INDUSTRI. PRESIDEN REPUBLIK INDONESIA - 2 -" .
+<http://example.org/legal/document/uu/1987/1/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/1987/1/mengingat/text> .
+<http://example.org/legal/document/uu/1987/1> legal:documentMenimbang <http://example.org/legal/document/uu/1987/1/menimbang> .
+<http://example.org/legal/document/uu/1987/1/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/1987/1/menimbang/point> .
+<http://example.org/legal/document/uu/1987/1/menimbang/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1987/1/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1987/1/menimbang/point/description> .
+<http://example.org/legal/document/uu/1987/1/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1987/1/menimbang/point/a> .
+<http://example.org/legal/document/uu/1987/1/menimbang/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1987/1/menimbang/point/a/text> legal:textHasTextString "bahwa dalam usaha untuk lebih meningkatkan pelaksanaan Pembangunan Nasional pada umumnya dan pembangunan di bidang ekonomi pada khususnya, diperlukan langkah-langkah untuk terus mengembangkan iklim usaha yang sehat, meningkatkan pembinaan dunia usaha, mengembangkan dan mendorong pemerat aan kesempatan yang seluas- luasnya bagi masyarakat pengusaha untuk ikut serta dalam pelaksanaan pembangunan di bidang ekonomi berdasarkan Pancasila dan Undang- Undang Dasar 1945;" .
+<http://example.org/legal/document/uu/1987/1/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/1987/1/menimbang/point/a/text> .
+<http://example.org/legal/document/uu/1987/1/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1987/1/menimbang/point/b> .
+<http://example.org/legal/document/uu/1987/1/menimbang/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1987/1/menimbang/point/b/text> legal:textHasTextString "bahwa pembinaan dunia usaha Nasional diarahkan untuk menciptakan iklim dan tata hubungan yang mendorong kerja sama yang serasi antara usaha negara, koperasi, dan usaha swasta agar mampu memegang peranan sebagai tulang punggung perekonomian nasional yang sehat dan sekaligus mewujudkan pemerataan kesejahteraan rakyat, memperkukuh persatuan dan kesatuan bangsa, serta meningkatkan ketahanan nasional;" .
+<http://example.org/legal/document/uu/1987/1/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/1987/1/menimbang/point/b/text> .
+<http://example.org/legal/document/uu/1987/1/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1987/1/menimbang/point/c> .
+<http://example.org/legal/document/uu/1987/1/menimbang/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1987/1/menimbang/point/c/text> legal:textHasTextString "bahwa sehubungan dengan hal tersebut di atas, diperlukan adanya Kamar Dagang dan Industri yang merupakan wadah pembinaan untuk meningkatkan kemampuan profesi pengusaha Indonesia dalam kedudukannya sebagai pelaku-pelaku ekonomi nasional, dan sebagai wadah penyaluran aspirasi dalam rangka keikutsertaannya dalam pelaksanaan pembangunan di bidang ekonomi berdasarkan Demokrasi Ekonomi sesuai dengan Pasal 33 Undang-Undang Dasar 1945;" .
+<http://example.org/legal/document/uu/1987/1/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/1987/1/menimbang/point/c/text> .
+<http://example.org/legal/document/uu/1987/1/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1987/1/menimbang/point/d> .
+<http://example.org/legal/document/uu/1987/1/menimbang/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1987/1/menimbang/point/d/text> legal:textHasTextString "bahwa Kamar Dagang dan Industri juga merupakan wadah komunikasi dan konsultasi antara pengusaha Indonesia dan Pemerintah mengenai hal-hal yang berkaitan dengan masalah perdagangan, perindustrian, dan jasa;" .
+<http://example.org/legal/document/uu/1987/1/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/1987/1/menimbang/point/d/text> .
+<http://example.org/legal/document/uu/1987/1/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1987/1/menimbang/point/e> .
+<http://example.org/legal/document/uu/1987/1/menimbang/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/1987/1/menimbang/point/e/text> legal:textHasTextString "bahwa sehubungan dengan hal-hal tersebut di atas, maka perlu adanya Undang-undang tentang Kamar dagang dan Industri;" .
+<http://example.org/legal/document/uu/1987/1/menimbang/point/e> legal:pointHasText <http://example.org/legal/document/uu/1987/1/menimbang/point/e/text> .
+<http://example.org/legal/document/uu/1987/1> legal:documentHasDisahkanPengesah "SOEHARTO" .
+<http://example.org/legal/document/uu/1987/1> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/1987/1> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA" .
+<http://example.org/legal/document/uu/1987/1> a legal:Document .
+<http://example.org/legal/document/uu/1987/1/bab> a legal:BabSet .
+<http://example.org/legal/document/uu/1987/1/bab/0001> a legal:Bab .
+<http://example.org/legal/document/uu/1987/1/bab/0001/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1987/1/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/e> a legal:Point .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/f> a legal:Point .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/f/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/bab/0002> a legal:Bab .
+<http://example.org/legal/document/uu/1987/1/bab/0002/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1987/1/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/bab/0003> a legal:Bab .
+<http://example.org/legal/document/uu/1987/1/bab/0003/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1987/1/pasal/0004> a legal:Pasal .
+<http://example.org/legal/document/uu/1987/1/pasal/0004/version/19870128> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1987/1/pasal/0004/version/19870128/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/pasal/0005> a legal:Pasal .
+<http://example.org/legal/document/uu/1987/1/pasal/0005/version/19870128> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1987/1/pasal/0005/version/19870128/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/bab/0004> a legal:Bab .
+<http://example.org/legal/document/uu/1987/1/bab/0004/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1987/1/pasal/0006> a legal:Pasal .
+<http://example.org/legal/document/uu/1987/1/pasal/0006/version/19870128> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1987/1/pasal/0006/version/19870128/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/pasal/0007> a legal:Pasal .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/e> a legal:Point .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/f> a legal:Point .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/f/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/g> a legal:Point .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/g/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/h> a legal:Point .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/h/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/i> a legal:Point .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/i/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/j> a legal:Point .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/j/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/pasal/0008> a legal:Pasal .
+<http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/bab/0005> a legal:Bab .
+<http://example.org/legal/document/uu/1987/1/bab/0005/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1987/1/pasal/0009> a legal:Pasal .
+<http://example.org/legal/document/uu/1987/1/pasal/0009/version/19870128> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1987/1/pasal/0009/version/19870128/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/pasal/0010> a legal:Pasal .
+<http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/bab/0006> a legal:Bab .
+<http://example.org/legal/document/uu/1987/1/bab/0006/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1987/1/pasal/0011> a legal:Pasal .
+<http://example.org/legal/document/uu/1987/1/pasal/0011/version/19870128> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1987/1/pasal/0011/version/19870128/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/pasal/0012> a legal:Pasal .
+<http://example.org/legal/document/uu/1987/1/pasal/0012/version/19870128> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1987/1/pasal/0012/version/19870128/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/bab/0007> a legal:Bab .
+<http://example.org/legal/document/uu/1987/1/bab/0007/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1987/1/pasal/0013> a legal:Pasal .
+<http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/bab/0008> a legal:Bab .
+<http://example.org/legal/document/uu/1987/1/bab/0008/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1987/1/pasal/0014> a legal:Pasal .
+<http://example.org/legal/document/uu/1987/1/pasal/0014/version/19870128> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1987/1/pasal/0014/version/19870128/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/mengingat/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1987/1/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1987/1/menimbang/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/menimbang/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1987/1/menimbang/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1987/1/menimbang/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/menimbang/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1987/1/menimbang/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/menimbang/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1987/1/menimbang/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/menimbang/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1987/1/menimbang/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/menimbang/point/e> a legal:Point .
+<http://example.org/legal/document/uu/1987/1/menimbang/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/1987/1/bab> legal:partOf <http://example.org/legal/document/uu/1987/1> .
+<http://example.org/legal/document/uu/1987/1/bab/0001> legal:partOf <http://example.org/legal/document/uu/1987/1/bab> .
+<http://example.org/legal/document/uu/1987/1/bab/0001/pasals> legal:partOf <http://example.org/legal/document/uu/1987/1/bab/0001> .
+<http://example.org/legal/document/uu/1987/1/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1987/1/bab/0001/pasals> .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0001> .
+<http://example.org/legal/document/uu/1987/1/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1987/1> .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128> .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/a> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point> .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/b> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point> .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/c> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point> .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/d> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point> .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/e> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point> .
+<http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point/f> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0001/version/19870128/point> .
+<http://example.org/legal/document/uu/1987/1/bab/0002> legal:partOf <http://example.org/legal/document/uu/1987/1/bab> .
+<http://example.org/legal/document/uu/1987/1/bab/0002/pasals> legal:partOf <http://example.org/legal/document/uu/1987/1/bab/0002> .
+<http://example.org/legal/document/uu/1987/1/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1987/1/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0002> .
+<http://example.org/legal/document/uu/1987/1/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1987/1> .
+<http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128/ayat> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128> .
+<http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128/ayat> .
+<http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128/ayat/0001> .
+<http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128/ayat> .
+<http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0002/version/19870128/ayat/0002> .
+<http://example.org/legal/document/uu/1987/1/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1987/1/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0003> .
+<http://example.org/legal/document/uu/1987/1/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1987/1> .
+<http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128/point> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128> .
+<http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128/point/a> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128/point> .
+<http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128/point/b> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0003/version/19870128/point> .
+<http://example.org/legal/document/uu/1987/1/bab/0003> legal:partOf <http://example.org/legal/document/uu/1987/1/bab> .
+<http://example.org/legal/document/uu/1987/1/bab/0003/pasals> legal:partOf <http://example.org/legal/document/uu/1987/1/bab/0003> .
+<http://example.org/legal/document/uu/1987/1/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1987/1/bab/0003/pasals> .
+<http://example.org/legal/document/uu/1987/1/pasal/0004/version/19870128> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0004> .
+<http://example.org/legal/document/uu/1987/1/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1987/1> .
+<http://example.org/legal/document/uu/1987/1/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1987/1/bab/0003/pasals> .
+<http://example.org/legal/document/uu/1987/1/pasal/0005/version/19870128> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0005> .
+<http://example.org/legal/document/uu/1987/1/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1987/1> .
+<http://example.org/legal/document/uu/1987/1/bab/0004> legal:partOf <http://example.org/legal/document/uu/1987/1/bab> .
+<http://example.org/legal/document/uu/1987/1/bab/0004/pasals> legal:partOf <http://example.org/legal/document/uu/1987/1/bab/0004> .
+<http://example.org/legal/document/uu/1987/1/pasal/0006> legal:partOf <http://example.org/legal/document/uu/1987/1/bab/0004/pasals> .
+<http://example.org/legal/document/uu/1987/1/pasal/0006/version/19870128> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0006> .
+<http://example.org/legal/document/uu/1987/1/pasal/0006> legal:partOf <http://example.org/legal/document/uu/1987/1> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007> legal:partOf <http://example.org/legal/document/uu/1987/1/bab/0004/pasals> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0007> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007> legal:partOf <http://example.org/legal/document/uu/1987/1> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/a> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/b> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/c> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/d> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/e> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/f> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/g> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/h> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/i> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point> .
+<http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point/j> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0007/version/19870128/point> .
+<http://example.org/legal/document/uu/1987/1/pasal/0008> legal:partOf <http://example.org/legal/document/uu/1987/1/bab/0004/pasals> .
+<http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0008> .
+<http://example.org/legal/document/uu/1987/1/pasal/0008> legal:partOf <http://example.org/legal/document/uu/1987/1> .
+<http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128/point> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128> .
+<http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128/point/a> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128/point> .
+<http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128/point/b> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0008/version/19870128/point> .
+<http://example.org/legal/document/uu/1987/1/bab/0005> legal:partOf <http://example.org/legal/document/uu/1987/1/bab> .
+<http://example.org/legal/document/uu/1987/1/bab/0005/pasals> legal:partOf <http://example.org/legal/document/uu/1987/1/bab/0005> .
+<http://example.org/legal/document/uu/1987/1/pasal/0009> legal:partOf <http://example.org/legal/document/uu/1987/1/bab/0005/pasals> .
+<http://example.org/legal/document/uu/1987/1/pasal/0009/version/19870128> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0009> .
+<http://example.org/legal/document/uu/1987/1/pasal/0009> legal:partOf <http://example.org/legal/document/uu/1987/1> .
+<http://example.org/legal/document/uu/1987/1/pasal/0010> legal:partOf <http://example.org/legal/document/uu/1987/1/bab/0005/pasals> .
+<http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0010> .
+<http://example.org/legal/document/uu/1987/1/pasal/0010> legal:partOf <http://example.org/legal/document/uu/1987/1> .
+<http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128/ayat> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128> .
+<http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128/ayat> .
+<http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128/ayat/0001> .
+<http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128/ayat> .
+<http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0010/version/19870128/ayat/0002> .
+<http://example.org/legal/document/uu/1987/1/bab/0006> legal:partOf <http://example.org/legal/document/uu/1987/1/bab> .
+<http://example.org/legal/document/uu/1987/1/bab/0006/pasals> legal:partOf <http://example.org/legal/document/uu/1987/1/bab/0006> .
+<http://example.org/legal/document/uu/1987/1/pasal/0011> legal:partOf <http://example.org/legal/document/uu/1987/1/bab/0006/pasals> .
+<http://example.org/legal/document/uu/1987/1/pasal/0011/version/19870128> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0011> .
+<http://example.org/legal/document/uu/1987/1/pasal/0011> legal:partOf <http://example.org/legal/document/uu/1987/1> .
+<http://example.org/legal/document/uu/1987/1/pasal/0012> legal:partOf <http://example.org/legal/document/uu/1987/1/bab/0006/pasals> .
+<http://example.org/legal/document/uu/1987/1/pasal/0012/version/19870128> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0012> .
+<http://example.org/legal/document/uu/1987/1/pasal/0012> legal:partOf <http://example.org/legal/document/uu/1987/1> .
+<http://example.org/legal/document/uu/1987/1/bab/0007> legal:partOf <http://example.org/legal/document/uu/1987/1/bab> .
+<http://example.org/legal/document/uu/1987/1/bab/0007/pasals> legal:partOf <http://example.org/legal/document/uu/1987/1/bab/0007> .
+<http://example.org/legal/document/uu/1987/1/pasal/0013> legal:partOf <http://example.org/legal/document/uu/1987/1/bab/0007/pasals> .
+<http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0013> .
+<http://example.org/legal/document/uu/1987/1/pasal/0013> legal:partOf <http://example.org/legal/document/uu/1987/1> .
+<http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128/ayat> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128> .
+<http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128/ayat> .
+<http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128/ayat/0001> .
+<http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128/ayat> .
+<http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0013/version/19870128/ayat/0002> .
+<http://example.org/legal/document/uu/1987/1/bab/0008> legal:partOf <http://example.org/legal/document/uu/1987/1/bab> .
+<http://example.org/legal/document/uu/1987/1/bab/0008/pasals> legal:partOf <http://example.org/legal/document/uu/1987/1/bab/0008> .
+<http://example.org/legal/document/uu/1987/1/pasal/0014> legal:partOf <http://example.org/legal/document/uu/1987/1/bab/0008/pasals> .
+<http://example.org/legal/document/uu/1987/1/pasal/0014/version/19870128> legal:partOf <http://example.org/legal/document/uu/1987/1/pasal/0014> .
+<http://example.org/legal/document/uu/1987/1/pasal/0014> legal:partOf <http://example.org/legal/document/uu/1987/1> .
+<http://example.org/legal/document/uu/1987/1/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1987/1/menimbang/point> .
+<http://example.org/legal/document/uu/1987/1/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1987/1/menimbang/point> .
+<http://example.org/legal/document/uu/1987/1/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/1987/1/menimbang/point> .
+<http://example.org/legal/document/uu/1987/1/menimbang/point/d> legal:partOf <http://example.org/legal/document/uu/1987/1/menimbang/point> .
+<http://example.org/legal/document/uu/1987/1/menimbang/point/e> legal:partOf <http://example.org/legal/document/uu/1987/1/menimbang/point> .

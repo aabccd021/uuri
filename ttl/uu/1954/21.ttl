@@ -1,0 +1,20 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1954/21> legal:documentHasBabSet <http://example.org/legal/document/uu/1954/21/bab> .
+<http://example.org/legal/document/uu/1954/21> legal:documentHasDisahkanDate "1954-05-28"^^xsd:date .
+<http://example.org/legal/document/uu/1954/21> legal:documentMengingat <http://example.org/legal/document/uu/1954/21/mengingat> .
+<http://example.org/legal/document/uu/1954/21/mengingat/text> legal:textHasTextString "pasal 36 dan 89 Undang-undang Dasar Sementara Republik Indonesia; Dengan persetujuan Dewan Perwakilan Rakyat; MEMUTUSKAN : Menetapkan : UNDANG-UNDANG TENTANG PERJANJIAN PERBURUHAN ANTARA SERIKAT BURUH DAN MAJIKAN." .
+<http://example.org/legal/document/uu/1954/21/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/1954/21/mengingat/text> .
+<http://example.org/legal/document/uu/1954/21> legal:documentMenimbang <http://example.org/legal/document/uu/1954/21/menimbang> .
+<http://example.org/legal/document/uu/1954/21/menimbang/text> legal:textHasTextString "bahwa perlu diadakan aturan-aturan tentang perjanjian mengenai syarat-syarat perburuhan antara serikat buruh dengan majikan;" .
+<http://example.org/legal/document/uu/1954/21/menimbang> legal:menimbangHasText <http://example.org/legal/document/uu/1954/21/menimbang/text> .
+<http://example.org/legal/document/uu/1954/21> legal:documentHasDisahkanPengesah "Diundangkan" .
+<http://example.org/legal/document/uu/1954/21> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/1954/21> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/1954/21> a legal:Document .
+<http://example.org/legal/document/uu/1954/21/mengingat/text> a legal:Text .
+<http://example.org/legal/document/uu/1954/21/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1954/21/menimbang/text> a legal:Text .
+<http://example.org/legal/document/uu/1954/21/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1954/21/bab> legal:partOf <http://example.org/legal/document/uu/1954/21> .

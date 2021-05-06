@@ -1,0 +1,291 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1999/40> legal:documentHasBabSet <http://example.org/legal/document/uu/1999/40/bab> .
+<http://example.org/legal/document/uu/1999/40/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/40/bab/0001> .
+<http://example.org/legal/document/uu/1999/40/bab/0001> legal:babHasKey 1 .
+<http://example.org/legal/document/uu/1999/40/bab/0001> legal:babHasTitle "KETENTUAN UMUM" .
+<http://example.org/legal/document/uu/1999/40/bab/0001> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/40/bab/0001/pasals> .
+<http://example.org/legal/document/uu/1999/40/bab/0001/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/40/pasal/0001> .
+<http://example.org/legal/document/uu/1999/40/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1999/40/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923> .
+<http://example.org/legal/document/uu/1999/40> legal:documentHasPasal <http://example.org/legal/document/uu/1999/40/pasal/0001> .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923> legal:pasalVersionHasVersionDate "1999-09-23"^^xsd:date .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923> legal:pasalVersionHasRawText "Dalam Undang-undang ini, yang dimaksud dengan :\n1. Pers adalah lembaga sosial dan wahana komunikasi massa yang melaksanakan kegiatan jurnalistik meliputi mencari, memperoleh, memiliki, menyimpan, mengolah, dan menyampaikan informasi baik dalam bentuk tulisan, suara, gambar, suara dan gambar, serta data dan grafik maupun dalam bentuk lainnya dengan menggunakan media cetak, media elektronik, dan segala jenis saluran yang tersedia.\n2. Perusahaan pers adalah badan hukum Indonesia yang menyelenggarakan usaha pers meliputi perusahaan media cetak, media elektronik, dan kantor berita, serta perusahaan media lainnya yang secara khusus menyelenggarakan, menyiarkan, atau menyalurkan informasi.\n3. Kantor berita adalah perusahaan pers yang melayani media cetak, media elektronik, atau media lainnya serta masyarakat umum dalam memperoleh informasi.\n4. Wartawan adalah orang yang secara teratur melaksanakan kegiatan jurnalistik.\n5. Organisasi pers adalah organisasi wartawan dan organisasi perusahaan pers.\n6. Pers nasional adalah pers yang diselenggarakan oleh perusahaan pers Indonesia.\n1. Pers asing adalah pers yang diselenggarakan oleh perusahaan pers asing. 8. Penyensoran adalah penghapusan secara paksa sebagian atau seluruh materi informasi yang akan diterbitkan atau disiarkan, atau tindakan teguran atau peringatan yang bersifat mengancam dari pihak manapun, dan atau kewajiban melapor, serta memperoleh izin dari PRESIDEN REPUBLIK INDONESIA 3 - pihak berwajib, dalam pelaksanaan kegiatan jurnalistik. 9. Pembredelan atau pelarangan penyiaran adalah penghentian penerbitan dan peredaran atau penyiaran secara paksa atau melawan hukum. 10. Hak Tolak adalah hak wartawan karena profesinya, untuk menolak mengungkapkan nama atau identitas lainnya dari sumber berita yang harus dirahasiakannya. 11.Hak Jawab adalah hak seseorang atau sekelompok orang untuk memberikan tanggapan atau sanggahan terhadap pemberitaan berupa fakta yang merugikan nama baiknya. 12.Hak Koreksi adalah hak setiap orang untuk mengoreksi atau memberitahukan kekeliruan informasi yang diberitakan oleh pers, baik tentang dirinya maupun tentang orang lain. 13. Kewajiban Koreksi adalah keharusan melakukan koreksi atau ralat terhadap suatu informasi, data, fakta, opini, atau gambar yang tidak benar yang telah diberitakan oleh pers yang bersangkutan. 14. Kode Etik Jurnalistik adalah himpunan etika profesi kewartawanan.\n\n" .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point> .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/description> legal:textHasTextString "Dalam Undang-undang ini, yang dimaksud dengan :" .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/description> .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0001> .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0001/text> legal:textHasTextString "Pers adalah lembaga sosial dan wahana komunikasi massa yang melaksanakan kegiatan jurnalistik meliputi mencari, memperoleh, memiliki, menyimpan, mengolah, dan menyampaikan informasi baik dalam bentuk tulisan, suara, gambar, suara dan gambar, serta data dan grafik maupun dalam bentuk lainnya dengan menggunakan media cetak, media elektronik, dan segala jenis saluran yang tersedia." .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0001/text> .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0002> .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0002/text> legal:textHasTextString "Perusahaan pers adalah badan hukum Indonesia yang menyelenggarakan usaha pers meliputi perusahaan media cetak, media elektronik, dan kantor berita, serta perusahaan media lainnya yang secara khusus menyelenggarakan, menyiarkan, atau menyalurkan informasi." .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0002/text> .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0003> .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0003> legal:pointHasKey "3" .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0003/text> legal:textHasTextString "Kantor berita adalah perusahaan pers yang melayani media cetak, media elektronik, atau media lainnya serta masyarakat umum dalam memperoleh informasi." .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0003> legal:pointHasText <http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0003/text> .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0004> .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0004> legal:pointHasKey "4" .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0004/text> legal:textHasTextString "Wartawan adalah orang yang secara teratur melaksanakan kegiatan jurnalistik." .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0004> legal:pointHasText <http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0004/text> .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0005> .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0005> legal:pointHasKey "5" .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0005/text> legal:textHasTextString "Organisasi pers adalah organisasi wartawan dan organisasi perusahaan pers." .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0005> legal:pointHasText <http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0005/text> .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0006> .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0006> legal:pointHasKey "6" .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0006> legal:pointHasPointSet <http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0006/point> .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0006/point/description> legal:textHasTextString "Pers nasional adalah pers yang diselenggarakan oleh perusahaan pers Indonesia." .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0006/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0006/point/description> .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0006/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0006/point/0001> .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0006/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0006/point/0001/text> legal:textHasTextString "Pers asing adalah pers yang diselenggarakan oleh perusahaan pers asing. 8. Penyensoran adalah penghapusan secara paksa sebagian atau seluruh materi informasi yang akan diterbitkan atau disiarkan, atau tindakan teguran atau peringatan yang bersifat mengancam dari pihak manapun, dan atau kewajiban melapor, serta memperoleh izin dari PRESIDEN REPUBLIK INDONESIA 3 - pihak berwajib, dalam pelaksanaan kegiatan jurnalistik. 9. Pembredelan atau pelarangan penyiaran adalah penghentian penerbitan dan peredaran atau penyiaran secara paksa atau melawan hukum. 10. Hak Tolak adalah hak wartawan karena profesinya, untuk menolak mengungkapkan nama atau identitas lainnya dari sumber berita yang harus dirahasiakannya. 11.Hak Jawab adalah hak seseorang atau sekelompok orang untuk memberikan tanggapan atau sanggahan terhadap pemberitaan berupa fakta yang merugikan nama baiknya. 12.Hak Koreksi adalah hak setiap orang untuk mengoreksi atau memberitahukan kekeliruan informasi yang diberitakan oleh pers, baik tentang dirinya maupun tentang orang lain. 13. Kewajiban Koreksi adalah keharusan melakukan koreksi atau ralat terhadap suatu informasi, data, fakta, opini, atau gambar yang tidak benar yang telah diberitakan oleh pers yang bersangkutan. 14. Kode Etik Jurnalistik adalah himpunan etika profesi kewartawanan." .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0006/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0006/point/0001/text> .
+<http://example.org/legal/document/uu/1999/40/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/40/bab/0002> .
+<http://example.org/legal/document/uu/1999/40/bab/0002> legal:babHasKey 2 .
+<http://example.org/legal/document/uu/1999/40/bab/0002> legal:babHasTitle "ASAS, FUNGSI, HAK, KEWAJIBAN DAN PERANAN PERS" .
+<http://example.org/legal/document/uu/1999/40/bab/0002> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/40/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/40/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/40/pasal/0002> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1999/40/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923> .
+<http://example.org/legal/document/uu/1999/40> legal:documentHasPasal <http://example.org/legal/document/uu/1999/40/pasal/0002> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923> legal:pasalVersionHasVersionDate "1999-09-23"^^xsd:date .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923> legal:pasalVersionHasRawText "(1). Pers nasional berkewajiban memberikan peristiwa dan opini dengan menghormati norma-norma agama dan rasa kesusilaan masyarakat serta asas praduga tak bersalah.\n(2). Pers wajib melayani Hak Jawab.\n(3). Pers wajib melayani Hak Koreksi. Pasal 6 Pers nasional melaksanakan peranan sebagai berikut:\na. memenuhi hak masyarakat untuk mengetahui,\nb. menegakkan nilai-nilai dasar demokrasi, mendorong terwujudnya supremasi hukum, dan Hak Asasi Manusia, serta menghormati kebhinekaan:\nc. mengembangkan pendapat umum berdasarkan informasi yang tepat, akurat, dan benar:\nd. melakukan pengawasan, kritik, koreksi, dan saran terhadap hal-hal yang berkaitan dengan kepentingan umum: c. memperjuangkan keadilan dan kebenaran.\n\n(4). Dalam mempertanggungjawabkan pemberitaan di depan hukum, wartawan mempunyai Hak Tolak. Pasal 5" .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0001> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0001> legal:ayatHasRawText "Pers nasional berkewajiban memberikan peristiwa dan opini dengan menghormati norma-norma agama dan rasa kesusilaan masyarakat serta asas praduga tak bersalah." .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0001/text> legal:textHasTextString "Pers nasional berkewajiban memberikan peristiwa dan opini dengan menghormati norma-norma agama dan rasa kesusilaan masyarakat serta asas praduga tak bersalah." .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0001/text> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0002> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0002> legal:ayatHasRawText "Pers wajib melayani Hak Jawab." .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0002/text> legal:textHasTextString "Pers wajib melayani Hak Jawab." .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0002/text> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003> legal:ayatHasRawText "Pers wajib melayani Hak Koreksi. Pasal 6 Pers nasional melaksanakan peranan sebagai berikut:\na. memenuhi hak masyarakat untuk mengetahui,\nb. menegakkan nilai-nilai dasar demokrasi, mendorong terwujudnya supremasi hukum, dan Hak Asasi Manusia, serta menghormati kebhinekaan:\nc. mengembangkan pendapat umum berdasarkan informasi yang tepat, akurat, dan benar:\nd. melakukan pengawasan, kritik, koreksi, dan saran terhadap hal-hal yang berkaitan dengan kepentingan umum: c. memperjuangkan keadilan dan kebenaran.\n" .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003> legal:ayatHasPointSet <http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/description> legal:textHasTextString "Pers wajib melayani Hak Koreksi. Pasal 6 Pers nasional melaksanakan peranan sebagai berikut:" .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/description> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/a> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/a/text> legal:textHasTextString "memenuhi hak masyarakat untuk mengetahui," .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/a> legal:pointHasText <http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/a/text> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/b> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/b/text> legal:textHasTextString "menegakkan nilai-nilai dasar demokrasi, mendorong terwujudnya supremasi hukum, dan Hak Asasi Manusia, serta menghormati kebhinekaan:" .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/b> legal:pointHasText <http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/b/text> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/c> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/c/text> legal:textHasTextString "mengembangkan pendapat umum berdasarkan informasi yang tepat, akurat, dan benar:" .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/c> legal:pointHasText <http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/c/text> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/d> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/d/text> legal:textHasTextString "melakukan pengawasan, kritik, koreksi, dan saran terhadap hal-hal yang berkaitan dengan kepentingan umum: c. memperjuangkan keadilan dan kebenaran." .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/d> legal:pointHasText <http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/d/text> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0004> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0004> legal:ayatHasKey 4 .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0004> legal:ayatHasRawText "Dalam mempertanggungjawabkan pemberitaan di depan hukum, wartawan mempunyai Hak Tolak. Pasal 5" .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0004/text> legal:textHasTextString "Dalam mempertanggungjawabkan pemberitaan di depan hukum, wartawan mempunyai Hak Tolak. Pasal 5" .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0004/text> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/40/pasal/0005> .
+<http://example.org/legal/document/uu/1999/40/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/40/bab/0003> .
+<http://example.org/legal/document/uu/1999/40/bab/0003> legal:babHasKey 3 .
+<http://example.org/legal/document/uu/1999/40/bab/0003> legal:babHasTitle "Wartawan Pasal 7 (1) Wartawan bebas memilih organisasi wartawan. (2) Wartawan memiliki dan menaati Kode Etik Jurnalistik. Pasal 8 Dalam melaksanakan profesinya wartawan mendapat perlindungan hukum." .
+<http://example.org/legal/document/uu/1999/40/bab/0003> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/40/bab/0003/pasals> .
+<http://example.org/legal/document/uu/1999/40/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/40/bab/0004> .
+<http://example.org/legal/document/uu/1999/40/bab/0004> legal:babHasKey 4 .
+<http://example.org/legal/document/uu/1999/40/bab/0004> legal:babHasTitle "PERUSAHAAN PERS PRESIDEN REPUBLIK INDONESIA .5- Pasal 9 (Jl) Setiap warga negara Indonesia dan negara berhak mendirikan perusahaan pers. (2) Setiap perusahaan pers harus berbentuk badan hukum Indonesia. Pasal 10 Perusahaan pers memberikan kesejahteraan kepada wartawan dan karyawan pers dalam bentuk kepemilikan saham dan atau pembagian laba bersih serta bentuk kesejahteraan lainnya. Pasal 11 Penambahan modal asing pada perusahaan pers dilakukan melalui pasar modal. Pasal 12 Perusahaan pers wajib mengumumkan nama, alamat dan penanggung jawab secara terbuka melalui media yang bersangkutan: khusus untuk penerbitan pers ditambah nama dan alamat percetakan. Pasal 13 Perusahaan pers dilarang memuat iklan: a. yang berakibat merendahkan martabat suatu agama dan atau mengganggu kerukunan hidup antarumat beragama, serta bertentangan dengan rasa kesusilaan masyarakat, b. minuman keras, narkotika, psikotropika, dan zat adiktif lainnya sesuai dengan ketentuan peraturan perundang-undangan yang berlaku: Cc. peragaan wujud rokok dan atau penggunaan rokok. Pasal 14 Untuk mengembangkan pemberitaan ke dalam dan ke luar negeri, setiap warga negara Indonesia dan negara dapat mendirikan kantor berita. PRESIDEN REPUBLIK INDONESIA -G-" .
+<http://example.org/legal/document/uu/1999/40/bab/0004> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/40/bab/0004/pasals> .
+<http://example.org/legal/document/uu/1999/40/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/40/bab/0005> .
+<http://example.org/legal/document/uu/1999/40/bab/0005> legal:babHasKey 5 .
+<http://example.org/legal/document/uu/1999/40/bab/0005> legal:babHasTitle "DEWAN PERS Pasal 15 (J) Dalam upaya mengembangkan kemerdekaan pers dan meningkatkan kehidupan pers nasional, dibentuk Dewan Pers yang independen. (2) Dewan Pers melaksanakan fungsi-fungsi sebagai berikut : a. melindungi kemerdekaan pers dari campur tangan pihak lain: b. melakukan pengkajian untuk pengembangan kehidupan pers: c. menetapkan dan mengawasi pelaksanaan Kode Etik Jurnalistik: d. memberikan pertimbangan dan mengupayakan penyelesaian pengaduan masyarakat atas kasus-kasus yang berhubungan dengan pemberitaan pers, e. mengembangkan komunikasi antara pers, masyarakat, dan pemerintah, f. memfasilitasi organisasi-organisasi pers dalam menyusun peraturan-peraturan di bidang pers dan meningkatkan kualitas profesi kewartawanan, g. mendata perusahaan pers. (3) Anggota Dewan Pers terdiri dari : a. wartawan yang dipilih oleh organisasi wartawan, b. pimpinan perusahaan pers yang dipilih oleh organisasi perusahaan pers: c. tokoh masyarakat, ahli di bidang pers dan atau komunikasi wartawan dan organisasi perusahaan pers. (4) Ketua dan Wakil Ketua Dewan Pers dipilih dari dan oleh anggota. (5) Keanggotaan Dewan Pers sebagaimana dimaksud dalam ayat (3) pasal ini ditetapkan dengan Keputusan Presiden. (60) Keanggotaan Dewan Pers berlaku untuk masa tiga tahun dan sesudah itu hanya dapat dipilih kembali untuk satu periode berikutnya. (7) Sumber pembiayaan Dewan Pers berasal dari: a. organisasi pers, b. perusahaan pers, c. bantuan dari negara dan bantuan lain yang tidak mengikat. PRESIDEN REPUBLIK INDONESIA -7-" .
+<http://example.org/legal/document/uu/1999/40/bab/0005> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/40/bab/0005/pasals> .
+<http://example.org/legal/document/uu/1999/40/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/40/bab/0006> .
+<http://example.org/legal/document/uu/1999/40/bab/0006> legal:babHasKey 6 .
+<http://example.org/legal/document/uu/1999/40/bab/0006> legal:babHasTitle "PERS ASING Pasal 16 Peredaran pers asing dan pendirian perwakilan perusahaan pers asing di Indonesia disesuaikan dengan ketentuan peraturan perundang-undangan yang berlaku." .
+<http://example.org/legal/document/uu/1999/40/bab/0006> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/40/bab/0006/pasals> .
+<http://example.org/legal/document/uu/1999/40/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/40/bab/0007> .
+<http://example.org/legal/document/uu/1999/40/bab/0007> legal:babHasKey 7 .
+<http://example.org/legal/document/uu/1999/40/bab/0007> legal:babHasTitle "PERAN SERTA MASYARAKAT Pasal 17 (Jl) Masyarakat dapat melakukan kegiatan untuk mengembangkan kemerdekaan pers dan menjamin hak memperoleh informasi yang diperlukan. (2) Kegiatan sebagaimana dimaksud dalam ayat (1) dapat berupa: a. memantau dan melaporkan analisis mengenai pelanggaran hukum, etika, dan kekeliruan teknis pemberitaan yang dilakukan oleh pers: b. menyampaikan usulan dan saran kepada Dewan Pers dalam rangka menjaga dan meningkatkan kualitas pers nasional." .
+<http://example.org/legal/document/uu/1999/40/bab/0007> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/40/bab/0007/pasals> .
+<http://example.org/legal/document/uu/1999/40/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/40/bab/0008> .
+<http://example.org/legal/document/uu/1999/40/bab/0008> legal:babHasKey 8 .
+<http://example.org/legal/document/uu/1999/40/bab/0008> legal:babHasTitle "KETENTUAN PIDANA Pasal 18 (l) Setiap orang yang secara melawan hukum dengan sengaja melakukan tindakan yang berakibat menghambat atau menghalangi pelaksanaan ketentuan Pasal 4 ayat (2) dan ayat (3) dipidana dengan pidana penjara paling lama 2 (dua) tahun atau denda paling banyak Rp.500.000.000,00 (Jima ratus juta rupiah) (2) Perusahaan pers yang melanggar ketentuan Pasal 5 ayat (1) dan ayat (2), serta Pasal 13 dipidana dengan pidana denda paling banyak Rp.500.000.000,00 (Jima ratus juta rupiah). (3) Perusahaan pers yang melanggar ketentuan Pasal 9 ayat (2) dan Pasal 12 dipidana dengan pidana denda paling banyak Rp.100.000.000,00 (seratus juta rupiah). PRESIDEN REPUBLIK INDONESIA 8" .
+<http://example.org/legal/document/uu/1999/40/bab/0008> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/40/bab/0008/pasals> .
+<http://example.org/legal/document/uu/1999/40/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/40/bab/0009> .
+<http://example.org/legal/document/uu/1999/40/bab/0009> legal:babHasKey 9 .
+<http://example.org/legal/document/uu/1999/40/bab/0009> legal:babHasTitle "KETENTUAN PERALIHAN Pasal 19 (l) Dengan berlakunya undang-undang ini segala peraturan perundang-undangan di bidang pers yang berlaku atau tetap menjalankan fungsinya sepanjang tidak bertentangan atau belum diganti dengan yang baru berdasarkan undang-undang ini. (2) Perusahaan pers yang sudah ada sebelum diundangkannya undang-undang ini, wajib menyesuaikan diri dengan ketentuan undang-undang ini dalam waktu selambat-lambatnya 1 (satu) tahun sejak diundangkannya undang-undang ini." .
+<http://example.org/legal/document/uu/1999/40/bab/0009> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/40/bab/0009/pasals> .
+<http://example.org/legal/document/uu/1999/40/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/40/bab/0010> .
+<http://example.org/legal/document/uu/1999/40/bab/0010> legal:babHasKey 10 .
+<http://example.org/legal/document/uu/1999/40/bab/0010> legal:babHasTitle "KETENTUAN PENUTUP Pasal 20 Pada saat undang-undang ini mulai berlaku : 1. Undang-undang Nomor 11 Tahun 1966 tentang Ketentuan-ketentuan Pokok Pers (Lembaran Negara Republik Indonesia Tahun 1966 Nomor 40, Tambahan Lembaran Negara Republik Indonesia Nomor 2815) yang telah diubah terakhir dengan Undang-undang Republik Indonesia Nomor 21 Tahun 1982 tentang Perubahan atas Undang-undang Republik Indonesia Nomor 11 Tahun 1966 tentang Ketentuan-ketentuan Pokok Pers sebagaimana telah diubah dengan Undang-undang Nomor 4 Tahun 1967 (Lembaran Negara Republik Indonesia Tahun 1967 Nomor 52, Tambahan Lembaran Negara Republik Indonesia Nomor 3235). 2. Undang-undang Nomor 4 PNPS Tahun 1963 tentang Pengamanan Terhadap Barang-barang Cetakan yang Isinya Dapat mengganggu Ketertiban Umum (Lembaran Negara Republik Indonesia Tahun 1963 Nomor 23, Tambahan Lembaran Negara Republik Indonesia Nomor 2533), Pasal 2 ayat (3) sepanjang menyangkut ketentuan mengenai buletin-buletin, surat-surat kabar harian, majalah-majalah, dan penerbitan-penerbitan berkala, dinyatakan tidak berlaku. Pasal 21 Undang-undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA -9- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1999/40/bab/0010> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/40/bab/0010/pasals> .
+<http://example.org/legal/document/uu/1999/40> legal:documentHasDisahkanDate "1999-09-23"^^xsd:date .
+<http://example.org/legal/document/uu/1999/40> legal:documentMengingat <http://example.org/legal/document/uu/1999/40/mengingat> .
+<http://example.org/legal/document/uu/1999/40/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1999/40/mengingat/point> .
+<http://example.org/legal/document/uu/1999/40/mengingat/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1999/40/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/40/mengingat/point/description> .
+<http://example.org/legal/document/uu/1999/40/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/40/mengingat/point/0001> .
+<http://example.org/legal/document/uu/1999/40/mengingat/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/1999/40/mengingat/point/0001/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 20 ayat (1), Pasal 27, dan Pasal 28 Undang-Undang Dasar 1945," .
+<http://example.org/legal/document/uu/1999/40/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1999/40/mengingat/point/0001/text> .
+<http://example.org/legal/document/uu/1999/40/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/40/mengingat/point/0002> .
+<http://example.org/legal/document/uu/1999/40/mengingat/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/1999/40/mengingat/point/0002/text> legal:textHasTextString "Ketetapan Majelis Permusyawaratan Rakyat Republik Indonesia Nomor XVII/MPR/1998 tentang Hak Asasi Manusia. PRESIDEN REPUBLIK INDONESIA .2- Dengan persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG PERS." .
+<http://example.org/legal/document/uu/1999/40/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1999/40/mengingat/point/0002/text> .
+<http://example.org/legal/document/uu/1999/40> legal:documentMenimbang <http://example.org/legal/document/uu/1999/40/menimbang> .
+<http://example.org/legal/document/uu/1999/40/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/1999/40/menimbang/point> .
+<http://example.org/legal/document/uu/1999/40/menimbang/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1999/40/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/40/menimbang/point/description> .
+<http://example.org/legal/document/uu/1999/40/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/40/menimbang/point/a> .
+<http://example.org/legal/document/uu/1999/40/menimbang/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1999/40/menimbang/point/a/text> legal:textHasTextString "bahwa kemerdekaan pers merupakan salah satu wujud kedaulatan rakyat dan menjadi unsur yang sangat penting untuk menciptakan kehidupan bermasyarakat, berbangsa dan bernegara yang demokratis, sehingga kemerdekaan mengeluarkan pikiran dan pendapat sebagaimana tercantum dalam Pasal 28 Undnag-Undang Dasar 1945 harus dijamin." .
+<http://example.org/legal/document/uu/1999/40/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/1999/40/menimbang/point/a/text> .
+<http://example.org/legal/document/uu/1999/40/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/40/menimbang/point/b> .
+<http://example.org/legal/document/uu/1999/40/menimbang/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1999/40/menimbang/point/b/text> legal:textHasTextString "bahwa dalam kehidupan bermasyarakat, berbangsa, dan bernegara yang demokratis, kemerdekaan menyatakan pikiran dan pendapat sesuai dengan hati nurani dan hak memperoleh informasi, merupakan hak asasi manusia yang sangat hakiki, yang diperlukan untuk menegakkan keadilan dan kebenaran, memajukan kesejahteraan umum, dan mencerdaskan kehidupan bangsa," .
+<http://example.org/legal/document/uu/1999/40/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/1999/40/menimbang/point/b/text> .
+<http://example.org/legal/document/uu/1999/40/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/40/menimbang/point/c> .
+<http://example.org/legal/document/uu/1999/40/menimbang/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1999/40/menimbang/point/c/text> legal:textHasTextString "bahwa pers nasional sebagai wahana komunikasi massa, penyebar informasi, dan pembentuk opini harus dapat melaksanakan asas, fungsi, hak, kewajiban, dan peranannya dengan sebaik-baiknya berdasarkan kemerdekaan pers yang profesional, sehingga harus mendapat jaminan dan perlindungan hukum, serta bebas dari campur tangan dan paksaan dari manapun:" .
+<http://example.org/legal/document/uu/1999/40/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/1999/40/menimbang/point/c/text> .
+<http://example.org/legal/document/uu/1999/40/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/40/menimbang/point/d> .
+<http://example.org/legal/document/uu/1999/40/menimbang/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1999/40/menimbang/point/d/text> legal:textHasTextString "bahwa pers nasional berperan ikut menjaga ketertiban dunia yang berdasarkan kemerdekaan, perdamaian abadi dan keadilan sosial: e bahwa Undang-undang Nomor Il Tahun 1966 tentang Ketentuan-ketentuan Pokok Pers sebagaimana telah diubah dengan Undang-undang Nomor 4 Tahun 1967 dan diubah dengan Undang-undang Nomor 21 Tahun 1982 sudah tidak sesuai dengan tuntutan perkembangan zaman, f. bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a, b, c, d dan e perlu dibentuk Undang-undang tentang Pers." .
+<http://example.org/legal/document/uu/1999/40/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/1999/40/menimbang/point/d/text> .
+<http://example.org/legal/document/uu/1999/40> legal:documentHasDisahkanPengesah "BACHARUDDIN JUSUF HABIBIE" .
+<http://example.org/legal/document/uu/1999/40> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/1999/40> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/1999/40> a legal:Document .
+<http://example.org/legal/document/uu/1999/40/bab> a legal:BabSet .
+<http://example.org/legal/document/uu/1999/40/bab/0001> a legal:Bab .
+<http://example.org/legal/document/uu/1999/40/bab/0001/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1999/40/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0003> a legal:Point .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0004> a legal:Point .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0005> a legal:Point .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0005/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0006> a legal:Point .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0006/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0006/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0006/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0006/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/40/bab/0002> a legal:Bab .
+<http://example.org/legal/document/uu/1999/40/bab/0002/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1999/40/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0004> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/40/bab/0003> a legal:Bab .
+<http://example.org/legal/document/uu/1999/40/bab/0004> a legal:Bab .
+<http://example.org/legal/document/uu/1999/40/bab/0005> a legal:Bab .
+<http://example.org/legal/document/uu/1999/40/bab/0006> a legal:Bab .
+<http://example.org/legal/document/uu/1999/40/bab/0007> a legal:Bab .
+<http://example.org/legal/document/uu/1999/40/bab/0008> a legal:Bab .
+<http://example.org/legal/document/uu/1999/40/bab/0009> a legal:Bab .
+<http://example.org/legal/document/uu/1999/40/bab/0010> a legal:Bab .
+<http://example.org/legal/document/uu/1999/40/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1999/40/mengingat/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1999/40/mengingat/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1999/40/mengingat/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/1999/40/mengingat/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/40/mengingat/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/1999/40/mengingat/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/40/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1999/40/menimbang/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1999/40/menimbang/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1999/40/menimbang/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1999/40/menimbang/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/40/menimbang/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1999/40/menimbang/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/40/menimbang/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1999/40/menimbang/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/40/menimbang/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1999/40/menimbang/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/40/bab> legal:partOf <http://example.org/legal/document/uu/1999/40> .
+<http://example.org/legal/document/uu/1999/40/bab/0001> legal:partOf <http://example.org/legal/document/uu/1999/40/bab> .
+<http://example.org/legal/document/uu/1999/40/bab/0001/pasals> legal:partOf <http://example.org/legal/document/uu/1999/40/bab/0001> .
+<http://example.org/legal/document/uu/1999/40/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1999/40/bab/0001/pasals> .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923> legal:partOf <http://example.org/legal/document/uu/1999/40/pasal/0001> .
+<http://example.org/legal/document/uu/1999/40/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1999/40> .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point> legal:partOf <http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923> .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0001> legal:partOf <http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point> .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0002> legal:partOf <http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point> .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0003> legal:partOf <http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point> .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0004> legal:partOf <http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point> .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0005> legal:partOf <http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point> .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0006> legal:partOf <http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point> .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0006/point> legal:partOf <http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0006> .
+<http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0006/point/0001> legal:partOf <http://example.org/legal/document/uu/1999/40/pasal/0001/version/19990923/point/0006/point> .
+<http://example.org/legal/document/uu/1999/40/bab/0002> legal:partOf <http://example.org/legal/document/uu/1999/40/bab> .
+<http://example.org/legal/document/uu/1999/40/bab/0002/pasals> legal:partOf <http://example.org/legal/document/uu/1999/40/bab/0002> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1999/40/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923> legal:partOf <http://example.org/legal/document/uu/1999/40/pasal/0002> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1999/40> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat> legal:partOf <http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0001> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0002> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point> legal:partOf <http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/a> legal:partOf <http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/b> legal:partOf <http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/c> legal:partOf <http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point/d> legal:partOf <http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0003/point> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0004> legal:partOf <http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat> .
+<http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/1999/40/pasal/0002/version/19990923/ayat/0004> .
+<http://example.org/legal/document/uu/1999/40/bab/0003> legal:partOf <http://example.org/legal/document/uu/1999/40/bab> .
+<http://example.org/legal/document/uu/1999/40/bab/0003/pasals> legal:partOf <http://example.org/legal/document/uu/1999/40/bab/0003> .
+<http://example.org/legal/document/uu/1999/40/bab/0004> legal:partOf <http://example.org/legal/document/uu/1999/40/bab> .
+<http://example.org/legal/document/uu/1999/40/bab/0004/pasals> legal:partOf <http://example.org/legal/document/uu/1999/40/bab/0004> .
+<http://example.org/legal/document/uu/1999/40/bab/0005> legal:partOf <http://example.org/legal/document/uu/1999/40/bab> .
+<http://example.org/legal/document/uu/1999/40/bab/0005/pasals> legal:partOf <http://example.org/legal/document/uu/1999/40/bab/0005> .
+<http://example.org/legal/document/uu/1999/40/bab/0006> legal:partOf <http://example.org/legal/document/uu/1999/40/bab> .
+<http://example.org/legal/document/uu/1999/40/bab/0006/pasals> legal:partOf <http://example.org/legal/document/uu/1999/40/bab/0006> .
+<http://example.org/legal/document/uu/1999/40/bab/0007> legal:partOf <http://example.org/legal/document/uu/1999/40/bab> .
+<http://example.org/legal/document/uu/1999/40/bab/0007/pasals> legal:partOf <http://example.org/legal/document/uu/1999/40/bab/0007> .
+<http://example.org/legal/document/uu/1999/40/bab/0008> legal:partOf <http://example.org/legal/document/uu/1999/40/bab> .
+<http://example.org/legal/document/uu/1999/40/bab/0008/pasals> legal:partOf <http://example.org/legal/document/uu/1999/40/bab/0008> .
+<http://example.org/legal/document/uu/1999/40/bab/0009> legal:partOf <http://example.org/legal/document/uu/1999/40/bab> .
+<http://example.org/legal/document/uu/1999/40/bab/0009/pasals> legal:partOf <http://example.org/legal/document/uu/1999/40/bab/0009> .
+<http://example.org/legal/document/uu/1999/40/bab/0010> legal:partOf <http://example.org/legal/document/uu/1999/40/bab> .
+<http://example.org/legal/document/uu/1999/40/bab/0010/pasals> legal:partOf <http://example.org/legal/document/uu/1999/40/bab/0010> .
+<http://example.org/legal/document/uu/1999/40/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1999/40/mengingat/point> .
+<http://example.org/legal/document/uu/1999/40/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1999/40/mengingat/point> .
+<http://example.org/legal/document/uu/1999/40/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1999/40/menimbang/point> .
+<http://example.org/legal/document/uu/1999/40/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1999/40/menimbang/point> .
+<http://example.org/legal/document/uu/1999/40/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/1999/40/menimbang/point> .
+<http://example.org/legal/document/uu/1999/40/menimbang/point/d> legal:partOf <http://example.org/legal/document/uu/1999/40/menimbang/point> .

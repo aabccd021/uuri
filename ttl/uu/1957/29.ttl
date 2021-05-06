@@ -1,0 +1,20 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1957/29> legal:documentHasBabSet <http://example.org/legal/document/uu/1957/29/bab> .
+<http://example.org/legal/document/uu/1957/29> legal:documentHasDisahkanDate "1957-10-08"^^xsd:date .
+<http://example.org/legal/document/uu/1957/29> legal:documentMengingat <http://example.org/legal/document/uu/1957/29/mengingat> .
+<http://example.org/legal/document/uu/1957/29/mengingat/text> legal:textHasTextString "Pasal - pasal 45 ayat 3, 48 dan 89 Undang - undan g Dasar Sementara Republik Indonesia, Dengan persetujuan Dewan Perwakilan Rakyat, MEMUTUSKAN : Menetapkan : UNDANG - UNDANG TENTANG PEJABAT YANG MENJALANKAN PEKERJAAN JABATAN PRESIDEN, JIKA PRESIDEN MANGKAT, BERHENTI ATAU BERHALANGAN, SEDANG WAKIL PRES IDEN TIDAK ADA ATAU BERHALANGAN." .
+<http://example.org/legal/document/uu/1957/29/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/1957/29/mengingat/text> .
+<http://example.org/legal/document/uu/1957/29> legal:documentMenimbang <http://example.org/legal/document/uu/1957/29/menimbang> .
+<http://example.org/legal/document/uu/1957/29/menimbang/text> legal:textHasTextString "bahwa dipandang perlu mengadakan ketentuan siapa yang akan menjalankan pekerjaan jabatan Presiden, jika Presiden mangkat, berhenti atau berhalangan, sedang Wakil Presiden tidak ada atau berhalangan," .
+<http://example.org/legal/document/uu/1957/29/menimbang> legal:menimbangHasText <http://example.org/legal/document/uu/1957/29/menimbang/text> .
+<http://example.org/legal/document/uu/1957/29> legal:documentHasDisahkanPengesah "SOEKARNO" .
+<http://example.org/legal/document/uu/1957/29> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/1957/29> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/1957/29> a legal:Document .
+<http://example.org/legal/document/uu/1957/29/mengingat/text> a legal:Text .
+<http://example.org/legal/document/uu/1957/29/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1957/29/menimbang/text> a legal:Text .
+<http://example.org/legal/document/uu/1957/29/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1957/29/bab> legal:partOf <http://example.org/legal/document/uu/1957/29> .

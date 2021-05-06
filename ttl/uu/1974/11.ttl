@@ -1,0 +1,385 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1974/11> legal:documentHasBabSet <http://example.org/legal/document/uu/1974/11/bab> .
+<http://example.org/legal/document/uu/1974/11/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1974/11/bab/0001> .
+<http://example.org/legal/document/uu/1974/11/bab/0001> legal:babHasKey 1 .
+<http://example.org/legal/document/uu/1974/11/bab/0001> legal:babHasTitle "PENGERTIAN" .
+<http://example.org/legal/document/uu/1974/11/bab/0001> legal:babHasPasalSet <http://example.org/legal/document/uu/1974/11/bab/0001/pasals> .
+<http://example.org/legal/document/uu/1974/11/bab/0001/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1974/11/pasal/0001> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1974/11/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226> .
+<http://example.org/legal/document/uu/1974/11> legal:documentHasPasal <http://example.org/legal/document/uu/1974/11/pasal/0001> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226> legal:pasalVersionHasVersionDate "1974-12-26"^^xsd:date .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226> legal:pasalVersionHasRawText "Dalam Undang - undang ini yang dimaksud dengan : PRESIDEN REPUBLIK INDONESIA - 4 -\n1. \"Negara\" adalah Negara Republik Indonesia;\n2. \"Pemerintah\" adalah Pemerintah Republik Indonesia;\n3. \"Air\" adalah semua air yang terdapat di dalam dan atau berasal dari sumber - sumber air, baik yang terdapat di atas maupun di bawah permukaan tanah, tidak termasuk dalam pengertian ini air yang terdapat di laut;\n4. \"Sumber - sumber Air\" adalah tempat - tempat da n wadah - wadah air, baik yang terdapat di atas, maupun di bawah permukaan tanah;\n5. \"Pegairan\" adalah suatu bidang pembinaan atas air, sumber - sumber air, termasuk kekayaan alam bukan hewani yang terkandung di dalamnya baik yang alamiah maupun yang telah diu sahakan oleh manusia;\n6. \"Tata Pengaturan Air\" adalah segala usaha untuk mengatur pembinaan seperti pemilikan, penguasaan, pengelolaan, penggunaan, pengusahaan, dan pengawasan atas air beserta sumber - sumbernya, termasuk kekayaan alam bukan hewani yang ter kandung didalamnya, guna mencapai manfaat yang sebesar - besarnya dalam memenuhi hajat hidup dan peri kehidupan Rakyat;\n7. \"Tata Pengairan\" adalah susunan dan letak sumber - sumber air dan atau bangunan - bangunan pengairan menurut ketentuan - ketentuan teknik pem binaanya disuatu wilayah pengairan;\n8. \"Tata Air\" adalah susunan dan letak air seperti dimaksud dalam angka 3 pasal ini;\n9. \"Pembangunan Pengairan\", adalah segala usaha mengembangkan pemanfaatan air beserta sumber - sumbernya dengan perencanaan dan perencanaan teknis yang teratur an serasi guna mencapai manfaat PRESIDEN REPUBLIK INDONESIA - 5 - sebesar - besarnya dalam memenuhi hajat hidup dan peri kehidupan Rakyat;\n10. \"Perencanaan\" adalah kegiatan - kegiatan dan usaha - usaha untuk merumuskan sesuatu dasar tunt unan guna sesuatu tindakan dalam ruang lingkup yang luas dan berskala makro, sebagai hasil dari penghubungan dan pengolahan dari tugas pokok, tugas utama, cetusan, gagasan, pengetahuan, pengalaman dan keadaan;\n11. \"Rencana\" adalah hasil perencanaan;\n12. \"P erencanaan Teknis\" adalah kegiatan - kegiatan dan usaha - usaha untuk merumuskan perincian rencana sebagai dasar dan tuntunan guna sesuatu tindakan dalam ruang lingkup yang tertentu dan berskala rmikro serta bersifat teknis;\n13. \"Rencana Teknis\" adalah hasil p erencanaan teknis.\n" .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/description> legal:textHasTextString "Dalam Undang - undang ini yang dimaksud dengan : PRESIDEN REPUBLIK INDONESIA - 4 -" .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/description> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0001> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0001/text> legal:textHasTextString "\"Negara\" adalah Negara Republik Indonesia;" .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0001/text> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0002> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0002/text> legal:textHasTextString "\"Pemerintah\" adalah Pemerintah Republik Indonesia;" .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0002/text> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0003> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0003> legal:pointHasKey "3" .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0003/text> legal:textHasTextString "\"Air\" adalah semua air yang terdapat di dalam dan atau berasal dari sumber - sumber air, baik yang terdapat di atas maupun di bawah permukaan tanah, tidak termasuk dalam pengertian ini air yang terdapat di laut;" .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0003> legal:pointHasText <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0003/text> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0004> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0004> legal:pointHasKey "4" .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0004/text> legal:textHasTextString "\"Sumber - sumber Air\" adalah tempat - tempat da n wadah - wadah air, baik yang terdapat di atas, maupun di bawah permukaan tanah;" .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0004> legal:pointHasText <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0004/text> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0005> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0005> legal:pointHasKey "5" .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0005/text> legal:textHasTextString "\"Pegairan\" adalah suatu bidang pembinaan atas air, sumber - sumber air, termasuk kekayaan alam bukan hewani yang terkandung di dalamnya baik yang alamiah maupun yang telah diu sahakan oleh manusia;" .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0005> legal:pointHasText <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0005/text> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0006> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0006> legal:pointHasKey "6" .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0006/text> legal:textHasTextString "\"Tata Pengaturan Air\" adalah segala usaha untuk mengatur pembinaan seperti pemilikan, penguasaan, pengelolaan, penggunaan, pengusahaan, dan pengawasan atas air beserta sumber - sumbernya, termasuk kekayaan alam bukan hewani yang ter kandung didalamnya, guna mencapai manfaat yang sebesar - besarnya dalam memenuhi hajat hidup dan peri kehidupan Rakyat;" .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0006> legal:pointHasText <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0006/text> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0007> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0007> legal:pointHasKey "7" .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0007/text> legal:textHasTextString "\"Tata Pengairan\" adalah susunan dan letak sumber - sumber air dan atau bangunan - bangunan pengairan menurut ketentuan - ketentuan teknik pem binaanya disuatu wilayah pengairan;" .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0007> legal:pointHasText <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0007/text> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0008> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0008> legal:pointHasKey "8" .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0008/text> legal:textHasTextString "\"Tata Air\" adalah susunan dan letak air seperti dimaksud dalam angka 3 pasal ini;" .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0008> legal:pointHasText <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0008/text> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0009> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0009> legal:pointHasKey "9" .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0009/text> legal:textHasTextString "\"Pembangunan Pengairan\", adalah segala usaha mengembangkan pemanfaatan air beserta sumber - sumbernya dengan perencanaan dan perencanaan teknis yang teratur an serasi guna mencapai manfaat PRESIDEN REPUBLIK INDONESIA - 5 - sebesar - besarnya dalam memenuhi hajat hidup dan peri kehidupan Rakyat;" .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0009> legal:pointHasText <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0009/text> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0010> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0010> legal:pointHasKey "10" .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0010/text> legal:textHasTextString "\"Perencanaan\" adalah kegiatan - kegiatan dan usaha - usaha untuk merumuskan sesuatu dasar tunt unan guna sesuatu tindakan dalam ruang lingkup yang luas dan berskala makro, sebagai hasil dari penghubungan dan pengolahan dari tugas pokok, tugas utama, cetusan, gagasan, pengetahuan, pengalaman dan keadaan;" .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0010> legal:pointHasText <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0010/text> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0011> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0011> legal:pointHasKey "11" .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0011/text> legal:textHasTextString "\"Rencana\" adalah hasil perencanaan;" .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0011> legal:pointHasText <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0011/text> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0012> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0012> legal:pointHasKey "12" .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0012/text> legal:textHasTextString "\"P erencanaan Teknis\" adalah kegiatan - kegiatan dan usaha - usaha untuk merumuskan perincian rencana sebagai dasar dan tuntunan guna sesuatu tindakan dalam ruang lingkup yang tertentu dan berskala rmikro serta bersifat teknis;" .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0012> legal:pointHasText <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0012/text> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0013> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0013> legal:pointHasKey "13" .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0013/text> legal:textHasTextString "\"Rencana Teknis\" adalah hasil p erencanaan teknis." .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0013> legal:pointHasText <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0013/text> .
+<http://example.org/legal/document/uu/1974/11/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1974/11/bab/0002> .
+<http://example.org/legal/document/uu/1974/11/bab/0002> legal:babHasKey 2 .
+<http://example.org/legal/document/uu/1974/11/bab/0002> legal:babHasTitle "FUNGSI" .
+<http://example.org/legal/document/uu/1974/11/bab/0002> legal:babHasPasalSet <http://example.org/legal/document/uu/1974/11/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1974/11/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1974/11/pasal/0002> .
+<http://example.org/legal/document/uu/1974/11/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1974/11/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1974/11/pasal/0002/version/19741226> .
+<http://example.org/legal/document/uu/1974/11> legal:documentHasPasal <http://example.org/legal/document/uu/1974/11/pasal/0002> .
+<http://example.org/legal/document/uu/1974/11/pasal/0002/version/19741226> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1974/11/pasal/0002/version/19741226> legal:pasalVersionHasVersionDate "1974-12-26"^^xsd:date .
+<http://example.org/legal/document/uu/1974/11/pasal/0002/version/19741226> legal:pasalVersionHasRawText "Air beserta su mber - sumbernya, termasuk kekayaan alam yang terkan dung didalamnya, seperti dimaksud dalam Pasal 1 angka 3, 4 dan 5 Undang - undang ini mempunyai fungsi sosial serta digunakan untuk sebesar - besar kemakmuran Rakyat." .
+<http://example.org/legal/document/uu/1974/11/pasal/0002/version/19741226/text> legal:textHasTextString "Air beserta su mber - sumbernya, termasuk kekayaan alam yang terkan dung didalamnya, seperti dimaksud dalam Pasal 1 angka 3, 4 dan 5 Undang - undang ini mempunyai fungsi sosial serta digunakan untuk sebesar - besar kemakmuran Rakyat." .
+<http://example.org/legal/document/uu/1974/11/pasal/0002/version/19741226> legal:pasalVersionHasText <http://example.org/legal/document/uu/1974/11/pasal/0002/version/19741226/text> .
+<http://example.org/legal/document/uu/1974/11/pasal/0002/version/19741226/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1974/11/pasal/0001> .
+<http://example.org/legal/document/uu/1974/11/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1974/11/bab/0003> .
+<http://example.org/legal/document/uu/1974/11/bab/0003> legal:babHasKey 3 .
+<http://example.org/legal/document/uu/1974/11/bab/0003> legal:babHasTitle "HAK PENGUASAAN DAN WEWENANG" .
+<http://example.org/legal/document/uu/1974/11/bab/0003> legal:babHasPasalSet <http://example.org/legal/document/uu/1974/11/bab/0003/pasals> .
+<http://example.org/legal/document/uu/1974/11/bab/0003/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1974/11/pasal/0003> .
+<http://example.org/legal/document/uu/1974/11/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/1974/11/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226> .
+<http://example.org/legal/document/uu/1974/11> legal:documentHasPasal <http://example.org/legal/document/uu/1974/11/pasal/0003> .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226> legal:pasalVersionHasVersionDate "1974-12-26"^^xsd:date .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226> legal:pasalVersionHasRawText "(1). Menteri yang diserahi tugas urusan pengairan, diberi wewenang dan tanggungjawab untuk mengkordinasikan segata pengaturan usaha - usaha perencanaan, perencanaan teknis, pengawasan, pengusahaan, pemeliharaan, serta perlindungan dan penggunaan air dan atau sumber - sumber air, dengan memperhatikan kepentingan Departemen dan atau Lembaga yang bersangkutan.\n(2). Pengurusan administratip atas sumber air bawah tanah dan mata air panas sebagai sumber mineral dan tenaga adalah diluar wewen ang dan tanggung - jawab Menteri yang disebut dalam ayat (1) pasal ini. Pasal 6 Dalam hal terjadi atau diperhitungkan akan terjadi bencana yang mempunyai akibat kerugian harta benda maupun jiwa, Pemerintah berwenang mengambil tindakan - tindakan penyelemat an dengan mengatur kegiatan - kegiatan pengamanan yang dapat menyimpang dari ketentuan - ketentuan Undang - undang ini. Pasal 7 Pengaturan wewenang sebagaimana dimaksud dalam Pasal 4, 5 dan 6 Undang - undang ini, diatur lebih lanjut dengan Peraturan Pemerintah.\n(3). Pelaksanaan atas ketentuan ayat (2) pasal ini tetap menghormati hak yang d imiliki oleh masyarakat adat setempat, sepanjang tidak bertentangan dengan kepentingan Nasional. Pasal 4 Wewenang Pemerintah sebagaimana tersebut dalam Pasal 3 Undang - undang ini, dapat dilimpahkan kepada instansi - instansi Pemerintah, baik Pusat maupun Daerah dan atau badan - badan hukum tertentu yang syarat - syarat dan cara - caranya diatur dengan Peraturan Pemer intah. Pasal 5 PRESIDEN REPUBLIK INDONESIA - 7 -" .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat> .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0001> .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0001> legal:ayatHasRawText "Menteri yang diserahi tugas urusan pengairan, diberi wewenang dan tanggungjawab untuk mengkordinasikan segata pengaturan usaha - usaha perencanaan, perencanaan teknis, pengawasan, pengusahaan, pemeliharaan, serta perlindungan dan penggunaan air dan atau sumber - sumber air, dengan memperhatikan kepentingan Departemen dan atau Lembaga yang bersangkutan." .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0001/text> legal:textHasTextString "Menteri yang diserahi tugas urusan pengairan, diberi wewenang dan tanggungjawab untuk mengkordinasikan segata pengaturan usaha - usaha perencanaan, perencanaan teknis, pengawasan, pengusahaan, pemeliharaan, serta perlindungan dan penggunaan air dan atau sumber - sumber air, dengan memperhatikan kepentingan Departemen dan atau Lembaga yang bersangkutan." .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0001/text> .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0002> .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0002> legal:ayatHasRawText "Pengurusan administratip atas sumber air bawah tanah dan mata air panas sebagai sumber mineral dan tenaga adalah diluar wewen ang dan tanggung - jawab Menteri yang disebut dalam ayat (1) pasal ini. Pasal 6 Dalam hal terjadi atau diperhitungkan akan terjadi bencana yang mempunyai akibat kerugian harta benda maupun jiwa, Pemerintah berwenang mengambil tindakan - tindakan penyelemat an dengan mengatur kegiatan - kegiatan pengamanan yang dapat menyimpang dari ketentuan - ketentuan Undang - undang ini. Pasal 7 Pengaturan wewenang sebagaimana dimaksud dalam Pasal 4, 5 dan 6 Undang - undang ini, diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0002/text> legal:textHasTextString "Pengurusan administratip atas sumber air bawah tanah dan mata air panas sebagai sumber mineral dan tenaga adalah diluar wewen ang dan tanggung - jawab Menteri yang disebut dalam ayat (1) pasal ini. Pasal 6 Dalam hal terjadi atau diperhitungkan akan terjadi bencana yang mempunyai akibat kerugian harta benda maupun jiwa, Pemerintah berwenang mengambil tindakan - tindakan penyelemat an dengan mengatur kegiatan - kegiatan pengamanan yang dapat menyimpang dari ketentuan - ketentuan Undang - undang ini. Pasal 7 Pengaturan wewenang sebagaimana dimaksud dalam Pasal 4, 5 dan 6 Undang - undang ini, diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0002/text> .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0001> .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1974/11/pasal/0004> .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1974/11/pasal/0007> .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1974/11/pasal/0006> .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0003> .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0003> legal:ayatHasRawText "Pelaksanaan atas ketentuan ayat (2) pasal ini tetap menghormati hak yang d imiliki oleh masyarakat adat setempat, sepanjang tidak bertentangan dengan kepentingan Nasional. Pasal 4 Wewenang Pemerintah sebagaimana tersebut dalam Pasal 3 Undang - undang ini, dapat dilimpahkan kepada instansi - instansi Pemerintah, baik Pusat maupun Daerah dan atau badan - badan hukum tertentu yang syarat - syarat dan cara - caranya diatur dengan Peraturan Pemer intah. Pasal 5 PRESIDEN REPUBLIK INDONESIA - 7 -" .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0003/text> legal:textHasTextString "Pelaksanaan atas ketentuan ayat (2) pasal ini tetap menghormati hak yang d imiliki oleh masyarakat adat setempat, sepanjang tidak bertentangan dengan kepentingan Nasional. Pasal 4 Wewenang Pemerintah sebagaimana tersebut dalam Pasal 3 Undang - undang ini, dapat dilimpahkan kepada instansi - instansi Pemerintah, baik Pusat maupun Daerah dan atau badan - badan hukum tertentu yang syarat - syarat dan cara - caranya diatur dengan Peraturan Pemer intah. Pasal 5 PRESIDEN REPUBLIK INDONESIA - 7 -" .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0003/text> .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0002> .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1974/11/pasal/0005> .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1974/11/pasal/0003> .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1974/11/pasal/0004> .
+<http://example.org/legal/document/uu/1974/11/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1974/11/bab/0004> .
+<http://example.org/legal/document/uu/1974/11/bab/0004> legal:babHasKey 4 .
+<http://example.org/legal/document/uu/1974/11/bab/0004> legal:babHasTitle "PERENCANAAN DAN PERENCANAAN TEKNIS Pasal 8 PRESIDEN REPUBLIK INDONESIA - 8 - (1) Tata Pengaturan Air dan Tata Pengairan serta Pembangunan Pengairan disusun atas dasar perencanaan dan perencanaan teknis yang ditujukan untuk kepentingan umum. (2) Hasil perencanaan dan pe rencanaan teknis yang berupa rencana - rencana dan rencana - rencana teknis tata, pengaturan air dan tata pengairan serta pembangunan pengairan tersebut dalam ayat (1) pasal ini, disusun untuk keperluan rakyat disegala bidang dengan memperhatikan urutan priori tas. (3) Rencana - rencana dan rencana - rencana teknis dimaksud dalam ayat (2 pasal ini, disusun guna memperoleh tata air yang baik berdasarkan Pola Dasar Pembangunan Nasional dan dilaksanakan untuk kepentingan yang bersifat nasional, regional dan lokal. Pa sal 9 Sebagai dasar perencanaan, pengembangan dan pemanfaatannya, di selenggarakan penelitian dan inventarisasi untuk mengetahui modal kekayaan alam yang berupa air beserta sumber - sumbernya diseluruh wilayah Indonesia." .
+<http://example.org/legal/document/uu/1974/11/bab/0004> legal:babHasPasalSet <http://example.org/legal/document/uu/1974/11/bab/0004/pasals> .
+<http://example.org/legal/document/uu/1974/11/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1974/11/bab/0005> .
+<http://example.org/legal/document/uu/1974/11/bab/0005> legal:babHasKey 5 .
+<http://example.org/legal/document/uu/1974/11/bab/0005> legal:babHasTitle "PEMBINAAN Pasal 10 (1) Pemerintah menetapkan tata cara pembinaan dalam rangka kegiatan pengairan menurut bidangnya masing - masing sesuai dengan fungsi - fungsi dan peranannya, meliputi : a. Menetapkan syarat - syarat dan mengatur perencanaan, PRESIDEN REPUBLIK INDONESIA - 9 - perencanaan teknis , penggunaan, pengusahaan, pengawasan dan perizinan pemanfaatan air dan atau sumber - sumber air; b. Mengatur dan melaksanakan pengelolaan serta pengembangan sumber - sumber air dan jaringan - jaringan pengairan (saluran - saluran beserta bangunan - bangunannya) s ecara lestari dan untuk mencapai daya guna sebesar - besarnya; c. Melakukan pencegahan terhadap terjadinya pengotoran air yang dapat merugikan penggunaannya serta lingkungannya; d. Melakukan pengamanan dan atau pengendalian daya rusak air terhadap daerah - d aerah sekitarnya; e. Menyelenggarakan penelitian dan penyelidikan sumber - sumber air; f. Mengatur serta menyelenggarakan penyuluhan dan pendidikan khusus dalam bidang pengairan. (2) Tata cara pembinaan sebagaimana tersebut dalam ayat (1) pasal ini, diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/document/uu/1974/11/bab/0005> legal:babHasPasalSet <http://example.org/legal/document/uu/1974/11/bab/0005/pasals> .
+<http://example.org/legal/document/uu/1974/11/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1974/11/bab/0006> .
+<http://example.org/legal/document/uu/1974/11/bab/0006> legal:babHasKey 6 .
+<http://example.org/legal/document/uu/1974/11/bab/0006> legal:babHasTitle "PENGUSAHAAN Pasal 11 (1) Pengusahaan air dan atau sumber - sumber air yang ditujukan untuk meningkatkan kemanfaatannya bagi kesejahteraan Rakyat pada dasarnya dilakukan oleh Pemerintah, baik Pusat maupun Da erah. (2) Badan Hukum, Badan Sosial dan atau perorangan yang. melakukan PRESIDEN REPUBLIK INDONESIA - 10 - pengusahaan air dan atau sumber - sumber air, harus memperoleh izin dari Pemerintah, dengan berpedoman kepada azas usaha bersama dan kekeluargaan. (3) Pelaksanaan pasal ini diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/document/uu/1974/11/bab/0006> legal:babHasPasalSet <http://example.org/legal/document/uu/1974/11/bab/0006/pasals> .
+<http://example.org/legal/document/uu/1974/11/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1974/11/bab/0007> .
+<http://example.org/legal/document/uu/1974/11/bab/0007> legal:babHasKey 7 .
+<http://example.org/legal/document/uu/1974/11/bab/0007> legal:babHasTitle "EKSPLOITASI DAN PEMELIHARAAN Pasal 12 Guna menjamin kelestarian fungsi dari bangunan - bangunan pengairan untuk menjaga tata pengairan dan tata air yang baik, perlu dilakukan k egiatan - kegiatan eksploitasi dan pemeliharaan serta perbaikan - perbaikan bangunan - bangunan pengairan tersebut dengan ketentuan : a. Bagi bangunan - bangunan pengairan yang ditujukan untuk memberikan manfaat langsung kepada sesuatu kelompok masyarakat dilakuk an dengan mengikut sertakan masyarakat, baik yang berbentuk Badan Hukum, Badan Sosial maupun perorangan, yang memperoleh manfaat langsung dari adanya bangunan - bangunan tersebut, yang pelaksanaannya diatur lebih lanjut dengan Peraturan Pemerintah. b. Bagi b angunan - bangunan pengairan yang ditujukan untuk kesejahteraan dan keselamatan umum pada dasarnya dilakukan oleh Pemerintah, baik Pusat maupun Daerah. BAB VIII ... PRESIDEN REPUBLIK INDONESIA - 11 -" .
+<http://example.org/legal/document/uu/1974/11/bab/0007> legal:babHasPasalSet <http://example.org/legal/document/uu/1974/11/bab/0007/pasals> .
+<http://example.org/legal/document/uu/1974/11/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1974/11/bab/0008> .
+<http://example.org/legal/document/uu/1974/11/bab/0008> legal:babHasKey 8 .
+<http://example.org/legal/document/uu/1974/11/bab/0008> legal:babHasTitle "PERLINDUNGAN Pasal 13 (1) Air, sumber - sumber air beserta b angunan - bangunan pengairan harus dilindungi serta diamankan, dipertahankan dan dijaga kelestariannya, supaya dapat memenuhi fungsinya sebagaimana tersebut dalam Pasal 2 Undang - undang ini, dengan jalan: a. Melakukan usaha - usaha penyelamatan tanah dan air; b. Melakukan pengamanan dan pengendalian daya rusak air terhadap sumber - sumbernya dan daerah sekitarnya; c. Melakukan pencegahan terhadap terjadinya pengotoran air, yang dapat merugikan penggunaan serta lingkungannya; d. Melakukan pengamanan dan perlind ungan terhadap bangunan - bangunan pengairan, sehingga tetap berfungsi sebagaimana mestinya. (2) Pelaksanaan ayat (1) pasal ini diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/document/uu/1974/11/bab/0008> legal:babHasPasalSet <http://example.org/legal/document/uu/1974/11/bab/0008/pasals> .
+<http://example.org/legal/document/uu/1974/11/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1974/11/bab/0009> .
+<http://example.org/legal/document/uu/1974/11/bab/0009> legal:babHasKey 9 .
+<http://example.org/legal/document/uu/1974/11/bab/0009> legal:babHasTitle "PEMBIAYAAN Pasal 14 (1) Segala pembiayaan untuk melakukan kegiatan - kegiata n dalam rangka Tata Pengaturan Air dan Pembangunan Pengairan diatur lebih lanjut oleh Pemerintah. (2) Masyarakat yang mendapat manfaat langsung dari adanya bangunan - bangunan pengairan, baik untuk diusahakan lebih lanjut maupun untuk keperluan sendiri dapat diikut sertakan menanggung pembiayaan sebagai pengganti jasa pengelolaan. PRESIDEN REPUBLIK INDONESIA - 12 - (3) Badan Hukum, Badan Sosial dan atau perorangan yang mendapat manfaat dari adanya bangunan - bangunan pengairan, baik untuk diusahakan lebih lanjut maupun untuk keper luan sendiri, wajib ikut menanggung pembiayaan dalam bentuk iuran yang diberikan kepada Pemerintah. (4) Pelaksanaan dari ayat (2) dan (3) Pasal ini diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/document/uu/1974/11/bab/0009> legal:babHasPasalSet <http://example.org/legal/document/uu/1974/11/bab/0009/pasals> .
+<http://example.org/legal/document/uu/1974/11/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1974/11/bab/0010> .
+<http://example.org/legal/document/uu/1974/11/bab/0010> legal:babHasKey 10 .
+<http://example.org/legal/document/uu/1974/11/bab/0010> legal:babHasTitle "KETENTUAN PIDANA Pasal 15 (1) Diancam dengan hukuma n penjara selama - lamanya 2 (dua) tahun dan atau denda setinggi - tingginya Rp. 5.000.000, - (lima juta rupiah) : a. barang siapa dengan sengaja melakukan pengusahaan air dan atau sumber - sumber air yang tidak berdasarkan perencanaan dan perencanaan teknis ta ta pengaturan air dan tata pengairan serta pembangunan pengairan sebagaimana tersebut dalam Pasal 8 ayat (1) Undang - undang ini ; b. barang siapa dengan sengaja melakukan pengusahaan air dan atau sumber - sumber air tanpa izin dari Pemerintah sebagaimana te rsebut dalam Pasal 11 ayat (2) Undang - undang ini ; c. barang siapa yang sudah memperoleh izin dari Pem erintah untuk pengusahaan air dan atau sumber - sumber air sebagaimana tersebut dalam Pasal 11 ayat (2) Undang - undang ini, tetapi dengan sengaja tidak melakukan dan atau sengaja tidak ikut membantu dalam usaha - usaha menyelamatkan tanah, air, sumber - sumber ai r dan bangunan - bangunan pengairan sebagaimana tersebut dalam Pasal 13 ayat (1) huruf a, b, c, dan d Undang - undang ini. PRESIDEN REPUBLIK INDONESIA - 13 - (2) Perbuatan pidana dimaksud dalam ayat (1) pasal ini adalah kejahatan. (3) Barang siapa karena kelalaiannya menyeba bkan terjadinya pelanggaran atas ketentuan tersebut dalam Pasal 8 ayat (1), Pasal 11 ayat (2) dan Pasal 13 ayat (1) huruf a, b, c dan d Undang - undang ini, diancam dengan hukuman kurungan selama - lamanya 3 (tiga) bulan dan atau denda setinggi - tingginya Rp. 5 0.000, - (Limapuluh ribu rupiah). (4) Perbuatan pidana dimaksud dalam ayat (3) pasal ini adalah pelanggaran." .
+<http://example.org/legal/document/uu/1974/11/bab/0010> legal:babHasPasalSet <http://example.org/legal/document/uu/1974/11/bab/0010/pasals> .
+<http://example.org/legal/document/uu/1974/11/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1974/11/bab/0011> .
+<http://example.org/legal/document/uu/1974/11/bab/0011> legal:babHasKey 11 .
+<http://example.org/legal/document/uu/1974/11/bab/0011> legal:babHasTitle "KETENTUAN PERALIHAN Pasal 16 Segala peraturan perundang - undangan dalam bidang pengairan yang elah ada yang tidak bertentangan dengan Unda ng - undang ini, dinyatakan tetap berlaku, selama belum diadakan yang baru berdasarkan Undang - undang ini." .
+<http://example.org/legal/document/uu/1974/11/bab/0011> legal:babHasPasalSet <http://example.org/legal/document/uu/1974/11/bab/0011/pasals> .
+<http://example.org/legal/document/uu/1974/11/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1974/11/bab/0012> .
+<http://example.org/legal/document/uu/1974/11/bab/0012> legal:babHasKey 12 .
+<http://example.org/legal/document/uu/1974/11/bab/0012> legal:babHasTitle "KETENTUAN PENUTUP Pasal 17 Undang - undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA - 14 - Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1974/11/bab/0012> legal:babHasPasalSet <http://example.org/legal/document/uu/1974/11/bab/0012/pasals> .
+<http://example.org/legal/document/uu/1974/11> legal:documentHasDisahkanDate "1974-12-26"^^xsd:date .
+<http://example.org/legal/document/uu/1974/11> legal:documentMengingat <http://example.org/legal/document/uu/1974/11/mengingat> .
+<http://example.org/legal/document/uu/1974/11/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1974/11/mengingat/point> .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1974/11/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1974/11/mengingat/point/description> .
+<http://example.org/legal/document/uu/1974/11/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/11/mengingat/point/0001> .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0001/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 20 ayat (1), Pasal 27 dan Pasal 33 ayat (3) Undang - Undang Dasar 1945;" .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1974/11/mengingat/point/0001/text> .
+<http://example.org/legal/document/uu/1974/11/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/11/mengingat/point/0002> .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0002/text> legal:textHasTextString "Ketetapan Majelis Permusyawaratan Rakyat Republik Indonesia Nomor IV/MPR/ 1973 tentang Garis - garis Besar Haluan Negara; ," .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1974/11/mengingat/point/0002/text> .
+<http://example.org/legal/document/uu/1974/11/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/11/mengingat/point/0003> .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0003> legal:pointHasKey "3" .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0003/text> legal:textHasTextString "Undang - undang Nomor 5 Tahun 1960 tentang Peraturan Dasar Pokok - pokok Agraria (Lembaran Negara Republik Indonesia Tahun 1960 Nomor 104, Tambahan Lembaran Negara Republik Indonesia Nomor 2043);" .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0003> legal:pointHasText <http://example.org/legal/document/uu/1974/11/mengingat/point/0003/text> .
+<http://example.org/legal/document/uu/1974/11/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/11/mengingat/point/0004> .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0004> legal:pointHasKey "4" .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0004/text> legal:textHasTextString "Undang - un dang Nomor 9 Tahun 1960 tentang Pokok - pokok Kesehatan (Lembaran Negara Republik Indonesia Tahun 1960, Nomor 131, Tambahan Lembaran Negara Republik Indonesia Nomor 2068);" .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0004> legal:pointHasText <http://example.org/legal/document/uu/1974/11/mengingat/point/0004/text> .
+<http://example.org/legal/document/uu/1974/11/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/11/mengingat/point/0005> .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0005> legal:pointHasKey "5" .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0005/text> legal:textHasTextString "Undang - undang Nomor 11 Tahun 1962 tentang Hygiene Untuk Usaha - usaha Bagi - Umum ( Lembaran Negara Republik Indonesia Tahun 1962 Nomor 48, Tambahan Lembaran Negara Republik Indonesia Nomor 2475);" .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0005> legal:pointHasText <http://example.org/legal/document/uu/1974/11/mengingat/point/0005/text> .
+<http://example.org/legal/document/uu/1974/11/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/11/mengingat/point/0006> .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0006> legal:pointHasKey "6" .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0006/text> legal:textHasTextString "Undang - undang Nomor 5 Tahun 1967 tentang Ketentuan - ketentuan Pokok Kehutanan (Lembaran Negara Republik Indonesia Tahun 1967 Nomor 8, Tambah an Lembaran Negara Republik Indonesia Nomor 2823); PRESIDEN REPUBLIK INDONESIA - 3 -" .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0006> legal:pointHasText <http://example.org/legal/document/uu/1974/11/mengingat/point/0006/text> .
+<http://example.org/legal/document/uu/1974/11/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/11/mengingat/point/0007> .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0007> legal:pointHasKey "7" .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0007/text> legal:textHasTextString "Undang - undang Nomor 6 Tahun 1967 tentang Ketentuan - ketentuan Pokok Peternakan dan Kesehatan Hewan (Lembaran Negara Republik Indonesia Tahun 1967 Nomor 10, Tambahan Lembaran Negara Repub lik Indonesia Nomor 2824);" .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0007> legal:pointHasText <http://example.org/legal/document/uu/1974/11/mengingat/point/0007/text> .
+<http://example.org/legal/document/uu/1974/11/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/11/mengingat/point/0008> .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0008> legal:pointHasKey "8" .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0008/text> legal:textHasTextString "Undang - undang Nomor 11 Tahun 1967 tentang Ketentuan - ketentuan Pokok Pertambangan (Lembaran Negara Republik Indonesia Tahun 1967 Nomor 22, Tambahan Lembaran Negara Republik Indonesia Nomor 2831);" .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0008> legal:pointHasText <http://example.org/legal/document/uu/1974/11/mengingat/point/0008/text> .
+<http://example.org/legal/document/uu/1974/11/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/11/mengingat/point/0009> .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0009> legal:pointHasKey "9" .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0009/text> legal:textHasTextString "Undang - undang Nomor 5 Tahu n 1974 tentang Pokok - pokok Pemerintahan di Daerah (Lembaran Negara Republik Indonesia Tahun 1974 Nomor 38, Tambahan Lembaran Negara Republik Indonesia Nomor 3037); Dengan persetujuan Dewan Perwakilan Rakyat Republik Indonesia. MEMUTUSKAN : Menetapkan : UNDANG - UNDANG TENTANG PENGAIRAN." .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0009> legal:pointHasText <http://example.org/legal/document/uu/1974/11/mengingat/point/0009/text> .
+<http://example.org/legal/document/uu/1974/11> legal:documentMenimbang <http://example.org/legal/document/uu/1974/11/menimbang> .
+<http://example.org/legal/document/uu/1974/11/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/1974/11/menimbang/point> .
+<http://example.org/legal/document/uu/1974/11/menimbang/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1974/11/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1974/11/menimbang/point/description> .
+<http://example.org/legal/document/uu/1974/11/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/11/menimbang/point/a> .
+<http://example.org/legal/document/uu/1974/11/menimbang/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1974/11/menimbang/point/a/text> legal:textHasTextString "bahwa air beserta sumber - sumbernya, termasuk kekayaan alam yang terkandung di dalamnya, adalah karunia Tuhan Yang Maha Esa yang mempunyai manfaat serba guna dan dibutuhkan manusia sepanjang masa, baik di bidang ekonomi sosial maupun budaya;" .
+<http://example.org/legal/document/uu/1974/11/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/1974/11/menimbang/point/a/text> .
+<http://example.org/legal/document/uu/1974/11/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/11/menimbang/point/b> .
+<http://example.org/legal/document/uu/1974/11/menimbang/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1974/11/menimbang/point/b/text> legal:textHasTextString "bahwa bumi d an air dan kekayaan alam yang terkandung di dalamnya dikuasai oleh Negara dan dipergunakan untuk sebesar - besar kemakmuran Rakyat secara adil dan merata." .
+<http://example.org/legal/document/uu/1974/11/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/1974/11/menimbang/point/b/text> .
+<http://example.org/legal/document/uu/1974/11/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/11/menimbang/point/c> .
+<http://example.org/legal/document/uu/1974/11/menimbang/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1974/11/menimbang/point/c/text> legal:textHasTextString "bahwa pemanfaatannya haruslah diabdikan kepada kepentingan dan kesejahteraan rakyat yang sekaligus menciptakan pertumbuhan, keadilan sosial dan kemampuan untuk berdiri atas kekuatan sendiri menuju masyarakat yang adil dan makmur berdasarkan Pancasila;" .
+<http://example.org/legal/document/uu/1974/11/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/1974/11/menimbang/point/c/text> .
+<http://example.org/legal/document/uu/1974/11/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/11/menimbang/point/d> .
+<http://example.org/legal/document/uu/1974/11/menimbang/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1974/11/menimbang/point/d/text> legal:textHasTextString "b ahwa Algemeen Waterreglement Tahun 1936 belum berlaku untuk seluruh Indonesia dan peraturan perundang - undangan lain yang bersangkutan dengan pengairan dirasakan sudah tidak sesuai lagi dengan perkembangan dan keadaan pada dewasa ini;" .
+<http://example.org/legal/document/uu/1974/11/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/1974/11/menimbang/point/d/text> .
+<http://example.org/legal/document/uu/1974/11/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/11/menimbang/point/e> .
+<http://example.org/legal/document/uu/1974/11/menimbang/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/1974/11/menimbang/point/e/text> legal:textHasTextString "bahwa untuk terlaks ananya maksud tersebut di atas, perlu adanya Undang - undang mengenai pengairan yang bersifat nasional dan disesuaikan dengan perkembangan keadaan di Indonesia, baik ditinjau dari segi ekonomi, sosial dan teknologi, guna dijadikan PRESIDEN REPUBLIK INDONESIA - 2 - landasan bagi penyusunan peraturan perundang - undangan selanjutnya." .
+<http://example.org/legal/document/uu/1974/11/menimbang/point/e> legal:pointHasText <http://example.org/legal/document/uu/1974/11/menimbang/point/e/text> .
+<http://example.org/legal/document/uu/1974/11> legal:documentHasDisahkanPengesah "SOEHARTO" .
+<http://example.org/legal/document/uu/1974/11> legal:documentHasDisahkanLocation "Jakarta," .
+<http://example.org/legal/document/uu/1974/11> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/1974/11> a legal:Document .
+<http://example.org/legal/document/uu/1974/11/bab> a legal:BabSet .
+<http://example.org/legal/document/uu/1974/11/bab/0001> a legal:Bab .
+<http://example.org/legal/document/uu/1974/11/bab/0001/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1974/11/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0003> a legal:Point .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0004> a legal:Point .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0005> a legal:Point .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0005/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0006> a legal:Point .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0006/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0007> a legal:Point .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0007/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0008> a legal:Point .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0008/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0009> a legal:Point .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0009/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0010> a legal:Point .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0010/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0011> a legal:Point .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0011/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0012> a legal:Point .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0012/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0013> a legal:Point .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0013/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/bab/0002> a legal:Bab .
+<http://example.org/legal/document/uu/1974/11/bab/0002/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1974/11/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1974/11/pasal/0002/version/19741226> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1974/11/pasal/0002/version/19741226/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/bab/0003> a legal:Bab .
+<http://example.org/legal/document/uu/1974/11/bab/0003/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1974/11/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/bab/0004> a legal:Bab .
+<http://example.org/legal/document/uu/1974/11/bab/0005> a legal:Bab .
+<http://example.org/legal/document/uu/1974/11/bab/0006> a legal:Bab .
+<http://example.org/legal/document/uu/1974/11/bab/0007> a legal:Bab .
+<http://example.org/legal/document/uu/1974/11/bab/0008> a legal:Bab .
+<http://example.org/legal/document/uu/1974/11/bab/0009> a legal:Bab .
+<http://example.org/legal/document/uu/1974/11/bab/0010> a legal:Bab .
+<http://example.org/legal/document/uu/1974/11/bab/0011> a legal:Bab .
+<http://example.org/legal/document/uu/1974/11/bab/0012> a legal:Bab .
+<http://example.org/legal/document/uu/1974/11/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/mengingat/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0003> a legal:Point .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0004> a legal:Point .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0005> a legal:Point .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0005/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0006> a legal:Point .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0006/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0007> a legal:Point .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0007/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0008> a legal:Point .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0008/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0009> a legal:Point .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0009/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1974/11/menimbang/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/menimbang/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1974/11/menimbang/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1974/11/menimbang/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/menimbang/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1974/11/menimbang/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/menimbang/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1974/11/menimbang/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/menimbang/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1974/11/menimbang/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/menimbang/point/e> a legal:Point .
+<http://example.org/legal/document/uu/1974/11/menimbang/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/11/bab> legal:partOf <http://example.org/legal/document/uu/1974/11> .
+<http://example.org/legal/document/uu/1974/11/bab/0001> legal:partOf <http://example.org/legal/document/uu/1974/11/bab> .
+<http://example.org/legal/document/uu/1974/11/bab/0001/pasals> legal:partOf <http://example.org/legal/document/uu/1974/11/bab/0001> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1974/11/bab/0001/pasals> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226> legal:partOf <http://example.org/legal/document/uu/1974/11/pasal/0001> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1974/11> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point> legal:partOf <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0001> legal:partOf <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0002> legal:partOf <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0003> legal:partOf <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0004> legal:partOf <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0005> legal:partOf <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0006> legal:partOf <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0007> legal:partOf <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0008> legal:partOf <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0009> legal:partOf <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0010> legal:partOf <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0011> legal:partOf <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0012> legal:partOf <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point> .
+<http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point/0013> legal:partOf <http://example.org/legal/document/uu/1974/11/pasal/0001/version/19741226/point> .
+<http://example.org/legal/document/uu/1974/11/bab/0002> legal:partOf <http://example.org/legal/document/uu/1974/11/bab> .
+<http://example.org/legal/document/uu/1974/11/bab/0002/pasals> legal:partOf <http://example.org/legal/document/uu/1974/11/bab/0002> .
+<http://example.org/legal/document/uu/1974/11/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1974/11/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1974/11/pasal/0002/version/19741226> legal:partOf <http://example.org/legal/document/uu/1974/11/pasal/0002> .
+<http://example.org/legal/document/uu/1974/11/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1974/11> .
+<http://example.org/legal/document/uu/1974/11/bab/0003> legal:partOf <http://example.org/legal/document/uu/1974/11/bab> .
+<http://example.org/legal/document/uu/1974/11/bab/0003/pasals> legal:partOf <http://example.org/legal/document/uu/1974/11/bab/0003> .
+<http://example.org/legal/document/uu/1974/11/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1974/11/bab/0003/pasals> .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226> legal:partOf <http://example.org/legal/document/uu/1974/11/pasal/0003> .
+<http://example.org/legal/document/uu/1974/11/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1974/11> .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat> legal:partOf <http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226> .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat> .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0001> .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat> .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0002> .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat> .
+<http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1974/11/pasal/0003/version/19741226/ayat/0003> .
+<http://example.org/legal/document/uu/1974/11/bab/0004> legal:partOf <http://example.org/legal/document/uu/1974/11/bab> .
+<http://example.org/legal/document/uu/1974/11/bab/0004/pasals> legal:partOf <http://example.org/legal/document/uu/1974/11/bab/0004> .
+<http://example.org/legal/document/uu/1974/11/bab/0005> legal:partOf <http://example.org/legal/document/uu/1974/11/bab> .
+<http://example.org/legal/document/uu/1974/11/bab/0005/pasals> legal:partOf <http://example.org/legal/document/uu/1974/11/bab/0005> .
+<http://example.org/legal/document/uu/1974/11/bab/0006> legal:partOf <http://example.org/legal/document/uu/1974/11/bab> .
+<http://example.org/legal/document/uu/1974/11/bab/0006/pasals> legal:partOf <http://example.org/legal/document/uu/1974/11/bab/0006> .
+<http://example.org/legal/document/uu/1974/11/bab/0007> legal:partOf <http://example.org/legal/document/uu/1974/11/bab> .
+<http://example.org/legal/document/uu/1974/11/bab/0007/pasals> legal:partOf <http://example.org/legal/document/uu/1974/11/bab/0007> .
+<http://example.org/legal/document/uu/1974/11/bab/0008> legal:partOf <http://example.org/legal/document/uu/1974/11/bab> .
+<http://example.org/legal/document/uu/1974/11/bab/0008/pasals> legal:partOf <http://example.org/legal/document/uu/1974/11/bab/0008> .
+<http://example.org/legal/document/uu/1974/11/bab/0009> legal:partOf <http://example.org/legal/document/uu/1974/11/bab> .
+<http://example.org/legal/document/uu/1974/11/bab/0009/pasals> legal:partOf <http://example.org/legal/document/uu/1974/11/bab/0009> .
+<http://example.org/legal/document/uu/1974/11/bab/0010> legal:partOf <http://example.org/legal/document/uu/1974/11/bab> .
+<http://example.org/legal/document/uu/1974/11/bab/0010/pasals> legal:partOf <http://example.org/legal/document/uu/1974/11/bab/0010> .
+<http://example.org/legal/document/uu/1974/11/bab/0011> legal:partOf <http://example.org/legal/document/uu/1974/11/bab> .
+<http://example.org/legal/document/uu/1974/11/bab/0011/pasals> legal:partOf <http://example.org/legal/document/uu/1974/11/bab/0011> .
+<http://example.org/legal/document/uu/1974/11/bab/0012> legal:partOf <http://example.org/legal/document/uu/1974/11/bab> .
+<http://example.org/legal/document/uu/1974/11/bab/0012/pasals> legal:partOf <http://example.org/legal/document/uu/1974/11/bab/0012> .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1974/11/mengingat/point> .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1974/11/mengingat/point> .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/1974/11/mengingat/point> .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0004> legal:partOf <http://example.org/legal/document/uu/1974/11/mengingat/point> .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0005> legal:partOf <http://example.org/legal/document/uu/1974/11/mengingat/point> .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0006> legal:partOf <http://example.org/legal/document/uu/1974/11/mengingat/point> .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0007> legal:partOf <http://example.org/legal/document/uu/1974/11/mengingat/point> .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0008> legal:partOf <http://example.org/legal/document/uu/1974/11/mengingat/point> .
+<http://example.org/legal/document/uu/1974/11/mengingat/point/0009> legal:partOf <http://example.org/legal/document/uu/1974/11/mengingat/point> .
+<http://example.org/legal/document/uu/1974/11/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1974/11/menimbang/point> .
+<http://example.org/legal/document/uu/1974/11/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1974/11/menimbang/point> .
+<http://example.org/legal/document/uu/1974/11/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/1974/11/menimbang/point> .
+<http://example.org/legal/document/uu/1974/11/menimbang/point/d> legal:partOf <http://example.org/legal/document/uu/1974/11/menimbang/point> .
+<http://example.org/legal/document/uu/1974/11/menimbang/point/e> legal:partOf <http://example.org/legal/document/uu/1974/11/menimbang/point> .

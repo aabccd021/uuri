@@ -1,0 +1,43 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1971/11> legal:documentHasBabSet <http://example.org/legal/document/uu/1971/11/bab> .
+<http://example.org/legal/document/uu/1971/11> legal:documentHasDisahkanDate "1971-09-24"^^xsd:date .
+<http://example.org/legal/document/uu/1971/11> legal:documentMengingat <http://example.org/legal/document/uu/1971/11/mengingat> .
+<http://example.org/legal/document/uu/1971/11/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1971/11/mengingat/point> .
+<http://example.org/legal/document/uu/1971/11/mengingat/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1971/11/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1971/11/mengingat/point/description> .
+<http://example.org/legal/document/uu/1971/11/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1971/11/mengingat/point/0001> .
+<http://example.org/legal/document/uu/1971/11/mengingat/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/1971/11/mengingat/point/0001/text> legal:textHasTextString "Undang - undang Dasar 1945 pasal 23 (5);" .
+<http://example.org/legal/document/uu/1971/11/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1971/11/mengingat/point/0001/text> .
+<http://example.org/legal/document/uu/1971/11/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1971/11/mengingat/point/0002> .
+<http://example.org/legal/document/uu/1971/11/mengingat/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/1971/11/mengingat/point/0002/text> legal:textHasTextString "Undang - undang Perbendaharaan Indonesia (I.C.W.) sebagaimana beberapa kali diubah dan ditambah;" .
+<http://example.org/legal/document/uu/1971/11/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1971/11/mengingat/point/0002/text> .
+<http://example.org/legal/document/uu/1971/11/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1971/11/mengingat/point/0003> .
+<http://example.org/legal/document/uu/1971/11/mengingat/point/0003> legal:pointHasKey "3" .
+<http://example.org/legal/document/uu/1971/11/mengingat/point/0003/text> legal:textHasTextString "Undang - undang No . 14 Tahun 1966 pasal 6. Memperhatikan : Ketetapan Badan Pemeriksa Keuangan No. A/BPK/ 1968 jo. Surat Badan Pemeriksa Keuangan No. I.752/F/8/1971; Dengan persetujuan Dewan Perwakilan Rakyat Gotong Royong. MEMUTUSKAN : Menetapkan : Undang - undang tentang Perhitungan Anggaran Tahun 1967." .
+<http://example.org/legal/document/uu/1971/11/mengingat/point/0003> legal:pointHasText <http://example.org/legal/document/uu/1971/11/mengingat/point/0003/text> .
+<http://example.org/legal/document/uu/1971/11> legal:documentMenimbang <http://example.org/legal/document/uu/1971/11/menimbang> .
+<http://example.org/legal/document/uu/1971/11/menimbang/text> legal:textHasTextString "bahwa perhitungan Anggaran tahun 1967 perlu ditetapkan dengan Undang - undang;" .
+<http://example.org/legal/document/uu/1971/11/menimbang> legal:menimbangHasText <http://example.org/legal/document/uu/1971/11/menimbang/text> .
+<http://example.org/legal/document/uu/1971/11> legal:documentHasDisahkanPengesah "Jenderal T NI" .
+<http://example.org/legal/document/uu/1971/11> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/1971/11> legal:documentHasDisahkanJabatanPengesah "Presiden Republik Indonesia" .
+<http://example.org/legal/document/uu/1971/11> a legal:Document .
+<http://example.org/legal/document/uu/1971/11/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1971/11/mengingat/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1971/11/mengingat/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1971/11/mengingat/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/1971/11/mengingat/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1971/11/mengingat/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/1971/11/mengingat/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1971/11/mengingat/point/0003> a legal:Point .
+<http://example.org/legal/document/uu/1971/11/mengingat/point/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1971/11/menimbang/text> a legal:Text .
+<http://example.org/legal/document/uu/1971/11/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1971/11/bab> legal:partOf <http://example.org/legal/document/uu/1971/11> .
+<http://example.org/legal/document/uu/1971/11/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1971/11/mengingat/point> .
+<http://example.org/legal/document/uu/1971/11/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1971/11/mengingat/point> .
+<http://example.org/legal/document/uu/1971/11/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/1971/11/mengingat/point> .

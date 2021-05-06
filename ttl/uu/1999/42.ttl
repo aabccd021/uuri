@@ -1,0 +1,334 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1999/42> legal:documentHasBabSet <http://example.org/legal/document/uu/1999/42/bab> .
+<http://example.org/legal/document/uu/1999/42/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/42/bab/0001> .
+<http://example.org/legal/document/uu/1999/42/bab/0001> legal:babHasKey 1 .
+<http://example.org/legal/document/uu/1999/42/bab/0001> legal:babHasTitle "PRESIDEN REPUBLIK INDONESIA .2- KETENTUAN UMUM" .
+<http://example.org/legal/document/uu/1999/42/bab/0001> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/42/bab/0001/pasals> .
+<http://example.org/legal/document/uu/1999/42/bab/0001/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/42/pasal/0001> .
+<http://example.org/legal/document/uu/1999/42/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1999/42/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930> .
+<http://example.org/legal/document/uu/1999/42> legal:documentHasPasal <http://example.org/legal/document/uu/1999/42/pasal/0001> .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930> legal:pasalVersionHasVersionDate "1999-09-30"^^xsd:date .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930> legal:pasalVersionHasRawText "Dalam Undang-undang ini yang dimaksud dengan:\n1. Fidusia adalah pengalihan hak kepemilikan suatu benda atas dasar kepercayaan dengan ketentuan bahwa benda yang hak kepemilikannya dialihkan tersebut tetap dalam penguasaan pemilik benda.\n2. Jaminan Fidusia adalah hak jaminan atas benda bergerak baik yang berwujud maupun yang tidak berwujud dan benda tidak bergerak khususnya bangunan yang tidak dapat dibebani hak tanggungan sebagaimana dimaksud dalam Undang-undang Nomor 4 Tahun 1996 tentang Hak Tanggungan yang tetap berada dalam penguasaan Pemberi Fidusia, sebagai agunan bagi pelunasan utang tertentu, yang memberikan kedudukan yang diutamakan kepada Penerima Fidusia terhadap kreditor lainnya.\n3. Piutang adalah hak untuk menerima pembayaan.\n4. Benda adalah segala sesuatu yang dapat dimiliki atau dialihkan, baik yang berwujud maupun tidak berwujud, yang terdaftar maupun yang tidak terdaftar, yang bergerak maupun yang tak bergerak yang tidak dapat dibebani hak tanggungan atau hipotik.\n5. Pemberi Fidusia adalah orang perseorangan atau korporasi pemilik Benda yang menjadi objek Jaminan Fidusia.\n6. Penerima Fidusia adalah orang perseorangan atau korporasi yang mempunyai piutang yang pembayarannya dijamin dengan Jaminan Fidusia.\n1. Utang adalah kewajiban yang dinyatakan atau dapat dinyatakan dalam jumlah uang baik dalam mata uang Indonesia atau mata uang lainnya, baik secara langsung maupun kontinjen. 8. Kreditor adalah pihak yang mempunyai piutang karena perjanjian atau undang-undang. 9. Debitor adalah pihak yang mempunyai utang karena perjanjian atau undang-undang. 10. Setiap Orang adalah orang perseorangan atau korporasi. PRESIDEN REPUBLIK INDONESIA .3-\n\n" .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point> .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/description> legal:textHasTextString "Dalam Undang-undang ini yang dimaksud dengan:" .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/description> .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0001> .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0001/text> legal:textHasTextString "Fidusia adalah pengalihan hak kepemilikan suatu benda atas dasar kepercayaan dengan ketentuan bahwa benda yang hak kepemilikannya dialihkan tersebut tetap dalam penguasaan pemilik benda." .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0001/text> .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0002> .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0002/text> legal:textHasTextString "Jaminan Fidusia adalah hak jaminan atas benda bergerak baik yang berwujud maupun yang tidak berwujud dan benda tidak bergerak khususnya bangunan yang tidak dapat dibebani hak tanggungan sebagaimana dimaksud dalam Undang-undang Nomor 4 Tahun 1996 tentang Hak Tanggungan yang tetap berada dalam penguasaan Pemberi Fidusia, sebagai agunan bagi pelunasan utang tertentu, yang memberikan kedudukan yang diutamakan kepada Penerima Fidusia terhadap kreditor lainnya." .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0002/text> .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0003> .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0003> legal:pointHasKey "3" .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0003/text> legal:textHasTextString "Piutang adalah hak untuk menerima pembayaan." .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0003> legal:pointHasText <http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0003/text> .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0004> .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0004> legal:pointHasKey "4" .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0004/text> legal:textHasTextString "Benda adalah segala sesuatu yang dapat dimiliki atau dialihkan, baik yang berwujud maupun tidak berwujud, yang terdaftar maupun yang tidak terdaftar, yang bergerak maupun yang tak bergerak yang tidak dapat dibebani hak tanggungan atau hipotik." .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0004> legal:pointHasText <http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0004/text> .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0005> .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0005> legal:pointHasKey "5" .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0005/text> legal:textHasTextString "Pemberi Fidusia adalah orang perseorangan atau korporasi pemilik Benda yang menjadi objek Jaminan Fidusia." .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0005> legal:pointHasText <http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0005/text> .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0006> .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0006> legal:pointHasKey "6" .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0006> legal:pointHasPointSet <http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0006/point> .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0006/point/description> legal:textHasTextString "Penerima Fidusia adalah orang perseorangan atau korporasi yang mempunyai piutang yang pembayarannya dijamin dengan Jaminan Fidusia." .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0006/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0006/point/description> .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0006/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0006/point/0001> .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0006/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0006/point/0001/text> legal:textHasTextString "Utang adalah kewajiban yang dinyatakan atau dapat dinyatakan dalam jumlah uang baik dalam mata uang Indonesia atau mata uang lainnya, baik secara langsung maupun kontinjen. 8. Kreditor adalah pihak yang mempunyai piutang karena perjanjian atau undang-undang. 9. Debitor adalah pihak yang mempunyai utang karena perjanjian atau undang-undang. 10. Setiap Orang adalah orang perseorangan atau korporasi. PRESIDEN REPUBLIK INDONESIA .3-" .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0006/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0006/point/0001/text> .
+<http://example.org/legal/document/uu/1999/42/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/42/bab/0002> .
+<http://example.org/legal/document/uu/1999/42/bab/0002> legal:babHasKey 2 .
+<http://example.org/legal/document/uu/1999/42/bab/0002> legal:babHasTitle "RUANG LINGKUP" .
+<http://example.org/legal/document/uu/1999/42/bab/0002> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/42/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/42/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/42/pasal/0002> .
+<http://example.org/legal/document/uu/1999/42/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1999/42/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/42/pasal/0002/version/19990930> .
+<http://example.org/legal/document/uu/1999/42> legal:documentHasPasal <http://example.org/legal/document/uu/1999/42/pasal/0002> .
+<http://example.org/legal/document/uu/1999/42/pasal/0002/version/19990930> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/42/pasal/0002/version/19990930> legal:pasalVersionHasVersionDate "1999-09-30"^^xsd:date .
+<http://example.org/legal/document/uu/1999/42/pasal/0002/version/19990930> legal:pasalVersionHasRawText "Undang-undang ini berlaku terhadap setiap perjanjian yang bertujuan untuk membebani Benda Jaminan Fidusia." .
+<http://example.org/legal/document/uu/1999/42/pasal/0002/version/19990930/text> legal:textHasTextString "Undang-undang ini berlaku terhadap setiap perjanjian yang bertujuan untuk membebani Benda Jaminan Fidusia." .
+<http://example.org/legal/document/uu/1999/42/pasal/0002/version/19990930> legal:pasalVersionHasText <http://example.org/legal/document/uu/1999/42/pasal/0002/version/19990930/text> .
+<http://example.org/legal/document/uu/1999/42/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/42/pasal/0003> .
+<http://example.org/legal/document/uu/1999/42/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/1999/42/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930> .
+<http://example.org/legal/document/uu/1999/42> legal:documentHasPasal <http://example.org/legal/document/uu/1999/42/pasal/0003> .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930> legal:pasalVersionHasVersionDate "1999-09-30"^^xsd:date .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930> legal:pasalVersionHasRawText "Undang-undang ini tidak berlaku terhadap:\na. Hak Tanggungan yang berkaitan dengan tanah dan bangunan, sepanjang peraturan perundang-undangan yang berlaku menentukan jaminan atas benda-benda tersebut wajib didaftar,\nb. Hipotek atas kapal yang terdaftar dengan isi kotor berukuran 20 (dua puluh) M3 atau lebih:\nc. Hipotek atas pesawat terbang, dan\nd. Gadai.\n" .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point> .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/description> legal:textHasTextString "Undang-undang ini tidak berlaku terhadap:" .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/description> .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/a> .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/a/text> legal:textHasTextString "Hak Tanggungan yang berkaitan dengan tanah dan bangunan, sepanjang peraturan perundang-undangan yang berlaku menentukan jaminan atas benda-benda tersebut wajib didaftar," .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/a> legal:pointHasText <http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/a/text> .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/b> .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/b/text> legal:textHasTextString "Hipotek atas kapal yang terdaftar dengan isi kotor berukuran 20 (dua puluh) M3 atau lebih:" .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/b> legal:pointHasText <http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/b/text> .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/c> .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/c/text> legal:textHasTextString "Hipotek atas pesawat terbang, dan" .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/c> legal:pointHasText <http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/c/text> .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/d> .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/d/text> legal:textHasTextString "Gadai." .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/d> legal:pointHasText <http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/d/text> .
+<http://example.org/legal/document/uu/1999/42/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/42/bab/0003> .
+<http://example.org/legal/document/uu/1999/42/bab/0003> legal:babHasKey 3 .
+<http://example.org/legal/document/uu/1999/42/bab/0003> legal:babHasTitle "PEMBEBANAN, PENDAFTARAN, PENGALIHAN DAN HAPUSNYA JAMINAN FIDUSIA" .
+<http://example.org/legal/document/uu/1999/42/bab/0003> legal:babHasBagianSet <http://example.org/legal/document/uu/1999/42/bab/0003/bagian> .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian> legal:bagianSetHasBagian <http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0001> .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0001> legal:bagianHasKey 1 .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0001> legal:bagianHasTitle "Bagian Pertama Pembebanan Jaminan Fidusia" .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0001> legal:bagianHasPasalSet <http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0001/pasals> .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0001/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/42/pasal/0004> .
+<http://example.org/legal/document/uu/1999/42/pasal/0004> legal:pasalHasKey 4 .
+<http://example.org/legal/document/uu/1999/42/pasal/0004> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/42/pasal/0004/version/19990930> .
+<http://example.org/legal/document/uu/1999/42> legal:documentHasPasal <http://example.org/legal/document/uu/1999/42/pasal/0004> .
+<http://example.org/legal/document/uu/1999/42/pasal/0004/version/19990930> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/42/pasal/0004/version/19990930> legal:pasalVersionHasVersionDate "1999-09-30"^^xsd:date .
+<http://example.org/legal/document/uu/1999/42/pasal/0004/version/19990930> legal:pasalVersionHasRawText "Jaminan Fidusia merupakan perjanjian ikutan dari suatu perjanian pokok yang menimbulkan kewajiban bagi para pihak untuk memenuhi suatu prestasi." .
+<http://example.org/legal/document/uu/1999/42/pasal/0004/version/19990930/text> legal:textHasTextString "Jaminan Fidusia merupakan perjanjian ikutan dari suatu perjanian pokok yang menimbulkan kewajiban bagi para pihak untuk memenuhi suatu prestasi." .
+<http://example.org/legal/document/uu/1999/42/pasal/0004/version/19990930> legal:pasalVersionHasText <http://example.org/legal/document/uu/1999/42/pasal/0004/version/19990930/text> .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0001/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/42/pasal/0005> .
+<http://example.org/legal/document/uu/1999/42/pasal/0005> legal:pasalHasKey 5 .
+<http://example.org/legal/document/uu/1999/42/pasal/0005> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930> .
+<http://example.org/legal/document/uu/1999/42> legal:documentHasPasal <http://example.org/legal/document/uu/1999/42/pasal/0005> .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930> legal:pasalVersionHasVersionDate "1999-09-30"^^xsd:date .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930> legal:pasalVersionHasRawText "(1). Jaminan Fidusia dapat diberikan terhadap satu atau lebih satuan atau jenis Benda, termasuk piutang, baik yang telah ada pada saat jaminan diberikan maupun yang diperoleh kemudian.\n(2). Pembebanan jaminan atas Benda atau piutang yang diperoleh kemudian sebagaimana dimaksud dalam ayat (1) tidak perlu dilakukan dengan perjanjian jaminan tersendiri. Pasal 10 Kecuali diperjanjikan lain:\na. Jaminan Fidusia meliputi hasil dari Benda yang menjadi objek Jaminan Fidusia.\nb. Jaminan Fidusia meliputi klaim asuransi, dalam hal Benda yang menjadi objek Jaminan Fidusia diasuransikan. PRESIDEN REPUBLIK INDONESIA .5-\n" .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat> .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0001> .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0001> legal:ayatHasRawText "Jaminan Fidusia dapat diberikan terhadap satu atau lebih satuan atau jenis Benda, termasuk piutang, baik yang telah ada pada saat jaminan diberikan maupun yang diperoleh kemudian." .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0001/text> legal:textHasTextString "Jaminan Fidusia dapat diberikan terhadap satu atau lebih satuan atau jenis Benda, termasuk piutang, baik yang telah ada pada saat jaminan diberikan maupun yang diperoleh kemudian." .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0001/text> .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002> .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002> legal:ayatHasRawText "Pembebanan jaminan atas Benda atau piutang yang diperoleh kemudian sebagaimana dimaksud dalam ayat (1) tidak perlu dilakukan dengan perjanjian jaminan tersendiri. Pasal 10 Kecuali diperjanjikan lain:\na. Jaminan Fidusia meliputi hasil dari Benda yang menjadi objek Jaminan Fidusia.\nb. Jaminan Fidusia meliputi klaim asuransi, dalam hal Benda yang menjadi objek Jaminan Fidusia diasuransikan. PRESIDEN REPUBLIK INDONESIA .5-\n" .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002> legal:ayatHasPointSet <http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002/point> .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002/point/description> legal:textHasTextString "Pembebanan jaminan atas Benda atau piutang yang diperoleh kemudian sebagaimana dimaksud dalam ayat (1) tidak perlu dilakukan dengan perjanjian jaminan tersendiri. Pasal 10 Kecuali diperjanjikan lain:" .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002/point/description> .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002/point/a> .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002/point/a/text> legal:textHasTextString "Jaminan Fidusia meliputi hasil dari Benda yang menjadi objek Jaminan Fidusia." .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002/point/a> legal:pointHasText <http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002/point/a/text> .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002/point/b> .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002/point/b/text> legal:textHasTextString "Jaminan Fidusia meliputi klaim asuransi, dalam hal Benda yang menjadi objek Jaminan Fidusia diasuransikan. PRESIDEN REPUBLIK INDONESIA .5-" .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002/point/b> legal:pointHasText <http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002/point/b/text> .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian> legal:bagianSetHasBagian <http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0002> .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0002> legal:bagianHasKey 2 .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0002> legal:bagianHasTitle "Bagian Kedua Pendaftaran Jaminan Fidusia Pasal 11 (J) Benda yang dibebani dengan Jaminan Fidusia wajib didaftarkan. (2) Dalam hal Benda yang dibebani dengan Jaminan Fidusia berada di luar wilayah negara Republik Indonesia, kewajiban sebagaimana dimaksud dalam ayat (1) tetap berlaku. Pasal 12 (l) Pendaftaran Jaminan Fidusia sebagaimana dimaksud dalam Pasal 11 ayat (1) dilakukan pada Kantor Pendaftaran Fidusia. (2) Untuk pertama kali, Kantor Pendaftaran Fidusia didirikan di Jakarta dengan wilayah kerja mencakup seluruh wilayah negara Republik Indonesia. (3) Kantor Pendaftaran Fidusia sebagaimana dimaksud dalam ayat (2) berada dalam lingkup tugas Departemen Kehakiman. (4) Ketentuan mengenai pembentukan Kantor Pendaftaran Fidusia untuk daerah lain dan penetapan wilayah kerjanya diatur dengan Keputusan Presiden. Pasal 13 (Jl) Permohonan pendaftaran Jaminan Fidusia dilakukan oleh Penerima Jaminan Fidusia dilakukan oleh Penerimaan Fidusia, kuasa atau wakilnya dengan melampirkan pernyataan pendaftaran Jaminan Fidusia. (2) Pernyataan pendaftaran sebagaimana dimaksud dalam ayat (1) memuat: a. indentitas pihak Pemberi dan Penerima Fidusia, b. tanggal, nomor akta Jaminana Fidusia, nama, dan tempat kedudukan notaris yang membuat akta Jaminan Fidusia, c. data perjanjian pokok yang dijamin Fidusia, d. uraian mengenai Benda yang menjadi objek Jaminan Fidusia, e. nilai penjaminan, dan f. milai Benda yang menjadi objek Jaminan Fidusia. (3) Kantor Pendaftaran Fidusia memuat Jaminan Fidusia dalam Buku Daftar Fidusia pada tanggal yang sama dengan tanggal penerimaan PRESIDEN REPUBLIK INDONESIA -6- permohonan pendaftaran. (4) Ketentuan lebih lanjut mengenai tata cara pendaftaran Jaminan Fidusia dan biaya pendaftaran diatur dengan Peraturan Pemerintah. Pasal 14 (Jl) Kantor Pendaftaran Fidusia menerbitkan dan menyerahkan kepada Penerima Fidusia Sertifikat Jaminana Fidusia pada tanggal yang sama dengan tanggal penerimaan permohonan pendaftaran. (2) Sertifikat Jaminan Fidusia yang merupakan salinan dari Buku Daftar Fidusia memuat catatan tentang hal-hal sebagaimana dimaksud dalam Pasal 13 ayat (2). (3)Jaminan Fidusia lahir pada tanggal yang sama dengan tanggal dicatatnya Jaminana Fidusia dalam Buku Daftar Fidusia. Pasal 15 (l) Dalam Sertifikat Jaminana Fidusia sebagaimana dimaksud dalam Pasal 14 ayat (1) dicantumkan kata-kata \"DEMI KEADILAN BERDASARKAN KETUHANAN YANG MAHA ESA\". (2) Sertifikat Jaminan Fidusia sebagaimana dimaksud dalam ayat (1) mempunyai kekuatan eksekutorial yang sama dengan putusan pengadilan yang telah memperoleh kekuatan hukum tetap. (3) Apabila debitor cidera janji, Penerima Fidusia mempunyai hak untuk menjual Benda yang menjadi objek Jaminan Fidusia atas kekuasaannya sendiri. Pasal 16 (1) Apabila terjadi perubahan mengenai hal-hal yang tercantum dalam Sertifikat Jaminan Fidusia sebagaimana dimaksud dalam Pasal 14 ayat (2), Penerima Fidusia wajib mengajukan permohonan pendaftaran atas perubahan tersebut kepada Kantor Pendaftaran Fidusia. (2) Kantor Pendaftaran Fidusia pada tanggal yang sama dengan tanggal penerimaan permohonan perubahan, melakukan pencatatan perubahan tersebut dalam Buku Daftar Fidusia dan menerbitkan Pernyataan Perubahan yang merupakan bagian tak terpisahkan dari Sertifikat Jaminan Fidusia. Pasal 17 PRESIDEN REPUBLIK INDONESIA -7- Pemberi Fidusia dilarang melakukan fidusia ulang terhadap Benda yang menjadi objek Jaminan Fidusia yang sudah terdaftar. Pasal 18 Segala keterangan mengenai Benda yang menjadi objek Jaminan Fidusia yang ada pada Kantor Pendaftaran Fidusia terbuka untuk umum." .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0002> legal:bagianHasPasalSet <http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0002/pasals> .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian> legal:bagianSetHasBagian <http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0003> .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0003> legal:bagianHasKey 3 .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0003> legal:bagianHasTitle "Bagian Ketiga Pengalihan Jaminan Fidusia Pasal 19 (l) Pengalihan hak atas piutang yang dijaminan dengan fidusia mengakibatkan beralihnya demi hukum segala hak dan kewajiban Penerima Fidusia kepada kreditor baru. (2) Beralihnya Jaminan Fidusia sebagaimana dimaksud dalam ayat (1) didaftarkan oleh kreditor baru kepada Kantor Pendaftaran Fidusia. Pasal 20 Jaminan Fidusia tetap mengikuti Benda yang menjadi objek Jaminan Fidusia dalam tangan siapapun Benda tersebut berada, kecuali pengalihan atas benda persediaan yang menjadi objek Jaminan Fidusia. Pasal 21 (1) Pemberi Fidusia dapat mengalihkan benda persediaan yang menjadi objek Jaminan Fidusia dengan cara dan prosedur yang lazim dilakukan dalam usaha perdagangan. (2) Ketentuan sebagaimana dimaksud dalam ayat (1) tidak berlaku, apabila telah terjadi cidera janji oleh debitor dan atas Pemberi Fidusia pihak ketiga. (3) Benda yang menjadi objek Jaminan Fidusia yang telah dialihkan sebagaimana dimaksud dalam ayat (1) wajib diganti oleh Pemberi Fidusia dengan objek yang setara. (4) Dalam hal Pemberi Fidusia cidera janji, maka hasil pengalihan dan atau tagihan yang timbul karena pengalihan sebagaimana dimaksud dalam ayat (1), demi hukum menjadi objek Jaminan Fidusia pengganti dari objek Jaminan Fidusia yang dialihkan. Pasal 22 Pembeli benda yang menjadi objek Jaminan Fidusia yang merupakan PRESIDEN REPUBLIK INDONESIA 8 benda persediaan bebas dari tuntutan meskipun pembeli tersebut mengetahui adanya Jaminan Fidusia itu, dengan ketentuan bahwa pembeli telah membayar lunas harga penjualan Benda tersebut sesuai dengan harga pasar. Pasal 23 (Jl) Dengan tidak mengurangi ketentuan sebagaimana dimaksud dalam Pasal 21, apabila Penerima Fidusia setuju bahwa Pemberi Fidusia dapat menggunakan, menggabungkan, mencampur, atau mengalihkan Benda atau hasil dari Benda yang menjadi objek Jaminan Fidusia, atau menyetujui melakukan penagihan atau melakukan kompromi atas piutang, maka persetujuan tersebut tidak berarti bahwa Penerima Fidusia melepaskan Jaminan Fidusia. (2) Pemberi Fidusia dilarang mengalihkan, menggadaikan, atau menyewakan kepada pihak lain Benda yang menjadi objek Jaminan Fidusia yang tidak merupakan benda persediaan, kecuali dengan persetujuan tertulis terlebih dahulu dari Penerima Fidusia. Pasal 24 Penerima Fidusia tidak menanggung kewajiban atas akibat tindakan atau kelalaian Pemberi Fidusia baik yang timbul dari hubungan kontraktual atau yang timbul dari perbuatan melanggar hukum sehubungan dengan penggunaan dan pengalihan Benda yang menjadi objek Jaminan Fidusia." .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0003> legal:bagianHasPasalSet <http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0003/pasals> .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian> legal:bagianSetHasBagian <http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0004> .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0004> legal:bagianHasKey 4 .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0004> legal:bagianHasTitle "Bagian Keempat Hapusnya Jaminan Fidusia Pasal 25 (1) Jaminan Fidusia hapus karena hal-hal sebagai berikut: a. hapusnya utang yang dijamin dengan fidusia, b. pelepasan hak atas Jaminan Fidusia oleh Penerima Fidusia, atau c. musnahnya Benda yang menjadi objek Jaminan Fidusia. (2)Musnahnya Benda yang menjadi objek Jaminan Fidusia tidak menghapuskan klaim asuransi sebagaimana dimaksud dalam Pasal 10 huruf b. (3) Penerima Fidusia memberitahukan kepada Kantor Pendaftaran Fidusia mengenai hapusnya Jaminan Fidusia sebagaimana dimaksud dalam ayat (1) dengan melampirkan pernyataan mengenai hapusnya PRESIDEN REPUBLIK INDONESIA -9- utang, pelepasan hak, atau musnahnya Benda yang menjadi objek Jaminan Fidusia tersebut. Pasal 26 (Jl) Dengan hapusnya Jaminan Fidusia sebagaimana dimaksud dalam pasal 25, Kantor Pendaftaran Fidusia mencoret pencatatan Jaminan Fidusia dari Buku Daftar Fidusia. (2) Kantor Pendaftaran Fidusia menerbitkan surat keterangan yang menyatakan Sertifikat keterangan yang menyatakan Sertifikat Jaminan Fidusia yang bersangkutan tidak berlaku lagi." .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0004> legal:bagianHasPasalSet <http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0004/pasals> .
+<http://example.org/legal/document/uu/1999/42/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/42/bab/0004> .
+<http://example.org/legal/document/uu/1999/42/bab/0004> legal:babHasKey 4 .
+<http://example.org/legal/document/uu/1999/42/bab/0004> legal:babHasTitle "HAK MENDAHULU Pasal 27 (J) Penerima Fidusia memiliki hak yang didahulukan terhadap kreditor lainnya. (2) Hak yang didahulukan sebagaimana dimaksud dalam ayat (1) adalah hak Penerima Fidusia untuk mengambil pelunasan piutangnya atas hasil eksekusi Benda yang menjadi objek Jaminan Fidusia. (3) Hak yang didahulukan dari Penerima Fidusia tidak hapus karena adanya kepailitan dan atau likuidasi Pemberi Fidusia. Pasal 28 Apabila atas Benda yang sama menjadi objek Jaminan Fidusia lebih dari 1 (satu) perjanjian Jaminan Fidusia, maka hak yang didahulukan sebagaimana dimaksud dalam Pasal 27, diberikan kepada pihak yang lebih dahulu mendaftarkannya pada Kantor Pendaftaran Fidusia." .
+<http://example.org/legal/document/uu/1999/42/bab/0004> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/42/bab/0004/pasals> .
+<http://example.org/legal/document/uu/1999/42/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/42/bab/0005> .
+<http://example.org/legal/document/uu/1999/42/bab/0005> legal:babHasKey 5 .
+<http://example.org/legal/document/uu/1999/42/bab/0005> legal:babHasTitle "EKSEKUSI JAMINAN FIDUSIA Pasal 29 (1) Apabila debitor atau Pemberi Fidusia cidera janji, eksekusi terhadap Benda yang menjadi objek Jaminan Fidusia dapat dilakukan dengan cara: a. pelaksanaan titel eksekutorial sebagaimana dimaksud dalam Pasal 15 ayat (2) oleh Penerima Fidusia. b. penjualan Benda yang menjadi objek Jaminan Fidusia atas PRESIDEN REPUBLIK INDONESIA -10- kekuasaan Penerima Fidusia sendiri melalui pelelangan umum serta mengambil pelunasan piutangnya dari hasil penjualan, c. penjualan di bawah tangan yang dilakukan berdasarkan kesepakatan Pemberi dan Penerima Fidusia jika dengan cara demikian dapat diperoleh harga tertinggi yang menguntungkan para pihak. (2) Pelaksanaan penjualan sebagaimana dimaksud dalama ayat (1) huruf c dilakukan setelah lewat waktu 1 (satu) bulan sejak diberitahukan secara tertulis oleh Pemberi dan atau Penerima Fidusia kepada pihak-pihak yang berkepentingan dan diumumkan sedikitnya dalam 2 (dua) surat kabar yang tersebar di daerah yang bersangkutan. Pasal 30 Pemberi Fidusia wajib menyerahkan Benda yang menjadi objek Jaminan Fidusia dalam rangka pelaksanaan eksekusi Jaminan Fidusia. Pasal 31 Dalam hal Benda yang menjadi objek Jaminan Fidusia terdiri atas benda perdagangan atau efek yang dapat dijual di pasar atau di bursa, penjualannya dapat dilakukan di tempat-tempat tersebut sesuai dengan peraturan perundang-undangan yang berlaku. Pasal 32 Setiap janji untuk melaksanakan eksekusi terhadap Benda yang menjadi objek Jaminan Fidusia dengan cara yang bertentangan dengan ketentuan sebagaimana dimaksud dalam pasal 29 dan Pasal 31, batal demi hukum. Pasal 33 Setiap janji yang memberi kewenangan kepada Pemberi Fidusia untuk memiliki Benda yang menjadi objek Jaminan Fidusia apabila debitor cidera janji, batal demi hukum. Pasal 34 (Jl) Dalam hal hasil eksekusi melebihi nilai penjaminan, Penerima Fidusia wajib mengembalikan kelebihan tersebut kepada Pemberi Fidusia. (2) Apabila hasil eksekusi tidak mencukupi untuk pelunasan utang, debitor tetap bertanggung jawab atas utang yang belum terbayar. PRESIDEN REPUBLIK INDONESIA -11 -" .
+<http://example.org/legal/document/uu/1999/42/bab/0005> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/42/bab/0005/pasals> .
+<http://example.org/legal/document/uu/1999/42/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/42/bab/0006> .
+<http://example.org/legal/document/uu/1999/42/bab/0006> legal:babHasKey 6 .
+<http://example.org/legal/document/uu/1999/42/bab/0006> legal:babHasTitle "KETENTUAN PIDANA Pasal 35 Setiap orang yang dengan sengaja memalsukan, mengubah, menghilangkan atau dengan cara apapun memberikan keterangan secara menyesatkan, yang jika hal tersebut diketahui oleh salah satu pihak tidak melahirkan perjanjian Jaminan Fidusia, dipidana dengan pidana penjara paling singkat 1 (satu) tahun dan paling lama 5 (lima) tahun dan denda paling sedikit Rp.10.000.000,-(sepuluh juta rupiah) dan paling banyak Rp.100.000.000,- (seratus juta rupiah). Pasal 36 Pemberi Fidusia yang mengalihkan, menggadaikan, atau menyewakan Benda yang menjadi objek Jaminan Fidusia sebagaimana dimaksud dalam Pasal 23 ayat (2) yang dilakukan tanpa persetujuan tertulis terlebih dahulu dari Penerima Fidusia, dipidana dengan pidana penjara paling lama 2 (dua) tahun dan denda paling banyak Rp.50.000.000,- (Jima puluh juta rupiah)." .
+<http://example.org/legal/document/uu/1999/42/bab/0006> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/42/bab/0006/pasals> .
+<http://example.org/legal/document/uu/1999/42/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/42/bab/0007> .
+<http://example.org/legal/document/uu/1999/42/bab/0007> legal:babHasKey 7 .
+<http://example.org/legal/document/uu/1999/42/bab/0007> legal:babHasTitle "KETENTUAN PERALIHAN Pasal 37 (l) Pembebanan Benda yang menjadi objek Jaminan Fidusia yang telah ada sebelum berlakunya Undang-undang ini, tetap berlaku sepanjang tidak bertentangan dengan Undang-undang ini. (2) Dalam jangka waktu selambat-lambatnya 60 (enam puluh) hari terhitung sejak berdirinya Kantor Pendaftaran Fidusia, semua perjanjian Jaminan Fidusia harus sesuai dengan ketentuan dalam Undang-undang ini, kecuali ketentuan mengenai kewajiban pembuatan akta Jaminan Fidusia sebagaimana dimaksud dalam pasal 5 ayat (1). (3) Jika dalam jangka waktu sebagaimana dimaksud dalam ayat (2) tidak dilakukan penyesuaian, maka perjanjian Jaminan Fidusia tersebut bukan merupakan hak agunan atas kebendaan sebagaimana dimaksud dalam Undang-undang ini. PRESIDEN REPUBLIK INDONESIA -12 - Pasal 38 Sepanjang tidak bertentangan dengan ketentuan dalam Undang-undang ini, semua peraturan perundang-undangan mengenai fidusia tetap berlaku sampai dengan dicabut, diganti, atau diperbaharui." .
+<http://example.org/legal/document/uu/1999/42/bab/0007> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/42/bab/0007/pasals> .
+<http://example.org/legal/document/uu/1999/42/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/42/bab/0008> .
+<http://example.org/legal/document/uu/1999/42/bab/0008> legal:babHasKey 8 .
+<http://example.org/legal/document/uu/1999/42/bab/0008> legal:babHasTitle "KETENTUAN PENUTUP Pasal 39 Kantor Pendaftaran Fidusia sebagaimana dimaksud dalam Pasal 12 ayat (2) dibentuk dalam jangka waktu paling lambat 1 (satu) tahun setelah Undang-undang ini diundangkan. Pasal 40 Undang-undang ini disebut Undang-undang Fidusia. Pasal 41 Undang-undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA -13- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1999/42/bab/0008> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/42/bab/0008/pasals> .
+<http://example.org/legal/document/uu/1999/42> legal:documentHasDisahkanDate "1999-09-30"^^xsd:date .
+<http://example.org/legal/document/uu/1999/42> legal:documentMengingat <http://example.org/legal/document/uu/1999/42/mengingat> .
+<http://example.org/legal/document/uu/1999/42/mengingat/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 20 ayat (1), dan Pasal 33 Undang-Undang Dasar 1945: Dengan persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG JAMINAN FIDUSIA" .
+<http://example.org/legal/document/uu/1999/42/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/1999/42/mengingat/text> .
+<http://example.org/legal/document/uu/1999/42> legal:documentMenimbang <http://example.org/legal/document/uu/1999/42/menimbang> .
+<http://example.org/legal/document/uu/1999/42/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/1999/42/menimbang/point> .
+<http://example.org/legal/document/uu/1999/42/menimbang/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1999/42/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/42/menimbang/point/description> .
+<http://example.org/legal/document/uu/1999/42/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/42/menimbang/point/a> .
+<http://example.org/legal/document/uu/1999/42/menimbang/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1999/42/menimbang/point/a/text> legal:textHasTextString "bahwa kebutuhan yang sangat besar dan terus meningkat bagi dunia usaha atas tersedianya dana, perlu diimbangi dengan adanya ketentuan hukum yang jelas dan lengkap yang mengatur mengenai lembaga jaminan:" .
+<http://example.org/legal/document/uu/1999/42/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/1999/42/menimbang/point/a/text> .
+<http://example.org/legal/document/uu/1999/42/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/42/menimbang/point/b> .
+<http://example.org/legal/document/uu/1999/42/menimbang/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1999/42/menimbang/point/b/text> legal:textHasTextString "bahwa Jaminan Fidusia sebagai salah satu bentuk lembaga jaminan sampai saat ini masih didasarkan pada yurisprudensi dan belum diatur dalam peraturan perundang-undangan secara lengkap dan komprehensif," .
+<http://example.org/legal/document/uu/1999/42/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/1999/42/menimbang/point/b/text> .
+<http://example.org/legal/document/uu/1999/42/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/42/menimbang/point/c> .
+<http://example.org/legal/document/uu/1999/42/menimbang/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1999/42/menimbang/point/c/text> legal:textHasTextString "bahwa untuk memenuhi kebutuhan hukum yang dapat lebih memacu pembangunan nasional dan untuk menjamin kepastian hukum serta mampu memberikan perlindungan hukum bagi pihak yang berkepentingan, maka perlu dibentuk ketentuan yang lengkap mengenai Jaminan Fidusia dan jaminan tersebut perlu didaftarkan pada Kantor Pendaftaran Fidusia," .
+<http://example.org/legal/document/uu/1999/42/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/1999/42/menimbang/point/c/text> .
+<http://example.org/legal/document/uu/1999/42/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/42/menimbang/point/d> .
+<http://example.org/legal/document/uu/1999/42/menimbang/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1999/42/menimbang/point/d/text> legal:textHasTextString "bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a, b, dan c dipandang perlu membentuk Undang-undang tentang Jaminan Fidusia," .
+<http://example.org/legal/document/uu/1999/42/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/1999/42/menimbang/point/d/text> .
+<http://example.org/legal/document/uu/1999/42> legal:documentHasDisahkanPengesah "BACHARUDDIN JUSUF HABIBIE" .
+<http://example.org/legal/document/uu/1999/42> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/1999/42> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/1999/42> a legal:Document .
+<http://example.org/legal/document/uu/1999/42/bab> a legal:BabSet .
+<http://example.org/legal/document/uu/1999/42/bab/0001> a legal:Bab .
+<http://example.org/legal/document/uu/1999/42/bab/0001/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1999/42/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0003> a legal:Point .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0004> a legal:Point .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0005> a legal:Point .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0005/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0006> a legal:Point .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0006/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0006/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0006/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0006/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/42/bab/0002> a legal:Bab .
+<http://example.org/legal/document/uu/1999/42/bab/0002/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1999/42/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/42/pasal/0002/version/19990930> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/42/pasal/0002/version/19990930/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/42/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/42/bab/0003> a legal:Bab .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian> a legal:BagianSet .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0001> a legal:Bagian .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0001/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1999/42/pasal/0004> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/42/pasal/0004/version/19990930> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/42/pasal/0004/version/19990930/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/42/pasal/0005> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0002> a legal:Bagian .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0003> a legal:Bagian .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0004> a legal:Bagian .
+<http://example.org/legal/document/uu/1999/42/bab/0004> a legal:Bab .
+<http://example.org/legal/document/uu/1999/42/bab/0005> a legal:Bab .
+<http://example.org/legal/document/uu/1999/42/bab/0006> a legal:Bab .
+<http://example.org/legal/document/uu/1999/42/bab/0007> a legal:Bab .
+<http://example.org/legal/document/uu/1999/42/bab/0008> a legal:Bab .
+<http://example.org/legal/document/uu/1999/42/mengingat/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/42/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1999/42/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1999/42/menimbang/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1999/42/menimbang/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1999/42/menimbang/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1999/42/menimbang/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/42/menimbang/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1999/42/menimbang/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/42/menimbang/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1999/42/menimbang/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/42/menimbang/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1999/42/menimbang/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/42/bab> legal:partOf <http://example.org/legal/document/uu/1999/42> .
+<http://example.org/legal/document/uu/1999/42/bab/0001> legal:partOf <http://example.org/legal/document/uu/1999/42/bab> .
+<http://example.org/legal/document/uu/1999/42/bab/0001/pasals> legal:partOf <http://example.org/legal/document/uu/1999/42/bab/0001> .
+<http://example.org/legal/document/uu/1999/42/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1999/42/bab/0001/pasals> .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930> legal:partOf <http://example.org/legal/document/uu/1999/42/pasal/0001> .
+<http://example.org/legal/document/uu/1999/42/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1999/42> .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point> legal:partOf <http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930> .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0001> legal:partOf <http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point> .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0002> legal:partOf <http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point> .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0003> legal:partOf <http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point> .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0004> legal:partOf <http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point> .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0005> legal:partOf <http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point> .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0006> legal:partOf <http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point> .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0006/point> legal:partOf <http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0006> .
+<http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0006/point/0001> legal:partOf <http://example.org/legal/document/uu/1999/42/pasal/0001/version/19990930/point/0006/point> .
+<http://example.org/legal/document/uu/1999/42/bab/0002> legal:partOf <http://example.org/legal/document/uu/1999/42/bab> .
+<http://example.org/legal/document/uu/1999/42/bab/0002/pasals> legal:partOf <http://example.org/legal/document/uu/1999/42/bab/0002> .
+<http://example.org/legal/document/uu/1999/42/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1999/42/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/42/pasal/0002/version/19990930> legal:partOf <http://example.org/legal/document/uu/1999/42/pasal/0002> .
+<http://example.org/legal/document/uu/1999/42/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1999/42> .
+<http://example.org/legal/document/uu/1999/42/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1999/42/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930> legal:partOf <http://example.org/legal/document/uu/1999/42/pasal/0003> .
+<http://example.org/legal/document/uu/1999/42/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1999/42> .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point> legal:partOf <http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930> .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/a> legal:partOf <http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point> .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/b> legal:partOf <http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point> .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/c> legal:partOf <http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point> .
+<http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point/d> legal:partOf <http://example.org/legal/document/uu/1999/42/pasal/0003/version/19990930/point> .
+<http://example.org/legal/document/uu/1999/42/bab/0003> legal:partOf <http://example.org/legal/document/uu/1999/42/bab> .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian> legal:partOf <http://example.org/legal/document/uu/1999/42/bab/0003> .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0001> legal:partOf <http://example.org/legal/document/uu/1999/42/bab/0003/bagian> .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0001/pasals> legal:partOf <http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0001> .
+<http://example.org/legal/document/uu/1999/42/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0001/pasals> .
+<http://example.org/legal/document/uu/1999/42/pasal/0004/version/19990930> legal:partOf <http://example.org/legal/document/uu/1999/42/pasal/0004> .
+<http://example.org/legal/document/uu/1999/42/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1999/42> .
+<http://example.org/legal/document/uu/1999/42/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0001/pasals> .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930> legal:partOf <http://example.org/legal/document/uu/1999/42/pasal/0005> .
+<http://example.org/legal/document/uu/1999/42/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1999/42> .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat> legal:partOf <http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930> .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat> .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0001> .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat> .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002/point> legal:partOf <http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002> .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002/point/a> legal:partOf <http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002/point> .
+<http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002/point/b> legal:partOf <http://example.org/legal/document/uu/1999/42/pasal/0005/version/19990930/ayat/0002/point> .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0002> legal:partOf <http://example.org/legal/document/uu/1999/42/bab/0003/bagian> .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0002/pasals> legal:partOf <http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0002> .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0003> legal:partOf <http://example.org/legal/document/uu/1999/42/bab/0003/bagian> .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0003/pasals> legal:partOf <http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0003> .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0004> legal:partOf <http://example.org/legal/document/uu/1999/42/bab/0003/bagian> .
+<http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0004/pasals> legal:partOf <http://example.org/legal/document/uu/1999/42/bab/0003/bagian/0004> .
+<http://example.org/legal/document/uu/1999/42/bab/0004> legal:partOf <http://example.org/legal/document/uu/1999/42/bab> .
+<http://example.org/legal/document/uu/1999/42/bab/0004/pasals> legal:partOf <http://example.org/legal/document/uu/1999/42/bab/0004> .
+<http://example.org/legal/document/uu/1999/42/bab/0005> legal:partOf <http://example.org/legal/document/uu/1999/42/bab> .
+<http://example.org/legal/document/uu/1999/42/bab/0005/pasals> legal:partOf <http://example.org/legal/document/uu/1999/42/bab/0005> .
+<http://example.org/legal/document/uu/1999/42/bab/0006> legal:partOf <http://example.org/legal/document/uu/1999/42/bab> .
+<http://example.org/legal/document/uu/1999/42/bab/0006/pasals> legal:partOf <http://example.org/legal/document/uu/1999/42/bab/0006> .
+<http://example.org/legal/document/uu/1999/42/bab/0007> legal:partOf <http://example.org/legal/document/uu/1999/42/bab> .
+<http://example.org/legal/document/uu/1999/42/bab/0007/pasals> legal:partOf <http://example.org/legal/document/uu/1999/42/bab/0007> .
+<http://example.org/legal/document/uu/1999/42/bab/0008> legal:partOf <http://example.org/legal/document/uu/1999/42/bab> .
+<http://example.org/legal/document/uu/1999/42/bab/0008/pasals> legal:partOf <http://example.org/legal/document/uu/1999/42/bab/0008> .
+<http://example.org/legal/document/uu/1999/42/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1999/42/menimbang/point> .
+<http://example.org/legal/document/uu/1999/42/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1999/42/menimbang/point> .
+<http://example.org/legal/document/uu/1999/42/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/1999/42/menimbang/point> .
+<http://example.org/legal/document/uu/1999/42/menimbang/point/d> legal:partOf <http://example.org/legal/document/uu/1999/42/menimbang/point> .

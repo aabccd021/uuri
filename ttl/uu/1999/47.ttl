@@ -1,0 +1,535 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1999/47> legal:documentHasBabSet <http://example.org/legal/document/uu/1999/47/bab> .
+<http://example.org/legal/document/uu/1999/47/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/47/bab/0001> .
+<http://example.org/legal/document/uu/1999/47/bab/0001> legal:babHasKey 1 .
+<http://example.org/legal/document/uu/1999/47/bab/0001> legal:babHasTitle "KETENTUAN UMUM" .
+<http://example.org/legal/document/uu/1999/47/bab/0001> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/47/bab/0001/pasals> .
+<http://example.org/legal/document/uu/1999/47/bab/0001/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/47/pasal/0001> .
+<http://example.org/legal/document/uu/1999/47/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1999/47/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004> .
+<http://example.org/legal/document/uu/1999/47> legal:documentHasPasal <http://example.org/legal/document/uu/1999/47/pasal/0001> .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004> legal:pasalVersionHasVersionDate "1999-10-04"^^xsd:date .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004> legal:pasalVersionHasRawText "Dalam Undang-undang ini yang dimaksud dengan :\na. Daerah adalah Daerah Otonom sebagaimana dimaksud dalam Pasal 1 huruf i Undang-undang Nomor 22 Tahun 1999 tentang Pemerintahan Daerah:\nb. Kabupaten Bulungan adalah Daerah Otonom sebagaimana dimaksud dalam Undang-undang Nomor 27 Tahun 1959 tentang Penetapan Undang-undang Darurat Nomor 3 Tahun 1953 tentang Pembentukan Daerah Tingkat II di Kalimantan (Lembaran Negara Tahun 1953 Nomor 9), sebagai undang-undang: PRESIDEN REPUBLIK INDONESIA 3\nc. Kabupaten Kutai adalah Daerah Otonom sebagaimana dimaksud dalam Undang-undang Nomor 27 Tahun 1959 tentang Penetapan Undang-undang Darurat Nomor 3 Tahun 1953 tentang Pembentukan Daerah Tingkat II di Kalimantan (Lembaran Negara Tahun 1953 Nomor 9), sebagai undang-undang:\nd. Propinsi Kalimantan Timur adalah sebagaimana dimaksud dalam Undang-undang Nomor 25 Tahun 1956 tentang Pembentukan Daerah-daerah Otonom Propinsi Kalimantan Barat, Kalimantan Selatan, dan Kalimantan Timur.\n" .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/description> legal:textHasTextString "Dalam Undang-undang ini yang dimaksud dengan :" .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/description> .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/a> .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/a/text> legal:textHasTextString "Daerah adalah Daerah Otonom sebagaimana dimaksud dalam Pasal 1 huruf i Undang-undang Nomor 22 Tahun 1999 tentang Pemerintahan Daerah:" .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/a> legal:pointHasText <http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/a/text> .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/a/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/i> .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/a/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/47/pasal/0001> .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/b> .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/b/text> legal:textHasTextString "Kabupaten Bulungan adalah Daerah Otonom sebagaimana dimaksud dalam Undang-undang Nomor 27 Tahun 1959 tentang Penetapan Undang-undang Darurat Nomor 3 Tahun 1953 tentang Pembentukan Daerah Tingkat II di Kalimantan (Lembaran Negara Tahun 1953 Nomor 9), sebagai undang-undang: PRESIDEN REPUBLIK INDONESIA 3" .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/b> legal:pointHasText <http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/b/text> .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/c> .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/c/text> legal:textHasTextString "Kabupaten Kutai adalah Daerah Otonom sebagaimana dimaksud dalam Undang-undang Nomor 27 Tahun 1959 tentang Penetapan Undang-undang Darurat Nomor 3 Tahun 1953 tentang Pembentukan Daerah Tingkat II di Kalimantan (Lembaran Negara Tahun 1953 Nomor 9), sebagai undang-undang:" .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/c> legal:pointHasText <http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/c/text> .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/d> .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/d/text> legal:textHasTextString "Propinsi Kalimantan Timur adalah sebagaimana dimaksud dalam Undang-undang Nomor 25 Tahun 1956 tentang Pembentukan Daerah-daerah Otonom Propinsi Kalimantan Barat, Kalimantan Selatan, dan Kalimantan Timur." .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/d> legal:pointHasText <http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/d/text> .
+<http://example.org/legal/document/uu/1999/47/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/47/bab/0002> .
+<http://example.org/legal/document/uu/1999/47/bab/0002> legal:babHasKey 2 .
+<http://example.org/legal/document/uu/1999/47/bab/0002> legal:babHasTitle "PEMBENTUKAN, BATAS WILAYAH, DAN IBUKOTA" .
+<http://example.org/legal/document/uu/1999/47/bab/0002> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/47/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/47/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/47/pasal/0002> .
+<http://example.org/legal/document/uu/1999/47/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1999/47/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/47/pasal/0002/version/19991004> .
+<http://example.org/legal/document/uu/1999/47> legal:documentHasPasal <http://example.org/legal/document/uu/1999/47/pasal/0002> .
+<http://example.org/legal/document/uu/1999/47/pasal/0002/version/19991004> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/47/pasal/0002/version/19991004> legal:pasalVersionHasVersionDate "1999-10-04"^^xsd:date .
+<http://example.org/legal/document/uu/1999/47/pasal/0002/version/19991004> legal:pasalVersionHasRawText "Dengan Undang-undang ini dibentuk Kabupaten Nunukan, Kabupaten Malinau, Kabupaten Kutai Barat, Kabupaten Kutai Timur, dan Kota Bontang dalam wilayah Propinsi Kalimantan Timur." .
+<http://example.org/legal/document/uu/1999/47/pasal/0002/version/19991004/text> legal:textHasTextString "Dengan Undang-undang ini dibentuk Kabupaten Nunukan, Kabupaten Malinau, Kabupaten Kutai Barat, Kabupaten Kutai Timur, dan Kota Bontang dalam wilayah Propinsi Kalimantan Timur." .
+<http://example.org/legal/document/uu/1999/47/pasal/0002/version/19991004> legal:pasalVersionHasText <http://example.org/legal/document/uu/1999/47/pasal/0002/version/19991004/text> .
+<http://example.org/legal/document/uu/1999/47/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/47/pasal/0003> .
+<http://example.org/legal/document/uu/1999/47/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/1999/47/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004> .
+<http://example.org/legal/document/uu/1999/47> legal:documentHasPasal <http://example.org/legal/document/uu/1999/47/pasal/0003> .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004> legal:pasalVersionHasVersionDate "1999-10-04"^^xsd:date .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004> legal:pasalVersionHasRawText "Kabupaten Nunukan berasal dari sebagian wilayah Kabupaten Bulungan yang terdiri atas wilayah :\na. Kecamatan Sebatik:\nb. Kecamatan Nunukan:\nc. Kecamatan Sembakung:\nd. Kecamatan Lumbis: dan\ne. Kecamatan Krayan.\n" .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/description> legal:textHasTextString "Kabupaten Nunukan berasal dari sebagian wilayah Kabupaten Bulungan yang terdiri atas wilayah :" .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/description> .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/a> .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/a/text> legal:textHasTextString "Kecamatan Sebatik:" .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/a> legal:pointHasText <http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/a/text> .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/b> .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/b/text> legal:textHasTextString "Kecamatan Nunukan:" .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/b> legal:pointHasText <http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/b/text> .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/c> .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/c/text> legal:textHasTextString "Kecamatan Sembakung:" .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/c> legal:pointHasText <http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/c/text> .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/d> .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/d/text> legal:textHasTextString "Kecamatan Lumbis: dan" .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/d> legal:pointHasText <http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/d/text> .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/e> .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/e/text> legal:textHasTextString "Kecamatan Krayan." .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/e> legal:pointHasText <http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/e/text> .
+<http://example.org/legal/document/uu/1999/47/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/47/pasal/0004> .
+<http://example.org/legal/document/uu/1999/47/pasal/0004> legal:pasalHasKey 4 .
+<http://example.org/legal/document/uu/1999/47/pasal/0004> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004> .
+<http://example.org/legal/document/uu/1999/47> legal:documentHasPasal <http://example.org/legal/document/uu/1999/47/pasal/0004> .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004> legal:pasalVersionHasVersionDate "1999-10-04"^^xsd:date .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004> legal:pasalVersionHasRawText "Kabupaten Malinau berasal dari sebagian wilayah Kabupaten Bulungan yang terdiri atas wilayah :\na. Kecamatan Mentarang,\nb. Kecamatan Malinau:\nc. Kecamatan Pujungan:\nd. Kecamatan Kayan Hilir, dan\ne. Kecamatan Kayan Hulu. PRESIDEN REPUBLIK INDONESIA .4-\n" .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/description> legal:textHasTextString "Kabupaten Malinau berasal dari sebagian wilayah Kabupaten Bulungan yang terdiri atas wilayah :" .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/description> .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/a> .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/a/text> legal:textHasTextString "Kecamatan Mentarang," .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/a> legal:pointHasText <http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/a/text> .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/b> .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/b/text> legal:textHasTextString "Kecamatan Malinau:" .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/b> legal:pointHasText <http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/b/text> .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/c> .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/c/text> legal:textHasTextString "Kecamatan Pujungan:" .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/c> legal:pointHasText <http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/c/text> .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/d> .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/d/text> legal:textHasTextString "Kecamatan Kayan Hilir, dan" .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/d> legal:pointHasText <http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/d/text> .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/e> .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/e/text> legal:textHasTextString "Kecamatan Kayan Hulu. PRESIDEN REPUBLIK INDONESIA .4-" .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/e> legal:pointHasText <http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/e/text> .
+<http://example.org/legal/document/uu/1999/47/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/47/pasal/0005> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005> legal:pasalHasKey 5 .
+<http://example.org/legal/document/uu/1999/47/pasal/0005> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004> .
+<http://example.org/legal/document/uu/1999/47> legal:documentHasPasal <http://example.org/legal/document/uu/1999/47/pasal/0005> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004> legal:pasalVersionHasVersionDate "1999-10-04"^^xsd:date .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004> legal:pasalVersionHasRawText "Kabupaten Kutai Barat berasal dari sebagian wilayah Kabupaten Kutai yang terdiri atas wilayah :\na. Kecamatan Long Apari,\nb. Kecamatan Long Pahangai,\nc. Kecamatan Long Bagun,\nd. Kecamatan Long Hubung:\ne. Kecamatan Long Iram,\nf. Kecamatan Melak:\ng. Kecamatan Damai,\nh. Kecamatan Barong Tongkok,\n1. Kecamatan Muara Pahu, J- Kecamatan Muara Lawa, k. Kecamatan Jempang: Il. Kecamatan Bongan, dan m. Kecamatan Penyinggahan .\n\n" .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/description> legal:textHasTextString "Kabupaten Kutai Barat berasal dari sebagian wilayah Kabupaten Kutai yang terdiri atas wilayah :" .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/description> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/a> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/a/text> legal:textHasTextString "Kecamatan Long Apari," .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/a> legal:pointHasText <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/a/text> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/b> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/b/text> legal:textHasTextString "Kecamatan Long Pahangai," .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/b> legal:pointHasText <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/b/text> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/c> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/c/text> legal:textHasTextString "Kecamatan Long Bagun," .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/c> legal:pointHasText <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/c/text> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/d> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/d/text> legal:textHasTextString "Kecamatan Long Hubung:" .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/d> legal:pointHasText <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/d/text> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/e> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/e/text> legal:textHasTextString "Kecamatan Long Iram," .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/e> legal:pointHasText <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/e/text> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/f> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/f> legal:pointHasKey "f" .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/f/text> legal:textHasTextString "Kecamatan Melak:" .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/f> legal:pointHasText <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/f/text> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/g> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/g> legal:pointHasKey "g" .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/g/text> legal:textHasTextString "Kecamatan Damai," .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/g> legal:pointHasText <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/g/text> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/h> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/h> legal:pointHasKey "h" .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/h> legal:pointHasPointSet <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/h/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/h/point/description> legal:textHasTextString "Kecamatan Barong Tongkok," .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/h/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/h/point/description> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/h/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/h/point/0001> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/h/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/h/point/0001/text> legal:textHasTextString "Kecamatan Muara Pahu, J- Kecamatan Muara Lawa, k. Kecamatan Jempang: Il. Kecamatan Bongan, dan m. Kecamatan Penyinggahan ." .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/h/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/h/point/0001/text> .
+<http://example.org/legal/document/uu/1999/47/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/47/pasal/0006> .
+<http://example.org/legal/document/uu/1999/47/pasal/0006> legal:pasalHasKey 6 .
+<http://example.org/legal/document/uu/1999/47/pasal/0006> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004> .
+<http://example.org/legal/document/uu/1999/47> legal:documentHasPasal <http://example.org/legal/document/uu/1999/47/pasal/0006> .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004> legal:pasalVersionHasVersionDate "1999-10-04"^^xsd:date .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004> legal:pasalVersionHasRawText "Kabupaten Kutai Timur berasal dari sebagian wilayah Kabupaten Kutai yang terdiri atas wilayah :\na. Kecamatan Muara Ancalong:\nb. Kecamatan Muara Wahau:\nc. Kecamatan Muara Bengkal:\nd. Kecamatan Sangatta, dan\ne. Kecamatan Sangkulirang.\n" .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/description> legal:textHasTextString "Kabupaten Kutai Timur berasal dari sebagian wilayah Kabupaten Kutai yang terdiri atas wilayah :" .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/description> .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/a> .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/a/text> legal:textHasTextString "Kecamatan Muara Ancalong:" .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/a> legal:pointHasText <http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/a/text> .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/b> .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/b/text> legal:textHasTextString "Kecamatan Muara Wahau:" .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/b> legal:pointHasText <http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/b/text> .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/c> .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/c/text> legal:textHasTextString "Kecamatan Muara Bengkal:" .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/c> legal:pointHasText <http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/c/text> .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/d> .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/d/text> legal:textHasTextString "Kecamatan Sangatta, dan" .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/d> legal:pointHasText <http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/d/text> .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/e> .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/e/text> legal:textHasTextString "Kecamatan Sangkulirang." .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/e> legal:pointHasText <http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/e/text> .
+<http://example.org/legal/document/uu/1999/47/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/47/pasal/0007> .
+<http://example.org/legal/document/uu/1999/47/pasal/0007> legal:pasalHasKey 7 .
+<http://example.org/legal/document/uu/1999/47/pasal/0007> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004> .
+<http://example.org/legal/document/uu/1999/47> legal:documentHasPasal <http://example.org/legal/document/uu/1999/47/pasal/0007> .
+<http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004> legal:pasalVersionHasVersionDate "1999-10-04"^^xsd:date .
+<http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004> legal:pasalVersionHasRawText "Kota Bontang berasal dari sebagian wilayah Kabupaten Kutai yang terdiri atas wilayah:\na. Kecamatan Bontang Utara, dan\nb. Kecamatan Bontang Selatan. PRESIDEN REPUBLIK INDONESIA 5.\n" .
+<http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004/point/description> legal:textHasTextString "Kota Bontang berasal dari sebagian wilayah Kabupaten Kutai yang terdiri atas wilayah:" .
+<http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004/point/description> .
+<http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004/point/a> .
+<http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004/point/a/text> legal:textHasTextString "Kecamatan Bontang Utara, dan" .
+<http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004/point/a> legal:pointHasText <http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004/point/a/text> .
+<http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004/point/b> .
+<http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004/point/b/text> legal:textHasTextString "Kecamatan Bontang Selatan. PRESIDEN REPUBLIK INDONESIA 5." .
+<http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004/point/b> legal:pointHasText <http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004/point/b/text> .
+<http://example.org/legal/document/uu/1999/47/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/47/pasal/0008> .
+<http://example.org/legal/document/uu/1999/47/pasal/0008> legal:pasalHasKey 8 .
+<http://example.org/legal/document/uu/1999/47/pasal/0008> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/47/pasal/0008/version/19991004> .
+<http://example.org/legal/document/uu/1999/47> legal:documentHasPasal <http://example.org/legal/document/uu/1999/47/pasal/0008> .
+<http://example.org/legal/document/uu/1999/47/pasal/0008/version/19991004> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/47/pasal/0008/version/19991004> legal:pasalVersionHasVersionDate "1999-10-04"^^xsd:date .
+<http://example.org/legal/document/uu/1999/47/pasal/0008/version/19991004> legal:pasalVersionHasRawText "(Jl) Dengan dibentuknya Kabupaten Nunukan dan Kabupaten Malinau, sebagaimana dimaksud dalam Pasal 2, wilayah Kabupaten Bulungan dikurangi dengan wilayah Kabupaten Nunukan, sebagaimana dimaksud dalam Pasal 3, dan wilayah Kabupaten Malinau sebagaimana dimaksud dalam Pasal 4. (2) Dengan dibentuknya Kabupaten Kutai Barat, Kabupaten Kutai Timur, dan Kota Bontang, sebagaimana dimaksud dalam Pasal 2, wilayah Kabupaten Kutai dikurangi dengan wilayah Kabupaten Kutai Barat, sebagaimana dimaksud dalam Pasal 5, wilayah Kabupaten Kutai Timur sebagaimana dimaksud dalam Pasal 6, dan wilayah Kota Bontang sebagaimana dimaksud dalam Pasal 7." .
+<http://example.org/legal/document/uu/1999/47/pasal/0008/version/19991004/text> legal:textHasTextString "(Jl) Dengan dibentuknya Kabupaten Nunukan dan Kabupaten Malinau, sebagaimana dimaksud dalam Pasal 2, wilayah Kabupaten Bulungan dikurangi dengan wilayah Kabupaten Nunukan, sebagaimana dimaksud dalam Pasal 3, dan wilayah Kabupaten Malinau sebagaimana dimaksud dalam Pasal 4. (2) Dengan dibentuknya Kabupaten Kutai Barat, Kabupaten Kutai Timur, dan Kota Bontang, sebagaimana dimaksud dalam Pasal 2, wilayah Kabupaten Kutai dikurangi dengan wilayah Kabupaten Kutai Barat, sebagaimana dimaksud dalam Pasal 5, wilayah Kabupaten Kutai Timur sebagaimana dimaksud dalam Pasal 6, dan wilayah Kota Bontang sebagaimana dimaksud dalam Pasal 7." .
+<http://example.org/legal/document/uu/1999/47/pasal/0008/version/19991004> legal:pasalVersionHasText <http://example.org/legal/document/uu/1999/47/pasal/0008/version/19991004/text> .
+<http://example.org/legal/document/uu/1999/47/pasal/0008/version/19991004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/47/pasal/0007> .
+<http://example.org/legal/document/uu/1999/47/pasal/0008/version/19991004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/47/pasal/0006> .
+<http://example.org/legal/document/uu/1999/47/pasal/0008/version/19991004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/47/pasal/0005> .
+<http://example.org/legal/document/uu/1999/47/pasal/0008/version/19991004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/47/pasal/0002> .
+<http://example.org/legal/document/uu/1999/47/pasal/0008/version/19991004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/47/pasal/0004> .
+<http://example.org/legal/document/uu/1999/47/pasal/0008/version/19991004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/47/pasal/0003> .
+<http://example.org/legal/document/uu/1999/47/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/47/pasal/0009> .
+<http://example.org/legal/document/uu/1999/47/pasal/0009> legal:pasalHasKey 9 .
+<http://example.org/legal/document/uu/1999/47/pasal/0009> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/47/pasal/0009/version/19991004> .
+<http://example.org/legal/document/uu/1999/47> legal:documentHasPasal <http://example.org/legal/document/uu/1999/47/pasal/0009> .
+<http://example.org/legal/document/uu/1999/47/pasal/0009/version/19991004> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/47/pasal/0009/version/19991004> legal:pasalVersionHasVersionDate "1999-10-04"^^xsd:date .
+<http://example.org/legal/document/uu/1999/47/pasal/0009/version/19991004> legal:pasalVersionHasRawText "Dengan dibentuknya Kota Bontang, sebagaimana dimaksud dalam Pasal 2, Kota Administratif Bontang dalam wilayah Kabupaten Kutai dihapus." .
+<http://example.org/legal/document/uu/1999/47/pasal/0009/version/19991004/text> legal:textHasTextString "Dengan dibentuknya Kota Bontang, sebagaimana dimaksud dalam Pasal 2, Kota Administratif Bontang dalam wilayah Kabupaten Kutai dihapus." .
+<http://example.org/legal/document/uu/1999/47/pasal/0009/version/19991004> legal:pasalVersionHasText <http://example.org/legal/document/uu/1999/47/pasal/0009/version/19991004/text> .
+<http://example.org/legal/document/uu/1999/47/pasal/0009/version/19991004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/47/pasal/0002> .
+<http://example.org/legal/document/uu/1999/47/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/47/pasal/0010> .
+<http://example.org/legal/document/uu/1999/47/pasal/0010> legal:pasalHasKey 10 .
+<http://example.org/legal/document/uu/1999/47/pasal/0010> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004> .
+<http://example.org/legal/document/uu/1999/47> legal:documentHasPasal <http://example.org/legal/document/uu/1999/47/pasal/0010> .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004> legal:pasalVersionHasVersionDate "1999-10-04"^^xsd:date .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004> legal:pasalVersionHasRawText "(1). Ibukota Kabupaten Nunukan berkedudukan di Nunukan.\n(2). Ibukota Kabupaten Malinau berkedudukan di Malinau.\n(3). Ibukota Kabupaten Kutai Barat berkedudukan di Sendawar.\n(4). Ibukota Kabupaten Kutai Timur berkedudukan di Sangatta." .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat> .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0001> .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0001> legal:ayatHasRawText "Ibukota Kabupaten Nunukan berkedudukan di Nunukan." .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0001/text> legal:textHasTextString "Ibukota Kabupaten Nunukan berkedudukan di Nunukan." .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0001/text> .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0002> .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0002> legal:ayatHasRawText "Ibukota Kabupaten Malinau berkedudukan di Malinau." .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0002/text> legal:textHasTextString "Ibukota Kabupaten Malinau berkedudukan di Malinau." .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0002/text> .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0003> .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0003> legal:ayatHasRawText "Ibukota Kabupaten Kutai Barat berkedudukan di Sendawar." .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0003/text> legal:textHasTextString "Ibukota Kabupaten Kutai Barat berkedudukan di Sendawar." .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0003/text> .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0004> .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0004> legal:ayatHasKey 4 .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0004> legal:ayatHasRawText "Ibukota Kabupaten Kutai Timur berkedudukan di Sangatta." .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0004/text> legal:textHasTextString "Ibukota Kabupaten Kutai Timur berkedudukan di Sangatta." .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0004/text> .
+<http://example.org/legal/document/uu/1999/47/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/47/bab/0003> .
+<http://example.org/legal/document/uu/1999/47/bab/0003> legal:babHasKey 3 .
+<http://example.org/legal/document/uu/1999/47/bab/0003> legal:babHasTitle "KEWENANGAN DAERAH Pasal 13 (Jl) Dengan terbentuknya Kabupaten Nunukan, Kabupaten Malinau, Kabupaten Kutai Barat, Kabupaten Kutai Timur, dan Kota Bontang, kewenangan Daerah sebagai Daerah Otonom mencakup seluruh kewenangan bidang pemerintahan, termasuk kewenangan wajib, kecuali bidang politik luar negeri, pertahanan keamanan, peradilan, moneter dan fiskal, agama, serta kewenangan bidang lain, sesuai dengan peraturan perundang-undangan. (2) Kewenangan wajib, sebagaimana dimaksud pada ayat (1), terdiri atas pekerjaan umum, kesehatan, pendidikan dan kebudayaan, pertanian, perhubungan, industri dan perdagangan, penanaman modal, lingkungan hidup, pertanahan, koperasi, dan tenaga kerja." .
+<http://example.org/legal/document/uu/1999/47/bab/0003> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/47/bab/0003/pasals> .
+<http://example.org/legal/document/uu/1999/47/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/47/bab/0004> .
+<http://example.org/legal/document/uu/1999/47/bab/0004> legal:babHasKey 4 .
+<http://example.org/legal/document/uu/1999/47/bab/0004> legal:babHasTitle "PEMERINTAHAN DAERAH PRESIDEN REPUBLIK INDONESIA 8 Pasal 14 Dengan terbentuknya Kabupaten Nunukan, Kabupaten Malinau, Kabupaten Kutai Barat, Kabupaten Kutai Timur, dan Kota Bontang, dibentuk Dewan Perwakilan Rakyat Daerah Kabupaten/Kota masing-masing, sesuai dengan peraturan perundang-undangan. Pasal 15 Untuk memimpin jalannya pemerintahan di Kabupaten Nunukan, Kabupaten Malinau, Kabupaten Kutai Barat, Kabupaten Kutai Timur, dan Kota Bontang, dipilih dan disahkan seorang Bupati/Walikota dan seorang Wakil Bupati/Walikota di Kabupaten/Kota masing-masing, sesuai dengan peraturan perundang-undangan. Pasal 16 Untuk kelengkapan perangkat pemerintahan di Kabupaten Nunukan, Kabupaten Malinau, Kabupaten Kutai Barat, Kabupaten Kutai Timur, dan Kota Bontang, di Kabupaten/Kota masing-masing dibentuk Sekretariat Dewan Perwakilan Rakyat Daerah Kabupaten/Kota, Sekretariat Kabupaten/Kota, dinas-dinas Kabupaten/Kota dan lembaga teknis Kabupaten/Kota, sesuai dengan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/1999/47/bab/0004> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/47/bab/0004/pasals> .
+<http://example.org/legal/document/uu/1999/47/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/47/bab/0005> .
+<http://example.org/legal/document/uu/1999/47/bab/0005> legal:babHasKey 5 .
+<http://example.org/legal/document/uu/1999/47/bab/0005> legal:babHasTitle "KETENTUAN PERALIHAN Pasal 17 (Jl) Dengan terbentuknya Kabupaten Nunukan, Kabupaten Malinau, Kabupaten Kutai Barat, Kabupaten Kutai Timur, dan Kota Bontang, pengisian keanggotaan Dewan Perwakilan Rakyat Daerah Kabupaten Nunukan, Dewan Perwakilan Rakyat Daerah Kabupaten Malinau, Dewan Perwakilan Rakyat Daerah Kabupaten Kutai Barat, Dewan Perwakilan Rakyat Daerah Kabupaten Kutai Timur, dan Dewan Perwakilan Rakyat Daerah Kota Bontang diselenggarakan melalui pemilihan umum lokal selambat-lambatnya satu tahun sejak peresmian, sesuai dengan peraturan perundang-undangan. (2) Anggota Dewan Perwakilan Rakyat Daerah Kabupaten Nunukan, Kabupaten Malinau, Kabupaten Kutai Barat, Kabupaten Kutai PRESIDEN REPUBLIK INDONESIA -9- Timur dan Kota Bontang terdiri atas : a. anggota Dewan Perwakilan Rakyat Daerah yang ditetapkan dari partai politik peserta pemilihan umum lokal yang dilaksanakan di Daerah masing-masing, dan b. anggota ABRI yang diangkat. (3)Jumlah dan tata cara pengisian keanggotaan Dewan Perwakilan Rakyat Daerah Kabupaten Nunukan, Dewan Perwakilan Rakyat Daerah Kabupaten Malinau, Dewan Perwakilan Rakyat Daerah Kabupaten Kutai Barat, Dewan Perwakilan Rakyat Daerah Kabupaten Kutai Timur, dan Dewan Perwakilan Rakyat Daerah Kota Bontang, sebagaimana dimaksud pada ayat (2), ditetapkan sesuai dengan peraturan perundang-undangan. (4) Dengan terbentuknya Kabupaten Nunukan dan Kabupaten Malinau, jumlah anggota Dewan Perwakilan Rakyat Daerah Kabupaten Bulungan disesuaikan dengan jumlah penduduk Kabupaten Bulungan setelah dikurangi dengan jumlah penduduk Kabupaten Nunukan dan Kabupaten Malinau. (5)Dengan terbentuknya Kabupaten Kutai Barat, Kabupaten Kutai Timur, dan Kota Bontang jumlah anggota Dewan Perwakilan Rakyat Daerah Kabupaten Kutai disesuaikan dengan jumlah penduduk Kabupaten Kutai setelah dikurangi dengan jumlah penduduk Kabupaten Kutai Barat, Kabupaten Kutai Timur, dan Kota Bontang. Pasal 18 Pada saat terbentuknya Kabupaten Nunukan, Kabupaten Malinau, Kabupaten Kutai Barat, Kabupaten Kutai Timur, dan Kota Bontang, Penjabat Bupati Nunukan, Penjabat Bupati Malinau, Penjabat Bupati Kutai Barat, Penjabat Bupati Kutai Timur, dan Penjabat Walikota Bontang untuk pertama kali diangkat oleh Menteri Dalam Negeri atas nama Presiden berdasarkan usul Gubernur Kalimantan Timur. Pasal 19 (Jl) Untuk kelancaran penyelenggaraan pemerintahan di Kabupaten Nunukan, Kabupaten Malinau, Kabupaten Kutai Barat, Kabupaten Kutai Timur, dan Kota Bontang, maka Gubernur Kalimantan Timur, Bupati Bulungan, dan Bupati Kutai sesuai dengan wewenang dan tugasnya masing-masing menginventarisasi dan mengatur penyerahan kepada Pemerintah Kabupaten Nunukan, Pemerintah PRESIDEN REPUBLIK INDONESIA -10- Kabupaten Malinau, Kabupaten Kutai Barat, Kabupaten Kutai Timur, dan Kota Bontang sesuai dengan peraturan perundang-undangan: a. pegawai yang karena jabatannya diperlukan oleh Pemerintah Kabupaten Nunukan, Kabupaten Malinau, Kabupaten Kutai Barat, Kabupaten Kutai Timur dan Kota Bontang: b. tanah, bangunan, barang bergerak, dan barang tidak bergerak yang dimiliki, dikuasai, atau dimanfaatkan oleh Pemerintah Propinsi Kalimantan Timur, Kabupaten Bulungan, dan Kabupaten Kutai yang berada dalam wilayah Kabupaten Nunukan, wilayah Kabupaten Malinau, wilayah — Kabupaten Kutai Barat, wilayah Kabupaten Kutai Timur, dan wilayah Kota Bontang, c. Badan Usaha Milik Daerah Propinsi Kalimantan Timur, Kabupaten Bulungan, dan Kabupaten Kutai yang kedudukan dan sifatnya diperlukan serta kegiatannya berada di Kabupaten Nunukan, Kabupaten Malinau, Kabupaten Kutai Barat, Kabupaten Kutai Timur, dan Kota Bontang, d. utang piutang Kabupaten Bulungan yang kegunaannya untuk Kabupaten Nunukan dan Kabupaten Malinau dan utang piutang Kabupaten Kutai yang kegunaannya untuk Kabupaten Kutai Barat, Kabupaten Kutai Timur, dan Kota Bontang, dan e. perlengkapan kantor, arsip, dokumen, dan perpustakaan yang karena sifatnya diperlukan oleh Kabupaten Nunukan, Kabupaten Malinau, Kabupaten Kutai Barat, Kabupaten Kutai Timur, dan Kota Bontang. (2) Pelaksanaan penyerahan sebagaimana dimaksud pada ayat (1) selambat-lambatnya harus diselesaikan dalam waktu satu tahun, terhitung sejak diresmikannya Kabupaten Nunukan, Kabupaten Malinau, Kabupaten Kutai Barat, Kabupaten Kutai Timur, dan Kota Bontang. Pasal 20 (Jl) Pembiayaan yang diperlukan akibat pembentukan Kabupaten Nunukan, Kabupaten Malinau, Kabupaten Kutai Barat, Kabupaten Kutai Timur, dan Kota Bontang, sebagaimana dimaksud dalam Pasal 2, masing-masing dibebankan pada Anggaran Pendapatan dan Belanja Daerah Kabupaten Nunukan, Kabupaten Malinau, Kabupaten Kutai Barat, Kabupaten Kutai Timur, dan Kota Bontang. (2) Untuk kelancaran penyelenggaraan pemerintahan dan pembangunan, terhitung sejak diresmikannya pembentukan Kabupaten Nunukan, PRESIDEN REPUBLIK INDONESIA -11- Kabupaten Malinau, Kabupaten Kutai Barat, Kabupaten Kutai Timur, dan Kota Bontang, segala pembiayaan yang diperlukan pada tahun pertama sebelum dapat disusun Anggaran Pendapatan dan Belanja Daerah yang bersangkutan masing-masing dibebankan pada Anggaran Pendapatan dan Belanja Daerah Kabupaten Bulungan dan Kabupaten Kutai berdasarkan perimbangan hasil pendapatan yang diperoleh dari wilayah Kabupaten Nunukan, Kabupaten Malinau, Kabupaten Kutai Barat, Kabupaten Kutai Timur, dan Kota Bontang. (3) Pemerintah Propinsi Kalimantan Timur wajib membantu pembiayaan sebagaimana dimaksud pada ayat (1), melalui Anggaran Pendapatan dan Belanja Daerah Propinsi Kalimantan Timur selama tiga tahun berturut-turut, terhitung sejak peresmiannya. Pasal 21 (1) Semua peraturan perundang-undangan yang saat ini berlaku bagi Kabupaten Bulungan tetap berlaku bagi Kabupaten Nunukan dan Kabupaten Malinau sebelum diubah, diganti, atau dicabut berdasarkan Undang-undang ini. (2) Semua peraturan perundang-undangan yang saat ini berlaku bagi Kabupaten Kutai tetap berlaku bagi Kabupaten Kutai Barat, Kabupaten Kutai Timur, dan Kota Bontang sebelum diubah, diganti, atau dicabut berdasarkan Undang-undang ini." .
+<http://example.org/legal/document/uu/1999/47/bab/0005> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/47/bab/0005/pasals> .
+<http://example.org/legal/document/uu/1999/47/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/47/bab/0006> .
+<http://example.org/legal/document/uu/1999/47/bab/0006> legal:babHasKey 6 .
+<http://example.org/legal/document/uu/1999/47/bab/0006> legal:babHasTitle "KETENTUAN PENUTUP Pasal 22 Pada saat berlakunya Undang-undang ini, semua peraturan perundang-undangan yang tidak sesuai dengan Undang-undang ini dinyatakan tidak berlaku. Pasal 23 Ketentuan lebih lanjut yang diperlukan sebagai pelaksanaan Undang-undang ini, diatur sesuai dengan peraturan perundang-undangan. Pasal 24 Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan PRESIDEN REPUBLIK INDONESIA 12 - Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1999/47/bab/0006> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/47/bab/0006/pasals> .
+<http://example.org/legal/document/uu/1999/47> legal:documentHasDisahkanDate "1999-10-04"^^xsd:date .
+<http://example.org/legal/document/uu/1999/47> legal:documentMengingat <http://example.org/legal/document/uu/1999/47/mengingat> .
+<http://example.org/legal/document/uu/1999/47/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1999/47/mengingat/point> .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1999/47/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/47/mengingat/point/description> .
+<http://example.org/legal/document/uu/1999/47/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/mengingat/point/0001> .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0001/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 18, dan Pasal 20 ayat (1) Undang-Undang Dasar 1945," .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1999/47/mengingat/point/0001/text> .
+<http://example.org/legal/document/uu/1999/47/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/mengingat/point/0002> .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0002/text> legal:textHasTextString "Undang-undang Nomor 22 Tahun 1999 tentang Pemerintahan Daerah (Lembaran Negara Republik Indonesia Tahun 1999 Nomor 60, Tambahan Lembaran Negara Nomor 3839): PRESIDEN REPUBLIK INDONESIA .2-" .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1999/47/mengingat/point/0002/text> .
+<http://example.org/legal/document/uu/1999/47/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/mengingat/point/0003> .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0003> legal:pointHasKey "3" .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0003/text> legal:textHasTextString "Undang-undang Nomor 25 Tahun 1956 tentang Pembentukan Daerah-daerah Otonom Propinsi Kalimantan Barat, Kalimantan Selatan, dan Kalimantan Timur (Lembaran Negara Republik Indonesia Tahun 1956 Nomor 65, Tambahan Lembaran Negara Nomor 1106):" .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0003> legal:pointHasText <http://example.org/legal/document/uu/1999/47/mengingat/point/0003/text> .
+<http://example.org/legal/document/uu/1999/47/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/mengingat/point/0004> .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0004> legal:pointHasKey "4" .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0004/text> legal:textHasTextString "Undang-undang Nomor 27 Tahun 1959 tentang Penetapan Undang-undang Darurat Nomor 3 Tahun 1953 tentang Pembentukan Daerah Tingkat II di Kalimantan (Lembaran Negara Tahun 1953 Nomor 9), sebagai undang-undang (Lembaran Negara Republik Indonesia Tahun 1959 Nomor 72, Tambahan Lembaran Negara Nomor 1820):" .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0004> legal:pointHasText <http://example.org/legal/document/uu/1999/47/mengingat/point/0004/text> .
+<http://example.org/legal/document/uu/1999/47/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/mengingat/point/0005> .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0005> legal:pointHasKey "5" .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0005/text> legal:textHasTextString "Undang-undang Nomor 4 Tahun 1999 tentang Susunan dan Kedudukan Majelis Permusyawaratan Rakyat, Dewan Perwakilan Rakyat dan Dewan Perwakilan Rakyat Daerah (Lembaran Negara Republik Indonesia Tahun 1999 Nomor 24, Tambahan Lembaran Negara Nomor 3811)," .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0005> legal:pointHasText <http://example.org/legal/document/uu/1999/47/mengingat/point/0005/text> .
+<http://example.org/legal/document/uu/1999/47/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/47/mengingat/point/0006> .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0006> legal:pointHasKey "6" .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0006/text> legal:textHasTextString "Undang-undang Nomor 25 Tahun 1999 tentang Perimbangan Keuangan antara Pemerintah Pusat dan Daerah (Lembaran Negara Republik Indonesia Tahun 1999 Nomor 72, Tambahan Lembaran Negara Nomor 3848): Dengan Persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN : Menetapkan: — UNDANG-UNDANG TENTANG PEMBENTUKAN KABUPATEN NUNUKAN, KABUPATEN MALINAU, KABUPATEN KUTAI BARAT, KABUPATEN KUTAI TIMUR DAN KOTA BONTANG." .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0006> legal:pointHasText <http://example.org/legal/document/uu/1999/47/mengingat/point/0006/text> .
+<http://example.org/legal/document/uu/1999/47> legal:documentMenimbang <http://example.org/legal/document/uu/1999/47/menimbang> .
+<http://example.org/legal/document/uu/1999/47/menimbang/text> legal:textHasTextString "aa. bahwa berhubung dengan perkembangan dan kemajuan Propinsi Kalimantan Timur pada umumnya serta Kabupaten Bulungan dan Kabupaten Kutai pada khususnya, serta adanya aspirasi yang berkembang dalam masyarakat, dipandang perlu meningkatkan penyelenggaraan pemerintahan, pelaksanaan pembangunan, dan pembinaan kemasyarakatan guna menjamin perkembangan dan kemajuan dimaksud pada masa mendatang: b. bahwa sehubungan dengan hal tersebut di atas dan memperhatikan perkembangan jumlah penduduk, luas wilayah, potensi ekonomi, dan meningkatnya beban tugas serta volume kerja di bidang penyelenggaraan pemerintahan, pembangunan, dan kemasyarakatan di Kabupaten Bulungan dan Kabupaten Kutai, dipandang perlu membentuk Kabupaten Nunukan dan Kabupaten Malinau sebagai pemekaran Kabupaten Bulungan, Kabupaten Kutai Barat dan Kabupaten Kutai Timur sebagai pemekaran dari Kabupaten Kutai, dan membentuk Kota Bontang: c. bahwa pembentukan Kabupaten Nunukan, Kabupaten Malinau, Kabupaten Kutai Barat, Kabupaten Kutai Timur, dan Kota Bontang akan dapat mendorong peningkatan pelayanan di bidang pemerintahan, pembangunan, dan kemasyarakatan, serta memberikan kemampuan dalam pemanfaatan potensi Daerah untuk menyelenggarakan Otonomi Daerah: d. bahwa sesuai dengan butir a, b, dan c serta berdasarkan Undang-undang Nomor 22 Tahun 1999 tentang Pemerintahan Daerah, pembentukan Kabupaten Nunukan, Kabupaten Malinau, Kabupaten Kutai Barat, Kabupaten Kutai Timur, dan Kota Bontang harus ditetapkan dengan undang-undang," .
+<http://example.org/legal/document/uu/1999/47/menimbang> legal:menimbangHasText <http://example.org/legal/document/uu/1999/47/menimbang/text> .
+<http://example.org/legal/document/uu/1999/47> legal:documentHasDisahkanPengesah "BACHARUDDIN JUSUF HABIBIE" .
+<http://example.org/legal/document/uu/1999/47> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/1999/47> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/1999/47> a legal:Document .
+<http://example.org/legal/document/uu/1999/47/bab> a legal:BabSet .
+<http://example.org/legal/document/uu/1999/47/bab/0001> a legal:Bab .
+<http://example.org/legal/document/uu/1999/47/bab/0001/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1999/47/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/bab/0002> a legal:Bab .
+<http://example.org/legal/document/uu/1999/47/bab/0002/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1999/47/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/47/pasal/0002/version/19991004> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/47/pasal/0002/version/19991004/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/e> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0004> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/e> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0005> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/e> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/f> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/f/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/g> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/g/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/h> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/h/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/h/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/h/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/h/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0006> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/e> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0007> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0008> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/47/pasal/0008/version/19991004> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/47/pasal/0008/version/19991004/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0009> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/47/pasal/0009/version/19991004> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/47/pasal/0009/version/19991004/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0010> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0004> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/bab/0003> a legal:Bab .
+<http://example.org/legal/document/uu/1999/47/bab/0004> a legal:Bab .
+<http://example.org/legal/document/uu/1999/47/bab/0005> a legal:Bab .
+<http://example.org/legal/document/uu/1999/47/bab/0006> a legal:Bab .
+<http://example.org/legal/document/uu/1999/47/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/mengingat/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0003> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0004> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0005> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0005/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0006> a legal:Point .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0006/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/menimbang/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/47/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1999/47/bab> legal:partOf <http://example.org/legal/document/uu/1999/47> .
+<http://example.org/legal/document/uu/1999/47/bab/0001> legal:partOf <http://example.org/legal/document/uu/1999/47/bab> .
+<http://example.org/legal/document/uu/1999/47/bab/0001/pasals> legal:partOf <http://example.org/legal/document/uu/1999/47/bab/0001> .
+<http://example.org/legal/document/uu/1999/47/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1999/47/bab/0001/pasals> .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0001> .
+<http://example.org/legal/document/uu/1999/47/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1999/47> .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004> .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/a> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/b> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/c> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point/d> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0001/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/bab/0002> legal:partOf <http://example.org/legal/document/uu/1999/47/bab> .
+<http://example.org/legal/document/uu/1999/47/bab/0002/pasals> legal:partOf <http://example.org/legal/document/uu/1999/47/bab/0002> .
+<http://example.org/legal/document/uu/1999/47/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1999/47/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/47/pasal/0002/version/19991004> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0002> .
+<http://example.org/legal/document/uu/1999/47/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1999/47> .
+<http://example.org/legal/document/uu/1999/47/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1999/47/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0003> .
+<http://example.org/legal/document/uu/1999/47/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1999/47> .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004> .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/a> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/b> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/c> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/d> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point/e> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0003/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1999/47/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0004> .
+<http://example.org/legal/document/uu/1999/47/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1999/47> .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004> .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/a> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/b> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/c> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/d> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point/e> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0004/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1999/47/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0005> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1999/47> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/a> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/b> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/c> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/d> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/e> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/f> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/g> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/h> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/h/point> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/h> .
+<http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/h/point/0001> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0005/version/19991004/point/h/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0006> legal:partOf <http://example.org/legal/document/uu/1999/47/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0006> .
+<http://example.org/legal/document/uu/1999/47/pasal/0006> legal:partOf <http://example.org/legal/document/uu/1999/47> .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004> .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/a> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/b> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/c> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/d> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point/e> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0006/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0007> legal:partOf <http://example.org/legal/document/uu/1999/47/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0007> .
+<http://example.org/legal/document/uu/1999/47/pasal/0007> legal:partOf <http://example.org/legal/document/uu/1999/47> .
+<http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004/point> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004> .
+<http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004/point/a> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004/point/b> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0007/version/19991004/point> .
+<http://example.org/legal/document/uu/1999/47/pasal/0008> legal:partOf <http://example.org/legal/document/uu/1999/47/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/47/pasal/0008/version/19991004> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0008> .
+<http://example.org/legal/document/uu/1999/47/pasal/0008> legal:partOf <http://example.org/legal/document/uu/1999/47> .
+<http://example.org/legal/document/uu/1999/47/pasal/0009> legal:partOf <http://example.org/legal/document/uu/1999/47/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/47/pasal/0009/version/19991004> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0009> .
+<http://example.org/legal/document/uu/1999/47/pasal/0009> legal:partOf <http://example.org/legal/document/uu/1999/47> .
+<http://example.org/legal/document/uu/1999/47/pasal/0010> legal:partOf <http://example.org/legal/document/uu/1999/47/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0010> .
+<http://example.org/legal/document/uu/1999/47/pasal/0010> legal:partOf <http://example.org/legal/document/uu/1999/47> .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004> .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat> .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0001> .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat> .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0002> .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat> .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0003> .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0004> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat> .
+<http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/1999/47/pasal/0010/version/19991004/ayat/0004> .
+<http://example.org/legal/document/uu/1999/47/bab/0003> legal:partOf <http://example.org/legal/document/uu/1999/47/bab> .
+<http://example.org/legal/document/uu/1999/47/bab/0003/pasals> legal:partOf <http://example.org/legal/document/uu/1999/47/bab/0003> .
+<http://example.org/legal/document/uu/1999/47/bab/0004> legal:partOf <http://example.org/legal/document/uu/1999/47/bab> .
+<http://example.org/legal/document/uu/1999/47/bab/0004/pasals> legal:partOf <http://example.org/legal/document/uu/1999/47/bab/0004> .
+<http://example.org/legal/document/uu/1999/47/bab/0005> legal:partOf <http://example.org/legal/document/uu/1999/47/bab> .
+<http://example.org/legal/document/uu/1999/47/bab/0005/pasals> legal:partOf <http://example.org/legal/document/uu/1999/47/bab/0005> .
+<http://example.org/legal/document/uu/1999/47/bab/0006> legal:partOf <http://example.org/legal/document/uu/1999/47/bab> .
+<http://example.org/legal/document/uu/1999/47/bab/0006/pasals> legal:partOf <http://example.org/legal/document/uu/1999/47/bab/0006> .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1999/47/mengingat/point> .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1999/47/mengingat/point> .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/1999/47/mengingat/point> .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0004> legal:partOf <http://example.org/legal/document/uu/1999/47/mengingat/point> .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0005> legal:partOf <http://example.org/legal/document/uu/1999/47/mengingat/point> .
+<http://example.org/legal/document/uu/1999/47/mengingat/point/0006> legal:partOf <http://example.org/legal/document/uu/1999/47/mengingat/point> .

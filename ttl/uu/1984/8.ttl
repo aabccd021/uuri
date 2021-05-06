@@ -1,0 +1,43 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1984/8> legal:documentHasBabSet <http://example.org/legal/document/uu/1984/8/bab> .
+<http://example.org/legal/document/uu/1984/8> legal:documentHasDisahkanDate "1984-10-27"^^xsd:date .
+<http://example.org/legal/document/uu/1984/8> legal:documentMengingat <http://example.org/legal/document/uu/1984/8/mengingat> .
+<http://example.org/legal/document/uu/1984/8/mengingat/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 20 ayat (1), dan Pasal 22 ayat (2) Undang-Undang Dasar 1945; Dengan persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG PENETAPAN PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG NOMOR 1 TAHUN 1984 TENTANG PENANGGUHAN MULAI BERLAKUNYA UNDANG- UNDANG PAJAK PERTAMBAHAN NILAI 1984 MENJADI UNDANG- UNDANG. Pasal I Peraturan yang termaktub dalam Peraturan Pemerintah Pengganti Undang-undang Nomor 1 Tahun 1984 tentang Penangguhan Mulai Berlakunya Undang-undang Pajak Pertambahan Nilai 1984 ditetapkan menjadi Undang-undang yang berbunyi sebagai berikut :" .
+<http://example.org/legal/document/uu/1984/8/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/1984/8/mengingat/text> .
+<http://example.org/legal/document/uu/1984/8> legal:documentMenimbang <http://example.org/legal/document/uu/1984/8/menimbang> .
+<http://example.org/legal/document/uu/1984/8/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/1984/8/menimbang/point> .
+<http://example.org/legal/document/uu/1984/8/menimbang/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1984/8/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1984/8/menimbang/point/description> .
+<http://example.org/legal/document/uu/1984/8/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1984/8/menimbang/point/a> .
+<http://example.org/legal/document/uu/1984/8/menimbang/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1984/8/menimbang/point/a/text> legal:textHasTextString "bahwa berdasarkan Pasal 22 ayat (1) Undang-Undang Dasar 1945, Pemerintah telah menetapkan Peraturan Pemerintah Pengganti Undang- undang Nomor 1 Tahun 1984 tentang Penangguhan Mulai Berlakunya Undang-undang Pajak Pertambahan Nilai 1984;" .
+<http://example.org/legal/document/uu/1984/8/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/1984/8/menimbang/point/a/text> .
+<http://example.org/legal/document/uu/1984/8/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1984/8/menimbang/point/b> .
+<http://example.org/legal/document/uu/1984/8/menimbang/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1984/8/menimbang/point/b/text> legal:textHasTextString "bahwa masih diperlukan waktu untuk mempersiapkan pelaksanaan Undang- undang Pajak Pertambahan Nilai 1984, baik bagi seluruh lapisan masyarakat, terutama para pengusaha yang terkena pajak tersebut, maupun aparatur perpajakan agar supaya dapat dicapai maksud dan tujuan pembaharuan peraturan perundang-undangan perpajakan sebaik-baiknya;" .
+<http://example.org/legal/document/uu/1984/8/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/1984/8/menimbang/point/b/text> .
+<http://example.org/legal/document/uu/1984/8/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1984/8/menimbang/point/c> .
+<http://example.org/legal/document/uu/1984/8/menimbang/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1984/8/menimbang/point/c/text> legal:textHasTextString "bahwa peraturan yang termaktub dalam Peraturan Pemerintah Pengganti Undang-undang tersebut huruf a perlu ditetapkan menjadi Undang-undang;" .
+<http://example.org/legal/document/uu/1984/8/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/1984/8/menimbang/point/c/text> .
+<http://example.org/legal/document/uu/1984/8> legal:documentHasDisahkanPengesah "SOEHARTO" .
+<http://example.org/legal/document/uu/1984/8> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/1984/8> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/1984/8> a legal:Document .
+<http://example.org/legal/document/uu/1984/8/mengingat/text> a legal:Text .
+<http://example.org/legal/document/uu/1984/8/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1984/8/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1984/8/menimbang/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1984/8/menimbang/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1984/8/menimbang/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1984/8/menimbang/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1984/8/menimbang/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1984/8/menimbang/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1984/8/menimbang/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1984/8/menimbang/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1984/8/bab> legal:partOf <http://example.org/legal/document/uu/1984/8> .
+<http://example.org/legal/document/uu/1984/8/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1984/8/menimbang/point> .
+<http://example.org/legal/document/uu/1984/8/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1984/8/menimbang/point> .
+<http://example.org/legal/document/uu/1984/8/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/1984/8/menimbang/point> .

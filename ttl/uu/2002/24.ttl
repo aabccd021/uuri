@@ -1,0 +1,973 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/2002/24> legal:documentHasBabSet <http://example.org/legal/document/uu/2002/24/bab> .
+<http://example.org/legal/document/uu/2002/24/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2002/24/bab/0001> .
+<http://example.org/legal/document/uu/2002/24/bab/0001> legal:babHasKey 1 .
+<http://example.org/legal/document/uu/2002/24/bab/0001> legal:babHasTitle "KETENTUAN UMUM" .
+<http://example.org/legal/document/uu/2002/24/bab/0001> legal:babHasPasalSet <http://example.org/legal/document/uu/2002/24/bab/0001/pasals> .
+<http://example.org/legal/document/uu/2002/24/bab/0001/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0001> .
+<http://example.org/legal/document/uu/2002/24/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/2002/24/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022> .
+<http://example.org/legal/document/uu/2002/24> legal:documentHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0001> .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022> legal:pasalVersionHasVersionDate "2002-10-22"^^xsd:date .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022> legal:pasalVersionHasRawText "Dalam Undang - undang ini yang dimaksud dengan :\n1. Surat Utang Negara adalah surat berharga yang berupa surat pengakuan utang dalam mata uang rupiah maupun valuta asing yang dijamin pembayaran bunga dan pokoknya oleh Negara Republik Indonesia, sesuai dengan masa berlakunya.\n2. Pasar Perdana adalah kegiata n penawaran dan penjualan Surat Utang Negara untuk pertama kali.\n3. Pasar Sekunder adalah kegiatan perdagangan Surat Utang Negara yang telah dijual di Pasar Perdana.\n4. Pemerintah adalah Pemerintah Pusat Negara Republik Indonesia.\n5. Menteri adalah Menteri Keuangan Republik Indonesia.\n" .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/description> legal:textHasTextString "Dalam Undang - undang ini yang dimaksud dengan :" .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/description> .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0001> .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0001/text> legal:textHasTextString "Surat Utang Negara adalah surat berharga yang berupa surat pengakuan utang dalam mata uang rupiah maupun valuta asing yang dijamin pembayaran bunga dan pokoknya oleh Negara Republik Indonesia, sesuai dengan masa berlakunya." .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0001> legal:pointHasText <http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0001/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0002> .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0002/text> legal:textHasTextString "Pasar Perdana adalah kegiata n penawaran dan penjualan Surat Utang Negara untuk pertama kali." .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0002> legal:pointHasText <http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0002/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0003> .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0003> legal:pointHasKey "3" .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0003/text> legal:textHasTextString "Pasar Sekunder adalah kegiatan perdagangan Surat Utang Negara yang telah dijual di Pasar Perdana." .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0003> legal:pointHasText <http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0003/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0004> .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0004> legal:pointHasKey "4" .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0004/text> legal:textHasTextString "Pemerintah adalah Pemerintah Pusat Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0004> legal:pointHasText <http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0004/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0005> .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0005> legal:pointHasKey "5" .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0005/text> legal:textHasTextString "Menteri adalah Menteri Keuangan Republik Indonesia." .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0005> legal:pointHasText <http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0005/text> .
+<http://example.org/legal/document/uu/2002/24/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2002/24/bab/0002> .
+<http://example.org/legal/document/uu/2002/24/bab/0002> legal:babHasKey 2 .
+<http://example.org/legal/document/uu/2002/24/bab/0002> legal:babHasTitle "BENTUK DAN JENIS SURAT UTANG NEGARA" .
+<http://example.org/legal/document/uu/2002/24/bab/0002> legal:babHasPasalSet <http://example.org/legal/document/uu/2002/24/bab/0002/pasals> .
+<http://example.org/legal/document/uu/2002/24/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0002> .
+<http://example.org/legal/document/uu/2002/24/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/2002/24/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022> .
+<http://example.org/legal/document/uu/2002/24> legal:documentHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0002> .
+<http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022> legal:pasalVersionHasVersionDate "2002-10-22"^^xsd:date .
+<http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022> legal:pasalVersionHasRawText "(1). Surat Utang Negara diterbitkan dalam bentuk warkat atau tanpa warkat. PRESIDEN REPUBLIK INDONESIA - 3 - (2) Surat...\n(2). Surat Utang Negara sebagaimana dimaksud dalam ayat (1) diterbitkan dalam bentuk yang diperdagangkan atau dalam bentuk yang tidak diperdagangkan di Pasar Sekunder." .
+<http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022/ayat/0001> .
+<http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022/ayat/0001> legal:ayatHasRawText "Surat Utang Negara diterbitkan dalam bentuk warkat atau tanpa warkat. PRESIDEN REPUBLIK INDONESIA - 3 - (2) Surat..." .
+<http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022/ayat/0001/text> legal:textHasTextString "Surat Utang Negara diterbitkan dalam bentuk warkat atau tanpa warkat. PRESIDEN REPUBLIK INDONESIA - 3 - (2) Surat..." .
+<http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022/ayat/0001/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022/ayat/0002> .
+<http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022/ayat/0002> legal:ayatHasRawText "Surat Utang Negara sebagaimana dimaksud dalam ayat (1) diterbitkan dalam bentuk yang diperdagangkan atau dalam bentuk yang tidak diperdagangkan di Pasar Sekunder." .
+<http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022/ayat/0002/text> legal:textHasTextString "Surat Utang Negara sebagaimana dimaksud dalam ayat (1) diterbitkan dalam bentuk yang diperdagangkan atau dalam bentuk yang tidak diperdagangkan di Pasar Sekunder." .
+<http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022/ayat/0002/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022/ayat/0001> .
+<http://example.org/legal/document/uu/2002/24/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0003> .
+<http://example.org/legal/document/uu/2002/24/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/2002/24/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022> .
+<http://example.org/legal/document/uu/2002/24> legal:documentHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0003> .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022> legal:pasalVersionHasVersionDate "2002-10-22"^^xsd:date .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022> legal:pasalVersionHasRawText "(1). Surat Utang Negara terdiri atas :\na. Surat Perbendaharaan Negara;\nb. Obligas i Negara.\n\n(2). Surat Perbendaharaan Negara sebagaimana dimaksud dalam ayat (1) huruf a berjangka waktu sampai dengan 12 (dua belas) bulan dengan pembayaran bunga secara diskonto.\n(3). Obligasi Negara sebagaimana dimaksud dalam ayat (1) huruf b berjangka wakt u lebih dari 12 (dua belas) bulan dengan kupon dan/atau dengan pembayaran bunga secara diskonto." .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001> .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001> legal:ayatHasRawText "Surat Utang Negara terdiri atas :\na. Surat Perbendaharaan Negara;\nb. Obligas i Negara.\n" .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001/point/description> legal:textHasTextString "Surat Utang Negara terdiri atas :" .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001/point/description> .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001/point/a> .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001/point/a/text> legal:textHasTextString "Surat Perbendaharaan Negara;" .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001/point/a/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001/point/b> .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001/point/b/text> legal:textHasTextString "Obligas i Negara." .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001/point/b> legal:pointHasText <http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001/point/b/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0002> .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0002> legal:ayatHasRawText "Surat Perbendaharaan Negara sebagaimana dimaksud dalam ayat (1) huruf a berjangka waktu sampai dengan 12 (dua belas) bulan dengan pembayaran bunga secara diskonto." .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0002/text> legal:textHasTextString "Surat Perbendaharaan Negara sebagaimana dimaksud dalam ayat (1) huruf a berjangka waktu sampai dengan 12 (dua belas) bulan dengan pembayaran bunga secara diskonto." .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0002/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001> .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/point/a> .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0003> .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0003> legal:ayatHasRawText "Obligasi Negara sebagaimana dimaksud dalam ayat (1) huruf b berjangka wakt u lebih dari 12 (dua belas) bulan dengan kupon dan/atau dengan pembayaran bunga secara diskonto." .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0003/text> legal:textHasTextString "Obligasi Negara sebagaimana dimaksud dalam ayat (1) huruf b berjangka wakt u lebih dari 12 (dua belas) bulan dengan kupon dan/atau dengan pembayaran bunga secara diskonto." .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0003/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001> .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001/point/u> .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001/point/wakt> .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001/point/berjangka> .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/point/b> .
+<http://example.org/legal/document/uu/2002/24/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2002/24/bab/0003> .
+<http://example.org/legal/document/uu/2002/24/bab/0003> legal:babHasKey 3 .
+<http://example.org/legal/document/uu/2002/24/bab/0003> legal:babHasTitle "TUJUAN PENERBITAN SURAT UTANG NEGARA" .
+<http://example.org/legal/document/uu/2002/24/bab/0003> legal:babHasPasalSet <http://example.org/legal/document/uu/2002/24/bab/0003/pasals> .
+<http://example.org/legal/document/uu/2002/24/bab/0003/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0004> .
+<http://example.org/legal/document/uu/2002/24/pasal/0004> legal:pasalHasKey 4 .
+<http://example.org/legal/document/uu/2002/24/pasal/0004> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022> .
+<http://example.org/legal/document/uu/2002/24> legal:documentHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0004> .
+<http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022> legal:pasalVersionHasVersionDate "2002-10-22"^^xsd:date .
+<http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022> legal:pasalVersionHasRawText "Surat Utang Negara diterbitkan untuk tujuan sebagai berikut:\na. membiayai defisit Anggaran Pendapatan d an Belanja Negara;\nb. menutup kekurangan kas jangka pendek akibat ketidaksesuaian antara arus kas penerimaan dan pengeluaran dari Rekening Kas Negara dalam satu tahun anggaran;\nc. mengelola portofolio utang negara.\n" .
+<http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point/description> legal:textHasTextString "Surat Utang Negara diterbitkan untuk tujuan sebagai berikut:" .
+<http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point/description> .
+<http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point/a> .
+<http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point/a/text> legal:textHasTextString "membiayai defisit Anggaran Pendapatan d an Belanja Negara;" .
+<http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point/a> legal:pointHasText <http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point/a/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point/b> .
+<http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point/b/text> legal:textHasTextString "menutup kekurangan kas jangka pendek akibat ketidaksesuaian antara arus kas penerimaan dan pengeluaran dari Rekening Kas Negara dalam satu tahun anggaran;" .
+<http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point/b> legal:pointHasText <http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point/b/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point/c> .
+<http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point/c/text> legal:textHasTextString "mengelola portofolio utang negara." .
+<http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point/c> legal:pointHasText <http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point/c/text> .
+<http://example.org/legal/document/uu/2002/24/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2002/24/bab/0004> .
+<http://example.org/legal/document/uu/2002/24/bab/0004> legal:babHasKey 4 .
+<http://example.org/legal/document/uu/2002/24/bab/0004> legal:babHasTitle "KEWENANGAN DAN KEWAJIBAN" .
+<http://example.org/legal/document/uu/2002/24/bab/0004> legal:babHasPasalSet <http://example.org/legal/document/uu/2002/24/bab/0004/pasals> .
+<http://example.org/legal/document/uu/2002/24/bab/0004/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0005> .
+<http://example.org/legal/document/uu/2002/24/pasal/0005> legal:pasalHasKey 5 .
+<http://example.org/legal/document/uu/2002/24/pasal/0005> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022> .
+<http://example.org/legal/document/uu/2002/24> legal:documentHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0005> .
+<http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022> legal:pasalVersionHasVersionDate "2002-10-22"^^xsd:date .
+<http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022> legal:pasalVersionHasRawText "(1). Kewenangan menerbitkan Surat Utang Negara untuk tujuan sebagaimana dimaksud dalam Pasal 4 berada pada Pemerintah.\n(2). Kewenangan sebagaimana dimaksud dalam ayat (1) dilaksana - kan oleh Menteri." .
+<http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022/ayat/0001> .
+<http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022/ayat/0001> legal:ayatHasRawText "Kewenangan menerbitkan Surat Utang Negara untuk tujuan sebagaimana dimaksud dalam Pasal 4 berada pada Pemerintah." .
+<http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022/ayat/0001/text> legal:textHasTextString "Kewenangan menerbitkan Surat Utang Negara untuk tujuan sebagaimana dimaksud dalam Pasal 4 berada pada Pemerintah." .
+<http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022/ayat/0001/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2002/24/pasal/0004> .
+<http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022/ayat/0002> .
+<http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022/ayat/0002> legal:ayatHasRawText "Kewenangan sebagaimana dimaksud dalam ayat (1) dilaksana - kan oleh Menteri." .
+<http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022/ayat/0002/text> legal:textHasTextString "Kewenangan sebagaimana dimaksud dalam ayat (1) dilaksana - kan oleh Menteri." .
+<http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022/ayat/0002/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022/ayat/0001> .
+<http://example.org/legal/document/uu/2002/24/bab/0004/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0006> .
+<http://example.org/legal/document/uu/2002/24/pasal/0006> legal:pasalHasKey 6 .
+<http://example.org/legal/document/uu/2002/24/pasal/0006> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2002/24/pasal/0006/version/20021022> .
+<http://example.org/legal/document/uu/2002/24> legal:documentHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0006> .
+<http://example.org/legal/document/uu/2002/24/pasal/0006/version/20021022> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2002/24/pasal/0006/version/20021022> legal:pasalVersionHasVersionDate "2002-10-22"^^xsd:date .
+<http://example.org/legal/document/uu/2002/24/pasal/0006/version/20021022> legal:pasalVersionHasRawText "Dalam hal Pemerintah akan menerbitkan Surat Utan g Negara untuk tujuan sebagaimana dimaksud dalam Pasal 4, Menteri terlebih dahulu berkonsultasi dengan Bank Indonesia. PRESIDEN REPUBLIK INDONESIA - 4 - Pasal 7..." .
+<http://example.org/legal/document/uu/2002/24/pasal/0006/version/20021022/text> legal:textHasTextString "Dalam hal Pemerintah akan menerbitkan Surat Utan g Negara untuk tujuan sebagaimana dimaksud dalam Pasal 4, Menteri terlebih dahulu berkonsultasi dengan Bank Indonesia. PRESIDEN REPUBLIK INDONESIA - 4 - Pasal 7..." .
+<http://example.org/legal/document/uu/2002/24/pasal/0006/version/20021022> legal:pasalVersionHasText <http://example.org/legal/document/uu/2002/24/pasal/0006/version/20021022/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0006/version/20021022/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2002/24/pasal/0007> .
+<http://example.org/legal/document/uu/2002/24/pasal/0006/version/20021022/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2002/24/pasal/0004> .
+<http://example.org/legal/document/uu/2002/24/bab/0004/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0007> .
+<http://example.org/legal/document/uu/2002/24/pasal/0007> legal:pasalHasKey 7 .
+<http://example.org/legal/document/uu/2002/24/pasal/0007> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022> .
+<http://example.org/legal/document/uu/2002/24> legal:documentHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0007> .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022> legal:pasalVersionHasVersionDate "2002-10-22"^^xsd:date .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022> legal:pasalVersionHasRawText "(1). Penerbitan Surat Utang Negara harus terlebih dahulu mendapat persetujuan Dewan Perwakilan Rakyat.\n(2). Persetuju an sebagaimana dimaksud dalam ayat (1) diberikan atas nilai bersih maksimal Surat Utang Negara yang akan diterbitkan dalam satu tahun anggaran.\n(3). Persetujuan Dewan Perwakilan Rakyat sebagaimana dimaksud dalam ayat (1), diberikan pada saat pengesahan Anggaran Pendapatan dan Belanja Negara.\n(4). Dalam hal - hal tertentu, Menteri dapat menerbitkan Surat Utang Negara melebihi nilai bersih maksimal yang te lah disetujui Dewan Perwakilan Rakyat sebagaimana dimaksud dalam ayat (2) setelah mendapat persetujuan terlebih dahulu dari Dewan Perwakilan Rakyat dan dilaporkan sebagai Perubahan Anggaran Pendapatan dan Belanja Negara tahun yang bersangkutan." .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0001> .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0001> legal:ayatHasRawText "Penerbitan Surat Utang Negara harus terlebih dahulu mendapat persetujuan Dewan Perwakilan Rakyat." .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0001/text> legal:textHasTextString "Penerbitan Surat Utang Negara harus terlebih dahulu mendapat persetujuan Dewan Perwakilan Rakyat." .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0001/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0002> .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0002> legal:ayatHasRawText "Persetuju an sebagaimana dimaksud dalam ayat (1) diberikan atas nilai bersih maksimal Surat Utang Negara yang akan diterbitkan dalam satu tahun anggaran." .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0002/text> legal:textHasTextString "Persetuju an sebagaimana dimaksud dalam ayat (1) diberikan atas nilai bersih maksimal Surat Utang Negara yang akan diterbitkan dalam satu tahun anggaran." .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0002/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0001> .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0003> .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0003> legal:ayatHasRawText "Persetujuan Dewan Perwakilan Rakyat sebagaimana dimaksud dalam ayat (1), diberikan pada saat pengesahan Anggaran Pendapatan dan Belanja Negara." .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0003/text> legal:textHasTextString "Persetujuan Dewan Perwakilan Rakyat sebagaimana dimaksud dalam ayat (1), diberikan pada saat pengesahan Anggaran Pendapatan dan Belanja Negara." .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0003/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0001> .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0004> .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0004> legal:ayatHasKey 4 .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0004> legal:ayatHasRawText "Dalam hal - hal tertentu, Menteri dapat menerbitkan Surat Utang Negara melebihi nilai bersih maksimal yang te lah disetujui Dewan Perwakilan Rakyat sebagaimana dimaksud dalam ayat (2) setelah mendapat persetujuan terlebih dahulu dari Dewan Perwakilan Rakyat dan dilaporkan sebagai Perubahan Anggaran Pendapatan dan Belanja Negara tahun yang bersangkutan." .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0004/text> legal:textHasTextString "Dalam hal - hal tertentu, Menteri dapat menerbitkan Surat Utang Negara melebihi nilai bersih maksimal yang te lah disetujui Dewan Perwakilan Rakyat sebagaimana dimaksud dalam ayat (2) setelah mendapat persetujuan terlebih dahulu dari Dewan Perwakilan Rakyat dan dilaporkan sebagai Perubahan Anggaran Pendapatan dan Belanja Negara tahun yang bersangkutan." .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0004/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0002> .
+<http://example.org/legal/document/uu/2002/24/bab/0004/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0008> .
+<http://example.org/legal/document/uu/2002/24/pasal/0008> legal:pasalHasKey 8 .
+<http://example.org/legal/document/uu/2002/24/pasal/0008> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2002/24/pasal/0008/version/20021022> .
+<http://example.org/legal/document/uu/2002/24> legal:documentHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0008> .
+<http://example.org/legal/document/uu/2002/24/pasal/0008/version/20021022> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2002/24/pasal/0008/version/20021022> legal:pasalVersionHasVersionDate "2002-10-22"^^xsd:date .
+<http://example.org/legal/document/uu/2002/24/pasal/0008/version/20021022> legal:pasalVersionHasRawText "( 1) Persetujuan Dewan Perwakilan Rakyat mengenai penerbitan Surat Utang Negara sebagaimana dimaksud dalam Pasal 7 ayat (1) meliputi pembayaran semua kewajiban bunga dan pokok yang timbul sebagai akibat penerbitan Surat Utang Negara dimaksud. (2) Pemerintah wajib membayar bunga dan pokok setiap Surat Utang Negara pada saat jatuh tempo. (3) Dana untuk membayar bunga dan pokok sebagaimana dimaksud dalam ayat (2) disediaka n dalam Anggaran Pendapatan dan Belanja Negara setiap tahun sampai dengan berakhirnya kewaj iban tersebut. (4) Dalam hal pembayaran kewajiban bunga dan pokok dimaksud melebihi perkiraan dana sebagaimana dimaksud dalam ayat (3), Menteri melakukan pembayaran dan menyampaikan realisasi pembayaran tersebut kepada Dewan Perwakilan Rakyat dalam pembaha san Perubahan Anggaran Pendapatan dan Belanja Negara." .
+<http://example.org/legal/document/uu/2002/24/pasal/0008/version/20021022/text> legal:textHasTextString "( 1) Persetujuan Dewan Perwakilan Rakyat mengenai penerbitan Surat Utang Negara sebagaimana dimaksud dalam Pasal 7 ayat (1) meliputi pembayaran semua kewajiban bunga dan pokok yang timbul sebagai akibat penerbitan Surat Utang Negara dimaksud. (2) Pemerintah wajib membayar bunga dan pokok setiap Surat Utang Negara pada saat jatuh tempo. (3) Dana untuk membayar bunga dan pokok sebagaimana dimaksud dalam ayat (2) disediaka n dalam Anggaran Pendapatan dan Belanja Negara setiap tahun sampai dengan berakhirnya kewaj iban tersebut. (4) Dalam hal pembayaran kewajiban bunga dan pokok dimaksud melebihi perkiraan dana sebagaimana dimaksud dalam ayat (3), Menteri melakukan pembayaran dan menyampaikan realisasi pembayaran tersebut kepada Dewan Perwakilan Rakyat dalam pembaha san Perubahan Anggaran Pendapatan dan Belanja Negara." .
+<http://example.org/legal/document/uu/2002/24/pasal/0008/version/20021022> legal:pasalVersionHasText <http://example.org/legal/document/uu/2002/24/pasal/0008/version/20021022/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0008/version/20021022/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2002/24/pasal/0008/version/20021022/ayat/0001> .
+<http://example.org/legal/document/uu/2002/24/pasal/0008/version/20021022/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2002/24/pasal/0008/version/20021022/ayat/0003> .
+<http://example.org/legal/document/uu/2002/24/pasal/0008/version/20021022/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2002/24/pasal/0008/version/20021022/ayat/0002> .
+<http://example.org/legal/document/uu/2002/24/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2002/24/bab/0005> .
+<http://example.org/legal/document/uu/2002/24/bab/0005> legal:babHasKey 5 .
+<http://example.org/legal/document/uu/2002/24/bab/0005> legal:babHasTitle "PENGELOLAAN SURAT UTANG NEGARA" .
+<http://example.org/legal/document/uu/2002/24/bab/0005> legal:babHasPasalSet <http://example.org/legal/document/uu/2002/24/bab/0005/pasals> .
+<http://example.org/legal/document/uu/2002/24/bab/0005/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0009> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009> legal:pasalHasKey 9 .
+<http://example.org/legal/document/uu/2002/24/pasal/0009> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022> .
+<http://example.org/legal/document/uu/2002/24> legal:documentHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0009> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022> legal:pasalVersionHasVersionDate "2002-10-22"^^xsd:date .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022> legal:pasalVersionHasRawText "(1). Pengelolaan Surat Utang Negara diselenggarakan oleh Menteri.\n(2). Pengelolaan Surat Utang Negara sebagaimana dimaksud dalam ayat (1) sekurang - kurangnya meliputi:\na. penetapan strategi dan kebijakan pengelolaan Surat Utang Negara termasuk kebijakan pengendalian risiko;\nb. perencanaan dan penetapan struktur portofolio utang negara; PRESIDEN REPUBLIK INDONESIA - 5 -\nc. penerbitan... c. penerbitan Surat Utang Negara;\nd. penjualan Surat Utang Negara melalui lelang dan/atau tanpa lelang;\ne. pembelian kembali Surat Utang Negara sebelum jatuh tempo;\nf. pelunasan;\ng. aktivitas lain dalam rangka pengembangan Pasar Perdana dan Pasar Sekunder Surat Utang Negara.\n" .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0001> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0001> legal:ayatHasRawText "Pengelolaan Surat Utang Negara diselenggarakan oleh Menteri." .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0001/text> legal:textHasTextString "Pengelolaan Surat Utang Negara diselenggarakan oleh Menteri." .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0001/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002> legal:ayatHasRawText "Pengelolaan Surat Utang Negara sebagaimana dimaksud dalam ayat (1) sekurang - kurangnya meliputi:\na. penetapan strategi dan kebijakan pengelolaan Surat Utang Negara termasuk kebijakan pengendalian risiko;\nb. perencanaan dan penetapan struktur portofolio utang negara; PRESIDEN REPUBLIK INDONESIA - 5 -\nc. penerbitan... c. penerbitan Surat Utang Negara;\nd. penjualan Surat Utang Negara melalui lelang dan/atau tanpa lelang;\ne. pembelian kembali Surat Utang Negara sebelum jatuh tempo;\nf. pelunasan;\ng. aktivitas lain dalam rangka pengembangan Pasar Perdana dan Pasar Sekunder Surat Utang Negara.\n" .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002> legal:ayatHasPointSet <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/description> legal:textHasTextString "Pengelolaan Surat Utang Negara sebagaimana dimaksud dalam ayat (1) sekurang - kurangnya meliputi:" .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/description> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/a> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/a/text> legal:textHasTextString "penetapan strategi dan kebijakan pengelolaan Surat Utang Negara termasuk kebijakan pengendalian risiko;" .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/a> legal:pointHasText <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/a/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/b> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/b/text> legal:textHasTextString "perencanaan dan penetapan struktur portofolio utang negara; PRESIDEN REPUBLIK INDONESIA - 5 -" .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/b> legal:pointHasText <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/b/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/c> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/c/text> legal:textHasTextString "penerbitan... c. penerbitan Surat Utang Negara;" .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/c> legal:pointHasText <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/c/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/d> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/d/text> legal:textHasTextString "penjualan Surat Utang Negara melalui lelang dan/atau tanpa lelang;" .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/d> legal:pointHasText <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/d/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/e> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/e/text> legal:textHasTextString "pembelian kembali Surat Utang Negara sebelum jatuh tempo;" .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/e> legal:pointHasText <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/e/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/f> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/f> legal:pointHasKey "f" .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/f/text> legal:textHasTextString "pelunasan;" .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/f> legal:pointHasText <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/f/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/g> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/g> legal:pointHasKey "g" .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/g/text> legal:textHasTextString "aktivitas lain dalam rangka pengembangan Pasar Perdana dan Pasar Sekunder Surat Utang Negara." .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/g> legal:pointHasText <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/g/text> .
+<http://example.org/legal/document/uu/2002/24/bab/0005/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0010> .
+<http://example.org/legal/document/uu/2002/24/pasal/0010> legal:pasalHasKey 10 .
+<http://example.org/legal/document/uu/2002/24/pasal/0010> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022> .
+<http://example.org/legal/document/uu/2002/24> legal:documentHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0010> .
+<http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022> legal:pasalVersionHasVersionDate "2002-10-22"^^xsd:date .
+<http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022> legal:pasalVersionHasRawText "(1). Dalam rangka mendukung penyelenggaraan pengelolaan Surat Utang Negara sebagaimana dimaksud dalam Pasal 9, Menteri membuka rekening yang merupakan bagian dari Rekening Kas Negara.\n(2). Tata cara pembukaan dan pengelolaan rekening sebagaimana dimaksud dalam ayat (1) ditetapkan oleh Menteri." .
+<http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022/ayat/0001> .
+<http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022/ayat/0001> legal:ayatHasRawText "Dalam rangka mendukung penyelenggaraan pengelolaan Surat Utang Negara sebagaimana dimaksud dalam Pasal 9, Menteri membuka rekening yang merupakan bagian dari Rekening Kas Negara." .
+<http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022/ayat/0001/text> legal:textHasTextString "Dalam rangka mendukung penyelenggaraan pengelolaan Surat Utang Negara sebagaimana dimaksud dalam Pasal 9, Menteri membuka rekening yang merupakan bagian dari Rekening Kas Negara." .
+<http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022/ayat/0001/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2002/24/pasal/0009> .
+<http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022/ayat/0002> .
+<http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022/ayat/0002> legal:ayatHasRawText "Tata cara pembukaan dan pengelolaan rekening sebagaimana dimaksud dalam ayat (1) ditetapkan oleh Menteri." .
+<http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022/ayat/0002/text> legal:textHasTextString "Tata cara pembukaan dan pengelolaan rekening sebagaimana dimaksud dalam ayat (1) ditetapkan oleh Menteri." .
+<http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022/ayat/0002/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022/ayat/0001> .
+<http://example.org/legal/document/uu/2002/24/bab/0005/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0011> .
+<http://example.org/legal/document/uu/2002/24/pasal/0011> legal:pasalHasKey 11 .
+<http://example.org/legal/document/uu/2002/24/pasal/0011> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022> .
+<http://example.org/legal/document/uu/2002/24> legal:documentHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0011> .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022> legal:pasalVersionHasVersionDate "2002-10-22"^^xsd:date .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022> legal:pasalVersionHasRawText "Setiap Surat Utang Negara mencantumkan sekurang - kurangnya:\na. nilai nominal,\nb. tanggal jatuh tempo,\nc. tanggal pembayaran bunga,\nd. tingkat bunga (kupon),\ne. frekuensi pembayaran bunga,\nf. cara perhitungan pembayaran bunga,\ng. ketentuan tentang hak untuk membeli kembali Surat Utang Negara sebelum jatuh tempo,\nh. ketentuan tentang pengalihan kepemilikan.\n" .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/description> legal:textHasTextString "Setiap Surat Utang Negara mencantumkan sekurang - kurangnya:" .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/description> .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/a> .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/a/text> legal:textHasTextString "nilai nominal," .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/a> legal:pointHasText <http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/a/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/b> .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/b/text> legal:textHasTextString "tanggal jatuh tempo," .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/b> legal:pointHasText <http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/b/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/c> .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/c/text> legal:textHasTextString "tanggal pembayaran bunga," .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/c> legal:pointHasText <http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/c/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/d> .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/d/text> legal:textHasTextString "tingkat bunga (kupon)," .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/d> legal:pointHasText <http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/d/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/e> .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/e/text> legal:textHasTextString "frekuensi pembayaran bunga," .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/e> legal:pointHasText <http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/e/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/f> .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/f> legal:pointHasKey "f" .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/f/text> legal:textHasTextString "cara perhitungan pembayaran bunga," .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/f> legal:pointHasText <http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/f/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/g> .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/g> legal:pointHasKey "g" .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/g/text> legal:textHasTextString "ketentuan tentang hak untuk membeli kembali Surat Utang Negara sebelum jatuh tempo," .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/g> legal:pointHasText <http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/g/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/h> .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/h> legal:pointHasKey "h" .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/h/text> legal:textHasTextString "ketentuan tentang pengalihan kepemilikan." .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/h> legal:pointHasText <http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/h/text> .
+<http://example.org/legal/document/uu/2002/24/bab/0005/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0012> .
+<http://example.org/legal/document/uu/2002/24/pasal/0012> legal:pasalHasKey 12 .
+<http://example.org/legal/document/uu/2002/24/pasal/0012> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022> .
+<http://example.org/legal/document/uu/2002/24> legal:documentHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0012> .
+<http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022> legal:pasalVersionHasVersionDate "2002-10-22"^^xsd:date .
+<http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022> legal:pasalVersionHasRawText "(1). Kegiatan penatausahaan yang mencakup pencatatan kepemilik - an, kliring dan setelmen, serta agen pembayar bunga dan pokok Surat Utang Negara dilaksanakan oleh Bank Indonesia.\n(2). Dalam menyelenggarakan kegiatan penatausahaan sebagaimana dimaksud dalam ayat (1), Bank Indonesia wajib membuat laporan pertanggungjawaban kepada Pemerin tah." .
+<http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022/ayat/0001> .
+<http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022/ayat/0001> legal:ayatHasRawText "Kegiatan penatausahaan yang mencakup pencatatan kepemilik - an, kliring dan setelmen, serta agen pembayar bunga dan pokok Surat Utang Negara dilaksanakan oleh Bank Indonesia." .
+<http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022/ayat/0001/text> legal:textHasTextString "Kegiatan penatausahaan yang mencakup pencatatan kepemilik - an, kliring dan setelmen, serta agen pembayar bunga dan pokok Surat Utang Negara dilaksanakan oleh Bank Indonesia." .
+<http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022/ayat/0001/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022/ayat/0002> .
+<http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022/ayat/0002> legal:ayatHasRawText "Dalam menyelenggarakan kegiatan penatausahaan sebagaimana dimaksud dalam ayat (1), Bank Indonesia wajib membuat laporan pertanggungjawaban kepada Pemerin tah." .
+<http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022/ayat/0002/text> legal:textHasTextString "Dalam menyelenggarakan kegiatan penatausahaan sebagaimana dimaksud dalam ayat (1), Bank Indonesia wajib membuat laporan pertanggungjawaban kepada Pemerin tah." .
+<http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022/ayat/0002/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022/ayat/0001> .
+<http://example.org/legal/document/uu/2002/24/bab/0005/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0013> .
+<http://example.org/legal/document/uu/2002/24/pasal/0013> legal:pasalHasKey 13 .
+<http://example.org/legal/document/uu/2002/24/pasal/0013> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022> .
+<http://example.org/legal/document/uu/2002/24> legal:documentHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0013> .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022> legal:pasalVersionHasVersionDate "2002-10-22"^^xsd:date .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022> legal:pasalVersionHasRawText "(1). Menteri menunjuk Bank Indonesia sebagai agen untuk melaksanakan lelang Surat Perbendaharaan Negara di Pasar PRESIDEN REPUBLIK INDONESIA - 6 - Perdana. (2) Menteri...\n(2). Menteri dapat menunjuk Bank Indonesia sebagai agen untuk melaksanakan lelang Obligasi Negara di Pa sar Perdana.\n(3). Ketentuan mengenai metode lelang, jadwal pelaksanaan lelang, kriteria peserta lelang, dan hasil akhir lelang ditetapkan oleh Menteri." .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0001> .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0001> legal:ayatHasRawText "Menteri menunjuk Bank Indonesia sebagai agen untuk melaksanakan lelang Surat Perbendaharaan Negara di Pasar PRESIDEN REPUBLIK INDONESIA - 6 - Perdana. (2) Menteri..." .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0001/text> legal:textHasTextString "Menteri menunjuk Bank Indonesia sebagai agen untuk melaksanakan lelang Surat Perbendaharaan Negara di Pasar PRESIDEN REPUBLIK INDONESIA - 6 - Perdana. (2) Menteri..." .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0001/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0002> .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0002> legal:ayatHasRawText "Menteri dapat menunjuk Bank Indonesia sebagai agen untuk melaksanakan lelang Obligasi Negara di Pa sar Perdana." .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0002/text> legal:textHasTextString "Menteri dapat menunjuk Bank Indonesia sebagai agen untuk melaksanakan lelang Obligasi Negara di Pa sar Perdana." .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0002/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0003> .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0003> legal:ayatHasRawText "Ketentuan mengenai metode lelang, jadwal pelaksanaan lelang, kriteria peserta lelang, dan hasil akhir lelang ditetapkan oleh Menteri." .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0003/text> legal:textHasTextString "Ketentuan mengenai metode lelang, jadwal pelaksanaan lelang, kriteria peserta lelang, dan hasil akhir lelang ditetapkan oleh Menteri." .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0003/text> .
+<http://example.org/legal/document/uu/2002/24/bab/0005/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0014> .
+<http://example.org/legal/document/uu/2002/24/pasal/0014> legal:pasalHasKey 14 .
+<http://example.org/legal/document/uu/2002/24/pasal/0014> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2002/24/pasal/0014/version/20021022> .
+<http://example.org/legal/document/uu/2002/24> legal:documentHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0014> .
+<http://example.org/legal/document/uu/2002/24/pasal/0014/version/20021022> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2002/24/pasal/0014/version/20021022> legal:pasalVersionHasVersionDate "2002-10-22"^^xsd:date .
+<http://example.org/legal/document/uu/2002/24/pasal/0014/version/20021022> legal:pasalVersionHasRawText "Menteri dapat menunjuk Bank Indonesia dan/atau pihak lain sebagai agen untuk melaksanakan pemb elian dan penjualan Surat Utang Negara di Pasar Sekunder." .
+<http://example.org/legal/document/uu/2002/24/pasal/0014/version/20021022/text> legal:textHasTextString "Menteri dapat menunjuk Bank Indonesia dan/atau pihak lain sebagai agen untuk melaksanakan pemb elian dan penjualan Surat Utang Negara di Pasar Sekunder." .
+<http://example.org/legal/document/uu/2002/24/pasal/0014/version/20021022> legal:pasalVersionHasText <http://example.org/legal/document/uu/2002/24/pasal/0014/version/20021022/text> .
+<http://example.org/legal/document/uu/2002/24/bab/0005/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0015> .
+<http://example.org/legal/document/uu/2002/24/pasal/0015> legal:pasalHasKey 15 .
+<http://example.org/legal/document/uu/2002/24/pasal/0015> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2002/24/pasal/0015/version/20021022> .
+<http://example.org/legal/document/uu/2002/24> legal:documentHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0015> .
+<http://example.org/legal/document/uu/2002/24/pasal/0015/version/20021022> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2002/24/pasal/0015/version/20021022> legal:pasalVersionHasVersionDate "2002-10-22"^^xsd:date .
+<http://example.org/legal/document/uu/2002/24/pasal/0015/version/20021022> legal:pasalVersionHasRawText "Pengaturan dan pengawasan terhadap kegiatan perdagangan Surat Utang Negara dilakukan oleh instansi pemerintah yang melakukan pengaturan dan pengawasan di bidang pasar modal." .
+<http://example.org/legal/document/uu/2002/24/pasal/0015/version/20021022/text> legal:textHasTextString "Pengaturan dan pengawasan terhadap kegiatan perdagangan Surat Utang Negara dilakukan oleh instansi pemerintah yang melakukan pengaturan dan pengawasan di bidang pasar modal." .
+<http://example.org/legal/document/uu/2002/24/pasal/0015/version/20021022> legal:pasalVersionHasText <http://example.org/legal/document/uu/2002/24/pasal/0015/version/20021022/text> .
+<http://example.org/legal/document/uu/2002/24/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2002/24/bab/0006> .
+<http://example.org/legal/document/uu/2002/24/bab/0006> legal:babHasKey 6 .
+<http://example.org/legal/document/uu/2002/24/bab/0006> legal:babHasTitle "AKUNTABILITAS DAN TRANSPARANSI" .
+<http://example.org/legal/document/uu/2002/24/bab/0006> legal:babHasPasalSet <http://example.org/legal/document/uu/2002/24/bab/0006/pasals> .
+<http://example.org/legal/document/uu/2002/24/bab/0006/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0016> .
+<http://example.org/legal/document/uu/2002/24/pasal/0016> legal:pasalHasKey 16 .
+<http://example.org/legal/document/uu/2002/24/pasal/0016> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022> .
+<http://example.org/legal/document/uu/2002/24> legal:documentHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0016> .
+<http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022> legal:pasalVersionHasVersionDate "2002-10-22"^^xsd:date .
+<http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022> legal:pasalVersionHasRawText "(1). Menteri wajib menyelenggarakan penatausahaan dan membuat pertanggungjawaban atas pengelolaan Surat Utang Negara dan dana yang dikelola.\n(2). Pertanggungjawaban sebagaimana dimaksud dalam ayat (1) disampaikan seb agai bagian dari pertanggungjawaban pelaksa - naan Anggaran Pendapatan dan Belanja Negara." .
+<http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022/ayat/0001> .
+<http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022/ayat/0001> legal:ayatHasRawText "Menteri wajib menyelenggarakan penatausahaan dan membuat pertanggungjawaban atas pengelolaan Surat Utang Negara dan dana yang dikelola." .
+<http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022/ayat/0001/text> legal:textHasTextString "Menteri wajib menyelenggarakan penatausahaan dan membuat pertanggungjawaban atas pengelolaan Surat Utang Negara dan dana yang dikelola." .
+<http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022/ayat/0001/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022/ayat/0002> .
+<http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022/ayat/0002> legal:ayatHasRawText "Pertanggungjawaban sebagaimana dimaksud dalam ayat (1) disampaikan seb agai bagian dari pertanggungjawaban pelaksa - naan Anggaran Pendapatan dan Belanja Negara." .
+<http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022/ayat/0002/text> legal:textHasTextString "Pertanggungjawaban sebagaimana dimaksud dalam ayat (1) disampaikan seb agai bagian dari pertanggungjawaban pelaksa - naan Anggaran Pendapatan dan Belanja Negara." .
+<http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022/ayat/0002/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022/ayat/0001> .
+<http://example.org/legal/document/uu/2002/24/bab/0006/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0017> .
+<http://example.org/legal/document/uu/2002/24/pasal/0017> legal:pasalHasKey 17 .
+<http://example.org/legal/document/uu/2002/24/pasal/0017> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022> .
+<http://example.org/legal/document/uu/2002/24> legal:documentHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0017> .
+<http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022> legal:pasalVersionHasVersionDate "2002-10-22"^^xsd:date .
+<http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022> legal:pasalVersionHasRawText "Menteri wajib secara berkala mempublikasikan informasi tentang:\na. kebijakan pengelolaan utang dan rencana penerbitan Surat Utang Negara yang meliputi perki raan jumlah dan jadwal waktu penerbitan;\nb. jumlah Surat Utang Negara yang beredar beserta komposisinya, termasuk jenis valuta, struktur jatuh tempo dan tingkat bunga.\n" .
+<http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022/point/description> legal:textHasTextString "Menteri wajib secara berkala mempublikasikan informasi tentang:" .
+<http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022/point/description> .
+<http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022/point/a> .
+<http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022/point/a/text> legal:textHasTextString "kebijakan pengelolaan utang dan rencana penerbitan Surat Utang Negara yang meliputi perki raan jumlah dan jadwal waktu penerbitan;" .
+<http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022/point/a> legal:pointHasText <http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022/point/a/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022/point/b> .
+<http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022/point/b/text> legal:textHasTextString "jumlah Surat Utang Negara yang beredar beserta komposisinya, termasuk jenis valuta, struktur jatuh tempo dan tingkat bunga." .
+<http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022/point/b> legal:pointHasText <http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022/point/b/text> .
+<http://example.org/legal/document/uu/2002/24/bab/0006/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0018> .
+<http://example.org/legal/document/uu/2002/24/pasal/0018> legal:pasalHasKey 18 .
+<http://example.org/legal/document/uu/2002/24/pasal/0018> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2002/24/pasal/0018/version/20021022> .
+<http://example.org/legal/document/uu/2002/24> legal:documentHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0018> .
+<http://example.org/legal/document/uu/2002/24/pasal/0018/version/20021022> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2002/24/pasal/0018/version/20021022> legal:pasalVersionHasVersionDate "2002-10-22"^^xsd:date .
+<http://example.org/legal/document/uu/2002/24/pasal/0018/version/20021022> legal:pasalVersionHasRawText "Tata cara penatausahaan, pertanggungjawaban, dan publikasi informasi sebagaim ana dimaksud dalam Pasal 16 dan Pasal 17 ditetapkan dalam Peraturan Pemerintah. PRESIDEN REPUBLIK INDONESIA - 7 - BAB VII..." .
+<http://example.org/legal/document/uu/2002/24/pasal/0018/version/20021022/text> legal:textHasTextString "Tata cara penatausahaan, pertanggungjawaban, dan publikasi informasi sebagaim ana dimaksud dalam Pasal 16 dan Pasal 17 ditetapkan dalam Peraturan Pemerintah. PRESIDEN REPUBLIK INDONESIA - 7 - BAB VII..." .
+<http://example.org/legal/document/uu/2002/24/pasal/0018/version/20021022> legal:pasalVersionHasText <http://example.org/legal/document/uu/2002/24/pasal/0018/version/20021022/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0018/version/20021022/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2002/24/pasal/0017> .
+<http://example.org/legal/document/uu/2002/24/pasal/0018/version/20021022/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2002/24/pasal/0016> .
+<http://example.org/legal/document/uu/2002/24/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2002/24/bab/0007> .
+<http://example.org/legal/document/uu/2002/24/bab/0007> legal:babHasKey 7 .
+<http://example.org/legal/document/uu/2002/24/bab/0007> legal:babHasTitle "KETENTUAN PIDANA" .
+<http://example.org/legal/document/uu/2002/24/bab/0007> legal:babHasPasalSet <http://example.org/legal/document/uu/2002/24/bab/0007/pasals> .
+<http://example.org/legal/document/uu/2002/24/bab/0007/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0019> .
+<http://example.org/legal/document/uu/2002/24/pasal/0019> legal:pasalHasKey 19 .
+<http://example.org/legal/document/uu/2002/24/pasal/0019> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022> .
+<http://example.org/legal/document/uu/2002/24> legal:documentHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0019> .
+<http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022> legal:pasalVersionHasVersionDate "2002-10-22"^^xsd:date .
+<http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022> legal:pasalVersionHasRawText "(1). Setiap orang yang meniru Surat Utang Negara atau memalsukan Surat Utang Negara dengan maksud memperdagangk an atau dengan sengaja memperdagangkan Surat Utang Negara tiruan atau Surat Utang Negara palsu, dipidana dengan pidana penjara paling singkat 5 (lima) tahun dan paling lama 10 (sepuluh) tahun dan denda paling sedikit Rp10.000.000.000,00 (sepuluh miliar rup iah) dan paling banyak Rp20.000.000.000,00 (dua puluh miliar rupiah).\n(2). Setiap orang yang dengan sengaja menerbitkan Surat Utang Negara tidak berdasarkan Undang - undang ini, dipidana dengan pidana penjara paling singkat 10 (sepuluh) tahun dan paling lama 20 (dua puluh) tahun dan denda paling sedikit Rp 20.000.000.000,00 (dua puluh miliar rupiah) dan paling banyak Rp40.000.000.000,00 (empat puluh miliar rupiah)." .
+<http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022/ayat/0001> .
+<http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022/ayat/0001> legal:ayatHasRawText "Setiap orang yang meniru Surat Utang Negara atau memalsukan Surat Utang Negara dengan maksud memperdagangk an atau dengan sengaja memperdagangkan Surat Utang Negara tiruan atau Surat Utang Negara palsu, dipidana dengan pidana penjara paling singkat 5 (lima) tahun dan paling lama 10 (sepuluh) tahun dan denda paling sedikit Rp10.000.000.000,00 (sepuluh miliar rup iah) dan paling banyak Rp20.000.000.000,00 (dua puluh miliar rupiah)." .
+<http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022/ayat/0001/text> legal:textHasTextString "Setiap orang yang meniru Surat Utang Negara atau memalsukan Surat Utang Negara dengan maksud memperdagangk an atau dengan sengaja memperdagangkan Surat Utang Negara tiruan atau Surat Utang Negara palsu, dipidana dengan pidana penjara paling singkat 5 (lima) tahun dan paling lama 10 (sepuluh) tahun dan denda paling sedikit Rp10.000.000.000,00 (sepuluh miliar rup iah) dan paling banyak Rp20.000.000.000,00 (dua puluh miliar rupiah)." .
+<http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022/ayat/0001/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022/ayat/0002> .
+<http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022/ayat/0002> legal:ayatHasRawText "Setiap orang yang dengan sengaja menerbitkan Surat Utang Negara tidak berdasarkan Undang - undang ini, dipidana dengan pidana penjara paling singkat 10 (sepuluh) tahun dan paling lama 20 (dua puluh) tahun dan denda paling sedikit Rp 20.000.000.000,00 (dua puluh miliar rupiah) dan paling banyak Rp40.000.000.000,00 (empat puluh miliar rupiah)." .
+<http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022/ayat/0002/text> legal:textHasTextString "Setiap orang yang dengan sengaja menerbitkan Surat Utang Negara tidak berdasarkan Undang - undang ini, dipidana dengan pidana penjara paling singkat 10 (sepuluh) tahun dan paling lama 20 (dua puluh) tahun dan denda paling sedikit Rp 20.000.000.000,00 (dua puluh miliar rupiah) dan paling banyak Rp40.000.000.000,00 (empat puluh miliar rupiah)." .
+<http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022/ayat/0002/text> .
+<http://example.org/legal/document/uu/2002/24/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2002/24/bab/0008> .
+<http://example.org/legal/document/uu/2002/24/bab/0008> legal:babHasKey 8 .
+<http://example.org/legal/document/uu/2002/24/bab/0008> legal:babHasTitle "KETENTUAN PERALIHAN" .
+<http://example.org/legal/document/uu/2002/24/bab/0008> legal:babHasPasalSet <http://example.org/legal/document/uu/2002/24/bab/0008/pasals> .
+<http://example.org/legal/document/uu/2002/24/bab/0008/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0020> .
+<http://example.org/legal/document/uu/2002/24/pasal/0020> legal:pasalHasKey 20 .
+<http://example.org/legal/document/uu/2002/24/pasal/0020> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022> .
+<http://example.org/legal/document/uu/2002/24> legal:documentHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0020> .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022> legal:pasalVersionHasVersionDate "2002-10-22"^^xsd:date .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022> legal:pasalVersionHasRawText "Surat Utang atau Obligasi Negara yang telah diterbitka n oleh Pemerintah dalam rangka:\na. program rekapitalisasi bank umum;\nb. pinjaman luar negeri dalam bentuk surat utang atau obligasi;\nc. pinjaman dalam negeri dalam bentuk surat utang;\nd. pembiayaan kredit program; dinyatakan sah dan tetap berlaku sampai de ngan saat jatuh tempo.\n" .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/description> legal:textHasTextString "Surat Utang atau Obligasi Negara yang telah diterbitka n oleh Pemerintah dalam rangka:" .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/description> .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/a> .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/a/text> legal:textHasTextString "program rekapitalisasi bank umum;" .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/a> legal:pointHasText <http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/a/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/b> .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/b/text> legal:textHasTextString "pinjaman luar negeri dalam bentuk surat utang atau obligasi;" .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/b> legal:pointHasText <http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/b/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/c> .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/c/text> legal:textHasTextString "pinjaman dalam negeri dalam bentuk surat utang;" .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/c> legal:pointHasText <http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/c/text> .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/d> .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/d/text> legal:textHasTextString "pembiayaan kredit program; dinyatakan sah dan tetap berlaku sampai de ngan saat jatuh tempo." .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/d> legal:pointHasText <http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/d/text> .
+<http://example.org/legal/document/uu/2002/24/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2002/24/bab/0009> .
+<http://example.org/legal/document/uu/2002/24/bab/0009> legal:babHasKey 9 .
+<http://example.org/legal/document/uu/2002/24/bab/0009> legal:babHasTitle "KETENTUAN PENUTUP" .
+<http://example.org/legal/document/uu/2002/24/bab/0009> legal:babHasPasalSet <http://example.org/legal/document/uu/2002/24/bab/0009/pasals> .
+<http://example.org/legal/document/uu/2002/24/bab/0009/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0021> .
+<http://example.org/legal/document/uu/2002/24/pasal/0021> legal:pasalHasKey 21 .
+<http://example.org/legal/document/uu/2002/24/pasal/0021> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2002/24/pasal/0021/version/20021022> .
+<http://example.org/legal/document/uu/2002/24> legal:documentHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0021> .
+<http://example.org/legal/document/uu/2002/24/pasal/0021/version/20021022> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2002/24/pasal/0021/version/20021022> legal:pasalVersionHasVersionDate "2002-10-22"^^xsd:date .
+<http://example.org/legal/document/uu/2002/24/pasal/0021/version/20021022> legal:pasalVersionHasRawText "Dengan berlakunya Undang - undang ini, ketentuan peraturan perundang - undangan yang mengatur penerbitan Surat Utang dan/atau Obligasi Negara sebelum berlakunya Undang - undang ini dinyatakan tidak berlaku. PRESIDEN REPUBLIK INDONESIA - 8 -" .
+<http://example.org/legal/document/uu/2002/24/pasal/0021/version/20021022/text> legal:textHasTextString "Dengan berlakunya Undang - undang ini, ketentuan peraturan perundang - undangan yang mengatur penerbitan Surat Utang dan/atau Obligasi Negara sebelum berlakunya Undang - undang ini dinyatakan tidak berlaku. PRESIDEN REPUBLIK INDONESIA - 8 -" .
+<http://example.org/legal/document/uu/2002/24/pasal/0021/version/20021022> legal:pasalVersionHasText <http://example.org/legal/document/uu/2002/24/pasal/0021/version/20021022/text> .
+<http://example.org/legal/document/uu/2002/24/bab/0009/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0022> .
+<http://example.org/legal/document/uu/2002/24/pasal/0022> legal:pasalHasKey 22 .
+<http://example.org/legal/document/uu/2002/24/pasal/0022> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2002/24/pasal/0022/version/20021022> .
+<http://example.org/legal/document/uu/2002/24> legal:documentHasPasal <http://example.org/legal/document/uu/2002/24/pasal/0022> .
+<http://example.org/legal/document/uu/2002/24/pasal/0022/version/20021022> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2002/24/pasal/0022/version/20021022> legal:pasalVersionHasVersionDate "2002-10-22"^^xsd:date .
+<http://example.org/legal/document/uu/2002/24/pasal/0022/version/20021022> legal:pasalVersionHasRawText "Undang - undang ini mulai berlaku pada tanggal diundangkan. Agar... Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan menempatkannya dalam Lembaran Negara Republik Indonesia ." .
+<http://example.org/legal/document/uu/2002/24/pasal/0022/version/20021022/text> legal:textHasTextString "Undang - undang ini mulai berlaku pada tanggal diundangkan. Agar... Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan menempatkannya dalam Lembaran Negara Republik Indonesia ." .
+<http://example.org/legal/document/uu/2002/24/pasal/0022/version/20021022> legal:pasalVersionHasText <http://example.org/legal/document/uu/2002/24/pasal/0022/version/20021022/text> .
+<http://example.org/legal/document/uu/2002/24> legal:documentHasDisahkanDate "2002-10-22"^^xsd:date .
+<http://example.org/legal/document/uu/2002/24> legal:documentMengingat <http://example.org/legal/document/uu/2002/24/mengingat> .
+<http://example.org/legal/document/uu/2002/24/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2002/24/mengingat/point> .
+<http://example.org/legal/document/uu/2002/24/mengingat/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/2002/24/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2002/24/mengingat/point/description> .
+<http://example.org/legal/document/uu/2002/24/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/mengingat/point/0001> .
+<http://example.org/legal/document/uu/2002/24/mengingat/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/2002/24/mengingat/point/0001/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 20 ayat (1) dan ayat (2), Pasal 20 A, Pasal 23, Pasal 23 A, Pasal 23 B, Pasal 23 C, dan Pasal 23 D Unda ng - Undang Dasar 1945 sebagaimana telah diubah dengan Perubahan Keempat Undang - Undang Dasar 1945;" .
+<http://example.org/legal/document/uu/2002/24/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/2002/24/mengingat/point/0001/text> .
+<http://example.org/legal/document/uu/2002/24/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/mengingat/point/0002> .
+<http://example.org/legal/document/uu/2002/24/mengingat/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/2002/24/mengingat/point/0002/text> legal:textHasTextString "Undang - undang Perbendaharaan Indonesia (Indische Comptabiliteitswet, Staatsblad Tahun 1925 Nomor 448) sebagaimana telah beberapa kali diubah, terakhir den gan Undang - undang Nomor 9 Tahun 1968 (Lembaran Negara Republik Indonesia Tahun 1968 Nomor 53, Tambahan Lembaran Negara Nomor 2860); PRESIDEN REPUBLIK INDONESIA - 2 -" .
+<http://example.org/legal/document/uu/2002/24/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/2002/24/mengingat/point/0002/text> .
+<http://example.org/legal/document/uu/2002/24/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/mengingat/point/0003> .
+<http://example.org/legal/document/uu/2002/24/mengingat/point/0003> legal:pointHasKey "3" .
+<http://example.org/legal/document/uu/2002/24/mengingat/point/0003/text> legal:textHasTextString "Undang - undang Nomor 7 Tahun 1992 tentang Perbankan (Lembaran Negara Republik Indonesia Tahun 1992 Nomor 31, Tambahan Lembaran Negara Nomor 3472) sebagaimana telah diubah dengan Undang - undang Nomor 10 Tahun 1998 (Lembaran Negara Republik Indonesia Tahun 1998 Nomor 182, Tambahan Lembaran Negara Nomor 3790);" .
+<http://example.org/legal/document/uu/2002/24/mengingat/point/0003> legal:pointHasText <http://example.org/legal/document/uu/2002/24/mengingat/point/0003/text> .
+<http://example.org/legal/document/uu/2002/24/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/mengingat/point/0004> .
+<http://example.org/legal/document/uu/2002/24/mengingat/point/0004> legal:pointHasKey "4" .
+<http://example.org/legal/document/uu/2002/24/mengingat/point/0004/text> legal:textHasTextString "Undang - undang Nomor 8 Tahun 1995 tentang Pasar M odal (Lembaran Negara Republik Indonesia Tahun 1995 Nomor 64, Tambahan Lembaran Negara Nomor 3608);" .
+<http://example.org/legal/document/uu/2002/24/mengingat/point/0004> legal:pointHasText <http://example.org/legal/document/uu/2002/24/mengingat/point/0004/text> .
+<http://example.org/legal/document/uu/2002/24/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/mengingat/point/0005> .
+<http://example.org/legal/document/uu/2002/24/mengingat/point/0005> legal:pointHasKey "5" .
+<http://example.org/legal/document/uu/2002/24/mengingat/point/0005/text> legal:textHasTextString "Undang - undang Nomor 23 Tahun 1999 tentang Bank Indonesia (Lembaran Negara Republik Indonesia Tahun 1999 Nomor 66, Tambahan Lembaran Negara Nomor 3843 ); Dengan persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG - UNDANG TENTANG SURAT UTANG NEGARA." .
+<http://example.org/legal/document/uu/2002/24/mengingat/point/0005> legal:pointHasText <http://example.org/legal/document/uu/2002/24/mengingat/point/0005/text> .
+<http://example.org/legal/document/uu/2002/24> legal:documentMenimbang <http://example.org/legal/document/uu/2002/24/menimbang> .
+<http://example.org/legal/document/uu/2002/24/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/2002/24/menimbang/point> .
+<http://example.org/legal/document/uu/2002/24/menimbang/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/2002/24/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2002/24/menimbang/point/description> .
+<http://example.org/legal/document/uu/2002/24/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/menimbang/point/a> .
+<http://example.org/legal/document/uu/2002/24/menimbang/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/2002/24/menimbang/point/a/text> legal:textHasTextString "bahwa guna mewujudkan masyarakat adil dan makmur sesuai dengan cita - cita dan tujuan nasional yang berdasarkan Pancasila dan Undang - Undang Dasar Negara Republik Indonesia Tahun 1945, perlu ditingkatkan kemampuan dan kemandirian untuk melaksanakan pembangun an ekonomi nasional secara berkesinambungan dengan bertumpu pada kekuatan masyarakat;" .
+<http://example.org/legal/document/uu/2002/24/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/2002/24/menimbang/point/a/text> .
+<http://example.org/legal/document/uu/2002/24/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/menimbang/point/b> .
+<http://example.org/legal/document/uu/2002/24/menimbang/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/2002/24/menimbang/point/b/text> legal:textHasTextString "bahwa mobilisasi dana melalui pasar keuangan merupakan upaya peningkatan partisipasi masyarakat secara optimal dalam program pembiayaan pembangunan nasional melalui mekanisme pengelolaan Anggaran Pendapatan dan Belanja Negara;" .
+<http://example.org/legal/document/uu/2002/24/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/2002/24/menimbang/point/b/text> .
+<http://example.org/legal/document/uu/2002/24/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/menimbang/point/c> .
+<http://example.org/legal/document/uu/2002/24/menimbang/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/2002/24/menimbang/point/c/text> legal:textHasTextString "bahwa penerbitan Surat Utang Negara kepada publik merupakan salah satu potensi pembiayaan untuk mengurangi beban dan risiko keuangan bagi negara di masa mendatang;" .
+<http://example.org/legal/document/uu/2002/24/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/2002/24/menimbang/point/c/text> .
+<http://example.org/legal/document/uu/2002/24/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/menimbang/point/d> .
+<http://example.org/legal/document/uu/2002/24/menimbang/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/2002/24/menimbang/point/d/text> legal:textHasTextString "bahwa guna memberik an kepastian hukum kepada pemodal perlu adanya landasan hukum atas komitmen Pemerintah untuk memenuhi kewajiban keuangan serta penyelenggaraan manajemen Surat Utang Negara yang transparan, profesional, dan bertanggung jawab;" .
+<http://example.org/legal/document/uu/2002/24/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/2002/24/menimbang/point/d/text> .
+<http://example.org/legal/document/uu/2002/24/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2002/24/menimbang/point/e> .
+<http://example.org/legal/document/uu/2002/24/menimbang/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/2002/24/menimbang/point/e/text> legal:textHasTextString "bahwa berdasarkan pertimba ngan sebagaimana dimaksud dalam huruf a, b, c, dan d perlu membentuk Undang - undang tentang Surat Utang Negara;" .
+<http://example.org/legal/document/uu/2002/24/menimbang/point/e> legal:pointHasText <http://example.org/legal/document/uu/2002/24/menimbang/point/e/text> .
+<http://example.org/legal/document/uu/2002/24> legal:documentHasDisahkanPengesah "MEGAWATI SOEKARNOPUTRI" .
+<http://example.org/legal/document/uu/2002/24> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/2002/24> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/2002/24> a legal:Document .
+<http://example.org/legal/document/uu/2002/24/bab> a legal:BabSet .
+<http://example.org/legal/document/uu/2002/24/bab/0001> a legal:Bab .
+<http://example.org/legal/document/uu/2002/24/bab/0001/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2002/24/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0003> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0004> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0005> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0005/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/bab/0002> a legal:Bab .
+<http://example.org/legal/document/uu/2002/24/bab/0002/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2002/24/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001/point/a> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001/point/b> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/bab/0003> a legal:Bab .
+<http://example.org/legal/document/uu/2002/24/bab/0003/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2002/24/pasal/0004> a legal:Pasal .
+<http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point/a> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point/b> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point/c> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/bab/0004> a legal:Bab .
+<http://example.org/legal/document/uu/2002/24/bab/0004/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2002/24/pasal/0005> a legal:Pasal .
+<http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0006> a legal:Pasal .
+<http://example.org/legal/document/uu/2002/24/pasal/0006/version/20021022> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2002/24/pasal/0006/version/20021022/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0007> a legal:Pasal .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0004> a legal:Ayat .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0008> a legal:Pasal .
+<http://example.org/legal/document/uu/2002/24/pasal/0008/version/20021022> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2002/24/pasal/0008/version/20021022/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/bab/0005> a legal:Bab .
+<http://example.org/legal/document/uu/2002/24/bab/0005/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2002/24/pasal/0009> a legal:Pasal .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/a> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/b> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/c> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/d> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/e> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/f> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/f/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/g> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/g/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0010> a legal:Pasal .
+<http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0011> a legal:Pasal .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/a> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/b> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/c> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/d> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/e> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/f> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/f/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/g> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/g/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/h> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/h/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0012> a legal:Pasal .
+<http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0013> a legal:Pasal .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0014> a legal:Pasal .
+<http://example.org/legal/document/uu/2002/24/pasal/0014/version/20021022> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2002/24/pasal/0014/version/20021022/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0015> a legal:Pasal .
+<http://example.org/legal/document/uu/2002/24/pasal/0015/version/20021022> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2002/24/pasal/0015/version/20021022/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/bab/0006> a legal:Bab .
+<http://example.org/legal/document/uu/2002/24/bab/0006/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2002/24/pasal/0016> a legal:Pasal .
+<http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0017> a legal:Pasal .
+<http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022/point/a> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022/point/b> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0018> a legal:Pasal .
+<http://example.org/legal/document/uu/2002/24/pasal/0018/version/20021022> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2002/24/pasal/0018/version/20021022/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/bab/0007> a legal:Bab .
+<http://example.org/legal/document/uu/2002/24/bab/0007/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2002/24/pasal/0019> a legal:Pasal .
+<http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/bab/0008> a legal:Bab .
+<http://example.org/legal/document/uu/2002/24/bab/0008/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2002/24/pasal/0020> a legal:Pasal .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/a> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/b> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/c> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/d> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/bab/0009> a legal:Bab .
+<http://example.org/legal/document/uu/2002/24/bab/0009/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2002/24/pasal/0021> a legal:Pasal .
+<http://example.org/legal/document/uu/2002/24/pasal/0021/version/20021022> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2002/24/pasal/0021/version/20021022/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/pasal/0022> a legal:Pasal .
+<http://example.org/legal/document/uu/2002/24/pasal/0022/version/20021022> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2002/24/pasal/0022/version/20021022/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/2002/24/mengingat/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/mengingat/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2002/24/mengingat/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/mengingat/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/mengingat/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/mengingat/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/mengingat/point/0003> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/mengingat/point/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/mengingat/point/0004> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/mengingat/point/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/mengingat/point/0005> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/mengingat/point/0005/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/2002/24/menimbang/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/menimbang/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2002/24/menimbang/point/a> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/menimbang/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/menimbang/point/b> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/menimbang/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/menimbang/point/c> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/menimbang/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/menimbang/point/d> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/menimbang/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/menimbang/point/e> a legal:Point .
+<http://example.org/legal/document/uu/2002/24/menimbang/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/2002/24/bab> legal:partOf <http://example.org/legal/document/uu/2002/24> .
+<http://example.org/legal/document/uu/2002/24/bab/0001> legal:partOf <http://example.org/legal/document/uu/2002/24/bab> .
+<http://example.org/legal/document/uu/2002/24/bab/0001/pasals> legal:partOf <http://example.org/legal/document/uu/2002/24/bab/0001> .
+<http://example.org/legal/document/uu/2002/24/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2002/24/bab/0001/pasals> .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0001> .
+<http://example.org/legal/document/uu/2002/24/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2002/24> .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022> .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0001> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0002> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0003> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0004> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point/0005> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0001/version/20021022/point> .
+<http://example.org/legal/document/uu/2002/24/bab/0002> legal:partOf <http://example.org/legal/document/uu/2002/24/bab> .
+<http://example.org/legal/document/uu/2002/24/bab/0002/pasals> legal:partOf <http://example.org/legal/document/uu/2002/24/bab/0002> .
+<http://example.org/legal/document/uu/2002/24/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2002/24/bab/0002/pasals> .
+<http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0002> .
+<http://example.org/legal/document/uu/2002/24/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2002/24> .
+<http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022/ayat> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022> .
+<http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022/ayat/0001> .
+<http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0002/version/20021022/ayat/0002> .
+<http://example.org/legal/document/uu/2002/24/pasal/0003> legal:partOf <http://example.org/legal/document/uu/2002/24/bab/0002/pasals> .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0003> .
+<http://example.org/legal/document/uu/2002/24/pasal/0003> legal:partOf <http://example.org/legal/document/uu/2002/24> .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022> .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001> .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001/point/a> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001/point/b> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0001/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0002> .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0003> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0003/version/20021022/ayat/0003> .
+<http://example.org/legal/document/uu/2002/24/bab/0003> legal:partOf <http://example.org/legal/document/uu/2002/24/bab> .
+<http://example.org/legal/document/uu/2002/24/bab/0003/pasals> legal:partOf <http://example.org/legal/document/uu/2002/24/bab/0003> .
+<http://example.org/legal/document/uu/2002/24/pasal/0004> legal:partOf <http://example.org/legal/document/uu/2002/24/bab/0003/pasals> .
+<http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0004> .
+<http://example.org/legal/document/uu/2002/24/pasal/0004> legal:partOf <http://example.org/legal/document/uu/2002/24> .
+<http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022> .
+<http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point/a> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point/b> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point/c> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0004/version/20021022/point> .
+<http://example.org/legal/document/uu/2002/24/bab/0004> legal:partOf <http://example.org/legal/document/uu/2002/24/bab> .
+<http://example.org/legal/document/uu/2002/24/bab/0004/pasals> legal:partOf <http://example.org/legal/document/uu/2002/24/bab/0004> .
+<http://example.org/legal/document/uu/2002/24/pasal/0005> legal:partOf <http://example.org/legal/document/uu/2002/24/bab/0004/pasals> .
+<http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0005> .
+<http://example.org/legal/document/uu/2002/24/pasal/0005> legal:partOf <http://example.org/legal/document/uu/2002/24> .
+<http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022/ayat> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022> .
+<http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022/ayat/0001> .
+<http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0005/version/20021022/ayat/0002> .
+<http://example.org/legal/document/uu/2002/24/pasal/0006> legal:partOf <http://example.org/legal/document/uu/2002/24/bab/0004/pasals> .
+<http://example.org/legal/document/uu/2002/24/pasal/0006/version/20021022> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0006> .
+<http://example.org/legal/document/uu/2002/24/pasal/0006> legal:partOf <http://example.org/legal/document/uu/2002/24> .
+<http://example.org/legal/document/uu/2002/24/pasal/0007> legal:partOf <http://example.org/legal/document/uu/2002/24/bab/0004/pasals> .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0007> .
+<http://example.org/legal/document/uu/2002/24/pasal/0007> legal:partOf <http://example.org/legal/document/uu/2002/24> .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022> .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0001> .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0002> .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0003> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0003> .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0004> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0007/version/20021022/ayat/0004> .
+<http://example.org/legal/document/uu/2002/24/pasal/0008> legal:partOf <http://example.org/legal/document/uu/2002/24/bab/0004/pasals> .
+<http://example.org/legal/document/uu/2002/24/pasal/0008/version/20021022> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0008> .
+<http://example.org/legal/document/uu/2002/24/pasal/0008> legal:partOf <http://example.org/legal/document/uu/2002/24> .
+<http://example.org/legal/document/uu/2002/24/bab/0005> legal:partOf <http://example.org/legal/document/uu/2002/24/bab> .
+<http://example.org/legal/document/uu/2002/24/bab/0005/pasals> legal:partOf <http://example.org/legal/document/uu/2002/24/bab/0005> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009> legal:partOf <http://example.org/legal/document/uu/2002/24/bab/0005/pasals> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0009> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009> legal:partOf <http://example.org/legal/document/uu/2002/24> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0001> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/a> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/b> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/c> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/d> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/e> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/f> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point/g> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0009/version/20021022/ayat/0002/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0010> legal:partOf <http://example.org/legal/document/uu/2002/24/bab/0005/pasals> .
+<http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0010> .
+<http://example.org/legal/document/uu/2002/24/pasal/0010> legal:partOf <http://example.org/legal/document/uu/2002/24> .
+<http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022/ayat> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022> .
+<http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022/ayat/0001> .
+<http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0010/version/20021022/ayat/0002> .
+<http://example.org/legal/document/uu/2002/24/pasal/0011> legal:partOf <http://example.org/legal/document/uu/2002/24/bab/0005/pasals> .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0011> .
+<http://example.org/legal/document/uu/2002/24/pasal/0011> legal:partOf <http://example.org/legal/document/uu/2002/24> .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022> .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/a> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/b> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/c> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/d> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/e> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/f> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/g> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point/h> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0011/version/20021022/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0012> legal:partOf <http://example.org/legal/document/uu/2002/24/bab/0005/pasals> .
+<http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0012> .
+<http://example.org/legal/document/uu/2002/24/pasal/0012> legal:partOf <http://example.org/legal/document/uu/2002/24> .
+<http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022/ayat> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022> .
+<http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022/ayat/0001> .
+<http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0012/version/20021022/ayat/0002> .
+<http://example.org/legal/document/uu/2002/24/pasal/0013> legal:partOf <http://example.org/legal/document/uu/2002/24/bab/0005/pasals> .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0013> .
+<http://example.org/legal/document/uu/2002/24/pasal/0013> legal:partOf <http://example.org/legal/document/uu/2002/24> .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022> .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0001> .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0002> .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0003> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0013/version/20021022/ayat/0003> .
+<http://example.org/legal/document/uu/2002/24/pasal/0014> legal:partOf <http://example.org/legal/document/uu/2002/24/bab/0005/pasals> .
+<http://example.org/legal/document/uu/2002/24/pasal/0014/version/20021022> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0014> .
+<http://example.org/legal/document/uu/2002/24/pasal/0014> legal:partOf <http://example.org/legal/document/uu/2002/24> .
+<http://example.org/legal/document/uu/2002/24/pasal/0015> legal:partOf <http://example.org/legal/document/uu/2002/24/bab/0005/pasals> .
+<http://example.org/legal/document/uu/2002/24/pasal/0015/version/20021022> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0015> .
+<http://example.org/legal/document/uu/2002/24/pasal/0015> legal:partOf <http://example.org/legal/document/uu/2002/24> .
+<http://example.org/legal/document/uu/2002/24/bab/0006> legal:partOf <http://example.org/legal/document/uu/2002/24/bab> .
+<http://example.org/legal/document/uu/2002/24/bab/0006/pasals> legal:partOf <http://example.org/legal/document/uu/2002/24/bab/0006> .
+<http://example.org/legal/document/uu/2002/24/pasal/0016> legal:partOf <http://example.org/legal/document/uu/2002/24/bab/0006/pasals> .
+<http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0016> .
+<http://example.org/legal/document/uu/2002/24/pasal/0016> legal:partOf <http://example.org/legal/document/uu/2002/24> .
+<http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022/ayat> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022> .
+<http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022/ayat/0001> .
+<http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0016/version/20021022/ayat/0002> .
+<http://example.org/legal/document/uu/2002/24/pasal/0017> legal:partOf <http://example.org/legal/document/uu/2002/24/bab/0006/pasals> .
+<http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0017> .
+<http://example.org/legal/document/uu/2002/24/pasal/0017> legal:partOf <http://example.org/legal/document/uu/2002/24> .
+<http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022/point> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022> .
+<http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022/point/a> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022/point/b> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0017/version/20021022/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0018> legal:partOf <http://example.org/legal/document/uu/2002/24/bab/0006/pasals> .
+<http://example.org/legal/document/uu/2002/24/pasal/0018/version/20021022> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0018> .
+<http://example.org/legal/document/uu/2002/24/pasal/0018> legal:partOf <http://example.org/legal/document/uu/2002/24> .
+<http://example.org/legal/document/uu/2002/24/bab/0007> legal:partOf <http://example.org/legal/document/uu/2002/24/bab> .
+<http://example.org/legal/document/uu/2002/24/bab/0007/pasals> legal:partOf <http://example.org/legal/document/uu/2002/24/bab/0007> .
+<http://example.org/legal/document/uu/2002/24/pasal/0019> legal:partOf <http://example.org/legal/document/uu/2002/24/bab/0007/pasals> .
+<http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0019> .
+<http://example.org/legal/document/uu/2002/24/pasal/0019> legal:partOf <http://example.org/legal/document/uu/2002/24> .
+<http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022/ayat> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022> .
+<http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022/ayat/0001> .
+<http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022/ayat> .
+<http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0019/version/20021022/ayat/0002> .
+<http://example.org/legal/document/uu/2002/24/bab/0008> legal:partOf <http://example.org/legal/document/uu/2002/24/bab> .
+<http://example.org/legal/document/uu/2002/24/bab/0008/pasals> legal:partOf <http://example.org/legal/document/uu/2002/24/bab/0008> .
+<http://example.org/legal/document/uu/2002/24/pasal/0020> legal:partOf <http://example.org/legal/document/uu/2002/24/bab/0008/pasals> .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0020> .
+<http://example.org/legal/document/uu/2002/24/pasal/0020> legal:partOf <http://example.org/legal/document/uu/2002/24> .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022> .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/a> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/b> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/c> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point> .
+<http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point/d> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0020/version/20021022/point> .
+<http://example.org/legal/document/uu/2002/24/bab/0009> legal:partOf <http://example.org/legal/document/uu/2002/24/bab> .
+<http://example.org/legal/document/uu/2002/24/bab/0009/pasals> legal:partOf <http://example.org/legal/document/uu/2002/24/bab/0009> .
+<http://example.org/legal/document/uu/2002/24/pasal/0021> legal:partOf <http://example.org/legal/document/uu/2002/24/bab/0009/pasals> .
+<http://example.org/legal/document/uu/2002/24/pasal/0021/version/20021022> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0021> .
+<http://example.org/legal/document/uu/2002/24/pasal/0021> legal:partOf <http://example.org/legal/document/uu/2002/24> .
+<http://example.org/legal/document/uu/2002/24/pasal/0022> legal:partOf <http://example.org/legal/document/uu/2002/24/bab/0009/pasals> .
+<http://example.org/legal/document/uu/2002/24/pasal/0022/version/20021022> legal:partOf <http://example.org/legal/document/uu/2002/24/pasal/0022> .
+<http://example.org/legal/document/uu/2002/24/pasal/0022> legal:partOf <http://example.org/legal/document/uu/2002/24> .
+<http://example.org/legal/document/uu/2002/24/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2002/24/mengingat/point> .
+<http://example.org/legal/document/uu/2002/24/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2002/24/mengingat/point> .
+<http://example.org/legal/document/uu/2002/24/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/2002/24/mengingat/point> .
+<http://example.org/legal/document/uu/2002/24/mengingat/point/0004> legal:partOf <http://example.org/legal/document/uu/2002/24/mengingat/point> .
+<http://example.org/legal/document/uu/2002/24/mengingat/point/0005> legal:partOf <http://example.org/legal/document/uu/2002/24/mengingat/point> .
+<http://example.org/legal/document/uu/2002/24/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/2002/24/menimbang/point> .
+<http://example.org/legal/document/uu/2002/24/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/2002/24/menimbang/point> .
+<http://example.org/legal/document/uu/2002/24/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/2002/24/menimbang/point> .
+<http://example.org/legal/document/uu/2002/24/menimbang/point/d> legal:partOf <http://example.org/legal/document/uu/2002/24/menimbang/point> .
+<http://example.org/legal/document/uu/2002/24/menimbang/point/e> legal:partOf <http://example.org/legal/document/uu/2002/24/menimbang/point> .

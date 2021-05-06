@@ -1,0 +1,50 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1985/17> legal:documentHasBabSet <http://example.org/legal/document/uu/1985/17/bab> .
+<http://example.org/legal/document/uu/1985/17> legal:documentHasDisahkanDate "1985-12-31"^^xsd:date .
+<http://example.org/legal/document/uu/1985/17> legal:documentMengingat <http://example.org/legal/document/uu/1985/17/mengingat> .
+<http://example.org/legal/document/uu/1985/17/mengingat/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 11, dan Pasal 20 ayat (1) Undang-Undang Dasar 1945; Dengan persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN : Menetapkan : UNDANG-UNDANG TENTAN G PENGESAHAN UNITED NATIONS CONVENTION ON THE LAW OF THE SEA (KONVENSI PERSERIKATAN BANGSA-BANGSA TENTANG HUKUM LAUT)." .
+<http://example.org/legal/document/uu/1985/17/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/1985/17/mengingat/text> .
+<http://example.org/legal/document/uu/1985/17> legal:documentMenimbang <http://example.org/legal/document/uu/1985/17/menimbang> .
+<http://example.org/legal/document/uu/1985/17/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/1985/17/menimbang/point> .
+<http://example.org/legal/document/uu/1985/17/menimbang/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1985/17/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1985/17/menimbang/point/description> .
+<http://example.org/legal/document/uu/1985/17/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1985/17/menimbang/point/a> .
+<http://example.org/legal/document/uu/1985/17/menimbang/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1985/17/menimbang/point/a/text> legal:textHasTextString "bahwa United Nations Convention on the Law of the Sea (Konvensi Perserikatan Bangsa-Bangsa tentang Hukum Laut) telah diterima baik oleh Konperensi Perserikatan Bangsa-Bangsa tentang Hukum Laut Ketiga di New York pada tanggal 30 April 1982 dan telah ditandatangani oleh Negara Republik Indonesia bersama-sama seratus delapan belas penandatangan lain di Montego Bay, Jamaica pada tanggal 10 Desember 1982;" .
+<http://example.org/legal/document/uu/1985/17/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/1985/17/menimbang/point/a/text> .
+<http://example.org/legal/document/uu/1985/17/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1985/17/menimbang/point/b> .
+<http://example.org/legal/document/uu/1985/17/menimbang/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1985/17/menimbang/point/b/text> legal:textHasTextString "bahwa United Nations Convention on the Law of the Sea sebagaimana dimaksud pada huruf a di atas mengatur rejim-rejim hukum laut, termasuk rejim hukum Negara Kepulauan secara menyeluruh dan dalam satu paket;" .
+<http://example.org/legal/document/uu/1985/17/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/1985/17/menimbang/point/b/text> .
+<http://example.org/legal/document/uu/1985/17/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1985/17/menimbang/point/c> .
+<http://example.org/legal/document/uu/1985/17/menimbang/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1985/17/menimbang/point/c/text> legal:textHasTextString "bahwa rejim hukum Negara Kepulauan mempunyai arti dan peranan penting untuk memantapkan kedudukan Indonesia sebagai Negara Kepulauan dalam rangka implementasi Wawasan Nusantara sesuai amanat Majelis Permusyawaratan Rakyat Republik Indonesia;" .
+<http://example.org/legal/document/uu/1985/17/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/1985/17/menimbang/point/c/text> .
+<http://example.org/legal/document/uu/1985/17/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1985/17/menimbang/point/d> .
+<http://example.org/legal/document/uu/1985/17/menimbang/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1985/17/menimbang/point/d/text> legal:textHasTextString "bahwa berdasarkan pertimbangan tersebut di atas dipandang perlu untuk mengesahkan United Nations Convention on the Law of the Sea tersebut dengan Undang-undang;" .
+<http://example.org/legal/document/uu/1985/17/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/1985/17/menimbang/point/d/text> .
+<http://example.org/legal/document/uu/1985/17> legal:documentHasDisahkanPengesah "SOEHARTO" .
+<http://example.org/legal/document/uu/1985/17> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/1985/17> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA" .
+<http://example.org/legal/document/uu/1985/17> a legal:Document .
+<http://example.org/legal/document/uu/1985/17/mengingat/text> a legal:Text .
+<http://example.org/legal/document/uu/1985/17/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1985/17/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1985/17/menimbang/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1985/17/menimbang/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1985/17/menimbang/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1985/17/menimbang/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1985/17/menimbang/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1985/17/menimbang/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1985/17/menimbang/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1985/17/menimbang/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1985/17/menimbang/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1985/17/menimbang/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1985/17/bab> legal:partOf <http://example.org/legal/document/uu/1985/17> .
+<http://example.org/legal/document/uu/1985/17/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1985/17/menimbang/point> .
+<http://example.org/legal/document/uu/1985/17/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1985/17/menimbang/point> .
+<http://example.org/legal/document/uu/1985/17/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/1985/17/menimbang/point> .
+<http://example.org/legal/document/uu/1985/17/menimbang/point/d> legal:partOf <http://example.org/legal/document/uu/1985/17/menimbang/point> .

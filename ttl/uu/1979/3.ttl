@@ -1,0 +1,43 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1979/3> legal:documentHasBabSet <http://example.org/legal/document/uu/1979/3/bab> .
+<http://example.org/legal/document/uu/1979/3> legal:documentHasDisahkanDate "1979-06-29"^^xsd:date .
+<http://example.org/legal/document/uu/1979/3> legal:documentMengingat <http://example.org/legal/document/uu/1979/3/mengingat> .
+<http://example.org/legal/document/uu/1979/3/mengingat/text> legal:textHasTextString " 2. Indische Comptabiliteitswet (Staatsblad 1925 Nomor 448) sebagaimana diubah dan ditambah terakhir dengan Undang- undang Nomor 9 Tahun 1968 tentang Perubahan Pasal 7 Indische Comptabiliteitswet (Lembaran Negara Tahun 1968 Nomor 53): 3. Undang-undang Nomor 1 Tahun 1978 tentang Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1978/1979 (Lembaran Negara Tahun 1978 Nomor 6, Tambahan Lembaran Negara Nomor 3116), DENGAN PERSETUJUAN DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN : Menetapkan : UNDANG-UNDANG TENTANG TAMBAHAN DAN PERUBAHAN ATAS ANGGARAN PENDAPATAN DAN BELANJA NEGARA TAHUN ANGGARAN 1978/1979. PRESIDEN REPUBLIK INDONESIA 2-" .
+<http://example.org/legal/document/uu/1979/3/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/1979/3/mengingat/text> .
+<http://example.org/legal/document/uu/1979/3> legal:documentMenimbang <http://example.org/legal/document/uu/1979/3/menimbang> .
+<http://example.org/legal/document/uu/1979/3/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/1979/3/menimbang/point> .
+<http://example.org/legal/document/uu/1979/3/menimbang/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1979/3/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1979/3/menimbang/point/description> .
+<http://example.org/legal/document/uu/1979/3/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1979/3/menimbang/point/a> .
+<http://example.org/legal/document/uu/1979/3/menimbang/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1979/3/menimbang/point/a/text> legal:textHasTextString "bahwa untuk lebih menyesuaikan dan menyempurnakan pelaksanaan program Pemerintah dalam Tahun Anggaran 1978/1979 diperlukan tambahan dan perubahan atas Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1978/1979 dimaksud dalam Undang-undang Nomor 1 Tahun 1978," .
+<http://example.org/legal/document/uu/1979/3/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/1979/3/menimbang/point/a/text> .
+<http://example.org/legal/document/uu/1979/3/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1979/3/menimbang/point/b> .
+<http://example.org/legal/document/uu/1979/3/menimbang/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1979/3/menimbang/point/b/text> legal:textHasTextString "bahwa untuk lebih menjaga kelangsungan jalannya pembangunan saldo anggaran lebih dan sisa kredit anggaran proyek-proyek pada Anggaran Pembangunan Tahun Anggaran 1978/1979 ditambahkan kepada kredit anggaran Tahun Anggaran 1979/1980," .
+<http://example.org/legal/document/uu/1979/3/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/1979/3/menimbang/point/b/text> .
+<http://example.org/legal/document/uu/1979/3/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1979/3/menimbang/point/c> .
+<http://example.org/legal/document/uu/1979/3/menimbang/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1979/3/menimbang/point/c/text> legal:textHasTextString "bahwa tambahan dan perobahan dimaksud perlu diatur dengan Undang-undang." .
+<http://example.org/legal/document/uu/1979/3/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/1979/3/menimbang/point/c/text> .
+<http://example.org/legal/document/uu/1979/3> legal:documentHasDisahkanPengesah "SOEHARTO" .
+<http://example.org/legal/document/uu/1979/3> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/1979/3> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/1979/3> a legal:Document .
+<http://example.org/legal/document/uu/1979/3/mengingat/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/3/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1979/3/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1979/3/menimbang/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1979/3/menimbang/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1979/3/menimbang/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1979/3/menimbang/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/3/menimbang/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1979/3/menimbang/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/3/menimbang/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1979/3/menimbang/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/3/bab> legal:partOf <http://example.org/legal/document/uu/1979/3> .
+<http://example.org/legal/document/uu/1979/3/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1979/3/menimbang/point> .
+<http://example.org/legal/document/uu/1979/3/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1979/3/menimbang/point> .
+<http://example.org/legal/document/uu/1979/3/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/1979/3/menimbang/point> .

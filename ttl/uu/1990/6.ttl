@@ -1,0 +1,711 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1990/6> legal:documentHasBabSet <http://example.org/legal/document/uu/1990/6/bab> .
+<http://example.org/legal/document/uu/1990/6/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1990/6/bab/0001> .
+<http://example.org/legal/document/uu/1990/6/bab/0001> legal:babHasKey 1 .
+<http://example.org/legal/document/uu/1990/6/bab/0001> legal:babHasTitle "" .
+<http://example.org/legal/document/uu/1990/6/bab/0001> legal:babHasPasalSet <http://example.org/legal/document/uu/1990/6/bab/0001/pasals> .
+<http://example.org/legal/document/uu/1990/6/bab/0001/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0001> .
+<http://example.org/legal/document/uu/1990/6/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1990/6/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815> .
+<http://example.org/legal/document/uu/1990/6> legal:documentHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0001> .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815> legal:pasalVersionHasVersionDate "1990-08-15"^^xsd:date .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815> legal:pasalVersionHasRawText "Dalam Undang-undang ini yang dimaksud dengan:\n1. Daerah adalah Daerah Otonom sebagaimana dimaksud dalam Pasal 1 huruf c Undang-undang Nomor 5 Tahun 1974 tentang Pokok-pokok Pemerintahan Di Daerah,\n2. Wilayah adalah \"Wilayah\" sebagaimana dimaksud dalam Pasal 1 huruf g, atau \"wilayah\" sebagaimana dimaksud dalam Penjelasan Pasal 2 Undang-undang Nomor 5 Tahun 1974 tentang Pokok-pokok Pemerintahan Di Daerah:\n3. Propinsi Daerah Tingkat I Maluku adalah sebagaimana dimaksud dalam Undang-undang Nomor 20 Tahun 1958 tentang Penetapan Undang-undang Darurat Nomor 22 Tahun 1957 tentang Pembentukan Daerah Swatantra Tingkat | Maluku, sebagai Undang-undang:\n4. Kabupaten Daerah Tingkat II Maluku Utara adalah sebagaimana dimaksud dalam Undang-undang Nomor 60 Tahun 1958 tentang Penetapan Undang-undang Darurat Nomor 23 Tahun 1957 tentang Pembentukan Daerah-daerah Swatantra Tingkat II Maluku dalam wilayah Daerah Swatantra Tingkat I Maluku, sebagai Undang-undang.\n" .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point> .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/description> legal:textHasTextString "Dalam Undang-undang ini yang dimaksud dengan:" .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/description> .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0001> .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0001/text> legal:textHasTextString "Daerah adalah Daerah Otonom sebagaimana dimaksud dalam Pasal 1 huruf c Undang-undang Nomor 5 Tahun 1974 tentang Pokok-pokok Pemerintahan Di Daerah," .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0001/text> .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/c> .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/6/pasal/0001> .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0002> .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0002/text> legal:textHasTextString "Wilayah adalah \"Wilayah\" sebagaimana dimaksud dalam Pasal 1 huruf g, atau \"wilayah\" sebagaimana dimaksud dalam Penjelasan Pasal 2 Undang-undang Nomor 5 Tahun 1974 tentang Pokok-pokok Pemerintahan Di Daerah:" .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0002/text> .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/g> .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/6/pasal/0002> .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/6/pasal/0001> .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0003> .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0003> legal:pointHasKey "3" .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0003/text> legal:textHasTextString "Propinsi Daerah Tingkat I Maluku adalah sebagaimana dimaksud dalam Undang-undang Nomor 20 Tahun 1958 tentang Penetapan Undang-undang Darurat Nomor 22 Tahun 1957 tentang Pembentukan Daerah Swatantra Tingkat | Maluku, sebagai Undang-undang:" .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0003> legal:pointHasText <http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0003/text> .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0004> .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0004> legal:pointHasKey "4" .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0004/text> legal:textHasTextString "Kabupaten Daerah Tingkat II Maluku Utara adalah sebagaimana dimaksud dalam Undang-undang Nomor 60 Tahun 1958 tentang Penetapan Undang-undang Darurat Nomor 23 Tahun 1957 tentang Pembentukan Daerah-daerah Swatantra Tingkat II Maluku dalam wilayah Daerah Swatantra Tingkat I Maluku, sebagai Undang-undang." .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0004> legal:pointHasText <http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0004/text> .
+<http://example.org/legal/document/uu/1990/6/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1990/6/bab/0002> .
+<http://example.org/legal/document/uu/1990/6/bab/0002> legal:babHasKey 2 .
+<http://example.org/legal/document/uu/1990/6/bab/0002> legal:babHasTitle "PEMBENTUKAN, BATAS WILAYAH, DAN IBUKOTA" .
+<http://example.org/legal/document/uu/1990/6/bab/0002> legal:babHasPasalSet <http://example.org/legal/document/uu/1990/6/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1990/6/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0002> .
+<http://example.org/legal/document/uu/1990/6/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1990/6/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/6/pasal/0002/version/19900815> .
+<http://example.org/legal/document/uu/1990/6> legal:documentHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0002> .
+<http://example.org/legal/document/uu/1990/6/pasal/0002/version/19900815> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/6/pasal/0002/version/19900815> legal:pasalVersionHasVersionDate "1990-08-15"^^xsd:date .
+<http://example.org/legal/document/uu/1990/6/pasal/0002/version/19900815> legal:pasalVersionHasRawText "Dengan Undang-undang ini dibentuk Kabupaten Daerah Tingkat II Halmahera Tengah dalam wilayah Propinsi Daerah Tingkat I Maluku." .
+<http://example.org/legal/document/uu/1990/6/pasal/0002/version/19900815/text> legal:textHasTextString "Dengan Undang-undang ini dibentuk Kabupaten Daerah Tingkat II Halmahera Tengah dalam wilayah Propinsi Daerah Tingkat I Maluku." .
+<http://example.org/legal/document/uu/1990/6/pasal/0002/version/19900815> legal:pasalVersionHasText <http://example.org/legal/document/uu/1990/6/pasal/0002/version/19900815/text> .
+<http://example.org/legal/document/uu/1990/6/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0003> .
+<http://example.org/legal/document/uu/1990/6/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/1990/6/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815> .
+<http://example.org/legal/document/uu/1990/6> legal:documentHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0003> .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815> legal:pasalVersionHasVersionDate "1990-08-15"^^xsd:date .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815> legal:pasalVersionHasRawText "Wilayah Kabupaten Daerah Tingkat II Halmahera Tengah terdiri dari wilayah Kecamat an-kecamatan sebagai berikut :\na. Kecamatan Tidore:\nb. Kecamatan Oba:\nc. Kecamatan Wasile:\nd. Kecamatan Weda:\ne. Kecamatan Patani-Gebe:\nf. Kecamatan Maba.\n" .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point> .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/description> legal:textHasTextString "Wilayah Kabupaten Daerah Tingkat II Halmahera Tengah terdiri dari wilayah Kecamat an-kecamatan sebagai berikut :" .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/description> .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/a> .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/a/text> legal:textHasTextString "Kecamatan Tidore:" .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/a> legal:pointHasText <http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/a/text> .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/b> .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/b/text> legal:textHasTextString "Kecamatan Oba:" .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/b> legal:pointHasText <http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/b/text> .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/c> .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/c/text> legal:textHasTextString "Kecamatan Wasile:" .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/c> legal:pointHasText <http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/c/text> .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/d> .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/d/text> legal:textHasTextString "Kecamatan Weda:" .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/d> legal:pointHasText <http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/d/text> .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/e> .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/e/text> legal:textHasTextString "Kecamatan Patani-Gebe:" .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/e> legal:pointHasText <http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/e/text> .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/f> .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/f> legal:pointHasKey "f" .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/f/text> legal:textHasTextString "Kecamatan Maba." .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/f> legal:pointHasText <http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/f/text> .
+<http://example.org/legal/document/uu/1990/6/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0004> .
+<http://example.org/legal/document/uu/1990/6/pasal/0004> legal:pasalHasKey 4 .
+<http://example.org/legal/document/uu/1990/6/pasal/0004> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815> .
+<http://example.org/legal/document/uu/1990/6> legal:documentHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0004> .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815> legal:pasalVersionHasVersionDate "1990-08-15"^^xsd:date .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815> legal:pasalVersionHasRawText "(1). Wilayah Kabupaten Daerah Tingkat II Halmahera Tengah mempunyai batas-batas sebagai berikut :\na. Sebelah Utara berbatasan dengan Kecamatan Jailolo dan Kecamatan Kao Kabupaten Daerah Tingkat II Maluku Utara: b Sebelah Timur berbatasan dengan Lautan Teduh dan Kabupaten Daerah Tingkat II Sorong Propinsi Dacrah Tingkat | Irian Jaya: c. Sebelah Selatan berbatasan dengan Kecamatan Gane Timur dan Kecamatan Gane Barat Kabupaten Daerah Tingkat Il Maluku Utara, d. Sebelah Barat berbatasan dengan Kecamatan Ternate, Kecamatan Makian, dan Kecamatan Kayoa Kabupaten Daerah Tingkat Il Maluku Utara.\n\n(2). Batas wilayah sebagaimana dimaksud dalam ayat (1) Pasal ini dituangkan dalam peta yang merupakan bagian yang tidak terpisahkan dari Undang-undang ini.\n(3). Penentuan batas wilayah Kabupaten Daerah Tingkat Il Halmahera Tengah secara pasti di lapangan sebagaimana dimaksud dalam ayat (1) Pasal ini ditetapkan oteh Menteri Dalam Negeri." .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat> .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0001> .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0001> legal:ayatHasRawText "Wilayah Kabupaten Daerah Tingkat II Halmahera Tengah mempunyai batas-batas sebagai berikut :\na. Sebelah Utara berbatasan dengan Kecamatan Jailolo dan Kecamatan Kao Kabupaten Daerah Tingkat II Maluku Utara: b Sebelah Timur berbatasan dengan Lautan Teduh dan Kabupaten Daerah Tingkat II Sorong Propinsi Dacrah Tingkat | Irian Jaya: c. Sebelah Selatan berbatasan dengan Kecamatan Gane Timur dan Kecamatan Gane Barat Kabupaten Daerah Tingkat Il Maluku Utara, d. Sebelah Barat berbatasan dengan Kecamatan Ternate, Kecamatan Makian, dan Kecamatan Kayoa Kabupaten Daerah Tingkat Il Maluku Utara.\n" .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0001/point> .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0001/point/description> legal:textHasTextString "Wilayah Kabupaten Daerah Tingkat II Halmahera Tengah mempunyai batas-batas sebagai berikut :" .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0001/point/description> .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0001/point/a> .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0001/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0001/point/a/text> legal:textHasTextString "Sebelah Utara berbatasan dengan Kecamatan Jailolo dan Kecamatan Kao Kabupaten Daerah Tingkat II Maluku Utara: b Sebelah Timur berbatasan dengan Lautan Teduh dan Kabupaten Daerah Tingkat II Sorong Propinsi Dacrah Tingkat | Irian Jaya: c. Sebelah Selatan berbatasan dengan Kecamatan Gane Timur dan Kecamatan Gane Barat Kabupaten Daerah Tingkat Il Maluku Utara, d. Sebelah Barat berbatasan dengan Kecamatan Ternate, Kecamatan Makian, dan Kecamatan Kayoa Kabupaten Daerah Tingkat Il Maluku Utara." .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0001/point/a/text> .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0002> .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0002> legal:ayatHasRawText "Batas wilayah sebagaimana dimaksud dalam ayat (1) Pasal ini dituangkan dalam peta yang merupakan bagian yang tidak terpisahkan dari Undang-undang ini." .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0002/text> legal:textHasTextString "Batas wilayah sebagaimana dimaksud dalam ayat (1) Pasal ini dituangkan dalam peta yang merupakan bagian yang tidak terpisahkan dari Undang-undang ini." .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0002/text> .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0001> .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0003> .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0003> legal:ayatHasRawText "Penentuan batas wilayah Kabupaten Daerah Tingkat Il Halmahera Tengah secara pasti di lapangan sebagaimana dimaksud dalam ayat (1) Pasal ini ditetapkan oteh Menteri Dalam Negeri." .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0003/text> legal:textHasTextString "Penentuan batas wilayah Kabupaten Daerah Tingkat Il Halmahera Tengah secara pasti di lapangan sebagaimana dimaksud dalam ayat (1) Pasal ini ditetapkan oteh Menteri Dalam Negeri." .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0003/text> .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0001> .
+<http://example.org/legal/document/uu/1990/6/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0005> .
+<http://example.org/legal/document/uu/1990/6/pasal/0005> legal:pasalHasKey 5 .
+<http://example.org/legal/document/uu/1990/6/pasal/0005> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/6/pasal/0005/version/19900815> .
+<http://example.org/legal/document/uu/1990/6> legal:documentHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0005> .
+<http://example.org/legal/document/uu/1990/6/pasal/0005/version/19900815> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/6/pasal/0005/version/19900815> legal:pasalVersionHasVersionDate "1990-08-15"^^xsd:date .
+<http://example.org/legal/document/uu/1990/6/pasal/0005/version/19900815> legal:pasalVersionHasRawText "Ibukota Kabupaten Daerah Tingkat II Halmahera Tengah berkedudukan di Soasio." .
+<http://example.org/legal/document/uu/1990/6/pasal/0005/version/19900815/text> legal:textHasTextString "Ibukota Kabupaten Daerah Tingkat II Halmahera Tengah berkedudukan di Soasio." .
+<http://example.org/legal/document/uu/1990/6/pasal/0005/version/19900815> legal:pasalVersionHasText <http://example.org/legal/document/uu/1990/6/pasal/0005/version/19900815/text> .
+<http://example.org/legal/document/uu/1990/6/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1990/6/bab/0003> .
+<http://example.org/legal/document/uu/1990/6/bab/0003> legal:babHasKey 3 .
+<http://example.org/legal/document/uu/1990/6/bab/0003> legal:babHasTitle "PEMERINTAH DAERAH DAN PERANGKAT WILAYAH/ DAERAH" .
+<http://example.org/legal/document/uu/1990/6/bab/0003> legal:babHasPasalSet <http://example.org/legal/document/uu/1990/6/bab/0003/pasals> .
+<http://example.org/legal/document/uu/1990/6/bab/0003/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0006> .
+<http://example.org/legal/document/uu/1990/6/pasal/0006> legal:pasalHasKey 6 .
+<http://example.org/legal/document/uu/1990/6/pasal/0006> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/6/pasal/0006/version/19900815> .
+<http://example.org/legal/document/uu/1990/6> legal:documentHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0006> .
+<http://example.org/legal/document/uu/1990/6/pasal/0006/version/19900815> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/6/pasal/0006/version/19900815> legal:pasalVersionHasVersionDate "1990-08-15"^^xsd:date .
+<http://example.org/legal/document/uu/1990/6/pasal/0006/version/19900815> legal:pasalVersionHasRawText "Untuk memimpin jalannya pemerintahan di Kabupaten Daerah Tingkat Il Halmahera Tengah, dipilih dan diangkat seorang Bupati Kepala Daerah Tingkat II sesuai dengan peraturan perundang-undangan yang berlaku." .
+<http://example.org/legal/document/uu/1990/6/pasal/0006/version/19900815/text> legal:textHasTextString "Untuk memimpin jalannya pemerintahan di Kabupaten Daerah Tingkat Il Halmahera Tengah, dipilih dan diangkat seorang Bupati Kepala Daerah Tingkat II sesuai dengan peraturan perundang-undangan yang berlaku." .
+<http://example.org/legal/document/uu/1990/6/pasal/0006/version/19900815> legal:pasalVersionHasText <http://example.org/legal/document/uu/1990/6/pasal/0006/version/19900815/text> .
+<http://example.org/legal/document/uu/1990/6/bab/0003/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0007> .
+<http://example.org/legal/document/uu/1990/6/pasal/0007> legal:pasalHasKey 7 .
+<http://example.org/legal/document/uu/1990/6/pasal/0007> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/6/pasal/0007/version/19900815> .
+<http://example.org/legal/document/uu/1990/6> legal:documentHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0007> .
+<http://example.org/legal/document/uu/1990/6/pasal/0007/version/19900815> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/6/pasal/0007/version/19900815> legal:pasalVersionHasVersionDate "1990-08-15"^^xsd:date .
+<http://example.org/legal/document/uu/1990/6/pasal/0007/version/19900815> legal:pasalVersionHasRawText "Dengan terbentuknya Kabupaten Daerah Tingkat II Halmahera Tengah, dibentuk Dewan Perwakilan Rakyat Daerah Tingkat II sesuai dengan peraturan perundang-undangan yang berlaku." .
+<http://example.org/legal/document/uu/1990/6/pasal/0007/version/19900815/text> legal:textHasTextString "Dengan terbentuknya Kabupaten Daerah Tingkat II Halmahera Tengah, dibentuk Dewan Perwakilan Rakyat Daerah Tingkat II sesuai dengan peraturan perundang-undangan yang berlaku." .
+<http://example.org/legal/document/uu/1990/6/pasal/0007/version/19900815> legal:pasalVersionHasText <http://example.org/legal/document/uu/1990/6/pasal/0007/version/19900815/text> .
+<http://example.org/legal/document/uu/1990/6/bab/0003/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0008> .
+<http://example.org/legal/document/uu/1990/6/pasal/0008> legal:pasalHasKey 8 .
+<http://example.org/legal/document/uu/1990/6/pasal/0008> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/6/pasal/0008/version/19900815> .
+<http://example.org/legal/document/uu/1990/6> legal:documentHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0008> .
+<http://example.org/legal/document/uu/1990/6/pasal/0008/version/19900815> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/6/pasal/0008/version/19900815> legal:pasalVersionHasVersionDate "1990-08-15"^^xsd:date .
+<http://example.org/legal/document/uu/1990/6/pasal/0008/version/19900815> legal:pasalVersionHasRawText "Untuk kelengkapan perangkat pemerintahan di Kabupaten Daerah Tingkat II Halmahera Tengah, dibentuk Sekretariat Wilayah/ Daerah Tingkat II, Sekretariat Dewan Perwakilan Rakyat Daerah Tingkat II, Dinas Daerah, dan Instansi lainnya sesuai dengan peraturan perundang-undangan yang berlaku." .
+<http://example.org/legal/document/uu/1990/6/pasal/0008/version/19900815/text> legal:textHasTextString "Untuk kelengkapan perangkat pemerintahan di Kabupaten Daerah Tingkat II Halmahera Tengah, dibentuk Sekretariat Wilayah/ Daerah Tingkat II, Sekretariat Dewan Perwakilan Rakyat Daerah Tingkat II, Dinas Daerah, dan Instansi lainnya sesuai dengan peraturan perundang-undangan yang berlaku." .
+<http://example.org/legal/document/uu/1990/6/pasal/0008/version/19900815> legal:pasalVersionHasText <http://example.org/legal/document/uu/1990/6/pasal/0008/version/19900815/text> .
+<http://example.org/legal/document/uu/1990/6/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1990/6/bab/0004> .
+<http://example.org/legal/document/uu/1990/6/bab/0004> legal:babHasKey 4 .
+<http://example.org/legal/document/uu/1990/6/bab/0004> legal:babHasTitle "URUSAN RUMAH TANGGA DAERAH" .
+<http://example.org/legal/document/uu/1990/6/bab/0004> legal:babHasPasalSet <http://example.org/legal/document/uu/1990/6/bab/0004/pasals> .
+<http://example.org/legal/document/uu/1990/6/bab/0004/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0009> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009> legal:pasalHasKey 9 .
+<http://example.org/legal/document/uu/1990/6/pasal/0009> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815> .
+<http://example.org/legal/document/uu/1990/6> legal:documentHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0009> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815> legal:pasalVersionHasVersionDate "1990-08-15"^^xsd:date .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815> legal:pasalVersionHasRawText "(1). Pada saat terbentuknya Kabupaten Daerah Tingkat II Halmahera Tengah, diserahkan sebagian urusan-urusan pemerintahan sebagai kewenangan pangkal yang meliputi :\na. Pengaturan dan penyelenggaraan kewenangan untuk mewujudkan ketertiban dan ketenteraman kehidupan masyarakat di Daerah yang bersangkutan:\nb. Pertanian Tanaman Pangan:\nc. . Peternakan:\nd. Perkebunan:\ne. Perikanan:\nf. Pendidikan Dasar:\ng. Pekerjaan Umum:\nh. Kesehatan,\ni. Pendapat an.\n\n(2). Penambahan dan atau pengurangan urusan sebagaimana dimaksud dalam ayat (1) Pasal ini diatur sesuai dengan peraturan perundang-undang yang berlaku." .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001> legal:ayatHasRawText "Pada saat terbentuknya Kabupaten Daerah Tingkat II Halmahera Tengah, diserahkan sebagian urusan-urusan pemerintahan sebagai kewenangan pangkal yang meliputi :\na. Pengaturan dan penyelenggaraan kewenangan untuk mewujudkan ketertiban dan ketenteraman kehidupan masyarakat di Daerah yang bersangkutan:\nb. Pertanian Tanaman Pangan:\nc. . Peternakan:\nd. Perkebunan:\ne. Perikanan:\nf. Pendidikan Dasar:\ng. Pekerjaan Umum:\nh. Kesehatan,\ni. Pendapat an.\n" .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/description> legal:textHasTextString "Pada saat terbentuknya Kabupaten Daerah Tingkat II Halmahera Tengah, diserahkan sebagian urusan-urusan pemerintahan sebagai kewenangan pangkal yang meliputi :" .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/description> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/a> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/a/text> legal:textHasTextString "Pengaturan dan penyelenggaraan kewenangan untuk mewujudkan ketertiban dan ketenteraman kehidupan masyarakat di Daerah yang bersangkutan:" .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/a/text> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/b> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/b/text> legal:textHasTextString "Pertanian Tanaman Pangan:" .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/b> legal:pointHasText <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/b/text> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/c> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/c/text> legal:textHasTextString ". Peternakan:" .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/c> legal:pointHasText <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/c/text> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/d> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/d/text> legal:textHasTextString "Perkebunan:" .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/d> legal:pointHasText <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/d/text> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/e> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/e/text> legal:textHasTextString "Perikanan:" .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/e> legal:pointHasText <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/e/text> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/f> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/f> legal:pointHasKey "f" .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/f/text> legal:textHasTextString "Pendidikan Dasar:" .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/f> legal:pointHasText <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/f/text> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/g> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/g> legal:pointHasKey "g" .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/g/text> legal:textHasTextString "Pekerjaan Umum:" .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/g> legal:pointHasText <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/g/text> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/h> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/h> legal:pointHasKey "h" .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/h/text> legal:textHasTextString "Kesehatan," .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/h> legal:pointHasText <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/h/text> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/i> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/i> legal:pointHasKey "i" .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/i/text> legal:textHasTextString "Pendapat an." .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/i> legal:pointHasText <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/i/text> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0002> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0002> legal:ayatHasRawText "Penambahan dan atau pengurangan urusan sebagaimana dimaksud dalam ayat (1) Pasal ini diatur sesuai dengan peraturan perundang-undang yang berlaku." .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0002/text> legal:textHasTextString "Penambahan dan atau pengurangan urusan sebagaimana dimaksud dalam ayat (1) Pasal ini diatur sesuai dengan peraturan perundang-undang yang berlaku." .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0002/text> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001> .
+<http://example.org/legal/document/uu/1990/6/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1990/6/bab/0005> .
+<http://example.org/legal/document/uu/1990/6/bab/0005> legal:babHasKey 5 .
+<http://example.org/legal/document/uu/1990/6/bab/0005> legal:babHasTitle "KETENTUAN PERALIHAN" .
+<http://example.org/legal/document/uu/1990/6/bab/0005> legal:babHasPasalSet <http://example.org/legal/document/uu/1990/6/bab/0005/pasals> .
+<http://example.org/legal/document/uu/1990/6/bab/0005/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0010> .
+<http://example.org/legal/document/uu/1990/6/pasal/0010> legal:pasalHasKey 10 .
+<http://example.org/legal/document/uu/1990/6/pasal/0010> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/6/pasal/0010/version/19900815> .
+<http://example.org/legal/document/uu/1990/6> legal:documentHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0010> .
+<http://example.org/legal/document/uu/1990/6/pasal/0010/version/19900815> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/6/pasal/0010/version/19900815> legal:pasalVersionHasVersionDate "1990-08-15"^^xsd:date .
+<http://example.org/legal/document/uu/1990/6/pasal/0010/version/19900815> legal:pasalVersionHasRawText "Pada saat terbentuknya Kabupaten Daerah Tingkat II Halmahera Tengah, pejabat Bupati Kepala Daerah Tingkat II Halmahera Tengah untuk pertama kalinya diangkat dan ditetapkan oleh Menteri Dalam Negeri atas usul Gubernur Kepala Daerah Tingkat I Maluku." .
+<http://example.org/legal/document/uu/1990/6/pasal/0010/version/19900815/text> legal:textHasTextString "Pada saat terbentuknya Kabupaten Daerah Tingkat II Halmahera Tengah, pejabat Bupati Kepala Daerah Tingkat II Halmahera Tengah untuk pertama kalinya diangkat dan ditetapkan oleh Menteri Dalam Negeri atas usul Gubernur Kepala Daerah Tingkat I Maluku." .
+<http://example.org/legal/document/uu/1990/6/pasal/0010/version/19900815> legal:pasalVersionHasText <http://example.org/legal/document/uu/1990/6/pasal/0010/version/19900815/text> .
+<http://example.org/legal/document/uu/1990/6/bab/0005/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0011> .
+<http://example.org/legal/document/uu/1990/6/pasal/0011> legal:pasalHasKey 11 .
+<http://example.org/legal/document/uu/1990/6/pasal/0011> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815> .
+<http://example.org/legal/document/uu/1990/6> legal:documentHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0011> .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815> legal:pasalVersionHasVersionDate "1990-08-15"^^xsd:date .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815> legal:pasalVersionHasRawText "(1). Anggota-anggota Dewan Perwakilan Rakyat Daerah Kabupaten Daerah Tingkat II Halmahera Tengah terdiri dari :\na. Anggota-anggota yang diangkat dari wakil-wakil Organisasi Peserta Pemilihan Umum dengan memperhatikan perimbangan suara hasil Pemilihan Umum 1987 yang dilaksanakan di daerah tersebut:\nb. Anggota yang diangkat dari golongan karya ABRI.\n\n(2). Tata cara, pengangkatan, dan jumlah anggota Dewan Perwakilan Rakyat Daerah Kabupaten Daerah Tingkat II Halmahera Tengah sebagaimana dimaksud dalam ayat (1) Pasal ini untuk pertama kalinya ditetapkan oleh Menteri Dalam Negeri." .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat> .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001> .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001> legal:ayatHasRawText "Anggota-anggota Dewan Perwakilan Rakyat Daerah Kabupaten Daerah Tingkat II Halmahera Tengah terdiri dari :\na. Anggota-anggota yang diangkat dari wakil-wakil Organisasi Peserta Pemilihan Umum dengan memperhatikan perimbangan suara hasil Pemilihan Umum 1987 yang dilaksanakan di daerah tersebut:\nb. Anggota yang diangkat dari golongan karya ABRI.\n" .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001/point> .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001/point/description> legal:textHasTextString "Anggota-anggota Dewan Perwakilan Rakyat Daerah Kabupaten Daerah Tingkat II Halmahera Tengah terdiri dari :" .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001/point/description> .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001/point/a> .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001/point/a/text> legal:textHasTextString "Anggota-anggota yang diangkat dari wakil-wakil Organisasi Peserta Pemilihan Umum dengan memperhatikan perimbangan suara hasil Pemilihan Umum 1987 yang dilaksanakan di daerah tersebut:" .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001/point/a/text> .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001/point/b> .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001/point/b/text> legal:textHasTextString "Anggota yang diangkat dari golongan karya ABRI." .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001/point/b> legal:pointHasText <http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001/point/b/text> .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0002> .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0002> legal:ayatHasRawText "Tata cara, pengangkatan, dan jumlah anggota Dewan Perwakilan Rakyat Daerah Kabupaten Daerah Tingkat II Halmahera Tengah sebagaimana dimaksud dalam ayat (1) Pasal ini untuk pertama kalinya ditetapkan oleh Menteri Dalam Negeri." .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0002/text> legal:textHasTextString "Tata cara, pengangkatan, dan jumlah anggota Dewan Perwakilan Rakyat Daerah Kabupaten Daerah Tingkat II Halmahera Tengah sebagaimana dimaksud dalam ayat (1) Pasal ini untuk pertama kalinya ditetapkan oleh Menteri Dalam Negeri." .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0002/text> .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001> .
+<http://example.org/legal/document/uu/1990/6/bab/0005/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0012> .
+<http://example.org/legal/document/uu/1990/6/pasal/0012> legal:pasalHasKey 12 .
+<http://example.org/legal/document/uu/1990/6/pasal/0012> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815> .
+<http://example.org/legal/document/uu/1990/6> legal:documentHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0012> .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815> legal:pasalVersionHasVersionDate "1990-08-15"^^xsd:date .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815> legal:pasalVersionHasRawText "(1). Untuk kelancaran penyelenggaraan pemerintahan di Kabupaten Daerah Tingkat Il Halmahera Tengah, sesuai dengan ketentuan peraturan perundang-undangan yang berlaku, Gubernur Kepala Daerah Tingkat I Maluku mengatur penyerahan kepada Pemerintah Kabupaten Daerah Tingkat II Halmahera Tengah :\na. Pegawai-pegawai yang karena jabatannya diperlukan oleh Pemerintah Kabupaten Daerah Tingkat II Halmahera Tengah:\nb. Tanah, bangunan, barang bergerak, dan barang tidak bergerak lainnya yang menjadi milik atau dikuasai oleh Pemerintah Propinsi Daerah Tingkat I Maluku dan berada dalam wilayah Kabupaten Daerah Tingkat II Halmahera Tengah:\nc. Badan-badan Usaha Milik Daerah yang tempat kedudukannya terletak di wilayah Kabupaten Daerah Tingkat II Halmahera Tengah,\nd. Hutang-piutang Pemerintah Daerah yang kegunaannya berlokasi di wilayah Kabupaten Daerah Tingkat II Halmahera Tengah,\ne. Perlengkapan kantor, arsip, dokumentasi, dan perpustakaan.\n\n(2). Pelaksanaan penyerahan sebagaimana dimaksud dalam ayat (1) Pasal ini selambat-lambatnya harus diselesaikan dalam waktu 1 (satu) tahun terhitung sejak diresmikannya Kabupaten Daerah Tingkat II yang bersangkutan." .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat> .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001> .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001> legal:ayatHasRawText "Untuk kelancaran penyelenggaraan pemerintahan di Kabupaten Daerah Tingkat Il Halmahera Tengah, sesuai dengan ketentuan peraturan perundang-undangan yang berlaku, Gubernur Kepala Daerah Tingkat I Maluku mengatur penyerahan kepada Pemerintah Kabupaten Daerah Tingkat II Halmahera Tengah :\na. Pegawai-pegawai yang karena jabatannya diperlukan oleh Pemerintah Kabupaten Daerah Tingkat II Halmahera Tengah:\nb. Tanah, bangunan, barang bergerak, dan barang tidak bergerak lainnya yang menjadi milik atau dikuasai oleh Pemerintah Propinsi Daerah Tingkat I Maluku dan berada dalam wilayah Kabupaten Daerah Tingkat II Halmahera Tengah:\nc. Badan-badan Usaha Milik Daerah yang tempat kedudukannya terletak di wilayah Kabupaten Daerah Tingkat II Halmahera Tengah,\nd. Hutang-piutang Pemerintah Daerah yang kegunaannya berlokasi di wilayah Kabupaten Daerah Tingkat II Halmahera Tengah,\ne. Perlengkapan kantor, arsip, dokumentasi, dan perpustakaan.\n" .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point> .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/description> legal:textHasTextString "Untuk kelancaran penyelenggaraan pemerintahan di Kabupaten Daerah Tingkat Il Halmahera Tengah, sesuai dengan ketentuan peraturan perundang-undangan yang berlaku, Gubernur Kepala Daerah Tingkat I Maluku mengatur penyerahan kepada Pemerintah Kabupaten Daerah Tingkat II Halmahera Tengah :" .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/description> .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/a> .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/a/text> legal:textHasTextString "Pegawai-pegawai yang karena jabatannya diperlukan oleh Pemerintah Kabupaten Daerah Tingkat II Halmahera Tengah:" .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/a/text> .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/b> .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/b/text> legal:textHasTextString "Tanah, bangunan, barang bergerak, dan barang tidak bergerak lainnya yang menjadi milik atau dikuasai oleh Pemerintah Propinsi Daerah Tingkat I Maluku dan berada dalam wilayah Kabupaten Daerah Tingkat II Halmahera Tengah:" .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/b> legal:pointHasText <http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/b/text> .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/c> .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/c/text> legal:textHasTextString "Badan-badan Usaha Milik Daerah yang tempat kedudukannya terletak di wilayah Kabupaten Daerah Tingkat II Halmahera Tengah," .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/c> legal:pointHasText <http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/c/text> .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/d> .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/d/text> legal:textHasTextString "Hutang-piutang Pemerintah Daerah yang kegunaannya berlokasi di wilayah Kabupaten Daerah Tingkat II Halmahera Tengah," .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/d> legal:pointHasText <http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/d/text> .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/e> .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/e/text> legal:textHasTextString "Perlengkapan kantor, arsip, dokumentasi, dan perpustakaan." .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/e> legal:pointHasText <http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/e/text> .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0002> .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0002> legal:ayatHasRawText "Pelaksanaan penyerahan sebagaimana dimaksud dalam ayat (1) Pasal ini selambat-lambatnya harus diselesaikan dalam waktu 1 (satu) tahun terhitung sejak diresmikannya Kabupaten Daerah Tingkat II yang bersangkutan." .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0002/text> legal:textHasTextString "Pelaksanaan penyerahan sebagaimana dimaksud dalam ayat (1) Pasal ini selambat-lambatnya harus diselesaikan dalam waktu 1 (satu) tahun terhitung sejak diresmikannya Kabupaten Daerah Tingkat II yang bersangkutan." .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0002/text> .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001> .
+<http://example.org/legal/document/uu/1990/6/bab/0005/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0013> .
+<http://example.org/legal/document/uu/1990/6/pasal/0013> legal:pasalHasKey 13 .
+<http://example.org/legal/document/uu/1990/6/pasal/0013> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815> .
+<http://example.org/legal/document/uu/1990/6> legal:documentHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0013> .
+<http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815> legal:pasalVersionHasVersionDate "1990-08-15"^^xsd:date .
+<http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815> legal:pasalVersionHasRawText "(1). Pemerintah memberikan sejumlah dana sebagai modal pangkal kepada Pemerintah Kabupaten Daerah Tingkat II Halmahera Tengah selama 3 (tiga) tahun berturut-turut, terhitung sejak peresmiannya.\n(2). Jumlah modal pangkal sebagaimana dimaksud dalam ayat (1) Pasal ini ditetapkan oleh Menteri Keuangan atas usul Menteri Dalam Negeri." .
+<http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815/ayat> .
+<http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815/ayat/0001> .
+<http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815/ayat/0001> legal:ayatHasRawText "Pemerintah memberikan sejumlah dana sebagai modal pangkal kepada Pemerintah Kabupaten Daerah Tingkat II Halmahera Tengah selama 3 (tiga) tahun berturut-turut, terhitung sejak peresmiannya." .
+<http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815/ayat/0001/text> legal:textHasTextString "Pemerintah memberikan sejumlah dana sebagai modal pangkal kepada Pemerintah Kabupaten Daerah Tingkat II Halmahera Tengah selama 3 (tiga) tahun berturut-turut, terhitung sejak peresmiannya." .
+<http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815/ayat/0001/text> .
+<http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815/ayat/0002> .
+<http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815/ayat/0002> legal:ayatHasRawText "Jumlah modal pangkal sebagaimana dimaksud dalam ayat (1) Pasal ini ditetapkan oleh Menteri Keuangan atas usul Menteri Dalam Negeri." .
+<http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815/ayat/0002/text> legal:textHasTextString "Jumlah modal pangkal sebagaimana dimaksud dalam ayat (1) Pasal ini ditetapkan oleh Menteri Keuangan atas usul Menteri Dalam Negeri." .
+<http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815/ayat/0002/text> .
+<http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815/ayat/0001> .
+<http://example.org/legal/document/uu/1990/6/bab/0005/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0014> .
+<http://example.org/legal/document/uu/1990/6/pasal/0014> legal:pasalHasKey 14 .
+<http://example.org/legal/document/uu/1990/6/pasal/0014> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/6/pasal/0014/version/19900815> .
+<http://example.org/legal/document/uu/1990/6> legal:documentHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0014> .
+<http://example.org/legal/document/uu/1990/6/pasal/0014/version/19900815> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/6/pasal/0014/version/19900815> legal:pasalVersionHasVersionDate "1990-08-15"^^xsd:date .
+<http://example.org/legal/document/uu/1990/6/pasal/0014/version/19900815> legal:pasalVersionHasRawText "Semua ketentuan peraturan perundang-undangan yang selama ini ditetapkan oleh Gubernur Kepala Daerah Tingkat | Maluku dan atau Bupati Pemimpin Daerah Halmahera Tengah tetap berlaku di wilayah Kabupaten Daerah Tingkat Il Halmahera Tengah sampai ditetapkan peraturan perundang-undangan baru yang mengatur, mengganti, dan atau mencabut peraturan perundang-undangan tersebut berdasarkan Undang-undang ini." .
+<http://example.org/legal/document/uu/1990/6/pasal/0014/version/19900815/text> legal:textHasTextString "Semua ketentuan peraturan perundang-undangan yang selama ini ditetapkan oleh Gubernur Kepala Daerah Tingkat | Maluku dan atau Bupati Pemimpin Daerah Halmahera Tengah tetap berlaku di wilayah Kabupaten Daerah Tingkat Il Halmahera Tengah sampai ditetapkan peraturan perundang-undangan baru yang mengatur, mengganti, dan atau mencabut peraturan perundang-undangan tersebut berdasarkan Undang-undang ini." .
+<http://example.org/legal/document/uu/1990/6/pasal/0014/version/19900815> legal:pasalVersionHasText <http://example.org/legal/document/uu/1990/6/pasal/0014/version/19900815/text> .
+<http://example.org/legal/document/uu/1990/6/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1990/6/bab/0006> .
+<http://example.org/legal/document/uu/1990/6/bab/0006> legal:babHasKey 6 .
+<http://example.org/legal/document/uu/1990/6/bab/0006> legal:babHasTitle "KETENTUAN PENUTUP" .
+<http://example.org/legal/document/uu/1990/6/bab/0006> legal:babHasPasalSet <http://example.org/legal/document/uu/1990/6/bab/0006/pasals> .
+<http://example.org/legal/document/uu/1990/6/bab/0006/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0015> .
+<http://example.org/legal/document/uu/1990/6/pasal/0015> legal:pasalHasKey 15 .
+<http://example.org/legal/document/uu/1990/6/pasal/0015> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/6/pasal/0015/version/19900815> .
+<http://example.org/legal/document/uu/1990/6> legal:documentHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0015> .
+<http://example.org/legal/document/uu/1990/6/pasal/0015/version/19900815> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/6/pasal/0015/version/19900815> legal:pasalVersionHasVersionDate "1990-08-15"^^xsd:date .
+<http://example.org/legal/document/uu/1990/6/pasal/0015/version/19900815> legal:pasalVersionHasRawText "Pada saat berlakunya Undang-undang ini, semua ketentuan peraturan perundang-undangan yang tidak sesuai dengan Undang-undang ini dinyatakan tidak berlaku lagi." .
+<http://example.org/legal/document/uu/1990/6/pasal/0015/version/19900815/text> legal:textHasTextString "Pada saat berlakunya Undang-undang ini, semua ketentuan peraturan perundang-undangan yang tidak sesuai dengan Undang-undang ini dinyatakan tidak berlaku lagi." .
+<http://example.org/legal/document/uu/1990/6/pasal/0015/version/19900815> legal:pasalVersionHasText <http://example.org/legal/document/uu/1990/6/pasal/0015/version/19900815/text> .
+<http://example.org/legal/document/uu/1990/6/bab/0006/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0016> .
+<http://example.org/legal/document/uu/1990/6/pasal/0016> legal:pasalHasKey 16 .
+<http://example.org/legal/document/uu/1990/6/pasal/0016> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/6/pasal/0016/version/19900815> .
+<http://example.org/legal/document/uu/1990/6> legal:documentHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0016> .
+<http://example.org/legal/document/uu/1990/6/pasal/0016/version/19900815> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/6/pasal/0016/version/19900815> legal:pasalVersionHasVersionDate "1990-08-15"^^xsd:date .
+<http://example.org/legal/document/uu/1990/6/pasal/0016/version/19900815> legal:pasalVersionHasRawText "Ketentuan lebih lanjut yang diperlukan sebagai pelaksanaan Undang-undang ini, diatur sesuai dengan Undang-undang Nomor 5 Tahun 1974 tentang Pokok-pokok Pemerintahan Di Daerah." .
+<http://example.org/legal/document/uu/1990/6/pasal/0016/version/19900815/text> legal:textHasTextString "Ketentuan lebih lanjut yang diperlukan sebagai pelaksanaan Undang-undang ini, diatur sesuai dengan Undang-undang Nomor 5 Tahun 1974 tentang Pokok-pokok Pemerintahan Di Daerah." .
+<http://example.org/legal/document/uu/1990/6/pasal/0016/version/19900815> legal:pasalVersionHasText <http://example.org/legal/document/uu/1990/6/pasal/0016/version/19900815/text> .
+<http://example.org/legal/document/uu/1990/6/bab/0006/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0017> .
+<http://example.org/legal/document/uu/1990/6/pasal/0017> legal:pasalHasKey 17 .
+<http://example.org/legal/document/uu/1990/6/pasal/0017> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/6/pasal/0017/version/19900815> .
+<http://example.org/legal/document/uu/1990/6> legal:documentHasPasal <http://example.org/legal/document/uu/1990/6/pasal/0017> .
+<http://example.org/legal/document/uu/1990/6/pasal/0017/version/19900815> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/6/pasal/0017/version/19900815> legal:pasalVersionHasVersionDate "1990-08-15"^^xsd:date .
+<http://example.org/legal/document/uu/1990/6/pasal/0017/version/19900815> legal:pasalVersionHasRawText "Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1990/6/pasal/0017/version/19900815/text> legal:textHasTextString "Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1990/6/pasal/0017/version/19900815> legal:pasalVersionHasText <http://example.org/legal/document/uu/1990/6/pasal/0017/version/19900815/text> .
+<http://example.org/legal/document/uu/1990/6> legal:documentHasDisahkanDate "1990-08-15"^^xsd:date .
+<http://example.org/legal/document/uu/1990/6> legal:documentMengingat <http://example.org/legal/document/uu/1990/6/mengingat> .
+<http://example.org/legal/document/uu/1990/6/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1990/6/mengingat/point> .
+<http://example.org/legal/document/uu/1990/6/mengingat/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1990/6/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1990/6/mengingat/point/description> .
+<http://example.org/legal/document/uu/1990/6/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/mengingat/point/0001> .
+<http://example.org/legal/document/uu/1990/6/mengingat/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/1990/6/mengingat/point/0001/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 18, dan Pasal 20 ayat (1) Undang-Undang Dasar 1945," .
+<http://example.org/legal/document/uu/1990/6/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1990/6/mengingat/point/0001/text> .
+<http://example.org/legal/document/uu/1990/6/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/mengingat/point/0002> .
+<http://example.org/legal/document/uu/1990/6/mengingat/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/1990/6/mengingat/point/0002/text> legal:textHasTextString "Undang-undang Nomor 5 Tahun 1974 tentang Pokok-pokok Pemerintahan Di Daerah (Lembaran Negara Republik Indonesia Tahun 1974 Nomor 38, Tambahan Lembaran Negara Republik Indonesia Nomor 3037:" .
+<http://example.org/legal/document/uu/1990/6/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1990/6/mengingat/point/0002/text> .
+<http://example.org/legal/document/uu/1990/6/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/mengingat/point/0003> .
+<http://example.org/legal/document/uu/1990/6/mengingat/point/0003> legal:pointHasKey "3" .
+<http://example.org/legal/document/uu/1990/6/mengingat/point/0003/text> legal:textHasTextString "Undang-undang Nomor 20 Tahun 1958 tentang Penetapan Undang-undang Darurat Nomor 22 Tahun 1957 tentang Pembentukan Daerah Swatantra Tingkat I Maluku sebagai Undang-undang (Lembaran Negara Republik Indonesia Tahun 1958 Nomor 61, Tambahan Lembaran Negara Republik Indonesia Nomor 1617):" .
+<http://example.org/legal/document/uu/1990/6/mengingat/point/0003> legal:pointHasText <http://example.org/legal/document/uu/1990/6/mengingat/point/0003/text> .
+<http://example.org/legal/document/uu/1990/6/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/mengingat/point/0004> .
+<http://example.org/legal/document/uu/1990/6/mengingat/point/0004> legal:pointHasKey "4" .
+<http://example.org/legal/document/uu/1990/6/mengingat/point/0004/text> legal:textHasTextString "Undang-undang Nomor 1 Pnps. Tahun 1962 tentang Pembentukan Propinsi Irian Barat Bentuk Baru (Lembaran Negara Republik Indonesia Tahun 1962 Nomor 1, Tambahan Lembaran Negara Republik Indonesia Nomor 2372):" .
+<http://example.org/legal/document/uu/1990/6/mengingat/point/0004> legal:pointHasText <http://example.org/legal/document/uu/1990/6/mengingat/point/0004/text> .
+<http://example.org/legal/document/uu/1990/6/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/mengingat/point/0005> .
+<http://example.org/legal/document/uu/1990/6/mengingat/point/0005> legal:pointHasKey "5" .
+<http://example.org/legal/document/uu/1990/6/mengingat/point/0005/text> legal:textHasTextString "Undang-undang Nomor 16 Tahun 1969 tentang Susunan dan kedudukan Majelis Permusyawaratan Rakyat, Dewan Perwakilan Rakyat, dan Dewan Perwakilan Rakyat Daerah (Lembaran Negara Republik Indonesia Tahun 1969 Nomor 59, Tambahan Lembaran Negara Republik Indonesia Nomor 2915) sebagaimana telah diubah dengan Undang-undang Nomor 5 Tahun 1975 (Lembaran Negara Republik Indonesia Tahun 1975 Nomor 39, Tambahan Lembaran Negara Republik Indonesia Nomor 3064) dan Undang-undang Nomor 2 Tahun 1985 (Lembaran Negara Republik Indonesia Tahun 1985 Nomor 2, Tambahan Lembaran Negara Republik Indonesia Dengan persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG PEMBENTUKAN KABUPATEN DAERAH TINGKAT II HALMAHERA TENGAH. BAB |" .
+<http://example.org/legal/document/uu/1990/6/mengingat/point/0005> legal:pointHasText <http://example.org/legal/document/uu/1990/6/mengingat/point/0005/text> .
+<http://example.org/legal/document/uu/1990/6> legal:documentMenimbang <http://example.org/legal/document/uu/1990/6/menimbang> .
+<http://example.org/legal/document/uu/1990/6/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/1990/6/menimbang/point> .
+<http://example.org/legal/document/uu/1990/6/menimbang/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1990/6/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1990/6/menimbang/point/description> .
+<http://example.org/legal/document/uu/1990/6/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/menimbang/point/a> .
+<http://example.org/legal/document/uu/1990/6/menimbang/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1990/6/menimbang/point/a/text> legal:textHasTextString "bahwa wilayah yang dimaksud dalam Undang-undang Nomor 23 Tahun 1958 tentang Penetapan Undang-undang Darurat Nomor 20 Tabun 1957 tentang Perubahan Undang-undang Pembentukan Daerah Otonom Propinsi Irian Barat sebagai Undang-undang, telah dimasukkan sebagai wilayah Propinsi Irian Barat yang kemudian disebut Halmahera Tengah, selanjutnya berdasarkan Undang-undang Nonor 1 Pnps. Tahun 1962 dikembalikan ke dalam wilayah Propinsi Maluku," .
+<http://example.org/legal/document/uu/1990/6/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/1990/6/menimbang/point/a/text> .
+<http://example.org/legal/document/uu/1990/6/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/menimbang/point/b> .
+<http://example.org/legal/document/uu/1990/6/menimbang/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1990/6/menimbang/point/b/text> legal:textHasTextString "bahwa pengembalian wilayah Halmahera Tengah dari Daerah Otonom Propinsi Irian Barat ke dalam wilayah Propinsi Maluku hingga saat ini belum disertai pengaturan yang jelas mengenai statusnya, sehingga menyulitkan usaha pembinaan dan penyelenggaraan pemerintahan serta pengembangan aparatur di daerah yang bersangkutan," .
+<http://example.org/legal/document/uu/1990/6/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/1990/6/menimbang/point/b/text> .
+<http://example.org/legal/document/uu/1990/6/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/menimbang/point/c> .
+<http://example.org/legal/document/uu/1990/6/menimbang/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1990/6/menimbang/point/c/text> legal:textHasTextString ". bahwa selama ini pembinaan atas wilayah Halmahera Tengah beserta aparatur di daerah tersebut pada dasarnya telah diperlakukan sama dengan Kabupaten Daerah Tingkat II lainnya dalam wilayah Propinsi Daerah Tingkat I Maluku dan telah memberi dampak positif berupa peningkatan kemampuan daerah untuk menyelenggarakan sendiri beberapa urusan pemerintahan," .
+<http://example.org/legal/document/uu/1990/6/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/1990/6/menimbang/point/c/text> .
+<http://example.org/legal/document/uu/1990/6/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/menimbang/point/d> .
+<http://example.org/legal/document/uu/1990/6/menimbang/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1990/6/menimbang/point/d/text> legal:textHasTextString "bahwa untuk lebih meningkatkan dayaguna dan hasilguna penyelenggaraan pemerintahan dan pelaksanaan pembangunan di wilayah Halmahera Tengah, dipandang perlu membentuk wilayah tersebut sebagai Kabupaten Daerah Tingkat II yang berhak mengatur dan mengurus rumah tangganya sendiri:" .
+<http://example.org/legal/document/uu/1990/6/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/1990/6/menimbang/point/d/text> .
+<http://example.org/legal/document/uu/1990/6/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/6/menimbang/point/e> .
+<http://example.org/legal/document/uu/1990/6/menimbang/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/1990/6/menimbang/point/e/text> legal:textHasTextString "bahwa berdasarkan ketentuan Undang-undang Nomor 5 Tahun 1974 tentang Pokok-pokok Pemerintahan Di Daerah, maka pembentukan wilayah Halmahera Tengah menjadi Kabupaten Daerah Tingkat II harus ditetapkan dengan Undang-undang:" .
+<http://example.org/legal/document/uu/1990/6/menimbang/point/e> legal:pointHasText <http://example.org/legal/document/uu/1990/6/menimbang/point/e/text> .
+<http://example.org/legal/document/uu/1990/6> legal:documentHasDisahkanPengesah "Diundangkan di Jakarta" .
+<http://example.org/legal/document/uu/1990/6> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/1990/6> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA" .
+<http://example.org/legal/document/uu/1990/6> a legal:Document .
+<http://example.org/legal/document/uu/1990/6/bab> a legal:BabSet .
+<http://example.org/legal/document/uu/1990/6/bab/0001> a legal:Bab .
+<http://example.org/legal/document/uu/1990/6/bab/0001/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1990/6/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0003> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0004> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/bab/0002> a legal:Bab .
+<http://example.org/legal/document/uu/1990/6/bab/0002/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1990/6/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/6/pasal/0002/version/19900815> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/6/pasal/0002/version/19900815/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/e> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/f> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/f/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0004> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0001/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0001/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0001/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0001/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0005> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/6/pasal/0005/version/19900815> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/6/pasal/0005/version/19900815/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/bab/0003> a legal:Bab .
+<http://example.org/legal/document/uu/1990/6/bab/0003/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1990/6/pasal/0006> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/6/pasal/0006/version/19900815> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/6/pasal/0006/version/19900815/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0007> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/6/pasal/0007/version/19900815> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/6/pasal/0007/version/19900815/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0008> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/6/pasal/0008/version/19900815> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/6/pasal/0008/version/19900815/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/bab/0004> a legal:Bab .
+<http://example.org/legal/document/uu/1990/6/bab/0004/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1990/6/pasal/0009> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/e> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/f> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/f/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/g> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/g/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/h> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/h/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/i> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/i/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/bab/0005> a legal:Bab .
+<http://example.org/legal/document/uu/1990/6/bab/0005/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1990/6/pasal/0010> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/6/pasal/0010/version/19900815> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/6/pasal/0010/version/19900815/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0011> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0012> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/e> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0013> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0014> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/6/pasal/0014/version/19900815> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/6/pasal/0014/version/19900815/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/bab/0006> a legal:Bab .
+<http://example.org/legal/document/uu/1990/6/bab/0006/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1990/6/pasal/0015> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/6/pasal/0015/version/19900815> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/6/pasal/0015/version/19900815/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0016> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/6/pasal/0016/version/19900815> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/6/pasal/0016/version/19900815/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/pasal/0017> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/6/pasal/0017/version/19900815> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/6/pasal/0017/version/19900815/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1990/6/mengingat/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/mengingat/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1990/6/mengingat/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/mengingat/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/mengingat/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/mengingat/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/mengingat/point/0003> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/mengingat/point/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/mengingat/point/0004> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/mengingat/point/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/mengingat/point/0005> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/mengingat/point/0005/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1990/6/menimbang/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/menimbang/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1990/6/menimbang/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/menimbang/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/menimbang/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/menimbang/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/menimbang/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/menimbang/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/menimbang/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/menimbang/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/menimbang/point/e> a legal:Point .
+<http://example.org/legal/document/uu/1990/6/menimbang/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/6/bab> legal:partOf <http://example.org/legal/document/uu/1990/6> .
+<http://example.org/legal/document/uu/1990/6/bab/0001> legal:partOf <http://example.org/legal/document/uu/1990/6/bab> .
+<http://example.org/legal/document/uu/1990/6/bab/0001/pasals> legal:partOf <http://example.org/legal/document/uu/1990/6/bab/0001> .
+<http://example.org/legal/document/uu/1990/6/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1990/6/bab/0001/pasals> .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0001> .
+<http://example.org/legal/document/uu/1990/6/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1990/6> .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815> .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0001> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point> .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0002> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point> .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0003> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point> .
+<http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point/0004> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0001/version/19900815/point> .
+<http://example.org/legal/document/uu/1990/6/bab/0002> legal:partOf <http://example.org/legal/document/uu/1990/6/bab> .
+<http://example.org/legal/document/uu/1990/6/bab/0002/pasals> legal:partOf <http://example.org/legal/document/uu/1990/6/bab/0002> .
+<http://example.org/legal/document/uu/1990/6/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1990/6/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1990/6/pasal/0002/version/19900815> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0002> .
+<http://example.org/legal/document/uu/1990/6/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1990/6> .
+<http://example.org/legal/document/uu/1990/6/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1990/6/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0003> .
+<http://example.org/legal/document/uu/1990/6/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1990/6> .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815> .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/a> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point> .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/b> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point> .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/c> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point> .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/d> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point> .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/e> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point> .
+<http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point/f> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0003/version/19900815/point> .
+<http://example.org/legal/document/uu/1990/6/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1990/6/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0004> .
+<http://example.org/legal/document/uu/1990/6/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1990/6> .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815> .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat> .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0001> .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0001/point/a> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0001/point> .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat> .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0002> .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat> .
+<http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0004/version/19900815/ayat/0003> .
+<http://example.org/legal/document/uu/1990/6/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1990/6/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1990/6/pasal/0005/version/19900815> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0005> .
+<http://example.org/legal/document/uu/1990/6/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1990/6> .
+<http://example.org/legal/document/uu/1990/6/bab/0003> legal:partOf <http://example.org/legal/document/uu/1990/6/bab> .
+<http://example.org/legal/document/uu/1990/6/bab/0003/pasals> legal:partOf <http://example.org/legal/document/uu/1990/6/bab/0003> .
+<http://example.org/legal/document/uu/1990/6/pasal/0006> legal:partOf <http://example.org/legal/document/uu/1990/6/bab/0003/pasals> .
+<http://example.org/legal/document/uu/1990/6/pasal/0006/version/19900815> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0006> .
+<http://example.org/legal/document/uu/1990/6/pasal/0006> legal:partOf <http://example.org/legal/document/uu/1990/6> .
+<http://example.org/legal/document/uu/1990/6/pasal/0007> legal:partOf <http://example.org/legal/document/uu/1990/6/bab/0003/pasals> .
+<http://example.org/legal/document/uu/1990/6/pasal/0007/version/19900815> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0007> .
+<http://example.org/legal/document/uu/1990/6/pasal/0007> legal:partOf <http://example.org/legal/document/uu/1990/6> .
+<http://example.org/legal/document/uu/1990/6/pasal/0008> legal:partOf <http://example.org/legal/document/uu/1990/6/bab/0003/pasals> .
+<http://example.org/legal/document/uu/1990/6/pasal/0008/version/19900815> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0008> .
+<http://example.org/legal/document/uu/1990/6/pasal/0008> legal:partOf <http://example.org/legal/document/uu/1990/6> .
+<http://example.org/legal/document/uu/1990/6/bab/0004> legal:partOf <http://example.org/legal/document/uu/1990/6/bab> .
+<http://example.org/legal/document/uu/1990/6/bab/0004/pasals> legal:partOf <http://example.org/legal/document/uu/1990/6/bab/0004> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009> legal:partOf <http://example.org/legal/document/uu/1990/6/bab/0004/pasals> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0009> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009> legal:partOf <http://example.org/legal/document/uu/1990/6> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/a> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/b> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/c> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/d> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/e> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/f> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/g> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/h> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point/i> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0001/point> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat> .
+<http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0009/version/19900815/ayat/0002> .
+<http://example.org/legal/document/uu/1990/6/bab/0005> legal:partOf <http://example.org/legal/document/uu/1990/6/bab> .
+<http://example.org/legal/document/uu/1990/6/bab/0005/pasals> legal:partOf <http://example.org/legal/document/uu/1990/6/bab/0005> .
+<http://example.org/legal/document/uu/1990/6/pasal/0010> legal:partOf <http://example.org/legal/document/uu/1990/6/bab/0005/pasals> .
+<http://example.org/legal/document/uu/1990/6/pasal/0010/version/19900815> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0010> .
+<http://example.org/legal/document/uu/1990/6/pasal/0010> legal:partOf <http://example.org/legal/document/uu/1990/6> .
+<http://example.org/legal/document/uu/1990/6/pasal/0011> legal:partOf <http://example.org/legal/document/uu/1990/6/bab/0005/pasals> .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0011> .
+<http://example.org/legal/document/uu/1990/6/pasal/0011> legal:partOf <http://example.org/legal/document/uu/1990/6> .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815> .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat> .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001> .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001/point/a> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001/point> .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001/point/b> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0001/point> .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat> .
+<http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0011/version/19900815/ayat/0002> .
+<http://example.org/legal/document/uu/1990/6/pasal/0012> legal:partOf <http://example.org/legal/document/uu/1990/6/bab/0005/pasals> .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0012> .
+<http://example.org/legal/document/uu/1990/6/pasal/0012> legal:partOf <http://example.org/legal/document/uu/1990/6> .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815> .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat> .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001> .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/a> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point> .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/b> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point> .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/c> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point> .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/d> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point> .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point/e> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0001/point> .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat> .
+<http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0012/version/19900815/ayat/0002> .
+<http://example.org/legal/document/uu/1990/6/pasal/0013> legal:partOf <http://example.org/legal/document/uu/1990/6/bab/0005/pasals> .
+<http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0013> .
+<http://example.org/legal/document/uu/1990/6/pasal/0013> legal:partOf <http://example.org/legal/document/uu/1990/6> .
+<http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815/ayat> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815> .
+<http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815/ayat> .
+<http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815/ayat/0001> .
+<http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815/ayat> .
+<http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0013/version/19900815/ayat/0002> .
+<http://example.org/legal/document/uu/1990/6/pasal/0014> legal:partOf <http://example.org/legal/document/uu/1990/6/bab/0005/pasals> .
+<http://example.org/legal/document/uu/1990/6/pasal/0014/version/19900815> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0014> .
+<http://example.org/legal/document/uu/1990/6/pasal/0014> legal:partOf <http://example.org/legal/document/uu/1990/6> .
+<http://example.org/legal/document/uu/1990/6/bab/0006> legal:partOf <http://example.org/legal/document/uu/1990/6/bab> .
+<http://example.org/legal/document/uu/1990/6/bab/0006/pasals> legal:partOf <http://example.org/legal/document/uu/1990/6/bab/0006> .
+<http://example.org/legal/document/uu/1990/6/pasal/0015> legal:partOf <http://example.org/legal/document/uu/1990/6/bab/0006/pasals> .
+<http://example.org/legal/document/uu/1990/6/pasal/0015/version/19900815> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0015> .
+<http://example.org/legal/document/uu/1990/6/pasal/0015> legal:partOf <http://example.org/legal/document/uu/1990/6> .
+<http://example.org/legal/document/uu/1990/6/pasal/0016> legal:partOf <http://example.org/legal/document/uu/1990/6/bab/0006/pasals> .
+<http://example.org/legal/document/uu/1990/6/pasal/0016/version/19900815> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0016> .
+<http://example.org/legal/document/uu/1990/6/pasal/0016> legal:partOf <http://example.org/legal/document/uu/1990/6> .
+<http://example.org/legal/document/uu/1990/6/pasal/0017> legal:partOf <http://example.org/legal/document/uu/1990/6/bab/0006/pasals> .
+<http://example.org/legal/document/uu/1990/6/pasal/0017/version/19900815> legal:partOf <http://example.org/legal/document/uu/1990/6/pasal/0017> .
+<http://example.org/legal/document/uu/1990/6/pasal/0017> legal:partOf <http://example.org/legal/document/uu/1990/6> .
+<http://example.org/legal/document/uu/1990/6/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1990/6/mengingat/point> .
+<http://example.org/legal/document/uu/1990/6/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1990/6/mengingat/point> .
+<http://example.org/legal/document/uu/1990/6/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/1990/6/mengingat/point> .
+<http://example.org/legal/document/uu/1990/6/mengingat/point/0004> legal:partOf <http://example.org/legal/document/uu/1990/6/mengingat/point> .
+<http://example.org/legal/document/uu/1990/6/mengingat/point/0005> legal:partOf <http://example.org/legal/document/uu/1990/6/mengingat/point> .
+<http://example.org/legal/document/uu/1990/6/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1990/6/menimbang/point> .
+<http://example.org/legal/document/uu/1990/6/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1990/6/menimbang/point> .
+<http://example.org/legal/document/uu/1990/6/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/1990/6/menimbang/point> .
+<http://example.org/legal/document/uu/1990/6/menimbang/point/d> legal:partOf <http://example.org/legal/document/uu/1990/6/menimbang/point> .
+<http://example.org/legal/document/uu/1990/6/menimbang/point/e> legal:partOf <http://example.org/legal/document/uu/1990/6/menimbang/point> .

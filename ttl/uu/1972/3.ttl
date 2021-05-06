@@ -1,0 +1,722 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1972/3> legal:documentHasBabSet <http://example.org/legal/document/uu/1972/3/bab> .
+<http://example.org/legal/document/uu/1972/3/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1972/3/bab/0001> .
+<http://example.org/legal/document/uu/1972/3/bab/0001> legal:babHasKey 1 .
+<http://example.org/legal/document/uu/1972/3/bab/0001> legal:babHasTitle "KETENTUAN UMUM" .
+<http://example.org/legal/document/uu/1972/3/bab/0001> legal:babHasPasalSet <http://example.org/legal/document/uu/1972/3/bab/0001/pasals> .
+<http://example.org/legal/document/uu/1972/3/bab/0001/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0001> .
+<http://example.org/legal/document/uu/1972/3/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1972/3/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728> .
+<http://example.org/legal/document/uu/1972/3> legal:documentHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0001> .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728> legal:pasalVersionHasVersionDate "1972-07-28"^^xsd:date .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728> legal:pasalVersionHasRawText "Dalam Undang-undang ini yang dimaksud dengan :\na. Transmigrasi adalah pemindahan dan/atau kepindahan penduduk dari satu daerah untuk menetap ke daerah lain yang ditetapkan di dalam wilayah Republik Indonesia guna kepentingan Pembangunan Negara atau atas alasan-alasan yang dipandang perlu oleh Pemerintah berdasarkan ketentuan- ketentuan sebagaimana diatur dalam Undang-undang ini :\nb. Transmigran ialah setiap warga negara Republik Indonesia, yang secara sukarela dipindahkan atau pindah menurut pengertian sebagaimana yang dimaksud dalam huruf a Pasal ini:\nc. Daerah Transmigrasi adalah daerah yang ditetapkan untuk penempatan transmigran ,\nd. Daerah Asal adalah daerah yang ditetapkan darimana calon transmigran dipindahkan atau berpindah :\ne. Proyek Transmigrasi adalah keseluruhan kegiatan penyelenggaraan transmigrasi.\nf. Menteri ialah Menteri yang diserahi urusan penyelenggaraan transmigrasi.\n" .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point> .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/description> legal:textHasTextString "Dalam Undang-undang ini yang dimaksud dengan :" .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/description> .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/a> .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/a/text> legal:textHasTextString "Transmigrasi adalah pemindahan dan/atau kepindahan penduduk dari satu daerah untuk menetap ke daerah lain yang ditetapkan di dalam wilayah Republik Indonesia guna kepentingan Pembangunan Negara atau atas alasan-alasan yang dipandang perlu oleh Pemerintah berdasarkan ketentuan- ketentuan sebagaimana diatur dalam Undang-undang ini :" .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/a> legal:pointHasText <http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/a/text> .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/b> .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/b/text> legal:textHasTextString "Transmigran ialah setiap warga negara Republik Indonesia, yang secara sukarela dipindahkan atau pindah menurut pengertian sebagaimana yang dimaksud dalam huruf a Pasal ini:" .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/b> legal:pointHasText <http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/b/text> .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/b/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/a> .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/c> .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/c/text> legal:textHasTextString "Daerah Transmigrasi adalah daerah yang ditetapkan untuk penempatan transmigran ," .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/c> legal:pointHasText <http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/c/text> .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/d> .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/d/text> legal:textHasTextString "Daerah Asal adalah daerah yang ditetapkan darimana calon transmigran dipindahkan atau berpindah :" .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/d> legal:pointHasText <http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/d/text> .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/e> .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/e/text> legal:textHasTextString "Proyek Transmigrasi adalah keseluruhan kegiatan penyelenggaraan transmigrasi." .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/e> legal:pointHasText <http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/e/text> .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/f> .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/f> legal:pointHasKey "f" .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/f/text> legal:textHasTextString "Menteri ialah Menteri yang diserahi urusan penyelenggaraan transmigrasi." .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/f> legal:pointHasText <http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/f/text> .
+<http://example.org/legal/document/uu/1972/3/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1972/3/bab/0002> .
+<http://example.org/legal/document/uu/1972/3/bab/0002> legal:babHasKey 2 .
+<http://example.org/legal/document/uu/1972/3/bab/0002> legal:babHasTitle "KEBIJAKSANAAN UMUM TRANSMIGRASI" .
+<http://example.org/legal/document/uu/1972/3/bab/0002> legal:babHasPasalSet <http://example.org/legal/document/uu/1972/3/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1972/3/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0002> .
+<http://example.org/legal/document/uu/1972/3/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1972/3/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728> .
+<http://example.org/legal/document/uu/1972/3> legal:documentHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0002> .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728> legal:pasalVersionHasVersionDate "1972-07-28"^^xsd:date .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728> legal:pasalVersionHasRawText "Sasaran kebijaksanaan umum transmigrasi ditujukan kepada terlaksananya transmigrasi Swakarsa (spontaan) yang teratur dalam jumlah yang sebesar-besarnya untuk mencapai : PRESIDEN REPUBLIK INDONESIA -4-\na. peningkatan taraf hidup,\nb. pembangunan daerah,\nc. . keseimbangan penyebaran penduduk,\nd. pembangunan yang merata di seluruh Indonesia,\ne. pemanfaatan sumber-sumber alam dan tenaga manusia,\nf. kesatuan dan persatuan bangsa :\ng. memperkuat pertahanan dan keamanan nasional.\n" .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point> .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/description> legal:textHasTextString "Sasaran kebijaksanaan umum transmigrasi ditujukan kepada terlaksananya transmigrasi Swakarsa (spontaan) yang teratur dalam jumlah yang sebesar-besarnya untuk mencapai : PRESIDEN REPUBLIK INDONESIA -4-" .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/description> .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/a> .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/a/text> legal:textHasTextString "peningkatan taraf hidup," .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/a> legal:pointHasText <http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/a/text> .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/b> .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/b/text> legal:textHasTextString "pembangunan daerah," .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/b> legal:pointHasText <http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/b/text> .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/c> .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/c/text> legal:textHasTextString ". keseimbangan penyebaran penduduk," .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/c> legal:pointHasText <http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/c/text> .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/d> .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/d/text> legal:textHasTextString "pembangunan yang merata di seluruh Indonesia," .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/d> legal:pointHasText <http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/d/text> .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/e> .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/e/text> legal:textHasTextString "pemanfaatan sumber-sumber alam dan tenaga manusia," .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/e> legal:pointHasText <http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/e/text> .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/f> .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/f> legal:pointHasKey "f" .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/f/text> legal:textHasTextString "kesatuan dan persatuan bangsa :" .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/f> legal:pointHasText <http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/f/text> .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/g> .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/g> legal:pointHasKey "g" .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/g/text> legal:textHasTextString "memperkuat pertahanan dan keamanan nasional." .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/g> legal:pointHasText <http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/g/text> .
+<http://example.org/legal/document/uu/1972/3/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0003> .
+<http://example.org/legal/document/uu/1972/3/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/1972/3/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728> .
+<http://example.org/legal/document/uu/1972/3> legal:documentHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0003> .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728> legal:pasalVersionHasVersionDate "1972-07-28"^^xsd:date .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728> legal:pasalVersionHasRawText "(1). Penyelenggaraan kebijaksanaan transmigrasi digunakan untuk sebesar-besar kemakmuran rakyat, dengan mengingat segi- segi :\na. kemanusiaan,\nb. keadilan:\nc. kekeluargaan,\nd. swadaya, swakarya dan swa-sembada masyarakat.\n\n(2). Penyelenggaraan kebijaksanaan transmigrasi diatur lebih lanjut dalam Peraturan Pemerintah berdasarkan ketentuan- ketentuan dalam Undang-undang ini." .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat> .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001> .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001> legal:ayatHasRawText "Penyelenggaraan kebijaksanaan transmigrasi digunakan untuk sebesar-besar kemakmuran rakyat, dengan mengingat segi- segi :\na. kemanusiaan,\nb. keadilan:\nc. kekeluargaan,\nd. swadaya, swakarya dan swa-sembada masyarakat.\n" .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point> .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/description> legal:textHasTextString "Penyelenggaraan kebijaksanaan transmigrasi digunakan untuk sebesar-besar kemakmuran rakyat, dengan mengingat segi- segi :" .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/description> .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/a> .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/a/text> legal:textHasTextString "kemanusiaan," .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/a/text> .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/b> .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/b/text> legal:textHasTextString "keadilan:" .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/b> legal:pointHasText <http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/b/text> .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/c> .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/c/text> legal:textHasTextString "kekeluargaan," .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/c> legal:pointHasText <http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/c/text> .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/d> .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/d/text> legal:textHasTextString "swadaya, swakarya dan swa-sembada masyarakat." .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/d> legal:pointHasText <http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/d/text> .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0002> .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0002> legal:ayatHasRawText "Penyelenggaraan kebijaksanaan transmigrasi diatur lebih lanjut dalam Peraturan Pemerintah berdasarkan ketentuan- ketentuan dalam Undang-undang ini." .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0002/text> legal:textHasTextString "Penyelenggaraan kebijaksanaan transmigrasi diatur lebih lanjut dalam Peraturan Pemerintah berdasarkan ketentuan- ketentuan dalam Undang-undang ini." .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0002/text> .
+<http://example.org/legal/document/uu/1972/3/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1972/3/bab/0003> .
+<http://example.org/legal/document/uu/1972/3/bab/0003> legal:babHasKey 3 .
+<http://example.org/legal/document/uu/1972/3/bab/0003> legal:babHasTitle "ORGANISASI" .
+<http://example.org/legal/document/uu/1972/3/bab/0003> legal:babHasPasalSet <http://example.org/legal/document/uu/1972/3/bab/0003/pasals> .
+<http://example.org/legal/document/uu/1972/3/bab/0003/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0004> .
+<http://example.org/legal/document/uu/1972/3/pasal/0004> legal:pasalHasKey 4 .
+<http://example.org/legal/document/uu/1972/3/pasal/0004> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1972/3/pasal/0004/version/19720728> .
+<http://example.org/legal/document/uu/1972/3> legal:documentHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0004> .
+<http://example.org/legal/document/uu/1972/3/pasal/0004/version/19720728> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1972/3/pasal/0004/version/19720728> legal:pasalVersionHasVersionDate "1972-07-28"^^xsd:date .
+<http://example.org/legal/document/uu/1972/3/pasal/0004/version/19720728> legal:pasalVersionHasRawText "Susunan, tugas, wewenang dan tanggung-jawab organisasi penyelenggaraan transmigrasi ditetapkan lebih lanjut dengan Peraturan Pemerintah. PRESIDEN REPUBLIK INDONESIA -.5-" .
+<http://example.org/legal/document/uu/1972/3/pasal/0004/version/19720728/text> legal:textHasTextString "Susunan, tugas, wewenang dan tanggung-jawab organisasi penyelenggaraan transmigrasi ditetapkan lebih lanjut dengan Peraturan Pemerintah. PRESIDEN REPUBLIK INDONESIA -.5-" .
+<http://example.org/legal/document/uu/1972/3/pasal/0004/version/19720728> legal:pasalVersionHasText <http://example.org/legal/document/uu/1972/3/pasal/0004/version/19720728/text> .
+<http://example.org/legal/document/uu/1972/3/bab/0003/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0005> .
+<http://example.org/legal/document/uu/1972/3/pasal/0005> legal:pasalHasKey 5 .
+<http://example.org/legal/document/uu/1972/3/pasal/0005> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728> .
+<http://example.org/legal/document/uu/1972/3> legal:documentHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0005> .
+<http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728> legal:pasalVersionHasVersionDate "1972-07-28"^^xsd:date .
+<http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728> legal:pasalVersionHasRawText "(1). Pelaksanaan transmigrasi oleh Instansi Pemerintah di luar sebagaimana dimaksud dalam Pasal 4 Undang-undang ini, dilakukan setelah mendapat persetujuan dari Menteri.\n(2). Pelaksanaan transmigrasi di luar sebagaimana yang disebut pada ayat (1) Pasal ini harus memiliki surat ijin dari Menteri." .
+<http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728/ayat> .
+<http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728/ayat/0001> .
+<http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728/ayat/0001> legal:ayatHasRawText "Pelaksanaan transmigrasi oleh Instansi Pemerintah di luar sebagaimana dimaksud dalam Pasal 4 Undang-undang ini, dilakukan setelah mendapat persetujuan dari Menteri." .
+<http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728/ayat/0001/text> legal:textHasTextString "Pelaksanaan transmigrasi oleh Instansi Pemerintah di luar sebagaimana dimaksud dalam Pasal 4 Undang-undang ini, dilakukan setelah mendapat persetujuan dari Menteri." .
+<http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728/ayat/0001/text> .
+<http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1972/3/pasal/0004> .
+<http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728/ayat/0002> .
+<http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728/ayat/0002> legal:ayatHasRawText "Pelaksanaan transmigrasi di luar sebagaimana yang disebut pada ayat (1) Pasal ini harus memiliki surat ijin dari Menteri." .
+<http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728/ayat/0002/text> legal:textHasTextString "Pelaksanaan transmigrasi di luar sebagaimana yang disebut pada ayat (1) Pasal ini harus memiliki surat ijin dari Menteri." .
+<http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728/ayat/0002/text> .
+<http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728/ayat/0001> .
+<http://example.org/legal/document/uu/1972/3/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1972/3/bab/0004> .
+<http://example.org/legal/document/uu/1972/3/bab/0004> legal:babHasKey 4 .
+<http://example.org/legal/document/uu/1972/3/bab/0004> legal:babHasTitle "PEMBIAYAAN" .
+<http://example.org/legal/document/uu/1972/3/bab/0004> legal:babHasPasalSet <http://example.org/legal/document/uu/1972/3/bab/0004/pasals> .
+<http://example.org/legal/document/uu/1972/3/bab/0004/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0006> .
+<http://example.org/legal/document/uu/1972/3/pasal/0006> legal:pasalHasKey 6 .
+<http://example.org/legal/document/uu/1972/3/pasal/0006> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1972/3/pasal/0006/version/19720728> .
+<http://example.org/legal/document/uu/1972/3> legal:documentHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0006> .
+<http://example.org/legal/document/uu/1972/3/pasal/0006/version/19720728> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1972/3/pasal/0006/version/19720728> legal:pasalVersionHasVersionDate "1972-07-28"^^xsd:date .
+<http://example.org/legal/document/uu/1972/3/pasal/0006/version/19720728> legal:pasalVersionHasRawText "(dl) Biaya penyelenggaraan transmigrasi yang diselenggarakan oleh Pemerintah pada dasarnya diperoleh dari Anggaran Pendapatan dan Belanja Negara : (2) Pembiayaan penyelenggaraan transmigrasi disesuaikan dengan Jenis-jenis transmigrasi." .
+<http://example.org/legal/document/uu/1972/3/pasal/0006/version/19720728/text> legal:textHasTextString "(dl) Biaya penyelenggaraan transmigrasi yang diselenggarakan oleh Pemerintah pada dasarnya diperoleh dari Anggaran Pendapatan dan Belanja Negara : (2) Pembiayaan penyelenggaraan transmigrasi disesuaikan dengan Jenis-jenis transmigrasi." .
+<http://example.org/legal/document/uu/1972/3/pasal/0006/version/19720728> legal:pasalVersionHasText <http://example.org/legal/document/uu/1972/3/pasal/0006/version/19720728/text> .
+<http://example.org/legal/document/uu/1972/3/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1972/3/bab/0005> .
+<http://example.org/legal/document/uu/1972/3/bab/0005> legal:babHasKey 5 .
+<http://example.org/legal/document/uu/1972/3/bab/0005> legal:babHasTitle "HAK HAK DAN KEWAJIBAN TRANSMIGRAN" .
+<http://example.org/legal/document/uu/1972/3/bab/0005> legal:babHasPasalSet <http://example.org/legal/document/uu/1972/3/bab/0005/pasals> .
+<http://example.org/legal/document/uu/1972/3/bab/0005/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0007> .
+<http://example.org/legal/document/uu/1972/3/pasal/0007> legal:pasalHasKey 7 .
+<http://example.org/legal/document/uu/1972/3/pasal/0007> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1972/3/pasal/0007/version/19720728> .
+<http://example.org/legal/document/uu/1972/3> legal:documentHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0007> .
+<http://example.org/legal/document/uu/1972/3/pasal/0007/version/19720728> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1972/3/pasal/0007/version/19720728> legal:pasalVersionHasVersionDate "1972-07-28"^^xsd:date .
+<http://example.org/legal/document/uu/1972/3/pasal/0007/version/19720728> legal:pasalVersionHasRawText "Transmigran berhak mendapatkan tanah pekarangan dan/atau tanah pertanian dengan hak-hak atas tanah menurut ketentuan-ketentuan yang berlaku." .
+<http://example.org/legal/document/uu/1972/3/pasal/0007/version/19720728/text> legal:textHasTextString "Transmigran berhak mendapatkan tanah pekarangan dan/atau tanah pertanian dengan hak-hak atas tanah menurut ketentuan-ketentuan yang berlaku." .
+<http://example.org/legal/document/uu/1972/3/pasal/0007/version/19720728> legal:pasalVersionHasText <http://example.org/legal/document/uu/1972/3/pasal/0007/version/19720728/text> .
+<http://example.org/legal/document/uu/1972/3/bab/0005/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0008> .
+<http://example.org/legal/document/uu/1972/3/pasal/0008> legal:pasalHasKey 8 .
+<http://example.org/legal/document/uu/1972/3/pasal/0008> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1972/3/pasal/0008/version/19720728> .
+<http://example.org/legal/document/uu/1972/3> legal:documentHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0008> .
+<http://example.org/legal/document/uu/1972/3/pasal/0008/version/19720728> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1972/3/pasal/0008/version/19720728> legal:pasalVersionHasVersionDate "1972-07-28"^^xsd:date .
+<http://example.org/legal/document/uu/1972/3/pasal/0008/version/19720728> legal:pasalVersionHasRawText "Hak-hak transmigran untuk mendapatkan bantuan, bimbingan dan pembinaan diatur dengan Peraturan Pemerintah. PRESIDEN REPUBLIK INDONESIA -6-" .
+<http://example.org/legal/document/uu/1972/3/pasal/0008/version/19720728/text> legal:textHasTextString "Hak-hak transmigran untuk mendapatkan bantuan, bimbingan dan pembinaan diatur dengan Peraturan Pemerintah. PRESIDEN REPUBLIK INDONESIA -6-" .
+<http://example.org/legal/document/uu/1972/3/pasal/0008/version/19720728> legal:pasalVersionHasText <http://example.org/legal/document/uu/1972/3/pasal/0008/version/19720728/text> .
+<http://example.org/legal/document/uu/1972/3/bab/0005/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0009> .
+<http://example.org/legal/document/uu/1972/3/pasal/0009> legal:pasalHasKey 9 .
+<http://example.org/legal/document/uu/1972/3/pasal/0009> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1972/3/pasal/0009/version/19720728> .
+<http://example.org/legal/document/uu/1972/3> legal:documentHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0009> .
+<http://example.org/legal/document/uu/1972/3/pasal/0009/version/19720728> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1972/3/pasal/0009/version/19720728> legal:pasalVersionHasVersionDate "1972-07-28"^^xsd:date .
+<http://example.org/legal/document/uu/1972/3/pasal/0009/version/19720728> legal:pasalVersionHasRawText "Transmigran wajib mematuhi semua peraturan yang berlaku bagi penyelenggaraan transmigrasi." .
+<http://example.org/legal/document/uu/1972/3/pasal/0009/version/19720728/text> legal:textHasTextString "Transmigran wajib mematuhi semua peraturan yang berlaku bagi penyelenggaraan transmigrasi." .
+<http://example.org/legal/document/uu/1972/3/pasal/0009/version/19720728> legal:pasalVersionHasText <http://example.org/legal/document/uu/1972/3/pasal/0009/version/19720728/text> .
+<http://example.org/legal/document/uu/1972/3/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1972/3/bab/0006> .
+<http://example.org/legal/document/uu/1972/3/bab/0006> legal:babHasKey 6 .
+<http://example.org/legal/document/uu/1972/3/bab/0006> legal:babHasTitle "DAERAH ASAL DAN DAERAH TRANSMIGRASI" .
+<http://example.org/legal/document/uu/1972/3/bab/0006> legal:babHasPasalSet <http://example.org/legal/document/uu/1972/3/bab/0006/pasals> .
+<http://example.org/legal/document/uu/1972/3/bab/0006/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0010> .
+<http://example.org/legal/document/uu/1972/3/pasal/0010> legal:pasalHasKey 10 .
+<http://example.org/legal/document/uu/1972/3/pasal/0010> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1972/3/pasal/0010/version/19720728> .
+<http://example.org/legal/document/uu/1972/3> legal:documentHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0010> .
+<http://example.org/legal/document/uu/1972/3/pasal/0010/version/19720728> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1972/3/pasal/0010/version/19720728> legal:pasalVersionHasVersionDate "1972-07-28"^^xsd:date .
+<http://example.org/legal/document/uu/1972/3/pasal/0010/version/19720728> legal:pasalVersionHasRawText "Berdasarkan pertimbangan-pertimbangan Sosial, Ekonomi dan Pertahanan-Keamanan serta atas usul Menteri, Daerah yang dipandang perlu dipindahkan penduduknya, dapat ditetapkan sebagai Daerah Asal dengan Keputusan Presiden." .
+<http://example.org/legal/document/uu/1972/3/pasal/0010/version/19720728/text> legal:textHasTextString "Berdasarkan pertimbangan-pertimbangan Sosial, Ekonomi dan Pertahanan-Keamanan serta atas usul Menteri, Daerah yang dipandang perlu dipindahkan penduduknya, dapat ditetapkan sebagai Daerah Asal dengan Keputusan Presiden." .
+<http://example.org/legal/document/uu/1972/3/pasal/0010/version/19720728> legal:pasalVersionHasText <http://example.org/legal/document/uu/1972/3/pasal/0010/version/19720728/text> .
+<http://example.org/legal/document/uu/1972/3/bab/0006/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0011> .
+<http://example.org/legal/document/uu/1972/3/pasal/0011> legal:pasalHasKey 11 .
+<http://example.org/legal/document/uu/1972/3/pasal/0011> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1972/3/pasal/0011/version/19720728> .
+<http://example.org/legal/document/uu/1972/3> legal:documentHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0011> .
+<http://example.org/legal/document/uu/1972/3/pasal/0011/version/19720728> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1972/3/pasal/0011/version/19720728> legal:pasalVersionHasVersionDate "1972-07-28"^^xsd:date .
+<http://example.org/legal/document/uu/1972/3/pasal/0011/version/19720728> legal:pasalVersionHasRawText "(3). Akibat pembebasan hak atas tanah tersebut pada ayat (2) Pasal ini, kepada yang berhak dapat diberikan ganti-rugi sesuai dengan ketentuan yang berlaku. PRESIDEN REPUBLIK INDONESIA -7-" .
+<http://example.org/legal/document/uu/1972/3/pasal/0011/version/19720728> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1972/3/pasal/0011/version/19720728/ayat> .
+<http://example.org/legal/document/uu/1972/3/pasal/0011/version/19720728/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1972/3/pasal/0011/version/19720728/ayat/0003> .
+<http://example.org/legal/document/uu/1972/3/pasal/0011/version/19720728/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/1972/3/pasal/0011/version/19720728/ayat/0003> legal:ayatHasRawText "Akibat pembebasan hak atas tanah tersebut pada ayat (2) Pasal ini, kepada yang berhak dapat diberikan ganti-rugi sesuai dengan ketentuan yang berlaku. PRESIDEN REPUBLIK INDONESIA -7-" .
+<http://example.org/legal/document/uu/1972/3/pasal/0011/version/19720728/ayat/0003/text> legal:textHasTextString "Akibat pembebasan hak atas tanah tersebut pada ayat (2) Pasal ini, kepada yang berhak dapat diberikan ganti-rugi sesuai dengan ketentuan yang berlaku. PRESIDEN REPUBLIK INDONESIA -7-" .
+<http://example.org/legal/document/uu/1972/3/pasal/0011/version/19720728/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1972/3/pasal/0011/version/19720728/ayat/0003/text> .
+<http://example.org/legal/document/uu/1972/3/pasal/0011/version/19720728/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1972/3/pasal/0011/version/19720728/ayat/0002> .
+<http://example.org/legal/document/uu/1972/3/bab/0006/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0012> .
+<http://example.org/legal/document/uu/1972/3/pasal/0012> legal:pasalHasKey 12 .
+<http://example.org/legal/document/uu/1972/3/pasal/0012> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1972/3/pasal/0012/version/19720728> .
+<http://example.org/legal/document/uu/1972/3> legal:documentHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0012> .
+<http://example.org/legal/document/uu/1972/3/pasal/0012/version/19720728> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1972/3/pasal/0012/version/19720728> legal:pasalVersionHasVersionDate "1972-07-28"^^xsd:date .
+<http://example.org/legal/document/uu/1972/3/pasal/0012/version/19720728> legal:pasalVersionHasRawText "(d) Dalam jangka waktu selambat-lambatnya 5 tahun terhitung sejak tanggal penetapannya, daerah tersebut pada ayat (1) Pasal 11 Undang-undang ini harus sudah dibuka untuk penempatan transmigran atau keperluan lainnya yang berhubungan dengan penyelenggaraan transmigrasi. (2) Apabila sesuatu Daerah Transmigrasi sampai dengan jangka waktu yang telah ditentukan pada ayat (1) Pasal ini tidak dipergunakan sebagaimana mestinya, maka status Daerah Transmigrasi kembali menjadi tanah yang dikuasai langsung oleh Negara." .
+<http://example.org/legal/document/uu/1972/3/pasal/0012/version/19720728/text> legal:textHasTextString "(d) Dalam jangka waktu selambat-lambatnya 5 tahun terhitung sejak tanggal penetapannya, daerah tersebut pada ayat (1) Pasal 11 Undang-undang ini harus sudah dibuka untuk penempatan transmigran atau keperluan lainnya yang berhubungan dengan penyelenggaraan transmigrasi. (2) Apabila sesuatu Daerah Transmigrasi sampai dengan jangka waktu yang telah ditentukan pada ayat (1) Pasal ini tidak dipergunakan sebagaimana mestinya, maka status Daerah Transmigrasi kembali menjadi tanah yang dikuasai langsung oleh Negara." .
+<http://example.org/legal/document/uu/1972/3/pasal/0012/version/19720728> legal:pasalVersionHasText <http://example.org/legal/document/uu/1972/3/pasal/0012/version/19720728/text> .
+<http://example.org/legal/document/uu/1972/3/pasal/0012/version/19720728/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1972/3/pasal/0012/version/19720728/ayat/0001> .
+<http://example.org/legal/document/uu/1972/3/pasal/0012/version/19720728/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1972/3/pasal/0011> .
+<http://example.org/legal/document/uu/1972/3/bab/0006/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0013> .
+<http://example.org/legal/document/uu/1972/3/pasal/0013> legal:pasalHasKey 13 .
+<http://example.org/legal/document/uu/1972/3/pasal/0013> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1972/3/pasal/0013/version/19720728> .
+<http://example.org/legal/document/uu/1972/3> legal:documentHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0013> .
+<http://example.org/legal/document/uu/1972/3/pasal/0013/version/19720728> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1972/3/pasal/0013/version/19720728> legal:pasalVersionHasVersionDate "1972-07-28"^^xsd:date .
+<http://example.org/legal/document/uu/1972/3/pasal/0013/version/19720728> legal:pasalVersionHasRawText "Kepada penduduk setempat diberikan kesempatan untuk dengan sukarela berpisah ke Daerah Transmigrasi dan pada prinsipnya diperlakukan sebagai transmigran." .
+<http://example.org/legal/document/uu/1972/3/pasal/0013/version/19720728/text> legal:textHasTextString "Kepada penduduk setempat diberikan kesempatan untuk dengan sukarela berpisah ke Daerah Transmigrasi dan pada prinsipnya diperlakukan sebagai transmigran." .
+<http://example.org/legal/document/uu/1972/3/pasal/0013/version/19720728> legal:pasalVersionHasText <http://example.org/legal/document/uu/1972/3/pasal/0013/version/19720728/text> .
+<http://example.org/legal/document/uu/1972/3/bab/0006/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0014> .
+<http://example.org/legal/document/uu/1972/3/pasal/0014> legal:pasalHasKey 14 .
+<http://example.org/legal/document/uu/1972/3/pasal/0014> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728> .
+<http://example.org/legal/document/uu/1972/3> legal:documentHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0014> .
+<http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728> legal:pasalVersionHasVersionDate "1972-07-28"^^xsd:date .
+<http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728> legal:pasalVersionHasRawText "Pembinaan dan pengembangan masyarakat Daerah Transmigrasi diselaraskan dengan Pola Pembangunan Masyarakat Desa :\na. Di bidang ekonomi dijuruskan ke arah tercapainya tingkatan swa-sembada berdasarkan azas-azas perkoperasian :\nb. Di bidang sosial budaya dijuruskan ke arah tercapainya asimilasi dan integrasi yang menyeluruh.\nc. Di bidang mental spiritual dijuruskan ke arah pembinaan manusia yang bertagwa kepada Tuhan Yang Maha Esa. PRESIDEN REPUBLIK INDONESIA -8-\n" .
+<http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point> .
+<http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point/description> legal:textHasTextString "Pembinaan dan pengembangan masyarakat Daerah Transmigrasi diselaraskan dengan Pola Pembangunan Masyarakat Desa :" .
+<http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point/description> .
+<http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point/a> .
+<http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point/a/text> legal:textHasTextString "Di bidang ekonomi dijuruskan ke arah tercapainya tingkatan swa-sembada berdasarkan azas-azas perkoperasian :" .
+<http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point/a> legal:pointHasText <http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point/a/text> .
+<http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point/b> .
+<http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point/b/text> legal:textHasTextString "Di bidang sosial budaya dijuruskan ke arah tercapainya asimilasi dan integrasi yang menyeluruh." .
+<http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point/b> legal:pointHasText <http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point/b/text> .
+<http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point/c> .
+<http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point/c/text> legal:textHasTextString "Di bidang mental spiritual dijuruskan ke arah pembinaan manusia yang bertagwa kepada Tuhan Yang Maha Esa. PRESIDEN REPUBLIK INDONESIA -8-" .
+<http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point/c> legal:pointHasText <http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point/c/text> .
+<http://example.org/legal/document/uu/1972/3/bab/0006/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0015> .
+<http://example.org/legal/document/uu/1972/3/pasal/0015> legal:pasalHasKey 15 .
+<http://example.org/legal/document/uu/1972/3/pasal/0015> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1972/3/pasal/0015/version/19720728> .
+<http://example.org/legal/document/uu/1972/3> legal:documentHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0015> .
+<http://example.org/legal/document/uu/1972/3/pasal/0015/version/19720728> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1972/3/pasal/0015/version/19720728> legal:pasalVersionHasVersionDate "1972-07-28"^^xsd:date .
+<http://example.org/legal/document/uu/1972/3/pasal/0015/version/19720728> legal:pasalVersionHasRawText "(dl) Dengan memperhatikan faktor-faktor sosial, ekonomi masyarakat Daerah Transmigrasi dan memperhatikan pula pertimbangan-pertimbangan Pemerintah Daerah Tingkat I yang bersangkutan, dalam jangka waktu 5 tahun terhitung sejak saat penempatan, Menteri menyerahkan pengurusan seluruh atau sebagian Proyek Transmigrasi kepada Menteri Dalam Negeri. (2) Sejak penyerahan Proyek Transmigrasi tersebut ayat (1), Pasal ini status transmigran dan Proyek Transmigrasi hapus." .
+<http://example.org/legal/document/uu/1972/3/pasal/0015/version/19720728/text> legal:textHasTextString "(dl) Dengan memperhatikan faktor-faktor sosial, ekonomi masyarakat Daerah Transmigrasi dan memperhatikan pula pertimbangan-pertimbangan Pemerintah Daerah Tingkat I yang bersangkutan, dalam jangka waktu 5 tahun terhitung sejak saat penempatan, Menteri menyerahkan pengurusan seluruh atau sebagian Proyek Transmigrasi kepada Menteri Dalam Negeri. (2) Sejak penyerahan Proyek Transmigrasi tersebut ayat (1), Pasal ini status transmigran dan Proyek Transmigrasi hapus." .
+<http://example.org/legal/document/uu/1972/3/pasal/0015/version/19720728> legal:pasalVersionHasText <http://example.org/legal/document/uu/1972/3/pasal/0015/version/19720728/text> .
+<http://example.org/legal/document/uu/1972/3/pasal/0015/version/19720728/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1972/3/pasal/0015/version/19720728/ayat/0001> .
+<http://example.org/legal/document/uu/1972/3/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1972/3/bab/0007> .
+<http://example.org/legal/document/uu/1972/3/bab/0007> legal:babHasKey 7 .
+<http://example.org/legal/document/uu/1972/3/bab/0007> legal:babHasTitle "KETENTUAN PIDANA" .
+<http://example.org/legal/document/uu/1972/3/bab/0007> legal:babHasPasalSet <http://example.org/legal/document/uu/1972/3/bab/0007/pasals> .
+<http://example.org/legal/document/uu/1972/3/bab/0007/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0016> .
+<http://example.org/legal/document/uu/1972/3/pasal/0016> legal:pasalHasKey 16 .
+<http://example.org/legal/document/uu/1972/3/pasal/0016> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728> .
+<http://example.org/legal/document/uu/1972/3> legal:documentHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0016> .
+<http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728> legal:pasalVersionHasVersionDate "1972-07-28"^^xsd:date .
+<http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728> legal:pasalVersionHasRawText "Barang siapa melaksanakan transmigrasi tanpa ijin/persetujuan Menteri, dihukum :\n1. dengan hukuman kurungan selama-lamanya 1 bulan dan/atau denda setinggi-tingginya Rp. 100.000,-\n2. dengan hukuman kurungan selama-lamanya 9 bulan dan/atau denda setinggi-tingginya Rp. 500.000,- apabila perbuatan tersebut juga tidak memenuhi ketentuan-ketentuan Pasal 7 dan 8 Undang-undang ini. PRESIDEN REPUBLIK INDONESIA -9-\n" .
+<http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728/point> .
+<http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728/point/description> legal:textHasTextString "Barang siapa melaksanakan transmigrasi tanpa ijin/persetujuan Menteri, dihukum :" .
+<http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728/point/description> .
+<http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728/point/0001> .
+<http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728/point/0001/text> legal:textHasTextString "dengan hukuman kurungan selama-lamanya 1 bulan dan/atau denda setinggi-tingginya Rp. 100.000,-" .
+<http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728/point/0001/text> .
+<http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728/point/0002> .
+<http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728/point/0002/text> legal:textHasTextString "dengan hukuman kurungan selama-lamanya 9 bulan dan/atau denda setinggi-tingginya Rp. 500.000,- apabila perbuatan tersebut juga tidak memenuhi ketentuan-ketentuan Pasal 7 dan 8 Undang-undang ini. PRESIDEN REPUBLIK INDONESIA -9-" .
+<http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728/point/0002/text> .
+<http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728/point/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1972/3/pasal/0007> .
+<http://example.org/legal/document/uu/1972/3/bab/0007/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0017> .
+<http://example.org/legal/document/uu/1972/3/pasal/0017> legal:pasalHasKey 17 .
+<http://example.org/legal/document/uu/1972/3/pasal/0017> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1972/3/pasal/0017/version/19720728> .
+<http://example.org/legal/document/uu/1972/3> legal:documentHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0017> .
+<http://example.org/legal/document/uu/1972/3/pasal/0017/version/19720728> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1972/3/pasal/0017/version/19720728> legal:pasalVersionHasVersionDate "1972-07-28"^^xsd:date .
+<http://example.org/legal/document/uu/1972/3/pasal/0017/version/19720728> legal:pasalVersionHasRawText "Barang siapa memiliki atau atas dasar ijin/persetujuan untuk melaksanakan transmigrasi, dengan sengaja tidak memberikan tanah pekarangan atau tanah pertanian atau tidak memberikan bantuan atau bimbingan atau hak-hak lainnya menurut ketentuan- ketentuan Pasal 7 dan 8 Undang-undang ini, dihukum dengan hukuman kurungan selama-lamanya 6 bulan dan/atau denda setinggi-tingginya Rp. 300.000,-" .
+<http://example.org/legal/document/uu/1972/3/pasal/0017/version/19720728/text> legal:textHasTextString "Barang siapa memiliki atau atas dasar ijin/persetujuan untuk melaksanakan transmigrasi, dengan sengaja tidak memberikan tanah pekarangan atau tanah pertanian atau tidak memberikan bantuan atau bimbingan atau hak-hak lainnya menurut ketentuan- ketentuan Pasal 7 dan 8 Undang-undang ini, dihukum dengan hukuman kurungan selama-lamanya 6 bulan dan/atau denda setinggi-tingginya Rp. 300.000,-" .
+<http://example.org/legal/document/uu/1972/3/pasal/0017/version/19720728> legal:pasalVersionHasText <http://example.org/legal/document/uu/1972/3/pasal/0017/version/19720728/text> .
+<http://example.org/legal/document/uu/1972/3/pasal/0017/version/19720728/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1972/3/pasal/0007> .
+<http://example.org/legal/document/uu/1972/3/bab/0007/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0018> .
+<http://example.org/legal/document/uu/1972/3/pasal/0018> legal:pasalHasKey 18 .
+<http://example.org/legal/document/uu/1972/3/pasal/0018> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1972/3/pasal/0018/version/19720728> .
+<http://example.org/legal/document/uu/1972/3> legal:documentHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0018> .
+<http://example.org/legal/document/uu/1972/3/pasal/0018/version/19720728> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1972/3/pasal/0018/version/19720728> legal:pasalVersionHasVersionDate "1972-07-28"^^xsd:date .
+<http://example.org/legal/document/uu/1972/3/pasal/0018/version/19720728> legal:pasalVersionHasRawText "Barang siapa dengan sengaja menghambat penyelenggaraan transmigrasi yang mengakibatkan kerugian-kerugian bagi pelaksana atau transmigran dihukum dengan hukuman kurungan selama- lamanya 6 bulan dan/atau denda setinggi-tingginya Rp. 300.000,-" .
+<http://example.org/legal/document/uu/1972/3/pasal/0018/version/19720728/text> legal:textHasTextString "Barang siapa dengan sengaja menghambat penyelenggaraan transmigrasi yang mengakibatkan kerugian-kerugian bagi pelaksana atau transmigran dihukum dengan hukuman kurungan selama- lamanya 6 bulan dan/atau denda setinggi-tingginya Rp. 300.000,-" .
+<http://example.org/legal/document/uu/1972/3/pasal/0018/version/19720728> legal:pasalVersionHasText <http://example.org/legal/document/uu/1972/3/pasal/0018/version/19720728/text> .
+<http://example.org/legal/document/uu/1972/3/bab/0007/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0019> .
+<http://example.org/legal/document/uu/1972/3/pasal/0019> legal:pasalHasKey 19 .
+<http://example.org/legal/document/uu/1972/3/pasal/0019> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1972/3/pasal/0019/version/19720728> .
+<http://example.org/legal/document/uu/1972/3> legal:documentHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0019> .
+<http://example.org/legal/document/uu/1972/3/pasal/0019/version/19720728> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1972/3/pasal/0019/version/19720728> legal:pasalVersionHasVersionDate "1972-07-28"^^xsd:date .
+<http://example.org/legal/document/uu/1972/3/pasal/0019/version/19720728> legal:pasalVersionHasRawText "Barang siapa karena kekhilapannya menyebabkan tidak tenteram atau sengsaranya transmigran beserta keluarganya, dihukum dengan hukuman kurungan selama-lamanya 1 bulan dan/atau denda setinggi-tingginya Rp. 100.000,-" .
+<http://example.org/legal/document/uu/1972/3/pasal/0019/version/19720728/text> legal:textHasTextString "Barang siapa karena kekhilapannya menyebabkan tidak tenteram atau sengsaranya transmigran beserta keluarganya, dihukum dengan hukuman kurungan selama-lamanya 1 bulan dan/atau denda setinggi-tingginya Rp. 100.000,-" .
+<http://example.org/legal/document/uu/1972/3/pasal/0019/version/19720728> legal:pasalVersionHasText <http://example.org/legal/document/uu/1972/3/pasal/0019/version/19720728/text> .
+<http://example.org/legal/document/uu/1972/3/bab/0007/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0020> .
+<http://example.org/legal/document/uu/1972/3/pasal/0020> legal:pasalHasKey 20 .
+<http://example.org/legal/document/uu/1972/3/pasal/0020> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1972/3/pasal/0020/version/19720728> .
+<http://example.org/legal/document/uu/1972/3> legal:documentHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0020> .
+<http://example.org/legal/document/uu/1972/3/pasal/0020/version/19720728> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1972/3/pasal/0020/version/19720728> legal:pasalVersionHasVersionDate "1972-07-28"^^xsd:date .
+<http://example.org/legal/document/uu/1972/3/pasal/0020/version/19720728> legal:pasalVersionHasRawText "Apabila tindak pidana tersebut dalam Pasal 16, 17, 18 dan 19 Undang-undang ini dilakukan oleh badan hukum, hukuman dijatuhkan kepada anggota pengurus. PRESIDEN REPUBLIK INDONESIA -10-" .
+<http://example.org/legal/document/uu/1972/3/pasal/0020/version/19720728/text> legal:textHasTextString "Apabila tindak pidana tersebut dalam Pasal 16, 17, 18 dan 19 Undang-undang ini dilakukan oleh badan hukum, hukuman dijatuhkan kepada anggota pengurus. PRESIDEN REPUBLIK INDONESIA -10-" .
+<http://example.org/legal/document/uu/1972/3/pasal/0020/version/19720728> legal:pasalVersionHasText <http://example.org/legal/document/uu/1972/3/pasal/0020/version/19720728/text> .
+<http://example.org/legal/document/uu/1972/3/pasal/0020/version/19720728/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1972/3/pasal/0016> .
+<http://example.org/legal/document/uu/1972/3/bab/0007/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0021> .
+<http://example.org/legal/document/uu/1972/3/pasal/0021> legal:pasalHasKey 21 .
+<http://example.org/legal/document/uu/1972/3/pasal/0021> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1972/3/pasal/0021/version/19720728> .
+<http://example.org/legal/document/uu/1972/3> legal:documentHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0021> .
+<http://example.org/legal/document/uu/1972/3/pasal/0021/version/19720728> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1972/3/pasal/0021/version/19720728> legal:pasalVersionHasVersionDate "1972-07-28"^^xsd:date .
+<http://example.org/legal/document/uu/1972/3/pasal/0021/version/19720728> legal:pasalVersionHasRawText "Peraturan Pemerintah sebagai pelaksanaan Undang-undang ini, dapat memuat sanksi pidana berupa hukuman kurungan selama- lamanya 1 bulan dan/atau denda setinggi-tingginya Rp. 100.000,-" .
+<http://example.org/legal/document/uu/1972/3/pasal/0021/version/19720728/text> legal:textHasTextString "Peraturan Pemerintah sebagai pelaksanaan Undang-undang ini, dapat memuat sanksi pidana berupa hukuman kurungan selama- lamanya 1 bulan dan/atau denda setinggi-tingginya Rp. 100.000,-" .
+<http://example.org/legal/document/uu/1972/3/pasal/0021/version/19720728> legal:pasalVersionHasText <http://example.org/legal/document/uu/1972/3/pasal/0021/version/19720728/text> .
+<http://example.org/legal/document/uu/1972/3/bab/0007/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0022> .
+<http://example.org/legal/document/uu/1972/3/pasal/0022> legal:pasalHasKey 22 .
+<http://example.org/legal/document/uu/1972/3/pasal/0022> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1972/3/pasal/0022/version/19720728> .
+<http://example.org/legal/document/uu/1972/3> legal:documentHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0022> .
+<http://example.org/legal/document/uu/1972/3/pasal/0022/version/19720728> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1972/3/pasal/0022/version/19720728> legal:pasalVersionHasVersionDate "1972-07-28"^^xsd:date .
+<http://example.org/legal/document/uu/1972/3/pasal/0022/version/19720728> legal:pasalVersionHasRawText "Tindak pidana tersebut dalam Pasal 16, 17, 18, 19, 20 dan 21 adalah dianggap sebagai kejahatan." .
+<http://example.org/legal/document/uu/1972/3/pasal/0022/version/19720728/text> legal:textHasTextString "Tindak pidana tersebut dalam Pasal 16, 17, 18, 19, 20 dan 21 adalah dianggap sebagai kejahatan." .
+<http://example.org/legal/document/uu/1972/3/pasal/0022/version/19720728> legal:pasalVersionHasText <http://example.org/legal/document/uu/1972/3/pasal/0022/version/19720728/text> .
+<http://example.org/legal/document/uu/1972/3/pasal/0022/version/19720728/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1972/3/pasal/0016> .
+<http://example.org/legal/document/uu/1972/3/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1972/3/bab/0008> .
+<http://example.org/legal/document/uu/1972/3/bab/0008> legal:babHasKey 8 .
+<http://example.org/legal/document/uu/1972/3/bab/0008> legal:babHasTitle "KETENTUAN PERALIHAN" .
+<http://example.org/legal/document/uu/1972/3/bab/0008> legal:babHasPasalSet <http://example.org/legal/document/uu/1972/3/bab/0008/pasals> .
+<http://example.org/legal/document/uu/1972/3/bab/0008/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0023> .
+<http://example.org/legal/document/uu/1972/3/pasal/0023> legal:pasalHasKey 23 .
+<http://example.org/legal/document/uu/1972/3/pasal/0023> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1972/3/pasal/0023/version/19720728> .
+<http://example.org/legal/document/uu/1972/3> legal:documentHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0023> .
+<http://example.org/legal/document/uu/1972/3/pasal/0023/version/19720728> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1972/3/pasal/0023/version/19720728> legal:pasalVersionHasVersionDate "1972-07-28"^^xsd:date .
+<http://example.org/legal/document/uu/1972/3/pasal/0023/version/19720728> legal:pasalVersionHasRawText "Selama peraturan-peraturan dan ketentuan-ketentuan pelaksanaan Undang-undang ini belum ditetapkan, maka peraturan-peraturan dan ketentuan-ketentuan yang telah ada tetap berlaku sepanjang tidak bertentangan dengan jiwa dan ketentuan-ketentuan dalam Undang-undang ini." .
+<http://example.org/legal/document/uu/1972/3/pasal/0023/version/19720728/text> legal:textHasTextString "Selama peraturan-peraturan dan ketentuan-ketentuan pelaksanaan Undang-undang ini belum ditetapkan, maka peraturan-peraturan dan ketentuan-ketentuan yang telah ada tetap berlaku sepanjang tidak bertentangan dengan jiwa dan ketentuan-ketentuan dalam Undang-undang ini." .
+<http://example.org/legal/document/uu/1972/3/pasal/0023/version/19720728> legal:pasalVersionHasText <http://example.org/legal/document/uu/1972/3/pasal/0023/version/19720728/text> .
+<http://example.org/legal/document/uu/1972/3/bab/0008/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0024> .
+<http://example.org/legal/document/uu/1972/3/pasal/0024> legal:pasalHasKey 24 .
+<http://example.org/legal/document/uu/1972/3/pasal/0024> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1972/3/pasal/0024/version/19720728> .
+<http://example.org/legal/document/uu/1972/3> legal:documentHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0024> .
+<http://example.org/legal/document/uu/1972/3/pasal/0024/version/19720728> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1972/3/pasal/0024/version/19720728> legal:pasalVersionHasVersionDate "1972-07-28"^^xsd:date .
+<http://example.org/legal/document/uu/1972/3/pasal/0024/version/19720728> legal:pasalVersionHasRawText "Transmigrasi yang sedang dilaksanakan oleh instansi, lembaga swasta dan perorangan pada saat mulai berlakunya Undang-undang ini, pelaksanaannya disesuaikan dengan ketentuan-ketentuan yang tercantum dalam Undang-undang ini yang selanjutnya diatur dengan Peraturan Pemerintah. PRESIDEN REPUBLIK INDONESIA 11 -" .
+<http://example.org/legal/document/uu/1972/3/pasal/0024/version/19720728/text> legal:textHasTextString "Transmigrasi yang sedang dilaksanakan oleh instansi, lembaga swasta dan perorangan pada saat mulai berlakunya Undang-undang ini, pelaksanaannya disesuaikan dengan ketentuan-ketentuan yang tercantum dalam Undang-undang ini yang selanjutnya diatur dengan Peraturan Pemerintah. PRESIDEN REPUBLIK INDONESIA 11 -" .
+<http://example.org/legal/document/uu/1972/3/pasal/0024/version/19720728> legal:pasalVersionHasText <http://example.org/legal/document/uu/1972/3/pasal/0024/version/19720728/text> .
+<http://example.org/legal/document/uu/1972/3/bab/0008/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0025> .
+<http://example.org/legal/document/uu/1972/3/pasal/0025> legal:pasalHasKey 25 .
+<http://example.org/legal/document/uu/1972/3/pasal/0025> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1972/3/pasal/0025/version/19720728> .
+<http://example.org/legal/document/uu/1972/3> legal:documentHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0025> .
+<http://example.org/legal/document/uu/1972/3/pasal/0025/version/19720728> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1972/3/pasal/0025/version/19720728> legal:pasalVersionHasVersionDate "1972-07-28"^^xsd:date .
+<http://example.org/legal/document/uu/1972/3/pasal/0025/version/19720728> legal:pasalVersionHasRawText "Persoalan-persoalan yang ada mengenai tanah dan ganti rugi pada saat mulai berlakunya Undang-undang ini, diselesaikan berdasarkan musyawarah dan ketentuan-ketentuan yang berlaku dan sepanjang tidak bertentangan dengan ketentuan-ketentuan dalam Undang- undang ini." .
+<http://example.org/legal/document/uu/1972/3/pasal/0025/version/19720728/text> legal:textHasTextString "Persoalan-persoalan yang ada mengenai tanah dan ganti rugi pada saat mulai berlakunya Undang-undang ini, diselesaikan berdasarkan musyawarah dan ketentuan-ketentuan yang berlaku dan sepanjang tidak bertentangan dengan ketentuan-ketentuan dalam Undang- undang ini." .
+<http://example.org/legal/document/uu/1972/3/pasal/0025/version/19720728> legal:pasalVersionHasText <http://example.org/legal/document/uu/1972/3/pasal/0025/version/19720728/text> .
+<http://example.org/legal/document/uu/1972/3/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1972/3/bab/0009> .
+<http://example.org/legal/document/uu/1972/3/bab/0009> legal:babHasKey 9 .
+<http://example.org/legal/document/uu/1972/3/bab/0009> legal:babHasTitle "KETENTUAN PENUTUP" .
+<http://example.org/legal/document/uu/1972/3/bab/0009> legal:babHasPasalSet <http://example.org/legal/document/uu/1972/3/bab/0009/pasals> .
+<http://example.org/legal/document/uu/1972/3/bab/0009/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0026> .
+<http://example.org/legal/document/uu/1972/3/pasal/0026> legal:pasalHasKey 26 .
+<http://example.org/legal/document/uu/1972/3/pasal/0026> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1972/3/pasal/0026/version/19720728> .
+<http://example.org/legal/document/uu/1972/3> legal:documentHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0026> .
+<http://example.org/legal/document/uu/1972/3/pasal/0026/version/19720728> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1972/3/pasal/0026/version/19720728> legal:pasalVersionHasVersionDate "1972-07-28"^^xsd:date .
+<http://example.org/legal/document/uu/1972/3/pasal/0026/version/19720728> legal:pasalVersionHasRawText "Hal-hal yang belum diatur dalam Undang-undang ini akan diatur lebih lanjut dengan Peraturan Perundangan." .
+<http://example.org/legal/document/uu/1972/3/pasal/0026/version/19720728/text> legal:textHasTextString "Hal-hal yang belum diatur dalam Undang-undang ini akan diatur lebih lanjut dengan Peraturan Perundangan." .
+<http://example.org/legal/document/uu/1972/3/pasal/0026/version/19720728> legal:pasalVersionHasText <http://example.org/legal/document/uu/1972/3/pasal/0026/version/19720728/text> .
+<http://example.org/legal/document/uu/1972/3/bab/0009/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0027> .
+<http://example.org/legal/document/uu/1972/3/pasal/0027> legal:pasalHasKey 27 .
+<http://example.org/legal/document/uu/1972/3/pasal/0027> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1972/3/pasal/0027/version/19720728> .
+<http://example.org/legal/document/uu/1972/3> legal:documentHasPasal <http://example.org/legal/document/uu/1972/3/pasal/0027> .
+<http://example.org/legal/document/uu/1972/3/pasal/0027/version/19720728> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1972/3/pasal/0027/version/19720728> legal:pasalVersionHasVersionDate "1972-07-28"^^xsd:date .
+<http://example.org/legal/document/uu/1972/3/pasal/0027/version/19720728> legal:pasalVersionHasRawText "Undang-undang ini dapat disebut Undang-undang Pokok Transmigrasi dan mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1972/3/pasal/0027/version/19720728/text> legal:textHasTextString "Undang-undang ini dapat disebut Undang-undang Pokok Transmigrasi dan mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1972/3/pasal/0027/version/19720728> legal:pasalVersionHasText <http://example.org/legal/document/uu/1972/3/pasal/0027/version/19720728/text> .
+<http://example.org/legal/document/uu/1972/3> legal:documentHasDisahkanDate "1972-07-28"^^xsd:date .
+<http://example.org/legal/document/uu/1972/3> legal:documentMengingat <http://example.org/legal/document/uu/1972/3/mengingat> .
+<http://example.org/legal/document/uu/1972/3/mengingat/text> legal:textHasTextString " ayat (1) dan Pasal 33 ayat (3) Undang-Undang Dasar 1945 2. Ketetapan Majelis Permusyawaratan Rakyat Sementara Republik Indonesia — Nomor XXINI/MPRS/1966 tentang Pembaharuan Kebijaksanaan Landasan Ekonomi, Keuangan dan Pembangunan : PRESIDEN REPUBLIK INDONESIA 2 3. Ketetapan Majelis Permusyawaratan Rakyat Sementara Republik Indonesia No. XXIV/MPRS/1966 tentang Kebijaksanaan dalam bidang Pertahanan Keamanan, 4. Ketetapan Majelis Permusyawaratan Rakyat Sementara Republik Indonesia No.XXVIII/MPRS/1966 tentang Kebijaksanaan Peningkatan Kesejahteraan Rakyat, 5. Undang-undang Nomor 5 Tahun 1960 tentang Peraturan Dasar Pokok-pokok Agraria (Lembaran Negara Tahun 1960 Nomor 104 : Tambahan Lembaran Negara Nomor 2043). 6. Undang-undang Nomor 12 Tahun 1967 tentang Pokok-pokok Perkoperasian (Lembaran Negara Tahun 1967 Nomor 23 : Tambahan Lembaran Negara Nomor 2832). Dengan persetujuan Dewan Perwakilan Rakyat Republik Indonesia MEMUTUSKAN : Mencabut : 1. Undang-undang Nomor 29 Prp. Tahun 1960 tentang Pokok- pokok Penyelenggaraan Transmigrasi (Lembaran Negara Republik Indonesia Tahun 1960 Nomor 86) jo. Undang- undang Nomor 1 Tahun 1961 : 2. Undang-undang Nomor 5 Prps. Tahun 1965 Tentang Gerakan Nasional Transmigrasi (Lembaran Negara Republik Indonesia Tahun 1965 Nomor 33) jo. Undang-undang Nomor 5 Tahun 1969. Menetapkan : UNDANG-UNDANG TENTANG KETENTUAN-KETENTUAN POKOK TRANSMIGRASI. PRESIDEN REPUBLIK INDONESIA 3" .
+<http://example.org/legal/document/uu/1972/3/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/1972/3/mengingat/text> .
+<http://example.org/legal/document/uu/1972/3> legal:documentMenimbang <http://example.org/legal/document/uu/1972/3/menimbang> .
+<http://example.org/legal/document/uu/1972/3/menimbang/text> legal:textHasTextString ". .a. bahwa dengan adanya pertambahan jumlah penduduk dan penyebaran penduduk yang tidak seimbang, baik dengan jumlah lapangan kerja yang tersedia maupun dengan potensi kekayaan alam Indonesia perlu diselenggarakan transmigrasi yang merupakan tanggung-jawab Nasional, sebagai salah satu jalan untuk suksesnya Pembangunan, Ketahanan dan Persatuan Nasional. b. bahwa untuk menyelenggarakan transmigrasi diperlukan ketentuan-ketentuan pokok yang sesuai dengan jiwa dan semangat Pancasila dan Undang-Undang Dasar 1945 dalam bentuk Undang-undang, c. bahwa Undang-undang Nomor 29 Prp. Tahun 1960 tentang Pokok-pokok Penyelenggaraan Transmigrasi, Undang-undang Nomor 5 Prps. Tahun 1965 tentang Gerakan Nasional Transmigrasi tidak sesuai lagi dengan perkembangan Pembangunan Nasional serta Regional dan oleh karena itu perlu segera dicabut." .
+<http://example.org/legal/document/uu/1972/3/menimbang> legal:menimbangHasText <http://example.org/legal/document/uu/1972/3/menimbang/text> .
+<http://example.org/legal/document/uu/1972/3> legal:documentHasDisahkanPengesah "JENDERAL T.N.I." .
+<http://example.org/legal/document/uu/1972/3> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/1972/3> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA" .
+<http://example.org/legal/document/uu/1972/3> a legal:Document .
+<http://example.org/legal/document/uu/1972/3/bab> a legal:BabSet .
+<http://example.org/legal/document/uu/1972/3/bab/0001> a legal:Bab .
+<http://example.org/legal/document/uu/1972/3/bab/0001/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1972/3/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/e> a legal:Point .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/f> a legal:Point .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/f/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/bab/0002> a legal:Bab .
+<http://example.org/legal/document/uu/1972/3/bab/0002/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1972/3/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/e> a legal:Point .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/f> a legal:Point .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/f/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/g> a legal:Point .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/g/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/bab/0003> a legal:Bab .
+<http://example.org/legal/document/uu/1972/3/bab/0003/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1972/3/pasal/0004> a legal:Pasal .
+<http://example.org/legal/document/uu/1972/3/pasal/0004/version/19720728> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1972/3/pasal/0004/version/19720728/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0005> a legal:Pasal .
+<http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/bab/0004> a legal:Bab .
+<http://example.org/legal/document/uu/1972/3/bab/0004/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1972/3/pasal/0006> a legal:Pasal .
+<http://example.org/legal/document/uu/1972/3/pasal/0006/version/19720728> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1972/3/pasal/0006/version/19720728/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/bab/0005> a legal:Bab .
+<http://example.org/legal/document/uu/1972/3/bab/0005/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1972/3/pasal/0007> a legal:Pasal .
+<http://example.org/legal/document/uu/1972/3/pasal/0007/version/19720728> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1972/3/pasal/0007/version/19720728/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0008> a legal:Pasal .
+<http://example.org/legal/document/uu/1972/3/pasal/0008/version/19720728> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1972/3/pasal/0008/version/19720728/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0009> a legal:Pasal .
+<http://example.org/legal/document/uu/1972/3/pasal/0009/version/19720728> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1972/3/pasal/0009/version/19720728/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/bab/0006> a legal:Bab .
+<http://example.org/legal/document/uu/1972/3/bab/0006/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1972/3/pasal/0010> a legal:Pasal .
+<http://example.org/legal/document/uu/1972/3/pasal/0010/version/19720728> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1972/3/pasal/0010/version/19720728/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0011> a legal:Pasal .
+<http://example.org/legal/document/uu/1972/3/pasal/0011/version/19720728> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1972/3/pasal/0011/version/19720728/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1972/3/pasal/0011/version/19720728/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/1972/3/pasal/0011/version/19720728/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0012> a legal:Pasal .
+<http://example.org/legal/document/uu/1972/3/pasal/0012/version/19720728> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1972/3/pasal/0012/version/19720728/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0013> a legal:Pasal .
+<http://example.org/legal/document/uu/1972/3/pasal/0013/version/19720728> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1972/3/pasal/0013/version/19720728/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0014> a legal:Pasal .
+<http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0015> a legal:Pasal .
+<http://example.org/legal/document/uu/1972/3/pasal/0015/version/19720728> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1972/3/pasal/0015/version/19720728/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/bab/0007> a legal:Bab .
+<http://example.org/legal/document/uu/1972/3/bab/0007/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1972/3/pasal/0016> a legal:Pasal .
+<http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0017> a legal:Pasal .
+<http://example.org/legal/document/uu/1972/3/pasal/0017/version/19720728> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1972/3/pasal/0017/version/19720728/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0018> a legal:Pasal .
+<http://example.org/legal/document/uu/1972/3/pasal/0018/version/19720728> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1972/3/pasal/0018/version/19720728/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0019> a legal:Pasal .
+<http://example.org/legal/document/uu/1972/3/pasal/0019/version/19720728> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1972/3/pasal/0019/version/19720728/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0020> a legal:Pasal .
+<http://example.org/legal/document/uu/1972/3/pasal/0020/version/19720728> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1972/3/pasal/0020/version/19720728/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0021> a legal:Pasal .
+<http://example.org/legal/document/uu/1972/3/pasal/0021/version/19720728> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1972/3/pasal/0021/version/19720728/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0022> a legal:Pasal .
+<http://example.org/legal/document/uu/1972/3/pasal/0022/version/19720728> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1972/3/pasal/0022/version/19720728/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/bab/0008> a legal:Bab .
+<http://example.org/legal/document/uu/1972/3/bab/0008/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1972/3/pasal/0023> a legal:Pasal .
+<http://example.org/legal/document/uu/1972/3/pasal/0023/version/19720728> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1972/3/pasal/0023/version/19720728/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0024> a legal:Pasal .
+<http://example.org/legal/document/uu/1972/3/pasal/0024/version/19720728> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1972/3/pasal/0024/version/19720728/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0025> a legal:Pasal .
+<http://example.org/legal/document/uu/1972/3/pasal/0025/version/19720728> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1972/3/pasal/0025/version/19720728/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/bab/0009> a legal:Bab .
+<http://example.org/legal/document/uu/1972/3/bab/0009/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1972/3/pasal/0026> a legal:Pasal .
+<http://example.org/legal/document/uu/1972/3/pasal/0026/version/19720728> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1972/3/pasal/0026/version/19720728/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/pasal/0027> a legal:Pasal .
+<http://example.org/legal/document/uu/1972/3/pasal/0027/version/19720728> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1972/3/pasal/0027/version/19720728/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/mengingat/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1972/3/menimbang/text> a legal:Text .
+<http://example.org/legal/document/uu/1972/3/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1972/3/bab> legal:partOf <http://example.org/legal/document/uu/1972/3> .
+<http://example.org/legal/document/uu/1972/3/bab/0001> legal:partOf <http://example.org/legal/document/uu/1972/3/bab> .
+<http://example.org/legal/document/uu/1972/3/bab/0001/pasals> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0001> .
+<http://example.org/legal/document/uu/1972/3/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0001/pasals> .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0001> .
+<http://example.org/legal/document/uu/1972/3/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1972/3> .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728> .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/a> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point> .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/b> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point> .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/c> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point> .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/d> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point> .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/e> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point> .
+<http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point/f> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0001/version/19720728/point> .
+<http://example.org/legal/document/uu/1972/3/bab/0002> legal:partOf <http://example.org/legal/document/uu/1972/3/bab> .
+<http://example.org/legal/document/uu/1972/3/bab/0002/pasals> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0002> .
+<http://example.org/legal/document/uu/1972/3/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0002> .
+<http://example.org/legal/document/uu/1972/3/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1972/3> .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728> .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/a> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point> .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/b> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point> .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/c> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point> .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/d> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point> .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/e> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point> .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/f> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point> .
+<http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point/g> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0002/version/19720728/point> .
+<http://example.org/legal/document/uu/1972/3/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0003> .
+<http://example.org/legal/document/uu/1972/3/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1972/3> .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728> .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat> .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001> .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/a> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point> .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/b> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point> .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/c> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point> .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point/d> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0001/point> .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat> .
+<http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0003/version/19720728/ayat/0002> .
+<http://example.org/legal/document/uu/1972/3/bab/0003> legal:partOf <http://example.org/legal/document/uu/1972/3/bab> .
+<http://example.org/legal/document/uu/1972/3/bab/0003/pasals> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0003> .
+<http://example.org/legal/document/uu/1972/3/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0003/pasals> .
+<http://example.org/legal/document/uu/1972/3/pasal/0004/version/19720728> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0004> .
+<http://example.org/legal/document/uu/1972/3/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1972/3> .
+<http://example.org/legal/document/uu/1972/3/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0003/pasals> .
+<http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0005> .
+<http://example.org/legal/document/uu/1972/3/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1972/3> .
+<http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728/ayat> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728> .
+<http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728/ayat> .
+<http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728/ayat/0001> .
+<http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728/ayat> .
+<http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0005/version/19720728/ayat/0002> .
+<http://example.org/legal/document/uu/1972/3/bab/0004> legal:partOf <http://example.org/legal/document/uu/1972/3/bab> .
+<http://example.org/legal/document/uu/1972/3/bab/0004/pasals> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0004> .
+<http://example.org/legal/document/uu/1972/3/pasal/0006> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0004/pasals> .
+<http://example.org/legal/document/uu/1972/3/pasal/0006/version/19720728> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0006> .
+<http://example.org/legal/document/uu/1972/3/pasal/0006> legal:partOf <http://example.org/legal/document/uu/1972/3> .
+<http://example.org/legal/document/uu/1972/3/bab/0005> legal:partOf <http://example.org/legal/document/uu/1972/3/bab> .
+<http://example.org/legal/document/uu/1972/3/bab/0005/pasals> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0005> .
+<http://example.org/legal/document/uu/1972/3/pasal/0007> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0005/pasals> .
+<http://example.org/legal/document/uu/1972/3/pasal/0007/version/19720728> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0007> .
+<http://example.org/legal/document/uu/1972/3/pasal/0007> legal:partOf <http://example.org/legal/document/uu/1972/3> .
+<http://example.org/legal/document/uu/1972/3/pasal/0008> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0005/pasals> .
+<http://example.org/legal/document/uu/1972/3/pasal/0008/version/19720728> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0008> .
+<http://example.org/legal/document/uu/1972/3/pasal/0008> legal:partOf <http://example.org/legal/document/uu/1972/3> .
+<http://example.org/legal/document/uu/1972/3/pasal/0009> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0005/pasals> .
+<http://example.org/legal/document/uu/1972/3/pasal/0009/version/19720728> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0009> .
+<http://example.org/legal/document/uu/1972/3/pasal/0009> legal:partOf <http://example.org/legal/document/uu/1972/3> .
+<http://example.org/legal/document/uu/1972/3/bab/0006> legal:partOf <http://example.org/legal/document/uu/1972/3/bab> .
+<http://example.org/legal/document/uu/1972/3/bab/0006/pasals> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0006> .
+<http://example.org/legal/document/uu/1972/3/pasal/0010> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0006/pasals> .
+<http://example.org/legal/document/uu/1972/3/pasal/0010/version/19720728> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0010> .
+<http://example.org/legal/document/uu/1972/3/pasal/0010> legal:partOf <http://example.org/legal/document/uu/1972/3> .
+<http://example.org/legal/document/uu/1972/3/pasal/0011> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0006/pasals> .
+<http://example.org/legal/document/uu/1972/3/pasal/0011/version/19720728> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0011> .
+<http://example.org/legal/document/uu/1972/3/pasal/0011> legal:partOf <http://example.org/legal/document/uu/1972/3> .
+<http://example.org/legal/document/uu/1972/3/pasal/0011/version/19720728/ayat> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0011/version/19720728> .
+<http://example.org/legal/document/uu/1972/3/pasal/0011/version/19720728/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0011/version/19720728/ayat> .
+<http://example.org/legal/document/uu/1972/3/pasal/0011/version/19720728/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0011/version/19720728/ayat/0003> .
+<http://example.org/legal/document/uu/1972/3/pasal/0012> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0006/pasals> .
+<http://example.org/legal/document/uu/1972/3/pasal/0012/version/19720728> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0012> .
+<http://example.org/legal/document/uu/1972/3/pasal/0012> legal:partOf <http://example.org/legal/document/uu/1972/3> .
+<http://example.org/legal/document/uu/1972/3/pasal/0013> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0006/pasals> .
+<http://example.org/legal/document/uu/1972/3/pasal/0013/version/19720728> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0013> .
+<http://example.org/legal/document/uu/1972/3/pasal/0013> legal:partOf <http://example.org/legal/document/uu/1972/3> .
+<http://example.org/legal/document/uu/1972/3/pasal/0014> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0006/pasals> .
+<http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0014> .
+<http://example.org/legal/document/uu/1972/3/pasal/0014> legal:partOf <http://example.org/legal/document/uu/1972/3> .
+<http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728> .
+<http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point/a> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point> .
+<http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point/b> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point> .
+<http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point/c> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0014/version/19720728/point> .
+<http://example.org/legal/document/uu/1972/3/pasal/0015> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0006/pasals> .
+<http://example.org/legal/document/uu/1972/3/pasal/0015/version/19720728> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0015> .
+<http://example.org/legal/document/uu/1972/3/pasal/0015> legal:partOf <http://example.org/legal/document/uu/1972/3> .
+<http://example.org/legal/document/uu/1972/3/bab/0007> legal:partOf <http://example.org/legal/document/uu/1972/3/bab> .
+<http://example.org/legal/document/uu/1972/3/bab/0007/pasals> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0007> .
+<http://example.org/legal/document/uu/1972/3/pasal/0016> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0007/pasals> .
+<http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0016> .
+<http://example.org/legal/document/uu/1972/3/pasal/0016> legal:partOf <http://example.org/legal/document/uu/1972/3> .
+<http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728/point> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728> .
+<http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728/point/0001> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728/point> .
+<http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728/point/0002> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0016/version/19720728/point> .
+<http://example.org/legal/document/uu/1972/3/pasal/0017> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0007/pasals> .
+<http://example.org/legal/document/uu/1972/3/pasal/0017/version/19720728> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0017> .
+<http://example.org/legal/document/uu/1972/3/pasal/0017> legal:partOf <http://example.org/legal/document/uu/1972/3> .
+<http://example.org/legal/document/uu/1972/3/pasal/0018> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0007/pasals> .
+<http://example.org/legal/document/uu/1972/3/pasal/0018/version/19720728> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0018> .
+<http://example.org/legal/document/uu/1972/3/pasal/0018> legal:partOf <http://example.org/legal/document/uu/1972/3> .
+<http://example.org/legal/document/uu/1972/3/pasal/0019> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0007/pasals> .
+<http://example.org/legal/document/uu/1972/3/pasal/0019/version/19720728> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0019> .
+<http://example.org/legal/document/uu/1972/3/pasal/0019> legal:partOf <http://example.org/legal/document/uu/1972/3> .
+<http://example.org/legal/document/uu/1972/3/pasal/0020> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0007/pasals> .
+<http://example.org/legal/document/uu/1972/3/pasal/0020/version/19720728> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0020> .
+<http://example.org/legal/document/uu/1972/3/pasal/0020> legal:partOf <http://example.org/legal/document/uu/1972/3> .
+<http://example.org/legal/document/uu/1972/3/pasal/0021> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0007/pasals> .
+<http://example.org/legal/document/uu/1972/3/pasal/0021/version/19720728> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0021> .
+<http://example.org/legal/document/uu/1972/3/pasal/0021> legal:partOf <http://example.org/legal/document/uu/1972/3> .
+<http://example.org/legal/document/uu/1972/3/pasal/0022> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0007/pasals> .
+<http://example.org/legal/document/uu/1972/3/pasal/0022/version/19720728> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0022> .
+<http://example.org/legal/document/uu/1972/3/pasal/0022> legal:partOf <http://example.org/legal/document/uu/1972/3> .
+<http://example.org/legal/document/uu/1972/3/bab/0008> legal:partOf <http://example.org/legal/document/uu/1972/3/bab> .
+<http://example.org/legal/document/uu/1972/3/bab/0008/pasals> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0008> .
+<http://example.org/legal/document/uu/1972/3/pasal/0023> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0008/pasals> .
+<http://example.org/legal/document/uu/1972/3/pasal/0023/version/19720728> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0023> .
+<http://example.org/legal/document/uu/1972/3/pasal/0023> legal:partOf <http://example.org/legal/document/uu/1972/3> .
+<http://example.org/legal/document/uu/1972/3/pasal/0024> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0008/pasals> .
+<http://example.org/legal/document/uu/1972/3/pasal/0024/version/19720728> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0024> .
+<http://example.org/legal/document/uu/1972/3/pasal/0024> legal:partOf <http://example.org/legal/document/uu/1972/3> .
+<http://example.org/legal/document/uu/1972/3/pasal/0025> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0008/pasals> .
+<http://example.org/legal/document/uu/1972/3/pasal/0025/version/19720728> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0025> .
+<http://example.org/legal/document/uu/1972/3/pasal/0025> legal:partOf <http://example.org/legal/document/uu/1972/3> .
+<http://example.org/legal/document/uu/1972/3/bab/0009> legal:partOf <http://example.org/legal/document/uu/1972/3/bab> .
+<http://example.org/legal/document/uu/1972/3/bab/0009/pasals> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0009> .
+<http://example.org/legal/document/uu/1972/3/pasal/0026> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0009/pasals> .
+<http://example.org/legal/document/uu/1972/3/pasal/0026/version/19720728> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0026> .
+<http://example.org/legal/document/uu/1972/3/pasal/0026> legal:partOf <http://example.org/legal/document/uu/1972/3> .
+<http://example.org/legal/document/uu/1972/3/pasal/0027> legal:partOf <http://example.org/legal/document/uu/1972/3/bab/0009/pasals> .
+<http://example.org/legal/document/uu/1972/3/pasal/0027/version/19720728> legal:partOf <http://example.org/legal/document/uu/1972/3/pasal/0027> .
+<http://example.org/legal/document/uu/1972/3/pasal/0027> legal:partOf <http://example.org/legal/document/uu/1972/3> .

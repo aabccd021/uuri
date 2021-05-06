@@ -1,0 +1,20 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1950/4> legal:documentHasBabSet <http://example.org/legal/document/uu/1950/4/bab> .
+<http://example.org/legal/document/uu/1950/4> legal:documentHasDisahkanDate "1950-07-20"^^xsd:date .
+<http://example.org/legal/document/uu/1950/4> legal:documentMengingat <http://example.org/legal/document/uu/1950/4/mengingat> .
+<http://example.org/legal/document/uu/1950/4/mengingat/text> legal:textHasTextString "Pasal 108 juncto Pasal 92 dan Pasal 127 sub b juncto Pasal 128 ayat (3) Konstitusi Sementara Republik Indonesia Serikat; Dengan Persetujuan Dewan Perwakilan Rakyat ditjen Peraturan Perundang-undangan MEMUTUSKAN: Menetapkan: UNDANG-UNDANG TENTANG PENGGANTIAN KERUGIAN ANGGOTA-ANGGOTA \"DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA SERIKAT\"." .
+<http://example.org/legal/document/uu/1950/4/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/1950/4/mengingat/text> .
+<http://example.org/legal/document/uu/1950/4> legal:documentMenimbang <http://example.org/legal/document/uu/1950/4/menimbang> .
+<http://example.org/legal/document/uu/1950/4/menimbang/text> legal:textHasTextString "bahwa perlu diadakan peraturan untuk menentukan penggantian kerugian bagi anggota Dewan Perwakilan Rakyat Republik Indonesia Serikat;" .
+<http://example.org/legal/document/uu/1950/4/menimbang> legal:menimbangHasText <http://example.org/legal/document/uu/1950/4/menimbang/text> .
+<http://example.org/legal/document/uu/1950/4> legal:documentHasDisahkanPengesah "SOEKARNO." .
+<http://example.org/legal/document/uu/1950/4> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/1950/4> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK" .
+<http://example.org/legal/document/uu/1950/4> a legal:Document .
+<http://example.org/legal/document/uu/1950/4/mengingat/text> a legal:Text .
+<http://example.org/legal/document/uu/1950/4/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1950/4/menimbang/text> a legal:Text .
+<http://example.org/legal/document/uu/1950/4/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1950/4/bab> legal:partOf <http://example.org/legal/document/uu/1950/4> .

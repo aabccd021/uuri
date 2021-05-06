@@ -1,0 +1,274 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1999/9> legal:documentHasBabSet <http://example.org/legal/document/uu/1999/9/bab> .
+<http://example.org/legal/document/uu/1999/9/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/9/bab/0001> .
+<http://example.org/legal/document/uu/1999/9/bab/0001> legal:babHasKey 1 .
+<http://example.org/legal/document/uu/1999/9/bab/0001> legal:babHasTitle "KETENTUAN UMUM" .
+<http://example.org/legal/document/uu/1999/9/bab/0001> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/9/bab/0001/pasals> .
+<http://example.org/legal/document/uu/1999/9/bab/0001/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/9/pasal/0001> .
+<http://example.org/legal/document/uu/1999/9/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1999/9/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420> .
+<http://example.org/legal/document/uu/1999/9> legal:documentHasPasal <http://example.org/legal/document/uu/1999/9/pasal/0001> .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420> legal:pasalVersionHasVersionDate "1999-04-20"^^xsd:date .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420> legal:pasalVersionHasRawText "Dalam Undang-undang ini yang dimaksud dengan:\n1. Daerah adalah Daerah Otonom sebagaimana dimaksud dalam Pasal 1 huruf e Undang-undang Nomor 5 Tahun 1974 tentang Pokok-pokok Pemerintahan Di Daerah. PRESIDEN REPUBLIK INDONESIA 3\n2. Wilayah adalah \"Wilayah\" sebagaimana dimaksud dalam Pasal 1 huruf g atau \"wilayah\" sebagaimana dimakdud dalam Penjelasan Pasal 2 Undang-undang Nomor 5 Tahun 1974 tentang Pokok-pokok Pemerintahan Di Daerah.\n3. Kota Administratif Banjarbaru adalah sebagaimana dimaksud dalam Peraturan Pemerintah Nomor 26 Tahun 1975 tentang Pembentukan Kota Administratif Banjarbaru.\n4. Kabupaten Daerah Tingkat II Banjar adalah sebagaimana dimaksud dalam Undang-undang Nomor 27 Tahun 1959 tentang Penetapan Undang-undang Darurat Nomor 3 Tahun 1953 tentang Pembentukan Daerah Tingkat II di Kalimantan sebagai Undang-undang.\n5. Propinsi Daerah Tingkat I Kalimantan Selatan adalah sebagaimana dimaksud dalam Undang-undang Nomor 25 Tahun 1956 jo Undang-undang Nomor 21 Tahun 1958 tentang Penetapan Undang-undang Darurat Nomor 10 Tahun 1957 tentang Pembentukan Daerah Swatantra Tingkat I Kalimantan Tengah dan Perubahan Undang-undang Nomor 25 Tahun 1956 tentang Pembentukan Daerah-daerah Swatantra Tingkat I Kalimantan Barat, Kalimantan Selatan dan Kalimantan Timur, sebagai Undang-undang.\n" .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point> .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/description> legal:textHasTextString "Dalam Undang-undang ini yang dimaksud dengan:" .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/description> .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0001> .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0001/text> legal:textHasTextString "Daerah adalah Daerah Otonom sebagaimana dimaksud dalam Pasal 1 huruf e Undang-undang Nomor 5 Tahun 1974 tentang Pokok-pokok Pemerintahan Di Daerah. PRESIDEN REPUBLIK INDONESIA 3" .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0001/text> .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/e> .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/9/pasal/0001> .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0002> .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0002/text> legal:textHasTextString "Wilayah adalah \"Wilayah\" sebagaimana dimaksud dalam Pasal 1 huruf g atau \"wilayah\" sebagaimana dimakdud dalam Penjelasan Pasal 2 Undang-undang Nomor 5 Tahun 1974 tentang Pokok-pokok Pemerintahan Di Daerah." .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0002/text> .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/g> .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/9/pasal/0002> .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/9/pasal/0001> .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0003> .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0003> legal:pointHasKey "3" .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0003/text> legal:textHasTextString "Kota Administratif Banjarbaru adalah sebagaimana dimaksud dalam Peraturan Pemerintah Nomor 26 Tahun 1975 tentang Pembentukan Kota Administratif Banjarbaru." .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0003> legal:pointHasText <http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0003/text> .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0004> .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0004> legal:pointHasKey "4" .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0004/text> legal:textHasTextString "Kabupaten Daerah Tingkat II Banjar adalah sebagaimana dimaksud dalam Undang-undang Nomor 27 Tahun 1959 tentang Penetapan Undang-undang Darurat Nomor 3 Tahun 1953 tentang Pembentukan Daerah Tingkat II di Kalimantan sebagai Undang-undang." .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0004> legal:pointHasText <http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0004/text> .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0005> .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0005> legal:pointHasKey "5" .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0005/text> legal:textHasTextString "Propinsi Daerah Tingkat I Kalimantan Selatan adalah sebagaimana dimaksud dalam Undang-undang Nomor 25 Tahun 1956 jo Undang-undang Nomor 21 Tahun 1958 tentang Penetapan Undang-undang Darurat Nomor 10 Tahun 1957 tentang Pembentukan Daerah Swatantra Tingkat I Kalimantan Tengah dan Perubahan Undang-undang Nomor 25 Tahun 1956 tentang Pembentukan Daerah-daerah Swatantra Tingkat I Kalimantan Barat, Kalimantan Selatan dan Kalimantan Timur, sebagai Undang-undang." .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0005> legal:pointHasText <http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0005/text> .
+<http://example.org/legal/document/uu/1999/9/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/9/bab/0002> .
+<http://example.org/legal/document/uu/1999/9/bab/0002> legal:babHasKey 2 .
+<http://example.org/legal/document/uu/1999/9/bab/0002> legal:babHasTitle "PEMBENTUKAN DAN BATAS WILAYAH" .
+<http://example.org/legal/document/uu/1999/9/bab/0002> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/9/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/9/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/9/pasal/0002> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1999/9/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420> .
+<http://example.org/legal/document/uu/1999/9> legal:documentHasPasal <http://example.org/legal/document/uu/1999/9/pasal/0002> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420> legal:pasalVersionHasVersionDate "1999-04-20"^^xsd:date .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420> legal:pasalVersionHasRawText "(1). Wilayah Kotamadya Daerah Tingkat II Banjarbaru mempunyai batas-batas sebagai berikut :\na. Sebelah utara berbatasan dengan Kecamatan Martapura Kabupaten Daerah Tingkat II Banjar:\nb. Sebelah timur berbatasan dengan Kecamatan Karang Intan Kabupaten Daerah Tingkat II Banjar:\nc. Sebelah selatan berbatasan dengan Kecamatan Bati-bati dan Kecamatan Kurau Kabupaten Daerah Tingkat II Tanah Laut:\nd. Sebelah barat berbatasan dengan Kecamatan Gambut dan Kecamatan Aluh-aluh Kabupaten Daerah Tingkat II Banjar.\n\n(2). Batas wilayah sebagaimana dimaksud dalam ayat (1), dituangkan dalam peta yang merupakan bagian tidak terpisahkan dari Undang-undang ini.\n(3). Penentuan batas Kotamadya Daerah Tingkat II Banjarbaru, secara pasti di lapangan, sebagaimana dimaksud pada ayat (1), ditetapkan oleh Menteri Dalam Negeri. Pasal 7 (Jl) Dengan dibentuknya Kotamadya Daerah Tingkat II Banjarbaru, sebagaimana dimaksud dalam Pasal 2 dan mempunyai wilayah sebagaimana dimaksud dalam Pasal 3, Pemerintah Kotamadya Daerah Tingkat II Banjarbaru, wajib menetapkan Tata Ruang Wilayah Kotamadya Daerah Tingkat II Banjarbaru sesuai dengan peraturan perundang-undangan yang berlaku. (2) Penetapan Tata Ruang Wilayah Kotamadya Daerah Tingkat II Banjarbaru, sebagaimana dimaksud pada ayat (1), dilakukan secara terpadu dan tidak dipisahkan dengan Penataan Ruang Nasional, Wilayah Propinsi Daerah Tingkat I Kalimantan Selatan dan Wilayah Kabupaten/Kotamadya Daerah Tingkat II di sekitarnya. PRESIDEN REPUBLIK INDONESIA .5-" .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001> legal:ayatHasRawText "Wilayah Kotamadya Daerah Tingkat II Banjarbaru mempunyai batas-batas sebagai berikut :\na. Sebelah utara berbatasan dengan Kecamatan Martapura Kabupaten Daerah Tingkat II Banjar:\nb. Sebelah timur berbatasan dengan Kecamatan Karang Intan Kabupaten Daerah Tingkat II Banjar:\nc. Sebelah selatan berbatasan dengan Kecamatan Bati-bati dan Kecamatan Kurau Kabupaten Daerah Tingkat II Tanah Laut:\nd. Sebelah barat berbatasan dengan Kecamatan Gambut dan Kecamatan Aluh-aluh Kabupaten Daerah Tingkat II Banjar.\n" .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/description> legal:textHasTextString "Wilayah Kotamadya Daerah Tingkat II Banjarbaru mempunyai batas-batas sebagai berikut :" .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/description> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/a> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/a/text> legal:textHasTextString "Sebelah utara berbatasan dengan Kecamatan Martapura Kabupaten Daerah Tingkat II Banjar:" .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/a/text> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/b> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/b/text> legal:textHasTextString "Sebelah timur berbatasan dengan Kecamatan Karang Intan Kabupaten Daerah Tingkat II Banjar:" .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/b> legal:pointHasText <http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/b/text> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/c> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/c/text> legal:textHasTextString "Sebelah selatan berbatasan dengan Kecamatan Bati-bati dan Kecamatan Kurau Kabupaten Daerah Tingkat II Tanah Laut:" .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/c> legal:pointHasText <http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/c/text> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/d> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/d/text> legal:textHasTextString "Sebelah barat berbatasan dengan Kecamatan Gambut dan Kecamatan Aluh-aluh Kabupaten Daerah Tingkat II Banjar." .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/d> legal:pointHasText <http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/d/text> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0002> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0002> legal:ayatHasRawText "Batas wilayah sebagaimana dimaksud dalam ayat (1), dituangkan dalam peta yang merupakan bagian tidak terpisahkan dari Undang-undang ini." .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0002/text> legal:textHasTextString "Batas wilayah sebagaimana dimaksud dalam ayat (1), dituangkan dalam peta yang merupakan bagian tidak terpisahkan dari Undang-undang ini." .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0002/text> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0003> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0003> legal:ayatHasRawText "Penentuan batas Kotamadya Daerah Tingkat II Banjarbaru, secara pasti di lapangan, sebagaimana dimaksud pada ayat (1), ditetapkan oleh Menteri Dalam Negeri. Pasal 7 (Jl) Dengan dibentuknya Kotamadya Daerah Tingkat II Banjarbaru, sebagaimana dimaksud dalam Pasal 2 dan mempunyai wilayah sebagaimana dimaksud dalam Pasal 3, Pemerintah Kotamadya Daerah Tingkat II Banjarbaru, wajib menetapkan Tata Ruang Wilayah Kotamadya Daerah Tingkat II Banjarbaru sesuai dengan peraturan perundang-undangan yang berlaku. (2) Penetapan Tata Ruang Wilayah Kotamadya Daerah Tingkat II Banjarbaru, sebagaimana dimaksud pada ayat (1), dilakukan secara terpadu dan tidak dipisahkan dengan Penataan Ruang Nasional, Wilayah Propinsi Daerah Tingkat I Kalimantan Selatan dan Wilayah Kabupaten/Kotamadya Daerah Tingkat II di sekitarnya. PRESIDEN REPUBLIK INDONESIA .5-" .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0003/text> legal:textHasTextString "Penentuan batas Kotamadya Daerah Tingkat II Banjarbaru, secara pasti di lapangan, sebagaimana dimaksud pada ayat (1), ditetapkan oleh Menteri Dalam Negeri. Pasal 7 (Jl) Dengan dibentuknya Kotamadya Daerah Tingkat II Banjarbaru, sebagaimana dimaksud dalam Pasal 2 dan mempunyai wilayah sebagaimana dimaksud dalam Pasal 3, Pemerintah Kotamadya Daerah Tingkat II Banjarbaru, wajib menetapkan Tata Ruang Wilayah Kotamadya Daerah Tingkat II Banjarbaru sesuai dengan peraturan perundang-undangan yang berlaku. (2) Penetapan Tata Ruang Wilayah Kotamadya Daerah Tingkat II Banjarbaru, sebagaimana dimaksud pada ayat (1), dilakukan secara terpadu dan tidak dipisahkan dengan Penataan Ruang Nasional, Wilayah Propinsi Daerah Tingkat I Kalimantan Selatan dan Wilayah Kabupaten/Kotamadya Daerah Tingkat II di sekitarnya. PRESIDEN REPUBLIK INDONESIA .5-" .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0003/text> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/9/pasal/0003> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/9/pasal/0002> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/9/pasal/0007> .
+<http://example.org/legal/document/uu/1999/9/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/9/bab/0003> .
+<http://example.org/legal/document/uu/1999/9/bab/0003> legal:babHasKey 3 .
+<http://example.org/legal/document/uu/1999/9/bab/0003> legal:babHasTitle "PEMERINTAH DAERAH DAN PERANGKAT WILAYAH/DAERAH Pasal 8 Untuk memimpin jalannya pemerintahan di Kotamadya Daerah Tingkat II Banjarbaru, dipilih dan diangkat seorang Walikotamadya Kepala Daerah Tingkat II sesuai dengan peraturan perundang-undangan yang berlaku. Pasal 9 Dengan terbentuknya Kotamadya Daerah Tingkat II Banjarbaru, dibentuk Dewan Perwakilan Rakyat Daerah Kotamadya Daerah Tingkat II Banjarbaru sesuai dengan peraturan perundang-undangan yang berlaku. Pasal 10 Untuk kelengkapan perangkat pemerintahan di Kotamadya Daerah Tingkat II Banjarbaru, dibentuk Sekretariat Wialay/Daerah Tingkat II, Sekretariat Dewan Perwakilan Rakyat Daerah Kotamadya Daerah Tingkat II, dinas-dinas Daerah, dan instansi lainnya sesuai dengan peraturan perundang-undangan yang berlaku." .
+<http://example.org/legal/document/uu/1999/9/bab/0003> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/9/bab/0003/pasals> .
+<http://example.org/legal/document/uu/1999/9/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/9/bab/0004> .
+<http://example.org/legal/document/uu/1999/9/bab/0004> legal:babHasKey 4 .
+<http://example.org/legal/document/uu/1999/9/bab/0004> legal:babHasTitle "URUSAN RUMAH TANGGA DAERAH Pasal 11 (l) Pada saat terbentuknya Kotamadya Daerah Tingkat II Banjarbaru, diserahkan sebagian urusan pemerintahan sebagai kewenangan pangkal di bidang: a. Pemerintahan Umum: b. Kesehatan: c. Pendidikan dan Kebudayaan: d. Pekerjaan Umum, e. Lalu Lintas dan Angkutan Jalan, f. Sosial: g. Keuangan Daerah, PRESIDEN REPUBLIK INDONESIA -6- h. Lingkungan Hidup: 1. Kependudukan dan Catatan Sipil, J- Pertanian Tanaman Pangan: k. Perkebunan: Il. Kehutanan: m. Perindustrian dan Perdagangan: n. Pertambangan: O. Pariwisata, p. Tenaga Kerja, g-. Transmigrasi. (2) Pelaksanaan penambahan atau pengurangan urusan sebagaimana dimaksud dalam ayat (1), diatur dengan Peraturan Pemerintah." .
+<http://example.org/legal/document/uu/1999/9/bab/0004> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/9/bab/0004/pasals> .
+<http://example.org/legal/document/uu/1999/9/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/9/bab/0005> .
+<http://example.org/legal/document/uu/1999/9/bab/0005> legal:babHasKey 5 .
+<http://example.org/legal/document/uu/1999/9/bab/0005> legal:babHasTitle "KETENTUAN PERALIHAN Pasal 12 Pada saat terbentuknya Kotamadya Daerah Tingkat II Banjarbaru, Penjabat Walikotamadya Kepala Daerah Tingkat II Banjarbaru untuk pertama kalinya diangkat dan ditetapkan oleh Menteri Dalam Negeri atas usul Gubernur Kepala Daerah Tingkat I Kalimantan Selatan. Pasal 13 (1) Anggota-anggota Dewan Perwakilan Rakyat Daerah Kotamadya Daerah Tingkat II Banjarbaru terdiri dari : a. Anggota yang ditetapkan dari wakil Partai Politik Peserta Pemilihan Umum dengan memperhatikan perimbangan suara hasil Pemilihan Umum terakhir yang dilaksanakan di daerah tersebut: b. Anggota ABRI yang diangkat. (2) Tata cara, pengangkatan, dan jumlah anggota Dewan Perwakilan Rakyat Daerah Kotamadya Daerah Tingkat II Banjarbaru sebagaimana dimaksud dalam ayat (1), untuk pertama kalinya ditetapkan oleh Menteri Dalam Negeri. Pasal 14 PRESIDEN REPUBLIK INDONESIA -7- (Jl) Untuk kelancaran penyelenggaraan pemerintahan di Kotamadya Daerah Tingkat II Banjarbaru, sesuai dengan peraturan perundang-undangan yang berlaku, Gubernur Kepala Daerah Tingkat I Kalimantan Selatan dan Bupati Kepala Daerah Tingkat II Banjar, sesuai dengan wewenang dan tugasnya masing-masing, menginventarisasi dan mengatur penyerahan kepada Pemerintah Kotamadya Daerah Tingkat II Banjarbaru : a. Pegawai yang karena jabatannya diperlukan oleh Pemerintah Kotamadya Daerah Tingkat II Banjarbaru, b. Tanah, bangunan, barang bergerak dan barang tidak bergerak lainnya yang menjadi milik, dikuasai atau dimanfaatkan oleh Pemerintah Propinsi Daerah Tingkat I Kalimantan Selatan dan Pemerintah Kabupaten Daerah Tingkat II Banjar yang berada dalam wilayah Kotamadya Daerah Tingkat II Banjarbaru: c. Badan Usaha Milik Daerah Pemerintah Propinsi Daerah Tingkat I Kalimantan Selatan dan Pemerintah Kabupaten Daerah Tingkat II Banjar yang tempat kedudukannya terletak di wilayah Kotamadya Daerah Tingkat II Banjarbaru, d. Utang piutang Pemerintah Kabupaten Daerah Tingkat II Banjar yang kegunaannya untuk wilayah Kotamadya Daerah Tingkat II Banjarbaru, e. Perlengkapan kantor, arsip, dokuemntasi, dan perpustakaan yang karena sifatnya diperlukan oleh Kotamadya Daerah Tingkat II Banjarbaru. (2) Pelaksanaan penyerahan sebagaimana dimaksud dalam ayat (1), selambat-lambatnya harus diselesaikan dalam waktu satu tahun terhitung sejak diresmikannya Kotamadya Daerah Tingkat II Banjarbaru. Pasal 15 (Jl) Pembiayaan yang diperlukan akibat pembentukan Kotamadya Daerah Tingkat II Banjarbaru sebagaimana dimaksud dalam Pasal 2, dibebankan pada Anggaran Pendapatan dan Belanja Daerah Kotamadya Daerah Tingkat II Banjarbaru. PRESIDEN REPUBLIK INDONESIA 8 (2) Untuk kelancaran penyelenggaraan pemerintahan dan pembangunan, terhitung sejak diresmikannya pembentukan Kotamadya Daerah Tingkat II Banjarbaru, segala pembiayaan yang diperlukan pada tahun pertama sebelum dapat disusun Anggaran Pendapatan dan Belanja Daerah yang bersangkutan dibebankan pada Anggaran Pendapatan dan Belanja Daerah Kabupaten Daerah Tingkat II Banjar berdasarkan perimbangan hasil pendapatan yang diperoleh dari Wilayah Kotamadya Daerah Tingkat II Banjarbaru. (3) Pemerintah Propinsi Daerah Tingkat I Kalimantan Selatan wajib membantu pembiayaan sebagaimana dimaksud pada ayat (1) melalui Anggaran Pendapatan dan Belanja Daerah Propinsi Daerah Tingkat I Kalimantan Selatan selama tiga tahun berturut-turut terhitung sejak peresmiannya. Pasal 16 Semua peraturan perundang-undangan yang saat ini berlaku bagi Kabupaten Daerah Tingkat II Banjar tetap berlaku bagi Kotamadya Daerah Tingkat II Banjarbaru, sebelum diubah, diganti, atau dicabut berdasarkan Undang-undang ini." .
+<http://example.org/legal/document/uu/1999/9/bab/0005> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/9/bab/0005/pasals> .
+<http://example.org/legal/document/uu/1999/9/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/9/bab/0006> .
+<http://example.org/legal/document/uu/1999/9/bab/0006> legal:babHasKey 6 .
+<http://example.org/legal/document/uu/1999/9/bab/0006> legal:babHasTitle "KETENTUAN PENUTUP Pasal 17 Pada saat berlakunya Undang-undang ini, semua peraturan perundang-undangan yang tidak sesuai dengan Undang-undang ini dinyatakan tidak berlaku. Pasal 18 Ketentuan lebih lanjut yang diperlukan sebagai pelaksanaan Undang-undang ini, diatur sesuai dengan Undang-undangan Nomor 5 Tahun 1974 tentang Pokok-pokok Pemerintahan Di Daerah. Pasal 19 Undang-undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA -9- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1999/9/bab/0006> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/9/bab/0006/pasals> .
+<http://example.org/legal/document/uu/1999/9> legal:documentHasDisahkanDate "1999-04-20"^^xsd:date .
+<http://example.org/legal/document/uu/1999/9> legal:documentMengingat <http://example.org/legal/document/uu/1999/9/mengingat> .
+<http://example.org/legal/document/uu/1999/9/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1999/9/mengingat/point> .
+<http://example.org/legal/document/uu/1999/9/mengingat/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1999/9/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/9/mengingat/point/description> .
+<http://example.org/legal/document/uu/1999/9/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/9/mengingat/point/0001> .
+<http://example.org/legal/document/uu/1999/9/mengingat/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/1999/9/mengingat/point/0001/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 18, dan Pasal 20 ayat (1) Undang-Undang Dasar 1945," .
+<http://example.org/legal/document/uu/1999/9/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1999/9/mengingat/point/0001/text> .
+<http://example.org/legal/document/uu/1999/9/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/9/mengingat/point/0002> .
+<http://example.org/legal/document/uu/1999/9/mengingat/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/1999/9/mengingat/point/0002/text> legal:textHasTextString "Undang-undang Nomor 5 Tahun 1974 tentang Pokok-pokok Pemerintahan Di Daerah (Lembaran Negara Republik Indonesia Tahun 1974 Nomor 38, Tambahan Lembaran Negara Nomor 3037), PRESIDEN REPUBLIK INDONESIA .2-" .
+<http://example.org/legal/document/uu/1999/9/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1999/9/mengingat/point/0002/text> .
+<http://example.org/legal/document/uu/1999/9/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/9/mengingat/point/0003> .
+<http://example.org/legal/document/uu/1999/9/mengingat/point/0003> legal:pointHasKey "3" .
+<http://example.org/legal/document/uu/1999/9/mengingat/point/0003/text> legal:textHasTextString "Undang-undang Nomor 25 Tahun 1956, tentang Pembentukan Daerah-Daerah Otonom Propinsi Kalimantan Barat, Kalimantan Selatan dan Kalimantan Timur jo Undang-undang Nomor 21 Tahun 1958 tentang Penetapan Undang-undang Darurat Nomor 10 Tentang Pembentukan Daerah Swatantra Tingkat I Kalimantan Tengah dan Perubahan Undang-undang Nomor 25 Tahun 1956 tentang Pembentukan Daerah-daerah Swatantra Tingkat I Kalimantan Barat, Kalimantan Selatan dan Kalimantan Timur (Lembaran Negara Tahun 1957, Nomor 83) sebagai Undang-undang (Lembaran Negara Tahun 1956 Nomor 65 Tambahan Lembaran Negara Nomor 1106 dan Lembaran Negara Tahun 1958 Nomor 62, Tambahan Lembaran Negara Nomor 1622):" .
+<http://example.org/legal/document/uu/1999/9/mengingat/point/0003> legal:pointHasText <http://example.org/legal/document/uu/1999/9/mengingat/point/0003/text> .
+<http://example.org/legal/document/uu/1999/9/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/9/mengingat/point/0004> .
+<http://example.org/legal/document/uu/1999/9/mengingat/point/0004> legal:pointHasKey "4" .
+<http://example.org/legal/document/uu/1999/9/mengingat/point/0004/text> legal:textHasTextString "Undang-undang Nomor 27 Tahun 1959 tentang Penetapan Undang-undang Darurat Nomor 3 Tahun 1953 tentang Pembentukan Daerah Tingkat II di Kalimantan (Lembaran Negara Tahun 1953 Nomor 9) sebagai Undang-undang (Lembaran Negara Republik Indonesia Tahun 1959 Nomor 72, Tambahan Lembaran Negara Nomor 1820)," .
+<http://example.org/legal/document/uu/1999/9/mengingat/point/0004> legal:pointHasText <http://example.org/legal/document/uu/1999/9/mengingat/point/0004/text> .
+<http://example.org/legal/document/uu/1999/9/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/9/mengingat/point/0005> .
+<http://example.org/legal/document/uu/1999/9/mengingat/point/0005> legal:pointHasKey "5" .
+<http://example.org/legal/document/uu/1999/9/mengingat/point/0005/text> legal:textHasTextString "Undang-undang Nomor 4 Tahun 1999 tentang Susunan dan Kedudukan Majelis Permusyawaratan Rakyat, Dewan Perwakilan Rakyat, dan Dewan Perwakilan Rakyat Daerah (Lembaran Negara Republik Indonesia Tahun 1999 Nomor 24, Tambahan Lembaran Negara Nomor 3811), Dengan persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN : Menetapkan : UNDANG-UNDANG TENTANG PEMBENTUKAN KOTAMADYA DAERAH TINGKAT II BANJARBARU." .
+<http://example.org/legal/document/uu/1999/9/mengingat/point/0005> legal:pointHasText <http://example.org/legal/document/uu/1999/9/mengingat/point/0005/text> .
+<http://example.org/legal/document/uu/1999/9> legal:documentMenimbang <http://example.org/legal/document/uu/1999/9/menimbang> .
+<http://example.org/legal/document/uu/1999/9/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/1999/9/menimbang/point> .
+<http://example.org/legal/document/uu/1999/9/menimbang/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1999/9/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/9/menimbang/point/description> .
+<http://example.org/legal/document/uu/1999/9/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/9/menimbang/point/a> .
+<http://example.org/legal/document/uu/1999/9/menimbang/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1999/9/menimbang/point/a/text> legal:textHasTextString "bahwa berhubung dengan perkembangan dan kemajuan Propinsi Daerah Tingkat I Kalimantan Selatan dan Kabupaten Daerah Tingkat II Banjar pada umumnya serta Kota Administratif Banjarbaru pada khususnya, dan adanya tuntutan aspirasi masyarakat dipandang perlu meningkatkan penyelenggaraan pemerintahan, pelaksanaan pembangunan, dan pembinaan kemasyarakatan guna menjamin perkembangan dan kemajuan dimaksud pada masa mendatang," .
+<http://example.org/legal/document/uu/1999/9/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/1999/9/menimbang/point/a/text> .
+<http://example.org/legal/document/uu/1999/9/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/9/menimbang/point/b> .
+<http://example.org/legal/document/uu/1999/9/menimbang/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1999/9/menimbang/point/b/text> legal:textHasTextString "bahwa Kota Administratif Banjarbaru dalam perkembangannya telah menunjukkan kemajuan di berbagai bidang, sesuai dengan peranan dan fungsinya, sehingga perlu diikuti dengan peningkatan dan pengembangan sarana dan prasarana pengelolaan wilayah tersebut:" .
+<http://example.org/legal/document/uu/1999/9/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/1999/9/menimbang/point/b/text> .
+<http://example.org/legal/document/uu/1999/9/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/9/menimbang/point/c> .
+<http://example.org/legal/document/uu/1999/9/menimbang/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1999/9/menimbang/point/c/text> legal:textHasTextString "bahwa perkembangan dan kemajuan tersebut bukan saja memberikan dampak berupa kebutuhan peningkatan pelayanan di bidang pemerintahan, pembangunan, dan kemasyarakatan, tetapi juga memberikan gambaran mengenai dukungan kemampuan dan potensi wilayahnya untuk menyelenggarakan otonomi daerah," .
+<http://example.org/legal/document/uu/1999/9/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/1999/9/menimbang/point/c/text> .
+<http://example.org/legal/document/uu/1999/9/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/9/menimbang/point/d> .
+<http://example.org/legal/document/uu/1999/9/menimbang/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1999/9/menimbang/point/d/text> legal:textHasTextString "bahwa untuk lebih meningkatkan daya guna dan hasil guna penyelenggaraan pemerintahan, pelaksanaan pembangunan, dan pelayanan kemasyarakatan, dipandang perlu Kota Administratif Banjarbaru dibentuk menjadi Kotamadya Daerah Tingkat II:" .
+<http://example.org/legal/document/uu/1999/9/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/1999/9/menimbang/point/d/text> .
+<http://example.org/legal/document/uu/1999/9/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/9/menimbang/point/e> .
+<http://example.org/legal/document/uu/1999/9/menimbang/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/1999/9/menimbang/point/e/text> legal:textHasTextString "bahwa sesuai dengan ketentuan dalam Undang-undang Nomor 5 Tahun 1974 tentang Pokok-pokok Pemerintahan Di Daerah, maka pembentukan Kotamadya Daerah Tingkat II Banjarbaru harus ditetapkan dengan Undang-undang," .
+<http://example.org/legal/document/uu/1999/9/menimbang/point/e> legal:pointHasText <http://example.org/legal/document/uu/1999/9/menimbang/point/e/text> .
+<http://example.org/legal/document/uu/1999/9> legal:documentHasDisahkanPengesah "BACHARUDDIN JUSUF HABIBIE" .
+<http://example.org/legal/document/uu/1999/9> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/1999/9> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/1999/9> a legal:Document .
+<http://example.org/legal/document/uu/1999/9/bab> a legal:BabSet .
+<http://example.org/legal/document/uu/1999/9/bab/0001> a legal:Bab .
+<http://example.org/legal/document/uu/1999/9/bab/0001/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1999/9/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0003> a legal:Point .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0004> a legal:Point .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0005> a legal:Point .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0005/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/9/bab/0002> a legal:Bab .
+<http://example.org/legal/document/uu/1999/9/bab/0002/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1999/9/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/9/bab/0003> a legal:Bab .
+<http://example.org/legal/document/uu/1999/9/bab/0004> a legal:Bab .
+<http://example.org/legal/document/uu/1999/9/bab/0005> a legal:Bab .
+<http://example.org/legal/document/uu/1999/9/bab/0006> a legal:Bab .
+<http://example.org/legal/document/uu/1999/9/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1999/9/mengingat/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1999/9/mengingat/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1999/9/mengingat/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/1999/9/mengingat/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/9/mengingat/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/1999/9/mengingat/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/9/mengingat/point/0003> a legal:Point .
+<http://example.org/legal/document/uu/1999/9/mengingat/point/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/9/mengingat/point/0004> a legal:Point .
+<http://example.org/legal/document/uu/1999/9/mengingat/point/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/9/mengingat/point/0005> a legal:Point .
+<http://example.org/legal/document/uu/1999/9/mengingat/point/0005/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/9/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1999/9/menimbang/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1999/9/menimbang/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1999/9/menimbang/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1999/9/menimbang/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/9/menimbang/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1999/9/menimbang/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/9/menimbang/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1999/9/menimbang/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/9/menimbang/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1999/9/menimbang/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/9/menimbang/point/e> a legal:Point .
+<http://example.org/legal/document/uu/1999/9/menimbang/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/9/bab> legal:partOf <http://example.org/legal/document/uu/1999/9> .
+<http://example.org/legal/document/uu/1999/9/bab/0001> legal:partOf <http://example.org/legal/document/uu/1999/9/bab> .
+<http://example.org/legal/document/uu/1999/9/bab/0001/pasals> legal:partOf <http://example.org/legal/document/uu/1999/9/bab/0001> .
+<http://example.org/legal/document/uu/1999/9/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1999/9/bab/0001/pasals> .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420> legal:partOf <http://example.org/legal/document/uu/1999/9/pasal/0001> .
+<http://example.org/legal/document/uu/1999/9/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1999/9> .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point> legal:partOf <http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420> .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0001> legal:partOf <http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point> .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0002> legal:partOf <http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point> .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0003> legal:partOf <http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point> .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0004> legal:partOf <http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point> .
+<http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point/0005> legal:partOf <http://example.org/legal/document/uu/1999/9/pasal/0001/version/19990420/point> .
+<http://example.org/legal/document/uu/1999/9/bab/0002> legal:partOf <http://example.org/legal/document/uu/1999/9/bab> .
+<http://example.org/legal/document/uu/1999/9/bab/0002/pasals> legal:partOf <http://example.org/legal/document/uu/1999/9/bab/0002> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1999/9/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420> legal:partOf <http://example.org/legal/document/uu/1999/9/pasal/0002> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1999/9> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat> legal:partOf <http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/a> legal:partOf <http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/b> legal:partOf <http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/c> legal:partOf <http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point/d> legal:partOf <http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0001/point> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0002> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat> .
+<http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1999/9/pasal/0002/version/19990420/ayat/0003> .
+<http://example.org/legal/document/uu/1999/9/bab/0003> legal:partOf <http://example.org/legal/document/uu/1999/9/bab> .
+<http://example.org/legal/document/uu/1999/9/bab/0003/pasals> legal:partOf <http://example.org/legal/document/uu/1999/9/bab/0003> .
+<http://example.org/legal/document/uu/1999/9/bab/0004> legal:partOf <http://example.org/legal/document/uu/1999/9/bab> .
+<http://example.org/legal/document/uu/1999/9/bab/0004/pasals> legal:partOf <http://example.org/legal/document/uu/1999/9/bab/0004> .
+<http://example.org/legal/document/uu/1999/9/bab/0005> legal:partOf <http://example.org/legal/document/uu/1999/9/bab> .
+<http://example.org/legal/document/uu/1999/9/bab/0005/pasals> legal:partOf <http://example.org/legal/document/uu/1999/9/bab/0005> .
+<http://example.org/legal/document/uu/1999/9/bab/0006> legal:partOf <http://example.org/legal/document/uu/1999/9/bab> .
+<http://example.org/legal/document/uu/1999/9/bab/0006/pasals> legal:partOf <http://example.org/legal/document/uu/1999/9/bab/0006> .
+<http://example.org/legal/document/uu/1999/9/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1999/9/mengingat/point> .
+<http://example.org/legal/document/uu/1999/9/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1999/9/mengingat/point> .
+<http://example.org/legal/document/uu/1999/9/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/1999/9/mengingat/point> .
+<http://example.org/legal/document/uu/1999/9/mengingat/point/0004> legal:partOf <http://example.org/legal/document/uu/1999/9/mengingat/point> .
+<http://example.org/legal/document/uu/1999/9/mengingat/point/0005> legal:partOf <http://example.org/legal/document/uu/1999/9/mengingat/point> .
+<http://example.org/legal/document/uu/1999/9/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1999/9/menimbang/point> .
+<http://example.org/legal/document/uu/1999/9/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1999/9/menimbang/point> .
+<http://example.org/legal/document/uu/1999/9/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/1999/9/menimbang/point> .
+<http://example.org/legal/document/uu/1999/9/menimbang/point/d> legal:partOf <http://example.org/legal/document/uu/1999/9/menimbang/point> .
+<http://example.org/legal/document/uu/1999/9/menimbang/point/e> legal:partOf <http://example.org/legal/document/uu/1999/9/menimbang/point> .

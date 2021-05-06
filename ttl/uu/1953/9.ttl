@@ -1,0 +1,20 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1953/9> legal:documentHasBabSet <http://example.org/legal/document/uu/1953/9/bab> .
+<http://example.org/legal/document/uu/1953/9> legal:documentHasDisahkanDate "1953-05-04"^^xsd:date .
+<http://example.org/legal/document/uu/1953/9> legal:documentMengingat <http://example.org/legal/document/uu/1953/9/mengingat> .
+<http://example.org/legal/document/uu/1953/9/mengingat/text> legal:textHasTextString "Pasal 17 Undang - undang Nomor 6 tahun 1951 tentang kedudukan keuangan Ketua dan Anggota - Dewan Perwakilan Rakyat Republik Indonesia; Mengingat pula: Pasal 90 ayat I dan pasal 92 ayat I - Undang - undang Dasar Sementara Republik Indonesia; Dengan persetujuan: Dewan Perwakilan Rakyat Republik Indonesia. MEMUTUSKAN: Menetapkan : UNDANG - UNDANG TENTANG PEMBERIAN TUNJANGAN YANG BERSIFAT PENSIUN KEPADA BEKAS KETUA DAN BEKAS ANGGOTA DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA. PRESIDEN REPUBLIK INDONESIA - 2 -" .
+<http://example.org/legal/document/uu/1953/9/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/1953/9/mengingat/text> .
+<http://example.org/legal/document/uu/1953/9> legal:documentMenimbang <http://example.org/legal/document/uu/1953/9/menimbang> .
+<http://example.org/legal/document/uu/1953/9/menimbang/text> legal:textHasTextString "perlu untuk mengadakan peraturan tentang pemberian tunjangan yang bersifat pensiun kepada bekas Ketua dan bekas Anggota Dewan Perwakilan Rakyat Republik Indonesia." .
+<http://example.org/legal/document/uu/1953/9/menimbang> legal:menimbangHasText <http://example.org/legal/document/uu/1953/9/menimbang/text> .
+<http://example.org/legal/document/uu/1953/9> legal:documentHasDisahkanPengesah "SUKARNO" .
+<http://example.org/legal/document/uu/1953/9> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/1953/9> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/1953/9> a legal:Document .
+<http://example.org/legal/document/uu/1953/9/mengingat/text> a legal:Text .
+<http://example.org/legal/document/uu/1953/9/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1953/9/menimbang/text> a legal:Text .
+<http://example.org/legal/document/uu/1953/9/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1953/9/bab> legal:partOf <http://example.org/legal/document/uu/1953/9> .

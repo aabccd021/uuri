@@ -1,0 +1,36 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1954/18> legal:documentHasBabSet <http://example.org/legal/document/uu/1954/18/bab> .
+<http://example.org/legal/document/uu/1954/18> legal:documentHasDisahkanDate "1954-05-10"^^xsd:date .
+<http://example.org/legal/document/uu/1954/18> legal:documentMengingat <http://example.org/legal/document/uu/1954/18/mengingat> .
+<http://example.org/legal/document/uu/1954/18/mengingat/text> legal:textHasTextString "pasal 89 dan pasal 97 Undang - undang Dasar Sementara Republik Indonesia; Dengan persetujuan Dewan Perwakilan Rakyat; PRESIDEN REPUBLIK INDONESIA - 2 - MEMUTUSKAN : Menetapkan : UNDANG - UNDANG TENTANG PENETAPAN \"UNDANG - UNDANG DARURAT GUNA MENETAPKAN WAKTU BERLAKUNYA ATURAN HUKUMAN YANG TERMAKSUD DALAM PASAL 3 AYAT 2 ORDONANSI (STAATSBLAD UNTUK INDONESIA 1948 No. 141) UNTUK SELANJUTNYA \" (UNDANG - UNDANG DARURAT No. 4 TAHUN 1954, LEMB ARAN NEGARA 1954 No. 12) SEBAGAI UNDANG - UNDANG. PASAL I Peraturan - peraturan yang termaktub dalam undang - undang Darurat guna menetapkan waktu berlakunya aturan hukuman yang termaksud dalam pasal 3 ayat 2 Ordonansi (Staatsblad untuk Indonesia 1948 No. 141 ) untuk selanjutnya (Undang - undang Darurat No. 4 tahun 1954, Lembaran Negara 1954 No. 12) ditetapkan sebagai Undang - undang, yang berbunyi sebagai berikut:" .
+<http://example.org/legal/document/uu/1954/18/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/1954/18/mengingat/text> .
+<http://example.org/legal/document/uu/1954/18> legal:documentMenimbang <http://example.org/legal/document/uu/1954/18/menimbang> .
+<http://example.org/legal/document/uu/1954/18/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/1954/18/menimbang/point> .
+<http://example.org/legal/document/uu/1954/18/menimbang/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1954/18/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1954/18/menimbang/point/description> .
+<http://example.org/legal/document/uu/1954/18/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1954/18/menimbang/point/a> .
+<http://example.org/legal/document/uu/1954/18/menimbang/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1954/18/menimbang/point/a/text> legal:textHasTextString "bahwa Pemerintah berdasarkan pasal 96 ayat 1 Undang - undang Dasar Sementara Republik Indonesia telah menetapkan Undang - undang Darurat guna menetapkan waktu berlakunya aturan hukuman yang termaksud data pasal 3 ayat 2 Ordonansi (Staatsblad untuk Indonesia 19 48 No. 141) untuk selanjutnya (Undang - undang Darurat No. 4 tahun 1954, Lembaran Negara 1954 No. 12);" .
+<http://example.org/legal/document/uu/1954/18/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/1954/18/menimbang/point/a/text> .
+<http://example.org/legal/document/uu/1954/18/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1954/18/menimbang/point/b> .
+<http://example.org/legal/document/uu/1954/18/menimbang/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1954/18/menimbang/point/b/text> legal:textHasTextString "bahwa peraturan - peraturan yang termaktub dalam Undang - undang Darurat tersebut perlu ditetapkan sebagai undang - undang;" .
+<http://example.org/legal/document/uu/1954/18/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/1954/18/menimbang/point/b/text> .
+<http://example.org/legal/document/uu/1954/18> legal:documentHasDisahkanPengesah "MOHAMMAD HATTA" .
+<http://example.org/legal/document/uu/1954/18> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/1954/18> legal:documentHasDisahkanJabatanPengesah "WAKIL PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/1954/18> a legal:Document .
+<http://example.org/legal/document/uu/1954/18/mengingat/text> a legal:Text .
+<http://example.org/legal/document/uu/1954/18/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1954/18/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1954/18/menimbang/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1954/18/menimbang/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1954/18/menimbang/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1954/18/menimbang/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1954/18/menimbang/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1954/18/menimbang/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1954/18/bab> legal:partOf <http://example.org/legal/document/uu/1954/18> .
+<http://example.org/legal/document/uu/1954/18/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1954/18/menimbang/point> .
+<http://example.org/legal/document/uu/1954/18/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1954/18/menimbang/point> .

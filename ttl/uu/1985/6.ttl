@@ -1,0 +1,50 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1985/6> legal:documentHasBabSet <http://example.org/legal/document/uu/1985/6/bab> .
+<http://example.org/legal/document/uu/1985/6> legal:documentHasDisahkanDate "1985-06-10"^^xsd:date .
+<http://example.org/legal/document/uu/1985/6> legal:documentMengingat <http://example.org/legal/document/uu/1985/6/mengingat> .
+<http://example.org/legal/document/uu/1985/6/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1985/6/mengingat/point> .
+<http://example.org/legal/document/uu/1985/6/mengingat/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1985/6/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1985/6/mengingat/point/description> .
+<http://example.org/legal/document/uu/1985/6/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1985/6/mengingat/point/0001> .
+<http://example.org/legal/document/uu/1985/6/mengingat/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/1985/6/mengingat/point/0001/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 20 ayat (1) dan Pasal 23 Undang-Undang Dasar 1945;" .
+<http://example.org/legal/document/uu/1985/6/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1985/6/mengingat/point/0001/text> .
+<http://example.org/legal/document/uu/1985/6/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1985/6/mengingat/point/0002> .
+<http://example.org/legal/document/uu/1985/6/mengingat/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/1985/6/mengingat/point/0002/text> legal:textHasTextString "Indische Comptabiliteitswet (Staatsblad Tahun 1925 Nomor 448) sebagaimana diubah dan ditambah, terakhir dengan Undang-undang Nomor 9 Tahun 1968 tentang Perubahan Pasal 7 Indische Comptabiliteitswet (Lembaran Negara Tahun 1968 Nomor 53, Tambahan Lembaran Negara Nomor 2860);" .
+<http://example.org/legal/document/uu/1985/6/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1985/6/mengingat/point/0002/text> .
+<http://example.org/legal/document/uu/1985/6/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1985/6/mengingat/point/0003> .
+<http://example.org/legal/document/uu/1985/6/mengingat/point/0003> legal:pointHasKey "3" .
+<http://example.org/legal/document/uu/1985/6/mengingat/point/0003/text> legal:textHasTextString "Undang-undang Nomor 1 Tahun 1981 tentang Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1981/1982 (Lembaran Negara Tahun 1981 Nomor 9, Tambahan Lembaran Negara Nomor 3191);" .
+<http://example.org/legal/document/uu/1985/6/mengingat/point/0003> legal:pointHasText <http://example.org/legal/document/uu/1985/6/mengingat/point/0003/text> .
+<http://example.org/legal/document/uu/1985/6/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1985/6/mengingat/point/0004> .
+<http://example.org/legal/document/uu/1985/6/mengingat/point/0004> legal:pointHasKey "4" .
+<http://example.org/legal/document/uu/1985/6/mengingat/point/0004/text> legal:textHasTextString "Undang-undang Nomor 7 Tahun 1982 tentang Tambahan dan Perubahan atas Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1981 / 1982 (Lembaran Negara Tahun 1982 Nomor 29, Tambahan Lembaran Negara Nomor 3218); Dengan persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG REPUBLIK INDONESIA TENTANG PERHITUNGAN ANGGARAN NEGARA TAHUN ANGGARAN 1981/1982." .
+<http://example.org/legal/document/uu/1985/6/mengingat/point/0004> legal:pointHasText <http://example.org/legal/document/uu/1985/6/mengingat/point/0004/text> .
+<http://example.org/legal/document/uu/1985/6> legal:documentMenimbang <http://example.org/legal/document/uu/1985/6/menimbang> .
+<http://example.org/legal/document/uu/1985/6/menimbang/text> legal:textHasTextString "bahwa Perhitungan Anggaran Negara Tahun Anggaran 1981/1982 perlu ditetapkan dengan Undang-undang;" .
+<http://example.org/legal/document/uu/1985/6/menimbang> legal:menimbangHasText <http://example.org/legal/document/uu/1985/6/menimbang/text> .
+<http://example.org/legal/document/uu/1985/6> legal:documentHasDisahkanPengesah "SOEHARTO" .
+<http://example.org/legal/document/uu/1985/6> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/1985/6> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA" .
+<http://example.org/legal/document/uu/1985/6> a legal:Document .
+<http://example.org/legal/document/uu/1985/6/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1985/6/mengingat/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1985/6/mengingat/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1985/6/mengingat/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/1985/6/mengingat/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1985/6/mengingat/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/1985/6/mengingat/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1985/6/mengingat/point/0003> a legal:Point .
+<http://example.org/legal/document/uu/1985/6/mengingat/point/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1985/6/mengingat/point/0004> a legal:Point .
+<http://example.org/legal/document/uu/1985/6/mengingat/point/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1985/6/menimbang/text> a legal:Text .
+<http://example.org/legal/document/uu/1985/6/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1985/6/bab> legal:partOf <http://example.org/legal/document/uu/1985/6> .
+<http://example.org/legal/document/uu/1985/6/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1985/6/mengingat/point> .
+<http://example.org/legal/document/uu/1985/6/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1985/6/mengingat/point> .
+<http://example.org/legal/document/uu/1985/6/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/1985/6/mengingat/point> .
+<http://example.org/legal/document/uu/1985/6/mengingat/point/0004> legal:partOf <http://example.org/legal/document/uu/1985/6/mengingat/point> .

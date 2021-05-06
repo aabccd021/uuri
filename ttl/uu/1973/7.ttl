@@ -1,0 +1,20 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1973/7> legal:documentHasBabSet <http://example.org/legal/document/uu/1973/7/bab> .
+<http://example.org/legal/document/uu/1973/7> legal:documentHasDisahkanDate "1973-12-08"^^xsd:date .
+<http://example.org/legal/document/uu/1973/7> legal:documentMengingat <http://example.org/legal/document/uu/1973/7/mengingat> .
+<http://example.org/legal/document/uu/1973/7/mengingat/text> legal:textHasTextString " Undang Dasar 1945, 2. Ketetapan Majelis Permusyawaratan Rakyat Republik Indonesia Nomor IV/MPR/1973 tentang Garis-garis Besar Haluan Negara, mengenai Wawasan Nusantara, 3. Undang-Undang Nomor 4 Prp. Tahun 1960 tentang Perairan Indonesia (Lembaran Negara Republik Indonesia Tahun 1960 Nomor 22, Tambahan Lembaran Negara Republik Indonesia Nomor 1942). Dengan persetujuan Dewan Perwakilan Rakyat Republik Indonesia. PRESIDEN REPUBLIK INDONESIA 2 MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG PERJANJIAN ANTARA REPUBLIK INDONESIA DAN REPUBLIK SINGAPURA MENGENAI PENETAPAN GARIS BATAS LAUT WILAYAH KEDUA NEGARA DI SELAT SINGAPURA." .
+<http://example.org/legal/document/uu/1973/7/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/1973/7/mengingat/text> .
+<http://example.org/legal/document/uu/1973/7> legal:documentMenimbang <http://example.org/legal/document/uu/1973/7/menimbang> .
+<http://example.org/legal/document/uu/1973/7/menimbang/text> legal:textHasTextString " ditandatangani \"Perjanjian antara Republik Indonesia dan Republik Singapura tentang Penetapan Garis Batas Laut Wilayah kedua Negara di Selat Singapura\": b. bahwa Perjanjian tersebut pada huruf a diatas dipandang perlu untuk disetujui dengan Undang-undang." .
+<http://example.org/legal/document/uu/1973/7/menimbang> legal:menimbangHasText <http://example.org/legal/document/uu/1973/7/menimbang/text> .
+<http://example.org/legal/document/uu/1973/7> legal:documentHasDisahkanPengesah "JENDERAL TNI." .
+<http://example.org/legal/document/uu/1973/7> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/1973/7> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/1973/7> a legal:Document .
+<http://example.org/legal/document/uu/1973/7/mengingat/text> a legal:Text .
+<http://example.org/legal/document/uu/1973/7/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1973/7/menimbang/text> a legal:Text .
+<http://example.org/legal/document/uu/1973/7/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1973/7/bab> legal:partOf <http://example.org/legal/document/uu/1973/7> .

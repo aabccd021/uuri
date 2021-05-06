@@ -1,0 +1,20 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1962/8> legal:documentHasBabSet <http://example.org/legal/document/uu/1962/8/bab> .
+<http://example.org/legal/document/uu/1962/8> legal:documentHasDisahkanDate "1962-06-18"^^xsd:date .
+<http://example.org/legal/document/uu/1962/8> legal:documentMengingat <http://example.org/legal/document/uu/1962/8/mengingat> .
+<http://example.org/legal/document/uu/1962/8/mengingat/text> legal:textHasTextString " pasal 11, pasal 5 ayat (1) danpasal 20 ayat (1) Und ang-undangDasar; DenganpersetujuanDewanPerwakilan Rakyat GotongRoyon g; MEMUTUSKAN : Menetapkan : Undang-undangtentangpembuatanperjanjianpersahabatan antaraRepublik Indonesia danRepublik Rakyat Hongari a." .
+<http://example.org/legal/document/uu/1962/8/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/1962/8/mengingat/text> .
+<http://example.org/legal/document/uu/1962/8> legal:documentMenimbang <http://example.org/legal/document/uu/1962/8/menimbang> .
+<http://example.org/legal/document/uu/1962/8/menimbang/text> legal:textHasTextString " bahwaperludibuatPerjanjianPersahabatandanKerja-sama antaraRepublik Indonesia danRepublik Rakyat Hongaria;" .
+<http://example.org/legal/document/uu/1962/8/menimbang> legal:menimbangHasText <http://example.org/legal/document/uu/1962/8/menimbang/text> .
+<http://example.org/legal/document/uu/1962/8> legal:documentHasDisahkanPengesah "Diundangkan di Jakarta" .
+<http://example.org/legal/document/uu/1962/8> legal:documentHasDisahkanLocation "Jakarta," .
+<http://example.org/legal/document/uu/1962/8> legal:documentHasDisahkanJabatanPengesah "PresidenRepublik Indonesia," .
+<http://example.org/legal/document/uu/1962/8> a legal:Document .
+<http://example.org/legal/document/uu/1962/8/mengingat/text> a legal:Text .
+<http://example.org/legal/document/uu/1962/8/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1962/8/menimbang/text> a legal:Text .
+<http://example.org/legal/document/uu/1962/8/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1962/8/bab> legal:partOf <http://example.org/legal/document/uu/1962/8> .

@@ -1,0 +1,20 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1957/22> legal:documentHasBabSet <http://example.org/legal/document/uu/1957/22/bab> .
+<http://example.org/legal/document/uu/1957/22> legal:documentHasDisahkanDate "1957-04-08"^^xsd:date .
+<http://example.org/legal/document/uu/1957/22> legal:documentMengingat <http://example.org/legal/document/uu/1957/22/mengingat> .
+<http://example.org/legal/document/uu/1957/22/mengingat/text> legal:textHasTextString "Pasal 21 dan 89 Undang - undang Dasar Sementera Republik Indonesia; Dengan persetujuan Dewan Perwakilan Rakyat; MEMUTUSKAN : I. Mencabut Undang - undang Darurat No. 16 tahun 1951 tentang Penyelesaian Perselisihan Perburuhan; II. Menetapkan: \"Undang - undang tentang Penyelesaian Perselisihan Perburuhan\". BAGIAN I. TENTANG ISTILAH - ISTILAH DALAM UNDANG - UNDANG INI." .
+<http://example.org/legal/document/uu/1957/22/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/1957/22/mengingat/text> .
+<http://example.org/legal/document/uu/1957/22> legal:documentMenimbang <http://example.org/legal/document/uu/1957/22/menimbang> .
+<http://example.org/legal/document/uu/1957/22/menimbang/text> legal:textHasTextString "bahwa sudah tiba waktunya untuk mengganti Undang - undang Darurat No. 16 tahun 1951 tentang Penyelesaian Perselisihan Perburuhan; bahwa perlu diadakan peraturan baru u ntuk menyelesaikan perselisihan - perselisihan perburuhan;" .
+<http://example.org/legal/document/uu/1957/22/menimbang> legal:menimbangHasText <http://example.org/legal/document/uu/1957/22/menimbang/text> .
+<http://example.org/legal/document/uu/1957/22> legal:documentHasDisahkanPengesah "SUKARNO" .
+<http://example.org/legal/document/uu/1957/22> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/1957/22> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/1957/22> a legal:Document .
+<http://example.org/legal/document/uu/1957/22/mengingat/text> a legal:Text .
+<http://example.org/legal/document/uu/1957/22/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1957/22/menimbang/text> a legal:Text .
+<http://example.org/legal/document/uu/1957/22/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1957/22/bab> legal:partOf <http://example.org/legal/document/uu/1957/22> .

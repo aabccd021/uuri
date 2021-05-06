@@ -1,0 +1,674 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1979/4> legal:documentHasBabSet <http://example.org/legal/document/uu/1979/4/bab> .
+<http://example.org/legal/document/uu/1979/4/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1979/4/bab/0001> .
+<http://example.org/legal/document/uu/1979/4/bab/0001> legal:babHasKey 1 .
+<http://example.org/legal/document/uu/1979/4/bab/0001> legal:babHasTitle "KETENTUAN UMUM" .
+<http://example.org/legal/document/uu/1979/4/bab/0001> legal:babHasPasalSet <http://example.org/legal/document/uu/1979/4/bab/0001/pasals> .
+<http://example.org/legal/document/uu/1979/4/bab/0001/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1979/4/pasal/0001> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1979/4/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723> .
+<http://example.org/legal/document/uu/1979/4> legal:documentHasPasal <http://example.org/legal/document/uu/1979/4/pasal/0001> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723> legal:pasalVersionHasVersionDate "1979-07-23"^^xsd:date .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723> legal:pasalVersionHasRawText "Yang dimaksudkan di dalam Undang - undang ini dengan :\n1. \na. Kesejahteraan Anak adalah suatu tata kehidupan dan penghidupan anak yang dapat menjamin pertumbuhan dan perkembangannya dengan wajar, baik secara rohani, jasmani maupun sosial;\nb. Usaha Kesejahte raan anak adalah usaha kesejahteraan sosial yang ditujukan untuk menjamin terwujudnya Kesejahteraan Anak terutama terpenuhinya kebutuhan pokok anak.\n\n2. Anak adalah seseorang yang belum mencapai umur 21 (dua puluh satu) tahun dan belum pernah kawin.\n3. \na. Or ang tua adalah ayah dan atau ibu kandung;\nb. Wali adalah orang atau badan yang dalam kenyataannya menjalankan kekuasaan asuh sebagai orang tua terhadap anak.\n\n4. Keluarga adalah kesatuan masyarakat terkecil yang terdiri dari ayah dan atau ibu dan anak.\n5. Anak yang tidak mempunyai orang tua adalah anak yang tidak ada lagi ayah dan ibu kandungnya.\n6. Anak yang tidak mampu adalah anak yang karena suatu sebab tidak dapat terpenuhi kebutuhan - kebutuhannya, baik secara rohani, jasmani maupun sosial dengan wajar .\n7. Anak terlantar adalah anak yang karena suatu sebab orang tuanya melalaikan kewajibannya sehingga kebutuhan anak tidak dapat terpenuhi dengan wajar baik secara rohani, jasmani maupun sosial.\n8. Anak yang mengalami masalah kelakuan adalah anak yang menu njukkan tingkah laku menyimpang dari norma - norma masyarakat.\n9. Anak cacat adalah anak yang mengalami hambatan rohani dan atau jasmani sehingga mengganggu pertumbuhan dan perkembangannya dengan wajar.\n" .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/description> legal:textHasTextString "Yang dimaksudkan di dalam Undang - undang ini dengan :" .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/description> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001> legal:pointHasPointSet <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001/point> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001/point/description> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001/point/a> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001/point/a/text> legal:textHasTextString "Kesejahteraan Anak adalah suatu tata kehidupan dan penghidupan anak yang dapat menjamin pertumbuhan dan perkembangannya dengan wajar, baik secara rohani, jasmani maupun sosial;" .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001/point/a/text> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001/point/b> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001/point/b/text> legal:textHasTextString "Usaha Kesejahte raan anak adalah usaha kesejahteraan sosial yang ditujukan untuk menjamin terwujudnya Kesejahteraan Anak terutama terpenuhinya kebutuhan pokok anak." .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001/point/b> legal:pointHasText <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001/point/b/text> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0002> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0002/text> legal:textHasTextString "Anak adalah seseorang yang belum mencapai umur 21 (dua puluh satu) tahun dan belum pernah kawin." .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0002/text> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003> legal:pointHasKey "3" .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003> legal:pointHasPointSet <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003/point> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003/point/description> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003/point/a> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003/point/a/text> legal:textHasTextString "Or ang tua adalah ayah dan atau ibu kandung;" .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003/point/a> legal:pointHasText <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003/point/a/text> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003/point/b> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003/point/b/text> legal:textHasTextString "Wali adalah orang atau badan yang dalam kenyataannya menjalankan kekuasaan asuh sebagai orang tua terhadap anak." .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003/point/b> legal:pointHasText <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003/point/b/text> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0004> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0004> legal:pointHasKey "4" .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0004/text> legal:textHasTextString "Keluarga adalah kesatuan masyarakat terkecil yang terdiri dari ayah dan atau ibu dan anak." .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0004> legal:pointHasText <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0004/text> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0005> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0005> legal:pointHasKey "5" .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0005/text> legal:textHasTextString "Anak yang tidak mempunyai orang tua adalah anak yang tidak ada lagi ayah dan ibu kandungnya." .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0005> legal:pointHasText <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0005/text> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0006> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0006> legal:pointHasKey "6" .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0006/text> legal:textHasTextString "Anak yang tidak mampu adalah anak yang karena suatu sebab tidak dapat terpenuhi kebutuhan - kebutuhannya, baik secara rohani, jasmani maupun sosial dengan wajar ." .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0006> legal:pointHasText <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0006/text> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0007> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0007> legal:pointHasKey "7" .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0007/text> legal:textHasTextString "Anak terlantar adalah anak yang karena suatu sebab orang tuanya melalaikan kewajibannya sehingga kebutuhan anak tidak dapat terpenuhi dengan wajar baik secara rohani, jasmani maupun sosial." .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0007> legal:pointHasText <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0007/text> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0008> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0008> legal:pointHasKey "8" .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0008/text> legal:textHasTextString "Anak yang mengalami masalah kelakuan adalah anak yang menu njukkan tingkah laku menyimpang dari norma - norma masyarakat." .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0008> legal:pointHasText <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0008/text> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0009> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0009> legal:pointHasKey "9" .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0009/text> legal:textHasTextString "Anak cacat adalah anak yang mengalami hambatan rohani dan atau jasmani sehingga mengganggu pertumbuhan dan perkembangannya dengan wajar." .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0009> legal:pointHasText <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0009/text> .
+<http://example.org/legal/document/uu/1979/4/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1979/4/bab/0002> .
+<http://example.org/legal/document/uu/1979/4/bab/0002> legal:babHasKey 2 .
+<http://example.org/legal/document/uu/1979/4/bab/0002> legal:babHasTitle "HAK ANAK" .
+<http://example.org/legal/document/uu/1979/4/bab/0002> legal:babHasPasalSet <http://example.org/legal/document/uu/1979/4/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1979/4/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1979/4/pasal/0002> .
+<http://example.org/legal/document/uu/1979/4/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1979/4/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723> .
+<http://example.org/legal/document/uu/1979/4> legal:documentHasPasal <http://example.org/legal/document/uu/1979/4/pasal/0002> .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723> legal:pasalVersionHasVersionDate "1979-07-23"^^xsd:date .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723> legal:pasalVersionHasRawText "(1). Anak berhak atas kesejahteraan, perawatan, asuhan dan bimbingan berdasarkan kasih sayang baik dalam keluarganya maupun di dalam asuhan khusus untuk tumbuh dan berkembang dengan wajar.\n(2). Anak berhak atas pelayanan untuk mengembangkan kemampuan dan kehidup an sosialnya, sesuai dengan kebudayaan dan kepribadian bangsa, untuk menjadi warganegara yang baik dan berguna. PRESIDEN REPUBLIK INDONESIA - 3 -\n(3). Anak berhak atas pemeliharaan dan perlidungan, baik semasa dalam kandungan maupun sesudah dilahirkan.\n(4). Anak berhak atas perl indungan terhadap lingkungan hidup yang dapat membahayakan atau menghambat pertumbuhan dan perkembangannya dengan wajar." .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat> .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0001> .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0001> legal:ayatHasRawText "Anak berhak atas kesejahteraan, perawatan, asuhan dan bimbingan berdasarkan kasih sayang baik dalam keluarganya maupun di dalam asuhan khusus untuk tumbuh dan berkembang dengan wajar." .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0001/text> legal:textHasTextString "Anak berhak atas kesejahteraan, perawatan, asuhan dan bimbingan berdasarkan kasih sayang baik dalam keluarganya maupun di dalam asuhan khusus untuk tumbuh dan berkembang dengan wajar." .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0001/text> .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0002> .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0002> legal:ayatHasRawText "Anak berhak atas pelayanan untuk mengembangkan kemampuan dan kehidup an sosialnya, sesuai dengan kebudayaan dan kepribadian bangsa, untuk menjadi warganegara yang baik dan berguna. PRESIDEN REPUBLIK INDONESIA - 3 -" .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0002/text> legal:textHasTextString "Anak berhak atas pelayanan untuk mengembangkan kemampuan dan kehidup an sosialnya, sesuai dengan kebudayaan dan kepribadian bangsa, untuk menjadi warganegara yang baik dan berguna. PRESIDEN REPUBLIK INDONESIA - 3 -" .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0002/text> .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0003> .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0003> legal:ayatHasRawText "Anak berhak atas pemeliharaan dan perlidungan, baik semasa dalam kandungan maupun sesudah dilahirkan." .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0003/text> legal:textHasTextString "Anak berhak atas pemeliharaan dan perlidungan, baik semasa dalam kandungan maupun sesudah dilahirkan." .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0003/text> .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0004> .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0004> legal:ayatHasKey 4 .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0004> legal:ayatHasRawText "Anak berhak atas perl indungan terhadap lingkungan hidup yang dapat membahayakan atau menghambat pertumbuhan dan perkembangannya dengan wajar." .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0004/text> legal:textHasTextString "Anak berhak atas perl indungan terhadap lingkungan hidup yang dapat membahayakan atau menghambat pertumbuhan dan perkembangannya dengan wajar." .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0004/text> .
+<http://example.org/legal/document/uu/1979/4/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1979/4/pasal/0003> .
+<http://example.org/legal/document/uu/1979/4/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/1979/4/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1979/4/pasal/0003/version/19790723> .
+<http://example.org/legal/document/uu/1979/4> legal:documentHasPasal <http://example.org/legal/document/uu/1979/4/pasal/0003> .
+<http://example.org/legal/document/uu/1979/4/pasal/0003/version/19790723> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1979/4/pasal/0003/version/19790723> legal:pasalVersionHasVersionDate "1979-07-23"^^xsd:date .
+<http://example.org/legal/document/uu/1979/4/pasal/0003/version/19790723> legal:pasalVersionHasRawText "Dalam keadaan yang membahayakan, anaklah yang pertama - tama berhak mendapat pertolongan, bantuan, dan perlindungan." .
+<http://example.org/legal/document/uu/1979/4/pasal/0003/version/19790723/text> legal:textHasTextString "Dalam keadaan yang membahayakan, anaklah yang pertama - tama berhak mendapat pertolongan, bantuan, dan perlindungan." .
+<http://example.org/legal/document/uu/1979/4/pasal/0003/version/19790723> legal:pasalVersionHasText <http://example.org/legal/document/uu/1979/4/pasal/0003/version/19790723/text> .
+<http://example.org/legal/document/uu/1979/4/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1979/4/pasal/0004> .
+<http://example.org/legal/document/uu/1979/4/pasal/0004> legal:pasalHasKey 4 .
+<http://example.org/legal/document/uu/1979/4/pasal/0004> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723> .
+<http://example.org/legal/document/uu/1979/4> legal:documentHasPasal <http://example.org/legal/document/uu/1979/4/pasal/0004> .
+<http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723> legal:pasalVersionHasVersionDate "1979-07-23"^^xsd:date .
+<http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723> legal:pasalVersionHasRawText "(1). Anak yang tidak mempunyai orang tua berhak memperoleh asuhan oleh negara atau orang atau badan.\n(2). Pelaksanaan ketentuan ayat (1) diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723/ayat> .
+<http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723/ayat/0001> .
+<http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723/ayat/0001> legal:ayatHasRawText "Anak yang tidak mempunyai orang tua berhak memperoleh asuhan oleh negara atau orang atau badan." .
+<http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723/ayat/0001/text> legal:textHasTextString "Anak yang tidak mempunyai orang tua berhak memperoleh asuhan oleh negara atau orang atau badan." .
+<http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723/ayat/0001/text> .
+<http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723/ayat/0002> .
+<http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723/ayat/0002> legal:ayatHasRawText "Pelaksanaan ketentuan ayat (1) diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723/ayat/0002/text> legal:textHasTextString "Pelaksanaan ketentuan ayat (1) diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723/ayat/0002/text> .
+<http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723/ayat/0001> .
+<http://example.org/legal/document/uu/1979/4/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1979/4/pasal/0005> .
+<http://example.org/legal/document/uu/1979/4/pasal/0005> legal:pasalHasKey 5 .
+<http://example.org/legal/document/uu/1979/4/pasal/0005> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723> .
+<http://example.org/legal/document/uu/1979/4> legal:documentHasPasal <http://example.org/legal/document/uu/1979/4/pasal/0005> .
+<http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723> legal:pasalVersionHasVersionDate "1979-07-23"^^xsd:date .
+<http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723> legal:pasalVersionHasRawText "(1). Anak yang tidak mampu berhak memperoleh bantuan agar dala m lingkungan keluarganya dapat tumbuh dan berkembang dengan wajar.\n(2). Pelaksanaan ketentuan ayat (1) diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723/ayat> .
+<http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723/ayat/0001> .
+<http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723/ayat/0001> legal:ayatHasRawText "Anak yang tidak mampu berhak memperoleh bantuan agar dala m lingkungan keluarganya dapat tumbuh dan berkembang dengan wajar." .
+<http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723/ayat/0001/text> legal:textHasTextString "Anak yang tidak mampu berhak memperoleh bantuan agar dala m lingkungan keluarganya dapat tumbuh dan berkembang dengan wajar." .
+<http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723/ayat/0001/text> .
+<http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723/ayat/0002> .
+<http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723/ayat/0002> legal:ayatHasRawText "Pelaksanaan ketentuan ayat (1) diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723/ayat/0002/text> legal:textHasTextString "Pelaksanaan ketentuan ayat (1) diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723/ayat/0002/text> .
+<http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723/ayat/0001> .
+<http://example.org/legal/document/uu/1979/4/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1979/4/pasal/0006> .
+<http://example.org/legal/document/uu/1979/4/pasal/0006> legal:pasalHasKey 6 .
+<http://example.org/legal/document/uu/1979/4/pasal/0006> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723> .
+<http://example.org/legal/document/uu/1979/4> legal:documentHasPasal <http://example.org/legal/document/uu/1979/4/pasal/0006> .
+<http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723> legal:pasalVersionHasVersionDate "1979-07-23"^^xsd:date .
+<http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723> legal:pasalVersionHasRawText "(1). Anak yang mengalami masalah kelakuan diberi pelayanan dan asuhan yang bertujuan menolongnya guna mengatasi hambatan yang terjadi dalam masa pertumbuhan dan perkembangannya.\n(2). Pelayanan dan asuhan, sebagaimana dimaksudkan dalam ayat (1), juga diberikan kepada anak yang telah dinyatakan bersalah melakukan pelanggaran hukum berdasarkan keputusan hakim." .
+<http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723/ayat> .
+<http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723/ayat/0001> .
+<http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723/ayat/0001> legal:ayatHasRawText "Anak yang mengalami masalah kelakuan diberi pelayanan dan asuhan yang bertujuan menolongnya guna mengatasi hambatan yang terjadi dalam masa pertumbuhan dan perkembangannya." .
+<http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723/ayat/0001/text> legal:textHasTextString "Anak yang mengalami masalah kelakuan diberi pelayanan dan asuhan yang bertujuan menolongnya guna mengatasi hambatan yang terjadi dalam masa pertumbuhan dan perkembangannya." .
+<http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723/ayat/0001/text> .
+<http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723/ayat/0002> .
+<http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723/ayat/0002> legal:ayatHasRawText "Pelayanan dan asuhan, sebagaimana dimaksudkan dalam ayat (1), juga diberikan kepada anak yang telah dinyatakan bersalah melakukan pelanggaran hukum berdasarkan keputusan hakim." .
+<http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723/ayat/0002/text> legal:textHasTextString "Pelayanan dan asuhan, sebagaimana dimaksudkan dalam ayat (1), juga diberikan kepada anak yang telah dinyatakan bersalah melakukan pelanggaran hukum berdasarkan keputusan hakim." .
+<http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723/ayat/0002/text> .
+<http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723/ayat/0001> .
+<http://example.org/legal/document/uu/1979/4/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1979/4/pasal/0007> .
+<http://example.org/legal/document/uu/1979/4/pasal/0007> legal:pasalHasKey 7 .
+<http://example.org/legal/document/uu/1979/4/pasal/0007> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1979/4/pasal/0007/version/19790723> .
+<http://example.org/legal/document/uu/1979/4> legal:documentHasPasal <http://example.org/legal/document/uu/1979/4/pasal/0007> .
+<http://example.org/legal/document/uu/1979/4/pasal/0007/version/19790723> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1979/4/pasal/0007/version/19790723> legal:pasalVersionHasVersionDate "1979-07-23"^^xsd:date .
+<http://example.org/legal/document/uu/1979/4/pasal/0007/version/19790723> legal:pasalVersionHasRawText "Anak cacat berhak memperoleh pelayanan khusus untuk mencapai tingkat pertumbuhan dan perkembangan sejauh batas kemampuan dan kesanggupan anak yang bersangkutan." .
+<http://example.org/legal/document/uu/1979/4/pasal/0007/version/19790723/text> legal:textHasTextString "Anak cacat berhak memperoleh pelayanan khusus untuk mencapai tingkat pertumbuhan dan perkembangan sejauh batas kemampuan dan kesanggupan anak yang bersangkutan." .
+<http://example.org/legal/document/uu/1979/4/pasal/0007/version/19790723> legal:pasalVersionHasText <http://example.org/legal/document/uu/1979/4/pasal/0007/version/19790723/text> .
+<http://example.org/legal/document/uu/1979/4/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1979/4/pasal/0008> .
+<http://example.org/legal/document/uu/1979/4/pasal/0008> legal:pasalHasKey 8 .
+<http://example.org/legal/document/uu/1979/4/pasal/0008> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1979/4/pasal/0008/version/19790723> .
+<http://example.org/legal/document/uu/1979/4> legal:documentHasPasal <http://example.org/legal/document/uu/1979/4/pasal/0008> .
+<http://example.org/legal/document/uu/1979/4/pasal/0008/version/19790723> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1979/4/pasal/0008/version/19790723> legal:pasalVersionHasVersionDate "1979-07-23"^^xsd:date .
+<http://example.org/legal/document/uu/1979/4/pasal/0008/version/19790723> legal:pasalVersionHasRawText "Bantuan dan pelayanan, yang bertujuan mewujudkan kesejahteraan anak menjadi hak setiap anak tanpa membeda - bedakan jenis kelamin, agama, pendirian politik, dan kedudukan sosial. PRESIDEN REPUBLIK INDONESIA - 4 -" .
+<http://example.org/legal/document/uu/1979/4/pasal/0008/version/19790723/text> legal:textHasTextString "Bantuan dan pelayanan, yang bertujuan mewujudkan kesejahteraan anak menjadi hak setiap anak tanpa membeda - bedakan jenis kelamin, agama, pendirian politik, dan kedudukan sosial. PRESIDEN REPUBLIK INDONESIA - 4 -" .
+<http://example.org/legal/document/uu/1979/4/pasal/0008/version/19790723> legal:pasalVersionHasText <http://example.org/legal/document/uu/1979/4/pasal/0008/version/19790723/text> .
+<http://example.org/legal/document/uu/1979/4/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1979/4/bab/0003> .
+<http://example.org/legal/document/uu/1979/4/bab/0003> legal:babHasKey 3 .
+<http://example.org/legal/document/uu/1979/4/bab/0003> legal:babHasTitle "TANGGUNGJAWAB ORANG TUA TERHADAP KESEJAHTERAAN ANAK" .
+<http://example.org/legal/document/uu/1979/4/bab/0003> legal:babHasPasalSet <http://example.org/legal/document/uu/1979/4/bab/0003/pasals> .
+<http://example.org/legal/document/uu/1979/4/bab/0003/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1979/4/pasal/0009> .
+<http://example.org/legal/document/uu/1979/4/pasal/0009> legal:pasalHasKey 9 .
+<http://example.org/legal/document/uu/1979/4/pasal/0009> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1979/4/pasal/0009/version/19790723> .
+<http://example.org/legal/document/uu/1979/4> legal:documentHasPasal <http://example.org/legal/document/uu/1979/4/pasal/0009> .
+<http://example.org/legal/document/uu/1979/4/pasal/0009/version/19790723> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1979/4/pasal/0009/version/19790723> legal:pasalVersionHasVersionDate "1979-07-23"^^xsd:date .
+<http://example.org/legal/document/uu/1979/4/pasal/0009/version/19790723> legal:pasalVersionHasRawText "Orang tua adalah yang pertama - tama bertanggungjawab atas terwujudnya kesejahteraan anak baik secara rohani, jasmani maupun sosial." .
+<http://example.org/legal/document/uu/1979/4/pasal/0009/version/19790723/text> legal:textHasTextString "Orang tua adalah yang pertama - tama bertanggungjawab atas terwujudnya kesejahteraan anak baik secara rohani, jasmani maupun sosial." .
+<http://example.org/legal/document/uu/1979/4/pasal/0009/version/19790723> legal:pasalVersionHasText <http://example.org/legal/document/uu/1979/4/pasal/0009/version/19790723/text> .
+<http://example.org/legal/document/uu/1979/4/bab/0003/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1979/4/pasal/0010> .
+<http://example.org/legal/document/uu/1979/4/pasal/0010> legal:pasalHasKey 10 .
+<http://example.org/legal/document/uu/1979/4/pasal/0010> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723> .
+<http://example.org/legal/document/uu/1979/4> legal:documentHasPasal <http://example.org/legal/document/uu/1979/4/pasal/0010> .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723> legal:pasalVersionHasVersionDate "1979-07-23"^^xsd:date .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723> legal:pasalVersionHasRawText "(1). Orang tua yang terbukti melalaikan tanggungjawabnya sebagaimana termaksud dalam Pasal 9, sehingga mengakibatkan timbulnya hambatan dalam pertumbuhan dan perkembangan anak, dapat dicabut kuasa asuhnya sebagai orang tua terhadap anaknya. Dalam hal itu ditunjuk orang atau badan sebagai wali.\n(2). Pencabutan kuasa asuh dalam ayat (1) tida k menghapuskan kewajiban orang tua yang bersangkutan untuk membiayai, sesuai dengan kemampuannya, penghidupan, pemeliharaan, dan pendidikan anaknya.\n(3). Pencabutan dan pengembalian kuasa asuh orang tua ditetapkan dengan keputusan hakim.\n(4). Pelaksanaan ket entuan ayat (1), (2) dan (3) diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat> .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0001> .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0001> legal:ayatHasRawText "Orang tua yang terbukti melalaikan tanggungjawabnya sebagaimana termaksud dalam Pasal 9, sehingga mengakibatkan timbulnya hambatan dalam pertumbuhan dan perkembangan anak, dapat dicabut kuasa asuhnya sebagai orang tua terhadap anaknya. Dalam hal itu ditunjuk orang atau badan sebagai wali." .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0001/text> legal:textHasTextString "Orang tua yang terbukti melalaikan tanggungjawabnya sebagaimana termaksud dalam Pasal 9, sehingga mengakibatkan timbulnya hambatan dalam pertumbuhan dan perkembangan anak, dapat dicabut kuasa asuhnya sebagai orang tua terhadap anaknya. Dalam hal itu ditunjuk orang atau badan sebagai wali." .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0001/text> .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1979/4/pasal/0009> .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0002> .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0002> legal:ayatHasRawText "Pencabutan kuasa asuh dalam ayat (1) tida k menghapuskan kewajiban orang tua yang bersangkutan untuk membiayai, sesuai dengan kemampuannya, penghidupan, pemeliharaan, dan pendidikan anaknya." .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0002/text> legal:textHasTextString "Pencabutan kuasa asuh dalam ayat (1) tida k menghapuskan kewajiban orang tua yang bersangkutan untuk membiayai, sesuai dengan kemampuannya, penghidupan, pemeliharaan, dan pendidikan anaknya." .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0002/text> .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0001> .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0003> .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0003> legal:ayatHasRawText "Pencabutan dan pengembalian kuasa asuh orang tua ditetapkan dengan keputusan hakim." .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0003/text> legal:textHasTextString "Pencabutan dan pengembalian kuasa asuh orang tua ditetapkan dengan keputusan hakim." .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0003/text> .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0004> .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0004> legal:ayatHasKey 4 .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0004> legal:ayatHasRawText "Pelaksanaan ket entuan ayat (1), (2) dan (3) diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0004/text> legal:textHasTextString "Pelaksanaan ket entuan ayat (1), (2) dan (3) diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0004/text> .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0001> .
+<http://example.org/legal/document/uu/1979/4/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1979/4/bab/0004> .
+<http://example.org/legal/document/uu/1979/4/bab/0004> legal:babHasKey 4 .
+<http://example.org/legal/document/uu/1979/4/bab/0004> legal:babHasTitle "USAHA KESEJAHTERAAN ANAK" .
+<http://example.org/legal/document/uu/1979/4/bab/0004> legal:babHasPasalSet <http://example.org/legal/document/uu/1979/4/bab/0004/pasals> .
+<http://example.org/legal/document/uu/1979/4/bab/0004/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1979/4/pasal/0011> .
+<http://example.org/legal/document/uu/1979/4/pasal/0011> legal:pasalHasKey 11 .
+<http://example.org/legal/document/uu/1979/4/pasal/0011> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723> .
+<http://example.org/legal/document/uu/1979/4> legal:documentHasPasal <http://example.org/legal/document/uu/1979/4/pasal/0011> .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723> legal:pasalVersionHasVersionDate "1979-07-23"^^xsd:date .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723> legal:pasalVersionHasRawText "(1). Usaha kesejahteraan anak terdiri atas usaha pembinaan, pengembangan, pencegahan, dan rehabilitasi.\n(2). Usaha kesejahteraan anak d ilakukan oleh Pemerintah dan atau masyarakat.\n(3). Usaha kesejahteraan anak yang dilakukan oleh Pemerintah dan atau masyarakat dilaksanakan baik di dalam maupun di luar Panti.\n(4). Pemerintah mengadakan pengarahan, bimbingan, bantuan, dan pengawasan terhada p usaha kesejahteraan anak yang dilakukan oleh masyarakat.\n(5). Pelaksanaan usaha kesejahteraan anak sebagai termaktub dalam ayat (1), (2), (3) dan (4) diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat> .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0001> .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0001> legal:ayatHasRawText "Usaha kesejahteraan anak terdiri atas usaha pembinaan, pengembangan, pencegahan, dan rehabilitasi." .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0001/text> legal:textHasTextString "Usaha kesejahteraan anak terdiri atas usaha pembinaan, pengembangan, pencegahan, dan rehabilitasi." .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0001/text> .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0002> .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0002> legal:ayatHasRawText "Usaha kesejahteraan anak d ilakukan oleh Pemerintah dan atau masyarakat." .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0002/text> legal:textHasTextString "Usaha kesejahteraan anak d ilakukan oleh Pemerintah dan atau masyarakat." .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0002/text> .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0003> .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0003> legal:ayatHasRawText "Usaha kesejahteraan anak yang dilakukan oleh Pemerintah dan atau masyarakat dilaksanakan baik di dalam maupun di luar Panti." .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0003/text> legal:textHasTextString "Usaha kesejahteraan anak yang dilakukan oleh Pemerintah dan atau masyarakat dilaksanakan baik di dalam maupun di luar Panti." .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0003/text> .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0004> .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0004> legal:ayatHasKey 4 .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0004> legal:ayatHasRawText "Pemerintah mengadakan pengarahan, bimbingan, bantuan, dan pengawasan terhada p usaha kesejahteraan anak yang dilakukan oleh masyarakat." .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0004/text> legal:textHasTextString "Pemerintah mengadakan pengarahan, bimbingan, bantuan, dan pengawasan terhada p usaha kesejahteraan anak yang dilakukan oleh masyarakat." .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0004/text> .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0005> .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0005> legal:ayatHasKey 5 .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0005> legal:ayatHasRawText "Pelaksanaan usaha kesejahteraan anak sebagai termaktub dalam ayat (1), (2), (3) dan (4) diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0005/text> legal:textHasTextString "Pelaksanaan usaha kesejahteraan anak sebagai termaktub dalam ayat (1), (2), (3) dan (4) diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0005> legal:ayatHasText <http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0005/text> .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0005/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0001> .
+<http://example.org/legal/document/uu/1979/4/bab/0004/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1979/4/pasal/0012> .
+<http://example.org/legal/document/uu/1979/4/pasal/0012> legal:pasalHasKey 12 .
+<http://example.org/legal/document/uu/1979/4/pasal/0012> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723> .
+<http://example.org/legal/document/uu/1979/4> legal:documentHasPasal <http://example.org/legal/document/uu/1979/4/pasal/0012> .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723> legal:pasalVersionHasVersionDate "1979-07-23"^^xsd:date .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723> legal:pasalVersionHasRawText "(1). Pengangkatan anak menurut adat dan kebias aan dilaksanakan dengan mengutamakan kepentingan kesejahteraan anak. PRESIDEN REPUBLIK INDONESIA - 5 -\n(2). Kepentingan kesejahteraan anak yang termaksud dalam ayat (1) diatur lebih lanjut dengan Peraturan Pemerintah.\n(3). Pengangkatan anak untuk kepentingan kesejahteraan anak yang dilakukan di luar adat dan kebiasaan, dilaksanakan berdasarkan Peraturan Perundang - undangan." .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat> .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0001> .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0001> legal:ayatHasRawText "Pengangkatan anak menurut adat dan kebias aan dilaksanakan dengan mengutamakan kepentingan kesejahteraan anak. PRESIDEN REPUBLIK INDONESIA - 5 -" .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0001/text> legal:textHasTextString "Pengangkatan anak menurut adat dan kebias aan dilaksanakan dengan mengutamakan kepentingan kesejahteraan anak. PRESIDEN REPUBLIK INDONESIA - 5 -" .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0001/text> .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0002> .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0002> legal:ayatHasRawText "Kepentingan kesejahteraan anak yang termaksud dalam ayat (1) diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0002/text> legal:textHasTextString "Kepentingan kesejahteraan anak yang termaksud dalam ayat (1) diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0002/text> .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0001> .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0003> .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0003> legal:ayatHasRawText "Pengangkatan anak untuk kepentingan kesejahteraan anak yang dilakukan di luar adat dan kebiasaan, dilaksanakan berdasarkan Peraturan Perundang - undangan." .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0003/text> legal:textHasTextString "Pengangkatan anak untuk kepentingan kesejahteraan anak yang dilakukan di luar adat dan kebiasaan, dilaksanakan berdasarkan Peraturan Perundang - undangan." .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0003/text> .
+<http://example.org/legal/document/uu/1979/4/bab/0004/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1979/4/pasal/0013> .
+<http://example.org/legal/document/uu/1979/4/pasal/0013> legal:pasalHasKey 13 .
+<http://example.org/legal/document/uu/1979/4/pasal/0013> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1979/4/pasal/0013/version/19790723> .
+<http://example.org/legal/document/uu/1979/4> legal:documentHasPasal <http://example.org/legal/document/uu/1979/4/pasal/0013> .
+<http://example.org/legal/document/uu/1979/4/pasal/0013/version/19790723> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1979/4/pasal/0013/version/19790723> legal:pasalVersionHasVersionDate "1979-07-23"^^xsd:date .
+<http://example.org/legal/document/uu/1979/4/pasal/0013/version/19790723> legal:pasalVersionHasRawText "Kerjasama international di bidang kesejahteraan anak dilaksanakan oleh Pemerintah atau oleh Badan lain dengan persetujuan Pemerintah." .
+<http://example.org/legal/document/uu/1979/4/pasal/0013/version/19790723/text> legal:textHasTextString "Kerjasama international di bidang kesejahteraan anak dilaksanakan oleh Pemerintah atau oleh Badan lain dengan persetujuan Pemerintah." .
+<http://example.org/legal/document/uu/1979/4/pasal/0013/version/19790723> legal:pasalVersionHasText <http://example.org/legal/document/uu/1979/4/pasal/0013/version/19790723/text> .
+<http://example.org/legal/document/uu/1979/4/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1979/4/bab/0005> .
+<http://example.org/legal/document/uu/1979/4/bab/0005> legal:babHasKey 5 .
+<http://example.org/legal/document/uu/1979/4/bab/0005> legal:babHasTitle "KETENTUAN PERALIHAN DAN PENUTUP" .
+<http://example.org/legal/document/uu/1979/4/bab/0005> legal:babHasPasalSet <http://example.org/legal/document/uu/1979/4/bab/0005/pasals> .
+<http://example.org/legal/document/uu/1979/4/bab/0005/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1979/4/pasal/0014> .
+<http://example.org/legal/document/uu/1979/4/pasal/0014> legal:pasalHasKey 14 .
+<http://example.org/legal/document/uu/1979/4/pasal/0014> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1979/4/pasal/0014/version/19790723> .
+<http://example.org/legal/document/uu/1979/4> legal:documentHasPasal <http://example.org/legal/document/uu/1979/4/pasal/0014> .
+<http://example.org/legal/document/uu/1979/4/pasal/0014/version/19790723> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1979/4/pasal/0014/version/19790723> legal:pasalVersionHasVersionDate "1979-07-23"^^xsd:date .
+<http://example.org/legal/document/uu/1979/4/pasal/0014/version/19790723> legal:pasalVersionHasRawText "Tatacara koordinasi antar instansi dalam pelaksanaan usaha - usaha kesejahteraan anak ditetapkan dengan Keputusan Presiden." .
+<http://example.org/legal/document/uu/1979/4/pasal/0014/version/19790723/text> legal:textHasTextString "Tatacara koordinasi antar instansi dalam pelaksanaan usaha - usaha kesejahteraan anak ditetapkan dengan Keputusan Presiden." .
+<http://example.org/legal/document/uu/1979/4/pasal/0014/version/19790723> legal:pasalVersionHasText <http://example.org/legal/document/uu/1979/4/pasal/0014/version/19790723/text> .
+<http://example.org/legal/document/uu/1979/4/bab/0005/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1979/4/pasal/0015> .
+<http://example.org/legal/document/uu/1979/4/pasal/0015> legal:pasalHasKey 15 .
+<http://example.org/legal/document/uu/1979/4/pasal/0015> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1979/4/pasal/0015/version/19790723> .
+<http://example.org/legal/document/uu/1979/4> legal:documentHasPasal <http://example.org/legal/document/uu/1979/4/pasal/0015> .
+<http://example.org/legal/document/uu/1979/4/pasal/0015/version/19790723> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1979/4/pasal/0015/version/19790723> legal:pasalVersionHasVersionDate "1979-07-23"^^xsd:date .
+<http://example.org/legal/document/uu/1979/4/pasal/0015/version/19790723> legal:pasalVersionHasRawText "Segala Peraturan Perundang - undangan di bidang kesejahteraan anak tetap berlaku selama dan sepanjang tidak bertentangan dengan Undang - undang ini." .
+<http://example.org/legal/document/uu/1979/4/pasal/0015/version/19790723/text> legal:textHasTextString "Segala Peraturan Perundang - undangan di bidang kesejahteraan anak tetap berlaku selama dan sepanjang tidak bertentangan dengan Undang - undang ini." .
+<http://example.org/legal/document/uu/1979/4/pasal/0015/version/19790723> legal:pasalVersionHasText <http://example.org/legal/document/uu/1979/4/pasal/0015/version/19790723/text> .
+<http://example.org/legal/document/uu/1979/4/bab/0005/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1979/4/pasal/0016> .
+<http://example.org/legal/document/uu/1979/4/pasal/0016> legal:pasalHasKey 16 .
+<http://example.org/legal/document/uu/1979/4/pasal/0016> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1979/4/pasal/0016/version/19790723> .
+<http://example.org/legal/document/uu/1979/4> legal:documentHasPasal <http://example.org/legal/document/uu/1979/4/pasal/0016> .
+<http://example.org/legal/document/uu/1979/4/pasal/0016/version/19790723> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1979/4/pasal/0016/version/19790723> legal:pasalVersionHasVersionDate "1979-07-23"^^xsd:date .
+<http://example.org/legal/document/uu/1979/4/pasal/0016/version/19790723> legal:pasalVersionHasRawText "Undang - undang ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembara n Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1979/4/pasal/0016/version/19790723/text> legal:textHasTextString "Undang - undang ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembara n Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1979/4/pasal/0016/version/19790723> legal:pasalVersionHasText <http://example.org/legal/document/uu/1979/4/pasal/0016/version/19790723/text> .
+<http://example.org/legal/document/uu/1979/4> legal:documentHasDisahkanDate "1979-07-23"^^xsd:date .
+<http://example.org/legal/document/uu/1979/4> legal:documentMengingat <http://example.org/legal/document/uu/1979/4/mengingat> .
+<http://example.org/legal/document/uu/1979/4/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1979/4/mengingat/point> .
+<http://example.org/legal/document/uu/1979/4/mengingat/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1979/4/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1979/4/mengingat/point/description> .
+<http://example.org/legal/document/uu/1979/4/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1979/4/mengingat/point/0001> .
+<http://example.org/legal/document/uu/1979/4/mengingat/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/1979/4/mengingat/point/0001/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 20 ayat (1), Pasal 27 ayat (2), Pasal 31 dan 34 Undang - Undang Dasar 1945;" .
+<http://example.org/legal/document/uu/1979/4/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1979/4/mengingat/point/0001/text> .
+<http://example.org/legal/document/uu/1979/4/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1979/4/mengingat/point/0002> .
+<http://example.org/legal/document/uu/1979/4/mengingat/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/1979/4/mengingat/point/0002/text> legal:textHasTextString "Ketetapan Majelis Permusyawaratan Rakyat Nomor IV/MPR/1978 tentang Garis - garis Besar Haluan Negara;" .
+<http://example.org/legal/document/uu/1979/4/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1979/4/mengingat/point/0002/text> .
+<http://example.org/legal/document/uu/1979/4/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1979/4/mengingat/point/0003> .
+<http://example.org/legal/document/uu/1979/4/mengingat/point/0003> legal:pointHasKey "3" .
+<http://example.org/legal/document/uu/1979/4/mengingat/point/0003/text> legal:textHasTextString "Undang - undang Nomor 6 Tahun 1974 tentang Ketentuan - ketentuan Pokok Kesejahteraan Sosial (Lembaran Negara Tahun 1974 No mor 53, Tambahan Lembaran Negara Nomor 3039); Dengan persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN : Menetapkan : UNDANG - UNDANG TENTANG KESEJAHTERAAN ANAK. PRESIDEN REPUBLIK INDONESIA - 2 -" .
+<http://example.org/legal/document/uu/1979/4/mengingat/point/0003> legal:pointHasText <http://example.org/legal/document/uu/1979/4/mengingat/point/0003/text> .
+<http://example.org/legal/document/uu/1979/4> legal:documentMenimbang <http://example.org/legal/document/uu/1979/4/menimbang> .
+<http://example.org/legal/document/uu/1979/4/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/1979/4/menimbang/point> .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1979/4/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1979/4/menimbang/point/description> .
+<http://example.org/legal/document/uu/1979/4/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1979/4/menimbang/point/a> .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/a/text> legal:textHasTextString "bahwa anak adalah potensi serta penerus cita - cita bangsa yang dasar - dasarnya telah diletakkan oleh generasi sebelumnya;" .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/1979/4/menimbang/point/a/text> .
+<http://example.org/legal/document/uu/1979/4/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1979/4/menimbang/point/b> .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/b/text> legal:textHasTextString "bahwa a gar setiap anak mampu memikul tanggungjawab tersebut, maka ia perlu mendapat kesempatan yang seluas - luasnya untuk tumbuh dan berkembang dengan wajar baik secara rohani, jasmani maupun sosial;" .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/1979/4/menimbang/point/b/text> .
+<http://example.org/legal/document/uu/1979/4/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1979/4/menimbang/point/c> .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/c/text> legal:textHasTextString "Bahwa di dalam masyarakat terdapat pula anak - anak yang meng alami hambatan kesejahteraan rohani, jasmani, sosial dan ekonomi;" .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/1979/4/menimbang/point/c/text> .
+<http://example.org/legal/document/uu/1979/4/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1979/4/menimbang/point/d> .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/d/text> legal:textHasTextString "bahwa pemeliharaan kesejahteraan anak belum dapat dilaksanakan oleh anak sendiri;" .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/1979/4/menimbang/point/d/text> .
+<http://example.org/legal/document/uu/1979/4/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1979/4/menimbang/point/e> .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/e/text> legal:textHasTextString "bahwa kesempatan, pemeliharaan dan usaha menghilangkan hambatan tersebut hanya akan dapat dilaksan akan dan diperoleh bilamana usaha kesejahteraan anak terjamin;" .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/e> legal:pointHasText <http://example.org/legal/document/uu/1979/4/menimbang/point/e/text> .
+<http://example.org/legal/document/uu/1979/4/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1979/4/menimbang/point/f> .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/f> legal:pointHasKey "f" .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/f/text> legal:textHasTextString "bahwa untuk mencapai maksud tersebut perlu menyusun Undang - undang yang mengatur kesejahteraan anak;" .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/f> legal:pointHasText <http://example.org/legal/document/uu/1979/4/menimbang/point/f/text> .
+<http://example.org/legal/document/uu/1979/4> legal:documentHasDisahkanPengesah "SOEHARTO" .
+<http://example.org/legal/document/uu/1979/4> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/1979/4> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/1979/4> a legal:Document .
+<http://example.org/legal/document/uu/1979/4/bab> a legal:BabSet .
+<http://example.org/legal/document/uu/1979/4/bab/0001> a legal:Bab .
+<http://example.org/legal/document/uu/1979/4/bab/0001/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1979/4/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003> a legal:Point .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0004> a legal:Point .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0005> a legal:Point .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0005/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0006> a legal:Point .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0006/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0007> a legal:Point .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0007/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0008> a legal:Point .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0008/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0009> a legal:Point .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0009/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/bab/0002> a legal:Bab .
+<http://example.org/legal/document/uu/1979/4/bab/0002/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1979/4/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0004> a legal:Ayat .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/1979/4/pasal/0003/version/19790723> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1979/4/pasal/0003/version/19790723/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0004> a legal:Pasal .
+<http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0005> a legal:Pasal .
+<http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0006> a legal:Pasal .
+<http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0007> a legal:Pasal .
+<http://example.org/legal/document/uu/1979/4/pasal/0007/version/19790723> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1979/4/pasal/0007/version/19790723/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0008> a legal:Pasal .
+<http://example.org/legal/document/uu/1979/4/pasal/0008/version/19790723> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1979/4/pasal/0008/version/19790723/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/bab/0003> a legal:Bab .
+<http://example.org/legal/document/uu/1979/4/bab/0003/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1979/4/pasal/0009> a legal:Pasal .
+<http://example.org/legal/document/uu/1979/4/pasal/0009/version/19790723> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1979/4/pasal/0009/version/19790723/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0010> a legal:Pasal .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0004> a legal:Ayat .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/bab/0004> a legal:Bab .
+<http://example.org/legal/document/uu/1979/4/bab/0004/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1979/4/pasal/0011> a legal:Pasal .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0004> a legal:Ayat .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0005> a legal:Ayat .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0005/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0012> a legal:Pasal .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0013> a legal:Pasal .
+<http://example.org/legal/document/uu/1979/4/pasal/0013/version/19790723> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1979/4/pasal/0013/version/19790723/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/bab/0005> a legal:Bab .
+<http://example.org/legal/document/uu/1979/4/bab/0005/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1979/4/pasal/0014> a legal:Pasal .
+<http://example.org/legal/document/uu/1979/4/pasal/0014/version/19790723> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1979/4/pasal/0014/version/19790723/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0015> a legal:Pasal .
+<http://example.org/legal/document/uu/1979/4/pasal/0015/version/19790723> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1979/4/pasal/0015/version/19790723/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/pasal/0016> a legal:Pasal .
+<http://example.org/legal/document/uu/1979/4/pasal/0016/version/19790723> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1979/4/pasal/0016/version/19790723/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1979/4/mengingat/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/mengingat/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1979/4/mengingat/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/1979/4/mengingat/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/mengingat/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/1979/4/mengingat/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/mengingat/point/0003> a legal:Point .
+<http://example.org/legal/document/uu/1979/4/mengingat/point/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/menimbang/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/e> a legal:Point .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/f> a legal:Point .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/f/text> a legal:Text .
+<http://example.org/legal/document/uu/1979/4/bab> legal:partOf <http://example.org/legal/document/uu/1979/4> .
+<http://example.org/legal/document/uu/1979/4/bab/0001> legal:partOf <http://example.org/legal/document/uu/1979/4/bab> .
+<http://example.org/legal/document/uu/1979/4/bab/0001/pasals> legal:partOf <http://example.org/legal/document/uu/1979/4/bab/0001> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1979/4/bab/0001/pasals> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0001> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1979/4> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001/point> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001/point/a> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001/point> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001/point/b> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0001/point> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0002> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003/point> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003/point/a> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003/point> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003/point/b> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0003/point> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0004> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0005> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0006> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0007> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0008> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point> .
+<http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point/0009> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0001/version/19790723/point> .
+<http://example.org/legal/document/uu/1979/4/bab/0002> legal:partOf <http://example.org/legal/document/uu/1979/4/bab> .
+<http://example.org/legal/document/uu/1979/4/bab/0002/pasals> legal:partOf <http://example.org/legal/document/uu/1979/4/bab/0002> .
+<http://example.org/legal/document/uu/1979/4/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1979/4/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0002> .
+<http://example.org/legal/document/uu/1979/4/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1979/4> .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723> .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat> .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0001> .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat> .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0002> .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat> .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0003> .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0004> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat> .
+<http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0002/version/19790723/ayat/0004> .
+<http://example.org/legal/document/uu/1979/4/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1979/4/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1979/4/pasal/0003/version/19790723> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0003> .
+<http://example.org/legal/document/uu/1979/4/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1979/4> .
+<http://example.org/legal/document/uu/1979/4/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1979/4/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0004> .
+<http://example.org/legal/document/uu/1979/4/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1979/4> .
+<http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723/ayat> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723> .
+<http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723/ayat> .
+<http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723/ayat/0001> .
+<http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723/ayat> .
+<http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0004/version/19790723/ayat/0002> .
+<http://example.org/legal/document/uu/1979/4/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1979/4/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0005> .
+<http://example.org/legal/document/uu/1979/4/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1979/4> .
+<http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723/ayat> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723> .
+<http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723/ayat> .
+<http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723/ayat/0001> .
+<http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723/ayat> .
+<http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0005/version/19790723/ayat/0002> .
+<http://example.org/legal/document/uu/1979/4/pasal/0006> legal:partOf <http://example.org/legal/document/uu/1979/4/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0006> .
+<http://example.org/legal/document/uu/1979/4/pasal/0006> legal:partOf <http://example.org/legal/document/uu/1979/4> .
+<http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723/ayat> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723> .
+<http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723/ayat> .
+<http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723/ayat/0001> .
+<http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723/ayat> .
+<http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0006/version/19790723/ayat/0002> .
+<http://example.org/legal/document/uu/1979/4/pasal/0007> legal:partOf <http://example.org/legal/document/uu/1979/4/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1979/4/pasal/0007/version/19790723> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0007> .
+<http://example.org/legal/document/uu/1979/4/pasal/0007> legal:partOf <http://example.org/legal/document/uu/1979/4> .
+<http://example.org/legal/document/uu/1979/4/pasal/0008> legal:partOf <http://example.org/legal/document/uu/1979/4/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1979/4/pasal/0008/version/19790723> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0008> .
+<http://example.org/legal/document/uu/1979/4/pasal/0008> legal:partOf <http://example.org/legal/document/uu/1979/4> .
+<http://example.org/legal/document/uu/1979/4/bab/0003> legal:partOf <http://example.org/legal/document/uu/1979/4/bab> .
+<http://example.org/legal/document/uu/1979/4/bab/0003/pasals> legal:partOf <http://example.org/legal/document/uu/1979/4/bab/0003> .
+<http://example.org/legal/document/uu/1979/4/pasal/0009> legal:partOf <http://example.org/legal/document/uu/1979/4/bab/0003/pasals> .
+<http://example.org/legal/document/uu/1979/4/pasal/0009/version/19790723> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0009> .
+<http://example.org/legal/document/uu/1979/4/pasal/0009> legal:partOf <http://example.org/legal/document/uu/1979/4> .
+<http://example.org/legal/document/uu/1979/4/pasal/0010> legal:partOf <http://example.org/legal/document/uu/1979/4/bab/0003/pasals> .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0010> .
+<http://example.org/legal/document/uu/1979/4/pasal/0010> legal:partOf <http://example.org/legal/document/uu/1979/4> .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723> .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat> .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0001> .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat> .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0002> .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat> .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0003> .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0004> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat> .
+<http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0010/version/19790723/ayat/0004> .
+<http://example.org/legal/document/uu/1979/4/bab/0004> legal:partOf <http://example.org/legal/document/uu/1979/4/bab> .
+<http://example.org/legal/document/uu/1979/4/bab/0004/pasals> legal:partOf <http://example.org/legal/document/uu/1979/4/bab/0004> .
+<http://example.org/legal/document/uu/1979/4/pasal/0011> legal:partOf <http://example.org/legal/document/uu/1979/4/bab/0004/pasals> .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0011> .
+<http://example.org/legal/document/uu/1979/4/pasal/0011> legal:partOf <http://example.org/legal/document/uu/1979/4> .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723> .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat> .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0001> .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat> .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0002> .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat> .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0003> .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0004> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat> .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0004> .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0005> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat> .
+<http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0005/text> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0011/version/19790723/ayat/0005> .
+<http://example.org/legal/document/uu/1979/4/pasal/0012> legal:partOf <http://example.org/legal/document/uu/1979/4/bab/0004/pasals> .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0012> .
+<http://example.org/legal/document/uu/1979/4/pasal/0012> legal:partOf <http://example.org/legal/document/uu/1979/4> .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723> .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat> .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0001> .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat> .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0002> .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat> .
+<http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0012/version/19790723/ayat/0003> .
+<http://example.org/legal/document/uu/1979/4/pasal/0013> legal:partOf <http://example.org/legal/document/uu/1979/4/bab/0004/pasals> .
+<http://example.org/legal/document/uu/1979/4/pasal/0013/version/19790723> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0013> .
+<http://example.org/legal/document/uu/1979/4/pasal/0013> legal:partOf <http://example.org/legal/document/uu/1979/4> .
+<http://example.org/legal/document/uu/1979/4/bab/0005> legal:partOf <http://example.org/legal/document/uu/1979/4/bab> .
+<http://example.org/legal/document/uu/1979/4/bab/0005/pasals> legal:partOf <http://example.org/legal/document/uu/1979/4/bab/0005> .
+<http://example.org/legal/document/uu/1979/4/pasal/0014> legal:partOf <http://example.org/legal/document/uu/1979/4/bab/0005/pasals> .
+<http://example.org/legal/document/uu/1979/4/pasal/0014/version/19790723> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0014> .
+<http://example.org/legal/document/uu/1979/4/pasal/0014> legal:partOf <http://example.org/legal/document/uu/1979/4> .
+<http://example.org/legal/document/uu/1979/4/pasal/0015> legal:partOf <http://example.org/legal/document/uu/1979/4/bab/0005/pasals> .
+<http://example.org/legal/document/uu/1979/4/pasal/0015/version/19790723> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0015> .
+<http://example.org/legal/document/uu/1979/4/pasal/0015> legal:partOf <http://example.org/legal/document/uu/1979/4> .
+<http://example.org/legal/document/uu/1979/4/pasal/0016> legal:partOf <http://example.org/legal/document/uu/1979/4/bab/0005/pasals> .
+<http://example.org/legal/document/uu/1979/4/pasal/0016/version/19790723> legal:partOf <http://example.org/legal/document/uu/1979/4/pasal/0016> .
+<http://example.org/legal/document/uu/1979/4/pasal/0016> legal:partOf <http://example.org/legal/document/uu/1979/4> .
+<http://example.org/legal/document/uu/1979/4/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1979/4/mengingat/point> .
+<http://example.org/legal/document/uu/1979/4/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1979/4/mengingat/point> .
+<http://example.org/legal/document/uu/1979/4/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/1979/4/mengingat/point> .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1979/4/menimbang/point> .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1979/4/menimbang/point> .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/1979/4/menimbang/point> .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/d> legal:partOf <http://example.org/legal/document/uu/1979/4/menimbang/point> .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/e> legal:partOf <http://example.org/legal/document/uu/1979/4/menimbang/point> .
+<http://example.org/legal/document/uu/1979/4/menimbang/point/f> legal:partOf <http://example.org/legal/document/uu/1979/4/menimbang/point> .

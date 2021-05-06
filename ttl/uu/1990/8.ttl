@@ -1,0 +1,761 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1990/8> legal:documentHasBabSet <http://example.org/legal/document/uu/1990/8/bab> .
+<http://example.org/legal/document/uu/1990/8/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1990/8/bab/0001> .
+<http://example.org/legal/document/uu/1990/8/bab/0001> legal:babHasKey 1 .
+<http://example.org/legal/document/uu/1990/8/bab/0001> legal:babHasTitle "" .
+<http://example.org/legal/document/uu/1990/8/bab/0001> legal:babHasPasalSet <http://example.org/legal/document/uu/1990/8/bab/0001/pasals> .
+<http://example.org/legal/document/uu/1990/8/bab/0001/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/8/pasal/0001> .
+<http://example.org/legal/document/uu/1990/8/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1990/8/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013> .
+<http://example.org/legal/document/uu/1990/8> legal:documentHasPasal <http://example.org/legal/document/uu/1990/8/pasal/0001> .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013> legal:pasalVersionHasVersionDate "1990-10-13"^^xsd:date .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013> legal:pasalVersionHasRawText "Dalam Undang-undang ini yang dimaksud dengan:\n1. Akademi adalah wadah ilmuwan terkemuka.\n2. Ilmuwan adalah orang yang menggali, menguasai, mengembangkan, dan menerapkan ilmu pengetahuan dan/atau teknologi demi mencari kebenaran serta meningkatkan kesejahteraan, harkat, dan martabat manusia.\n3. Ilmu pengetahuan adalah rangkaian pengetahuan yang digali, disusun, dan dikembangkan secara sistematik menurut pendekatan dan metode ilmiah dalam menerangkan gejala alam dan/ atau gejala kemasyarakatan tertentu.\n4. Teknologi adalah proses atau produk suatu upaya penerapan dan pemanfaatan ilmu pengetahuan yang menghasilkan nilai tambah bagi pemenuhan kebutuhan dan kelangsungan hidup umat manusia.\n5. AIPI adalah singkatan dari Akademi Ilmu Pengetahuan Indonesia sebagaimana dimaksud dalam Pasal 2 ayat (1) Undang-undang ini.\n" .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/description> legal:textHasTextString "Dalam Undang-undang ini yang dimaksud dengan:" .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/description> .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0001> .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0001/text> legal:textHasTextString "Akademi adalah wadah ilmuwan terkemuka." .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0001/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0002> .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0002/text> legal:textHasTextString "Ilmuwan adalah orang yang menggali, menguasai, mengembangkan, dan menerapkan ilmu pengetahuan dan/atau teknologi demi mencari kebenaran serta meningkatkan kesejahteraan, harkat, dan martabat manusia." .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0002/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0003> .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0003> legal:pointHasKey "3" .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0003/text> legal:textHasTextString "Ilmu pengetahuan adalah rangkaian pengetahuan yang digali, disusun, dan dikembangkan secara sistematik menurut pendekatan dan metode ilmiah dalam menerangkan gejala alam dan/ atau gejala kemasyarakatan tertentu." .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0003> legal:pointHasText <http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0003/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0004> .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0004> legal:pointHasKey "4" .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0004/text> legal:textHasTextString "Teknologi adalah proses atau produk suatu upaya penerapan dan pemanfaatan ilmu pengetahuan yang menghasilkan nilai tambah bagi pemenuhan kebutuhan dan kelangsungan hidup umat manusia." .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0004> legal:pointHasText <http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0004/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0005> .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0005> legal:pointHasKey "5" .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0005/text> legal:textHasTextString "AIPI adalah singkatan dari Akademi Ilmu Pengetahuan Indonesia sebagaimana dimaksud dalam Pasal 2 ayat (1) Undang-undang ini." .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0005> legal:pointHasText <http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0005/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0005/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/ayat/0001> .
+<http://example.org/legal/document/uu/1990/8/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1990/8/bab/0002> .
+<http://example.org/legal/document/uu/1990/8/bab/0002> legal:babHasKey 2 .
+<http://example.org/legal/document/uu/1990/8/bab/0002> legal:babHasTitle "ASAS DAN TUJUAN" .
+<http://example.org/legal/document/uu/1990/8/bab/0002> legal:babHasPasalSet <http://example.org/legal/document/uu/1990/8/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1990/8/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/8/pasal/0002> .
+<http://example.org/legal/document/uu/1990/8/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1990/8/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013> .
+<http://example.org/legal/document/uu/1990/8> legal:documentHasPasal <http://example.org/legal/document/uu/1990/8/pasal/0002> .
+<http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013> legal:pasalVersionHasVersionDate "1990-10-13"^^xsd:date .
+<http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013> legal:pasalVersionHasRawText "(1). Akademi Ilmu Pengetahuan Indonesia, selanjutnya dalam Undang-undang ini disingkat AIPI, merupakan satu-satunya wadah ilmuwan Indonesia terkemuka.\n(2). AIPI berasaskan Pancasila sebagai satu-satunya asas." .
+<http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013/ayat> .
+<http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013/ayat/0001> .
+<http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013/ayat/0001> legal:ayatHasRawText "Akademi Ilmu Pengetahuan Indonesia, selanjutnya dalam Undang-undang ini disingkat AIPI, merupakan satu-satunya wadah ilmuwan Indonesia terkemuka." .
+<http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013/ayat/0001/text> legal:textHasTextString "Akademi Ilmu Pengetahuan Indonesia, selanjutnya dalam Undang-undang ini disingkat AIPI, merupakan satu-satunya wadah ilmuwan Indonesia terkemuka." .
+<http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013/ayat/0001/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013/ayat/0002> .
+<http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013/ayat/0002> legal:ayatHasRawText "AIPI berasaskan Pancasila sebagai satu-satunya asas." .
+<http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013/ayat/0002/text> legal:textHasTextString "AIPI berasaskan Pancasila sebagai satu-satunya asas." .
+<http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013/ayat/0002/text> .
+<http://example.org/legal/document/uu/1990/8/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/8/pasal/0003> .
+<http://example.org/legal/document/uu/1990/8/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/1990/8/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013> .
+<http://example.org/legal/document/uu/1990/8> legal:documentHasPasal <http://example.org/legal/document/uu/1990/8/pasal/0003> .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013> legal:pasalVersionHasVersionDate "1990-10-13"^^xsd:date .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013> legal:pasalVersionHasRawText "AIPI bertujuan menghimpun ilmuwan Indonesia terkemuka untuk memberikan pendapat, saran, dan pertimbangan atas prakarsa sendiri dan/atau permintaan mengenai penguasaan, pengembangan, dan pemanfaatan ilmu pengetahuan dan teknologi kepada Pemerintah serta masyarakat untuk mencapai tujuan nasional dengan selalu mengutamakan:\na. nilai dan cita-cita yang terkandung dalam Pancasila dan Undang-undang Dasar 1945:\nb. nilai kemanusiaan:\nc. kesadaran dan tanggung jawab etik,\nd. peningkatan kualitas manusia dan kehidupan masyarakat, C. keutuhan kepribadian bangsa, f. keseimbangan lingkungan hidup dalam Pembangunan yang berkelanjutan.\n" .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/description> legal:textHasTextString "AIPI bertujuan menghimpun ilmuwan Indonesia terkemuka untuk memberikan pendapat, saran, dan pertimbangan atas prakarsa sendiri dan/atau permintaan mengenai penguasaan, pengembangan, dan pemanfaatan ilmu pengetahuan dan teknologi kepada Pemerintah serta masyarakat untuk mencapai tujuan nasional dengan selalu mengutamakan:" .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/description> .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/a> .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/a/text> legal:textHasTextString "nilai dan cita-cita yang terkandung dalam Pancasila dan Undang-undang Dasar 1945:" .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/a> legal:pointHasText <http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/a/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/b> .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/b/text> legal:textHasTextString "nilai kemanusiaan:" .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/b> legal:pointHasText <http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/b/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/c> .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/c/text> legal:textHasTextString "kesadaran dan tanggung jawab etik," .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/c> legal:pointHasText <http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/c/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/d> .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/d/text> legal:textHasTextString "peningkatan kualitas manusia dan kehidupan masyarakat, C. keutuhan kepribadian bangsa, f. keseimbangan lingkungan hidup dalam Pembangunan yang berkelanjutan." .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/d> legal:pointHasText <http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/d/text> .
+<http://example.org/legal/document/uu/1990/8/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1990/8/bab/0003> .
+<http://example.org/legal/document/uu/1990/8/bab/0003> legal:babHasKey 3 .
+<http://example.org/legal/document/uu/1990/8/bab/0003> legal:babHasTitle "SIFAT DAN KEDUDUKAN" .
+<http://example.org/legal/document/uu/1990/8/bab/0003> legal:babHasPasalSet <http://example.org/legal/document/uu/1990/8/bab/0003/pasals> .
+<http://example.org/legal/document/uu/1990/8/bab/0003/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/8/pasal/0004> .
+<http://example.org/legal/document/uu/1990/8/pasal/0004> legal:pasalHasKey 4 .
+<http://example.org/legal/document/uu/1990/8/pasal/0004> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/8/pasal/0004/version/19901013> .
+<http://example.org/legal/document/uu/1990/8> legal:documentHasPasal <http://example.org/legal/document/uu/1990/8/pasal/0004> .
+<http://example.org/legal/document/uu/1990/8/pasal/0004/version/19901013> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/8/pasal/0004/version/19901013> legal:pasalVersionHasVersionDate "1990-10-13"^^xsd:date .
+<http://example.org/legal/document/uu/1990/8/pasal/0004/version/19901013> legal:pasalVersionHasRawText "AIPI bersifat mandiri dan nonstruktural serta bukan merupakan badan Pemerintah atau bagian dari badan tersebut." .
+<http://example.org/legal/document/uu/1990/8/pasal/0004/version/19901013/text> legal:textHasTextString "AIPI bersifat mandiri dan nonstruktural serta bukan merupakan badan Pemerintah atau bagian dari badan tersebut." .
+<http://example.org/legal/document/uu/1990/8/pasal/0004/version/19901013> legal:pasalVersionHasText <http://example.org/legal/document/uu/1990/8/pasal/0004/version/19901013/text> .
+<http://example.org/legal/document/uu/1990/8/bab/0003/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/8/pasal/0005> .
+<http://example.org/legal/document/uu/1990/8/pasal/0005> legal:pasalHasKey 5 .
+<http://example.org/legal/document/uu/1990/8/pasal/0005> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/8/pasal/0005/version/19901013> .
+<http://example.org/legal/document/uu/1990/8> legal:documentHasPasal <http://example.org/legal/document/uu/1990/8/pasal/0005> .
+<http://example.org/legal/document/uu/1990/8/pasal/0005/version/19901013> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/8/pasal/0005/version/19901013> legal:pasalVersionHasVersionDate "1990-10-13"^^xsd:date .
+<http://example.org/legal/document/uu/1990/8/pasal/0005/version/19901013> legal:pasalVersionHasRawText "AIPI berkedudukan di tempat kedudukan Pemerintahan Pusat." .
+<http://example.org/legal/document/uu/1990/8/pasal/0005/version/19901013/text> legal:textHasTextString "AIPI berkedudukan di tempat kedudukan Pemerintahan Pusat." .
+<http://example.org/legal/document/uu/1990/8/pasal/0005/version/19901013> legal:pasalVersionHasText <http://example.org/legal/document/uu/1990/8/pasal/0005/version/19901013/text> .
+<http://example.org/legal/document/uu/1990/8/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1990/8/bab/0004> .
+<http://example.org/legal/document/uu/1990/8/bab/0004> legal:babHasKey 4 .
+<http://example.org/legal/document/uu/1990/8/bab/0004> legal:babHasTitle "PERAN DAN FUNGSI" .
+<http://example.org/legal/document/uu/1990/8/bab/0004> legal:babHasPasalSet <http://example.org/legal/document/uu/1990/8/bab/0004/pasals> .
+<http://example.org/legal/document/uu/1990/8/bab/0004/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/8/pasal/0006> .
+<http://example.org/legal/document/uu/1990/8/pasal/0006> legal:pasalHasKey 6 .
+<http://example.org/legal/document/uu/1990/8/pasal/0006> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013> .
+<http://example.org/legal/document/uu/1990/8> legal:documentHasPasal <http://example.org/legal/document/uu/1990/8/pasal/0006> .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013> legal:pasalVersionHasVersionDate "1990-10-13"^^xsd:date .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013> legal:pasalVersionHasRawText "(1). AIPI berperan mengkaji, memantau, menilai, menyusun arah dan memecahkan masalah yang berkaitan dengan penguasaan, pengembangan dan pemanfaatan ilmu pengetahuan dan teknologi.\n(2). Untuk dapat melaksanakan peran sebagaimana dimaksud dalam ayat (1), AIPI berfungsi :\na. menghimpun dan mengkaji bahan-bahan yang dipandang perlu,\nb. memantau kegiatan, pertumbuhan, dan perkembangan ilmu pengetahuan dan teknologi:\nc. melakukan penilaian mengenai perkembangan ilmu pengetahuan dan teknologi,\nd. melakukan upaya lain yang bersifat mendasar dalam bidang ilmu pengetahuan dan teknologi.\n" .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat> .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0001> .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0001> legal:ayatHasRawText "AIPI berperan mengkaji, memantau, menilai, menyusun arah dan memecahkan masalah yang berkaitan dengan penguasaan, pengembangan dan pemanfaatan ilmu pengetahuan dan teknologi." .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0001/text> legal:textHasTextString "AIPI berperan mengkaji, memantau, menilai, menyusun arah dan memecahkan masalah yang berkaitan dengan penguasaan, pengembangan dan pemanfaatan ilmu pengetahuan dan teknologi." .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0001/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002> .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002> legal:ayatHasRawText "Untuk dapat melaksanakan peran sebagaimana dimaksud dalam ayat (1), AIPI berfungsi :\na. menghimpun dan mengkaji bahan-bahan yang dipandang perlu,\nb. memantau kegiatan, pertumbuhan, dan perkembangan ilmu pengetahuan dan teknologi:\nc. melakukan penilaian mengenai perkembangan ilmu pengetahuan dan teknologi,\nd. melakukan upaya lain yang bersifat mendasar dalam bidang ilmu pengetahuan dan teknologi.\n" .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002> legal:ayatHasPointSet <http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/description> legal:textHasTextString "Untuk dapat melaksanakan peran sebagaimana dimaksud dalam ayat (1), AIPI berfungsi :" .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/description> .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/a> .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/a/text> legal:textHasTextString "menghimpun dan mengkaji bahan-bahan yang dipandang perlu," .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/a> legal:pointHasText <http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/a/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/b> .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/b/text> legal:textHasTextString "memantau kegiatan, pertumbuhan, dan perkembangan ilmu pengetahuan dan teknologi:" .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/b> legal:pointHasText <http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/b/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/c> .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/c/text> legal:textHasTextString "melakukan penilaian mengenai perkembangan ilmu pengetahuan dan teknologi," .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/c> legal:pointHasText <http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/c/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/d> .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/d/text> legal:textHasTextString "melakukan upaya lain yang bersifat mendasar dalam bidang ilmu pengetahuan dan teknologi." .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/d> legal:pointHasText <http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/d/text> .
+<http://example.org/legal/document/uu/1990/8/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1990/8/bab/0005> .
+<http://example.org/legal/document/uu/1990/8/bab/0005> legal:babHasKey 5 .
+<http://example.org/legal/document/uu/1990/8/bab/0005> legal:babHasTitle "ORGANISASI DAN KEANGGOT AAN" .
+<http://example.org/legal/document/uu/1990/8/bab/0005> legal:babHasPasalSet <http://example.org/legal/document/uu/1990/8/bab/0005/pasals> .
+<http://example.org/legal/document/uu/1990/8/bab/0005/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/8/pasal/0007> .
+<http://example.org/legal/document/uu/1990/8/pasal/0007> legal:pasalHasKey 7 .
+<http://example.org/legal/document/uu/1990/8/pasal/0007> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013> .
+<http://example.org/legal/document/uu/1990/8> legal:documentHasPasal <http://example.org/legal/document/uu/1990/8/pasal/0007> .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013> legal:pasalVersionHasVersionDate "1990-10-13"^^xsd:date .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013> legal:pasalVersionHasRawText "(1). Susunan organisasi, peran, fungsi, tata kerja AIPI serta tata cara pemilihan, pengangkatan, pemberhentian anggota AIPI, dan tata cara perubahan Anggaran Dasar dan Anggaran Rumah Tangga serta kelengkapan lainnya diatur lebih Ianj ut dalam Anggaran Dasar dan Anggaran Rumah Tangga AIPI.\n(2). Anggaran Dasar dan Anggaran Rumah Tangga AIPI disusun oleh anggota AIPI sebagaimana dimaksud dalam Pasal 12 ayat (3).\n(3). Anggaran dasar dan Anggaran Rumah Tangga AlPI disahkan dengan Keputusan Presiden." .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat> .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0001> .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0001> legal:ayatHasRawText "Susunan organisasi, peran, fungsi, tata kerja AIPI serta tata cara pemilihan, pengangkatan, pemberhentian anggota AIPI, dan tata cara perubahan Anggaran Dasar dan Anggaran Rumah Tangga serta kelengkapan lainnya diatur lebih Ianj ut dalam Anggaran Dasar dan Anggaran Rumah Tangga AIPI." .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0001/text> legal:textHasTextString "Susunan organisasi, peran, fungsi, tata kerja AIPI serta tata cara pemilihan, pengangkatan, pemberhentian anggota AIPI, dan tata cara perubahan Anggaran Dasar dan Anggaran Rumah Tangga serta kelengkapan lainnya diatur lebih Ianj ut dalam Anggaran Dasar dan Anggaran Rumah Tangga AIPI." .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0001/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0002> .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0002> legal:ayatHasRawText "Anggaran Dasar dan Anggaran Rumah Tangga AIPI disusun oleh anggota AIPI sebagaimana dimaksud dalam Pasal 12 ayat (3)." .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0002/text> legal:textHasTextString "Anggaran Dasar dan Anggaran Rumah Tangga AIPI disusun oleh anggota AIPI sebagaimana dimaksud dalam Pasal 12 ayat (3)." .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0002/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0003> .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0003> .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0003> legal:ayatHasRawText "Anggaran dasar dan Anggaran Rumah Tangga AlPI disahkan dengan Keputusan Presiden." .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0003/text> legal:textHasTextString "Anggaran dasar dan Anggaran Rumah Tangga AlPI disahkan dengan Keputusan Presiden." .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0003/text> .
+<http://example.org/legal/document/uu/1990/8/bab/0005/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/8/pasal/0008> .
+<http://example.org/legal/document/uu/1990/8/pasal/0008> legal:pasalHasKey 8 .
+<http://example.org/legal/document/uu/1990/8/pasal/0008> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013> .
+<http://example.org/legal/document/uu/1990/8> legal:documentHasPasal <http://example.org/legal/document/uu/1990/8/pasal/0008> .
+<http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013> legal:pasalVersionHasVersionDate "1990-10-13"^^xsd:date .
+<http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013> legal:pasalVersionHasRawText "(1). Keanggotaan AIPI didasarkan atas pilihan.\n(2). Keanggotaan AlPI merupakan pengakuan kehormatan tertinggi dalam bidang ilmu pengetahuan dan teknologi di Indonesia." .
+<http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013/ayat> .
+<http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013/ayat/0001> .
+<http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013/ayat/0001> legal:ayatHasRawText "Keanggotaan AIPI didasarkan atas pilihan." .
+<http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013/ayat/0001/text> legal:textHasTextString "Keanggotaan AIPI didasarkan atas pilihan." .
+<http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013/ayat/0001/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013/ayat/0002> .
+<http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013/ayat/0002> legal:ayatHasRawText "Keanggotaan AlPI merupakan pengakuan kehormatan tertinggi dalam bidang ilmu pengetahuan dan teknologi di Indonesia." .
+<http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013/ayat/0002/text> legal:textHasTextString "Keanggotaan AlPI merupakan pengakuan kehormatan tertinggi dalam bidang ilmu pengetahuan dan teknologi di Indonesia." .
+<http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013/ayat/0002/text> .
+<http://example.org/legal/document/uu/1990/8/bab/0005/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/8/pasal/0009> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009> legal:pasalHasKey 9 .
+<http://example.org/legal/document/uu/1990/8/pasal/0009> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013> .
+<http://example.org/legal/document/uu/1990/8> legal:documentHasPasal <http://example.org/legal/document/uu/1990/8/pasal/0009> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013> legal:pasalVersionHasVersionDate "1990-10-13"^^xsd:date .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013> legal:pasalVersionHasRawText "(1). Untuk dapat dipilih menjadi anggota AIPI , perlu dipenuhi syarat umum sebagai berikut:\na. warga negara Republik Indonesia:\nb. beriman dan bertakwa kepada Tuhan Yang Maha Esa:\nc. setia kepada negara Republik Indonesia berdasarkan Pancasila dan Undang-Undang Dasar 1945,\nd. berwibawa, jujur, adil, dan dapat mencerminkan kehendak dan hati nurani rakyat:\ne. tidak terlibat langsung ataupun tidak langsung dalam kegiatan/ gerakan yang bertentangan dengan Pancasila dan Undang-Undang Dasar 1945 serta organisasi terlarang.\n\n(2). Selain syarat umum sebagaimana dimaksud dalam ayat (1), calon anggota AIPI perlu pula memenuhi syarat khusus sebagai berikut:\na. ahli dan mempunyai kemampuan serta berprestasi di salah satu bidang ilmu pengetahuan dan teknologi yang diakui oleh masyarakat ilmiah:\nb. keahlian dan kemampuan serta prestasi tersebut mempunyai dampak positif bagi perkembangan pembangunan bangsa:\nc. . diajukan dan didukung paling sedikit oleh 1/4 (satu perempat) jumlah anggota AIPI:\nd. disetujuai paling sedikit oleh 2/3 (dua pertiga) jumlah anggota AIPI:\ne. syarat lain yang diatur dalam Anggaran Dasar dan Anggaran Rumah Tangga AIPI.\n" .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001> legal:ayatHasRawText "Untuk dapat dipilih menjadi anggota AIPI , perlu dipenuhi syarat umum sebagai berikut:\na. warga negara Republik Indonesia:\nb. beriman dan bertakwa kepada Tuhan Yang Maha Esa:\nc. setia kepada negara Republik Indonesia berdasarkan Pancasila dan Undang-Undang Dasar 1945,\nd. berwibawa, jujur, adil, dan dapat mencerminkan kehendak dan hati nurani rakyat:\ne. tidak terlibat langsung ataupun tidak langsung dalam kegiatan/ gerakan yang bertentangan dengan Pancasila dan Undang-Undang Dasar 1945 serta organisasi terlarang.\n" .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/description> legal:textHasTextString "Untuk dapat dipilih menjadi anggota AIPI , perlu dipenuhi syarat umum sebagai berikut:" .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/description> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/a> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/a/text> legal:textHasTextString "warga negara Republik Indonesia:" .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/a/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/b> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/b/text> legal:textHasTextString "beriman dan bertakwa kepada Tuhan Yang Maha Esa:" .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/b> legal:pointHasText <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/b/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/c> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/c/text> legal:textHasTextString "setia kepada negara Republik Indonesia berdasarkan Pancasila dan Undang-Undang Dasar 1945," .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/c> legal:pointHasText <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/c/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/d> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/d/text> legal:textHasTextString "berwibawa, jujur, adil, dan dapat mencerminkan kehendak dan hati nurani rakyat:" .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/d> legal:pointHasText <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/d/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/e> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/e/text> legal:textHasTextString "tidak terlibat langsung ataupun tidak langsung dalam kegiatan/ gerakan yang bertentangan dengan Pancasila dan Undang-Undang Dasar 1945 serta organisasi terlarang." .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/e> legal:pointHasText <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/e/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002> legal:ayatHasRawText "Selain syarat umum sebagaimana dimaksud dalam ayat (1), calon anggota AIPI perlu pula memenuhi syarat khusus sebagai berikut:\na. ahli dan mempunyai kemampuan serta berprestasi di salah satu bidang ilmu pengetahuan dan teknologi yang diakui oleh masyarakat ilmiah:\nb. keahlian dan kemampuan serta prestasi tersebut mempunyai dampak positif bagi perkembangan pembangunan bangsa:\nc. . diajukan dan didukung paling sedikit oleh 1/4 (satu perempat) jumlah anggota AIPI:\nd. disetujuai paling sedikit oleh 2/3 (dua pertiga) jumlah anggota AIPI:\ne. syarat lain yang diatur dalam Anggaran Dasar dan Anggaran Rumah Tangga AIPI.\n" .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002> legal:ayatHasPointSet <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/description> legal:textHasTextString "Selain syarat umum sebagaimana dimaksud dalam ayat (1), calon anggota AIPI perlu pula memenuhi syarat khusus sebagai berikut:" .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/description> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/a> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/a/text> legal:textHasTextString "ahli dan mempunyai kemampuan serta berprestasi di salah satu bidang ilmu pengetahuan dan teknologi yang diakui oleh masyarakat ilmiah:" .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/a> legal:pointHasText <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/a/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/b> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/b/text> legal:textHasTextString "keahlian dan kemampuan serta prestasi tersebut mempunyai dampak positif bagi perkembangan pembangunan bangsa:" .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/b> legal:pointHasText <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/b/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/c> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/c/text> legal:textHasTextString ". diajukan dan didukung paling sedikit oleh 1/4 (satu perempat) jumlah anggota AIPI:" .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/c> legal:pointHasText <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/c/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/d> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/d/text> legal:textHasTextString "disetujuai paling sedikit oleh 2/3 (dua pertiga) jumlah anggota AIPI:" .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/d> legal:pointHasText <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/d/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/e> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/e/text> legal:textHasTextString "syarat lain yang diatur dalam Anggaran Dasar dan Anggaran Rumah Tangga AIPI." .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/e> legal:pointHasText <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/e/text> .
+<http://example.org/legal/document/uu/1990/8/bab/0005/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/8/pasal/0010> .
+<http://example.org/legal/document/uu/1990/8/pasal/0010> legal:pasalHasKey 10 .
+<http://example.org/legal/document/uu/1990/8/pasal/0010> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/8/pasal/0010/version/19901013> .
+<http://example.org/legal/document/uu/1990/8> legal:documentHasPasal <http://example.org/legal/document/uu/1990/8/pasal/0010> .
+<http://example.org/legal/document/uu/1990/8/pasal/0010/version/19901013> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/8/pasal/0010/version/19901013> legal:pasalVersionHasVersionDate "1990-10-13"^^xsd:date .
+<http://example.org/legal/document/uu/1990/8/pasal/0010/version/19901013> legal:pasalVersionHasRawText "Keanggotaan AIPI dapat berlaku seumur hidup." .
+<http://example.org/legal/document/uu/1990/8/pasal/0010/version/19901013/text> legal:textHasTextString "Keanggotaan AIPI dapat berlaku seumur hidup." .
+<http://example.org/legal/document/uu/1990/8/pasal/0010/version/19901013> legal:pasalVersionHasText <http://example.org/legal/document/uu/1990/8/pasal/0010/version/19901013/text> .
+<http://example.org/legal/document/uu/1990/8/bab/0005/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/8/pasal/0011> .
+<http://example.org/legal/document/uu/1990/8/pasal/0011> legal:pasalHasKey 11 .
+<http://example.org/legal/document/uu/1990/8/pasal/0011> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/8/pasal/0011/version/19901013> .
+<http://example.org/legal/document/uu/1990/8> legal:documentHasPasal <http://example.org/legal/document/uu/1990/8/pasal/0011> .
+<http://example.org/legal/document/uu/1990/8/pasal/0011/version/19901013> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/8/pasal/0011/version/19901013> legal:pasalVersionHasVersionDate "1990-10-13"^^xsd:date .
+<http://example.org/legal/document/uu/1990/8/pasal/0011/version/19901013> legal:pasalVersionHasRawText "Keanggotaan AIPI terdiri atas anggota biasa dan anggota kehormatan." .
+<http://example.org/legal/document/uu/1990/8/pasal/0011/version/19901013/text> legal:textHasTextString "Keanggotaan AIPI terdiri atas anggota biasa dan anggota kehormatan." .
+<http://example.org/legal/document/uu/1990/8/pasal/0011/version/19901013> legal:pasalVersionHasText <http://example.org/legal/document/uu/1990/8/pasal/0011/version/19901013/text> .
+<http://example.org/legal/document/uu/1990/8/bab/0005/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/8/pasal/0012> .
+<http://example.org/legal/document/uu/1990/8/pasal/0012> legal:pasalHasKey 12 .
+<http://example.org/legal/document/uu/1990/8/pasal/0012> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013> .
+<http://example.org/legal/document/uu/1990/8> legal:documentHasPasal <http://example.org/legal/document/uu/1990/8/pasal/0012> .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013> legal:pasalVersionHasVersionDate "1990-10-13"^^xsd:date .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013> legal:pasalVersionHasRawText "(1). Anggota AIPI diangkat dan diberhentikan oleh Sidang Paripurna AlPI dan disahkan oleh Presiden.\n(2). Pengangkatan anggota AIPI dilakukan setelah dipenuhinya syarat sebagaimana dimaksud dalam Pasal 9.\n(3). Untuk pertama kali anggota AIPI diangkat oleh Presiden berdasarkan usul yang diajukan oleh Menteri yang bertanggung jawab di bidang riset dan teknologi, Menteri yang bertanggung jawab di bidang pendidikan dan kebudayaan, dan Pimpinan Lembaga yang bertanggung jawab di bidang pengembangan ilmu pengetahuan." .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat> .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0001> .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0001> legal:ayatHasRawText "Anggota AIPI diangkat dan diberhentikan oleh Sidang Paripurna AlPI dan disahkan oleh Presiden." .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0001/text> legal:textHasTextString "Anggota AIPI diangkat dan diberhentikan oleh Sidang Paripurna AlPI dan disahkan oleh Presiden." .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0001/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0002> .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0002> legal:ayatHasRawText "Pengangkatan anggota AIPI dilakukan setelah dipenuhinya syarat sebagaimana dimaksud dalam Pasal 9." .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0002/text> legal:textHasTextString "Pengangkatan anggota AIPI dilakukan setelah dipenuhinya syarat sebagaimana dimaksud dalam Pasal 9." .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0002/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/8/pasal/0009> .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0003> .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0003> legal:ayatHasRawText "Untuk pertama kali anggota AIPI diangkat oleh Presiden berdasarkan usul yang diajukan oleh Menteri yang bertanggung jawab di bidang riset dan teknologi, Menteri yang bertanggung jawab di bidang pendidikan dan kebudayaan, dan Pimpinan Lembaga yang bertanggung jawab di bidang pengembangan ilmu pengetahuan." .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0003/text> legal:textHasTextString "Untuk pertama kali anggota AIPI diangkat oleh Presiden berdasarkan usul yang diajukan oleh Menteri yang bertanggung jawab di bidang riset dan teknologi, Menteri yang bertanggung jawab di bidang pendidikan dan kebudayaan, dan Pimpinan Lembaga yang bertanggung jawab di bidang pengembangan ilmu pengetahuan." .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0003/text> .
+<http://example.org/legal/document/uu/1990/8/bab/0005/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/8/pasal/0013> .
+<http://example.org/legal/document/uu/1990/8/pasal/0013> legal:pasalHasKey 13 .
+<http://example.org/legal/document/uu/1990/8/pasal/0013> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013> .
+<http://example.org/legal/document/uu/1990/8> legal:documentHasPasal <http://example.org/legal/document/uu/1990/8/pasal/0013> .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013> legal:pasalVersionHasVersionDate "1990-10-13"^^xsd:date .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013> legal:pasalVersionHasRawText "Anggota AIPI berhenti karena:\na. meninggal dunia:\nb. permintaan sendiri secara tertulis:\nc. dijatuhi hukuman karena melakukan tindak pidana yang telah mempunyai kekuatan hukum tetap, yang jenisnya diatur dalam Anggaran Dasar dan Anggaran Rumah Tangga AIPI:\nd. syarat lain yang diatur dalam Anggaran Dasar dan Anggaran Rumah Tangga AIPI:\ne. tidak memenuhi lagi syarat sebagaimana dimaksud dalam Pasal 9.\n" .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/description> legal:textHasTextString "Anggota AIPI berhenti karena:" .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/description> .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/a> .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/a/text> legal:textHasTextString "meninggal dunia:" .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/a> legal:pointHasText <http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/a/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/b> .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/b/text> legal:textHasTextString "permintaan sendiri secara tertulis:" .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/b> legal:pointHasText <http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/b/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/c> .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/c/text> legal:textHasTextString "dijatuhi hukuman karena melakukan tindak pidana yang telah mempunyai kekuatan hukum tetap, yang jenisnya diatur dalam Anggaran Dasar dan Anggaran Rumah Tangga AIPI:" .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/c> legal:pointHasText <http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/c/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/d> .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/d/text> legal:textHasTextString "syarat lain yang diatur dalam Anggaran Dasar dan Anggaran Rumah Tangga AIPI:" .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/d> legal:pointHasText <http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/d/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/e> .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/e/text> legal:textHasTextString "tidak memenuhi lagi syarat sebagaimana dimaksud dalam Pasal 9." .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/e> legal:pointHasText <http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/e/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/e/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/8/pasal/0009> .
+<http://example.org/legal/document/uu/1990/8/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1990/8/bab/0006> .
+<http://example.org/legal/document/uu/1990/8/bab/0006> legal:babHasKey 6 .
+<http://example.org/legal/document/uu/1990/8/bab/0006> legal:babHasTitle "KOMISI BIDANG ILMU PENGETAHUAN" .
+<http://example.org/legal/document/uu/1990/8/bab/0006> legal:babHasPasalSet <http://example.org/legal/document/uu/1990/8/bab/0006/pasals> .
+<http://example.org/legal/document/uu/1990/8/bab/0006/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/8/pasal/0014> .
+<http://example.org/legal/document/uu/1990/8/pasal/0014> legal:pasalHasKey 14 .
+<http://example.org/legal/document/uu/1990/8/pasal/0014> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/8/pasal/0014/version/19901013> .
+<http://example.org/legal/document/uu/1990/8> legal:documentHasPasal <http://example.org/legal/document/uu/1990/8/pasal/0014> .
+<http://example.org/legal/document/uu/1990/8/pasal/0014/version/19901013> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/8/pasal/0014/version/19901013> legal:pasalVersionHasVersionDate "1990-10-13"^^xsd:date .
+<http://example.org/legal/document/uu/1990/8/pasal/0014/version/19901013> legal:pasalVersionHasRawText "Di dalam AlPI dibentuk komisi bidang ilmu pengetahuan yang jumlahnya dapat ditetapkan sesuai dengan tahap kemajuan ilmu pengetahuan dan teknologi di Indonesia." .
+<http://example.org/legal/document/uu/1990/8/pasal/0014/version/19901013/text> legal:textHasTextString "Di dalam AlPI dibentuk komisi bidang ilmu pengetahuan yang jumlahnya dapat ditetapkan sesuai dengan tahap kemajuan ilmu pengetahuan dan teknologi di Indonesia." .
+<http://example.org/legal/document/uu/1990/8/pasal/0014/version/19901013> legal:pasalVersionHasText <http://example.org/legal/document/uu/1990/8/pasal/0014/version/19901013/text> .
+<http://example.org/legal/document/uu/1990/8/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1990/8/bab/0007> .
+<http://example.org/legal/document/uu/1990/8/bab/0007> legal:babHasKey 7 .
+<http://example.org/legal/document/uu/1990/8/bab/0007> legal:babHasTitle "KEUANGAN" .
+<http://example.org/legal/document/uu/1990/8/bab/0007> legal:babHasPasalSet <http://example.org/legal/document/uu/1990/8/bab/0007/pasals> .
+<http://example.org/legal/document/uu/1990/8/bab/0007/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/8/pasal/0015> .
+<http://example.org/legal/document/uu/1990/8/pasal/0015> legal:pasalHasKey 15 .
+<http://example.org/legal/document/uu/1990/8/pasal/0015> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013> .
+<http://example.org/legal/document/uu/1990/8> legal:documentHasPasal <http://example.org/legal/document/uu/1990/8/pasal/0015> .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013> legal:pasalVersionHasVersionDate "1990-10-13"^^xsd:date .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013> legal:pasalVersionHasRawText "(1). Untuk dapat melaksanakan peran dan fungsinya, AIPI memperoleh dana dari :\na. bantuan Pemerintah dan sumbangan masyarakat yang tidak mengikat :\nb. sumbangan luar negeri yang tidak mengikat :\nc. usaha lain yang sah.\n\n(2). Pengelolaan bantuan Pemerintah sebagaimana dimaksud dalam ayat (1) butir a ditetapkan lebih lanjut dengan Keputusan Presiden.\n(3). Penerimaan dan pengeluaran dana AIPI, baik yang berasal dari dalam maupun luar negeri, dipertanggungjawabkan setiap tahun kepada Sidang Paripurna AIPI." .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat> .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001> .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001> legal:ayatHasRawText "Untuk dapat melaksanakan peran dan fungsinya, AIPI memperoleh dana dari :\na. bantuan Pemerintah dan sumbangan masyarakat yang tidak mengikat :\nb. sumbangan luar negeri yang tidak mengikat :\nc. usaha lain yang sah.\n" .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point/description> legal:textHasTextString "Untuk dapat melaksanakan peran dan fungsinya, AIPI memperoleh dana dari :" .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point/description> .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point/a> .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point/a/text> legal:textHasTextString "bantuan Pemerintah dan sumbangan masyarakat yang tidak mengikat :" .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point/a/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point/b> .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point/b/text> legal:textHasTextString "sumbangan luar negeri yang tidak mengikat :" .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point/b> legal:pointHasText <http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point/b/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point/c> .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point/c/text> legal:textHasTextString "usaha lain yang sah." .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point/c> legal:pointHasText <http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point/c/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0002> .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0002> legal:ayatHasRawText "Pengelolaan bantuan Pemerintah sebagaimana dimaksud dalam ayat (1) butir a ditetapkan lebih lanjut dengan Keputusan Presiden." .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0002/text> legal:textHasTextString "Pengelolaan bantuan Pemerintah sebagaimana dimaksud dalam ayat (1) butir a ditetapkan lebih lanjut dengan Keputusan Presiden." .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0002/text> .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001> .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0003> .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0003> legal:ayatHasRawText "Penerimaan dan pengeluaran dana AIPI, baik yang berasal dari dalam maupun luar negeri, dipertanggungjawabkan setiap tahun kepada Sidang Paripurna AIPI." .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0003/text> legal:textHasTextString "Penerimaan dan pengeluaran dana AIPI, baik yang berasal dari dalam maupun luar negeri, dipertanggungjawabkan setiap tahun kepada Sidang Paripurna AIPI." .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0003/text> .
+<http://example.org/legal/document/uu/1990/8/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1990/8/bab/0008> .
+<http://example.org/legal/document/uu/1990/8/bab/0008> legal:babHasKey 8 .
+<http://example.org/legal/document/uu/1990/8/bab/0008> legal:babHasTitle "KETENTUAN PENUTUP" .
+<http://example.org/legal/document/uu/1990/8/bab/0008> legal:babHasPasalSet <http://example.org/legal/document/uu/1990/8/bab/0008/pasals> .
+<http://example.org/legal/document/uu/1990/8/bab/0008/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/8/pasal/0016> .
+<http://example.org/legal/document/uu/1990/8/pasal/0016> legal:pasalHasKey 16 .
+<http://example.org/legal/document/uu/1990/8/pasal/0016> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/8/pasal/0016/version/19901013> .
+<http://example.org/legal/document/uu/1990/8> legal:documentHasPasal <http://example.org/legal/document/uu/1990/8/pasal/0016> .
+<http://example.org/legal/document/uu/1990/8/pasal/0016/version/19901013> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1990/8/pasal/0016/version/19901013> legal:pasalVersionHasVersionDate "1990-10-13"^^xsd:date .
+<http://example.org/legal/document/uu/1990/8/pasal/0016/version/19901013> legal:pasalVersionHasRawText "Pada saat mulai berlakunya Undang-undang ini, Undang-undang Nomor & Tahun 1956 tentang Pembentukan Majelis Ilmu Pengetahuan Indonesia (Lembaran Negara Republik Indonesia Tahun 1956 Nomor 14: Tambahan Lembaran Negara Republik Indonesia Nomor 971) dinyatakan tidak berlaku lagi. Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1990/8/pasal/0016/version/19901013/text> legal:textHasTextString "Pada saat mulai berlakunya Undang-undang ini, Undang-undang Nomor & Tahun 1956 tentang Pembentukan Majelis Ilmu Pengetahuan Indonesia (Lembaran Negara Republik Indonesia Tahun 1956 Nomor 14: Tambahan Lembaran Negara Republik Indonesia Nomor 971) dinyatakan tidak berlaku lagi. Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1990/8/pasal/0016/version/19901013> legal:pasalVersionHasText <http://example.org/legal/document/uu/1990/8/pasal/0016/version/19901013/text> .
+<http://example.org/legal/document/uu/1990/8> legal:documentHasDisahkanDate "1990-10-13"^^xsd:date .
+<http://example.org/legal/document/uu/1990/8> legal:documentMengingat <http://example.org/legal/document/uu/1990/8/mengingat> .
+<http://example.org/legal/document/uu/1990/8/mengingat/text> legal:textHasTextString "Pasal S ayat (1) dan Pasal 20 ayat (1) Undang-Undang Dasar 1945, Dengan persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG AKADEMI ILMU PENGETAHUAN INDONESIA. BAB |" .
+<http://example.org/legal/document/uu/1990/8/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/1990/8/mengingat/text> .
+<http://example.org/legal/document/uu/1990/8> legal:documentMenimbang <http://example.org/legal/document/uu/1990/8/menimbang> .
+<http://example.org/legal/document/uu/1990/8/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/1990/8/menimbang/point> .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1990/8/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1990/8/menimbang/point/description> .
+<http://example.org/legal/document/uu/1990/8/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/menimbang/point/a> .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/a/text> legal:textHasTextString "bahwa Tuhan Yang Maha Esa menciptakan alam semesta dengan segala isinya untuk kepentingan umat manusia dan dalam pengelolaannya perlu diupayakan pembangunan, pengembangan, dan pemanfaatan ilmu pengetahuan dan teknologi guna meningkatkan kesejahteraan lahir dan batin serta kelestarian lingkungan:" .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/1990/8/menimbang/point/a/text> .
+<http://example.org/legal/document/uu/1990/8/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/menimbang/point/b> .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/b/text> legal:textHasTextString "bahwa pembangunan, pengembangan, dan pemanfaatan ilmu pengetahuan dan teknologi dalam pembangunan nasional sangat penting artinya bagi kehidupan dan kemajuan bangsa Indonesia, khususnya dalam upaya untuk meningkatkan kesejahteraan, kemandirian, dan ketahanannya:" .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/1990/8/menimbang/point/b/text> .
+<http://example.org/legal/document/uu/1990/8/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/menimbang/point/c> .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/c/text> legal:textHasTextString "bahwa dalam penguasaan, pengembangan, dan pemanfaatan ilmu pengetahuan dan teknologi perlu tetap menjunjung tinggi harkat, martabat, dan keutuhan kepribadian manusia dan bangsa Indonesia serta kelestarian lingkungan hidupnya dalam keterpaduan pelaksanaan sesuai dengan nilai-nilai luhur bangsa berdasarkan Pancasila:" .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/1990/8/menimbang/point/c/text> .
+<http://example.org/legal/document/uu/1990/8/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/menimbang/point/d> .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/d/text> legal:textHasTextString "bahwa dalam rangka usaha tersebut, peningkatan peranan ilmuwan Indonesia terkemuka sangat diperlukan guna, turut memecahkan masalah bangsa Indonesia yang berkaitan dengan ilmu pengetahuan dan teknologi:" .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/1990/8/menimbang/point/d/text> .
+<http://example.org/legal/document/uu/1990/8/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/menimbang/point/e> .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/e/text> legal:textHasTextString "bahwa untuk kepentingan tersebut, diperlukan suatu wadah bagi ilmuwan Indonesia terkemuka yang bersifat mandiri, yang mampu menyampaikan saran dan pertimbangan yang berdayaguna bagi Pemerintah dan masyarakat tentang penguasaan, pengembangan, dan pemanfaatan ilmu pengetahuan dan teknologi dalam rangka pembangunan nasional dan kesejahteraan umat manusia:" .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/e> legal:pointHasText <http://example.org/legal/document/uu/1990/8/menimbang/point/e/text> .
+<http://example.org/legal/document/uu/1990/8/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/8/menimbang/point/f> .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/f> legal:pointHasKey "f" .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/f/text> legal:textHasTextString "' bahwa sehubungan dengan hal tersebut diatas perlu ditetapkan Undang-undang tentang Akademi Ilmu Pengetahuan Indonesia:" .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/f> legal:pointHasText <http://example.org/legal/document/uu/1990/8/menimbang/point/f/text> .
+<http://example.org/legal/document/uu/1990/8> legal:documentHasDisahkanPengesah "Diundangkan di Jakarta" .
+<http://example.org/legal/document/uu/1990/8> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/1990/8> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA" .
+<http://example.org/legal/document/uu/1990/8> a legal:Document .
+<http://example.org/legal/document/uu/1990/8/bab> a legal:BabSet .
+<http://example.org/legal/document/uu/1990/8/bab/0001> a legal:Bab .
+<http://example.org/legal/document/uu/1990/8/bab/0001/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1990/8/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0003> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0004> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0005> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0005/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/bab/0002> a legal:Bab .
+<http://example.org/legal/document/uu/1990/8/bab/0002/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1990/8/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/bab/0003> a legal:Bab .
+<http://example.org/legal/document/uu/1990/8/bab/0003/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1990/8/pasal/0004> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/8/pasal/0004/version/19901013> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/8/pasal/0004/version/19901013/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0005> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/8/pasal/0005/version/19901013> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/8/pasal/0005/version/19901013/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/bab/0004> a legal:Bab .
+<http://example.org/legal/document/uu/1990/8/bab/0004/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1990/8/pasal/0006> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/bab/0005> a legal:Bab .
+<http://example.org/legal/document/uu/1990/8/bab/0005/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1990/8/pasal/0007> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0008> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0009> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/e> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/e> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0010> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/8/pasal/0010/version/19901013> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/8/pasal/0010/version/19901013/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0011> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/8/pasal/0011/version/19901013> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/8/pasal/0011/version/19901013/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0012> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0013> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/e> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/bab/0006> a legal:Bab .
+<http://example.org/legal/document/uu/1990/8/bab/0006/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1990/8/pasal/0014> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/8/pasal/0014/version/19901013> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/8/pasal/0014/version/19901013/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/bab/0007> a legal:Bab .
+<http://example.org/legal/document/uu/1990/8/bab/0007/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1990/8/pasal/0015> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/bab/0008> a legal:Bab .
+<http://example.org/legal/document/uu/1990/8/bab/0008/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1990/8/pasal/0016> a legal:Pasal .
+<http://example.org/legal/document/uu/1990/8/pasal/0016/version/19901013> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1990/8/pasal/0016/version/19901013/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/mengingat/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1990/8/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/menimbang/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/e> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/f> a legal:Point .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/f/text> a legal:Text .
+<http://example.org/legal/document/uu/1990/8/bab> legal:partOf <http://example.org/legal/document/uu/1990/8> .
+<http://example.org/legal/document/uu/1990/8/bab/0001> legal:partOf <http://example.org/legal/document/uu/1990/8/bab> .
+<http://example.org/legal/document/uu/1990/8/bab/0001/pasals> legal:partOf <http://example.org/legal/document/uu/1990/8/bab/0001> .
+<http://example.org/legal/document/uu/1990/8/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1990/8/bab/0001/pasals> .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0001> .
+<http://example.org/legal/document/uu/1990/8/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1990/8> .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013> .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0001> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0002> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0003> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0004> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point/0005> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0001/version/19901013/point> .
+<http://example.org/legal/document/uu/1990/8/bab/0002> legal:partOf <http://example.org/legal/document/uu/1990/8/bab> .
+<http://example.org/legal/document/uu/1990/8/bab/0002/pasals> legal:partOf <http://example.org/legal/document/uu/1990/8/bab/0002> .
+<http://example.org/legal/document/uu/1990/8/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1990/8/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0002> .
+<http://example.org/legal/document/uu/1990/8/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1990/8> .
+<http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013/ayat> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013> .
+<http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013/ayat> .
+<http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013/ayat/0001> .
+<http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013/ayat> .
+<http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0002/version/19901013/ayat/0002> .
+<http://example.org/legal/document/uu/1990/8/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1990/8/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0003> .
+<http://example.org/legal/document/uu/1990/8/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1990/8> .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013> .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/a> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/b> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/c> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point/d> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0003/version/19901013/point> .
+<http://example.org/legal/document/uu/1990/8/bab/0003> legal:partOf <http://example.org/legal/document/uu/1990/8/bab> .
+<http://example.org/legal/document/uu/1990/8/bab/0003/pasals> legal:partOf <http://example.org/legal/document/uu/1990/8/bab/0003> .
+<http://example.org/legal/document/uu/1990/8/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1990/8/bab/0003/pasals> .
+<http://example.org/legal/document/uu/1990/8/pasal/0004/version/19901013> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0004> .
+<http://example.org/legal/document/uu/1990/8/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1990/8> .
+<http://example.org/legal/document/uu/1990/8/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1990/8/bab/0003/pasals> .
+<http://example.org/legal/document/uu/1990/8/pasal/0005/version/19901013> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0005> .
+<http://example.org/legal/document/uu/1990/8/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1990/8> .
+<http://example.org/legal/document/uu/1990/8/bab/0004> legal:partOf <http://example.org/legal/document/uu/1990/8/bab> .
+<http://example.org/legal/document/uu/1990/8/bab/0004/pasals> legal:partOf <http://example.org/legal/document/uu/1990/8/bab/0004> .
+<http://example.org/legal/document/uu/1990/8/pasal/0006> legal:partOf <http://example.org/legal/document/uu/1990/8/bab/0004/pasals> .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0006> .
+<http://example.org/legal/document/uu/1990/8/pasal/0006> legal:partOf <http://example.org/legal/document/uu/1990/8> .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013> .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat> .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0001> .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat> .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002> .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/a> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/b> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/c> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point/d> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0006/version/19901013/ayat/0002/point> .
+<http://example.org/legal/document/uu/1990/8/bab/0005> legal:partOf <http://example.org/legal/document/uu/1990/8/bab> .
+<http://example.org/legal/document/uu/1990/8/bab/0005/pasals> legal:partOf <http://example.org/legal/document/uu/1990/8/bab/0005> .
+<http://example.org/legal/document/uu/1990/8/pasal/0007> legal:partOf <http://example.org/legal/document/uu/1990/8/bab/0005/pasals> .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0007> .
+<http://example.org/legal/document/uu/1990/8/pasal/0007> legal:partOf <http://example.org/legal/document/uu/1990/8> .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013> .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat> .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0001> .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat> .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0002> .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat> .
+<http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0007/version/19901013/ayat/0003> .
+<http://example.org/legal/document/uu/1990/8/pasal/0008> legal:partOf <http://example.org/legal/document/uu/1990/8/bab/0005/pasals> .
+<http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0008> .
+<http://example.org/legal/document/uu/1990/8/pasal/0008> legal:partOf <http://example.org/legal/document/uu/1990/8> .
+<http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013/ayat> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013> .
+<http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013/ayat> .
+<http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013/ayat/0001> .
+<http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013/ayat> .
+<http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0008/version/19901013/ayat/0002> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009> legal:partOf <http://example.org/legal/document/uu/1990/8/bab/0005/pasals> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0009> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009> legal:partOf <http://example.org/legal/document/uu/1990/8> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/a> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/b> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/c> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/d> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point/e> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0001/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/a> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/b> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/c> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/d> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point/e> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0009/version/19901013/ayat/0002/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0010> legal:partOf <http://example.org/legal/document/uu/1990/8/bab/0005/pasals> .
+<http://example.org/legal/document/uu/1990/8/pasal/0010/version/19901013> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0010> .
+<http://example.org/legal/document/uu/1990/8/pasal/0010> legal:partOf <http://example.org/legal/document/uu/1990/8> .
+<http://example.org/legal/document/uu/1990/8/pasal/0011> legal:partOf <http://example.org/legal/document/uu/1990/8/bab/0005/pasals> .
+<http://example.org/legal/document/uu/1990/8/pasal/0011/version/19901013> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0011> .
+<http://example.org/legal/document/uu/1990/8/pasal/0011> legal:partOf <http://example.org/legal/document/uu/1990/8> .
+<http://example.org/legal/document/uu/1990/8/pasal/0012> legal:partOf <http://example.org/legal/document/uu/1990/8/bab/0005/pasals> .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0012> .
+<http://example.org/legal/document/uu/1990/8/pasal/0012> legal:partOf <http://example.org/legal/document/uu/1990/8> .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013> .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat> .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0001> .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat> .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0002> .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat> .
+<http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0012/version/19901013/ayat/0003> .
+<http://example.org/legal/document/uu/1990/8/pasal/0013> legal:partOf <http://example.org/legal/document/uu/1990/8/bab/0005/pasals> .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0013> .
+<http://example.org/legal/document/uu/1990/8/pasal/0013> legal:partOf <http://example.org/legal/document/uu/1990/8> .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013> .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/a> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/b> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/c> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/d> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point/e> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0013/version/19901013/point> .
+<http://example.org/legal/document/uu/1990/8/bab/0006> legal:partOf <http://example.org/legal/document/uu/1990/8/bab> .
+<http://example.org/legal/document/uu/1990/8/bab/0006/pasals> legal:partOf <http://example.org/legal/document/uu/1990/8/bab/0006> .
+<http://example.org/legal/document/uu/1990/8/pasal/0014> legal:partOf <http://example.org/legal/document/uu/1990/8/bab/0006/pasals> .
+<http://example.org/legal/document/uu/1990/8/pasal/0014/version/19901013> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0014> .
+<http://example.org/legal/document/uu/1990/8/pasal/0014> legal:partOf <http://example.org/legal/document/uu/1990/8> .
+<http://example.org/legal/document/uu/1990/8/bab/0007> legal:partOf <http://example.org/legal/document/uu/1990/8/bab> .
+<http://example.org/legal/document/uu/1990/8/bab/0007/pasals> legal:partOf <http://example.org/legal/document/uu/1990/8/bab/0007> .
+<http://example.org/legal/document/uu/1990/8/pasal/0015> legal:partOf <http://example.org/legal/document/uu/1990/8/bab/0007/pasals> .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0015> .
+<http://example.org/legal/document/uu/1990/8/pasal/0015> legal:partOf <http://example.org/legal/document/uu/1990/8> .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013> .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat> .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001> .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point/a> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point/b> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point/c> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0001/point> .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat> .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0002> .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat> .
+<http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0015/version/19901013/ayat/0003> .
+<http://example.org/legal/document/uu/1990/8/bab/0008> legal:partOf <http://example.org/legal/document/uu/1990/8/bab> .
+<http://example.org/legal/document/uu/1990/8/bab/0008/pasals> legal:partOf <http://example.org/legal/document/uu/1990/8/bab/0008> .
+<http://example.org/legal/document/uu/1990/8/pasal/0016> legal:partOf <http://example.org/legal/document/uu/1990/8/bab/0008/pasals> .
+<http://example.org/legal/document/uu/1990/8/pasal/0016/version/19901013> legal:partOf <http://example.org/legal/document/uu/1990/8/pasal/0016> .
+<http://example.org/legal/document/uu/1990/8/pasal/0016> legal:partOf <http://example.org/legal/document/uu/1990/8> .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1990/8/menimbang/point> .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1990/8/menimbang/point> .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/1990/8/menimbang/point> .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/d> legal:partOf <http://example.org/legal/document/uu/1990/8/menimbang/point> .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/e> legal:partOf <http://example.org/legal/document/uu/1990/8/menimbang/point> .
+<http://example.org/legal/document/uu/1990/8/menimbang/point/f> legal:partOf <http://example.org/legal/document/uu/1990/8/menimbang/point> .

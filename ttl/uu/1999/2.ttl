@@ -1,0 +1,966 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1999/2> legal:documentHasBabSet <http://example.org/legal/document/uu/1999/2/bab> .
+<http://example.org/legal/document/uu/1999/2/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/2/bab/0001> .
+<http://example.org/legal/document/uu/1999/2/bab/0001> legal:babHasKey 1 .
+<http://example.org/legal/document/uu/1999/2/bab/0001> legal:babHasTitle "KETENTUAN UMUM" .
+<http://example.org/legal/document/uu/1999/2/bab/0001> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/2/bab/0001/pasals> .
+<http://example.org/legal/document/uu/1999/2/bab/0001/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1999/2/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201> .
+<http://example.org/legal/document/uu/1999/2> legal:documentHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201> legal:pasalVersionHasVersionDate "1999-02-01"^^xsd:date .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201> legal:pasalVersionHasRawText "(1). Dalam undang-undang ini yang dimaksud dengan Partai Politik adalah setiap organisasi yang dibentuk oleh warga negara Republik Indonesia secara sukarela atas dasar persamaan kehendak untuk memperjuangkan baik kepentingan anggotanya maupun bangsa dan negara melalui pemilihan umum.\n(2). Kedaulatan Partai Politik berada di tangan anggotanya.\n(3). Setiap Partai Politik mempunyai kedudukan, fungsi, hak, dan kewajiban yang sama dan sederajat.\n(4). Partai Politik bersifat mandiri dalam mengatur rumah tangga organisasinya." .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0001> legal:ayatHasRawText "Dalam undang-undang ini yang dimaksud dengan Partai Politik adalah setiap organisasi yang dibentuk oleh warga negara Republik Indonesia secara sukarela atas dasar persamaan kehendak untuk memperjuangkan baik kepentingan anggotanya maupun bangsa dan negara melalui pemilihan umum." .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0001/text> legal:textHasTextString "Dalam undang-undang ini yang dimaksud dengan Partai Politik adalah setiap organisasi yang dibentuk oleh warga negara Republik Indonesia secara sukarela atas dasar persamaan kehendak untuk memperjuangkan baik kepentingan anggotanya maupun bangsa dan negara melalui pemilihan umum." .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0001/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0002> legal:ayatHasRawText "Kedaulatan Partai Politik berada di tangan anggotanya." .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0002/text> legal:textHasTextString "Kedaulatan Partai Politik berada di tangan anggotanya." .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0002/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0003> .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0003> legal:ayatHasRawText "Setiap Partai Politik mempunyai kedudukan, fungsi, hak, dan kewajiban yang sama dan sederajat." .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0003/text> legal:textHasTextString "Setiap Partai Politik mempunyai kedudukan, fungsi, hak, dan kewajiban yang sama dan sederajat." .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0003/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0004> .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0004> legal:ayatHasKey 4 .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0004> legal:ayatHasRawText "Partai Politik bersifat mandiri dalam mengatur rumah tangga organisasinya." .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0004/text> legal:textHasTextString "Partai Politik bersifat mandiri dalam mengatur rumah tangga organisasinya." .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0004/text> .
+<http://example.org/legal/document/uu/1999/2/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/2/bab/0002> .
+<http://example.org/legal/document/uu/1999/2/bab/0002> legal:babHasKey 2 .
+<http://example.org/legal/document/uu/1999/2/bab/0002> legal:babHasTitle "SYARAT-SYARAT PEMBENTUKAN" .
+<http://example.org/legal/document/uu/1999/2/bab/0002> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/2/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/2/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1999/2/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201> .
+<http://example.org/legal/document/uu/1999/2> legal:documentHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201> legal:pasalVersionHasVersionDate "1999-02-01"^^xsd:date .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201> legal:pasalVersionHasRawText "(1). Sekurang-kurangnya 50 (lima puluh) orang warga negara Republik Indonesia yang telah berusia 21 (dua puluh satu) tahun dapat membentuk Partai Politik.\n(2). Partai Politik yang dibentuk sebagaimana dimaksud ayat (1) harus memenuhi syarat:\na. mencantumkan Pancasila sebagai dasar negara dari Negara Kesatuan Republik Indonesia dalam anggaran dasar partai,\nb. asas atau ciri, aspirasi dan program Partai Politik tidak bertentangan dengan Pancasila,\nc. keanggotaan Partai Politik bersifat terbuka untuk setiap warga negara Republik Indonesia yang telah mempunyai hak pilih:\nd. Partai Politik tidak boleh menggunakan nama atau lambang yang sama h \"ata R44 “17 Wi \"7 TN \"gi - NA, 0 SR A ME aa PRESIDEN REPUBLIK INDONESIA 3 dengan lambang negara asing, bendera Negara Kesatuan Republik Indonesia Sang Merah Putih, bendera kebangsaan negara asing, gambar perorangan dan nama serta lambang partai lain yang telah ada.\n" .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0001> legal:ayatHasRawText "Sekurang-kurangnya 50 (lima puluh) orang warga negara Republik Indonesia yang telah berusia 21 (dua puluh satu) tahun dapat membentuk Partai Politik." .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0001/text> legal:textHasTextString "Sekurang-kurangnya 50 (lima puluh) orang warga negara Republik Indonesia yang telah berusia 21 (dua puluh satu) tahun dapat membentuk Partai Politik." .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0001/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002> legal:ayatHasRawText "Partai Politik yang dibentuk sebagaimana dimaksud ayat (1) harus memenuhi syarat:\na. mencantumkan Pancasila sebagai dasar negara dari Negara Kesatuan Republik Indonesia dalam anggaran dasar partai,\nb. asas atau ciri, aspirasi dan program Partai Politik tidak bertentangan dengan Pancasila,\nc. keanggotaan Partai Politik bersifat terbuka untuk setiap warga negara Republik Indonesia yang telah mempunyai hak pilih:\nd. Partai Politik tidak boleh menggunakan nama atau lambang yang sama h \"ata R44 “17 Wi \"7 TN \"gi - NA, 0 SR A ME aa PRESIDEN REPUBLIK INDONESIA 3 dengan lambang negara asing, bendera Negara Kesatuan Republik Indonesia Sang Merah Putih, bendera kebangsaan negara asing, gambar perorangan dan nama serta lambang partai lain yang telah ada.\n" .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002> legal:ayatHasPointSet <http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/description> legal:textHasTextString "Partai Politik yang dibentuk sebagaimana dimaksud ayat (1) harus memenuhi syarat:" .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/description> .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/a> .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/a/text> legal:textHasTextString "mencantumkan Pancasila sebagai dasar negara dari Negara Kesatuan Republik Indonesia dalam anggaran dasar partai," .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/a> legal:pointHasText <http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/a/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/b> .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/b/text> legal:textHasTextString "asas atau ciri, aspirasi dan program Partai Politik tidak bertentangan dengan Pancasila," .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/b> legal:pointHasText <http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/b/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/c> .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/c/text> legal:textHasTextString "keanggotaan Partai Politik bersifat terbuka untuk setiap warga negara Republik Indonesia yang telah mempunyai hak pilih:" .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/c> legal:pointHasText <http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/c/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/d> .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/d/text> legal:textHasTextString "Partai Politik tidak boleh menggunakan nama atau lambang yang sama h \"ata R44 “17 Wi \"7 TN \"gi - NA, 0 SR A ME aa PRESIDEN REPUBLIK INDONESIA 3 dengan lambang negara asing, bendera Negara Kesatuan Republik Indonesia Sang Merah Putih, bendera kebangsaan negara asing, gambar perorangan dan nama serta lambang partai lain yang telah ada." .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/d> legal:pointHasText <http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/d/text> .
+<http://example.org/legal/document/uu/1999/2/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0003> .
+<http://example.org/legal/document/uu/1999/2/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/1999/2/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/2/pasal/0003/version/19990201> .
+<http://example.org/legal/document/uu/1999/2> legal:documentHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0003> .
+<http://example.org/legal/document/uu/1999/2/pasal/0003/version/19990201> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/2/pasal/0003/version/19990201> legal:pasalVersionHasVersionDate "1999-02-01"^^xsd:date .
+<http://example.org/legal/document/uu/1999/2/pasal/0003/version/19990201> legal:pasalVersionHasRawText "Pembentukan Partai Politik tidak boleh membahayakan persatuan dan kesatuan nasional." .
+<http://example.org/legal/document/uu/1999/2/pasal/0003/version/19990201/text> legal:textHasTextString "Pembentukan Partai Politik tidak boleh membahayakan persatuan dan kesatuan nasional." .
+<http://example.org/legal/document/uu/1999/2/pasal/0003/version/19990201> legal:pasalVersionHasText <http://example.org/legal/document/uu/1999/2/pasal/0003/version/19990201/text> .
+<http://example.org/legal/document/uu/1999/2/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0004> .
+<http://example.org/legal/document/uu/1999/2/pasal/0004> legal:pasalHasKey 4 .
+<http://example.org/legal/document/uu/1999/2/pasal/0004> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201> .
+<http://example.org/legal/document/uu/1999/2> legal:documentHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0004> .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201> legal:pasalVersionHasVersionDate "1999-02-01"^^xsd:date .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201> legal:pasalVersionHasRawText "(1). Partai Politik didirikan dengan akte notaris dan didaftarkan pada Departemen Kehakiman Republik Indonesia.\n(2). Departemen Kehakiman Republik Indonesia hanya dapat menerima pendaftaran pendirian Partai Politik apabila telah memenuhi syarat sesuai dengan Pasal 2 dan Pasal 3 undang-undang ini.\n(3). Pengesahan pendirian Partai Politik sebagai badan hukum diumumkan dalam Berita Negara Republik Indonesia oleh Menteri Kehakiman Republik Indonesia. BAB II TUJUAN" .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0001> legal:ayatHasRawText "Partai Politik didirikan dengan akte notaris dan didaftarkan pada Departemen Kehakiman Republik Indonesia." .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0001/text> legal:textHasTextString "Partai Politik didirikan dengan akte notaris dan didaftarkan pada Departemen Kehakiman Republik Indonesia." .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0001/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0002> legal:ayatHasRawText "Departemen Kehakiman Republik Indonesia hanya dapat menerima pendaftaran pendirian Partai Politik apabila telah memenuhi syarat sesuai dengan Pasal 2 dan Pasal 3 undang-undang ini." .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0002/text> legal:textHasTextString "Departemen Kehakiman Republik Indonesia hanya dapat menerima pendaftaran pendirian Partai Politik apabila telah memenuhi syarat sesuai dengan Pasal 2 dan Pasal 3 undang-undang ini." .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0002/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/2/pasal/0003> .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/2/pasal/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0003> .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0003> legal:ayatHasRawText "Pengesahan pendirian Partai Politik sebagai badan hukum diumumkan dalam Berita Negara Republik Indonesia oleh Menteri Kehakiman Republik Indonesia. BAB II TUJUAN" .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0003/text> legal:textHasTextString "Pengesahan pendirian Partai Politik sebagai badan hukum diumumkan dalam Berita Negara Republik Indonesia oleh Menteri Kehakiman Republik Indonesia. BAB II TUJUAN" .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0003/text> .
+<http://example.org/legal/document/uu/1999/2/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0005> .
+<http://example.org/legal/document/uu/1999/2/pasal/0005> legal:pasalHasKey 5 .
+<http://example.org/legal/document/uu/1999/2/pasal/0005> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201> .
+<http://example.org/legal/document/uu/1999/2> legal:documentHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0005> .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201> legal:pasalVersionHasVersionDate "1999-02-01"^^xsd:date .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201> legal:pasalVersionHasRawText "(1). Tujuan umum Partai Politik adalah:\na. mewujudkan cita-cita nasional Bangsa Indonesia sebagaimana dimaksud dalam Pembukaan Undang-Undang Dasar 1945:\nb. mengembangkan kehidupan demokrasi berdasarkan Pancasila dengan menjunjung tinggi kedaulatan rakyat dalam Negara Kesatuan Republik Indonesia.\n\n(2). Tujuan khusus Partai Politik adalah memperjuangkan cita-cita para anggotanya dalam kehidupan bermasyarakat, berbangsa, dan bernegara." .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001> legal:ayatHasRawText "Tujuan umum Partai Politik adalah:\na. mewujudkan cita-cita nasional Bangsa Indonesia sebagaimana dimaksud dalam Pembukaan Undang-Undang Dasar 1945:\nb. mengembangkan kehidupan demokrasi berdasarkan Pancasila dengan menjunjung tinggi kedaulatan rakyat dalam Negara Kesatuan Republik Indonesia.\n" .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001/point/description> legal:textHasTextString "Tujuan umum Partai Politik adalah:" .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001/point/description> .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001/point/a> .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001/point/a/text> legal:textHasTextString "mewujudkan cita-cita nasional Bangsa Indonesia sebagaimana dimaksud dalam Pembukaan Undang-Undang Dasar 1945:" .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001/point/a/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001/point/b> .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001/point/b/text> legal:textHasTextString "mengembangkan kehidupan demokrasi berdasarkan Pancasila dengan menjunjung tinggi kedaulatan rakyat dalam Negara Kesatuan Republik Indonesia." .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001/point/b> legal:pointHasText <http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001/point/b/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0002> legal:ayatHasRawText "Tujuan khusus Partai Politik adalah memperjuangkan cita-cita para anggotanya dalam kehidupan bermasyarakat, berbangsa, dan bernegara." .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0002/text> legal:textHasTextString "Tujuan khusus Partai Politik adalah memperjuangkan cita-cita para anggotanya dalam kehidupan bermasyarakat, berbangsa, dan bernegara." .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0002/text> .
+<http://example.org/legal/document/uu/1999/2/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0006> .
+<http://example.org/legal/document/uu/1999/2/pasal/0006> legal:pasalHasKey 6 .
+<http://example.org/legal/document/uu/1999/2/pasal/0006> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/2/pasal/0006/version/19990201> .
+<http://example.org/legal/document/uu/1999/2> legal:documentHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0006> .
+<http://example.org/legal/document/uu/1999/2/pasal/0006/version/19990201> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/2/pasal/0006/version/19990201> legal:pasalVersionHasVersionDate "1999-02-01"^^xsd:date .
+<http://example.org/legal/document/uu/1999/2/pasal/0006/version/19990201> legal:pasalVersionHasRawText "Setiap Partai Politik wajib mencantumkan tujuan umum dan tujuan khusus seperti tercantum dalam Pasal 5 undang-undang ini di dalam anggaran dasarnya. BAB IV 4 KN tea N Yg Y) A3 S4 144 117 W \"7 Tw \"gi AN ME mm PRESIDEN REPUBLIK INDONESIA .4- FUNGSI, HAK, DAN KEWAJIBAN" .
+<http://example.org/legal/document/uu/1999/2/pasal/0006/version/19990201/text> legal:textHasTextString "Setiap Partai Politik wajib mencantumkan tujuan umum dan tujuan khusus seperti tercantum dalam Pasal 5 undang-undang ini di dalam anggaran dasarnya. BAB IV 4 KN tea N Yg Y) A3 S4 144 117 W \"7 Tw \"gi AN ME mm PRESIDEN REPUBLIK INDONESIA .4- FUNGSI, HAK, DAN KEWAJIBAN" .
+<http://example.org/legal/document/uu/1999/2/pasal/0006/version/19990201> legal:pasalVersionHasText <http://example.org/legal/document/uu/1999/2/pasal/0006/version/19990201/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0006/version/19990201/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/2/pasal/0005> .
+<http://example.org/legal/document/uu/1999/2/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0007> .
+<http://example.org/legal/document/uu/1999/2/pasal/0007> legal:pasalHasKey 7 .
+<http://example.org/legal/document/uu/1999/2/pasal/0007> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201> .
+<http://example.org/legal/document/uu/1999/2> legal:documentHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0007> .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201> legal:pasalVersionHasVersionDate "1999-02-01"^^xsd:date .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201> legal:pasalVersionHasRawText "(1). Partai Politik berfungsi untuk:\na. melaksanakan pendidikan politik dengan menumbuhkan dan mengembangkan kesadaran atas hak dan kewajiban politik rakyat dalam kehidupan berbangsa dan bernegara,\nb. menyerap, menyalurkan dan memperjuangkan kepentingan masyarakat dalam pembuatan kebijakan negara melalui mekanisme badan-badan permusyawaratan/perwakilan rakyat:\nc. . mempersiapkan anggota masyarakat untuk mengisi jabatan-jabatan politik sesuai dengan mekanisme demokrasi.\n\n(2). Partai Politik sebagai lembaga demokrasi merupakan wahana guna menyatakan dukungan dan tuntutan dalam proses politik." .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001> legal:ayatHasRawText "Partai Politik berfungsi untuk:\na. melaksanakan pendidikan politik dengan menumbuhkan dan mengembangkan kesadaran atas hak dan kewajiban politik rakyat dalam kehidupan berbangsa dan bernegara,\nb. menyerap, menyalurkan dan memperjuangkan kepentingan masyarakat dalam pembuatan kebijakan negara melalui mekanisme badan-badan permusyawaratan/perwakilan rakyat:\nc. . mempersiapkan anggota masyarakat untuk mengisi jabatan-jabatan politik sesuai dengan mekanisme demokrasi.\n" .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point/description> legal:textHasTextString "Partai Politik berfungsi untuk:" .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point/description> .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point/a> .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point/a/text> legal:textHasTextString "melaksanakan pendidikan politik dengan menumbuhkan dan mengembangkan kesadaran atas hak dan kewajiban politik rakyat dalam kehidupan berbangsa dan bernegara," .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point/a/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point/b> .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point/b/text> legal:textHasTextString "menyerap, menyalurkan dan memperjuangkan kepentingan masyarakat dalam pembuatan kebijakan negara melalui mekanisme badan-badan permusyawaratan/perwakilan rakyat:" .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point/b> legal:pointHasText <http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point/b/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point/c> .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point/c/text> legal:textHasTextString ". mempersiapkan anggota masyarakat untuk mengisi jabatan-jabatan politik sesuai dengan mekanisme demokrasi." .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point/c> legal:pointHasText <http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point/c/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0002> legal:ayatHasRawText "Partai Politik sebagai lembaga demokrasi merupakan wahana guna menyatakan dukungan dan tuntutan dalam proses politik." .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0002/text> legal:textHasTextString "Partai Politik sebagai lembaga demokrasi merupakan wahana guna menyatakan dukungan dan tuntutan dalam proses politik." .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0002/text> .
+<http://example.org/legal/document/uu/1999/2/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0008> .
+<http://example.org/legal/document/uu/1999/2/pasal/0008> legal:pasalHasKey 8 .
+<http://example.org/legal/document/uu/1999/2/pasal/0008> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201> .
+<http://example.org/legal/document/uu/1999/2> legal:documentHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0008> .
+<http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201> legal:pasalVersionHasVersionDate "1999-02-01"^^xsd:date .
+<http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201> legal:pasalVersionHasRawText "Partai Politik mempunyai hak:\na. Ikut serta dalam pemilihan umum sesuai dengan Undang-Undang tentang Pemilihan Umum:\nb. memperoleh perlakuan yang sama, sederajat, dan adil dari negara.\n" .
+<http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201/point/description> legal:textHasTextString "Partai Politik mempunyai hak:" .
+<http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201/point/description> .
+<http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201/point/a> .
+<http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201/point/a/text> legal:textHasTextString "Ikut serta dalam pemilihan umum sesuai dengan Undang-Undang tentang Pemilihan Umum:" .
+<http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201/point/a> legal:pointHasText <http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201/point/a/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201/point/b> .
+<http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201/point/b/text> legal:textHasTextString "memperoleh perlakuan yang sama, sederajat, dan adil dari negara." .
+<http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201/point/b> legal:pointHasText <http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201/point/b/text> .
+<http://example.org/legal/document/uu/1999/2/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0009> .
+<http://example.org/legal/document/uu/1999/2/pasal/0009> legal:pasalHasKey 9 .
+<http://example.org/legal/document/uu/1999/2/pasal/0009> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201> .
+<http://example.org/legal/document/uu/1999/2> legal:documentHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0009> .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201> legal:pasalVersionHasVersionDate "1999-02-01"^^xsd:date .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201> legal:pasalVersionHasRawText "Partai Politik berkewajiban:\na. memegang teguh serta mengamalkan Pancasila dan Undang-Undang Dasar 1945,\nb. mempertahankan keutuhan Negara Kesatuan Republik Indonesia,\nc. memelihara persatuan dan kesatuan bangsa,\nd. menyukseskan pembangunan nasional,\ne. menyukseskan penyelenggaraan pemilihan umum secara demokratis, jujur, dan adil dengan mengadakan pemberian dan pemungutan suara secara langsung, umum, bebas dan rahasia. BAB V KEANGGOTAAN DAN KEPENGURUSAN\n" .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/description> legal:textHasTextString "Partai Politik berkewajiban:" .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/description> .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/a> .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/a/text> legal:textHasTextString "memegang teguh serta mengamalkan Pancasila dan Undang-Undang Dasar 1945," .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/a> legal:pointHasText <http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/a/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/b> .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/b/text> legal:textHasTextString "mempertahankan keutuhan Negara Kesatuan Republik Indonesia," .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/b> legal:pointHasText <http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/b/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/c> .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/c/text> legal:textHasTextString "memelihara persatuan dan kesatuan bangsa," .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/c> legal:pointHasText <http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/c/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/d> .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/d/text> legal:textHasTextString "menyukseskan pembangunan nasional," .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/d> legal:pointHasText <http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/d/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/e> .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/e/text> legal:textHasTextString "menyukseskan penyelenggaraan pemilihan umum secara demokratis, jujur, dan adil dengan mengadakan pemberian dan pemungutan suara secara langsung, umum, bebas dan rahasia. BAB V KEANGGOTAAN DAN KEPENGURUSAN" .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/e> legal:pointHasText <http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/e/text> .
+<http://example.org/legal/document/uu/1999/2/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0010> .
+<http://example.org/legal/document/uu/1999/2/pasal/0010> legal:pasalHasKey 10 .
+<http://example.org/legal/document/uu/1999/2/pasal/0010> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201> .
+<http://example.org/legal/document/uu/1999/2> legal:documentHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0010> .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201> legal:pasalVersionHasVersionDate "1999-02-01"^^xsd:date .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201> legal:pasalVersionHasRawText "(1). Anggota Partai Politik adalah warga negara Republik Indonesia dengan persyaratan sebagai berikut: h 7 Sy NY A3 S4 N17 Tn Y Tw \"gi AN MZ aa PRESIDEN REPUBLIK INDONESIA .5-\na. telah berusia 17 (tujuh belas) tahun atau sudah/pernah kawin,\nb. dapat membaca dan menulis,\n\n(2). Partai Politik mendaftar dan memelihara daftar anggota." .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001> legal:ayatHasRawText "Anggota Partai Politik adalah warga negara Republik Indonesia dengan persyaratan sebagai berikut: h 7 Sy NY A3 S4 N17 Tn Y Tw \"gi AN MZ aa PRESIDEN REPUBLIK INDONESIA .5-\na. telah berusia 17 (tujuh belas) tahun atau sudah/pernah kawin,\nb. dapat membaca dan menulis,\n" .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001/point/description> legal:textHasTextString "Anggota Partai Politik adalah warga negara Republik Indonesia dengan persyaratan sebagai berikut: h 7 Sy NY A3 S4 N17 Tn Y Tw \"gi AN MZ aa PRESIDEN REPUBLIK INDONESIA .5-" .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001/point/description> .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001/point/a> .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001/point/a/text> legal:textHasTextString "telah berusia 17 (tujuh belas) tahun atau sudah/pernah kawin," .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001/point/a/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001/point/b> .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001/point/b/text> legal:textHasTextString "dapat membaca dan menulis," .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001/point/b> legal:pointHasText <http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001/point/b/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0002> legal:ayatHasRawText "Partai Politik mendaftar dan memelihara daftar anggota." .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0002/text> legal:textHasTextString "Partai Politik mendaftar dan memelihara daftar anggota." .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0002/text> .
+<http://example.org/legal/document/uu/1999/2/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0011> .
+<http://example.org/legal/document/uu/1999/2/pasal/0011> legal:pasalHasKey 11 .
+<http://example.org/legal/document/uu/1999/2/pasal/0011> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/2/pasal/0011/version/19990201> .
+<http://example.org/legal/document/uu/1999/2> legal:documentHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0011> .
+<http://example.org/legal/document/uu/1999/2/pasal/0011/version/19990201> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/2/pasal/0011/version/19990201> legal:pasalVersionHasVersionDate "1999-02-01"^^xsd:date .
+<http://example.org/legal/document/uu/1999/2/pasal/0011/version/19990201> legal:pasalVersionHasRawText "Partai Politik dapat membentuk kepengurusan di:\na. Ibukota negara Republik Indonesia untuk Pengurus Tingkat Pusat: b Ibukota propinsi untuk Pengurus Daerah Tingkat I: Cc. Ibukota kabupaten/kotamadya untuk Pengurus Daerah Tingkat II, d. kecamatan untuk Pengurus Tingkat Kecamatan, e. desa/kelurahan untuk Pengurus Tingkat Desa/Kelurahan. BAB VI KEUANGAN\n" .
+<http://example.org/legal/document/uu/1999/2/pasal/0011/version/19990201> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1999/2/pasal/0011/version/19990201/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0011/version/19990201/point/description> legal:textHasTextString "Partai Politik dapat membentuk kepengurusan di:" .
+<http://example.org/legal/document/uu/1999/2/pasal/0011/version/19990201/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/2/pasal/0011/version/19990201/point/description> .
+<http://example.org/legal/document/uu/1999/2/pasal/0011/version/19990201/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/2/pasal/0011/version/19990201/point/a> .
+<http://example.org/legal/document/uu/1999/2/pasal/0011/version/19990201/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1999/2/pasal/0011/version/19990201/point/a/text> legal:textHasTextString "Ibukota negara Republik Indonesia untuk Pengurus Tingkat Pusat: b Ibukota propinsi untuk Pengurus Daerah Tingkat I: Cc. Ibukota kabupaten/kotamadya untuk Pengurus Daerah Tingkat II, d. kecamatan untuk Pengurus Tingkat Kecamatan, e. desa/kelurahan untuk Pengurus Tingkat Desa/Kelurahan. BAB VI KEUANGAN" .
+<http://example.org/legal/document/uu/1999/2/pasal/0011/version/19990201/point/a> legal:pointHasText <http://example.org/legal/document/uu/1999/2/pasal/0011/version/19990201/point/a/text> .
+<http://example.org/legal/document/uu/1999/2/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0012> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012> legal:pasalHasKey 12 .
+<http://example.org/legal/document/uu/1999/2/pasal/0012> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201> .
+<http://example.org/legal/document/uu/1999/2> legal:documentHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0012> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201> legal:pasalVersionHasVersionDate "1999-02-01"^^xsd:date .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201> legal:pasalVersionHasRawText "(1). Keuangan Partai Politik diperoleh dari:\na. Juran anggota,\nb. sumbangan:\nc. . usaha lain yang sah.\n\n(2). Partai Politik menerima bantuan tahunan dari anggaran negara yang ditetapkan berdasarkan perolehan suara dalam pemilihan umum sebelumnya.\n(3). Penetapan mengenai bantuan tahunan sebagaimana dimaksud ayat (2) ditetapkan melalui Peraturan Pemerintah.\n(4). Partai Politik tidak boleh menerima sumbangan dan bantuan dari pihak asing." .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001> legal:ayatHasRawText "Keuangan Partai Politik diperoleh dari:\na. Juran anggota,\nb. sumbangan:\nc. . usaha lain yang sah.\n" .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point/description> legal:textHasTextString "Keuangan Partai Politik diperoleh dari:" .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point/description> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point/a> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point/a/text> legal:textHasTextString "Juran anggota," .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point/a/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point/b> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point/b/text> legal:textHasTextString "sumbangan:" .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point/b> legal:pointHasText <http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point/b/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point/c> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point/c/text> legal:textHasTextString ". usaha lain yang sah." .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point/c> legal:pointHasText <http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point/c/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0002> legal:ayatHasRawText "Partai Politik menerima bantuan tahunan dari anggaran negara yang ditetapkan berdasarkan perolehan suara dalam pemilihan umum sebelumnya." .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0002/text> legal:textHasTextString "Partai Politik menerima bantuan tahunan dari anggaran negara yang ditetapkan berdasarkan perolehan suara dalam pemilihan umum sebelumnya." .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0002/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0003> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0003> legal:ayatHasRawText "Penetapan mengenai bantuan tahunan sebagaimana dimaksud ayat (2) ditetapkan melalui Peraturan Pemerintah." .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0003/text> legal:textHasTextString "Penetapan mengenai bantuan tahunan sebagaimana dimaksud ayat (2) ditetapkan melalui Peraturan Pemerintah." .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0003/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0004> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0004> legal:ayatHasKey 4 .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0004> legal:ayatHasRawText "Partai Politik tidak boleh menerima sumbangan dan bantuan dari pihak asing." .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0004/text> legal:textHasTextString "Partai Politik tidak boleh menerima sumbangan dan bantuan dari pihak asing." .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0004/text> .
+<http://example.org/legal/document/uu/1999/2/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0013> .
+<http://example.org/legal/document/uu/1999/2/pasal/0013> legal:pasalHasKey 13 .
+<http://example.org/legal/document/uu/1999/2/pasal/0013> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201> .
+<http://example.org/legal/document/uu/1999/2> legal:documentHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0013> .
+<http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201> legal:pasalVersionHasVersionDate "1999-02-01"^^xsd:date .
+<http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201> legal:pasalVersionHasRawText "(1). Partai Politik merupakan organisasi nirlaba.\n(2). Pelaksanaan sebagaimana dimaksud ayat (1), Partai Politik dilarang mendirikan badan usaha dan/atau memiliki saham suatu badan." .
+<http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201/ayat/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201/ayat/0001> legal:ayatHasRawText "Partai Politik merupakan organisasi nirlaba." .
+<http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201/ayat/0001/text> legal:textHasTextString "Partai Politik merupakan organisasi nirlaba." .
+<http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201/ayat/0001/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201/ayat/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201/ayat/0002> legal:ayatHasRawText "Pelaksanaan sebagaimana dimaksud ayat (1), Partai Politik dilarang mendirikan badan usaha dan/atau memiliki saham suatu badan." .
+<http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201/ayat/0002/text> legal:textHasTextString "Pelaksanaan sebagaimana dimaksud ayat (1), Partai Politik dilarang mendirikan badan usaha dan/atau memiliki saham suatu badan." .
+<http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201/ayat/0002/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201/ayat/0001> .
+<http://example.org/legal/document/uu/1999/2/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0014> .
+<http://example.org/legal/document/uu/1999/2/pasal/0014> legal:pasalHasKey 14 .
+<http://example.org/legal/document/uu/1999/2/pasal/0014> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201> .
+<http://example.org/legal/document/uu/1999/2> legal:documentHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0014> .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201> legal:pasalVersionHasVersionDate "1999-02-01"^^xsd:date .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201> legal:pasalVersionHasRawText "(1). Jumlah sumbangan dari setiap orang yang dapat diterima oleh Partai Politik sebanyak-banyaknya adalah Rp. 15.000.000,00 (lima belas juta rupiah) dalam waktu satu tahun. h \"ata R44 “17 Wi \"7 TN \"gi - NA, 0 SR A ME aa PRESIDEN REPUBLIK INDONESIA -G-\n(2). Jumlah sumbangan dari setiap perusahaan dan setiap badan lainnya yang dapat diterima oleh Partai Politik sebanyak-banyaknya adalah Rp. 150.000.000,00 (seratus lima puluh juta rupiah) dalam waktu satu tahun.\n(3). Sumbangan yang berupa barang dinilai menurut nilai pasar yang berlaku dan diperlakukan sama dengan sumbangan yang berupa uang.\n(4). Partai Politik memelihara daftar penyumbang dan jumlah sumbangannya serta terbuka untuk diaudit oleh akuntan publik." .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0001> legal:ayatHasRawText "Jumlah sumbangan dari setiap orang yang dapat diterima oleh Partai Politik sebanyak-banyaknya adalah Rp. 15.000.000,00 (lima belas juta rupiah) dalam waktu satu tahun. h \"ata R44 “17 Wi \"7 TN \"gi - NA, 0 SR A ME aa PRESIDEN REPUBLIK INDONESIA -G-" .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0001/text> legal:textHasTextString "Jumlah sumbangan dari setiap orang yang dapat diterima oleh Partai Politik sebanyak-banyaknya adalah Rp. 15.000.000,00 (lima belas juta rupiah) dalam waktu satu tahun. h \"ata R44 “17 Wi \"7 TN \"gi - NA, 0 SR A ME aa PRESIDEN REPUBLIK INDONESIA -G-" .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0001/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0002> legal:ayatHasRawText "Jumlah sumbangan dari setiap perusahaan dan setiap badan lainnya yang dapat diterima oleh Partai Politik sebanyak-banyaknya adalah Rp. 150.000.000,00 (seratus lima puluh juta rupiah) dalam waktu satu tahun." .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0002/text> legal:textHasTextString "Jumlah sumbangan dari setiap perusahaan dan setiap badan lainnya yang dapat diterima oleh Partai Politik sebanyak-banyaknya adalah Rp. 150.000.000,00 (seratus lima puluh juta rupiah) dalam waktu satu tahun." .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0002/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0003> .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0003> legal:ayatHasRawText "Sumbangan yang berupa barang dinilai menurut nilai pasar yang berlaku dan diperlakukan sama dengan sumbangan yang berupa uang." .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0003/text> legal:textHasTextString "Sumbangan yang berupa barang dinilai menurut nilai pasar yang berlaku dan diperlakukan sama dengan sumbangan yang berupa uang." .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0003/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0004> .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0004> legal:ayatHasKey 4 .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0004> legal:ayatHasRawText "Partai Politik memelihara daftar penyumbang dan jumlah sumbangannya serta terbuka untuk diaudit oleh akuntan publik." .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0004/text> legal:textHasTextString "Partai Politik memelihara daftar penyumbang dan jumlah sumbangannya serta terbuka untuk diaudit oleh akuntan publik." .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0004/text> .
+<http://example.org/legal/document/uu/1999/2/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0015> .
+<http://example.org/legal/document/uu/1999/2/pasal/0015> legal:pasalHasKey 15 .
+<http://example.org/legal/document/uu/1999/2/pasal/0015> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201> .
+<http://example.org/legal/document/uu/1999/2> legal:documentHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0015> .
+<http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201> legal:pasalVersionHasVersionDate "1999-02-01"^^xsd:date .
+<http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201> legal:pasalVersionHasRawText "(1). Partai Politik wajib melaporkan daftar sebagaimana dimaksud Pasal 14 ayat (4) beserta laporan keuangannya setiap akhir tahun dan setiap 15 (lima belas) hari sebelum serta 30 (tiga puluh) hari sesudah pemilihan umum kepada Mahkamah Agung Republik Indonesia.\n(2). Laporan sebagaimana dimaksud ayat (1) sewaktu-waktu dapat diaudit oleh akuntan publik yang ditunjuk oleh Mahkamah Agung Republik Indonesia. BAB VII PENGAWASAN DAN SANKSI" .
+<http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat/0001> legal:ayatHasRawText "Partai Politik wajib melaporkan daftar sebagaimana dimaksud Pasal 14 ayat (4) beserta laporan keuangannya setiap akhir tahun dan setiap 15 (lima belas) hari sebelum serta 30 (tiga puluh) hari sesudah pemilihan umum kepada Mahkamah Agung Republik Indonesia." .
+<http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat/0001/text> legal:textHasTextString "Partai Politik wajib melaporkan daftar sebagaimana dimaksud Pasal 14 ayat (4) beserta laporan keuangannya setiap akhir tahun dan setiap 15 (lima belas) hari sebelum serta 30 (tiga puluh) hari sesudah pemilihan umum kepada Mahkamah Agung Republik Indonesia." .
+<http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat/0001/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat/0004> .
+<http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat/0002> legal:ayatHasRawText "Laporan sebagaimana dimaksud ayat (1) sewaktu-waktu dapat diaudit oleh akuntan publik yang ditunjuk oleh Mahkamah Agung Republik Indonesia. BAB VII PENGAWASAN DAN SANKSI" .
+<http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat/0002/text> legal:textHasTextString "Laporan sebagaimana dimaksud ayat (1) sewaktu-waktu dapat diaudit oleh akuntan publik yang ditunjuk oleh Mahkamah Agung Republik Indonesia. BAB VII PENGAWASAN DAN SANKSI" .
+<http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat/0002/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat/0001> .
+<http://example.org/legal/document/uu/1999/2/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0016> .
+<http://example.org/legal/document/uu/1999/2/pasal/0016> legal:pasalHasKey 16 .
+<http://example.org/legal/document/uu/1999/2/pasal/0016> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201> .
+<http://example.org/legal/document/uu/1999/2> legal:documentHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0016> .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201> legal:pasalVersionHasVersionDate "1999-02-01"^^xsd:date .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201> legal:pasalVersionHasRawText "Partai Politik tidak boleh:\na. menganut, mengembangkan, menyebarkan ajaran atau paham Komunisme/Marxisme/Leninisme dan ajaran lain yang bertentangan dengan Pancasila,\nb. menerima sumbangan dan/atau bantuan dalam bentuk apapun dari pihak asing, baik langsung maupun tidak langsung:\nc. memberi sumbangan dan/atau bantuan dalam bentuk apapun kepada pihak asing, baik langsung maupun tidak langsung, yang dapat merugikan kepentingan bangsa dan negara,\nd. melakukan kegiatan yang bertentangan dengan kebijakan Pemerintah Republik Indonesia dalam memelihara persahabatan dengan negara lain.\n" .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/description> legal:textHasTextString "Partai Politik tidak boleh:" .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/description> .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/a> .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/a/text> legal:textHasTextString "menganut, mengembangkan, menyebarkan ajaran atau paham Komunisme/Marxisme/Leninisme dan ajaran lain yang bertentangan dengan Pancasila," .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/a> legal:pointHasText <http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/a/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/b> .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/b/text> legal:textHasTextString "menerima sumbangan dan/atau bantuan dalam bentuk apapun dari pihak asing, baik langsung maupun tidak langsung:" .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/b> legal:pointHasText <http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/b/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/c> .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/c/text> legal:textHasTextString "memberi sumbangan dan/atau bantuan dalam bentuk apapun kepada pihak asing, baik langsung maupun tidak langsung, yang dapat merugikan kepentingan bangsa dan negara," .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/c> legal:pointHasText <http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/c/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/d> .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/d/text> legal:textHasTextString "melakukan kegiatan yang bertentangan dengan kebijakan Pemerintah Republik Indonesia dalam memelihara persahabatan dengan negara lain." .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/d> legal:pointHasText <http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/d/text> .
+<http://example.org/legal/document/uu/1999/2/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0017> .
+<http://example.org/legal/document/uu/1999/2/pasal/0017> legal:pasalHasKey 17 .
+<http://example.org/legal/document/uu/1999/2/pasal/0017> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201> .
+<http://example.org/legal/document/uu/1999/2> legal:documentHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0017> .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201> legal:pasalVersionHasVersionDate "1999-02-01"^^xsd:date .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201> legal:pasalVersionHasRawText "(1). Pengawasan atas ketentuan-ketentuan yang tercantum dalam undang-undang ini dilakukan oleh Mahkamah Agung Republik Indonesia.\n(2). Dengan kewenangan yang ada padanya, Mahkamah Agung Republik Indonesia dapat membekukan atau membubarkan suatu Partai Politik jika nyata-nyata melanggar Pasal 2, Pasal 3, Pasal 5, Pasal 9, dan Pasal 16 4 KN tea N Mz TV NY A3 S4 NY) V \"7 Tw \"gi AN mm N£ PRESIDEN REPUBLIK INDONESIA -7- undang-undang ini.\n(3). Pelaksanaan kewenangan sebagaimana dimaksud ayat (2) dilakukan dengan terlebih dahulu mendengar dan mempertimbangkan keterangan dari Pengurus Pusat Partai Politik yang bersangkutan dan setelah melalui proses peradilan.\n(4). Pelaksanaan pembekuan atau pembubaran Partai Politik dilakukan setelah adanya putusan pengadilan yang telah memperoleh kekuatan hukum tetap dengan mengumumkannya dalam Berita Negara Republik Indonesia oleh Menteri Kehakiman Republik Indonesia." .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0001> legal:ayatHasRawText "Pengawasan atas ketentuan-ketentuan yang tercantum dalam undang-undang ini dilakukan oleh Mahkamah Agung Republik Indonesia." .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0001/text> legal:textHasTextString "Pengawasan atas ketentuan-ketentuan yang tercantum dalam undang-undang ini dilakukan oleh Mahkamah Agung Republik Indonesia." .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0001/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0002> legal:ayatHasRawText "Dengan kewenangan yang ada padanya, Mahkamah Agung Republik Indonesia dapat membekukan atau membubarkan suatu Partai Politik jika nyata-nyata melanggar Pasal 2, Pasal 3, Pasal 5, Pasal 9, dan Pasal 16 4 KN tea N Mz TV NY A3 S4 NY) V \"7 Tw \"gi AN mm N£ PRESIDEN REPUBLIK INDONESIA -7- undang-undang ini." .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0002/text> legal:textHasTextString "Dengan kewenangan yang ada padanya, Mahkamah Agung Republik Indonesia dapat membekukan atau membubarkan suatu Partai Politik jika nyata-nyata melanggar Pasal 2, Pasal 3, Pasal 5, Pasal 9, dan Pasal 16 4 KN tea N Mz TV NY A3 S4 NY) V \"7 Tw \"gi AN mm N£ PRESIDEN REPUBLIK INDONESIA -7- undang-undang ini." .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0002/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/2/pasal/0016> .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/2/pasal/0009> .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/2/pasal/0005> .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/2/pasal/0003> .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/2/pasal/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0003> .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0003> legal:ayatHasRawText "Pelaksanaan kewenangan sebagaimana dimaksud ayat (2) dilakukan dengan terlebih dahulu mendengar dan mempertimbangkan keterangan dari Pengurus Pusat Partai Politik yang bersangkutan dan setelah melalui proses peradilan." .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0003/text> legal:textHasTextString "Pelaksanaan kewenangan sebagaimana dimaksud ayat (2) dilakukan dengan terlebih dahulu mendengar dan mempertimbangkan keterangan dari Pengurus Pusat Partai Politik yang bersangkutan dan setelah melalui proses peradilan." .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0003/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0004> .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0004> legal:ayatHasKey 4 .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0004> legal:ayatHasRawText "Pelaksanaan pembekuan atau pembubaran Partai Politik dilakukan setelah adanya putusan pengadilan yang telah memperoleh kekuatan hukum tetap dengan mengumumkannya dalam Berita Negara Republik Indonesia oleh Menteri Kehakiman Republik Indonesia." .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0004/text> legal:textHasTextString "Pelaksanaan pembekuan atau pembubaran Partai Politik dilakukan setelah adanya putusan pengadilan yang telah memperoleh kekuatan hukum tetap dengan mengumumkannya dalam Berita Negara Republik Indonesia oleh Menteri Kehakiman Republik Indonesia." .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0004/text> .
+<http://example.org/legal/document/uu/1999/2/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0018> .
+<http://example.org/legal/document/uu/1999/2/pasal/0018> legal:pasalHasKey 18 .
+<http://example.org/legal/document/uu/1999/2/pasal/0018> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/2/pasal/0018/version/19990201> .
+<http://example.org/legal/document/uu/1999/2> legal:documentHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0018> .
+<http://example.org/legal/document/uu/1999/2/pasal/0018/version/19990201> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/2/pasal/0018/version/19990201> legal:pasalVersionHasVersionDate "1999-02-01"^^xsd:date .
+<http://example.org/legal/document/uu/1999/2/pasal/0018/version/19990201> legal:pasalVersionHasRawText "(Jl) Mahkamah Agung Republik Indonesia dapat menjatuhkan sanksi administratif berupa penghentian bantuan dari anggaran negara apabila suatu Partai Politik nyata-nyata melanggar Pasal 15 undang-undang ini. (2) Mahkamah Agung Republik Indonesia dapat mencabut hak suatu Partai Politik untuk ikut pemilihan umum jika nyata-nyata melanggar Pasal 13 dan Pasal 14 undang-undang ini. (3) Pencabutan hak sebagaimana dimaksud ayat (2) dilakukan dengan terlebih dahulu mendengar pertimbangan pengurus pusat Partai Politik yang bersangkutan dan setelah melalui proses peradilan." .
+<http://example.org/legal/document/uu/1999/2/pasal/0018/version/19990201/text> legal:textHasTextString "(Jl) Mahkamah Agung Republik Indonesia dapat menjatuhkan sanksi administratif berupa penghentian bantuan dari anggaran negara apabila suatu Partai Politik nyata-nyata melanggar Pasal 15 undang-undang ini. (2) Mahkamah Agung Republik Indonesia dapat mencabut hak suatu Partai Politik untuk ikut pemilihan umum jika nyata-nyata melanggar Pasal 13 dan Pasal 14 undang-undang ini. (3) Pencabutan hak sebagaimana dimaksud ayat (2) dilakukan dengan terlebih dahulu mendengar pertimbangan pengurus pusat Partai Politik yang bersangkutan dan setelah melalui proses peradilan." .
+<http://example.org/legal/document/uu/1999/2/pasal/0018/version/19990201> legal:pasalVersionHasText <http://example.org/legal/document/uu/1999/2/pasal/0018/version/19990201/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0018/version/19990201/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/2/pasal/0018/version/19990201/ayat/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0018/version/19990201/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/2/pasal/0014> .
+<http://example.org/legal/document/uu/1999/2/pasal/0018/version/19990201/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/2/pasal/0013> .
+<http://example.org/legal/document/uu/1999/2/pasal/0018/version/19990201/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/2/pasal/0015> .
+<http://example.org/legal/document/uu/1999/2/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0019> .
+<http://example.org/legal/document/uu/1999/2/pasal/0019> legal:pasalHasKey 19 .
+<http://example.org/legal/document/uu/1999/2/pasal/0019> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201> .
+<http://example.org/legal/document/uu/1999/2> legal:documentHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0019> .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201> legal:pasalVersionHasVersionDate "1999-02-01"^^xsd:date .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201> legal:pasalVersionHasRawText "(1). Barangsiapa dengan sengaja memberikan sumbangan kepada Partai Politik melebihi ketentuan yang diatur dalam Pasal 14 ayat (1) dan ayat (2) undang-undang ini diancam pidana kurungan selama-lamanya 30 (tiga puluh) hari atau pidana denda sebanyak-banyaknya Rp. 100.000.000,00 (seratus juta rupiah).\n(2). Barangsiapa dengan sengaja memberikan uang atau barang kepada orang lan dengan maksud agar orang tersebut menyumbangkannya kepada Partai Politik sehingga melebihi ketentuan yang diatur dalam Pasal 14 ayat (l) dan ayat (2) undang-undang ini diancam pidana kurungan selama-lamanya 30 (tiga puluh) hari atau pidana denda sebanyak-banyaknya Rp. 100.000.000,00 (seratus juta rupiah).\n(3). Barangsiapa dengan sengaja menerima uang atau barang dari seseorang untuk disumbangkan kepada Partai Politik dengan maksud agar orang tersebut dapat menyumbang melebihi ketentuan yang diatur dalam Pasal 14 ayat (1) dan ayat (2) undang-undang ini diancam pidana kurungan selama-lamanya 30 (tiga puluh) hari atau pidana denda sebanyak-banyaknya Rp. 100.000.000,00 (seratus juta rupiah).\n(4). Barangsiapa dengan sengaja memaksa seseorang atau badan untuk memberikan sumbangan kepada Partai Politik dalam bentuk apapun diancam pidana kurungan selama-lamanya 30 (tiga puluh) hari atau pidana denda sebanyak-banyaknya Rp. 100.000.000,00 (seratus juta rupiah). PRESIDEN REPUBLIK INDONESIA 8 BAB VIII KETENTUAN PERALIHAN" .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0001> legal:ayatHasRawText "Barangsiapa dengan sengaja memberikan sumbangan kepada Partai Politik melebihi ketentuan yang diatur dalam Pasal 14 ayat (1) dan ayat (2) undang-undang ini diancam pidana kurungan selama-lamanya 30 (tiga puluh) hari atau pidana denda sebanyak-banyaknya Rp. 100.000.000,00 (seratus juta rupiah)." .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0001/text> legal:textHasTextString "Barangsiapa dengan sengaja memberikan sumbangan kepada Partai Politik melebihi ketentuan yang diatur dalam Pasal 14 ayat (1) dan ayat (2) undang-undang ini diancam pidana kurungan selama-lamanya 30 (tiga puluh) hari atau pidana denda sebanyak-banyaknya Rp. 100.000.000,00 (seratus juta rupiah)." .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0001/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0002> legal:ayatHasRawText "Barangsiapa dengan sengaja memberikan uang atau barang kepada orang lan dengan maksud agar orang tersebut menyumbangkannya kepada Partai Politik sehingga melebihi ketentuan yang diatur dalam Pasal 14 ayat (l) dan ayat (2) undang-undang ini diancam pidana kurungan selama-lamanya 30 (tiga puluh) hari atau pidana denda sebanyak-banyaknya Rp. 100.000.000,00 (seratus juta rupiah)." .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0002/text> legal:textHasTextString "Barangsiapa dengan sengaja memberikan uang atau barang kepada orang lan dengan maksud agar orang tersebut menyumbangkannya kepada Partai Politik sehingga melebihi ketentuan yang diatur dalam Pasal 14 ayat (l) dan ayat (2) undang-undang ini diancam pidana kurungan selama-lamanya 30 (tiga puluh) hari atau pidana denda sebanyak-banyaknya Rp. 100.000.000,00 (seratus juta rupiah)." .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0002/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0003> .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0003> legal:ayatHasRawText "Barangsiapa dengan sengaja menerima uang atau barang dari seseorang untuk disumbangkan kepada Partai Politik dengan maksud agar orang tersebut dapat menyumbang melebihi ketentuan yang diatur dalam Pasal 14 ayat (1) dan ayat (2) undang-undang ini diancam pidana kurungan selama-lamanya 30 (tiga puluh) hari atau pidana denda sebanyak-banyaknya Rp. 100.000.000,00 (seratus juta rupiah)." .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0003/text> legal:textHasTextString "Barangsiapa dengan sengaja menerima uang atau barang dari seseorang untuk disumbangkan kepada Partai Politik dengan maksud agar orang tersebut dapat menyumbang melebihi ketentuan yang diatur dalam Pasal 14 ayat (1) dan ayat (2) undang-undang ini diancam pidana kurungan selama-lamanya 30 (tiga puluh) hari atau pidana denda sebanyak-banyaknya Rp. 100.000.000,00 (seratus juta rupiah)." .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0003/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0004> .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0004> legal:ayatHasKey 4 .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0004> legal:ayatHasRawText "Barangsiapa dengan sengaja memaksa seseorang atau badan untuk memberikan sumbangan kepada Partai Politik dalam bentuk apapun diancam pidana kurungan selama-lamanya 30 (tiga puluh) hari atau pidana denda sebanyak-banyaknya Rp. 100.000.000,00 (seratus juta rupiah). PRESIDEN REPUBLIK INDONESIA 8 BAB VIII KETENTUAN PERALIHAN" .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0004/text> legal:textHasTextString "Barangsiapa dengan sengaja memaksa seseorang atau badan untuk memberikan sumbangan kepada Partai Politik dalam bentuk apapun diancam pidana kurungan selama-lamanya 30 (tiga puluh) hari atau pidana denda sebanyak-banyaknya Rp. 100.000.000,00 (seratus juta rupiah). PRESIDEN REPUBLIK INDONESIA 8 BAB VIII KETENTUAN PERALIHAN" .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0004/text> .
+<http://example.org/legal/document/uu/1999/2/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0020> .
+<http://example.org/legal/document/uu/1999/2/pasal/0020> legal:pasalHasKey 20 .
+<http://example.org/legal/document/uu/1999/2/pasal/0020> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/2/pasal/0020/version/19990201> .
+<http://example.org/legal/document/uu/1999/2> legal:documentHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0020> .
+<http://example.org/legal/document/uu/1999/2/pasal/0020/version/19990201> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/2/pasal/0020/version/19990201> legal:pasalVersionHasVersionDate "1999-02-01"^^xsd:date .
+<http://example.org/legal/document/uu/1999/2/pasal/0020/version/19990201> legal:pasalVersionHasRawText "Pada saat berlakunya undang-undang ini maka Organisasi Peserta Pemilihan Umum Tahun 1997, yaitu Partai Persatuan Pembangunan, Golongan Karya, dan Partai Demokrasi Indonesia sebagai organisasi kekuatan sosial politik berdasarkan Undang-undang Nomor 3 Tahun 1975 tentang Partai Politik dan Golongan Karya sebagaimana telah diubah dengan Undang-undang Nomor 3 Tahun 1985 tentang Perubahan Undang-undang Nomor 3 Tahun 1975 tentang Partai Politik dan Golongan Karya, dianggap telah memenuhi persyaratan sebagaimana diatur dalam Pasal 2 dan Pasal 4 undang-undang ini serta wajib menyesuaikan diri dengan ketentuan undang-undang ini. BAB IX KETENTUAN PENUTUP" .
+<http://example.org/legal/document/uu/1999/2/pasal/0020/version/19990201/text> legal:textHasTextString "Pada saat berlakunya undang-undang ini maka Organisasi Peserta Pemilihan Umum Tahun 1997, yaitu Partai Persatuan Pembangunan, Golongan Karya, dan Partai Demokrasi Indonesia sebagai organisasi kekuatan sosial politik berdasarkan Undang-undang Nomor 3 Tahun 1975 tentang Partai Politik dan Golongan Karya sebagaimana telah diubah dengan Undang-undang Nomor 3 Tahun 1985 tentang Perubahan Undang-undang Nomor 3 Tahun 1975 tentang Partai Politik dan Golongan Karya, dianggap telah memenuhi persyaratan sebagaimana diatur dalam Pasal 2 dan Pasal 4 undang-undang ini serta wajib menyesuaikan diri dengan ketentuan undang-undang ini. BAB IX KETENTUAN PENUTUP" .
+<http://example.org/legal/document/uu/1999/2/pasal/0020/version/19990201> legal:pasalVersionHasText <http://example.org/legal/document/uu/1999/2/pasal/0020/version/19990201/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0020/version/19990201/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/2/pasal/0004> .
+<http://example.org/legal/document/uu/1999/2/pasal/0020/version/19990201/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/2/pasal/0002> .
+<http://example.org/legal/document/uu/1999/2/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0021> .
+<http://example.org/legal/document/uu/1999/2/pasal/0021> legal:pasalHasKey 21 .
+<http://example.org/legal/document/uu/1999/2/pasal/0021> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201> .
+<http://example.org/legal/document/uu/1999/2> legal:documentHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0021> .
+<http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201> legal:pasalVersionHasVersionDate "1999-02-01"^^xsd:date .
+<http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201> legal:pasalVersionHasRawText "(1). Sejak mulai berlakunya undang-undang ini maka Undang-undang Nomor 3 Tahun 1975 tentang Partai Politik dan Golongan Karya sebagaimana telah diubah dengan Undang-undang Nomor 3 Tahun 1985 tentang Perubahan Undang-undang Nomor 3 Tahun 1975 tentang Partai Politik dan Golongan Karya dinyatakan tidak berlaku lagi.\n(2). Segala ketentuan dan peraturan yang bertentangan dengan undang-undang ini dinyatakan tidak berlaku lagi." .
+<http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201/ayat/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201/ayat/0001> legal:ayatHasRawText "Sejak mulai berlakunya undang-undang ini maka Undang-undang Nomor 3 Tahun 1975 tentang Partai Politik dan Golongan Karya sebagaimana telah diubah dengan Undang-undang Nomor 3 Tahun 1985 tentang Perubahan Undang-undang Nomor 3 Tahun 1975 tentang Partai Politik dan Golongan Karya dinyatakan tidak berlaku lagi." .
+<http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201/ayat/0001/text> legal:textHasTextString "Sejak mulai berlakunya undang-undang ini maka Undang-undang Nomor 3 Tahun 1975 tentang Partai Politik dan Golongan Karya sebagaimana telah diubah dengan Undang-undang Nomor 3 Tahun 1985 tentang Perubahan Undang-undang Nomor 3 Tahun 1975 tentang Partai Politik dan Golongan Karya dinyatakan tidak berlaku lagi." .
+<http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201/ayat/0001/text> .
+<http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201/ayat/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201/ayat/0002> legal:ayatHasRawText "Segala ketentuan dan peraturan yang bertentangan dengan undang-undang ini dinyatakan tidak berlaku lagi." .
+<http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201/ayat/0002/text> legal:textHasTextString "Segala ketentuan dan peraturan yang bertentangan dengan undang-undang ini dinyatakan tidak berlaku lagi." .
+<http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201/ayat/0002/text> .
+<http://example.org/legal/document/uu/1999/2/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0022> .
+<http://example.org/legal/document/uu/1999/2/pasal/0022> legal:pasalHasKey 22 .
+<http://example.org/legal/document/uu/1999/2/pasal/0022> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/2/pasal/0022/version/19990201> .
+<http://example.org/legal/document/uu/1999/2> legal:documentHasPasal <http://example.org/legal/document/uu/1999/2/pasal/0022> .
+<http://example.org/legal/document/uu/1999/2/pasal/0022/version/19990201> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/2/pasal/0022/version/19990201> legal:pasalVersionHasVersionDate "1999-02-01"^^xsd:date .
+<http://example.org/legal/document/uu/1999/2/pasal/0022/version/19990201> legal:pasalVersionHasRawText "Undang-undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA -9- Agar setiap orang mengetahuinya, memerintahkan pengundangan undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1999/2/pasal/0022/version/19990201/text> legal:textHasTextString "Undang-undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA -9- Agar setiap orang mengetahuinya, memerintahkan pengundangan undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1999/2/pasal/0022/version/19990201> legal:pasalVersionHasText <http://example.org/legal/document/uu/1999/2/pasal/0022/version/19990201/text> .
+<http://example.org/legal/document/uu/1999/2> legal:documentHasDisahkanDate "1999-02-01"^^xsd:date .
+<http://example.org/legal/document/uu/1999/2> legal:documentMengingat <http://example.org/legal/document/uu/1999/2/mengingat> .
+<http://example.org/legal/document/uu/1999/2/mengingat/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 20 ayat (1), Pasal 27 ayat (1) dan Pasal 28 Undang-Undang Dasar 1945: 4 KN tea N “ala R44 NY) V \"7 HS \"gi - AM 0 SR ME mm PRESIDEN REPUBLIK INDONESIA .2- Dengan Persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN : Menetapkan : UNDANG-UNDANG TENTANG PARTAI POLITIK." .
+<http://example.org/legal/document/uu/1999/2/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/1999/2/mengingat/text> .
+<http://example.org/legal/document/uu/1999/2> legal:documentMenimbang <http://example.org/legal/document/uu/1999/2/menimbang> .
+<http://example.org/legal/document/uu/1999/2/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/1999/2/menimbang/point> .
+<http://example.org/legal/document/uu/1999/2/menimbang/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1999/2/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/2/menimbang/point/description> .
+<http://example.org/legal/document/uu/1999/2/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/2/menimbang/point/a> .
+<http://example.org/legal/document/uu/1999/2/menimbang/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1999/2/menimbang/point/a/text> legal:textHasTextString "bahwa kemerdekaan berserikat, berkumpul, dan mengeluarkan pikiran sebagaimana diakui dan dijamin dalam Undang-Undang Dasar 1945 adalah bagian dari hak asasi manusia," .
+<http://example.org/legal/document/uu/1999/2/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/1999/2/menimbang/point/a/text> .
+<http://example.org/legal/document/uu/1999/2/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/2/menimbang/point/b> .
+<http://example.org/legal/document/uu/1999/2/menimbang/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1999/2/menimbang/point/b/text> legal:textHasTextString "bahwa usaha untuk menumbuhkan dan memperkokoh kemerdekaan berserikat, berkumpul, dan mengeluarkan pikiran, merupakan bagian dari upaya untuk mewujudkan kehidupan kebangsaan yang kuat dalam Negara Kesatuan Republik Indonesia yang merdeka, bersatu, berdaulat, demokratis, dan berdasarkan atas hukum:" .
+<http://example.org/legal/document/uu/1999/2/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/1999/2/menimbang/point/b/text> .
+<http://example.org/legal/document/uu/1999/2/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/2/menimbang/point/c> .
+<http://example.org/legal/document/uu/1999/2/menimbang/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1999/2/menimbang/point/c/text> legal:textHasTextString "bahwa partai politik merupakan sarana yang sangat penting arti, fungsi, dan perannya sebagai perwujudan kemerdekaan berserikat, berkumpul, dan mengeluarkan pikiran dalam mengembangkan kehidupan demokrasi yang menjunjung tinggi kedaulatan rakyat dalam Negara Kesatuan Republik Indonesia," .
+<http://example.org/legal/document/uu/1999/2/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/1999/2/menimbang/point/c/text> .
+<http://example.org/legal/document/uu/1999/2/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/2/menimbang/point/d> .
+<http://example.org/legal/document/uu/1999/2/menimbang/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1999/2/menimbang/point/d/text> legal:textHasTextString "bahwa Undang-undang Nomor 3 Tahun 1975 tentang Partai Politik dan Golongan Karya sebagaimana telah diubah dengan Undang-undang Nomor 3 Tahun 1985 tentang Perubahan Undang-undang Nomor 3 Tahun 1975 tentang Partai Politik dan Golongan Karya sudah tidak dapat menampung aspirasi politik yang berkembang sehingga kehidupan demokrasi di Indonesia tidak dapat berlangsung dengan baik," .
+<http://example.org/legal/document/uu/1999/2/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/1999/2/menimbang/point/d/text> .
+<http://example.org/legal/document/uu/1999/2/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/2/menimbang/point/e> .
+<http://example.org/legal/document/uu/1999/2/menimbang/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/1999/2/menimbang/point/e/text> legal:textHasTextString "bahwa sehubungan dengan hal-hal tersebut di atas dan untuk memberi landasan hukum yang lebih baik bagi tumbuhnya kehidupan partai politik yang dapat lebih menjamin peran serta rakyat Indonesia dalam kehidupan berbangsa dan bernegara berdasarkan Pancasila dan Undang-Undang Dasar 1945, dipandang perlu mengganti Undang-undang Nomor 3 Tahun 1975 tentang Partai Politik dan Golongan Karya sebagaimana telah diubah dengan Undang-undang Nomor 3 Tahun 1985 tentang Partai Politik dan Golongan Karya dengan sebuah Undang-undang Partai Politik yang baru." .
+<http://example.org/legal/document/uu/1999/2/menimbang/point/e> legal:pointHasText <http://example.org/legal/document/uu/1999/2/menimbang/point/e/text> .
+<http://example.org/legal/document/uu/1999/2> legal:documentHasDisahkanPengesah "BACHARUDDIN JUSUF HABIBIE" .
+<http://example.org/legal/document/uu/1999/2> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/1999/2> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/1999/2> a legal:Document .
+<http://example.org/legal/document/uu/1999/2/bab> a legal:BabSet .
+<http://example.org/legal/document/uu/1999/2/bab/0001> a legal:Bab .
+<http://example.org/legal/document/uu/1999/2/bab/0001/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1999/2/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0004> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/bab/0002> a legal:Bab .
+<http://example.org/legal/document/uu/1999/2/bab/0002/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1999/2/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/2/pasal/0003/version/19990201> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/2/pasal/0003/version/19990201/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0004> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0005> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0006> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/2/pasal/0006/version/19990201> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/2/pasal/0006/version/19990201/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0007> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0008> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0009> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/e> a legal:Point .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0010> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0011> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/2/pasal/0011/version/19990201> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/2/pasal/0011/version/19990201/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0011/version/19990201/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1999/2/pasal/0011/version/19990201/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1999/2/pasal/0011/version/19990201/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0012> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0004> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0013> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0014> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0004> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0015> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0016> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0017> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0004> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0018> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/2/pasal/0018/version/19990201> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/2/pasal/0018/version/19990201/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0019> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0004> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0020> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/2/pasal/0020/version/19990201> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/2/pasal/0020/version/19990201/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0021> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/pasal/0022> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/2/pasal/0022/version/19990201> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/2/pasal/0022/version/19990201/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/mengingat/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1999/2/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1999/2/menimbang/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/menimbang/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1999/2/menimbang/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1999/2/menimbang/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/menimbang/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1999/2/menimbang/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/menimbang/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1999/2/menimbang/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/menimbang/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1999/2/menimbang/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/menimbang/point/e> a legal:Point .
+<http://example.org/legal/document/uu/1999/2/menimbang/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/2/bab> legal:partOf <http://example.org/legal/document/uu/1999/2> .
+<http://example.org/legal/document/uu/1999/2/bab/0001> legal:partOf <http://example.org/legal/document/uu/1999/2/bab> .
+<http://example.org/legal/document/uu/1999/2/bab/0001/pasals> legal:partOf <http://example.org/legal/document/uu/1999/2/bab/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1999/2/bab/0001/pasals> .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1999/2> .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201> .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0003> .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0004> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0001/version/19990201/ayat/0004> .
+<http://example.org/legal/document/uu/1999/2/bab/0002> legal:partOf <http://example.org/legal/document/uu/1999/2/bab> .
+<http://example.org/legal/document/uu/1999/2/bab/0002/pasals> legal:partOf <http://example.org/legal/document/uu/1999/2/bab/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1999/2/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1999/2> .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201> .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/a> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/b> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/c> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point/d> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0002/version/19990201/ayat/0002/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1999/2/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/2/pasal/0003/version/19990201> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0003> .
+<http://example.org/legal/document/uu/1999/2/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1999/2> .
+<http://example.org/legal/document/uu/1999/2/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1999/2/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0004> .
+<http://example.org/legal/document/uu/1999/2/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1999/2> .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201> .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0004/version/19990201/ayat/0003> .
+<http://example.org/legal/document/uu/1999/2/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1999/2/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0005> .
+<http://example.org/legal/document/uu/1999/2/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1999/2> .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201> .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001/point/a> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001/point/b> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0001/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0005/version/19990201/ayat/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0006> legal:partOf <http://example.org/legal/document/uu/1999/2/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/2/pasal/0006/version/19990201> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0006> .
+<http://example.org/legal/document/uu/1999/2/pasal/0006> legal:partOf <http://example.org/legal/document/uu/1999/2> .
+<http://example.org/legal/document/uu/1999/2/pasal/0007> legal:partOf <http://example.org/legal/document/uu/1999/2/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0007> .
+<http://example.org/legal/document/uu/1999/2/pasal/0007> legal:partOf <http://example.org/legal/document/uu/1999/2> .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201> .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point/a> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point/b> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point/c> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0001/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0007/version/19990201/ayat/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0008> legal:partOf <http://example.org/legal/document/uu/1999/2/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0008> .
+<http://example.org/legal/document/uu/1999/2/pasal/0008> legal:partOf <http://example.org/legal/document/uu/1999/2> .
+<http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201/point> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201> .
+<http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201/point/a> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201/point/b> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0008/version/19990201/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0009> legal:partOf <http://example.org/legal/document/uu/1999/2/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0009> .
+<http://example.org/legal/document/uu/1999/2/pasal/0009> legal:partOf <http://example.org/legal/document/uu/1999/2> .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201> .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/a> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/b> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/c> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/d> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point/e> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0009/version/19990201/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0010> legal:partOf <http://example.org/legal/document/uu/1999/2/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0010> .
+<http://example.org/legal/document/uu/1999/2/pasal/0010> legal:partOf <http://example.org/legal/document/uu/1999/2> .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201> .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001/point/a> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001/point/b> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0001/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0010/version/19990201/ayat/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0011> legal:partOf <http://example.org/legal/document/uu/1999/2/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/2/pasal/0011/version/19990201> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0011> .
+<http://example.org/legal/document/uu/1999/2/pasal/0011> legal:partOf <http://example.org/legal/document/uu/1999/2> .
+<http://example.org/legal/document/uu/1999/2/pasal/0011/version/19990201/point> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0011/version/19990201> .
+<http://example.org/legal/document/uu/1999/2/pasal/0011/version/19990201/point/a> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0011/version/19990201/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012> legal:partOf <http://example.org/legal/document/uu/1999/2/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0012> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012> legal:partOf <http://example.org/legal/document/uu/1999/2> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point/a> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point/b> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point/c> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0001/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0003> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0004> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0012/version/19990201/ayat/0004> .
+<http://example.org/legal/document/uu/1999/2/pasal/0013> legal:partOf <http://example.org/legal/document/uu/1999/2/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0013> .
+<http://example.org/legal/document/uu/1999/2/pasal/0013> legal:partOf <http://example.org/legal/document/uu/1999/2> .
+<http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201/ayat> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201> .
+<http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201/ayat/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0013/version/19990201/ayat/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0014> legal:partOf <http://example.org/legal/document/uu/1999/2/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0014> .
+<http://example.org/legal/document/uu/1999/2/pasal/0014> legal:partOf <http://example.org/legal/document/uu/1999/2> .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201> .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0003> .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0004> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0014/version/19990201/ayat/0004> .
+<http://example.org/legal/document/uu/1999/2/pasal/0015> legal:partOf <http://example.org/legal/document/uu/1999/2/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0015> .
+<http://example.org/legal/document/uu/1999/2/pasal/0015> legal:partOf <http://example.org/legal/document/uu/1999/2> .
+<http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201> .
+<http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0015/version/19990201/ayat/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0016> legal:partOf <http://example.org/legal/document/uu/1999/2/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0016> .
+<http://example.org/legal/document/uu/1999/2/pasal/0016> legal:partOf <http://example.org/legal/document/uu/1999/2> .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201> .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/a> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/b> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/c> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point/d> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0016/version/19990201/point> .
+<http://example.org/legal/document/uu/1999/2/pasal/0017> legal:partOf <http://example.org/legal/document/uu/1999/2/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0017> .
+<http://example.org/legal/document/uu/1999/2/pasal/0017> legal:partOf <http://example.org/legal/document/uu/1999/2> .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201> .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0003> .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0004> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0017/version/19990201/ayat/0004> .
+<http://example.org/legal/document/uu/1999/2/pasal/0018> legal:partOf <http://example.org/legal/document/uu/1999/2/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/2/pasal/0018/version/19990201> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0018> .
+<http://example.org/legal/document/uu/1999/2/pasal/0018> legal:partOf <http://example.org/legal/document/uu/1999/2> .
+<http://example.org/legal/document/uu/1999/2/pasal/0019> legal:partOf <http://example.org/legal/document/uu/1999/2/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0019> .
+<http://example.org/legal/document/uu/1999/2/pasal/0019> legal:partOf <http://example.org/legal/document/uu/1999/2> .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201> .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0003> .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0004> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0019/version/19990201/ayat/0004> .
+<http://example.org/legal/document/uu/1999/2/pasal/0020> legal:partOf <http://example.org/legal/document/uu/1999/2/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/2/pasal/0020/version/19990201> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0020> .
+<http://example.org/legal/document/uu/1999/2/pasal/0020> legal:partOf <http://example.org/legal/document/uu/1999/2> .
+<http://example.org/legal/document/uu/1999/2/pasal/0021> legal:partOf <http://example.org/legal/document/uu/1999/2/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0021> .
+<http://example.org/legal/document/uu/1999/2/pasal/0021> legal:partOf <http://example.org/legal/document/uu/1999/2> .
+<http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201/ayat> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201> .
+<http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201/ayat/0001> .
+<http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201/ayat> .
+<http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0021/version/19990201/ayat/0002> .
+<http://example.org/legal/document/uu/1999/2/pasal/0022> legal:partOf <http://example.org/legal/document/uu/1999/2/bab/0002/pasals> .
+<http://example.org/legal/document/uu/1999/2/pasal/0022/version/19990201> legal:partOf <http://example.org/legal/document/uu/1999/2/pasal/0022> .
+<http://example.org/legal/document/uu/1999/2/pasal/0022> legal:partOf <http://example.org/legal/document/uu/1999/2> .
+<http://example.org/legal/document/uu/1999/2/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1999/2/menimbang/point> .
+<http://example.org/legal/document/uu/1999/2/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1999/2/menimbang/point> .
+<http://example.org/legal/document/uu/1999/2/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/1999/2/menimbang/point> .
+<http://example.org/legal/document/uu/1999/2/menimbang/point/d> legal:partOf <http://example.org/legal/document/uu/1999/2/menimbang/point> .
+<http://example.org/legal/document/uu/1999/2/menimbang/point/e> legal:partOf <http://example.org/legal/document/uu/1999/2/menimbang/point> .

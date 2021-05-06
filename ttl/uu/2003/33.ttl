@@ -1,0 +1,440 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/2003/33> legal:documentHasBabSet <http://example.org/legal/document/uu/2003/33/bab> .
+<http://example.org/legal/document/uu/2003/33/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2003/33/bab/0001> .
+<http://example.org/legal/document/uu/2003/33/bab/0001> legal:babHasKey 1 .
+<http://example.org/legal/document/uu/2003/33/bab/0001> legal:babHasTitle "KETENTUAN UMUM" .
+<http://example.org/legal/document/uu/2003/33/bab/0001> legal:babHasPasalSet <http://example.org/legal/document/uu/2003/33/bab/0001/pasals> .
+<http://example.org/legal/document/uu/2003/33/bab/0001/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2003/33/pasal/0001> .
+<http://example.org/legal/document/uu/2003/33/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/2003/33/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218> .
+<http://example.org/legal/document/uu/2003/33> legal:documentHasPasal <http://example.org/legal/document/uu/2003/33/pasal/0001> .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218> legal:pasalVersionHasVersionDate "2003-12-18"^^xsd:date .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218> legal:pasalVersionHasRawText "Dalam Undang-undang ini yang dimaksud dengan:\n1. Daerah adalah sebagaimana dimaksud dalam Pasal 1 huruf i Undang- undang Nomor 22 Tahun 1999 tentang Pemerintahan Daerah.\n2. Provinsi Sulawesi Utara adalah sebagaimana dimaksud dalam Undang- undang Nomor 13 Tahun 1964 tentang Peraturan Pemerintah Pengganti Undang-undang Nomor 2 Tahun 1964 tentang Pembentukan Daerah Tingkat I Sulawesi Tenggara dengan Mengubah Undang-undang Nomor 47 Prp Tahun 1960 tentang Pembentukan Daerah Tingkat I Sulawesi Utara- Tengah dan Daerah Tingkat I Sulawesi Selatan-Tenggara (Lembaran Negara Republik Indonesia Tahun 1964 Nomor 7) menjadi Undang- undang, yang wilayahnya telah dikurangi dengan Provinsi Gorontalo berdasarkan Undang-undang Nomor 38 Tahun 2000 tentang Pembentukan Provinsi Gorontalo. PRESIDEN REPUBLIK INDONESIA 4\n3. Kabupaten Minahasa adalah sebagaimana dimaksud dalam Undang-undang Nomor 29 Tahun 1959 tentang Pembentukan Daerah-daerah Tingkat II di Sulawesi, yang wilayahnya telah dikurangi dengan Kota Bitung berdasarkan Undang-undang Nomor 10 Tahun 1999 tentang Pembentukan Kota Bitung, Kabupaten Minahasa Selatan dan Kota Tomohon berdasarkan Undang-undang Nomor 10 Tahun 2003 tentang Pembentukan Kabupaten Minahasa Selatan dan Kota Tomohon di Provinsi Sulawesi Utara.\n" .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point> .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point/description> legal:textHasTextString "Dalam Undang-undang ini yang dimaksud dengan:" .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point/description> .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point/0001> .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point/0001/text> legal:textHasTextString "Daerah adalah sebagaimana dimaksud dalam Pasal 1 huruf i Undang- undang Nomor 22 Tahun 1999 tentang Pemerintahan Daerah." .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point/0001> legal:pointHasText <http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point/0001/text> .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point/i> .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2003/33/pasal/0001> .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point/0002> .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point/0002/text> legal:textHasTextString "Provinsi Sulawesi Utara adalah sebagaimana dimaksud dalam Undang- undang Nomor 13 Tahun 1964 tentang Peraturan Pemerintah Pengganti Undang-undang Nomor 2 Tahun 1964 tentang Pembentukan Daerah Tingkat I Sulawesi Tenggara dengan Mengubah Undang-undang Nomor 47 Prp Tahun 1960 tentang Pembentukan Daerah Tingkat I Sulawesi Utara- Tengah dan Daerah Tingkat I Sulawesi Selatan-Tenggara (Lembaran Negara Republik Indonesia Tahun 1964 Nomor 7) menjadi Undang- undang, yang wilayahnya telah dikurangi dengan Provinsi Gorontalo berdasarkan Undang-undang Nomor 38 Tahun 2000 tentang Pembentukan Provinsi Gorontalo. PRESIDEN REPUBLIK INDONESIA 4" .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point/0002> legal:pointHasText <http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point/0002/text> .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point/0003> .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point/0003> legal:pointHasKey "3" .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point/0003/text> legal:textHasTextString "Kabupaten Minahasa adalah sebagaimana dimaksud dalam Undang-undang Nomor 29 Tahun 1959 tentang Pembentukan Daerah-daerah Tingkat II di Sulawesi, yang wilayahnya telah dikurangi dengan Kota Bitung berdasarkan Undang-undang Nomor 10 Tahun 1999 tentang Pembentukan Kota Bitung, Kabupaten Minahasa Selatan dan Kota Tomohon berdasarkan Undang-undang Nomor 10 Tahun 2003 tentang Pembentukan Kabupaten Minahasa Selatan dan Kota Tomohon di Provinsi Sulawesi Utara." .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point/0003> legal:pointHasText <http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point/0003/text> .
+<http://example.org/legal/document/uu/2003/33/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2003/33/bab/0002> .
+<http://example.org/legal/document/uu/2003/33/bab/0002> legal:babHasKey 2 .
+<http://example.org/legal/document/uu/2003/33/bab/0002> legal:babHasTitle "PEMBENTUKAN, BATAS WILAYAH, DAN IBU KOTA" .
+<http://example.org/legal/document/uu/2003/33/bab/0002> legal:babHasPasalSet <http://example.org/legal/document/uu/2003/33/bab/0002/pasals> .
+<http://example.org/legal/document/uu/2003/33/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2003/33/pasal/0002> .
+<http://example.org/legal/document/uu/2003/33/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/2003/33/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2003/33/pasal/0002/version/20031218> .
+<http://example.org/legal/document/uu/2003/33> legal:documentHasPasal <http://example.org/legal/document/uu/2003/33/pasal/0002> .
+<http://example.org/legal/document/uu/2003/33/pasal/0002/version/20031218> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2003/33/pasal/0002/version/20031218> legal:pasalVersionHasVersionDate "2003-12-18"^^xsd:date .
+<http://example.org/legal/document/uu/2003/33/pasal/0002/version/20031218> legal:pasalVersionHasRawText "Dengan Undang-undang ini dibentuk Kabupaten Minahasa Utara di Provinsi Sulawesi Utara dalam Negara Kesatuan Republik Indonesia." .
+<http://example.org/legal/document/uu/2003/33/pasal/0002/version/20031218/text> legal:textHasTextString "Dengan Undang-undang ini dibentuk Kabupaten Minahasa Utara di Provinsi Sulawesi Utara dalam Negara Kesatuan Republik Indonesia." .
+<http://example.org/legal/document/uu/2003/33/pasal/0002/version/20031218> legal:pasalVersionHasText <http://example.org/legal/document/uu/2003/33/pasal/0002/version/20031218/text> .
+<http://example.org/legal/document/uu/2003/33/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2003/33/pasal/0003> .
+<http://example.org/legal/document/uu/2003/33/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/2003/33/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218> .
+<http://example.org/legal/document/uu/2003/33> legal:documentHasPasal <http://example.org/legal/document/uu/2003/33/pasal/0003> .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218> legal:pasalVersionHasVersionDate "2003-12-18"^^xsd:date .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218> legal:pasalVersionHasRawText "Wilayah Kabupaten Minahasa Utara berasal dari sebagian wilayah Kabupaten Minahasa yang terdiri atas :\na. Kecamatan Wori:\nb. Kecamatan Likupang Barat:\nc. Kecamatan Likupang Timur,\nd. Kecamatan Dimembe:\ne. Kecamatan Kauditan:\nf. Kecamatan Kema:\ng. Kecamatan Air Madidi, dan\nh. Kecamatan Kalawat.\n" .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point> .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/description> legal:textHasTextString "Wilayah Kabupaten Minahasa Utara berasal dari sebagian wilayah Kabupaten Minahasa yang terdiri atas :" .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/description> .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/a> .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/a/text> legal:textHasTextString "Kecamatan Wori:" .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/a> legal:pointHasText <http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/a/text> .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/b> .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/b/text> legal:textHasTextString "Kecamatan Likupang Barat:" .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/b> legal:pointHasText <http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/b/text> .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/c> .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/c/text> legal:textHasTextString "Kecamatan Likupang Timur," .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/c> legal:pointHasText <http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/c/text> .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/d> .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/d/text> legal:textHasTextString "Kecamatan Dimembe:" .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/d> legal:pointHasText <http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/d/text> .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/e> .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/e/text> legal:textHasTextString "Kecamatan Kauditan:" .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/e> legal:pointHasText <http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/e/text> .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/f> .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/f> legal:pointHasKey "f" .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/f/text> legal:textHasTextString "Kecamatan Kema:" .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/f> legal:pointHasText <http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/f/text> .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/g> .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/g> legal:pointHasKey "g" .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/g/text> legal:textHasTextString "Kecamatan Air Madidi, dan" .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/g> legal:pointHasText <http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/g/text> .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/h> .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/h> legal:pointHasKey "h" .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/h/text> legal:textHasTextString "Kecamatan Kalawat." .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/h> legal:pointHasText <http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/h/text> .
+<http://example.org/legal/document/uu/2003/33/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2003/33/pasal/0004> .
+<http://example.org/legal/document/uu/2003/33/pasal/0004> legal:pasalHasKey 4 .
+<http://example.org/legal/document/uu/2003/33/pasal/0004> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2003/33/pasal/0004/version/20031218> .
+<http://example.org/legal/document/uu/2003/33> legal:documentHasPasal <http://example.org/legal/document/uu/2003/33/pasal/0004> .
+<http://example.org/legal/document/uu/2003/33/pasal/0004/version/20031218> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2003/33/pasal/0004/version/20031218> legal:pasalVersionHasVersionDate "2003-12-18"^^xsd:date .
+<http://example.org/legal/document/uu/2003/33/pasal/0004/version/20031218> legal:pasalVersionHasRawText "Dengan terbentuknya Kabupaten Minahasa Utara, sebagaimana dimaksud dalam Pasal 2, wilayah Kabupaten Minahasa dikurangi dengan wilayah Kabupaten Minahasa Utara sebagaimana dimaksud dalam Pasal 3. PRESIDEN REPUBLIK INDONESIA -.5-" .
+<http://example.org/legal/document/uu/2003/33/pasal/0004/version/20031218/text> legal:textHasTextString "Dengan terbentuknya Kabupaten Minahasa Utara, sebagaimana dimaksud dalam Pasal 2, wilayah Kabupaten Minahasa dikurangi dengan wilayah Kabupaten Minahasa Utara sebagaimana dimaksud dalam Pasal 3. PRESIDEN REPUBLIK INDONESIA -.5-" .
+<http://example.org/legal/document/uu/2003/33/pasal/0004/version/20031218> legal:pasalVersionHasText <http://example.org/legal/document/uu/2003/33/pasal/0004/version/20031218/text> .
+<http://example.org/legal/document/uu/2003/33/pasal/0004/version/20031218/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2003/33/pasal/0003> .
+<http://example.org/legal/document/uu/2003/33/pasal/0004/version/20031218/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2003/33/pasal/0002> .
+<http://example.org/legal/document/uu/2003/33/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2003/33/pasal/0005> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005> legal:pasalHasKey 5 .
+<http://example.org/legal/document/uu/2003/33/pasal/0005> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218> .
+<http://example.org/legal/document/uu/2003/33> legal:documentHasPasal <http://example.org/legal/document/uu/2003/33/pasal/0005> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218> legal:pasalVersionHasVersionDate "2003-12-18"^^xsd:date .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218> legal:pasalVersionHasRawText "(1). Kabupaten Minahasa Utara mempunyai batas wilayah :\na. sebelah utara berbatasan dengan Laut Sulawesi,...\nb. sebelah timur berbatasan dengan Kecamatan Bitung Utara dan Kecamatan Bitung Barat Kota Bitung dan Laut Maluku,\nc. sebelah selatan berbatasan dengan Kecamatan Kombi dan Kecamatan Tondano Utara Kabupaten Minahasa, dan\nd. sebelah barat berbatasan dengan Kecamatan Tombulu Kabupaten Minahasa, Kecamatan Tikala, Kecamatan Mapanget, dan Kecamatan Bunaken Kota Manado.\n\n(2). Batas wilayah sebagaimana dimaksud pada ayat (1), digambarkan dalam peta wilayah administrasi yang merupakan bagian tidak terpisahkan dari Undang-undang ini.\n(3). Penentuan batas wilayah Kabupaten Minahasa Utara secara pasti di lapangan, sebagaimana dimaksud pada ayat (1) ditetapkan oleh Menteri Dalam Negeri." .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001> legal:ayatHasRawText "Kabupaten Minahasa Utara mempunyai batas wilayah :\na. sebelah utara berbatasan dengan Laut Sulawesi,...\nb. sebelah timur berbatasan dengan Kecamatan Bitung Utara dan Kecamatan Bitung Barat Kota Bitung dan Laut Maluku,\nc. sebelah selatan berbatasan dengan Kecamatan Kombi dan Kecamatan Tondano Utara Kabupaten Minahasa, dan\nd. sebelah barat berbatasan dengan Kecamatan Tombulu Kabupaten Minahasa, Kecamatan Tikala, Kecamatan Mapanget, dan Kecamatan Bunaken Kota Manado.\n" .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/description> legal:textHasTextString "Kabupaten Minahasa Utara mempunyai batas wilayah :" .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/description> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/a> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/a/text> legal:textHasTextString "sebelah utara berbatasan dengan Laut Sulawesi,..." .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/a/text> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/b> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/b/text> legal:textHasTextString "sebelah timur berbatasan dengan Kecamatan Bitung Utara dan Kecamatan Bitung Barat Kota Bitung dan Laut Maluku," .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/b> legal:pointHasText <http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/b/text> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/c> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/c/text> legal:textHasTextString "sebelah selatan berbatasan dengan Kecamatan Kombi dan Kecamatan Tondano Utara Kabupaten Minahasa, dan" .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/c> legal:pointHasText <http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/c/text> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/d> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/d/text> legal:textHasTextString "sebelah barat berbatasan dengan Kecamatan Tombulu Kabupaten Minahasa, Kecamatan Tikala, Kecamatan Mapanget, dan Kecamatan Bunaken Kota Manado." .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/d> legal:pointHasText <http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/d/text> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0002> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0002> legal:ayatHasRawText "Batas wilayah sebagaimana dimaksud pada ayat (1), digambarkan dalam peta wilayah administrasi yang merupakan bagian tidak terpisahkan dari Undang-undang ini." .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0002/text> legal:textHasTextString "Batas wilayah sebagaimana dimaksud pada ayat (1), digambarkan dalam peta wilayah administrasi yang merupakan bagian tidak terpisahkan dari Undang-undang ini." .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0002/text> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0003> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0003> legal:ayatHasRawText "Penentuan batas wilayah Kabupaten Minahasa Utara secara pasti di lapangan, sebagaimana dimaksud pada ayat (1) ditetapkan oleh Menteri Dalam Negeri." .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0003/text> legal:textHasTextString "Penentuan batas wilayah Kabupaten Minahasa Utara secara pasti di lapangan, sebagaimana dimaksud pada ayat (1) ditetapkan oleh Menteri Dalam Negeri." .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0003/text> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001> .
+<http://example.org/legal/document/uu/2003/33/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2003/33/pasal/0006> .
+<http://example.org/legal/document/uu/2003/33/pasal/0006> legal:pasalHasKey 6 .
+<http://example.org/legal/document/uu/2003/33/pasal/0006> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218> .
+<http://example.org/legal/document/uu/2003/33> legal:documentHasPasal <http://example.org/legal/document/uu/2003/33/pasal/0006> .
+<http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218> legal:pasalVersionHasVersionDate "2003-12-18"^^xsd:date .
+<http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218> legal:pasalVersionHasRawText "(1). Dengan terbentuknya Kabupaten Minahasa Utara sebagaimana dimaksud dalam Pasal 2, Pemerintah Kabupaten Minahasa Utara menetapkan Rencana Tata Ruang Wilayah sesuai dengan peraturan perundang- undangan.\n(2). Penetapan Rencana Tata Ruang Wilayah Kabupaten Minahasa Utara sebagaimana dimaksud pada ayat (1), dilakukan sesuai dengan Rencana Tata Ruang Wilayah Nasional dan Rencana Tata Ruang Wilayah Provinsi Sulawesi Utara serta memperhatikan Rencana Tata Ruang Wilayah Kabupaten/Kota di sekitarnya. Pasal 7 Ibu kota Kabupaten Minahasa Utara berkedudukan di Airmadidi. PRESIDEN REPUBLIK INDONESIA -G-" .
+<http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat> .
+<http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat/0001> .
+<http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat/0001> legal:ayatHasRawText "Dengan terbentuknya Kabupaten Minahasa Utara sebagaimana dimaksud dalam Pasal 2, Pemerintah Kabupaten Minahasa Utara menetapkan Rencana Tata Ruang Wilayah sesuai dengan peraturan perundang- undangan." .
+<http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat/0001/text> legal:textHasTextString "Dengan terbentuknya Kabupaten Minahasa Utara sebagaimana dimaksud dalam Pasal 2, Pemerintah Kabupaten Minahasa Utara menetapkan Rencana Tata Ruang Wilayah sesuai dengan peraturan perundang- undangan." .
+<http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat/0001/text> .
+<http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2003/33/pasal/0002> .
+<http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat/0002> .
+<http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat/0002> legal:ayatHasRawText "Penetapan Rencana Tata Ruang Wilayah Kabupaten Minahasa Utara sebagaimana dimaksud pada ayat (1), dilakukan sesuai dengan Rencana Tata Ruang Wilayah Nasional dan Rencana Tata Ruang Wilayah Provinsi Sulawesi Utara serta memperhatikan Rencana Tata Ruang Wilayah Kabupaten/Kota di sekitarnya. Pasal 7 Ibu kota Kabupaten Minahasa Utara berkedudukan di Airmadidi. PRESIDEN REPUBLIK INDONESIA -G-" .
+<http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat/0002/text> legal:textHasTextString "Penetapan Rencana Tata Ruang Wilayah Kabupaten Minahasa Utara sebagaimana dimaksud pada ayat (1), dilakukan sesuai dengan Rencana Tata Ruang Wilayah Nasional dan Rencana Tata Ruang Wilayah Provinsi Sulawesi Utara serta memperhatikan Rencana Tata Ruang Wilayah Kabupaten/Kota di sekitarnya. Pasal 7 Ibu kota Kabupaten Minahasa Utara berkedudukan di Airmadidi. PRESIDEN REPUBLIK INDONESIA -G-" .
+<http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat/0002/text> .
+<http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat/0001> .
+<http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2003/33/pasal/0007> .
+<http://example.org/legal/document/uu/2003/33/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2003/33/bab/0003> .
+<http://example.org/legal/document/uu/2003/33/bab/0003> legal:babHasKey 3 .
+<http://example.org/legal/document/uu/2003/33/bab/0003> legal:babHasTitle "KEWENANGAN DAERAH Pasal 8 Kewenangan Kabupaten Minahasa Utara mencakup kewenangan, tugas dan kewajiban untuk mengatur dan mengurus bidang pemerintahan yang diserahkan sejalan kepada Kabupaten induk sesuai dengan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2003/33/bab/0003> legal:babHasPasalSet <http://example.org/legal/document/uu/2003/33/bab/0003/pasals> .
+<http://example.org/legal/document/uu/2003/33/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2003/33/bab/0004> .
+<http://example.org/legal/document/uu/2003/33/bab/0004> legal:babHasKey 4 .
+<http://example.org/legal/document/uu/2003/33/bab/0004> legal:babHasTitle "PEMBINAAN DAERAH Pasal 9 (1) Pemerintah Provinsi Sulawesi Utara melakukan pembinaan dan memfasilitasi secara khusus terhadap Kabupaten Minahasa Utara dalam waktu 3 (tiga) tahun sejak diresmikan, untuk mengefektifkan penyelenggaraan fungsi-fungsi pemerintahan daerah. (2) Setelah 3 (tiga) tahun sejak diresmikan, Pemerintah bersama dengan Pemerintah Provinsi Sulawesi Utara melakukan evaluasi terhadap penyelenggaraan Pemerintahan Kabupaten Minahasa Utara. (3) Hasil evaluasi sebagaimana dimaksud pada ayat (2) direkomendasikan sebagai bahan pembinaan lebih lanjut sesuai dengan peraturan perundang- undangan." .
+<http://example.org/legal/document/uu/2003/33/bab/0004> legal:babHasPasalSet <http://example.org/legal/document/uu/2003/33/bab/0004/pasals> .
+<http://example.org/legal/document/uu/2003/33/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2003/33/bab/0005> .
+<http://example.org/legal/document/uu/2003/33/bab/0005> legal:babHasKey 5 .
+<http://example.org/legal/document/uu/2003/33/bab/0005> legal:babHasTitle "PEMERINTAHAN DAERAH" .
+<http://example.org/legal/document/uu/2003/33/bab/0005> legal:babHasBagianSet <http://example.org/legal/document/uu/2003/33/bab/0005/bagian> .
+<http://example.org/legal/document/uu/2003/33/bab/0005/bagian> legal:bagianSetHasBagian <http://example.org/legal/document/uu/2003/33/bab/0005/bagian/0001> .
+<http://example.org/legal/document/uu/2003/33/bab/0005/bagian/0001> legal:bagianHasKey 1 .
+<http://example.org/legal/document/uu/2003/33/bab/0005/bagian/0001> legal:bagianHasTitle "Bagian Pertama Dewan Perwakilan Rakyat Daerah Pasal 10 (1) Dewan Perwakilan Rakyat Daerah Kabupaten Minahasa Utara untuk pertama kali dibentuk melalui hasil Pemilihan Umum Tahun 2004. PRESIDEN REPUBLIK INDONESIA -7- (2) Jumlah dan tata cara pengisian keanggotaan Dewan Perwakilan Rakyat Daerah Kabupaten Minahasa Utara, sebagaimana dimaksud pada ayat (1), diatur sesuai dengan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2003/33/bab/0005/bagian/0001> legal:bagianHasPasalSet <http://example.org/legal/document/uu/2003/33/bab/0005/bagian/0001/pasals> .
+<http://example.org/legal/document/uu/2003/33/bab/0005/bagian> legal:bagianSetHasBagian <http://example.org/legal/document/uu/2003/33/bab/0005/bagian/0002> .
+<http://example.org/legal/document/uu/2003/33/bab/0005/bagian/0002> legal:bagianHasKey 2 .
+<http://example.org/legal/document/uu/2003/33/bab/0005/bagian/0002> legal:bagianHasTitle "Bagian Kedua Pemerintah Daerah Pasal 11 Bupati dan Wakil Bupati Minahasa Utara dipilih dan disahkan paling lambat 2 (dua) tahun setelah pengucapan sumpah/janji anggota Dewan Perwakilan Rakyat Daerah, sebagaimana dimaksud dalam Pasal 10. Pasal 12 (l) Dengan terbentuknya Kabupaten Minahasa Utara, Penjabat Bupati Minahasa Utara diangkat oleh Menteri Dalam Negeri atas nama Presiden dari Pegawai Negeri Sipil yang diusulkan Gubernur Sulawesi Utara untuk masa jabatan paling lama 1 (satu) tahun. (2) Pegawai Negeri Sipil sebagaimana dimaksud pada ayat (1) adalah Pegawai Negeri Sipil yang memiliki kemampuan dan pengalaman jabatan di bidang pemerintahan serta memenuhi persyaratan untuk menduduki jabatan itu. (3) Menteri Dalam Negeri atas nama Presiden dapat mengangkat kembali Penjabat Bupati sebagaimana dimaksud pada ayat (1) untuk masa jabatan berikutnya paling lama 1 (satu) tahun atau diganti dengan Penjabat lain. (4) Peresmian Kabupaten Minahasa Utara serta pelantikan Penjabat Bupati dilakukan oleh Menteri Dalam Negeri atas nama Presiden setelah Undang- undang ini diundangkan. (5) Menteri Dalam Negeri dapat menunjuk Gubernur Sulawesi Utara untuk melantik Penjabat Bupati Minahasa Utara. (6) Menteri Dalam Negeri dan/atau Gubernur Sulawesi Utara melakukan pembinaan dan pengawasan terhadap kinerja Penjabat Bupati dalam melaksanakan tugasnya sesuai dengan peraturan perundang-undangan. PRESIDEN REPUBLIK INDONESIA -8- Pasal 13 (l) Dengan diresmikannya Kabupaten Minahasa Utara dan dilantiknya Penjabat Bupati Minahasa Utara dibentuk perangkat daerah yang meliputi Sekretariat Daerah, Dinas Daerah dan Lembaga Teknis Daerah, dan unsur perangkat daerah yang lain dengan mempertimbangkan kebutuhan dan kemampuan keuangan daerah sesuai dengan peraturan perundang- undangan. (2) Pemerintah Kabupaten Minahasa Utara memfasilitasi pembentukan instansi vertikal." .
+<http://example.org/legal/document/uu/2003/33/bab/0005/bagian/0002> legal:bagianHasPasalSet <http://example.org/legal/document/uu/2003/33/bab/0005/bagian/0002/pasals> .
+<http://example.org/legal/document/uu/2003/33/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2003/33/bab/0006> .
+<http://example.org/legal/document/uu/2003/33/bab/0006> legal:babHasKey 6 .
+<http://example.org/legal/document/uu/2003/33/bab/0006> legal:babHasTitle "KETENTUAN PERALIHAN Pasal 14 (1) Bupati Minahasa menginventarisasi, mengatur, dan melaksanakan penyerahan sesuai dengan peraturan perundang-undangan kepada Pemerintah Kabupaten Minahasa Utara hal-hal sebagai berikut : a. pegawai yang karena tugasnya diperlukan oleh Pemerintah Kabupaten Minahasa Utara, b. barang milik/kekayaan daerah yang berupa barang bergerak dan barang tidak bergerak yang dimiliki/dikuasai, dan/atau dimanfaatkan oleh Pemerintah Kabupaten Minahasa yang berada dalam wilayah Kabupaten Minahasa Utara, c. Badan Usaha Milik Daerah Kabupaten Minahasa yang kedudukan, kegiatan, dan lokasinya berada di Kabupaten Minahasa Utara, d. utang piutang Kabupaten Minahasa yang kegunaannya untuk Kabupaten Minahasa Utara, serta e. dokumen dan arsip yang karena sifatnya diperlukan oleh Kabupaten Minahasa Utara. (2) Pelaksanaan penyerahan, sebagaimana dimaksud pada ayat (1), difasilitasi oleh Gubernur Sulawesi Utara dan diselesaikan dalam waktu 1 (satu) tahun terhitung sejak pelantikan Penjabat Bupati Minahasa Utara. PRESIDEN REPUBLIK INDONESIA -9- (3) Dalam hal pelaksanaan penyerahan sebagaimana dimaksud pada ayat (1) dan ayat (2) mengalami hambatan, difasilitasi oleh Menteri Dalam Negeri. Pasal 15 (1) Kabupaten Minahasa Utara memiliki kewenangan atas pemungutan pajak dan retribusi daerah sejak terbentuknya perangkat daerah Kabupaten Minahasa Utara sesuai dengan peraturan perundang-undangan. (2) Kabupaten Minahasa Utara berhak mendapatkan alokasi dana perimbangan sesuai dengan peraturan perundang-undangan. (3) Kabupaten Minahasa wajib memberikan bantuan dana kepada Kabupaten Minahasa Utara selama 3 (tiga) tahun berturut-turut, sekurang-kurangnya sebesar dana yang dialokasikan untuk kegiatan pemerintahan di daerah pemekaran selama belum dimekarkan. (4) Pemerintah Provinsi Sulawesi Utara mengalokasikan anggaran biaya melalui Anggaran Pendapatan dan Belanja Daerah Provinsi Sulawesi Utara untuk menunjang kegiatan pemerintahan, pembangunan dan kemasyarakatan sampai dengan ditetapkannya Anggaran Pendapatan dan Belanja Daerah Kabupaten Minahasa Utara. (5) Sebelum terbentuknya Dewan Perwakilan Rakyat Daerah, Penjabat Bupati Minahasa Utara menyusun Rencana Pembiayaan Kegiatan Kabupaten (RPKK) sebagai dasar pengelolaan keuangan daerah yang ditetapkan dengan Keputusan Penjabat Bupati. (6) Rencana Pembiayaan Kegiatan Kabupaten (RPKK) sebagaimana dimaksud pada ayat (5) dilaksanakan setelah memperoleh pengesahan Gubernur Sulawesi Utara. (7) Penjabat Bupati Minahasa Utara melaksanakan penatausahaan keuangan daerah dan menyampaikan laporan pelaksanaan Rencana Pembiayaan Kegiatan Kabupaten (RPKK) setiap triwulan kepada Gubernur Sulawesi Utara. PRESIDEN REPUBLIK INDONESIA -10- (8) Penjabat Bupati Minahasa Utara menyusun dan menetapkan perhitungan Rencana Pembiayaan Kegiatan Kabupaten (RPKK) dengan keputusan penjabat Bupati sebagai dasar pertanggungjawaban keuangan daerah kepada Gubernur Sulawesi Utara. Pasal 16 (1) Sebelum Kabupaten Minahasa Utara dapat menetapkan Peraturan Daerah dan membuat Keputusan Bupati sebagai pelaksanaan Undang-undang ini, semua Peraturan Daerah dan Keputusan Bupati Minahasa tetap berlaku dan dilaksanakan di Kabupaten Minahasa Utara. (2) Semua Peraturan Daerah dan Keputusan Bupati Minahasa yang berlaku di Kabupaten Minahasa Utara harus disesuaikan dengan Undang-undang ini. Pasal 17 (l) Penyelenggaraan Pemilihan Umum Tahun 2004 sebelum terbentuknya Komisi Pemilihan Umum di Kabupaten Minahasa Utara dilaksanakan oleh Komisi Pemilihan Umum Kabupaten Minahasa. (2) Pembentukan Komisi Pemilihan Umum di Kabupaten Minahasa Utara dilakukan setelah pelaksanaan Pemilihan Umum Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan Rakyat Daerah Tahun 2004 dan paling lambat 6 (enam) bulan setelah peresmian Anggota Dewan Perwakilan Rakyat Daerah Kabupaten Minahasa Utara. (3) Pengajuan Calon Anggota Dewan Perwakilan Rakyat Daerah Kabupaten Minahasa Utara pada Pemilihan Umum Tahun 2004 dilakukan oleh Pimpinan Partai Politik Peserta Pemilihan Umum di Kabupaten Minahasa." .
+<http://example.org/legal/document/uu/2003/33/bab/0006> legal:babHasPasalSet <http://example.org/legal/document/uu/2003/33/bab/0006/pasals> .
+<http://example.org/legal/document/uu/2003/33/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2003/33/bab/0007> .
+<http://example.org/legal/document/uu/2003/33/bab/0007> legal:babHasKey 7 .
+<http://example.org/legal/document/uu/2003/33/bab/0007> legal:babHasTitle "KETENTUAN PENUTUP Pasal 18 Pada saat berlakunya Undang-undang ini, semua peraturan perundang-undangan yang tidak sesuai dengan Undang-undang ini dinyatakan tidak berlaku. PRESIDEN REPUBLIK INDONESIA -11- Pasal 19 Ketentuan lebih lanjut yang diperlukan sebagai pelaksanaan Undang-undang ini, diatur sesuai dengan peraturan perundang-undangan. Pasal 20 Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2003/33/bab/0007> legal:babHasPasalSet <http://example.org/legal/document/uu/2003/33/bab/0007/pasals> .
+<http://example.org/legal/document/uu/2003/33> legal:documentHasDisahkanDate "2003-12-18"^^xsd:date .
+<http://example.org/legal/document/uu/2003/33> legal:documentMengingat <http://example.org/legal/document/uu/2003/33/mengingat> .
+<http://example.org/legal/document/uu/2003/33/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2003/33/mengingat/point> .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/2003/33/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2003/33/mengingat/point/description> .
+<http://example.org/legal/document/uu/2003/33/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2003/33/mengingat/point/0001> .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0001/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 18, Pasal 18A, Pasal 18B, Pasal 20 dan Pasal 21 Undang-Undang Dasar Negara Republik Indonesia Tahun 1945," .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/2003/33/mengingat/point/0001/text> .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu> .
+<http://example.org/legal/document/uu/2003/33/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2003/33/mengingat/point/0002> .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0002/text> legal:textHasTextString "Undang-undang Nomor 29 Tahun 1959 tentang Pembentukan Daerah- daerah Tingkat Il di Sulawesi (Lembaran Negara Tahun 1959 Nomor 874, Tambahan Lembaran Negara Nomor 1822), PRESIDEN REPUBLIK INDONESIA 2" .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/2003/33/mengingat/point/0002/text> .
+<http://example.org/legal/document/uu/2003/33/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2003/33/mengingat/point/0003> .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0003> legal:pointHasKey "3" .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0003/text> legal:textHasTextString "Undang-undang Nomor 13 Tahun 1964 tentang Peraturan Pemerintah Pengganti Undang-undang Nomor 2 Tahun 1964 Tentang Pembentukan Daerah Tingkat I Sulawesi Tenggara dengan Mengubah Undang-undang Nomor 47 Prp Tahun 1960 Tentang Pembentukan Daerah Tingkat I Sulawesi Utara-Tengah dan Daerah Tingkat I Sulawesi Selatan-Tenggara (Lembaran Negara Republik Indonesia Tahun 1964 Nomor 7) menjadi Undang-undang (Lembaran Negara Republik Indonesia Tahun 1964 Nomor 94, Tambahan Lembaran Negara Republik Indonesia Nomor 2687)," .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0003> legal:pointHasText <http://example.org/legal/document/uu/2003/33/mengingat/point/0003/text> .
+<http://example.org/legal/document/uu/2003/33/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2003/33/mengingat/point/0004> .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0004> legal:pointHasKey "4" .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0004/text> legal:textHasTextString "Undang-undang Nomor 24 Tahun 1992 tentang Penataan Ruang (Lembaran Negara Republik Indonesia Tahun 1992 Nomor 115, Tambahan Lembaran Negara Nomor 3501)," .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0004> legal:pointHasText <http://example.org/legal/document/uu/2003/33/mengingat/point/0004/text> .
+<http://example.org/legal/document/uu/2003/33/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2003/33/mengingat/point/0005> .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0005> legal:pointHasKey "5" .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0005/text> legal:textHasTextString "Undang-undang Nomor 22 Tahun 1999 tentang Pemerintahan Daerah (Lembaran Negara Republik Indonesia Tahun 1999 Nomor 60, Tambahan Lembaran Negara Nomor 3839)," .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0005> legal:pointHasText <http://example.org/legal/document/uu/2003/33/mengingat/point/0005/text> .
+<http://example.org/legal/document/uu/2003/33/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2003/33/mengingat/point/0006> .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0006> legal:pointHasKey "6" .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0006/text> legal:textHasTextString "Undang-undang Nomor 25 Tahun 1999 tentang Perimbangan Keuangan antara Pemerintah Pusat dan Daerah (Lembaran Negara Republik Indonesia Tahun 1999 Nomor 72, Tambahan Lembaran Negara Nomor 3848)," .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0006> legal:pointHasText <http://example.org/legal/document/uu/2003/33/mengingat/point/0006/text> .
+<http://example.org/legal/document/uu/2003/33/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2003/33/mengingat/point/0007> .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0007> legal:pointHasKey "7" .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0007/text> legal:textHasTextString "Undang-undang Nomor 31 Tahun 2002 tentang Partai Politik (Lembaran Negara Republik Indonesia Tahun 2002 Nomor 138, Tambahan Lembaran Negara Nomor 4251)," .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0007> legal:pointHasText <http://example.org/legal/document/uu/2003/33/mengingat/point/0007/text> .
+<http://example.org/legal/document/uu/2003/33/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2003/33/mengingat/point/0008> .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0008> legal:pointHasKey "8" .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0008/text> legal:textHasTextString "Undang-undang Nomor 12 Tahun 2003 tentang Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan Rakyat Daerah (Lembaran Negara Republik Indonesia Tahun 2003 Nomor 37, Tambahan Lembaran Negara Nomor 4277)," .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0008> legal:pointHasText <http://example.org/legal/document/uu/2003/33/mengingat/point/0008/text> .
+<http://example.org/legal/document/uu/2003/33/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2003/33/mengingat/point/0009> .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0009> legal:pointHasKey "9" .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0009/text> legal:textHasTextString "Undang-undang Nomor 22 Tahun 2003 tentang Susunan dan Kedudukan Majelis Permusyawaratan Rakyat, Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan Rakyat Daerah (Lembaran Negara Republik Indonesia Tahun 2003 Nomor 92, Tambahan Lembaran Negara Nomor 4310), PRESIDEN REPUBLIK INDONESIA -3- Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA dan PRESIDEN REPUBLIK INDONESIA MEMUTUSKAN : Menetapkan : ' UNDANG-UNDANG TENTANG PEMBENTUKAN KABUPATEN MINAHASA UTARA DI PROVINSI SULAWESI UTARA." .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0009> legal:pointHasText <http://example.org/legal/document/uu/2003/33/mengingat/point/0009/text> .
+<http://example.org/legal/document/uu/2003/33> legal:documentMenimbang <http://example.org/legal/document/uu/2003/33/menimbang> .
+<http://example.org/legal/document/uu/2003/33/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/2003/33/menimbang/point> .
+<http://example.org/legal/document/uu/2003/33/menimbang/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/2003/33/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2003/33/menimbang/point/description> .
+<http://example.org/legal/document/uu/2003/33/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2003/33/menimbang/point/a> .
+<http://example.org/legal/document/uu/2003/33/menimbang/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/2003/33/menimbang/point/a/text> legal:textHasTextString "bahwa dalam rangka mewujudkan aspirasi masyarakat yang berkembang di Kabupaten Minahasa, untuk meningkatkan pelayanan kepada masyarakat dibidang pemerintahan, pembangunan, dan kemasyarakatan, Kabupaten Minahasa perlu dimekarkan," .
+<http://example.org/legal/document/uu/2003/33/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/2003/33/menimbang/point/a/text> .
+<http://example.org/legal/document/uu/2003/33/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2003/33/menimbang/point/b> .
+<http://example.org/legal/document/uu/2003/33/menimbang/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/2003/33/menimbang/point/b/text> legal:textHasTextString "bahwa dengan memperhatikan hal tersebut di atas dan berdasarkan kriteria kemampuan ekonomi, potensi daerah, kondisi sosial budaya, kondisi sosial politik, jumlah penduduk, luas daerah, dan pertimbangan lainnya, dibentuk Kabupaten Minahasa Utara di Provinsi Sulawesi Utara," .
+<http://example.org/legal/document/uu/2003/33/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/2003/33/menimbang/point/b/text> .
+<http://example.org/legal/document/uu/2003/33/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2003/33/menimbang/point/c> .
+<http://example.org/legal/document/uu/2003/33/menimbang/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/2003/33/menimbang/point/c/text> legal:textHasTextString "bahwa dengan pembentukan Kabupaten sebagaimana tersebut dalam huruf b, akan dapat mendorong peningkatan pelayanan di bidang pemerintahan, pembangunan, dan kemasyarakatan, serta memberikan kesempatan untuk memanfaatkan dan mengembangkan potensi daerah," .
+<http://example.org/legal/document/uu/2003/33/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/2003/33/menimbang/point/c/text> .
+<http://example.org/legal/document/uu/2003/33/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2003/33/menimbang/point/d> .
+<http://example.org/legal/document/uu/2003/33/menimbang/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/2003/33/menimbang/point/d/text> legal:textHasTextString "bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a, huruf b, dan huruf c, perlu membentuk Undang-undang tentang pembentukan Kabupaten Minahasa Utara," .
+<http://example.org/legal/document/uu/2003/33/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/2003/33/menimbang/point/d/text> .
+<http://example.org/legal/document/uu/2003/33> legal:documentHasDisahkanPengesah "MEGAWATI SOEKARNOPUTRI" .
+<http://example.org/legal/document/uu/2003/33> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/2003/33> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/2003/33> a legal:Document .
+<http://example.org/legal/document/uu/2003/33/bab> a legal:BabSet .
+<http://example.org/legal/document/uu/2003/33/bab/0001> a legal:Bab .
+<http://example.org/legal/document/uu/2003/33/bab/0001/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2003/33/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point/0003> a legal:Point .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/bab/0002> a legal:Bab .
+<http://example.org/legal/document/uu/2003/33/bab/0002/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2003/33/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/2003/33/pasal/0002/version/20031218> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2003/33/pasal/0002/version/20031218/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/a> a legal:Point .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/b> a legal:Point .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/c> a legal:Point .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/d> a legal:Point .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/e> a legal:Point .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/f> a legal:Point .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/f/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/g> a legal:Point .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/g/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/h> a legal:Point .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/h/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/pasal/0004> a legal:Pasal .
+<http://example.org/legal/document/uu/2003/33/pasal/0004/version/20031218> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2003/33/pasal/0004/version/20031218/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/pasal/0005> a legal:Pasal .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/a> a legal:Point .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/b> a legal:Point .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/c> a legal:Point .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/d> a legal:Point .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/pasal/0006> a legal:Pasal .
+<http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/bab/0003> a legal:Bab .
+<http://example.org/legal/document/uu/2003/33/bab/0004> a legal:Bab .
+<http://example.org/legal/document/uu/2003/33/bab/0005> a legal:Bab .
+<http://example.org/legal/document/uu/2003/33/bab/0005/bagian> a legal:BagianSet .
+<http://example.org/legal/document/uu/2003/33/bab/0005/bagian/0001> a legal:Bagian .
+<http://example.org/legal/document/uu/2003/33/bab/0005/bagian/0002> a legal:Bagian .
+<http://example.org/legal/document/uu/2003/33/bab/0006> a legal:Bab .
+<http://example.org/legal/document/uu/2003/33/bab/0007> a legal:Bab .
+<http://example.org/legal/document/uu/2003/33/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/mengingat/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0003> a legal:Point .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0004> a legal:Point .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0005> a legal:Point .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0005/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0006> a legal:Point .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0006/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0007> a legal:Point .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0007/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0008> a legal:Point .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0008/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0009> a legal:Point .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0009/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/2003/33/menimbang/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/menimbang/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2003/33/menimbang/point/a> a legal:Point .
+<http://example.org/legal/document/uu/2003/33/menimbang/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/menimbang/point/b> a legal:Point .
+<http://example.org/legal/document/uu/2003/33/menimbang/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/menimbang/point/c> a legal:Point .
+<http://example.org/legal/document/uu/2003/33/menimbang/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/menimbang/point/d> a legal:Point .
+<http://example.org/legal/document/uu/2003/33/menimbang/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/2003/33/bab> legal:partOf <http://example.org/legal/document/uu/2003/33> .
+<http://example.org/legal/document/uu/2003/33/bab/0001> legal:partOf <http://example.org/legal/document/uu/2003/33/bab> .
+<http://example.org/legal/document/uu/2003/33/bab/0001/pasals> legal:partOf <http://example.org/legal/document/uu/2003/33/bab/0001> .
+<http://example.org/legal/document/uu/2003/33/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2003/33/bab/0001/pasals> .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0001> .
+<http://example.org/legal/document/uu/2003/33/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2003/33> .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218> .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point/0001> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point> .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point/0002> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point> .
+<http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point/0003> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0001/version/20031218/point> .
+<http://example.org/legal/document/uu/2003/33/bab/0002> legal:partOf <http://example.org/legal/document/uu/2003/33/bab> .
+<http://example.org/legal/document/uu/2003/33/bab/0002/pasals> legal:partOf <http://example.org/legal/document/uu/2003/33/bab/0002> .
+<http://example.org/legal/document/uu/2003/33/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2003/33/bab/0002/pasals> .
+<http://example.org/legal/document/uu/2003/33/pasal/0002/version/20031218> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0002> .
+<http://example.org/legal/document/uu/2003/33/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2003/33> .
+<http://example.org/legal/document/uu/2003/33/pasal/0003> legal:partOf <http://example.org/legal/document/uu/2003/33/bab/0002/pasals> .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0003> .
+<http://example.org/legal/document/uu/2003/33/pasal/0003> legal:partOf <http://example.org/legal/document/uu/2003/33> .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218> .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/a> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point> .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/b> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point> .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/c> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point> .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/d> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point> .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/e> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point> .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/f> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point> .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/g> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point> .
+<http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point/h> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0003/version/20031218/point> .
+<http://example.org/legal/document/uu/2003/33/pasal/0004> legal:partOf <http://example.org/legal/document/uu/2003/33/bab/0002/pasals> .
+<http://example.org/legal/document/uu/2003/33/pasal/0004/version/20031218> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0004> .
+<http://example.org/legal/document/uu/2003/33/pasal/0004> legal:partOf <http://example.org/legal/document/uu/2003/33> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005> legal:partOf <http://example.org/legal/document/uu/2003/33/bab/0002/pasals> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0005> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005> legal:partOf <http://example.org/legal/document/uu/2003/33> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/a> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/b> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/c> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point/d> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0001/point> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0002> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0003> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat> .
+<http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0005/version/20031218/ayat/0003> .
+<http://example.org/legal/document/uu/2003/33/pasal/0006> legal:partOf <http://example.org/legal/document/uu/2003/33/bab/0002/pasals> .
+<http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0006> .
+<http://example.org/legal/document/uu/2003/33/pasal/0006> legal:partOf <http://example.org/legal/document/uu/2003/33> .
+<http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218> .
+<http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat> .
+<http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat/0001> .
+<http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat> .
+<http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2003/33/pasal/0006/version/20031218/ayat/0002> .
+<http://example.org/legal/document/uu/2003/33/bab/0003> legal:partOf <http://example.org/legal/document/uu/2003/33/bab> .
+<http://example.org/legal/document/uu/2003/33/bab/0003/pasals> legal:partOf <http://example.org/legal/document/uu/2003/33/bab/0003> .
+<http://example.org/legal/document/uu/2003/33/bab/0004> legal:partOf <http://example.org/legal/document/uu/2003/33/bab> .
+<http://example.org/legal/document/uu/2003/33/bab/0004/pasals> legal:partOf <http://example.org/legal/document/uu/2003/33/bab/0004> .
+<http://example.org/legal/document/uu/2003/33/bab/0005> legal:partOf <http://example.org/legal/document/uu/2003/33/bab> .
+<http://example.org/legal/document/uu/2003/33/bab/0005/bagian> legal:partOf <http://example.org/legal/document/uu/2003/33/bab/0005> .
+<http://example.org/legal/document/uu/2003/33/bab/0005/bagian/0001> legal:partOf <http://example.org/legal/document/uu/2003/33/bab/0005/bagian> .
+<http://example.org/legal/document/uu/2003/33/bab/0005/bagian/0001/pasals> legal:partOf <http://example.org/legal/document/uu/2003/33/bab/0005/bagian/0001> .
+<http://example.org/legal/document/uu/2003/33/bab/0005/bagian/0002> legal:partOf <http://example.org/legal/document/uu/2003/33/bab/0005/bagian> .
+<http://example.org/legal/document/uu/2003/33/bab/0005/bagian/0002/pasals> legal:partOf <http://example.org/legal/document/uu/2003/33/bab/0005/bagian/0002> .
+<http://example.org/legal/document/uu/2003/33/bab/0006> legal:partOf <http://example.org/legal/document/uu/2003/33/bab> .
+<http://example.org/legal/document/uu/2003/33/bab/0006/pasals> legal:partOf <http://example.org/legal/document/uu/2003/33/bab/0006> .
+<http://example.org/legal/document/uu/2003/33/bab/0007> legal:partOf <http://example.org/legal/document/uu/2003/33/bab> .
+<http://example.org/legal/document/uu/2003/33/bab/0007/pasals> legal:partOf <http://example.org/legal/document/uu/2003/33/bab/0007> .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2003/33/mengingat/point> .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2003/33/mengingat/point> .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/2003/33/mengingat/point> .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0004> legal:partOf <http://example.org/legal/document/uu/2003/33/mengingat/point> .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0005> legal:partOf <http://example.org/legal/document/uu/2003/33/mengingat/point> .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0006> legal:partOf <http://example.org/legal/document/uu/2003/33/mengingat/point> .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0007> legal:partOf <http://example.org/legal/document/uu/2003/33/mengingat/point> .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0008> legal:partOf <http://example.org/legal/document/uu/2003/33/mengingat/point> .
+<http://example.org/legal/document/uu/2003/33/mengingat/point/0009> legal:partOf <http://example.org/legal/document/uu/2003/33/mengingat/point> .
+<http://example.org/legal/document/uu/2003/33/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/2003/33/menimbang/point> .
+<http://example.org/legal/document/uu/2003/33/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/2003/33/menimbang/point> .
+<http://example.org/legal/document/uu/2003/33/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/2003/33/menimbang/point> .
+<http://example.org/legal/document/uu/2003/33/menimbang/point/d> legal:partOf <http://example.org/legal/document/uu/2003/33/menimbang/point> .

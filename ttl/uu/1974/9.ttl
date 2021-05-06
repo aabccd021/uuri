@@ -1,0 +1,29 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1974/9> legal:documentHasBabSet <http://example.org/legal/document/uu/1974/9/bab> .
+<http://example.org/legal/document/uu/1974/9> legal:documentHasDisahkanDate "1974-12-26"^^xsd:date .
+<http://example.org/legal/document/uu/1974/9> legal:documentMengingat <http://example.org/legal/document/uu/1974/9/mengingat> .
+<http://example.org/legal/document/uu/1974/9/mengingat/text> legal:textHasTextString " Lis Pasal 5 ayat (1), Pasal 11 dan Pasal 20 ayat (1) Undang- Undang Dasar 1945: Da Ketetapan Majelis Permusyawaratan Rakyat Republik Indonesia Nomor IV/MPR/ 1973 tentang Garis-garis Besar Haluan Negara. Dengan Persetujuan Dewan Perwakilan Rakyat Republik Indonesia MEMUTUSKAN Menetapkan UNDANG-UNDANG TENTANG PENGESAHAN PERJANJIAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERINTAH MALAYSIA MENGENAI EKSTRADISI." .
+<http://example.org/legal/document/uu/1974/9/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/1974/9/mengingat/text> .
+<http://example.org/legal/document/uu/1974/9> legal:documentMenimbang <http://example.org/legal/document/uu/1974/9/menimbang> .
+<http://example.org/legal/document/uu/1974/9/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/1974/9/menimbang/point> .
+<http://example.org/legal/document/uu/1974/9/menimbang/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1974/9/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1974/9/menimbang/point/description> .
+<http://example.org/legal/document/uu/1974/9/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/9/menimbang/point/a> .
+<http://example.org/legal/document/uu/1974/9/menimbang/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1974/9/menimbang/point/a/text> legal:textHasTextString "bahwa untuk memperkuat ikatan persahabatan serta kerjasama yang effektif dalam melakukan peradilan antara Indonesia dan Malaysia perlu diadakan perjanjian ekstradisi: bi bahwa pada tanggal 7 Januari 1974 telah ditanda tangani Perjanjian antara Pemerintah Republik Indonesia dan Pemerintah Malaysia mengenai Ekstradisi r Es bahwa Perjanjian tersebut pada huruf b perlu disahkan dengan Undang-undang." .
+<http://example.org/legal/document/uu/1974/9/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/1974/9/menimbang/point/a/text> .
+<http://example.org/legal/document/uu/1974/9> legal:documentHasDisahkanPengesah "SOEHARTO" .
+<http://example.org/legal/document/uu/1974/9> legal:documentHasDisahkanLocation "Jakarta," .
+<http://example.org/legal/document/uu/1974/9> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/1974/9> a legal:Document .
+<http://example.org/legal/document/uu/1974/9/mengingat/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/9/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1974/9/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1974/9/menimbang/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1974/9/menimbang/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1974/9/menimbang/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1974/9/menimbang/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/9/bab> legal:partOf <http://example.org/legal/document/uu/1974/9> .
+<http://example.org/legal/document/uu/1974/9/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1974/9/menimbang/point> .

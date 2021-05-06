@@ -1,0 +1,20 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1953/10> legal:documentHasBabSet <http://example.org/legal/document/uu/1953/10/bab> .
+<http://example.org/legal/document/uu/1953/10> legal:documentHasDisahkanDate "1953-05-09"^^xsd:date .
+<http://example.org/legal/document/uu/1953/10> legal:documentMengingat <http://example.org/legal/document/uu/1953/10/mengingat> .
+<http://example.org/legal/document/uu/1953/10/mengingat/text> legal:textHasTextString "Pasal 73, 89 dan pasal 90 ayat 1 Undang-undang Dasar Sementara Republik Indonesia. Dengan persetujuan: Dewan Perwakilan Rakyat Republik Indonesia. MEMUTUSKAN: Dengan mencabut Undang-undang Nomor 6 tahun 1951 (Lembaran Negara Nomor 40 tahun 1951) Menetapkan : UNDANG-UNDANG TENTANG KEDUDUKAN KEUANGAN KETUA DAN ANGGAUTA DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA. PRESIDEN REPUBLIK INDONESIA -2-" .
+<http://example.org/legal/document/uu/1953/10/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/1953/10/mengingat/text> .
+<http://example.org/legal/document/uu/1953/10> legal:documentMenimbang <http://example.org/legal/document/uu/1953/10/menimbang> .
+<http://example.org/legal/document/uu/1953/10/menimbang/text> legal:textHasTextString "bahwa Undang-undang Nomor 6 tahun 1951 (Lembaran Negara Nomor 40 tahun 1951) tentang gaji dan tunjangan-tunjangan kepada Ketua, tunjangan-tunjangan. biaya perjalanan dan penginapan kepada anggauta- anggauta Dewan Perwakilan Rakyat mengandung banyak kekurangan- kekurangan, dan oleh karenanya perlu diganti." .
+<http://example.org/legal/document/uu/1953/10/menimbang> legal:menimbangHasText <http://example.org/legal/document/uu/1953/10/menimbang/text> .
+<http://example.org/legal/document/uu/1953/10> legal:documentHasDisahkanPengesah "SUKARNO" .
+<http://example.org/legal/document/uu/1953/10> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/1953/10> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/1953/10> a legal:Document .
+<http://example.org/legal/document/uu/1953/10/mengingat/text> a legal:Text .
+<http://example.org/legal/document/uu/1953/10/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1953/10/menimbang/text> a legal:Text .
+<http://example.org/legal/document/uu/1953/10/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1953/10/bab> legal:partOf <http://example.org/legal/document/uu/1953/10> .

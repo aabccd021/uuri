@@ -1,0 +1,36 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1950/3> legal:documentHasBabSet <http://example.org/legal/document/uu/1950/3/bab> .
+<http://example.org/legal/document/uu/1950/3> legal:documentHasDisahkanDate "1950-07-01"^^xsd:date .
+<http://example.org/legal/document/uu/1950/3> legal:documentMengingat <http://example.org/legal/document/uu/1950/3/mengingat> .
+<http://example.org/legal/document/uu/1950/3/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1950/3/mengingat/point> .
+<http://example.org/legal/document/uu/1950/3/mengingat/point/description> legal:textHasTextString "Pasal-pasal 127, 160 dan 192 Konstitusi Sementara, \"Gratieregeling\" (Staatsblad 1933 No. 2), Peraturan Pemerintah Republik Indonesia No. 67 Tahun 1948 tentang permohonan grasi, dan Verordening Militair Gezag tanggal 12-XII-1941 No. 108/D.v.O; Dengan Persetujuan Dewan Perwakilan Rakyat ditjen Peraturan Perundang-undangan MEMUTUSKAN:" .
+<http://example.org/legal/document/uu/1950/3/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1950/3/mengingat/point/description> .
+<http://example.org/legal/document/uu/1950/3/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1950/3/mengingat/point/a> .
+<http://example.org/legal/document/uu/1950/3/mengingat/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1950/3/mengingat/point/a/text> legal:textHasTextString "Mencabut semua peraturan tentang permohonan grasi tersebut di atas." .
+<http://example.org/legal/document/uu/1950/3/mengingat/point/a> legal:pointHasText <http://example.org/legal/document/uu/1950/3/mengingat/point/a/text> .
+<http://example.org/legal/document/uu/1950/3/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1950/3/mengingat/point/b> .
+<http://example.org/legal/document/uu/1950/3/mengingat/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1950/3/mengingat/point/b/text> legal:textHasTextString "Menetapkan peraturan sebagai berikut \"UNDANG-UNDANG TENTANG PERMOHONAN GRASI\"." .
+<http://example.org/legal/document/uu/1950/3/mengingat/point/b> legal:pointHasText <http://example.org/legal/document/uu/1950/3/mengingat/point/b/text> .
+<http://example.org/legal/document/uu/1950/3> legal:documentMenimbang <http://example.org/legal/document/uu/1950/3/menimbang> .
+<http://example.org/legal/document/uu/1950/3/menimbang/text> legal:textHasTextString "bahwa perlu diadakan Undang-undang baru tentang permohonan grasi, yang akan berlaku untuk seluruh daerah Republik Indonesia Serikat;" .
+<http://example.org/legal/document/uu/1950/3/menimbang> legal:menimbangHasText <http://example.org/legal/document/uu/1950/3/menimbang/text> .
+<http://example.org/legal/document/uu/1950/3> legal:documentHasDisahkanPengesah "www.djpp.depkumham.go.id" .
+<http://example.org/legal/document/uu/1950/3> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/1950/3> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK" .
+<http://example.org/legal/document/uu/1950/3> a legal:Document .
+<http://example.org/legal/document/uu/1950/3/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1950/3/mengingat/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1950/3/mengingat/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1950/3/mengingat/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1950/3/mengingat/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1950/3/mengingat/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1950/3/mengingat/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1950/3/menimbang/text> a legal:Text .
+<http://example.org/legal/document/uu/1950/3/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1950/3/bab> legal:partOf <http://example.org/legal/document/uu/1950/3> .
+<http://example.org/legal/document/uu/1950/3/mengingat/point/a> legal:partOf <http://example.org/legal/document/uu/1950/3/mengingat/point> .
+<http://example.org/legal/document/uu/1950/3/mengingat/point/b> legal:partOf <http://example.org/legal/document/uu/1950/3/mengingat/point> .

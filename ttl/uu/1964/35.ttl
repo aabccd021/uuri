@@ -1,0 +1,36 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1964/35> legal:documentHasBabSet <http://example.org/legal/document/uu/1964/35/bab> .
+<http://example.org/legal/document/uu/1964/35> legal:documentHasDisahkanDate "1964-12-31"^^xsd:date .
+<http://example.org/legal/document/uu/1964/35> legal:documentMengingat <http://example.org/legal/document/uu/1964/35/mengingat> .
+<http://example.org/legal/document/uu/1964/35/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1964/35/mengingat/point> .
+<http://example.org/legal/document/uu/1964/35/mengingat/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1964/35/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1964/35/mengingat/point/description> .
+<http://example.org/legal/document/uu/1964/35/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1964/35/mengingat/point/0001> .
+<http://example.org/legal/document/uu/1964/35/mengingat/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/1964/35/mengingat/point/0001/text> legal:textHasTextString "Pasal 23 ayat 1 dan Aturan Peralihan pasal II Undang-undang Dasar:" .
+<http://example.org/legal/document/uu/1964/35/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1964/35/mengingat/point/0001/text> .
+<http://example.org/legal/document/uu/1964/35/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1964/35/mengingat/point/0002> .
+<http://example.org/legal/document/uu/1964/35/mengingat/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/1964/35/mengingat/point/0002/text> legal:textHasTextString "Undang-undang Perbendaharaan Negara Indonesia (Lembaran-Negara tahun 1925 No. 448), seperti telah diubah dan ditambah terakhir dengan Undang- undang No. 12 tahun 1955 (Lembaran-Negara tahun1955 No. 49), 3, Pasal-pasal 7, 8 ayat (2) dan 10 Ketetapan Majelis Permusyawaratan Rakyat Sementara Republik Indonesia No.II/MPRS/ 1960: Dengan persetujuan Dewan Perwakilan Rakyat Gotong Royong: MEMUTUSKAN : Menetapkan: UNDANG-UNDANG TENTANG PERUBAHAN DAN TAMBAHAN ATAS ANGGARAN PENDAPATAN DAN BELANJA NEGARA UNTUK TAHUN 1963 (UNDANG-UNDANG NO. 9 TAHUN 1963 (LEMBARAN-NEGARA TAHUN L963 NO.91)." .
+<http://example.org/legal/document/uu/1964/35/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1964/35/mengingat/point/0002/text> .
+<http://example.org/legal/document/uu/1964/35> legal:documentMenimbang <http://example.org/legal/document/uu/1964/35/menimbang> .
+<http://example.org/legal/document/uu/1964/35/menimbang/text> legal:textHasTextString " Bahwa Anggaran Pendapatan dan Belanja Negara tahun 1963, sebagaimana ditetapkan dengan Undang-undang No. 9 tahun 1963 (Lembaran-Negara tahun 1963 No. 91) perlu diubah dan ditambah:" .
+<http://example.org/legal/document/uu/1964/35/menimbang> legal:menimbangHasText <http://example.org/legal/document/uu/1964/35/menimbang/text> .
+<http://example.org/legal/document/uu/1964/35> legal:documentHasDisahkanPengesah "Diundangkan di Jakarta" .
+<http://example.org/legal/document/uu/1964/35> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/1964/35> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/1964/35> a legal:Document .
+<http://example.org/legal/document/uu/1964/35/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1964/35/mengingat/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1964/35/mengingat/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1964/35/mengingat/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/1964/35/mengingat/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1964/35/mengingat/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/1964/35/mengingat/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1964/35/menimbang/text> a legal:Text .
+<http://example.org/legal/document/uu/1964/35/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1964/35/bab> legal:partOf <http://example.org/legal/document/uu/1964/35> .
+<http://example.org/legal/document/uu/1964/35/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1964/35/mengingat/point> .
+<http://example.org/legal/document/uu/1964/35/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1964/35/mengingat/point> .

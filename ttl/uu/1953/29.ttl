@@ -1,0 +1,36 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1953/29> legal:documentHasBabSet <http://example.org/legal/document/uu/1953/29/bab> .
+<http://example.org/legal/document/uu/1953/29> legal:documentHasDisahkanDate "1953-12-18"^^xsd:date .
+<http://example.org/legal/document/uu/1953/29> legal:documentMengingat <http://example.org/legal/document/uu/1953/29/mengingat> .
+<http://example.org/legal/document/uu/1953/29/mengingat/text> legal:textHasTextString "Pasal 97, 89 dan 117 Undang - undang Dasar Sementara Republik Indonesia; Dengan persetujuan Dewan Perwakilan Rakjat : MEMUTUSKAN: Menetapkan : UNDANG - UNDANG TENTANG PENETAPAN \"UNDANG - UNDANG DARURAT NOMOR 21 TAHUN 1951 TENTANG PENGENAAN TAMBAHAN OPSENTEN ATAS BENSIN DAN SEBAGAINJA \" SEBAGAI UNDANG - UNDANG. PRESIDEN REPUBLIK INDONESIA - 2 - Pasal 1. Peraturan - peraturan jang termaktub dalam Undang - undang Darurat Nomor 21 tahun 1951 tentang pengenaan tambahan opsenten atas bensin dan sebagainja (Lembaran Negara Nomor 96 tahun 1951 ditetapkan sebagai Undang - undang jang berbunyi sebagai berikut:" .
+<http://example.org/legal/document/uu/1953/29/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/1953/29/mengingat/text> .
+<http://example.org/legal/document/uu/1953/29> legal:documentMenimbang <http://example.org/legal/document/uu/1953/29/menimbang> .
+<http://example.org/legal/document/uu/1953/29/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/1953/29/menimbang/point> .
+<http://example.org/legal/document/uu/1953/29/menimbang/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1953/29/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1953/29/menimbang/point/description> .
+<http://example.org/legal/document/uu/1953/29/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1953/29/menimbang/point/a> .
+<http://example.org/legal/document/uu/1953/29/menimbang/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1953/29/menimbang/point/a/text> legal:textHasTextString "bahwa Pemerintah berdasarkan Pasal 96 ayat 1 Undang - undang Dasar Sementara Republik Indonesia telah menetapkan Undang - undang Darurat Nomor 21 tahun 1951 tentang pengenaan tambahan opsenten atas bensin dan sebagainja (Lembaran Negara N omor 96 tahun 1951);" .
+<http://example.org/legal/document/uu/1953/29/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/1953/29/menimbang/point/a/text> .
+<http://example.org/legal/document/uu/1953/29/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1953/29/menimbang/point/b> .
+<http://example.org/legal/document/uu/1953/29/menimbang/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1953/29/menimbang/point/b/text> legal:textHasTextString "bahwa peraturan - peraturan. jang termaktub dalam Undang - undang Darurat tersebut perlu ditetapkan sebagai Undang - undang;" .
+<http://example.org/legal/document/uu/1953/29/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/1953/29/menimbang/point/b/text> .
+<http://example.org/legal/document/uu/1953/29> legal:documentHasDisahkanPengesah "SUKARNO" .
+<http://example.org/legal/document/uu/1953/29> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/1953/29> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/1953/29> a legal:Document .
+<http://example.org/legal/document/uu/1953/29/mengingat/text> a legal:Text .
+<http://example.org/legal/document/uu/1953/29/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1953/29/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1953/29/menimbang/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1953/29/menimbang/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1953/29/menimbang/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1953/29/menimbang/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1953/29/menimbang/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1953/29/menimbang/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1953/29/bab> legal:partOf <http://example.org/legal/document/uu/1953/29> .
+<http://example.org/legal/document/uu/1953/29/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1953/29/menimbang/point> .
+<http://example.org/legal/document/uu/1953/29/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1953/29/menimbang/point> .

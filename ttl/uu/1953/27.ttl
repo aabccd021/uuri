@@ -1,0 +1,36 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1953/27> legal:documentHasBabSet <http://example.org/legal/document/uu/1953/27/bab> .
+<http://example.org/legal/document/uu/1953/27> legal:documentHasDisahkanDate "1953-12-18"^^xsd:date .
+<http://example.org/legal/document/uu/1953/27> legal:documentMengingat <http://example.org/legal/document/uu/1953/27/mengingat> .
+<http://example.org/legal/document/uu/1953/27/mengingat/text> legal:textHasTextString "Pasal 97 ayat 1 jo. Pasal 89 dan Pasal 109 Undang - undang Dasar Sementara Republik Indonesia; Dengan persetujuan Dewan Perwakilan Rakyat. MEMUTUSKAN: Menetapkan : UNDANG - UNDANG TENTANG PENETAPAN \"UNDANG - UNDANG DARURAT TENTANG PENGHENTIAN BERLAKUNYA \"INDISCH E MUNTWET 1912\" DAN PENETAPAN PERATURAN BARU TENTANG MATA UANG\" (UNDANG - UNDANG DARURAT NOMOR 20 TAHUN 1951) SEBAGAI UNDANG - UNDANG. PRESIDEN REPUBLIK INDONESIA - 2 - PASAL I Peraturan - peraturan yang termaktub dalam \"Undang - undang Darurat tentang penghentian berlakunya \"Indisc he Muntwet 1912\" dan penetapan peraturan baru tentang mata - uang\" (Undang - undang Darurat No. 20 tahun 1951) ditetapkan sebagai undang - undang yang berbunyi sebagai berikut. UNDANG - UNDANG TENTANG PENGHENTIAN BERLAKUNYA \"INDISCHE MUTWET 1912\" DAN PENETAPAN PE RATURAN BARU TENTANG MATA - UANG." .
+<http://example.org/legal/document/uu/1953/27/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/1953/27/mengingat/text> .
+<http://example.org/legal/document/uu/1953/27> legal:documentMenimbang <http://example.org/legal/document/uu/1953/27/menimbang> .
+<http://example.org/legal/document/uu/1953/27/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/1953/27/menimbang/point> .
+<http://example.org/legal/document/uu/1953/27/menimbang/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1953/27/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1953/27/menimbang/point/description> .
+<http://example.org/legal/document/uu/1953/27/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1953/27/menimbang/point/a> .
+<http://example.org/legal/document/uu/1953/27/menimbang/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1953/27/menimbang/point/a/text> legal:textHasTextString "bahwa Pemerintah dengan menggunakan haknya termaktub dalam Pasal 96 ayat 1 Undang - undang Dasar Sementara Republik Indonesia telah menetapkan \"Undang - undang Darurat tentang penghentian berlakunya \"Indische Muntwet 1912\" dan penetapan peraturan baru tentang mata uang\" (Undang - undang Darurat Nomor 20 tahun 1951);" .
+<http://example.org/legal/document/uu/1953/27/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/1953/27/menimbang/point/a/text> .
+<http://example.org/legal/document/uu/1953/27/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1953/27/menimbang/point/b> .
+<http://example.org/legal/document/uu/1953/27/menimbang/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1953/27/menimbang/point/b/text> legal:textHasTextString "bahwa peraturan yang termaktub dalam Undang - undang Darurat tersebut perlu ditetapkan sebagai Undang - undang;" .
+<http://example.org/legal/document/uu/1953/27/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/1953/27/menimbang/point/b/text> .
+<http://example.org/legal/document/uu/1953/27> legal:documentHasDisahkanPengesah "SUKARNO" .
+<http://example.org/legal/document/uu/1953/27> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/1953/27> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/1953/27> a legal:Document .
+<http://example.org/legal/document/uu/1953/27/mengingat/text> a legal:Text .
+<http://example.org/legal/document/uu/1953/27/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1953/27/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1953/27/menimbang/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1953/27/menimbang/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1953/27/menimbang/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1953/27/menimbang/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1953/27/menimbang/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1953/27/menimbang/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1953/27/bab> legal:partOf <http://example.org/legal/document/uu/1953/27> .
+<http://example.org/legal/document/uu/1953/27/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1953/27/menimbang/point> .
+<http://example.org/legal/document/uu/1953/27/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1953/27/menimbang/point> .
