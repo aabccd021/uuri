@@ -1,0 +1,78 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/2017/1> legal:documentHasBabSet <http://example.org/legal/document/uu/2017/1/bab> .
+<http://example.org/legal/document/uu/2017/1> legal:documentHasDisahkanDate "2017-01-12"^^xsd:date .
+<http://example.org/legal/document/uu/2017/1> legal:documentMengingat <http://example.org/legal/document/uu/2017/1/mengingat> .
+<http://example.org/legal/document/uu/2017/1/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2017/1/mengingat/point> .
+<http://example.org/legal/document/uu/2017/1/mengingat/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/2017/1/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2017/1/mengingat/point/description> .
+<http://example.org/legal/document/uu/2017/1/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2017/1/mengingat/point/0001> .
+<http://example.org/legal/document/uu/2017/1/mengingat/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/2017/1/mengingat/point/0001/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 11, Pasal 20, dan Pasal 25A Undang- Undang Dasar Negara Republik Indonesia Tahun 1945," .
+<http://example.org/legal/document/uu/2017/1/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/2017/1/mengingat/point/0001/text> .
+<http://example.org/legal/document/uu/2017/1/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2017/1/mengingat/point/0002> .
+<http://example.org/legal/document/uu/2017/1/mengingat/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/2017/1/mengingat/point/0002/text> legal:textHasTextString "Undang-Undang Nomor 24 Tahun 2000 tentang Perjanjian Internasional (Lembaran Negara Republik Indonesia Tahun 2000 Nomor 185, Tambahan Lembaran Negara Republik Indonesia Nomor 4012), Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA dan PRESIDEN REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan: UNDANG-UNDANG TENTANG PENGESAHAN PERJANJIAN ANTARA REPUBLIK INDONESIA DAN REPUBLIK SINGAPURA TENTANG PENETAPAN GARIS BATAS LAUT WILAYAH KEDUA NEGARA DI BAGIAN TIMUR SELAT SINGAPURA, 2014 (TREATY BETWEEN THE REPUBLIC OF INDONESIA AND THE REPUBLIC OF SINGAPORE RELATING TO THE DELIMITATION OF THE TERRITORIAL SEAS OF THE TWO COUNTRIES IN THE EASTERN PART OF THE STRAIT OF SINGAPORE, 2014). Pasal 1... PRESIDEN REPUBLIK INDONESIA .4-" .
+<http://example.org/legal/document/uu/2017/1/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/2017/1/mengingat/point/0002/text> .
+<http://example.org/legal/document/uu/2017/1/mengingat/point/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2000/24> .
+<http://example.org/legal/document/uu/2017/1> legal:documentMenimbang <http://example.org/legal/document/uu/2017/1/menimbang> .
+<http://example.org/legal/document/uu/2017/1/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/2017/1/menimbang/point> .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/2017/1/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2017/1/menimbang/point/description> .
+<http://example.org/legal/document/uu/2017/1/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2017/1/menimbang/point/a> .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/a/text> legal:textHasTextString "bahwa Negara Kesatuan Republik Indonesia sebagai negara kepulauan yang berciri nusantara mempunyai kedaulatan atas wilayahnya, termasuk di Laut Wilayah, untuk dikelola dan dimanfaatkan sebesar-besarnya bagi kesejahteraan dan kemakmuran rakyat Indonesia sebagaimana diamanatkan dalam Undang-Undang Dasar Negara Republik Indonesia Tahun 1945:" .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/2017/1/menimbang/point/a/text> .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/a/text> legal:textReferencesLegal <http://example.org/legal/document/uu> .
+<http://example.org/legal/document/uu/2017/1/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2017/1/menimbang/point/b> .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/b/text> legal:textHasTextString "bahwa untuk melaksanakan ketentuan Konvensi Perserikatan Bangsa-Bangsa tentang Hukum Laut, 1982 (United Nations Convention on the Law of the Sea, 1982) yang disahkan melalui Undang-Undang Nomor 17 Tahun 1985 tentang Pengesahan United Nations Convention on the Law of the Sea (Konvensi Perserikatan Bangsa-Bangsa tentang Hukum Laut) dan Undang-Undang Nomor 43 Tahun 2008 tentang Wilayah Negara, Indonesia berkewajiban untuk menetapkan garis batas laut wilayahnya melalui perundingan, Had AP £ AG S5) Ha PRESIDEN REPUBLIK INDONESIA -D-" .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/2017/1/menimbang/point/b/text> .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/b/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2008/43> .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/b/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1985/17> .
+<http://example.org/legal/document/uu/2017/1/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2017/1/menimbang/point/c> .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/c/text> legal:textHasTextString "bahwa untuk menetapkan garis batas Laut Wilayah antara Republik Indonesia dan Republik Singapura serta untuk memperkuat dan meningkatkan hubungan persahabatan antara kedua negara, pada tanggal 3 September 2014 di Singapura telah ditandatangani Perjanjian antara Republik Indonesia dan Republik Singapura tentang Penetapan Garis Batas Laut Wilayah Kedua Negara di Bagian Timur Selat Singapura (Treaty between the Republic of Indonesia and the Republic of Singapore relating to the Delimitation of the Territorial Seas of the Two Countries in the Eastern Part of the Strait of Singapore):" .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/2017/1/menimbang/point/c/text> .
+<http://example.org/legal/document/uu/2017/1/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2017/1/menimbang/point/d> .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/d/text> legal:textHasTextString "bahwa sesuai dengan ketentuan Pasal 10 Undang-Undang Nomor 24 Tahun 2000 tentang Perjanjian Internasional, perjanjian internasional sebagaimana dimaksud dalam huruf c, perlu disahkan dengan Undang-Undang," .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/2017/1/menimbang/point/d/text> .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/d/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2000/24> .
+<http://example.org/legal/document/uu/2017/1/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2017/1/menimbang/point/e> .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/e/text> legal:textHasTextString "bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a, huruf b, huruf c, dan huruf d, perlu membentuk Undang-Undang tentang Pengesahan Perjanjian antara Republik Indonesia dan Republik Singapura tentang Penetapan Garis Batas Laut Wilayah Kedua Negara di Bagian Timur Selat Singapura, 2014 (Treaty between the Republic of Indonesia and the Republic of Singapore relating to the Delimitation of the Territorial Seas of the Two Countries in the Eastern Part of the Strait of Singapore, 2014), PRESIDEN REPUBLIK INDONESIA 3 -" .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/e> legal:pointHasText <http://example.org/legal/document/uu/2017/1/menimbang/point/e/text> .
+<http://example.org/legal/document/uu/2017/1> legal:documentHasDisahkanPengesah "JOKO WIDODO" .
+<http://example.org/legal/document/uu/2017/1> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/2017/1> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/2017/1> a legal:Document .
+<http://example.org/legal/document/uu/2017/1/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/2017/1/mengingat/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2017/1/mengingat/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2017/1/mengingat/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/2017/1/mengingat/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2017/1/mengingat/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/2017/1/mengingat/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2017/1/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2017/1/menimbang/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/a> a legal:Point .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/b> a legal:Point .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/c> a legal:Point .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/d> a legal:Point .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/e> a legal:Point .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/2017/1/bab> legal:partOf <http://example.org/legal/document/uu/2017/1> .
+<http://example.org/legal/document/uu/2017/1/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2017/1/mengingat/point> .
+<http://example.org/legal/document/uu/2017/1/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2017/1/mengingat/point> .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/2017/1/menimbang/point> .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/2017/1/menimbang/point> .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/2017/1/menimbang/point> .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/d> legal:partOf <http://example.org/legal/document/uu/2017/1/menimbang/point> .
+<http://example.org/legal/document/uu/2017/1/menimbang/point/e> legal:partOf <http://example.org/legal/document/uu/2017/1/menimbang/point> .
