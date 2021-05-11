@@ -1,0 +1,1041 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/2013/4> legal:documentHasBabSet <http://example.org/legal/document/uu/2013/4/bab> .
+<http://example.org/legal/document/uu/2013/4/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2013/4/bab/0001> .
+<http://example.org/legal/document/uu/2013/4/bab/0001> legal:babHasKey 1 .
+<http://example.org/legal/document/uu/2013/4/bab/0001> legal:babHasTitle "KETENTUAN UMUM" .
+<http://example.org/legal/document/uu/2013/4/bab/0001> legal:babHasPasalSet <http://example.org/legal/document/uu/2013/4/bab/0001/pasals> .
+<http://example.org/legal/document/uu/2013/4/bab/0001/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/2013/4/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111> .
+<http://example.org/legal/document/uu/2013/4> legal:documentHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111> legal:pasalVersionHasVersionDate "2013-01-11"^^xsd:date .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111> legal:pasalVersionHasRawText "Dalam Undang-Undang ini yang dimaksud dengan:\n1. Pemerintah pusat, selanjutnya disebut Pemerintah, adalah Presiden Republik Indonesia yang memegang kekuasaan pemerintahan negara Republik Indonesia sebagaimana dimaksud dalam Undang-Undang Dasar Negara Republik Indonesia Tahun 1945. HK . g ) Aa 3 Tata 3 PRESIDEN REPUBLIK INDONESIA “4 -\n2. Daerah otonom, selanjutnya disebut daerah, adalah kesatuan masyarakat hukum yang mempunyai batas-batas wilayah yang berwenang mengatur dan mengurus urusan pemerintahan dan kepentingan masyarakat setempat menurut prakarsa sendiri berdasarkan aspirasi masyarakat dalam sistem Negara Kesatuan Republik Indonesia.\n3. Provinsi Sulawesi Barat adalah provinsi sebagaimana dimaksud dalam Undang-Undang Nomor 26 Tahun 2004 tentang Pembentukan Provinsi Sulawesi Barat.\n4. Kabupaten Mamuju adalah kabupaten sebagaimana dimaksud dalam Undang-Undang Nomor 29 Tahun 1959 tentang Pembentukan Daerah-Daerah Tingkat II di Sulawesi, yang wilayahnya telah dikurangi dengan Kabupaten Mamuju Utara berdasarkan Undang-Undang Nomor 7 Tahun 2003 tentang Pembentukan Kabupaten Luwu Timur dan Kabupaten Mamuju Utara di Provinsi Sulawesi Selatan, yang merupakan kabupaten asal Kabupaten Mamuju Tengah.\n" .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point> .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/description> legal:textHasTextString "Dalam Undang-Undang ini yang dimaksud dengan:" .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/description> .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0001/text> legal:textHasTextString "Pemerintah pusat, selanjutnya disebut Pemerintah, adalah Presiden Republik Indonesia yang memegang kekuasaan pemerintahan negara Republik Indonesia sebagaimana dimaksud dalam Undang-Undang Dasar Negara Republik Indonesia Tahun 1945. HK . g ) Aa 3 Tata 3 PRESIDEN REPUBLIK INDONESIA “4 -" .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0001> legal:pointHasText <http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0001/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu> .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0002/text> legal:textHasTextString "Daerah otonom, selanjutnya disebut daerah, adalah kesatuan masyarakat hukum yang mempunyai batas-batas wilayah yang berwenang mengatur dan mengurus urusan pemerintahan dan kepentingan masyarakat setempat menurut prakarsa sendiri berdasarkan aspirasi masyarakat dalam sistem Negara Kesatuan Republik Indonesia." .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0002> legal:pointHasText <http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0002/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0003> .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0003> legal:pointHasKey "3" .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0003/text> legal:textHasTextString "Provinsi Sulawesi Barat adalah provinsi sebagaimana dimaksud dalam Undang-Undang Nomor 26 Tahun 2004 tentang Pembentukan Provinsi Sulawesi Barat." .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0003> legal:pointHasText <http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0003/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2004/26> .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0004> .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0004> legal:pointHasKey "4" .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0004/text> legal:textHasTextString "Kabupaten Mamuju adalah kabupaten sebagaimana dimaksud dalam Undang-Undang Nomor 29 Tahun 1959 tentang Pembentukan Daerah-Daerah Tingkat II di Sulawesi, yang wilayahnya telah dikurangi dengan Kabupaten Mamuju Utara berdasarkan Undang-Undang Nomor 7 Tahun 2003 tentang Pembentukan Kabupaten Luwu Timur dan Kabupaten Mamuju Utara di Provinsi Sulawesi Selatan, yang merupakan kabupaten asal Kabupaten Mamuju Tengah." .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0004> legal:pointHasText <http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0004/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2003/7> .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1959/29> .
+<http://example.org/legal/document/uu/2013/4/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2013/4/bab/0002> .
+<http://example.org/legal/document/uu/2013/4/bab/0002> legal:babHasKey 2 .
+<http://example.org/legal/document/uu/2013/4/bab/0002> legal:babHasTitle "PEMBENTUKAN, CAKUPAN WILAYAH, BATAS WILAYAH, DAN IBU KOTA" .
+<http://example.org/legal/document/uu/2013/4/bab/0002> legal:babHasBagianSet <http://example.org/legal/document/uu/2013/4/bab/0002/bagian> .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian> legal:bagianSetHasBagian <http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0001> .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0001> legal:bagianHasKey 1 .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0001> legal:bagianHasTitle "Bagian Kesatu Pembentukan" .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0001> legal:bagianHasPasalSet <http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0001/pasals> .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0001/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/2013/4/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2013/4/pasal/0002/version/20130111> .
+<http://example.org/legal/document/uu/2013/4> legal:documentHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0002/version/20130111> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2013/4/pasal/0002/version/20130111> legal:pasalVersionHasVersionDate "2013-01-11"^^xsd:date .
+<http://example.org/legal/document/uu/2013/4/pasal/0002/version/20130111> legal:pasalVersionHasRawText "Dengan Undang-Undang ini dibentuk Kabupaten Mamuju Tengah di wilayah Provinsi Sulawesi Barat dalam Negara Kesatuan Republik Indonesia." .
+<http://example.org/legal/document/uu/2013/4/pasal/0002/version/20130111/text> legal:textHasTextString "Dengan Undang-Undang ini dibentuk Kabupaten Mamuju Tengah di wilayah Provinsi Sulawesi Barat dalam Negara Kesatuan Republik Indonesia." .
+<http://example.org/legal/document/uu/2013/4/pasal/0002/version/20130111> legal:pasalVersionHasText <http://example.org/legal/document/uu/2013/4/pasal/0002/version/20130111/text> .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian> legal:bagianSetHasBagian <http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0002> .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0002> legal:bagianHasKey 2 .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0002> legal:bagianHasTitle "Bagian Kedua Cakupan Wilayah" .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0002> legal:bagianHasPasalSet <http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0002/pasals> .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0003> .
+<http://example.org/legal/document/uu/2013/4/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/2013/4/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111> .
+<http://example.org/legal/document/uu/2013/4> legal:documentHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0003> .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111> legal:pasalVersionHasVersionDate "2013-01-11"^^xsd:date .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111> legal:pasalVersionHasRawText "(1). Kabupaten Mamuju Tengah berasal dari sebagian wilayah Kabupaten Mamuju yang terdiri atas cakupan wilayah:\na. Kecamatan Tobadak,\nb. Kecamatan Pangale: HK . Kg N & Tata 3 PRESIDEN REPUBLIK INDONESIA -.5-\nc. Kecamatan Budong Budong,\nd. Kecamatan Topoyo, dan\ne. Kecamatan Karossa.\n\n(2). Cakupan wilayah sebagaimana dimaksud pada ayat (1) digambarkan dalam peta wilayah yang tercantum dalam lampiran dan merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001> legal:ayatHasRawText "Kabupaten Mamuju Tengah berasal dari sebagian wilayah Kabupaten Mamuju yang terdiri atas cakupan wilayah:\na. Kecamatan Tobadak,\nb. Kecamatan Pangale: HK . Kg N & Tata 3 PRESIDEN REPUBLIK INDONESIA -.5-\nc. Kecamatan Budong Budong,\nd. Kecamatan Topoyo, dan\ne. Kecamatan Karossa.\n" .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point> .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/description> legal:textHasTextString "Kabupaten Mamuju Tengah berasal dari sebagian wilayah Kabupaten Mamuju yang terdiri atas cakupan wilayah:" .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/description> .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/a> .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/a/text> legal:textHasTextString "Kecamatan Tobadak," .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/a/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/b> .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/b/text> legal:textHasTextString "Kecamatan Pangale: HK . Kg N & Tata 3 PRESIDEN REPUBLIK INDONESIA -.5-" .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/b> legal:pointHasText <http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/b/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/c> .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/c/text> legal:textHasTextString "Kecamatan Budong Budong," .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/c> legal:pointHasText <http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/c/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/d> .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/d/text> legal:textHasTextString "Kecamatan Topoyo, dan" .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/d> legal:pointHasText <http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/d/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/e> .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/e/text> legal:textHasTextString "Kecamatan Karossa." .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/e> legal:pointHasText <http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/e/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0002> legal:ayatHasRawText "Cakupan wilayah sebagaimana dimaksud pada ayat (1) digambarkan dalam peta wilayah yang tercantum dalam lampiran dan merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0002/text> legal:textHasTextString "Cakupan wilayah sebagaimana dimaksud pada ayat (1) digambarkan dalam peta wilayah yang tercantum dalam lampiran dan merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0002/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0004> .
+<http://example.org/legal/document/uu/2013/4/pasal/0004> legal:pasalHasKey 4 .
+<http://example.org/legal/document/uu/2013/4/pasal/0004> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2013/4/pasal/0004/version/20130111> .
+<http://example.org/legal/document/uu/2013/4> legal:documentHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0004> .
+<http://example.org/legal/document/uu/2013/4/pasal/0004/version/20130111> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2013/4/pasal/0004/version/20130111> legal:pasalVersionHasVersionDate "2013-01-11"^^xsd:date .
+<http://example.org/legal/document/uu/2013/4/pasal/0004/version/20130111> legal:pasalVersionHasRawText "Dengan terbentuknya Kabupaten Mamuju Tengah, sebagaimana dimaksud dalam Pasal 2, wilayah Kabupaten Mamuju dikurangi dengan wilayah Kabupaten Mamuju Tengah sebagaimana dimaksud dalam Pasal 3." .
+<http://example.org/legal/document/uu/2013/4/pasal/0004/version/20130111/text> legal:textHasTextString "Dengan terbentuknya Kabupaten Mamuju Tengah, sebagaimana dimaksud dalam Pasal 2, wilayah Kabupaten Mamuju dikurangi dengan wilayah Kabupaten Mamuju Tengah sebagaimana dimaksud dalam Pasal 3." .
+<http://example.org/legal/document/uu/2013/4/pasal/0004/version/20130111> legal:pasalVersionHasText <http://example.org/legal/document/uu/2013/4/pasal/0004/version/20130111/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0004/version/20130111/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/4/pasal/0003> .
+<http://example.org/legal/document/uu/2013/4/pasal/0004/version/20130111/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/4/pasal/0002> .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian> legal:bagianSetHasBagian <http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0003> .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0003> legal:bagianHasKey 3 .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0003> legal:bagianHasTitle "Bagian Ketiga Batas Wilayah" .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0003> legal:bagianHasPasalSet <http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0003/pasals> .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0003/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0005> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005> legal:pasalHasKey 5 .
+<http://example.org/legal/document/uu/2013/4/pasal/0005> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111> .
+<http://example.org/legal/document/uu/2013/4> legal:documentHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0005> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111> legal:pasalVersionHasVersionDate "2013-01-11"^^xsd:date .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111> legal:pasalVersionHasRawText "(1). Kabupaten Mamuju Tengah mempunyai batas-batas wilayah:\na. sebelah utara berbatasan dengan Sungai Benggaulu Desa Benggaulu Kecamatan Dapurang Kabupaten Mamuju Utara,\nb. sebelah timur berbatasan dengan Desa Batu Bicara, Kecamatan Seko Kabupaten Luwu Utara Provinsi Sulawesi Selatan:\nc. sebelah selatan berbatasan dengan Sungai Karama dan Desa Tarailu Kecamatan Sampaga, Kecamatan Tommo Kabupaten Mamuju, dan\nd. sebelah barat berbatasan dengan Selat Makassar.\n\n(2). Batas wilayah sebagaimana dimaksud pada ayat (1) digambarkan dalam peta wilayah lengkap dengan titik-titik koordinat dan telah mendapatkan persetujuan dari pihak- pihak terkait yang tercantum dalam lampiran dan merupakan bagian yang tidak terpisahkan dari Undang- Undang ini. HK . g ) Aa 3 Tata 3 PRESIDEN REPUBLIK INDONESIA -6-\n(3). Penetapan batas wilayah Kabupaten Mamuju Tengah secara pasti di lapangan sebagaimana dimaksud pada ayat (1) dan ayat (2), ditetapkan oleh Menteri Dalam Negeri paling lambat 5 (lima) tahun sejak peresmian Kabupaten Mamuju Tengah." .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001> legal:ayatHasRawText "Kabupaten Mamuju Tengah mempunyai batas-batas wilayah:\na. sebelah utara berbatasan dengan Sungai Benggaulu Desa Benggaulu Kecamatan Dapurang Kabupaten Mamuju Utara,\nb. sebelah timur berbatasan dengan Desa Batu Bicara, Kecamatan Seko Kabupaten Luwu Utara Provinsi Sulawesi Selatan:\nc. sebelah selatan berbatasan dengan Sungai Karama dan Desa Tarailu Kecamatan Sampaga, Kecamatan Tommo Kabupaten Mamuju, dan\nd. sebelah barat berbatasan dengan Selat Makassar.\n" .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/description> legal:textHasTextString "Kabupaten Mamuju Tengah mempunyai batas-batas wilayah:" .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/description> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/a> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/a/text> legal:textHasTextString "sebelah utara berbatasan dengan Sungai Benggaulu Desa Benggaulu Kecamatan Dapurang Kabupaten Mamuju Utara," .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/a/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/b> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/b/text> legal:textHasTextString "sebelah timur berbatasan dengan Desa Batu Bicara, Kecamatan Seko Kabupaten Luwu Utara Provinsi Sulawesi Selatan:" .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/b> legal:pointHasText <http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/b/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/c> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/c/text> legal:textHasTextString "sebelah selatan berbatasan dengan Sungai Karama dan Desa Tarailu Kecamatan Sampaga, Kecamatan Tommo Kabupaten Mamuju, dan" .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/c> legal:pointHasText <http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/c/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/d> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/d/text> legal:textHasTextString "sebelah barat berbatasan dengan Selat Makassar." .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/d> legal:pointHasText <http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/d/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0002> legal:ayatHasRawText "Batas wilayah sebagaimana dimaksud pada ayat (1) digambarkan dalam peta wilayah lengkap dengan titik-titik koordinat dan telah mendapatkan persetujuan dari pihak- pihak terkait yang tercantum dalam lampiran dan merupakan bagian yang tidak terpisahkan dari Undang- Undang ini. HK . g ) Aa 3 Tata 3 PRESIDEN REPUBLIK INDONESIA -6-" .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0002/text> legal:textHasTextString "Batas wilayah sebagaimana dimaksud pada ayat (1) digambarkan dalam peta wilayah lengkap dengan titik-titik koordinat dan telah mendapatkan persetujuan dari pihak- pihak terkait yang tercantum dalam lampiran dan merupakan bagian yang tidak terpisahkan dari Undang- Undang ini. HK . g ) Aa 3 Tata 3 PRESIDEN REPUBLIK INDONESIA -6-" .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0002/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0003> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0003> legal:ayatHasRawText "Penetapan batas wilayah Kabupaten Mamuju Tengah secara pasti di lapangan sebagaimana dimaksud pada ayat (1) dan ayat (2), ditetapkan oleh Menteri Dalam Negeri paling lambat 5 (lima) tahun sejak peresmian Kabupaten Mamuju Tengah." .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0003/text> legal:textHasTextString "Penetapan batas wilayah Kabupaten Mamuju Tengah secara pasti di lapangan sebagaimana dimaksud pada ayat (1) dan ayat (2), ditetapkan oleh Menteri Dalam Negeri paling lambat 5 (lima) tahun sejak peresmian Kabupaten Mamuju Tengah." .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0003/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0003/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0006> .
+<http://example.org/legal/document/uu/2013/4/pasal/0006> legal:pasalHasKey 6 .
+<http://example.org/legal/document/uu/2013/4/pasal/0006> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111> .
+<http://example.org/legal/document/uu/2013/4> legal:documentHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0006> .
+<http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111> legal:pasalVersionHasVersionDate "2013-01-11"^^xsd:date .
+<http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111> legal:pasalVersionHasRawText "(1). Dengan terbentuknya Kabupaten Mamuju Tengah sebagaimana dimaksud dalam Pasal 2, Pemerintah Kabupaten Mamuju Tengah menetapkan Rencana Tata Ruang Wilayah Kabupaten Mamuju Tengah sesuai dengan peraturan perundang-undangan.\n(2). Penetapan Rencana Tata Ruang Wilayah Kabupaten Mamuju Tengah sebagaimana dimaksud pada ayat (1) dilakukan sesuai dengan Rencana Tata Ruang Wilayah Nasional dan Rencana Tata Ruang Wilayah Provinsi Sulawesi Barat serta memperhatikan Rencana Tata Ruang Wilayah kabupaten /kota di sekitarnya." .
+<http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111/ayat/0001> legal:ayatHasRawText "Dengan terbentuknya Kabupaten Mamuju Tengah sebagaimana dimaksud dalam Pasal 2, Pemerintah Kabupaten Mamuju Tengah menetapkan Rencana Tata Ruang Wilayah Kabupaten Mamuju Tengah sesuai dengan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111/ayat/0001/text> legal:textHasTextString "Dengan terbentuknya Kabupaten Mamuju Tengah sebagaimana dimaksud dalam Pasal 2, Pemerintah Kabupaten Mamuju Tengah menetapkan Rencana Tata Ruang Wilayah Kabupaten Mamuju Tengah sesuai dengan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111/ayat/0001/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/4/pasal/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111/ayat/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111/ayat/0002> legal:ayatHasRawText "Penetapan Rencana Tata Ruang Wilayah Kabupaten Mamuju Tengah sebagaimana dimaksud pada ayat (1) dilakukan sesuai dengan Rencana Tata Ruang Wilayah Nasional dan Rencana Tata Ruang Wilayah Provinsi Sulawesi Barat serta memperhatikan Rencana Tata Ruang Wilayah kabupaten /kota di sekitarnya." .
+<http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111/ayat/0002/text> legal:textHasTextString "Penetapan Rencana Tata Ruang Wilayah Kabupaten Mamuju Tengah sebagaimana dimaksud pada ayat (1) dilakukan sesuai dengan Rencana Tata Ruang Wilayah Nasional dan Rencana Tata Ruang Wilayah Provinsi Sulawesi Barat serta memperhatikan Rencana Tata Ruang Wilayah kabupaten /kota di sekitarnya." .
+<http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111/ayat/0002/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian> legal:bagianSetHasBagian <http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0004> .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0004> legal:bagianHasKey 4 .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0004> legal:bagianHasTitle "Bagian Keempat Ibu Kota" .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0004> legal:bagianHasPasalSet <http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0004/pasals> .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0004/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0007> .
+<http://example.org/legal/document/uu/2013/4/pasal/0007> legal:pasalHasKey 7 .
+<http://example.org/legal/document/uu/2013/4/pasal/0007> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2013/4/pasal/0007/version/20130111> .
+<http://example.org/legal/document/uu/2013/4> legal:documentHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0007> .
+<http://example.org/legal/document/uu/2013/4/pasal/0007/version/20130111> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2013/4/pasal/0007/version/20130111> legal:pasalVersionHasVersionDate "2013-01-11"^^xsd:date .
+<http://example.org/legal/document/uu/2013/4/pasal/0007/version/20130111> legal:pasalVersionHasRawText "Ibu Kota Kabupaten Mamuju Tengah berkedudukan di Wilayah Benteng Kayu Mangiwang Kecamatan Tobadak." .
+<http://example.org/legal/document/uu/2013/4/pasal/0007/version/20130111/text> legal:textHasTextString "Ibu Kota Kabupaten Mamuju Tengah berkedudukan di Wilayah Benteng Kayu Mangiwang Kecamatan Tobadak." .
+<http://example.org/legal/document/uu/2013/4/pasal/0007/version/20130111> legal:pasalVersionHasText <http://example.org/legal/document/uu/2013/4/pasal/0007/version/20130111/text> .
+<http://example.org/legal/document/uu/2013/4/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2013/4/bab/0003> .
+<http://example.org/legal/document/uu/2013/4/bab/0003> legal:babHasKey 3 .
+<http://example.org/legal/document/uu/2013/4/bab/0003> legal:babHasTitle "URUSAN PEMERINTAHAN DAERAH" .
+<http://example.org/legal/document/uu/2013/4/bab/0003> legal:babHasPasalSet <http://example.org/legal/document/uu/2013/4/bab/0003/pasals> .
+<http://example.org/legal/document/uu/2013/4/bab/0003/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0008> .
+<http://example.org/legal/document/uu/2013/4/pasal/0008> legal:pasalHasKey 8 .
+<http://example.org/legal/document/uu/2013/4/pasal/0008> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2013/4/pasal/0008/version/20130111> .
+<http://example.org/legal/document/uu/2013/4> legal:documentHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0008> .
+<http://example.org/legal/document/uu/2013/4/pasal/0008/version/20130111> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2013/4/pasal/0008/version/20130111> legal:pasalVersionHasVersionDate "2013-01-11"^^xsd:date .
+<http://example.org/legal/document/uu/2013/4/pasal/0008/version/20130111> legal:pasalVersionHasRawText "Urusan pemerintahan daerah yang menjadi kewenangan Kabupaten Mamuju Tengah mencakup urusan sebagaimana diatur dalam peraturan perundang-undangan. HK . Kg N & Tata 3 PRESIDEN REPUBLIK INDONESIA .7-" .
+<http://example.org/legal/document/uu/2013/4/pasal/0008/version/20130111/text> legal:textHasTextString "Urusan pemerintahan daerah yang menjadi kewenangan Kabupaten Mamuju Tengah mencakup urusan sebagaimana diatur dalam peraturan perundang-undangan. HK . Kg N & Tata 3 PRESIDEN REPUBLIK INDONESIA .7-" .
+<http://example.org/legal/document/uu/2013/4/pasal/0008/version/20130111> legal:pasalVersionHasText <http://example.org/legal/document/uu/2013/4/pasal/0008/version/20130111/text> .
+<http://example.org/legal/document/uu/2013/4/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2013/4/bab/0004> .
+<http://example.org/legal/document/uu/2013/4/bab/0004> legal:babHasKey 4 .
+<http://example.org/legal/document/uu/2013/4/bab/0004> legal:babHasTitle "PEMERINTAHAN DAERAH" .
+<http://example.org/legal/document/uu/2013/4/bab/0004> legal:babHasBagianSet <http://example.org/legal/document/uu/2013/4/bab/0004/bagian> .
+<http://example.org/legal/document/uu/2013/4/bab/0004/bagian> legal:bagianSetHasBagian <http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0001> .
+<http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0001> legal:bagianHasKey 1 .
+<http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0001> legal:bagianHasTitle "Bagian Kesatu Peresmian Daerah Otonom Baru dan Pelantikan Penjabat Kepala Daerah" .
+<http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0001> legal:bagianHasPasalSet <http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0001/pasals> .
+<http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0001/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0009> .
+<http://example.org/legal/document/uu/2013/4/pasal/0009> legal:pasalHasKey 9 .
+<http://example.org/legal/document/uu/2013/4/pasal/0009> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2013/4/pasal/0009/version/20130111> .
+<http://example.org/legal/document/uu/2013/4> legal:documentHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0009> .
+<http://example.org/legal/document/uu/2013/4/pasal/0009/version/20130111> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2013/4/pasal/0009/version/20130111> legal:pasalVersionHasVersionDate "2013-01-11"^^xsd:date .
+<http://example.org/legal/document/uu/2013/4/pasal/0009/version/20130111> legal:pasalVersionHasRawText "Peresmian Kabupaten Mamuju Tengah dan pelantikan Penjabat Bupati Mamuju Tengah dilakukan oleh Menteri Dalam Negeri atas nama Presiden paling lambat 9 (sembilan) bulan sejak Undang-Undang ini diundangkan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0009/version/20130111/text> legal:textHasTextString "Peresmian Kabupaten Mamuju Tengah dan pelantikan Penjabat Bupati Mamuju Tengah dilakukan oleh Menteri Dalam Negeri atas nama Presiden paling lambat 9 (sembilan) bulan sejak Undang-Undang ini diundangkan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0009/version/20130111> legal:pasalVersionHasText <http://example.org/legal/document/uu/2013/4/pasal/0009/version/20130111/text> .
+<http://example.org/legal/document/uu/2013/4/bab/0004/bagian> legal:bagianSetHasBagian <http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0002> .
+<http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0002> legal:bagianHasKey 2 .
+<http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0002> legal:bagianHasTitle "Bagian Kedua Pemerintah Daerah" .
+<http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0002> legal:bagianHasPasalSet <http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0002/pasals> .
+<http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0010> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010> legal:pasalHasKey 10 .
+<http://example.org/legal/document/uu/2013/4/pasal/0010> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111> .
+<http://example.org/legal/document/uu/2013/4> legal:documentHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0010> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111> legal:pasalVersionHasVersionDate "2013-01-11"^^xsd:date .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111> legal:pasalVersionHasRawText "(1). Untuk memimpin penyelenggaraan pemerintahan di Kabupaten Mamuju Tengah, dipilih dan disahkan Bupati dan/atau Wakil Bupati sesuai dengan peraturan perundang-undangan yang dilaksanakan paling cepat 2 (dua) tahun sejak diresmikan Kabupaten Mamuju Tengah.\n(2). Sebelum Bupati dan Wakil Bupati definitif sebagaimana dimaksud pada ayat (1) terpilih sebagai pimpinan penyelenggaraan pemerintahan daerah, Menteri Dalam Negeri atas nama Presiden mengangkat Penjabat Bupati dari pegawai negeri sipil berdasarkan usul Gubernur Sulawesi Barat dengan masa jabatan paling lama 1 (satu) tahun.\n(3). Pegawai negeri sipil sebagaimana dimaksud pada ayat (2) adalah pegawai yang memilik kemampuan dan pengalaman jabatan dalam bidang pemerintahan serta memenuhi persyaratan untuk menduduki jabatan itu sesuai dengan peraturan perundang-undangan.\n(4). Menteri Dalam Negeri dapat menunjuk Gubernur Sulawesi Barat untuk melantik Penjabat Bupati Mamuju Tengah sebagaimana dimaksud pada ayat (2). HK . Kg N & Tata 3 PRESIDEN REPUBLIK INDONESIA -.8-\n(5). Menteri Dalam Negeri atas nama Presiden dapat mengangkat kembali Penjabat Bupati untuk 1 (satu) kali masa jabatan berikutnya paling lama 1 (satu) tahun atau menggantinya dengan penjabat lain sesuai dengan peraturan perundang-undangan.\n(6). Gubernur Sulawesi Barat melakukan pembinaan, pengawasan, evaluasi, dan fasilitasi terhadap kinerja Penjabat Bupati Mamuju Tengah dalam penyelenggaraan pemerintahan daerah, pembentukan struktur organisasi dan pengisian perangkat daerah, pengisian keanggotaan Dewan Perwakilan Rakyat Daerah Kabupaten, dan fasilitasi pemilihan Bupati dan/atau Wakil Bupati sesuai ketentuan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0001> legal:ayatHasRawText "Untuk memimpin penyelenggaraan pemerintahan di Kabupaten Mamuju Tengah, dipilih dan disahkan Bupati dan/atau Wakil Bupati sesuai dengan peraturan perundang-undangan yang dilaksanakan paling cepat 2 (dua) tahun sejak diresmikan Kabupaten Mamuju Tengah." .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0001/text> legal:textHasTextString "Untuk memimpin penyelenggaraan pemerintahan di Kabupaten Mamuju Tengah, dipilih dan disahkan Bupati dan/atau Wakil Bupati sesuai dengan peraturan perundang-undangan yang dilaksanakan paling cepat 2 (dua) tahun sejak diresmikan Kabupaten Mamuju Tengah." .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0001/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0002> legal:ayatHasRawText "Sebelum Bupati dan Wakil Bupati definitif sebagaimana dimaksud pada ayat (1) terpilih sebagai pimpinan penyelenggaraan pemerintahan daerah, Menteri Dalam Negeri atas nama Presiden mengangkat Penjabat Bupati dari pegawai negeri sipil berdasarkan usul Gubernur Sulawesi Barat dengan masa jabatan paling lama 1 (satu) tahun." .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0002/text> legal:textHasTextString "Sebelum Bupati dan Wakil Bupati definitif sebagaimana dimaksud pada ayat (1) terpilih sebagai pimpinan penyelenggaraan pemerintahan daerah, Menteri Dalam Negeri atas nama Presiden mengangkat Penjabat Bupati dari pegawai negeri sipil berdasarkan usul Gubernur Sulawesi Barat dengan masa jabatan paling lama 1 (satu) tahun." .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0002/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0003> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0003> legal:ayatHasRawText "Pegawai negeri sipil sebagaimana dimaksud pada ayat (2) adalah pegawai yang memilik kemampuan dan pengalaman jabatan dalam bidang pemerintahan serta memenuhi persyaratan untuk menduduki jabatan itu sesuai dengan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0003/text> legal:textHasTextString "Pegawai negeri sipil sebagaimana dimaksud pada ayat (2) adalah pegawai yang memilik kemampuan dan pengalaman jabatan dalam bidang pemerintahan serta memenuhi persyaratan untuk menduduki jabatan itu sesuai dengan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0003/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0004> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0004> legal:ayatHasKey 4 .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0004> legal:ayatHasRawText "Menteri Dalam Negeri dapat menunjuk Gubernur Sulawesi Barat untuk melantik Penjabat Bupati Mamuju Tengah sebagaimana dimaksud pada ayat (2). HK . Kg N & Tata 3 PRESIDEN REPUBLIK INDONESIA -.8-" .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0004/text> legal:textHasTextString "Menteri Dalam Negeri dapat menunjuk Gubernur Sulawesi Barat untuk melantik Penjabat Bupati Mamuju Tengah sebagaimana dimaksud pada ayat (2). HK . Kg N & Tata 3 PRESIDEN REPUBLIK INDONESIA -.8-" .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0004/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0005> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0005> legal:ayatHasKey 5 .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0005> legal:ayatHasRawText "Menteri Dalam Negeri atas nama Presiden dapat mengangkat kembali Penjabat Bupati untuk 1 (satu) kali masa jabatan berikutnya paling lama 1 (satu) tahun atau menggantinya dengan penjabat lain sesuai dengan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0005/text> legal:textHasTextString "Menteri Dalam Negeri atas nama Presiden dapat mengangkat kembali Penjabat Bupati untuk 1 (satu) kali masa jabatan berikutnya paling lama 1 (satu) tahun atau menggantinya dengan penjabat lain sesuai dengan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0005> legal:ayatHasText <http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0005/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0006> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0006> legal:ayatHasKey 6 .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0006> legal:ayatHasRawText "Gubernur Sulawesi Barat melakukan pembinaan, pengawasan, evaluasi, dan fasilitasi terhadap kinerja Penjabat Bupati Mamuju Tengah dalam penyelenggaraan pemerintahan daerah, pembentukan struktur organisasi dan pengisian perangkat daerah, pengisian keanggotaan Dewan Perwakilan Rakyat Daerah Kabupaten, dan fasilitasi pemilihan Bupati dan/atau Wakil Bupati sesuai ketentuan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0006/text> legal:textHasTextString "Gubernur Sulawesi Barat melakukan pembinaan, pengawasan, evaluasi, dan fasilitasi terhadap kinerja Penjabat Bupati Mamuju Tengah dalam penyelenggaraan pemerintahan daerah, pembentukan struktur organisasi dan pengisian perangkat daerah, pengisian keanggotaan Dewan Perwakilan Rakyat Daerah Kabupaten, dan fasilitasi pemilihan Bupati dan/atau Wakil Bupati sesuai ketentuan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0006> legal:ayatHasText <http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0006/text> .
+<http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0011> .
+<http://example.org/legal/document/uu/2013/4/pasal/0011> legal:pasalHasKey 11 .
+<http://example.org/legal/document/uu/2013/4/pasal/0011> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2013/4/pasal/0011/version/20130111> .
+<http://example.org/legal/document/uu/2013/4> legal:documentHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0011> .
+<http://example.org/legal/document/uu/2013/4/pasal/0011/version/20130111> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2013/4/pasal/0011/version/20130111> legal:pasalVersionHasVersionDate "2013-01-11"^^xsd:date .
+<http://example.org/legal/document/uu/2013/4/pasal/0011/version/20130111> legal:pasalVersionHasRawText "Pembiayaan pertama kali pelaksanaan pemilihan Bupati dan/atau Wakil Bupati Mamuju Tengah sebagaimana dimaksud dalam Pasal 10 ayat (1) dibebankan kepada Anggaran Pendapatan dan Belanja Daerah Kabupaten Mamuju dan Anggaran Pendapatan dan Belanja Daerah Provinsi Sulawesi Barat." .
+<http://example.org/legal/document/uu/2013/4/pasal/0011/version/20130111/text> legal:textHasTextString "Pembiayaan pertama kali pelaksanaan pemilihan Bupati dan/atau Wakil Bupati Mamuju Tengah sebagaimana dimaksud dalam Pasal 10 ayat (1) dibebankan kepada Anggaran Pendapatan dan Belanja Daerah Kabupaten Mamuju dan Anggaran Pendapatan dan Belanja Daerah Provinsi Sulawesi Barat." .
+<http://example.org/legal/document/uu/2013/4/pasal/0011/version/20130111> legal:pasalVersionHasText <http://example.org/legal/document/uu/2013/4/pasal/0011/version/20130111/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0011/version/20130111/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/4/pasal/0011/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0012> .
+<http://example.org/legal/document/uu/2013/4/pasal/0012> legal:pasalHasKey 12 .
+<http://example.org/legal/document/uu/2013/4/pasal/0012> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111> .
+<http://example.org/legal/document/uu/2013/4> legal:documentHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0012> .
+<http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111> legal:pasalVersionHasVersionDate "2013-01-11"^^xsd:date .
+<http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111> legal:pasalVersionHasRawText "(1). Untuk menyelenggarakan pemerintahan di Kabupaten Mamuju Tengah dibentuk perangkat daerah yang meliputi sekretariat daerah, sekretariat dewan perwakilan rakyat daerah, dinas daerah, lembaga teknis daerah, serta unsur perangkat daerah lainnya dengan mempertimbangkan kebutuhan dan kemampuan keuangan daerah sesuai dengan peraturan perundang-undangan.\n(2). Perangkat daerah sebagaimana dimaksud pada ayat (1) telah dibentuk oleh Penjabat Bupati Mamuju Tengah paling lambat 6 (enam) bulan sejak tanggal pelantikan. HK . Kg N & Tata 3 PRESIDEN REPUBLIK INDONESIA -.9-" .
+<http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111/ayat/0001> legal:ayatHasRawText "Untuk menyelenggarakan pemerintahan di Kabupaten Mamuju Tengah dibentuk perangkat daerah yang meliputi sekretariat daerah, sekretariat dewan perwakilan rakyat daerah, dinas daerah, lembaga teknis daerah, serta unsur perangkat daerah lainnya dengan mempertimbangkan kebutuhan dan kemampuan keuangan daerah sesuai dengan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111/ayat/0001/text> legal:textHasTextString "Untuk menyelenggarakan pemerintahan di Kabupaten Mamuju Tengah dibentuk perangkat daerah yang meliputi sekretariat daerah, sekretariat dewan perwakilan rakyat daerah, dinas daerah, lembaga teknis daerah, serta unsur perangkat daerah lainnya dengan mempertimbangkan kebutuhan dan kemampuan keuangan daerah sesuai dengan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111/ayat/0001/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111/ayat/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111/ayat/0002> legal:ayatHasRawText "Perangkat daerah sebagaimana dimaksud pada ayat (1) telah dibentuk oleh Penjabat Bupati Mamuju Tengah paling lambat 6 (enam) bulan sejak tanggal pelantikan. HK . Kg N & Tata 3 PRESIDEN REPUBLIK INDONESIA -.9-" .
+<http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111/ayat/0002/text> legal:textHasTextString "Perangkat daerah sebagaimana dimaksud pada ayat (1) telah dibentuk oleh Penjabat Bupati Mamuju Tengah paling lambat 6 (enam) bulan sejak tanggal pelantikan. HK . Kg N & Tata 3 PRESIDEN REPUBLIK INDONESIA -.9-" .
+<http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111/ayat/0002/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/bab/0004/bagian> legal:bagianSetHasBagian <http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0003> .
+<http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0003> legal:bagianHasKey 3 .
+<http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0003> legal:bagianHasTitle "Bagian Ketiga Dewan Perwakilan Rakyat Daerah" .
+<http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0003> legal:bagianHasPasalSet <http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0003/pasals> .
+<http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0003/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0013> .
+<http://example.org/legal/document/uu/2013/4/pasal/0013> legal:pasalHasKey 13 .
+<http://example.org/legal/document/uu/2013/4/pasal/0013> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111> .
+<http://example.org/legal/document/uu/2013/4> legal:documentHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0013> .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111> legal:pasalVersionHasVersionDate "2013-01-11"^^xsd:date .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111> legal:pasalVersionHasRawText "(1). Dewan Perwakilan Rakyat Daerah Kabupaten Mamuju Tengah dibentuk melalui hasil Pemilihan Umum Tahun 2014.\n(2). Jumlah dan tata cara pengisian keanggotaan Dewan Perwakilan Rakyat Daerah Kabupaten Mamuju Tengah sebagaimana dimaksud pada ayat (1), ditetapkan sesuai dengan peraturan perundang-undangan.\n(3). Penetapan keanggotaan Dewan Perwakilan Rakyat Daerah Kabupaten Mamuju Tengah sebagaimana dimaksud pada ayat (1) dan ayat (2) dilakukan oleh Komisi Pemilihan Umum Kabupaten Mamuju sesuai dengan peraturan perundang- undangan.\n(4). Pengambilan sumpah/janji anggota Dewan Perwakilan Rakyat Daerah Kabupaten Mamuju Tengah dilaksanakan paling lambat 4 (empat) bulan setelah pengambilan sumpah /janji anggota Dewan Perwakilan Rakyat Daerah Kabupaten Mamuju." .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0001> legal:ayatHasRawText "Dewan Perwakilan Rakyat Daerah Kabupaten Mamuju Tengah dibentuk melalui hasil Pemilihan Umum Tahun 2014." .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0001/text> legal:textHasTextString "Dewan Perwakilan Rakyat Daerah Kabupaten Mamuju Tengah dibentuk melalui hasil Pemilihan Umum Tahun 2014." .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0001/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0002> legal:ayatHasRawText "Jumlah dan tata cara pengisian keanggotaan Dewan Perwakilan Rakyat Daerah Kabupaten Mamuju Tengah sebagaimana dimaksud pada ayat (1), ditetapkan sesuai dengan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0002/text> legal:textHasTextString "Jumlah dan tata cara pengisian keanggotaan Dewan Perwakilan Rakyat Daerah Kabupaten Mamuju Tengah sebagaimana dimaksud pada ayat (1), ditetapkan sesuai dengan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0002/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0003> .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0003> legal:ayatHasRawText "Penetapan keanggotaan Dewan Perwakilan Rakyat Daerah Kabupaten Mamuju Tengah sebagaimana dimaksud pada ayat (1) dan ayat (2) dilakukan oleh Komisi Pemilihan Umum Kabupaten Mamuju sesuai dengan peraturan perundang- undangan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0003/text> legal:textHasTextString "Penetapan keanggotaan Dewan Perwakilan Rakyat Daerah Kabupaten Mamuju Tengah sebagaimana dimaksud pada ayat (1) dan ayat (2) dilakukan oleh Komisi Pemilihan Umum Kabupaten Mamuju sesuai dengan peraturan perundang- undangan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0003/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0004> .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0004> legal:ayatHasKey 4 .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0004> legal:ayatHasRawText "Pengambilan sumpah/janji anggota Dewan Perwakilan Rakyat Daerah Kabupaten Mamuju Tengah dilaksanakan paling lambat 4 (empat) bulan setelah pengambilan sumpah /janji anggota Dewan Perwakilan Rakyat Daerah Kabupaten Mamuju." .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0004/text> legal:textHasTextString "Pengambilan sumpah/janji anggota Dewan Perwakilan Rakyat Daerah Kabupaten Mamuju Tengah dilaksanakan paling lambat 4 (empat) bulan setelah pengambilan sumpah /janji anggota Dewan Perwakilan Rakyat Daerah Kabupaten Mamuju." .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0004/text> .
+<http://example.org/legal/document/uu/2013/4/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2013/4/bab/0005> .
+<http://example.org/legal/document/uu/2013/4/bab/0005> legal:babHasKey 5 .
+<http://example.org/legal/document/uu/2013/4/bab/0005> legal:babHasTitle "PERSONEL, ASET, DAN DOKUMEN" .
+<http://example.org/legal/document/uu/2013/4/bab/0005> legal:babHasPasalSet <http://example.org/legal/document/uu/2013/4/bab/0005/pasals> .
+<http://example.org/legal/document/uu/2013/4/bab/0005/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0014> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014> legal:pasalHasKey 14 .
+<http://example.org/legal/document/uu/2013/4/pasal/0014> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111> .
+<http://example.org/legal/document/uu/2013/4> legal:documentHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0014> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111> legal:pasalVersionHasVersionDate "2013-01-11"^^xsd:date .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111> legal:pasalVersionHasRawText "(1). Bupati Mamuju bersama Penjabat Bupati Mamuju Tengah mengatur dan melaksanakan pemindahan personel, penyerahan aset, serta dokumen kepada Pemerintah Kabupaten Mamuju Tengah sesuai dengan persetujuan Dewan Perwakilan Rakyat Daerah Kabupaten Mamuju dan Bupati Mamuju.\n(2). Pemindahan personel sebagaimana dimaksud pada ayat (1) dilakukan paling lambat 6 (enam) bulan sejak pelantikan Penjabat Bupati Mamuju Tengah. HK . Kg N & Tata 3 PRESIDEN REPUBLIK INDONESIA -10-\n(3). Penyerahan aset dan dokumen sebagaimana dimaksud pada ayat (1) dilakukan paling lambat 3 (tiga) tahun sejak pelantikan Penjabat Bupati Mamuju Tengah.\n(4). Personel sebagaimana dimaksud pada ayat (1) dan ayat (2) meliputi pegawai negeri sipil yang karena tugas dan kemampuannya diperlukan oleh Kabupaten Mamuju Tengah. (S9) Gubernur Sulawesi Barat mengoordinasikan dan memfasilitasi pemindahan personel, penyerahan aset, dan dokumen kepada Kabupaten Mamuju Tengah. (6) Gaji dan tunjangan pegawai negeri sipil sebagaimana dimaksud pada ayat (4), selama belum ditetapkannya Anggaran Pendapatan dan Belanja Daerah Kabupaten Mamuju Tengah, dibebankan pada anggaran pendapatan dan belanja dari asal satuan kerja personel yang bersangkutan sesuai dengan peraturan perundang- undangan. (7) Aset dan dokumen sebagaimana dimaksud pada ayat (1) dan ayat (3) meliputi:\na. barang milik Kabupaten Mamuju yang bergerak dan tidak bergerak dan/atau yang dikuasai atau dimanfaatkan oleh Pemerintah Kabupaten Mamuju Tengah yang berada dalam wilayah Kabupaten Mamuju Tengah,\nb. Badan Usaha Milik Daerah Kabupaten Mamuju yang kedudukan, kegiatan, dan lokasinya berada di Kabupaten Mamuju Tengah,\nc. utang piutang Kabupaten Mamuju yang kegunaannya untuk Kabupaten Mamuju Tengah menjadi tanggung jawab Kabupaten Mamuju Tengah, dan\nd. dokumen dan arsip yang karena sifatnya diperlukan oleh Kabupaten Mamuju Tengah. (8) Dalam hal ketentuan sebagaimana dimaksud pada ayat (3) dan ayat (7) tidak dilaksanakan atau belum selesai dilaksanakan oleh Bupati Mamuju, Gubernur Sulawesi Barat selaku wakil Pemerintah wajib menyelesaikannya dalam waktu paling lambat 1 (satu) tahun. HK . Kg N & Tata 3 PRESIDEN REPUBLIK INDONESIA -11 - (9) Pelaksanaan pemindahan personel dan penyerahan aset serta dokumen sebagaimana dimaksud pada ayat (1) dilaporkan oleh Gubernur Sulawesi Barat kepada Menteri Dalam Negeri.\n" .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0001> legal:ayatHasRawText "Bupati Mamuju bersama Penjabat Bupati Mamuju Tengah mengatur dan melaksanakan pemindahan personel, penyerahan aset, serta dokumen kepada Pemerintah Kabupaten Mamuju Tengah sesuai dengan persetujuan Dewan Perwakilan Rakyat Daerah Kabupaten Mamuju dan Bupati Mamuju." .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0001/text> legal:textHasTextString "Bupati Mamuju bersama Penjabat Bupati Mamuju Tengah mengatur dan melaksanakan pemindahan personel, penyerahan aset, serta dokumen kepada Pemerintah Kabupaten Mamuju Tengah sesuai dengan persetujuan Dewan Perwakilan Rakyat Daerah Kabupaten Mamuju dan Bupati Mamuju." .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0001/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0002> legal:ayatHasRawText "Pemindahan personel sebagaimana dimaksud pada ayat (1) dilakukan paling lambat 6 (enam) bulan sejak pelantikan Penjabat Bupati Mamuju Tengah. HK . Kg N & Tata 3 PRESIDEN REPUBLIK INDONESIA -10-" .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0002/text> legal:textHasTextString "Pemindahan personel sebagaimana dimaksud pada ayat (1) dilakukan paling lambat 6 (enam) bulan sejak pelantikan Penjabat Bupati Mamuju Tengah. HK . Kg N & Tata 3 PRESIDEN REPUBLIK INDONESIA -10-" .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0002/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0003> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0003> legal:ayatHasRawText "Penyerahan aset dan dokumen sebagaimana dimaksud pada ayat (1) dilakukan paling lambat 3 (tiga) tahun sejak pelantikan Penjabat Bupati Mamuju Tengah." .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0003/text> legal:textHasTextString "Penyerahan aset dan dokumen sebagaimana dimaksud pada ayat (1) dilakukan paling lambat 3 (tiga) tahun sejak pelantikan Penjabat Bupati Mamuju Tengah." .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0003/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004> legal:ayatHasKey 4 .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004> legal:ayatHasRawText "Personel sebagaimana dimaksud pada ayat (1) dan ayat (2) meliputi pegawai negeri sipil yang karena tugas dan kemampuannya diperlukan oleh Kabupaten Mamuju Tengah. (S9) Gubernur Sulawesi Barat mengoordinasikan dan memfasilitasi pemindahan personel, penyerahan aset, dan dokumen kepada Kabupaten Mamuju Tengah. (6) Gaji dan tunjangan pegawai negeri sipil sebagaimana dimaksud pada ayat (4), selama belum ditetapkannya Anggaran Pendapatan dan Belanja Daerah Kabupaten Mamuju Tengah, dibebankan pada anggaran pendapatan dan belanja dari asal satuan kerja personel yang bersangkutan sesuai dengan peraturan perundang- undangan. (7) Aset dan dokumen sebagaimana dimaksud pada ayat (1) dan ayat (3) meliputi:\na. barang milik Kabupaten Mamuju yang bergerak dan tidak bergerak dan/atau yang dikuasai atau dimanfaatkan oleh Pemerintah Kabupaten Mamuju Tengah yang berada dalam wilayah Kabupaten Mamuju Tengah,\nb. Badan Usaha Milik Daerah Kabupaten Mamuju yang kedudukan, kegiatan, dan lokasinya berada di Kabupaten Mamuju Tengah,\nc. utang piutang Kabupaten Mamuju yang kegunaannya untuk Kabupaten Mamuju Tengah menjadi tanggung jawab Kabupaten Mamuju Tengah, dan\nd. dokumen dan arsip yang karena sifatnya diperlukan oleh Kabupaten Mamuju Tengah. (8) Dalam hal ketentuan sebagaimana dimaksud pada ayat (3) dan ayat (7) tidak dilaksanakan atau belum selesai dilaksanakan oleh Bupati Mamuju, Gubernur Sulawesi Barat selaku wakil Pemerintah wajib menyelesaikannya dalam waktu paling lambat 1 (satu) tahun. HK . Kg N & Tata 3 PRESIDEN REPUBLIK INDONESIA -11 - (9) Pelaksanaan pemindahan personel dan penyerahan aset serta dokumen sebagaimana dimaksud pada ayat (1) dilaporkan oleh Gubernur Sulawesi Barat kepada Menteri Dalam Negeri.\n" .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004> legal:ayatHasPointSet <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/description> legal:textHasTextString "Personel sebagaimana dimaksud pada ayat (1) dan ayat (2) meliputi pegawai negeri sipil yang karena tugas dan kemampuannya diperlukan oleh Kabupaten Mamuju Tengah. (S9) Gubernur Sulawesi Barat mengoordinasikan dan memfasilitasi pemindahan personel, penyerahan aset, dan dokumen kepada Kabupaten Mamuju Tengah. (6) Gaji dan tunjangan pegawai negeri sipil sebagaimana dimaksud pada ayat (4), selama belum ditetapkannya Anggaran Pendapatan dan Belanja Daerah Kabupaten Mamuju Tengah, dibebankan pada anggaran pendapatan dan belanja dari asal satuan kerja personel yang bersangkutan sesuai dengan peraturan perundang- undangan. (7) Aset dan dokumen sebagaimana dimaksud pada ayat (1) dan ayat (3) meliputi:" .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/description> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/a> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/a/text> legal:textHasTextString "barang milik Kabupaten Mamuju yang bergerak dan tidak bergerak dan/atau yang dikuasai atau dimanfaatkan oleh Pemerintah Kabupaten Mamuju Tengah yang berada dalam wilayah Kabupaten Mamuju Tengah," .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/a> legal:pointHasText <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/a/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/b> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/b/text> legal:textHasTextString "Badan Usaha Milik Daerah Kabupaten Mamuju yang kedudukan, kegiatan, dan lokasinya berada di Kabupaten Mamuju Tengah," .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/b> legal:pointHasText <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/b/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/c> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/c/text> legal:textHasTextString "utang piutang Kabupaten Mamuju yang kegunaannya untuk Kabupaten Mamuju Tengah menjadi tanggung jawab Kabupaten Mamuju Tengah, dan" .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/c> legal:pointHasText <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/c/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/d> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/d/text> legal:textHasTextString "dokumen dan arsip yang karena sifatnya diperlukan oleh Kabupaten Mamuju Tengah. (8) Dalam hal ketentuan sebagaimana dimaksud pada ayat (3) dan ayat (7) tidak dilaksanakan atau belum selesai dilaksanakan oleh Bupati Mamuju, Gubernur Sulawesi Barat selaku wakil Pemerintah wajib menyelesaikannya dalam waktu paling lambat 1 (satu) tahun. HK . Kg N & Tata 3 PRESIDEN REPUBLIK INDONESIA -11 - (9) Pelaksanaan pemindahan personel dan penyerahan aset serta dokumen sebagaimana dimaksud pada ayat (1) dilaporkan oleh Gubernur Sulawesi Barat kepada Menteri Dalam Negeri." .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/d> legal:pointHasText <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/d/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/d/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/d/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0007> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/d/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0003> .
+<http://example.org/legal/document/uu/2013/4/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2013/4/bab/0006> .
+<http://example.org/legal/document/uu/2013/4/bab/0006> legal:babHasKey 6 .
+<http://example.org/legal/document/uu/2013/4/bab/0006> legal:babHasTitle "PENDAPATAN, ALOKASI DANA PERIMBANGAN, HIBAH, DAN BANTUAN KEUANGAN" .
+<http://example.org/legal/document/uu/2013/4/bab/0006> legal:babHasPasalSet <http://example.org/legal/document/uu/2013/4/bab/0006/pasals> .
+<http://example.org/legal/document/uu/2013/4/bab/0006/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0015> .
+<http://example.org/legal/document/uu/2013/4/pasal/0015> legal:pasalHasKey 15 .
+<http://example.org/legal/document/uu/2013/4/pasal/0015> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111> .
+<http://example.org/legal/document/uu/2013/4> legal:documentHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0015> .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111> legal:pasalVersionHasVersionDate "2013-01-11"^^xsd:date .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111> legal:pasalVersionHasRawText "(1). Kabupaten Mamuju Tengah berhak mendapatkan alokasi dana perimbangan dan dana transfer lainnya sesuai dengan peraturan perundang-undangan.\n(2). Dalam dana perimbangan sebagaimana dimaksud pada ayat (1), Pemerintah mengalokasikan dana alokasi khusus prasarana pemerintahan sesuai dengan peraturan perundang-undangan.\n(3). Dana perimbangan sebagaimana dimaksud pada ayat (1) yang berupa dana transfer ke daerah dialokasikan sesuai dengan kemampuan keuangan negara sesuai dengan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0001> legal:ayatHasRawText "Kabupaten Mamuju Tengah berhak mendapatkan alokasi dana perimbangan dan dana transfer lainnya sesuai dengan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0001/text> legal:textHasTextString "Kabupaten Mamuju Tengah berhak mendapatkan alokasi dana perimbangan dan dana transfer lainnya sesuai dengan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0001/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0002> legal:ayatHasRawText "Dalam dana perimbangan sebagaimana dimaksud pada ayat (1), Pemerintah mengalokasikan dana alokasi khusus prasarana pemerintahan sesuai dengan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0002/text> legal:textHasTextString "Dalam dana perimbangan sebagaimana dimaksud pada ayat (1), Pemerintah mengalokasikan dana alokasi khusus prasarana pemerintahan sesuai dengan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0002/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0003> .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0003> legal:ayatHasRawText "Dana perimbangan sebagaimana dimaksud pada ayat (1) yang berupa dana transfer ke daerah dialokasikan sesuai dengan kemampuan keuangan negara sesuai dengan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0003/text> legal:textHasTextString "Dana perimbangan sebagaimana dimaksud pada ayat (1) yang berupa dana transfer ke daerah dialokasikan sesuai dengan kemampuan keuangan negara sesuai dengan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0003/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/bab/0006/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0016> .
+<http://example.org/legal/document/uu/2013/4/pasal/0016> legal:pasalHasKey 16 .
+<http://example.org/legal/document/uu/2013/4/pasal/0016> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111> .
+<http://example.org/legal/document/uu/2013/4> legal:documentHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0016> .
+<http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111> legal:pasalVersionHasVersionDate "2013-01-11"^^xsd:date .
+<http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111> legal:pasalVersionHasRawText "(1). Pemerintah Kabupaten Mamuju sesuai dengan kesanggupannya memberikan hibah berupa uang untuk menunjang kegiatan penyelenggaraan pemerintahan Kabupaten Mamuju Tengah sebesar Rp8.000.000.000,00 (delapan miliar rupiah) dengan rincian tahun pertama sebesar Rp3.000.000.000,00 (tiga miliar rupiah), tahun kedua sebesar Rp2.500.000.000,00 (dua miliar lima ratus juta rupiah), dan tahun ketiga sebesar Rp2.500.000.000,00 (dua miliar lima ratus juta rupiah), serta untuk pelaksanaan pemilihan Bupati dan/atau Wakil Bupati Mamuju Tengah pertama kali sebesar Rp7.485.176.823 (tujuh miliar empat ratus delapan puluh lima juta seratus tujuh puluh enam ribu delapan ratus dua puluh tiga rupiah). HK . Kg N & Tata 3 PRESIDEN REPUBLIK INDONESIA -12 -\n(2). Pemerintah Provinsi Sulawesi Barat memberikan bantuan dana untuk menunjang kegiatan penyelenggaraan pemerintahan Kabupaten Mamuju Tengah sebesar Rp3.000.000.000,00 (tiga miliar rupiah) dengan rincian tahun pertama sebesar Rp1.000.000.000,00 (satu miliar rupiah), tahun kedua sebesar Rp1.000.000.000,00 (satu miliar rupiah), dan tahun ketiga sebesar Rp1.000.000.000,00 (satu miliar rupiah), serta untuk pelaksanaan pemilihan Bupati dan/atau Wakil Bupati Mamuju Tengah pertama kali sebesar Rp2.000.000.000,00 (dua miliar rupiah). (3 Pemberian hibah sebagaimana dimaksud pada ayat (1) dan pemberian bantuan dana sebagaimana dimaksud pada ayat (2) dimulai sejak pelantikan Penjabat Bupati Mamuju Tengah. 4) Apabila Kabupaten Mamuju tidak memenuhi kesanggupannya memberikan hibah sesuai ketentuan sebagaimana dimaksud pada ayat (1), Pemerintah mengurangi penerimaan dana perimbangan dari Kabupaten Mamuju untuk diberikan kepada Pemerintah Kabupaten Mamuju Tengah. (S5) Apabila Provinsi Sulawesi Barat tidak memenuhi kesanggupannya memberikan bantuan dana sesuai ketentuan sebagaimana dimaksud pada ayat (2), Pemerintah mengurangi penerimaan dana perimbangan dari Provinsi Sulawesi Barat untuk diberikan kepada Pemerintah Kabupaten Mamuju Tengah. (6) Penjabat Bupati Mamuju Tengah menyampaikan laporan pertanggungjawaban realisasi penggunaan hibah sebagaimana dimaksud pada ayat (1) kepada Bupati Mamuju. (7) Penjabat Bupati Mamuju Tengah menyampaikan laporan pertanggungjawaban realisasi penggunaan dana hibah dan dana bantuan sebagaimana dimaksud pada ayat (1) dan ayat (2) kepada Gubernur Sulawesi Barat. HK . Kg N & Tata 3 PRESIDEN REPUBLIK INDONESIA -13-" .
+<http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat/0001> legal:ayatHasRawText "Pemerintah Kabupaten Mamuju sesuai dengan kesanggupannya memberikan hibah berupa uang untuk menunjang kegiatan penyelenggaraan pemerintahan Kabupaten Mamuju Tengah sebesar Rp8.000.000.000,00 (delapan miliar rupiah) dengan rincian tahun pertama sebesar Rp3.000.000.000,00 (tiga miliar rupiah), tahun kedua sebesar Rp2.500.000.000,00 (dua miliar lima ratus juta rupiah), dan tahun ketiga sebesar Rp2.500.000.000,00 (dua miliar lima ratus juta rupiah), serta untuk pelaksanaan pemilihan Bupati dan/atau Wakil Bupati Mamuju Tengah pertama kali sebesar Rp7.485.176.823 (tujuh miliar empat ratus delapan puluh lima juta seratus tujuh puluh enam ribu delapan ratus dua puluh tiga rupiah). HK . Kg N & Tata 3 PRESIDEN REPUBLIK INDONESIA -12 -" .
+<http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat/0001/text> legal:textHasTextString "Pemerintah Kabupaten Mamuju sesuai dengan kesanggupannya memberikan hibah berupa uang untuk menunjang kegiatan penyelenggaraan pemerintahan Kabupaten Mamuju Tengah sebesar Rp8.000.000.000,00 (delapan miliar rupiah) dengan rincian tahun pertama sebesar Rp3.000.000.000,00 (tiga miliar rupiah), tahun kedua sebesar Rp2.500.000.000,00 (dua miliar lima ratus juta rupiah), dan tahun ketiga sebesar Rp2.500.000.000,00 (dua miliar lima ratus juta rupiah), serta untuk pelaksanaan pemilihan Bupati dan/atau Wakil Bupati Mamuju Tengah pertama kali sebesar Rp7.485.176.823 (tujuh miliar empat ratus delapan puluh lima juta seratus tujuh puluh enam ribu delapan ratus dua puluh tiga rupiah). HK . Kg N & Tata 3 PRESIDEN REPUBLIK INDONESIA -12 -" .
+<http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat/0001/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat/0002> legal:ayatHasRawText "Pemerintah Provinsi Sulawesi Barat memberikan bantuan dana untuk menunjang kegiatan penyelenggaraan pemerintahan Kabupaten Mamuju Tengah sebesar Rp3.000.000.000,00 (tiga miliar rupiah) dengan rincian tahun pertama sebesar Rp1.000.000.000,00 (satu miliar rupiah), tahun kedua sebesar Rp1.000.000.000,00 (satu miliar rupiah), dan tahun ketiga sebesar Rp1.000.000.000,00 (satu miliar rupiah), serta untuk pelaksanaan pemilihan Bupati dan/atau Wakil Bupati Mamuju Tengah pertama kali sebesar Rp2.000.000.000,00 (dua miliar rupiah). (3 Pemberian hibah sebagaimana dimaksud pada ayat (1) dan pemberian bantuan dana sebagaimana dimaksud pada ayat (2) dimulai sejak pelantikan Penjabat Bupati Mamuju Tengah. 4) Apabila Kabupaten Mamuju tidak memenuhi kesanggupannya memberikan hibah sesuai ketentuan sebagaimana dimaksud pada ayat (1), Pemerintah mengurangi penerimaan dana perimbangan dari Kabupaten Mamuju untuk diberikan kepada Pemerintah Kabupaten Mamuju Tengah. (S5) Apabila Provinsi Sulawesi Barat tidak memenuhi kesanggupannya memberikan bantuan dana sesuai ketentuan sebagaimana dimaksud pada ayat (2), Pemerintah mengurangi penerimaan dana perimbangan dari Provinsi Sulawesi Barat untuk diberikan kepada Pemerintah Kabupaten Mamuju Tengah. (6) Penjabat Bupati Mamuju Tengah menyampaikan laporan pertanggungjawaban realisasi penggunaan hibah sebagaimana dimaksud pada ayat (1) kepada Bupati Mamuju. (7) Penjabat Bupati Mamuju Tengah menyampaikan laporan pertanggungjawaban realisasi penggunaan dana hibah dan dana bantuan sebagaimana dimaksud pada ayat (1) dan ayat (2) kepada Gubernur Sulawesi Barat. HK . Kg N & Tata 3 PRESIDEN REPUBLIK INDONESIA -13-" .
+<http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat/0002/text> legal:textHasTextString "Pemerintah Provinsi Sulawesi Barat memberikan bantuan dana untuk menunjang kegiatan penyelenggaraan pemerintahan Kabupaten Mamuju Tengah sebesar Rp3.000.000.000,00 (tiga miliar rupiah) dengan rincian tahun pertama sebesar Rp1.000.000.000,00 (satu miliar rupiah), tahun kedua sebesar Rp1.000.000.000,00 (satu miliar rupiah), dan tahun ketiga sebesar Rp1.000.000.000,00 (satu miliar rupiah), serta untuk pelaksanaan pemilihan Bupati dan/atau Wakil Bupati Mamuju Tengah pertama kali sebesar Rp2.000.000.000,00 (dua miliar rupiah). (3 Pemberian hibah sebagaimana dimaksud pada ayat (1) dan pemberian bantuan dana sebagaimana dimaksud pada ayat (2) dimulai sejak pelantikan Penjabat Bupati Mamuju Tengah. 4) Apabila Kabupaten Mamuju tidak memenuhi kesanggupannya memberikan hibah sesuai ketentuan sebagaimana dimaksud pada ayat (1), Pemerintah mengurangi penerimaan dana perimbangan dari Kabupaten Mamuju untuk diberikan kepada Pemerintah Kabupaten Mamuju Tengah. (S5) Apabila Provinsi Sulawesi Barat tidak memenuhi kesanggupannya memberikan bantuan dana sesuai ketentuan sebagaimana dimaksud pada ayat (2), Pemerintah mengurangi penerimaan dana perimbangan dari Provinsi Sulawesi Barat untuk diberikan kepada Pemerintah Kabupaten Mamuju Tengah. (6) Penjabat Bupati Mamuju Tengah menyampaikan laporan pertanggungjawaban realisasi penggunaan hibah sebagaimana dimaksud pada ayat (1) kepada Bupati Mamuju. (7) Penjabat Bupati Mamuju Tengah menyampaikan laporan pertanggungjawaban realisasi penggunaan dana hibah dan dana bantuan sebagaimana dimaksud pada ayat (1) dan ayat (2) kepada Gubernur Sulawesi Barat. HK . Kg N & Tata 3 PRESIDEN REPUBLIK INDONESIA -13-" .
+<http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat/0002/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/bab/0006/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0017> .
+<http://example.org/legal/document/uu/2013/4/pasal/0017> legal:pasalHasKey 17 .
+<http://example.org/legal/document/uu/2013/4/pasal/0017> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2013/4/pasal/0017/version/20130111> .
+<http://example.org/legal/document/uu/2013/4> legal:documentHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0017> .
+<http://example.org/legal/document/uu/2013/4/pasal/0017/version/20130111> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2013/4/pasal/0017/version/20130111> legal:pasalVersionHasVersionDate "2013-01-11"^^xsd:date .
+<http://example.org/legal/document/uu/2013/4/pasal/0017/version/20130111> legal:pasalVersionHasRawText "Penjabat Bupati Mamuju Tengah berkewajiban melakukan penatausahaan keuangan daerah sesuai dengan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0017/version/20130111/text> legal:textHasTextString "Penjabat Bupati Mamuju Tengah berkewajiban melakukan penatausahaan keuangan daerah sesuai dengan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0017/version/20130111> legal:pasalVersionHasText <http://example.org/legal/document/uu/2013/4/pasal/0017/version/20130111/text> .
+<http://example.org/legal/document/uu/2013/4/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2013/4/bab/0007> .
+<http://example.org/legal/document/uu/2013/4/bab/0007> legal:babHasKey 7 .
+<http://example.org/legal/document/uu/2013/4/bab/0007> legal:babHasTitle "PEMBINAAN" .
+<http://example.org/legal/document/uu/2013/4/bab/0007> legal:babHasPasalSet <http://example.org/legal/document/uu/2013/4/bab/0007/pasals> .
+<http://example.org/legal/document/uu/2013/4/bab/0007/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0018> .
+<http://example.org/legal/document/uu/2013/4/pasal/0018> legal:pasalHasKey 18 .
+<http://example.org/legal/document/uu/2013/4/pasal/0018> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111> .
+<http://example.org/legal/document/uu/2013/4> legal:documentHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0018> .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111> legal:pasalVersionHasVersionDate "2013-01-11"^^xsd:date .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111> legal:pasalVersionHasRawText "(1). Untuk mengefektifkan penyelenggaraan pemerintahan daerah, Pemerintah dan Pemerintah Provinsi Sulawesi Barat melakukan pembinaan dan fasilitasi secara khusus terhadap Kabupaten Mamuju Tengah dalam waktu 3 (tiga) tahun sejak diresmikan.\n(2). Pemerintah bersama Gubernur Sulawesi Barat melakukan evaluasi terhadap penyelenggaraan Pemerintahan Kabupaten Mamuju Tengah sesuai peraturan perundang- undangan.\n(3). Hasil evaluasi sebagaimana dimaksud pada ayat (2) dijadikan acuan kebijakan lebih lanjut oleh Pemerintah dan/atau Gubernur Sulawesi Barat sesuai dengan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0001> legal:ayatHasRawText "Untuk mengefektifkan penyelenggaraan pemerintahan daerah, Pemerintah dan Pemerintah Provinsi Sulawesi Barat melakukan pembinaan dan fasilitasi secara khusus terhadap Kabupaten Mamuju Tengah dalam waktu 3 (tiga) tahun sejak diresmikan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0001/text> legal:textHasTextString "Untuk mengefektifkan penyelenggaraan pemerintahan daerah, Pemerintah dan Pemerintah Provinsi Sulawesi Barat melakukan pembinaan dan fasilitasi secara khusus terhadap Kabupaten Mamuju Tengah dalam waktu 3 (tiga) tahun sejak diresmikan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0001/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0002> legal:ayatHasRawText "Pemerintah bersama Gubernur Sulawesi Barat melakukan evaluasi terhadap penyelenggaraan Pemerintahan Kabupaten Mamuju Tengah sesuai peraturan perundang- undangan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0002/text> legal:textHasTextString "Pemerintah bersama Gubernur Sulawesi Barat melakukan evaluasi terhadap penyelenggaraan Pemerintahan Kabupaten Mamuju Tengah sesuai peraturan perundang- undangan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0002/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0003> .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0003> legal:ayatHasRawText "Hasil evaluasi sebagaimana dimaksud pada ayat (2) dijadikan acuan kebijakan lebih lanjut oleh Pemerintah dan/atau Gubernur Sulawesi Barat sesuai dengan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0003/text> legal:textHasTextString "Hasil evaluasi sebagaimana dimaksud pada ayat (2) dijadikan acuan kebijakan lebih lanjut oleh Pemerintah dan/atau Gubernur Sulawesi Barat sesuai dengan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0003/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0002> .
+<http://example.org/legal/document/uu/2013/4/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2013/4/bab/0008> .
+<http://example.org/legal/document/uu/2013/4/bab/0008> legal:babHasKey 8 .
+<http://example.org/legal/document/uu/2013/4/bab/0008> legal:babHasTitle "KETENTUAN PERALIHAN" .
+<http://example.org/legal/document/uu/2013/4/bab/0008> legal:babHasPasalSet <http://example.org/legal/document/uu/2013/4/bab/0008/pasals> .
+<http://example.org/legal/document/uu/2013/4/bab/0008/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0019> .
+<http://example.org/legal/document/uu/2013/4/pasal/0019> legal:pasalHasKey 19 .
+<http://example.org/legal/document/uu/2013/4/pasal/0019> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111> .
+<http://example.org/legal/document/uu/2013/4> legal:documentHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0019> .
+<http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111> legal:pasalVersionHasVersionDate "2013-01-11"^^xsd:date .
+<http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111> legal:pasalVersionHasRawText "(1). Sebelum terbentuknya Dewan Perwakilan Rakyat Daerah Kabupaten Mamuju Tengah berdasarkan hasil Pemilihan Umum Tahun 2014, Penjabat Bupati Mamuju Tengah menyusun Rancangan Peraturan Bupati tentang Anggaran Pendapatan dan Belanja Daerah Kabupaten Mamuju Tengah untuk tahun anggaran berikutnya. HK . Kg N & Tata 3 PRESIDEN REPUBLIK INDONESIA .14-\n(2). Rancangan Peraturan Bupati Mamuju Tengah sebagaimana dimaksud pada ayat (1) dilaksanakan setelah disahkan oleh Gubernur Sulawesi Barat. (3 Proses pengesahan dan penetapan Peraturan Bupati Mamuju Tengah sebagaimana dimaksud pada ayat (2) dilaksanakan sesuai dengan peraturan perundang- undangan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat/0001> legal:ayatHasRawText "Sebelum terbentuknya Dewan Perwakilan Rakyat Daerah Kabupaten Mamuju Tengah berdasarkan hasil Pemilihan Umum Tahun 2014, Penjabat Bupati Mamuju Tengah menyusun Rancangan Peraturan Bupati tentang Anggaran Pendapatan dan Belanja Daerah Kabupaten Mamuju Tengah untuk tahun anggaran berikutnya. HK . Kg N & Tata 3 PRESIDEN REPUBLIK INDONESIA .14-" .
+<http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat/0001/text> legal:textHasTextString "Sebelum terbentuknya Dewan Perwakilan Rakyat Daerah Kabupaten Mamuju Tengah berdasarkan hasil Pemilihan Umum Tahun 2014, Penjabat Bupati Mamuju Tengah menyusun Rancangan Peraturan Bupati tentang Anggaran Pendapatan dan Belanja Daerah Kabupaten Mamuju Tengah untuk tahun anggaran berikutnya. HK . Kg N & Tata 3 PRESIDEN REPUBLIK INDONESIA .14-" .
+<http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat/0001/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat/0002> legal:ayatHasRawText "Rancangan Peraturan Bupati Mamuju Tengah sebagaimana dimaksud pada ayat (1) dilaksanakan setelah disahkan oleh Gubernur Sulawesi Barat. (3 Proses pengesahan dan penetapan Peraturan Bupati Mamuju Tengah sebagaimana dimaksud pada ayat (2) dilaksanakan sesuai dengan peraturan perundang- undangan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat/0002/text> legal:textHasTextString "Rancangan Peraturan Bupati Mamuju Tengah sebagaimana dimaksud pada ayat (1) dilaksanakan setelah disahkan oleh Gubernur Sulawesi Barat. (3 Proses pengesahan dan penetapan Peraturan Bupati Mamuju Tengah sebagaimana dimaksud pada ayat (2) dilaksanakan sesuai dengan peraturan perundang- undangan." .
+<http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat/0002/text> .
+<http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/bab/0008/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0020> .
+<http://example.org/legal/document/uu/2013/4/pasal/0020> legal:pasalHasKey 20 .
+<http://example.org/legal/document/uu/2013/4/pasal/0020> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2013/4/pasal/0020/version/20130111> .
+<http://example.org/legal/document/uu/2013/4> legal:documentHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0020> .
+<http://example.org/legal/document/uu/2013/4/pasal/0020/version/20130111> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2013/4/pasal/0020/version/20130111> legal:pasalVersionHasVersionDate "2013-01-11"^^xsd:date .
+<http://example.org/legal/document/uu/2013/4/pasal/0020/version/20130111> legal:pasalVersionHasRawText "Sebelum Bupati Mamuju Tengah bersama Dewan Perwakilan Rakyat Daerah Kabupaten Mamuju Tengah menetapkan peraturan daerah, dan Bupati Mamuju Tengah menetapkan peraturan bupati sebagai pelaksanaan Undang-Undang ini, semua peraturan daerah dan Peraturan Bupati Mamuju sepanjang tidak bertentangan dengan Undang-Undang ini tetap berlaku di Kabupaten Mamuju Tengah." .
+<http://example.org/legal/document/uu/2013/4/pasal/0020/version/20130111/text> legal:textHasTextString "Sebelum Bupati Mamuju Tengah bersama Dewan Perwakilan Rakyat Daerah Kabupaten Mamuju Tengah menetapkan peraturan daerah, dan Bupati Mamuju Tengah menetapkan peraturan bupati sebagai pelaksanaan Undang-Undang ini, semua peraturan daerah dan Peraturan Bupati Mamuju sepanjang tidak bertentangan dengan Undang-Undang ini tetap berlaku di Kabupaten Mamuju Tengah." .
+<http://example.org/legal/document/uu/2013/4/pasal/0020/version/20130111> legal:pasalVersionHasText <http://example.org/legal/document/uu/2013/4/pasal/0020/version/20130111/text> .
+<http://example.org/legal/document/uu/2013/4/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2013/4/bab/0009> .
+<http://example.org/legal/document/uu/2013/4/bab/0009> legal:babHasKey 9 .
+<http://example.org/legal/document/uu/2013/4/bab/0009> legal:babHasTitle "KETENTUAN PENUTUP" .
+<http://example.org/legal/document/uu/2013/4/bab/0009> legal:babHasPasalSet <http://example.org/legal/document/uu/2013/4/bab/0009/pasals> .
+<http://example.org/legal/document/uu/2013/4/bab/0009/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0021> .
+<http://example.org/legal/document/uu/2013/4/pasal/0021> legal:pasalHasKey 21 .
+<http://example.org/legal/document/uu/2013/4/pasal/0021> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2013/4/pasal/0021/version/20130111> .
+<http://example.org/legal/document/uu/2013/4> legal:documentHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0021> .
+<http://example.org/legal/document/uu/2013/4/pasal/0021/version/20130111> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2013/4/pasal/0021/version/20130111> legal:pasalVersionHasVersionDate "2013-01-11"^^xsd:date .
+<http://example.org/legal/document/uu/2013/4/pasal/0021/version/20130111> legal:pasalVersionHasRawText "Pada saat Undang-Undang ini mulai berlaku, semua ketentuan dalam peraturan perundang-undangan yang berkaitan dengan Kabupaten Mamuju Tengah harus disesuaikan dengan Undang- Undang ini." .
+<http://example.org/legal/document/uu/2013/4/pasal/0021/version/20130111/text> legal:textHasTextString "Pada saat Undang-Undang ini mulai berlaku, semua ketentuan dalam peraturan perundang-undangan yang berkaitan dengan Kabupaten Mamuju Tengah harus disesuaikan dengan Undang- Undang ini." .
+<http://example.org/legal/document/uu/2013/4/pasal/0021/version/20130111> legal:pasalVersionHasText <http://example.org/legal/document/uu/2013/4/pasal/0021/version/20130111/text> .
+<http://example.org/legal/document/uu/2013/4/bab/0009/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0022> .
+<http://example.org/legal/document/uu/2013/4/pasal/0022> legal:pasalHasKey 22 .
+<http://example.org/legal/document/uu/2013/4/pasal/0022> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2013/4/pasal/0022/version/20130111> .
+<http://example.org/legal/document/uu/2013/4> legal:documentHasPasal <http://example.org/legal/document/uu/2013/4/pasal/0022> .
+<http://example.org/legal/document/uu/2013/4/pasal/0022/version/20130111> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2013/4/pasal/0022/version/20130111> legal:pasalVersionHasVersionDate "2013-01-11"^^xsd:date .
+<http://example.org/legal/document/uu/2013/4/pasal/0022/version/20130111> legal:pasalVersionHasRawText "Undang-Undang ini mulai berlaku pada tanggal diundangkan. PI 3 Fo 4, 29, PRESIDEN REPUBLIK INDONESIA -15 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2013/4/pasal/0022/version/20130111/text> legal:textHasTextString "Undang-Undang ini mulai berlaku pada tanggal diundangkan. PI 3 Fo 4, 29, PRESIDEN REPUBLIK INDONESIA -15 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2013/4/pasal/0022/version/20130111> legal:pasalVersionHasText <http://example.org/legal/document/uu/2013/4/pasal/0022/version/20130111/text> .
+<http://example.org/legal/document/uu/2013/4> legal:documentHasDisahkanDate "2013-01-11"^^xsd:date .
+<http://example.org/legal/document/uu/2013/4> legal:documentMengingat <http://example.org/legal/document/uu/2013/4/mengingat> .
+<http://example.org/legal/document/uu/2013/4/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2013/4/mengingat/point> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/2013/4/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2013/4/mengingat/point/description> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2013/4/mengingat/point/0001> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0001/text> legal:textHasTextString "Pasal 18, Pasal 18A, Pasal 18B, Pasal 20, dan Pasal 21 Undang-Undang Dasar Negara Republik Indonesia Tahun 1945:" .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/2013/4/mengingat/point/0001/text> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2013/4/mengingat/point/0002> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0002/text> legal:textHasTextString "Undang-Undang Nomor 29 Tahun 1959 tentang Pembentukan Daerah-Daerah Tingkat II di Sulawesi (Lembaran Negara Republik Indonesia Tahun 1959 Nomor 74, Tambahan Lembaran Negara Republik Indonesia Nomor 1822):" .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/2013/4/mengingat/point/0002/text> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1959/29> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2013/4/mengingat/point/0003> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0003> legal:pointHasKey "3" .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0003/text> legal:textHasTextString "Undang-Undang Nomor 26 Tahun 2004 tentang Pembentukan Provinsi Sulawesi Barat (Lembaran Negara Republik Indonesia Tahun 2004 Nomor 105, Tambahan Lembaran Negara Republik Indonesia Nomor 4422)," .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0003> legal:pointHasText <http://example.org/legal/document/uu/2013/4/mengingat/point/0003/text> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2004/26> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2013/4/mengingat/point/0004> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0004> legal:pointHasKey "4" .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0004/text> legal:textHasTextString "Undang-Undang Nomor 32 Tahun 2004 tentang Pemerintahan Daerah (Lembaran Negara Republik Indonesia Tahun 2004 Nomor 125, Tambahan Lembaran Negara Republik Indonesia Nomor 4437) sebagaimana telah beberapa kali diubah terakhir dengan Undang-Undang Nomor 12 Tahun 2008 tentang Perubahan Kedua atas Undang-Undang Nomor 32 Tahun 2004 tentang Pemerintahan Daerah (Lembaran Negara Republik Indonesia Tahun 2008 Nomor 59, Tambahan Lembaran Negara Republik Indonesia Nomor 4844):" .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0004> legal:pointHasText <http://example.org/legal/document/uu/2013/4/mengingat/point/0004/text> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2004/32> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2008/12> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2013/4/mengingat/point/0005> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0005> legal:pointHasKey "5" .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0005/text> legal:textHasTextString "Undang-Undang Nomor 33 Tahun 2004 tentang Perimbangan Keuangan antara Pemerintah Pusat dan Pemerintahan Daerah (Lembaran Negara Republik Indonesia Tahun 2004 Nomor 126, Tambahan Lembaran Negara Republik Indonesia Nomor 4438):" .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0005> legal:pointHasText <http://example.org/legal/document/uu/2013/4/mengingat/point/0005/text> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0005/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2004/33> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2013/4/mengingat/point/0006> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0006> legal:pointHasKey "6" .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0006/text> legal:textHasTextString "Undang-Undang Nomor 27 Tahun 2009 tentang Majelis Permusyawaratan Rakyat, Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan Rakyat Daerah (Lembaran Negara Republik Indonesia Tahun 2009 Nomor 123, Tambahan Lembaran Negara Republik Indonesia Nomor 5043)," .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0006> legal:pointHasText <http://example.org/legal/document/uu/2013/4/mengingat/point/0006/text> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0006/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2009/27> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2013/4/mengingat/point/0007> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0007> legal:pointHasKey "7" .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0007/text> legal:textHasTextString "Undang-Undang Nomor 12 Tahun 2011 tentang Pembentukan Peraturan Perundang-undangan (Lembaran Negara Republik Indonesia Tahun 2011 Nomor 82, Tambahan Lembaran Negara Republik Indonesia Nomor 5234): HK . Kg N & Tata 3 PRESIDEN REPUBLIK INDONESIA -.3-" .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0007> legal:pointHasText <http://example.org/legal/document/uu/2013/4/mengingat/point/0007/text> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0007/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2011/12> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2013/4/mengingat/point/0008> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0008> legal:pointHasKey "8" .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0008/text> legal:textHasTextString "Undang-Undang Nomor 15 Tahun 2011 tentang Penyelenggara Pemilihan Umum (Lembaran Negara Republik Indonesia Tahun 2011 Nomor 101, Tambahan Lembaran Negara Republik Indonesia Nomor 5246)," .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0008> legal:pointHasText <http://example.org/legal/document/uu/2013/4/mengingat/point/0008/text> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0008/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2011/15> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2013/4/mengingat/point/0009> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0009> legal:pointHasKey "9" .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0009/text> legal:textHasTextString "Undang-Undang Nomor 8 Tahun 2012 tentang Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan Rakyat Daerah (Lembaran Negara Republik Indonesia Tahun 2012 Nomor 117, Tambahan Lembaran Negara Republik Indonesia Nomor 5316), Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA dan PRESIDEN REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG PEMBENTUKAN KABUPATEN MAMUJU TENGAH DI PROVINSI SULAWESI BARAT." .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0009> legal:pointHasText <http://example.org/legal/document/uu/2013/4/mengingat/point/0009/text> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0009/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2012/8> .
+<http://example.org/legal/document/uu/2013/4> legal:documentMenimbang <http://example.org/legal/document/uu/2013/4/menimbang> .
+<http://example.org/legal/document/uu/2013/4/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/2013/4/menimbang/point> .
+<http://example.org/legal/document/uu/2013/4/menimbang/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/2013/4/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2013/4/menimbang/point/description> .
+<http://example.org/legal/document/uu/2013/4/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2013/4/menimbang/point/a> .
+<http://example.org/legal/document/uu/2013/4/menimbang/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/2013/4/menimbang/point/a/text> legal:textHasTextString "bahwa untuk mendorong perkembangan dan kemajuan Provinsi Sulawesi Barat pada umumnya dan Kabupaten Mamuju pada khususnya, serta adanya aspirasi yang berkembang dalam masyarakat, dipandang perlu meningkatkan penyelenggaraan pemerintahan, pembangunan, dan pelayanan publik guna mempercepat terwujudnya kesejahteraan masyarakat," .
+<http://example.org/legal/document/uu/2013/4/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/2013/4/menimbang/point/a/text> .
+<http://example.org/legal/document/uu/2013/4/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2013/4/menimbang/point/b> .
+<http://example.org/legal/document/uu/2013/4/menimbang/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/2013/4/menimbang/point/b/text> legal:textHasTextString "bahwa dengan memperhatikan kemampuan ekonomi, potensi daerah, sosial budaya, politik, jumlah penduduk, luas daerah, kemampuan keuangan, tingkat kesejahteraan masyarakat, rentang kendali penyelenggaraan pemerintahan, dan meningkatnya beban tugas dan volume kerja di bidang pemerintahan, pembangunan, dan kemasyarakatan di Kabupaten Mamuju, perlu dilakukan pembentukan Kabupaten Mamuju Tengah di Provinsi Sulawesi Barat:" .
+<http://example.org/legal/document/uu/2013/4/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/2013/4/menimbang/point/b/text> .
+<http://example.org/legal/document/uu/2013/4/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2013/4/menimbang/point/c> .
+<http://example.org/legal/document/uu/2013/4/menimbang/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/2013/4/menimbang/point/c/text> legal:textHasTextString "bahwa pembentukan Kabupaten Mamuju Tengah dimaksudkan untuk mendorong peningkatan pelayanan di bidang pemerintahan, pembangunan, dan kemasyarakatan, serta kemampuan dalam pemanfaatan potensi daerah untuk penyelenggaraan otonomi daerah," .
+<http://example.org/legal/document/uu/2013/4/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/2013/4/menimbang/point/c/text> .
+<http://example.org/legal/document/uu/2013/4/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2013/4/menimbang/point/d> .
+<http://example.org/legal/document/uu/2013/4/menimbang/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/2013/4/menimbang/point/d/text> legal:textHasTextString "bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a, huruf b, dan huruf c, perlu membentuk Undang-Undang tentang Pembentukan Kabupaten Mamuju Tengah di Provinsi Sulawesi Barat: HK . Kg N & Tata 3 PRESIDEN REPUBLIK INDONESIA “Da -" .
+<http://example.org/legal/document/uu/2013/4/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/2013/4/menimbang/point/d/text> .
+<http://example.org/legal/document/uu/2013/4> legal:documentHasDisahkanPengesah "Diundangkan di Jakarta" .
+<http://example.org/legal/document/uu/2013/4> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/2013/4> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/2013/4> a legal:Document .
+<http://example.org/legal/document/uu/2013/4/bab> a legal:BabSet .
+<http://example.org/legal/document/uu/2013/4/bab/0001> a legal:Bab .
+<http://example.org/legal/document/uu/2013/4/bab/0001/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2013/4/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0003> a legal:Point .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0004> a legal:Point .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/bab/0002> a legal:Bab .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian> a legal:BagianSet .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0001> a legal:Bagian .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0001/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2013/4/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/2013/4/pasal/0002/version/20130111> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2013/4/pasal/0002/version/20130111/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0002> a legal:Bagian .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0002/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2013/4/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/a> a legal:Point .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/b> a legal:Point .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/c> a legal:Point .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/d> a legal:Point .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/e> a legal:Point .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0004> a legal:Pasal .
+<http://example.org/legal/document/uu/2013/4/pasal/0004/version/20130111> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2013/4/pasal/0004/version/20130111/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0003> a legal:Bagian .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0003/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2013/4/pasal/0005> a legal:Pasal .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/a> a legal:Point .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/b> a legal:Point .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/c> a legal:Point .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/d> a legal:Point .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0006> a legal:Pasal .
+<http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0004> a legal:Bagian .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0004/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2013/4/pasal/0007> a legal:Pasal .
+<http://example.org/legal/document/uu/2013/4/pasal/0007/version/20130111> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2013/4/pasal/0007/version/20130111/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/bab/0003> a legal:Bab .
+<http://example.org/legal/document/uu/2013/4/bab/0003/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2013/4/pasal/0008> a legal:Pasal .
+<http://example.org/legal/document/uu/2013/4/pasal/0008/version/20130111> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2013/4/pasal/0008/version/20130111/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/bab/0004> a legal:Bab .
+<http://example.org/legal/document/uu/2013/4/bab/0004/bagian> a legal:BagianSet .
+<http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0001> a legal:Bagian .
+<http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0001/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2013/4/pasal/0009> a legal:Pasal .
+<http://example.org/legal/document/uu/2013/4/pasal/0009/version/20130111> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2013/4/pasal/0009/version/20130111/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0002> a legal:Bagian .
+<http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0002/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2013/4/pasal/0010> a legal:Pasal .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0004> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0005> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0005/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0006> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0006/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0011> a legal:Pasal .
+<http://example.org/legal/document/uu/2013/4/pasal/0011/version/20130111> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2013/4/pasal/0011/version/20130111/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0012> a legal:Pasal .
+<http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0003> a legal:Bagian .
+<http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0003/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2013/4/pasal/0013> a legal:Pasal .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0004> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/bab/0005> a legal:Bab .
+<http://example.org/legal/document/uu/2013/4/bab/0005/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2013/4/pasal/0014> a legal:Pasal .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/a> a legal:Point .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/b> a legal:Point .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/c> a legal:Point .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/d> a legal:Point .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/bab/0006> a legal:Bab .
+<http://example.org/legal/document/uu/2013/4/bab/0006/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2013/4/pasal/0015> a legal:Pasal .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0016> a legal:Pasal .
+<http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0017> a legal:Pasal .
+<http://example.org/legal/document/uu/2013/4/pasal/0017/version/20130111> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2013/4/pasal/0017/version/20130111/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/bab/0007> a legal:Bab .
+<http://example.org/legal/document/uu/2013/4/bab/0007/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2013/4/pasal/0018> a legal:Pasal .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/bab/0008> a legal:Bab .
+<http://example.org/legal/document/uu/2013/4/bab/0008/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2013/4/pasal/0019> a legal:Pasal .
+<http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0020> a legal:Pasal .
+<http://example.org/legal/document/uu/2013/4/pasal/0020/version/20130111> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2013/4/pasal/0020/version/20130111/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/bab/0009> a legal:Bab .
+<http://example.org/legal/document/uu/2013/4/bab/0009/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2013/4/pasal/0021> a legal:Pasal .
+<http://example.org/legal/document/uu/2013/4/pasal/0021/version/20130111> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2013/4/pasal/0021/version/20130111/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/pasal/0022> a legal:Pasal .
+<http://example.org/legal/document/uu/2013/4/pasal/0022/version/20130111> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2013/4/pasal/0022/version/20130111/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/mengingat/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0003> a legal:Point .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0004> a legal:Point .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0005> a legal:Point .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0005/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0006> a legal:Point .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0006/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0007> a legal:Point .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0007/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0008> a legal:Point .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0008/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0009> a legal:Point .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0009/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/2013/4/menimbang/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/menimbang/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2013/4/menimbang/point/a> a legal:Point .
+<http://example.org/legal/document/uu/2013/4/menimbang/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/menimbang/point/b> a legal:Point .
+<http://example.org/legal/document/uu/2013/4/menimbang/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/menimbang/point/c> a legal:Point .
+<http://example.org/legal/document/uu/2013/4/menimbang/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/menimbang/point/d> a legal:Point .
+<http://example.org/legal/document/uu/2013/4/menimbang/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/4/bab> legal:partOf <http://example.org/legal/document/uu/2013/4> .
+<http://example.org/legal/document/uu/2013/4/bab/0001> legal:partOf <http://example.org/legal/document/uu/2013/4/bab> .
+<http://example.org/legal/document/uu/2013/4/bab/0001/pasals> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0001/pasals> .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2013/4> .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111> .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0001> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point> .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0002> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point> .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0003> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point> .
+<http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point/0004> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0001/version/20130111/point> .
+<http://example.org/legal/document/uu/2013/4/bab/0002> legal:partOf <http://example.org/legal/document/uu/2013/4/bab> .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0002> .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0001> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0002/bagian> .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0001/pasals> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0001/pasals> .
+<http://example.org/legal/document/uu/2013/4/pasal/0002/version/20130111> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2013/4> .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0002> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0002/bagian> .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0002/pasals> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0003> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0002/pasals> .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0003> .
+<http://example.org/legal/document/uu/2013/4/pasal/0003> legal:partOf <http://example.org/legal/document/uu/2013/4> .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111> .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/a> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point> .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/b> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point> .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/c> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point> .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/d> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point> .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point/e> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0001/point> .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0003/version/20130111/ayat/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0004> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0002/pasals> .
+<http://example.org/legal/document/uu/2013/4/pasal/0004/version/20130111> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0004> .
+<http://example.org/legal/document/uu/2013/4/pasal/0004> legal:partOf <http://example.org/legal/document/uu/2013/4> .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0003> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0002/bagian> .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0003/pasals> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0003> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0003/pasals> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0005> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005> legal:partOf <http://example.org/legal/document/uu/2013/4> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/a> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/b> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/c> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point/d> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0001/point> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0003> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0005/version/20130111/ayat/0003> .
+<http://example.org/legal/document/uu/2013/4/pasal/0006> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0003/pasals> .
+<http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0006> .
+<http://example.org/legal/document/uu/2013/4/pasal/0006> legal:partOf <http://example.org/legal/document/uu/2013/4> .
+<http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111/ayat> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111> .
+<http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0006/version/20130111/ayat/0002> .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0004> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0002/bagian> .
+<http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0004/pasals> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0004> .
+<http://example.org/legal/document/uu/2013/4/pasal/0007> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0002/bagian/0004/pasals> .
+<http://example.org/legal/document/uu/2013/4/pasal/0007/version/20130111> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0007> .
+<http://example.org/legal/document/uu/2013/4/pasal/0007> legal:partOf <http://example.org/legal/document/uu/2013/4> .
+<http://example.org/legal/document/uu/2013/4/bab/0003> legal:partOf <http://example.org/legal/document/uu/2013/4/bab> .
+<http://example.org/legal/document/uu/2013/4/bab/0003/pasals> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0003> .
+<http://example.org/legal/document/uu/2013/4/pasal/0008> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0003/pasals> .
+<http://example.org/legal/document/uu/2013/4/pasal/0008/version/20130111> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0008> .
+<http://example.org/legal/document/uu/2013/4/pasal/0008> legal:partOf <http://example.org/legal/document/uu/2013/4> .
+<http://example.org/legal/document/uu/2013/4/bab/0004> legal:partOf <http://example.org/legal/document/uu/2013/4/bab> .
+<http://example.org/legal/document/uu/2013/4/bab/0004/bagian> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0004> .
+<http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0001> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0004/bagian> .
+<http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0001/pasals> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0009> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0001/pasals> .
+<http://example.org/legal/document/uu/2013/4/pasal/0009/version/20130111> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0009> .
+<http://example.org/legal/document/uu/2013/4/pasal/0009> legal:partOf <http://example.org/legal/document/uu/2013/4> .
+<http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0002> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0004/bagian> .
+<http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0002/pasals> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0002/pasals> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0010> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010> legal:partOf <http://example.org/legal/document/uu/2013/4> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0003> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0003> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0004> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0004> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0005> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0005/text> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0005> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0006> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0006/text> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0010/version/20130111/ayat/0006> .
+<http://example.org/legal/document/uu/2013/4/pasal/0011> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0002/pasals> .
+<http://example.org/legal/document/uu/2013/4/pasal/0011/version/20130111> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0011> .
+<http://example.org/legal/document/uu/2013/4/pasal/0011> legal:partOf <http://example.org/legal/document/uu/2013/4> .
+<http://example.org/legal/document/uu/2013/4/pasal/0012> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0002/pasals> .
+<http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0012> .
+<http://example.org/legal/document/uu/2013/4/pasal/0012> legal:partOf <http://example.org/legal/document/uu/2013/4> .
+<http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111/ayat> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111> .
+<http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0012/version/20130111/ayat/0002> .
+<http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0003> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0004/bagian> .
+<http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0003/pasals> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0003> .
+<http://example.org/legal/document/uu/2013/4/pasal/0013> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0004/bagian/0003/pasals> .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0013> .
+<http://example.org/legal/document/uu/2013/4/pasal/0013> legal:partOf <http://example.org/legal/document/uu/2013/4> .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111> .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0003> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0003> .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0004> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0013/version/20130111/ayat/0004> .
+<http://example.org/legal/document/uu/2013/4/bab/0005> legal:partOf <http://example.org/legal/document/uu/2013/4/bab> .
+<http://example.org/legal/document/uu/2013/4/bab/0005/pasals> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0005> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0005/pasals> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0014> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014> legal:partOf <http://example.org/legal/document/uu/2013/4> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0003> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0003> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/a> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/b> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/c> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point> .
+<http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point/d> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0014/version/20130111/ayat/0004/point> .
+<http://example.org/legal/document/uu/2013/4/bab/0006> legal:partOf <http://example.org/legal/document/uu/2013/4/bab> .
+<http://example.org/legal/document/uu/2013/4/bab/0006/pasals> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0006> .
+<http://example.org/legal/document/uu/2013/4/pasal/0015> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0006/pasals> .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0015> .
+<http://example.org/legal/document/uu/2013/4/pasal/0015> legal:partOf <http://example.org/legal/document/uu/2013/4> .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111> .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0003> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0015/version/20130111/ayat/0003> .
+<http://example.org/legal/document/uu/2013/4/pasal/0016> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0006/pasals> .
+<http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0016> .
+<http://example.org/legal/document/uu/2013/4/pasal/0016> legal:partOf <http://example.org/legal/document/uu/2013/4> .
+<http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111> .
+<http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0016/version/20130111/ayat/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0017> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0006/pasals> .
+<http://example.org/legal/document/uu/2013/4/pasal/0017/version/20130111> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0017> .
+<http://example.org/legal/document/uu/2013/4/pasal/0017> legal:partOf <http://example.org/legal/document/uu/2013/4> .
+<http://example.org/legal/document/uu/2013/4/bab/0007> legal:partOf <http://example.org/legal/document/uu/2013/4/bab> .
+<http://example.org/legal/document/uu/2013/4/bab/0007/pasals> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0007> .
+<http://example.org/legal/document/uu/2013/4/pasal/0018> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0007/pasals> .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0018> .
+<http://example.org/legal/document/uu/2013/4/pasal/0018> legal:partOf <http://example.org/legal/document/uu/2013/4> .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111> .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0003> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0018/version/20130111/ayat/0003> .
+<http://example.org/legal/document/uu/2013/4/bab/0008> legal:partOf <http://example.org/legal/document/uu/2013/4/bab> .
+<http://example.org/legal/document/uu/2013/4/bab/0008/pasals> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0008> .
+<http://example.org/legal/document/uu/2013/4/pasal/0019> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0008/pasals> .
+<http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0019> .
+<http://example.org/legal/document/uu/2013/4/pasal/0019> legal:partOf <http://example.org/legal/document/uu/2013/4> .
+<http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111> .
+<http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat/0001> .
+<http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat> .
+<http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0019/version/20130111/ayat/0002> .
+<http://example.org/legal/document/uu/2013/4/pasal/0020> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0008/pasals> .
+<http://example.org/legal/document/uu/2013/4/pasal/0020/version/20130111> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0020> .
+<http://example.org/legal/document/uu/2013/4/pasal/0020> legal:partOf <http://example.org/legal/document/uu/2013/4> .
+<http://example.org/legal/document/uu/2013/4/bab/0009> legal:partOf <http://example.org/legal/document/uu/2013/4/bab> .
+<http://example.org/legal/document/uu/2013/4/bab/0009/pasals> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0009> .
+<http://example.org/legal/document/uu/2013/4/pasal/0021> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0009/pasals> .
+<http://example.org/legal/document/uu/2013/4/pasal/0021/version/20130111> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0021> .
+<http://example.org/legal/document/uu/2013/4/pasal/0021> legal:partOf <http://example.org/legal/document/uu/2013/4> .
+<http://example.org/legal/document/uu/2013/4/pasal/0022> legal:partOf <http://example.org/legal/document/uu/2013/4/bab/0009/pasals> .
+<http://example.org/legal/document/uu/2013/4/pasal/0022/version/20130111> legal:partOf <http://example.org/legal/document/uu/2013/4/pasal/0022> .
+<http://example.org/legal/document/uu/2013/4/pasal/0022> legal:partOf <http://example.org/legal/document/uu/2013/4> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2013/4/mengingat/point> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2013/4/mengingat/point> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/2013/4/mengingat/point> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0004> legal:partOf <http://example.org/legal/document/uu/2013/4/mengingat/point> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0005> legal:partOf <http://example.org/legal/document/uu/2013/4/mengingat/point> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0006> legal:partOf <http://example.org/legal/document/uu/2013/4/mengingat/point> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0007> legal:partOf <http://example.org/legal/document/uu/2013/4/mengingat/point> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0008> legal:partOf <http://example.org/legal/document/uu/2013/4/mengingat/point> .
+<http://example.org/legal/document/uu/2013/4/mengingat/point/0009> legal:partOf <http://example.org/legal/document/uu/2013/4/mengingat/point> .
+<http://example.org/legal/document/uu/2013/4/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/2013/4/menimbang/point> .
+<http://example.org/legal/document/uu/2013/4/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/2013/4/menimbang/point> .
+<http://example.org/legal/document/uu/2013/4/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/2013/4/menimbang/point> .
+<http://example.org/legal/document/uu/2013/4/menimbang/point/d> legal:partOf <http://example.org/legal/document/uu/2013/4/menimbang/point> .

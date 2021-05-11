@@ -1,0 +1,47 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/2014/1> legal:documentHasBabSet <http://example.org/legal/document/uu/2014/1/bab> .
+<http://example.org/legal/document/uu/2014/1> legal:documentHasDisahkanDate "2014-01-15"^^xsd:date .
+<http://example.org/legal/document/uu/2014/1> legal:documentMengingat <http://example.org/legal/document/uu/2014/1/mengingat> .
+<http://example.org/legal/document/uu/2014/1/mengingat/text> legal:textHasTextString "Pasal 5S ayat (1), Pasal 18B ayat (2), Pasal 20, Pasal 25A, serta Pasal 33 ayat (3) dan ayat (4) Undang-Undang Dasar Negara Republik Indonesia Tahun 1945, Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA dan PRESIDEN REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 27 TAHUN 2007 TENTANG PENGELOLAAN WILAYAH PESISIR DAN PULAU-PULAU KECIL." .
+<http://example.org/legal/document/uu/2014/1/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/2014/1/mengingat/text> .
+<http://example.org/legal/document/uu/2014/1/mengingat/text> legal:textReferencesLegal <http://example.org/legal/document/uu> .
+<http://example.org/legal/document/uu/2014/1> legal:documentMenimbang <http://example.org/legal/document/uu/2014/1/menimbang> .
+<http://example.org/legal/document/uu/2014/1/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/2014/1/menimbang/point> .
+<http://example.org/legal/document/uu/2014/1/menimbang/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/2014/1/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2014/1/menimbang/point/description> .
+<http://example.org/legal/document/uu/2014/1/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2014/1/menimbang/point/a> .
+<http://example.org/legal/document/uu/2014/1/menimbang/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/2014/1/menimbang/point/a/text> legal:textHasTextString "bahwa wilayah pesisir dan pulau-pulau kecil dikuasai oleh negara dan dipergunakan untuk sebesar-besarnya kemakmuran rakyat sebagaimana diamanatkan dalam Undang-Undang Dasar Negara Republik Indonesia Tahun 1945," .
+<http://example.org/legal/document/uu/2014/1/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/2014/1/menimbang/point/a/text> .
+<http://example.org/legal/document/uu/2014/1/menimbang/point/a/text> legal:textReferencesLegal <http://example.org/legal/document/uu> .
+<http://example.org/legal/document/uu/2014/1/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2014/1/menimbang/point/b> .
+<http://example.org/legal/document/uu/2014/1/menimbang/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/2014/1/menimbang/point/b/text> legal:textHasTextString "bahwa Undang-Undang Nomor 27 Tahun 2007 tentang Pengelolaan Wilayah Pesisir dan Pulau-Pulau Kecil belum memberikan kewenangan dan tanggung jawab negara secara memadai atas pengelolaan Perairan Pesisir dan pulau-pulau kecil sehingga beberapa pasal perlu disempurnakan sesuai dengan perkembangan dan kebutuhan hukum di masyarakat:" .
+<http://example.org/legal/document/uu/2014/1/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/2014/1/menimbang/point/b/text> .
+<http://example.org/legal/document/uu/2014/1/menimbang/point/b/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2007/27> .
+<http://example.org/legal/document/uu/2014/1/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2014/1/menimbang/point/c> .
+<http://example.org/legal/document/uu/2014/1/menimbang/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/2014/1/menimbang/point/c/text> legal:textHasTextString ". bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a dan huruf b, perlu membentuk Undang-Undang tentang Perubahan atas Undang-Undang Nomor 27 Tahun 2007 tentang Pengelolaan Wilayah Pesisir dan Pulau-Pulau Kecil: PRESIDEN REPUBLIK INDONESIA -D-" .
+<http://example.org/legal/document/uu/2014/1/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/2014/1/menimbang/point/c/text> .
+<http://example.org/legal/document/uu/2014/1/menimbang/point/c/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2007/27> .
+<http://example.org/legal/document/uu/2014/1> legal:documentHasDisahkanPengesah "DR. H. SUSILO BAMBANG YUDHOYONO" .
+<http://example.org/legal/document/uu/2014/1> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/2014/1> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/2014/1> a legal:Document .
+<http://example.org/legal/document/uu/2014/1/mengingat/text> a legal:Text .
+<http://example.org/legal/document/uu/2014/1/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/2014/1/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/2014/1/menimbang/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2014/1/menimbang/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2014/1/menimbang/point/a> a legal:Point .
+<http://example.org/legal/document/uu/2014/1/menimbang/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/2014/1/menimbang/point/b> a legal:Point .
+<http://example.org/legal/document/uu/2014/1/menimbang/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/2014/1/menimbang/point/c> a legal:Point .
+<http://example.org/legal/document/uu/2014/1/menimbang/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/2014/1/bab> legal:partOf <http://example.org/legal/document/uu/2014/1> .
+<http://example.org/legal/document/uu/2014/1/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/2014/1/menimbang/point> .
+<http://example.org/legal/document/uu/2014/1/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/2014/1/menimbang/point> .
+<http://example.org/legal/document/uu/2014/1/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/2014/1/menimbang/point> .
