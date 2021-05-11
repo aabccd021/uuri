@@ -1,0 +1,45 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/2011/9> legal:documentHasBabSet <http://example.org/legal/document/uu/2011/9/bab> .
+<http://example.org/legal/document/uu/2011/9> legal:documentHasDisahkanDate "2011-08-08"^^xsd:date .
+<http://example.org/legal/document/uu/2011/9> legal:documentMengingat <http://example.org/legal/document/uu/2011/9/mengingat> .
+<http://example.org/legal/document/uu/2011/9/mengingat/text> legal:textHasTextString "Pasal 20, Pasal 21, dan Pasal 33 ayat (1) dan ayat (4) Undang-Undang Dasar Negara Republik Indonesia Tahun 1945, Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA dan PRESIDEN REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 9 TAHUN 2006 TENTANG SISTEM RESI GUDANG. PRESIDEN REPUBLIK IM DIONESIA -a-" .
+<http://example.org/legal/document/uu/2011/9/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/2011/9/mengingat/text> .
+<http://example.org/legal/document/uu/2011/9/mengingat/text> legal:textReferencesLegal <http://example.org/legal/document/uu> .
+<http://example.org/legal/document/uu/2011/9> legal:documentMenimbang <http://example.org/legal/document/uu/2011/9/menimbang> .
+<http://example.org/legal/document/uu/2011/9/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/2011/9/menimbang/point> .
+<http://example.org/legal/document/uu/2011/9/menimbang/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/2011/9/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2011/9/menimbang/point/description> .
+<http://example.org/legal/document/uu/2011/9/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2011/9/menimbang/point/a> .
+<http://example.org/legal/document/uu/2011/9/menimbang/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/2011/9/menimbang/point/a/text> legal:textHasTextString "bahwa Sistem Resi Gudang bertujuan untuk meningkatkan kesejahteraan ' masyarakat yang berkeadilan sosial berdasarkan Pancasila dan Undang- Undang Dasar Negara Republik Indonesia Tahun 1945," .
+<http://example.org/legal/document/uu/2011/9/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/2011/9/menimbang/point/a/text> .
+<http://example.org/legal/document/uu/2011/9/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2011/9/menimbang/point/b> .
+<http://example.org/legal/document/uu/2011/9/menimbang/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/2011/9/menimbang/point/b/text> legal:textHasTextString "bahwa untuk memenuhi kebutuhan pelaku usaha di bidang Sistem Resi Gudang perlu adanya pengaturan mengenai Lembaga Jaminan Resi Gudang," .
+<http://example.org/legal/document/uu/2011/9/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/2011/9/menimbang/point/b/text> .
+<http://example.org/legal/document/uu/2011/9/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2011/9/menimbang/point/c> .
+<http://example.org/legal/document/uu/2011/9/menimbang/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/2011/9/menimbang/point/c/text> legal:textHasTextString ". bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a dan huruf b, perlu membentuk Undang-Undang tentang Perubahan atas Undang-Undang Nomor 9 Tahun 2006 tentang Sistem Resi Gudang," .
+<http://example.org/legal/document/uu/2011/9/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/2011/9/menimbang/point/c/text> .
+<http://example.org/legal/document/uu/2011/9/menimbang/point/c/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2006/9> .
+<http://example.org/legal/document/uu/2011/9> legal:documentHasDisahkanPengesah "DR. H. SUSILO BAMBANG YUDHOYONO" .
+<http://example.org/legal/document/uu/2011/9> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/2011/9> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/2011/9> a legal:Document .
+<http://example.org/legal/document/uu/2011/9/mengingat/text> a legal:Text .
+<http://example.org/legal/document/uu/2011/9/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/2011/9/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/2011/9/menimbang/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2011/9/menimbang/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2011/9/menimbang/point/a> a legal:Point .
+<http://example.org/legal/document/uu/2011/9/menimbang/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/2011/9/menimbang/point/b> a legal:Point .
+<http://example.org/legal/document/uu/2011/9/menimbang/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/2011/9/menimbang/point/c> a legal:Point .
+<http://example.org/legal/document/uu/2011/9/menimbang/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/2011/9/bab> legal:partOf <http://example.org/legal/document/uu/2011/9> .
+<http://example.org/legal/document/uu/2011/9/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/2011/9/menimbang/point> .
+<http://example.org/legal/document/uu/2011/9/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/2011/9/menimbang/point> .
+<http://example.org/legal/document/uu/2011/9/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/2011/9/menimbang/point> .

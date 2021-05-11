@@ -1,0 +1,46 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/2011/8> legal:documentHasBabSet <http://example.org/legal/document/uu/2011/8/bab> .
+<http://example.org/legal/document/uu/2011/8> legal:documentHasDisahkanDate "2011-07-20"^^xsd:date .
+<http://example.org/legal/document/uu/2011/8> legal:documentMengingat <http://example.org/legal/document/uu/2011/8/mengingat> .
+<http://example.org/legal/document/uu/2011/8/mengingat/text> legal:textHasTextString " ayat (2), Pasal 24, Pasal 24C, dan Pasal 25 Undang- Undang Dasar Negara Republik Indonesia Tahun 1945, 2. Undang-Undang Nomor 24 Tahun 2003 tentang Mahkamah Konstitusi (Lembaran Negara Republik Indonesia Tahun 2003 Nomor 98, Tambahan Lembaran Negara Republik Indonesia Nomor 4316), PRESIDEN REPUBLIK INDONESIA 3. Undang Undang Nomor 48 Tahun 2009 tentang Kekuasaan Kehakiman (Lembaran Negara Republik Indonesia Tahun 2009 Nomor 157, Tambahan Lembaran Negara Republik Indonesia Nomor 5076), Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA dan PRESIDEN REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG PERUBAHAN ATAS UNDANG- UNDANG NOMOR 24 TAHUN 2003 TENTANG MAHKAMAH KONSTITUSI" .
+<http://example.org/legal/document/uu/2011/8/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/2011/8/mengingat/text> .
+<http://example.org/legal/document/uu/2011/8/mengingat/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2003/24> .
+<http://example.org/legal/document/uu/2011/8> legal:documentMenimbang <http://example.org/legal/document/uu/2011/8/menimbang> .
+<http://example.org/legal/document/uu/2011/8/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/2011/8/menimbang/point> .
+<http://example.org/legal/document/uu/2011/8/menimbang/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/2011/8/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2011/8/menimbang/point/description> .
+<http://example.org/legal/document/uu/2011/8/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2011/8/menimbang/point/a> .
+<http://example.org/legal/document/uu/2011/8/menimbang/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/2011/8/menimbang/point/a/text> legal:textHasTextString "bahwa Mahkamah Konstitusi merupakan salah satu pelaku kekuasaan kehakiman yang merdeka mempunyai peranan penting guna menegakkan konstitusi dan prinsip negara hukum sesuai dengan kewenangan dan kewajibannya sebagaimana ditentukan dalam Undang-Undang Dasar Negara Republik Indonesia Tahun 1945," .
+<http://example.org/legal/document/uu/2011/8/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/2011/8/menimbang/point/a/text> .
+<http://example.org/legal/document/uu/2011/8/menimbang/point/a/text> legal:textReferencesLegal <http://example.org/legal/document/uu> .
+<http://example.org/legal/document/uu/2011/8/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2011/8/menimbang/point/b> .
+<http://example.org/legal/document/uu/2011/8/menimbang/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/2011/8/menimbang/point/b/text> legal:textHasTextString "bahwa Undang-Undang Nomor 24 Tahun 2003 tentang Mahkamah Konstitusi sebagian sudah tidak sesuai lagi dengan perkembangan kebutuhan hukum masyarakat dan kehidupan ketatanegaraan," .
+<http://example.org/legal/document/uu/2011/8/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/2011/8/menimbang/point/b/text> .
+<http://example.org/legal/document/uu/2011/8/menimbang/point/b/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2003/24> .
+<http://example.org/legal/document/uu/2011/8/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2011/8/menimbang/point/c> .
+<http://example.org/legal/document/uu/2011/8/menimbang/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/2011/8/menimbang/point/c/text> legal:textHasTextString "bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf adan huruf b, perlu membentuk Undang-Undang tentang Perubahan atas Undang Undang Nomor 24 Tahun 2003 tentang Mahkamah Konstitusi," .
+<http://example.org/legal/document/uu/2011/8/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/2011/8/menimbang/point/c/text> .
+<http://example.org/legal/document/uu/2011/8> legal:documentHasDisahkanPengesah "DR. H. SUSILO BAMBANG YUDHOYONO" .
+<http://example.org/legal/document/uu/2011/8> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/2011/8> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/2011/8> a legal:Document .
+<http://example.org/legal/document/uu/2011/8/mengingat/text> a legal:Text .
+<http://example.org/legal/document/uu/2011/8/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/2011/8/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/2011/8/menimbang/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2011/8/menimbang/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2011/8/menimbang/point/a> a legal:Point .
+<http://example.org/legal/document/uu/2011/8/menimbang/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/2011/8/menimbang/point/b> a legal:Point .
+<http://example.org/legal/document/uu/2011/8/menimbang/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/2011/8/menimbang/point/c> a legal:Point .
+<http://example.org/legal/document/uu/2011/8/menimbang/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/2011/8/bab> legal:partOf <http://example.org/legal/document/uu/2011/8> .
+<http://example.org/legal/document/uu/2011/8/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/2011/8/menimbang/point> .
+<http://example.org/legal/document/uu/2011/8/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/2011/8/menimbang/point> .
+<http://example.org/legal/document/uu/2011/8/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/2011/8/menimbang/point> .

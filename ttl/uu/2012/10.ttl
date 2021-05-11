@@ -1,0 +1,68 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/2012/10> legal:documentHasBabSet <http://example.org/legal/document/uu/2012/10/bab> .
+<http://example.org/legal/document/uu/2012/10> legal:documentHasDisahkanDate "2012-07-23"^^xsd:date .
+<http://example.org/legal/document/uu/2012/10> legal:documentMengingat <http://example.org/legal/document/uu/2012/10/mengingat> .
+<http://example.org/legal/document/uu/2012/10/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2012/10/mengingat/point> .
+<http://example.org/legal/document/uu/2012/10/mengingat/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/2012/10/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2012/10/mengingat/point/description> .
+<http://example.org/legal/document/uu/2012/10/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2012/10/mengingat/point/0001> .
+<http://example.org/legal/document/uu/2012/10/mengingat/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/2012/10/mengingat/point/0001/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 11, Pasal 20, dan Pasal 28B Undang-Undang Dasar Negara Republik Indonesia Tahun 1945," .
+<http://example.org/legal/document/uu/2012/10/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/2012/10/mengingat/point/0001/text> .
+<http://example.org/legal/document/uu/2012/10/mengingat/point/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu> .
+<http://example.org/legal/document/uu/2012/10/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2012/10/mengingat/point/0002> .
+<http://example.org/legal/document/uu/2012/10/mengingat/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/2012/10/mengingat/point/0002/text> legal:textHasTextString "Undang-Undang Nomor 24 Tahun 2000 tentang Perjanjian Internasional (Lembaran Negara Republik Indonesia Tahun 2000 Nomor 185, Tambahan Lembaran Negara Republik Indonesia Nomor 4012), Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA dan PRESIDEN REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG PENGESAHAN OPTIONAL PROTOCOL TO THE CONVENTION ON THE RIGHTS OF THE CHILD ON THE SALE OF CHILDREN, CHILD PROSTITUTION AND CHILD PORNOGRAPHY (PROTOKOL OPSIONAL KONVENSI HAK-HAK ANAK MENGENAI PENJUALAN ANAK, PROSTITUSI ANAK, DAN PORNOGRAFI ANAK). Pasal... PI 3 Fo 4, 29, PRESIDEN REPUBLIK INDONESIA -3-" .
+<http://example.org/legal/document/uu/2012/10/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/2012/10/mengingat/point/0002/text> .
+<http://example.org/legal/document/uu/2012/10/mengingat/point/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2000/24> .
+<http://example.org/legal/document/uu/2012/10> legal:documentMenimbang <http://example.org/legal/document/uu/2012/10/menimbang> .
+<http://example.org/legal/document/uu/2012/10/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/2012/10/menimbang/point> .
+<http://example.org/legal/document/uu/2012/10/menimbang/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/2012/10/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2012/10/menimbang/point/description> .
+<http://example.org/legal/document/uu/2012/10/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2012/10/menimbang/point/a> .
+<http://example.org/legal/document/uu/2012/10/menimbang/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/2012/10/menimbang/point/a/text> legal:textHasTextString "bahwa anak mempunyai hak untuk dilindungi dari eksploitasi ekonomi dan bekerja pada pekerjaan yang membahayakan atau mengganggu pendidikan anak, merusak kesehatan fisik, mental, spiritual, moral, dan perkembangan sosial anak," .
+<http://example.org/legal/document/uu/2012/10/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/2012/10/menimbang/point/a/text> .
+<http://example.org/legal/document/uu/2012/10/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2012/10/menimbang/point/b> .
+<http://example.org/legal/document/uu/2012/10/menimbang/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/2012/10/menimbang/point/b/text> legal:textHasTextString "bahwa kegiatan penjualan anak, prostitusi anak, dan pornografi anak merupakan kejahatan terhadap kemanusiaan yang harus diberantas," .
+<http://example.org/legal/document/uu/2012/10/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/2012/10/menimbang/point/b/text> .
+<http://example.org/legal/document/uu/2012/10/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2012/10/menimbang/point/c> .
+<http://example.org/legal/document/uu/2012/10/menimbang/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/2012/10/menimbang/point/c/text> legal:textHasTextString ". bahwa Indonesia sebagai bagian dari masyarakat internasional harus turut serta secara aktif dalam rangka mencegah, memberantas, dan menghukum pelaku tindak pidana penjualan anak, prostitusi anak, dan pornografi anak yang diwujudkan dalam Optional Protocol to the Convention on the Rights of the Child on the Sale of Children, Child Prostitution and Child Pornography (Protokol Opsional Konvensi Hak-hak Anak mengenai Penjualan Anak, Prostitusi Anak, dan Pornografi Anak)," .
+<http://example.org/legal/document/uu/2012/10/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/2012/10/menimbang/point/c/text> .
+<http://example.org/legal/document/uu/2012/10/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2012/10/menimbang/point/d> .
+<http://example.org/legal/document/uu/2012/10/menimbang/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/2012/10/menimbang/point/d/text> legal:textHasTextString "bahwa... PI 3 Fo 4, 29, PRESIDEN REPUBLIK INDONESIA -2- d. bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a, huruf b, dan huruf c perlu mengesahkan Optional Protocol to the Convention on the Rights of the Child on the Sale of Children, Child Prostitution and Child Pornography (Protokol Opsional Konvensi Hak-hak Anak mengenai Penjualan Anak, Prostitusi Anak, dan Pornografi Anak) dengan Undang-Undang," .
+<http://example.org/legal/document/uu/2012/10/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/2012/10/menimbang/point/d/text> .
+<http://example.org/legal/document/uu/2012/10> legal:documentHasDisahkanPengesah "DR. H. SUSILO BAMBANG YUDHOYONO" .
+<http://example.org/legal/document/uu/2012/10> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/2012/10> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/2012/10> a legal:Document .
+<http://example.org/legal/document/uu/2012/10/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/2012/10/mengingat/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2012/10/mengingat/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2012/10/mengingat/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/2012/10/mengingat/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2012/10/mengingat/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/2012/10/mengingat/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2012/10/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/2012/10/menimbang/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2012/10/menimbang/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2012/10/menimbang/point/a> a legal:Point .
+<http://example.org/legal/document/uu/2012/10/menimbang/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/2012/10/menimbang/point/b> a legal:Point .
+<http://example.org/legal/document/uu/2012/10/menimbang/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/2012/10/menimbang/point/c> a legal:Point .
+<http://example.org/legal/document/uu/2012/10/menimbang/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/2012/10/menimbang/point/d> a legal:Point .
+<http://example.org/legal/document/uu/2012/10/menimbang/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/2012/10/bab> legal:partOf <http://example.org/legal/document/uu/2012/10> .
+<http://example.org/legal/document/uu/2012/10/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2012/10/mengingat/point> .
+<http://example.org/legal/document/uu/2012/10/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2012/10/mengingat/point> .
+<http://example.org/legal/document/uu/2012/10/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/2012/10/menimbang/point> .
+<http://example.org/legal/document/uu/2012/10/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/2012/10/menimbang/point> .
+<http://example.org/legal/document/uu/2012/10/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/2012/10/menimbang/point> .
+<http://example.org/legal/document/uu/2012/10/menimbang/point/d> legal:partOf <http://example.org/legal/document/uu/2012/10/menimbang/point> .
