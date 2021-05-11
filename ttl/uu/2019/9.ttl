@@ -1,0 +1,62 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/2019/9> legal:documentHasBabSet <http://example.org/legal/document/uu/2019/9/bab> .
+<http://example.org/legal/document/uu/2019/9> legal:documentHasDisahkanDate "2019-08-01"^^xsd:date .
+<http://example.org/legal/document/uu/2019/9> legal:documentMengingat <http://example.org/legal/document/uu/2019/9/mengingat> .
+<http://example.org/legal/document/uu/2019/9/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2019/9/mengingat/point> .
+<http://example.org/legal/document/uu/2019/9/mengingat/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/2019/9/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2019/9/mengingat/point/description> .
+<http://example.org/legal/document/uu/2019/9/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2019/9/mengingat/point/0001> .
+<http://example.org/legal/document/uu/2019/9/mengingat/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/2019/9/mengingat/point/0001/text> legal:textHasTextString "Pasal 5 ayat (!), Pasal 1l, dan Pasal 20 Undang-Undang Dasar Negara Republik Indonesia Tahun 1945," .
+<http://example.org/legal/document/uu/2019/9/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/2019/9/mengingat/point/0001/text> .
+<http://example.org/legal/document/uu/2019/9/mengingat/point/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu> .
+<http://example.org/legal/document/uu/2019/9/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2019/9/mengingat/point/0002> .
+<http://example.org/legal/document/uu/2019/9/mengingat/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/2019/9/mengingat/point/0002/text> legal:textHasTextString "Undang-Undang Nomor 24 Tahun 2000 tentang Perjanjian Internasional (Lembaran Negara Republik Indonesia Tahun 2000 Nomor 185, Tambahan Lembaran Negara Republik Indonesia Nomor 4012), Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPJBLiK INDONESIA dan PRESIDEN REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG PENGESAHAN PERJANJIAN ANTARA REPIJBLIK INDONESIA DAN REPUBLIK ISLAM IRAN TENTANG EKSTRADIS!I (TREATY BETWEEN THE REPUBLIC OF INDONESIA AND THE ISLAMIC REPUBLIC OF IRAN ON EXTRAINNTION)." .
+<http://example.org/legal/document/uu/2019/9/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/2019/9/mengingat/point/0002/text> .
+<http://example.org/legal/document/uu/2019/9/mengingat/point/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2000/24> .
+<http://example.org/legal/document/uu/2019/9> legal:documentMenimbang <http://example.org/legal/document/uu/2019/9/menimbang> .
+<http://example.org/legal/document/uu/2019/9/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/2019/9/menimbang/point> .
+<http://example.org/legal/document/uu/2019/9/menimbang/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/2019/9/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2019/9/menimbang/point/description> .
+<http://example.org/legal/document/uu/2019/9/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2019/9/menimbang/point/a> .
+<http://example.org/legal/document/uu/2019/9/menimbang/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/2019/9/menimbang/point/a/text> legal:textHasTextString "bahwa untuk melindungi segenap bangsa Indonesia dan seluruh tumpah darah Indonesia, dan untuk memajukan kesejahteraan umum, mencerdaskan kehidupan bangsa, dan ikut melaksanakan ketertiban dunia yang berdasarkan kemerdekaan, perdamaian abadi, dan keadilan sosial, Pemerintah Republik Indonesia sebagai bagian dari masyarakat internasional melakukan hubungan dan kerja sama internasional yang diwujudkan dalam perjanjian internasional," .
+<http://example.org/legal/document/uu/2019/9/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/2019/9/menimbang/point/a/text> .
+<http://example.org/legal/document/uu/2019/9/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2019/9/menimbang/point/b> .
+<http://example.org/legal/document/uu/2019/9/menimbang/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/2019/9/menimbang/point/b/text> legal:textHasTextString "bahwa untuk meningkatkan kerja sama di bidang penegakan hukum, Pemerintah Republik Indonesia dan Pemerintah Republik Islam Iran telah menandatangani Perjanjian antara Republik Indonesia dan Republik Islam Iran tentang Ekstradisi (Treaty between the Republic of Indonesia and the Islamic Republic of Iran on Extradition) pada tanggal 14 Desember 2016 di Tehran, Iran, sehingga perlu ditindaklanjuti dengan melakukan pengesahan atas Perjanjian tersebut sesuai dengan Undang-Undang Nomor 24 Tahun 2000 tentang Perjanjian Internasional," .
+<http://example.org/legal/document/uu/2019/9/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/2019/9/menimbang/point/b/text> .
+<http://example.org/legal/document/uu/2019/9/menimbang/point/b/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2000/24> .
+<http://example.org/legal/document/uu/2019/9/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2019/9/menimbang/point/c> .
+<http://example.org/legal/document/uu/2019/9/menimbang/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/2019/9/menimbang/point/c/text> legal:textHasTextString "bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a dan huruf b, perlu membentuk Undang- Undang tentang Pengesahan Perjanjian antara Republik Indonesia dan Republik Islam Iran tentang Ekstradisi (Treaty between the Republic of Indonesia and the Islamic Republic of Iran on Extradition), SK No 002442 A Pa 3 PRESIDEN REPUBLIK INDONESIA -2-" .
+<http://example.org/legal/document/uu/2019/9/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/2019/9/menimbang/point/c/text> .
+<http://example.org/legal/document/uu/2019/9> legal:documentHasDisahkanPengesah "JOKO WIDODO" .
+<http://example.org/legal/document/uu/2019/9> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/2019/9> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/2019/9> a legal:Document .
+<http://example.org/legal/document/uu/2019/9/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/2019/9/mengingat/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2019/9/mengingat/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2019/9/mengingat/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/2019/9/mengingat/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2019/9/mengingat/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/2019/9/mengingat/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2019/9/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/2019/9/menimbang/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2019/9/menimbang/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2019/9/menimbang/point/a> a legal:Point .
+<http://example.org/legal/document/uu/2019/9/menimbang/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/2019/9/menimbang/point/b> a legal:Point .
+<http://example.org/legal/document/uu/2019/9/menimbang/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/2019/9/menimbang/point/c> a legal:Point .
+<http://example.org/legal/document/uu/2019/9/menimbang/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/2019/9/bab> legal:partOf <http://example.org/legal/document/uu/2019/9> .
+<http://example.org/legal/document/uu/2019/9/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2019/9/mengingat/point> .
+<http://example.org/legal/document/uu/2019/9/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2019/9/mengingat/point> .
+<http://example.org/legal/document/uu/2019/9/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/2019/9/menimbang/point> .
+<http://example.org/legal/document/uu/2019/9/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/2019/9/menimbang/point> .
+<http://example.org/legal/document/uu/2019/9/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/2019/9/menimbang/point> .
