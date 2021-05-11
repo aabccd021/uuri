@@ -1,0 +1,746 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/2006/19> legal:documentHasBabSet <http://example.org/legal/document/uu/2006/19/bab> .
+<http://example.org/legal/document/uu/2006/19/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2006/19/bab/0001> .
+<http://example.org/legal/document/uu/2006/19/bab/0001> legal:babHasKey 1 .
+<http://example.org/legal/document/uu/2006/19/bab/0001> legal:babHasTitle "KETENTUAN UMUM" .
+<http://example.org/legal/document/uu/2006/19/bab/0001> legal:babHasPasalSet <http://example.org/legal/document/uu/2006/19/bab/0001/pasals> .
+<http://example.org/legal/document/uu/2006/19/bab/0001/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0001> .
+<http://example.org/legal/document/uu/2006/19/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/2006/19/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228> .
+<http://example.org/legal/document/uu/2006/19> legal:documentHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0001> .
+<http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228> legal:pasalVersionHasVersionDate "2006-12-28"^^xsd:date .
+<http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228> legal:pasalVersionHasRawText "Dalam Undang-Undang ini yang dimaksud dengan:\n1. Dewan Pertimbangan Presiden adalah lembaga pemerintah yang bertugas memberikan nasihat dan pertimbangan kepada Presiden sebagaimana dimaksud dalam Pasal 16 Undang-Undang Dasar Negara Republik Indonesia Tahun 1945.\n2. Presiden Republik Indonesia, yang selanjutnya disebut Presiden, adalah pemegang kekuasaan pemerintahan negara sebagaimana dimaksud dalam Undang-Undang Dasar Negara Republik Indonesia Tahun 1945.\n" .
+<http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228/point> .
+<http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228/point/description> legal:textHasTextString "Dalam Undang-Undang ini yang dimaksud dengan:" .
+<http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228/point/description> .
+<http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228/point/0001> .
+<http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228/point/0001/text> legal:textHasTextString "Dewan Pertimbangan Presiden adalah lembaga pemerintah yang bertugas memberikan nasihat dan pertimbangan kepada Presiden sebagaimana dimaksud dalam Pasal 16 Undang-Undang Dasar Negara Republik Indonesia Tahun 1945." .
+<http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228/point/0001> legal:pointHasText <http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228/point/0001/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228/point/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2006/19/pasal/0016> .
+<http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228/point/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu> .
+<http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228/point/0002> .
+<http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228/point/0002/text> legal:textHasTextString "Presiden Republik Indonesia, yang selanjutnya disebut Presiden, adalah pemegang kekuasaan pemerintahan negara sebagaimana dimaksud dalam Undang-Undang Dasar Negara Republik Indonesia Tahun 1945." .
+<http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228/point/0002> legal:pointHasText <http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228/point/0002/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228/point/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu> .
+<http://example.org/legal/document/uu/2006/19/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2006/19/bab/0002> .
+<http://example.org/legal/document/uu/2006/19/bab/0002> legal:babHasKey 2 .
+<http://example.org/legal/document/uu/2006/19/bab/0002> legal:babHasTitle "KEDUDUKAN, TUGAS, DAN FUNGSI" .
+<http://example.org/legal/document/uu/2006/19/bab/0002> legal:babHasBagianSet <http://example.org/legal/document/uu/2006/19/bab/0002/bagian> .
+<http://example.org/legal/document/uu/2006/19/bab/0002/bagian> legal:bagianSetHasBagian <http://example.org/legal/document/uu/2006/19/bab/0002/bagian/0001> .
+<http://example.org/legal/document/uu/2006/19/bab/0002/bagian/0001> legal:bagianHasKey 1 .
+<http://example.org/legal/document/uu/2006/19/bab/0002/bagian/0001> legal:bagianHasTitle "Bagian Kesatu Kedudukan" .
+<http://example.org/legal/document/uu/2006/19/bab/0002/bagian/0001> legal:bagianHasPasalSet <http://example.org/legal/document/uu/2006/19/bab/0002/bagian/0001/pasals> .
+<http://example.org/legal/document/uu/2006/19/bab/0002/bagian/0001/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0002> .
+<http://example.org/legal/document/uu/2006/19/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/2006/19/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2006/19/pasal/0002/version/20061228> .
+<http://example.org/legal/document/uu/2006/19> legal:documentHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0002> .
+<http://example.org/legal/document/uu/2006/19/pasal/0002/version/20061228> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2006/19/pasal/0002/version/20061228> legal:pasalVersionHasVersionDate "2006-12-28"^^xsd:date .
+<http://example.org/legal/document/uu/2006/19/pasal/0002/version/20061228> legal:pasalVersionHasRawText "Dewan Pertimbangan Presiden berkedudukan di bawah Presiden dan bertanggung jawab kepada Presiden." .
+<http://example.org/legal/document/uu/2006/19/pasal/0002/version/20061228/text> legal:textHasTextString "Dewan Pertimbangan Presiden berkedudukan di bawah Presiden dan bertanggung jawab kepada Presiden." .
+<http://example.org/legal/document/uu/2006/19/pasal/0002/version/20061228> legal:pasalVersionHasText <http://example.org/legal/document/uu/2006/19/pasal/0002/version/20061228/text> .
+<http://example.org/legal/document/uu/2006/19/bab/0002/bagian/0001/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0003> .
+<http://example.org/legal/document/uu/2006/19/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/2006/19/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2006/19/pasal/0003/version/20061228> .
+<http://example.org/legal/document/uu/2006/19> legal:documentHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0003> .
+<http://example.org/legal/document/uu/2006/19/pasal/0003/version/20061228> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2006/19/pasal/0003/version/20061228> legal:pasalVersionHasVersionDate "2006-12-28"^^xsd:date .
+<http://example.org/legal/document/uu/2006/19/pasal/0003/version/20061228> legal:pasalVersionHasRawText "Dewan Pertimbangan Presiden berkedudukan di tempat kedudukan Presiden." .
+<http://example.org/legal/document/uu/2006/19/pasal/0003/version/20061228/text> legal:textHasTextString "Dewan Pertimbangan Presiden berkedudukan di tempat kedudukan Presiden." .
+<http://example.org/legal/document/uu/2006/19/pasal/0003/version/20061228> legal:pasalVersionHasText <http://example.org/legal/document/uu/2006/19/pasal/0003/version/20061228/text> .
+<http://example.org/legal/document/uu/2006/19/bab/0002/bagian> legal:bagianSetHasBagian <http://example.org/legal/document/uu/2006/19/bab/0002/bagian/0002> .
+<http://example.org/legal/document/uu/2006/19/bab/0002/bagian/0002> legal:bagianHasKey 2 .
+<http://example.org/legal/document/uu/2006/19/bab/0002/bagian/0002> legal:bagianHasTitle "Bagian Kedua Tugas dan Fungsi" .
+<http://example.org/legal/document/uu/2006/19/bab/0002/bagian/0002> legal:bagianHasPasalSet <http://example.org/legal/document/uu/2006/19/bab/0002/bagian/0002/pasals> .
+<http://example.org/legal/document/uu/2006/19/bab/0002/bagian/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0004> .
+<http://example.org/legal/document/uu/2006/19/pasal/0004> legal:pasalHasKey 4 .
+<http://example.org/legal/document/uu/2006/19/pasal/0004> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228> .
+<http://example.org/legal/document/uu/2006/19> legal:documentHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0004> .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228> legal:pasalVersionHasVersionDate "2006-12-28"^^xsd:date .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228> legal:pasalVersionHasRawText "(1). Dewan Pertimbangan Presiden bertugas memberikan nasihat dan pertimbangan kepada Presiden dalam menjalankan kekuasaan pemerintahan negara. - 3 -\n(2). Pemberian nasihat dan pertimbangan sebagaimana dimaksud pada ayat (1) wajib dilakukan oleh Dewan Pertimbangan Presiden baik diminta maupun tidak diminta oleh Presiden.\n(3). Nasihat dan pertimbangan sebagaimana dimaksud pada ayat (2) disampaikan baik secara perorangan maupun sebagai satu kesatuan nasihat dan pertimbangan seluruh anggota dewan." .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat> .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0001> .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0001> legal:ayatHasRawText "Dewan Pertimbangan Presiden bertugas memberikan nasihat dan pertimbangan kepada Presiden dalam menjalankan kekuasaan pemerintahan negara. - 3 -" .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0001/text> legal:textHasTextString "Dewan Pertimbangan Presiden bertugas memberikan nasihat dan pertimbangan kepada Presiden dalam menjalankan kekuasaan pemerintahan negara. - 3 -" .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0001/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0002> .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0002> legal:ayatHasRawText "Pemberian nasihat dan pertimbangan sebagaimana dimaksud pada ayat (1) wajib dilakukan oleh Dewan Pertimbangan Presiden baik diminta maupun tidak diminta oleh Presiden." .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0002/text> legal:textHasTextString "Pemberian nasihat dan pertimbangan sebagaimana dimaksud pada ayat (1) wajib dilakukan oleh Dewan Pertimbangan Presiden baik diminta maupun tidak diminta oleh Presiden." .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0002/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0001> .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0003> .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0003> legal:ayatHasRawText "Nasihat dan pertimbangan sebagaimana dimaksud pada ayat (2) disampaikan baik secara perorangan maupun sebagai satu kesatuan nasihat dan pertimbangan seluruh anggota dewan." .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0003/text> legal:textHasTextString "Nasihat dan pertimbangan sebagaimana dimaksud pada ayat (2) disampaikan baik secara perorangan maupun sebagai satu kesatuan nasihat dan pertimbangan seluruh anggota dewan." .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0003/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0002> .
+<http://example.org/legal/document/uu/2006/19/bab/0002/bagian/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0005> .
+<http://example.org/legal/document/uu/2006/19/pasal/0005> legal:pasalHasKey 5 .
+<http://example.org/legal/document/uu/2006/19/pasal/0005> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2006/19/pasal/0005/version/20061228> .
+<http://example.org/legal/document/uu/2006/19> legal:documentHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0005> .
+<http://example.org/legal/document/uu/2006/19/pasal/0005/version/20061228> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2006/19/pasal/0005/version/20061228> legal:pasalVersionHasVersionDate "2006-12-28"^^xsd:date .
+<http://example.org/legal/document/uu/2006/19/pasal/0005/version/20061228> legal:pasalVersionHasRawText "Dalam menjalankan tugasnya, Dewan Pertimbangan Presiden melaksanakan fungsi nasihat dan pertimbangan yang terkait dengan pelaksanaan kekuasaan pemerintahan negara." .
+<http://example.org/legal/document/uu/2006/19/pasal/0005/version/20061228/text> legal:textHasTextString "Dalam menjalankan tugasnya, Dewan Pertimbangan Presiden melaksanakan fungsi nasihat dan pertimbangan yang terkait dengan pelaksanaan kekuasaan pemerintahan negara." .
+<http://example.org/legal/document/uu/2006/19/pasal/0005/version/20061228> legal:pasalVersionHasText <http://example.org/legal/document/uu/2006/19/pasal/0005/version/20061228/text> .
+<http://example.org/legal/document/uu/2006/19/bab/0002/bagian/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0006> .
+<http://example.org/legal/document/uu/2006/19/pasal/0006> legal:pasalHasKey 6 .
+<http://example.org/legal/document/uu/2006/19/pasal/0006> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228> .
+<http://example.org/legal/document/uu/2006/19> legal:documentHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0006> .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228> legal:pasalVersionHasVersionDate "2006-12-28"^^xsd:date .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228> legal:pasalVersionHasRawText "(1). Dalam menjalankan tugas dan fungsinya, anggota Dewan Pertimbangan Presiden tidak dibenarkan memberikan keterangan, pernyataan, dan/atau menyebarluaskan isi nasihat dan pertimbangan kepada pihak mana pun.\n(2). Dalam rangka melaksanakan tugas dan fungsinya, anggota Dewan Pertimbangan Presiden atas permintaan Presiden dapat:\na. mengikuti sidang kabinet;\nb. mengikuti kunjungan kerja dan kunjungan kenegaraan.\n" .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat> .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0001> .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0001> legal:ayatHasRawText "Dalam menjalankan tugas dan fungsinya, anggota Dewan Pertimbangan Presiden tidak dibenarkan memberikan keterangan, pernyataan, dan/atau menyebarluaskan isi nasihat dan pertimbangan kepada pihak mana pun." .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0001/text> legal:textHasTextString "Dalam menjalankan tugas dan fungsinya, anggota Dewan Pertimbangan Presiden tidak dibenarkan memberikan keterangan, pernyataan, dan/atau menyebarluaskan isi nasihat dan pertimbangan kepada pihak mana pun." .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0001/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002> .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002> legal:ayatHasRawText "Dalam rangka melaksanakan tugas dan fungsinya, anggota Dewan Pertimbangan Presiden atas permintaan Presiden dapat:\na. mengikuti sidang kabinet;\nb. mengikuti kunjungan kerja dan kunjungan kenegaraan.\n" .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002> legal:ayatHasPointSet <http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002/point> .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002/point/description> legal:textHasTextString "Dalam rangka melaksanakan tugas dan fungsinya, anggota Dewan Pertimbangan Presiden atas permintaan Presiden dapat:" .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002/point/description> .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002/point/a> .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002/point/a/text> legal:textHasTextString "mengikuti sidang kabinet;" .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002/point/a> legal:pointHasText <http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002/point/a/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002/point/b> .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002/point/b/text> legal:textHasTextString "mengikuti kunjungan kerja dan kunjungan kenegaraan." .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002/point/b> legal:pointHasText <http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002/point/b/text> .
+<http://example.org/legal/document/uu/2006/19/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2006/19/bab/0003> .
+<http://example.org/legal/document/uu/2006/19/bab/0003> legal:babHasKey 3 .
+<http://example.org/legal/document/uu/2006/19/bab/0003> legal:babHasTitle "SUSUNAN DAN KEANGGOTAAN" .
+<http://example.org/legal/document/uu/2006/19/bab/0003> legal:babHasBagianSet <http://example.org/legal/document/uu/2006/19/bab/0003/bagian> .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian> legal:bagianSetHasBagian <http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0001> .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0001> legal:bagianHasKey 1 .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0001> legal:bagianHasTitle "Bagian Kesatu Susunan" .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0001> legal:bagianHasPasalSet <http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0001/pasals> .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0001/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0007> .
+<http://example.org/legal/document/uu/2006/19/pasal/0007> legal:pasalHasKey 7 .
+<http://example.org/legal/document/uu/2006/19/pasal/0007> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228> .
+<http://example.org/legal/document/uu/2006/19> legal:documentHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0007> .
+<http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228> legal:pasalVersionHasVersionDate "2006-12-28"^^xsd:date .
+<http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228> legal:pasalVersionHasRawText "(1). Dewan Pertimbangan Presiden terdiri atas seorang Ketua merangkap anggota dan 8 (delapan) orang anggota.\n(2). Ketua sebagaimana dimaksud pada ayat (1) dapat dijabat secara bergantian di antara anggota yang ditetapkan oleh Presiden. - 4 -" .
+<http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228/ayat> .
+<http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228/ayat/0001> .
+<http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228/ayat/0001> legal:ayatHasRawText "Dewan Pertimbangan Presiden terdiri atas seorang Ketua merangkap anggota dan 8 (delapan) orang anggota." .
+<http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228/ayat/0001/text> legal:textHasTextString "Dewan Pertimbangan Presiden terdiri atas seorang Ketua merangkap anggota dan 8 (delapan) orang anggota." .
+<http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228/ayat/0001/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228/ayat/0002> .
+<http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228/ayat/0002> legal:ayatHasRawText "Ketua sebagaimana dimaksud pada ayat (1) dapat dijabat secara bergantian di antara anggota yang ditetapkan oleh Presiden. - 4 -" .
+<http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228/ayat/0002/text> legal:textHasTextString "Ketua sebagaimana dimaksud pada ayat (1) dapat dijabat secara bergantian di antara anggota yang ditetapkan oleh Presiden. - 4 -" .
+<http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228/ayat/0002/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228/ayat/0001> .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian> legal:bagianSetHasBagian <http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0002> .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0002> legal:bagianHasKey 2 .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0002> legal:bagianHasTitle "Bagian Kedua Keanggotaan" .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0002> legal:bagianHasPasalSet <http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0002/pasals> .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0008> .
+<http://example.org/legal/document/uu/2006/19/pasal/0008> legal:pasalHasKey 8 .
+<http://example.org/legal/document/uu/2006/19/pasal/0008> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228> .
+<http://example.org/legal/document/uu/2006/19> legal:documentHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0008> .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228> legal:pasalVersionHasVersionDate "2006-12-28"^^xsd:date .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228> legal:pasalVersionHasRawText "Untuk dapat diangkat menjadi anggota Dewan Pertimbangan Presiden, seseorang harus memenuhi persyaratan:\na. bertakwa kepada Tuhan Yang Maha Esa;\nb. warga negara Indonesia;\nc. setia kepada Pancasila sebagai dasar negara, Undang- Undang Dasar Negara Republik Indonesia Tahun 1945, dan cita-cita Proklamasi 17 Agustus 1945;\nd. mempunyai sifat kenegarawanan;\ne. sehat jasmani dan rohani;\nf. jujur, adil, dan berkelakuan tidak tercela;\ng. tidak pernah dijatuhi pidana berdasarkan putusan pengadilan yang telah memperoleh kekuatan hukum tetap karena melakukan tindak pidana yang diancam dengan pidana penjara 5 (lima) tahun atau lebih; dan\nh. mempunyai keahlian tertentu di bidang pemerintahan negara.\n" .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point> .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/description> legal:textHasTextString "Untuk dapat diangkat menjadi anggota Dewan Pertimbangan Presiden, seseorang harus memenuhi persyaratan:" .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/description> .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/a> .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/a/text> legal:textHasTextString "bertakwa kepada Tuhan Yang Maha Esa;" .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/a> legal:pointHasText <http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/a/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/b> .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/b/text> legal:textHasTextString "warga negara Indonesia;" .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/b> legal:pointHasText <http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/b/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/c> .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/c/text> legal:textHasTextString "setia kepada Pancasila sebagai dasar negara, Undang- Undang Dasar Negara Republik Indonesia Tahun 1945, dan cita-cita Proklamasi 17 Agustus 1945;" .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/c> legal:pointHasText <http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/c/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/d> .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/d/text> legal:textHasTextString "mempunyai sifat kenegarawanan;" .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/d> legal:pointHasText <http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/d/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/e> .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/e/text> legal:textHasTextString "sehat jasmani dan rohani;" .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/e> legal:pointHasText <http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/e/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/f> .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/f> legal:pointHasKey "f" .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/f/text> legal:textHasTextString "jujur, adil, dan berkelakuan tidak tercela;" .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/f> legal:pointHasText <http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/f/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/g> .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/g> legal:pointHasKey "g" .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/g/text> legal:textHasTextString "tidak pernah dijatuhi pidana berdasarkan putusan pengadilan yang telah memperoleh kekuatan hukum tetap karena melakukan tindak pidana yang diancam dengan pidana penjara 5 (lima) tahun atau lebih; dan" .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/g> legal:pointHasText <http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/g/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/h> .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/h> legal:pointHasKey "h" .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/h/text> legal:textHasTextString "mempunyai keahlian tertentu di bidang pemerintahan negara." .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/h> legal:pointHasText <http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/h/text> .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian> legal:bagianSetHasBagian <http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0003> .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0003> legal:bagianHasKey 3 .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0003> legal:bagianHasTitle "Bagian Ketiga Pengangkatan dan Pemberhentian" .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0003> legal:bagianHasPasalSet <http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0003/pasals> .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0003/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0009> .
+<http://example.org/legal/document/uu/2006/19/pasal/0009> legal:pasalHasKey 9 .
+<http://example.org/legal/document/uu/2006/19/pasal/0009> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228> .
+<http://example.org/legal/document/uu/2006/19> legal:documentHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0009> .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228> legal:pasalVersionHasVersionDate "2006-12-28"^^xsd:date .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228> legal:pasalVersionHasRawText "(1). Anggota Dewan Pertimbangan Presiden diangkat dan diberhentikan oleh Presiden.\n(2). Pengangkatan dan pemberhentian anggota Dewan Pertimbangan Presiden ditetapkan dengan Keputusan Presiden.\n(3). Anggota Dewan Pertimbangan Presiden diangkat oleh Presiden paling lambat 3 (tiga) bulan terhitung sejak tanggal Presiden terpilih dilantik." .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat> .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0001> .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0001> legal:ayatHasRawText "Anggota Dewan Pertimbangan Presiden diangkat dan diberhentikan oleh Presiden." .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0001/text> legal:textHasTextString "Anggota Dewan Pertimbangan Presiden diangkat dan diberhentikan oleh Presiden." .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0001/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0002> .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0002> legal:ayatHasRawText "Pengangkatan dan pemberhentian anggota Dewan Pertimbangan Presiden ditetapkan dengan Keputusan Presiden." .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0002/text> legal:textHasTextString "Pengangkatan dan pemberhentian anggota Dewan Pertimbangan Presiden ditetapkan dengan Keputusan Presiden." .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0002/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0003> .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0003> legal:ayatHasRawText "Anggota Dewan Pertimbangan Presiden diangkat oleh Presiden paling lambat 3 (tiga) bulan terhitung sejak tanggal Presiden terpilih dilantik." .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0003/text> legal:textHasTextString "Anggota Dewan Pertimbangan Presiden diangkat oleh Presiden paling lambat 3 (tiga) bulan terhitung sejak tanggal Presiden terpilih dilantik." .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0003/text> .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0003/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0010> .
+<http://example.org/legal/document/uu/2006/19/pasal/0010> legal:pasalHasKey 10 .
+<http://example.org/legal/document/uu/2006/19/pasal/0010> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2006/19/pasal/0010/version/20061228> .
+<http://example.org/legal/document/uu/2006/19> legal:documentHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0010> .
+<http://example.org/legal/document/uu/2006/19/pasal/0010/version/20061228> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2006/19/pasal/0010/version/20061228> legal:pasalVersionHasVersionDate "2006-12-28"^^xsd:date .
+<http://example.org/legal/document/uu/2006/19/pasal/0010/version/20061228> legal:pasalVersionHasRawText "Masa jabatan keanggotaan Dewan Pertimbangan Presiden berakhir bersamaan dengan masa berakhirnya jabatan Presiden atau berakhir karena diberhentikan oleh Presiden . - 5 -" .
+<http://example.org/legal/document/uu/2006/19/pasal/0010/version/20061228/text> legal:textHasTextString "Masa jabatan keanggotaan Dewan Pertimbangan Presiden berakhir bersamaan dengan masa berakhirnya jabatan Presiden atau berakhir karena diberhentikan oleh Presiden . - 5 -" .
+<http://example.org/legal/document/uu/2006/19/pasal/0010/version/20061228> legal:pasalVersionHasText <http://example.org/legal/document/uu/2006/19/pasal/0010/version/20061228/text> .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0003/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0011> .
+<http://example.org/legal/document/uu/2006/19/pasal/0011> legal:pasalHasKey 11 .
+<http://example.org/legal/document/uu/2006/19/pasal/0011> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228> .
+<http://example.org/legal/document/uu/2006/19> legal:documentHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0011> .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228> legal:pasalVersionHasVersionDate "2006-12-28"^^xsd:date .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228> legal:pasalVersionHasRawText "(1). Anggota Dewan Pertimbangan Presiden diberhentikan dari jabatannya karena:\na. meninggal dunia;\nb. mengundurkan diri atas permintaan sendiri secara tertulis;\nc. tidak dapat melaksanakan tugas selama 6 (enam) bulan secara berturut-turut;\nd. tidak lagi memenuhi persyaratan sebagaimana dimaksud dalam Pasal 8;\ne. alasan lain yang ditentukan oleh Presiden.\n\n(2). Presiden memberhentikan sementara anggota Dewan Pertimbangan Presiden yang didakwa melakukan tindak pidana yang diancam dengan pidana penjara 5 (lima) tahun atau lebih." .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat> .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001> .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001> legal:ayatHasRawText "Anggota Dewan Pertimbangan Presiden diberhentikan dari jabatannya karena:\na. meninggal dunia;\nb. mengundurkan diri atas permintaan sendiri secara tertulis;\nc. tidak dapat melaksanakan tugas selama 6 (enam) bulan secara berturut-turut;\nd. tidak lagi memenuhi persyaratan sebagaimana dimaksud dalam Pasal 8;\ne. alasan lain yang ditentukan oleh Presiden.\n" .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point> .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/description> legal:textHasTextString "Anggota Dewan Pertimbangan Presiden diberhentikan dari jabatannya karena:" .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/description> .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/a> .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/a/text> legal:textHasTextString "meninggal dunia;" .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/a/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/b> .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/b/text> legal:textHasTextString "mengundurkan diri atas permintaan sendiri secara tertulis;" .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/b> legal:pointHasText <http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/b/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/c> .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/c/text> legal:textHasTextString "tidak dapat melaksanakan tugas selama 6 (enam) bulan secara berturut-turut;" .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/c> legal:pointHasText <http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/c/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/d> .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/d/text> legal:textHasTextString "tidak lagi memenuhi persyaratan sebagaimana dimaksud dalam Pasal 8;" .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/d> legal:pointHasText <http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/d/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/d/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2006/19/pasal/0008> .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/e> .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/e/text> legal:textHasTextString "alasan lain yang ditentukan oleh Presiden." .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/e> legal:pointHasText <http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/e/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0002> .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0002> legal:ayatHasRawText "Presiden memberhentikan sementara anggota Dewan Pertimbangan Presiden yang didakwa melakukan tindak pidana yang diancam dengan pidana penjara 5 (lima) tahun atau lebih." .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0002/text> legal:textHasTextString "Presiden memberhentikan sementara anggota Dewan Pertimbangan Presiden yang didakwa melakukan tindak pidana yang diancam dengan pidana penjara 5 (lima) tahun atau lebih." .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0002/text> .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0003/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0012> .
+<http://example.org/legal/document/uu/2006/19/pasal/0012> legal:pasalHasKey 12 .
+<http://example.org/legal/document/uu/2006/19/pasal/0012> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228> .
+<http://example.org/legal/document/uu/2006/19> legal:documentHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0012> .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228> legal:pasalVersionHasVersionDate "2006-12-28"^^xsd:date .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228> legal:pasalVersionHasRawText "(1). Anggota Dewan Pertimbangan Presiden tidak boleh merangkap jabatan sebagai:\na. pejabat negara sesuai dengan peraturan perundang- undangan;\nb. pejabat struktural pada instansi pemerintah;\nc. pejabat lain;\nd. pimpinan partai politik, pimpinan organisasi kemasyarakatan, pimpinan lembaga swadaya masyarakat, pimpinan yayasan, pimpinan badan usaha milik negara atau badan usaha milik swasta, pimpinan organisasi profesi, dan pejabat struktural pada perguruan tinggi, baik negeri maupun swasta.\n\n(2). Dalam hal pejabat atau pimpinan sebagaimana dimaksud pada ayat (1) diangkat sebagai anggota Dewan Pertimbangan Presiden, dalam waktu paling lambat 3 (tiga) bulan terhitung sejak tanggal pengangkatan wajib mengundurkan diri dari jabatan atau pimpinan tersebut." .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat> .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001> .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001> legal:ayatHasRawText "Anggota Dewan Pertimbangan Presiden tidak boleh merangkap jabatan sebagai:\na. pejabat negara sesuai dengan peraturan perundang- undangan;\nb. pejabat struktural pada instansi pemerintah;\nc. pejabat lain;\nd. pimpinan partai politik, pimpinan organisasi kemasyarakatan, pimpinan lembaga swadaya masyarakat, pimpinan yayasan, pimpinan badan usaha milik negara atau badan usaha milik swasta, pimpinan organisasi profesi, dan pejabat struktural pada perguruan tinggi, baik negeri maupun swasta.\n" .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point> .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/description> legal:textHasTextString "Anggota Dewan Pertimbangan Presiden tidak boleh merangkap jabatan sebagai:" .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/description> .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/a> .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/a/text> legal:textHasTextString "pejabat negara sesuai dengan peraturan perundang- undangan;" .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/a/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/b> .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/b/text> legal:textHasTextString "pejabat struktural pada instansi pemerintah;" .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/b> legal:pointHasText <http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/b/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/c> .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/c/text> legal:textHasTextString "pejabat lain;" .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/c> legal:pointHasText <http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/c/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/d> .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/d/text> legal:textHasTextString "pimpinan partai politik, pimpinan organisasi kemasyarakatan, pimpinan lembaga swadaya masyarakat, pimpinan yayasan, pimpinan badan usaha milik negara atau badan usaha milik swasta, pimpinan organisasi profesi, dan pejabat struktural pada perguruan tinggi, baik negeri maupun swasta." .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/d> legal:pointHasText <http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/d/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0002> .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0002> legal:ayatHasRawText "Dalam hal pejabat atau pimpinan sebagaimana dimaksud pada ayat (1) diangkat sebagai anggota Dewan Pertimbangan Presiden, dalam waktu paling lambat 3 (tiga) bulan terhitung sejak tanggal pengangkatan wajib mengundurkan diri dari jabatan atau pimpinan tersebut." .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0002/text> legal:textHasTextString "Dalam hal pejabat atau pimpinan sebagaimana dimaksud pada ayat (1) diangkat sebagai anggota Dewan Pertimbangan Presiden, dalam waktu paling lambat 3 (tiga) bulan terhitung sejak tanggal pengangkatan wajib mengundurkan diri dari jabatan atau pimpinan tersebut." .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0002/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001> .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0003/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0013> .
+<http://example.org/legal/document/uu/2006/19/pasal/0013> legal:pasalHasKey 13 .
+<http://example.org/legal/document/uu/2006/19/pasal/0013> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228> .
+<http://example.org/legal/document/uu/2006/19> legal:documentHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0013> .
+<http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228> legal:pasalVersionHasVersionDate "2006-12-28"^^xsd:date .
+<http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228> legal:pasalVersionHasRawText "(1). Untuk kelancaran pelaksanaan tugas dan fungsinya, Dewan Pertimbangan Presiden dibantu oleh sebuah sekretariat yang dipimpin oleh seorang sekretaris.\n(2). Ketentuan lebih lanjut mengenai sekretariat sebagaimana dimaksud pada ayat (1) diatur dengan Peraturan Presiden. - 6 -" .
+<http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228/ayat> .
+<http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228/ayat/0001> .
+<http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228/ayat/0001> legal:ayatHasRawText "Untuk kelancaran pelaksanaan tugas dan fungsinya, Dewan Pertimbangan Presiden dibantu oleh sebuah sekretariat yang dipimpin oleh seorang sekretaris." .
+<http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228/ayat/0001/text> legal:textHasTextString "Untuk kelancaran pelaksanaan tugas dan fungsinya, Dewan Pertimbangan Presiden dibantu oleh sebuah sekretariat yang dipimpin oleh seorang sekretaris." .
+<http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228/ayat/0001/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228/ayat/0002> .
+<http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228/ayat/0002> legal:ayatHasRawText "Ketentuan lebih lanjut mengenai sekretariat sebagaimana dimaksud pada ayat (1) diatur dengan Peraturan Presiden. - 6 -" .
+<http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228/ayat/0002/text> legal:textHasTextString "Ketentuan lebih lanjut mengenai sekretariat sebagaimana dimaksud pada ayat (1) diatur dengan Peraturan Presiden. - 6 -" .
+<http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228/ayat/0002/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228/ayat/0001> .
+<http://example.org/legal/document/uu/2006/19/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2006/19/bab/0004> .
+<http://example.org/legal/document/uu/2006/19/bab/0004> legal:babHasKey 4 .
+<http://example.org/legal/document/uu/2006/19/bab/0004> legal:babHasTitle "MEKANISME KERJA" .
+<http://example.org/legal/document/uu/2006/19/bab/0004> legal:babHasPasalSet <http://example.org/legal/document/uu/2006/19/bab/0004/pasals> .
+<http://example.org/legal/document/uu/2006/19/bab/0004/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0014> .
+<http://example.org/legal/document/uu/2006/19/pasal/0014> legal:pasalHasKey 14 .
+<http://example.org/legal/document/uu/2006/19/pasal/0014> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2006/19/pasal/0014/version/20061228> .
+<http://example.org/legal/document/uu/2006/19> legal:documentHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0014> .
+<http://example.org/legal/document/uu/2006/19/pasal/0014/version/20061228> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2006/19/pasal/0014/version/20061228> legal:pasalVersionHasVersionDate "2006-12-28"^^xsd:date .
+<http://example.org/legal/document/uu/2006/19/pasal/0014/version/20061228> legal:pasalVersionHasRawText "Ketentuan lebih lanjut mengenai mekanisme kerja dalam pelaksanaan tugas dan fungsi Dewan Pertimbangan Presiden sebagaimana dimaksud dalam Pasal 4 dan Pasal 5 dan ketentuan mengenai pengangkatan Ketua sebagaimana dimaksud dalam Pasal 7 diatur dengan Peraturan Presiden." .
+<http://example.org/legal/document/uu/2006/19/pasal/0014/version/20061228/text> legal:textHasTextString "Ketentuan lebih lanjut mengenai mekanisme kerja dalam pelaksanaan tugas dan fungsi Dewan Pertimbangan Presiden sebagaimana dimaksud dalam Pasal 4 dan Pasal 5 dan ketentuan mengenai pengangkatan Ketua sebagaimana dimaksud dalam Pasal 7 diatur dengan Peraturan Presiden." .
+<http://example.org/legal/document/uu/2006/19/pasal/0014/version/20061228> legal:pasalVersionHasText <http://example.org/legal/document/uu/2006/19/pasal/0014/version/20061228/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0014/version/20061228/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2006/19/pasal/0007> .
+<http://example.org/legal/document/uu/2006/19/pasal/0014/version/20061228/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2006/19/pasal/0005> .
+<http://example.org/legal/document/uu/2006/19/pasal/0014/version/20061228/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2006/19/pasal/0004> .
+<http://example.org/legal/document/uu/2006/19/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2006/19/bab/0005> .
+<http://example.org/legal/document/uu/2006/19/bab/0005> legal:babHasKey 5 .
+<http://example.org/legal/document/uu/2006/19/bab/0005> legal:babHasTitle "PEMBIAYAAN DAN HAK KEUANGAN" .
+<http://example.org/legal/document/uu/2006/19/bab/0005> legal:babHasPasalSet <http://example.org/legal/document/uu/2006/19/bab/0005/pasals> .
+<http://example.org/legal/document/uu/2006/19/bab/0005/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0015> .
+<http://example.org/legal/document/uu/2006/19/pasal/0015> legal:pasalHasKey 15 .
+<http://example.org/legal/document/uu/2006/19/pasal/0015> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228> .
+<http://example.org/legal/document/uu/2006/19> legal:documentHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0015> .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228> legal:pasalVersionHasVersionDate "2006-12-28"^^xsd:date .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228> legal:pasalVersionHasRawText "(1). Pembiayaan Dewan Pertimbangan Presiden dibebankan pada Anggaran Pendapatan dan Belanja Negara.\n(2). Anggaran Dewan Pertimbangan Presiden ditempatkan pada anggaran Sekretariat Negara.\n(3). Hak keuangan anggota Dewan Pertimbangan Presiden ditetapkan dengan Peraturan Presiden sesuai dengan ketentuan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat> .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0001> .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0001> legal:ayatHasRawText "Pembiayaan Dewan Pertimbangan Presiden dibebankan pada Anggaran Pendapatan dan Belanja Negara." .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0001/text> legal:textHasTextString "Pembiayaan Dewan Pertimbangan Presiden dibebankan pada Anggaran Pendapatan dan Belanja Negara." .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0001/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0002> .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0002> legal:ayatHasRawText "Anggaran Dewan Pertimbangan Presiden ditempatkan pada anggaran Sekretariat Negara." .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0002/text> legal:textHasTextString "Anggaran Dewan Pertimbangan Presiden ditempatkan pada anggaran Sekretariat Negara." .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0002/text> .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0003> .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0003> legal:ayatHasRawText "Hak keuangan anggota Dewan Pertimbangan Presiden ditetapkan dengan Peraturan Presiden sesuai dengan ketentuan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0003/text> legal:textHasTextString "Hak keuangan anggota Dewan Pertimbangan Presiden ditetapkan dengan Peraturan Presiden sesuai dengan ketentuan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0003/text> .
+<http://example.org/legal/document/uu/2006/19/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2006/19/bab/0006> .
+<http://example.org/legal/document/uu/2006/19/bab/0006> legal:babHasKey 6 .
+<http://example.org/legal/document/uu/2006/19/bab/0006> legal:babHasTitle "KETENTUAN PENUTUP" .
+<http://example.org/legal/document/uu/2006/19/bab/0006> legal:babHasPasalSet <http://example.org/legal/document/uu/2006/19/bab/0006/pasals> .
+<http://example.org/legal/document/uu/2006/19/bab/0006/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0016> .
+<http://example.org/legal/document/uu/2006/19/pasal/0016> legal:pasalHasKey 16 .
+<http://example.org/legal/document/uu/2006/19/pasal/0016> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2006/19/pasal/0016/version/20061228> .
+<http://example.org/legal/document/uu/2006/19> legal:documentHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0016> .
+<http://example.org/legal/document/uu/2006/19/pasal/0016/version/20061228> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2006/19/pasal/0016/version/20061228> legal:pasalVersionHasVersionDate "2006-12-28"^^xsd:date .
+<http://example.org/legal/document/uu/2006/19/pasal/0016/version/20061228> legal:pasalVersionHasRawText "Paling lambat 3 (tiga) bulan sejak diundangkannya Undang- Undang ini, Dewan Pertimbangan Presiden harus sudah terbentuk." .
+<http://example.org/legal/document/uu/2006/19/pasal/0016/version/20061228/text> legal:textHasTextString "Paling lambat 3 (tiga) bulan sejak diundangkannya Undang- Undang ini, Dewan Pertimbangan Presiden harus sudah terbentuk." .
+<http://example.org/legal/document/uu/2006/19/pasal/0016/version/20061228> legal:pasalVersionHasText <http://example.org/legal/document/uu/2006/19/pasal/0016/version/20061228/text> .
+<http://example.org/legal/document/uu/2006/19/bab/0006/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0017> .
+<http://example.org/legal/document/uu/2006/19/pasal/0017> legal:pasalHasKey 17 .
+<http://example.org/legal/document/uu/2006/19/pasal/0017> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2006/19/pasal/0017/version/20061228> .
+<http://example.org/legal/document/uu/2006/19> legal:documentHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0017> .
+<http://example.org/legal/document/uu/2006/19/pasal/0017/version/20061228> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2006/19/pasal/0017/version/20061228> legal:pasalVersionHasVersionDate "2006-12-28"^^xsd:date .
+<http://example.org/legal/document/uu/2006/19/pasal/0017/version/20061228> legal:pasalVersionHasRawText "Dengan diundangkannya Undang-Undang ini, peraturan perundang-undangan yang terkait dengan tugas dan fungsi Dewan Pertimbangan Presiden dicabut dan dinyatakan tidak berlaku." .
+<http://example.org/legal/document/uu/2006/19/pasal/0017/version/20061228/text> legal:textHasTextString "Dengan diundangkannya Undang-Undang ini, peraturan perundang-undangan yang terkait dengan tugas dan fungsi Dewan Pertimbangan Presiden dicabut dan dinyatakan tidak berlaku." .
+<http://example.org/legal/document/uu/2006/19/pasal/0017/version/20061228> legal:pasalVersionHasText <http://example.org/legal/document/uu/2006/19/pasal/0017/version/20061228/text> .
+<http://example.org/legal/document/uu/2006/19/bab/0006/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0018> .
+<http://example.org/legal/document/uu/2006/19/pasal/0018> legal:pasalHasKey 18 .
+<http://example.org/legal/document/uu/2006/19/pasal/0018> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2006/19/pasal/0018/version/20061228> .
+<http://example.org/legal/document/uu/2006/19> legal:documentHasPasal <http://example.org/legal/document/uu/2006/19/pasal/0018> .
+<http://example.org/legal/document/uu/2006/19/pasal/0018/version/20061228> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2006/19/pasal/0018/version/20061228> legal:pasalVersionHasVersionDate "2006-12-28"^^xsd:date .
+<http://example.org/legal/document/uu/2006/19/pasal/0018/version/20061228> legal:pasalVersionHasRawText "Undang-Undang ini mulai berlaku pada tanggal diundangkan. - 7 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2006/19/pasal/0018/version/20061228/text> legal:textHasTextString "Undang-Undang ini mulai berlaku pada tanggal diundangkan. - 7 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2006/19/pasal/0018/version/20061228> legal:pasalVersionHasText <http://example.org/legal/document/uu/2006/19/pasal/0018/version/20061228/text> .
+<http://example.org/legal/document/uu/2006/19> legal:documentHasDisahkanDate "2006-12-28"^^xsd:date .
+<http://example.org/legal/document/uu/2006/19> legal:documentMengingat <http://example.org/legal/document/uu/2006/19/mengingat> .
+<http://example.org/legal/document/uu/2006/19/mengingat/text> legal:textHasTextString "Pasal 4 ayat (1), Pasal 16, Pasal 20, dan Pasal 21 Undang- Undang Dasar Negara Republik Indonesia Tahun 1945; Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA dan PRESIDEN REPUBLIK INDONESIA M E M U T U S K A N : Menetapkan : UNDANG-UNDANG TENTANG DEWAN PERTIMBANGAN PRESIDEN. - 2 -" .
+<http://example.org/legal/document/uu/2006/19/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/2006/19/mengingat/text> .
+<http://example.org/legal/document/uu/2006/19> legal:documentMenimbang <http://example.org/legal/document/uu/2006/19/menimbang> .
+<http://example.org/legal/document/uu/2006/19/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/2006/19/menimbang/point> .
+<http://example.org/legal/document/uu/2006/19/menimbang/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/2006/19/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2006/19/menimbang/point/description> .
+<http://example.org/legal/document/uu/2006/19/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2006/19/menimbang/point/a> .
+<http://example.org/legal/document/uu/2006/19/menimbang/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/2006/19/menimbang/point/a/text> legal:textHasTextString "bahwa Presiden dalam menjalankan kewenangannya sebagai pemegang kekuasaan pemerintahan menurut Undang-Undang Dasar memerlukan nasihat dan pertimbangan agar kebijakan yang ditetapkan sesuai dengan prinsip-prinsip hukum, demokrasi, serta kepemerintahan yang baik dalam rangka pencapaian tujuan negara sebagaimana ditentukan dalam Pembukaan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945;" .
+<http://example.org/legal/document/uu/2006/19/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/2006/19/menimbang/point/a/text> .
+<http://example.org/legal/document/uu/2006/19/menimbang/point/a/text> legal:textReferencesLegal <http://example.org/legal/document/uu> .
+<http://example.org/legal/document/uu/2006/19/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2006/19/menimbang/point/b> .
+<http://example.org/legal/document/uu/2006/19/menimbang/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/2006/19/menimbang/point/b/text> legal:textHasTextString "bahwa berdasarkan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945, Presiden membentuk suatu dewan pertimbangan yang bertugas memberikan nasihat dan pertimbangan kepada Presiden yang selanjutnya diatur dalam Undang-Undang;" .
+<http://example.org/legal/document/uu/2006/19/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/2006/19/menimbang/point/b/text> .
+<http://example.org/legal/document/uu/2006/19/menimbang/point/b/text> legal:textReferencesLegal <http://example.org/legal/document/uu> .
+<http://example.org/legal/document/uu/2006/19/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2006/19/menimbang/point/c> .
+<http://example.org/legal/document/uu/2006/19/menimbang/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/2006/19/menimbang/point/c/text> legal:textHasTextString "bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a dan huruf b, perlu membentuk Undang- Undang tentang Dewan Pertimbangan Presiden;" .
+<http://example.org/legal/document/uu/2006/19/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/2006/19/menimbang/point/c/text> .
+<http://example.org/legal/document/uu/2006/19> legal:documentHasDisahkanPengesah "DR. H. SUSILO BAMBANG YUDHOYONO" .
+<http://example.org/legal/document/uu/2006/19> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/2006/19> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/2006/19> a legal:Document .
+<http://example.org/legal/document/uu/2006/19/bab> a legal:BabSet .
+<http://example.org/legal/document/uu/2006/19/bab/0001> a legal:Bab .
+<http://example.org/legal/document/uu/2006/19/bab/0001/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2006/19/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/bab/0002> a legal:Bab .
+<http://example.org/legal/document/uu/2006/19/bab/0002/bagian> a legal:BagianSet .
+<http://example.org/legal/document/uu/2006/19/bab/0002/bagian/0001> a legal:Bagian .
+<http://example.org/legal/document/uu/2006/19/bab/0002/bagian/0001/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2006/19/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/2006/19/pasal/0002/version/20061228> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2006/19/pasal/0002/version/20061228/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/2006/19/pasal/0003/version/20061228> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2006/19/pasal/0003/version/20061228/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/bab/0002/bagian/0002> a legal:Bagian .
+<http://example.org/legal/document/uu/2006/19/bab/0002/bagian/0002/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2006/19/pasal/0004> a legal:Pasal .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0005> a legal:Pasal .
+<http://example.org/legal/document/uu/2006/19/pasal/0005/version/20061228> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2006/19/pasal/0005/version/20061228/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0006> a legal:Pasal .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002/point/a> a legal:Point .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002/point/b> a legal:Point .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/bab/0003> a legal:Bab .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian> a legal:BagianSet .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0001> a legal:Bagian .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0001/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2006/19/pasal/0007> a legal:Pasal .
+<http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0002> a legal:Bagian .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0002/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2006/19/pasal/0008> a legal:Pasal .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/a> a legal:Point .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/b> a legal:Point .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/c> a legal:Point .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/d> a legal:Point .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/e> a legal:Point .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/f> a legal:Point .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/f/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/g> a legal:Point .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/g/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/h> a legal:Point .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/h/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0003> a legal:Bagian .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0003/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2006/19/pasal/0009> a legal:Pasal .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0010> a legal:Pasal .
+<http://example.org/legal/document/uu/2006/19/pasal/0010/version/20061228> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2006/19/pasal/0010/version/20061228/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0011> a legal:Pasal .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/a> a legal:Point .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/b> a legal:Point .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/c> a legal:Point .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/d> a legal:Point .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/e> a legal:Point .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0012> a legal:Pasal .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/a> a legal:Point .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/b> a legal:Point .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/c> a legal:Point .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/d> a legal:Point .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0013> a legal:Pasal .
+<http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/bab/0004> a legal:Bab .
+<http://example.org/legal/document/uu/2006/19/bab/0004/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2006/19/pasal/0014> a legal:Pasal .
+<http://example.org/legal/document/uu/2006/19/pasal/0014/version/20061228> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2006/19/pasal/0014/version/20061228/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/bab/0005> a legal:Bab .
+<http://example.org/legal/document/uu/2006/19/bab/0005/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2006/19/pasal/0015> a legal:Pasal .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/bab/0006> a legal:Bab .
+<http://example.org/legal/document/uu/2006/19/bab/0006/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2006/19/pasal/0016> a legal:Pasal .
+<http://example.org/legal/document/uu/2006/19/pasal/0016/version/20061228> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2006/19/pasal/0016/version/20061228/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0017> a legal:Pasal .
+<http://example.org/legal/document/uu/2006/19/pasal/0017/version/20061228> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2006/19/pasal/0017/version/20061228/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/pasal/0018> a legal:Pasal .
+<http://example.org/legal/document/uu/2006/19/pasal/0018/version/20061228> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2006/19/pasal/0018/version/20061228/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/mengingat/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/2006/19/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/2006/19/menimbang/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/menimbang/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2006/19/menimbang/point/a> a legal:Point .
+<http://example.org/legal/document/uu/2006/19/menimbang/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/menimbang/point/b> a legal:Point .
+<http://example.org/legal/document/uu/2006/19/menimbang/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/menimbang/point/c> a legal:Point .
+<http://example.org/legal/document/uu/2006/19/menimbang/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/19/bab> legal:partOf <http://example.org/legal/document/uu/2006/19> .
+<http://example.org/legal/document/uu/2006/19/bab/0001> legal:partOf <http://example.org/legal/document/uu/2006/19/bab> .
+<http://example.org/legal/document/uu/2006/19/bab/0001/pasals> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0001> .
+<http://example.org/legal/document/uu/2006/19/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0001/pasals> .
+<http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0001> .
+<http://example.org/legal/document/uu/2006/19/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2006/19> .
+<http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228/point> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228> .
+<http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228/point/0001> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228/point> .
+<http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228/point/0002> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0001/version/20061228/point> .
+<http://example.org/legal/document/uu/2006/19/bab/0002> legal:partOf <http://example.org/legal/document/uu/2006/19/bab> .
+<http://example.org/legal/document/uu/2006/19/bab/0002/bagian> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0002> .
+<http://example.org/legal/document/uu/2006/19/bab/0002/bagian/0001> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0002/bagian> .
+<http://example.org/legal/document/uu/2006/19/bab/0002/bagian/0001/pasals> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0002/bagian/0001> .
+<http://example.org/legal/document/uu/2006/19/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0002/bagian/0001/pasals> .
+<http://example.org/legal/document/uu/2006/19/pasal/0002/version/20061228> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0002> .
+<http://example.org/legal/document/uu/2006/19/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2006/19> .
+<http://example.org/legal/document/uu/2006/19/pasal/0003> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0002/bagian/0001/pasals> .
+<http://example.org/legal/document/uu/2006/19/pasal/0003/version/20061228> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0003> .
+<http://example.org/legal/document/uu/2006/19/pasal/0003> legal:partOf <http://example.org/legal/document/uu/2006/19> .
+<http://example.org/legal/document/uu/2006/19/bab/0002/bagian/0002> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0002/bagian> .
+<http://example.org/legal/document/uu/2006/19/bab/0002/bagian/0002/pasals> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0002/bagian/0002> .
+<http://example.org/legal/document/uu/2006/19/pasal/0004> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0002/bagian/0002/pasals> .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0004> .
+<http://example.org/legal/document/uu/2006/19/pasal/0004> legal:partOf <http://example.org/legal/document/uu/2006/19> .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228> .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat> .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0001> .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat> .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0002> .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0003> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat> .
+<http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0004/version/20061228/ayat/0003> .
+<http://example.org/legal/document/uu/2006/19/pasal/0005> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0002/bagian/0002/pasals> .
+<http://example.org/legal/document/uu/2006/19/pasal/0005/version/20061228> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0005> .
+<http://example.org/legal/document/uu/2006/19/pasal/0005> legal:partOf <http://example.org/legal/document/uu/2006/19> .
+<http://example.org/legal/document/uu/2006/19/pasal/0006> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0002/bagian/0002/pasals> .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0006> .
+<http://example.org/legal/document/uu/2006/19/pasal/0006> legal:partOf <http://example.org/legal/document/uu/2006/19> .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228> .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat> .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0001> .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat> .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002/point> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002> .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002/point/a> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002/point> .
+<http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002/point/b> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0006/version/20061228/ayat/0002/point> .
+<http://example.org/legal/document/uu/2006/19/bab/0003> legal:partOf <http://example.org/legal/document/uu/2006/19/bab> .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0003> .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0001> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0003/bagian> .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0001/pasals> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0001> .
+<http://example.org/legal/document/uu/2006/19/pasal/0007> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0001/pasals> .
+<http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0007> .
+<http://example.org/legal/document/uu/2006/19/pasal/0007> legal:partOf <http://example.org/legal/document/uu/2006/19> .
+<http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228/ayat> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228> .
+<http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228/ayat> .
+<http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228/ayat/0001> .
+<http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228/ayat> .
+<http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0007/version/20061228/ayat/0002> .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0002> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0003/bagian> .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0002/pasals> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0002> .
+<http://example.org/legal/document/uu/2006/19/pasal/0008> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0002/pasals> .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0008> .
+<http://example.org/legal/document/uu/2006/19/pasal/0008> legal:partOf <http://example.org/legal/document/uu/2006/19> .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228> .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/a> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point> .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/b> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point> .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/c> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point> .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/d> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point> .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/e> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point> .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/f> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point> .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/g> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point> .
+<http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point/h> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0008/version/20061228/point> .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0003> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0003/bagian> .
+<http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0003/pasals> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0003> .
+<http://example.org/legal/document/uu/2006/19/pasal/0009> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0003/pasals> .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0009> .
+<http://example.org/legal/document/uu/2006/19/pasal/0009> legal:partOf <http://example.org/legal/document/uu/2006/19> .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228> .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat> .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0001> .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat> .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0002> .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0003> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat> .
+<http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0009/version/20061228/ayat/0003> .
+<http://example.org/legal/document/uu/2006/19/pasal/0010> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0003/pasals> .
+<http://example.org/legal/document/uu/2006/19/pasal/0010/version/20061228> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0010> .
+<http://example.org/legal/document/uu/2006/19/pasal/0010> legal:partOf <http://example.org/legal/document/uu/2006/19> .
+<http://example.org/legal/document/uu/2006/19/pasal/0011> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0003/pasals> .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0011> .
+<http://example.org/legal/document/uu/2006/19/pasal/0011> legal:partOf <http://example.org/legal/document/uu/2006/19> .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228> .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat> .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001> .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/a> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point> .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/b> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point> .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/c> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point> .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/d> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point> .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point/e> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0001/point> .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat> .
+<http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0011/version/20061228/ayat/0002> .
+<http://example.org/legal/document/uu/2006/19/pasal/0012> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0003/pasals> .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0012> .
+<http://example.org/legal/document/uu/2006/19/pasal/0012> legal:partOf <http://example.org/legal/document/uu/2006/19> .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228> .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat> .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001> .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/a> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point> .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/b> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point> .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/c> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point> .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point/d> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0001/point> .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat> .
+<http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0012/version/20061228/ayat/0002> .
+<http://example.org/legal/document/uu/2006/19/pasal/0013> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0003/bagian/0003/pasals> .
+<http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0013> .
+<http://example.org/legal/document/uu/2006/19/pasal/0013> legal:partOf <http://example.org/legal/document/uu/2006/19> .
+<http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228/ayat> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228> .
+<http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228/ayat> .
+<http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228/ayat/0001> .
+<http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228/ayat> .
+<http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0013/version/20061228/ayat/0002> .
+<http://example.org/legal/document/uu/2006/19/bab/0004> legal:partOf <http://example.org/legal/document/uu/2006/19/bab> .
+<http://example.org/legal/document/uu/2006/19/bab/0004/pasals> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0004> .
+<http://example.org/legal/document/uu/2006/19/pasal/0014> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0004/pasals> .
+<http://example.org/legal/document/uu/2006/19/pasal/0014/version/20061228> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0014> .
+<http://example.org/legal/document/uu/2006/19/pasal/0014> legal:partOf <http://example.org/legal/document/uu/2006/19> .
+<http://example.org/legal/document/uu/2006/19/bab/0005> legal:partOf <http://example.org/legal/document/uu/2006/19/bab> .
+<http://example.org/legal/document/uu/2006/19/bab/0005/pasals> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0005> .
+<http://example.org/legal/document/uu/2006/19/pasal/0015> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0005/pasals> .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0015> .
+<http://example.org/legal/document/uu/2006/19/pasal/0015> legal:partOf <http://example.org/legal/document/uu/2006/19> .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228> .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat> .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0001> .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat> .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0002> .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0003> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat> .
+<http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0015/version/20061228/ayat/0003> .
+<http://example.org/legal/document/uu/2006/19/bab/0006> legal:partOf <http://example.org/legal/document/uu/2006/19/bab> .
+<http://example.org/legal/document/uu/2006/19/bab/0006/pasals> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0006> .
+<http://example.org/legal/document/uu/2006/19/pasal/0016> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0006/pasals> .
+<http://example.org/legal/document/uu/2006/19/pasal/0016/version/20061228> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0016> .
+<http://example.org/legal/document/uu/2006/19/pasal/0016> legal:partOf <http://example.org/legal/document/uu/2006/19> .
+<http://example.org/legal/document/uu/2006/19/pasal/0017> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0006/pasals> .
+<http://example.org/legal/document/uu/2006/19/pasal/0017/version/20061228> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0017> .
+<http://example.org/legal/document/uu/2006/19/pasal/0017> legal:partOf <http://example.org/legal/document/uu/2006/19> .
+<http://example.org/legal/document/uu/2006/19/pasal/0018> legal:partOf <http://example.org/legal/document/uu/2006/19/bab/0006/pasals> .
+<http://example.org/legal/document/uu/2006/19/pasal/0018/version/20061228> legal:partOf <http://example.org/legal/document/uu/2006/19/pasal/0018> .
+<http://example.org/legal/document/uu/2006/19/pasal/0018> legal:partOf <http://example.org/legal/document/uu/2006/19> .
+<http://example.org/legal/document/uu/2006/19/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/2006/19/menimbang/point> .
+<http://example.org/legal/document/uu/2006/19/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/2006/19/menimbang/point> .
+<http://example.org/legal/document/uu/2006/19/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/2006/19/menimbang/point> .
