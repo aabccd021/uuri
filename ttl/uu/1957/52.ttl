@@ -1,0 +1,20 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1957/52> legal:documentHasBabSet <http://example.org/legal/document/uu/1957/52/bab> .
+<http://example.org/legal/document/uu/1957/52> legal:documentHasDisahkanDate "1957-10-26"^^xsd:date .
+<http://example.org/legal/document/uu/1957/52> legal:documentMengingat <http://example.org/legal/document/uu/1957/52/mengingat> .
+<http://example.org/legal/document/uu/1957/52/mengingat/text> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1957/52/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/1957/52/mengingat/text> .
+<http://example.org/legal/document/uu/1957/52> legal:documentMenimbang <http://example.org/legal/document/uu/1957/52/menimbang> .
+<http://example.org/legal/document/uu/1957/52/menimbang/text> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/1957/52/menimbang> legal:menimbangHasText <http://example.org/legal/document/uu/1957/52/menimbang/text> .
+<http://example.org/legal/document/uu/1957/52> legal:documentHasDisahkanPengesah "SOEKARNO" .
+<http://example.org/legal/document/uu/1957/52> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/1957/52> legal:documentHasDisahkanJabatanPengesah "Presiden Republik Indonesia," .
+<http://example.org/legal/document/uu/1957/52> a legal:Document .
+<http://example.org/legal/document/uu/1957/52/mengingat/text> a legal:Text .
+<http://example.org/legal/document/uu/1957/52/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1957/52/menimbang/text> a legal:Text .
+<http://example.org/legal/document/uu/1957/52/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1957/52/bab> legal:partOf <http://example.org/legal/document/uu/1957/52> .
