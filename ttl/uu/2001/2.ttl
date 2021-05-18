@@ -1,0 +1,255 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/2001/2> legal:documentHasBabSet <http://example.org/legal/document/uu/2001/2/bab> .
+<http://example.org/legal/document/uu/2001/2/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2001/2/bab/0001> .
+<http://example.org/legal/document/uu/2001/2/bab/0001> legal:babHasKey 1 .
+<http://example.org/legal/document/uu/2001/2/bab/0001> legal:babHasTitle "" .
+<http://example.org/legal/document/uu/2001/2/bab/0001> legal:babHasPasalSet <http://example.org/legal/document/uu/2001/2/bab/0001/pasals> .
+<http://example.org/legal/document/uu/2001/2/bab/0001/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2001/2/pasal/0001> .
+<http://example.org/legal/document/uu/2001/2/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/2001/2/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621> .
+<http://example.org/legal/document/uu/2001/2> legal:documentHasPasal <http://example.org/legal/document/uu/2001/2/pasal/0001> .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621> legal:pasalVersionHasVersionDate "2001-06-21"^^xsd:date .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621> legal:pasalVersionHasRawText "Dalam Undang-undang ini yang dimaksud dengan :\n1. Daerah adalah Daerah Otonom sebagaimana dimaksud dalam Pasal 1 huruf i Undang-undang Nomor 22 Tahun 1999 tentang Pemerintahan di daerah.\n2. Propinsi Daerah Istimewa Aceh adalah Daerah Otonom sebagaimana dimaksud dalam Undang-undang Nomor 24 Tahun 1956 tentang Pembentukan Daerah Otonom Propinsi Atjeh dan Perubahan Peraturan Pembentukan Propinsi Sumatera Utara.\n3. Kabupaten Aceh Utara adalah Daerah Otonom sebagaimana dimaksud dalam Undang-undang Nomor 71 Tahun 1956 tentang Pembentukan Daerah Otonom Kabupaten-kabupaten dalam Lingkungan daerah Propinsi Sumatera Utara.\n4. Kota Administratif Lhokseumawe adalah Kota Administratif sebagaimana dimaksud dalam Peraturan Pemerintah Nomor 32 Tahun 1986 tentang Pembentukan Kota Administratif Lhokseumawe.\n" .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point> .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/description> legal:textHasTextString "Dalam Undang-undang ini yang dimaksud dengan :" .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/description> .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0001> .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0001/text> legal:textHasTextString "Daerah adalah Daerah Otonom sebagaimana dimaksud dalam Pasal 1 huruf i Undang-undang Nomor 22 Tahun 1999 tentang Pemerintahan di daerah." .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0001> legal:pointHasText <http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0001/text> .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/i> .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2001/2/pasal/0001> .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0002> .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0002/text> legal:textHasTextString "Propinsi Daerah Istimewa Aceh adalah Daerah Otonom sebagaimana dimaksud dalam Undang-undang Nomor 24 Tahun 1956 tentang Pembentukan Daerah Otonom Propinsi Atjeh dan Perubahan Peraturan Pembentukan Propinsi Sumatera Utara." .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0002> legal:pointHasText <http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0002/text> .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0003> .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0003> legal:pointHasKey "3" .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0003/text> legal:textHasTextString "Kabupaten Aceh Utara adalah Daerah Otonom sebagaimana dimaksud dalam Undang-undang Nomor 71 Tahun 1956 tentang Pembentukan Daerah Otonom Kabupaten-kabupaten dalam Lingkungan daerah Propinsi Sumatera Utara." .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0003> legal:pointHasText <http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0003/text> .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0004> .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0004> legal:pointHasKey "4" .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0004/text> legal:textHasTextString "Kota Administratif Lhokseumawe adalah Kota Administratif sebagaimana dimaksud dalam Peraturan Pemerintah Nomor 32 Tahun 1986 tentang Pembentukan Kota Administratif Lhokseumawe." .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0004> legal:pointHasText <http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0004/text> .
+<http://example.org/legal/document/uu/2001/2/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2001/2/bab/0002> .
+<http://example.org/legal/document/uu/2001/2/bab/0002> legal:babHasKey 2 .
+<http://example.org/legal/document/uu/2001/2/bab/0002> legal:babHasTitle "PEMBENTUKAN DAN BATAS WILAYAH" .
+<http://example.org/legal/document/uu/2001/2/bab/0002> legal:babHasPasalSet <http://example.org/legal/document/uu/2001/2/bab/0002/pasals> .
+<http://example.org/legal/document/uu/2001/2/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2001/2/pasal/0002> .
+<http://example.org/legal/document/uu/2001/2/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/2001/2/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2001/2/pasal/0002/version/20010621> .
+<http://example.org/legal/document/uu/2001/2> legal:documentHasPasal <http://example.org/legal/document/uu/2001/2/pasal/0002> .
+<http://example.org/legal/document/uu/2001/2/pasal/0002/version/20010621> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2001/2/pasal/0002/version/20010621> legal:pasalVersionHasVersionDate "2001-06-21"^^xsd:date .
+<http://example.org/legal/document/uu/2001/2/pasal/0002/version/20010621> legal:pasalVersionHasRawText "Dengan undang-undang ini dibentuk Kota Lhokseumawe di wilayah Propinsi Daerah Istimewa Aceh dalam Negara Kesatuan Republik Indonesia." .
+<http://example.org/legal/document/uu/2001/2/pasal/0002/version/20010621/text> legal:textHasTextString "Dengan undang-undang ini dibentuk Kota Lhokseumawe di wilayah Propinsi Daerah Istimewa Aceh dalam Negara Kesatuan Republik Indonesia." .
+<http://example.org/legal/document/uu/2001/2/pasal/0002/version/20010621> legal:pasalVersionHasText <http://example.org/legal/document/uu/2001/2/pasal/0002/version/20010621/text> .
+<http://example.org/legal/document/uu/2001/2/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2001/2/pasal/0003> .
+<http://example.org/legal/document/uu/2001/2/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/2001/2/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621> .
+<http://example.org/legal/document/uu/2001/2> legal:documentHasPasal <http://example.org/legal/document/uu/2001/2/pasal/0003> .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621> legal:pasalVersionHasVersionDate "2001-06-21"^^xsd:date .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621> legal:pasalVersionHasRawText "(1). . Dengan terbentuknya Kota Lhokseumawe, Pemerintah Kota Lhokseumawe menetapkan Rencana Tata Ruang Wilayah Kota Lhokseumawe sesuai dengan peraturan perundang-undanga.\n(2). Penetapan Rencana Tata Ruang Wilayah Kota Lhokseumawe sebagaimana dimaksud pada ayat (1) dilakukan secara terpadu dab tidak terpisahkan dari Tata Ruang Wilayah Nasional, Propinsi, dan Kabupaten/Kota di sekitarnya. PRESIDEN REPUBLIK INDONESIA -— 5 -— BAB III...\n(3). Penentuan batas wilayah Kota Lhokseumawe dan Kabupaten Aceh Utara secara Pasti di lapangan sebagaimana dimaksud pada ayat (1), ditetapkan oleh Menteri Dalam Negeri dan Otonomi Daerah. Pasal 7" .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat> .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0001> .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0001> legal:ayatHasRawText ". Dengan terbentuknya Kota Lhokseumawe, Pemerintah Kota Lhokseumawe menetapkan Rencana Tata Ruang Wilayah Kota Lhokseumawe sesuai dengan peraturan perundang-undanga." .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0001/text> legal:textHasTextString ". Dengan terbentuknya Kota Lhokseumawe, Pemerintah Kota Lhokseumawe menetapkan Rencana Tata Ruang Wilayah Kota Lhokseumawe sesuai dengan peraturan perundang-undanga." .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0001/text> .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0002> .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0002> legal:ayatHasRawText "Penetapan Rencana Tata Ruang Wilayah Kota Lhokseumawe sebagaimana dimaksud pada ayat (1) dilakukan secara terpadu dab tidak terpisahkan dari Tata Ruang Wilayah Nasional, Propinsi, dan Kabupaten/Kota di sekitarnya. PRESIDEN REPUBLIK INDONESIA -— 5 -— BAB III..." .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0002/text> legal:textHasTextString "Penetapan Rencana Tata Ruang Wilayah Kota Lhokseumawe sebagaimana dimaksud pada ayat (1) dilakukan secara terpadu dab tidak terpisahkan dari Tata Ruang Wilayah Nasional, Propinsi, dan Kabupaten/Kota di sekitarnya. PRESIDEN REPUBLIK INDONESIA -— 5 -— BAB III..." .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0002/text> .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0001> .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0003> .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0003> legal:ayatHasRawText "Penentuan batas wilayah Kota Lhokseumawe dan Kabupaten Aceh Utara secara Pasti di lapangan sebagaimana dimaksud pada ayat (1), ditetapkan oleh Menteri Dalam Negeri dan Otonomi Daerah. Pasal 7" .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0003/text> legal:textHasTextString "Penentuan batas wilayah Kota Lhokseumawe dan Kabupaten Aceh Utara secara Pasti di lapangan sebagaimana dimaksud pada ayat (1), ditetapkan oleh Menteri Dalam Negeri dan Otonomi Daerah. Pasal 7" .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0003/text> .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0001> .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2001/2/pasal/0007> .
+<http://example.org/legal/document/uu/2001/2/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2001/2/bab/0003> .
+<http://example.org/legal/document/uu/2001/2/bab/0003> legal:babHasKey 3 .
+<http://example.org/legal/document/uu/2001/2/bab/0003> legal:babHasTitle "KEWENANGNAN DAERAH Pasal 8 (1) kewenangan Kota Lhokseumawe sebagai daerah otonom mencakup seluruh kewenangan bidang pemerintahan, termasuk kewenangan wajib, kecuali bidang politik luar negeri, pertanahan keamanan, moneter dan fiskal, agama, serta kewenangan bidang lain sesuai dengan peraturan Perundang-undangan. (2) Kewenangan wajib, sebagaimana dimaksud pada ayat (1), terdiri dari atas pekerjaan umum, kesehatan, pendidikan dan kebudayaan, pertanian perhubungan, industri dan perdagangan, penanaman modal, lingkungan hidup, pertanahan, koperasi dan tenaga kerja." .
+<http://example.org/legal/document/uu/2001/2/bab/0003> legal:babHasPasalSet <http://example.org/legal/document/uu/2001/2/bab/0003/pasals> .
+<http://example.org/legal/document/uu/2001/2/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2001/2/bab/0004> .
+<http://example.org/legal/document/uu/2001/2/bab/0004> legal:babHasKey 4 .
+<http://example.org/legal/document/uu/2001/2/bab/0004> legal:babHasTitle "PEMERINTAHAN DAERAH Bagian Pertama Dewan Perwakilan Rakyat Daerah Pasal 9 (1) Dewan Perwakilan Rakyat Daerah Kota Lhokseumawe dibentuk sesuai dengan peraturan perundang-undangan, selambat-lambatnya satu tahun setelah peresmian Kota Lhokseumawe. (2) Pengisian Keanggotaan Dewan Perwakilan Rakyat Daerah Kota Lhokseumawe dilakukan dengan cara: a. penetapan berdasarkan perimbangan hasil perolehan suara partai politik peserta Pemilihan Umum Tahun 1999 yang dilaksanakan di Propinsi Daerah Istimewa Aceh: dan b. pengangkatan anggota Tentara Nasional Indonesia dan Kepolisian Republik PRESIDEN REPUBLIK INDONESIA — 6 -— Indonesia. (3) Jumlah ... (3) Jumlah dan tata cara pengisian keanggotaan Dewan Perwakilan Rakyat Daerah Kota Lhokseumawe, sebagaimana dimaksud pada ayat (1), ditetapkan sesuai dengan peraturan perundang-undangan. Pasal 10 (1) dengan terbentuknya kota lhokseumawe, jumlah anggota Dewan Perwakilan rakyat daerah Kabupaten Aceh Utara tidak berubah sampai dengan terbentuknya Dewan Perwakilan Rakyat Daerah sebagai hasil pemilihan umum berikutnya (2) Anggota Dewan Perwakilan Rakyat Daerah Kabupaten Aceh Utara, yang keanggotaannya mewakili kecamatan yang termasuk dalam wilayah Kota Lhokseumawe dengan sendirinya menjadi anggota Dewan Perwakilan rakyat daerah Kota Lhokseumawe. (3) Pengisian kekurangan anggota Dewan Perwakilan Rakyat Daerah Kabupaten Aceh Utara ditetakan berdasarkan jumlah dan komposisi anggota yang berpindah ke Kota Lhokseumawe. (4) Pengisian Kekurangan anggota Dewan Perwakilan Rakyat daerah Kabupaten Aceh Utara sebagaimana dimaksud pada ayat (3), dilaksanakan setelah peresmian anggota dewan Perwakilan Rakyat Daerah Kota Lhokseumawe. Bagian Kedua Pemerintah Daerah Pasal 11 Untuk memimpin jalannya pemerintahan di Kota Lhokseumawe, dipilih dan disahkan seorang Walikota dan Wakil Walikota, sesuai dengan peraturan perundang-undangan. Pasal 12 (1) Pada saat terbentuknya Kota Lhokseumawe, penjabat Walikato Lhokseumawe diangkat oleh PRESIDEN REPUBLIK INDONESIA — 7 - Menteri dalam negeri dan Otonomi daerah atas nama Presiden. (2) Walikota Adminstratif Lhokseumawe diangkat sebagai penjabat walikota Lhokseumawe. Bagian Ketiga ... Bagian Ketiga Perangkat Pemerintahan Daerah Pasal 13 Untuk kelengkapan perangkat pemerintahan Kota Lhokseumawe, dibentuk Sekretariat Dewan Perwakilan Rakyat Daerah Kota, Sekretariat Kota, Dinas Kota, dan Lembaga Teknis Kota Sesuai dengan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2001/2/bab/0004> legal:babHasPasalSet <http://example.org/legal/document/uu/2001/2/bab/0004/pasals> .
+<http://example.org/legal/document/uu/2001/2/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2001/2/bab/0005> .
+<http://example.org/legal/document/uu/2001/2/bab/0005> legal:babHasKey 5 .
+<http://example.org/legal/document/uu/2001/2/bab/0005> legal:babHasTitle "KETENTUAN PERALIHAN Pasal 14 (1) Untuk kelancaran penyelenggaraan pemerintahan Kota Lhokseumawe, Menteri/Kepala Pemerintah Non Departemen yang terkait, Gubernur Daerah Istimewa Aceh, dan Bupati Aceh Utara sesuai dengan kewenangannya menginvetarisasi dan menyerahkan kepada Pemerintah Kota Lhokseumawe hal-hal yang meliputi : a. pegawai yang karena tugasnya diperlukan oleh Pemerintah Kota Lhokseumawe, b. barang milik/kekayaan negara/daerah yang berupa tanah, bangunan, barang bergerak dan barang tidak bergerak lainnya yang dimiliki, dikuasai, dan/atau dimanfaatkan oleh Pemerintah, Propinsi Daerah Istimewa Aceh dan Kabupaten Aceh Utara yang berada di Kota Lhokseumawe sesuai dengan peraturan perundang-undangan: C. Badan Usaha Milik Daerah Propinsi daerah Istimewa Aceh dan Kabupaten Aceh Utara yang kedudukan dan kegiatannya berada di kota lhokseumawe: d. utang piutang Kabupaten Aceh Utara yang kegunaannya untuk Kota Lhokseumawe, dan PRESIDEN REPUBLIK INDONESIA -— 8 -— e. dokumen dan arsip yang karena sifatnya diperlukan oleh Kota Lhokseumawe. (2) Pelaksanaan penyerahan sebagaimana dimaksud pada ayat (1) selambat-lambatnya diselesaikan dalam waktu satu tahun, terhitung sejak pelantikan Penjabat Walikota Lhokseumawe. (3) Tata cara ... (3) Tata cara inventarisasi dan penyerahan sebagaimana dimaksud pada ayat (1), diatur oleh Menteri Dalam Negeri dan Otonomi Daerah sesuai dengan peraturan perundang-undangan. Pasal 15 (1) pembiayaan yang diperlukan untuk pembentukan Kota Lhokseumawe, sebagaimana dimaksud dalam Pasal 2, dibebankan kepada Anggaran Pendapatan dan Belanja daerah Kabupaten Aceh Utara. (2) Untuk kelancaran penyelengaraan pemerintahan, pelaksanaan pembangunanm, dan pelayanan kemasyarakatan, terhitung sejak diresmikannya pembentukan Kota Lhokseumawe, pembiayaan yang diperlukan pada tahun pertama sebelum tersusun Anggaran Pendapatan dan Belanja Daerah Lhokseumawe dibebankan Kepada Anggaran Pendapatan dan Belanja Daerah Kabupaten Aceh Utara berdasarkan hasil pendapatan yang diperoleh dari kota Lhokseumawe. Pasal 16 Semua perundang-undangan yang saat ini berlakuk bagi Kabupaten Aceh Utara tetap berlaku bagi Kota Lhokseumawe sebelum peraturan perundang-undangan dimaksud diubah, diganti atau dicabut berdasarkan undang-undang ini." .
+<http://example.org/legal/document/uu/2001/2/bab/0005> legal:babHasPasalSet <http://example.org/legal/document/uu/2001/2/bab/0005/pasals> .
+<http://example.org/legal/document/uu/2001/2/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2001/2/bab/0006> .
+<http://example.org/legal/document/uu/2001/2/bab/0006> legal:babHasKey 6 .
+<http://example.org/legal/document/uu/2001/2/bab/0006> legal:babHasTitle "KETENTUAN PENUTUP Pasal 17 Pada saat berlakunya undang-undang ini, semua peraturan perundang-undangan yang PRESIDEN REPUBLIK INDONESIA -— 9g -— bertentangan dengan undang-undang ini dinyatakan tidak berlaku. Pasal 18 Ketentuan lebih lanjut yang diperlukan sebagai pelaksanaan undang-undang ini diatur sesuai dengan peraturan perundang-undangan. Pasal 19... Pasal 19 Undang-undang ini mulai berlaku pada tanggal diundangkan, dan berlaku secara efektif selambat-lambatnya satu tahun setelah diundangkannya undang-undang ini melalui Peraturan Pemerintah Agar setiap orang mengetahuinya, memerintahkan penguindangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2001/2/bab/0006> legal:babHasPasalSet <http://example.org/legal/document/uu/2001/2/bab/0006/pasals> .
+<http://example.org/legal/document/uu/2001/2> legal:documentHasDisahkanDate "2001-06-21"^^xsd:date .
+<http://example.org/legal/document/uu/2001/2> legal:documentMengingat <http://example.org/legal/document/uu/2001/2/mengingat> .
+<http://example.org/legal/document/uu/2001/2/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2001/2/mengingat/point> .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/2001/2/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2001/2/mengingat/point/description> .
+<http://example.org/legal/document/uu/2001/2/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2001/2/mengingat/point/0001> .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0001/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 18, Pasal 18A, Pasal 18B, dan Pasal 20 ayat (1) Undang-Undang Dasar Negara Republik Indonesia Tahun 1945:" .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/2001/2/mengingat/point/0001/text> .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu> .
+<http://example.org/legal/document/uu/2001/2/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2001/2/mengingat/point/0002> .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0002/text> legal:textHasTextString "Undang-undang Nomor 24 Tahun 1956 tentang Pembentukan Daerah Otonom Propinsi Atjeh dan perubahan Peraturan Pembentukan Propinsi Sumatera Utara (Lembaran Negara Republik Indonesia Tahun 1956 Nomor 64, Tambahan Lembaran Negara Republik Indonesia Nomor 1103): PRESIDEN REPUBLIK INDONESIA — 2D -—" .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/2001/2/mengingat/point/0002/text> .
+<http://example.org/legal/document/uu/2001/2/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2001/2/mengingat/point/0003> .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0003> legal:pointHasKey "3" .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0003/text> legal:textHasTextString "Undang-undang Darurat Nomor 7 Tahun 1956 tentang Pembentukan Daerah Otonom Kabupaten-kabupaten dalam Lingkungan Daerah Propinsi Sumatera Utara (Lembaran Negara Republik — Indonesia Tahun 1956 Nomor 58)," .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0003> legal:pointHasText <http://example.org/legal/document/uu/2001/2/mengingat/point/0003/text> .
+<http://example.org/legal/document/uu/2001/2/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2001/2/mengingat/point/0004> .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0004> legal:pointHasKey "4" .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0004/text> legal:textHasTextString "Undang-undang Nomor 24 Tahun 1992 tentang Penataan Ruang (Lembaran Negara Republik Indonesia Tahun 1992 Nomor 115, Tambahan Lembaran Negara Republik Indonesia Nomor 3501)," .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0004> legal:pointHasText <http://example.org/legal/document/uu/2001/2/mengingat/point/0004/text> .
+<http://example.org/legal/document/uu/2001/2/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2001/2/mengingat/point/0005> .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0005> legal:pointHasKey "5" .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0005/text> legal:textHasTextString "Undang-undang Nomor 4 Tahun 1999 tentang Susunan dan Kedudukan Majelis Permusyawaratan Rakyat, Dewan Perwakilan Rakyat, dan Dewan perwakilan rakyat daerah (Lembaran Negara Republik Indonesia Tahun 1999 Nomor 24, Tambahan Lembaran Negara Republik Indonesia Nomor 3811):" .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0005> legal:pointHasText <http://example.org/legal/document/uu/2001/2/mengingat/point/0005/text> .
+<http://example.org/legal/document/uu/2001/2/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2001/2/mengingat/point/0006> .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0006> legal:pointHasKey "6" .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0006/text> legal:textHasTextString "Undang-undang Nomor 22 Tahun 1999 tentang Pemerintahan Daerah (Lembaran Negara Republik Indonesia Tahun 1999 Nomor 60, Tambahan Lembaran Negara Republik Indonesia Nomor 3839):" .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0006> legal:pointHasText <http://example.org/legal/document/uu/2001/2/mengingat/point/0006/text> .
+<http://example.org/legal/document/uu/2001/2/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2001/2/mengingat/point/0007> .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0007> legal:pointHasKey "7" .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0007/text> legal:textHasTextString "Undang-undang Nomor 25 Tahun 1999 tentang Perimbangan Keuangan antara Pemerintah Pusat dan daerah (Lembaran Negara Republik Indonesia Tahun 1999 Nomor 72, Tambahan Lembaran Negara Republik Indonesia Nomor 3848):" .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0007> legal:pointHasText <http://example.org/legal/document/uu/2001/2/mengingat/point/0007/text> .
+<http://example.org/legal/document/uu/2001/2/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2001/2/mengingat/point/0008> .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0008> legal:pointHasKey "8" .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0008/text> legal:textHasTextString "Undang-undang Nomor 4 Tahun 2000 tentang Perubahan atas Undang-undang Nomor 3 Tahun 1999 tentang Pemilihan Umum (Lembaran Negara Republik Indonesia Tahun 2000 Nomor 71, Tambahan Lembaran Negara Republik Indonesia Nomor 3959): Dengan Persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan: UNDANG-UNDANG TENTANG PEMBENTUKAN KOTA LHOKSEUMAWE. PRESIDEN REPUBLIK INDONESIA -— 3 -— BAB |" .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0008> legal:pointHasText <http://example.org/legal/document/uu/2001/2/mengingat/point/0008/text> .
+<http://example.org/legal/document/uu/2001/2> legal:documentMenimbang <http://example.org/legal/document/uu/2001/2/menimbang> .
+<http://example.org/legal/document/uu/2001/2/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/2001/2/menimbang/point> .
+<http://example.org/legal/document/uu/2001/2/menimbang/point/description> legal:textHasTextString "" .
+<http://example.org/legal/document/uu/2001/2/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2001/2/menimbang/point/description> .
+<http://example.org/legal/document/uu/2001/2/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2001/2/menimbang/point/a> .
+<http://example.org/legal/document/uu/2001/2/menimbang/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/2001/2/menimbang/point/a/text> legal:textHasTextString "bahwa dengan perkembangan dan kemajuan Propinsi Daerah Istimewa Aceh pada umumnya, dan Kabupaten Aceh Utara pada khususnya, serta adanya aspirasi yang berkembang dalam masyarakat untuk meningkatkan kesejahteraan dengan mengatur dan mengurus rumah tangga sendiri, perlu meningkatkan penyelenggaraan pemerintahan, pelaksanaan pembangunan, dan pelayanan kemasyarakatan guna menjamin perkembangan dan kemajuan pada masa yang akan datang:" .
+<http://example.org/legal/document/uu/2001/2/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/2001/2/menimbang/point/a/text> .
+<http://example.org/legal/document/uu/2001/2/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2001/2/menimbang/point/b> .
+<http://example.org/legal/document/uu/2001/2/menimbang/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/2001/2/menimbang/point/b/text> legal:textHasTextString "bahwa dengan memperhatikan hal tersebut diatas dan kemajuan ekonomi, potensi daerah, sosial budaya, sosial politik, jumlah penduduk, luas daerah, dan pertimbangan lainnya di Kota Administratif Lhokseumawe Kabupaten Aceh Utara, serta meningkatnya beban tugas dan volume kerja di bidang penyelenggaraan pemerintahan, pelaksanaan pembangunan dan pelayanan kemasyarakatan serta memberikan kemampuan dalam pemanfaatan potensi daerah untuk menyelenggarakan otonomi daerah di Kabupaten Aceh Utara, perlu membentuk Kota Lhokseumawe sebagai daerah otonom," .
+<http://example.org/legal/document/uu/2001/2/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/2001/2/menimbang/point/b/text> .
+<http://example.org/legal/document/uu/2001/2/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2001/2/menimbang/point/c> .
+<http://example.org/legal/document/uu/2001/2/menimbang/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/2001/2/menimbang/point/c/text> legal:textHasTextString "bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a dan b, perlu membentuk undang-undang tentang pembentukan Kota Lhokseumawe untuk mengganti Peraturan Pemerintah Nomor 32 Tahun 1986 tentang Pembentukan Kota Administratif Lhokseumawe:" .
+<http://example.org/legal/document/uu/2001/2/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/2001/2/menimbang/point/c/text> .
+<http://example.org/legal/document/uu/2001/2> legal:documentHasDisahkanPengesah "ABDURRAHMAN WAHID" .
+<http://example.org/legal/document/uu/2001/2> legal:documentHasDisahkanLocation "Jakarta" .
+<http://example.org/legal/document/uu/2001/2> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA" .
+<http://example.org/legal/document/uu/2001/2> a legal:Document .
+<http://example.org/legal/document/uu/2001/2/bab> a legal:BabSet .
+<http://example.org/legal/document/uu/2001/2/bab/0001> a legal:Bab .
+<http://example.org/legal/document/uu/2001/2/bab/0001/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2001/2/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0003> a legal:Point .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0004> a legal:Point .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/2001/2/bab/0002> a legal:Bab .
+<http://example.org/legal/document/uu/2001/2/bab/0002/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2001/2/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/2001/2/pasal/0002/version/20010621> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2001/2/pasal/0002/version/20010621/text> a legal:Text .
+<http://example.org/legal/document/uu/2001/2/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/2001/2/bab/0003> a legal:Bab .
+<http://example.org/legal/document/uu/2001/2/bab/0004> a legal:Bab .
+<http://example.org/legal/document/uu/2001/2/bab/0005> a legal:Bab .
+<http://example.org/legal/document/uu/2001/2/bab/0006> a legal:Bab .
+<http://example.org/legal/document/uu/2001/2/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2001/2/mengingat/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0003> a legal:Point .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0004> a legal:Point .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0005> a legal:Point .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0005/text> a legal:Text .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0006> a legal:Point .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0006/text> a legal:Text .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0007> a legal:Point .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0007/text> a legal:Text .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0008> a legal:Point .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0008/text> a legal:Text .
+<http://example.org/legal/document/uu/2001/2/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/2001/2/menimbang/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2001/2/menimbang/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2001/2/menimbang/point/a> a legal:Point .
+<http://example.org/legal/document/uu/2001/2/menimbang/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/2001/2/menimbang/point/b> a legal:Point .
+<http://example.org/legal/document/uu/2001/2/menimbang/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/2001/2/menimbang/point/c> a legal:Point .
+<http://example.org/legal/document/uu/2001/2/menimbang/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/2001/2/bab> legal:partOf <http://example.org/legal/document/uu/2001/2> .
+<http://example.org/legal/document/uu/2001/2/bab/0001> legal:partOf <http://example.org/legal/document/uu/2001/2/bab> .
+<http://example.org/legal/document/uu/2001/2/bab/0001/pasals> legal:partOf <http://example.org/legal/document/uu/2001/2/bab/0001> .
+<http://example.org/legal/document/uu/2001/2/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2001/2/bab/0001/pasals> .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621> legal:partOf <http://example.org/legal/document/uu/2001/2/pasal/0001> .
+<http://example.org/legal/document/uu/2001/2/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2001/2> .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point> legal:partOf <http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621> .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0001> legal:partOf <http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point> .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0002> legal:partOf <http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point> .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0003> legal:partOf <http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point> .
+<http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point/0004> legal:partOf <http://example.org/legal/document/uu/2001/2/pasal/0001/version/20010621/point> .
+<http://example.org/legal/document/uu/2001/2/bab/0002> legal:partOf <http://example.org/legal/document/uu/2001/2/bab> .
+<http://example.org/legal/document/uu/2001/2/bab/0002/pasals> legal:partOf <http://example.org/legal/document/uu/2001/2/bab/0002> .
+<http://example.org/legal/document/uu/2001/2/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2001/2/bab/0002/pasals> .
+<http://example.org/legal/document/uu/2001/2/pasal/0002/version/20010621> legal:partOf <http://example.org/legal/document/uu/2001/2/pasal/0002> .
+<http://example.org/legal/document/uu/2001/2/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2001/2> .
+<http://example.org/legal/document/uu/2001/2/pasal/0003> legal:partOf <http://example.org/legal/document/uu/2001/2/bab/0002/pasals> .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621> legal:partOf <http://example.org/legal/document/uu/2001/2/pasal/0003> .
+<http://example.org/legal/document/uu/2001/2/pasal/0003> legal:partOf <http://example.org/legal/document/uu/2001/2> .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat> legal:partOf <http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621> .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat> .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0001> .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat> .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0002> .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0003> legal:partOf <http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat> .
+<http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/2001/2/pasal/0003/version/20010621/ayat/0003> .
+<http://example.org/legal/document/uu/2001/2/bab/0003> legal:partOf <http://example.org/legal/document/uu/2001/2/bab> .
+<http://example.org/legal/document/uu/2001/2/bab/0003/pasals> legal:partOf <http://example.org/legal/document/uu/2001/2/bab/0003> .
+<http://example.org/legal/document/uu/2001/2/bab/0004> legal:partOf <http://example.org/legal/document/uu/2001/2/bab> .
+<http://example.org/legal/document/uu/2001/2/bab/0004/pasals> legal:partOf <http://example.org/legal/document/uu/2001/2/bab/0004> .
+<http://example.org/legal/document/uu/2001/2/bab/0005> legal:partOf <http://example.org/legal/document/uu/2001/2/bab> .
+<http://example.org/legal/document/uu/2001/2/bab/0005/pasals> legal:partOf <http://example.org/legal/document/uu/2001/2/bab/0005> .
+<http://example.org/legal/document/uu/2001/2/bab/0006> legal:partOf <http://example.org/legal/document/uu/2001/2/bab> .
+<http://example.org/legal/document/uu/2001/2/bab/0006/pasals> legal:partOf <http://example.org/legal/document/uu/2001/2/bab/0006> .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2001/2/mengingat/point> .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2001/2/mengingat/point> .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/2001/2/mengingat/point> .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0004> legal:partOf <http://example.org/legal/document/uu/2001/2/mengingat/point> .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0005> legal:partOf <http://example.org/legal/document/uu/2001/2/mengingat/point> .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0006> legal:partOf <http://example.org/legal/document/uu/2001/2/mengingat/point> .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0007> legal:partOf <http://example.org/legal/document/uu/2001/2/mengingat/point> .
+<http://example.org/legal/document/uu/2001/2/mengingat/point/0008> legal:partOf <http://example.org/legal/document/uu/2001/2/mengingat/point> .
+<http://example.org/legal/document/uu/2001/2/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/2001/2/menimbang/point> .
+<http://example.org/legal/document/uu/2001/2/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/2001/2/menimbang/point> .
+<http://example.org/legal/document/uu/2001/2/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/2001/2/menimbang/point> .

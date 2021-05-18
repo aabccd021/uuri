@@ -1,0 +1,20 @@
+@prefix legal: <http://example.org/legal/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/legal/document/uu/1950/15> legal:documentHasBabSet <http://example.org/legal/document/uu/1950/15/bab> .
+<http://example.org/legal/document/uu/1950/15> legal:documentHasDisahkanDate "1950-08-08"^^xsd:date .
+<http://example.org/legal/document/uu/1950/15> legal:documentMengingat <http://example.org/legal/document/uu/1950/15/mengingat> .
+<http://example.org/legal/document/uu/1950/15/mengingat/text> legal:textHasTextString "pasal 5 ajat (1), pasal 20 ajat (1), pasal IV Aturan Peralihan Undang- Undang Dasar, Maklumat Wakil Presiden tangga 16 Oktober 1945 No. X, Undang-Undang No. 22 tahun 1948 dan Undang-Undang No. 3 tahun 1950: Dengan pesetudjuan Badan Pekerdja Komite Nasional Pusat, Memutuskan: Menetapkan pembentukan Daerah-Daerah Kabupaten dalam lingkungan Daerah Istimewa Jogjakarta dengan peraturan sebagai berikut: BAB |. KETENTUAN UMUM." .
+<http://example.org/legal/document/uu/1950/15/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/1950/15/mengingat/text> .
+<http://example.org/legal/document/uu/1950/15> legal:documentMenimbang <http://example.org/legal/document/uu/1950/15/menimbang> .
+<http://example.org/legal/document/uu/1950/15/menimbang/text> legal:textHasTextString "bahwa telah tiba saatnja untuk membentuk Daerah-Daerah Kabupaten jang berhak mengatur dan mengurus rumah tangganja sendiri dalam lingkungan Daerah Istimewa Jogjakarta termaksud dalam Undang- Undang No. 22 tahun 1948 tentang pemerintahan daerah:" .
+<http://example.org/legal/document/uu/1950/15/menimbang> legal:menimbangHasText <http://example.org/legal/document/uu/1950/15/menimbang/text> .
+<http://example.org/legal/document/uu/1950/15> legal:documentHasDisahkanPengesah "ASSAAT." .
+<http://example.org/legal/document/uu/1950/15> legal:documentHasDisahkanLocation "Jogjakarta" .
+<http://example.org/legal/document/uu/1950/15> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/document/uu/1950/15> a legal:Document .
+<http://example.org/legal/document/uu/1950/15/mengingat/text> a legal:Text .
+<http://example.org/legal/document/uu/1950/15/mengingat> a legal:Mengingat .
+<http://example.org/legal/document/uu/1950/15/menimbang/text> a legal:Text .
+<http://example.org/legal/document/uu/1950/15/menimbang> a legal:Menimbang .
+<http://example.org/legal/document/uu/1950/15/bab> legal:partOf <http://example.org/legal/document/uu/1950/15> .
