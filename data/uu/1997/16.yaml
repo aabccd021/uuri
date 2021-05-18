@@ -654,1019 +654,941 @@ babSet:
         nodeType: bab
         key: 3
         parentBabSetNode: *ref_8
-      title: JENIS STATISTIK DAN CARA PENGUMPULAN DATA
+      title: JENIS STATISTIK DAN CARA PENGUMPULAN DATA Bagian Pertama Jenis Statistik
       content:
-        type: bagianSet
+        type: pasalSet
         node:
-          nodeType: bagianSet
-          parentBabNode: *ref_43
+          nodeType: pasalSet
+          parentNode: *ref_43
         elements:
-          - type: bagian
-            node: &ref_44
-              nodeType: bagian
-              key: 1
-              parentBagianSetNode:
-                nodeType: bagianSet
-                parentBabNode: *ref_43
-            title: Bagian Pertama Jenis Statistik
-            content:
-              type: pasalSet
-              node:
-                nodeType: pasalSet
-                parentNode: *ref_44
-              elements:
-                - type: pasal
+          - type: pasal
+            node:
+              nodeType: pasal
+              key: 5
+              parentNode: *ref_0
+            version:
+              type: pasalVersion
+              node: &ref_44
+                nodeType: pasalVersion
+                version: *ref_30
+                state: exists
+                parentPasalNode:
+                  nodeType: pasal
+                  key: '5'
+                  parentNode: *ref_0
+              content:
+                type: pointSet
+                node: &ref_45
+                  nodeType: pointSet
+                  parentNode: *ref_44
+                description:
+                  type: text
                   node:
-                    nodeType: pasal
-                    key: 5
-                    parentNode: *ref_0
-                  version:
-                    type: pasalVersion
-                    node: &ref_45
-                      nodeType: pasalVersion
-                      version: *ref_30
-                      state: exists
-                      parentPasalNode:
-                        nodeType: pasal
-                        key: '5'
-                        parentNode: *ref_0
+                    nodeType: text
+                    textName: description
+                    parentNode: *ref_45
+                  textString: 'Berdasarkan tujuan pemanfaatannya, jenis statistik terdiri atas :'
+                  references: []
+                elements:
+                  - type: point
+                    node: &ref_46
+                      nodeType: point
+                      key: a
+                      parentPointSetNode: *ref_45
                     content:
-                      type: pointSet
-                      node: &ref_46
-                        nodeType: pointSet
-                        parentNode: *ref_45
-                      description:
-                        type: text
-                        node:
-                          nodeType: text
-                          textName: description
-                          parentNode: *ref_46
-                        textString: 'Berdasarkan tujuan pemanfaatannya, jenis statistik terdiri atas :'
-                        references: []
-                      elements:
-                        - type: point
-                          node: &ref_47
-                            nodeType: point
-                            key: a
-                            parentPointSetNode: *ref_46
-                          content:
-                            type: text
-                            node:
-                              nodeType: text
-                              textName: text
-                              parentNode: *ref_47
-                            textString: statistik dasar;
-                            references: []
-                        - type: point
-                          node: &ref_48
-                            nodeType: point
-                            key: b
-                            parentPointSetNode: *ref_46
-                          content:
-                            type: text
-                            node:
-                              nodeType: text
-                              textName: text
-                              parentNode: *ref_48
-                            textString: statistik sektoral; dan
-                            references: []
-                        - type: point
-                          node: &ref_49
-                            nodeType: point
-                            key: c
-                            parentPointSetNode: *ref_46
-                          content:
-                            type: text
-                            node:
-                              nodeType: text
-                              textName: text
-                              parentNode: *ref_49
-                            textString: statistik khusus. PRESIDEN REPUBLIK INDONESIA - 6 -
-                            references: []
-                - type: pasal
-                  node:
-                    nodeType: pasal
-                    key: 6
-                    parentNode: *ref_0
-                  version:
-                    type: pasalVersion
-                    node: &ref_50
-                      nodeType: pasalVersion
-                      version: *ref_30
-                      state: exists
-                      parentPasalNode:
-                        nodeType: pasal
-                        key: '6'
-                        parentNode: *ref_0
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_46
+                      textString: statistik dasar;
+                      references: []
+                  - type: point
+                    node: &ref_47
+                      nodeType: point
+                      key: b
+                      parentPointSetNode: *ref_45
                     content:
-                      type: ayatSet
-                      node: &ref_51
-                        nodeType: ayatSet
-                        parentPasalVersionNode: *ref_50
-                      elements:
-                        - type: ayat
-                          node: &ref_52
-                            nodeType: ayat
-                            key: 1
-                            parentAyatSetNode: *ref_51
-                          content:
-                            type: text
-                            node:
-                              nodeType: text
-                              textName: text
-                              parentNode: *ref_52
-                            textString: >-
-                              Statistik dasar dan statistik sektoral terbuka pemanfataannya untuk
-                              umum, kecuali ditentukan lain oleh peraturan perundang - undangan yang
-                              berlaku.
-                            references: []
-                        - type: ayat
-                          node: &ref_53
-                            nodeType: ayat
-                            key: 2
-                            parentAyatSetNode: *ref_51
-                          content:
-                            type: text
-                            node:
-                              nodeType: text
-                              textName: text
-                              parentNode: *ref_53
-                            textString: >-
-                              Setiap orang memiliki kesempatan yang sama untuk mengetahui dan
-                              menfaatkan statistik khusus dengan tetap memperhatikan hak seseorang
-                              atau lembaga yang dilindungi undang - undang.
-                            references: []
-          - type: bagian
-            node: &ref_54
-              nodeType: bagian
-              key: 2
-              parentBagianSetNode:
-                nodeType: bagianSet
-                parentBabNode: *ref_43
-            title: Bagian Kedua Cara Pengumpulan Data
-            content:
-              type: pasalSet
-              node:
-                nodeType: pasalSet
-                parentNode: *ref_54
-              elements:
-                - type: pasal
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_47
+                      textString: statistik sektoral; dan
+                      references: []
+                  - type: point
+                    node: &ref_48
+                      nodeType: point
+                      key: c
+                      parentPointSetNode: *ref_45
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_48
+                      textString: statistik khusus. PRESIDEN REPUBLIK INDONESIA - 6 -
+                      references: []
+          - type: pasal
+            node:
+              nodeType: pasal
+              key: 6
+              parentNode: *ref_0
+            version:
+              type: pasalVersion
+              node: &ref_49
+                nodeType: pasalVersion
+                version: *ref_30
+                state: exists
+                parentPasalNode:
+                  nodeType: pasal
+                  key: '6'
+                  parentNode: *ref_0
+              content:
+                type: ayatSet
+                node: &ref_50
+                  nodeType: ayatSet
+                  parentPasalVersionNode: *ref_49
+                elements:
+                  - type: ayat
+                    node: &ref_51
+                      nodeType: ayat
+                      key: 1
+                      parentAyatSetNode: *ref_50
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_51
+                      textString: >-
+                        Statistik dasar dan statistik sektoral terbuka pemanfataannya untuk umum,
+                        kecuali ditentukan lain oleh peraturan perundang - undangan yang berlaku.
+                      references: []
+                  - type: ayat
+                    node: &ref_52
+                      nodeType: ayat
+                      key: 2
+                      parentAyatSetNode: *ref_50
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_52
+                      textString: >-
+                        Setiap orang memiliki kesempatan yang sama untuk mengetahui dan menfaatkan
+                        statistik khusus dengan tetap memperhatikan hak seseorang atau lembaga yang
+                        dilindungi undang - undang. Bagian Kedua Cara Pengumpulan Data
+                      references: []
+          - type: pasal
+            node:
+              nodeType: pasal
+              key: 7
+              parentNode: *ref_0
+            version:
+              type: pasalVersion
+              node: &ref_53
+                nodeType: pasalVersion
+                version: *ref_30
+                state: exists
+                parentPasalNode:
+                  nodeType: pasal
+                  key: '7'
+                  parentNode: *ref_0
+              content:
+                type: pointSet
+                node: &ref_54
+                  nodeType: pointSet
+                  parentNode: *ref_53
+                description:
+                  type: text
                   node:
-                    nodeType: pasal
-                    key: 7
-                    parentNode: *ref_0
-                  version:
-                    type: pasalVersion
+                    nodeType: text
+                    textName: description
+                    parentNode: *ref_54
+                  textString: 'Statistik diselenggarakan melalui pengumpulan data yang dilakukan dengan cara :'
+                  references: []
+                elements:
+                  - type: point
                     node: &ref_55
-                      nodeType: pasalVersion
-                      version: *ref_30
-                      state: exists
-                      parentPasalNode:
-                        nodeType: pasal
-                        key: '7'
-                        parentNode: *ref_0
+                      nodeType: point
+                      key: a
+                      parentPointSetNode: *ref_54
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_55
+                      textString: sensus;
+                      references: []
+                  - type: point
+                    node: &ref_56
+                      nodeType: point
+                      key: b
+                      parentPointSetNode: *ref_54
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_56
+                      textString: survei;
+                      references: []
+                  - type: point
+                    node: &ref_57
+                      nodeType: point
+                      key: c
+                      parentPointSetNode: *ref_54
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_57
+                      textString: kompilasi produk administrasi; dan
+                      references: []
+                  - type: point
+                    node: &ref_58
+                      nodeType: point
+                      key: d
+                      parentPointSetNode: *ref_54
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_58
+                      textString: cara lain sesuai dengan perkembangan ilmu pengetahuan dan teknologi.
+                      references: []
+          - type: pasal
+            node:
+              nodeType: pasal
+              key: 8
+              parentNode: *ref_0
+            version:
+              type: pasalVersion
+              node: &ref_59
+                nodeType: pasalVersion
+                version: *ref_30
+                state: exists
+                parentPasalNode:
+                  nodeType: pasal
+                  key: '8'
+                  parentNode: *ref_0
+              content:
+                type: ayatSet
+                node: &ref_60
+                  nodeType: ayatSet
+                  parentPasalVersionNode: *ref_59
+                elements:
+                  - type: ayat
+                    node: &ref_61
+                      nodeType: ayat
+                      key: 1
+                      parentAyatSetNode: *ref_60
                     content:
                       type: pointSet
-                      node: &ref_56
+                      node: &ref_62
                         nodeType: pointSet
-                        parentNode: *ref_55
+                        parentNode: *ref_61
                       description:
                         type: text
                         node:
                           nodeType: text
                           textName: description
-                          parentNode: *ref_56
+                          parentNode: *ref_62
                         textString: >-
-                          Statistik diselenggarakan melalui pengumpulan data yang dilakukan dengan
-                          cara :
+                          Sensus sebagaimana dimaksud dalam Pasal 7 huruf a diselenggarakan sekurang
+                          - kurangnya sekali dalam 10 (sepuluh) tahun oleh Badan, yang meliputi :
+                          PRESIDEN REPUBLIK INDONESIA - 7 -
                         references: []
                       elements:
                         - type: point
-                          node: &ref_57
+                          node: &ref_63
                             nodeType: point
                             key: a
-                            parentPointSetNode: *ref_56
+                            parentPointSetNode: *ref_62
                           content:
                             type: text
                             node:
                               nodeType: text
                               textName: text
-                              parentNode: *ref_57
-                            textString: sensus;
+                              parentNode: *ref_63
+                            textString: sensus penduduk;
                             references: []
                         - type: point
-                          node: &ref_58
+                          node: &ref_64
                             nodeType: point
                             key: b
-                            parentPointSetNode: *ref_56
+                            parentPointSetNode: *ref_62
                           content:
                             type: text
                             node:
                               nodeType: text
                               textName: text
-                              parentNode: *ref_58
-                            textString: survei;
+                              parentNode: *ref_64
+                            textString: sensus pertanian; dan
                             references: []
                         - type: point
-                          node: &ref_59
+                          node: &ref_65
                             nodeType: point
                             key: c
-                            parentPointSetNode: *ref_56
+                            parentPointSetNode: *ref_62
                           content:
                             type: text
                             node:
                               nodeType: text
                               textName: text
-                              parentNode: *ref_59
-                            textString: kompilasi produk administrasi; dan
+                              parentNode: *ref_65
+                            textString: sensus ekonomi.
                             references: []
-                        - type: point
-                          node: &ref_60
-                            nodeType: point
-                            key: d
-                            parentPointSetNode: *ref_56
-                          content:
-                            type: text
-                            node:
-                              nodeType: text
-                              textName: text
-                              parentNode: *ref_60
-                            textString: cara lain sesuai dengan perkembangan ilmu pengetahuan dan teknologi.
-                            references: []
-                - type: pasal
-                  node:
-                    nodeType: pasal
-                    key: 8
-                    parentNode: *ref_0
-                  version:
-                    type: pasalVersion
-                    node: &ref_61
-                      nodeType: pasalVersion
-                      version: *ref_30
-                      state: exists
-                      parentPasalNode:
-                        nodeType: pasal
-                        key: '8'
-                        parentNode: *ref_0
+                  - type: ayat
+                    node: &ref_66
+                      nodeType: ayat
+                      key: 2
+                      parentAyatSetNode: *ref_60
                     content:
-                      type: ayatSet
-                      node: &ref_62
-                        nodeType: ayatSet
-                        parentPasalVersionNode: *ref_61
-                      elements:
-                        - type: ayat
-                          node: &ref_63
-                            nodeType: ayat
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_66
+                      textString: >-
+                        Penetapan tahun penyelengg araan dan perubahan jenis sensus sebagaimana
+                        dimaksud dalam ayat (1), diatur lebih lanjut dengan Peraturan Pemerintah.
+                      references:
+                        - start: 87
+                          end: 95
+                          node:
                             key: 1
-                            parentAyatSetNode: *ref_62
-                          content:
-                            type: pointSet
-                            node: &ref_64
-                              nodeType: pointSet
-                              parentNode: *ref_63
-                            description:
-                              type: text
-                              node:
-                                nodeType: text
-                                textName: description
-                                parentNode: *ref_64
-                              textString: >-
-                                Sensus sebagaimana dimaksud dalam Pasal 7 huruf a diselenggarakan
-                                sekurang - kurangnya sekali dalam 10 (sepuluh) tahun oleh Badan,
-                                yang meliputi : PRESIDEN REPUBLIK INDONESIA - 7 -
-                              references: []
-                            elements:
-                              - type: point
-                                node: &ref_65
-                                  nodeType: point
-                                  key: a
-                                  parentPointSetNode: *ref_64
-                                content:
-                                  type: text
-                                  node:
-                                    nodeType: text
-                                    textName: text
-                                    parentNode: *ref_65
-                                  textString: sensus penduduk;
-                                  references: []
-                              - type: point
-                                node: &ref_66
-                                  nodeType: point
-                                  key: b
-                                  parentPointSetNode: *ref_64
-                                content:
-                                  type: text
-                                  node:
-                                    nodeType: text
-                                    textName: text
-                                    parentNode: *ref_66
-                                  textString: sensus pertanian; dan
-                                  references: []
-                              - type: point
-                                node: &ref_67
-                                  nodeType: point
-                                  key: c
-                                  parentPointSetNode: *ref_64
-                                content:
-                                  type: text
-                                  node:
-                                    nodeType: text
-                                    textName: text
-                                    parentNode: *ref_67
-                                  textString: sensus ekonomi.
-                                  references: []
-                        - type: ayat
-                          node: &ref_68
+                            parentAyatSetNode:
+                              nodeType: ayatSet
+                              parentPasalVersionNode: *ref_59
                             nodeType: ayat
-                            key: 2
-                            parentAyatSetNode: *ref_62
-                          content:
-                            type: text
-                            node:
-                              nodeType: text
-                              textName: text
-                              parentNode: *ref_68
-                            textString: >-
-                              Penetapan tahun penyelengg araan dan perubahan jenis sensus
-                              sebagaimana dimaksud dalam ayat (1), diatur lebih lanjut dengan
-                              Peraturan Pemerintah.
-                            references:
-                              - start: 87
-                                end: 95
-                                node:
-                                  key: 1
-                                  parentAyatSetNode:
-                                    nodeType: ayatSet
-                                    parentPasalVersionNode: *ref_61
-                                  nodeType: ayat
-                - type: pasal
-                  node:
-                    nodeType: pasal
-                    key: 9
-                    parentNode: *ref_0
-                  version:
-                    type: pasalVersion
+          - type: pasal
+            node:
+              nodeType: pasal
+              key: 9
+              parentNode: *ref_0
+            version:
+              type: pasalVersion
+              node: &ref_67
+                nodeType: pasalVersion
+                version: *ref_30
+                state: exists
+                parentPasalNode:
+                  nodeType: pasal
+                  key: '9'
+                  parentNode: *ref_0
+              content:
+                type: ayatSet
+                node: &ref_68
+                  nodeType: ayatSet
+                  parentPasalVersionNode: *ref_67
+                elements:
+                  - type: ayat
                     node: &ref_69
-                      nodeType: pasalVersion
-                      version: *ref_30
-                      state: exists
-                      parentPasalNode:
-                        nodeType: pasal
-                        key: '9'
-                        parentNode: *ref_0
+                      nodeType: ayat
+                      key: 1
+                      parentAyatSetNode: *ref_68
                     content:
-                      type: ayatSet
-                      node: &ref_70
-                        nodeType: ayatSet
-                        parentPasalVersionNode: *ref_69
-                      elements:
-                        - type: ayat
-                          node: &ref_71
-                            nodeType: ayat
-                            key: 1
-                            parentAyatSetNode: *ref_70
-                          content:
-                            type: text
-                            node:
-                              nodeType: text
-                              textName: text
-                              parentNode: *ref_71
-                            textString: >-
-                              Survei sebagaimana dimaksud dalam Pasal 7 huruf b diselenggarakan
-                              secara berkala dan sewaktu - waktu untuk memperoleh data ya ng rinci.
-                            references:
-                              - start: 42
-                                end: 49
-                                node:
-                                  key: b
-                                  parentPointSetNode:
-                                    nodeType: pointSet
-                                    parentNode: *ref_69
-                                  nodeType: point
-                              - start: 34
-                                end: 41
-                                node:
-                                  key: 7
-                                  parentNode: *ref_0
-                                  nodeType: pasal
-                        - type: ayat
-                          node: &ref_72
-                            nodeType: ayat
-                            key: 2
-                            parentAyatSetNode: *ref_70
-                          content:
-                            type: text
-                            node:
-                              nodeType: text
-                              textName: text
-                              parentNode: *ref_72
-                            textString: >-
-                              Survei antar sensus dilakukan pada pertengahan 2 (dua) sensus sejenis
-                              untuk menjembatani 2 (dua) sensus tersebut.
-                            references: []
-                - type: pasal
-                  node:
-                    nodeType: pasal
-                    key: 10
-                    parentNode: *ref_0
-                  version:
-                    type: pasalVersion
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_69
+                      textString: >-
+                        Survei sebagaimana dimaksud dalam Pasal 7 huruf b diselenggarakan secara
+                        berkala dan sewaktu - waktu untuk memperoleh data ya ng rinci.
+                      references:
+                        - start: 42
+                          end: 49
+                          node:
+                            key: b
+                            parentPointSetNode:
+                              nodeType: pointSet
+                              parentNode: *ref_67
+                            nodeType: point
+                        - start: 34
+                          end: 41
+                          node:
+                            key: 7
+                            parentNode: *ref_0
+                            nodeType: pasal
+                  - type: ayat
+                    node: &ref_70
+                      nodeType: ayat
+                      key: 2
+                      parentAyatSetNode: *ref_68
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_70
+                      textString: >-
+                        Survei antar sensus dilakukan pada pertengahan 2 (dua) sensus sejenis untuk
+                        menjembatani 2 (dua) sensus tersebut.
+                      references: []
+          - type: pasal
+            node:
+              nodeType: pasal
+              key: 10
+              parentNode: *ref_0
+            version:
+              type: pasalVersion
+              node: &ref_71
+                nodeType: pasalVersion
+                version: *ref_30
+                state: exists
+                parentPasalNode:
+                  nodeType: pasal
+                  key: '10'
+                  parentNode: *ref_0
+              content:
+                type: ayatSet
+                node: &ref_72
+                  nodeType: ayatSet
+                  parentPasalVersionNode: *ref_71
+                elements:
+                  - type: ayat
                     node: &ref_73
-                      nodeType: pasalVersion
-                      version: *ref_30
-                      state: exists
-                      parentPasalNode:
-                        nodeType: pasal
-                        key: '10'
-                        parentNode: *ref_0
+                      nodeType: ayat
+                      key: 1
+                      parentAyatSetNode: *ref_72
                     content:
-                      type: ayatSet
-                      node: &ref_74
-                        nodeType: ayatSet
-                        parentPasalVersionNode: *ref_73
-                      elements:
-                        - type: ayat
-                          node: &ref_75
-                            nodeType: ayat
-                            key: 1
-                            parentAyatSetNode: *ref_74
-                          content:
-                            type: text
-                            node:
-                              nodeType: text
-                              textName: text
-                              parentNode: *ref_75
-                            textString: >-
-                              Kompilasi produk administrasi sebagaimana dimaksud dalam Pasal 7 huruf
-                              c dilaksanakan dengan memanfaatkan berbagai dokumen produk
-                              administrasi.
-                            references:
-                              - start: 65
-                                end: 72
-                                node:
-                                  key: c
-                                  parentPointSetNode:
-                                    nodeType: pointSet
-                                    parentNode: *ref_73
-                                  nodeType: point
-                              - start: 57
-                                end: 64
-                                node:
-                                  key: 7
-                                  parentNode: *ref_0
-                                  nodeType: pasal
-                        - type: ayat
-                          node: &ref_76
-                            nodeType: ayat
-                            key: 2
-                            parentAyatSetNode: *ref_74
-                          content:
-                            type: text
-                            node:
-                              nodeType: text
-                              textName: text
-                              parentNode: *ref_76
-                            textString: >-
-                              Hasil kompilasi produk administrasi milik instansi pemerintah terbuka
-                              pemanfaatannya untuk umum, kecuali ditentukan lain oleh peraturan
-                              perundang - undangan yang berlaku.
-                            references: []
-                        - type: ayat
-                          node: &ref_77
-                            nodeType: ayat
-                            key: 3
-                            parentAyatSetNode: *ref_74
-                          content:
-                            type: text
-                            node:
-                              nodeType: text
-                              textName: text
-                              parentNode: *ref_77
-                            textString: >-
-                              Setiap orang mempunyai kesempatan y ang sama untuk mengetahui dan
-                              memanfaatkan hasil kompilasi produk administrasi milik lembaga,
-                              organisasi, perorangan dan atau unsur masyarakat lainnya dengan tetap
-                              memperhatikan hak seseorang atau lembaga yang dilindungi undang -
-                              undang. PRESIDEN REPUBLIK INDONESIA - 8 -
-                            references: []
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_73
+                      textString: >-
+                        Kompilasi produk administrasi sebagaimana dimaksud dalam Pasal 7 huruf c
+                        dilaksanakan dengan memanfaatkan berbagai dokumen produk administrasi.
+                      references:
+                        - start: 65
+                          end: 72
+                          node:
+                            key: c
+                            parentPointSetNode:
+                              nodeType: pointSet
+                              parentNode: *ref_71
+                            nodeType: point
+                        - start: 57
+                          end: 64
+                          node:
+                            key: 7
+                            parentNode: *ref_0
+                            nodeType: pasal
+                  - type: ayat
+                    node: &ref_74
+                      nodeType: ayat
+                      key: 2
+                      parentAyatSetNode: *ref_72
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_74
+                      textString: >-
+                        Hasil kompilasi produk administrasi milik instansi pemerintah terbuka
+                        pemanfaatannya untuk umum, kecuali ditentukan lain oleh peraturan perundang
+                        - undangan yang berlaku.
+                      references: []
+                  - type: ayat
+                    node: &ref_75
+                      nodeType: ayat
+                      key: 3
+                      parentAyatSetNode: *ref_72
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_75
+                      textString: >-
+                        Setiap orang mempunyai kesempatan y ang sama untuk mengetahui dan
+                        memanfaatkan hasil kompilasi produk administrasi milik lembaga, organisasi,
+                        perorangan dan atau unsur masyarakat lainnya dengan tetap memperhatikan hak
+                        seseorang atau lembaga yang dilindungi undang - undang. PRESIDEN REPUBLIK
+                        INDONESIA - 8 -
+                      references: []
     - type: bab
-      node: &ref_78
+      node: &ref_76
         nodeType: bab
         key: 4
         parentBabSetNode: *ref_8
-      title: PEN YELENGGARAAN STATISTIK
+      title: PEN YELENGGARAAN STATISTIK Bagian Pertama Statistik Dasar
       content:
-        type: bagianSet
+        type: pasalSet
         node:
-          nodeType: bagianSet
-          parentBabNode: *ref_78
+          nodeType: pasalSet
+          parentNode: *ref_76
         elements:
-          - type: bagian
-            node: &ref_79
-              nodeType: bagian
-              key: 1
-              parentBagianSetNode:
-                nodeType: bagianSet
-                parentBabNode: *ref_78
-            title: Bagian Pertama Statistik Dasar
-            content:
-              type: pasalSet
-              node:
-                nodeType: pasalSet
-                parentNode: *ref_79
-              elements:
-                - type: pasal
-                  node:
-                    nodeType: pasal
-                    key: 11
-                    parentNode: *ref_0
-                  version:
-                    type: pasalVersion
-                    node: &ref_80
-                      nodeType: pasalVersion
-                      version: *ref_30
-                      state: exists
-                      parentPasalNode:
-                        nodeType: pasal
-                        key: '11'
-                        parentNode: *ref_0
+          - type: pasal
+            node:
+              nodeType: pasal
+              key: 11
+              parentNode: *ref_0
+            version:
+              type: pasalVersion
+              node: &ref_77
+                nodeType: pasalVersion
+                version: *ref_30
+                state: exists
+                parentPasalNode:
+                  nodeType: pasal
+                  key: '11'
+                  parentNode: *ref_0
+              content:
+                type: ayatSet
+                node: &ref_78
+                  nodeType: ayatSet
+                  parentPasalVersionNode: *ref_77
+                elements:
+                  - type: ayat
+                    node: &ref_79
+                      nodeType: ayat
+                      key: 1
+                      parentAyatSetNode: *ref_78
                     content:
-                      type: ayatSet
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_79
+                      textString: Statistik dasar diselenggarakan oleh Badan.
+                      references: []
+                  - type: ayat
+                    node: &ref_80
+                      nodeType: ayat
+                      key: 2
+                      parentAyatSetNode: *ref_78
+                    content:
+                      type: pointSet
                       node: &ref_81
-                        nodeType: ayatSet
-                        parentPasalVersionNode: *ref_80
+                        nodeType: pointSet
+                        parentNode: *ref_80
+                      description:
+                        type: text
+                        node:
+                          nodeType: text
+                          textName: description
+                          parentNode: *ref_81
+                        textString: >-
+                          Dalam menyelenggarakan statistik dasar sebagaimana dimaksud dalam ayat
+                          (1), Badan memperoleh data dengan cara :
+                        references: []
                       elements:
-                        - type: ayat
+                        - type: point
                           node: &ref_82
-                            nodeType: ayat
-                            key: 1
-                            parentAyatSetNode: *ref_81
+                            nodeType: point
+                            key: a
+                            parentPointSetNode: *ref_81
                           content:
                             type: text
                             node:
                               nodeType: text
                               textName: text
                               parentNode: *ref_82
-                            textString: Statistik dasar diselenggarakan oleh Badan.
+                            textString: sensus;
                             references: []
-                        - type: ayat
+                        - type: point
                           node: &ref_83
-                            nodeType: ayat
-                            key: 2
-                            parentAyatSetNode: *ref_81
+                            nodeType: point
+                            key: b
+                            parentPointSetNode: *ref_81
                           content:
-                            type: pointSet
-                            node: &ref_84
-                              nodeType: pointSet
+                            type: text
+                            node:
+                              nodeType: text
+                              textName: text
                               parentNode: *ref_83
-                            description:
-                              type: text
-                              node:
-                                nodeType: text
-                                textName: description
-                                parentNode: *ref_84
-                              textString: >-
-                                Dalam menyelenggarakan statistik dasar sebagaimana dimaksud dalam
-                                ayat (1), Badan memperoleh data dengan cara :
-                              references: []
-                            elements:
-                              - type: point
-                                node: &ref_85
-                                  nodeType: point
-                                  key: a
-                                  parentPointSetNode: *ref_84
-                                content:
-                                  type: text
-                                  node:
-                                    nodeType: text
-                                    textName: text
-                                    parentNode: *ref_85
-                                  textString: sensus;
-                                  references: []
-                              - type: point
-                                node: &ref_86
-                                  nodeType: point
-                                  key: b
-                                  parentPointSetNode: *ref_84
-                                content:
-                                  type: text
-                                  node:
-                                    nodeType: text
-                                    textName: text
-                                    parentNode: *ref_86
-                                  textString: >-
-                                    survei; c . kompilasi produk administrasi; dan d. cara lain
-                                    sesuai dengan perkembangan ilmu pengetahuan dan teknologi.
-                                  references: []
-          - type: bagian
-            node: &ref_87
-              nodeType: bagian
-              key: 2
-              parentBagianSetNode:
-                nodeType: bagianSet
-                parentBabNode: *ref_78
-            title: Bagian Kedua Statistik Sektoral
-            content:
-              type: pasalSet
-              node:
-                nodeType: pasalSet
-                parentNode: *ref_87
-              elements:
-                - type: pasal
-                  node:
-                    nodeType: pasal
-                    key: 12
-                    parentNode: *ref_0
-                  version:
-                    type: pasalVersion
-                    node: &ref_88
-                      nodeType: pasalVersion
-                      version: *ref_30
-                      state: exists
-                      parentPasalNode:
-                        nodeType: pasal
-                        key: '12'
-                        parentNode: *ref_0
+                            textString: >-
+                              survei; c . kompilasi produk administrasi; dan d. cara lain sesuai
+                              dengan perkembangan ilmu pengetahuan dan teknologi. Bagian Kedua
+                              Statistik Sektoral
+                            references: []
+          - type: pasal
+            node:
+              nodeType: pasal
+              key: 12
+              parentNode: *ref_0
+            version:
+              type: pasalVersion
+              node: &ref_84
+                nodeType: pasalVersion
+                version: *ref_30
+                state: exists
+                parentPasalNode:
+                  nodeType: pasal
+                  key: '12'
+                  parentNode: *ref_0
+              content:
+                type: ayatSet
+                node: &ref_85
+                  nodeType: ayatSet
+                  parentPasalVersionNode: *ref_84
+                elements:
+                  - type: ayat
+                    node: &ref_86
+                      nodeType: ayat
+                      key: 1
+                      parentAyatSetNode: *ref_85
                     content:
-                      type: ayatSet
-                      node: &ref_89
-                        nodeType: ayatSet
-                        parentPasalVersionNode: *ref_88
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_86
+                      textString: >-
+                        Statistik sektoral diselenggarakan oleh instansi pemerintah sesuai lingkup
+                        tugas dan fungsinya, secara mandiri atau bersama dengan Badan.
+                      references: []
+                  - type: ayat
+                    node: &ref_87
+                      nodeType: ayat
+                      key: 2
+                      parentAyatSetNode: *ref_85
+                    content:
+                      type: pointSet
+                      node: &ref_88
+                        nodeType: pointSet
+                        parentNode: *ref_87
+                      description:
+                        type: text
+                        node:
+                          nodeType: text
+                          textName: description
+                          parentNode: *ref_88
+                        textString: >-
+                          Dalam menyelenggarakan statistik, sektoral instansi pemerintah memperoleh
+                          data dengan cara :
+                        references: []
                       elements:
-                        - type: ayat
+                        - type: point
+                          node: &ref_89
+                            nodeType: point
+                            key: a
+                            parentPointSetNode: *ref_88
+                          content:
+                            type: text
+                            node:
+                              nodeType: text
+                              textName: text
+                              parentNode: *ref_89
+                            textString: sensus; PRESIDEN REPUBLIK INDONESIA - 9 -
+                            references: []
+                        - type: point
                           node: &ref_90
-                            nodeType: ayat
-                            key: 1
-                            parentAyatSetNode: *ref_89
+                            nodeType: point
+                            key: b
+                            parentPointSetNode: *ref_88
                           content:
                             type: text
                             node:
                               nodeType: text
                               textName: text
                               parentNode: *ref_90
-                            textString: >-
-                              Statistik sektoral diselenggarakan oleh instansi pemerintah sesuai
-                              lingkup tugas dan fungsinya, secara mandiri atau bersama dengan Badan.
+                            textString: kompilasi produk administrasi; dan
                             references: []
-                        - type: ayat
+                        - type: point
                           node: &ref_91
-                            nodeType: ayat
-                            key: 2
-                            parentAyatSetNode: *ref_89
+                            nodeType: point
+                            key: c
+                            parentPointSetNode: *ref_88
+                          content:
+                            type: text
+                            node:
+                              nodeType: text
+                              textName: text
+                              parentNode: *ref_91
+                            textString: cara lain sesuai dengan perkembangan ilmu pengetahuan dan teknologi.
+                            references: []
+                  - type: ayat
+                    node: &ref_92
+                      nodeType: ayat
+                      key: 3
+                      parentAyatSetNode: *ref_85
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_92
+                      textString: >-
+                        Statistik sektoral harus diselenggarakan bersama dengan Badan apabila
+                        statistik tersebut hanya dapat diperoleh dengan cara se nsus dan dengan
+                        jangkauan bersekala nasional.
+                      references: []
+                  - type: ayat
+                    node: &ref_93
+                      nodeType: ayat
+                      key: 4
+                      parentAyatSetNode: *ref_85
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_93
+                      textString: >-
+                        Hasil statistik sektoral yang diselenggarakan sendiri oleh instansi
+                        pemerintah wajib diserahkan kepada Badan. Bagian Ketiga Statistik Khusus
+                      references: []
+          - type: pasal
+            node:
+              nodeType: pasal
+              key: 13
+              parentNode: *ref_0
+            version:
+              type: pasalVersion
+              node: &ref_94
+                nodeType: pasalVersion
+                version: *ref_30
+                state: exists
+                parentPasalNode:
+                  nodeType: pasal
+                  key: '13'
+                  parentNode: *ref_0
+              content:
+                type: ayatSet
+                node: &ref_95
+                  nodeType: ayatSet
+                  parentPasalVersionNode: *ref_94
+                elements:
+                  - type: ayat
+                    node: &ref_96
+                      nodeType: ayat
+                      key: 1
+                      parentAyatSetNode: *ref_95
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_96
+                      textString: >-
+                        Statistik khusus diselenggarakan oleh masyarakat baik lembaga, organisasi,
+                        perorangan maupun unsur masyarakat lainnya secara mandiri atau bersama
+                        dengan Badan.
+                      references: []
+                  - type: ayat
+                    node: &ref_97
+                      nodeType: ayat
+                      key: 2
+                      parentAyatSetNode: *ref_95
+                    content:
+                      type: pointSet
+                      node: &ref_98
+                        nodeType: pointSet
+                        parentNode: *ref_97
+                      description:
+                        type: text
+                        node:
+                          nodeType: text
+                          textName: description
+                          parentNode: *ref_98
+                        textString: >-
+                          dalam menyelenggarakan statistik khusus sebagaimana dimaksud dalam ayat
+                          (1), masyarakat memperoleh data dengan cara :
+                        references: []
+                      elements:
+                        - type: point
+                          node: &ref_99
+                            nodeType: point
+                            key: a
+                            parentPointSetNode: *ref_98
+                          content:
+                            type: text
+                            node:
+                              nodeType: text
+                              textName: text
+                              parentNode: *ref_99
+                            textString: sensus;
+                            references: []
+                        - type: point
+                          node: &ref_100
+                            nodeType: point
+                            key: b
+                            parentPointSetNode: *ref_98
+                          content:
+                            type: text
+                            node:
+                              nodeType: text
+                              textName: text
+                              parentNode: *ref_100
+                            textString: kompilasi produk administrasi; dan
+                            references: []
+                        - type: point
+                          node: &ref_101
+                            nodeType: point
+                            key: c
+                            parentPointSetNode: *ref_98
                           content:
                             type: pointSet
-                            node: &ref_92
+                            node: &ref_102
                               nodeType: pointSet
-                              parentNode: *ref_91
+                              parentNode: *ref_101
                             description:
                               type: text
                               node:
                                 nodeType: text
                                 textName: description
-                                parentNode: *ref_92
+                                parentNode: *ref_102
                               textString: >-
-                                Dalam menyelenggarakan statistik, sektoral instansi pemerintah
-                                memperoleh data dengan cara :
+                                cara lain sesuai dengan perkembangan ilmu pengetahuan dan teknologi.
+                                (2) Sinopsis sebagaimana dimaksud dalam ayat (1) memuat :
                               references: []
                             elements:
                               - type: point
-                                node: &ref_93
+                                node: &ref_103
                                   nodeType: point
                                   key: a
-                                  parentPointSetNode: *ref_92
+                                  parentPointSetNode: *ref_102
                                 content:
                                   type: text
                                   node:
                                     nodeType: text
                                     textName: text
-                                    parentNode: *ref_93
-                                  textString: sensus; PRESIDEN REPUBLIK INDONESIA - 9 -
+                                    parentNode: *ref_103
+                                  textString: judul;
                                   references: []
-                              - type: point
-                                node: &ref_94
-                                  nodeType: point
-                                  key: b
-                                  parentPointSetNode: *ref_92
-                                content:
-                                  type: text
-                                  node:
-                                    nodeType: text
-                                    textName: text
-                                    parentNode: *ref_94
-                                  textString: kompilasi produk administrasi; dan
-                                  references: []
-                              - type: point
-                                node: &ref_95
-                                  nodeType: point
-                                  key: c
-                                  parentPointSetNode: *ref_92
-                                content:
-                                  type: text
-                                  node:
-                                    nodeType: text
-                                    textName: text
-                                    parentNode: *ref_95
-                                  textString: >-
-                                    cara lain sesuai dengan perkembangan ilmu pengetahuan dan
-                                    teknologi.
-                                  references: []
-                        - type: ayat
-                          node: &ref_96
-                            nodeType: ayat
-                            key: 3
-                            parentAyatSetNode: *ref_89
-                          content:
-                            type: text
-                            node:
-                              nodeType: text
-                              textName: text
-                              parentNode: *ref_96
-                            textString: >-
-                              Statistik sektoral harus diselenggarakan bersama dengan Badan apabila
-                              statistik tersebut hanya dapat diperoleh dengan cara se nsus dan
-                              dengan jangkauan bersekala nasional.
-                            references: []
-                        - type: ayat
-                          node: &ref_97
-                            nodeType: ayat
-                            key: 4
-                            parentAyatSetNode: *ref_89
-                          content:
-                            type: text
-                            node:
-                              nodeType: text
-                              textName: text
-                              parentNode: *ref_97
-                            textString: >-
-                              Hasil statistik sektoral yang diselenggarakan sendiri oleh instansi
-                              pemerintah wajib diserahkan kepada Badan.
-                            references: []
-          - type: bagian
-            node: &ref_98
-              nodeType: bagian
-              key: 3
-              parentBagianSetNode:
-                nodeType: bagianSet
-                parentBabNode: *ref_78
-            title: Bagian Ketiga Statistik Khusus
-            content:
-              type: pasalSet
-              node:
-                nodeType: pasalSet
-                parentNode: *ref_98
-              elements:
-                - type: pasal
-                  node:
-                    nodeType: pasal
-                    key: 13
-                    parentNode: *ref_0
-                  version:
-                    type: pasalVersion
-                    node: &ref_99
-                      nodeType: pasalVersion
-                      version: *ref_30
-                      state: exists
-                      parentPasalNode:
-                        nodeType: pasal
-                        key: '13'
-                        parentNode: *ref_0
-                    content:
-                      type: ayatSet
-                      node: &ref_100
-                        nodeType: ayatSet
-                        parentPasalVersionNode: *ref_99
-                      elements:
-                        - type: ayat
-                          node: &ref_101
-                            nodeType: ayat
-                            key: 1
-                            parentAyatSetNode: *ref_100
-                          content:
-                            type: text
-                            node:
-                              nodeType: text
-                              textName: text
-                              parentNode: *ref_101
-                            textString: >-
-                              Statistik khusus diselenggarakan oleh masyarakat baik lembaga,
-                              organisasi, perorangan maupun unsur masyarakat lainnya secara mandiri
-                              atau bersama dengan Badan.
-                            references: []
-                        - type: ayat
-                          node: &ref_102
-                            nodeType: ayat
-                            key: 2
-                            parentAyatSetNode: *ref_100
-                          content:
-                            type: pointSet
-                            node: &ref_103
-                              nodeType: pointSet
-                              parentNode: *ref_102
-                            description:
-                              type: text
-                              node:
-                                nodeType: text
-                                textName: description
-                                parentNode: *ref_103
-                              textString: >-
-                                dalam menyelenggarakan statistik khusus sebagaimana dimaksud dalam
-                                ayat (1), masyarakat memperoleh data dengan cara :
-                              references: []
-                            elements:
                               - type: point
                                 node: &ref_104
                                   nodeType: point
-                                  key: a
-                                  parentPointSetNode: *ref_103
+                                  key: b
+                                  parentPointSetNode: *ref_102
                                 content:
                                   type: text
                                   node:
                                     nodeType: text
                                     textName: text
                                     parentNode: *ref_104
-                                  textString: sensus;
+                                  textString: wilayah kegiatan statistik;
                                   references: []
                               - type: point
                                 node: &ref_105
                                   nodeType: point
-                                  key: b
-                                  parentPointSetNode: *ref_103
+                                  key: c
+                                  parentPointSetNode: *ref_102
                                 content:
                                   type: text
                                   node:
                                     nodeType: text
                                     textName: text
                                     parentNode: *ref_105
-                                  textString: kompilasi produk administrasi; dan
+                                  textString: objek populasi; PRESIDEN REPUBLIK INDONESIA - 10 -
                                   references: []
-                              - type: point
-                                node: &ref_106
-                                  nodeType: point
-                                  key: c
-                                  parentPointSetNode: *ref_103
-                                content:
-                                  type: pointSet
-                                  node: &ref_107
-                                    nodeType: pointSet
-                                    parentNode: *ref_106
-                                  description:
-                                    type: text
-                                    node:
-                                      nodeType: text
-                                      textName: description
-                                      parentNode: *ref_107
-                                    textString: >-
-                                      cara lain sesuai dengan perkembangan ilmu pengetahuan dan
-                                      teknologi. (2) Sinopsis sebagaimana dimaksud dalam ayat (1)
-                                      memuat :
-                                    references: []
-                                  elements:
-                                    - type: point
-                                      node: &ref_108
-                                        nodeType: point
-                                        key: a
-                                        parentPointSetNode: *ref_107
-                                      content:
-                                        type: text
-                                        node:
-                                          nodeType: text
-                                          textName: text
-                                          parentNode: *ref_108
-                                        textString: judul;
-                                        references: []
-                                    - type: point
-                                      node: &ref_109
-                                        nodeType: point
-                                        key: b
-                                        parentPointSetNode: *ref_107
-                                      content:
-                                        type: text
-                                        node:
-                                          nodeType: text
-                                          textName: text
-                                          parentNode: *ref_109
-                                        textString: wilayah kegiatan statistik;
-                                        references: []
-                                    - type: point
-                                      node: &ref_110
-                                        nodeType: point
-                                        key: c
-                                        parentPointSetNode: *ref_107
-                                      content:
-                                        type: text
-                                        node:
-                                          nodeType: text
-                                          textName: text
-                                          parentNode: *ref_110
-                                        textString: objek populasi; PRESIDEN REPUBLIK INDONESIA - 10 -
-                                        references: []
-                              - type: point
-                                node: &ref_111
-                                  nodeType: point
-                                  key: d
-                                  parentPointSetNode: *ref_103
-                                content:
-                                  type: text
-                                  node:
-                                    nodeType: text
-                                    textName: text
-                                    parentNode: *ref_111
-                                  textString: jumlah res ponden;
-                                  references: []
-                              - type: point
-                                node: &ref_112
-                                  nodeType: point
-                                  key: e
-                                  parentPointSetNode: *ref_103
-                                content:
-                                  type: text
-                                  node:
-                                    nodeType: text
-                                    textName: text
-                                    parentNode: *ref_112
-                                  textString: waktu pelaksanaan;
-                                  references: []
-                              - type: point
-                                node: &ref_113
-                                  nodeType: point
-                                  key: f
-                                  parentPointSetNode: *ref_103
-                                content:
-                                  type: text
-                                  node:
-                                    nodeType: text
-                                    textName: text
-                                    parentNode: *ref_113
-                                  textString: metode statistik;
-                                  references: []
-                              - type: point
-                                node: &ref_114
-                                  nodeType: point
-                                  key: g
-                                  parentPointSetNode: *ref_103
-                                content:
-                                  type: text
-                                  node:
-                                    nodeType: text
-                                    textName: text
-                                    parentNode: *ref_114
-                                  textString: nama dan alamat penyelenggara; dan
-                                  references: []
-                              - type: point
-                                node: &ref_115
-                                  nodeType: point
-                                  key: h
-                                  parentPointSetNode: *ref_103
-                                content:
-                                  type: text
-                                  node:
-                                    nodeType: text
-                                    textName: text
-                                    parentNode: *ref_115
-                                  textString: abstrak.
-                                  references: []
-                        - type: ayat
-                          node: &ref_116
-                            nodeType: ayat
-                            key: 3
-                            parentAyatSetNode: *ref_100
+                        - type: point
+                          node: &ref_106
+                            nodeType: point
+                            key: d
+                            parentPointSetNode: *ref_98
                           content:
                             type: text
                             node:
                               nodeType: text
                               textName: text
-                              parentNode: *ref_116
-                            textString: >-
-                              Penyampaian pemberitahuan sinopsis dapat dilakukan melalui pos
-                              komunikasi data, atau cara penyampaian lainnya yang dianggap mudah
-                              bagi penyelenggar a kegiatan statistik.
+                              parentNode: *ref_106
+                            textString: jumlah res ponden;
                             references: []
-                        - type: ayat
-                          node: &ref_117
-                            nodeType: ayat
-                            key: 4
-                            parentAyatSetNode: *ref_100
+                        - type: point
+                          node: &ref_107
+                            nodeType: point
+                            key: e
+                            parentPointSetNode: *ref_98
                           content:
                             type: text
                             node:
                               nodeType: text
                               textName: text
-                              parentNode: *ref_117
-                            textString: >-
-                              Kewajiban memberitahukan sinopsis sebagaimana dimaksud dalam ayat (1),
-                              tidak berlaku bagi statistik yang digunakan untuk memenuhi kebutuhan
-                              intern.
-                            references:
-                              - start: 61
-                                end: 69
-                                node:
-                                  key: 1
-                                  parentAyatSetNode:
-                                    nodeType: ayatSet
-                                    parentPasalVersionNode: *ref_99
-                                  nodeType: ayat
+                              parentNode: *ref_107
+                            textString: waktu pelaksanaan;
+                            references: []
+                        - type: point
+                          node: &ref_108
+                            nodeType: point
+                            key: f
+                            parentPointSetNode: *ref_98
+                          content:
+                            type: text
+                            node:
+                              nodeType: text
+                              textName: text
+                              parentNode: *ref_108
+                            textString: metode statistik;
+                            references: []
+                        - type: point
+                          node: &ref_109
+                            nodeType: point
+                            key: g
+                            parentPointSetNode: *ref_98
+                          content:
+                            type: text
+                            node:
+                              nodeType: text
+                              textName: text
+                              parentNode: *ref_109
+                            textString: nama dan alamat penyelenggara; dan
+                            references: []
+                        - type: point
+                          node: &ref_110
+                            nodeType: point
+                            key: h
+                            parentPointSetNode: *ref_98
+                          content:
+                            type: text
+                            node:
+                              nodeType: text
+                              textName: text
+                              parentNode: *ref_110
+                            textString: abstrak.
+                            references: []
+                  - type: ayat
+                    node: &ref_111
+                      nodeType: ayat
+                      key: 3
+                      parentAyatSetNode: *ref_95
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_111
+                      textString: >-
+                        Penyampaian pemberitahuan sinopsis dapat dilakukan melalui pos komunikasi
+                        data, atau cara penyampaian lainnya yang dianggap mudah bagi penyelenggar a
+                        kegiatan statistik.
+                      references: []
+                  - type: ayat
+                    node: &ref_112
+                      nodeType: ayat
+                      key: 4
+                      parentAyatSetNode: *ref_95
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_112
+                      textString: >-
+                        Kewajiban memberitahukan sinopsis sebagaimana dimaksud dalam ayat (1), tidak
+                        berlaku bagi statistik yang digunakan untuk memenuhi kebutuhan intern.
+                      references:
+                        - start: 61
+                          end: 69
+                          node:
+                            key: 1
+                            parentAyatSetNode:
+                              nodeType: ayatSet
+                              parentPasalVersionNode: *ref_94
+                            nodeType: ayat
     - type: bab
-      node: &ref_118
+      node: &ref_113
         nodeType: bab
         key: 5
         parentBabSetNode: *ref_8
@@ -1679,10 +1601,10 @@ babSet:
         type: pasalSet
         node:
           nodeType: pasalSet
-          parentNode: *ref_118
+          parentNode: *ref_113
         elements: []
     - type: bab
-      node: &ref_119
+      node: &ref_114
         nodeType: bab
         key: 6
         parentBabSetNode: *ref_8
@@ -1706,85 +1628,41 @@ babSet:
         type: pasalSet
         node:
           nodeType: pasalSet
-          parentNode: *ref_119
+          parentNode: *ref_114
         elements: []
     - type: bab
-      node: &ref_120
+      node: &ref_115
         nodeType: bab
         key: 7
         parentBabSetNode: *ref_8
-      title: HAK DAN KEWAJIBAN
+      title: >-
+        HAK DAN KEWAJIBAN Bagian Pertama Penyelenggara Kegiatan St atistik Pasal 19 Penyelenggaraan
+        kegiatan statistik wajib berhak memperoleh keterangan dari responden mengenai karakteristik
+        setiap unit populasi yang menjadi objek. Pasal 20 Penyelenggara kegiatan statistik
+        memberikan kesempatan yang sama kepada masyarakat untuk mengetahui dan memperoleh manfaat
+        dari statistik yang tersedia, sesuai dengan ketentuan peraturan perundang - undangan yang
+        berlaku. Pasal 21 Penyelenggara kegiatan st atistik wajib menjamin kerahasiaan keterangan
+        yang diperoleh dari responden. PRESIDEN REPUBLIK INDONESIA - 13 - Bagian Kedua Petugas
+        Statistik Pasal 22 Setiap petugas statistik Badan berhak memasuki wilayah kerja yang telah
+        ditentukan untuk memperoleh keterangan yang diperlukan . Pasal 23 Setiap petugas statistik
+        wajib menyampaikan hasil pelaksanaan statistik sebagaimana adanya. Pasal 24 Ketentuan
+        mengenai jaminan kerahasiaan keterangan sebagaimana dimaksud dalam Pasal 21 berlaku juga
+        bagi petugas statistik. Pasal 25 Setiap petugas statistik harus memperlihatkan surat tugas
+        dan atau tanda pengenal, serta wajib memperhatikan nilai - nilai agama, adat istiadat
+        setempat, tata krama dan ketertiban umum. PRESIDEN REPUBLIK INDONESIA - 14 - Bagian Ketiga
+        Responden Pasal 26 (1) Setiap orang berh ak menolak untuk dijadikan responden, kecuali dalam
+        penyelenggaraan statistik dasar oleh Badan. (2) Setiap reponden berhak menolak petugas
+        statistik yang tidak dapat memenuhi ketentuan sebagaimana dimaksud dalam Pasal 25. Pasal 27
+        Setiap responden wajib memberikan keterangan yang diperlukan dalam penyelenggaraan statistik
+        dasar oleh Badan.
       content:
-        type: bagianSet
+        type: pasalSet
         node:
-          nodeType: bagianSet
-          parentBabNode: *ref_120
-        elements:
-          - type: bagian
-            node: &ref_121
-              nodeType: bagian
-              key: 1
-              parentBagianSetNode:
-                nodeType: bagianSet
-                parentBabNode: *ref_120
-            title: >-
-              Bagian Pertama Penyelenggara Kegiatan St atistik Pasal 19 Penyelenggaraan kegiatan
-              statistik wajib berhak memperoleh keterangan dari responden mengenai karakteristik
-              setiap unit populasi yang menjadi objek. Pasal 20 Penyelenggara kegiatan statistik
-              memberikan kesempatan yang sama kepada masyarakat untuk mengetahui dan memperoleh
-              manfaat dari statistik yang tersedia, sesuai dengan ketentuan peraturan perundang -
-              undangan yang berlaku. Pasal 21 Penyelenggara kegiatan st atistik wajib menjamin
-              kerahasiaan keterangan yang diperoleh dari responden. PRESIDEN REPUBLIK INDONESIA - 13
-              -
-            content:
-              type: pasalSet
-              node:
-                nodeType: pasalSet
-                parentNode: *ref_121
-              elements: []
-          - type: bagian
-            node: &ref_122
-              nodeType: bagian
-              key: 2
-              parentBagianSetNode:
-                nodeType: bagianSet
-                parentBabNode: *ref_120
-            title: >-
-              Bagian Kedua Petugas Statistik Pasal 22 Setiap petugas statistik Badan berhak memasuki
-              wilayah kerja yang telah ditentukan untuk memperoleh keterangan yang diperlukan .
-              Pasal 23 Setiap petugas statistik wajib menyampaikan hasil pelaksanaan statistik
-              sebagaimana adanya. Pasal 24 Ketentuan mengenai jaminan kerahasiaan keterangan
-              sebagaimana dimaksud dalam Pasal 21 berlaku juga bagi petugas statistik. Pasal 25
-              Setiap petugas statistik harus memperlihatkan surat tugas dan atau tanda pengenal,
-              serta wajib memperhatikan nilai - nilai agama, adat istiadat setempat, tata krama dan
-              ketertiban umum. PRESIDEN REPUBLIK INDONESIA - 14 -
-            content:
-              type: pasalSet
-              node:
-                nodeType: pasalSet
-                parentNode: *ref_122
-              elements: []
-          - type: bagian
-            node: &ref_123
-              nodeType: bagian
-              key: 3
-              parentBagianSetNode:
-                nodeType: bagianSet
-                parentBabNode: *ref_120
-            title: >-
-              Bagian Ketiga Responden Pasal 26 (1) Setiap orang berh ak menolak untuk dijadikan
-              responden, kecuali dalam penyelenggaraan statistik dasar oleh Badan. (2) Setiap
-              reponden berhak menolak petugas statistik yang tidak dapat memenuhi ketentuan
-              sebagaimana dimaksud dalam Pasal 25. Pasal 27 Setiap responden wajib memberikan
-              keterangan yang diperlukan dalam penyelenggaraan statistik dasar oleh Badan.
-            content:
-              type: pasalSet
-              node:
-                nodeType: pasalSet
-                parentNode: *ref_123
-              elements: []
+          nodeType: pasalSet
+          parentNode: *ref_115
+        elements: []
     - type: bab
-      node: &ref_124
+      node: &ref_116
         nodeType: bab
         key: 8
         parentBabSetNode: *ref_8
@@ -1809,10 +1687,10 @@ babSet:
         type: pasalSet
         node:
           nodeType: pasalSet
-          parentNode: *ref_124
+          parentNode: *ref_116
         elements: []
     - type: bab
-      node: &ref_125
+      node: &ref_117
         nodeType: bab
         key: 9
         parentBabSetNode: *ref_8
@@ -1836,10 +1714,10 @@ babSet:
         type: pasalSet
         node:
           nodeType: pasalSet
-          parentNode: *ref_125
+          parentNode: *ref_117
         elements: []
     - type: bab
-      node: &ref_126
+      node: &ref_118
         nodeType: bab
         key: 10
         parentBabSetNode: *ref_8
@@ -1873,10 +1751,10 @@ babSet:
         type: pasalSet
         node:
           nodeType: pasalSet
-          parentNode: *ref_126
+          parentNode: *ref_118
         elements: []
     - type: bab
-      node: &ref_127
+      node: &ref_119
         nodeType: bab
         key: 11
         parentBabSetNode: *ref_8
@@ -1889,10 +1767,10 @@ babSet:
         type: pasalSet
         node:
           nodeType: pasalSet
-          parentNode: *ref_127
+          parentNode: *ref_119
         elements: []
     - type: bab
-      node: &ref_128
+      node: &ref_120
         nodeType: bab
         key: 12
         parentBabSetNode: *ref_8
@@ -1906,7 +1784,7 @@ babSet:
         type: pasalSet
         node:
           nodeType: pasalSet
-          parentNode: *ref_128
+          parentNode: *ref_120
         elements: []
 disahkan:
   date: *ref_30

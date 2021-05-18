@@ -440,274 +440,251 @@ babSet:
         nodeType: bab
         key: 3
         parentBabSetNode: *ref_8
-      title: PEMBEBANAN, PENDAFTARAN, PENGALIHAN DAN HAPUSNYA JAMINAN FIDUSIA
+      title: >-
+        PEMBEBANAN, PENDAFTARAN, PENGALIHAN DAN HAPUSNYA JAMINAN FIDUSIA Bagian Pertama Pembebanan
+        Jaminan Fidusia
       content:
-        type: bagianSet
+        type: pasalSet
         node:
-          nodeType: bagianSet
-          parentBabNode: *ref_29
+          nodeType: pasalSet
+          parentNode: *ref_29
         elements:
-          - type: bagian
-            node: &ref_30
-              nodeType: bagian
-              key: 1
-              parentBagianSetNode:
-                nodeType: bagianSet
-                parentBabNode: *ref_29
-            title: Bagian Pertama Pembebanan Jaminan Fidusia
-            content:
-              type: pasalSet
-              node:
-                nodeType: pasalSet
-                parentNode: *ref_30
-              elements:
-                - type: pasal
-                  node:
-                    nodeType: pasal
-                    key: 4
-                    parentNode: *ref_0
-                  version:
-                    type: pasalVersion
-                    node: &ref_31
-                      nodeType: pasalVersion
-                      version: *ref_21
-                      state: exists
-                      parentPasalNode:
-                        nodeType: pasal
-                        key: '4'
-                        parentNode: *ref_0
+          - type: pasal
+            node:
+              nodeType: pasal
+              key: 4
+              parentNode: *ref_0
+            version:
+              type: pasalVersion
+              node: &ref_30
+                nodeType: pasalVersion
+                version: *ref_21
+                state: exists
+                parentPasalNode:
+                  nodeType: pasal
+                  key: '4'
+                  parentNode: *ref_0
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_30
+                textString: >-
+                  Jaminan Fidusia merupakan perjanjian ikutan dari suatu perjanian pokok yang
+                  menimbulkan kewajiban bagi para pihak untuk memenuhi suatu prestasi.
+                references: []
+          - type: pasal
+            node:
+              nodeType: pasal
+              key: 5
+              parentNode: *ref_0
+            version:
+              type: pasalVersion
+              node: &ref_31
+                nodeType: pasalVersion
+                version: *ref_21
+                state: exists
+                parentPasalNode:
+                  nodeType: pasal
+                  key: '5'
+                  parentNode: *ref_0
+              content:
+                type: ayatSet
+                node: &ref_32
+                  nodeType: ayatSet
+                  parentPasalVersionNode: *ref_31
+                elements:
+                  - type: ayat
+                    node: &ref_33
+                      nodeType: ayat
+                      key: 1
+                      parentAyatSetNode: *ref_32
                     content:
-                      type: text
-                      node:
-                        nodeType: text
-                        textName: text
-                        parentNode: *ref_31
-                      textString: >-
-                        Jaminan Fidusia merupakan perjanjian ikutan dari suatu perjanian pokok yang
-                        menimbulkan kewajiban bagi para pihak untuk memenuhi suatu prestasi.
-                      references: []
-                - type: pasal
-                  node:
-                    nodeType: pasal
-                    key: 5
-                    parentNode: *ref_0
-                  version:
-                    type: pasalVersion
-                    node: &ref_32
-                      nodeType: pasalVersion
-                      version: *ref_21
-                      state: exists
-                      parentPasalNode:
-                        nodeType: pasal
-                        key: '5'
-                        parentNode: *ref_0
-                    content:
-                      type: ayatSet
-                      node: &ref_33
-                        nodeType: ayatSet
-                        parentPasalVersionNode: *ref_32
+                      type: pointSet
+                      node: &ref_34
+                        nodeType: pointSet
+                        parentNode: *ref_33
+                      description:
+                        type: text
+                        node:
+                          nodeType: text
+                          textName: description
+                          parentNode: *ref_34
+                        textString: 'Jaminan Fidusia hapus karena hal-hal sebagai berikut:'
+                        references: []
                       elements:
-                        - type: ayat
-                          node: &ref_34
-                            nodeType: ayat
-                            key: 1
-                            parentAyatSetNode: *ref_33
+                        - type: point
+                          node: &ref_35
+                            nodeType: point
+                            key: a
+                            parentPointSetNode: *ref_34
                           content:
                             type: text
                             node:
                               nodeType: text
                               textName: text
-                              parentNode: *ref_34
-                            textString: >-
-                              Jaminan Fidusia dapat diberikan terhadap satu atau lebih satuan atau
-                              jenis Benda, termasuk piutang, baik yang telah ada pada saat jaminan
-                              diberikan maupun yang diperoleh kemudian.
-                            references: []
-                        - type: ayat
-                          node: &ref_35
-                            nodeType: ayat
-                            key: 2
-                            parentAyatSetNode: *ref_33
-                          content:
-                            type: pointSet
-                            node: &ref_36
-                              nodeType: pointSet
                               parentNode: *ref_35
-                            description:
-                              type: text
-                              node:
-                                nodeType: text
-                                textName: description
-                                parentNode: *ref_36
-                              textString: >-
-                                Pembebanan jaminan atas Benda atau piutang yang diperoleh kemudian
-                                sebagaimana dimaksud dalam ayat (1) tidak perlu dilakukan dengan
-                                perjanjian jaminan tersendiri. Pasal 10 Kecuali diperjanjikan lain:
-                              references: []
-                            elements:
-                              - type: point
-                                node: &ref_37
-                                  nodeType: point
-                                  key: a
-                                  parentPointSetNode: *ref_36
-                                content:
-                                  type: text
-                                  node:
-                                    nodeType: text
-                                    textName: text
-                                    parentNode: *ref_37
-                                  textString: >-
-                                    Jaminan Fidusia meliputi hasil dari Benda yang menjadi objek
-                                    Jaminan Fidusia.
-                                  references: []
-                              - type: point
-                                node: &ref_38
-                                  nodeType: point
-                                  key: b
-                                  parentPointSetNode: *ref_36
-                                content:
-                                  type: text
-                                  node:
-                                    nodeType: text
-                                    textName: text
-                                    parentNode: *ref_38
-                                  textString: >-
-                                    Jaminan Fidusia meliputi klaim asuransi, dalam hal Benda yang
-                                    menjadi objek Jaminan Fidusia diasuransikan. PRESIDEN REPUBLIK
-                                    INDONESIA .5-
-                                  references: []
-          - type: bagian
-            node: &ref_39
-              nodeType: bagian
-              key: 2
-              parentBagianSetNode:
-                nodeType: bagianSet
-                parentBabNode: *ref_29
-            title: >-
-              Bagian Kedua Pendaftaran Jaminan Fidusia Pasal 11 (J) Benda yang dibebani dengan
-              Jaminan Fidusia wajib didaftarkan. (2) Dalam hal Benda yang dibebani dengan Jaminan
-              Fidusia berada di luar wilayah negara Republik Indonesia, kewajiban sebagaimana
-              dimaksud dalam ayat (1) tetap berlaku. Pasal 12 (l) Pendaftaran Jaminan Fidusia
-              sebagaimana dimaksud dalam Pasal 11 ayat (1) dilakukan pada Kantor Pendaftaran
-              Fidusia. (2) Untuk pertama kali, Kantor Pendaftaran Fidusia didirikan di Jakarta
-              dengan wilayah kerja mencakup seluruh wilayah negara Republik Indonesia. (3) Kantor
-              Pendaftaran Fidusia sebagaimana dimaksud dalam ayat (2) berada dalam lingkup tugas
-              Departemen Kehakiman. (4) Ketentuan mengenai pembentukan Kantor Pendaftaran Fidusia
-              untuk daerah lain dan penetapan wilayah kerjanya diatur dengan Keputusan Presiden.
-              Pasal 13 (Jl) Permohonan pendaftaran Jaminan Fidusia dilakukan oleh Penerima Jaminan
-              Fidusia dilakukan oleh Penerimaan Fidusia, kuasa atau wakilnya dengan melampirkan
-              pernyataan pendaftaran Jaminan Fidusia. (2) Pernyataan pendaftaran sebagaimana
-              dimaksud dalam ayat (1) memuat: a. indentitas pihak Pemberi dan Penerima Fidusia, b.
-              tanggal, nomor akta Jaminana Fidusia, nama, dan tempat kedudukan notaris yang membuat
-              akta Jaminan Fidusia, c. data perjanjian pokok yang dijamin Fidusia, d. uraian
-              mengenai Benda yang menjadi objek Jaminan Fidusia, e. nilai penjaminan, dan f. milai
-              Benda yang menjadi objek Jaminan Fidusia. (3) Kantor Pendaftaran Fidusia memuat
-              Jaminan Fidusia dalam Buku Daftar Fidusia pada tanggal yang sama dengan tanggal
-              penerimaan PRESIDEN REPUBLIK INDONESIA -6- permohonan pendaftaran. (4) Ketentuan lebih
-              lanjut mengenai tata cara pendaftaran Jaminan Fidusia dan biaya pendaftaran diatur
-              dengan Peraturan Pemerintah. Pasal 14 (Jl) Kantor Pendaftaran Fidusia menerbitkan dan
-              menyerahkan kepada Penerima Fidusia Sertifikat Jaminana Fidusia pada tanggal yang sama
-              dengan tanggal penerimaan permohonan pendaftaran. (2) Sertifikat Jaminan Fidusia yang
-              merupakan salinan dari Buku Daftar Fidusia memuat catatan tentang hal-hal sebagaimana
-              dimaksud dalam Pasal 13 ayat (2). (3)Jaminan Fidusia lahir pada tanggal yang sama
-              dengan tanggal dicatatnya Jaminana Fidusia dalam Buku Daftar Fidusia. Pasal 15 (l)
-              Dalam Sertifikat Jaminana Fidusia sebagaimana dimaksud dalam Pasal 14 ayat (1)
-              dicantumkan kata-kata "DEMI KEADILAN BERDASARKAN KETUHANAN YANG MAHA ESA". (2)
-              Sertifikat Jaminan Fidusia sebagaimana dimaksud dalam ayat (1) mempunyai kekuatan
-              eksekutorial yang sama dengan putusan pengadilan yang telah memperoleh kekuatan hukum
-              tetap. (3) Apabila debitor cidera janji, Penerima Fidusia mempunyai hak untuk menjual
-              Benda yang menjadi objek Jaminan Fidusia atas kekuasaannya sendiri. Pasal 16 (1)
-              Apabila terjadi perubahan mengenai hal-hal yang tercantum dalam Sertifikat Jaminan
-              Fidusia sebagaimana dimaksud dalam Pasal 14 ayat (2), Penerima Fidusia wajib
-              mengajukan permohonan pendaftaran atas perubahan tersebut kepada Kantor Pendaftaran
-              Fidusia. (2) Kantor Pendaftaran Fidusia pada tanggal yang sama dengan tanggal
-              penerimaan permohonan perubahan, melakukan pencatatan perubahan tersebut dalam Buku
-              Daftar Fidusia dan menerbitkan Pernyataan Perubahan yang merupakan bagian tak
-              terpisahkan dari Sertifikat Jaminan Fidusia. Pasal 17 PRESIDEN REPUBLIK INDONESIA -7-
-              Pemberi Fidusia dilarang melakukan fidusia ulang terhadap Benda yang menjadi objek
-              Jaminan Fidusia yang sudah terdaftar. Pasal 18 Segala keterangan mengenai Benda yang
-              menjadi objek Jaminan Fidusia yang ada pada Kantor Pendaftaran Fidusia terbuka untuk
-              umum.
-            content:
-              type: pasalSet
-              node:
-                nodeType: pasalSet
-                parentNode: *ref_39
-              elements: []
-          - type: bagian
-            node: &ref_40
-              nodeType: bagian
-              key: 3
-              parentBagianSetNode:
-                nodeType: bagianSet
-                parentBabNode: *ref_29
-            title: >-
-              Bagian Ketiga Pengalihan Jaminan Fidusia Pasal 19 (l) Pengalihan hak atas piutang yang
-              dijaminan dengan fidusia mengakibatkan beralihnya demi hukum segala hak dan kewajiban
-              Penerima Fidusia kepada kreditor baru. (2) Beralihnya Jaminan Fidusia sebagaimana
-              dimaksud dalam ayat (1) didaftarkan oleh kreditor baru kepada Kantor Pendaftaran
-              Fidusia. Pasal 20 Jaminan Fidusia tetap mengikuti Benda yang menjadi objek Jaminan
-              Fidusia dalam tangan siapapun Benda tersebut berada, kecuali pengalihan atas benda
-              persediaan yang menjadi objek Jaminan Fidusia. Pasal 21 (1) Pemberi Fidusia dapat
-              mengalihkan benda persediaan yang menjadi objek Jaminan Fidusia dengan cara dan
-              prosedur yang lazim dilakukan dalam usaha perdagangan. (2) Ketentuan sebagaimana
-              dimaksud dalam ayat (1) tidak berlaku, apabila telah terjadi cidera janji oleh debitor
-              dan atas Pemberi Fidusia pihak ketiga. (3) Benda yang menjadi objek Jaminan Fidusia
-              yang telah dialihkan sebagaimana dimaksud dalam ayat (1) wajib diganti oleh Pemberi
-              Fidusia dengan objek yang setara. (4) Dalam hal Pemberi Fidusia cidera janji, maka
-              hasil pengalihan dan atau tagihan yang timbul karena pengalihan sebagaimana dimaksud
-              dalam ayat (1), demi hukum menjadi objek Jaminan Fidusia pengganti dari objek Jaminan
-              Fidusia yang dialihkan. Pasal 22 Pembeli benda yang menjadi objek Jaminan Fidusia yang
-              merupakan PRESIDEN REPUBLIK INDONESIA 8 benda persediaan bebas dari tuntutan meskipun
-              pembeli tersebut mengetahui adanya Jaminan Fidusia itu, dengan ketentuan bahwa pembeli
-              telah membayar lunas harga penjualan Benda tersebut sesuai dengan harga pasar. Pasal
-              23 (Jl) Dengan tidak mengurangi ketentuan sebagaimana dimaksud dalam Pasal 21, apabila
-              Penerima Fidusia setuju bahwa Pemberi Fidusia dapat menggunakan, menggabungkan,
-              mencampur, atau mengalihkan Benda atau hasil dari Benda yang menjadi objek Jaminan
-              Fidusia, atau menyetujui melakukan penagihan atau melakukan kompromi atas piutang,
-              maka persetujuan tersebut tidak berarti bahwa Penerima Fidusia melepaskan Jaminan
-              Fidusia. (2) Pemberi Fidusia dilarang mengalihkan, menggadaikan, atau menyewakan
-              kepada pihak lain Benda yang menjadi objek Jaminan Fidusia yang tidak merupakan benda
-              persediaan, kecuali dengan persetujuan tertulis terlebih dahulu dari Penerima Fidusia.
-              Pasal 24 Penerima Fidusia tidak menanggung kewajiban atas akibat tindakan atau
-              kelalaian Pemberi Fidusia baik yang timbul dari hubungan kontraktual atau yang timbul
-              dari perbuatan melanggar hukum sehubungan dengan penggunaan dan pengalihan Benda yang
-              menjadi objek Jaminan Fidusia.
-            content:
-              type: pasalSet
-              node:
-                nodeType: pasalSet
-                parentNode: *ref_40
-              elements: []
-          - type: bagian
-            node: &ref_41
-              nodeType: bagian
-              key: 4
-              parentBagianSetNode:
-                nodeType: bagianSet
-                parentBabNode: *ref_29
-            title: >-
-              Bagian Keempat Hapusnya Jaminan Fidusia Pasal 25 (1) Jaminan Fidusia hapus karena
-              hal-hal sebagai berikut: a. hapusnya utang yang dijamin dengan fidusia, b. pelepasan
-              hak atas Jaminan Fidusia oleh Penerima Fidusia, atau c. musnahnya Benda yang menjadi
-              objek Jaminan Fidusia. (2)Musnahnya Benda yang menjadi objek Jaminan Fidusia tidak
-              menghapuskan klaim asuransi sebagaimana dimaksud dalam Pasal 10 huruf b. (3) Penerima
-              Fidusia memberitahukan kepada Kantor Pendaftaran Fidusia mengenai hapusnya Jaminan
-              Fidusia sebagaimana dimaksud dalam ayat (1) dengan melampirkan pernyataan mengenai
-              hapusnya PRESIDEN REPUBLIK INDONESIA -9- utang, pelepasan hak, atau musnahnya Benda
-              yang menjadi objek Jaminan Fidusia tersebut. Pasal 26 (Jl) Dengan hapusnya Jaminan
-              Fidusia sebagaimana dimaksud dalam pasal 25, Kantor Pendaftaran Fidusia mencoret
-              pencatatan Jaminan Fidusia dari Buku Daftar Fidusia. (2) Kantor Pendaftaran Fidusia
-              menerbitkan surat keterangan yang menyatakan Sertifikat keterangan yang menyatakan
-              Sertifikat Jaminan Fidusia yang bersangkutan tidak berlaku lagi.
-            content:
-              type: pasalSet
-              node:
-                nodeType: pasalSet
-                parentNode: *ref_41
-              elements: []
+                            textString: hapusnya utang yang dijamin dengan fidusia,
+                            references: []
+                        - type: point
+                          node: &ref_36
+                            nodeType: point
+                            key: b
+                            parentPointSetNode: *ref_34
+                          content:
+                            type: text
+                            node:
+                              nodeType: text
+                              textName: text
+                              parentNode: *ref_36
+                            textString: pelepasan hak atas Jaminan Fidusia oleh Penerima Fidusia, atau
+                            references: []
+                        - type: point
+                          node: &ref_37
+                            nodeType: point
+                            key: c
+                            parentPointSetNode: *ref_34
+                          content:
+                            type: text
+                            node:
+                              nodeType: text
+                              textName: text
+                              parentNode: *ref_37
+                            textString: musnahnya Benda yang menjadi objek Jaminan Fidusia.
+                            references: []
+                  - type: ayat
+                    node: &ref_38
+                      nodeType: ayat
+                      key: 2
+                      parentAyatSetNode: *ref_32
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_38
+                      textString: >-
+                        Musnahnya Benda yang menjadi objek Jaminan Fidusia tidak menghapuskan klaim
+                        asuransi sebagaimana dimaksud dalam Pasal 10 huruf b.
+                      references:
+                        - start: 112
+                          end: 120
+                          node:
+                            key: 10
+                            parentNode: *ref_0
+                            nodeType: pasal
+                  - type: ayat
+                    node: &ref_39
+                      nodeType: ayat
+                      key: 3
+                      parentAyatSetNode: *ref_32
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_39
+                      textString: >-
+                        Penerima Fidusia memberitahukan kepada Kantor Pendaftaran Fidusia mengenai
+                        hapusnya Jaminan Fidusia sebagaimana dimaksud dalam ayat (1) dengan
+                        melampirkan pernyataan mengenai hapusnya PRESIDEN REPUBLIK INDONESIA -9-
+                        utang, pelepasan hak, atau musnahnya Benda yang menjadi objek Jaminan
+                        Fidusia tersebut. Pasal 26 (Jl) Dengan hapusnya Jaminan Fidusia sebagaimana
+                        dimaksud dalam pasal 25, Kantor Pendaftaran Fidusia mencoret pencatatan
+                        Jaminan Fidusia dari Buku Daftar Fidusia. (2) Kantor Pendaftaran Fidusia
+                        menerbitkan surat keterangan yang menyatakan Sertifikat keterangan yang
+                        menyatakan Sertifikat Jaminan Fidusia yang bersangkutan tidak berlaku lagi.
+                      references:
+                        - start: 127
+                          end: 135
+                          node:
+                            key: 1
+                            parentAyatSetNode:
+                              nodeType: ayatSet
+                              parentPasalVersionNode: *ref_31
+                            nodeType: ayat
+                        - start: 304
+                          end: 312
+                          node:
+                            key: 26
+                            parentNode: *ref_0
+                            nodeType: pasal
+                  - type: ayat
+                    node: &ref_40
+                      nodeType: ayat
+                      key: 4
+                      parentAyatSetNode: *ref_32
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_40
+                      textString: >-
+                        Dalam hal Pemberi Fidusia cidera janji, maka hasil pengalihan dan atau
+                        tagihan yang timbul karena pengalihan sebagaimana dimaksud dalam ayat (1),
+                        demi hukum menjadi objek Jaminan Fidusia pengganti dari objek Jaminan
+                        Fidusia yang dialihkan. Pasal 22 Pembeli benda yang menjadi objek Jaminan
+                        Fidusia yang merupakan PRESIDEN REPUBLIK INDONESIA 8 benda persediaan bebas
+                        dari tuntutan meskipun pembeli tersebut mengetahui adanya Jaminan Fidusia
+                        itu, dengan ketentuan bahwa pembeli telah membayar lunas harga penjualan
+                        Benda tersebut sesuai dengan harga pasar. Pasal 23 (Jl) Dengan tidak
+                        mengurangi ketentuan sebagaimana dimaksud dalam Pasal 21, apabila Penerima
+                        Fidusia setuju bahwa Pemberi Fidusia dapat menggunakan, menggabungkan,
+                        mencampur, atau mengalihkan Benda atau hasil dari Benda yang menjadi objek
+                        Jaminan Fidusia, atau menyetujui melakukan penagihan atau melakukan kompromi
+                        atas piutang, maka persetujuan tersebut tidak berarti bahwa Penerima Fidusia
+                        melepaskan Jaminan Fidusia. (2) Pemberi Fidusia dilarang mengalihkan,
+                        menggadaikan, atau menyewakan kepada pihak lain Benda yang menjadi objek
+                        Jaminan Fidusia yang tidak merupakan benda persediaan, kecuali dengan
+                        persetujuan tertulis terlebih dahulu dari Penerima Fidusia. Pasal 24
+                        Penerima Fidusia tidak menanggung kewajiban atas akibat tindakan atau
+                        kelalaian Pemberi Fidusia baik yang timbul dari hubungan kontraktual atau
+                        yang timbul dari perbuatan melanggar hukum sehubungan dengan penggunaan dan
+                        pengalihan Benda yang menjadi objek Jaminan Fidusia. Bagian Keempat Hapusnya
+                        Jaminan Fidusia Pasal 25
+                      references:
+                        - start: 136
+                          end: 144
+                          node:
+                            key: 1
+                            parentAyatSetNode:
+                              nodeType: ayatSet
+                              parentPasalVersionNode: *ref_31
+                            nodeType: ayat
+                        - start: 1552
+                          end: 1560
+                          node:
+                            key: 25
+                            parentNode: *ref_0
+                            nodeType: pasal
+                        - start: 1230
+                          end: 1238
+                          node:
+                            key: 24
+                            parentNode: *ref_0
+                            nodeType: pasal
+                        - start: 630
+                          end: 638
+                          node:
+                            key: 21
+                            parentNode: *ref_0
+                            nodeType: pasal
+                        - start: 555
+                          end: 563
+                          node:
+                            key: 23
+                            parentNode: *ref_0
+                            nodeType: pasal
+                        - start: 240
+                          end: 248
+                          node:
+                            key: 22
+                            parentNode: *ref_0
+                            nodeType: pasal
     - type: bab
-      node: &ref_42
+      node: &ref_41
         nodeType: bab
         key: 4
         parentBabSetNode: *ref_8
@@ -724,10 +701,10 @@ babSet:
         type: pasalSet
         node:
           nodeType: pasalSet
-          parentNode: *ref_42
+          parentNode: *ref_41
         elements: []
     - type: bab
-      node: &ref_43
+      node: &ref_42
         nodeType: bab
         key: 5
         parentBabSetNode: *ref_8
@@ -760,10 +737,10 @@ babSet:
         type: pasalSet
         node:
           nodeType: pasalSet
-          parentNode: *ref_43
+          parentNode: *ref_42
         elements: []
     - type: bab
-      node: &ref_44
+      node: &ref_43
         nodeType: bab
         key: 6
         parentBabSetNode: *ref_8
@@ -782,10 +759,10 @@ babSet:
         type: pasalSet
         node:
           nodeType: pasalSet
-          parentNode: *ref_44
+          parentNode: *ref_43
         elements: []
     - type: bab
-      node: &ref_45
+      node: &ref_44
         nodeType: bab
         key: 7
         parentBabSetNode: *ref_8
@@ -805,10 +782,10 @@ babSet:
         type: pasalSet
         node:
           nodeType: pasalSet
-          parentNode: *ref_45
+          parentNode: *ref_44
         elements: []
     - type: bab
-      node: &ref_46
+      node: &ref_45
         nodeType: bab
         key: 8
         parentBabSetNode: *ref_8
@@ -823,7 +800,7 @@ babSet:
         type: pasalSet
         node:
           nodeType: pasalSet
-          parentNode: *ref_46
+          parentNode: *ref_45
         elements: []
 disahkan:
   date: *ref_21

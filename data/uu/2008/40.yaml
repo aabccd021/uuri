@@ -1080,242 +1080,211 @@ babSet:
         nodeType: bab
         key: 6
         parentBabSetNode: *ref_13
-      title: HAK, KEWAJIBAN, DAN PERAN SERTA WARGA NEGARA
+      title: HAK, KEWAJIBAN, DAN PERAN SERTA WARGA NEGARA Bagian Pertama Hak dan Kewajiban Warga Negara
       content:
-        type: bagianSet
+        type: pasalSet
         node:
-          nodeType: bagianSet
-          parentBabNode: *ref_69
+          nodeType: pasalSet
+          parentNode: *ref_69
         elements:
-          - type: bagian
-            node: &ref_70
-              nodeType: bagian
-              key: 1
-              parentBagianSetNode:
-                nodeType: bagianSet
-                parentBabNode: *ref_69
-            title: Bagian Pertama Hak dan Kewajiban Warga Negara
-            content:
-              type: pasalSet
-              node:
-                nodeType: pasalSet
-                parentNode: *ref_70
-              elements:
-                - type: pasal
+          - type: pasal
+            node:
+              nodeType: pasal
+              key: 9
+              parentNode: *ref_0
+            version:
+              type: pasalVersion
+              node: &ref_70
+                nodeType: pasalVersion
+                version: *ref_27
+                state: exists
+                parentPasalNode:
+                  nodeType: pasal
+                  key: '9'
+                  parentNode: *ref_0
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_70
+                textString: >-
+                  Setiap warga negara berhak memperoleh perlakuan yan g sama untuk mendapatkan
+                  hak-hak sipil, politik, ekon omi, sosial, dan budaya sesuai dengan ketentuan
+                  peratura n perundang-undangan, tanpa pembedaan ras dan etnis.
+                references: []
+          - type: pasal
+            node:
+              nodeType: pasal
+              key: 10
+              parentNode: *ref_0
+            version:
+              type: pasalVersion
+              node: &ref_71
+                nodeType: pasalVersion
+                version: *ref_27
+                state: exists
+                parentPasalNode:
+                  nodeType: pasal
+                  key: '10'
+                  parentNode: *ref_0
+              content:
+                type: pointSet
+                node: &ref_72
+                  nodeType: pointSet
+                  parentNode: *ref_71
+                description:
+                  type: text
                   node:
-                    nodeType: pasal
-                    key: 9
-                    parentNode: *ref_0
-                  version:
-                    type: pasalVersion
-                    node: &ref_71
-                      nodeType: pasalVersion
-                      version: *ref_27
-                      state: exists
-                      parentPasalNode:
-                        nodeType: pasal
-                        key: '9'
-                        parentNode: *ref_0
+                    nodeType: text
+                    textName: description
+                    parentNode: *ref_72
+                  textString: 'Setiap warga negara wajib:'
+                  references: []
+                elements:
+                  - type: point
+                    node: &ref_73
+                      nodeType: point
+                      key: a
+                      parentPointSetNode: *ref_72
                     content:
                       type: text
                       node:
                         nodeType: text
                         textName: text
-                        parentNode: *ref_71
-                      textString: >-
-                        Setiap warga negara berhak memperoleh perlakuan yan g sama untuk mendapatkan
-                        hak-hak sipil, politik, ekon omi, sosial, dan budaya sesuai dengan ketentuan
-                        peratura n perundang-undangan, tanpa pembedaan ras dan etnis.
+                        parentNode: *ref_73
+                      textString: membantu mencegah terjadinya diskriminasi ras dan etnis; dan
                       references: []
-                - type: pasal
-                  node:
-                    nodeType: pasal
-                    key: 10
-                    parentNode: *ref_0
-                  version:
-                    type: pasalVersion
-                    node: &ref_72
-                      nodeType: pasalVersion
-                      version: *ref_27
-                      state: exists
-                      parentPasalNode:
-                        nodeType: pasal
-                        key: '10'
-                        parentNode: *ref_0
-                    content:
-                      type: pointSet
-                      node: &ref_73
-                        nodeType: pointSet
-                        parentNode: *ref_72
-                      description:
-                        type: text
-                        node:
-                          nodeType: text
-                          textName: description
-                          parentNode: *ref_73
-                        textString: 'Setiap warga negara wajib:'
-                        references: []
-                      elements:
-                        - type: point
-                          node: &ref_74
-                            nodeType: point
-                            key: a
-                            parentPointSetNode: *ref_73
-                          content:
-                            type: text
-                            node:
-                              nodeType: text
-                              textName: text
-                              parentNode: *ref_74
-                            textString: membantu mencegah terjadinya diskriminasi ras dan etnis; dan
-                            references: []
-                        - type: point
-                          node: &ref_75
-                            nodeType: point
-                            key: b
-                            parentPointSetNode: *ref_73
-                          content:
-                            type: text
-                            node:
-                              nodeType: text
-                              textName: text
-                              parentNode: *ref_75
-                            textString: >-
-                              memberikan informasi yang benar dan bertanggung jawab kepada pihak
-                              yang berwenang jika mengetahui terjadinya diskriminasi ras dan etnis;
-                            references: []
-          - type: bagian
-            node: &ref_76
-              nodeType: bagian
-              key: 2
-              parentBagianSetNode:
-                nodeType: bagianSet
-                parentBabNode: *ref_69
-            title: Bagian Kedua Peran Serta Warga Negara
-            content:
-              type: pasalSet
-              node:
-                nodeType: pasalSet
-                parentNode: *ref_76
-              elements:
-                - type: pasal
-                  node:
-                    nodeType: pasal
-                    key: 11
-                    parentNode: *ref_0
-                  version:
-                    type: pasalVersion
-                    node: &ref_77
-                      nodeType: pasalVersion
-                      version: *ref_27
-                      state: exists
-                      parentPasalNode:
-                        nodeType: pasal
-                        key: '11'
-                        parentNode: *ref_0
+                  - type: point
+                    node: &ref_74
+                      nodeType: point
+                      key: b
+                      parentPointSetNode: *ref_72
                     content:
                       type: text
                       node:
                         nodeType: text
                         textName: text
-                        parentNode: *ref_77
+                        parentNode: *ref_74
                       textString: >-
-                        Setiap warga negara berperan serta dalam upaya penyelenggaraan perlindungan
-                        dan pencegahan terhada p diskriminasi ras dan etnis.
+                        memberikan informasi yang benar dan bertanggung jawab kepada pihak yang
+                        berwenang jika mengetahui terjadinya diskriminasi ras dan etnis; Bagian
+                        Kedua Peran Serta Warga Negara
                       references: []
-                - type: pasal
+          - type: pasal
+            node:
+              nodeType: pasal
+              key: 11
+              parentNode: *ref_0
+            version:
+              type: pasalVersion
+              node: &ref_75
+                nodeType: pasalVersion
+                version: *ref_27
+                state: exists
+                parentPasalNode:
+                  nodeType: pasal
+                  key: '11'
+                  parentNode: *ref_0
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_75
+                textString: >-
+                  Setiap warga negara berperan serta dalam upaya penyelenggaraan perlindungan dan
+                  pencegahan terhada p diskriminasi ras dan etnis.
+                references: []
+          - type: pasal
+            node:
+              nodeType: pasal
+              key: 12
+              parentNode: *ref_0
+            version:
+              type: pasalVersion
+              node: &ref_76
+                nodeType: pasalVersion
+                version: *ref_27
+                state: exists
+                parentPasalNode:
+                  nodeType: pasal
+                  key: '12'
+                  parentNode: *ref_0
+              content:
+                type: pointSet
+                node: &ref_77
+                  nodeType: pointSet
+                  parentNode: *ref_76
+                description:
+                  type: text
                   node:
-                    nodeType: pasal
-                    key: 12
-                    parentNode: *ref_0
-                  version:
-                    type: pasalVersion
+                    nodeType: text
+                    textName: description
+                    parentNode: *ref_77
+                  textString: >-
+                    Peran serta warga negara sebagaimana dimaksud dalam Pasal 11 dilaksanakan dengan
+                    cara:
+                  references: []
+                elements:
+                  - type: point
                     node: &ref_78
-                      nodeType: pasalVersion
-                      version: *ref_27
-                      state: exists
-                      parentPasalNode:
-                        nodeType: pasal
-                        key: '12'
-                        parentNode: *ref_0
+                      nodeType: point
+                      key: a
+                      parentPointSetNode: *ref_77
                     content:
-                      type: pointSet
-                      node: &ref_79
-                        nodeType: pointSet
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
                         parentNode: *ref_78
-                      description:
-                        type: text
-                        node:
-                          nodeType: text
-                          textName: description
-                          parentNode: *ref_79
-                        textString: >-
-                          Peran serta warga negara sebagaimana dimaksud dalam Pasal 11 dilaksanakan
-                          dengan cara:
-                        references: []
-                      elements:
-                        - type: point
-                          node: &ref_80
-                            nodeType: point
-                            key: a
-                            parentPointSetNode: *ref_79
-                          content:
-                            type: text
-                            node:
-                              nodeType: text
-                              textName: text
-                              parentNode: *ref_80
-                            textString: >-
-                              meningkatkan keutuhan, kemandirian, dan pemberdayaan anggota
-                              masyarakat;
-                            references: []
-                        - type: point
-                          node: &ref_81
-                            nodeType: point
-                            key: b
-                            parentPointSetNode: *ref_79
-                          content:
-                            type: text
-                            node:
-                              nodeType: text
-                              textName: text
-                              parentNode: *ref_81
-                            textString: >-
-                              menumbuhkan dan mengembangkan kemampuan serta kepeloporan masyarakat;
-                              - 9 -
-                            references: []
-                        - type: point
-                          node: &ref_82
-                            nodeType: point
-                            key: c
-                            parentPointSetNode: *ref_79
-                          content:
-                            type: text
-                            node:
-                              nodeType: text
-                              textName: text
-                              parentNode: *ref_82
-                            textString: >-
-                              menumbuhkan sikap tanggap anggota masyarakat untuk melakukan
-                              pengawasan sosial; dan
-                            references: []
-                        - type: point
-                          node: &ref_83
-                            nodeType: point
-                            key: d
-                            parentPointSetNode: *ref_79
-                          content:
-                            type: text
-                            node:
-                              nodeType: text
-                              textName: text
-                              parentNode: *ref_83
-                            textString: >-
-                              memberikan saran, pendapat, dan menyampaikan informasi yang benar dan
-                              bertanggung jawab.
-                            references: []
+                      textString: meningkatkan keutuhan, kemandirian, dan pemberdayaan anggota masyarakat;
+                      references: []
+                  - type: point
+                    node: &ref_79
+                      nodeType: point
+                      key: b
+                      parentPointSetNode: *ref_77
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_79
+                      textString: menumbuhkan dan mengembangkan kemampuan serta kepeloporan masyarakat; - 9 -
+                      references: []
+                  - type: point
+                    node: &ref_80
+                      nodeType: point
+                      key: c
+                      parentPointSetNode: *ref_77
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_80
+                      textString: >-
+                        menumbuhkan sikap tanggap anggota masyarakat untuk melakukan pengawasan
+                        sosial; dan
+                      references: []
+                  - type: point
+                    node: &ref_81
+                      nodeType: point
+                      key: d
+                      parentPointSetNode: *ref_77
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_81
+                      textString: >-
+                        memberikan saran, pendapat, dan menyampaikan informasi yang benar dan
+                        bertanggung jawab.
+                      references: []
     - type: bab
-      node: &ref_84
+      node: &ref_82
         nodeType: bab
         key: 7
         parentBabSetNode: *ref_13
@@ -1324,7 +1293,7 @@ babSet:
         type: pasalSet
         node:
           nodeType: pasalSet
-          parentNode: *ref_84
+          parentNode: *ref_82
         elements:
           - type: pasal
             node:
@@ -1333,7 +1302,7 @@ babSet:
               parentNode: *ref_0
             version:
               type: pasalVersion
-              node: &ref_85
+              node: &ref_83
                 nodeType: pasalVersion
                 version: *ref_27
                 state: exists
@@ -1346,7 +1315,7 @@ babSet:
                 node:
                   nodeType: text
                   textName: text
-                  parentNode: *ref_85
+                  parentNode: *ref_83
                 textString: >-
                   Setiap orang berhak mengajukan gugatan ganti kerugi an melalui pengadilan negeri
                   atas tindakan diskriminas i ras dan etnis yang merugikan dirinya.
@@ -1358,7 +1327,7 @@ babSet:
               parentNode: *ref_0
             version:
               type: pasalVersion
-              node: &ref_86
+              node: &ref_84
                 nodeType: pasalVersion
                 version: *ref_27
                 state: exists
@@ -1371,14 +1340,14 @@ babSet:
                 node:
                   nodeType: text
                   textName: text
-                  parentNode: *ref_86
+                  parentNode: *ref_84
                 textString: >-
                   Setiap orang secara sendiri-sendiri atau secara ber sama- sama berhak mengajukan
                   gugatan ganti kerugian melal ui pengadilan negeri atas tindakan diskriminasi ras
                   da n etnis yang merugikan dirinya.
                 references: []
     - type: bab
-      node: &ref_87
+      node: &ref_85
         nodeType: bab
         key: 8
         parentBabSetNode: *ref_13
@@ -1387,7 +1356,7 @@ babSet:
         type: pasalSet
         node:
           nodeType: pasalSet
-          parentNode: *ref_87
+          parentNode: *ref_85
         elements:
           - type: pasal
             node:
@@ -1396,7 +1365,7 @@ babSet:
               parentNode: *ref_0
             version:
               type: pasalVersion
-              node: &ref_88
+              node: &ref_86
                 nodeType: pasalVersion
                 version: *ref_27
                 state: exists
@@ -1409,7 +1378,7 @@ babSet:
                 node:
                   nodeType: text
                   textName: text
-                  parentNode: *ref_88
+                  parentNode: *ref_86
                 textString: >-
                   Setiap orang yang dengan sengaja melakukan pembedaa n, pengecualian, pembatasan,
                   atau pemilihan berdasarka n pada ras dan etnis yang mengakibatkan pencabutan at au
@@ -1425,7 +1394,7 @@ babSet:
                       key: a
                       parentPointSetNode:
                         nodeType: pointSet
-                        parentNode: *ref_88
+                        parentNode: *ref_86
                       nodeType: point
                   - start: 358
                     end: 365
@@ -1440,7 +1409,7 @@ babSet:
               parentNode: *ref_0
             version:
               type: pasalVersion
-              node: &ref_89
+              node: &ref_87
                 nodeType: pasalVersion
                 version: *ref_27
                 state: exists
@@ -1453,7 +1422,7 @@ babSet:
                 node:
                   nodeType: text
                   textName: text
-                  parentNode: *ref_89
+                  parentNode: *ref_87
                 textString: >-
                   Setiap orang yang dengan sengaja menunjukkan kebenc ian atau rasa benci kepada
                   orang lain berdasarkan diskriminasi ras dan etnis sebagaimana dimaksud dal am
@@ -1467,7 +1436,7 @@ babSet:
                       key: b
                       parentPointSetNode:
                         nodeType: pointSet
-                        parentNode: *ref_89
+                        parentNode: *ref_87
                       nodeType: point
                   - start: 157
                     end: 164
@@ -1482,7 +1451,7 @@ babSet:
               parentNode: *ref_0
             version:
               type: pasalVersion
-              node: &ref_90
+              node: &ref_88
                 nodeType: pasalVersion
                 version: *ref_27
                 state: exists
@@ -1495,7 +1464,7 @@ babSet:
                 node:
                   nodeType: text
                   textName: text
-                  parentNode: *ref_90
+                  parentNode: *ref_88
                 textString: >-
                   Setiap orang yang dengan sengaja melakukan perampas an nyawa orang, penganiayaan,
                   pemerkosaan, perbuatan cabul, pencurian dengan kekerasan, atau perampasan
@@ -1510,7 +1479,7 @@ babSet:
                       key: b
                       parentPointSetNode:
                         nodeType: pointSet
-                        parentNode: *ref_90
+                        parentNode: *ref_88
                       nodeType: point
                   - start: 234
                     end: 241
@@ -1525,7 +1494,7 @@ babSet:
               parentNode: *ref_0
             version:
               type: pasalVersion
-              node: &ref_91
+              node: &ref_89
                 nodeType: pasalVersion
                 version: *ref_27
                 state: exists
@@ -1538,7 +1507,7 @@ babSet:
                 node:
                   nodeType: text
                   textName: text
-                  parentNode: *ref_91
+                  parentNode: *ref_89
                 textString: >-
                   Selain pidana sebagaimana dimaksud dalam Pasal 16 d an Pasal 17 pelaku dapat
                   dijatuhi pidana tambahan beru pa restitusi atau pemulihan hak korban.
@@ -1562,7 +1531,7 @@ babSet:
               parentNode: *ref_0
             version:
               type: pasalVersion
-              node: &ref_92
+              node: &ref_90
                 nodeType: pasalVersion
                 version: *ref_27
                 state: exists
@@ -1572,21 +1541,21 @@ babSet:
                   parentNode: *ref_0
               content:
                 type: ayatSet
-                node: &ref_93
+                node: &ref_91
                   nodeType: ayatSet
-                  parentPasalVersionNode: *ref_92
+                  parentPasalVersionNode: *ref_90
                 elements:
                   - type: ayat
-                    node: &ref_94
+                    node: &ref_92
                       nodeType: ayat
                       key: 1
-                      parentAyatSetNode: *ref_93
+                      parentAyatSetNode: *ref_91
                     content:
                       type: text
                       node:
                         nodeType: text
                         textName: text
-                        parentNode: *ref_94
+                        parentNode: *ref_92
                       textString: >-
                         Tindak pidana sebagaimana dimaksud dalam Pasal 16 dan Pasal 17 dianggap
                         dilakukan oleh korporasi apabila tindak pidana tersebut dilakukan oleh orang
@@ -1608,16 +1577,16 @@ babSet:
                             parentNode: *ref_0
                             nodeType: pasal
                   - type: ayat
-                    node: &ref_95
+                    node: &ref_93
                       nodeType: ayat
                       key: 2
-                      parentAyatSetNode: *ref_93
+                      parentAyatSetNode: *ref_91
                     content:
                       type: text
                       node:
                         nodeType: text
                         textName: text
-                        parentNode: *ref_95
+                        parentNode: *ref_93
                       textString: >-
                         Dalam hal tindak pidana sebagaimana dimaksud pada ayat (1) dilakukan oleh
                         suatu korporasi, maka penyidikan, penuntutan, dan pemidanaan dilakukan
@@ -1629,7 +1598,7 @@ babSet:
                             key: 1
                             parentAyatSetNode:
                               nodeType: ayatSet
-                              parentPasalVersionNode: *ref_92
+                              parentPasalVersionNode: *ref_90
                             nodeType: ayat
           - type: pasal
             node:
@@ -1638,7 +1607,7 @@ babSet:
               parentNode: *ref_0
             version:
               type: pasalVersion
-              node: &ref_96
+              node: &ref_94
                 nodeType: pasalVersion
                 version: *ref_27
                 state: exists
@@ -1651,7 +1620,7 @@ babSet:
                 node:
                   nodeType: text
                   textName: text
-                  parentNode: *ref_96
+                  parentNode: *ref_94
                 textString: >-
                   Dalam hal panggilan terhadap korporasi, pemanggilan untuk menghadap dan penyerahan
                   surat panggilan disampaikan kepada pengurus di tempat pengurus berkantor, di
@@ -1664,7 +1633,7 @@ babSet:
               parentNode: *ref_0
             version:
               type: pasalVersion
-              node: &ref_97
+              node: &ref_95
                 nodeType: pasalVersion
                 version: *ref_27
                 state: exists
@@ -1674,21 +1643,21 @@ babSet:
                   parentNode: *ref_0
               content:
                 type: ayatSet
-                node: &ref_98
+                node: &ref_96
                   nodeType: ayatSet
-                  parentPasalVersionNode: *ref_97
+                  parentPasalVersionNode: *ref_95
                 elements:
                   - type: ayat
-                    node: &ref_99
+                    node: &ref_97
                       nodeType: ayat
                       key: 1
-                      parentAyatSetNode: *ref_98
+                      parentAyatSetNode: *ref_96
                     content:
                       type: text
                       node:
                         nodeType: text
                         textName: text
-                        parentNode: *ref_99
+                        parentNode: *ref_97
                       textString: >-
                         Dalam hal tindak pidana dilakukan oleh suatu korporasi, selain pidana
                         penjara dan denda terhadap pengurusnya, pidana yang dapat dijatuhkan
@@ -1708,16 +1677,16 @@ babSet:
                             parentNode: *ref_0
                             nodeType: pasal
                   - type: ayat
-                    node: &ref_100
+                    node: &ref_98
                       nodeType: ayat
                       key: 2
-                      parentAyatSetNode: *ref_98
+                      parentAyatSetNode: *ref_96
                     content:
                       type: text
                       node:
                         nodeType: text
                         textName: text
-                        parentNode: *ref_100
+                        parentNode: *ref_98
                       textString: >-
                         Selain pidana denda sebagaimana dimaksud pada ayat (1), korporasi dapat
                         dijatuhi pidana tambahan berup a pencabutan izin usaha dan pencabutan status
@@ -1729,10 +1698,10 @@ babSet:
                             key: 1
                             parentAyatSetNode:
                               nodeType: ayatSet
-                              parentPasalVersionNode: *ref_97
+                              parentPasalVersionNode: *ref_95
                             nodeType: ayat
     - type: bab
-      node: &ref_101
+      node: &ref_99
         nodeType: bab
         key: 9
         parentBabSetNode: *ref_13
@@ -1741,7 +1710,7 @@ babSet:
         type: pasalSet
         node:
           nodeType: pasalSet
-          parentNode: *ref_101
+          parentNode: *ref_99
         elements:
           - type: pasal
             node:
@@ -1750,7 +1719,7 @@ babSet:
               parentNode: *ref_0
             version:
               type: pasalVersion
-              node: &ref_102
+              node: &ref_100
                 nodeType: pasalVersion
                 version: *ref_27
                 state: exists
@@ -1763,7 +1732,7 @@ babSet:
                 node:
                   nodeType: text
                   textName: text
-                  parentNode: *ref_102
+                  parentNode: *ref_100
                 textString: >-
                   Pada saat Undang-Undang ini mulai berlaku, semua peraturan perundang-undangan yang
                   mengatur atau berkaitan dengan ras dan etnis, dinyatakan tetap be rlaku sepanjang
@@ -1776,7 +1745,7 @@ babSet:
               parentNode: *ref_0
             version:
               type: pasalVersion
-              node: &ref_103
+              node: &ref_101
                 nodeType: pasalVersion
                 version: *ref_27
                 state: exists
@@ -1789,7 +1758,7 @@ babSet:
                 node:
                   nodeType: text
                   textName: text
-                  parentNode: *ref_103
+                  parentNode: *ref_101
                 textString: >-
                   Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar . . . - 12 - Agar
                   setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan
