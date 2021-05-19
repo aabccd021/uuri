@@ -1,7 +1,34 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1985/11> legal:documentHasBabSet <http://example.org/legal/document/uu/1985/11/bab> .
+<http://example.org/legal/document/uu/1985/11> legal:documentHasPasalSet <http://example.org/legal/document/uu/1985/11/pasals> .
+<http://example.org/legal/document/uu/1985/11/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1985/11/pasal/0001> .
+<http://example.org/legal/document/uu/1985/11/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1985/11/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1985/11/pasal/0001/version/19851022> .
+<http://example.org/legal/document/uu/1985/11> legal:documentHasPasal <http://example.org/legal/document/uu/1985/11/pasal/0001> .
+<http://example.org/legal/document/uu/1985/11/pasal/0001/version/19851022> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1985/11/pasal/0001/version/19851022> legal:pasalVersionHasVersionDate "1985-10-22"^^xsd:date .
+<http://example.org/legal/document/uu/1985/11/pasal/0001/version/19851022> legal:pasalVersionHasRawText "Mengesahkan Konvensi Telekomunikasi Internasional (International Telecommunication Convention) Nairobi, 1982, beserta 3 (tiga) Lampirannya, yang telah ditandatangani di Nairobi pada tanggal 6 Nopember 1982 dengan pensyaratan (reservation) sebagaimana termuat dalam Nomor 29 dan Nomor 90 Protokol Akhir, yang sahamnya dilampirkan pada Undang-undang ini." .
+<http://example.org/legal/document/uu/1985/11/pasal/0001/version/19851022/text> legal:textHasTextString "Mengesahkan Konvensi Telekomunikasi Internasional (International Telecommunication Convention) Nairobi, 1982, beserta 3 (tiga) Lampirannya, yang telah ditandatangani di Nairobi pada tanggal 6 Nopember 1982 dengan pensyaratan (reservation) sebagaimana termuat dalam Nomor 29 dan Nomor 90 Protokol Akhir, yang sahamnya dilampirkan pada Undang-undang ini." .
+<http://example.org/legal/document/uu/1985/11/pasal/0001/version/19851022> legal:pasalVersionHasText <http://example.org/legal/document/uu/1985/11/pasal/0001/version/19851022/text> .
+<http://example.org/legal/document/uu/1985/11/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1985/11/pasal/0002> .
+<http://example.org/legal/document/uu/1985/11/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1985/11/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1985/11/pasal/0002/version/19851022> .
+<http://example.org/legal/document/uu/1985/11> legal:documentHasPasal <http://example.org/legal/document/uu/1985/11/pasal/0002> .
+<http://example.org/legal/document/uu/1985/11/pasal/0002/version/19851022> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1985/11/pasal/0002/version/19851022> legal:pasalVersionHasVersionDate "1985-10-22"^^xsd:date .
+<http://example.org/legal/document/uu/1985/11/pasal/0002/version/19851022> legal:pasalVersionHasRawText "Pada saat mulai berlakunya Undang-undang ini, Undang-undang Nomor 11 Tahun 1976 tentang Pengesahan Konvensi Telekomunikasi Internasional (International Telecommunication Convention) Malaga-Torremolinos, 1973 (Lembaran Negara Tahun 1976 Nomor 56, Tambahan Lembaran Negara Nomor 3092), dinyatakan tidak berlaku lagi." .
+<http://example.org/legal/document/uu/1985/11/pasal/0002/version/19851022/text> legal:textHasTextString "Pada saat mulai berlakunya Undang-undang ini, Undang-undang Nomor 11 Tahun 1976 tentang Pengesahan Konvensi Telekomunikasi Internasional (International Telecommunication Convention) Malaga-Torremolinos, 1973 (Lembaran Negara Tahun 1976 Nomor 56, Tambahan Lembaran Negara Nomor 3092), dinyatakan tidak berlaku lagi." .
+<http://example.org/legal/document/uu/1985/11/pasal/0002/version/19851022> legal:pasalVersionHasText <http://example.org/legal/document/uu/1985/11/pasal/0002/version/19851022/text> .
+<http://example.org/legal/document/uu/1985/11/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1985/11/pasal/0003> .
+<http://example.org/legal/document/uu/1985/11/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/1985/11/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1985/11/pasal/0003/version/19851022> .
+<http://example.org/legal/document/uu/1985/11> legal:documentHasPasal <http://example.org/legal/document/uu/1985/11/pasal/0003> .
+<http://example.org/legal/document/uu/1985/11/pasal/0003/version/19851022> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1985/11/pasal/0003/version/19851022> legal:pasalVersionHasVersionDate "1985-10-22"^^xsd:date .
+<http://example.org/legal/document/uu/1985/11/pasal/0003/version/19851022> legal:pasalVersionHasRawText "Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1985/11/pasal/0003/version/19851022/text> legal:textHasTextString "Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1985/11/pasal/0003/version/19851022> legal:pasalVersionHasText <http://example.org/legal/document/uu/1985/11/pasal/0003/version/19851022/text> .
 <http://example.org/legal/document/uu/1985/11> legal:documentHasDisahkanDate "1985-10-22"^^xsd:date .
 <http://example.org/legal/document/uu/1985/11> legal:documentMengingat <http://example.org/legal/document/uu/1985/11/mengingat> .
 <http://example.org/legal/document/uu/1985/11/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1985/11/mengingat/point> .
@@ -35,6 +62,16 @@
 <http://example.org/legal/document/uu/1985/11> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/1985/11> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA" .
 <http://example.org/legal/document/uu/1985/11> a legal:Document .
+<http://example.org/legal/document/uu/1985/11/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1985/11/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1985/11/pasal/0001/version/19851022> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1985/11/pasal/0001/version/19851022/text> a legal:Text .
+<http://example.org/legal/document/uu/1985/11/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1985/11/pasal/0002/version/19851022> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1985/11/pasal/0002/version/19851022/text> a legal:Text .
+<http://example.org/legal/document/uu/1985/11/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/1985/11/pasal/0003/version/19851022> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1985/11/pasal/0003/version/19851022/text> a legal:Text .
 <http://example.org/legal/document/uu/1985/11/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1985/11/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/1985/11/mengingat/point> a legal:PointSet .
@@ -51,7 +88,15 @@
 <http://example.org/legal/document/uu/1985/11/menimbang/point/b/text> a legal:Text .
 <http://example.org/legal/document/uu/1985/11/menimbang/point/c> a legal:Point .
 <http://example.org/legal/document/uu/1985/11/menimbang/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/1985/11/bab> legal:partOf <http://example.org/legal/document/uu/1985/11> .
+<http://example.org/legal/document/uu/1985/11/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1985/11/pasals> .
+<http://example.org/legal/document/uu/1985/11/pasal/0001/version/19851022> legal:partOf <http://example.org/legal/document/uu/1985/11/pasal/0001> .
+<http://example.org/legal/document/uu/1985/11/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1985/11> .
+<http://example.org/legal/document/uu/1985/11/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1985/11/pasals> .
+<http://example.org/legal/document/uu/1985/11/pasal/0002/version/19851022> legal:partOf <http://example.org/legal/document/uu/1985/11/pasal/0002> .
+<http://example.org/legal/document/uu/1985/11/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1985/11> .
+<http://example.org/legal/document/uu/1985/11/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1985/11/pasals> .
+<http://example.org/legal/document/uu/1985/11/pasal/0003/version/19851022> legal:partOf <http://example.org/legal/document/uu/1985/11/pasal/0003> .
+<http://example.org/legal/document/uu/1985/11/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1985/11> .
 <http://example.org/legal/document/uu/1985/11/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1985/11/mengingat/point> .
 <http://example.org/legal/document/uu/1985/11/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1985/11/mengingat/point> .
 <http://example.org/legal/document/uu/1985/11/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1985/11/menimbang/point> .

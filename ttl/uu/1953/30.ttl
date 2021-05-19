@@ -1,7 +1,17 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1953/30> legal:documentHasBabSet <http://example.org/legal/document/uu/1953/30/bab> .
+<http://example.org/legal/document/uu/1953/30> legal:documentHasPasalSet <http://example.org/legal/document/uu/1953/30/pasals> .
+<http://example.org/legal/document/uu/1953/30/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1953/30/pasal/0001> .
+<http://example.org/legal/document/uu/1953/30/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1953/30/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1953/30/pasal/0001/version/19531218> .
+<http://example.org/legal/document/uu/1953/30> legal:documentHasPasal <http://example.org/legal/document/uu/1953/30/pasal/0001> .
+<http://example.org/legal/document/uu/1953/30/pasal/0001/version/19531218> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1953/30/pasal/0001/version/19531218> legal:pasalVersionHasVersionDate "1953-12-18"^^xsd:date .
+<http://example.org/legal/document/uu/1953/30/pasal/0001/version/19531218> legal:pasalVersionHasRawText "Angka \"1952\" tersebut dalam Pasal 1 Undang - undang No. 29 tahun 1953 (Lembaran Negara No.79 tahun 1953) diubah menjadi \"1953\". Pasal II. Undang - undang ini mulai berlaku pada tanggal 1 Januari 1953. PRESIDEN REPUBLIK INDONESIA - 3 - Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengund angan undang - undang ini dengan penempatan dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1953/30/pasal/0001/version/19531218/text> legal:textHasTextString "Angka \"1952\" tersebut dalam Pasal 1 Undang - undang No. 29 tahun 1953 (Lembaran Negara No.79 tahun 1953) diubah menjadi \"1953\". Pasal II. Undang - undang ini mulai berlaku pada tanggal 1 Januari 1953. PRESIDEN REPUBLIK INDONESIA - 3 - Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengund angan undang - undang ini dengan penempatan dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1953/30/pasal/0001/version/19531218> legal:pasalVersionHasText <http://example.org/legal/document/uu/1953/30/pasal/0001/version/19531218/text> .
+<http://example.org/legal/document/uu/1953/30/pasal/0001/version/19531218/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1953/30/pasal/0001> .
 <http://example.org/legal/document/uu/1953/30> legal:documentHasDisahkanDate "1953-12-18"^^xsd:date .
 <http://example.org/legal/document/uu/1953/30> legal:documentMengingat <http://example.org/legal/document/uu/1953/30/mengingat> .
 <http://example.org/legal/document/uu/1953/30/mengingat/text> legal:textHasTextString "Pasal 97, 89 dan 117 Undang - undang Dasar Sementara Republik Indonesia; PRESIDEN REPUBLIK INDONESIA - 2 - Dengan persetujuan dewan Perwakilan Rakyat. MEMUTUSKAN: Menetapkan : UNDANG - UNDANG TENTANG PENETAPAN \"UNDANG - UNDANG DARURAT NOMOR 4 TAHUN 1953 TENTANG PENGENAAN TAMBAHAN OPSENTEN ATAS BENSIN DAN SEBAGAINYA. Pasal I. Peraturan - peraturan jang termaktub dalam Undang - undang Darurat Nomor 4 tahun 1953 tentang pengenaan tambahan opsenten atas bensin dan sebagainya (Lembaran Negara Nomor 11 tahun 1953) ditetapkan sebagai Undang - undang jang berbunyi sebagai berikut :" .
@@ -22,6 +32,10 @@
 <http://example.org/legal/document/uu/1953/30> legal:documentHasDisahkanLocation "D" .
 <http://example.org/legal/document/uu/1953/30> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/1953/30> a legal:Document .
+<http://example.org/legal/document/uu/1953/30/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1953/30/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1953/30/pasal/0001/version/19531218> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1953/30/pasal/0001/version/19531218/text> a legal:Text .
 <http://example.org/legal/document/uu/1953/30/mengingat/text> a legal:Text .
 <http://example.org/legal/document/uu/1953/30/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1953/30/menimbang> a legal:Menimbang .
@@ -31,6 +45,8 @@
 <http://example.org/legal/document/uu/1953/30/menimbang/point/a/text> a legal:Text .
 <http://example.org/legal/document/uu/1953/30/menimbang/point/b> a legal:Point .
 <http://example.org/legal/document/uu/1953/30/menimbang/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/1953/30/bab> legal:partOf <http://example.org/legal/document/uu/1953/30> .
+<http://example.org/legal/document/uu/1953/30/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1953/30/pasals> .
+<http://example.org/legal/document/uu/1953/30/pasal/0001/version/19531218> legal:partOf <http://example.org/legal/document/uu/1953/30/pasal/0001> .
+<http://example.org/legal/document/uu/1953/30/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1953/30> .
 <http://example.org/legal/document/uu/1953/30/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1953/30/menimbang/point> .
 <http://example.org/legal/document/uu/1953/30/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1953/30/menimbang/point> .

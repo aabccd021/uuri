@@ -53,18 +53,78 @@ opText: |-
   Menetapkan :
   Undang-undangtentangpembuatanperjanjianpersahabatan
   antaraRepublik Indonesia danRepublik Rakyat Hongari a.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_3
+          nodeType: pasalVersion
+          version: &ref_4
+            nodeType: date
+            month: 6
+            date: 18
+            year: 1962
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_3
+          textString: >-
+            AntaraRepublik Indonesia danRepublik Rakyat Hongari
+            adibuatPerjanjianPersahbatandanKerja-sama yang telahditandatangani di Jakarta
+            padatanggal 23 Agustus 1961 yang berbunyisebagaiterlampirdan yang
+            pengesahannyaakandilakukanolehPresiden.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_5
+          nodeType: pasalVersion
+          version: *ref_4
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_5
+          textString: >-
+            Perjanjiantersebutdiatasmulaiberlakusesudahpertukar anpiagam-piagampengesahan yang
+            akandilakukan di Budapest. Pasal 3 Undang-undanginimulaiberlakupadaharidiundangkan. Agar
+            supayasetiap orang dapatmengetahuinya, memerin tahkanpengundanganUndang-
+            undanginidenganpenempatandalamLembaran-Negara Repub lik Indonesia.
+          references:
+            - start: 110
+              end: 117
+              node:
+                key: 3
+                parentNode: *ref_0
+                nodeType: pasal
 disahkan:
-  date:
-    nodeType: date
-    month: 6
-    date: 18
-    year: 1962
+  date: *ref_4
   location: Jakarta,
   pengesah: Diundangkan di Jakarta
   jabatanPengesah: PresidenRepublik Indonesia,

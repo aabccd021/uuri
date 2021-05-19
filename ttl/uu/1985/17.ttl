@@ -1,7 +1,25 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1985/17> legal:documentHasBabSet <http://example.org/legal/document/uu/1985/17/bab> .
+<http://example.org/legal/document/uu/1985/17> legal:documentHasPasalSet <http://example.org/legal/document/uu/1985/17/pasals> .
+<http://example.org/legal/document/uu/1985/17/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1985/17/pasal/0001> .
+<http://example.org/legal/document/uu/1985/17/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1985/17/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1985/17/pasal/0001/version/19851231> .
+<http://example.org/legal/document/uu/1985/17> legal:documentHasPasal <http://example.org/legal/document/uu/1985/17/pasal/0001> .
+<http://example.org/legal/document/uu/1985/17/pasal/0001/version/19851231> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1985/17/pasal/0001/version/19851231> legal:pasalVersionHasVersionDate "1985-12-31"^^xsd:date .
+<http://example.org/legal/document/uu/1985/17/pasal/0001/version/19851231> legal:pasalVersionHasRawText "Mengesahkan United Nations Convention the Law of the Sea (Konvensi Perserikatan Bangsa- Bangsa tentang Hukum Laut), yang salinan naskah aslinya dalam bahasa inggeris dilampirkan pada Undang-undang ini." .
+<http://example.org/legal/document/uu/1985/17/pasal/0001/version/19851231/text> legal:textHasTextString "Mengesahkan United Nations Convention the Law of the Sea (Konvensi Perserikatan Bangsa- Bangsa tentang Hukum Laut), yang salinan naskah aslinya dalam bahasa inggeris dilampirkan pada Undang-undang ini." .
+<http://example.org/legal/document/uu/1985/17/pasal/0001/version/19851231> legal:pasalVersionHasText <http://example.org/legal/document/uu/1985/17/pasal/0001/version/19851231/text> .
+<http://example.org/legal/document/uu/1985/17/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1985/17/pasal/0002> .
+<http://example.org/legal/document/uu/1985/17/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1985/17/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1985/17/pasal/0002/version/19851231> .
+<http://example.org/legal/document/uu/1985/17> legal:documentHasPasal <http://example.org/legal/document/uu/1985/17/pasal/0002> .
+<http://example.org/legal/document/uu/1985/17/pasal/0002/version/19851231> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1985/17/pasal/0002/version/19851231> legal:pasalVersionHasVersionDate "1985-12-31"^^xsd:date .
+<http://example.org/legal/document/uu/1985/17/pasal/0002/version/19851231> legal:pasalVersionHasRawText "Undang-undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA - 2 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1985/17/pasal/0002/version/19851231/text> legal:textHasTextString "Undang-undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA - 2 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1985/17/pasal/0002/version/19851231> legal:pasalVersionHasText <http://example.org/legal/document/uu/1985/17/pasal/0002/version/19851231/text> .
 <http://example.org/legal/document/uu/1985/17> legal:documentHasDisahkanDate "1985-12-31"^^xsd:date .
 <http://example.org/legal/document/uu/1985/17> legal:documentMengingat <http://example.org/legal/document/uu/1985/17/mengingat> .
 <http://example.org/legal/document/uu/1985/17/mengingat/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 11, dan Pasal 20 ayat (1) Undang-Undang Dasar 1945; Dengan persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN : Menetapkan : UNDANG-UNDANG TENTAN G PENGESAHAN UNITED NATIONS CONVENTION ON THE LAW OF THE SEA (KONVENSI PERSERIKATAN BANGSA-BANGSA TENTANG HUKUM LAUT)." .
@@ -30,6 +48,13 @@
 <http://example.org/legal/document/uu/1985/17> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/1985/17> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA" .
 <http://example.org/legal/document/uu/1985/17> a legal:Document .
+<http://example.org/legal/document/uu/1985/17/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1985/17/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1985/17/pasal/0001/version/19851231> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1985/17/pasal/0001/version/19851231/text> a legal:Text .
+<http://example.org/legal/document/uu/1985/17/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1985/17/pasal/0002/version/19851231> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1985/17/pasal/0002/version/19851231/text> a legal:Text .
 <http://example.org/legal/document/uu/1985/17/mengingat/text> a legal:Text .
 <http://example.org/legal/document/uu/1985/17/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1985/17/menimbang> a legal:Menimbang .
@@ -43,7 +68,12 @@
 <http://example.org/legal/document/uu/1985/17/menimbang/point/c/text> a legal:Text .
 <http://example.org/legal/document/uu/1985/17/menimbang/point/d> a legal:Point .
 <http://example.org/legal/document/uu/1985/17/menimbang/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/1985/17/bab> legal:partOf <http://example.org/legal/document/uu/1985/17> .
+<http://example.org/legal/document/uu/1985/17/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1985/17/pasals> .
+<http://example.org/legal/document/uu/1985/17/pasal/0001/version/19851231> legal:partOf <http://example.org/legal/document/uu/1985/17/pasal/0001> .
+<http://example.org/legal/document/uu/1985/17/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1985/17> .
+<http://example.org/legal/document/uu/1985/17/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1985/17/pasals> .
+<http://example.org/legal/document/uu/1985/17/pasal/0002/version/19851231> legal:partOf <http://example.org/legal/document/uu/1985/17/pasal/0002> .
+<http://example.org/legal/document/uu/1985/17/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1985/17> .
 <http://example.org/legal/document/uu/1985/17/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1985/17/menimbang/point> .
 <http://example.org/legal/document/uu/1985/17/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1985/17/menimbang/point> .
 <http://example.org/legal/document/uu/1985/17/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/1985/17/menimbang/point> .

@@ -226,18 +226,105 @@ opText: |-
   Menetapkan : UNDANG - UNDANG TENTANG PEMBENTUKAN
   PENGADILAN TINGGI JAMBI DI JAMBI DAN PERUBAHAN
   WILAYAH HUKUM PENGADILAN TINGGI PALEMBANG.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_12
+          nodeType: pasalVersion
+          version: &ref_16
+            nodeType: date
+            month: 8
+            date: 20
+            year: 1982
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_13
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_12
+          elements:
+            - type: ayat
+              node: &ref_14
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_13
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_14
+                textString: >-
+                  meliputi wilayah hukum semua pengadilan negeri dalam Propinsi Daerah Tingkat I
+                  Jambi.
+                references: []
+            - type: ayat
+              node: &ref_15
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_13
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_15
+                textString: Wilayah hukum pengadilan tinggi sebagaimana dima ksud dalam ayat
+                references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_17
+          nodeType: pasalVersion
+          version: *ref_16
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_17
+          textString: >-
+            Wilayah hukum Pengadilan Tinggi Palembang dikurangi dengan wilayah hukum semua
+            pengadilan negeri dalam Propinsi Daerah Tingkat I Jambi. Pas al 3 Perkara - perkara yang
+            berasal dari pengadilan negeri dalam Propinsi Daerah Tingkat I Jambi yang pada saat
+            mulai berlakunya undang - undang ini, belum diputus oleh Pengadilan Tinggi Palembang,
+            tetap didaftar, diperiksa dan diputus oleh Pengadilan Tinggi Palembang sampai saat
+            diresmikannya Pengadilan Tinggi Jambi. PRESIDEN REPUBLIK INDONESIA - 3 - Pasal 4 Undang
+            - undang ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang
+            mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam
+            Lembaran Negara Republik Indonesia.
+          references:
+            - start: 494
+              end: 501
+              node:
+                key: 4
+                parentNode: *ref_0
+                nodeType: pasal
 disahkan:
-  date:
-    nodeType: date
-    month: 8
-    date: 20
-    year: 1982
+  date: *ref_16
   location: Jakarta
   pengesah: SOEHARTO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

@@ -141,18 +141,116 @@ opText: |-
   PRESIDEN
   REPUBLIK INDONESIA
   - 2 -
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_8
+          nodeType: pasalVersion
+          version: &ref_13
+            nodeType: date
+            month: 6
+            date: 29
+            year: 1982
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_9
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_8
+          elements:
+            - type: ayat
+              node: &ref_10
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_9
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_10
+                textString: >-
+                  Penerimaan Negara dalam Tahun Anggaran 1978/1979 adalah sebesar Rp
+                  4.6814.903.272.224,93 (empat trilyun enam ratus delapan puluh empat milyar
+                  sembilan ratus ti ga juta dua ratus tujuh puluh dua ribu dua, ratus dua puluh
+                  empat sembilan puluh tiga perseratus rupiah).
+                references: []
+            - type: ayat
+              node: &ref_11
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_9
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_11
+                textString: >-
+                  Pengeluaran Negara dalam Tahun Anggaran 1978/1979 adalah sebesar Rp
+                  4.618.492,903.455,20 (empat trilyun enam ratus delapan belas milyar empat ra tus
+                  sembilan puluh dua juta sembilan ratus tiga ribu empat ratus lima puluh lima dua
+                  puluh perseratus rupiah).
+                references: []
+            - type: ayat
+              node: &ref_12
+                nodeType: ayat
+                key: 3
+                parentAyatSetNode: *ref_9
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_12
+                textString: >-
+                  Sisa lebih Perhitungan Anggaran Negara Tahun 1978/1979 adalah sebesar Rp
+                  66.410.368.769,73 (enam puluh enam milyar empat ratus sepuluh juta tiga ratus enam
+                  puluh delapan ribu tujuh ratus enam puluh sembilan tujuh puluh tiga perseratus
+                  rupiah).
+                references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_14
+          nodeType: pasalVersion
+          version: *ref_13
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_14
+          textString: >-
+            Undang - undang ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang
+            mengetahuinya, memerintahkan pengundangan Undang - undang i ni dengan penempatannya
+            dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 6
-    date: 29
-    year: 1982
+  date: *ref_13
   location: Jakarta
   pengesah: SOEHARTO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

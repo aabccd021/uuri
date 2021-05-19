@@ -161,18 +161,116 @@ opText: |-
   MEMUTUSKAN :
   Menetapkan : UNDANG-UNDANG TENTANG PERHITUNGAN ANGGARAN NEGARA
   TAHUN ANGGARAN 1980/1981.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_8
+          nodeType: pasalVersion
+          version: &ref_13
+            nodeType: date
+            month: 6
+            date: 5
+            year: 1984
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_9
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_8
+          elements:
+            - type: ayat
+              node: &ref_10
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_9
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_10
+                textString: >-
+                  Penerimaan Nepra dalam Tahun Anggaran 1980/1981 adalah sebesar Rp
+                  11.053.908.041.462,44 (sebelas trilyun lima puluh tiga milyar sembilan ratus
+                  delapan juta empat puluh satu ribu empat ratus enam puluh empat perseratus
+                  rupiah).
+                references: []
+            - type: ayat
+              node: &ref_11
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_9
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_11
+                textString: >-
+                  Pengeluaran Negara dalam Tahun Anggaran 1980/1981 adalah sebesar Rp
+                  11.000.093.448.274,29 (sebelas trilyun sembilan puluh tiga juta empat ratus empat
+                  puluh delapan ribu dua ratus tujuh puluh empat dua puluh sembilan perseratus
+                  rupiah).
+                references: []
+            - type: ayat
+              node: &ref_12
+                nodeType: ayat
+                key: 3
+                parentAyatSetNode: *ref_9
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_12
+                textString: >-
+                  Sisa lebih Perhitungan Anggaran Tahun Anggaran 1980/1981 adalah sebesar Rp
+                  53.814.593.188,15 (lima puluh tiga milyar delapan ratus empat belas juta lima
+                  ratus sembilan puluh tiga ribu seratus delapan puluh delapan lima belas perseratus
+                  rupiah).
+                references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_14
+          nodeType: pasalVersion
+          version: *ref_13
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_14
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang
+            mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 6
-    date: 5
-    year: 1984
+  date: *ref_13
   location: Jakarta
   pengesah: SOEHARTO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA

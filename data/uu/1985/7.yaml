@@ -175,18 +175,362 @@ opText: |-
   Menetapkan : UNDANG-UNDANG REPUBLIK INDONESIA TENTANG TAMBAHAN DAN
   PERUBAHAN ATAS ANGGARAN PENDAPATAN DAN BELANJA
   NEGARA TAHUN ANGGARAN 1984/1985.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_11
+          nodeType: pasalVersion
+          version: &ref_18
+            nodeType: date
+            month: 6
+            date: 10
+            year: 1985
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_12
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_11
+          elements:
+            - type: ayat
+              node: &ref_13
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_12
+              content:
+                type: pointSet
+                node: &ref_14
+                  nodeType: pointSet
+                  parentNode: *ref_13
+                description:
+                  type: text
+                  node:
+                    nodeType: text
+                    textName: description
+                    parentNode: *ref_14
+                  textString: >-
+                    Anggaran Pendapatan Negara Tahun Anggaran 1984/1985 diperkirakan berkurang
+                    dengan Rp 1.176.896.000.000,00 (satu trilyun seratus tuiuh puluh enam milyar
+                    delapan ratus sembilan puluh enam juta rupiah) yang terdiri dari:
+                  references: []
+                elements:
+                  - type: point
+                    node: &ref_15
+                      nodeType: point
+                      key: a
+                      parentPointSetNode: *ref_14
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_15
+                      textString: >-
+                        Pendapatan Rutin berkurang dengan Rp 243.928.000.000,00 (dua ratus empat
+                        puluh tiga milyar sembilan ratus dua puluh delapan juta rupiah);
+                      references: []
+                  - type: point
+                    node: &ref_16
+                      nodeType: point
+                      key: b
+                      parentPointSetNode: *ref_14
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_16
+                      textString: >-
+                        Pendapatan Pembangunan berkurang dengan Rp 932.968.000.000,00 (sembilan
+                        ratus tiga puluh dua milyar sembilan ratus enam puluh delapan juta rupiah).
+                      references: []
+            - type: ayat
+              node: &ref_17
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_12
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_17
+                textString: >-
+                  Perincian pendapatan tambahan dan perubahan sebagaimana dimaksud dalam ayat (1)
+                  huruf a dan huruf b pasal ini masing-masing dimuat dalam Lampiran I dan Lampiran
+                  II Undang-undang ini.
+                references:
+                  - start: 71
+                    end: 79
+                    node:
+                      key: 1
+                      parentAyatSetNode:
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_11
+                      nodeType: ayat
+                  - start: 92
+                    end: 93
+                    node:
+                      key: b
+                      parentPointSetNode:
+                        nodeType: pointSet
+                        parentNode:
+                          nodeType: ayat
+                          key: 1
+                          parentAyatSetNode:
+                            nodeType: ayatSet
+                            parentPasalVersionNode: *ref_11
+                      nodeType: point
+                  - start: 80
+                    end: 87
+                    node:
+                      key: a
+                      parentPointSetNode:
+                        nodeType: pointSet
+                        parentNode: *ref_11
+                      nodeType: point
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_19
+          nodeType: pasalVersion
+          version: *ref_18
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_20
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_19
+          elements:
+            - type: ayat
+              node: &ref_21
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_20
+              content:
+                type: pointSet
+                node: &ref_22
+                  nodeType: pointSet
+                  parentNode: *ref_21
+                description:
+                  type: text
+                  node:
+                    nodeType: text
+                    textName: description
+                    parentNode: *ref_22
+                  textString: >-
+                    Anggaran Belanja Negara Tahun Anggaran 1984/1985 diperkirakan berkurang dengan
+                    Rp 1.179.528.000.000,00 (satu trilyun seratus tujuh puluh sembilan milyar lima
+                    ratus dua puluh delapan juta rupiah) yang terdiri dari :
+                  references: []
+                elements:
+                  - type: point
+                    node: &ref_23
+                      nodeType: point
+                      key: a
+                      parentPointSetNode: *ref_22
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_23
+                      textString: >-
+                        Belanja Rutin berkurang dengan Rp 672.149.000.000,00 (enam ratus tujuh puluh
+                        dua milyar seratus empat puluh Sembilan juta rupiah);
+                      references: []
+                  - type: point
+                    node: &ref_24
+                      nodeType: point
+                      key: b
+                      parentPointSetNode: *ref_22
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_24
+                      textString: >-
+                        Belanja Pembangunan berkurang dengan Rp 507.379.000.000,00 (lima ratus tujuh
+                        milyar tiga ratus tujuh puluh sembilan juta rupiah).
+                      references: []
+            - type: ayat
+              node: &ref_25
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_20
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_25
+                textString: >-
+                  Perincian pengeluaran tambahan dan perubahan sebagaimana dimaksud dalam ayat (1)
+                  huruf a dan huruf b pasal ini masing-masing dimuat dalam Lampiran III dan Lampiran
+                  IV Undang-undang ini.
+                references:
+                  - start: 72
+                    end: 80
+                    node:
+                      key: 1
+                      parentAyatSetNode:
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_19
+                      nodeType: ayat
+                  - start: 93
+                    end: 94
+                    node:
+                      key: b
+                      parentPointSetNode:
+                        nodeType: pointSet
+                        parentNode:
+                          nodeType: ayat
+                          key: 1
+                          parentAyatSetNode:
+                            nodeType: ayatSet
+                            parentPasalVersionNode: *ref_19
+                      nodeType: point
+                  - start: 81
+                    end: 88
+                    node:
+                      key: a
+                      parentPointSetNode:
+                        nodeType: pointSet
+                        parentNode: *ref_19
+                      nodeType: point
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 3
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_26
+          nodeType: pasalVersion
+          version: *ref_18
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '3'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_27
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_26
+          elements:
+            - type: ayat
+              node: &ref_28
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_27
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_28
+                textString: >-
+                  Kredit anggaran proyek-proyek pada Anggaran Pembangunan Tahun Anggaran 1984/1985
+                  yang telah disahkan dalam Undang-undang Nomor 1 Tahun 1984 tentang Anggaran
+                  Pendapatan dan Belanja Negara Tahun Anggaran 1984/1985 yang pada akhir Tahun
+                  Anggaran 1984/1985 menunjukkan sisa, dengan Peraturan Pemerintah dipindahkan ke
+                  Tahun Anggaran 1985/1986 dengan menambahkannya kepada kredit anggaran Tahun
+                  Anggaran 1985/1986. www.djpp.depkumham.go.id
+                references: []
+            - type: ayat
+              node: &ref_29
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_27
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_29
+                textString: >-
+                  Saldo-anggaran-lebih Tahun Anggaran I984/1985 ditambahkan kepada anggaran Tahun
+                  Anggaran 1985/1986 dan dipergunakan untuk membiayai Anggaran Pembangunan Tahun
+                  Anggaran 1985/1986.
+                references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 4
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_30
+          nodeType: pasalVersion
+          version: *ref_18
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '4'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_30
+          textString: >-
+            Ketentuan-ketentuan dalam Indische Comptabiliteitswet (Undang-undang Perbendaharaan)
+            yang bertentangan dengan bentuk, susunan, dan isi Undang-undang ini dinyatakan tidak
+            berlaku.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 5
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_31
+          nodeType: pasalVersion
+          version: *ref_18
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '5'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_31
+          textString: >-
+            Undang-undang ini mulai berlaku pada tanggal diundangkan dan mempunyai daya laku surut
+            sejak tanggal 1 April 1984. Agar setiap orang mengetahuinya, memerintahkan pengundangan
+            Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 6
-    date: 10
-    year: 1985
+  date: *ref_18
   location: Jakarta
   pengesah: SOEHARTO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA

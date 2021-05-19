@@ -1,7 +1,53 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1978/5> legal:documentHasBabSet <http://example.org/legal/document/uu/1978/5/bab> .
+<http://example.org/legal/document/uu/1978/5> legal:documentHasPasalSet <http://example.org/legal/document/uu/1978/5/pasals> .
+<http://example.org/legal/document/uu/1978/5/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1978/5/pasal/0001> .
+<http://example.org/legal/document/uu/1978/5/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1978/5/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803> .
+<http://example.org/legal/document/uu/1978/5> legal:documentHasPasal <http://example.org/legal/document/uu/1978/5/pasal/0001> .
+<http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803> legal:pasalVersionHasVersionDate "1978-08-03"^^xsd:date .
+<http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803> legal:pasalVersionHasRawText "(1). Membentuk Pengadilan Tinggi Pontianak yang berkedudukan di Pontianak.\n(2). Wilayah Hukum Pengadilan Tinggi tersebut pada ayat (1) meliputi wilayah hukum semua Pengadilan Negeri dalam Propinsi Kalimantan Barat." .
+<http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803/ayat> .
+<http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803/ayat/0001> .
+<http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803/ayat/0001> legal:ayatHasRawText "Membentuk Pengadilan Tinggi Pontianak yang berkedudukan di Pontianak." .
+<http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803/ayat/0001/text> legal:textHasTextString "Membentuk Pengadilan Tinggi Pontianak yang berkedudukan di Pontianak." .
+<http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803/ayat/0001/text> .
+<http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803/ayat/0002> .
+<http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803/ayat/0002> legal:ayatHasRawText "Wilayah Hukum Pengadilan Tinggi tersebut pada ayat (1) meliputi wilayah hukum semua Pengadilan Negeri dalam Propinsi Kalimantan Barat." .
+<http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803/ayat/0002/text> legal:textHasTextString "Wilayah Hukum Pengadilan Tinggi tersebut pada ayat (1) meliputi wilayah hukum semua Pengadilan Negeri dalam Propinsi Kalimantan Barat." .
+<http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803/ayat/0002/text> .
+<http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803/ayat/0001> .
+<http://example.org/legal/document/uu/1978/5/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1978/5/pasal/0002> .
+<http://example.org/legal/document/uu/1978/5/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1978/5/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1978/5/pasal/0002/version/19780803> .
+<http://example.org/legal/document/uu/1978/5> legal:documentHasPasal <http://example.org/legal/document/uu/1978/5/pasal/0002> .
+<http://example.org/legal/document/uu/1978/5/pasal/0002/version/19780803> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1978/5/pasal/0002/version/19780803> legal:pasalVersionHasVersionDate "1978-08-03"^^xsd:date .
+<http://example.org/legal/document/uu/1978/5/pasal/0002/version/19780803> legal:pasalVersionHasRawText "Wilayah Hukum Pengadilan Tinggi Jakar ta dikurangi dengan wilayah hukum semua Pengadilan Negeri dalam Propinsi Kalimantan Barat." .
+<http://example.org/legal/document/uu/1978/5/pasal/0002/version/19780803/text> legal:textHasTextString "Wilayah Hukum Pengadilan Tinggi Jakar ta dikurangi dengan wilayah hukum semua Pengadilan Negeri dalam Propinsi Kalimantan Barat." .
+<http://example.org/legal/document/uu/1978/5/pasal/0002/version/19780803> legal:pasalVersionHasText <http://example.org/legal/document/uu/1978/5/pasal/0002/version/19780803/text> .
+<http://example.org/legal/document/uu/1978/5/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1978/5/pasal/0003> .
+<http://example.org/legal/document/uu/1978/5/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/1978/5/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1978/5/pasal/0003/version/19780803> .
+<http://example.org/legal/document/uu/1978/5> legal:documentHasPasal <http://example.org/legal/document/uu/1978/5/pasal/0003> .
+<http://example.org/legal/document/uu/1978/5/pasal/0003/version/19780803> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1978/5/pasal/0003/version/19780803> legal:pasalVersionHasVersionDate "1978-08-03"^^xsd:date .
+<http://example.org/legal/document/uu/1978/5/pasal/0003/version/19780803> legal:pasalVersionHasRawText "Perkara - perkara yang berasal dari Pengadilan Negeri dalam Propinsi Kalimantan Barat, yang pada saat mulai berlakunya Undang - undang ini sudah terdaftar teta pi belum diputus oleh Pengadilan Tinggi Jakarta, diperiksa dan diputus oleh Pengadilan Tinggi Pontianak." .
+<http://example.org/legal/document/uu/1978/5/pasal/0003/version/19780803/text> legal:textHasTextString "Perkara - perkara yang berasal dari Pengadilan Negeri dalam Propinsi Kalimantan Barat, yang pada saat mulai berlakunya Undang - undang ini sudah terdaftar teta pi belum diputus oleh Pengadilan Tinggi Jakarta, diperiksa dan diputus oleh Pengadilan Tinggi Pontianak." .
+<http://example.org/legal/document/uu/1978/5/pasal/0003/version/19780803> legal:pasalVersionHasText <http://example.org/legal/document/uu/1978/5/pasal/0003/version/19780803/text> .
+<http://example.org/legal/document/uu/1978/5/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1978/5/pasal/0004> .
+<http://example.org/legal/document/uu/1978/5/pasal/0004> legal:pasalHasKey 4 .
+<http://example.org/legal/document/uu/1978/5/pasal/0004> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1978/5/pasal/0004/version/19780803> .
+<http://example.org/legal/document/uu/1978/5> legal:documentHasPasal <http://example.org/legal/document/uu/1978/5/pasal/0004> .
+<http://example.org/legal/document/uu/1978/5/pasal/0004/version/19780803> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1978/5/pasal/0004/version/19780803> legal:pasalVersionHasVersionDate "1978-08-03"^^xsd:date .
+<http://example.org/legal/document/uu/1978/5/pasal/0004/version/19780803> legal:pasalVersionHasRawText "Undang - undang ini mulai berlaku pada tanggal diundangkannya. PRESIDEN REPUBLIK INDONESIA - 4 - Agar supaya setiap orang m engetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1978/5/pasal/0004/version/19780803/text> legal:textHasTextString "Undang - undang ini mulai berlaku pada tanggal diundangkannya. PRESIDEN REPUBLIK INDONESIA - 4 - Agar supaya setiap orang m engetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1978/5/pasal/0004/version/19780803> legal:pasalVersionHasText <http://example.org/legal/document/uu/1978/5/pasal/0004/version/19780803/text> .
 <http://example.org/legal/document/uu/1978/5> legal:documentHasDisahkanDate "1978-08-03"^^xsd:date .
 <http://example.org/legal/document/uu/1978/5> legal:documentMengingat <http://example.org/legal/document/uu/1978/5/mengingat> .
 <http://example.org/legal/document/uu/1978/5/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1978/5/mengingat/point> .
@@ -43,6 +89,23 @@
 <http://example.org/legal/document/uu/1978/5> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/1978/5> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/1978/5> a legal:Document .
+<http://example.org/legal/document/uu/1978/5/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1978/5/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1978/5/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1978/5/pasal/0002/version/19780803> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1978/5/pasal/0002/version/19780803/text> a legal:Text .
+<http://example.org/legal/document/uu/1978/5/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/1978/5/pasal/0003/version/19780803> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1978/5/pasal/0003/version/19780803/text> a legal:Text .
+<http://example.org/legal/document/uu/1978/5/pasal/0004> a legal:Pasal .
+<http://example.org/legal/document/uu/1978/5/pasal/0004/version/19780803> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1978/5/pasal/0004/version/19780803/text> a legal:Text .
 <http://example.org/legal/document/uu/1978/5/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1978/5/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/1978/5/mengingat/point> a legal:PointSet .
@@ -63,7 +126,23 @@
 <http://example.org/legal/document/uu/1978/5/menimbang/point/a/text> a legal:Text .
 <http://example.org/legal/document/uu/1978/5/menimbang/point/b> a legal:Point .
 <http://example.org/legal/document/uu/1978/5/menimbang/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/1978/5/bab> legal:partOf <http://example.org/legal/document/uu/1978/5> .
+<http://example.org/legal/document/uu/1978/5/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1978/5/pasals> .
+<http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803> legal:partOf <http://example.org/legal/document/uu/1978/5/pasal/0001> .
+<http://example.org/legal/document/uu/1978/5/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1978/5> .
+<http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803/ayat> legal:partOf <http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803> .
+<http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803/ayat> .
+<http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803/ayat/0001> .
+<http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803/ayat> .
+<http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1978/5/pasal/0001/version/19780803/ayat/0002> .
+<http://example.org/legal/document/uu/1978/5/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1978/5/pasals> .
+<http://example.org/legal/document/uu/1978/5/pasal/0002/version/19780803> legal:partOf <http://example.org/legal/document/uu/1978/5/pasal/0002> .
+<http://example.org/legal/document/uu/1978/5/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1978/5> .
+<http://example.org/legal/document/uu/1978/5/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1978/5/pasals> .
+<http://example.org/legal/document/uu/1978/5/pasal/0003/version/19780803> legal:partOf <http://example.org/legal/document/uu/1978/5/pasal/0003> .
+<http://example.org/legal/document/uu/1978/5/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1978/5> .
+<http://example.org/legal/document/uu/1978/5/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1978/5/pasals> .
+<http://example.org/legal/document/uu/1978/5/pasal/0004/version/19780803> legal:partOf <http://example.org/legal/document/uu/1978/5/pasal/0004> .
+<http://example.org/legal/document/uu/1978/5/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1978/5> .
 <http://example.org/legal/document/uu/1978/5/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1978/5/mengingat/point> .
 <http://example.org/legal/document/uu/1978/5/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1978/5/mengingat/point> .
 <http://example.org/legal/document/uu/1978/5/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/1978/5/mengingat/point> .

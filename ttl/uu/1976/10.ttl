@@ -1,7 +1,25 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1976/10> legal:documentHasBabSet <http://example.org/legal/document/uu/1976/10/bab> .
+<http://example.org/legal/document/uu/1976/10> legal:documentHasPasalSet <http://example.org/legal/document/uu/1976/10/pasals> .
+<http://example.org/legal/document/uu/1976/10/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1976/10/pasal/0001> .
+<http://example.org/legal/document/uu/1976/10/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1976/10/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1976/10/pasal/0001/version/19760726> .
+<http://example.org/legal/document/uu/1976/10> legal:documentHasPasal <http://example.org/legal/document/uu/1976/10/pasal/0001> .
+<http://example.org/legal/document/uu/1976/10/pasal/0001/version/19760726> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1976/10/pasal/0001/version/19760726> legal:pasalVersionHasVersionDate "1976-07-26"^^xsd:date .
+<http://example.org/legal/document/uu/1976/10/pasal/0001/version/19760726> legal:pasalVersionHasRawText "Mengesahkan Perjanjian Ekstradisi antara Republik Indonesia dan Republik Philippina serta Protokol tertanggal 10 Pebruari 1976, yang salinan naskahnya dilampirkan pada undang - undang ini." .
+<http://example.org/legal/document/uu/1976/10/pasal/0001/version/19760726/text> legal:textHasTextString "Mengesahkan Perjanjian Ekstradisi antara Republik Indonesia dan Republik Philippina serta Protokol tertanggal 10 Pebruari 1976, yang salinan naskahnya dilampirkan pada undang - undang ini." .
+<http://example.org/legal/document/uu/1976/10/pasal/0001/version/19760726> legal:pasalVersionHasText <http://example.org/legal/document/uu/1976/10/pasal/0001/version/19760726/text> .
+<http://example.org/legal/document/uu/1976/10/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1976/10/pasal/0002> .
+<http://example.org/legal/document/uu/1976/10/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1976/10/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1976/10/pasal/0002/version/19760726> .
+<http://example.org/legal/document/uu/1976/10> legal:documentHasPasal <http://example.org/legal/document/uu/1976/10/pasal/0002> .
+<http://example.org/legal/document/uu/1976/10/pasal/0002/version/19760726> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1976/10/pasal/0002/version/19760726> legal:pasalVersionHasVersionDate "1976-07-26"^^xsd:date .
+<http://example.org/legal/document/uu/1976/10/pasal/0002/version/19760726> legal:pasalVersionHasRawText "Undang - undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA - 2 - Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1976/10/pasal/0002/version/19760726/text> legal:textHasTextString "Undang - undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA - 2 - Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1976/10/pasal/0002/version/19760726> legal:pasalVersionHasText <http://example.org/legal/document/uu/1976/10/pasal/0002/version/19760726/text> .
 <http://example.org/legal/document/uu/1976/10> legal:documentHasDisahkanDate "1976-07-26"^^xsd:date .
 <http://example.org/legal/document/uu/1976/10> legal:documentMengingat <http://example.org/legal/document/uu/1976/10/mengingat> .
 <http://example.org/legal/document/uu/1976/10/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1976/10/mengingat/point> .
@@ -35,6 +53,13 @@
 <http://example.org/legal/document/uu/1976/10> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/1976/10> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/1976/10> a legal:Document .
+<http://example.org/legal/document/uu/1976/10/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1976/10/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1976/10/pasal/0001/version/19760726> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1976/10/pasal/0001/version/19760726/text> a legal:Text .
+<http://example.org/legal/document/uu/1976/10/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1976/10/pasal/0002/version/19760726> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1976/10/pasal/0002/version/19760726/text> a legal:Text .
 <http://example.org/legal/document/uu/1976/10/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1976/10/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/1976/10/mengingat/point> a legal:PointSet .
@@ -51,7 +76,12 @@
 <http://example.org/legal/document/uu/1976/10/menimbang/point/b/text> a legal:Text .
 <http://example.org/legal/document/uu/1976/10/menimbang/point/c> a legal:Point .
 <http://example.org/legal/document/uu/1976/10/menimbang/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/1976/10/bab> legal:partOf <http://example.org/legal/document/uu/1976/10> .
+<http://example.org/legal/document/uu/1976/10/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1976/10/pasals> .
+<http://example.org/legal/document/uu/1976/10/pasal/0001/version/19760726> legal:partOf <http://example.org/legal/document/uu/1976/10/pasal/0001> .
+<http://example.org/legal/document/uu/1976/10/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1976/10> .
+<http://example.org/legal/document/uu/1976/10/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1976/10/pasals> .
+<http://example.org/legal/document/uu/1976/10/pasal/0002/version/19760726> legal:partOf <http://example.org/legal/document/uu/1976/10/pasal/0002> .
+<http://example.org/legal/document/uu/1976/10/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1976/10> .
 <http://example.org/legal/document/uu/1976/10/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1976/10/mengingat/point> .
 <http://example.org/legal/document/uu/1976/10/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1976/10/mengingat/point> .
 <http://example.org/legal/document/uu/1976/10/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1976/10/menimbang/point> .

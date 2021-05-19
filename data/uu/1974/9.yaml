@@ -84,18 +84,70 @@ opText: |-
   Menetapkan
   UNDANG-UNDANG TENTANG PENGESAHAN PERJANJIAN ANTARA PEMERINTAH
   REPUBLIK INDONESIA DAN PEMERINTAH MALAYSIA MENGENAI EKSTRADISI.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_5
+          nodeType: pasalVersion
+          version: &ref_6
+            nodeType: date
+            month: 12
+            date: 26
+            year: 1974
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_5
+          textString: >-
+            Mensahkan Perjanjian antara Pemerintah Republik Indonesia dan Pemerintah Malaysia
+            mengenai Ekstradisi tertanggal 7 Juni 1974, yang naskahnya dilampirkan pada
+            Undang-undang ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_7
+          nodeType: pasalVersion
+          version: *ref_6
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_7
+          textString: >-
+            Undang-undang ini mulai berlaku pada tanggal diundangkannya. Agar supaya setiap orang
+            dapat mengetahuinya memerintahkan peng undangan Undang-undang ini dengan penempatannya
+            dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 12
-    date: 26
-    year: 1974
+  date: *ref_6
   location: Jakarta,
   pengesah: SOEHARTO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

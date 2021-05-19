@@ -136,18 +136,146 @@ opText: |-
   MEMUTUSKAN :
   Menetapkan : UNDANG-UNDANG TENTANG PERHITUNGAN ANGGARAN NEGARA TAHUN
   ANGGARAN 1988/1989.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_8
+          nodeType: pasalVersion
+          version: &ref_15
+            nodeType: date
+            month: 7
+            date: 18
+            year: 1991
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_9
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_8
+          elements:
+            - type: ayat
+              node: &ref_10
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_9
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_10
+                textString: >-
+                  Pendapatan Negara dalam Tahun Anggaran 1988/1989 adalah sebesar Rp
+                  33.538.094.529.958,36 (tiga puluh tiga trilyun lima ratus tiga puluh delapan
+                  milyar sembilan puluh empat juta lima ratus dua puluh sembilan ribu sembilan ratus
+                  lima puluh delapan tiga puluh enam perseratus rupiah).
+                references: []
+            - type: ayat
+              node: &ref_11
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_9
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_11
+                textString: >-
+                  Belanja Negara dalam Tahun Anggaran 1988/1989 adalah sebesar Rp
+                  33.252.043.567.785,52 (tiga puluh tiga trilyun dua ratus lima puluh dua milyar
+                  empat puluh tiga juta lima ratus enam puluh tujuh ribu tujuh ratus delapan puluh
+                  lima lima puluh dua perseratus rupiah).
+                references: []
+            - type: ayat
+              node: &ref_12
+                nodeType: ayat
+                key: 3
+                parentAyatSetNode: *ref_9
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_12
+                textString: >-
+                  Sisa-anggaran-lebih Perhitungan Anggaran Tahun Anggaran 1988/ 1989 adalah sebesar
+                  Rp 286.050. 962.172,84 (dua ratus delapan puluh enam milyar lima puluh juta
+                  sembilan ratus enam puluh dua ribu seratus tujuh puluh dua delapan puluh empat
+                  perseratus rupiah).
+                references: []
+            - type: ayat
+              node: &ref_13
+                nodeType: ayat
+                key: 4
+                parentAyatSetNode: *ref_9
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_13
+                textString: >-
+                  Perincian pendapatan, belanja, dan sisa-anggaran-lebih sebagaimana dimaksud dalam
+                  ayat (1) sampai dengan ayat (3), adalah seperti tersebut pada Lampiran
+                  Undang-undang ini. PRESIDEN REPUBLIK INDONESIA - 3 -
+                references:
+                  - start: 105
+                    end: 113
+                    node:
+                      key: 3
+                      parentAyatSetNode: &ref_14
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_8
+                      nodeType: ayat
+                  - start: 82
+                    end: 90
+                    node:
+                      key: 1
+                      parentAyatSetNode: *ref_14
+                      nodeType: ayat
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_16
+          nodeType: pasalVersion
+          version: *ref_15
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_16
+          textString: >-
+            Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang
+            mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 7
-    date: 18
-    year: 1991
+  date: *ref_15
   location: Jakarta
   pengesah: SOEHARTO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA

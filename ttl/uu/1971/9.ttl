@@ -1,7 +1,34 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1971/9> legal:documentHasBabSet <http://example.org/legal/document/uu/1971/9/bab> .
+<http://example.org/legal/document/uu/1971/9> legal:documentHasPasalSet <http://example.org/legal/document/uu/1971/9/pasals> .
+<http://example.org/legal/document/uu/1971/9/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1971/9/pasal/0001> .
+<http://example.org/legal/document/uu/1971/9/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1971/9/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1971/9/pasal/0001/version/19710918> .
+<http://example.org/legal/document/uu/1971/9> legal:documentHasPasal <http://example.org/legal/document/uu/1971/9/pasal/0001> .
+<http://example.org/legal/document/uu/1971/9/pasal/0001/version/19710918> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1971/9/pasal/0001/version/19710918> legal:pasalVersionHasVersionDate "1971-09-18"^^xsd:date .
+<http://example.org/legal/document/uu/1971/9/pasal/0001/version/19710918> legal:pasalVersionHasRawText "Perjanjian Persahabatan antara Republik Indonesia dan Kerajaan Saudi Arabia tertanggal 24 Nopember 1970, yang salinannya dilampirkan pada Undang-undang ini, dengan ini, disetujui." .
+<http://example.org/legal/document/uu/1971/9/pasal/0001/version/19710918/text> legal:textHasTextString "Perjanjian Persahabatan antara Republik Indonesia dan Kerajaan Saudi Arabia tertanggal 24 Nopember 1970, yang salinannya dilampirkan pada Undang-undang ini, dengan ini, disetujui." .
+<http://example.org/legal/document/uu/1971/9/pasal/0001/version/19710918> legal:pasalVersionHasText <http://example.org/legal/document/uu/1971/9/pasal/0001/version/19710918/text> .
+<http://example.org/legal/document/uu/1971/9/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1971/9/pasal/0002> .
+<http://example.org/legal/document/uu/1971/9/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1971/9/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1971/9/pasal/0002/version/19710918> .
+<http://example.org/legal/document/uu/1971/9> legal:documentHasPasal <http://example.org/legal/document/uu/1971/9/pasal/0002> .
+<http://example.org/legal/document/uu/1971/9/pasal/0002/version/19710918> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1971/9/pasal/0002/version/19710918> legal:pasalVersionHasVersionDate "1971-09-18"^^xsd:date .
+<http://example.org/legal/document/uu/1971/9/pasal/0002/version/19710918> legal:pasalVersionHasRawText "Perjanjian tersebut di atas mulai berlaku pada tanggal pertukaran Piagam Pengesahan yang akan dilakukan di Jakarta." .
+<http://example.org/legal/document/uu/1971/9/pasal/0002/version/19710918/text> legal:textHasTextString "Perjanjian tersebut di atas mulai berlaku pada tanggal pertukaran Piagam Pengesahan yang akan dilakukan di Jakarta." .
+<http://example.org/legal/document/uu/1971/9/pasal/0002/version/19710918> legal:pasalVersionHasText <http://example.org/legal/document/uu/1971/9/pasal/0002/version/19710918/text> .
+<http://example.org/legal/document/uu/1971/9/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1971/9/pasal/0003> .
+<http://example.org/legal/document/uu/1971/9/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/1971/9/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1971/9/pasal/0003/version/19710918> .
+<http://example.org/legal/document/uu/1971/9> legal:documentHasPasal <http://example.org/legal/document/uu/1971/9/pasal/0003> .
+<http://example.org/legal/document/uu/1971/9/pasal/0003/version/19710918> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1971/9/pasal/0003/version/19710918> legal:pasalVersionHasVersionDate "1971-09-18"^^xsd:date .
+<http://example.org/legal/document/uu/1971/9/pasal/0003/version/19710918> legal:pasalVersionHasRawText "Undang-undang ini mulai berlaku pada hari tanggal diundangkan. Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran-Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1971/9/pasal/0003/version/19710918/text> legal:textHasTextString "Undang-undang ini mulai berlaku pada hari tanggal diundangkan. Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran-Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1971/9/pasal/0003/version/19710918> legal:pasalVersionHasText <http://example.org/legal/document/uu/1971/9/pasal/0003/version/19710918/text> .
 <http://example.org/legal/document/uu/1971/9> legal:documentHasDisahkanDate "1971-09-18"^^xsd:date .
 <http://example.org/legal/document/uu/1971/9> legal:documentMengingat <http://example.org/legal/document/uu/1971/9/mengingat> .
 <http://example.org/legal/document/uu/1971/9/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1971/9/mengingat/point> .
@@ -31,6 +58,16 @@
 <http://example.org/legal/document/uu/1971/9> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/1971/9> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/1971/9> a legal:Document .
+<http://example.org/legal/document/uu/1971/9/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1971/9/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1971/9/pasal/0001/version/19710918> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1971/9/pasal/0001/version/19710918/text> a legal:Text .
+<http://example.org/legal/document/uu/1971/9/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1971/9/pasal/0002/version/19710918> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1971/9/pasal/0002/version/19710918/text> a legal:Text .
+<http://example.org/legal/document/uu/1971/9/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/1971/9/pasal/0003/version/19710918> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1971/9/pasal/0003/version/19710918/text> a legal:Text .
 <http://example.org/legal/document/uu/1971/9/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1971/9/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/1971/9/mengingat/point> a legal:PointSet .
@@ -45,7 +82,15 @@
 <http://example.org/legal/document/uu/1971/9/menimbang/point/a/text> a legal:Text .
 <http://example.org/legal/document/uu/1971/9/menimbang/point/b> a legal:Point .
 <http://example.org/legal/document/uu/1971/9/menimbang/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/1971/9/bab> legal:partOf <http://example.org/legal/document/uu/1971/9> .
+<http://example.org/legal/document/uu/1971/9/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1971/9/pasals> .
+<http://example.org/legal/document/uu/1971/9/pasal/0001/version/19710918> legal:partOf <http://example.org/legal/document/uu/1971/9/pasal/0001> .
+<http://example.org/legal/document/uu/1971/9/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1971/9> .
+<http://example.org/legal/document/uu/1971/9/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1971/9/pasals> .
+<http://example.org/legal/document/uu/1971/9/pasal/0002/version/19710918> legal:partOf <http://example.org/legal/document/uu/1971/9/pasal/0002> .
+<http://example.org/legal/document/uu/1971/9/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1971/9> .
+<http://example.org/legal/document/uu/1971/9/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1971/9/pasals> .
+<http://example.org/legal/document/uu/1971/9/pasal/0003/version/19710918> legal:partOf <http://example.org/legal/document/uu/1971/9/pasal/0003> .
+<http://example.org/legal/document/uu/1971/9/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1971/9> .
 <http://example.org/legal/document/uu/1971/9/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1971/9/mengingat/point> .
 <http://example.org/legal/document/uu/1971/9/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1971/9/mengingat/point> .
 <http://example.org/legal/document/uu/1971/9/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1971/9/menimbang/point> .

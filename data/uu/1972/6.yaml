@@ -114,18 +114,115 @@ opText: |-
   PRESIDEN
   REPUBLIK INDONESIA
   - 2 -
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_7
+          nodeType: pasalVersion
+          version: &ref_12
+            nodeType: date
+            month: 12
+            date: 13
+            year: 1972
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_8
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_7
+          elements:
+            - type: ayat
+              node: &ref_9
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_8
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_9
+                textString: >-
+                  . Penerimaan Negara dalam Peralihan Triwulan I Tahun 1969 adalah sebesar Rp.
+                  58.708.557.988,89 (lima puluh dela pan milyar tujuh ratus delapan juta lima ratus
+                  lima puluh tujuh ribu sembilan ratus delapan puluh delapan delapan puluh sembilan
+                  perseratus rupiah);
+                references: []
+            - type: ayat
+              node: &ref_10
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_8
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_10
+                textString: >-
+                  . Pengeluaran Negara dalam Peralihan Triwulan I Tahun 1969 adalah sebesar Rp.
+                  61.138.043.188,62 (enam p uluh satu milyar seratus tiga puluh delapan juta empat
+                  puluh tiga ribu seratus delapan puluh delapan enam puluh dua perseratus rupiah);
+                references: []
+            - type: ayat
+              node: &ref_11
+                nodeType: ayat
+                key: 3
+                parentAyatSetNode: *ref_8
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_11
+                textString: >-
+                  . Sisa kurang Perhitungan Anggar an Peralihan Triwulan I Tahun 1969 adalah sebesar
+                  Rp. 2.429.485.199,73 (dua milyar empat ratus dua puluh sembilan juta empat ratus
+                  delapan puluh lima ribu seratus sembilan puluh sembilan tujuh puluh tiga
+                  perseratus rupiah).
+                references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_13
+          nodeType: pasalVersion
+          version: *ref_12
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_13
+          textString: >-
+            Undang - undang ini mula i berlaku pada hari diundangkan. Agar setiap orang
+            mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatan dalam
+            Lembaran Negara Republik Indonesia. PRESIDEN REPUBLIK INDONESIA - 3 -
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 12
-    date: 13
-    year: 1972
+  date: *ref_12
   location: Jakarta
   pengesah: JENDERAL TNI
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

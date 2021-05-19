@@ -140,18 +140,115 @@ opText: |-
   PRESIDEN
   REPUBLIK INDONESIA
   - 2 -
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_8
+          nodeType: pasalVersion
+          version: &ref_13
+            nodeType: date
+            month: 7
+            date: 5
+            year: 1980
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_9
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_8
+          elements:
+            - type: ayat
+              node: &ref_10
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_9
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_10
+                textString: >-
+                  Penerimaan Negara dalam Tahun Anggaran 1970/1971 adalah sebesar
+                  Rp.437.922.686.348,01 (empat ratus tiga puluh tujuh milyar sembilan ratus dua
+                  puluh dua juta en am ratus delapan puluh enam ribu tiga ratus empat puluh delapan
+                  satu perseratus rupiah).
+                references: []
+            - type: ayat
+              node: &ref_11
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_9
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_11
+                textString: >-
+                  Pengeluaran Negara dalam Ta hun Anggaran 1970/1971 adalah sebesar
+                  Rp.421.053.648.700,70 (empat ratus dua puluh satu milyar lima puluh tiga juta enam
+                  ratus empat puluh delapan ribu tujuh ratus tujuh puluh perseratus rupiah).
+                references: []
+            - type: ayat
+              node: &ref_12
+                nodeType: ayat
+                key: 3
+                parentAyatSetNode: *ref_9
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_12
+                textString: >-
+                  Sisa lebih Perhitungan Anggaran Negar a Tahun 1970/1971 adalah sebesar
+                  Rp.16.869.037.647,31 (enam belas milyar delapan ratus enam puluh sembilan juta
+                  tiga puluh tujuh ribu enam ratus empat puluh tujuh tiga puluh satu perseratus
+                  rupiah).
+                references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_14
+          nodeType: pasalVersion
+          version: *ref_13
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_14
+          textString: >-
+            Undang - undang ini mulai berlaku pada tanggal di undangkan. Agar supaya setiap orang
+            mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 7
-    date: 5
-    year: 1980
+  date: *ref_13
   location: Jakarta
   pengesah: SOEHARTO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

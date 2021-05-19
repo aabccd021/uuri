@@ -88,18 +88,94 @@ opText: |-
   Menetapkan : UNDANG - UNDANG TENTANG PERSETUJUAN PERJANJIAN
   PERSAHABATAN ANTARA NEGARA REPUBLIK INDONESIA
   DAN KERAJAAN IRAK.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_6
+          nodeType: pasalVersion
+          version: &ref_7
+            nodeType: date
+            month: 8
+            date: 14
+            year: 1957
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_6
+          textString: >-
+            Perjanjian Persahabatan antara Negara Republik Indonesia dan Kerajaan Irak tertanggal 30
+            April 1956, yang salinannya dilampirkan pada undang - undang ini dengan ini disetujui.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_8
+          nodeType: pasalVersion
+          version: *ref_7
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_8
+          textString: >-
+            Perjanjian tersebut di atas mulai berlaku pada tanggal pertukaran surat - surat
+            pengesahan di Baghdad.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 3
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_9
+          nodeType: pasalVersion
+          version: *ref_7
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '3'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_9
+          textString: >-
+            Undang - undang ini mulai berlaku pada hari diundangkan. Agar setiap orang dapat
+            mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatan dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 8
-    date: 14
-    year: 1957
+  date: *ref_7
   location: Jakarta
   pengesah: SUKARNO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

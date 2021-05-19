@@ -135,18 +135,146 @@ opText: |-
   MEMUTUSKAN :
   Menetapkan : UNDANG-UNDANG TENTANG PERHITUNGAN ANGGARAN NEGARA
   TAHUN ANGGARAN 1983/1984.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_8
+          nodeType: pasalVersion
+          version: &ref_15
+            nodeType: date
+            month: 7
+            date: 25
+            year: 1987
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_9
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_8
+          elements:
+            - type: ayat
+              node: &ref_10
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_9
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_10
+                textString: >-
+                  Penerimaan Negara dalam Tahun Anggaran 1983/1984 adalah sebesar Rp
+                  18.909.833.307.411,93 (delapan belas trilyun sembilan ratus sembilan milyar
+                  delapan ratus tiga puluh tiga juta tiga ratus tujuh ribu empat ratus sebelas
+                  sembilan puluh tiga perseratus rupiah).
+                references: []
+            - type: ayat
+              node: &ref_11
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_9
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_11
+                textString: >-
+                  Pengeluaran Negara dalam Tahun Anggaran 1983/1984 adalah sebesar Rp
+                  18.772.230.424.373,42 (delapan belas trilyun tujuh ratus tujuh puluh dua milyar
+                  dua ratus tiga puluh juta empat ratus dua puluh empat ribu tiga ratus tujuh puluh
+                  tiga empat puluh dua perseratus rupiah).
+                references: []
+            - type: ayat
+              node: &ref_12
+                nodeType: ayat
+                key: 3
+                parentAyatSetNode: *ref_9
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_12
+                textString: >-
+                  Saldo-anggaran-lebih Perhitungan Anggaran Tahun Anggaran 1983/1984 adalah sebesar
+                  Rp 137.602.883.038,51 (seratus tiga puluh tujuh milyar enam ratus dua juta delapan
+                  ratus delapan puluh tiga ribu tiga puluh delapan lima puluh satu perseratus
+                  rupiah). PRESIDEN REPUBLIK INDONESIA - 2 -
+                references: []
+            - type: ayat
+              node: &ref_13
+                nodeType: ayat
+                key: 4
+                parentAyatSetNode: *ref_9
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_13
+                textString: >-
+                  Perincian penerimaan, pengeluaran, dan saldo-anggaran-lebih sebagaimamana dimaksud
+                  dalam ayat (1) sampai dengan ayat (3), adalah seperti tersebut pada Lampiran
+                  Undang- undang ini.
+                references:
+                  - start: 112
+                    end: 120
+                    node:
+                      key: 3
+                      parentAyatSetNode: &ref_14
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_8
+                      nodeType: ayat
+                  - start: 89
+                    end: 97
+                    node:
+                      key: 1
+                      parentAyatSetNode: *ref_14
+                      nodeType: ayat
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_16
+          nodeType: pasalVersion
+          version: *ref_15
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_16
+          textString: >-
+            Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang
+            mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 7
-    date: 25
-    year: 1987
+  date: *ref_15
   location: Jakarta
   pengesah: SOEHARTO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA

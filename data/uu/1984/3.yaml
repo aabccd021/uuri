@@ -196,18 +196,390 @@ opText: |-
   Menetapkan : UNDANG-UNDANG TENTANG TAMBAHAN DAN PERUBAHAN ATAS
   ANGGARAN PENDAPATAN DAN BELANJA NEGARA TAHUN
   ANGGARAN 1983/1984.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_11
+          nodeType: pasalVersion
+          version: &ref_18
+            nodeType: date
+            month: 6
+            date: 5
+            year: 1984
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_12
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_11
+          elements:
+            - type: ayat
+              node: &ref_13
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_12
+              content:
+                type: pointSet
+                node: &ref_14
+                  nodeType: pointSet
+                  parentNode: *ref_13
+                description:
+                  type: text
+                  node:
+                    nodeType: text
+                    textName: description
+                    parentNode: *ref_14
+                  textString: >-
+                    Anggaran Pendapatan Negara Tahun Anggaran 1983/1984 diperkirakan bertambah
+                    dengan Rp 1.749.699.000.000,00 (satu trilyun tujuh ratus empat puluh sembilan
+                    milyar enam ratus sembilan puluh sembilan juta rupiah) yang terdiri dari:
+                  references: []
+                elements:
+                  - type: point
+                    node: &ref_15
+                      nodeType: point
+                      key: a
+                      parentPointSetNode: *ref_14
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_15
+                      textString: >-
+                        Pendapatan Rutin bertambah dengan Rp 609.059.000.000,00 (enam ratus sembilan
+                        milyar lima puluh sembilan juta rupiah);
+                      references: []
+                  - type: point
+                    node: &ref_16
+                      nodeType: point
+                      key: b
+                      parentPointSetNode: *ref_14
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_16
+                      textString: >-
+                        Pendapatan Pembangunan bertambah dengan Rp 1.140.640.000.000,00 (satu
+                        trilyun seratus empat puluh milyar enam ratus empat puluh juta rupiah).
+                      references: []
+            - type: ayat
+              node: &ref_17
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_12
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_17
+                textString: >-
+                  Perincian pendapatan tambahan dan perubahan sebagaimana dimaksud dalam ayat (1)
+                  huruf a dan huruf b Pasal ini masing-masing dimuat dalam Lampiran I dan Lampiran
+                  II Undang-Undang ini.
+                references:
+                  - start: 71
+                    end: 79
+                    node:
+                      key: 1
+                      parentAyatSetNode:
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_11
+                      nodeType: ayat
+                  - start: 92
+                    end: 93
+                    node:
+                      key: b
+                      parentPointSetNode:
+                        nodeType: pointSet
+                        parentNode:
+                          nodeType: ayat
+                          key: 1
+                          parentAyatSetNode:
+                            nodeType: ayatSet
+                            parentPasalVersionNode: *ref_11
+                      nodeType: point
+                  - start: 80
+                    end: 87
+                    node:
+                      key: a
+                      parentPointSetNode:
+                        nodeType: pointSet
+                        parentNode: *ref_11
+                      nodeType: point
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_19
+          nodeType: pasalVersion
+          version: *ref_18
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_20
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_19
+          elements:
+            - type: ayat
+              node: &ref_21
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_20
+              content:
+                type: pointSet
+                node: &ref_22
+                  nodeType: pointSet
+                  parentNode: *ref_21
+                description:
+                  type: text
+                  node:
+                    nodeType: text
+                    textName: description
+                    parentNode: *ref_22
+                  textString: >-
+                    Anggaran Belanja Negara Tahun Anggaran 1983/1984 diperkirakan bertambah dengan
+                    Rp
+                  references: []
+                elements:
+                  - type: point
+                    node: &ref_23
+                      nodeType: point
+                      key: '1'
+                      parentPointSetNode: *ref_22
+                    content:
+                      type: pointSet
+                      node: &ref_24
+                        nodeType: pointSet
+                        parentNode: *ref_23
+                      description:
+                        type: text
+                        node:
+                          nodeType: text
+                          textName: description
+                          parentNode: *ref_24
+                        textString: >-
+                          745.625.000.000,00 (satu trilyun tujuh ratus empat puluh lima milyar enam
+                          ratus dua puluh lima juta rupiah) yang terdiri dari :
+                        references: []
+                      elements:
+                        - type: point
+                          node: &ref_25
+                            nodeType: point
+                            key: a
+                            parentPointSetNode: *ref_24
+                          content:
+                            type: text
+                            node:
+                              nodeType: text
+                              textName: text
+                              parentNode: *ref_25
+                            textString: >-
+                              Belanja Rutin bertambah dengan Rp 1.136.702.000.000,00 (satu trilyun
+                              seratus tiga puluh enam milyar tujuh ratus dua juta rupiah);
+                            references: []
+                        - type: point
+                          node: &ref_26
+                            nodeType: point
+                            key: b
+                            parentPointSetNode: *ref_24
+                          content:
+                            type: text
+                            node:
+                              nodeType: text
+                              textName: text
+                              parentNode: *ref_26
+                            textString: >-
+                              Belanja Pembangunan bertambah dengan Rp 608.923.000.000,00 (enam ratus
+                              delapan milyar sembilan ratus dua puluh tiga juta rupiah).
+                            references: []
+            - type: ayat
+              node: &ref_27
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_20
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_27
+                textString: >-
+                  Perincian pengeluaran tambahan dan perubahan sebagaimana dimaksud dalam ayat (1)
+                  huruf a dan huruf b Pasal ini masing-masing dimuat dalam Lampiran III dan Lampiran
+                  IV Undang-Undang ini.
+                references:
+                  - start: 72
+                    end: 80
+                    node:
+                      key: 1
+                      parentAyatSetNode:
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_19
+                      nodeType: ayat
+                  - start: 93
+                    end: 94
+                    node:
+                      key: b
+                      parentPointSetNode:
+                        nodeType: pointSet
+                        parentNode:
+                          nodeType: ayat
+                          key: 1
+                          parentAyatSetNode:
+                            nodeType: ayatSet
+                            parentPasalVersionNode: *ref_19
+                      nodeType: point
+                  - start: 81
+                    end: 88
+                    node:
+                      key: a
+                      parentPointSetNode:
+                        nodeType: pointSet
+                        parentNode: *ref_19
+                      nodeType: point
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 3
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_28
+          nodeType: pasalVersion
+          version: *ref_18
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '3'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_29
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_28
+          elements:
+            - type: ayat
+              node: &ref_30
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_29
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_30
+                textString: >-
+                  Kredit anggaran proyek-proyek pada Anggaran Pembangunan Tahun Anggaran 1983/1984
+                  yang telah disahkan dalam Undang-Undang Nomor 2 Tahun 1983 tentang Anggaran
+                  Pendapatan dan Belanja Negara Tahun Anggaran 1983/1984 yang pada akhir Tahun
+                  Anggaran 1983/1984 menunjukkan sisa, dengan Peraturan Pemerintah dipindahkan ke
+                  Tahun Anggaran 1984/1985 dengan menambahkannya kepada kredit anggaran Tahun
+                  Anggaran 1984/1985.
+                references:
+                  - start: 107
+                    end: 139
+                    node:
+                      nodeType: document
+                      docType: noTahun
+                      docCategory: uu
+                      nomor: 2
+                      tahun: 1983
+            - type: ayat
+              node: &ref_31
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_29
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_31
+                textString: >-
+                  Saldo-anggaran-lebih Tahun Anggaran 1983/1984 ditambahkan kepada anggaran Tahun
+                  Anggaran 1984/1985 dan dipergunakan untuk membiayai Anggaran Pembangunan Tahun
+                  Anggaran 1984/1985.
+                references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 4
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_32
+          nodeType: pasalVersion
+          version: *ref_18
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '4'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_32
+          textString: >-
+            Ketentuan-ketentuan dalam Indische Comptabiliteitswet (Undang-Undang Perbendaharaan)
+            yang bertentangan dengan bentuk, susunan dan isi Undang-Undang ini dinyatakan tidak
+            berlaku.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 5
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_33
+          nodeType: pasalVersion
+          version: *ref_18
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '5'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_33
+          textString: >-
+            Undang-undang ini mulai berlaku pada tanggal diundangkan dan mempunyai daya laku surut
+            sejak tanggal 1 April 1983. Agar setiap orang mengetahuinya, memerintahkan pengundangan
+            Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 6
-    date: 5
-    year: 1984
+  date: *ref_18
   location: Jakarta
   pengesah: SOEHARTO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA

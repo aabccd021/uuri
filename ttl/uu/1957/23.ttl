@@ -1,7 +1,106 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1957/23> legal:documentHasBabSet <http://example.org/legal/document/uu/1957/23/bab> .
+<http://example.org/legal/document/uu/1957/23> legal:documentHasPasalSet <http://example.org/legal/document/uu/1957/23/pasals> .
+<http://example.org/legal/document/uu/1957/23/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1957/23/pasal/0001> .
+<http://example.org/legal/document/uu/1957/23/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1957/23/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1957/23/pasal/0001/version/19570325> .
+<http://example.org/legal/document/uu/1957/23> legal:documentHasPasal <http://example.org/legal/document/uu/1957/23/pasal/0001> .
+<http://example.org/legal/document/uu/1957/23/pasal/0001/version/19570325> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1957/23/pasal/0001/version/19570325> legal:pasalVersionHasVersionDate "1957-03-25"^^xsd:date .
+<http://example.org/legal/document/uu/1957/23/pasal/0001/version/19570325> legal:pasalVersionHasRawText "Bagian Pembikinan Sera dan Vaksin daripada Lembaga Pasteur di Bandung ditunjuk menjadi Perusahaan Negara dalam arti Pasal 2 \"Indische Bedrijvenwet\"." .
+<http://example.org/legal/document/uu/1957/23/pasal/0001/version/19570325/text> legal:textHasTextString "Bagian Pembikinan Sera dan Vaksin daripada Lembaga Pasteur di Bandung ditunjuk menjadi Perusahaan Negara dalam arti Pasal 2 \"Indische Bedrijvenwet\"." .
+<http://example.org/legal/document/uu/1957/23/pasal/0001/version/19570325> legal:pasalVersionHasText <http://example.org/legal/document/uu/1957/23/pasal/0001/version/19570325/text> .
+<http://example.org/legal/document/uu/1957/23/pasal/0001/version/19570325/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1957/23/pasal/0002> .
+<http://example.org/legal/document/uu/1957/23/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1957/23/pasal/0002> .
+<http://example.org/legal/document/uu/1957/23/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1957/23/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1957/23/pasal/0002/version/19570325> .
+<http://example.org/legal/document/uu/1957/23> legal:documentHasPasal <http://example.org/legal/document/uu/1957/23/pasal/0002> .
+<http://example.org/legal/document/uu/1957/23/pasal/0002/version/19570325> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1957/23/pasal/0002/version/19570325> legal:pasalVersionHasVersionDate "1957-03-25"^^xsd:date .
+<http://example.org/legal/document/uu/1957/23/pasal/0002/version/19570325> legal:pasalVersionHasRawText "Neraca pe mbukaan pada 1 Januari 1955 dari Bagian Pembikinan Sera dan Vaksin daripada Lembaga Pasteur di Bandung ditetapkan sesuai dengan daftar yang dilekatkan pada Undang - undang Darurat ini. PRESIDEN REPUBLIK INDONESIA - 3 -" .
+<http://example.org/legal/document/uu/1957/23/pasal/0002/version/19570325/text> legal:textHasTextString "Neraca pe mbukaan pada 1 Januari 1955 dari Bagian Pembikinan Sera dan Vaksin daripada Lembaga Pasteur di Bandung ditetapkan sesuai dengan daftar yang dilekatkan pada Undang - undang Darurat ini. PRESIDEN REPUBLIK INDONESIA - 3 -" .
+<http://example.org/legal/document/uu/1957/23/pasal/0002/version/19570325> legal:pasalVersionHasText <http://example.org/legal/document/uu/1957/23/pasal/0002/version/19570325/text> .
+<http://example.org/legal/document/uu/1957/23/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1957/23/pasal/0003> .
+<http://example.org/legal/document/uu/1957/23/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/1957/23/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1957/23/pasal/0003/version/19570325> .
+<http://example.org/legal/document/uu/1957/23> legal:documentHasPasal <http://example.org/legal/document/uu/1957/23/pasal/0003> .
+<http://example.org/legal/document/uu/1957/23/pasal/0003/version/19570325> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1957/23/pasal/0003/version/19570325> legal:pasalVersionHasVersionDate "1957-03-25"^^xsd:date .
+<http://example.org/legal/document/uu/1957/23/pasal/0003/version/19570325> legal:pasalVersionHasRawText "Bunga yang harus dibayar untuk modal seperti termaksu d dalan Pasal 4 di bawah I e a \"Indische Bedrijvenwet\" dan yang disebut dalam neraca pembukaan tersebut dalam pasal sebelumnya dan neraca - neraca pada tahun - tahun berikutnya akan ditetapkan berdasar atas neraca pembukaan itu, ditetapkan untuk sementara wakt u sebesar 2% setahun." .
+<http://example.org/legal/document/uu/1957/23/pasal/0003/version/19570325/text> legal:textHasTextString "Bunga yang harus dibayar untuk modal seperti termaksu d dalan Pasal 4 di bawah I e a \"Indische Bedrijvenwet\" dan yang disebut dalam neraca pembukaan tersebut dalam pasal sebelumnya dan neraca - neraca pada tahun - tahun berikutnya akan ditetapkan berdasar atas neraca pembukaan itu, ditetapkan untuk sementara wakt u sebesar 2% setahun." .
+<http://example.org/legal/document/uu/1957/23/pasal/0003/version/19570325> legal:pasalVersionHasText <http://example.org/legal/document/uu/1957/23/pasal/0003/version/19570325/text> .
+<http://example.org/legal/document/uu/1957/23/pasal/0003/version/19570325/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1957/23/pasal/0004> .
+<http://example.org/legal/document/uu/1957/23/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1957/23/pasal/0004> .
+<http://example.org/legal/document/uu/1957/23/pasal/0004> legal:pasalHasKey 4 .
+<http://example.org/legal/document/uu/1957/23/pasal/0004> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325> .
+<http://example.org/legal/document/uu/1957/23> legal:documentHasPasal <http://example.org/legal/document/uu/1957/23/pasal/0004> .
+<http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325> legal:pasalVersionHasVersionDate "1957-03-25"^^xsd:date .
+<http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325> legal:pasalVersionHasRawText "(1). Perhitungan dari jumlah - penyusutan atas milik - milik Perusahaan negara Sera dan Vaksin Pasteur Bandung dilakukan, kecuali dalam hal usaha - usaha besar yang tidak diduga mengenai aktiva, berdasar atas persentase penyusutan rata - rata untuk tiap - tiap golongan, dalam mana aktiva - aktiva tersebut menurut wataknya masing - masing dimasukkan.\n(2). Untuk tiap - tiap golongan persentase penyusutan rata - rata itu ditetapkan me nurut harga - perusahaan dan jangka waktu pemakaian yang ditaksir dari tiap - tiap obyek." .
+<http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325/ayat> .
+<http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325/ayat/0001> .
+<http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325/ayat/0001> legal:ayatHasRawText "Perhitungan dari jumlah - penyusutan atas milik - milik Perusahaan negara Sera dan Vaksin Pasteur Bandung dilakukan, kecuali dalam hal usaha - usaha besar yang tidak diduga mengenai aktiva, berdasar atas persentase penyusutan rata - rata untuk tiap - tiap golongan, dalam mana aktiva - aktiva tersebut menurut wataknya masing - masing dimasukkan." .
+<http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325/ayat/0001/text> legal:textHasTextString "Perhitungan dari jumlah - penyusutan atas milik - milik Perusahaan negara Sera dan Vaksin Pasteur Bandung dilakukan, kecuali dalam hal usaha - usaha besar yang tidak diduga mengenai aktiva, berdasar atas persentase penyusutan rata - rata untuk tiap - tiap golongan, dalam mana aktiva - aktiva tersebut menurut wataknya masing - masing dimasukkan." .
+<http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325/ayat/0001/text> .
+<http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325/ayat/0002> .
+<http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325/ayat/0002> legal:ayatHasRawText "Untuk tiap - tiap golongan persentase penyusutan rata - rata itu ditetapkan me nurut harga - perusahaan dan jangka waktu pemakaian yang ditaksir dari tiap - tiap obyek." .
+<http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325/ayat/0002/text> legal:textHasTextString "Untuk tiap - tiap golongan persentase penyusutan rata - rata itu ditetapkan me nurut harga - perusahaan dan jangka waktu pemakaian yang ditaksir dari tiap - tiap obyek." .
+<http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325/ayat/0002/text> .
+<http://example.org/legal/document/uu/1957/23/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1957/23/pasal/0005> .
+<http://example.org/legal/document/uu/1957/23/pasal/0005> legal:pasalHasKey 5 .
+<http://example.org/legal/document/uu/1957/23/pasal/0005> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325> .
+<http://example.org/legal/document/uu/1957/23> legal:documentHasPasal <http://example.org/legal/document/uu/1957/23/pasal/0005> .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325> legal:pasalVersionHasVersionDate "1957-03-25"^^xsd:date .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325> legal:pasalVersionHasRawText "Untuk tahun 1955 sampai dengan 1959 aktiva - aktiva terdiri atas golongan - golongan seperti tersebut di bawah ini dan persentase penyusutan ditetapkan sebagai ber ikut:\n1. Gedung - gedung ......................... 2%\n2. Mesin - mesin ........................... 10%\n3. Perkakas - perkakas (instrumenten) ...... 7% PRESIDEN REPUBLIK INDONESIA - 4 -\n4. Inventaris alat - alat kedokteran ....... 5%\n5. Inventaris kantor ..................... 5%\n6. Kendaraan ............................. 20%\n" .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point> .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/description> legal:textHasTextString "Untuk tahun 1955 sampai dengan 1959 aktiva - aktiva terdiri atas golongan - golongan seperti tersebut di bawah ini dan persentase penyusutan ditetapkan sebagai ber ikut:" .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/description> .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0001> .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0001/text> legal:textHasTextString "Gedung - gedung ......................... 2%" .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0001/text> .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0002> .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0002/text> legal:textHasTextString "Mesin - mesin ........................... 10%" .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0002/text> .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0003> .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0003> legal:pointHasKey "3" .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0003/text> legal:textHasTextString "Perkakas - perkakas (instrumenten) ...... 7% PRESIDEN REPUBLIK INDONESIA - 4 -" .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0003> legal:pointHasText <http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0003/text> .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0004> .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0004> legal:pointHasKey "4" .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0004/text> legal:textHasTextString "Inventaris alat - alat kedokteran ....... 5%" .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0004> legal:pointHasText <http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0004/text> .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0005> .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0005> legal:pointHasKey "5" .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0005/text> legal:textHasTextString "Inventaris kantor ..................... 5%" .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0005> legal:pointHasText <http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0005/text> .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0006> .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0006> legal:pointHasKey "6" .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0006/text> legal:textHasTextString "Kendaraan ............................. 20%" .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0006> legal:pointHasText <http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0006/text> .
+<http://example.org/legal/document/uu/1957/23/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1957/23/pasal/0006> .
+<http://example.org/legal/document/uu/1957/23/pasal/0006> legal:pasalHasKey 6 .
+<http://example.org/legal/document/uu/1957/23/pasal/0006> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1957/23/pasal/0006/version/19570325> .
+<http://example.org/legal/document/uu/1957/23> legal:documentHasPasal <http://example.org/legal/document/uu/1957/23/pasal/0006> .
+<http://example.org/legal/document/uu/1957/23/pasal/0006/version/19570325> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1957/23/pasal/0006/version/19570325> legal:pasalVersionHasVersionDate "1957-03-25"^^xsd:date .
+<http://example.org/legal/document/uu/1957/23/pasal/0006/version/19570325> legal:pasalVersionHasRawText "Apabila pengeluaran - pengeluaran mengenai perabot - perabot kantor, mesin - mesin kantor dan perkakas merupakan pengluasan dari persediaan, maka dalam tahun pembelian dilakukan penyusutan sebesar li ma puluh persen." .
+<http://example.org/legal/document/uu/1957/23/pasal/0006/version/19570325/text> legal:textHasTextString "Apabila pengeluaran - pengeluaran mengenai perabot - perabot kantor, mesin - mesin kantor dan perkakas merupakan pengluasan dari persediaan, maka dalam tahun pembelian dilakukan penyusutan sebesar li ma puluh persen." .
+<http://example.org/legal/document/uu/1957/23/pasal/0006/version/19570325> legal:pasalVersionHasText <http://example.org/legal/document/uu/1957/23/pasal/0006/version/19570325/text> .
+<http://example.org/legal/document/uu/1957/23/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1957/23/pasal/0007> .
+<http://example.org/legal/document/uu/1957/23/pasal/0007> legal:pasalHasKey 7 .
+<http://example.org/legal/document/uu/1957/23/pasal/0007> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1957/23/pasal/0007/version/19570325> .
+<http://example.org/legal/document/uu/1957/23> legal:documentHasPasal <http://example.org/legal/document/uu/1957/23/pasal/0007> .
+<http://example.org/legal/document/uu/1957/23/pasal/0007/version/19570325> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1957/23/pasal/0007/version/19570325> legal:pasalVersionHasVersionDate "1957-03-25"^^xsd:date .
+<http://example.org/legal/document/uu/1957/23/pasal/0007/version/19570325> legal:pasalVersionHasRawText "Nama - kata Perusahaan Negara bagian Sera dan Vaksin daripada Instituut Pasteur, dapat dipersingkat: \"Perusahaan Negara Pasteur\". Pasal II Undang - undang ini mulai berlaku pada hari diundangkan dan berlaku surut sampai tanggal 5 Juli 1955. PRESIDEN REPUBLIK INDONESIA - 5 - Agar supaya setiap orang dapat mengetahuinya memerintahkan pengundangan undang - undang ini dengan penempatan dalam Lembaran Negara Republik In donesia." .
+<http://example.org/legal/document/uu/1957/23/pasal/0007/version/19570325/text> legal:textHasTextString "Nama - kata Perusahaan Negara bagian Sera dan Vaksin daripada Instituut Pasteur, dapat dipersingkat: \"Perusahaan Negara Pasteur\". Pasal II Undang - undang ini mulai berlaku pada hari diundangkan dan berlaku surut sampai tanggal 5 Juli 1955. PRESIDEN REPUBLIK INDONESIA - 5 - Agar supaya setiap orang dapat mengetahuinya memerintahkan pengundangan undang - undang ini dengan penempatan dalam Lembaran Negara Republik In donesia." .
+<http://example.org/legal/document/uu/1957/23/pasal/0007/version/19570325> legal:pasalVersionHasText <http://example.org/legal/document/uu/1957/23/pasal/0007/version/19570325/text> .
 <http://example.org/legal/document/uu/1957/23> legal:documentHasDisahkanDate "1957-03-25"^^xsd:date .
 <http://example.org/legal/document/uu/1957/23> legal:documentMengingat <http://example.org/legal/document/uu/1957/23/mengingat> .
 <http://example.org/legal/document/uu/1957/23/mengingat/text> legal:textHasTextString "Pasal 89 dan Pasal 97 Undang - undang Dasar Sementara Republik Indonesia; Dengan persetujuan Dewan Perwakilan Rakyat; PRESIDEN REPUBLIK INDONESIA - 2 - MEMUTUSKAN : Menetapkan : UNDANG - UNDANG DARURAT NOMOR 14 TAHUN 1955 TENTANG PENUNJUKAN BAGIAN PEMBIKINAN SERA DAN VAKSIN DARIPADA LEMBAGA PASTEUR DI BANDUNG MENJADI PERUSAHAAN NEGARA DALAM ARTI \"INDISCHE BEDRIJVEN WET\" (STAATSBLAD 1927 NOMOR 419) SEBAGAI UNDANG - UNDANG." .
@@ -22,6 +121,45 @@
 <http://example.org/legal/document/uu/1957/23> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/1957/23> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/1957/23> a legal:Document .
+<http://example.org/legal/document/uu/1957/23/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1957/23/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1957/23/pasal/0001/version/19570325> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1957/23/pasal/0001/version/19570325/text> a legal:Text .
+<http://example.org/legal/document/uu/1957/23/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1957/23/pasal/0002/version/19570325> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1957/23/pasal/0002/version/19570325/text> a legal:Text .
+<http://example.org/legal/document/uu/1957/23/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/1957/23/pasal/0003/version/19570325> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1957/23/pasal/0003/version/19570325/text> a legal:Text .
+<http://example.org/legal/document/uu/1957/23/pasal/0004> a legal:Pasal .
+<http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1957/23/pasal/0005> a legal:Pasal .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0003> a legal:Point .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0004> a legal:Point .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0005> a legal:Point .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0005/text> a legal:Text .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0006> a legal:Point .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0006/text> a legal:Text .
+<http://example.org/legal/document/uu/1957/23/pasal/0006> a legal:Pasal .
+<http://example.org/legal/document/uu/1957/23/pasal/0006/version/19570325> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1957/23/pasal/0006/version/19570325/text> a legal:Text .
+<http://example.org/legal/document/uu/1957/23/pasal/0007> a legal:Pasal .
+<http://example.org/legal/document/uu/1957/23/pasal/0007/version/19570325> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1957/23/pasal/0007/version/19570325/text> a legal:Text .
 <http://example.org/legal/document/uu/1957/23/mengingat/text> a legal:Text .
 <http://example.org/legal/document/uu/1957/23/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1957/23/menimbang> a legal:Menimbang .
@@ -31,6 +169,38 @@
 <http://example.org/legal/document/uu/1957/23/menimbang/point/a/text> a legal:Text .
 <http://example.org/legal/document/uu/1957/23/menimbang/point/b> a legal:Point .
 <http://example.org/legal/document/uu/1957/23/menimbang/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/1957/23/bab> legal:partOf <http://example.org/legal/document/uu/1957/23> .
+<http://example.org/legal/document/uu/1957/23/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1957/23/pasals> .
+<http://example.org/legal/document/uu/1957/23/pasal/0001/version/19570325> legal:partOf <http://example.org/legal/document/uu/1957/23/pasal/0001> .
+<http://example.org/legal/document/uu/1957/23/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1957/23> .
+<http://example.org/legal/document/uu/1957/23/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1957/23/pasals> .
+<http://example.org/legal/document/uu/1957/23/pasal/0002/version/19570325> legal:partOf <http://example.org/legal/document/uu/1957/23/pasal/0002> .
+<http://example.org/legal/document/uu/1957/23/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1957/23> .
+<http://example.org/legal/document/uu/1957/23/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1957/23/pasals> .
+<http://example.org/legal/document/uu/1957/23/pasal/0003/version/19570325> legal:partOf <http://example.org/legal/document/uu/1957/23/pasal/0003> .
+<http://example.org/legal/document/uu/1957/23/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1957/23> .
+<http://example.org/legal/document/uu/1957/23/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1957/23/pasals> .
+<http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325> legal:partOf <http://example.org/legal/document/uu/1957/23/pasal/0004> .
+<http://example.org/legal/document/uu/1957/23/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1957/23> .
+<http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325/ayat> legal:partOf <http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325> .
+<http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325/ayat> .
+<http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325/ayat/0001> .
+<http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325/ayat> .
+<http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1957/23/pasal/0004/version/19570325/ayat/0002> .
+<http://example.org/legal/document/uu/1957/23/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1957/23/pasals> .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325> legal:partOf <http://example.org/legal/document/uu/1957/23/pasal/0005> .
+<http://example.org/legal/document/uu/1957/23/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1957/23> .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point> legal:partOf <http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325> .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0001> legal:partOf <http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point> .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0002> legal:partOf <http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point> .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0003> legal:partOf <http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point> .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0004> legal:partOf <http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point> .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0005> legal:partOf <http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point> .
+<http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point/0006> legal:partOf <http://example.org/legal/document/uu/1957/23/pasal/0005/version/19570325/point> .
+<http://example.org/legal/document/uu/1957/23/pasal/0006> legal:partOf <http://example.org/legal/document/uu/1957/23/pasals> .
+<http://example.org/legal/document/uu/1957/23/pasal/0006/version/19570325> legal:partOf <http://example.org/legal/document/uu/1957/23/pasal/0006> .
+<http://example.org/legal/document/uu/1957/23/pasal/0006> legal:partOf <http://example.org/legal/document/uu/1957/23> .
+<http://example.org/legal/document/uu/1957/23/pasal/0007> legal:partOf <http://example.org/legal/document/uu/1957/23/pasals> .
+<http://example.org/legal/document/uu/1957/23/pasal/0007/version/19570325> legal:partOf <http://example.org/legal/document/uu/1957/23/pasal/0007> .
+<http://example.org/legal/document/uu/1957/23/pasal/0007> legal:partOf <http://example.org/legal/document/uu/1957/23> .
 <http://example.org/legal/document/uu/1957/23/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1957/23/menimbang/point> .
 <http://example.org/legal/document/uu/1957/23/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1957/23/menimbang/point> .

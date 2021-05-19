@@ -61,18 +61,185 @@ opText: |-
   PEKERJAAN JABATAN PRESIDEN, JIKA PRESIDEN MANGKAT,
   BERHENTI ATAU BERHALANGAN, SEDANG WAKIL PRES IDEN
   TIDAK ADA ATAU BERHALANGAN.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_3
+          nodeType: pasalVersion
+          version: &ref_7
+            nodeType: date
+            month: 10
+            date: 8
+            year: 1957
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_4
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_3
+          elements:
+            - type: ayat
+              node: &ref_5
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_4
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_5
+                textString: >-
+                  Dalam hal Wakil Presiden tidak ada atau berhalangan, maka jika Presiden
+                  berhalangan, Ketua Dewan Perwakilan Rakyat menjalankan pekerjaan jabatan Presiden
+                  sehari - hari.
+                references: []
+            - type: ayat
+              node: &ref_6
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_4
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_6
+                textString: >-
+                  Dalam hal Wakil Presiden tidak ada, maka jika Presiden mangkat, berhenti atau
+                  tidak dapat melakukan kewajibannya dalam masa jabatannya, Ketua Dewan Perwakilan
+                  Rakyat menjalankan pekerjaan jabatan Presiden hingga ada Presiden. PRESIDEN
+                  REPUBLIK INDONESIA - 2 -
+                references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_8
+          nodeType: pasalVersion
+          version: *ref_7
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_9
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_8
+          elements:
+            - type: ayat
+              node: &ref_10
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_9
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_10
+                textString: >-
+                  Selama waktu melakukan pekerjaan jabatan Presiden dimaksud dalam pasal 1, Ketua
+                  Dewan Perwakilan Rakyat tidak boleh mempergunakan hak atau melakukan kewajibannya
+                  sebagai Ke tua/ anggota Dewan Perwakilan Rakyat.
+                references: []
+            - type: ayat
+              node: &ref_11
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_9
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_11
+                textString: >-
+                  Sebelum menjalankan pekerjaan ja batan Presiden, maka Ketua Dewan Perwakilan
+                  Rakyat harus mengangkat sumpah atau menyatakan keterangan menurut cara agamanya di
+                  hadapan Dewan Perwakilan Rakyat, sebagai berikut. "Saya bersumpah (berjanji) bahwa
+                  saya, dalam menjalankan pekerjaan jabatan Pr esiden Republik Indonesia, untuk
+                  melakukan atau untuk tidak melakukan sesuatu tiada sekali - kali akan menerima
+                  dari siapa pun juga, langsung ataupun tak langsung sesuatu janji atau pemberian.
+                  Saya bersumpah (berjanji) bahwa saya dalam menjalankan pekerjaan jabatan Presiden
+                  Republik Indonesia dengan sekuat tenaga akan memajukan kesejahteraan Republik
+                  Indonesia dan akan melindungi serta mempertahankan kebebasan - kebebasan dan hak -
+                  hak umum dan khusus sekalian penghuni Negara. Saya bersumpah (berjanji) setia ke
+                  pada Undang - undang Dasar dan lagi bahwa saya akan memelihara segala peraturan
+                  yang berlaku bagi Republik Indonesia, bahwa saya akan setia kepada Nusa dan Bangsa
+                  dan bahwa saya dengan setia akan memenuhi segala kewajiban yang ditanggungkan
+                  kepada saya".
+                references: []
+            - type: ayat
+              node: &ref_12
+                nodeType: ayat
+                key: 3
+                parentAyatSetNode: *ref_9
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_12
+                textString: >-
+                  Pengangkatan sumpah (pernyataan keterangan) dimaksud dalam ayat (2) dilakukan
+                  hanya pada kesempatan pertama hendak menjalankan pekerjaan.
+                references:
+                  - start: 59
+                    end: 67
+                    node:
+                      key: 2
+                      parentAyatSetNode:
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_8
+                      nodeType: ayat
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 3
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_13
+          nodeType: pasalVersion
+          version: *ref_7
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '3'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_13
+          textString: >-
+            Undang - undang ini mulai berlaku pada hari diundangkan. PRESIDEN REPUBLIK INDONESIA - 3
+            - Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan undang -
+            undang ini dengan penempatan dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 10
-    date: 8
-    year: 1957
+  date: *ref_7
   location: Jakarta
   pengesah: SOEKARNO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

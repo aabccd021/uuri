@@ -1,7 +1,61 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1964/35> legal:documentHasBabSet <http://example.org/legal/document/uu/1964/35/bab> .
+<http://example.org/legal/document/uu/1964/35> legal:documentHasPasalSet <http://example.org/legal/document/uu/1964/35/pasals> .
+<http://example.org/legal/document/uu/1964/35/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1964/35/pasal/0001> .
+<http://example.org/legal/document/uu/1964/35/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1964/35/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231> .
+<http://example.org/legal/document/uu/1964/35> legal:documentHasPasal <http://example.org/legal/document/uu/1964/35/pasal/0001> .
+<http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231> legal:pasalVersionHasVersionDate "1964-12-31"^^xsd:date .
+<http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231> legal:pasalVersionHasRawText "Pendapatan Negara untuk tahun 1963 dikurangi menurut perkiraan dengan jumlah Rp. 116.727.452.000,- terdiri atas:\na. Pendapatan Negara Rutin dikurangi dengan Rp.61.804.452.000,-\nb. Pendapatan Negara Pembangunan dikurangi dengan Rp. 56.923.000.000,- yang perinciannya dimuat dalam Lampiran I dan Lampiran II Undang-undang ini.\n" .
+<http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231/point> .
+<http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231/point/description> legal:textHasTextString "Pendapatan Negara untuk tahun 1963 dikurangi menurut perkiraan dengan jumlah Rp. 116.727.452.000,- terdiri atas:" .
+<http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231/point/description> .
+<http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231/point/a> .
+<http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231/point/a/text> legal:textHasTextString "Pendapatan Negara Rutin dikurangi dengan Rp.61.804.452.000,-" .
+<http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231/point/a> legal:pointHasText <http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231/point/a/text> .
+<http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231/point/b> .
+<http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231/point/b/text> legal:textHasTextString "Pendapatan Negara Pembangunan dikurangi dengan Rp. 56.923.000.000,- yang perinciannya dimuat dalam Lampiran I dan Lampiran II Undang-undang ini." .
+<http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231/point/b> legal:pointHasText <http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231/point/b/text> .
+<http://example.org/legal/document/uu/1964/35/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1964/35/pasal/0002> .
+<http://example.org/legal/document/uu/1964/35/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1964/35/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231> .
+<http://example.org/legal/document/uu/1964/35> legal:documentHasPasal <http://example.org/legal/document/uu/1964/35/pasal/0002> .
+<http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231> legal:pasalVersionHasVersionDate "1964-12-31"^^xsd:date .
+<http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231> legal:pasalVersionHasRawText "Belanja Negara untuk 1963 diubah/ditambah dengan jumlah Rp. 28.841.508.400,- terdiri atas :\na. Belanja Negara Tambahan Rutin sebesar Rp. 14.700.031.700,- yang perinciannya dimuat dalam Lampiran III Undang-undang ini, dan\nb. Belanja Negara Tambahan Pembangunan sebesar Rp. 14.141.476.700,- yang perinciannya dimuat dalam Lampiran IV Undang-undang ini.\n" .
+<http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231/point> .
+<http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231/point/description> legal:textHasTextString "Belanja Negara untuk 1963 diubah/ditambah dengan jumlah Rp. 28.841.508.400,- terdiri atas :" .
+<http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231/point/description> .
+<http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231/point/a> .
+<http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231/point/a/text> legal:textHasTextString "Belanja Negara Tambahan Rutin sebesar Rp. 14.700.031.700,- yang perinciannya dimuat dalam Lampiran III Undang-undang ini, dan" .
+<http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231/point/a> legal:pointHasText <http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231/point/a/text> .
+<http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231/point/b> .
+<http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231/point/b/text> legal:textHasTextString "Belanja Negara Tambahan Pembangunan sebesar Rp. 14.141.476.700,- yang perinciannya dimuat dalam Lampiran IV Undang-undang ini." .
+<http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231/point/b> legal:pointHasText <http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231/point/b/text> .
+<http://example.org/legal/document/uu/1964/35/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1964/35/pasal/0003> .
+<http://example.org/legal/document/uu/1964/35/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/1964/35/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1964/35/pasal/0003/version/19641231> .
+<http://example.org/legal/document/uu/1964/35> legal:documentHasPasal <http://example.org/legal/document/uu/1964/35/pasal/0003> .
+<http://example.org/legal/document/uu/1964/35/pasal/0003/version/19641231> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1964/35/pasal/0003/version/19641231> legal:pasalVersionHasVersionDate "1964-12-31"^^xsd:date .
+<http://example.org/legal/document/uu/1964/35/pasal/0003/version/19641231> legal:pasalVersionHasRawText "Ketentuan-ketentuan tersebut dalam Undang-undang Perbendaharaan Indonesia yang bertentangan dengan bentuk dan susunan Undang-undang ini tidak berlaku lagi." .
+<http://example.org/legal/document/uu/1964/35/pasal/0003/version/19641231/text> legal:textHasTextString "Ketentuan-ketentuan tersebut dalam Undang-undang Perbendaharaan Indonesia yang bertentangan dengan bentuk dan susunan Undang-undang ini tidak berlaku lagi." .
+<http://example.org/legal/document/uu/1964/35/pasal/0003/version/19641231> legal:pasalVersionHasText <http://example.org/legal/document/uu/1964/35/pasal/0003/version/19641231/text> .
+<http://example.org/legal/document/uu/1964/35/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1964/35/pasal/0004> .
+<http://example.org/legal/document/uu/1964/35/pasal/0004> legal:pasalHasKey 4 .
+<http://example.org/legal/document/uu/1964/35/pasal/0004> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1964/35/pasal/0004/version/19641231> .
+<http://example.org/legal/document/uu/1964/35> legal:documentHasPasal <http://example.org/legal/document/uu/1964/35/pasal/0004> .
+<http://example.org/legal/document/uu/1964/35/pasal/0004/version/19641231> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1964/35/pasal/0004/version/19641231> legal:pasalVersionHasVersionDate "1964-12-31"^^xsd:date .
+<http://example.org/legal/document/uu/1964/35/pasal/0004/version/19641231> legal:pasalVersionHasRawText "Undang-undang ini mulai berlaku pada hari diundangkan dan mempunyai daya surut sampai tanggal 1 Januari 1963. Agar supaya setiap orang dapat mengetahuinya memerintahkan pengundangan Undang-undang ini dengan penempatan dalam Lembaran-Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1964/35/pasal/0004/version/19641231/text> legal:textHasTextString "Undang-undang ini mulai berlaku pada hari diundangkan dan mempunyai daya surut sampai tanggal 1 Januari 1963. Agar supaya setiap orang dapat mengetahuinya memerintahkan pengundangan Undang-undang ini dengan penempatan dalam Lembaran-Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1964/35/pasal/0004/version/19641231> legal:pasalVersionHasText <http://example.org/legal/document/uu/1964/35/pasal/0004/version/19641231/text> .
 <http://example.org/legal/document/uu/1964/35> legal:documentHasDisahkanDate "1964-12-31"^^xsd:date .
 <http://example.org/legal/document/uu/1964/35> legal:documentMengingat <http://example.org/legal/document/uu/1964/35/mengingat> .
 <http://example.org/legal/document/uu/1964/35/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1964/35/mengingat/point> .
@@ -22,6 +76,29 @@
 <http://example.org/legal/document/uu/1964/35> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/1964/35> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/1964/35> a legal:Document .
+<http://example.org/legal/document/uu/1964/35/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1964/35/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1964/35/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1964/35/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/1964/35/pasal/0003/version/19641231> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1964/35/pasal/0003/version/19641231/text> a legal:Text .
+<http://example.org/legal/document/uu/1964/35/pasal/0004> a legal:Pasal .
+<http://example.org/legal/document/uu/1964/35/pasal/0004/version/19641231> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1964/35/pasal/0004/version/19641231/text> a legal:Text .
 <http://example.org/legal/document/uu/1964/35/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1964/35/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/1964/35/mengingat/point> a legal:PointSet .
@@ -31,6 +108,23 @@
 <http://example.org/legal/document/uu/1964/35/mengingat/point/0002/text> a legal:Text .
 <http://example.org/legal/document/uu/1964/35/menimbang/text> a legal:Text .
 <http://example.org/legal/document/uu/1964/35/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/1964/35/bab> legal:partOf <http://example.org/legal/document/uu/1964/35> .
+<http://example.org/legal/document/uu/1964/35/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1964/35/pasals> .
+<http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231> legal:partOf <http://example.org/legal/document/uu/1964/35/pasal/0001> .
+<http://example.org/legal/document/uu/1964/35/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1964/35> .
+<http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231/point> legal:partOf <http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231> .
+<http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231/point/a> legal:partOf <http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231/point> .
+<http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231/point/b> legal:partOf <http://example.org/legal/document/uu/1964/35/pasal/0001/version/19641231/point> .
+<http://example.org/legal/document/uu/1964/35/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1964/35/pasals> .
+<http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231> legal:partOf <http://example.org/legal/document/uu/1964/35/pasal/0002> .
+<http://example.org/legal/document/uu/1964/35/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1964/35> .
+<http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231/point> legal:partOf <http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231> .
+<http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231/point/a> legal:partOf <http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231/point> .
+<http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231/point/b> legal:partOf <http://example.org/legal/document/uu/1964/35/pasal/0002/version/19641231/point> .
+<http://example.org/legal/document/uu/1964/35/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1964/35/pasals> .
+<http://example.org/legal/document/uu/1964/35/pasal/0003/version/19641231> legal:partOf <http://example.org/legal/document/uu/1964/35/pasal/0003> .
+<http://example.org/legal/document/uu/1964/35/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1964/35> .
+<http://example.org/legal/document/uu/1964/35/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1964/35/pasals> .
+<http://example.org/legal/document/uu/1964/35/pasal/0004/version/19641231> legal:partOf <http://example.org/legal/document/uu/1964/35/pasal/0004> .
+<http://example.org/legal/document/uu/1964/35/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1964/35> .
 <http://example.org/legal/document/uu/1964/35/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1964/35/mengingat/point> .
 <http://example.org/legal/document/uu/1964/35/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1964/35/mengingat/point> .

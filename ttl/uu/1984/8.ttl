@@ -1,7 +1,26 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1984/8> legal:documentHasBabSet <http://example.org/legal/document/uu/1984/8/bab> .
+<http://example.org/legal/document/uu/1984/8> legal:documentHasPasalSet <http://example.org/legal/document/uu/1984/8/pasals> .
+<http://example.org/legal/document/uu/1984/8/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1984/8/pasal/0001> .
+<http://example.org/legal/document/uu/1984/8/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1984/8/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1984/8/pasal/0001/version/19841027> .
+<http://example.org/legal/document/uu/1984/8> legal:documentHasPasal <http://example.org/legal/document/uu/1984/8/pasal/0001> .
+<http://example.org/legal/document/uu/1984/8/pasal/0001/version/19841027> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1984/8/pasal/0001/version/19841027> legal:pasalVersionHasVersionDate "1984-10-27"^^xsd:date .
+<http://example.org/legal/document/uu/1984/8/pasal/0001/version/19841027> legal:pasalVersionHasRawText "Menangguhkan mulai berlakunya Undang-undang Pajak Pertambahan Nilai 1984 (Lembaran Negara Tahun 1983 Nomor 51, Tambahan Lembaran Negara Nomor 3264) dari tanggal 1 Juli 1984 sampai selambat-lambatnya tanggal 1 Januari 1986." .
+<http://example.org/legal/document/uu/1984/8/pasal/0001/version/19841027/text> legal:textHasTextString "Menangguhkan mulai berlakunya Undang-undang Pajak Pertambahan Nilai 1984 (Lembaran Negara Tahun 1983 Nomor 51, Tambahan Lembaran Negara Nomor 3264) dari tanggal 1 Juli 1984 sampai selambat-lambatnya tanggal 1 Januari 1986." .
+<http://example.org/legal/document/uu/1984/8/pasal/0001/version/19841027> legal:pasalVersionHasText <http://example.org/legal/document/uu/1984/8/pasal/0001/version/19841027/text> .
+<http://example.org/legal/document/uu/1984/8/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1984/8/pasal/0002> .
+<http://example.org/legal/document/uu/1984/8/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1984/8/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1984/8/pasal/0002/version/19841027> .
+<http://example.org/legal/document/uu/1984/8> legal:documentHasPasal <http://example.org/legal/document/uu/1984/8/pasal/0002> .
+<http://example.org/legal/document/uu/1984/8/pasal/0002/version/19841027> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1984/8/pasal/0002/version/19841027> legal:pasalVersionHasVersionDate "1984-10-27"^^xsd:date .
+<http://example.org/legal/document/uu/1984/8/pasal/0002/version/19841027> legal:pasalVersionHasRawText "Setelah dinilai dengan saksama mengenai kesiapan pelaksanaan sehingga mencapai tujuan dan hasil yang sebaik-baiknya, maka dengan Peraturan Pemerintah ditetapkan mulai berlakunya Undang-undang Pajak Pertambahan Nilai 1984 (Lembaran Negara Tahun 1983 Nomor 51, Tambahan Lembaran Negara Nomor 3264) sebagai pelaksanaan ketentuan Pasal 1. Pasal II Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Repubhk Indonesia." .
+<http://example.org/legal/document/uu/1984/8/pasal/0002/version/19841027/text> legal:textHasTextString "Setelah dinilai dengan saksama mengenai kesiapan pelaksanaan sehingga mencapai tujuan dan hasil yang sebaik-baiknya, maka dengan Peraturan Pemerintah ditetapkan mulai berlakunya Undang-undang Pajak Pertambahan Nilai 1984 (Lembaran Negara Tahun 1983 Nomor 51, Tambahan Lembaran Negara Nomor 3264) sebagai pelaksanaan ketentuan Pasal 1. Pasal II Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Repubhk Indonesia." .
+<http://example.org/legal/document/uu/1984/8/pasal/0002/version/19841027> legal:pasalVersionHasText <http://example.org/legal/document/uu/1984/8/pasal/0002/version/19841027/text> .
+<http://example.org/legal/document/uu/1984/8/pasal/0002/version/19841027/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1984/8/pasal/0001> .
 <http://example.org/legal/document/uu/1984/8> legal:documentHasDisahkanDate "1984-10-27"^^xsd:date .
 <http://example.org/legal/document/uu/1984/8> legal:documentMengingat <http://example.org/legal/document/uu/1984/8/mengingat> .
 <http://example.org/legal/document/uu/1984/8/mengingat/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 20 ayat (1), dan Pasal 22 ayat (2) Undang-Undang Dasar 1945; Dengan persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG PENETAPAN PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG NOMOR 1 TAHUN 1984 TENTANG PENANGGUHAN MULAI BERLAKUNYA UNDANG- UNDANG PAJAK PERTAMBAHAN NILAI 1984 MENJADI UNDANG- UNDANG." .
@@ -26,6 +45,13 @@
 <http://example.org/legal/document/uu/1984/8> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/1984/8> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/1984/8> a legal:Document .
+<http://example.org/legal/document/uu/1984/8/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1984/8/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1984/8/pasal/0001/version/19841027> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1984/8/pasal/0001/version/19841027/text> a legal:Text .
+<http://example.org/legal/document/uu/1984/8/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1984/8/pasal/0002/version/19841027> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1984/8/pasal/0002/version/19841027/text> a legal:Text .
 <http://example.org/legal/document/uu/1984/8/mengingat/text> a legal:Text .
 <http://example.org/legal/document/uu/1984/8/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1984/8/menimbang> a legal:Menimbang .
@@ -37,7 +63,12 @@
 <http://example.org/legal/document/uu/1984/8/menimbang/point/b/text> a legal:Text .
 <http://example.org/legal/document/uu/1984/8/menimbang/point/c> a legal:Point .
 <http://example.org/legal/document/uu/1984/8/menimbang/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/1984/8/bab> legal:partOf <http://example.org/legal/document/uu/1984/8> .
+<http://example.org/legal/document/uu/1984/8/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1984/8/pasals> .
+<http://example.org/legal/document/uu/1984/8/pasal/0001/version/19841027> legal:partOf <http://example.org/legal/document/uu/1984/8/pasal/0001> .
+<http://example.org/legal/document/uu/1984/8/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1984/8> .
+<http://example.org/legal/document/uu/1984/8/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1984/8/pasals> .
+<http://example.org/legal/document/uu/1984/8/pasal/0002/version/19841027> legal:partOf <http://example.org/legal/document/uu/1984/8/pasal/0002> .
+<http://example.org/legal/document/uu/1984/8/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1984/8> .
 <http://example.org/legal/document/uu/1984/8/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1984/8/menimbang/point> .
 <http://example.org/legal/document/uu/1984/8/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1984/8/menimbang/point> .
 <http://example.org/legal/document/uu/1984/8/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/1984/8/menimbang/point> .

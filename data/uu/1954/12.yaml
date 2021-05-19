@@ -79,18 +79,69 @@ opText: |-
   UNDANG NO. 4 TAHUN 1950 DARI REPUBLIK INDONESIA DAHULU TENTANG
   DASAR - DASAR PENDIDIKAN DAN PENGAJARAN DI SEKOLAH UNTUK
   SELURUH INDONESIA.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_3
+          nodeType: pasalVersion
+          version: &ref_4
+            nodeType: date
+            month: 3
+            date: 12
+            year: 1954
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_3
+          textString: >-
+            Menyatakan berlaku untuk seluruh Indonesia Undang - undang No. 4 tahun 1950 dari
+            Republik Indonesia dahulu tentang dasar - dasar pendidikan dan pengajaran di sekolah.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_5
+          nodeType: pasalVersion
+          version: *ref_4
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_5
+          textString: >-
+            Undang - undang ini mulai berlaku pada hari diundangkan. PRESIDEN REPUBLIK INDONESIA - 2
+            - Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan undang -
+            undang ini dengan penempatan dalam Lembaran - Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 3
-    date: 12
-    year: 1954
+  date: *ref_4
   location: Jakarta
   pengesah: SUKARNO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

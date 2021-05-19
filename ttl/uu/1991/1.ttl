@@ -1,7 +1,25 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1991/1> legal:documentHasBabSet <http://example.org/legal/document/uu/1991/1/bab> .
+<http://example.org/legal/document/uu/1991/1> legal:documentHasPasalSet <http://example.org/legal/document/uu/1991/1/pasals> .
+<http://example.org/legal/document/uu/1991/1/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1991/1/pasal/0001> .
+<http://example.org/legal/document/uu/1991/1/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1991/1/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1991/1/pasal/0001/version/19910107> .
+<http://example.org/legal/document/uu/1991/1> legal:documentHasPasal <http://example.org/legal/document/uu/1991/1/pasal/0001> .
+<http://example.org/legal/document/uu/1991/1/pasal/0001/version/19910107> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1991/1/pasal/0001/version/19910107> legal:pasalVersionHasVersionDate "1991-01-07"^^xsd:date .
+<http://example.org/legal/document/uu/1991/1/pasal/0001/version/19910107> legal:pasalVersionHasRawText "Mengesahkan \"Treaty between the Repu blic of Indonesia and Australia on the Zone of Cooperation in an Ar ea between the Indonesian Province of East Timor and Northern Australia\" (Perjanjian antara Republik Indonesia dan Austaralia mengenai Z ona Kerjasama di daerah antara Propinsi Timor Timur dan Australia Bagian utara), yang salinan naskah aslinya beserta lampiran-lampirannya dalam bahasa Inggeris dilampirkan pada Undang-undang ini dan merupakan bagian yang tak terpisahkan." .
+<http://example.org/legal/document/uu/1991/1/pasal/0001/version/19910107/text> legal:textHasTextString "Mengesahkan \"Treaty between the Repu blic of Indonesia and Australia on the Zone of Cooperation in an Ar ea between the Indonesian Province of East Timor and Northern Australia\" (Perjanjian antara Republik Indonesia dan Austaralia mengenai Z ona Kerjasama di daerah antara Propinsi Timor Timur dan Australia Bagian utara), yang salinan naskah aslinya beserta lampiran-lampirannya dalam bahasa Inggeris dilampirkan pada Undang-undang ini dan merupakan bagian yang tak terpisahkan." .
+<http://example.org/legal/document/uu/1991/1/pasal/0001/version/19910107> legal:pasalVersionHasText <http://example.org/legal/document/uu/1991/1/pasal/0001/version/19910107/text> .
+<http://example.org/legal/document/uu/1991/1/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1991/1/pasal/0002> .
+<http://example.org/legal/document/uu/1991/1/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1991/1/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1991/1/pasal/0002/version/19910107> .
+<http://example.org/legal/document/uu/1991/1> legal:documentHasPasal <http://example.org/legal/document/uu/1991/1/pasal/0002> .
+<http://example.org/legal/document/uu/1991/1/pasal/0002/version/19910107> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1991/1/pasal/0002/version/19910107> legal:pasalVersionHasVersionDate "1991-01-07"^^xsd:date .
+<http://example.org/legal/document/uu/1991/1/pasal/0002/version/19910107> legal:pasalVersionHasRawText "Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1991/1/pasal/0002/version/19910107/text> legal:textHasTextString "Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1991/1/pasal/0002/version/19910107> legal:pasalVersionHasText <http://example.org/legal/document/uu/1991/1/pasal/0002/version/19910107/text> .
 <http://example.org/legal/document/uu/1991/1> legal:documentHasDisahkanDate "1991-01-07"^^xsd:date .
 <http://example.org/legal/document/uu/1991/1> legal:documentMengingat <http://example.org/legal/document/uu/1991/1/mengingat> .
 <http://example.org/legal/document/uu/1991/1/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1991/1/mengingat/point> .
@@ -47,6 +65,13 @@
 <http://example.org/legal/document/uu/1991/1> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/1991/1> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA" .
 <http://example.org/legal/document/uu/1991/1> a legal:Document .
+<http://example.org/legal/document/uu/1991/1/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1991/1/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1991/1/pasal/0001/version/19910107> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1991/1/pasal/0001/version/19910107/text> a legal:Text .
+<http://example.org/legal/document/uu/1991/1/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1991/1/pasal/0002/version/19910107> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1991/1/pasal/0002/version/19910107/text> a legal:Text .
 <http://example.org/legal/document/uu/1991/1/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1991/1/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/1991/1/mengingat/point> a legal:PointSet .
@@ -69,7 +94,12 @@
 <http://example.org/legal/document/uu/1991/1/menimbang/point/d/text> a legal:Text .
 <http://example.org/legal/document/uu/1991/1/menimbang/point/e> a legal:Point .
 <http://example.org/legal/document/uu/1991/1/menimbang/point/e/text> a legal:Text .
-<http://example.org/legal/document/uu/1991/1/bab> legal:partOf <http://example.org/legal/document/uu/1991/1> .
+<http://example.org/legal/document/uu/1991/1/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1991/1/pasals> .
+<http://example.org/legal/document/uu/1991/1/pasal/0001/version/19910107> legal:partOf <http://example.org/legal/document/uu/1991/1/pasal/0001> .
+<http://example.org/legal/document/uu/1991/1/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1991/1> .
+<http://example.org/legal/document/uu/1991/1/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1991/1/pasals> .
+<http://example.org/legal/document/uu/1991/1/pasal/0002/version/19910107> legal:partOf <http://example.org/legal/document/uu/1991/1/pasal/0002> .
+<http://example.org/legal/document/uu/1991/1/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1991/1> .
 <http://example.org/legal/document/uu/1991/1/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1991/1/mengingat/point> .
 <http://example.org/legal/document/uu/1991/1/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1991/1/mengingat/point> .
 <http://example.org/legal/document/uu/1991/1/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/1991/1/mengingat/point> .

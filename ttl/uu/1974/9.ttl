@@ -1,7 +1,25 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1974/9> legal:documentHasBabSet <http://example.org/legal/document/uu/1974/9/bab> .
+<http://example.org/legal/document/uu/1974/9> legal:documentHasPasalSet <http://example.org/legal/document/uu/1974/9/pasals> .
+<http://example.org/legal/document/uu/1974/9/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1974/9/pasal/0001> .
+<http://example.org/legal/document/uu/1974/9/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1974/9/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1974/9/pasal/0001/version/19741226> .
+<http://example.org/legal/document/uu/1974/9> legal:documentHasPasal <http://example.org/legal/document/uu/1974/9/pasal/0001> .
+<http://example.org/legal/document/uu/1974/9/pasal/0001/version/19741226> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1974/9/pasal/0001/version/19741226> legal:pasalVersionHasVersionDate "1974-12-26"^^xsd:date .
+<http://example.org/legal/document/uu/1974/9/pasal/0001/version/19741226> legal:pasalVersionHasRawText "Mensahkan Perjanjian antara Pemerintah Republik Indonesia dan Pemerintah Malaysia mengenai Ekstradisi tertanggal 7 Juni 1974, yang naskahnya dilampirkan pada Undang-undang ini." .
+<http://example.org/legal/document/uu/1974/9/pasal/0001/version/19741226/text> legal:textHasTextString "Mensahkan Perjanjian antara Pemerintah Republik Indonesia dan Pemerintah Malaysia mengenai Ekstradisi tertanggal 7 Juni 1974, yang naskahnya dilampirkan pada Undang-undang ini." .
+<http://example.org/legal/document/uu/1974/9/pasal/0001/version/19741226> legal:pasalVersionHasText <http://example.org/legal/document/uu/1974/9/pasal/0001/version/19741226/text> .
+<http://example.org/legal/document/uu/1974/9/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1974/9/pasal/0002> .
+<http://example.org/legal/document/uu/1974/9/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1974/9/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1974/9/pasal/0002/version/19741226> .
+<http://example.org/legal/document/uu/1974/9> legal:documentHasPasal <http://example.org/legal/document/uu/1974/9/pasal/0002> .
+<http://example.org/legal/document/uu/1974/9/pasal/0002/version/19741226> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1974/9/pasal/0002/version/19741226> legal:pasalVersionHasVersionDate "1974-12-26"^^xsd:date .
+<http://example.org/legal/document/uu/1974/9/pasal/0002/version/19741226> legal:pasalVersionHasRawText "Undang-undang ini mulai berlaku pada tanggal diundangkannya. Agar supaya setiap orang dapat mengetahuinya memerintahkan peng undangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1974/9/pasal/0002/version/19741226/text> legal:textHasTextString "Undang-undang ini mulai berlaku pada tanggal diundangkannya. Agar supaya setiap orang dapat mengetahuinya memerintahkan peng undangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1974/9/pasal/0002/version/19741226> legal:pasalVersionHasText <http://example.org/legal/document/uu/1974/9/pasal/0002/version/19741226/text> .
 <http://example.org/legal/document/uu/1974/9> legal:documentHasDisahkanDate "1974-12-26"^^xsd:date .
 <http://example.org/legal/document/uu/1974/9> legal:documentMengingat <http://example.org/legal/document/uu/1974/9/mengingat> .
 <http://example.org/legal/document/uu/1974/9/mengingat/text> legal:textHasTextString " Lis Pasal 5 ayat (1), Pasal 11 dan Pasal 20 ayat (1) Undang- Undang Dasar 1945: Da Ketetapan Majelis Permusyawaratan Rakyat Republik Indonesia Nomor IV/MPR/ 1973 tentang Garis-garis Besar Haluan Negara. Dengan Persetujuan Dewan Perwakilan Rakyat Republik Indonesia MEMUTUSKAN Menetapkan UNDANG-UNDANG TENTANG PENGESAHAN PERJANJIAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERINTAH MALAYSIA MENGENAI EKSTRADISI." .
@@ -18,6 +36,13 @@
 <http://example.org/legal/document/uu/1974/9> legal:documentHasDisahkanLocation "Jakarta," .
 <http://example.org/legal/document/uu/1974/9> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/1974/9> a legal:Document .
+<http://example.org/legal/document/uu/1974/9/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1974/9/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1974/9/pasal/0001/version/19741226> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1974/9/pasal/0001/version/19741226/text> a legal:Text .
+<http://example.org/legal/document/uu/1974/9/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1974/9/pasal/0002/version/19741226> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1974/9/pasal/0002/version/19741226/text> a legal:Text .
 <http://example.org/legal/document/uu/1974/9/mengingat/text> a legal:Text .
 <http://example.org/legal/document/uu/1974/9/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1974/9/menimbang> a legal:Menimbang .
@@ -25,5 +50,10 @@
 <http://example.org/legal/document/uu/1974/9/menimbang/point> a legal:PointSet .
 <http://example.org/legal/document/uu/1974/9/menimbang/point/a> a legal:Point .
 <http://example.org/legal/document/uu/1974/9/menimbang/point/a/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/9/bab> legal:partOf <http://example.org/legal/document/uu/1974/9> .
+<http://example.org/legal/document/uu/1974/9/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1974/9/pasals> .
+<http://example.org/legal/document/uu/1974/9/pasal/0001/version/19741226> legal:partOf <http://example.org/legal/document/uu/1974/9/pasal/0001> .
+<http://example.org/legal/document/uu/1974/9/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1974/9> .
+<http://example.org/legal/document/uu/1974/9/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1974/9/pasals> .
+<http://example.org/legal/document/uu/1974/9/pasal/0002/version/19741226> legal:partOf <http://example.org/legal/document/uu/1974/9/pasal/0002> .
+<http://example.org/legal/document/uu/1974/9/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1974/9> .
 <http://example.org/legal/document/uu/1974/9/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1974/9/menimbang/point> .

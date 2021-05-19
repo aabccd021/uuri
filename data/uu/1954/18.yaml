@@ -123,18 +123,48 @@ opText: |-
   untuk selanjutnya (Undang - undang Darurat No. 4 tahun 1954, Lembaran
   Negara 1954 No. 12) ditetapkan sebagai Undang - undang, yang berbunyi
   sebagai berikut:
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_6
+          nodeType: pasalVersion
+          version: &ref_7
+            nodeType: date
+            month: 5
+            date: 10
+            year: 1954
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_6
+          textString: >-
+            Ayat 2 dari pasal 3 Ordonansi (Staatsblad untuk Indonesia 1948 No. 141) seperti yang
+            kemudi an telah diubah dan ditambah, terakhir dengan Lembaran Negara 1953 No. 25, diubah
+            seluruhnya hingga menjadi sebagai berikut: "(2) Yang ditentukan dalam pasal 1 berlaku
+            sampai waktu yang akan ditetapkan". PASAL II Undang - undang ini mulai berlaku pada har
+            i diundangkan. PRESIDEN REPUBLIK INDONESIA - 3 - Agar supaya setiap orang dapat
+            mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatan dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 5
-    date: 10
-    year: 1954
+  date: *ref_7
   location: Jakarta
   pengesah: MOHAMMAD HATTA
   jabatanPengesah: WAKIL PRESIDEN REPUBLIK INDONESIA,

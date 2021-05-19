@@ -1,7 +1,58 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1957/29> legal:documentHasBabSet <http://example.org/legal/document/uu/1957/29/bab> .
+<http://example.org/legal/document/uu/1957/29> legal:documentHasPasalSet <http://example.org/legal/document/uu/1957/29/pasals> .
+<http://example.org/legal/document/uu/1957/29/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1957/29/pasal/0001> .
+<http://example.org/legal/document/uu/1957/29/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1957/29/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008> .
+<http://example.org/legal/document/uu/1957/29> legal:documentHasPasal <http://example.org/legal/document/uu/1957/29/pasal/0001> .
+<http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008> legal:pasalVersionHasVersionDate "1957-10-08"^^xsd:date .
+<http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008> legal:pasalVersionHasRawText "(1). Dalam hal Wakil Presiden tidak ada atau berhalangan, maka jika Presiden berhalangan, Ketua Dewan Perwakilan Rakyat menjalankan pekerjaan jabatan Presiden sehari - hari.\n(2). Dalam hal Wakil Presiden tidak ada, maka jika Presiden mangkat, berhenti atau tidak dapat melakukan kewajibannya dalam masa jabatannya, Ketua Dewan Perwakilan Rakyat menjalankan pekerjaan jabatan Presiden hingga ada Presiden. PRESIDEN REPUBLIK INDONESIA - 2 -" .
+<http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008/ayat> .
+<http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008/ayat/0001> .
+<http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008/ayat/0001> legal:ayatHasRawText "Dalam hal Wakil Presiden tidak ada atau berhalangan, maka jika Presiden berhalangan, Ketua Dewan Perwakilan Rakyat menjalankan pekerjaan jabatan Presiden sehari - hari." .
+<http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008/ayat/0001/text> legal:textHasTextString "Dalam hal Wakil Presiden tidak ada atau berhalangan, maka jika Presiden berhalangan, Ketua Dewan Perwakilan Rakyat menjalankan pekerjaan jabatan Presiden sehari - hari." .
+<http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008/ayat/0001/text> .
+<http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008/ayat/0002> .
+<http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008/ayat/0002> legal:ayatHasRawText "Dalam hal Wakil Presiden tidak ada, maka jika Presiden mangkat, berhenti atau tidak dapat melakukan kewajibannya dalam masa jabatannya, Ketua Dewan Perwakilan Rakyat menjalankan pekerjaan jabatan Presiden hingga ada Presiden. PRESIDEN REPUBLIK INDONESIA - 2 -" .
+<http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008/ayat/0002/text> legal:textHasTextString "Dalam hal Wakil Presiden tidak ada, maka jika Presiden mangkat, berhenti atau tidak dapat melakukan kewajibannya dalam masa jabatannya, Ketua Dewan Perwakilan Rakyat menjalankan pekerjaan jabatan Presiden hingga ada Presiden. PRESIDEN REPUBLIK INDONESIA - 2 -" .
+<http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008/ayat/0002/text> .
+<http://example.org/legal/document/uu/1957/29/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1957/29/pasal/0002> .
+<http://example.org/legal/document/uu/1957/29/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1957/29/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008> .
+<http://example.org/legal/document/uu/1957/29> legal:documentHasPasal <http://example.org/legal/document/uu/1957/29/pasal/0002> .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008> legal:pasalVersionHasVersionDate "1957-10-08"^^xsd:date .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008> legal:pasalVersionHasRawText "(1). Selama waktu melakukan pekerjaan jabatan Presiden dimaksud dalam pasal 1, Ketua Dewan Perwakilan Rakyat tidak boleh mempergunakan hak atau melakukan kewajibannya sebagai Ke tua/ anggota Dewan Perwakilan Rakyat.\n(2). Sebelum menjalankan pekerjaan ja batan Presiden, maka Ketua Dewan Perwakilan Rakyat harus mengangkat sumpah atau menyatakan keterangan menurut cara agamanya di hadapan Dewan Perwakilan Rakyat, sebagai berikut. \"Saya bersumpah (berjanji) bahwa saya, dalam menjalankan pekerjaan jabatan Pr esiden Republik Indonesia, untuk melakukan atau untuk tidak melakukan sesuatu tiada sekali - kali akan menerima dari siapa pun juga, langsung ataupun tak langsung sesuatu janji atau pemberian. Saya bersumpah (berjanji) bahwa saya dalam menjalankan pekerjaan jabatan Presiden Republik Indonesia dengan sekuat tenaga akan memajukan kesejahteraan Republik Indonesia dan akan melindungi serta mempertahankan kebebasan - kebebasan dan hak - hak umum dan khusus sekalian penghuni Negara. Saya bersumpah (berjanji) setia ke pada Undang - undang Dasar dan lagi bahwa saya akan memelihara segala peraturan yang berlaku bagi Republik Indonesia, bahwa saya akan setia kepada Nusa dan Bangsa dan bahwa saya dengan setia akan memenuhi segala kewajiban yang ditanggungkan kepada saya\".\n(3). Pengangkatan sumpah (pernyataan keterangan) dimaksud dalam ayat (2) dilakukan hanya pada kesempatan pertama hendak menjalankan pekerjaan." .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat> .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0001> .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0001> legal:ayatHasRawText "Selama waktu melakukan pekerjaan jabatan Presiden dimaksud dalam pasal 1, Ketua Dewan Perwakilan Rakyat tidak boleh mempergunakan hak atau melakukan kewajibannya sebagai Ke tua/ anggota Dewan Perwakilan Rakyat." .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0001/text> legal:textHasTextString "Selama waktu melakukan pekerjaan jabatan Presiden dimaksud dalam pasal 1, Ketua Dewan Perwakilan Rakyat tidak boleh mempergunakan hak atau melakukan kewajibannya sebagai Ke tua/ anggota Dewan Perwakilan Rakyat." .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0001/text> .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0002> .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0002> legal:ayatHasRawText "Sebelum menjalankan pekerjaan ja batan Presiden, maka Ketua Dewan Perwakilan Rakyat harus mengangkat sumpah atau menyatakan keterangan menurut cara agamanya di hadapan Dewan Perwakilan Rakyat, sebagai berikut. \"Saya bersumpah (berjanji) bahwa saya, dalam menjalankan pekerjaan jabatan Pr esiden Republik Indonesia, untuk melakukan atau untuk tidak melakukan sesuatu tiada sekali - kali akan menerima dari siapa pun juga, langsung ataupun tak langsung sesuatu janji atau pemberian. Saya bersumpah (berjanji) bahwa saya dalam menjalankan pekerjaan jabatan Presiden Republik Indonesia dengan sekuat tenaga akan memajukan kesejahteraan Republik Indonesia dan akan melindungi serta mempertahankan kebebasan - kebebasan dan hak - hak umum dan khusus sekalian penghuni Negara. Saya bersumpah (berjanji) setia ke pada Undang - undang Dasar dan lagi bahwa saya akan memelihara segala peraturan yang berlaku bagi Republik Indonesia, bahwa saya akan setia kepada Nusa dan Bangsa dan bahwa saya dengan setia akan memenuhi segala kewajiban yang ditanggungkan kepada saya\"." .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0002/text> legal:textHasTextString "Sebelum menjalankan pekerjaan ja batan Presiden, maka Ketua Dewan Perwakilan Rakyat harus mengangkat sumpah atau menyatakan keterangan menurut cara agamanya di hadapan Dewan Perwakilan Rakyat, sebagai berikut. \"Saya bersumpah (berjanji) bahwa saya, dalam menjalankan pekerjaan jabatan Pr esiden Republik Indonesia, untuk melakukan atau untuk tidak melakukan sesuatu tiada sekali - kali akan menerima dari siapa pun juga, langsung ataupun tak langsung sesuatu janji atau pemberian. Saya bersumpah (berjanji) bahwa saya dalam menjalankan pekerjaan jabatan Presiden Republik Indonesia dengan sekuat tenaga akan memajukan kesejahteraan Republik Indonesia dan akan melindungi serta mempertahankan kebebasan - kebebasan dan hak - hak umum dan khusus sekalian penghuni Negara. Saya bersumpah (berjanji) setia ke pada Undang - undang Dasar dan lagi bahwa saya akan memelihara segala peraturan yang berlaku bagi Republik Indonesia, bahwa saya akan setia kepada Nusa dan Bangsa dan bahwa saya dengan setia akan memenuhi segala kewajiban yang ditanggungkan kepada saya\"." .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0002/text> .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0003> .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0003> legal:ayatHasRawText "Pengangkatan sumpah (pernyataan keterangan) dimaksud dalam ayat (2) dilakukan hanya pada kesempatan pertama hendak menjalankan pekerjaan." .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0003/text> legal:textHasTextString "Pengangkatan sumpah (pernyataan keterangan) dimaksud dalam ayat (2) dilakukan hanya pada kesempatan pertama hendak menjalankan pekerjaan." .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0003/text> .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0002> .
+<http://example.org/legal/document/uu/1957/29/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1957/29/pasal/0003> .
+<http://example.org/legal/document/uu/1957/29/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/1957/29/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1957/29/pasal/0003/version/19571008> .
+<http://example.org/legal/document/uu/1957/29> legal:documentHasPasal <http://example.org/legal/document/uu/1957/29/pasal/0003> .
+<http://example.org/legal/document/uu/1957/29/pasal/0003/version/19571008> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1957/29/pasal/0003/version/19571008> legal:pasalVersionHasVersionDate "1957-10-08"^^xsd:date .
+<http://example.org/legal/document/uu/1957/29/pasal/0003/version/19571008> legal:pasalVersionHasRawText "Undang - undang ini mulai berlaku pada hari diundangkan. PRESIDEN REPUBLIK INDONESIA - 3 - Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan undang - undang ini dengan penempatan dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1957/29/pasal/0003/version/19571008/text> legal:textHasTextString "Undang - undang ini mulai berlaku pada hari diundangkan. PRESIDEN REPUBLIK INDONESIA - 3 - Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan undang - undang ini dengan penempatan dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1957/29/pasal/0003/version/19571008> legal:pasalVersionHasText <http://example.org/legal/document/uu/1957/29/pasal/0003/version/19571008/text> .
 <http://example.org/legal/document/uu/1957/29> legal:documentHasDisahkanDate "1957-10-08"^^xsd:date .
 <http://example.org/legal/document/uu/1957/29> legal:documentMengingat <http://example.org/legal/document/uu/1957/29/mengingat> .
 <http://example.org/legal/document/uu/1957/29/mengingat/text> legal:textHasTextString "Pasal - pasal 45 ayat 3, 48 dan 89 Undang - undan g Dasar Sementara Republik Indonesia, Dengan persetujuan Dewan Perwakilan Rakyat, MEMUTUSKAN : Menetapkan : UNDANG - UNDANG TENTANG PEJABAT YANG MENJALANKAN PEKERJAAN JABATAN PRESIDEN, JIKA PRESIDEN MANGKAT, BERHENTI ATAU BERHALANGAN, SEDANG WAKIL PRES IDEN TIDAK ADA ATAU BERHALANGAN." .
@@ -13,8 +64,48 @@
 <http://example.org/legal/document/uu/1957/29> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/1957/29> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/1957/29> a legal:Document .
+<http://example.org/legal/document/uu/1957/29/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1957/29/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1957/29/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1957/29/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/1957/29/pasal/0003/version/19571008> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1957/29/pasal/0003/version/19571008/text> a legal:Text .
 <http://example.org/legal/document/uu/1957/29/mengingat/text> a legal:Text .
 <http://example.org/legal/document/uu/1957/29/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1957/29/menimbang/text> a legal:Text .
 <http://example.org/legal/document/uu/1957/29/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/1957/29/bab> legal:partOf <http://example.org/legal/document/uu/1957/29> .
+<http://example.org/legal/document/uu/1957/29/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1957/29/pasals> .
+<http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008> legal:partOf <http://example.org/legal/document/uu/1957/29/pasal/0001> .
+<http://example.org/legal/document/uu/1957/29/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1957/29> .
+<http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008/ayat> legal:partOf <http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008> .
+<http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008/ayat> .
+<http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008/ayat/0001> .
+<http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008/ayat> .
+<http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1957/29/pasal/0001/version/19571008/ayat/0002> .
+<http://example.org/legal/document/uu/1957/29/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1957/29/pasals> .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008> legal:partOf <http://example.org/legal/document/uu/1957/29/pasal/0002> .
+<http://example.org/legal/document/uu/1957/29/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1957/29> .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat> legal:partOf <http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008> .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat> .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0001> .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat> .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0002> .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat> .
+<http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1957/29/pasal/0002/version/19571008/ayat/0003> .
+<http://example.org/legal/document/uu/1957/29/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1957/29/pasals> .
+<http://example.org/legal/document/uu/1957/29/pasal/0003/version/19571008> legal:partOf <http://example.org/legal/document/uu/1957/29/pasal/0003> .
+<http://example.org/legal/document/uu/1957/29/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1957/29> .

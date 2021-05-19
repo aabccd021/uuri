@@ -111,18 +111,52 @@ opText: |-
   Nomor 4 tahun 1953 tentang pengenaan tambahan opsenten atas bensin
   dan sebagainya (Lembaran Negara Nomor 11 tahun 1953) ditetapkan
   sebagai Undang - undang jang berbunyi sebagai berikut :
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_6
+          nodeType: pasalVersion
+          version: &ref_7
+            nodeType: date
+            month: 12
+            date: 18
+            year: 1953
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_6
+          textString: >-
+            Angka "1952" tersebut dalam Pasal 1 Undang - undang No. 29 tahun 1953 (Lembaran Negara
+            No.79 tahun 1953) diubah menjadi "1953". Pasal II. Undang - undang ini mulai berlaku
+            pada tanggal 1 Januari 1953. PRESIDEN REPUBLIK INDONESIA - 3 - Agar supaya setiap orang
+            dapat mengetahuinya, memerintahkan pengund angan undang - undang ini dengan penempatan
+            dalam Lembaran Negara Republik Indonesia.
+          references:
+            - start: 28
+              end: 35
+              node:
+                key: 1
+                parentNode: *ref_0
+                nodeType: pasal
 disahkan:
-  date:
-    nodeType: date
-    month: 12
-    date: 18
-    year: 1953
+  date: *ref_7
   location: D
   pengesah: SUKARNO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

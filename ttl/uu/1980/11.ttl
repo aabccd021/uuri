@@ -1,7 +1,63 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1980/11> legal:documentHasBabSet <http://example.org/legal/document/uu/1980/11/bab> .
+<http://example.org/legal/document/uu/1980/11> legal:documentHasPasalSet <http://example.org/legal/document/uu/1980/11/pasals> .
+<http://example.org/legal/document/uu/1980/11/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1980/11/pasal/0001> .
+<http://example.org/legal/document/uu/1980/11/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1980/11/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1980/11/pasal/0001/version/19801027> .
+<http://example.org/legal/document/uu/1980/11> legal:documentHasPasal <http://example.org/legal/document/uu/1980/11/pasal/0001> .
+<http://example.org/legal/document/uu/1980/11/pasal/0001/version/19801027> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1980/11/pasal/0001/version/19801027> legal:pasalVersionHasVersionDate "1980-10-27"^^xsd:date .
+<http://example.org/legal/document/uu/1980/11/pasal/0001/version/19801027> legal:pasalVersionHasRawText "Yang dimaksud dengan tindak pidana suap di dalam undang - undang ini adalah tindak pidana suap di luar ketentuan peraturan perundang - undangan yang sudah ada." .
+<http://example.org/legal/document/uu/1980/11/pasal/0001/version/19801027/text> legal:textHasTextString "Yang dimaksud dengan tindak pidana suap di dalam undang - undang ini adalah tindak pidana suap di luar ketentuan peraturan perundang - undangan yang sudah ada." .
+<http://example.org/legal/document/uu/1980/11/pasal/0001/version/19801027> legal:pasalVersionHasText <http://example.org/legal/document/uu/1980/11/pasal/0001/version/19801027/text> .
+<http://example.org/legal/document/uu/1980/11/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1980/11/pasal/0002> .
+<http://example.org/legal/document/uu/1980/11/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1980/11/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1980/11/pasal/0002/version/19801027> .
+<http://example.org/legal/document/uu/1980/11> legal:documentHasPasal <http://example.org/legal/document/uu/1980/11/pasal/0002> .
+<http://example.org/legal/document/uu/1980/11/pasal/0002/version/19801027> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1980/11/pasal/0002/version/19801027> legal:pasalVersionHasVersionDate "1980-10-27"^^xsd:date .
+<http://example.org/legal/document/uu/1980/11/pasal/0002/version/19801027> legal:pasalVersionHasRawText "Barangsiapa memberi atau menjanjikan sesuatu kepada seseorang dengan maksud untuk membujuk supaya orang itu berbuat sesuatu atau tidak berbuat sesuatu dalam tugasnya, yang berlawanan dengan kewenangan atau kewajibannya yang menyangkut kepentingan umum, dip idana karena memberi suap dengan pidana penjara selama - lamanya 5 (lima) tahun dan denda sebanyak - banyaknya Rp.15.000.000, - (lima belasjuta rupiah)." .
+<http://example.org/legal/document/uu/1980/11/pasal/0002/version/19801027/text> legal:textHasTextString "Barangsiapa memberi atau menjanjikan sesuatu kepada seseorang dengan maksud untuk membujuk supaya orang itu berbuat sesuatu atau tidak berbuat sesuatu dalam tugasnya, yang berlawanan dengan kewenangan atau kewajibannya yang menyangkut kepentingan umum, dip idana karena memberi suap dengan pidana penjara selama - lamanya 5 (lima) tahun dan denda sebanyak - banyaknya Rp.15.000.000, - (lima belasjuta rupiah)." .
+<http://example.org/legal/document/uu/1980/11/pasal/0002/version/19801027> legal:pasalVersionHasText <http://example.org/legal/document/uu/1980/11/pasal/0002/version/19801027/text> .
+<http://example.org/legal/document/uu/1980/11/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1980/11/pasal/0003> .
+<http://example.org/legal/document/uu/1980/11/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/1980/11/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1980/11/pasal/0003/version/19801027> .
+<http://example.org/legal/document/uu/1980/11> legal:documentHasPasal <http://example.org/legal/document/uu/1980/11/pasal/0003> .
+<http://example.org/legal/document/uu/1980/11/pasal/0003/version/19801027> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1980/11/pasal/0003/version/19801027> legal:pasalVersionHasVersionDate "1980-10-27"^^xsd:date .
+<http://example.org/legal/document/uu/1980/11/pasal/0003/version/19801027> legal:pasalVersionHasRawText "Barangsiapa menerima s esuatu atau janji, sedangkan ia mengetahui atau patut dapat menduga bahwa pemberian sesuatu atau janji itu dimaksudkan supaya ia berbuat sesuatu atau tidak berbuat sesuatu dalam tugasnya, yang berlawanan dengan kewenangan atau kewajibannya yang menyangkut kepentingan umum, dipidana karena menerima suap dengan pidana penjara selama - lamanya 3 (tiga) tahun atau denda sebanyak - banyaknya Rp.15.000.000. - (lima belas juta rupiah)." .
+<http://example.org/legal/document/uu/1980/11/pasal/0003/version/19801027/text> legal:textHasTextString "Barangsiapa menerima s esuatu atau janji, sedangkan ia mengetahui atau patut dapat menduga bahwa pemberian sesuatu atau janji itu dimaksudkan supaya ia berbuat sesuatu atau tidak berbuat sesuatu dalam tugasnya, yang berlawanan dengan kewenangan atau kewajibannya yang menyangkut kepentingan umum, dipidana karena menerima suap dengan pidana penjara selama - lamanya 3 (tiga) tahun atau denda sebanyak - banyaknya Rp.15.000.000. - (lima belas juta rupiah)." .
+<http://example.org/legal/document/uu/1980/11/pasal/0003/version/19801027> legal:pasalVersionHasText <http://example.org/legal/document/uu/1980/11/pasal/0003/version/19801027/text> .
+<http://example.org/legal/document/uu/1980/11/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1980/11/pasal/0004> .
+<http://example.org/legal/document/uu/1980/11/pasal/0004> legal:pasalHasKey 4 .
+<http://example.org/legal/document/uu/1980/11/pasal/0004> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1980/11/pasal/0004/version/19801027> .
+<http://example.org/legal/document/uu/1980/11> legal:documentHasPasal <http://example.org/legal/document/uu/1980/11/pasal/0004> .
+<http://example.org/legal/document/uu/1980/11/pasal/0004/version/19801027> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1980/11/pasal/0004/version/19801027> legal:pasalVersionHasVersionDate "1980-10-27"^^xsd:date .
+<http://example.org/legal/document/uu/1980/11/pasal/0004/version/19801027> legal:pasalVersionHasRawText "Apabila tindak pidana tersebut dalam Pasal 2 dan Pasal 3 dilakukan di lua r wilayah Republik Indonesia, maka ketentuan dalam undang - undang ini berlaku juga terhadapnya." .
+<http://example.org/legal/document/uu/1980/11/pasal/0004/version/19801027/text> legal:textHasTextString "Apabila tindak pidana tersebut dalam Pasal 2 dan Pasal 3 dilakukan di lua r wilayah Republik Indonesia, maka ketentuan dalam undang - undang ini berlaku juga terhadapnya." .
+<http://example.org/legal/document/uu/1980/11/pasal/0004/version/19801027> legal:pasalVersionHasText <http://example.org/legal/document/uu/1980/11/pasal/0004/version/19801027/text> .
+<http://example.org/legal/document/uu/1980/11/pasal/0004/version/19801027/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1980/11/pasal/0003> .
+<http://example.org/legal/document/uu/1980/11/pasal/0004/version/19801027/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1980/11/pasal/0002> .
+<http://example.org/legal/document/uu/1980/11/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1980/11/pasal/0005> .
+<http://example.org/legal/document/uu/1980/11/pasal/0005> legal:pasalHasKey 5 .
+<http://example.org/legal/document/uu/1980/11/pasal/0005> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1980/11/pasal/0005/version/19801027> .
+<http://example.org/legal/document/uu/1980/11> legal:documentHasPasal <http://example.org/legal/document/uu/1980/11/pasal/0005> .
+<http://example.org/legal/document/uu/1980/11/pasal/0005/version/19801027> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1980/11/pasal/0005/version/19801027> legal:pasalVersionHasVersionDate "1980-10-27"^^xsd:date .
+<http://example.org/legal/document/uu/1980/11/pasal/0005/version/19801027> legal:pasalVersionHasRawText "Tindak pidana dalam undang - undang ini merupakan kejahatan." .
+<http://example.org/legal/document/uu/1980/11/pasal/0005/version/19801027/text> legal:textHasTextString "Tindak pidana dalam undang - undang ini merupakan kejahatan." .
+<http://example.org/legal/document/uu/1980/11/pasal/0005/version/19801027> legal:pasalVersionHasText <http://example.org/legal/document/uu/1980/11/pasal/0005/version/19801027/text> .
+<http://example.org/legal/document/uu/1980/11/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1980/11/pasal/0006> .
+<http://example.org/legal/document/uu/1980/11/pasal/0006> legal:pasalHasKey 6 .
+<http://example.org/legal/document/uu/1980/11/pasal/0006> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1980/11/pasal/0006/version/19801027> .
+<http://example.org/legal/document/uu/1980/11> legal:documentHasPasal <http://example.org/legal/document/uu/1980/11/pasal/0006> .
+<http://example.org/legal/document/uu/1980/11/pasal/0006/version/19801027> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1980/11/pasal/0006/version/19801027> legal:pasalVersionHasVersionDate "1980-10-27"^^xsd:date .
+<http://example.org/legal/document/uu/1980/11/pasal/0006/version/19801027> legal:pasalVersionHasRawText "Undang - undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA - 3 - Agar supaya setiap or ang mengetahuinya, memerintahkan pengundangan undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1980/11/pasal/0006/version/19801027/text> legal:textHasTextString "Undang - undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA - 3 - Agar supaya setiap or ang mengetahuinya, memerintahkan pengundangan undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1980/11/pasal/0006/version/19801027> legal:pasalVersionHasText <http://example.org/legal/document/uu/1980/11/pasal/0006/version/19801027/text> .
 <http://example.org/legal/document/uu/1980/11> legal:documentHasDisahkanDate "1980-10-27"^^xsd:date .
 <http://example.org/legal/document/uu/1980/11> legal:documentMengingat <http://example.org/legal/document/uu/1980/11/mengingat> .
 <http://example.org/legal/document/uu/1980/11/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1980/11/mengingat/point> .
@@ -35,6 +91,25 @@
 <http://example.org/legal/document/uu/1980/11> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/1980/11> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/1980/11> a legal:Document .
+<http://example.org/legal/document/uu/1980/11/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1980/11/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1980/11/pasal/0001/version/19801027> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1980/11/pasal/0001/version/19801027/text> a legal:Text .
+<http://example.org/legal/document/uu/1980/11/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1980/11/pasal/0002/version/19801027> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1980/11/pasal/0002/version/19801027/text> a legal:Text .
+<http://example.org/legal/document/uu/1980/11/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/1980/11/pasal/0003/version/19801027> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1980/11/pasal/0003/version/19801027/text> a legal:Text .
+<http://example.org/legal/document/uu/1980/11/pasal/0004> a legal:Pasal .
+<http://example.org/legal/document/uu/1980/11/pasal/0004/version/19801027> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1980/11/pasal/0004/version/19801027/text> a legal:Text .
+<http://example.org/legal/document/uu/1980/11/pasal/0005> a legal:Pasal .
+<http://example.org/legal/document/uu/1980/11/pasal/0005/version/19801027> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1980/11/pasal/0005/version/19801027/text> a legal:Text .
+<http://example.org/legal/document/uu/1980/11/pasal/0006> a legal:Pasal .
+<http://example.org/legal/document/uu/1980/11/pasal/0006/version/19801027> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1980/11/pasal/0006/version/19801027/text> a legal:Text .
 <http://example.org/legal/document/uu/1980/11/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1980/11/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/1980/11/mengingat/point> a legal:PointSet .
@@ -51,7 +126,24 @@
 <http://example.org/legal/document/uu/1980/11/menimbang/point/a/text> a legal:Text .
 <http://example.org/legal/document/uu/1980/11/menimbang/point/b> a legal:Point .
 <http://example.org/legal/document/uu/1980/11/menimbang/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/1980/11/bab> legal:partOf <http://example.org/legal/document/uu/1980/11> .
+<http://example.org/legal/document/uu/1980/11/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1980/11/pasals> .
+<http://example.org/legal/document/uu/1980/11/pasal/0001/version/19801027> legal:partOf <http://example.org/legal/document/uu/1980/11/pasal/0001> .
+<http://example.org/legal/document/uu/1980/11/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1980/11> .
+<http://example.org/legal/document/uu/1980/11/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1980/11/pasals> .
+<http://example.org/legal/document/uu/1980/11/pasal/0002/version/19801027> legal:partOf <http://example.org/legal/document/uu/1980/11/pasal/0002> .
+<http://example.org/legal/document/uu/1980/11/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1980/11> .
+<http://example.org/legal/document/uu/1980/11/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1980/11/pasals> .
+<http://example.org/legal/document/uu/1980/11/pasal/0003/version/19801027> legal:partOf <http://example.org/legal/document/uu/1980/11/pasal/0003> .
+<http://example.org/legal/document/uu/1980/11/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1980/11> .
+<http://example.org/legal/document/uu/1980/11/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1980/11/pasals> .
+<http://example.org/legal/document/uu/1980/11/pasal/0004/version/19801027> legal:partOf <http://example.org/legal/document/uu/1980/11/pasal/0004> .
+<http://example.org/legal/document/uu/1980/11/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1980/11> .
+<http://example.org/legal/document/uu/1980/11/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1980/11/pasals> .
+<http://example.org/legal/document/uu/1980/11/pasal/0005/version/19801027> legal:partOf <http://example.org/legal/document/uu/1980/11/pasal/0005> .
+<http://example.org/legal/document/uu/1980/11/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1980/11> .
+<http://example.org/legal/document/uu/1980/11/pasal/0006> legal:partOf <http://example.org/legal/document/uu/1980/11/pasals> .
+<http://example.org/legal/document/uu/1980/11/pasal/0006/version/19801027> legal:partOf <http://example.org/legal/document/uu/1980/11/pasal/0006> .
+<http://example.org/legal/document/uu/1980/11/pasal/0006> legal:partOf <http://example.org/legal/document/uu/1980/11> .
 <http://example.org/legal/document/uu/1980/11/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1980/11/mengingat/point> .
 <http://example.org/legal/document/uu/1980/11/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1980/11/mengingat/point> .
 <http://example.org/legal/document/uu/1980/11/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/1980/11/mengingat/point> .

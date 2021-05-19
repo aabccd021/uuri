@@ -1,7 +1,16 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1954/18> legal:documentHasBabSet <http://example.org/legal/document/uu/1954/18/bab> .
+<http://example.org/legal/document/uu/1954/18> legal:documentHasPasalSet <http://example.org/legal/document/uu/1954/18/pasals> .
+<http://example.org/legal/document/uu/1954/18/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1954/18/pasal/0001> .
+<http://example.org/legal/document/uu/1954/18/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1954/18/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1954/18/pasal/0001/version/19540510> .
+<http://example.org/legal/document/uu/1954/18> legal:documentHasPasal <http://example.org/legal/document/uu/1954/18/pasal/0001> .
+<http://example.org/legal/document/uu/1954/18/pasal/0001/version/19540510> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1954/18/pasal/0001/version/19540510> legal:pasalVersionHasVersionDate "1954-05-10"^^xsd:date .
+<http://example.org/legal/document/uu/1954/18/pasal/0001/version/19540510> legal:pasalVersionHasRawText "Ayat 2 dari pasal 3 Ordonansi (Staatsblad untuk Indonesia 1948 No. 141) seperti yang kemudi an telah diubah dan ditambah, terakhir dengan Lembaran Negara 1953 No. 25, diubah seluruhnya hingga menjadi sebagai berikut: \"(2) Yang ditentukan dalam pasal 1 berlaku sampai waktu yang akan ditetapkan\". PASAL II Undang - undang ini mulai berlaku pada har i diundangkan. PRESIDEN REPUBLIK INDONESIA - 3 - Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatan dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1954/18/pasal/0001/version/19540510/text> legal:textHasTextString "Ayat 2 dari pasal 3 Ordonansi (Staatsblad untuk Indonesia 1948 No. 141) seperti yang kemudi an telah diubah dan ditambah, terakhir dengan Lembaran Negara 1953 No. 25, diubah seluruhnya hingga menjadi sebagai berikut: \"(2) Yang ditentukan dalam pasal 1 berlaku sampai waktu yang akan ditetapkan\". PASAL II Undang - undang ini mulai berlaku pada har i diundangkan. PRESIDEN REPUBLIK INDONESIA - 3 - Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatan dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1954/18/pasal/0001/version/19540510> legal:pasalVersionHasText <http://example.org/legal/document/uu/1954/18/pasal/0001/version/19540510/text> .
 <http://example.org/legal/document/uu/1954/18> legal:documentHasDisahkanDate "1954-05-10"^^xsd:date .
 <http://example.org/legal/document/uu/1954/18> legal:documentMengingat <http://example.org/legal/document/uu/1954/18/mengingat> .
 <http://example.org/legal/document/uu/1954/18/mengingat/text> legal:textHasTextString "pasal 89 dan pasal 97 Undang - undang Dasar Sementara Republik Indonesia; Dengan persetujuan Dewan Perwakilan Rakyat; PRESIDEN REPUBLIK INDONESIA - 2 - MEMUTUSKAN : Menetapkan : UNDANG - UNDANG TENTANG PENETAPAN \"UNDANG - UNDANG DARURAT GUNA MENETAPKAN WAKTU BERLAKUNYA ATURAN HUKUMAN YANG TERMAKSUD DALAM PASAL 3 AYAT 2 ORDONANSI (STAATSBLAD UNTUK INDONESIA 1948 No. 141) UNTUK SELANJUTNYA \" (UNDANG - UNDANG DARURAT No. 4 TAHUN 1954, LEMB ARAN NEGARA 1954 No. 12) SEBAGAI UNDANG - UNDANG. PASAL I Peraturan - peraturan yang termaktub dalam undang - undang Darurat guna menetapkan waktu berlakunya aturan hukuman yang termaksud dalam pasal 3 ayat 2 Ordonansi (Staatsblad untuk Indonesia 1948 No. 141 ) untuk selanjutnya (Undang - undang Darurat No. 4 tahun 1954, Lembaran Negara 1954 No. 12) ditetapkan sebagai Undang - undang, yang berbunyi sebagai berikut:" .
@@ -22,6 +31,10 @@
 <http://example.org/legal/document/uu/1954/18> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/1954/18> legal:documentHasDisahkanJabatanPengesah "WAKIL PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/1954/18> a legal:Document .
+<http://example.org/legal/document/uu/1954/18/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1954/18/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1954/18/pasal/0001/version/19540510> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1954/18/pasal/0001/version/19540510/text> a legal:Text .
 <http://example.org/legal/document/uu/1954/18/mengingat/text> a legal:Text .
 <http://example.org/legal/document/uu/1954/18/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1954/18/menimbang> a legal:Menimbang .
@@ -31,6 +44,8 @@
 <http://example.org/legal/document/uu/1954/18/menimbang/point/a/text> a legal:Text .
 <http://example.org/legal/document/uu/1954/18/menimbang/point/b> a legal:Point .
 <http://example.org/legal/document/uu/1954/18/menimbang/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/1954/18/bab> legal:partOf <http://example.org/legal/document/uu/1954/18> .
+<http://example.org/legal/document/uu/1954/18/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1954/18/pasals> .
+<http://example.org/legal/document/uu/1954/18/pasal/0001/version/19540510> legal:partOf <http://example.org/legal/document/uu/1954/18/pasal/0001> .
+<http://example.org/legal/document/uu/1954/18/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1954/18> .
 <http://example.org/legal/document/uu/1954/18/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1954/18/menimbang/point> .
 <http://example.org/legal/document/uu/1954/18/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1954/18/menimbang/point> .

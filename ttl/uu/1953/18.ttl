@@ -1,7 +1,97 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1953/18> legal:documentHasBabSet <http://example.org/legal/document/uu/1953/18/bab> .
+<http://example.org/legal/document/uu/1953/18> legal:documentHasPasalSet <http://example.org/legal/document/uu/1953/18/pasals> .
+<http://example.org/legal/document/uu/1953/18/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1953/18/pasal/0001> .
+<http://example.org/legal/document/uu/1953/18/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1953/18/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603> .
+<http://example.org/legal/document/uu/1953/18> legal:documentHasPasal <http://example.org/legal/document/uu/1953/18/pasal/0001> .
+<http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603> legal:pasalVersionHasVersionDate "1953-06-03"^^xsd:date .
+<http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603> legal:pasalVersionHasRawText "(1). Atas permintaan Pengurus sesuatu rumah - sakit, maka Menteri Kesehatan dapat menunjuk suatu rumah - sakit atau sebagian dari sebuah rumah - sakit jang diusahakan atau didirikan oleh badan - hukum bukan badan - hukum publik, dan menurut tujuannya bukan mencari keuntu ngan sebagai rumah - sakit jang menyelenggarakan perawatan untuk orang - orang jang miskin dan orang - orang jang kurang mampu.\n(2). Jang dimaksud dengan rumah - sakit dalam ayat 1, ialah tempat pengobatan dan perawatan orang sakit jang ada dalam pengawasan seorang dokter jang mendapat izin untuk menjalankan praktek." .
+<http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603/ayat> .
+<http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603/ayat/0001> .
+<http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603/ayat/0001> legal:ayatHasRawText "Atas permintaan Pengurus sesuatu rumah - sakit, maka Menteri Kesehatan dapat menunjuk suatu rumah - sakit atau sebagian dari sebuah rumah - sakit jang diusahakan atau didirikan oleh badan - hukum bukan badan - hukum publik, dan menurut tujuannya bukan mencari keuntu ngan sebagai rumah - sakit jang menyelenggarakan perawatan untuk orang - orang jang miskin dan orang - orang jang kurang mampu." .
+<http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603/ayat/0001/text> legal:textHasTextString "Atas permintaan Pengurus sesuatu rumah - sakit, maka Menteri Kesehatan dapat menunjuk suatu rumah - sakit atau sebagian dari sebuah rumah - sakit jang diusahakan atau didirikan oleh badan - hukum bukan badan - hukum publik, dan menurut tujuannya bukan mencari keuntu ngan sebagai rumah - sakit jang menyelenggarakan perawatan untuk orang - orang jang miskin dan orang - orang jang kurang mampu." .
+<http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603/ayat/0001/text> .
+<http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603/ayat/0002> .
+<http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603/ayat/0002> legal:ayatHasRawText "Jang dimaksud dengan rumah - sakit dalam ayat 1, ialah tempat pengobatan dan perawatan orang sakit jang ada dalam pengawasan seorang dokter jang mendapat izin untuk menjalankan praktek." .
+<http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603/ayat/0002/text> legal:textHasTextString "Jang dimaksud dengan rumah - sakit dalam ayat 1, ialah tempat pengobatan dan perawatan orang sakit jang ada dalam pengawasan seorang dokter jang mendapat izin untuk menjalankan praktek." .
+<http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603/ayat/0002/text> .
+<http://example.org/legal/document/uu/1953/18/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1953/18/pasal/0002> .
+<http://example.org/legal/document/uu/1953/18/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1953/18/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603> .
+<http://example.org/legal/document/uu/1953/18> legal:documentHasPasal <http://example.org/legal/document/uu/1953/18/pasal/0002> .
+<http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603> legal:pasalVersionHasVersionDate "1953-06-03"^^xsd:date .
+<http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603> legal:pasalVersionHasRawText "(1). Kepada rumah - sakit - rumah - sakit jang dimaksudkan dalam Pasal 1 diberikan penggantian biaya untuk. perawatan orang - orang jang miskin dan orang - orang jang kurang mampu.\n(2). Penggantian ini diberikan tiap setengah tahun dan dibayarkan lebih dahulu, dengan perhitungan kemudian berdasarkan atas penerimaan dan pengeluaran uang dalam tahun jang baru berakhir dan anggaran belanja tahun jang bersangkutan daripada perawatan itu. PRESIDEN REPUBLIK INDONESIA - 3 -" .
+<http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603/ayat> .
+<http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603/ayat/0001> .
+<http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603/ayat/0001> legal:ayatHasRawText "Kepada rumah - sakit - rumah - sakit jang dimaksudkan dalam Pasal 1 diberikan penggantian biaya untuk. perawatan orang - orang jang miskin dan orang - orang jang kurang mampu." .
+<http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603/ayat/0001/text> legal:textHasTextString "Kepada rumah - sakit - rumah - sakit jang dimaksudkan dalam Pasal 1 diberikan penggantian biaya untuk. perawatan orang - orang jang miskin dan orang - orang jang kurang mampu." .
+<http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603/ayat/0001/text> .
+<http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1953/18/pasal/0001> .
+<http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603/ayat/0002> .
+<http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603/ayat/0002> legal:ayatHasRawText "Penggantian ini diberikan tiap setengah tahun dan dibayarkan lebih dahulu, dengan perhitungan kemudian berdasarkan atas penerimaan dan pengeluaran uang dalam tahun jang baru berakhir dan anggaran belanja tahun jang bersangkutan daripada perawatan itu. PRESIDEN REPUBLIK INDONESIA - 3 -" .
+<http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603/ayat/0002/text> legal:textHasTextString "Penggantian ini diberikan tiap setengah tahun dan dibayarkan lebih dahulu, dengan perhitungan kemudian berdasarkan atas penerimaan dan pengeluaran uang dalam tahun jang baru berakhir dan anggaran belanja tahun jang bersangkutan daripada perawatan itu. PRESIDEN REPUBLIK INDONESIA - 3 -" .
+<http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603/ayat/0002/text> .
+<http://example.org/legal/document/uu/1953/18/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1953/18/pasal/0003> .
+<http://example.org/legal/document/uu/1953/18/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/1953/18/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1953/18/pasal/0003/version/19530603> .
+<http://example.org/legal/document/uu/1953/18> legal:documentHasPasal <http://example.org/legal/document/uu/1953/18/pasal/0003> .
+<http://example.org/legal/document/uu/1953/18/pasal/0003/version/19530603> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1953/18/pasal/0003/version/19530603> legal:pasalVersionHasVersionDate "1953-06-03"^^xsd:date .
+<http://example.org/legal/document/uu/1953/18/pasal/0003/version/19530603> legal:pasalVersionHasRawText "Penetapan dan pertanggungan penggantian biaya jang dimaksud dalam Pasal 2, pengawasan perawatan dan pemakaian uang penggantian biaya itu, perubahan surat keputusan - penunjukan, demikian pula pencabutannya diatur dengan Pera turan Pemerintah." .
+<http://example.org/legal/document/uu/1953/18/pasal/0003/version/19530603/text> legal:textHasTextString "Penetapan dan pertanggungan penggantian biaya jang dimaksud dalam Pasal 2, pengawasan perawatan dan pemakaian uang penggantian biaya itu, perubahan surat keputusan - penunjukan, demikian pula pencabutannya diatur dengan Pera turan Pemerintah." .
+<http://example.org/legal/document/uu/1953/18/pasal/0003/version/19530603> legal:pasalVersionHasText <http://example.org/legal/document/uu/1953/18/pasal/0003/version/19530603/text> .
+<http://example.org/legal/document/uu/1953/18/pasal/0003/version/19530603/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1953/18/pasal/0002> .
+<http://example.org/legal/document/uu/1953/18/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1953/18/pasal/0004> .
+<http://example.org/legal/document/uu/1953/18/pasal/0004> legal:pasalHasKey 4 .
+<http://example.org/legal/document/uu/1953/18/pasal/0004> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603> .
+<http://example.org/legal/document/uu/1953/18> legal:documentHasPasal <http://example.org/legal/document/uu/1953/18/pasal/0004> .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603> legal:pasalVersionHasVersionDate "1953-06-03"^^xsd:date .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603> legal:pasalVersionHasRawText "(1). Menteri Kesehatan dapat memberikan sokongan untuk memperluas sebuah rumah - sakit menurut Pasal 1 ayat 1, termasuk perumahan pegawainya.\n(2). Menteri Kesehatan dapat memberikan pinjaman untuk sebahagian daripada ongkos - ongkos mendirikan rumah - sakit baru menurut Pasal 1 ayat 1, termasuk perumahan pegawainya. Hal ini akan diatur dengan Peraturan Pemerintah.\n(3). Sokongan dan pinjaman jang dimaksud dalam ayat 1 dan 2 mengenai hal - hal untuk keperluan orang - orang jang m iskin dan orang - orang jang kurang mampu." .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat> .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0001> .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0001> legal:ayatHasRawText "Menteri Kesehatan dapat memberikan sokongan untuk memperluas sebuah rumah - sakit menurut Pasal 1 ayat 1, termasuk perumahan pegawainya." .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0001/text> legal:textHasTextString "Menteri Kesehatan dapat memberikan sokongan untuk memperluas sebuah rumah - sakit menurut Pasal 1 ayat 1, termasuk perumahan pegawainya." .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0001/text> .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1953/18/pasal/0001> .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0002> .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0002> legal:ayatHasRawText "Menteri Kesehatan dapat memberikan pinjaman untuk sebahagian daripada ongkos - ongkos mendirikan rumah - sakit baru menurut Pasal 1 ayat 1, termasuk perumahan pegawainya. Hal ini akan diatur dengan Peraturan Pemerintah." .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0002/text> legal:textHasTextString "Menteri Kesehatan dapat memberikan pinjaman untuk sebahagian daripada ongkos - ongkos mendirikan rumah - sakit baru menurut Pasal 1 ayat 1, termasuk perumahan pegawainya. Hal ini akan diatur dengan Peraturan Pemerintah." .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0002/text> .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1953/18/pasal/0001> .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0003> .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0003> legal:ayatHasRawText "Sokongan dan pinjaman jang dimaksud dalam ayat 1 dan 2 mengenai hal - hal untuk keperluan orang - orang jang m iskin dan orang - orang jang kurang mampu." .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0003/text> legal:textHasTextString "Sokongan dan pinjaman jang dimaksud dalam ayat 1 dan 2 mengenai hal - hal untuk keperluan orang - orang jang m iskin dan orang - orang jang kurang mampu." .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0003/text> .
+<http://example.org/legal/document/uu/1953/18/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1953/18/pasal/0005> .
+<http://example.org/legal/document/uu/1953/18/pasal/0005> legal:pasalHasKey 5 .
+<http://example.org/legal/document/uu/1953/18/pasal/0005> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1953/18/pasal/0005/version/19530603> .
+<http://example.org/legal/document/uu/1953/18> legal:documentHasPasal <http://example.org/legal/document/uu/1953/18/pasal/0005> .
+<http://example.org/legal/document/uu/1953/18/pasal/0005/version/19530603> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1953/18/pasal/0005/version/19530603> legal:pasalVersionHasVersionDate "1953-06-03"^^xsd:date .
+<http://example.org/legal/document/uu/1953/18/pasal/0005/version/19530603> legal:pasalVersionHasRawText "Rumah - sakit - rumah - sakit, jang pada saat berlakunya undang - undang ini diberi subsidi atas dasar peraturan ordonansi dalam Staatsblad 1928 No. 540, jang penghabisan diubah dengan Staatsblad 1949 No. 213, teta p memegang status jang berhubungan dengan pemberian subsidi itu sampai akhir tahun 1953." .
+<http://example.org/legal/document/uu/1953/18/pasal/0005/version/19530603/text> legal:textHasTextString "Rumah - sakit - rumah - sakit, jang pada saat berlakunya undang - undang ini diberi subsidi atas dasar peraturan ordonansi dalam Staatsblad 1928 No. 540, jang penghabisan diubah dengan Staatsblad 1949 No. 213, teta p memegang status jang berhubungan dengan pemberian subsidi itu sampai akhir tahun 1953." .
+<http://example.org/legal/document/uu/1953/18/pasal/0005/version/19530603> legal:pasalVersionHasText <http://example.org/legal/document/uu/1953/18/pasal/0005/version/19530603/text> .
+<http://example.org/legal/document/uu/1953/18/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1953/18/pasal/0006> .
+<http://example.org/legal/document/uu/1953/18/pasal/0006> legal:pasalHasKey 6 .
+<http://example.org/legal/document/uu/1953/18/pasal/0006> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1953/18/pasal/0006/version/19530603> .
+<http://example.org/legal/document/uu/1953/18> legal:documentHasPasal <http://example.org/legal/document/uu/1953/18/pasal/0006> .
+<http://example.org/legal/document/uu/1953/18/pasal/0006/version/19530603> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1953/18/pasal/0006/version/19530603> legal:pasalVersionHasVersionDate "1953-06-03"^^xsd:date .
+<http://example.org/legal/document/uu/1953/18/pasal/0006/version/19530603> legal:pasalVersionHasRawText "Undang - undang ini mulai berlaku pada hari diundangkan. PRESIDEN REPUBLIK INDONESIA - 4 - Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan Undang - undang - ini dengan penempatan dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1953/18/pasal/0006/version/19530603/text> legal:textHasTextString "Undang - undang ini mulai berlaku pada hari diundangkan. PRESIDEN REPUBLIK INDONESIA - 4 - Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan Undang - undang - ini dengan penempatan dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1953/18/pasal/0006/version/19530603> legal:pasalVersionHasText <http://example.org/legal/document/uu/1953/18/pasal/0006/version/19530603/text> .
 <http://example.org/legal/document/uu/1953/18> legal:documentHasDisahkanDate "1953-06-03"^^xsd:date .
 <http://example.org/legal/document/uu/1953/18> legal:documentMengingat <http://example.org/legal/document/uu/1953/18/mengingat> .
 <http://example.org/legal/document/uu/1953/18/mengingat/text> legal:textHasTextString "Pasal 42 dan Pasal 89 Undang - undang Dasar Sementara Republik Indonesia; Dengan persetudjuan Dewan Perwakilan Rakjat : MEMUTUSKAN: Dengan mentjabut ordonansi dalam Staatsblad 1928 Nr 540, jang terakhir diubah (dengan Staatsblad 1949 Nr 213; PRESIDEN REPUBLIK INDONESIA - 2 - Menetapkan : UNDANG - UNDANG TENTANG PENUNJUKAN RUMAH SAKIT RUMAH SAKIT PARTIKULIR JANG MERAWAT ORANG - ORANG JANG MISKIN DAN ORANG - ORANG JANG KURANG MAMPU." .
@@ -30,6 +120,39 @@
 <http://example.org/legal/document/uu/1953/18> legal:documentHasDisahkanLocation "Djakarta" .
 <http://example.org/legal/document/uu/1953/18> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/1953/18> a legal:Document .
+<http://example.org/legal/document/uu/1953/18/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1953/18/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1953/18/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1953/18/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/1953/18/pasal/0003/version/19530603> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1953/18/pasal/0003/version/19530603/text> a legal:Text .
+<http://example.org/legal/document/uu/1953/18/pasal/0004> a legal:Pasal .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1953/18/pasal/0005> a legal:Pasal .
+<http://example.org/legal/document/uu/1953/18/pasal/0005/version/19530603> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1953/18/pasal/0005/version/19530603/text> a legal:Text .
+<http://example.org/legal/document/uu/1953/18/pasal/0006> a legal:Pasal .
+<http://example.org/legal/document/uu/1953/18/pasal/0006/version/19530603> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1953/18/pasal/0006/version/19530603/text> a legal:Text .
 <http://example.org/legal/document/uu/1953/18/mengingat/text> a legal:Text .
 <http://example.org/legal/document/uu/1953/18/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1953/18/menimbang> a legal:Menimbang .
@@ -43,7 +166,41 @@
 <http://example.org/legal/document/uu/1953/18/menimbang/point/c/text> a legal:Text .
 <http://example.org/legal/document/uu/1953/18/menimbang/point/d> a legal:Point .
 <http://example.org/legal/document/uu/1953/18/menimbang/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/1953/18/bab> legal:partOf <http://example.org/legal/document/uu/1953/18> .
+<http://example.org/legal/document/uu/1953/18/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1953/18/pasals> .
+<http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603> legal:partOf <http://example.org/legal/document/uu/1953/18/pasal/0001> .
+<http://example.org/legal/document/uu/1953/18/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1953/18> .
+<http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603/ayat> legal:partOf <http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603> .
+<http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603/ayat> .
+<http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603/ayat/0001> .
+<http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603/ayat> .
+<http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1953/18/pasal/0001/version/19530603/ayat/0002> .
+<http://example.org/legal/document/uu/1953/18/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1953/18/pasals> .
+<http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603> legal:partOf <http://example.org/legal/document/uu/1953/18/pasal/0002> .
+<http://example.org/legal/document/uu/1953/18/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1953/18> .
+<http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603/ayat> legal:partOf <http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603> .
+<http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603/ayat> .
+<http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603/ayat/0001> .
+<http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603/ayat> .
+<http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1953/18/pasal/0002/version/19530603/ayat/0002> .
+<http://example.org/legal/document/uu/1953/18/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1953/18/pasals> .
+<http://example.org/legal/document/uu/1953/18/pasal/0003/version/19530603> legal:partOf <http://example.org/legal/document/uu/1953/18/pasal/0003> .
+<http://example.org/legal/document/uu/1953/18/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1953/18> .
+<http://example.org/legal/document/uu/1953/18/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1953/18/pasals> .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603> legal:partOf <http://example.org/legal/document/uu/1953/18/pasal/0004> .
+<http://example.org/legal/document/uu/1953/18/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1953/18> .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat> legal:partOf <http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603> .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat> .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0001> .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat> .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0002> .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat> .
+<http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1953/18/pasal/0004/version/19530603/ayat/0003> .
+<http://example.org/legal/document/uu/1953/18/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1953/18/pasals> .
+<http://example.org/legal/document/uu/1953/18/pasal/0005/version/19530603> legal:partOf <http://example.org/legal/document/uu/1953/18/pasal/0005> .
+<http://example.org/legal/document/uu/1953/18/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1953/18> .
+<http://example.org/legal/document/uu/1953/18/pasal/0006> legal:partOf <http://example.org/legal/document/uu/1953/18/pasals> .
+<http://example.org/legal/document/uu/1953/18/pasal/0006/version/19530603> legal:partOf <http://example.org/legal/document/uu/1953/18/pasal/0006> .
+<http://example.org/legal/document/uu/1953/18/pasal/0006> legal:partOf <http://example.org/legal/document/uu/1953/18> .
 <http://example.org/legal/document/uu/1953/18/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1953/18/menimbang/point> .
 <http://example.org/legal/document/uu/1953/18/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1953/18/menimbang/point> .
 <http://example.org/legal/document/uu/1953/18/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/1953/18/menimbang/point> .

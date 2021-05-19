@@ -1,7 +1,34 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1985/10> legal:documentHasBabSet <http://example.org/legal/document/uu/1985/10/bab> .
+<http://example.org/legal/document/uu/1985/10> legal:documentHasPasalSet <http://example.org/legal/document/uu/1985/10/pasals> .
+<http://example.org/legal/document/uu/1985/10/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1985/10/pasal/0001> .
+<http://example.org/legal/document/uu/1985/10/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1985/10/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1985/10/pasal/0001/version/19851002> .
+<http://example.org/legal/document/uu/1985/10> legal:documentHasPasal <http://example.org/legal/document/uu/1985/10/pasal/0001> .
+<http://example.org/legal/document/uu/1985/10/pasal/0001/version/19851002> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1985/10/pasal/0001/version/19851002> legal:pasalVersionHasVersionDate "1985-10-02"^^xsd:date .
+<http://example.org/legal/document/uu/1985/10/pasal/0001/version/19851002> legal:pasalVersionHasRawText "Mencabut Undang-undang Nomor 4 Tahun 1970 tentang Pembentukan Daerah Perdagangan Bebas dengan Pelabuhan Bebas Sabang ( Lembaran Negara Tahun 1970 Nomor 21, Tambahan Lembaran Negara Nomor 2929" .
+<http://example.org/legal/document/uu/1985/10/pasal/0001/version/19851002/text> legal:textHasTextString "Mencabut Undang-undang Nomor 4 Tahun 1970 tentang Pembentukan Daerah Perdagangan Bebas dengan Pelabuhan Bebas Sabang ( Lembaran Negara Tahun 1970 Nomor 21, Tambahan Lembaran Negara Nomor 2929" .
+<http://example.org/legal/document/uu/1985/10/pasal/0001/version/19851002> legal:pasalVersionHasText <http://example.org/legal/document/uu/1985/10/pasal/0001/version/19851002/text> .
+<http://example.org/legal/document/uu/1985/10/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1985/10/pasal/0002> .
+<http://example.org/legal/document/uu/1985/10/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1985/10/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1985/10/pasal/0002/version/19851002> .
+<http://example.org/legal/document/uu/1985/10> legal:documentHasPasal <http://example.org/legal/document/uu/1985/10/pasal/0002> .
+<http://example.org/legal/document/uu/1985/10/pasal/0002/version/19851002> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1985/10/pasal/0002/version/19851002> legal:pasalVersionHasVersionDate "1985-10-02"^^xsd:date .
+<http://example.org/legal/document/uu/1985/10/pasal/0002/version/19851002> legal:pasalVersionHasRawText "Penyelesaian hal-hal sebagai akibat berlakunya Undang-undang ini diatur dengan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/1985/10/pasal/0002/version/19851002/text> legal:textHasTextString "Penyelesaian hal-hal sebagai akibat berlakunya Undang-undang ini diatur dengan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/1985/10/pasal/0002/version/19851002> legal:pasalVersionHasText <http://example.org/legal/document/uu/1985/10/pasal/0002/version/19851002/text> .
+<http://example.org/legal/document/uu/1985/10/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1985/10/pasal/0003> .
+<http://example.org/legal/document/uu/1985/10/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/1985/10/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1985/10/pasal/0003/version/19851002> .
+<http://example.org/legal/document/uu/1985/10> legal:documentHasPasal <http://example.org/legal/document/uu/1985/10/pasal/0003> .
+<http://example.org/legal/document/uu/1985/10/pasal/0003/version/19851002> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1985/10/pasal/0003/version/19851002> legal:pasalVersionHasVersionDate "1985-10-02"^^xsd:date .
+<http://example.org/legal/document/uu/1985/10/pasal/0003/version/19851002> legal:pasalVersionHasRawText "Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1985/10/pasal/0003/version/19851002/text> legal:textHasTextString "Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1985/10/pasal/0003/version/19851002> legal:pasalVersionHasText <http://example.org/legal/document/uu/1985/10/pasal/0003/version/19851002/text> .
 <http://example.org/legal/document/uu/1985/10> legal:documentHasDisahkanDate "1985-10-02"^^xsd:date .
 <http://example.org/legal/document/uu/1985/10> legal:documentMengingat <http://example.org/legal/document/uu/1985/10/mengingat> .
 <http://example.org/legal/document/uu/1985/10/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1985/10/mengingat/point> .
@@ -39,6 +66,16 @@
 <http://example.org/legal/document/uu/1985/10> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/1985/10> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA" .
 <http://example.org/legal/document/uu/1985/10> a legal:Document .
+<http://example.org/legal/document/uu/1985/10/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1985/10/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1985/10/pasal/0001/version/19851002> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1985/10/pasal/0001/version/19851002/text> a legal:Text .
+<http://example.org/legal/document/uu/1985/10/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1985/10/pasal/0002/version/19851002> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1985/10/pasal/0002/version/19851002/text> a legal:Text .
+<http://example.org/legal/document/uu/1985/10/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/1985/10/pasal/0003/version/19851002> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1985/10/pasal/0003/version/19851002/text> a legal:Text .
 <http://example.org/legal/document/uu/1985/10/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1985/10/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/1985/10/mengingat/point> a legal:PointSet .
@@ -57,7 +94,15 @@
 <http://example.org/legal/document/uu/1985/10/menimbang/point/b/text> a legal:Text .
 <http://example.org/legal/document/uu/1985/10/menimbang/point/c> a legal:Point .
 <http://example.org/legal/document/uu/1985/10/menimbang/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/1985/10/bab> legal:partOf <http://example.org/legal/document/uu/1985/10> .
+<http://example.org/legal/document/uu/1985/10/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1985/10/pasals> .
+<http://example.org/legal/document/uu/1985/10/pasal/0001/version/19851002> legal:partOf <http://example.org/legal/document/uu/1985/10/pasal/0001> .
+<http://example.org/legal/document/uu/1985/10/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1985/10> .
+<http://example.org/legal/document/uu/1985/10/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1985/10/pasals> .
+<http://example.org/legal/document/uu/1985/10/pasal/0002/version/19851002> legal:partOf <http://example.org/legal/document/uu/1985/10/pasal/0002> .
+<http://example.org/legal/document/uu/1985/10/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1985/10> .
+<http://example.org/legal/document/uu/1985/10/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1985/10/pasals> .
+<http://example.org/legal/document/uu/1985/10/pasal/0003/version/19851002> legal:partOf <http://example.org/legal/document/uu/1985/10/pasal/0003> .
+<http://example.org/legal/document/uu/1985/10/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1985/10> .
 <http://example.org/legal/document/uu/1985/10/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1985/10/mengingat/point> .
 <http://example.org/legal/document/uu/1985/10/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1985/10/mengingat/point> .
 <http://example.org/legal/document/uu/1985/10/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/1985/10/mengingat/point> .

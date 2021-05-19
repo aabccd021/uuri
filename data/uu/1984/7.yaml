@@ -195,18 +195,81 @@ opText: |-
   PENGHAPUSAN SEGALA BENTUK DISKRIMINASI TERHADAP
   WANITA (CONVENTION ON THE ELIMINATION OF ALL FORMS OF
   DISCRIMINATION AGAINST WOMEN).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_12
+          nodeType: pasalVersion
+          version: &ref_13
+            nodeType: date
+            month: 7
+            date: 24
+            year: 1984
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_12
+          textString: >-
+            Mengesahkan Konvensi mengenai Penghapusan Segala Bentuk Diskriminasi terhadap Wanita
+            (Convention on the Elimination of All Forms of Discrimination Against Women) yang telah
+            disetujui oleh Majelis Umum Perserikatan Bangsa-Bangsa pada tanggal 18 Desember 1979,
+            dengan pensyaratan (reservation) terhadap Pasal 29 ayat (1) tentang penyelesaian
+            perselisihan mengenai penafsiran atau penerapan Konvensi ini, yang salinannya
+            dilampirkan pada Undang- undang ini.
+          references:
+            - start: 301
+              end: 318
+              node:
+                parentAyatSetNode:
+                  nodeType: ayatSet
+                  parentPasalVersionNode: *ref_12
+                key: 1
+                nodeType: ayat
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_14
+          nodeType: pasalVersion
+          version: *ref_13
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_14
+          textString: >-
+            Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang
+            mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 7
-    date: 24
-    year: 1984
+  date: *ref_13
   location: Jakarta
   pengesah: SOEHARTO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA

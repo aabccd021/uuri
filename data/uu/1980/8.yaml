@@ -213,18 +213,153 @@ opText: |-
   MEMUTUSKAN :
   Menetapkan : UNDANG - UNDANG TENTANG PEMBENTUKAN PENGADILAN TINGGI PALANGKARAYA
   DAN PERUBAHAN WILAYAH HUKUM PENGADILAN TINGGI BANJARMASIN.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_12
+          nodeType: pasalVersion
+          version: &ref_16
+            nodeType: date
+            month: 7
+            date: 29
+            year: 1980
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_13
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_12
+          elements:
+            - type: ayat
+              node: &ref_14
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_13
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_14
+                textString: Membentuk Pengadilan Tinggi Palangkaraya yang berkedudukan di Palangkaraya.
+                references: []
+            - type: ayat
+              node: &ref_15
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_13
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_15
+                textString: >-
+                  Wilayah hukum pengadilan tinggi tersebut pada ayat (1) meliputi wilayah hukum
+                  semua pengadilan negeri dalam Propinsi Kalimantan Tengah.
+                references:
+                  - start: 46
+                    end: 54
+                    node:
+                      key: 1
+                      parentAyatSetNode:
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_12
+                      nodeType: ayat
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_17
+          nodeType: pasalVersion
+          version: *ref_16
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_17
+          textString: >-
+            Wilayah hukum Pengadilan Tinggi Banjarmasin dikurangi dengan wilayah hukum semua
+            pengadilan negeri dalam Propinsi Kalimantan Tengah.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 3
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_18
+          nodeType: pasalVersion
+          version: *ref_16
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '3'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_18
+          textString: >-
+            Perkara - perkara yang berasal dari pengadilan negeri dalam Propinsi Kalimantan Tengah,
+            yang pada saat mulai berlak unya Undang - undang ini belum diputus oleh Pengadilan
+            Tinggi Banjarmasin, tetap didaftar, diperiksa dan diputus oleh Pengadilan Tinggi
+            Banjarmasin, sampai saat diresmikannya Pengadilan Tinggi Palangkaraya.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 4
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_19
+          nodeType: pasalVersion
+          version: *ref_16
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '4'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_19
+          textString: >-
+            Undang - undang ini mulai berlaku pada tang gal diundangkannya. Agar supaya setiap orang
+            mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 7
-    date: 29
-    year: 1980
+  date: *ref_16
   location: Jakarta
   pengesah: Diundangkan di Jakarta
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

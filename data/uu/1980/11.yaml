@@ -168,18 +168,186 @@ opText: |-
   - 2 -
   MEMUTUSKAN :
   Menetapkan : UNDANG - UNDANG TENTANG TINDAK PIDANA SUAP.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_10
+          nodeType: pasalVersion
+          version: &ref_11
+            nodeType: date
+            month: 10
+            date: 27
+            year: 1980
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_10
+          textString: >-
+            Yang dimaksud dengan tindak pidana suap di dalam undang - undang ini adalah tindak
+            pidana suap di luar ketentuan peraturan perundang - undangan yang sudah ada.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_12
+          nodeType: pasalVersion
+          version: *ref_11
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_12
+          textString: >-
+            Barangsiapa memberi atau menjanjikan sesuatu kepada seseorang dengan maksud untuk
+            membujuk supaya orang itu berbuat sesuatu atau tidak berbuat sesuatu dalam tugasnya,
+            yang berlawanan dengan kewenangan atau kewajibannya yang menyangkut kepentingan umum,
+            dip idana karena memberi suap dengan pidana penjara selama - lamanya 5 (lima) tahun dan
+            denda sebanyak - banyaknya Rp.15.000.000, - (lima belasjuta rupiah).
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 3
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_13
+          nodeType: pasalVersion
+          version: *ref_11
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '3'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_13
+          textString: >-
+            Barangsiapa menerima s esuatu atau janji, sedangkan ia mengetahui atau patut dapat
+            menduga bahwa pemberian sesuatu atau janji itu dimaksudkan supaya ia berbuat sesuatu
+            atau tidak berbuat sesuatu dalam tugasnya, yang berlawanan dengan kewenangan atau
+            kewajibannya yang menyangkut kepentingan umum, dipidana karena menerima suap dengan
+            pidana penjara selama - lamanya 3 (tiga) tahun atau denda sebanyak - banyaknya
+            Rp.15.000.000. - (lima belas juta rupiah).
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 4
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_14
+          nodeType: pasalVersion
+          version: *ref_11
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '4'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_14
+          textString: >-
+            Apabila tindak pidana tersebut dalam Pasal 2 dan Pasal 3 dilakukan di lua r wilayah
+            Republik Indonesia, maka ketentuan dalam undang - undang ini berlaku juga terhadapnya.
+          references:
+            - start: 49
+              end: 56
+              node:
+                key: 3
+                parentNode: *ref_0
+                nodeType: pasal
+            - start: 37
+              end: 44
+              node:
+                key: 2
+                parentNode: *ref_0
+                nodeType: pasal
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 5
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_15
+          nodeType: pasalVersion
+          version: *ref_11
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '5'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_15
+          textString: Tindak pidana dalam undang - undang ini merupakan kejahatan.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 6
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_16
+          nodeType: pasalVersion
+          version: *ref_11
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '6'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_16
+          textString: >-
+            Undang - undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA
+            - 3 - Agar supaya setiap or ang mengetahuinya, memerintahkan pengundangan undang -
+            undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 10
-    date: 27
-    year: 1980
+  date: *ref_11
   location: Jakarta
   pengesah: Diundangkan di Jakarta
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

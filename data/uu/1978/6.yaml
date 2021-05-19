@@ -252,18 +252,146 @@ opText: |-
   PRESIDEN
   REPUBLIK INDONESIA
   - 3 -
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_14
+          nodeType: pasalVersion
+          version: &ref_18
+            nodeType: date
+            month: 8
+            date: 3
+            year: 1978
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_15
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_14
+          elements:
+            - type: ayat
+              node: &ref_16
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_15
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_16
+                textString: Membentuk Pengadilan Tinggi Kupang yang berkedudukan di Kupang.
+                references: []
+            - type: ayat
+              node: &ref_17
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_15
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_17
+                textString: >-
+                  Wilayah Hukum Pengadilan Tinggi tersebut pada ay at (1) meliputi wilayah hukum
+                  semua Pengadilan Negeri dalam Propinsi Nusa Tenggara Timur dan Propinsi Timor
+                  Timur.
+                references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_19
+          nodeType: pasalVersion
+          version: *ref_18
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_19
+          textString: >-
+            Wilayah hukum Pengadilan Tinggi Denpasar dikurangi dengan wilayah hukum semua Pengadilan
+            Negeri dalam Propinsi Nusa Tenggara Timur dan Propinsi Timor Timur.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 3
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_20
+          nodeType: pasalVersion
+          version: *ref_18
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '3'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_20
+          textString: >-
+            Perkara - perkara yang berasal dari Pengadilan Negeri dalam Propinsi Nusa Tenggara Timur
+            da n Propinsi Timor Timur, yang pada saat mulai berlakunya Undang - undang ini sudah
+            terdaftar tetapi belum diputus oleh Pengadilan Tinggi Denpasar, diperiksa dan diputus
+            oleh Pengadilan Tinggi Kupang.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 4
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_21
+          nodeType: pasalVersion
+          version: *ref_18
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '4'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_21
+          textString: >-
+            Undang - undang ini mulai berlaku pada tanggal di undangkannya. PRESIDEN REPUBLIK
+            INDONESIA - 4 - Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan
+            Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 8
-    date: 3
-    year: 1978
+  date: *ref_18
   location: Jakarta
   pengesah: SOEHARTO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

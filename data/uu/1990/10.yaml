@@ -209,18 +209,301 @@ opText: |-
   MEMUTUSKAN:
   Menetapkan : UNDANG-UNDANG TENTANG PEMBENTUKAN PENGADILAN TINGGI TATA
   USAHA NEGARA JAKARTA, MEDAN, DAN UJUNG PANDANG.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_13
+          nodeType: pasalVersion
+          version: &ref_18
+            nodeType: date
+            month: 10
+            date: 30
+            year: 1990
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: pointSet
+          node: &ref_14
+            nodeType: pointSet
+            parentNode: *ref_13
+          description:
+            type: text
+            node:
+              nodeType: text
+              textName: description
+              parentNode: *ref_14
+            textString: 'Membentuk tiga Pengadilan Tinggi Tata Usaha Negara masing-masing:'
+            references: []
+          elements:
+            - type: point
+              node: &ref_15
+                nodeType: point
+                key: '1'
+                parentPointSetNode: *ref_14
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_15
+                textString: 'Pengadilan Tinggi Tata Usaha Negara Jakarta, berkedudukan di Jakarta:'
+                references: []
+            - type: point
+              node: &ref_16
+                nodeType: point
+                key: '2'
+                parentPointSetNode: *ref_14
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_16
+                textString: 'Pengadilan Tinggi Tata Usaha Negara Medan, berkedudukan di Medan:'
+                references: []
+            - type: point
+              node: &ref_17
+                nodeType: point
+                key: '3'
+                parentPointSetNode: *ref_14
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_17
+                textString: Pengadilan Tinggi Tata Usaha Negara Ujung Pandang, berkedudukan di Ujung Pandang.
+                references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_19
+          nodeType: pasalVersion
+          version: *ref_18
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_20
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_19
+          elements:
+            - type: ayat
+              node: &ref_21
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_20
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_21
+                textString: >-
+                  Pengadilan Tinggi Tata Usaha Negara Jakarta, daerah hukumnya meliputi Wilayah
+                  Daerah Khusus Ibukota Jakarta, Propinsi Jawa Barat, Jawa Tengah, Daerah Istimewa
+                  Yogyakarta, Jawa Timur, Kalimantan Barat, Kalimantan Selatan, Kalimantan Tengah
+                  dan Kalimantan Timur.
+                references: []
+            - type: ayat
+              node: &ref_22
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_20
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_22
+                textString: >-
+                  Pengadilan Tinggi Tata Usaha Negara Medan, daerah hukumnya meliputi wilayah
+                  Propinsi Sumatera Utara, Daerah Istimewa Aceh, Sumatera Barat, Riau, Sumatera
+                  Selatan, Jambi, Bengkulu, dan Lampung.
+                references: []
+            - type: ayat
+              node: &ref_23
+                nodeType: ayat
+                key: 3
+                parentAyatSetNode: *ref_20
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_23
+                textString: >-
+                  Pengadilan Tinggi Tata Usaha Negara Ujung Pandang, daerah hukumnya meliputi
+                  wilayah Propinsi Sulawesi Selatan, Sulawesi Utara, Sulawesi Tengah, Sulawesi
+                  Tenggara, Maluku, Bali, Nusa Tenggara Barat, Nusa Tenggara Timur, Timor Timur, dan
+                  Irian Jaya.
+                references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 3
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_24
+          nodeType: pasalVersion
+          version: *ref_18
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '3'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_24
+          textString: >-
+            Daerah hukum Pengadilan Tinggi Tata Usaha Negara Jakarta, Medan, dan Ujung Pandang
+            sebagaimana ditemukan dalam Pasal 2 Undang-undang ini, berlaku sampai terbentuknya
+            Pengadilan Tinggi Tata Usaha Negara lainnya sebagaimana dimaksud dalam Pasal 6 ayat (2)
+            Undang-undang Nomor 5 Tahun 1986 tentang Peradilan Tata Usaha Negara.
+          references:
+            - start: 237
+              end: 253
+              node:
+                parentAyatSetNode:
+                  nodeType: ayatSet
+                  parentPasalVersionNode: *ref_24
+                key: 2
+                nodeType: ayat
+            - start: 111
+              end: 118
+              node:
+                key: 2
+                parentNode: *ref_0
+                nodeType: pasal
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 4
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_25
+          nodeType: pasalVersion
+          version: *ref_18
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '4'
+            parentNode: *ref_0
+        content:
+          type: pointSet
+          node: &ref_26
+            nodeType: pointSet
+            parentNode: *ref_25
+          description:
+            type: text
+            node:
+              nodeType: text
+              textName: description
+              parentNode: *ref_26
+            textString: >-
+              Sengketa Tata Usaha Negara yang pada saat terbentuknya Pengadilan Tinggi Tata Usaha
+              Negara sebagaimana dimaksud dalam Pasal 1 :
+            references: []
+          elements:
+            - type: point
+              node: &ref_27
+                nodeType: point
+                key: a
+                parentPointSetNode: *ref_26
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_27
+                textString: >-
+                  telah diperiksa tetapi belum diputus oleh Pengadilan Tinggi dalam lingkungan
+                  Peradilan Umum di seluruh daerah hukum sebagaimana dimaksud dalam Pasal 2, tetap
+                  diperiksa oleh Pengadilan Tinggi tersebut:
+                references:
+                  - start: 143
+                    end: 150
+                    node:
+                      key: 2
+                      parentNode: *ref_0
+                      nodeType: pasal
+            - type: point
+              node: &ref_28
+                nodeType: point
+                key: b
+                parentPointSetNode: *ref_26
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_28
+                textString: >-
+                  sudah diajukan kepada Pengadilan Tinggi dalam lingkungan Peradilan Umum di seluruh
+                  daerah hukum sebagaimana dimaksud dalam Pasal 2 tetapi belum diperiksa,
+                  dilimpahkan kepada Pengadilan Tinggi Tata Usaha Negara yang daerah hukumnya
+                  meliputi daerah hukum Pengadilan Tinggi yang bersangkutan.
+                references:
+                  - start: 123
+                    end: 130
+                    node:
+                      key: 2
+                      parentNode: *ref_0
+                      nodeType: pasal
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 5
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_29
+          nodeType: pasalVersion
+          version: *ref_18
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '5'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_29
+          textString: >-
+            Undang-undang ini mulai berlaku pada tanggal mulai diterapkannya Undang-undang Nomor 5
+            Tahun 1986 tentang Peradilan Tata Usaha Negara. Agar setiap orang mengetahuinya,
+            memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara
+            Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 10
-    date: 30
-    year: 1990
+  date: *ref_18
   location: Jakarta
   pengesah: Diundangkan di Jakarta
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA

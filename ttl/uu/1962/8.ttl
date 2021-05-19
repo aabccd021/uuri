@@ -1,7 +1,26 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1962/8> legal:documentHasBabSet <http://example.org/legal/document/uu/1962/8/bab> .
+<http://example.org/legal/document/uu/1962/8> legal:documentHasPasalSet <http://example.org/legal/document/uu/1962/8/pasals> .
+<http://example.org/legal/document/uu/1962/8/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1962/8/pasal/0001> .
+<http://example.org/legal/document/uu/1962/8/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1962/8/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1962/8/pasal/0001/version/19620618> .
+<http://example.org/legal/document/uu/1962/8> legal:documentHasPasal <http://example.org/legal/document/uu/1962/8/pasal/0001> .
+<http://example.org/legal/document/uu/1962/8/pasal/0001/version/19620618> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1962/8/pasal/0001/version/19620618> legal:pasalVersionHasVersionDate "1962-06-18"^^xsd:date .
+<http://example.org/legal/document/uu/1962/8/pasal/0001/version/19620618> legal:pasalVersionHasRawText "AntaraRepublik Indonesia danRepublik Rakyat Hongari adibuatPerjanjianPersahbatandanKerja-sama yang telahditandatangani di Jakarta padatanggal 23 Agustus 1961 yang berbunyisebagaiterlampirdan yang pengesahannyaakandilakukanolehPresiden." .
+<http://example.org/legal/document/uu/1962/8/pasal/0001/version/19620618/text> legal:textHasTextString "AntaraRepublik Indonesia danRepublik Rakyat Hongari adibuatPerjanjianPersahbatandanKerja-sama yang telahditandatangani di Jakarta padatanggal 23 Agustus 1961 yang berbunyisebagaiterlampirdan yang pengesahannyaakandilakukanolehPresiden." .
+<http://example.org/legal/document/uu/1962/8/pasal/0001/version/19620618> legal:pasalVersionHasText <http://example.org/legal/document/uu/1962/8/pasal/0001/version/19620618/text> .
+<http://example.org/legal/document/uu/1962/8/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1962/8/pasal/0002> .
+<http://example.org/legal/document/uu/1962/8/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1962/8/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1962/8/pasal/0002/version/19620618> .
+<http://example.org/legal/document/uu/1962/8> legal:documentHasPasal <http://example.org/legal/document/uu/1962/8/pasal/0002> .
+<http://example.org/legal/document/uu/1962/8/pasal/0002/version/19620618> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1962/8/pasal/0002/version/19620618> legal:pasalVersionHasVersionDate "1962-06-18"^^xsd:date .
+<http://example.org/legal/document/uu/1962/8/pasal/0002/version/19620618> legal:pasalVersionHasRawText "Perjanjiantersebutdiatasmulaiberlakusesudahpertukar anpiagam-piagampengesahan yang akandilakukan di Budapest. Pasal 3 Undang-undanginimulaiberlakupadaharidiundangkan. Agar supayasetiap orang dapatmengetahuinya, memerin tahkanpengundanganUndang- undanginidenganpenempatandalamLembaran-Negara Repub lik Indonesia." .
+<http://example.org/legal/document/uu/1962/8/pasal/0002/version/19620618/text> legal:textHasTextString "Perjanjiantersebutdiatasmulaiberlakusesudahpertukar anpiagam-piagampengesahan yang akandilakukan di Budapest. Pasal 3 Undang-undanginimulaiberlakupadaharidiundangkan. Agar supayasetiap orang dapatmengetahuinya, memerin tahkanpengundanganUndang- undanginidenganpenempatandalamLembaran-Negara Repub lik Indonesia." .
+<http://example.org/legal/document/uu/1962/8/pasal/0002/version/19620618> legal:pasalVersionHasText <http://example.org/legal/document/uu/1962/8/pasal/0002/version/19620618/text> .
+<http://example.org/legal/document/uu/1962/8/pasal/0002/version/19620618/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1962/8/pasal/0003> .
 <http://example.org/legal/document/uu/1962/8> legal:documentHasDisahkanDate "1962-06-18"^^xsd:date .
 <http://example.org/legal/document/uu/1962/8> legal:documentMengingat <http://example.org/legal/document/uu/1962/8/mengingat> .
 <http://example.org/legal/document/uu/1962/8/mengingat/text> legal:textHasTextString " pasal 11, pasal 5 ayat (1) danpasal 20 ayat (1) Und ang-undangDasar; DenganpersetujuanDewanPerwakilan Rakyat GotongRoyon g; MEMUTUSKAN : Menetapkan : Undang-undangtentangpembuatanperjanjianpersahabatan antaraRepublik Indonesia danRepublik Rakyat Hongari a." .
@@ -13,8 +32,20 @@
 <http://example.org/legal/document/uu/1962/8> legal:documentHasDisahkanLocation "Jakarta," .
 <http://example.org/legal/document/uu/1962/8> legal:documentHasDisahkanJabatanPengesah "PresidenRepublik Indonesia," .
 <http://example.org/legal/document/uu/1962/8> a legal:Document .
+<http://example.org/legal/document/uu/1962/8/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1962/8/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1962/8/pasal/0001/version/19620618> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1962/8/pasal/0001/version/19620618/text> a legal:Text .
+<http://example.org/legal/document/uu/1962/8/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1962/8/pasal/0002/version/19620618> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1962/8/pasal/0002/version/19620618/text> a legal:Text .
 <http://example.org/legal/document/uu/1962/8/mengingat/text> a legal:Text .
 <http://example.org/legal/document/uu/1962/8/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1962/8/menimbang/text> a legal:Text .
 <http://example.org/legal/document/uu/1962/8/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/1962/8/bab> legal:partOf <http://example.org/legal/document/uu/1962/8> .
+<http://example.org/legal/document/uu/1962/8/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1962/8/pasals> .
+<http://example.org/legal/document/uu/1962/8/pasal/0001/version/19620618> legal:partOf <http://example.org/legal/document/uu/1962/8/pasal/0001> .
+<http://example.org/legal/document/uu/1962/8/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1962/8> .
+<http://example.org/legal/document/uu/1962/8/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1962/8/pasals> .
+<http://example.org/legal/document/uu/1962/8/pasal/0002/version/19620618> legal:partOf <http://example.org/legal/document/uu/1962/8/pasal/0002> .
+<http://example.org/legal/document/uu/1962/8/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1962/8> .

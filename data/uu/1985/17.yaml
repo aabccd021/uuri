@@ -143,18 +143,70 @@ opText: |-
   Menetapkan : UNDANG-UNDANG TENTAN G PENGESAHAN UNITED NATIONS
   CONVENTION ON THE LAW OF THE SEA (KONVENSI PERSERIKATAN
   BANGSA-BANGSA TENTANG HUKUM LAUT).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_8
+          nodeType: pasalVersion
+          version: &ref_9
+            nodeType: date
+            month: 12
+            date: 31
+            year: 1985
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_8
+          textString: >-
+            Mengesahkan United Nations Convention the Law of the Sea (Konvensi Perserikatan Bangsa-
+            Bangsa tentang Hukum Laut), yang salinan naskah aslinya dalam bahasa inggeris
+            dilampirkan pada Undang-undang ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_10
+          nodeType: pasalVersion
+          version: *ref_9
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_10
+          textString: >-
+            Undang-undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA -
+            2 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan
+            penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 12
-    date: 31
-    year: 1985
+  date: *ref_9
   location: Jakarta
   pengesah: SOEHARTO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA

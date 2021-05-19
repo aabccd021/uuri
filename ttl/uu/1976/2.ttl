@@ -1,7 +1,41 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1976/2> legal:documentHasBabSet <http://example.org/legal/document/uu/1976/2/bab> .
+<http://example.org/legal/document/uu/1976/2> legal:documentHasPasalSet <http://example.org/legal/document/uu/1976/2/pasals> .
+<http://example.org/legal/document/uu/1976/2/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1976/2/pasal/0001> .
+<http://example.org/legal/document/uu/1976/2/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1976/2/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331> .
+<http://example.org/legal/document/uu/1976/2> legal:documentHasPasal <http://example.org/legal/document/uu/1976/2/pasal/0001> .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331> legal:pasalVersionHasVersionDate "1976-03-31"^^xsd:date .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331> legal:pasalVersionHasRawText "Mengesahkan :\n1. Konvensi Tokyo 1963 tentang \"Offences and Certain Other Acts Committed on Board Aircraft\" (Pelanggaran-pelanggaran dan Tindakan- tindakan tertentu lainnya yang dilakukan dalam Pesawat Udara), dengan persyaratan (reservation) terhadap Pasal 24 ayat (1) tentang penyelesaian perselisihan mengenai penafsiran atau penerapan konvensi ini:\n2. Konvensi The Hague 1970 tentang \"The Suppression of Unlawful Seizure of Aircraft\" (Pemberantasan Penguasaan Pesawat Udara Secara Melawan Hukum), dengan persyaratan (reservation) terhadap Pasal 12 ayat (1) tentang penyelesaian perselisihan mengenai penafsiran atau penerapan konvensi ini:\n3. Konvensi Montreal 1971 tentang \"The Suppression of Unlawful Acts Against the Safety of Civil Aviation\" (Pemberantasan Tindakan-tindakan Melawan Hukum yang Mengancam Keamanan Penerbangan Sipil), dengan persyaratan (reservation) terhadap Pasal 14 ayat (1) tentang penyelesaian perselisihan mengenai penafsiran atau penerapan konvensi ini: yang salinan-salinan naskahnya dilampirkan pada Undang-undang ini.\n" .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point> .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/description> legal:textHasTextString "Mengesahkan :" .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/description> .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0001> .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0001/text> legal:textHasTextString "Konvensi Tokyo 1963 tentang \"Offences and Certain Other Acts Committed on Board Aircraft\" (Pelanggaran-pelanggaran dan Tindakan- tindakan tertentu lainnya yang dilakukan dalam Pesawat Udara), dengan persyaratan (reservation) terhadap Pasal 24 ayat (1) tentang penyelesaian perselisihan mengenai penafsiran atau penerapan konvensi ini:" .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0001/text> .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/ayat/0001> .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0002> .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0002/text> legal:textHasTextString "Konvensi The Hague 1970 tentang \"The Suppression of Unlawful Seizure of Aircraft\" (Pemberantasan Penguasaan Pesawat Udara Secara Melawan Hukum), dengan persyaratan (reservation) terhadap Pasal 12 ayat (1) tentang penyelesaian perselisihan mengenai penafsiran atau penerapan konvensi ini:" .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0002/text> .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/ayat/0001> .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0003> .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0003> legal:pointHasKey "3" .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0003/text> legal:textHasTextString "Konvensi Montreal 1971 tentang \"The Suppression of Unlawful Acts Against the Safety of Civil Aviation\" (Pemberantasan Tindakan-tindakan Melawan Hukum yang Mengancam Keamanan Penerbangan Sipil), dengan persyaratan (reservation) terhadap Pasal 14 ayat (1) tentang penyelesaian perselisihan mengenai penafsiran atau penerapan konvensi ini: yang salinan-salinan naskahnya dilampirkan pada Undang-undang ini." .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0003> legal:pointHasText <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0003/text> .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/ayat/0001> .
+<http://example.org/legal/document/uu/1976/2/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1976/2/pasal/0002> .
+<http://example.org/legal/document/uu/1976/2/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1976/2/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1976/2/pasal/0002/version/19760331> .
+<http://example.org/legal/document/uu/1976/2> legal:documentHasPasal <http://example.org/legal/document/uu/1976/2/pasal/0002> .
+<http://example.org/legal/document/uu/1976/2/pasal/0002/version/19760331> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1976/2/pasal/0002/version/19760331> legal:pasalVersionHasVersionDate "1976-03-31"^^xsd:date .
+<http://example.org/legal/document/uu/1976/2/pasal/0002/version/19760331> legal:pasalVersionHasRawText "Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1976/2/pasal/0002/version/19760331/text> legal:textHasTextString "Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1976/2/pasal/0002/version/19760331> legal:pasalVersionHasText <http://example.org/legal/document/uu/1976/2/pasal/0002/version/19760331/text> .
 <http://example.org/legal/document/uu/1976/2> legal:documentHasDisahkanDate "1976-03-31"^^xsd:date .
 <http://example.org/legal/document/uu/1976/2> legal:documentMengingat <http://example.org/legal/document/uu/1976/2/mengingat> .
 <http://example.org/legal/document/uu/1976/2/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1976/2/mengingat/point> .
@@ -39,6 +73,20 @@
 <http://example.org/legal/document/uu/1976/2> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/1976/2> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/1976/2> a legal:Document .
+<http://example.org/legal/document/uu/1976/2/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1976/2/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0003> a legal:Point .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1976/2/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1976/2/pasal/0002/version/19760331> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1976/2/pasal/0002/version/19760331/text> a legal:Text .
 <http://example.org/legal/document/uu/1976/2/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1976/2/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/1976/2/mengingat/point> a legal:PointSet .
@@ -57,7 +105,16 @@
 <http://example.org/legal/document/uu/1976/2/menimbang/point/c/text> a legal:Text .
 <http://example.org/legal/document/uu/1976/2/menimbang/point/d> a legal:Point .
 <http://example.org/legal/document/uu/1976/2/menimbang/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/1976/2/bab> legal:partOf <http://example.org/legal/document/uu/1976/2> .
+<http://example.org/legal/document/uu/1976/2/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1976/2/pasals> .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331> legal:partOf <http://example.org/legal/document/uu/1976/2/pasal/0001> .
+<http://example.org/legal/document/uu/1976/2/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1976/2> .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point> legal:partOf <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331> .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0001> legal:partOf <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point> .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0002> legal:partOf <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point> .
+<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0003> legal:partOf <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point> .
+<http://example.org/legal/document/uu/1976/2/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1976/2/pasals> .
+<http://example.org/legal/document/uu/1976/2/pasal/0002/version/19760331> legal:partOf <http://example.org/legal/document/uu/1976/2/pasal/0002> .
+<http://example.org/legal/document/uu/1976/2/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1976/2> .
 <http://example.org/legal/document/uu/1976/2/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1976/2/mengingat/point> .
 <http://example.org/legal/document/uu/1976/2/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1976/2/mengingat/point> .
 <http://example.org/legal/document/uu/1976/2/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1976/2/menimbang/point> .

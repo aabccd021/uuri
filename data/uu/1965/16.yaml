@@ -197,18 +197,95 @@ opText: |-
   TENTANG PENANAMAN MODAL AS ING (LEMBARAN - NEGARA TAHUN 1958 NO. 138)
   *3459 YANG TELAH DIUBAH DAN DITAMBAH DENGAN UNDANG - UNDANG NO. 15 PRP
   TAHUN 1960 (LEMBARAN - NEGARA TAHUN 1960 NO. 42).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_12
+          nodeType: pasalVersion
+          version: &ref_13
+            nodeType: date
+            month: 8
+            date: 23
+            year: 1965
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_12
+          textString: >-
+            Undang - undang No. 78 tahun 1958 tentang Penanaman Modal Asing yang telah diubah dan
+            dit ambah dengan Undang - undang No. 15 Prp tahun 1960 dengan ini dicabut.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_14
+          nodeType: pasalVersion
+          version: *ref_13
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_14
+          textString: >-
+            Pelaksanaan pasal 10 Ketetapan Majelis Permusyawaratan Rakyat Sementara No. VI/MPRS/1965
+            dan kerja sama ekonomi dengan luar negeri, tanpa penanaman modal asing di Indonesia, aka
+            n diatur dalam Undang - undang.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 3
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_15
+          nodeType: pasalVersion
+          version: *ref_13
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '3'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_15
+          textString: >-
+            Undang - undang ini mulai berlaku pada har i tanggal disahkannya. Agar supaya setiap
+            orang dapat mengetahuinya memerintahkan pengundangan Undang - undang ini dengan
+            penempatan dal am Lembaran - Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 8
-    date: 23
-    year: 1965
+  date: *ref_13
   location: Jakarta
   pengesah: SUKARNO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

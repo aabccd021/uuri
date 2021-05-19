@@ -151,18 +151,70 @@ opText: |-
   Menetapkan : UNDANG - UNDANG TENTANG PENGESAHAN PERJANJIAN
   ANTARA PEMERINTAH REPUBLIK INDONESIA DAN
   PEMERINTAH KERAJAAN THAILAND TENTANG EKSTRADISI.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_10
+          nodeType: pasalVersion
+          version: &ref_11
+            nodeType: date
+            month: 3
+            date: 18
+            year: 1978
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_10
+          textString: >-
+            Mengesahkan Perjanjian antara Pemerintah Republik Indonesia dan Pemerintah Kerajaan T
+            hailand tentang Ekstradisi tertanggal 29 Juni 1976, yang salinan naskahnya dilampirkan
+            pada Undang - undang ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_12
+          nodeType: pasalVersion
+          version: *ref_11
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_12
+          textString: >-
+            Undang - undang ini mulai berlaku pada tanggal diundangkannya. PRESIDEN REPUBLIK
+            INDONESIA - 3 - Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan
+            Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 3
-    date: 18
-    year: 1978
+  date: *ref_11
   location: Jakarta
   pengesah: SOEHARTO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

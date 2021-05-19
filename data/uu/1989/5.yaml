@@ -135,18 +135,145 @@ opText: |-
   Menetapkan : UNDANG-UNDANG TENTANG PERHITUNGAN ANGGARAN
   NEGARA TAHUN ANGGARAN 1986/1987.
   www.djpp.depkumham.go.id
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_8
+          nodeType: pasalVersion
+          version: &ref_15
+            nodeType: date
+            month: 7
+            date: 20
+            year: 1989
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_9
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_8
+          elements:
+            - type: ayat
+              node: &ref_10
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_9
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_10
+                textString: >-
+                  Pendapatan Negara dalam Tahun Anggaran 1986/1987 adalah sebesar Rp
+                  22.898.288.988.299,66 (dua puluh dua trilyun delapan ratus sembilan puluh delapan
+                  milyar dua ratus delapan puluh delapan juta sembilan ratus delapan puluh delapan
+                  ribu dua ratus sembilan puluh sembilan enam puluh enam perseratus rupiah).
+                references: []
+            - type: ayat
+              node: &ref_11
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_9
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_11
+                textString: >-
+                  Belanja Negara dalam Tahun Anggaran 1986/1987 adalah sebesar Rp
+                  22.807.910.784.071,61 (dua puluh dua trilyun delapan ratus tujuh milyar sembilan
+                  ratus sepuluh juta tujuh ratus delapan puluh empat ribu tujuh puluh satu enun
+                  puluh satu perseratus rupiah).
+                references: []
+            - type: ayat
+              node: &ref_12
+                nodeType: ayat
+                key: 3
+                parentAyatSetNode: *ref_9
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_12
+                textString: >-
+                  Sisa-anggaran-lebih Perhitungan Anggaran Tahun Anggaran 1986/1987 adalah sebesar
+                  Rp 90.378.204.228,05 (sembilan puluh milyar tiga ratus tujuh puluh delapan juta
+                  dua ratus empat ribu dua ratus dua puluh delapan lima perseratus rupiah).
+                references: []
+            - type: ayat
+              node: &ref_13
+                nodeType: ayat
+                key: 4
+                parentAyatSetNode: *ref_9
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_13
+                textString: >-
+                  Perincian pendapatan, belanja, dan sisa - anggaran - lebih sebagaimana dimaksud
+                  dalam ayat (1) sampai dengan ayat (3), adalah seperti tersebut pada Lampiran
+                  Undang-undang ini.
+                references:
+                  - start: 109
+                    end: 117
+                    node:
+                      key: 3
+                      parentAyatSetNode: &ref_14
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_8
+                      nodeType: ayat
+                  - start: 86
+                    end: 94
+                    node:
+                      key: 1
+                      parentAyatSetNode: *ref_14
+                      nodeType: ayat
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_16
+          nodeType: pasalVersion
+          version: *ref_15
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_16
+          textString: >-
+            Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang
+            mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 7
-    date: 20
-    year: 1989
+  date: *ref_15
   location: Jakarta
   pengesah: SOEHARTO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA

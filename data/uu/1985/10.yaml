@@ -185,18 +185,95 @@ opText: |-
   PENCABUTAN UNDANG - UNDANG NOMOR 4 TAHUN 1970
   TENTANG PEMBENTUKAN DAERAH PERDAGANGAN BEBAS
   DENGAN PELABUHAN BEBAS SABANG.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_11
+          nodeType: pasalVersion
+          version: &ref_12
+            nodeType: date
+            month: 10
+            date: 2
+            year: 1985
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_11
+          textString: >-
+            Mencabut Undang-undang Nomor 4 Tahun 1970 tentang Pembentukan Daerah Perdagangan Bebas
+            dengan Pelabuhan Bebas Sabang ( Lembaran Negara Tahun 1970 Nomor 21, Tambahan Lembaran
+            Negara Nomor 2929
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_13
+          nodeType: pasalVersion
+          version: *ref_12
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_13
+          textString: >-
+            Penyelesaian hal-hal sebagai akibat berlakunya Undang-undang ini diatur dengan peraturan
+            perundang-undangan.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 3
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_14
+          nodeType: pasalVersion
+          version: *ref_12
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '3'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_14
+          textString: >-
+            Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang
+            mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 10
-    date: 2
-    year: 1985
+  date: *ref_12
   location: Jakarta
   pengesah: SOEHARTO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA

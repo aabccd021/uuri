@@ -1,7 +1,18 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1962/7> legal:documentHasBabSet <http://example.org/legal/document/uu/1962/7/bab> .
+<http://example.org/legal/document/uu/1962/7> legal:documentHasPasalSet <http://example.org/legal/document/uu/1962/7/pasals> .
+<http://example.org/legal/document/uu/1962/7/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1962/7/pasal/0001> .
+<http://example.org/legal/document/uu/1962/7/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1962/7/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1962/7/pasal/0001/version/19620618> .
+<http://example.org/legal/document/uu/1962/7> legal:documentHasPasal <http://example.org/legal/document/uu/1962/7/pasal/0001> .
+<http://example.org/legal/document/uu/1962/7/pasal/0001/version/19620618> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1962/7/pasal/0001/version/19620618> legal:pasalVersionHasVersionDate "1962-06-18"^^xsd:date .
+<http://example.org/legal/document/uu/1962/7/pasal/0001/version/19620618> legal:pasalVersionHasRawText "AntaraRepublik Indonesia danRepublikSosialisCekoslovakiadibuatPerjanjianPers ahabatandanKerjasama, yang telahditandatangani di Prahapadatanggal 29 Mei 1961 yang berbunyisebaga iterlampirdan yang pengesahannyaakandilakukanolehPresiden. *) Disetujui- D.P.R.-G.R. dalamrapatplenoterbuka ke -16 padahariJum'attanggal 18 Mei 1962, P. 220/1962. Pasal 2 Perjanjiantersebutmulaiberlakusesudahpertukaranpiag am-piagampengesahan yang akandilakukan di Jakarta. Pasal 3 Undang-undanginiberlakupadaharidiundangkan. Agar supayasetiap orang dapatmengetahuinya, memerin tahkanpengundanganUndang- undanginidenganpenempatandalamLembaran-Negara Repub lik Indonesia." .
+<http://example.org/legal/document/uu/1962/7/pasal/0001/version/19620618/text> legal:textHasTextString "AntaraRepublik Indonesia danRepublikSosialisCekoslovakiadibuatPerjanjianPers ahabatandanKerjasama, yang telahditandatangani di Prahapadatanggal 29 Mei 1961 yang berbunyisebaga iterlampirdan yang pengesahannyaakandilakukanolehPresiden. *) Disetujui- D.P.R.-G.R. dalamrapatplenoterbuka ke -16 padahariJum'attanggal 18 Mei 1962, P. 220/1962. Pasal 2 Perjanjiantersebutmulaiberlakusesudahpertukaranpiag am-piagampengesahan yang akandilakukan di Jakarta. Pasal 3 Undang-undanginiberlakupadaharidiundangkan. Agar supayasetiap orang dapatmengetahuinya, memerin tahkanpengundanganUndang- undanginidenganpenempatandalamLembaran-Negara Repub lik Indonesia." .
+<http://example.org/legal/document/uu/1962/7/pasal/0001/version/19620618> legal:pasalVersionHasText <http://example.org/legal/document/uu/1962/7/pasal/0001/version/19620618/text> .
+<http://example.org/legal/document/uu/1962/7/pasal/0001/version/19620618/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1962/7/pasal/0003> .
+<http://example.org/legal/document/uu/1962/7/pasal/0001/version/19620618/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1962/7/pasal/0002> .
 <http://example.org/legal/document/uu/1962/7> legal:documentHasDisahkanDate "1962-06-18"^^xsd:date .
 <http://example.org/legal/document/uu/1962/7> legal:documentMengingat <http://example.org/legal/document/uu/1962/7/mengingat> .
 <http://example.org/legal/document/uu/1962/7/mengingat/text> legal:textHasTextString " pasal 11, pasal 5 ayat (11 danpasal 20 ayat (1) Und ang-undangDasar; DenganPersetujuanDewanPerwakilan Rakyat GotongRoyon g; MEMUTUSKAN : Menetapkan : Undang-undangtentangpembuatanperjanjianpersahabatan antaraRepublik Indonesia danRepublikSosialisCekoslovakia." .
@@ -13,8 +24,14 @@
 <http://example.org/legal/document/uu/1962/7> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/1962/7> legal:documentHasDisahkanJabatanPengesah "PresidenRepublik Indonesia," .
 <http://example.org/legal/document/uu/1962/7> a legal:Document .
+<http://example.org/legal/document/uu/1962/7/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1962/7/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1962/7/pasal/0001/version/19620618> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1962/7/pasal/0001/version/19620618/text> a legal:Text .
 <http://example.org/legal/document/uu/1962/7/mengingat/text> a legal:Text .
 <http://example.org/legal/document/uu/1962/7/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1962/7/menimbang/text> a legal:Text .
 <http://example.org/legal/document/uu/1962/7/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/1962/7/bab> legal:partOf <http://example.org/legal/document/uu/1962/7> .
+<http://example.org/legal/document/uu/1962/7/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1962/7/pasals> .
+<http://example.org/legal/document/uu/1962/7/pasal/0001/version/19620618> legal:partOf <http://example.org/legal/document/uu/1962/7/pasal/0001> .
+<http://example.org/legal/document/uu/1962/7/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1962/7> .

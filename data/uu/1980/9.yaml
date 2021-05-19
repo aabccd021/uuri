@@ -218,18 +218,153 @@ opText: |-
   Menetapkan : UNDANG - UNDANG TENTANG PEMBENTUKAN PENGADILAN
   TINGGI TANJUNG KARANG DAN PERUBAHAN WILAYAH
   HUKUM PENGADILAN TINGGI PELEMBANG.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_12
+          nodeType: pasalVersion
+          version: &ref_16
+            nodeType: date
+            month: 7
+            date: 29
+            year: 1980
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_13
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_12
+          elements:
+            - type: ayat
+              node: &ref_14
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_13
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_14
+                textString: Membentuk Pengadilan Tinggi Tanjung Karang yang berkedudukan di Tanjung Karang.
+                references: []
+            - type: ayat
+              node: &ref_15
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_13
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_15
+                textString: >-
+                  Wilayah Hukum Pengadilan Tinggi t ersebut pada ayat (1) meliputi wilayah hukum
+                  semua Pengadilan Negeri dalam Propinsi Lampung dan Propinsi Bengkulu.
+                references:
+                  - start: 47
+                    end: 55
+                    node:
+                      key: 1
+                      parentAyatSetNode:
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_12
+                      nodeType: ayat
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_17
+          nodeType: pasalVersion
+          version: *ref_16
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_17
+          textString: >-
+            Wilayah Hukum Pengadilan Tinggi Palembang dikurangi dengan wilayah hukum semua
+            Pengadilan Negeri dalam Propinsi Lampung dan Propin si Bengkulu.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 3
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_18
+          nodeType: pasalVersion
+          version: *ref_16
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '3'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_18
+          textString: >-
+            Perkara - perkara yang beras al dari Pengadilan Negeri dalam Propinsi Lampung dan
+            Propinsi Bengkulu, yang pada saat mulai berlakunya Undang - undang ini belum diputus
+            oleh Pengadilan Tinggi Palembang, tetap di daftar, diperiksa dan diputus oleh Pengadilan
+            Tinggi Palembang sampai saat di resmikan Pengadilan Tinggi Tanjung Karang.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 4
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_19
+          nodeType: pasalVersion
+          version: *ref_16
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '4'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_19
+          textString: >-
+            Undang - undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA
+            - 3 - Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang
+            ini dengan penempatannya dalam Lembaran Negara Republik Indo nesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 7
-    date: 29
-    year: 1980
+  date: *ref_16
   location: Jakarta
   pengesah: Diundangkan di Jakarta
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

@@ -219,18 +219,153 @@ opText: |-
   PENGADILAN TINGGI RIAU DI PEKANBARU DAN
   PERUBAHAN WILAYA H HUKUM PENGADILAN TINGGI
   PADANG.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_12
+          nodeType: pasalVersion
+          version: &ref_16
+            nodeType: date
+            month: 8
+            date: 20
+            year: 1982
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_13
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_12
+          elements:
+            - type: ayat
+              node: &ref_14
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_13
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_14
+                textString: Membentuk Pengadilan Tinggi Riau yang berkedudukan di Pekanbaru.
+                references: []
+            - type: ayat
+              node: &ref_15
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_13
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_15
+                textString: >-
+                  Wilayah hukum pengadilan tinggi sebagaimana dimaksud dalam ayat (1) meliputi
+                  wilayah hukum semua pengadilan negeri dalam Propinsi Daerah Tingkat I Riau.
+                references:
+                  - start: 59
+                    end: 67
+                    node:
+                      key: 1
+                      parentAyatSetNode:
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_12
+                      nodeType: ayat
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_17
+          nodeType: pasalVersion
+          version: *ref_16
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_17
+          textString: >-
+            Wilayah hukum Pengadilan Tinggi Padang dikurangi dengan wilayah hukum semua pengadilan
+            negeri dalam Propinsi Daerah Tingkat I Riau.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 3
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_18
+          nodeType: pasalVersion
+          version: *ref_16
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '3'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_18
+          textString: >-
+            Perkara - perkara yang berasal dari pengadilan negeri dalam Propinsi Daerah Tingkat I
+            Riau yang pada saat mulai berlakunya undang - undang ini, belum diputus oleh Pengadilan
+            Tinggi Padang, tetap didaftar, diperiksa dan diputus oleh Pengadilan Tinggi Padang
+            sampai saat diresmikannya Pengadilan Tinggi Riau.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 4
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_19
+          nodeType: pasalVersion
+          version: *ref_16
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '4'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_19
+          textString: >-
+            Undang - undang ini mulai be rlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA
+            - 3 - Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan undang - undang
+            ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 8
-    date: 20
-    year: 1982
+  date: *ref_16
   location: Jakarta
   pengesah: SOEHARTO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

@@ -80,18 +80,322 @@ opText: |-
   PRESIDEN
   REPUBLIK INDONESIA
   2-
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_3
+          nodeType: pasalVersion
+          version: &ref_11
+            nodeType: date
+            month: 6
+            date: 28
+            year: 1983
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_4
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_3
+          elements:
+            - type: ayat
+              node: &ref_5
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_4
+              content:
+                type: pointSet
+                node: &ref_6
+                  nodeType: pointSet
+                  parentNode: *ref_5
+                description:
+                  type: text
+                  node:
+                    nodeType: text
+                    textName: description
+                    parentNode: *ref_6
+                  textString: >-
+                    — Anggaran Pendapatan Negara Tahun Anggaran 1981/1982 diperkirakan berkurang
+                    dengan Rp. 1.249.013.000.000,00 yang terdiri dari:
+                  references: []
+                elements:
+                  - type: point
+                    node: &ref_7
+                      nodeType: point
+                      key: a
+                      parentPointSetNode: *ref_6
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_7
+                      textString: 'Pendapatan rutin berkurang dengan Rp. 1.338.211.000.000,00:'
+                      references: []
+                  - type: point
+                    node: &ref_8
+                      nodeType: point
+                      key: b
+                      parentPointSetNode: *ref_6
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_8
+                      textString: Pendapatan Pembangunan bertambah dengan Rp. 89.198.000.000,00.
+                      references: []
+            - type: ayat
+              node: &ref_9
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_4
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_9
+                textString: >-
+                  — Perincian pendapatan tambahan dan perubahan sebgaimana dimaksud dalam ayat (Jd)
+                  huruf a dan huruf b Pasal ini masing-masing dimuat dalam Lampiran I dan Lampiran
+                  Il Undang-udang ini.
+                references:
+                  - start: 94
+                    end: 95
+                    node:
+                      key: b
+                      parentPointSetNode: &ref_10
+                        nodeType: pointSet
+                        parentNode: *ref_3
+                      nodeType: point
+                  - start: 82
+                    end: 89
+                    node:
+                      key: a
+                      parentPointSetNode: *ref_10
+                      nodeType: point
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_12
+          nodeType: pasalVersion
+          version: *ref_11
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_13
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_12
+          elements:
+            - type: ayat
+              node: &ref_14
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_13
+              content:
+                type: pointSet
+                node: &ref_15
+                  nodeType: pointSet
+                  parentNode: *ref_14
+                description:
+                  type: text
+                  node:
+                    nodeType: text
+                    textName: description
+                    parentNode: *ref_15
+                  textString: >-
+                    Anggaran Belanja Negara Tahun Anggaran 1982/1983 duperkirakan berkurang dengan
+                    Rp. 1.251.371.000.000,00, yang terdiri dari:
+                  references: []
+                elements:
+                  - type: point
+                    node: &ref_16
+                      nodeType: point
+                      key: a
+                      parentPointSetNode: *ref_15
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_16
+                      textString: 'Belanja Rutin berkurang dengan Rp. 5.204.000.000,00:'
+                      references: []
+                  - type: point
+                    node: &ref_17
+                      nodeType: point
+                      key: b
+                      parentPointSetNode: *ref_15
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_17
+                      textString: Belanja Pembangunan berkurang dengan Rp. 1.246.167.000.000,00.
+                      references: []
+            - type: ayat
+              node: &ref_18
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_13
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_18
+                textString: >-
+                  — Perincian pengeluaran tambahan dan perubahan sebagaimana dimaksud dalam ayat
+                  (Jd) huruf a dan huruf b Pasal ini masing-masing dimuat dalam Lampiran III dan
+                  Lampiran IV Undang-undang ini.
+                references:
+                  - start: 96
+                    end: 97
+                    node:
+                      key: b
+                      parentPointSetNode: &ref_19
+                        nodeType: pointSet
+                        parentNode: *ref_12
+                      nodeType: point
+                  - start: 84
+                    end: 91
+                    node:
+                      key: a
+                      parentPointSetNode: *ref_19
+                      nodeType: point
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 3
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_20
+          nodeType: pasalVersion
+          version: *ref_11
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '3'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_21
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_20
+          elements:
+            - type: ayat
+              node: &ref_22
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_21
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_22
+                textString: >-
+                  Kredit anggaran proyek-proyek pada Anggaran Pembangunan Tahun ANggaran 1982/1983
+                  yang telah disahkan dalam Undang-undang Nomor 5 Tahun 1982 tentang Anggaran
+                  Pendapatan dan Belanja Negara Tahun Anggaran 1982/1983 yang pada akhir Tahun
+                  Anggaran 1982/1983 menunjukkan sisa, dengan Peraturan Pemerintah dipindahkan ke
+                  Tahun Anggaran 1983/1984 dengan menambahkannya kepada kredit anggaran Tahun
+                  Anggaran 1983/1984.
+                references: []
+            - type: ayat
+              node: &ref_23
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_21
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_23
+                textString: >-
+                  Saldo anggaran lebih tahun Anggaran 1982/1983 ditambahan kepada anggaran Tahun
+                  Anggaran 1983/1984 dan dipergunakan untuk mebiayai anggaran Pembangunan Tahun
+                  1983/1984
+                references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 4
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_24
+          nodeType: pasalVersion
+          version: *ref_11
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '4'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_24
+          textString: >-
+            Ketentuan-ketentuan dalam Indische Comtabiliteitswet (Undang-unadng Perbendaharaan) yang
+            bertentangan dengan bentuk, susunan, dan isi undang-undang ini dinyatakan tidak berlaku.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 5
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_25
+          nodeType: pasalVersion
+          version: *ref_11
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '5'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_25
+          textString: >-
+            Undang-undang ini mulai berlaku pada tanggal diundangkan dan mempunyai daya laku surut
+            sejak tanggal 1 April 1982. PRESIDEN REPUBLIK INDONESIA -3- Agar supaya setiap orang
+            mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 6
-    date: 28
-    year: 1983
+  date: *ref_11
   location: Jakarta
   pengesah: SOEHARTO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA

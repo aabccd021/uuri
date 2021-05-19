@@ -174,18 +174,70 @@ opText: |-
   Undang - undang No. 1 Tahun 1971 tentang Pencabutan Undang - undang No.
   17 Tahun 1964 tentang Larangan Penarikan Cek Kosong menjadi Undang -
   undang.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_11
+          nodeType: pasalVersion
+          version: &ref_12
+            nodeType: date
+            month: 10
+            date: 16
+            year: 1971
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_11
+          textString: >-
+            Peraturan Pemerintah Pengganti Undang - undang No.1 Tahun 1971 tentang Pencabutan Undang
+            - undang No. 17 Tahun 1964 tentang Larangan Penarikan Cek Kosong ditetapkan menjadi
+            Undang - undang.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_13
+          nodeType: pasalVersion
+          version: *ref_12
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_13
+          textString: >-
+            Undang - undang ini mulai berlaku pada hari diundangkan. Agar sup aya setiap orang dapat
+            mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam
+            Lembaran - Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 10
-    date: 16
-    year: 1971
+  date: *ref_12
   location: Jakarta
   pengesah: Jenderal TNI
   jabatanPengesah: Presiden Republik Indonesia,

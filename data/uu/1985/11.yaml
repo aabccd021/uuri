@@ -167,18 +167,99 @@ opText: |-
   PENGESAHAN KONVENSI TELEKOMUNIKASI INTERNASIONAL
   (INTERNATIONAL TELECOMMUNICATION CONVENTION)
   NAIROBI, 1982.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_10
+          nodeType: pasalVersion
+          version: &ref_11
+            nodeType: date
+            month: 10
+            date: 22
+            year: 1985
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_10
+          textString: >-
+            Mengesahkan Konvensi Telekomunikasi Internasional (International Telecommunication
+            Convention) Nairobi, 1982, beserta 3 (tiga) Lampirannya, yang telah ditandatangani di
+            Nairobi pada tanggal 6 Nopember 1982 dengan pensyaratan (reservation) sebagaimana
+            termuat dalam Nomor 29 dan Nomor 90 Protokol Akhir, yang sahamnya dilampirkan pada
+            Undang-undang ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_12
+          nodeType: pasalVersion
+          version: *ref_11
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_12
+          textString: >-
+            Pada saat mulai berlakunya Undang-undang ini, Undang-undang Nomor 11 Tahun 1976 tentang
+            Pengesahan Konvensi Telekomunikasi Internasional (International Telecommunication
+            Convention) Malaga-Torremolinos, 1973 (Lembaran Negara Tahun 1976 Nomor 56, Tambahan
+            Lembaran Negara Nomor 3092), dinyatakan tidak berlaku lagi.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 3
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_13
+          nodeType: pasalVersion
+          version: *ref_11
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '3'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_13
+          textString: >-
+            Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang
+            mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 10
-    date: 22
-    year: 1985
+  date: *ref_11
   location: Jakarta
   pengesah: SOEHARTO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA

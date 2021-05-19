@@ -1,7 +1,34 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1957/27> legal:documentHasBabSet <http://example.org/legal/document/uu/1957/27/bab> .
+<http://example.org/legal/document/uu/1957/27> legal:documentHasPasalSet <http://example.org/legal/document/uu/1957/27/pasals> .
+<http://example.org/legal/document/uu/1957/27/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1957/27/pasal/0001> .
+<http://example.org/legal/document/uu/1957/27/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1957/27/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1957/27/pasal/0001/version/19570814> .
+<http://example.org/legal/document/uu/1957/27> legal:documentHasPasal <http://example.org/legal/document/uu/1957/27/pasal/0001> .
+<http://example.org/legal/document/uu/1957/27/pasal/0001/version/19570814> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1957/27/pasal/0001/version/19570814> legal:pasalVersionHasVersionDate "1957-08-14"^^xsd:date .
+<http://example.org/legal/document/uu/1957/27/pasal/0001/version/19570814> legal:pasalVersionHasRawText "Perjanjian Persahabatan antara Negara Republik Indonesia dan Kerajaan Irak tertanggal 30 April 1956, yang salinannya dilampirkan pada undang - undang ini dengan ini disetujui." .
+<http://example.org/legal/document/uu/1957/27/pasal/0001/version/19570814/text> legal:textHasTextString "Perjanjian Persahabatan antara Negara Republik Indonesia dan Kerajaan Irak tertanggal 30 April 1956, yang salinannya dilampirkan pada undang - undang ini dengan ini disetujui." .
+<http://example.org/legal/document/uu/1957/27/pasal/0001/version/19570814> legal:pasalVersionHasText <http://example.org/legal/document/uu/1957/27/pasal/0001/version/19570814/text> .
+<http://example.org/legal/document/uu/1957/27/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1957/27/pasal/0002> .
+<http://example.org/legal/document/uu/1957/27/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1957/27/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1957/27/pasal/0002/version/19570814> .
+<http://example.org/legal/document/uu/1957/27> legal:documentHasPasal <http://example.org/legal/document/uu/1957/27/pasal/0002> .
+<http://example.org/legal/document/uu/1957/27/pasal/0002/version/19570814> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1957/27/pasal/0002/version/19570814> legal:pasalVersionHasVersionDate "1957-08-14"^^xsd:date .
+<http://example.org/legal/document/uu/1957/27/pasal/0002/version/19570814> legal:pasalVersionHasRawText "Perjanjian tersebut di atas mulai berlaku pada tanggal pertukaran surat - surat pengesahan di Baghdad." .
+<http://example.org/legal/document/uu/1957/27/pasal/0002/version/19570814/text> legal:textHasTextString "Perjanjian tersebut di atas mulai berlaku pada tanggal pertukaran surat - surat pengesahan di Baghdad." .
+<http://example.org/legal/document/uu/1957/27/pasal/0002/version/19570814> legal:pasalVersionHasText <http://example.org/legal/document/uu/1957/27/pasal/0002/version/19570814/text> .
+<http://example.org/legal/document/uu/1957/27/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1957/27/pasal/0003> .
+<http://example.org/legal/document/uu/1957/27/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/1957/27/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1957/27/pasal/0003/version/19570814> .
+<http://example.org/legal/document/uu/1957/27> legal:documentHasPasal <http://example.org/legal/document/uu/1957/27/pasal/0003> .
+<http://example.org/legal/document/uu/1957/27/pasal/0003/version/19570814> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1957/27/pasal/0003/version/19570814> legal:pasalVersionHasVersionDate "1957-08-14"^^xsd:date .
+<http://example.org/legal/document/uu/1957/27/pasal/0003/version/19570814> legal:pasalVersionHasRawText "Undang - undang ini mulai berlaku pada hari diundangkan. Agar setiap orang dapat mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatan dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1957/27/pasal/0003/version/19570814/text> legal:textHasTextString "Undang - undang ini mulai berlaku pada hari diundangkan. Agar setiap orang dapat mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatan dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1957/27/pasal/0003/version/19570814> legal:pasalVersionHasText <http://example.org/legal/document/uu/1957/27/pasal/0003/version/19570814/text> .
 <http://example.org/legal/document/uu/1957/27> legal:documentHasDisahkanDate "1957-08-14"^^xsd:date .
 <http://example.org/legal/document/uu/1957/27> legal:documentMengingat <http://example.org/legal/document/uu/1957/27/mengingat> .
 <http://example.org/legal/document/uu/1957/27/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1957/27/mengingat/point> .
@@ -22,6 +49,16 @@
 <http://example.org/legal/document/uu/1957/27> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/1957/27> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/1957/27> a legal:Document .
+<http://example.org/legal/document/uu/1957/27/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1957/27/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1957/27/pasal/0001/version/19570814> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1957/27/pasal/0001/version/19570814/text> a legal:Text .
+<http://example.org/legal/document/uu/1957/27/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1957/27/pasal/0002/version/19570814> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1957/27/pasal/0002/version/19570814/text> a legal:Text .
+<http://example.org/legal/document/uu/1957/27/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/1957/27/pasal/0003/version/19570814> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1957/27/pasal/0003/version/19570814/text> a legal:Text .
 <http://example.org/legal/document/uu/1957/27/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1957/27/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/1957/27/mengingat/point> a legal:PointSet .
@@ -31,6 +68,14 @@
 <http://example.org/legal/document/uu/1957/27/mengingat/point/b/text> a legal:Text .
 <http://example.org/legal/document/uu/1957/27/menimbang/text> a legal:Text .
 <http://example.org/legal/document/uu/1957/27/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/1957/27/bab> legal:partOf <http://example.org/legal/document/uu/1957/27> .
+<http://example.org/legal/document/uu/1957/27/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1957/27/pasals> .
+<http://example.org/legal/document/uu/1957/27/pasal/0001/version/19570814> legal:partOf <http://example.org/legal/document/uu/1957/27/pasal/0001> .
+<http://example.org/legal/document/uu/1957/27/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1957/27> .
+<http://example.org/legal/document/uu/1957/27/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1957/27/pasals> .
+<http://example.org/legal/document/uu/1957/27/pasal/0002/version/19570814> legal:partOf <http://example.org/legal/document/uu/1957/27/pasal/0002> .
+<http://example.org/legal/document/uu/1957/27/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1957/27> .
+<http://example.org/legal/document/uu/1957/27/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1957/27/pasals> .
+<http://example.org/legal/document/uu/1957/27/pasal/0003/version/19570814> legal:partOf <http://example.org/legal/document/uu/1957/27/pasal/0003> .
+<http://example.org/legal/document/uu/1957/27/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1957/27> .
 <http://example.org/legal/document/uu/1957/27/mengingat/point/a> legal:partOf <http://example.org/legal/document/uu/1957/27/mengingat/point> .
 <http://example.org/legal/document/uu/1957/27/mengingat/point/b> legal:partOf <http://example.org/legal/document/uu/1957/27/mengingat/point> .

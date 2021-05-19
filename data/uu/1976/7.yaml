@@ -181,18 +181,126 @@ opText: |-
   Menetapkan : UNDANG - UNDANG TENTANG PENGESAHAN PENYATUAN TIMOR TIMUR
   KE DALAM NEGARA KESATUAN REPUBLIK INDONESIA DAN
   PEMBENTUKAN PROPINSI DAERAH TINGKAT I TIMOR TIMUR.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_11
+          nodeType: pasalVersion
+          version: &ref_12
+            nodeType: date
+            month: 7
+            date: 17
+            year: 1976
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_11
+          textString: >-
+            Mengesahkan penyatuan Timor Timur ke dalam Negara Kesatuan Republik Indonesia. PRESIDEN
+            REPUBLIK INDONESIA - 2 -
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_13
+          nodeType: pasalVersion
+          version: *ref_12
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_13
+          textString: >-
+            Membentuk propinsi Daerah Tingkat I Timor Timur yang wilayahnya meliputi wilayah bekas
+            koloni Portugis di Timor.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 3
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_14
+          nodeType: pasalVersion
+          version: *ref_12
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '3'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_14
+          textString: >-
+            Hal - hal yang berhubungan dengan pelaksanaa n ketentuan tersebut dalam Pasal 2 diatur
+            lebih lanjut dengan peraturan perundang - undangan tersendiri, dengan memperhatikan
+            keadaan dan perkembangan di wilayah Timor Timur.
+          references:
+            - start: 72
+              end: 79
+              node:
+                key: 2
+                parentNode: *ref_0
+                nodeType: pasal
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 4
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_15
+          nodeType: pasalVersion
+          version: *ref_12
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '4'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_15
+          textString: >-
+            Undang - undang ini mulai berlaku pada tanggal diundangkan. Agar supaya se tiap orang
+            mengetahuinya, memerintahkan pengundangan undang - undang ini dengan penempatannya dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 7
-    date: 17
-    year: 1976
+  date: *ref_12
   location: Jakarta
   pengesah: Diundangkan di Jakarta
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

@@ -97,18 +97,190 @@ opText: |-
   ANGGARAN PENDAPATAN DAN BELANJA NEGARA UNTUK TAHUN 1963
   (UNDANG-UNDANG NO. 9 TAHUN 1963 (LEMBARAN-NEGARA TAHUN
   L963 NO.91).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_6
+          nodeType: pasalVersion
+          version: &ref_10
+            nodeType: date
+            month: 12
+            date: 31
+            year: 1964
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: pointSet
+          node: &ref_7
+            nodeType: pointSet
+            parentNode: *ref_6
+          description:
+            type: text
+            node:
+              nodeType: text
+              textName: description
+              parentNode: *ref_7
+            textString: >-
+              Pendapatan Negara untuk tahun 1963 dikurangi menurut perkiraan dengan jumlah Rp.
+              116.727.452.000,- terdiri atas:
+            references: []
+          elements:
+            - type: point
+              node: &ref_8
+                nodeType: point
+                key: a
+                parentPointSetNode: *ref_7
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_8
+                textString: Pendapatan Negara Rutin dikurangi dengan Rp.61.804.452.000,-
+                references: []
+            - type: point
+              node: &ref_9
+                nodeType: point
+                key: b
+                parentPointSetNode: *ref_7
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_9
+                textString: >-
+                  Pendapatan Negara Pembangunan dikurangi dengan Rp. 56.923.000.000,- yang
+                  perinciannya dimuat dalam Lampiran I dan Lampiran II Undang-undang ini.
+                references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_11
+          nodeType: pasalVersion
+          version: *ref_10
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: pointSet
+          node: &ref_12
+            nodeType: pointSet
+            parentNode: *ref_11
+          description:
+            type: text
+            node:
+              nodeType: text
+              textName: description
+              parentNode: *ref_12
+            textString: >-
+              Belanja Negara untuk 1963 diubah/ditambah dengan jumlah Rp. 28.841.508.400,- terdiri
+              atas :
+            references: []
+          elements:
+            - type: point
+              node: &ref_13
+                nodeType: point
+                key: a
+                parentPointSetNode: *ref_12
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_13
+                textString: >-
+                  Belanja Negara Tambahan Rutin sebesar Rp. 14.700.031.700,- yang perinciannya
+                  dimuat dalam Lampiran III Undang-undang ini, dan
+                references: []
+            - type: point
+              node: &ref_14
+                nodeType: point
+                key: b
+                parentPointSetNode: *ref_12
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_14
+                textString: >-
+                  Belanja Negara Tambahan Pembangunan sebesar Rp. 14.141.476.700,- yang perinciannya
+                  dimuat dalam Lampiran IV Undang-undang ini.
+                references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 3
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_15
+          nodeType: pasalVersion
+          version: *ref_10
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '3'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_15
+          textString: >-
+            Ketentuan-ketentuan tersebut dalam Undang-undang Perbendaharaan Indonesia yang
+            bertentangan dengan bentuk dan susunan Undang-undang ini tidak berlaku lagi.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 4
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_16
+          nodeType: pasalVersion
+          version: *ref_10
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '4'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_16
+          textString: >-
+            Undang-undang ini mulai berlaku pada hari diundangkan dan mempunyai daya surut sampai
+            tanggal 1 Januari 1963. Agar supaya setiap orang dapat mengetahuinya memerintahkan
+            pengundangan Undang-undang ini dengan penempatan dalam Lembaran-Negara Republik
+            Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 12
-    date: 31
-    year: 1964
+  date: *ref_10
   location: Jakarta
   pengesah: Diundangkan di Jakarta
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

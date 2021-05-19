@@ -1,7 +1,39 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1971/11> legal:documentHasBabSet <http://example.org/legal/document/uu/1971/11/bab> .
+<http://example.org/legal/document/uu/1971/11> legal:documentHasPasalSet <http://example.org/legal/document/uu/1971/11/pasals> .
+<http://example.org/legal/document/uu/1971/11/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1971/11/pasal/0001> .
+<http://example.org/legal/document/uu/1971/11/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1971/11/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924> .
+<http://example.org/legal/document/uu/1971/11> legal:documentHasPasal <http://example.org/legal/document/uu/1971/11/pasal/0001> .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924> legal:pasalVersionHasVersionDate "1971-09-24"^^xsd:date .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924> legal:pasalVersionHasRawText "(1). . Penerimaan Negara dalam tahun 1967 adalah sebesar Rp. 83.727. 240.662,37 (delapan puluh tiga milyar tujuh ratus dua puluh tujuh juta dua ratus empat puluh ribu enam ratu s enam puluh dua dan tiga puluh tujuh perseratus rupiah);\n(2). . Pengeluaran Negara dalam tahun 1967 adalah sebesar Rp. 87.634. 810.982,60 (delapan puluh tujuh milyar enam ratus tiga puluh empat juta delapan ratus sepuluh ribu sembilan ratus delapan puluh du a dan enam puluh perseratus rupiah); PRESIDEN REPUBLIK INDONESIA - 2 -\n(3). . Sisa kurang Perhitungan Anggaran tahun 1967 adalah sebesar Rp. 3.907.570.320,23 (tiga miliar sembilan ratus tujuh juta lima ratus tujuh puluh ribu tiga ratus dua puluh dan dua puluh tiga perseratus rupiah)." .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat> .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0001> .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0001> legal:ayatHasRawText ". Penerimaan Negara dalam tahun 1967 adalah sebesar Rp. 83.727. 240.662,37 (delapan puluh tiga milyar tujuh ratus dua puluh tujuh juta dua ratus empat puluh ribu enam ratu s enam puluh dua dan tiga puluh tujuh perseratus rupiah);" .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0001/text> legal:textHasTextString ". Penerimaan Negara dalam tahun 1967 adalah sebesar Rp. 83.727. 240.662,37 (delapan puluh tiga milyar tujuh ratus dua puluh tujuh juta dua ratus empat puluh ribu enam ratu s enam puluh dua dan tiga puluh tujuh perseratus rupiah);" .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0001/text> .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0002> .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0002> legal:ayatHasRawText ". Pengeluaran Negara dalam tahun 1967 adalah sebesar Rp. 87.634. 810.982,60 (delapan puluh tujuh milyar enam ratus tiga puluh empat juta delapan ratus sepuluh ribu sembilan ratus delapan puluh du a dan enam puluh perseratus rupiah); PRESIDEN REPUBLIK INDONESIA - 2 -" .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0002/text> legal:textHasTextString ". Pengeluaran Negara dalam tahun 1967 adalah sebesar Rp. 87.634. 810.982,60 (delapan puluh tujuh milyar enam ratus tiga puluh empat juta delapan ratus sepuluh ribu sembilan ratus delapan puluh du a dan enam puluh perseratus rupiah); PRESIDEN REPUBLIK INDONESIA - 2 -" .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0002/text> .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0003> .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0003> legal:ayatHasRawText ". Sisa kurang Perhitungan Anggaran tahun 1967 adalah sebesar Rp. 3.907.570.320,23 (tiga miliar sembilan ratus tujuh juta lima ratus tujuh puluh ribu tiga ratus dua puluh dan dua puluh tiga perseratus rupiah)." .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0003/text> legal:textHasTextString ". Sisa kurang Perhitungan Anggaran tahun 1967 adalah sebesar Rp. 3.907.570.320,23 (tiga miliar sembilan ratus tujuh juta lima ratus tujuh puluh ribu tiga ratus dua puluh dan dua puluh tiga perseratus rupiah)." .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0003/text> .
+<http://example.org/legal/document/uu/1971/11/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1971/11/pasal/0002> .
+<http://example.org/legal/document/uu/1971/11/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1971/11/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1971/11/pasal/0002/version/19710924> .
+<http://example.org/legal/document/uu/1971/11> legal:documentHasPasal <http://example.org/legal/document/uu/1971/11/pasal/0002> .
+<http://example.org/legal/document/uu/1971/11/pasal/0002/version/19710924> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1971/11/pasal/0002/version/19710924> legal:pasalVersionHasVersionDate "1971-09-24"^^xsd:date .
+<http://example.org/legal/document/uu/1971/11/pasal/0002/version/19710924> legal:pasalVersionHasRawText "Undang - undang ini mulai berlaku pada ha ri ditetapkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran - Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1971/11/pasal/0002/version/19710924/text> legal:textHasTextString "Undang - undang ini mulai berlaku pada ha ri ditetapkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran - Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1971/11/pasal/0002/version/19710924> legal:pasalVersionHasText <http://example.org/legal/document/uu/1971/11/pasal/0002/version/19710924/text> .
 <http://example.org/legal/document/uu/1971/11> legal:documentHasDisahkanDate "1971-09-24"^^xsd:date .
 <http://example.org/legal/document/uu/1971/11> legal:documentMengingat <http://example.org/legal/document/uu/1971/11/mengingat> .
 <http://example.org/legal/document/uu/1971/11/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1971/11/mengingat/point> .
@@ -26,6 +58,19 @@
 <http://example.org/legal/document/uu/1971/11> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/1971/11> legal:documentHasDisahkanJabatanPengesah "Presiden Republik Indonesia" .
 <http://example.org/legal/document/uu/1971/11> a legal:Document .
+<http://example.org/legal/document/uu/1971/11/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1971/11/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1971/11/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1971/11/pasal/0002/version/19710924> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1971/11/pasal/0002/version/19710924/text> a legal:Text .
 <http://example.org/legal/document/uu/1971/11/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1971/11/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/1971/11/mengingat/point> a legal:PointSet .
@@ -37,7 +82,19 @@
 <http://example.org/legal/document/uu/1971/11/mengingat/point/0003/text> a legal:Text .
 <http://example.org/legal/document/uu/1971/11/menimbang/text> a legal:Text .
 <http://example.org/legal/document/uu/1971/11/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/1971/11/bab> legal:partOf <http://example.org/legal/document/uu/1971/11> .
+<http://example.org/legal/document/uu/1971/11/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1971/11/pasals> .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924> legal:partOf <http://example.org/legal/document/uu/1971/11/pasal/0001> .
+<http://example.org/legal/document/uu/1971/11/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1971/11> .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat> legal:partOf <http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924> .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat> .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0001> .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat> .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0002> .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat> .
+<http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1971/11/pasal/0001/version/19710924/ayat/0003> .
+<http://example.org/legal/document/uu/1971/11/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1971/11/pasals> .
+<http://example.org/legal/document/uu/1971/11/pasal/0002/version/19710924> legal:partOf <http://example.org/legal/document/uu/1971/11/pasal/0002> .
+<http://example.org/legal/document/uu/1971/11/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1971/11> .
 <http://example.org/legal/document/uu/1971/11/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1971/11/mengingat/point> .
 <http://example.org/legal/document/uu/1971/11/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1971/11/mengingat/point> .
 <http://example.org/legal/document/uu/1971/11/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/1971/11/mengingat/point> .

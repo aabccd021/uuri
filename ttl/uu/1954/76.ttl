@@ -1,7 +1,51 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1954/76> legal:documentHasBabSet <http://example.org/legal/document/uu/1954/76/bab> .
+<http://example.org/legal/document/uu/1954/76> legal:documentHasPasalSet <http://example.org/legal/document/uu/1954/76/pasals> .
+<http://example.org/legal/document/uu/1954/76/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1954/76/pasal/0001> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1954/76/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230> .
+<http://example.org/legal/document/uu/1954/76> legal:documentHasPasal <http://example.org/legal/document/uu/1954/76/pasal/0001> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230> legal:pasalVersionHasVersionDate "1954-12-30"^^xsd:date .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230> legal:pasalVersionHasRawText "\"Reglement voor de Brieven - en Pakketpost\", ditetapkan dengan ordonansi tanggal 29 Desember 1934 pasal 1 (Postordonantie 1935, Staatsblad 1934 No. 720), sebagai telah diubah dan ditambah, terakhir dengan Undang - undang No. 13 tahun 1951 (Lembaran Negara No. 81 tahun 1951), diubah dan ditambah lebih lanjut sebagai berikut: I. Pasal 4 ayat 1, huruf a sampai dengan h harus dibaca:\na. tiap - tiap surat yang beratnya tidak lebih dari 20 gram, 75 sen dan untuk tiap - tiap 20 gram berikutnya atau sebagian dari 20 gram, 45 sen;\nb. tiap - tiap kartupos dan tiap - tiap bagian dari kedua bagian sebuah kartupos den gan balasan terbayar, 45 sen;\nc. surat kabar dan lampiran - lampirannya, 5 sen untuk tiap - tiap 25 gram atau sebagian dari 25 gram, yang portonya hanya berlaku apabila berperangko berlangganan, dalam hal - hal dan dengan syarat - syarat yang akan ditetapkano leh Kepala Jawatan; porto surat kabar dan lampiran - lampirannya yang harus dibayar di muka dan yang tidak berperangko berlangganan adalah sama dengan porto, yang harus dibayar di muka untuk barang - barang cetakan; PRESIDEN REPUBLIK INDONESIA - 3 -\nd. barang - barang cetakan da n dokumen - dokumen, 15 sen untuk tiap - tiap 50 gram atau sebagian dari 50 gram, akan tetapi dengan minimum untuk tiap - tiap kiriman dokumen setinggi - tingginya 75 sen;\ne. barang cetakan Braille, 71/2 sen untuk tiap - tiap 1000 gram atau sebagian dari 1000 gram;\nf. bungkusan, 30 sen untuk tiap - tiap 50 gram atau sebagian dari 50 gram dengan minimum setinggi - tingginya 150 sen untuk tiap - tiap kiriman;\ng. postpaket, Rp. 9, - untuk tiap - tiap postpaket;\nh. tiap - tiap kiriman fonopos yang beratnya tidak lebih dari 20 g ram 60 sen dan untuk tiap - tiap 20 gram berikutnya atau sebagian dari 20 gram, 40 sen. II. Dalam pasal 17 ayat 1, bawah huruf a, \"40\" diubah menjadi \"150\"; bawah b I \"40\" diubah menjadi \"45\" dan bawah b II \"40\" diubah menjadi \"140\"; bawah huruf c \"25\" diuba h men - jadi \"75\". III. Dalam pasal 21 ayat 2, \"25 cent voor een bedrag tot en met 25 gulden\" diubah menjadi \"75 cent voor een bedrag tot en met 25 gulden\"; \"50 cent voor een bedrag boven 25 gulden tot en met 50 gulden\" diubah menjadi \"100 cent voor een bed rag boven 25 gulden tot en met 50 gulden\". Pasal II Undang - undang ini mulai berlaku pada hari diundangkan. PRESIDEN REPUBLIK INDONESIA - 4 - Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatan dalam Lembaran Negara Republik Indonesia.\n" .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/description> legal:textHasTextString "\"Reglement voor de Brieven - en Pakketpost\", ditetapkan dengan ordonansi tanggal 29 Desember 1934 pasal 1 (Postordonantie 1935, Staatsblad 1934 No. 720), sebagai telah diubah dan ditambah, terakhir dengan Undang - undang No. 13 tahun 1951 (Lembaran Negara No. 81 tahun 1951), diubah dan ditambah lebih lanjut sebagai berikut: I. Pasal 4 ayat 1, huruf a sampai dengan h harus dibaca:" .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/description> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/a> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/a/text> legal:textHasTextString "tiap - tiap surat yang beratnya tidak lebih dari 20 gram, 75 sen dan untuk tiap - tiap 20 gram berikutnya atau sebagian dari 20 gram, 45 sen;" .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/a> legal:pointHasText <http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/a/text> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/b> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/b/text> legal:textHasTextString "tiap - tiap kartupos dan tiap - tiap bagian dari kedua bagian sebuah kartupos den gan balasan terbayar, 45 sen;" .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/b> legal:pointHasText <http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/b/text> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/c> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/c/text> legal:textHasTextString "surat kabar dan lampiran - lampirannya, 5 sen untuk tiap - tiap 25 gram atau sebagian dari 25 gram, yang portonya hanya berlaku apabila berperangko berlangganan, dalam hal - hal dan dengan syarat - syarat yang akan ditetapkano leh Kepala Jawatan; porto surat kabar dan lampiran - lampirannya yang harus dibayar di muka dan yang tidak berperangko berlangganan adalah sama dengan porto, yang harus dibayar di muka untuk barang - barang cetakan; PRESIDEN REPUBLIK INDONESIA - 3 -" .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/c> legal:pointHasText <http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/c/text> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/d> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/d/text> legal:textHasTextString "barang - barang cetakan da n dokumen - dokumen, 15 sen untuk tiap - tiap 50 gram atau sebagian dari 50 gram, akan tetapi dengan minimum untuk tiap - tiap kiriman dokumen setinggi - tingginya 75 sen;" .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/d> legal:pointHasText <http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/d/text> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/e> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/e/text> legal:textHasTextString "barang cetakan Braille, 71/2 sen untuk tiap - tiap 1000 gram atau sebagian dari 1000 gram;" .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/e> legal:pointHasText <http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/e/text> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/f> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/f> legal:pointHasKey "f" .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/f/text> legal:textHasTextString "bungkusan, 30 sen untuk tiap - tiap 50 gram atau sebagian dari 50 gram dengan minimum setinggi - tingginya 150 sen untuk tiap - tiap kiriman;" .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/f> legal:pointHasText <http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/f/text> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/g> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/g> legal:pointHasKey "g" .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/g/text> legal:textHasTextString "postpaket, Rp. 9, - untuk tiap - tiap postpaket;" .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/g> legal:pointHasText <http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/g/text> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/h> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/h> legal:pointHasKey "h" .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/h/text> legal:textHasTextString "tiap - tiap kiriman fonopos yang beratnya tidak lebih dari 20 g ram 60 sen dan untuk tiap - tiap 20 gram berikutnya atau sebagian dari 20 gram, 40 sen. II. Dalam pasal 17 ayat 1, bawah huruf a, \"40\" diubah menjadi \"150\"; bawah b I \"40\" diubah menjadi \"45\" dan bawah b II \"40\" diubah menjadi \"140\"; bawah huruf c \"25\" diuba h men - jadi \"75\". III. Dalam pasal 21 ayat 2, \"25 cent voor een bedrag tot en met 25 gulden\" diubah menjadi \"75 cent voor een bedrag tot en met 25 gulden\"; \"50 cent voor een bedrag boven 25 gulden tot en met 50 gulden\" diubah menjadi \"100 cent voor een bed rag boven 25 gulden tot en met 50 gulden\". Pasal II Undang - undang ini mulai berlaku pada hari diundangkan. PRESIDEN REPUBLIK INDONESIA - 4 - Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatan dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/h> legal:pointHasText <http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/h/text> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/h/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/c> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/h/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/a> .
 <http://example.org/legal/document/uu/1954/76> legal:documentHasDisahkanDate "1954-12-30"^^xsd:date .
 <http://example.org/legal/document/uu/1954/76> legal:documentMengingat <http://example.org/legal/document/uu/1954/76/mengingat> .
 <http://example.org/legal/document/uu/1954/76/mengingat/text> legal:textHasTextString "pasal 97 ayat 4 jo. pasal 89 Undang - undang Dasar Sementara; Dengan persetujuan Dewan Perwakilan Rakyat; MEMUTUSKAN : Menetapkan : UNDANG - UNDANG TENTANG PENETAPAN \"UNDANG - UNDANG DARU RAT TENTANG MENAIKKAN JUMLAH MAXIMUM PORTO DAN BEA\". SEBAGAI UNDANG - UNDANG. PRESIDEN REPUBLIK INDONESIA - 2 -" .
@@ -13,8 +57,40 @@
 <http://example.org/legal/document/uu/1954/76> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/1954/76> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/1954/76> a legal:Document .
+<http://example.org/legal/document/uu/1954/76/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1954/76/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/e> a legal:Point .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/f> a legal:Point .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/f/text> a legal:Text .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/g> a legal:Point .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/g/text> a legal:Text .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/h> a legal:Point .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/h/text> a legal:Text .
 <http://example.org/legal/document/uu/1954/76/mengingat/text> a legal:Text .
 <http://example.org/legal/document/uu/1954/76/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1954/76/menimbang/text> a legal:Text .
 <http://example.org/legal/document/uu/1954/76/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/1954/76/bab> legal:partOf <http://example.org/legal/document/uu/1954/76> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1954/76/pasals> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230> legal:partOf <http://example.org/legal/document/uu/1954/76/pasal/0001> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1954/76> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point> legal:partOf <http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/a> legal:partOf <http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/b> legal:partOf <http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/c> legal:partOf <http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/d> legal:partOf <http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/e> legal:partOf <http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/f> legal:partOf <http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/g> legal:partOf <http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point> .
+<http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point/h> legal:partOf <http://example.org/legal/document/uu/1954/76/pasal/0001/version/19541230/point> .

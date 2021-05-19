@@ -141,18 +141,115 @@ opText: |-
   PRESIDEN
   REPUBLIK INDONESIA
   - 2 -
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_8
+          nodeType: pasalVersion
+          version: &ref_13
+            nodeType: date
+            month: 6
+            date: 29
+            year: 1982
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_9
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_8
+          elements:
+            - type: ayat
+              node: &ref_10
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_9
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_10
+                textString: >-
+                  Penerimaan Negara dalam Tahun Anggaran 1976/1977 adalah sebesar Rp
+                  3.191.668.312.832,12 (tiga trilyun seratus sembilan puluh satu milyar enam ratus
+                  enam puluh de lapan juta tiga ratus dua belas ribu delapan ratus tiga puluh dua
+                  dua belas perseratus rupiah).
+                references: []
+            - type: ayat
+              node: &ref_11
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_9
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_11
+                textString: >-
+                  Pengeluaran Negara dalam Tahun Anggaran 1976/1977 adalah sebesar .,Rp
+                  3.176.267.870.533,77 (tiga trilyun seratus tujuh puluh enam milyar dua ratus enam
+                  pul uh tujuh juta delapan ratus tujuh puluh ribu lima ratus tiga puluh tiga tujuh
+                  puluh tujuh perseratus rupiah).
+                references: []
+            - type: ayat
+              node: &ref_12
+                nodeType: ayat
+                key: 3
+                parentAyatSetNode: *ref_9
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_12
+                textString: >-
+                  Sisa lebih Perhitungan Anggaran Negara Tahun 1976/1977 adalah sebesar Rp
+                  15.400.442.298,35 (lima belas milyar empat ratus juta empat ratus em pat puluh dua
+                  ribu dua ratus sembilan puluh delapan tiga puluh lima perseratus rupiah).
+                references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_14
+          nodeType: pasalVersion
+          version: *ref_13
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_14
+          textString: >-
+            Undang - undang ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang
+            mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penem patannya
+            dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 6
-    date: 29
-    year: 1982
+  date: *ref_13
   location: Jakarta
   pengesah: SOEHARTO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

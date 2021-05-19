@@ -182,18 +182,79 @@ opText: |-
   PRESIDEN
   REPUBLIK INDONESIA
   - 2 -
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_11
+          nodeType: pasalVersion
+          version: &ref_12
+            nodeType: date
+            month: 7
+            date: 21
+            year: 1981
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_11
+          textString: >-
+            Mengesahkan KONVENSI INTERNASIONAL MENGENAI PEMBERANTASAN UANG PALSU BESERTA PROTOKOL
+            (INTERNATIONAL CONVENTION FOR THE SUPPRESSION OF COUNTERFEITING CURRENCY AND PROTOCOL,
+            GENEVE 1929) yang telah diterima baik dan disahkan oleh Sidang Liga Bangsa - Bangsa di
+            Jenewa pada tanggal 20 April 1929, dengan pensyaratan (reservation) terhadap Pasal 19,
+            tentang penyelesaian perselisihan mengenai penafsiran atau penerapan Konvensi ini,
+            sebagaimana yang dilampirkan pada undang - undang ini.
+          references:
+            - start: 337
+              end: 345
+              node:
+                key: 19
+                parentNode: *ref_0
+                nodeType: pasal
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_13
+          nodeType: pasalVersion
+          version: *ref_12
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_13
+          textString: >-
+            Undang - undan g ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang
+            mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 7
-    date: 21
-    year: 1981
+  date: *ref_12
   location: Jakarta
   pengesah: SOEHARTO
   jabatanPengesah: PRESIDEN RE PUBLIK INDONESIA,

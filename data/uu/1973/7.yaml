@@ -68,18 +68,94 @@ opText: |-
   REPUBLIK INDONESIA DAN REPUBLIK SINGAPURA
   MENGENAI PENETAPAN GARIS BATAS LAUT WILAYAH
   KEDUA NEGARA DI SELAT SINGAPURA.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_3
+          nodeType: pasalVersion
+          version: &ref_4
+            nodeType: date
+            month: 12
+            date: 8
+            year: 1973
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_3
+          textString: >-
+            Menyetujui Perjanjian antara Republik Indonesia dan Republik Singapura tentang Penetapan
+            Garis Batas Laut Wilayah kedua Negara di Selat Singapura yang ditandatangani pada
+            tanggal 25 Mei 1973 dan yang salinannya dilampirkan pada Undang-undang ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_5
+          nodeType: pasalVersion
+          version: *ref_4
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_5
+          textString: Perjanjian tersebut diatas mulai berlaku pada tanggal pertukaran Piagam Pengesahannya.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 3
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_6
+          nodeType: pasalVersion
+          version: *ref_4
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '3'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_6
+          textString: >-
+            Undang-undang ini mulai berlaku pada hari tanggal diundangkannya. Agar supaya setiap
+            orang dapat mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan
+            penempatannya dalam Lembaran Negara Republik Indonesia. Wiz SM N Ny dp 2 PRESIDEN
+            REPUBLIK INDONESIA -3-
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 12
-    date: 8
-    year: 1973
+  date: *ref_4
   location: Jakarta
   pengesah: JENDERAL TNI.
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

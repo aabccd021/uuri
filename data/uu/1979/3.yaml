@@ -126,18 +126,351 @@ opText: |-
   PRESIDEN
   REPUBLIK INDONESIA
   2-
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_7
+          nodeType: pasalVersion
+          version: &ref_14
+            nodeType: date
+            month: 6
+            date: 29
+            year: 1979
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_8
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_7
+          elements:
+            - type: ayat
+              node: &ref_9
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_8
+              content:
+                type: pointSet
+                node: &ref_10
+                  nodeType: pointSet
+                  parentNode: *ref_9
+                description:
+                  type: text
+                  node:
+                    nodeType: text
+                    textName: description
+                    parentNode: *ref_10
+                  textString: >-
+                    — Anggaran Pendapatan Negara Tahun Anggaran 1978/1979 diperkirakan bertambah
+                    dengan Rp 475.229.000.000,00 yang terdiri dari :
+                  references: []
+                elements:
+                  - type: point
+                    node: &ref_11
+                      nodeType: point
+                      key: a
+                      parentPointSetNode: *ref_10
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_11
+                      textString: 'Pendapatan Rutin bertambah dengan Rp 296.075.000.000,00:'
+                      references: []
+                  - type: point
+                    node: &ref_12
+                      nodeType: point
+                      key: b
+                      parentPointSetNode: *ref_10
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_12
+                      textString: Pendapatan Pembangunan bertambah dengan Rp 179.154.000.000,0
+                      references: []
+            - type: ayat
+              node: &ref_13
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_8
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_13
+                textString: >-
+                  — Perincian pendapatan tambahan dan perubahan dimaksud pada ayat (1) huruf a dan b
+                  pasal ini masing-masing dimuat dalam Lampiran I dan II Undang-undang ini.
+                references:
+                  - start: 60
+                    end: 68
+                    node:
+                      key: 1
+                      parentAyatSetNode:
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_7
+                      nodeType: ayat
+                  - start: 81
+                    end: 82
+                    node:
+                      key: b
+                      parentPointSetNode:
+                        nodeType: pointSet
+                        parentNode:
+                          nodeType: ayat
+                          key: 1
+                          parentAyatSetNode:
+                            nodeType: ayatSet
+                            parentPasalVersionNode: *ref_7
+                      nodeType: point
+                  - start: 69
+                    end: 76
+                    node:
+                      key: a
+                      parentPointSetNode:
+                        nodeType: pointSet
+                        parentNode: *ref_7
+                      nodeType: point
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_15
+          nodeType: pasalVersion
+          version: *ref_14
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_16
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_15
+          elements:
+            - type: ayat
+              node: &ref_17
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_16
+              content:
+                type: pointSet
+                node: &ref_18
+                  nodeType: pointSet
+                  parentNode: *ref_17
+                description:
+                  type: text
+                  node:
+                    nodeType: text
+                    textName: description
+                    parentNode: *ref_18
+                  textString: >-
+                    Anggaran Belanja Negara Tahun Anggaran 1978/1979 diperkirakan bertambah dengan
+                    Rp. 472.973.000.000,00 yang terdiri dari.
+                  references: []
+                elements:
+                  - type: point
+                    node: &ref_19
+                      nodeType: point
+                      key: a
+                      parentPointSetNode: *ref_18
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_19
+                      textString: 'Belanja Rutin bertambah dengan Rp 372.072.000.000,00:'
+                      references: []
+                  - type: point
+                    node: &ref_20
+                      nodeType: point
+                      key: b
+                      parentPointSetNode: *ref_18
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_20
+                      textString: Belanja Pembangunan bertambah dengan Rp 100.901.000.000,00.
+                      references: []
+            - type: ayat
+              node: &ref_21
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_16
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_21
+                textString: >-
+                  — Perincian pengeluaran tambahan dan perubahan dimaksud pada ayat (1) huruf a dan
+                  b pasal ini masing-masing dimuat dalam Lampiran III dan IV Undang-undang ini.
+                references:
+                  - start: 61
+                    end: 69
+                    node:
+                      key: 1
+                      parentAyatSetNode:
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_15
+                      nodeType: ayat
+                  - start: 82
+                    end: 83
+                    node:
+                      key: b
+                      parentPointSetNode:
+                        nodeType: pointSet
+                        parentNode:
+                          nodeType: ayat
+                          key: 1
+                          parentAyatSetNode:
+                            nodeType: ayatSet
+                            parentPasalVersionNode: *ref_15
+                      nodeType: point
+                  - start: 70
+                    end: 77
+                    node:
+                      key: a
+                      parentPointSetNode:
+                        nodeType: pointSet
+                        parentNode: *ref_15
+                      nodeType: point
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 3
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_22
+          nodeType: pasalVersion
+          version: *ref_14
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '3'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_23
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_22
+          elements:
+            - type: ayat
+              node: &ref_24
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_23
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_24
+                textString: >-
+                  Kredit anggaran proyek-proyek pada Anggaran Pembangunan Tahun Anggaran 1978/1979
+                  yang telah disahkan dalam Undang-undang Nomor 1 Tahun 1978 tentang Anggaran
+                  Pendapatan dan Belanja Negara Tahun Anggaran 1978/1979 yang pada akhir Tahun
+                  Anggaran 1978/1979 menunjukkan sisa, dengan Peraturan Pemerintah dipindahkan ke
+                  Tahun Anggaran 1979/1980 dengan menambahkannya kepada kredit anggaran Tahun
+                  Anggaran 1979/1980.
+                references: []
+            - type: ayat
+              node: &ref_25
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_23
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_25
+                textString: >-
+                  Saldo anggaran lebih Tahun Anggaran 1978/1979 ditambahkan kepada anggaran Tahun
+                  Anggaran 1979/1980 dan dipergunakan untuk membiayai Anggaran Pembangunan Tahun
+                  Anggaran 1979/1980.
+                references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 4
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_26
+          nodeType: pasalVersion
+          version: *ref_14
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '4'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_26
+          textString: >-
+            Ketentuan-ketentuan dalam Indische Comptabiliteitswet (Undang-undang Perbendaharaan)
+            yang bertentangan dengan bentuk, susunan dan isi Undang-undang ini dinyatakan tidak
+            berlaku.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 5
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_27
+          nodeType: pasalVersion
+          version: *ref_14
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '5'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_27
+          textString: >-
+            Undang-undang ini mulai berlaku pada tanggal diundangkan dan mempunyai daya laku surut
+            sejak tanggal 1 April 1978. PRESIDEN REPUBLIK INDONESIA -3- Agar supaya setiap orang
+            mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 6
-    date: 29
-    year: 1979
+  date: *ref_14
   location: Jakarta
   pengesah: SOEHARTO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

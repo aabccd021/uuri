@@ -1,7 +1,53 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1982/16> legal:documentHasBabSet <http://example.org/legal/document/uu/1982/16/bab> .
+<http://example.org/legal/document/uu/1982/16> legal:documentHasPasalSet <http://example.org/legal/document/uu/1982/16/pasals> .
+<http://example.org/legal/document/uu/1982/16/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1982/16/pasal/0001> .
+<http://example.org/legal/document/uu/1982/16/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1982/16/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820> .
+<http://example.org/legal/document/uu/1982/16> legal:documentHasPasal <http://example.org/legal/document/uu/1982/16/pasal/0001> .
+<http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820> legal:pasalVersionHasVersionDate "1982-08-20"^^xsd:date .
+<http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820> legal:pasalVersionHasRawText "(1). Membentuk Pengadilan Tinggi Nusa Tenggara Barat yang berkedudukan di Mataram.\n(2). Wilayah hukum penga dilan tinggi sebagaimana dimaksud dalam ayat (1) meliputi wilayah hukum semua pengadilan negeri dalam Propinsi Daerah Tingkat I Nusa Tenggara Barat." .
+<http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820/ayat> .
+<http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820/ayat/0001> .
+<http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820/ayat/0001> legal:ayatHasRawText "Membentuk Pengadilan Tinggi Nusa Tenggara Barat yang berkedudukan di Mataram." .
+<http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820/ayat/0001/text> legal:textHasTextString "Membentuk Pengadilan Tinggi Nusa Tenggara Barat yang berkedudukan di Mataram." .
+<http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820/ayat/0001/text> .
+<http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820/ayat/0002> .
+<http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820/ayat/0002> legal:ayatHasRawText "Wilayah hukum penga dilan tinggi sebagaimana dimaksud dalam ayat (1) meliputi wilayah hukum semua pengadilan negeri dalam Propinsi Daerah Tingkat I Nusa Tenggara Barat." .
+<http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820/ayat/0002/text> legal:textHasTextString "Wilayah hukum penga dilan tinggi sebagaimana dimaksud dalam ayat (1) meliputi wilayah hukum semua pengadilan negeri dalam Propinsi Daerah Tingkat I Nusa Tenggara Barat." .
+<http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820/ayat/0002/text> .
+<http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820/ayat/0001> .
+<http://example.org/legal/document/uu/1982/16/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1982/16/pasal/0002> .
+<http://example.org/legal/document/uu/1982/16/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1982/16/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1982/16/pasal/0002/version/19820820> .
+<http://example.org/legal/document/uu/1982/16> legal:documentHasPasal <http://example.org/legal/document/uu/1982/16/pasal/0002> .
+<http://example.org/legal/document/uu/1982/16/pasal/0002/version/19820820> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1982/16/pasal/0002/version/19820820> legal:pasalVersionHasVersionDate "1982-08-20"^^xsd:date .
+<http://example.org/legal/document/uu/1982/16/pasal/0002/version/19820820> legal:pasalVersionHasRawText "Wilayah Hukum Pengadilan Tinggi Denpasar dikurangi dengan wilayah hukum semua pengadilan negeri d alam Propinsi Daerah Tingkat I Nusa Tenggara Barat." .
+<http://example.org/legal/document/uu/1982/16/pasal/0002/version/19820820/text> legal:textHasTextString "Wilayah Hukum Pengadilan Tinggi Denpasar dikurangi dengan wilayah hukum semua pengadilan negeri d alam Propinsi Daerah Tingkat I Nusa Tenggara Barat." .
+<http://example.org/legal/document/uu/1982/16/pasal/0002/version/19820820> legal:pasalVersionHasText <http://example.org/legal/document/uu/1982/16/pasal/0002/version/19820820/text> .
+<http://example.org/legal/document/uu/1982/16/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1982/16/pasal/0003> .
+<http://example.org/legal/document/uu/1982/16/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/1982/16/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1982/16/pasal/0003/version/19820820> .
+<http://example.org/legal/document/uu/1982/16> legal:documentHasPasal <http://example.org/legal/document/uu/1982/16/pasal/0003> .
+<http://example.org/legal/document/uu/1982/16/pasal/0003/version/19820820> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1982/16/pasal/0003/version/19820820> legal:pasalVersionHasVersionDate "1982-08-20"^^xsd:date .
+<http://example.org/legal/document/uu/1982/16/pasal/0003/version/19820820> legal:pasalVersionHasRawText "Perkara - perkara yang berasal dari pengadilan negeri dalam Propinsi Daerah Tingkat I Nusa Tenggara Barat yang pada saat mulai berlakunya undang - undang ini, belum diputus oleh Pengadilan Tinggi De npasar, tetap didaftar, diperiksa dan diputus oleh Pengadilan Tinggi Denpasar, sampai saat diresmikannya Pengadilan Tinggi Nusa Tenggara Barat. PRESIDEN REPUBLIK INDONESIA - 3 -" .
+<http://example.org/legal/document/uu/1982/16/pasal/0003/version/19820820/text> legal:textHasTextString "Perkara - perkara yang berasal dari pengadilan negeri dalam Propinsi Daerah Tingkat I Nusa Tenggara Barat yang pada saat mulai berlakunya undang - undang ini, belum diputus oleh Pengadilan Tinggi De npasar, tetap didaftar, diperiksa dan diputus oleh Pengadilan Tinggi Denpasar, sampai saat diresmikannya Pengadilan Tinggi Nusa Tenggara Barat. PRESIDEN REPUBLIK INDONESIA - 3 -" .
+<http://example.org/legal/document/uu/1982/16/pasal/0003/version/19820820> legal:pasalVersionHasText <http://example.org/legal/document/uu/1982/16/pasal/0003/version/19820820/text> .
+<http://example.org/legal/document/uu/1982/16/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1982/16/pasal/0004> .
+<http://example.org/legal/document/uu/1982/16/pasal/0004> legal:pasalHasKey 4 .
+<http://example.org/legal/document/uu/1982/16/pasal/0004> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1982/16/pasal/0004/version/19820820> .
+<http://example.org/legal/document/uu/1982/16> legal:documentHasPasal <http://example.org/legal/document/uu/1982/16/pasal/0004> .
+<http://example.org/legal/document/uu/1982/16/pasal/0004/version/19820820> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1982/16/pasal/0004/version/19820820> legal:pasalVersionHasVersionDate "1982-08-20"^^xsd:date .
+<http://example.org/legal/document/uu/1982/16/pasal/0004/version/19820820> legal:pasalVersionHasRawText "Undang - undang ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1982/16/pasal/0004/version/19820820/text> legal:textHasTextString "Undang - undang ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1982/16/pasal/0004/version/19820820> legal:pasalVersionHasText <http://example.org/legal/document/uu/1982/16/pasal/0004/version/19820820/text> .
 <http://example.org/legal/document/uu/1982/16> legal:documentHasDisahkanDate "1982-08-20"^^xsd:date .
 <http://example.org/legal/document/uu/1982/16> legal:documentMengingat <http://example.org/legal/document/uu/1982/16/mengingat> .
 <http://example.org/legal/document/uu/1982/16/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1982/16/mengingat/point> .
@@ -43,6 +89,23 @@
 <http://example.org/legal/document/uu/1982/16> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/1982/16> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/1982/16> a legal:Document .
+<http://example.org/legal/document/uu/1982/16/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1982/16/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1982/16/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1982/16/pasal/0002/version/19820820> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1982/16/pasal/0002/version/19820820/text> a legal:Text .
+<http://example.org/legal/document/uu/1982/16/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/1982/16/pasal/0003/version/19820820> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1982/16/pasal/0003/version/19820820/text> a legal:Text .
+<http://example.org/legal/document/uu/1982/16/pasal/0004> a legal:Pasal .
+<http://example.org/legal/document/uu/1982/16/pasal/0004/version/19820820> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1982/16/pasal/0004/version/19820820/text> a legal:Text .
 <http://example.org/legal/document/uu/1982/16/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1982/16/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/1982/16/mengingat/point> a legal:PointSet .
@@ -63,7 +126,23 @@
 <http://example.org/legal/document/uu/1982/16/menimbang/point/a/text> a legal:Text .
 <http://example.org/legal/document/uu/1982/16/menimbang/point/b> a legal:Point .
 <http://example.org/legal/document/uu/1982/16/menimbang/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/1982/16/bab> legal:partOf <http://example.org/legal/document/uu/1982/16> .
+<http://example.org/legal/document/uu/1982/16/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1982/16/pasals> .
+<http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820> legal:partOf <http://example.org/legal/document/uu/1982/16/pasal/0001> .
+<http://example.org/legal/document/uu/1982/16/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1982/16> .
+<http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820/ayat> legal:partOf <http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820> .
+<http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820/ayat> .
+<http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820/ayat/0001> .
+<http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820/ayat> .
+<http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1982/16/pasal/0001/version/19820820/ayat/0002> .
+<http://example.org/legal/document/uu/1982/16/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1982/16/pasals> .
+<http://example.org/legal/document/uu/1982/16/pasal/0002/version/19820820> legal:partOf <http://example.org/legal/document/uu/1982/16/pasal/0002> .
+<http://example.org/legal/document/uu/1982/16/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1982/16> .
+<http://example.org/legal/document/uu/1982/16/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1982/16/pasals> .
+<http://example.org/legal/document/uu/1982/16/pasal/0003/version/19820820> legal:partOf <http://example.org/legal/document/uu/1982/16/pasal/0003> .
+<http://example.org/legal/document/uu/1982/16/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1982/16> .
+<http://example.org/legal/document/uu/1982/16/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1982/16/pasals> .
+<http://example.org/legal/document/uu/1982/16/pasal/0004/version/19820820> legal:partOf <http://example.org/legal/document/uu/1982/16/pasal/0004> .
+<http://example.org/legal/document/uu/1982/16/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1982/16> .
 <http://example.org/legal/document/uu/1982/16/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1982/16/mengingat/point> .
 <http://example.org/legal/document/uu/1982/16/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1982/16/mengingat/point> .
 <http://example.org/legal/document/uu/1982/16/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/1982/16/mengingat/point> .

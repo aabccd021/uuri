@@ -122,18 +122,80 @@ opText: |-
   1984 TENTANG PENANGGUHAN MULAI BERLAKUNYA UNDANG-
   UNDANG PAJAK PERTAMBAHAN NILAI 1984 MENJADI UNDANG-
   UNDANG.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_7
+          nodeType: pasalVersion
+          version: &ref_8
+            nodeType: date
+            month: 10
+            date: 27
+            year: 1984
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_7
+          textString: >-
+            Menangguhkan mulai berlakunya Undang-undang Pajak Pertambahan Nilai 1984 (Lembaran
+            Negara Tahun 1983 Nomor 51, Tambahan Lembaran Negara Nomor 3264) dari tanggal 1 Juli
+            1984 sampai selambat-lambatnya tanggal 1 Januari 1986.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_9
+          nodeType: pasalVersion
+          version: *ref_8
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_9
+          textString: >-
+            Setelah dinilai dengan saksama mengenai kesiapan pelaksanaan sehingga mencapai tujuan
+            dan hasil yang sebaik-baiknya, maka dengan Peraturan Pemerintah ditetapkan mulai
+            berlakunya Undang-undang Pajak Pertambahan Nilai 1984 (Lembaran Negara Tahun 1983 Nomor
+            51, Tambahan Lembaran Negara Nomor 3264) sebagai pelaksanaan ketentuan Pasal 1. Pasal II
+            Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang
+            mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam
+            Lembaran Negara Repubhk Indonesia.
+          references:
+            - start: 326
+              end: 333
+              node:
+                key: 1
+                parentNode: *ref_0
+                nodeType: pasal
 disahkan:
-  date:
-    nodeType: date
-    month: 10
-    date: 27
-    year: 1984
+  date: *ref_8
   location: Jakarta
   pengesah: SOEHARTO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

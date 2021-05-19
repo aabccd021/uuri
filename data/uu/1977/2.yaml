@@ -180,18 +180,349 @@ opText: |-
   Menetapkan : UNDANG - UNDANG TENTANG TAMBAHAN DAN PERUBAHAN
   ATAS ANGGARAN PENDAPATAN DAN BELANJA NEGARA
   TAHUN ANGGARAN 1976/1977.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_11
+          nodeType: pasalVersion
+          version: &ref_18
+            nodeType: date
+            month: 6
+            date: 30
+            year: 1977
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_12
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_11
+          elements:
+            - type: ayat
+              node: &ref_13
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_12
+              content:
+                type: pointSet
+                node: &ref_14
+                  nodeType: pointSet
+                  parentNode: *ref_13
+                description:
+                  type: text
+                  node:
+                    nodeType: text
+                    textName: description
+                    parentNode: *ref_14
+                  textString: >-
+                    Anggaran Pendapatan Negara Tahun Anggaran 1976/1977 diperkirakan bertambah
+                    dengan Rp. 169.190.000.000,00 yang terdiri dari :
+                  references: []
+                elements:
+                  - type: point
+                    node: &ref_15
+                      nodeType: point
+                      key: a
+                      parentPointSetNode: *ref_14
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_15
+                      textString: Pendapatan Rutin bertambah dengan Rp. 102.790.000.000,00,
+                      references: []
+                  - type: point
+                    node: &ref_16
+                      nodeType: point
+                      key: b
+                      parentPointSetNode: *ref_14
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_16
+                      textString: Pendapatan Pembangunan bertambah dengan Rp. 66.400.000.000,00.
+                      references: []
+            - type: ayat
+              node: &ref_17
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_12
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_17
+                textString: >-
+                  Perincian Pendapatan Tambahan dan Perubahan dimaksud pada ayat (1) huruf a dan b
+                  pasal ini masing - masing dimuat dalam Lampiran I dan II Undang - undang ini.
+                references:
+                  - start: 58
+                    end: 66
+                    node:
+                      key: 1
+                      parentAyatSetNode:
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_11
+                      nodeType: ayat
+                  - start: 79
+                    end: 80
+                    node:
+                      key: b
+                      parentPointSetNode:
+                        nodeType: pointSet
+                        parentNode:
+                          nodeType: ayat
+                          key: 1
+                          parentAyatSetNode:
+                            nodeType: ayatSet
+                            parentPasalVersionNode: *ref_11
+                      nodeType: point
+                  - start: 67
+                    end: 74
+                    node:
+                      key: a
+                      parentPointSetNode:
+                        nodeType: pointSet
+                        parentNode: *ref_11
+                      nodeType: point
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_19
+          nodeType: pasalVersion
+          version: *ref_18
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_20
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_19
+          elements:
+            - type: ayat
+              node: &ref_21
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_20
+              content:
+                type: pointSet
+                node: &ref_22
+                  nodeType: pointSet
+                  parentNode: *ref_21
+                description:
+                  type: text
+                  node:
+                    nodeType: text
+                    textName: description
+                    parentNode: *ref_22
+                  textString: >-
+                    Anggaran Belanja Negara Tahun Anggaran 1976/1977 diperkirakan bertambah dengan
+                    Rp. 163.644.000.000,00 yang terdiri dari PRESIDEN REPUBLIK INDONESIA - 3 -
+                  references: []
+                elements:
+                  - type: point
+                    node: &ref_23
+                      nodeType: point
+                      key: a
+                      parentPointSetNode: *ref_22
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_23
+                      textString: Belanja Rutin bertambah dengan Rp. 29.459.000.000.00,
+                      references: []
+                  - type: point
+                    node: &ref_24
+                      nodeType: point
+                      key: b
+                      parentPointSetNode: *ref_22
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_24
+                      textString: Belanja Pembangunan bertambah dengan Rp. 134.185.000.000,00
+                      references: []
+            - type: ayat
+              node: &ref_25
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_20
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_25
+                textString: >-
+                  Perincian pengeluaran tambahan dan perubahan dimaksud pada ayat (1) huruf a dan b
+                  pasal ini masing - masing dimuat dalam Lampiran III dan IV Undang - undang ini.
+                references:
+                  - start: 59
+                    end: 67
+                    node:
+                      key: 1
+                      parentAyatSetNode:
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_19
+                      nodeType: ayat
+                  - start: 80
+                    end: 81
+                    node:
+                      key: b
+                      parentPointSetNode:
+                        nodeType: pointSet
+                        parentNode:
+                          nodeType: ayat
+                          key: 1
+                          parentAyatSetNode:
+                            nodeType: ayatSet
+                            parentPasalVersionNode: *ref_19
+                      nodeType: point
+                  - start: 68
+                    end: 75
+                    node:
+                      key: a
+                      parentPointSetNode:
+                        nodeType: pointSet
+                        parentNode: *ref_19
+                      nodeType: point
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 3
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_26
+          nodeType: pasalVersion
+          version: *ref_18
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '3'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_27
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_26
+          elements:
+            - type: ayat
+              node: &ref_28
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_27
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_28
+                textString: >-
+                  Kredit anggaran proyek - proyek pada Anggaran Pembangunan tahun 1976/1977 yang
+                  telah disahkan dalam Undang - undang Nomor 1 Tahun 1976 tentang ang garan
+                  Pendapatan dan Belanja Negara Tahun Anggaran 1976/1977 yang pada akhir tahun
+                  Anggaran 1976/1977 menunjukkan sisa, dengan Peraturan Pemerintah dipindahkan ke
+                  tahun anggaran 1977/1978 dengan menambahkannya kepada kredit anggaran 1977/1978.
+                references: []
+            - type: ayat
+              node: &ref_29
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_27
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_29
+                textString: >-
+                  Saldo - an ggaran - lebih tahun 1976/1977 ditambahkan kepada anggaran tahun
+                  1977/1978 dan dipergunakan untuk membiayai Anggaran Pembangunan Tahun 1977/1978.
+                references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 4
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_30
+          nodeType: pasalVersion
+          version: *ref_18
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '4'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_30
+          textString: >-
+            Ketentuan - ketentuan dalam Indische Comptabiliteitswet (Undang - undang Perbendaharaan)
+            yang bertentangan dengan bentuk, susunan, dan isi Undang - undang ini dinyatakan tidak
+            berlaku.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 5
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_31
+          nodeType: pasalVersion
+          version: *ref_18
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '5'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_31
+          textString: >-
+            Undang - undang ini mulai berlaku pada tanggal diundangkan dan mempunyai daya laku surut
+            sejak tanggal 1 April 1976. PRESIDEN REPUBLIK INDONESIA - 4 - Agar supaya setiap orang
+            mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 6
-    date: 30
-    year: 1977
+  date: *ref_18
   location: Jakarta
   pengesah: SOEHARTO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

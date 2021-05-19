@@ -147,18 +147,154 @@ opText: |-
   PENGADILAN TINGGI SULAWESI TENGAH DI PALU DAN
   PERUBAHAN WILAYAH HUKUM PENGADILAN TINGGI
   MANADO.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_6
+          nodeType: pasalVersion
+          version: &ref_10
+            nodeType: date
+            month: 8
+            date: 20
+            year: 1982
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_7
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_6
+          elements:
+            - type: ayat
+              node: &ref_8
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_7
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_8
+                textString: Membentuk pengadilan tinggi Sulawesi Tengah yang berkedudukan di Palu.
+                references: []
+            - type: ayat
+              node: &ref_9
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_7
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_9
+                textString: >-
+                  Wilayah hukum pengadilan tinggi seba gaimana dimaksud dalam ayat (1) meliputi
+                  wilayah hukum semua pengadilan negeri dalam Propinsi Daerah Tingkat I Sulawesi
+                  Tengah.
+                references:
+                  - start: 60
+                    end: 68
+                    node:
+                      key: 1
+                      parentAyatSetNode:
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_6
+                      nodeType: ayat
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_11
+          nodeType: pasalVersion
+          version: *ref_10
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_11
+          textString: >-
+            Wilayah hukum Pengadilan Tinggi Manado dikurangi dengan wilayah hukum semua pengadilan
+            negeri dalam Propinsi Daerah Ti ngkat I Sulawesi Tengah.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 3
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_12
+          nodeType: pasalVersion
+          version: *ref_10
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '3'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_12
+          textString: >-
+            Perkara - perkara yang berasal dari pengadilan negeri dalam Propinsi Daerah Tingkat I
+            Sulawesi Tengah yang pada saat mulai berlakunya undang - undang ini, belum diputus oleh
+            Pengadilan Tinggi Manado, tetap didaftar, diperiksa dan diputus oleh Pengadilan Tinggi
+            Manado sampai saat diresmikannya Pengadilan Tinggi Sulawesi Tengah.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 4
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_13
+          nodeType: pasalVersion
+          version: *ref_10
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '4'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_13
+          textString: >-
+            Undang - undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA
+            - 3 - Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang
+            ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 8
-    date: 20
-    year: 1982
+  date: *ref_10
   location: Jakarta
   pengesah: SOEHARTO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

@@ -1,7 +1,39 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1982/12> legal:documentHasBabSet <http://example.org/legal/document/uu/1982/12/bab> .
+<http://example.org/legal/document/uu/1982/12> legal:documentHasPasalSet <http://example.org/legal/document/uu/1982/12/pasals> .
+<http://example.org/legal/document/uu/1982/12/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1982/12/pasal/0001> .
+<http://example.org/legal/document/uu/1982/12/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1982/12/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629> .
+<http://example.org/legal/document/uu/1982/12> legal:documentHasPasal <http://example.org/legal/document/uu/1982/12/pasal/0001> .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629> legal:pasalVersionHasVersionDate "1982-06-29"^^xsd:date .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629> legal:pasalVersionHasRawText "(1). Penerimaan Negara dalam Tahun Anggaran 1978/1979 adalah sebesar Rp 4.6814.903.272.224,93 (empat trilyun enam ratus delapan puluh empat milyar sembilan ratus ti ga juta dua ratus tujuh puluh dua ribu dua, ratus dua puluh empat sembilan puluh tiga perseratus rupiah).\n(2). Pengeluaran Negara dalam Tahun Anggaran 1978/1979 adalah sebesar Rp 4.618.492,903.455,20 (empat trilyun enam ratus delapan belas milyar empat ra tus sembilan puluh dua juta sembilan ratus tiga ribu empat ratus lima puluh lima dua puluh perseratus rupiah).\n(3). Sisa lebih Perhitungan Anggaran Negara Tahun 1978/1979 adalah sebesar Rp 66.410.368.769,73 (enam puluh enam milyar empat ratus sepuluh juta tiga ratus enam puluh delapan ribu tujuh ratus enam puluh sembilan tujuh puluh tiga perseratus rupiah)." .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat> .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0001> .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0001> legal:ayatHasRawText "Penerimaan Negara dalam Tahun Anggaran 1978/1979 adalah sebesar Rp 4.6814.903.272.224,93 (empat trilyun enam ratus delapan puluh empat milyar sembilan ratus ti ga juta dua ratus tujuh puluh dua ribu dua, ratus dua puluh empat sembilan puluh tiga perseratus rupiah)." .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0001/text> legal:textHasTextString "Penerimaan Negara dalam Tahun Anggaran 1978/1979 adalah sebesar Rp 4.6814.903.272.224,93 (empat trilyun enam ratus delapan puluh empat milyar sembilan ratus ti ga juta dua ratus tujuh puluh dua ribu dua, ratus dua puluh empat sembilan puluh tiga perseratus rupiah)." .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0001/text> .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0002> .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0002> legal:ayatHasRawText "Pengeluaran Negara dalam Tahun Anggaran 1978/1979 adalah sebesar Rp 4.618.492,903.455,20 (empat trilyun enam ratus delapan belas milyar empat ra tus sembilan puluh dua juta sembilan ratus tiga ribu empat ratus lima puluh lima dua puluh perseratus rupiah)." .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0002/text> legal:textHasTextString "Pengeluaran Negara dalam Tahun Anggaran 1978/1979 adalah sebesar Rp 4.618.492,903.455,20 (empat trilyun enam ratus delapan belas milyar empat ra tus sembilan puluh dua juta sembilan ratus tiga ribu empat ratus lima puluh lima dua puluh perseratus rupiah)." .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0002/text> .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0003> .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0003> legal:ayatHasRawText "Sisa lebih Perhitungan Anggaran Negara Tahun 1978/1979 adalah sebesar Rp 66.410.368.769,73 (enam puluh enam milyar empat ratus sepuluh juta tiga ratus enam puluh delapan ribu tujuh ratus enam puluh sembilan tujuh puluh tiga perseratus rupiah)." .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0003/text> legal:textHasTextString "Sisa lebih Perhitungan Anggaran Negara Tahun 1978/1979 adalah sebesar Rp 66.410.368.769,73 (enam puluh enam milyar empat ratus sepuluh juta tiga ratus enam puluh delapan ribu tujuh ratus enam puluh sembilan tujuh puluh tiga perseratus rupiah)." .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0003/text> .
+<http://example.org/legal/document/uu/1982/12/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1982/12/pasal/0002> .
+<http://example.org/legal/document/uu/1982/12/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1982/12/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1982/12/pasal/0002/version/19820629> .
+<http://example.org/legal/document/uu/1982/12> legal:documentHasPasal <http://example.org/legal/document/uu/1982/12/pasal/0002> .
+<http://example.org/legal/document/uu/1982/12/pasal/0002/version/19820629> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1982/12/pasal/0002/version/19820629> legal:pasalVersionHasVersionDate "1982-06-29"^^xsd:date .
+<http://example.org/legal/document/uu/1982/12/pasal/0002/version/19820629> legal:pasalVersionHasRawText "Undang - undang ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang i ni dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1982/12/pasal/0002/version/19820629/text> legal:textHasTextString "Undang - undang ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang i ni dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1982/12/pasal/0002/version/19820629> legal:pasalVersionHasText <http://example.org/legal/document/uu/1982/12/pasal/0002/version/19820629/text> .
 <http://example.org/legal/document/uu/1982/12> legal:documentHasDisahkanDate "1982-06-29"^^xsd:date .
 <http://example.org/legal/document/uu/1982/12> legal:documentMengingat <http://example.org/legal/document/uu/1982/12/mengingat> .
 <http://example.org/legal/document/uu/1982/12/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1982/12/mengingat/point> .
@@ -30,6 +62,19 @@
 <http://example.org/legal/document/uu/1982/12> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/1982/12> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/1982/12> a legal:Document .
+<http://example.org/legal/document/uu/1982/12/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1982/12/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1982/12/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1982/12/pasal/0002/version/19820629> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1982/12/pasal/0002/version/19820629/text> a legal:Text .
 <http://example.org/legal/document/uu/1982/12/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1982/12/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/1982/12/mengingat/point> a legal:PointSet .
@@ -43,7 +88,19 @@
 <http://example.org/legal/document/uu/1982/12/mengingat/point/0004/text> a legal:Text .
 <http://example.org/legal/document/uu/1982/12/menimbang/text> a legal:Text .
 <http://example.org/legal/document/uu/1982/12/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/1982/12/bab> legal:partOf <http://example.org/legal/document/uu/1982/12> .
+<http://example.org/legal/document/uu/1982/12/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1982/12/pasals> .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629> legal:partOf <http://example.org/legal/document/uu/1982/12/pasal/0001> .
+<http://example.org/legal/document/uu/1982/12/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1982/12> .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat> legal:partOf <http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629> .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat> .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0001> .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat> .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0002> .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat> .
+<http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1982/12/pasal/0001/version/19820629/ayat/0003> .
+<http://example.org/legal/document/uu/1982/12/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1982/12/pasals> .
+<http://example.org/legal/document/uu/1982/12/pasal/0002/version/19820629> legal:partOf <http://example.org/legal/document/uu/1982/12/pasal/0002> .
+<http://example.org/legal/document/uu/1982/12/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1982/12> .
 <http://example.org/legal/document/uu/1982/12/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1982/12/mengingat/point> .
 <http://example.org/legal/document/uu/1982/12/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1982/12/mengingat/point> .
 <http://example.org/legal/document/uu/1982/12/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/1982/12/mengingat/point> .

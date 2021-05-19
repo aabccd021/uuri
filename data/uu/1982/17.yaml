@@ -227,18 +227,147 @@ opText: |-
   PENGADILAN TINGGI KALIMANTAN TIMUR DI
   SAMARINDA DAN PERUBAHAN WILAYAH HUKUM
   PENGADILAN TINGGI BANJARMASIN.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_12
+          nodeType: pasalVersion
+          version: &ref_16
+            nodeType: date
+            month: 8
+            date: 20
+            year: 1982
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_13
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_12
+          elements:
+            - type: ayat
+              node: &ref_14
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_13
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_14
+                textString: Membentuk pengadilan tinggi Kalimantan Timur yang berkedudukan di Samarinda.
+                references: []
+            - type: ayat
+              node: &ref_15
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_13
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_15
+                textString: >-
+                  Wilayah hukum pen gadilan tinggi sebagaimana dimaksud dalam ayat(1) meliputi
+                  wilayah hukum semua pengadilan negeri dalam Propinsi Daerah Tingkat I Kalimantan
+                  Timur.
+                references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_17
+          nodeType: pasalVersion
+          version: *ref_16
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_17
+          textString: >-
+            Wilayah hukum Pengadilan Tinggi Banjarmasin dikurangi dengan wilayah hukum semua
+            pengadilan negeri dalam Propinsi Daerah Tingkat I Kalimantan Timur.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 3
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_18
+          nodeType: pasalVersion
+          version: *ref_16
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '3'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_18
+          textString: >-
+            Perkara - perkara yang berasal dari pengadilan negeri dalam Propinsi Daerah Tingkat I
+            Kalimantan Timur yang pada saat mulai berlakunya undang - undang ini, belum diputus oleh
+            Pengadilan Tinggi Banjarm asin, tetap didaftar, diperiksa dan diputus oleh Pengadilan
+            Tinggi Banjarmasin sampai saat diresmikannya Pengadilan Tinggi Kalimantan Timur.
+            PRESIDEN REPUBLIK INDONESIA - 3 -
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 4
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_19
+          nodeType: pasalVersion
+          version: *ref_16
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '4'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_19
+          textString: >-
+            Undang - undang ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang
+            mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 8
-    date: 20
-    year: 1982
+  date: *ref_16
   location: Jakarta
   pengesah: SOEHARTO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

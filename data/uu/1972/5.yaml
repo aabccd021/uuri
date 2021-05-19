@@ -112,18 +112,113 @@ opText: |-
   PRESIDEN
   REPUBLIK INDONESIA
   - 2 -
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_7
+          nodeType: pasalVersion
+          version: &ref_12
+            nodeType: date
+            month: 12
+            date: 13
+            year: 1972
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_8
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_7
+          elements:
+            - type: ayat
+              node: &ref_9
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_8
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_9
+                textString: >-
+                  . Pener imaan Negara dalam Tahun 1968 adalah sebesar Rp.206.222.237.705,88 (dua
+                  ratus enam milyar dua ratus dua puluh dua juta dua ratus tiga puluh tujuh ribu
+                  tujuh ratus lima delapan puluh delapan perseratus rupiah);
+                references: []
+            - type: ayat
+              node: &ref_10
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_8
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_10
+                textString: >-
+                  . Pengeluaran Negara dalam Tahun 1968 adal ah sebesar Rp. 205.365.178.791,42 (dua
+                  ratus lima milyar tiga ratus enam puluh lima juta seratus tujuh puluh delapan ribu
+                  tujuh ratus sembilan puluh satu empat puluh dua perseratus rupiah);
+                references: []
+            - type: ayat
+              node: &ref_11
+                nodeType: ayat
+                key: 3
+                parentAyatSetNode: *ref_8
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_11
+                textString: >-
+                  . Sisa lebih Perhitungan Anggaran Tahun 1968 adalah sebesar Rp . 857.058.914,46
+                  (delapan ratus lima puluh tujuh juta lima puluh delapan ribu sembilan ratus empat
+                  belas empat puluh enam perseratus rupiah).
+                references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_13
+          nodeType: pasalVersion
+          version: *ref_12
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_13
+          textString: >-
+            Undang - undang ini mulai berlaku pada hari diundangkan. Agar setiap orang
+            mengetahuinya, memerintahkan pen gundangan Undang - undang ini dengan penempatan dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 12
-    date: 13
-    year: 1972
+  date: *ref_12
   location: Jakarta
   pengesah: JENDERAL TNI
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,
