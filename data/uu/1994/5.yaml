@@ -234,18 +234,71 @@ opText: |-
   CONVENTION ON BIOLOGICAL DIVERSITY (KONVENSI
   PERSERIKATAN BANGSA - BANGSA MENGENAI
   KEANEKARAGAMAN HAYATI).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_11
+          nodeType: pasalVersion
+          version: &ref_12
+            nodeType: date
+            month: 8
+            date: 1
+            year: 1994
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_11
+          textString: >-
+            Mengesahkan United Nations Convention on Biological Diversity (konvensi Perserikatan
+            Bangsa - Bangsa mengenai Keanekaragaman Hayati) yang selain naskah a slinya dalam bahasa
+            Inggeris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir yang merupakan
+            bagian tak terpisahkan dari Undang - undang ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_13
+          nodeType: pasalVersion
+          version: *ref_12
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_13
+          textString: >-
+            Undang - undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA
+            - 4 - Agar ... Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang -
+            undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 8
-    date: 1
-    year: 1994
+  date: *ref_12
   location: Jakarta
   pengesah: SOEHARTO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA

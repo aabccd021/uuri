@@ -1,7 +1,25 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1994/6> legal:documentHasBabSet <http://example.org/legal/document/uu/1994/6/bab> .
+<http://example.org/legal/document/uu/1994/6> legal:documentHasPasalSet <http://example.org/legal/document/uu/1994/6/pasals> .
+<http://example.org/legal/document/uu/1994/6/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1994/6/pasal/0001> .
+<http://example.org/legal/document/uu/1994/6/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1994/6/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1994/6/pasal/0001/version/19940801> .
+<http://example.org/legal/document/uu/1994/6> legal:documentHasPasal <http://example.org/legal/document/uu/1994/6/pasal/0001> .
+<http://example.org/legal/document/uu/1994/6/pasal/0001/version/19940801> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1994/6/pasal/0001/version/19940801> legal:pasalVersionHasVersionDate "1994-08-01"^^xsd:date .
+<http://example.org/legal/document/uu/1994/6/pasal/0001/version/19940801> legal:pasalVersionHasRawText "Mengesahkan United Nations Framework Convention on Climate Change (Konvensi Kerangka Kerja Perserikatan Bangsa - Bangsa mengenai Perubahan Iklim) yang salinan naskah aslinya dalam bahasa Inggeris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir yang merupakan bagian tak terpisahkan dari Undang - undang ini." .
+<http://example.org/legal/document/uu/1994/6/pasal/0001/version/19940801/text> legal:textHasTextString "Mengesahkan United Nations Framework Convention on Climate Change (Konvensi Kerangka Kerja Perserikatan Bangsa - Bangsa mengenai Perubahan Iklim) yang salinan naskah aslinya dalam bahasa Inggeris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir yang merupakan bagian tak terpisahkan dari Undang - undang ini." .
+<http://example.org/legal/document/uu/1994/6/pasal/0001/version/19940801> legal:pasalVersionHasText <http://example.org/legal/document/uu/1994/6/pasal/0001/version/19940801/text> .
+<http://example.org/legal/document/uu/1994/6/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1994/6/pasal/0002> .
+<http://example.org/legal/document/uu/1994/6/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1994/6/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1994/6/pasal/0002/version/19940801> .
+<http://example.org/legal/document/uu/1994/6> legal:documentHasPasal <http://example.org/legal/document/uu/1994/6/pasal/0002> .
+<http://example.org/legal/document/uu/1994/6/pasal/0002/version/19940801> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1994/6/pasal/0002/version/19940801> legal:pasalVersionHasVersionDate "1994-08-01"^^xsd:date .
+<http://example.org/legal/document/uu/1994/6/pasal/0002/version/19940801> legal:pasalVersionHasRawText "Undang - undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA - 4 - Agar ... Agar setiap orang mengetahuinya, memerintah - kan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1994/6/pasal/0002/version/19940801/text> legal:textHasTextString "Undang - undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA - 4 - Agar ... Agar setiap orang mengetahuinya, memerintah - kan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1994/6/pasal/0002/version/19940801> legal:pasalVersionHasText <http://example.org/legal/document/uu/1994/6/pasal/0002/version/19940801/text> .
 <http://example.org/legal/document/uu/1994/6> legal:documentHasDisahkanDate "1994-08-01"^^xsd:date .
 <http://example.org/legal/document/uu/1994/6> legal:documentMengingat <http://example.org/legal/document/uu/1994/6/mengingat> .
 <http://example.org/legal/document/uu/1994/6/mengingat/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 11, dan Pasal 20 ayat (1) Undang - undang Dasar 1945; PRESIDEN REPUBLIK INDONESIA - 3 - Dengan ... Dengan Persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN : Menetapkan : UNDANG - UNDANG TENTANG PENGESAHAN UNITED NATIONS FRAMEWO RK CONVENTION ON CLIMATE CHANGE (KONVENSI KERANGKA KERJA PERSERIKATAN BANGSA - BANGSA MENGENAI PERUBAHAN IKLIM)." .
@@ -42,6 +60,13 @@
 <http://example.org/legal/document/uu/1994/6> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/1994/6> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA" .
 <http://example.org/legal/document/uu/1994/6> a legal:Document .
+<http://example.org/legal/document/uu/1994/6/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1994/6/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1994/6/pasal/0001/version/19940801> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1994/6/pasal/0001/version/19940801/text> a legal:Text .
+<http://example.org/legal/document/uu/1994/6/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1994/6/pasal/0002/version/19940801> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1994/6/pasal/0002/version/19940801/text> a legal:Text .
 <http://example.org/legal/document/uu/1994/6/mengingat/text> a legal:Text .
 <http://example.org/legal/document/uu/1994/6/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1994/6/menimbang> a legal:Menimbang .
@@ -61,7 +86,12 @@
 <http://example.org/legal/document/uu/1994/6/menimbang/point/f/text> a legal:Text .
 <http://example.org/legal/document/uu/1994/6/menimbang/point/g> a legal:Point .
 <http://example.org/legal/document/uu/1994/6/menimbang/point/g/text> a legal:Text .
-<http://example.org/legal/document/uu/1994/6/bab> legal:partOf <http://example.org/legal/document/uu/1994/6> .
+<http://example.org/legal/document/uu/1994/6/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1994/6/pasals> .
+<http://example.org/legal/document/uu/1994/6/pasal/0001/version/19940801> legal:partOf <http://example.org/legal/document/uu/1994/6/pasal/0001> .
+<http://example.org/legal/document/uu/1994/6/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1994/6> .
+<http://example.org/legal/document/uu/1994/6/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1994/6/pasals> .
+<http://example.org/legal/document/uu/1994/6/pasal/0002/version/19940801> legal:partOf <http://example.org/legal/document/uu/1994/6/pasal/0002> .
+<http://example.org/legal/document/uu/1994/6/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1994/6> .
 <http://example.org/legal/document/uu/1994/6/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1994/6/menimbang/point> .
 <http://example.org/legal/document/uu/1994/6/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1994/6/menimbang/point> .
 <http://example.org/legal/document/uu/1994/6/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/1994/6/menimbang/point> .

@@ -159,18 +159,238 @@ opText: |-
   Mene tapkan : UNDANG - UNDANG TENTANG TAMBAHAN DAN PERUBAHAN
   ATAS ANGGARAN PENDAPATAN DAN BELANJA NEGARA
   TAHUN ANGGARAN 1993/94.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_10
+          nodeType: pasalVersion
+          version: &ref_17
+            nodeType: date
+            month: 4
+            date: 20
+            year: 1994
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_11
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_10
+          elements:
+            - type: ayat
+              node: &ref_12
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_11
+              content:
+                type: pointSet
+                node: &ref_13
+                  nodeType: pointSet
+                  parentNode: *ref_12
+                description:
+                  type: text
+                  node:
+                    nodeType: text
+                    textName: description
+                    parentNode: *ref_13
+                  textString: >-
+                    Pendapatan Negara Tahun Anggaran 1993/94 diperkirakan bertambah dengan Rp.
+                    329.598.000.000,00 (tiga ratus dua puluh se mbilan miliar lima ratus sembilan
+                    puluh delapan juta rupiah) yang terdiri dari :
+                  references: []
+                elements:
+                  - type: point
+                    node: &ref_14
+                      nodeType: point
+                      key: a
+                      parentPointSetNode: *ref_13
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_14
+                      textString: >-
+                        Pendapatan Rutin berkurang dengan Rp.489.180.000.000,00 (empat ratus delapan
+                        puluh sembilan miliar seratus delapan puluh juta rupiah). PRESIDEN REPUBLIK
+                        INDONESIA - 3 -
+                      references: []
+                  - type: point
+                    node: &ref_15
+                      nodeType: point
+                      key: b
+                      parentPointSetNode: *ref_13
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_15
+                      textString: >-
+                        Pendapatan Pembangunan bertambah dengan Rp 818.778.000.000,00 (delapan ratus
+                        delapan belas miliar tujuh ratus tujuh puluh delapan juta rupiah).
+                      references: []
+            - type: ayat
+              node: &ref_16
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_11
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_16
+                textString: >-
+                  Perincian pendapatan tambahan dan perubahan sebagaimana dimaksud dalam ayat (1)
+                  huruf a dan huruf b masing - m asing dimuat dalam Lampiran I dan Lampiran II
+                  Undang - undang ini.
+                references:
+                  - start: 71
+                    end: 79
+                    node:
+                      key: 1
+                      parentAyatSetNode:
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_10
+                      nodeType: ayat
+                  - start: 92
+                    end: 93
+                    node:
+                      key: b
+                      parentPointSetNode:
+                        nodeType: pointSet
+                        parentNode:
+                          nodeType: ayat
+                          key: 1
+                          parentAyatSetNode:
+                            nodeType: ayatSet
+                            parentPasalVersionNode: *ref_10
+                      nodeType: point
+                  - start: 80
+                    end: 87
+                    node:
+                      key: a
+                      parentPointSetNode:
+                        nodeType: pointSet
+                        parentNode: *ref_10
+                      nodeType: point
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_18
+          nodeType: pasalVersion
+          version: *ref_17
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_19
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_18
+          elements:
+            - type: ayat
+              node: &ref_20
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_19
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_20
+                textString: >-
+                  Kredit anggaran proyek - proyek pada Anggaran Belanja Pembangunan Tahun Anggaran
+                  1993/94 yang pada akhir Tahun anggaran 1993/94 menunjukkan sisa yang masih
+                  diperlukan untuk penyelesaian proyek, dengan Peraturan Pemerintah dipindahkan ke
+                  Tahun Anggaran 1994/9 5 menjadi kredit anggaran Tahun Anggaran 1994/95.
+                references: []
+            - type: ayat
+              node: &ref_21
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_19
+              content:
+                type: pointSet
+                node: &ref_22
+                  nodeType: pointSet
+                  parentNode: *ref_21
+                description:
+                  type: text
+                  node:
+                    nodeType: text
+                    textName: description
+                    parentNode: *ref_22
+                  textString: Sisa anggaran kurang Tahun Anggaran 1993/94 sebesar Rp
+                  references: []
+                elements:
+                  - type: point
+                    node: &ref_23
+                      nodeType: point
+                      key: '1'
+                      parentPointSetNode: *ref_22
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_23
+                      textString: >-
+                        808.703.000.000,00 (satu triliun delapan ratus delapan miliar tujuh ratus
+                        tiga juta rupiah) ditutup dengan sisa anggaran lebih yang terdapat pada
+                        rekening Pemerintah. Pasal 4 Ketentuan - ketentuan dalam Indische
+                        Comptabiliteitswet (Staatsblad Tahun 1925 Nomor 448) sebagaimana telah
+                        beberapa kali diubah, terakhir dengan Undang - undang Nomor 9 Tahun 1968
+                        tentang Perubahan Pasal 7 Indische Comptabilite itswet (Lembaran Negara
+                        Tahun 1968 Nomor 53, Tambahan Lembaran Negara Nomor 2860) yang bertentangan
+                        dengan bentuk, susunan, dan isi Undang - undang ini dinyatakan tidak
+                        berlaku. Pasal 5 Undang - undang ini mulai berlaku pada tanggal diundangkan
+                        dan mempunyai daya laku surut sejak tanggal 1 April 1993. Agar setiap orang
+                        mengetahuinya, memerintahkan pengundangan PRESIDEN REPUBLIK INDONESIA - 5 -
+                        Undang - undang ini dengan penempatannya dalam lembaran Negara Republik
+                        Indonesia.
+                      references:
+                        - start: 582
+                          end: 589
+                          node:
+                            key: 5
+                            parentNode: *ref_0
+                            nodeType: pasal
+                        - start: 374
+                          end: 381
+                          node:
+                            key: 7
+                            parentNode: *ref_0
+                            nodeType: pasal
+                        - start: 167
+                          end: 174
+                          node:
+                            key: 4
+                            parentNode: *ref_0
+                            nodeType: pasal
 disahkan:
-  date:
-    nodeType: date
-    month: 4
-    date: 20
-    year: 1994
+  date: *ref_17
   location: Jakarta
   pengesah: SOEHARTO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA
