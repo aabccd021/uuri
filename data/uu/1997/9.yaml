@@ -304,18 +304,71 @@ opText: |-
   Menetapkan : UNDANG - UNDANG TENTANG PENGESAHAN TREATY ON THE
   SOUTHEAST ASIA NUCLEAR WEAPON FREE ZONE (TRAKTAT
   KA WASAN BEBAS SENJATA NUKLIR DI ASIA TENGGARA).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_15
+          nodeType: pasalVersion
+          version: &ref_16
+            nodeType: date
+            month: 4
+            date: 2
+            year: 1997
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_15
+          textString: >-
+            Mengesahkan Treaty on the Southeast Asia Nuclear Weapon Free Zone (Traktat Kawasan Bebas
+            Senjata Nuklir di Asia Tenggara), yang salinan naskah asli beserta Lampirannya dalam
+            bahasa Inggris dan terjemahannya dalam bahasa Indonesia, sebagaimana terlampir, me
+            rupakan bagian yang tidak terpisahkan dari Undang - undang ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_17
+          nodeType: pasalVersion
+          version: *ref_16
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_17
+          textString: >-
+            Undang - undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA
+            - 4 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini
+            dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 4
-    date: 2
-    year: 1997
+  date: *ref_16
   location: Jakarta
   pengesah: SOEHARTO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA

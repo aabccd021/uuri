@@ -196,18 +196,151 @@ opText: |-
   MEMUTUSKAN:
   Menetap kan : UNDANG - UNDANG TENTANG PERHITUNGAN ANGGARAN
   NEGARA TAHUN ANGGARAN 1992/1993.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_12
+          nodeType: pasalVersion
+          version: &ref_19
+            nodeType: date
+            month: 8
+            date: 24
+            year: 1995
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_13
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_12
+          elements:
+            - type: ayat
+              node: &ref_14
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_13
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_14
+                textString: >-
+                  Pendapatan Negara dalam Tahun Anggaran 1992/93 adalah sebesar Rp
+                  59.960.453.046.106,00 (lima puluh sembilan triliun sembilan ratus enam puluh
+                  miliar empat ratus lima puluh tiga juta empat puluh enam ribu seratus enam
+                  rupiah); PRESIDEN REPUBLIK INDONESIA - 3 -
+                references: []
+            - type: ayat
+              node: &ref_15
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_13
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_15
+                textString: >-
+                  Belanja Negara Tahun Anggaran 1992/93 adalah sebesar Rp 60.511.651.042.372,00
+                  (enam puluh triliun lima ratus sebelas miliar enam ratus lima puluh satu juta
+                  empat puluh dua ribu tiga ratus tujuh puluh dua rupiah);
+                references: []
+            - type: ayat
+              node: &ref_16
+                nodeType: ayat
+                key: 3
+                parentAyatSetNode: *ref_13
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_16
+                textString: >-
+                  Sisa Anggaran Kurang Perhitungan Anggaran Nega ra Tahun Anggaran 1992/93 adalah
+                  sebesar Rp 551.197.996.266,00 (lima ratus lima puluh satu miliar seratus sembilan
+                  puluh tujuh juta sembilan ratus sembilan puluh enam ribu dua ratus enam puluh enam
+                  rupiah);
+                references: []
+            - type: ayat
+              node: &ref_17
+                nodeType: ayat
+                key: 4
+                parentAyatSetNode: *ref_13
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_17
+                textString: >-
+                  Perincian Pendapatan Negara, Belanja Negara d an Sisa Anggaran Kurang sebagaimana
+                  dimaksud dalam ayat (1), ayat (2), dan ayat (3) adalah seperti tersebut pada
+                  Lampiran Undang - undang ini.
+                references:
+                  - start: 121
+                    end: 129
+                    node:
+                      key: 3
+                      parentAyatSetNode: &ref_18
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_12
+                      nodeType: ayat
+                  - start: 107
+                    end: 115
+                    node:
+                      key: 2
+                      parentAyatSetNode: *ref_18
+                      nodeType: ayat
+                  - start: 97
+                    end: 105
+                    node:
+                      key: 1
+                      parentAyatSetNode: *ref_18
+                      nodeType: ayat
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_20
+          nodeType: pasalVersion
+          version: *ref_19
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_20
+          textString: >-
+            Undang - undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA
+            - 4 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini
+            dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 8
-    date: 24
-    year: 1995
+  date: *ref_19
   location: Jakarta
   pengesah: SOEHARTO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

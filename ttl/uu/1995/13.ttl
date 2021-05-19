@@ -1,7 +1,65 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1995/13> legal:documentHasBabSet <http://example.org/legal/document/uu/1995/13/bab> .
+<http://example.org/legal/document/uu/1995/13> legal:documentHasPasalSet <http://example.org/legal/document/uu/1995/13/pasals> .
+<http://example.org/legal/document/uu/1995/13/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1995/13/pasal/0001> .
+<http://example.org/legal/document/uu/1995/13/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1995/13/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230> .
+<http://example.org/legal/document/uu/1995/13> legal:documentHasPasal <http://example.org/legal/document/uu/1995/13/pasal/0001> .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230> legal:pasalVersionHasVersionDate "1995-12-30"^^xsd:date .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230> legal:pasalVersionHasRawText "(1). Pendapatan Negara dalam Tahun Anggaran 1993/94 adalah sebesar Rp 66.865.602.180.127,00 (enam puluh enam triliun delapan ratus enam puluh lima miliar enam ratus dua juta seratus delapan puluh ribu seratus dua puluh tujuh rupiah).\n(2). Belanja Ne gara Tahun Anggaran 1993/94 adalah sebesar Rp 68.717.997.106.318,00 (enam puluh delapan triliun tujuh ratus tujuh belas miliar sembilan ratus sembilan puluh tujuh juta seratus enam ribu tiga ratus delapan belas rupiah). PRESIDEN REPUBLIK INDONESIA - 3 -\n(3). Sisa Anggaran Kuran g Perhitungan Anggaran Negara Tahun Anggaran 1993/94 adalah sebesar Rp 1.852.394.926.191,00 (satu triliun delapan ratus lima puluh dua miliar tiga ratus sembilan puluh empat juta sembilan ratus dua puluh enam ribu seratus sembilan puluh satu rupiah).\n(4). P erincian Perhitungan Pendapatan Negara, Belanja Negara dan Sisa Anggaran Kurang sebagaimana dimaksud dalam ayat (1), ayat (2), dan ayat (3) adalah seperti tersebut pada Lampiran Undang - undang ini." .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat> .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0001> .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0001> legal:ayatHasRawText "Pendapatan Negara dalam Tahun Anggaran 1993/94 adalah sebesar Rp 66.865.602.180.127,00 (enam puluh enam triliun delapan ratus enam puluh lima miliar enam ratus dua juta seratus delapan puluh ribu seratus dua puluh tujuh rupiah)." .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0001/text> legal:textHasTextString "Pendapatan Negara dalam Tahun Anggaran 1993/94 adalah sebesar Rp 66.865.602.180.127,00 (enam puluh enam triliun delapan ratus enam puluh lima miliar enam ratus dua juta seratus delapan puluh ribu seratus dua puluh tujuh rupiah)." .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0001/text> .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0002> .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0002> legal:ayatHasRawText "Belanja Ne gara Tahun Anggaran 1993/94 adalah sebesar Rp 68.717.997.106.318,00 (enam puluh delapan triliun tujuh ratus tujuh belas miliar sembilan ratus sembilan puluh tujuh juta seratus enam ribu tiga ratus delapan belas rupiah). PRESIDEN REPUBLIK INDONESIA - 3 -" .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0002/text> legal:textHasTextString "Belanja Ne gara Tahun Anggaran 1993/94 adalah sebesar Rp 68.717.997.106.318,00 (enam puluh delapan triliun tujuh ratus tujuh belas miliar sembilan ratus sembilan puluh tujuh juta seratus enam ribu tiga ratus delapan belas rupiah). PRESIDEN REPUBLIK INDONESIA - 3 -" .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0002/text> .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0003> .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0003> legal:ayatHasRawText "Sisa Anggaran Kuran g Perhitungan Anggaran Negara Tahun Anggaran 1993/94 adalah sebesar Rp 1.852.394.926.191,00 (satu triliun delapan ratus lima puluh dua miliar tiga ratus sembilan puluh empat juta sembilan ratus dua puluh enam ribu seratus sembilan puluh satu rupiah)." .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0003/text> legal:textHasTextString "Sisa Anggaran Kuran g Perhitungan Anggaran Negara Tahun Anggaran 1993/94 adalah sebesar Rp 1.852.394.926.191,00 (satu triliun delapan ratus lima puluh dua miliar tiga ratus sembilan puluh empat juta sembilan ratus dua puluh enam ribu seratus sembilan puluh satu rupiah)." .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0003/text> .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0004> .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0004> legal:ayatHasKey 4 .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0004> legal:ayatHasRawText "P erincian Perhitungan Pendapatan Negara, Belanja Negara dan Sisa Anggaran Kurang sebagaimana dimaksud dalam ayat (1), ayat (2), dan ayat (3) adalah seperti tersebut pada Lampiran Undang - undang ini." .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0004/text> legal:textHasTextString "P erincian Perhitungan Pendapatan Negara, Belanja Negara dan Sisa Anggaran Kurang sebagaimana dimaksud dalam ayat (1), ayat (2), dan ayat (3) adalah seperti tersebut pada Lampiran Undang - undang ini." .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0004/text> .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0003> .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0002> .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0001> .
+<http://example.org/legal/document/uu/1995/13/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1995/13/pasal/0002> .
+<http://example.org/legal/document/uu/1995/13/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1995/13/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230> .
+<http://example.org/legal/document/uu/1995/13> legal:documentHasPasal <http://example.org/legal/document/uu/1995/13/pasal/0002> .
+<http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230> legal:pasalVersionHasVersionDate "1995-12-30"^^xsd:date .
+<http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230> legal:pasalVersionHasRawText "(1). Belanja Negara Tahun Anggaran 1992/93 berubah menjadi sebesar Rp 60.512.737.775.280,00 (enam puluh triliun lima ratus dua belas miliar tujuh ratus tiga puluh tujuh juta tujuh ratus tujuh puluh lima ribu dua ratus delapan puluh rupiah).\n(2). Sisa Anggaran Kurang Perhitungan Anggaran Negara Tahun Anggar an 1992/93 berubah menjadi sebesar Rp 552.284.729.174,00 (lima ratus lima puluh dua miliar dua ratus delapan puluh empat juta tujuh ratus dua puluh sembilan ribu seratus tujuh puluh empat rupiah)." .
+<http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230/ayat> .
+<http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230/ayat/0001> .
+<http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230/ayat/0001> legal:ayatHasRawText "Belanja Negara Tahun Anggaran 1992/93 berubah menjadi sebesar Rp 60.512.737.775.280,00 (enam puluh triliun lima ratus dua belas miliar tujuh ratus tiga puluh tujuh juta tujuh ratus tujuh puluh lima ribu dua ratus delapan puluh rupiah)." .
+<http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230/ayat/0001/text> legal:textHasTextString "Belanja Negara Tahun Anggaran 1992/93 berubah menjadi sebesar Rp 60.512.737.775.280,00 (enam puluh triliun lima ratus dua belas miliar tujuh ratus tiga puluh tujuh juta tujuh ratus tujuh puluh lima ribu dua ratus delapan puluh rupiah)." .
+<http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230/ayat/0001/text> .
+<http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230/ayat/0002> .
+<http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230/ayat/0002> legal:ayatHasRawText "Sisa Anggaran Kurang Perhitungan Anggaran Negara Tahun Anggar an 1992/93 berubah menjadi sebesar Rp 552.284.729.174,00 (lima ratus lima puluh dua miliar dua ratus delapan puluh empat juta tujuh ratus dua puluh sembilan ribu seratus tujuh puluh empat rupiah)." .
+<http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230/ayat/0002/text> legal:textHasTextString "Sisa Anggaran Kurang Perhitungan Anggaran Negara Tahun Anggar an 1992/93 berubah menjadi sebesar Rp 552.284.729.174,00 (lima ratus lima puluh dua miliar dua ratus delapan puluh empat juta tujuh ratus dua puluh sembilan ribu seratus tujuh puluh empat rupiah)." .
+<http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230/ayat/0002/text> .
+<http://example.org/legal/document/uu/1995/13/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1995/13/pasal/0003> .
+<http://example.org/legal/document/uu/1995/13/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/1995/13/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1995/13/pasal/0003/version/19951230> .
+<http://example.org/legal/document/uu/1995/13> legal:documentHasPasal <http://example.org/legal/document/uu/1995/13/pasal/0003> .
+<http://example.org/legal/document/uu/1995/13/pasal/0003/version/19951230> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1995/13/pasal/0003/version/19951230> legal:pasalVersionHasVersionDate "1995-12-30"^^xsd:date .
+<http://example.org/legal/document/uu/1995/13/pasal/0003/version/19951230> legal:pasalVersionHasRawText "Undang - undang ini mulai berlaku pada tangga diun dangkan. PRESIDEN REPUBLIK INDONESIA - 4 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1995/13/pasal/0003/version/19951230/text> legal:textHasTextString "Undang - undang ini mulai berlaku pada tangga diun dangkan. PRESIDEN REPUBLIK INDONESIA - 4 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1995/13/pasal/0003/version/19951230> legal:pasalVersionHasText <http://example.org/legal/document/uu/1995/13/pasal/0003/version/19951230/text> .
 <http://example.org/legal/document/uu/1995/13> legal:documentHasDisahkanDate "1995-12-30"^^xsd:date .
 <http://example.org/legal/document/uu/1995/13> legal:documentMengingat <http://example.org/legal/document/uu/1995/13/mengingat> .
 <http://example.org/legal/document/uu/1995/13/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1995/13/mengingat/point> .
@@ -47,6 +105,28 @@
 <http://example.org/legal/document/uu/1995/13> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/1995/13> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA" .
 <http://example.org/legal/document/uu/1995/13> a legal:Document .
+<http://example.org/legal/document/uu/1995/13/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1995/13/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0004> a legal:Ayat .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1995/13/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1995/13/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/1995/13/pasal/0003/version/19951230> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1995/13/pasal/0003/version/19951230/text> a legal:Text .
 <http://example.org/legal/document/uu/1995/13/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1995/13/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/1995/13/mengingat/point> a legal:PointSet .
@@ -69,7 +149,29 @@
 <http://example.org/legal/document/uu/1995/13/menimbang/point/b/text> a legal:Text .
 <http://example.org/legal/document/uu/1995/13/menimbang/point/c> a legal:Point .
 <http://example.org/legal/document/uu/1995/13/menimbang/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/1995/13/bab> legal:partOf <http://example.org/legal/document/uu/1995/13> .
+<http://example.org/legal/document/uu/1995/13/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1995/13/pasals> .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230> legal:partOf <http://example.org/legal/document/uu/1995/13/pasal/0001> .
+<http://example.org/legal/document/uu/1995/13/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1995/13> .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat> legal:partOf <http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230> .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat> .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0001> .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat> .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0002> .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat> .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0003> .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0004> legal:partOf <http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat> .
+<http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/1995/13/pasal/0001/version/19951230/ayat/0004> .
+<http://example.org/legal/document/uu/1995/13/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1995/13/pasals> .
+<http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230> legal:partOf <http://example.org/legal/document/uu/1995/13/pasal/0002> .
+<http://example.org/legal/document/uu/1995/13/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1995/13> .
+<http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230/ayat> legal:partOf <http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230> .
+<http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230/ayat> .
+<http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230/ayat/0001> .
+<http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230/ayat> .
+<http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1995/13/pasal/0002/version/19951230/ayat/0002> .
+<http://example.org/legal/document/uu/1995/13/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1995/13/pasals> .
+<http://example.org/legal/document/uu/1995/13/pasal/0003/version/19951230> legal:partOf <http://example.org/legal/document/uu/1995/13/pasal/0003> .
+<http://example.org/legal/document/uu/1995/13/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1995/13> .
 <http://example.org/legal/document/uu/1995/13/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1995/13/mengingat/point> .
 <http://example.org/legal/document/uu/1995/13/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1995/13/mengingat/point> .
 <http://example.org/legal/document/uu/1995/13/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/1995/13/mengingat/point> .

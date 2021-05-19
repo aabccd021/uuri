@@ -252,18 +252,74 @@ opText: |-
   PRESIDEN
   REPUBLIK INDONESIA
   - 3 -
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_13
+          nodeType: pasalVersion
+          version: &ref_14
+            nodeType: date
+            month: 5
+            date: 8
+            year: 2001
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_13
+          textString: >-
+            Mengesahkan Persetujuan antara Pemerintah Republik Indonesia dan Pemerintah Hongkong
+            untuk Penyerahan Pelanggar Hukum yang Melarikan Diri (Agreement between the Government
+            of the Republic of Indonesia and the Government of Hongkong for the surrender of
+            Fugitive Offenders) yang telah ditandatangani pada tanggal 5 Mei 1997 di Hongkong yang
+            salina n naskah aslinya dalam bahasa Indonesia, bahasa Inggris, dan bahasa China
+            sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang - undang
+            ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_15
+          nodeType: pasalVersion
+          version: *ref_14
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_15
+          textString: >-
+            Undang - undang ini mulai berlaku sejak tanggal diundangkan. Agar setiap orang me
+            ngetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 5
-    date: 8
-    year: 2001
+  date: *ref_14
   location: Jakarta
   pengesah: ABDURRAHMAN WAHID
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

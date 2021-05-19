@@ -208,18 +208,71 @@ opText: |-
   PENGESAHAN ILO CONVENTION NO. 105 CONCERNING THE
   ABOLITION OF FORCED LABOUR (KONVENSI ILO
   MENGENAI PENGHAPUSAN KERJA PAKSA).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_12
+          nodeType: pasalVersion
+          version: &ref_13
+            nodeType: date
+            month: 5
+            date: 7
+            year: 1999
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_12
+          textString: >-
+            Mengesahkan ILO Convention No. 105 concerning the Abolition of Forced Labour (Konvensi
+            ILO mengenai Penghapusan Kerja Paksa) yang salinan naskah aslinya dalam bahasa Inggeris
+            dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir merupakan bagian tidak
+            terpisahkan dari Undang-undang ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_14
+          nodeType: pasalVersion
+          version: *ref_13
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_14
+          textString: >-
+            Undang-undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA 3
+            Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan
+            penempatannya dalam Lembaran negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 5
-    date: 7
-    year: 1999
+  date: *ref_13
   location: Jakarta
   pengesah: BACHARUDDIN JUSUF HABIBIE
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

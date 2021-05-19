@@ -1,7 +1,168 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1998/3> legal:documentHasBabSet <http://example.org/legal/document/uu/1998/3/bab> .
+<http://example.org/legal/document/uu/1998/3> legal:documentHasPasalSet <http://example.org/legal/document/uu/1998/3/pasals> .
+<http://example.org/legal/document/uu/1998/3/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1998/3/pasal/0001> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1998/3/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313> .
+<http://example.org/legal/document/uu/1998/3> legal:documentHasPasal <http://example.org/legal/document/uu/1998/3/pasal/0001> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313> legal:pasalVersionHasVersionDate "1998-03-13"^^xsd:date .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313> legal:pasalVersionHasRawText "Dalam Undang-undang ini yang dimaksud dengan:\n1. Pendapatan Negara adalah semua Penerimaan Dalam Negeri dan Penerimaan Pembangunan yang digunakan untuk membiayai Belanja Negara,\n2. Penerimaan Dalam negeri adalah semua penerimaan yang diterima negara dalam bentuk penerimaan perpajakan, penerimaan dari sektor minyak bumi dan gas alam, dan penerimaan negara bukan pajak, PRESIDEN REPUBLIK INDONESIA 3 -\n3. Penerimaan Pembangunan adalah penerimaan yang berasal dari nilai lawan rupiah bantuan dan atau pinjaman luar negeri,\n4. Belanja Negara adalah semua pengeluaran negara untuk membiayai pengeluaran rutin dan pengeluaran pembangunan,\n5. Pengeluaran Rutin adalah semua pengeluaran negara untuk membiayai tugas-tugas umum pemerintahan dan pembangunan, baik pusat maupun daerah, serta untuk memenuhi kewajiban atas hutang dalam negeri dan luar negeri,\n6. Pengeluaran Pembangunan adalah semua pengeluaran negara untuk membiayai proyek-proyek pembangunan,\n7. Sisa Kredit Anggaran adalah sisa kewajiban pembiayaan proyek pembangunan pada akhir tahun anggaran,\n8. Sisa Anggaran lebih adlah selisih lebih antara realisasi pendapatan negara dan belanja negara,\n9. Sektor adalah kumpulan Subsektor,\n10. Subsektor adalah kumpulan Program,\n11. Bantuan Program adalah nilai lawan rupiah dari bantuan dan atau pinjaman luar negeri dalam bentuk pangan danbukan pangan serta pinjaman yang dapat dirupiahkan,\n12. Bantuan Proyek adalah nilai lawan rupiah dari bantuan dan atau pinjaman luar negeri yang digunakan untuk membiayai proyek-proyek pembangunan.\n" .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/description> legal:textHasTextString "Dalam Undang-undang ini yang dimaksud dengan:" .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/description> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0001> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0001/text> legal:textHasTextString "Pendapatan Negara adalah semua Penerimaan Dalam Negeri dan Penerimaan Pembangunan yang digunakan untuk membiayai Belanja Negara," .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0001/text> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0002> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0002/text> legal:textHasTextString "Penerimaan Dalam negeri adalah semua penerimaan yang diterima negara dalam bentuk penerimaan perpajakan, penerimaan dari sektor minyak bumi dan gas alam, dan penerimaan negara bukan pajak, PRESIDEN REPUBLIK INDONESIA 3 -" .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0002/text> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0003> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0003> legal:pointHasKey "3" .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0003/text> legal:textHasTextString "Penerimaan Pembangunan adalah penerimaan yang berasal dari nilai lawan rupiah bantuan dan atau pinjaman luar negeri," .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0003> legal:pointHasText <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0003/text> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0004> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0004> legal:pointHasKey "4" .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0004/text> legal:textHasTextString "Belanja Negara adalah semua pengeluaran negara untuk membiayai pengeluaran rutin dan pengeluaran pembangunan," .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0004> legal:pointHasText <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0004/text> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0005> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0005> legal:pointHasKey "5" .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0005/text> legal:textHasTextString "Pengeluaran Rutin adalah semua pengeluaran negara untuk membiayai tugas-tugas umum pemerintahan dan pembangunan, baik pusat maupun daerah, serta untuk memenuhi kewajiban atas hutang dalam negeri dan luar negeri," .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0005> legal:pointHasText <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0005/text> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0006> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0006> legal:pointHasKey "6" .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0006/text> legal:textHasTextString "Pengeluaran Pembangunan adalah semua pengeluaran negara untuk membiayai proyek-proyek pembangunan," .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0006> legal:pointHasText <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0006/text> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0007> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0007> legal:pointHasKey "7" .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0007/text> legal:textHasTextString "Sisa Kredit Anggaran adalah sisa kewajiban pembiayaan proyek pembangunan pada akhir tahun anggaran," .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0007> legal:pointHasText <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0007/text> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0008> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0008> legal:pointHasKey "8" .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0008/text> legal:textHasTextString "Sisa Anggaran lebih adlah selisih lebih antara realisasi pendapatan negara dan belanja negara," .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0008> legal:pointHasText <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0008/text> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0009> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0009> legal:pointHasKey "9" .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0009/text> legal:textHasTextString "Sektor adalah kumpulan Subsektor," .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0009> legal:pointHasText <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0009/text> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0010> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0010> legal:pointHasKey "10" .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0010/text> legal:textHasTextString "Subsektor adalah kumpulan Program," .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0010> legal:pointHasText <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0010/text> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0011> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0011> legal:pointHasKey "11" .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0011/text> legal:textHasTextString "Bantuan Program adalah nilai lawan rupiah dari bantuan dan atau pinjaman luar negeri dalam bentuk pangan danbukan pangan serta pinjaman yang dapat dirupiahkan," .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0011> legal:pointHasText <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0011/text> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0012> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0012> legal:pointHasKey "12" .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0012/text> legal:textHasTextString "Bantuan Proyek adalah nilai lawan rupiah dari bantuan dan atau pinjaman luar negeri yang digunakan untuk membiayai proyek-proyek pembangunan." .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0012> legal:pointHasText <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0012/text> .
+<http://example.org/legal/document/uu/1998/3/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1998/3/pasal/0002> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1998/3/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313> .
+<http://example.org/legal/document/uu/1998/3> legal:documentHasPasal <http://example.org/legal/document/uu/1998/3/pasal/0002> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313> legal:pasalVersionHasVersionDate "1998-03-13"^^xsd:date .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313> legal:pasalVersionHasRawText "(1). Anggaran Pendapatan Negara Tahun Anggaran 1998/1999 diperoleh dari: PRESIDEN REPUBLIK INDONESIA .4-\na. Sumber-sumber Penerimaan Dalam Negeri:\nb. Sumber-sumber Penerimaan Pembangunan.\n\n(2). Penerimaan Dalam Negeri sebagaimana dimaksud pada ayat (1) huruf a direncanakan sebesar Rp 114.965.800.000.000,00.\n(3). Penerimaan Pembangunan sebagaimana dimaksud pada ayat (1) huruf b direncanakan sebesar Rp. 32.255.000.000.000,00.\n(4). Jumlah Anggaran Pendapatan Negara Tahun Anggaran 1998/1999 sebagaimana dimaksud pada ayat (2) dan ayat (3) direncanakan sebesar Rp 147.220.800.000.000,00." .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001> legal:ayatHasRawText "Anggaran Pendapatan Negara Tahun Anggaran 1998/1999 diperoleh dari: PRESIDEN REPUBLIK INDONESIA .4-\na. Sumber-sumber Penerimaan Dalam Negeri:\nb. Sumber-sumber Penerimaan Pembangunan.\n" .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001/point> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001/point/description> legal:textHasTextString "Anggaran Pendapatan Negara Tahun Anggaran 1998/1999 diperoleh dari: PRESIDEN REPUBLIK INDONESIA .4-" .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001/point/description> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001/point/a> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001/point/a/text> legal:textHasTextString "Sumber-sumber Penerimaan Dalam Negeri:" .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001/point/a/text> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001/point/b> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001/point/b/text> legal:textHasTextString "Sumber-sumber Penerimaan Pembangunan." .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001/point/b> legal:pointHasText <http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001/point/b/text> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0002> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0002> legal:ayatHasRawText "Penerimaan Dalam Negeri sebagaimana dimaksud pada ayat (1) huruf a direncanakan sebesar Rp 114.965.800.000.000,00." .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0002/text> legal:textHasTextString "Penerimaan Dalam Negeri sebagaimana dimaksud pada ayat (1) huruf a direncanakan sebesar Rp 114.965.800.000.000,00." .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0002/text> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/point/a> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0003> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0003> legal:ayatHasRawText "Penerimaan Pembangunan sebagaimana dimaksud pada ayat (1) huruf b direncanakan sebesar Rp. 32.255.000.000.000,00." .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0003/text> legal:textHasTextString "Penerimaan Pembangunan sebagaimana dimaksud pada ayat (1) huruf b direncanakan sebesar Rp. 32.255.000.000.000,00." .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0003/text> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/point/b> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0004> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0004> legal:ayatHasKey 4 .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0004> legal:ayatHasRawText "Jumlah Anggaran Pendapatan Negara Tahun Anggaran 1998/1999 sebagaimana dimaksud pada ayat (2) dan ayat (3) direncanakan sebesar Rp 147.220.800.000.000,00." .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0004/text> legal:textHasTextString "Jumlah Anggaran Pendapatan Negara Tahun Anggaran 1998/1999 sebagaimana dimaksud pada ayat (2) dan ayat (3) direncanakan sebesar Rp 147.220.800.000.000,00." .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0004/text> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0003> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0002> .
+<http://example.org/legal/document/uu/1998/3/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1998/3/pasal/0003> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/1998/3/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313> .
+<http://example.org/legal/document/uu/1998/3> legal:documentHasPasal <http://example.org/legal/document/uu/1998/3/pasal/0003> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313> legal:pasalVersionHasVersionDate "1998-03-13"^^xsd:date .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313> legal:pasalVersionHasRawText "(1). Setelah Tahun Anggaran 1998/1999 berakhir, Pemerintah membuat Perhitungan Angaran Negara mengenai pelaksanaan angaran yang bersangkutan.\n(2). Perhitungan Anggaran Negara sebagaimana dimaksud pada ayat 91) setelah diperiksa oleh Badan pemeriksa Keuangan disampaikan oleh Pemerintah kepada Dewan Perwakilan Rakyat selambat-lambatnya 18 (delapan belas) bulan setelah Tahun Anggaran 1998/1999 berakhir. Pasal 13 Ketentuan-ketentuan dalam Indische Comptabiliteitswet (Staatsblad Tahun 1925 Nomor 448) sebagaimana telah beberapa kali diubah, terakhir dengan Undang-undang Nomor 9 Tahun 1968 tentang perubahan Pasal 7 Indische Comptabiliteitswet (Lembaran Negara Tahun 1968 Nomor 53, Tambahan Lembaran Negara Nomor 2860) yang bertentangan dengan bentuk, susunan, dan isi Undang-undang ini dinyatakan tidak berlaku. Pasal 14 NE S NY NA 3 NA NN S9 98 NG , AE Lapol PRESIDEN REPUBLIK INDONESIA 12 - Undang-undang ini mulai berlaku pada tanggal 1 April 1998. PRESIDEN REPUBLIK INDONESIA -13- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.\n(3). Pengeluaran Pembangunan sebagaimana dimaksud dalam Pasal 4 ayat (3) dirinci menurut sektor: O1 Sektor industri sebesar Rp 697.317.300.000,00 02 Sektor pertanian dan Kehutanan sebesar Rp 2.756.883.700.000,00 03 Sektor pengairan sebesar Rp 3.336.074.400.000,00 04 Sektor tenaga kerja sebesar Rp 1.324.921.800.000,00 05 Sektor perdagangan, pengembangan usaha nasional, keuangan dan koperasi sebesar Rp 830.686.300.000,00 06 Sektor transportasi, meteorologi dan geofisika sebesar Rp 8.500.814.400.000,00 07 Sektor pertambangan dan energi sebesar Rp 6.085.230.700.000,00 0S Sektor pariwisata, pos PRESIDEN REPUBLIK INDONESIA .8- dan telekomunikasi sebesar Rp 1.215.437.500.000,00 09 Sektor pembangunan daerah dan transmigrasi sebesar Rp 8.310.359.400.000,00 10 Sektor lingkungan hidup dan tata ruang sebesar Rp 798.871.500.000,00 11 Sektor pendidikan, kebudayaan nasional, kepercayaan terhadap Tuhan Yang Maha Esa, pemuda dan olah raga sebesar Rp 5.475.240.900.000,00 12 Sektor kependudukan dan keluarga sejahtera sebesar Rp 587.546.000.000,00 13 Sektor kesejahteraan sosial, kesehatan, peranan wanita, anak dan remaja sebesar Rp 2.426.268.200.000,00 14 Sektor perumahan dan pemukiman sebesar Rp 1.940.603.000.000,00 15 Sektor agama sebesar Rp 374.600.000.000,00 16 Sektor ilmu pengetahuan dan teknologi sebesar Rp 1.122.811.400.000,00 17 Sektor hukum sebesar Rp 186.735.500.000,00 18 Sektor aparatur negara dan pengawasan sebesar Rp 919.499.300.000,00 19 Sektor politik, hubungan luar negeri, penerangan, komunikasi dan media PRESIDEN REPUBLIK INDONESIA -9- massa sebesar Rp 378.982.000.000,00 20 Sektor pertahanan dan keamanan sebesar Rp 2.122.816.700.000,00\n(4). Rincian sektor sebagaimana dimaksud pada ayat (3) ke dalam subsektor dicantumkan dalam penjelasan ayat ini. Pasal 6 Rincian lebih lanjut dari sektor dan subsektor sebagaimana dimaksud dalam Pasal 5 ayat (1) dan ayat (2) ke dalam program dan kegiatan ditetapkan dengan Keputusan Presiden. Pasal 7 Rincian lebih lanjut dari sektor dan subsektor dimaksud dalam Pasal 5 ayat (3) dan ayat (4) ke dalam program dan proyek-proyek ditetapkan dengan Keputusan Presiden. Pasal 8 (J) Pada pertengahan Tahun Anggaran 1998/1999 Pemerintah membuat laporan Semester I mengenai:\na. realisasi Penerimaan Dalam Negeri,\nb. realisasi Penerimaan Pembangunan,\nc. Realisasi Pengeluaran Rutin,\nd. Realisasi Pengeluaran Pembangunan,\ne. Perkembangan Moneter dan Perkreditan,\nf. Perkembangan Neraca Pembayaran dan Perdagangan Luar Negeri. (2) Dalam laporan sebagaimana dimaksud pada ayat (1) Pemerintah menyusun prognosa untuk 6 (enam) bulan berikutnya. PRESIDEN REPUBLIK INDONESIA - 10 - (3)Laporan sebagaimana dimaksud pada ayat (1) dan ayat (2) disampaikan kepada Dewan Perwakilan Rakyat selambat-lambatnya akhir bulan Oktober untuk dibahas bersama oleh Dewan Perwakilan Rakyat dengan Pemerintah. (4) Penyesuaian Anggaran Pendapatan dan Belanja Negara dengan perkembangan dan atau perubahan keadaan dibahas bersama-sama oleh Dewan Perwakilan Rakyat dengan Pemerintah dalam rangka penyusunan perkiraan Perubahan atas Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1998/1999. Pasal 9\n" .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0001> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0001> legal:ayatHasRawText "Setelah Tahun Anggaran 1998/1999 berakhir, Pemerintah membuat Perhitungan Angaran Negara mengenai pelaksanaan angaran yang bersangkutan." .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0001/text> legal:textHasTextString "Setelah Tahun Anggaran 1998/1999 berakhir, Pemerintah membuat Perhitungan Angaran Negara mengenai pelaksanaan angaran yang bersangkutan." .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0001/text> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0002> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0002> legal:ayatHasRawText "Perhitungan Anggaran Negara sebagaimana dimaksud pada ayat 91) setelah diperiksa oleh Badan pemeriksa Keuangan disampaikan oleh Pemerintah kepada Dewan Perwakilan Rakyat selambat-lambatnya 18 (delapan belas) bulan setelah Tahun Anggaran 1998/1999 berakhir. Pasal 13 Ketentuan-ketentuan dalam Indische Comptabiliteitswet (Staatsblad Tahun 1925 Nomor 448) sebagaimana telah beberapa kali diubah, terakhir dengan Undang-undang Nomor 9 Tahun 1968 tentang perubahan Pasal 7 Indische Comptabiliteitswet (Lembaran Negara Tahun 1968 Nomor 53, Tambahan Lembaran Negara Nomor 2860) yang bertentangan dengan bentuk, susunan, dan isi Undang-undang ini dinyatakan tidak berlaku. Pasal 14 NE S NY NA 3 NA NN S9 98 NG , AE Lapol PRESIDEN REPUBLIK INDONESIA 12 - Undang-undang ini mulai berlaku pada tanggal 1 April 1998. PRESIDEN REPUBLIK INDONESIA -13- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0002/text> legal:textHasTextString "Perhitungan Anggaran Negara sebagaimana dimaksud pada ayat 91) setelah diperiksa oleh Badan pemeriksa Keuangan disampaikan oleh Pemerintah kepada Dewan Perwakilan Rakyat selambat-lambatnya 18 (delapan belas) bulan setelah Tahun Anggaran 1998/1999 berakhir. Pasal 13 Ketentuan-ketentuan dalam Indische Comptabiliteitswet (Staatsblad Tahun 1925 Nomor 448) sebagaimana telah beberapa kali diubah, terakhir dengan Undang-undang Nomor 9 Tahun 1968 tentang perubahan Pasal 7 Indische Comptabiliteitswet (Lembaran Negara Tahun 1968 Nomor 53, Tambahan Lembaran Negara Nomor 2860) yang bertentangan dengan bentuk, susunan, dan isi Undang-undang ini dinyatakan tidak berlaku. Pasal 14 NE S NY NA 3 NA NN S9 98 NG , AE Lapol PRESIDEN REPUBLIK INDONESIA 12 - Undang-undang ini mulai berlaku pada tanggal 1 April 1998. PRESIDEN REPUBLIK INDONESIA -13- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0002/text> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1998/3/pasal/0014> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1998/3/pasal/0007> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1998/3/pasal/0013> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0003> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0003> legal:ayatHasRawText "Pengeluaran Pembangunan sebagaimana dimaksud dalam Pasal 4 ayat (3) dirinci menurut sektor: O1 Sektor industri sebesar Rp 697.317.300.000,00 02 Sektor pertanian dan Kehutanan sebesar Rp 2.756.883.700.000,00 03 Sektor pengairan sebesar Rp 3.336.074.400.000,00 04 Sektor tenaga kerja sebesar Rp 1.324.921.800.000,00 05 Sektor perdagangan, pengembangan usaha nasional, keuangan dan koperasi sebesar Rp 830.686.300.000,00 06 Sektor transportasi, meteorologi dan geofisika sebesar Rp 8.500.814.400.000,00 07 Sektor pertambangan dan energi sebesar Rp 6.085.230.700.000,00 0S Sektor pariwisata, pos PRESIDEN REPUBLIK INDONESIA .8- dan telekomunikasi sebesar Rp 1.215.437.500.000,00 09 Sektor pembangunan daerah dan transmigrasi sebesar Rp 8.310.359.400.000,00 10 Sektor lingkungan hidup dan tata ruang sebesar Rp 798.871.500.000,00 11 Sektor pendidikan, kebudayaan nasional, kepercayaan terhadap Tuhan Yang Maha Esa, pemuda dan olah raga sebesar Rp 5.475.240.900.000,00 12 Sektor kependudukan dan keluarga sejahtera sebesar Rp 587.546.000.000,00 13 Sektor kesejahteraan sosial, kesehatan, peranan wanita, anak dan remaja sebesar Rp 2.426.268.200.000,00 14 Sektor perumahan dan pemukiman sebesar Rp 1.940.603.000.000,00 15 Sektor agama sebesar Rp 374.600.000.000,00 16 Sektor ilmu pengetahuan dan teknologi sebesar Rp 1.122.811.400.000,00 17 Sektor hukum sebesar Rp 186.735.500.000,00 18 Sektor aparatur negara dan pengawasan sebesar Rp 919.499.300.000,00 19 Sektor politik, hubungan luar negeri, penerangan, komunikasi dan media PRESIDEN REPUBLIK INDONESIA -9- massa sebesar Rp 378.982.000.000,00 20 Sektor pertahanan dan keamanan sebesar Rp 2.122.816.700.000,00" .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0003/text> legal:textHasTextString "Pengeluaran Pembangunan sebagaimana dimaksud dalam Pasal 4 ayat (3) dirinci menurut sektor: O1 Sektor industri sebesar Rp 697.317.300.000,00 02 Sektor pertanian dan Kehutanan sebesar Rp 2.756.883.700.000,00 03 Sektor pengairan sebesar Rp 3.336.074.400.000,00 04 Sektor tenaga kerja sebesar Rp 1.324.921.800.000,00 05 Sektor perdagangan, pengembangan usaha nasional, keuangan dan koperasi sebesar Rp 830.686.300.000,00 06 Sektor transportasi, meteorologi dan geofisika sebesar Rp 8.500.814.400.000,00 07 Sektor pertambangan dan energi sebesar Rp 6.085.230.700.000,00 0S Sektor pariwisata, pos PRESIDEN REPUBLIK INDONESIA .8- dan telekomunikasi sebesar Rp 1.215.437.500.000,00 09 Sektor pembangunan daerah dan transmigrasi sebesar Rp 8.310.359.400.000,00 10 Sektor lingkungan hidup dan tata ruang sebesar Rp 798.871.500.000,00 11 Sektor pendidikan, kebudayaan nasional, kepercayaan terhadap Tuhan Yang Maha Esa, pemuda dan olah raga sebesar Rp 5.475.240.900.000,00 12 Sektor kependudukan dan keluarga sejahtera sebesar Rp 587.546.000.000,00 13 Sektor kesejahteraan sosial, kesehatan, peranan wanita, anak dan remaja sebesar Rp 2.426.268.200.000,00 14 Sektor perumahan dan pemukiman sebesar Rp 1.940.603.000.000,00 15 Sektor agama sebesar Rp 374.600.000.000,00 16 Sektor ilmu pengetahuan dan teknologi sebesar Rp 1.122.811.400.000,00 17 Sektor hukum sebesar Rp 186.735.500.000,00 18 Sektor aparatur negara dan pengawasan sebesar Rp 919.499.300.000,00 19 Sektor politik, hubungan luar negeri, penerangan, komunikasi dan media PRESIDEN REPUBLIK INDONESIA -9- massa sebesar Rp 378.982.000.000,00 20 Sektor pertahanan dan keamanan sebesar Rp 2.122.816.700.000,00" .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0003/text> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0003> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004> legal:ayatHasKey 4 .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004> legal:ayatHasRawText "Rincian sektor sebagaimana dimaksud pada ayat (3) ke dalam subsektor dicantumkan dalam penjelasan ayat ini. Pasal 6 Rincian lebih lanjut dari sektor dan subsektor sebagaimana dimaksud dalam Pasal 5 ayat (1) dan ayat (2) ke dalam program dan kegiatan ditetapkan dengan Keputusan Presiden. Pasal 7 Rincian lebih lanjut dari sektor dan subsektor dimaksud dalam Pasal 5 ayat (3) dan ayat (4) ke dalam program dan proyek-proyek ditetapkan dengan Keputusan Presiden. Pasal 8 (J) Pada pertengahan Tahun Anggaran 1998/1999 Pemerintah membuat laporan Semester I mengenai:\na. realisasi Penerimaan Dalam Negeri,\nb. realisasi Penerimaan Pembangunan,\nc. Realisasi Pengeluaran Rutin,\nd. Realisasi Pengeluaran Pembangunan,\ne. Perkembangan Moneter dan Perkreditan,\nf. Perkembangan Neraca Pembayaran dan Perdagangan Luar Negeri. (2) Dalam laporan sebagaimana dimaksud pada ayat (1) Pemerintah menyusun prognosa untuk 6 (enam) bulan berikutnya. PRESIDEN REPUBLIK INDONESIA - 10 - (3)Laporan sebagaimana dimaksud pada ayat (1) dan ayat (2) disampaikan kepada Dewan Perwakilan Rakyat selambat-lambatnya akhir bulan Oktober untuk dibahas bersama oleh Dewan Perwakilan Rakyat dengan Pemerintah. (4) Penyesuaian Anggaran Pendapatan dan Belanja Negara dengan perkembangan dan atau perubahan keadaan dibahas bersama-sama oleh Dewan Perwakilan Rakyat dengan Pemerintah dalam rangka penyusunan perkiraan Perubahan atas Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1998/1999. Pasal 9\n" .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004> legal:ayatHasPointSet <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/description> legal:textHasTextString "Rincian sektor sebagaimana dimaksud pada ayat (3) ke dalam subsektor dicantumkan dalam penjelasan ayat ini. Pasal 6 Rincian lebih lanjut dari sektor dan subsektor sebagaimana dimaksud dalam Pasal 5 ayat (1) dan ayat (2) ke dalam program dan kegiatan ditetapkan dengan Keputusan Presiden. Pasal 7 Rincian lebih lanjut dari sektor dan subsektor dimaksud dalam Pasal 5 ayat (3) dan ayat (4) ke dalam program dan proyek-proyek ditetapkan dengan Keputusan Presiden. Pasal 8 (J) Pada pertengahan Tahun Anggaran 1998/1999 Pemerintah membuat laporan Semester I mengenai:" .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/description> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/a> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/a/text> legal:textHasTextString "realisasi Penerimaan Dalam Negeri," .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/a> legal:pointHasText <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/a/text> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/b> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/b/text> legal:textHasTextString "realisasi Penerimaan Pembangunan," .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/b> legal:pointHasText <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/b/text> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/c> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/c/text> legal:textHasTextString "Realisasi Pengeluaran Rutin," .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/c> legal:pointHasText <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/c/text> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/d> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/d/text> legal:textHasTextString "Realisasi Pengeluaran Pembangunan," .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/d> legal:pointHasText <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/d/text> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/e> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/e/text> legal:textHasTextString "Perkembangan Moneter dan Perkreditan," .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/e> legal:pointHasText <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/e/text> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/f> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/f> legal:pointHasKey "f" .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/f/text> legal:textHasTextString "Perkembangan Neraca Pembayaran dan Perdagangan Luar Negeri. (2) Dalam laporan sebagaimana dimaksud pada ayat (1) Pemerintah menyusun prognosa untuk 6 (enam) bulan berikutnya. PRESIDEN REPUBLIK INDONESIA - 10 - (3)Laporan sebagaimana dimaksud pada ayat (1) dan ayat (2) disampaikan kepada Dewan Perwakilan Rakyat selambat-lambatnya akhir bulan Oktober untuk dibahas bersama oleh Dewan Perwakilan Rakyat dengan Pemerintah. (4) Penyesuaian Anggaran Pendapatan dan Belanja Negara dengan perkembangan dan atau perubahan keadaan dibahas bersama-sama oleh Dewan Perwakilan Rakyat dengan Pemerintah dalam rangka penyusunan perkiraan Perubahan atas Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1998/1999. Pasal 9" .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/f> legal:pointHasText <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/f/text> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/f/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0002> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/f/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0001> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/f/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1998/3/pasal/0009> .
 <http://example.org/legal/document/uu/1998/3> legal:documentHasDisahkanDate "1998-03-13"^^xsd:date .
 <http://example.org/legal/document/uu/1998/3> legal:documentMengingat <http://example.org/legal/document/uu/1998/3/mengingat> .
 <http://example.org/legal/document/uu/1998/3/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1998/3/mengingat/point> .
@@ -9,40 +170,88 @@
 <http://example.org/legal/document/uu/1998/3/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1998/3/mengingat/point/description> .
 <http://example.org/legal/document/uu/1998/3/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1998/3/mengingat/point/0001> .
 <http://example.org/legal/document/uu/1998/3/mengingat/point/0001> legal:pointHasKey "1" .
-<http://example.org/legal/document/uu/1998/3/mengingat/point/0001/text> legal:textHasTextString "Pasal 5, Pasal 20, dan Pasal 23 ayat (1) dan ayat (5) Undang - Undang Dasar 1945;" .
+<http://example.org/legal/document/uu/1998/3/mengingat/point/0001/text> legal:textHasTextString "Pasal 5, Pasal 20, dan Pasal 23 ayat (1) dan ayat (5) Undang-Undang Dasar 1945," .
 <http://example.org/legal/document/uu/1998/3/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1998/3/mengingat/point/0001/text> .
 <http://example.org/legal/document/uu/1998/3/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1998/3/mengingat/point/0002> .
 <http://example.org/legal/document/uu/1998/3/mengingat/point/0002> legal:pointHasKey "2" .
-<http://example.org/legal/document/uu/1998/3/mengingat/point/0002/text> legal:textHasTextString "Indische Comptabiliteitswet (Staatsblad Tahun 1925 Nomor 448) sebagaimana telahbeberaia kali diubah, terakhir dengan Undang - undang Nomor 9 Tahun 1968 tentang Perubahan P asal 7 Indische Comptabiliteitswet (Lembaran Negara Tahun 1968 Nomor 53, Tambahan Lembaran Negara Nomor 2860); Dengan persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA, MEMUTUSKAN: Menetapkan : UNDANG - UNDANG TENTANG ANGGARAN PENDAPATAN DAN BELANJA NEGARA TAHUN ANGGARAN 1998/1999." .
+<http://example.org/legal/document/uu/1998/3/mengingat/point/0002/text> legal:textHasTextString "Indische Comptabiliteitswet (Staatsblad Tahun 1925 Nomor 448) sebagaimana telahbeberaia kali diubah, terakhir dengan Undang-undang Nomor 9 Tahun 1968 tentang Perubahan Pasal 7 Indische Comptabiliteitswet (Lembaran Negara Tahun 1968 Nomor 53, Tambahan Lembaran Negara Nomor 2860), Dengan persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA, MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG ANGGARAN PENDAPATAN DAN BELANJA NEGARA TAHUN ANGGARAN 1998/1999." .
 <http://example.org/legal/document/uu/1998/3/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1998/3/mengingat/point/0002/text> .
 <http://example.org/legal/document/uu/1998/3> legal:documentMenimbang <http://example.org/legal/document/uu/1998/3/menimbang> .
-<http://example.org/legal/document/uu/1998/3/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/1998/3/menimbang/point> .
-<http://example.org/legal/document/uu/1998/3/menimbang/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/1998/3/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1998/3/menimbang/point/description> .
-<http://example.org/legal/document/uu/1998/3/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1998/3/menimbang/point/a> .
-<http://example.org/legal/document/uu/1998/3/menimbang/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/1998/3/menimbang/point/a/text> legal:textHasTextString "bahwa Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1998/1999 disusun berdasarkan prinsip anggaran berimbang yang dinamis;" .
-<http://example.org/legal/document/uu/1998/3/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/1998/3/menimbang/point/a/text> .
-<http://example.org/legal/document/uu/1998/3/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1998/3/menimbang/point/b> .
-<http://example.org/legal/document/uu/1998/3/menimbang/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/1998/3/menimbang/point/b/text> legal:textHasTextString "Bahwa Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1998/1999 adalah Anggaran Pendapatan dan Belanja Negara Tahun Kelima pelaksanaan rencana pembangunan sebagaimana dimaksud dalam Bab IV Garis - garis Besar Haluan Negara tentang Pembangunan Lima Tahun Keenam;" .
-<http://example.org/legal/document/uu/1998/3/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/1998/3/menimbang/point/b/text> .
-<http://example.org/legal/document/uu/1998/3/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1998/3/menimbang/point/c> .
-<http://example.org/legal/document/uu/1998/3/menimbang/point/c> legal:pointHasKey "c" .
-<http://example.org/legal/document/uu/1998/3/menimbang/point/c/text> legal:textHasTextString "Bahwa Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1998/1999 pada dasarnya merupakan rencana kerja t ahunan pemerintahan negara dalam rangka memelihara dan meningkatkan hasil - hasil pelaksanaan pembangunan tahun - tahun sebelumnya serta meletakkan landasan bagi usaha - usaha pembangunan selanjutnya;" .
-<http://example.org/legal/document/uu/1998/3/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/1998/3/menimbang/point/c/text> .
-<http://example.org/legal/document/uu/1998/3/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1998/3/menimbang/point/d> .
-<http://example.org/legal/document/uu/1998/3/menimbang/point/d> legal:pointHasKey "d" .
-<http://example.org/legal/document/uu/1998/3/menimbang/point/d/text> legal:textHasTextString "bahwa untuk menjaga kelangsungan jalannya pembangunan, dip andang perlu diatur sisa anggaran lebih dan sisa kredit anggaran proyek - proyek dalam anggaran pembangunan Tahun Anggaran 1998/1999;" .
-<http://example.org/legal/document/uu/1998/3/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/1998/3/menimbang/point/d/text> .
-<http://example.org/legal/document/uu/1998/3/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1998/3/menimbang/point/e> .
-<http://example.org/legal/document/uu/1998/3/menimbang/point/e> legal:pointHasKey "e" .
-<http://example.org/legal/document/uu/1998/3/menimbang/point/e/text> legal:textHasTextString "bahwa Angaran Pendapatan dan Belanja Negara Tahun Anggaran 1998/1999 perlu ditetapkan dengan Undang - undang; PRESIDEN REPUBLIK INDONESIA - 2 -" .
-<http://example.org/legal/document/uu/1998/3/menimbang/point/e> legal:pointHasText <http://example.org/legal/document/uu/1998/3/menimbang/point/e/text> .
+<http://example.org/legal/document/uu/1998/3/menimbang/text> legal:textHasTextString "aa. bahwa Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1998/1999 disusun berdasarkan prinsip anggaran berimbang yang dinamis: b. Bahwa Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1998/1999 adalah Anggaran Pendapatan dan Belanja Negara Tahun Kelima pelaksanaan rencana pembangunan sebagaimana dimaksud dalam Bab IV Garis-garis Besar Haluan Negara tentang Pembangunan Lima Tahun Keenam, c. Bahwa Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1998/1999 pada dasarnya merupakan rencana kerja tahunan pemerintahan negara dalam rangka memelihara dan meningkatkan hasil-hasil pelaksanaan pembangunan tahun-tahun sebelumnya serta meletakkan landasan bagi usaha-usaha pembangunan selanjutnya, d. bahwa untuk menjaga kelangsungan jalannya pembangunan, dipandang perlu diatur sisa anggaran lebih dan sisa kredit anggaran proyek-proyek dalam anggaran pembangunan Tahun Anggaran 1998/1999, e. bahwa Angaran Pendapatan dan Belanja Negara Tahun Anggaran 1998/1999 perlu ditetapkan dengan Undang-undang, PRESIDEN REPUBLIK INDONESIA -2-" .
+<http://example.org/legal/document/uu/1998/3/menimbang> legal:menimbangHasText <http://example.org/legal/document/uu/1998/3/menimbang/text> .
 <http://example.org/legal/document/uu/1998/3> legal:documentHasDisahkanPengesah "SOEHARTO" .
 <http://example.org/legal/document/uu/1998/3> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/1998/3> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA" .
 <http://example.org/legal/document/uu/1998/3> a legal:Document .
+<http://example.org/legal/document/uu/1998/3/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1998/3/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0003> a legal:Point .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0004> a legal:Point .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0005> a legal:Point .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0005/text> a legal:Text .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0006> a legal:Point .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0006/text> a legal:Text .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0007> a legal:Point .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0007/text> a legal:Text .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0008> a legal:Point .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0008/text> a legal:Text .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0009> a legal:Point .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0009/text> a legal:Text .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0010> a legal:Point .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0010/text> a legal:Text .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0011> a legal:Point .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0011/text> a legal:Text .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0012> a legal:Point .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0012/text> a legal:Text .
+<http://example.org/legal/document/uu/1998/3/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0004> a legal:Ayat .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1998/3/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004> a legal:Ayat .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/e> a legal:Point .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/f> a legal:Point .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/f/text> a legal:Text .
 <http://example.org/legal/document/uu/1998/3/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1998/3/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/1998/3/mengingat/point> a legal:PointSet .
@@ -50,24 +259,55 @@
 <http://example.org/legal/document/uu/1998/3/mengingat/point/0001/text> a legal:Text .
 <http://example.org/legal/document/uu/1998/3/mengingat/point/0002> a legal:Point .
 <http://example.org/legal/document/uu/1998/3/mengingat/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1998/3/menimbang/text> a legal:Text .
 <http://example.org/legal/document/uu/1998/3/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/1998/3/menimbang/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1998/3/menimbang/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1998/3/menimbang/point/a> a legal:Point .
-<http://example.org/legal/document/uu/1998/3/menimbang/point/a/text> a legal:Text .
-<http://example.org/legal/document/uu/1998/3/menimbang/point/b> a legal:Point .
-<http://example.org/legal/document/uu/1998/3/menimbang/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/1998/3/menimbang/point/c> a legal:Point .
-<http://example.org/legal/document/uu/1998/3/menimbang/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/1998/3/menimbang/point/d> a legal:Point .
-<http://example.org/legal/document/uu/1998/3/menimbang/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/1998/3/menimbang/point/e> a legal:Point .
-<http://example.org/legal/document/uu/1998/3/menimbang/point/e/text> a legal:Text .
-<http://example.org/legal/document/uu/1998/3/bab> legal:partOf <http://example.org/legal/document/uu/1998/3> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1998/3/pasals> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0001> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1998/3> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0001> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0002> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0003> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0004> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0005> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0006> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0007> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0008> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0009> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0010> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0011> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point> .
+<http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point/0012> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0001/version/19980313/point> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1998/3/pasals> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0002> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1998/3> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001/point/a> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001/point> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001/point/b> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0001/point> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0002> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0003> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0004> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat> .
+<http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0002/version/19980313/ayat/0004> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1998/3/pasals> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0003> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1998/3> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0001> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0002> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0003> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/a> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/b> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/c> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/d> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/e> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point> .
+<http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point/f> legal:partOf <http://example.org/legal/document/uu/1998/3/pasal/0003/version/19980313/ayat/0004/point> .
 <http://example.org/legal/document/uu/1998/3/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1998/3/mengingat/point> .
 <http://example.org/legal/document/uu/1998/3/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1998/3/mengingat/point> .
-<http://example.org/legal/document/uu/1998/3/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1998/3/menimbang/point> .
-<http://example.org/legal/document/uu/1998/3/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1998/3/menimbang/point> .
-<http://example.org/legal/document/uu/1998/3/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/1998/3/menimbang/point> .
-<http://example.org/legal/document/uu/1998/3/menimbang/point/d> legal:partOf <http://example.org/legal/document/uu/1998/3/menimbang/point> .
-<http://example.org/legal/document/uu/1998/3/menimbang/point/e> legal:partOf <http://example.org/legal/document/uu/1998/3/menimbang/point> .

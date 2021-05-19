@@ -1,7 +1,25 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1997/9> legal:documentHasBabSet <http://example.org/legal/document/uu/1997/9/bab> .
+<http://example.org/legal/document/uu/1997/9> legal:documentHasPasalSet <http://example.org/legal/document/uu/1997/9/pasals> .
+<http://example.org/legal/document/uu/1997/9/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1997/9/pasal/0001> .
+<http://example.org/legal/document/uu/1997/9/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1997/9/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1997/9/pasal/0001/version/19970402> .
+<http://example.org/legal/document/uu/1997/9> legal:documentHasPasal <http://example.org/legal/document/uu/1997/9/pasal/0001> .
+<http://example.org/legal/document/uu/1997/9/pasal/0001/version/19970402> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1997/9/pasal/0001/version/19970402> legal:pasalVersionHasVersionDate "1997-04-02"^^xsd:date .
+<http://example.org/legal/document/uu/1997/9/pasal/0001/version/19970402> legal:pasalVersionHasRawText "Mengesahkan Treaty on the Southeast Asia Nuclear Weapon Free Zone (Traktat Kawasan Bebas Senjata Nuklir di Asia Tenggara), yang salinan naskah asli beserta Lampirannya dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia, sebagaimana terlampir, me rupakan bagian yang tidak terpisahkan dari Undang - undang ini." .
+<http://example.org/legal/document/uu/1997/9/pasal/0001/version/19970402/text> legal:textHasTextString "Mengesahkan Treaty on the Southeast Asia Nuclear Weapon Free Zone (Traktat Kawasan Bebas Senjata Nuklir di Asia Tenggara), yang salinan naskah asli beserta Lampirannya dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia, sebagaimana terlampir, me rupakan bagian yang tidak terpisahkan dari Undang - undang ini." .
+<http://example.org/legal/document/uu/1997/9/pasal/0001/version/19970402> legal:pasalVersionHasText <http://example.org/legal/document/uu/1997/9/pasal/0001/version/19970402/text> .
+<http://example.org/legal/document/uu/1997/9/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1997/9/pasal/0002> .
+<http://example.org/legal/document/uu/1997/9/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1997/9/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1997/9/pasal/0002/version/19970402> .
+<http://example.org/legal/document/uu/1997/9> legal:documentHasPasal <http://example.org/legal/document/uu/1997/9/pasal/0002> .
+<http://example.org/legal/document/uu/1997/9/pasal/0002/version/19970402> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1997/9/pasal/0002/version/19970402> legal:pasalVersionHasVersionDate "1997-04-02"^^xsd:date .
+<http://example.org/legal/document/uu/1997/9/pasal/0002/version/19970402> legal:pasalVersionHasRawText "Undang - undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA - 4 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1997/9/pasal/0002/version/19970402/text> legal:textHasTextString "Undang - undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA - 4 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1997/9/pasal/0002/version/19970402> legal:pasalVersionHasText <http://example.org/legal/document/uu/1997/9/pasal/0002/version/19970402/text> .
 <http://example.org/legal/document/uu/1997/9> legal:documentHasDisahkanDate "1997-04-02"^^xsd:date .
 <http://example.org/legal/document/uu/1997/9> legal:documentMengingat <http://example.org/legal/document/uu/1997/9/mengingat> .
 <http://example.org/legal/document/uu/1997/9/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1997/9/mengingat/point> .
@@ -55,6 +73,13 @@
 <http://example.org/legal/document/uu/1997/9> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/1997/9> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA" .
 <http://example.org/legal/document/uu/1997/9> a legal:Document .
+<http://example.org/legal/document/uu/1997/9/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1997/9/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1997/9/pasal/0001/version/19970402> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1997/9/pasal/0001/version/19970402/text> a legal:Text .
+<http://example.org/legal/document/uu/1997/9/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1997/9/pasal/0002/version/19970402> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1997/9/pasal/0002/version/19970402/text> a legal:Text .
 <http://example.org/legal/document/uu/1997/9/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1997/9/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/1997/9/mengingat/point> a legal:PointSet .
@@ -81,7 +106,12 @@
 <http://example.org/legal/document/uu/1997/9/menimbang/point/g/text> a legal:Text .
 <http://example.org/legal/document/uu/1997/9/menimbang/point/h> a legal:Point .
 <http://example.org/legal/document/uu/1997/9/menimbang/point/h/text> a legal:Text .
-<http://example.org/legal/document/uu/1997/9/bab> legal:partOf <http://example.org/legal/document/uu/1997/9> .
+<http://example.org/legal/document/uu/1997/9/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1997/9/pasals> .
+<http://example.org/legal/document/uu/1997/9/pasal/0001/version/19970402> legal:partOf <http://example.org/legal/document/uu/1997/9/pasal/0001> .
+<http://example.org/legal/document/uu/1997/9/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1997/9> .
+<http://example.org/legal/document/uu/1997/9/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1997/9/pasals> .
+<http://example.org/legal/document/uu/1997/9/pasal/0002/version/19970402> legal:partOf <http://example.org/legal/document/uu/1997/9/pasal/0002> .
+<http://example.org/legal/document/uu/1997/9/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1997/9> .
 <http://example.org/legal/document/uu/1997/9/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1997/9/mengingat/point> .
 <http://example.org/legal/document/uu/1997/9/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1997/9/mengingat/point> .
 <http://example.org/legal/document/uu/1997/9/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1997/9/menimbang/point> .

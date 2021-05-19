@@ -215,18 +215,207 @@ opText: |-
   MEMUTUSKAN :
   Menetapkan : UNDANG - UNDANG TENTANG PERHITUNGAN ANGGARAN
   NEGARA TAHUN ANGGARAN 1993/94.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_13
+          nodeType: pasalVersion
+          version: &ref_20
+            nodeType: date
+            month: 12
+            date: 30
+            year: 1995
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_14
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_13
+          elements:
+            - type: ayat
+              node: &ref_15
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_14
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_15
+                textString: >-
+                  Pendapatan Negara dalam Tahun Anggaran 1993/94 adalah sebesar Rp
+                  66.865.602.180.127,00 (enam puluh enam triliun delapan ratus enam puluh lima
+                  miliar enam ratus dua juta seratus delapan puluh ribu seratus dua puluh tujuh
+                  rupiah).
+                references: []
+            - type: ayat
+              node: &ref_16
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_14
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_16
+                textString: >-
+                  Belanja Ne gara Tahun Anggaran 1993/94 adalah sebesar Rp 68.717.997.106.318,00
+                  (enam puluh delapan triliun tujuh ratus tujuh belas miliar sembilan ratus sembilan
+                  puluh tujuh juta seratus enam ribu tiga ratus delapan belas rupiah). PRESIDEN
+                  REPUBLIK INDONESIA - 3 -
+                references: []
+            - type: ayat
+              node: &ref_17
+                nodeType: ayat
+                key: 3
+                parentAyatSetNode: *ref_14
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_17
+                textString: >-
+                  Sisa Anggaran Kuran g Perhitungan Anggaran Negara Tahun Anggaran 1993/94 adalah
+                  sebesar Rp 1.852.394.926.191,00 (satu triliun delapan ratus lima puluh dua miliar
+                  tiga ratus sembilan puluh empat juta sembilan ratus dua puluh enam ribu seratus
+                  sembilan puluh satu rupiah).
+                references: []
+            - type: ayat
+              node: &ref_18
+                nodeType: ayat
+                key: 4
+                parentAyatSetNode: *ref_14
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_18
+                textString: >-
+                  P erincian Perhitungan Pendapatan Negara, Belanja Negara dan Sisa Anggaran Kurang
+                  sebagaimana dimaksud dalam ayat (1), ayat (2), dan ayat (3) adalah seperti
+                  tersebut pada Lampiran Undang - undang ini.
+                references:
+                  - start: 133
+                    end: 141
+                    node:
+                      key: 3
+                      parentAyatSetNode: &ref_19
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_13
+                      nodeType: ayat
+                  - start: 119
+                    end: 127
+                    node:
+                      key: 2
+                      parentAyatSetNode: *ref_19
+                      nodeType: ayat
+                  - start: 109
+                    end: 117
+                    node:
+                      key: 1
+                      parentAyatSetNode: *ref_19
+                      nodeType: ayat
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_21
+          nodeType: pasalVersion
+          version: *ref_20
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_22
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_21
+          elements:
+            - type: ayat
+              node: &ref_23
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_22
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_23
+                textString: >-
+                  Belanja Negara Tahun Anggaran 1992/93 berubah menjadi sebesar Rp
+                  60.512.737.775.280,00 (enam puluh triliun lima ratus dua belas miliar tujuh ratus
+                  tiga puluh tujuh juta tujuh ratus tujuh puluh lima ribu dua ratus delapan puluh
+                  rupiah).
+                references: []
+            - type: ayat
+              node: &ref_24
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_22
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_24
+                textString: >-
+                  Sisa Anggaran Kurang Perhitungan Anggaran Negara Tahun Anggar an 1992/93 berubah
+                  menjadi sebesar Rp 552.284.729.174,00 (lima ratus lima puluh dua miliar dua ratus
+                  delapan puluh empat juta tujuh ratus dua puluh sembilan ribu seratus tujuh puluh
+                  empat rupiah).
+                references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 3
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_25
+          nodeType: pasalVersion
+          version: *ref_20
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '3'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_25
+          textString: >-
+            Undang - undang ini mulai berlaku pada tangga diun dangkan. PRESIDEN REPUBLIK INDONESIA
+            - 4 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini
+            dengan penempatannya dalam Lembaran negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 12
-    date: 30
-    year: 1995
+  date: *ref_20
   location: Jakarta
   pengesah: SOEHARTO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA

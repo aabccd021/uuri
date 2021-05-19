@@ -236,18 +236,93 @@ opText: |-
   PRESIDEN
   REPUBLIK INDONESIA
   - 3 -
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_10
+          nodeType: pasalVersion
+          version: &ref_11
+            nodeType: date
+            month: 3
+            date: 24
+            year: 1997
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_10
+          textString: >-
+            Mengesahkan United Nations Convention Against Illicit Traffic in Narcotic Drugs and
+            Psychotropic Substances, 1988 (Konvensi Perserikatan Bangsa - Bangsa tentang
+            Pemberantasan Peredaran Gelap Narkotika dan Psikotropika, 1988) dengan Reservation
+            (Persyaratan ) terhadap Pasal 32 ayat (2) dan ayat (3) yang bunyi lengkap Persyaratan
+            itu dalam bahasa Inggeris dan terjemahannya dalam bahasa Indonesia serta salinan naskah
+            asli United Nations Convention Against Illicit Traffic in Narcotic Drugs and
+            Psychotropic Subst ances, 1988 (Konvensi Perserikatan Bangsa - Bangsa tentang
+            Pemberantasan Peredaran Gelap Narkotika dan Psikotropika, 1988) dalam bahasa Inggeris
+            serta terjemahannya dalam bahasa Indonesia sebagaimana terlampir, merupakan bagian yang
+            tidak terpisahkan dari Un dang - undang.
+          references:
+            - start: 268
+              end: 285
+              node:
+                parentAyatSetNode:
+                  nodeType: ayatSet
+                  parentPasalVersionNode: *ref_10
+                key: 2
+                nodeType: ayat
+            - start: 290
+              end: 298
+              node:
+                key: 3
+                parentAyatSetNode:
+                  nodeType: ayatSet
+                  parentPasalVersionNode: *ref_10
+                nodeType: ayat
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_12
+          nodeType: pasalVersion
+          version: *ref_11
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_12
+          textString: >-
+            Undang - undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA
+            - 4 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini
+            dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 3
-    date: 24
-    year: 1997
+  date: *ref_11
   location: Jakarta
   pengesah: SOEHARTO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

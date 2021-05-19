@@ -1,7 +1,116 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1995/3> legal:documentHasBabSet <http://example.org/legal/document/uu/1995/3/bab> .
+<http://example.org/legal/document/uu/1995/3> legal:documentHasPasalSet <http://example.org/legal/document/uu/1995/3/pasals> .
+<http://example.org/legal/document/uu/1995/3/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1995/3/pasal/0001> .
+<http://example.org/legal/document/uu/1995/3/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1995/3/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427> .
+<http://example.org/legal/document/uu/1995/3> legal:documentHasPasal <http://example.org/legal/document/uu/1995/3/pasal/0001> .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427> legal:pasalVersionHasVersionDate "0019-04-27"^^xsd:date .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427> legal:pasalVersionHasRawText "Membentuk empat Pengadilan Tinggi Agama dengan nama dan kedudukan masing - masing :\na. Pengadilan Tinggi Agama Bengkulu, berkedudukan di Bengkulu.\nb. Pengadilan Tinggi Agama Palu, berkedudukan di Palu.\nc. Pengadilan Tinggi Agama Kendari, berkedudukan di Kendari.\nd. Pengadilan Tinggi Agama Kupang, berkedudukan di Kupang.\n" .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point> .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/description> legal:textHasTextString "Membentuk empat Pengadilan Tinggi Agama dengan nama dan kedudukan masing - masing :" .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/description> .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/a> .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/a/text> legal:textHasTextString "Pengadilan Tinggi Agama Bengkulu, berkedudukan di Bengkulu." .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/a> legal:pointHasText <http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/a/text> .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/b> .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/b/text> legal:textHasTextString "Pengadilan Tinggi Agama Palu, berkedudukan di Palu." .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/b> legal:pointHasText <http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/b/text> .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/c> .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/c/text> legal:textHasTextString "Pengadilan Tinggi Agama Kendari, berkedudukan di Kendari." .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/c> legal:pointHasText <http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/c/text> .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/d> .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/d/text> legal:textHasTextString "Pengadilan Tinggi Agama Kupang, berkedudukan di Kupang." .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/d> legal:pointHasText <http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/d/text> .
+<http://example.org/legal/document/uu/1995/3/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1995/3/pasal/0002> .
+<http://example.org/legal/document/uu/1995/3/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1995/3/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427> .
+<http://example.org/legal/document/uu/1995/3> legal:documentHasPasal <http://example.org/legal/document/uu/1995/3/pasal/0002> .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427> legal:pasalVersionHasVersionDate "0019-04-27"^^xsd:date .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427> legal:pasalVersionHasRawText "(1). Daerah hukum Pengadilan Tinggi Agama Bengkulu meliputi wilayah Propinsi Daerah Tingkat I Bengkulu.\n(2). Daerah hukum Pengadilan Tinggi Agama Palu meliputi wilayah Propinsi Daerah Tingkat I Sulawesi Tengah.\n(3). Daerah hukum Pengadilan Tinggi Agama Kendari meliputi wilayah Propinsi Daerah Tingkat I Sulawesi Tenggara.\n(4). Daerah hukum Pengadilan Tinggi Agama Kupang meliputi wilayah Propinsi Daerah Tingkat I Nusa Tenggara Timur dan Propinsi Daerah Tingkat I Timor Ti mur." .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat> .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0001> .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0001> legal:ayatHasRawText "Daerah hukum Pengadilan Tinggi Agama Bengkulu meliputi wilayah Propinsi Daerah Tingkat I Bengkulu." .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0001/text> legal:textHasTextString "Daerah hukum Pengadilan Tinggi Agama Bengkulu meliputi wilayah Propinsi Daerah Tingkat I Bengkulu." .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0001/text> .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0002> .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0002> legal:ayatHasRawText "Daerah hukum Pengadilan Tinggi Agama Palu meliputi wilayah Propinsi Daerah Tingkat I Sulawesi Tengah." .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0002/text> legal:textHasTextString "Daerah hukum Pengadilan Tinggi Agama Palu meliputi wilayah Propinsi Daerah Tingkat I Sulawesi Tengah." .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0002/text> .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0003> .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0003> legal:ayatHasRawText "Daerah hukum Pengadilan Tinggi Agama Kendari meliputi wilayah Propinsi Daerah Tingkat I Sulawesi Tenggara." .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0003/text> legal:textHasTextString "Daerah hukum Pengadilan Tinggi Agama Kendari meliputi wilayah Propinsi Daerah Tingkat I Sulawesi Tenggara." .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0003/text> .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0004> .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0004> legal:ayatHasKey 4 .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0004> legal:ayatHasRawText "Daerah hukum Pengadilan Tinggi Agama Kupang meliputi wilayah Propinsi Daerah Tingkat I Nusa Tenggara Timur dan Propinsi Daerah Tingkat I Timor Ti mur." .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0004/text> legal:textHasTextString "Daerah hukum Pengadilan Tinggi Agama Kupang meliputi wilayah Propinsi Daerah Tingkat I Nusa Tenggara Timur dan Propinsi Daerah Tingkat I Timor Ti mur." .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0004/text> .
+<http://example.org/legal/document/uu/1995/3/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1995/3/pasal/0003> .
+<http://example.org/legal/document/uu/1995/3/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/1995/3/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427> .
+<http://example.org/legal/document/uu/1995/3> legal:documentHasPasal <http://example.org/legal/document/uu/1995/3/pasal/0003> .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427> legal:pasalVersionHasVersionDate "0019-04-27"^^xsd:date .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427> legal:pasalVersionHasRawText "(1). Dengan terbentuknya Pengadilan Tinggi Agama Bengkulu, maka daerah hukum Pengadilan Tinggi Agama Bengkulu dikeluarkan dari daerah hukum Pengadilan Tinggi Agama Palembang. PRESIDEN REPUBLIK INDONESIA - 4 -\n(2). Dengan terbentuknya Pengadilan Tinggi Agama Pa lu, maka daerah hukum Pengadilan Tinggi Agama Palu dikeluarkan dari daerah hukum Pengadilan Tinggi Agama Manado.\n(3). Dengan terbentuknya Pengadilan Tinggi Agama Kendari, maka daerah hukum Pengadilan Tinggi Agama Kendari dikeluarkan dari daerah hukum Penga dilan Tinggi Agama Ujung Pandang.\n(4). Dengan terbentuknya Pengadilan Tinggi Agama Kupang, maka daerah hukum Pengadilan Tinggi Agama Kupang dikeluarkan dari daerah hukum Pengadilan Tinggi Agama Mataram." .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat> .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0001> .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0001> legal:ayatHasRawText "Dengan terbentuknya Pengadilan Tinggi Agama Bengkulu, maka daerah hukum Pengadilan Tinggi Agama Bengkulu dikeluarkan dari daerah hukum Pengadilan Tinggi Agama Palembang. PRESIDEN REPUBLIK INDONESIA - 4 -" .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0001/text> legal:textHasTextString "Dengan terbentuknya Pengadilan Tinggi Agama Bengkulu, maka daerah hukum Pengadilan Tinggi Agama Bengkulu dikeluarkan dari daerah hukum Pengadilan Tinggi Agama Palembang. PRESIDEN REPUBLIK INDONESIA - 4 -" .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0001/text> .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0002> .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0002> legal:ayatHasRawText "Dengan terbentuknya Pengadilan Tinggi Agama Pa lu, maka daerah hukum Pengadilan Tinggi Agama Palu dikeluarkan dari daerah hukum Pengadilan Tinggi Agama Manado." .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0002/text> legal:textHasTextString "Dengan terbentuknya Pengadilan Tinggi Agama Pa lu, maka daerah hukum Pengadilan Tinggi Agama Palu dikeluarkan dari daerah hukum Pengadilan Tinggi Agama Manado." .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0002/text> .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0003> .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0003> legal:ayatHasRawText "Dengan terbentuknya Pengadilan Tinggi Agama Kendari, maka daerah hukum Pengadilan Tinggi Agama Kendari dikeluarkan dari daerah hukum Penga dilan Tinggi Agama Ujung Pandang." .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0003/text> legal:textHasTextString "Dengan terbentuknya Pengadilan Tinggi Agama Kendari, maka daerah hukum Pengadilan Tinggi Agama Kendari dikeluarkan dari daerah hukum Penga dilan Tinggi Agama Ujung Pandang." .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0003/text> .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0004> .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0004> legal:ayatHasKey 4 .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0004> legal:ayatHasRawText "Dengan terbentuknya Pengadilan Tinggi Agama Kupang, maka daerah hukum Pengadilan Tinggi Agama Kupang dikeluarkan dari daerah hukum Pengadilan Tinggi Agama Mataram." .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0004/text> legal:textHasTextString "Dengan terbentuknya Pengadilan Tinggi Agama Kupang, maka daerah hukum Pengadilan Tinggi Agama Kupang dikeluarkan dari daerah hukum Pengadilan Tinggi Agama Mataram." .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0004/text> .
+<http://example.org/legal/document/uu/1995/3/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1995/3/pasal/0004> .
+<http://example.org/legal/document/uu/1995/3/pasal/0004> legal:pasalHasKey 4 .
+<http://example.org/legal/document/uu/1995/3/pasal/0004> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427> .
+<http://example.org/legal/document/uu/1995/3> legal:documentHasPasal <http://example.org/legal/document/uu/1995/3/pasal/0004> .
+<http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427> legal:pasalVersionHasVersionDate "0019-04-27"^^xsd:date .
+<http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427> legal:pasalVersionHasRawText "Perkara - perkara yang menjadi kewenangan Per adilan Agama pada saat terbentuknya Pengadilan Tinggi Agama sebagaimana dimaksud dalam Pasal 1:\na. telah diperiksa tetapi belum diputus Pengadilan Tinggi Agama Palembang, Manado, Ujung Pandang, dan Mataram tetap diperiksa dan diputus oleh masing - masing Pe ngadilan Tinggi Agama tersebut;\nb. telah diajukan kepada Pengadilan Tinggi Agama Palembang, Manado, Ujung Pandang, dan Mataram, tetapi belum diperiksa, masing - masing dilimpahkan kepada Pengadilan Tinggi Agama Bengkulu, Palu, Kendari, dan Kupang.\n" .
+<http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427/point> .
+<http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427/point/description> legal:textHasTextString "Perkara - perkara yang menjadi kewenangan Per adilan Agama pada saat terbentuknya Pengadilan Tinggi Agama sebagaimana dimaksud dalam Pasal 1:" .
+<http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427/point/description> .
+<http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427/point/a> .
+<http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427/point/a/text> legal:textHasTextString "telah diperiksa tetapi belum diputus Pengadilan Tinggi Agama Palembang, Manado, Ujung Pandang, dan Mataram tetap diperiksa dan diputus oleh masing - masing Pe ngadilan Tinggi Agama tersebut;" .
+<http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427/point/a> legal:pointHasText <http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427/point/a/text> .
+<http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427/point/b> .
+<http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427/point/b/text> legal:textHasTextString "telah diajukan kepada Pengadilan Tinggi Agama Palembang, Manado, Ujung Pandang, dan Mataram, tetapi belum diperiksa, masing - masing dilimpahkan kepada Pengadilan Tinggi Agama Bengkulu, Palu, Kendari, dan Kupang." .
+<http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427/point/b> legal:pointHasText <http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427/point/b/text> .
+<http://example.org/legal/document/uu/1995/3/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1995/3/pasal/0005> .
+<http://example.org/legal/document/uu/1995/3/pasal/0005> legal:pasalHasKey 5 .
+<http://example.org/legal/document/uu/1995/3/pasal/0005> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1995/3/pasal/0005/version/00190427> .
+<http://example.org/legal/document/uu/1995/3> legal:documentHasPasal <http://example.org/legal/document/uu/1995/3/pasal/0005> .
+<http://example.org/legal/document/uu/1995/3/pasal/0005/version/00190427> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1995/3/pasal/0005/version/00190427> legal:pasalVersionHasVersionDate "0019-04-27"^^xsd:date .
+<http://example.org/legal/document/uu/1995/3/pasal/0005/version/00190427> legal:pasalVersionHasRawText "Undang - undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA - 5 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1995/3/pasal/0005/version/00190427/text> legal:textHasTextString "Undang - undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA - 5 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1995/3/pasal/0005/version/00190427> legal:pasalVersionHasText <http://example.org/legal/document/uu/1995/3/pasal/0005/version/00190427/text> .
 <http://example.org/legal/document/uu/1995/3> legal:documentHasDisahkanDate "0019-04-27"^^xsd:date .
 <http://example.org/legal/document/uu/1995/3> legal:documentMengingat <http://example.org/legal/document/uu/1995/3/mengingat> .
 <http://example.org/legal/document/uu/1995/3/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1995/3/mengingat/point> .
@@ -47,6 +156,52 @@
 <http://example.org/legal/document/uu/1995/3> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/1995/3> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA" .
 <http://example.org/legal/document/uu/1995/3> a legal:Document .
+<http://example.org/legal/document/uu/1995/3/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1995/3/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1995/3/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0004> a legal:Ayat .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1995/3/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0004> a legal:Ayat .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1995/3/pasal/0004> a legal:Pasal .
+<http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1995/3/pasal/0005> a legal:Pasal .
+<http://example.org/legal/document/uu/1995/3/pasal/0005/version/00190427> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1995/3/pasal/0005/version/00190427/text> a legal:Text .
 <http://example.org/legal/document/uu/1995/3/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1995/3/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/1995/3/mengingat/point> a legal:PointSet .
@@ -69,7 +224,47 @@
 <http://example.org/legal/document/uu/1995/3/menimbang/point/c/text> a legal:Text .
 <http://example.org/legal/document/uu/1995/3/menimbang/point/d> a legal:Point .
 <http://example.org/legal/document/uu/1995/3/menimbang/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/1995/3/bab> legal:partOf <http://example.org/legal/document/uu/1995/3> .
+<http://example.org/legal/document/uu/1995/3/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1995/3/pasals> .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427> legal:partOf <http://example.org/legal/document/uu/1995/3/pasal/0001> .
+<http://example.org/legal/document/uu/1995/3/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1995/3> .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point> legal:partOf <http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427> .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/a> legal:partOf <http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point> .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/b> legal:partOf <http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point> .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/c> legal:partOf <http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point> .
+<http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point/d> legal:partOf <http://example.org/legal/document/uu/1995/3/pasal/0001/version/00190427/point> .
+<http://example.org/legal/document/uu/1995/3/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1995/3/pasals> .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427> legal:partOf <http://example.org/legal/document/uu/1995/3/pasal/0002> .
+<http://example.org/legal/document/uu/1995/3/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1995/3> .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat> legal:partOf <http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427> .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat> .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0001> .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat> .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0002> .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat> .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0003> .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0004> legal:partOf <http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat> .
+<http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/1995/3/pasal/0002/version/00190427/ayat/0004> .
+<http://example.org/legal/document/uu/1995/3/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1995/3/pasals> .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427> legal:partOf <http://example.org/legal/document/uu/1995/3/pasal/0003> .
+<http://example.org/legal/document/uu/1995/3/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1995/3> .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat> legal:partOf <http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427> .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat> .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0001> .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat> .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0002> .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat> .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0003> .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0004> legal:partOf <http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat> .
+<http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/1995/3/pasal/0003/version/00190427/ayat/0004> .
+<http://example.org/legal/document/uu/1995/3/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1995/3/pasals> .
+<http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427> legal:partOf <http://example.org/legal/document/uu/1995/3/pasal/0004> .
+<http://example.org/legal/document/uu/1995/3/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1995/3> .
+<http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427/point> legal:partOf <http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427> .
+<http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427/point/a> legal:partOf <http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427/point> .
+<http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427/point/b> legal:partOf <http://example.org/legal/document/uu/1995/3/pasal/0004/version/00190427/point> .
+<http://example.org/legal/document/uu/1995/3/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1995/3/pasals> .
+<http://example.org/legal/document/uu/1995/3/pasal/0005/version/00190427> legal:partOf <http://example.org/legal/document/uu/1995/3/pasal/0005> .
+<http://example.org/legal/document/uu/1995/3/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1995/3> .
 <http://example.org/legal/document/uu/1995/3/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1995/3/mengingat/point> .
 <http://example.org/legal/document/uu/1995/3/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1995/3/mengingat/point> .
 <http://example.org/legal/document/uu/1995/3/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/1995/3/mengingat/point> .

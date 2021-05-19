@@ -138,18 +138,103 @@ opText: |-
   MENENTANG PENYIKSAAN DAN PERLAKUAN ATAU
   PENGHUKUMAN LAIN YANG KEJAM, TIDAK MANUSIAWI,
   ATAU MERENDAHKAN MARTABAT MANUSIA).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_5
+          nodeType: pasalVersion
+          version: &ref_7
+            nodeType: date
+            month: 9
+            date: 28
+            year: 1998
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_5
+          textString: >-
+            (Jl) Mengesahkan Convention Against Torture and Other Cruel, Inhuman or Degrading
+            Treatment or Punishment (Konvensi Menentang Penyiksaan dan Perlakuan atau Penghukuman
+            Lain yang Kejam, Tidak Manusiawi, atau Merendahkan Martabat Manusia) dengan Declaration
+            (Pernyataan) terhadap Pasal 20 dan Reservation (Pensyaratan) terhadap Pasal 30 ayat (1).
+            (2) Salinan naskah asli Convention Against Torture and Other Cruel, Inhuman or Degrading
+            Treatment or Punishment (Konvensi Menentang Penyiksaan dan Perlakuan atau Penghukuman
+            Lain yang Kejam, Tidak Manusiawi, atau Merendahkan Martabat Manusia) dengan Declaration
+            (Pernyataan) terhadap Pasal 20 dan Reservation (Pensyaratan) terhadap Pasal 30 ayat (1)
+            dalam bahasa Inggeris, dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir
+            merupakan bagian yang tak terpisahkan dari Undang-undang ini.
+          references:
+            - start: 678
+              end: 695
+              node:
+                parentAyatSetNode: &ref_6
+                  nodeType: ayatSet
+                  parentPasalVersionNode: *ref_5
+                key: 1
+                nodeType: ayat
+            - start: 326
+              end: 343
+              node:
+                parentAyatSetNode: *ref_6
+                key: 1
+                nodeType: ayat
+            - start: 630
+              end: 638
+              node:
+                key: 20
+                parentNode: *ref_0
+                nodeType: pasal
+            - start: 278
+              end: 286
+              node:
+                key: 20
+                parentNode: *ref_0
+                nodeType: pasal
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_8
+          nodeType: pasalVersion
+          version: *ref_7
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_8
+          textString: >-
+            Undang-undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA
+            -4- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan
+            penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 9
-    date: 28
-    year: 1998
+  date: *ref_7
   location: Jakarta
   pengesah: BACHARUDDIN JUSUF HABIBIE
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA

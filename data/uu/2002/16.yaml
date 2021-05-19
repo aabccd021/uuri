@@ -238,18 +238,73 @@ opText: |-
   PRINSIP-PRINSIP YANG MENGATUR KEGIATAN NEGARA-NEGARA
   DALAM EKSPLORASI DAN PENGGUNAAN ANTARIKSA, TERMASUK
   BULAN DAN BENDA-BENDA LANGIT LAINNYA, 1967).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_12
+          nodeType: pasalVersion
+          version: &ref_13
+            nodeType: date
+            month: 4
+            date: 17
+            year: 2002
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_12
+          textString: >-
+            Mengesahkan Treaty on Principles Governing the Activities of States in the Exploration
+            and Use of Outer Space, including the Moon and Other Celestial Bodies, 1967 (Traktat
+            mengenai Prinsip-Prinsip yang Mengatur Kegiatan Negara-Negara dalam Eksplorasi dan
+            Penggunaan Antariksa, Termasuk Bulan dan Benda-Benda Langit Lainnya, 1967) yang salinan
+            naskah aslinya dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia sebagaimana
+            terlampir merupakan bagian yang tidak terpisahkan dari Undang-Undang ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_14
+          nodeType: pasalVersion
+          version: *ref_13
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_14
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang
+            mengetahuinya, memerintahkan pengundangan Undang- Undang ini dengan penempatannya dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 4
-    date: 17
-    year: 2002
+  date: *ref_13
   location: Jakarta
   pengesah: MEGAWATI SOEKARNOPUTRI
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

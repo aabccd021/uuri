@@ -176,18 +176,73 @@ opText: |-
   PEMBERANTASAN TINDAK PIDANA TERORISME, PADA PERISTIWA
   PELEDAKAN BOM DI BALI TANGGAL 12 OKTOBER 2002, MENJADI
   UNDANG - UNDANG.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_8
+          nodeType: pasalVersion
+          version: &ref_9
+            nodeType: date
+            month: 4
+            date: 4
+            year: 2003
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_8
+          textString: >-
+            Peraturan Pemerintah Pengganti Undang - undang Nomor 2 Tahun 2002 tentang Pemberlakuan
+            Peraturan Pemerintah Pengganti Undang - undang Nomor 1 Tahun 2002 tentang Pemberantasan
+            Tindak Pidana Terorisme, pada Peristiwa Peledakan Bom di Bali tanggal 12 Oktober 2002
+            (Lembaran Negara Republik Indonesia Tahun 2002 Nomor 107, Tambahan Lembaran Negara
+            Republik Indonesia Nomor 4233), ditetapkan menjadi Undang - undang. PRESIDEN REPUBLIK
+            INDONESIA - 3 -
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_10
+          nodeType: pasalVersion
+          version: *ref_9
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_10
+          textString: >-
+            Undang - undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang
+            mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 4
-    date: 4
-    year: 2003
+  date: *ref_9
   location: Jakarta
   pengesah: MEGAWATI SOEKARNOPUTRI
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

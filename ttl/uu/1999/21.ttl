@@ -1,7 +1,17 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1999/21> legal:documentHasBabSet <http://example.org/legal/document/uu/1999/21/bab> .
+<http://example.org/legal/document/uu/1999/21> legal:documentHasPasalSet <http://example.org/legal/document/uu/1999/21/pasals> .
+<http://example.org/legal/document/uu/1999/21/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/21/pasal/0001> .
+<http://example.org/legal/document/uu/1999/21/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1999/21/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/21/pasal/0001/version/19990507> .
+<http://example.org/legal/document/uu/1999/21> legal:documentHasPasal <http://example.org/legal/document/uu/1999/21/pasal/0001> .
+<http://example.org/legal/document/uu/1999/21/pasal/0001/version/19990507> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/21/pasal/0001/version/19990507> legal:pasalVersionHasVersionDate "1999-05-07"^^xsd:date .
+<http://example.org/legal/document/uu/1999/21/pasal/0001/version/19990507> legal:pasalVersionHasRawText "Mengesahkan ILO Convention No. 111 concerning Discrimination in Respect of Employment and Occupation (Konvensi ILO mengenai Diskriminasi dalam Pekerjaan dan Jabatan) yang naskah aslinya dalam bahasa Inggeris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir merupakan bagian tidak terpisahkan dari Undang-undang ini. Pasal 2 Undang-undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA 3 Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1999/21/pasal/0001/version/19990507/text> legal:textHasTextString "Mengesahkan ILO Convention No. 111 concerning Discrimination in Respect of Employment and Occupation (Konvensi ILO mengenai Diskriminasi dalam Pekerjaan dan Jabatan) yang naskah aslinya dalam bahasa Inggeris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir merupakan bagian tidak terpisahkan dari Undang-undang ini. Pasal 2 Undang-undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA 3 Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1999/21/pasal/0001/version/19990507> legal:pasalVersionHasText <http://example.org/legal/document/uu/1999/21/pasal/0001/version/19990507/text> .
+<http://example.org/legal/document/uu/1999/21/pasal/0001/version/19990507/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/21/pasal/0002> .
 <http://example.org/legal/document/uu/1999/21> legal:documentHasDisahkanDate "1999-05-07"^^xsd:date .
 <http://example.org/legal/document/uu/1999/21> legal:documentMengingat <http://example.org/legal/document/uu/1999/21/mengingat> .
 <http://example.org/legal/document/uu/1999/21/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1999/21/mengingat/point> .
@@ -43,6 +53,10 @@
 <http://example.org/legal/document/uu/1999/21> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/1999/21> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/1999/21> a legal:Document .
+<http://example.org/legal/document/uu/1999/21/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1999/21/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/21/pasal/0001/version/19990507> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/21/pasal/0001/version/19990507/text> a legal:Text .
 <http://example.org/legal/document/uu/1999/21/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1999/21/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/1999/21/mengingat/point> a legal:PointSet .
@@ -63,7 +77,9 @@
 <http://example.org/legal/document/uu/1999/21/menimbang/point/d/text> a legal:Text .
 <http://example.org/legal/document/uu/1999/21/menimbang/point/e> a legal:Point .
 <http://example.org/legal/document/uu/1999/21/menimbang/point/e/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/21/bab> legal:partOf <http://example.org/legal/document/uu/1999/21> .
+<http://example.org/legal/document/uu/1999/21/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1999/21/pasals> .
+<http://example.org/legal/document/uu/1999/21/pasal/0001/version/19990507> legal:partOf <http://example.org/legal/document/uu/1999/21/pasal/0001> .
+<http://example.org/legal/document/uu/1999/21/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1999/21> .
 <http://example.org/legal/document/uu/1999/21/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1999/21/mengingat/point> .
 <http://example.org/legal/document/uu/1999/21/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1999/21/mengingat/point> .
 <http://example.org/legal/document/uu/1999/21/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1999/21/menimbang/point> .

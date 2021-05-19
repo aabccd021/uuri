@@ -1,7 +1,377 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1996/2> legal:documentHasBabSet <http://example.org/legal/document/uu/1996/2/bab> .
+<http://example.org/legal/document/uu/1996/2> legal:documentHasPasalSet <http://example.org/legal/document/uu/1996/2/pasals> .
+<http://example.org/legal/document/uu/1996/2/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1996/2/pasal/0001> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1996/2/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322> .
+<http://example.org/legal/document/uu/1996/2> legal:documentHasPasal <http://example.org/legal/document/uu/1996/2/pasal/0001> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322> legal:pasalVersionHasVersionDate "1996-03-22"^^xsd:date .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322> legal:pasalVersionHasRawText "Dalam Undang - undang ini yang dimaksud dengan :\n1. Pendapatan negara adalah semua penerimaan dalam negeri dan penerimaan pembangunan yang digunakan untuk membiayai be lanja negara;\n2. Penerimaan dalam negeri adalah semua penerimaan yang diterima negara dalam bentuk penerimaan perpajakan, penerimaan dari sektor minyak bumi dan gas alam, dan penerimaan negara bukan pajak;\n3. Penerimaan pembangunan adalah penerimaan yang berasal dari nilai lawan rupiah bantuan dan atau pinjaman luar negeri;\n4. Belanja negara adalah semua pengeluaran negara untuk membiayai pengeluaran rutin dan pengeluaran pembangunan;\n5. Pengeluaran rutin adalah semua pengeluaran negara untuk membiayai tugas - tugas umum pemerintahan dan pembangunan, baik pusat maupun daerah, serta untuk memenuhi kewajiban atas hutang dalam negeri dan luar negeri;\n6. Pengeluaran pembangunan adalah semua pen geluaran negara untuk membiayai proyek - proyek pembangunan;\n7. Sisa kredit anggaran adalah sisa kewajiban pembiayaan proyek pembangunan pada akhir tahun anggaran;\n8. Sisa anggaran lebih adalah selisih lebih antara realisasi pendapatan negara dan belanja n egara;\n9. Sektor adalah kumpulan subsektor;\n10. Subsektor adalah kumpulan program; PRESIDEN REPUBLIK INDONESIA - 3 -\n11. Bantuan program adalah nilai lawan rupiah dari bantuan dan atau pinjaman luar negeri dalam bentuk pangan dan bukan pangan serta pinjaman yang dapat dirupi ahkan;\n12. Bantuan proyek adalah nilai lawan rupiah dari bantuan dan atau pinjaman luar negeri yang digunakan untuk membiayai proyek - proyek pembangunan.\n" .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/description> legal:textHasTextString "Dalam Undang - undang ini yang dimaksud dengan :" .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/description> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0001> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0001/text> legal:textHasTextString "Pendapatan negara adalah semua penerimaan dalam negeri dan penerimaan pembangunan yang digunakan untuk membiayai be lanja negara;" .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0001/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0002> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0002/text> legal:textHasTextString "Penerimaan dalam negeri adalah semua penerimaan yang diterima negara dalam bentuk penerimaan perpajakan, penerimaan dari sektor minyak bumi dan gas alam, dan penerimaan negara bukan pajak;" .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0002/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0003> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0003> legal:pointHasKey "3" .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0003/text> legal:textHasTextString "Penerimaan pembangunan adalah penerimaan yang berasal dari nilai lawan rupiah bantuan dan atau pinjaman luar negeri;" .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0003> legal:pointHasText <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0003/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0004> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0004> legal:pointHasKey "4" .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0004/text> legal:textHasTextString "Belanja negara adalah semua pengeluaran negara untuk membiayai pengeluaran rutin dan pengeluaran pembangunan;" .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0004> legal:pointHasText <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0004/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0005> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0005> legal:pointHasKey "5" .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0005/text> legal:textHasTextString "Pengeluaran rutin adalah semua pengeluaran negara untuk membiayai tugas - tugas umum pemerintahan dan pembangunan, baik pusat maupun daerah, serta untuk memenuhi kewajiban atas hutang dalam negeri dan luar negeri;" .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0005> legal:pointHasText <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0005/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0006> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0006> legal:pointHasKey "6" .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0006/text> legal:textHasTextString "Pengeluaran pembangunan adalah semua pen geluaran negara untuk membiayai proyek - proyek pembangunan;" .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0006> legal:pointHasText <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0006/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0007> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0007> legal:pointHasKey "7" .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0007/text> legal:textHasTextString "Sisa kredit anggaran adalah sisa kewajiban pembiayaan proyek pembangunan pada akhir tahun anggaran;" .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0007> legal:pointHasText <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0007/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0008> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0008> legal:pointHasKey "8" .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0008/text> legal:textHasTextString "Sisa anggaran lebih adalah selisih lebih antara realisasi pendapatan negara dan belanja n egara;" .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0008> legal:pointHasText <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0008/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0009> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0009> legal:pointHasKey "9" .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0009/text> legal:textHasTextString "Sektor adalah kumpulan subsektor;" .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0009> legal:pointHasText <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0009/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0010> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0010> legal:pointHasKey "10" .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0010/text> legal:textHasTextString "Subsektor adalah kumpulan program; PRESIDEN REPUBLIK INDONESIA - 3 -" .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0010> legal:pointHasText <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0010/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0011> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0011> legal:pointHasKey "11" .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0011/text> legal:textHasTextString "Bantuan program adalah nilai lawan rupiah dari bantuan dan atau pinjaman luar negeri dalam bentuk pangan dan bukan pangan serta pinjaman yang dapat dirupi ahkan;" .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0011> legal:pointHasText <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0011/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0012> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0012> legal:pointHasKey "12" .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0012/text> legal:textHasTextString "Bantuan proyek adalah nilai lawan rupiah dari bantuan dan atau pinjaman luar negeri yang digunakan untuk membiayai proyek - proyek pembangunan." .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0012> legal:pointHasText <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0012/text> .
+<http://example.org/legal/document/uu/1996/2/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1996/2/pasal/0002> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1996/2/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322> .
+<http://example.org/legal/document/uu/1996/2> legal:documentHasPasal <http://example.org/legal/document/uu/1996/2/pasal/0002> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322> legal:pasalVersionHasVersionDate "1996-03-22"^^xsd:date .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322> legal:pasalVersionHasRawText "(1). Anggaran Pendapatan Negara Tahun Anggaran 1996/1997 diperoleh dari :\na. Sumber - sumber Penerimaan Dalam Negeri;\nb. Sumber - sumber Penerimaan Pembangunan.\n\n(2). Penerimaan Dalam negeri sebagaimana dimaksud dalam ayat (1) huruf a direncanakan sebesar Rp 78.202.800.000.000,00.\n(3). Penerimaan Pembangunan sebagaimana di masuksud dalam ayat (1) huruf b direncanakan sebesar Rp 12.413.600.000.000,00.\n(4). Jumlah Anggaran Pendapatan Negara Tahun Anggaran 1996/1997 sebagaimana dimaksud dalam ayat (2) dan ayat (3) direncanakan sebesar Rp 90.616.400.000.000,00." .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001> legal:ayatHasRawText "Anggaran Pendapatan Negara Tahun Anggaran 1996/1997 diperoleh dari :\na. Sumber - sumber Penerimaan Dalam Negeri;\nb. Sumber - sumber Penerimaan Pembangunan.\n" .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001/point/description> legal:textHasTextString "Anggaran Pendapatan Negara Tahun Anggaran 1996/1997 diperoleh dari :" .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001/point/description> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001/point/a> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001/point/a/text> legal:textHasTextString "Sumber - sumber Penerimaan Dalam Negeri;" .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001/point/a/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001/point/b> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001/point/b/text> legal:textHasTextString "Sumber - sumber Penerimaan Pembangunan." .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001/point/b> legal:pointHasText <http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001/point/b/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0002> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0002> legal:ayatHasRawText "Penerimaan Dalam negeri sebagaimana dimaksud dalam ayat (1) huruf a direncanakan sebesar Rp 78.202.800.000.000,00." .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0002/text> legal:textHasTextString "Penerimaan Dalam negeri sebagaimana dimaksud dalam ayat (1) huruf a direncanakan sebesar Rp 78.202.800.000.000,00." .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0002/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/point/a> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0003> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0003> legal:ayatHasRawText "Penerimaan Pembangunan sebagaimana di masuksud dalam ayat (1) huruf b direncanakan sebesar Rp 12.413.600.000.000,00." .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0003/text> legal:textHasTextString "Penerimaan Pembangunan sebagaimana di masuksud dalam ayat (1) huruf b direncanakan sebesar Rp 12.413.600.000.000,00." .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0003/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/point/b> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0004> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0004> legal:ayatHasKey 4 .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0004> legal:ayatHasRawText "Jumlah Anggaran Pendapatan Negara Tahun Anggaran 1996/1997 sebagaimana dimaksud dalam ayat (2) dan ayat (3) direncanakan sebesar Rp 90.616.400.000.000,00." .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0004/text> legal:textHasTextString "Jumlah Anggaran Pendapatan Negara Tahun Anggaran 1996/1997 sebagaimana dimaksud dalam ayat (2) dan ayat (3) direncanakan sebesar Rp 90.616.400.000.000,00." .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0004/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0003> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0002> .
+<http://example.org/legal/document/uu/1996/2/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1996/2/pasal/0003> .
+<http://example.org/legal/document/uu/1996/2/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/1996/2/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322> .
+<http://example.org/legal/document/uu/1996/2> legal:documentHasPasal <http://example.org/legal/document/uu/1996/2/pasal/0003> .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322> legal:pasalVersionHasVersionDate "1996-03-22"^^xsd:date .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322> legal:pasalVersionHasRawText "(1). pen erimaan Dalam Negeri sebagaimana dimaksud dalam Pasal 2 ayat (2) terdiri dari sumber - sumber penerimaan :\na. Penerimaan perpajakan sebesar Rp 55.987.100.000.000,00;\nb. Penerimaan dari sektor minyak bumi dan gas alam sebesar Rp 14.947.900.000.000,00;\nc. Penerimaan negara bukan pajak sebesar Rp 7.267.800.000.000,00.\n\n(2). Penerimaan Pembangunan sebagaimana dimaksud dalam Pasal 2 ayat (3) terdiri dari sumber - sumber penerimaan :\na. Bantuan program sebesar nihil;\nb. Bantuan proyek sebesar Rp 12.413.600.000.0 00,00. PRESIDEN REPUBLIK INDONESIA - 4 -\n" .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat> .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001> .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001> legal:ayatHasRawText "pen erimaan Dalam Negeri sebagaimana dimaksud dalam Pasal 2 ayat (2) terdiri dari sumber - sumber penerimaan :\na. Penerimaan perpajakan sebesar Rp 55.987.100.000.000,00;\nb. Penerimaan dari sektor minyak bumi dan gas alam sebesar Rp 14.947.900.000.000,00;\nc. Penerimaan negara bukan pajak sebesar Rp 7.267.800.000.000,00.\n" .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point/description> legal:textHasTextString "pen erimaan Dalam Negeri sebagaimana dimaksud dalam Pasal 2 ayat (2) terdiri dari sumber - sumber penerimaan :" .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point/description> .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point/a> .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point/a/text> legal:textHasTextString "Penerimaan perpajakan sebesar Rp 55.987.100.000.000,00;" .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point/a/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point/b> .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point/b/text> legal:textHasTextString "Penerimaan dari sektor minyak bumi dan gas alam sebesar Rp 14.947.900.000.000,00;" .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point/b> legal:pointHasText <http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point/b/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point/c> .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point/c/text> legal:textHasTextString "Penerimaan negara bukan pajak sebesar Rp 7.267.800.000.000,00." .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point/c> legal:pointHasText <http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point/c/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002> .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002> legal:ayatHasRawText "Penerimaan Pembangunan sebagaimana dimaksud dalam Pasal 2 ayat (3) terdiri dari sumber - sumber penerimaan :\na. Bantuan program sebesar nihil;\nb. Bantuan proyek sebesar Rp 12.413.600.000.0 00,00. PRESIDEN REPUBLIK INDONESIA - 4 -\n" .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002> legal:ayatHasPointSet <http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002/point/description> legal:textHasTextString "Penerimaan Pembangunan sebagaimana dimaksud dalam Pasal 2 ayat (3) terdiri dari sumber - sumber penerimaan :" .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002/point/description> .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002/point/a> .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002/point/a/text> legal:textHasTextString "Bantuan program sebesar nihil;" .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002/point/a> legal:pointHasText <http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002/point/a/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002/point/b> .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002/point/b/text> legal:textHasTextString "Bantuan proyek sebesar Rp 12.413.600.000.0 00,00. PRESIDEN REPUBLIK INDONESIA - 4 -" .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002/point/b> legal:pointHasText <http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002/point/b/text> .
+<http://example.org/legal/document/uu/1996/2/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1996/2/pasal/0004> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004> legal:pasalHasKey 4 .
+<http://example.org/legal/document/uu/1996/2/pasal/0004> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322> .
+<http://example.org/legal/document/uu/1996/2> legal:documentHasPasal <http://example.org/legal/document/uu/1996/2/pasal/0004> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322> legal:pasalVersionHasVersionDate "1996-03-22"^^xsd:date .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322> legal:pasalVersionHasRawText "(1). Anggaran Belanja Negara Tahun Anggaran 1996/1997 terdiri dari :\na. Pengeluaran Rutin;\nb. Pengeluaran Pembangunan.\n\n(2). Pengeluaran Rutin sebagaimana dimaksud dalam ayat (1) huruf a direncanakan sebesar Rp 56.113.700.000.000,00.\n(3). Pengeluaran Pembangunan sebagaimana dimaksud dalam ayat (1) huruf b direncanakan sebesar Rp 34.502.700.000.000,00.\n(4). Jumlah Anggaran Belanj a Negara Tahun Anggaran 1996/1997 sebagaimana dimaksud dalam ayat (2) dan ayat (3) direncanakan sebesar Rp 90.616.400.000.000,00." .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001> legal:ayatHasRawText "Anggaran Belanja Negara Tahun Anggaran 1996/1997 terdiri dari :\na. Pengeluaran Rutin;\nb. Pengeluaran Pembangunan.\n" .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001/point/description> legal:textHasTextString "Anggaran Belanja Negara Tahun Anggaran 1996/1997 terdiri dari :" .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001/point/description> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001/point/a> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001/point/a/text> legal:textHasTextString "Pengeluaran Rutin;" .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001/point/a/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001/point/b> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001/point/b/text> legal:textHasTextString "Pengeluaran Pembangunan." .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001/point/b> legal:pointHasText <http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001/point/b/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0002> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0002> legal:ayatHasRawText "Pengeluaran Rutin sebagaimana dimaksud dalam ayat (1) huruf a direncanakan sebesar Rp 56.113.700.000.000,00." .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0002/text> legal:textHasTextString "Pengeluaran Rutin sebagaimana dimaksud dalam ayat (1) huruf a direncanakan sebesar Rp 56.113.700.000.000,00." .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0002/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/point/a> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0003> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0003> legal:ayatHasRawText "Pengeluaran Pembangunan sebagaimana dimaksud dalam ayat (1) huruf b direncanakan sebesar Rp 34.502.700.000.000,00." .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0003/text> legal:textHasTextString "Pengeluaran Pembangunan sebagaimana dimaksud dalam ayat (1) huruf b direncanakan sebesar Rp 34.502.700.000.000,00." .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0003/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/point/b> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0004> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0004> legal:ayatHasKey 4 .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0004> legal:ayatHasRawText "Jumlah Anggaran Belanj a Negara Tahun Anggaran 1996/1997 sebagaimana dimaksud dalam ayat (2) dan ayat (3) direncanakan sebesar Rp 90.616.400.000.000,00." .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0004/text> legal:textHasTextString "Jumlah Anggaran Belanj a Negara Tahun Anggaran 1996/1997 sebagaimana dimaksud dalam ayat (2) dan ayat (3) direncanakan sebesar Rp 90.616.400.000.000,00." .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0004/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0003> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0002> .
+<http://example.org/legal/document/uu/1996/2/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1996/2/pasal/0005> .
+<http://example.org/legal/document/uu/1996/2/pasal/0005> legal:pasalHasKey 5 .
+<http://example.org/legal/document/uu/1996/2/pasal/0005> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322> .
+<http://example.org/legal/document/uu/1996/2> legal:documentHasPasal <http://example.org/legal/document/uu/1996/2/pasal/0005> .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322> legal:pasalVersionHasVersionDate "1996-03-22"^^xsd:date .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322> legal:pasalVersionHasRawText "(1). Pengeluaran Rutin sebagaimana dimaksud dalam Pasal 4 ayat (2) dirinci menurut sektor: 01 Sektor industri sebes ar Rp 69.318.959.000,00 02 Sektor pertanian dan kehutanan sebesar Rp 353.704.885.000,00 03 Sektor pengairan sebesar Rp 30.652.312.000,00 04 Sektor tenaga kerja sebesar Rp 120.568.571.000,00 05 Sektor perdagangan, pengembangan usaha nasional, keuangan dan koperasi sebesar Rp 29.069.680.660.000,00 06 Sektor transportasi meteorologi dan geofisika sebesar Rp 253.751.363.000,00 07 Sektor pertambangan dan energi sebesar Rp 87.786.410.000,00 08 Sektor pariwisata, pos dan telekomunikasi sebesar Rp 26.455.884.000,00 PRESIDEN REPUBLIK INDONESIA - 5 - 09 Sektor pembangunan daerah dan transmigrasi sebesar Rp 10.163.854.140.000,00 10 Sektor lingkungan hidup dan tata ruang sebesar Rp 210.404.373.000,00 11 Sektor pendidikan , kebudayaan nasional, kepercayaan terhadap Tuhan Yang Maha Esa, pemuda dan olah raga sebesar Rp 3.366.381.931.000,00 12 Sektor kependudukan dan keluarga sejahtera sebesar Rp 227.011.020.000,00 13 Sektor kesejahteraan sosial,kesehatan, peranan wanita,anak dan remaja sebesar Rp 510.491.082.000,00 14 Sektor perumahan dan permukiman sebesar Rp 13.920.484.000,00 15 Sektor agama sebesar Rp 980.685.214.000,00 16 Sektor ilmu pengetahuan dan teknologi sebesa r Rp 300.759.802.000,00 17 Sektor hukum sebesar Rp 585.093.429.000,00 18 Sektor aparatur negara dan pengawasan sebesar Rp 3.105.884.135.000,00 19 Sektor politik, hubungan luar negeri,penerangan, komunikasi dan media massa sebesar Rp 1.1 37.486.983.000,00 20 Sektor pertahanan dan keamanan sebesar Rp 5.499.808.363.000,00 PRESIDEN REPUBLIK INDONESIA - 6 -\n(2). Perincian sektor sebagaimana dimaksud dalam ayat (1) ke dalam subsektor dicantumkan dalam penjelasan ayat ini.\n(3). pengeluaran Pembanguan seb agaimana dimaksud dalam pasal 4 ayat (3) dirinci menurut sektor: 01 Sektor industri sebesar Rp 506.629.000.000,00 02 Sektor pertanian dan kehutanan sebesar Rp 1.294.409.000.000,00 03 Sektor pengairan sebesar Rp 2.317.416.000.000,00 04 Sektor tenaga kerja sebesar Rp 187.108.000.000,00 05 Sektor perdagangan, pengembangan usaha nasional,keuangan dan koperasi sebesar Rp 401.456.000.000,00 06 Sektor transportasi, meteorologi dan geofisika sebesar Rp 6.771.171.000.000,0 0 07 Sektor pertambangan dan energi sebesar Rp 4.101.538.000.000,00 08 Sektor pariwisata, pos dan telekomunikasi sebesar Rp 1.043.263.000.000,00 09 Sektor pembangunan daerah dan transmigrasi sebesar Rp 6.509.129.000.000,00 10 Sektor lingkungan hidup dan tata ruang sebesar Rp 615.553.000.000,00 11 Sektor pendidikan, kebudayaan nasional, kepercayaan terhadap Tuhan Yang Maha Esa, pemuda dan olah raga sebesar Rp 3.970.650.000.000,00 12 Sektor kependudukan dan keluarga sejahtera sebesar Rp 328.055.000.000,00 PRESIDEN REPUBLIK INDONESIA - 7 - 13 Sektor kesejahteraan sosial,kesehatan, peranan wanita,anak dan remaja sebesar Rp 1.364.940.000.000,00 14 Sektor perumahan dan permukiman sebesar Rp 1.325.561.000.000,00 15 Sektor agama sebesar Rp 253.661.000.000,00 16 Sektor ilmu pengetahuan dan teknologi sebesar Rp 805.622.000.000,00 17 Sektor hukum sebesar Rp 172.901.000.000,00 18 Sektor aparatur negara dan pengawasan sebesar Rp 818.586.000.000,00 19 S ektor politik, hubungan luar negeri, penerangan, komunikasi dan media massa sebesar Rp 183.224.000.000,00 20 Sektor pertahanan dan keamanan sebesar Rp 1.531.828.000.000,00\n(4). Perincian sektor sebagaimana dimaksud dalam ayat (3) ke dala m subsektor dicantumkan dalam penjelasan ayat ini." .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat> .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0001> .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0001> legal:ayatHasRawText "Pengeluaran Rutin sebagaimana dimaksud dalam Pasal 4 ayat (2) dirinci menurut sektor: 01 Sektor industri sebes ar Rp 69.318.959.000,00 02 Sektor pertanian dan kehutanan sebesar Rp 353.704.885.000,00 03 Sektor pengairan sebesar Rp 30.652.312.000,00 04 Sektor tenaga kerja sebesar Rp 120.568.571.000,00 05 Sektor perdagangan, pengembangan usaha nasional, keuangan dan koperasi sebesar Rp 29.069.680.660.000,00 06 Sektor transportasi meteorologi dan geofisika sebesar Rp 253.751.363.000,00 07 Sektor pertambangan dan energi sebesar Rp 87.786.410.000,00 08 Sektor pariwisata, pos dan telekomunikasi sebesar Rp 26.455.884.000,00 PRESIDEN REPUBLIK INDONESIA - 5 - 09 Sektor pembangunan daerah dan transmigrasi sebesar Rp 10.163.854.140.000,00 10 Sektor lingkungan hidup dan tata ruang sebesar Rp 210.404.373.000,00 11 Sektor pendidikan , kebudayaan nasional, kepercayaan terhadap Tuhan Yang Maha Esa, pemuda dan olah raga sebesar Rp 3.366.381.931.000,00 12 Sektor kependudukan dan keluarga sejahtera sebesar Rp 227.011.020.000,00 13 Sektor kesejahteraan sosial,kesehatan, peranan wanita,anak dan remaja sebesar Rp 510.491.082.000,00 14 Sektor perumahan dan permukiman sebesar Rp 13.920.484.000,00 15 Sektor agama sebesar Rp 980.685.214.000,00 16 Sektor ilmu pengetahuan dan teknologi sebesa r Rp 300.759.802.000,00 17 Sektor hukum sebesar Rp 585.093.429.000,00 18 Sektor aparatur negara dan pengawasan sebesar Rp 3.105.884.135.000,00 19 Sektor politik, hubungan luar negeri,penerangan, komunikasi dan media massa sebesar Rp 1.1 37.486.983.000,00 20 Sektor pertahanan dan keamanan sebesar Rp 5.499.808.363.000,00 PRESIDEN REPUBLIK INDONESIA - 6 -" .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0001/text> legal:textHasTextString "Pengeluaran Rutin sebagaimana dimaksud dalam Pasal 4 ayat (2) dirinci menurut sektor: 01 Sektor industri sebes ar Rp 69.318.959.000,00 02 Sektor pertanian dan kehutanan sebesar Rp 353.704.885.000,00 03 Sektor pengairan sebesar Rp 30.652.312.000,00 04 Sektor tenaga kerja sebesar Rp 120.568.571.000,00 05 Sektor perdagangan, pengembangan usaha nasional, keuangan dan koperasi sebesar Rp 29.069.680.660.000,00 06 Sektor transportasi meteorologi dan geofisika sebesar Rp 253.751.363.000,00 07 Sektor pertambangan dan energi sebesar Rp 87.786.410.000,00 08 Sektor pariwisata, pos dan telekomunikasi sebesar Rp 26.455.884.000,00 PRESIDEN REPUBLIK INDONESIA - 5 - 09 Sektor pembangunan daerah dan transmigrasi sebesar Rp 10.163.854.140.000,00 10 Sektor lingkungan hidup dan tata ruang sebesar Rp 210.404.373.000,00 11 Sektor pendidikan , kebudayaan nasional, kepercayaan terhadap Tuhan Yang Maha Esa, pemuda dan olah raga sebesar Rp 3.366.381.931.000,00 12 Sektor kependudukan dan keluarga sejahtera sebesar Rp 227.011.020.000,00 13 Sektor kesejahteraan sosial,kesehatan, peranan wanita,anak dan remaja sebesar Rp 510.491.082.000,00 14 Sektor perumahan dan permukiman sebesar Rp 13.920.484.000,00 15 Sektor agama sebesar Rp 980.685.214.000,00 16 Sektor ilmu pengetahuan dan teknologi sebesa r Rp 300.759.802.000,00 17 Sektor hukum sebesar Rp 585.093.429.000,00 18 Sektor aparatur negara dan pengawasan sebesar Rp 3.105.884.135.000,00 19 Sektor politik, hubungan luar negeri,penerangan, komunikasi dan media massa sebesar Rp 1.1 37.486.983.000,00 20 Sektor pertahanan dan keamanan sebesar Rp 5.499.808.363.000,00 PRESIDEN REPUBLIK INDONESIA - 6 -" .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0001/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0002> .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0002> .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0002> legal:ayatHasRawText "Perincian sektor sebagaimana dimaksud dalam ayat (1) ke dalam subsektor dicantumkan dalam penjelasan ayat ini." .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0002/text> legal:textHasTextString "Perincian sektor sebagaimana dimaksud dalam ayat (1) ke dalam subsektor dicantumkan dalam penjelasan ayat ini." .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0002/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0001> .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0003> .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0003> legal:ayatHasRawText "pengeluaran Pembanguan seb agaimana dimaksud dalam pasal 4 ayat (3) dirinci menurut sektor: 01 Sektor industri sebesar Rp 506.629.000.000,00 02 Sektor pertanian dan kehutanan sebesar Rp 1.294.409.000.000,00 03 Sektor pengairan sebesar Rp 2.317.416.000.000,00 04 Sektor tenaga kerja sebesar Rp 187.108.000.000,00 05 Sektor perdagangan, pengembangan usaha nasional,keuangan dan koperasi sebesar Rp 401.456.000.000,00 06 Sektor transportasi, meteorologi dan geofisika sebesar Rp 6.771.171.000.000,0 0 07 Sektor pertambangan dan energi sebesar Rp 4.101.538.000.000,00 08 Sektor pariwisata, pos dan telekomunikasi sebesar Rp 1.043.263.000.000,00 09 Sektor pembangunan daerah dan transmigrasi sebesar Rp 6.509.129.000.000,00 10 Sektor lingkungan hidup dan tata ruang sebesar Rp 615.553.000.000,00 11 Sektor pendidikan, kebudayaan nasional, kepercayaan terhadap Tuhan Yang Maha Esa, pemuda dan olah raga sebesar Rp 3.970.650.000.000,00 12 Sektor kependudukan dan keluarga sejahtera sebesar Rp 328.055.000.000,00 PRESIDEN REPUBLIK INDONESIA - 7 - 13 Sektor kesejahteraan sosial,kesehatan, peranan wanita,anak dan remaja sebesar Rp 1.364.940.000.000,00 14 Sektor perumahan dan permukiman sebesar Rp 1.325.561.000.000,00 15 Sektor agama sebesar Rp 253.661.000.000,00 16 Sektor ilmu pengetahuan dan teknologi sebesar Rp 805.622.000.000,00 17 Sektor hukum sebesar Rp 172.901.000.000,00 18 Sektor aparatur negara dan pengawasan sebesar Rp 818.586.000.000,00 19 S ektor politik, hubungan luar negeri, penerangan, komunikasi dan media massa sebesar Rp 183.224.000.000,00 20 Sektor pertahanan dan keamanan sebesar Rp 1.531.828.000.000,00" .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0003/text> legal:textHasTextString "pengeluaran Pembanguan seb agaimana dimaksud dalam pasal 4 ayat (3) dirinci menurut sektor: 01 Sektor industri sebesar Rp 506.629.000.000,00 02 Sektor pertanian dan kehutanan sebesar Rp 1.294.409.000.000,00 03 Sektor pengairan sebesar Rp 2.317.416.000.000,00 04 Sektor tenaga kerja sebesar Rp 187.108.000.000,00 05 Sektor perdagangan, pengembangan usaha nasional,keuangan dan koperasi sebesar Rp 401.456.000.000,00 06 Sektor transportasi, meteorologi dan geofisika sebesar Rp 6.771.171.000.000,0 0 07 Sektor pertambangan dan energi sebesar Rp 4.101.538.000.000,00 08 Sektor pariwisata, pos dan telekomunikasi sebesar Rp 1.043.263.000.000,00 09 Sektor pembangunan daerah dan transmigrasi sebesar Rp 6.509.129.000.000,00 10 Sektor lingkungan hidup dan tata ruang sebesar Rp 615.553.000.000,00 11 Sektor pendidikan, kebudayaan nasional, kepercayaan terhadap Tuhan Yang Maha Esa, pemuda dan olah raga sebesar Rp 3.970.650.000.000,00 12 Sektor kependudukan dan keluarga sejahtera sebesar Rp 328.055.000.000,00 PRESIDEN REPUBLIK INDONESIA - 7 - 13 Sektor kesejahteraan sosial,kesehatan, peranan wanita,anak dan remaja sebesar Rp 1.364.940.000.000,00 14 Sektor perumahan dan permukiman sebesar Rp 1.325.561.000.000,00 15 Sektor agama sebesar Rp 253.661.000.000,00 16 Sektor ilmu pengetahuan dan teknologi sebesar Rp 805.622.000.000,00 17 Sektor hukum sebesar Rp 172.901.000.000,00 18 Sektor aparatur negara dan pengawasan sebesar Rp 818.586.000.000,00 19 S ektor politik, hubungan luar negeri, penerangan, komunikasi dan media massa sebesar Rp 183.224.000.000,00 20 Sektor pertahanan dan keamanan sebesar Rp 1.531.828.000.000,00" .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0003/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0003> .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0004> .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0004> legal:ayatHasKey 4 .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0004> legal:ayatHasRawText "Perincian sektor sebagaimana dimaksud dalam ayat (3) ke dala m subsektor dicantumkan dalam penjelasan ayat ini." .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0004/text> legal:textHasTextString "Perincian sektor sebagaimana dimaksud dalam ayat (3) ke dala m subsektor dicantumkan dalam penjelasan ayat ini." .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0004/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0003> .
+<http://example.org/legal/document/uu/1996/2/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1996/2/pasal/0006> .
+<http://example.org/legal/document/uu/1996/2/pasal/0006> legal:pasalHasKey 6 .
+<http://example.org/legal/document/uu/1996/2/pasal/0006> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1996/2/pasal/0006/version/19960322> .
+<http://example.org/legal/document/uu/1996/2> legal:documentHasPasal <http://example.org/legal/document/uu/1996/2/pasal/0006> .
+<http://example.org/legal/document/uu/1996/2/pasal/0006/version/19960322> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1996/2/pasal/0006/version/19960322> legal:pasalVersionHasVersionDate "1996-03-22"^^xsd:date .
+<http://example.org/legal/document/uu/1996/2/pasal/0006/version/19960322> legal:pasalVersionHasRawText "Perincian lebih lanjut dari sektor dan subsektor sebagaimana dimaksud dalam Pasal 5 ayat (1) dan ayat (2) ke dalam program dan kegiatan ditetapkan dengan Keputusan Presiden." .
+<http://example.org/legal/document/uu/1996/2/pasal/0006/version/19960322/text> legal:textHasTextString "Perincian lebih lanjut dari sektor dan subsektor sebagaimana dimaksud dalam Pasal 5 ayat (1) dan ayat (2) ke dalam program dan kegiatan ditetapkan dengan Keputusan Presiden." .
+<http://example.org/legal/document/uu/1996/2/pasal/0006/version/19960322> legal:pasalVersionHasText <http://example.org/legal/document/uu/1996/2/pasal/0006/version/19960322/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0006/version/19960322/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1996/2/pasal/0006/version/19960322/ayat/0001> .
+<http://example.org/legal/document/uu/1996/2/pasal/0006/version/19960322/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1996/2/pasal/0006/version/19960322/ayat/0002> .
+<http://example.org/legal/document/uu/1996/2/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1996/2/pasal/0007> .
+<http://example.org/legal/document/uu/1996/2/pasal/0007> legal:pasalHasKey 7 .
+<http://example.org/legal/document/uu/1996/2/pasal/0007> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1996/2/pasal/0007/version/19960322> .
+<http://example.org/legal/document/uu/1996/2> legal:documentHasPasal <http://example.org/legal/document/uu/1996/2/pasal/0007> .
+<http://example.org/legal/document/uu/1996/2/pasal/0007/version/19960322> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1996/2/pasal/0007/version/19960322> legal:pasalVersionHasVersionDate "1996-03-22"^^xsd:date .
+<http://example.org/legal/document/uu/1996/2/pasal/0007/version/19960322> legal:pasalVersionHasRawText "Perincian lebih lanjut dari sektor dan subsektor sebagaimana dimaksud dalam Pasal 5 ayat (3) dan ayat (4) ke dalam program dan proyek - proyek ditetapkan dengan Keputusan Presiden. PRESIDEN REPUBLIK INDONESIA - 8 -" .
+<http://example.org/legal/document/uu/1996/2/pasal/0007/version/19960322/text> legal:textHasTextString "Perincian lebih lanjut dari sektor dan subsektor sebagaimana dimaksud dalam Pasal 5 ayat (3) dan ayat (4) ke dalam program dan proyek - proyek ditetapkan dengan Keputusan Presiden. PRESIDEN REPUBLIK INDONESIA - 8 -" .
+<http://example.org/legal/document/uu/1996/2/pasal/0007/version/19960322> legal:pasalVersionHasText <http://example.org/legal/document/uu/1996/2/pasal/0007/version/19960322/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0007/version/19960322/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1996/2/pasal/0007/version/19960322/ayat/0003> .
+<http://example.org/legal/document/uu/1996/2/pasal/0007/version/19960322/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1996/2/pasal/0007/version/19960322/ayat/0004> .
+<http://example.org/legal/document/uu/1996/2/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1996/2/pasal/0008> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008> legal:pasalHasKey 8 .
+<http://example.org/legal/document/uu/1996/2/pasal/0008> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322> .
+<http://example.org/legal/document/uu/1996/2> legal:documentHasPasal <http://example.org/legal/document/uu/1996/2/pasal/0008> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322> legal:pasalVersionHasVersionDate "1996-03-22"^^xsd:date .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322> legal:pasalVersionHasRawText "(1). Pada pertengahan Tahun Anggaran 1996/1997 Pemeri ntah membuat laporan Semester I mengenai:\na. Realisasi Penerimaan Dalam Negeri;\nb. Realisasi Penerimaan Pembangunan;\nc. Realisasi Pengeluaran Rutin;\nd. Realisasi Pengeluaran Pembangunan;\ne. Perkembangan Moneter dan Perkreditan;\nf. Perkembangan Neraca Pembayaran dan Perdagangan Luar Negeri.\n\n(2). Dalam laporan sebagaimana dimaksud dalam ayat (1) Pemerintah menyusun prognosa untuk 6 (enam) bulan berikutnya.\n(3). Laporan sebagaimana dimaksud dalam ayat (1) dan ayat (2) disampaikan kepad a Dewan Perwakilan Rakyat selambat - lambatnya akhir bulan Oktober untuk dibahas bersama oleh Dewan Perwakilan Rakyat dengan Pemerintah.\n(4). Penyesuaian Anggaran Pendapatan dan Belanja Negara dengan perkembangan dan atau perubahan keadaan dibahas bersama - sa ma oleh Dewan Perwakilan Rakyat dengan Pemerintah dalam rangka penyusunan perkiratas Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1996/1997." .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001> legal:ayatHasRawText "Pada pertengahan Tahun Anggaran 1996/1997 Pemeri ntah membuat laporan Semester I mengenai:\na. Realisasi Penerimaan Dalam Negeri;\nb. Realisasi Penerimaan Pembangunan;\nc. Realisasi Pengeluaran Rutin;\nd. Realisasi Pengeluaran Pembangunan;\ne. Perkembangan Moneter dan Perkreditan;\nf. Perkembangan Neraca Pembayaran dan Perdagangan Luar Negeri.\n" .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/description> legal:textHasTextString "Pada pertengahan Tahun Anggaran 1996/1997 Pemeri ntah membuat laporan Semester I mengenai:" .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/description> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/a> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/a/text> legal:textHasTextString "Realisasi Penerimaan Dalam Negeri;" .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/a/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/b> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/b/text> legal:textHasTextString "Realisasi Penerimaan Pembangunan;" .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/b> legal:pointHasText <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/b/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/c> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/c/text> legal:textHasTextString "Realisasi Pengeluaran Rutin;" .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/c> legal:pointHasText <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/c/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/d> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/d/text> legal:textHasTextString "Realisasi Pengeluaran Pembangunan;" .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/d> legal:pointHasText <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/d/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/e> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/e> legal:pointHasKey "e" .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/e/text> legal:textHasTextString "Perkembangan Moneter dan Perkreditan;" .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/e> legal:pointHasText <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/e/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/f> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/f> legal:pointHasKey "f" .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/f/text> legal:textHasTextString "Perkembangan Neraca Pembayaran dan Perdagangan Luar Negeri." .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/f> legal:pointHasText <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/f/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0002> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0002> legal:ayatHasRawText "Dalam laporan sebagaimana dimaksud dalam ayat (1) Pemerintah menyusun prognosa untuk 6 (enam) bulan berikutnya." .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0002/text> legal:textHasTextString "Dalam laporan sebagaimana dimaksud dalam ayat (1) Pemerintah menyusun prognosa untuk 6 (enam) bulan berikutnya." .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0002/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0003> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0003> legal:ayatHasRawText "Laporan sebagaimana dimaksud dalam ayat (1) dan ayat (2) disampaikan kepad a Dewan Perwakilan Rakyat selambat - lambatnya akhir bulan Oktober untuk dibahas bersama oleh Dewan Perwakilan Rakyat dengan Pemerintah." .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0003/text> legal:textHasTextString "Laporan sebagaimana dimaksud dalam ayat (1) dan ayat (2) disampaikan kepad a Dewan Perwakilan Rakyat selambat - lambatnya akhir bulan Oktober untuk dibahas bersama oleh Dewan Perwakilan Rakyat dengan Pemerintah." .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0003/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0002> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0004> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0004> legal:ayatHasKey 4 .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0004> legal:ayatHasRawText "Penyesuaian Anggaran Pendapatan dan Belanja Negara dengan perkembangan dan atau perubahan keadaan dibahas bersama - sa ma oleh Dewan Perwakilan Rakyat dengan Pemerintah dalam rangka penyusunan perkiratas Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1996/1997." .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0004/text> legal:textHasTextString "Penyesuaian Anggaran Pendapatan dan Belanja Negara dengan perkembangan dan atau perubahan keadaan dibahas bersama - sa ma oleh Dewan Perwakilan Rakyat dengan Pemerintah dalam rangka penyusunan perkiratas Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1996/1997." .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0004/text> .
+<http://example.org/legal/document/uu/1996/2/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1996/2/pasal/0009> .
+<http://example.org/legal/document/uu/1996/2/pasal/0009> legal:pasalHasKey 9 .
+<http://example.org/legal/document/uu/1996/2/pasal/0009> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322> .
+<http://example.org/legal/document/uu/1996/2> legal:documentHasPasal <http://example.org/legal/document/uu/1996/2/pasal/0009> .
+<http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322> legal:pasalVersionHasVersionDate "1996-03-22"^^xsd:date .
+<http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322> legal:pasalVersionHasRawText "(1). Sisa kredit anggaran proyek - proyek pada Pengeluaran Pembangunan Tahun Anggaran 1996/1997 yan g masih diperlukan untuk penyelesaian proyek, dengan Peraturan Pemerintah dipindahkan ke Tahun Anggaran 1997/1998 menjadi kredit angaran Tahun Anggaran 1997/1998.\n(2). Peraturan Pemerintah sebagaimana dimaksud dalam ayat (1) disapaikan kepada Dewan Perwaki lan Rakyat dan Badan Pemeriksa Keuangan selambat - lambatnya pada akhir triwulan I Tahun Anggaran 1997/1998." .
+<http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322/ayat> .
+<http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322/ayat/0001> .
+<http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322/ayat/0001> legal:ayatHasRawText "Sisa kredit anggaran proyek - proyek pada Pengeluaran Pembangunan Tahun Anggaran 1996/1997 yan g masih diperlukan untuk penyelesaian proyek, dengan Peraturan Pemerintah dipindahkan ke Tahun Anggaran 1997/1998 menjadi kredit angaran Tahun Anggaran 1997/1998." .
+<http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322/ayat/0001/text> legal:textHasTextString "Sisa kredit anggaran proyek - proyek pada Pengeluaran Pembangunan Tahun Anggaran 1996/1997 yan g masih diperlukan untuk penyelesaian proyek, dengan Peraturan Pemerintah dipindahkan ke Tahun Anggaran 1997/1998 menjadi kredit angaran Tahun Anggaran 1997/1998." .
+<http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322/ayat/0001/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322/ayat/0002> .
+<http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322/ayat/0002> legal:ayatHasRawText "Peraturan Pemerintah sebagaimana dimaksud dalam ayat (1) disapaikan kepada Dewan Perwaki lan Rakyat dan Badan Pemeriksa Keuangan selambat - lambatnya pada akhir triwulan I Tahun Anggaran 1997/1998." .
+<http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322/ayat/0002/text> legal:textHasTextString "Peraturan Pemerintah sebagaimana dimaksud dalam ayat (1) disapaikan kepada Dewan Perwaki lan Rakyat dan Badan Pemeriksa Keuangan selambat - lambatnya pada akhir triwulan I Tahun Anggaran 1997/1998." .
+<http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322/ayat/0002/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322/ayat/0001> .
+<http://example.org/legal/document/uu/1996/2/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1996/2/pasal/0010> .
+<http://example.org/legal/document/uu/1996/2/pasal/0010> legal:pasalHasKey 10 .
+<http://example.org/legal/document/uu/1996/2/pasal/0010> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1996/2/pasal/0010/version/19960322> .
+<http://example.org/legal/document/uu/1996/2> legal:documentHasPasal <http://example.org/legal/document/uu/1996/2/pasal/0010> .
+<http://example.org/legal/document/uu/1996/2/pasal/0010/version/19960322> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1996/2/pasal/0010/version/19960322> legal:pasalVersionHasVersionDate "1996-03-22"^^xsd:date .
+<http://example.org/legal/document/uu/1996/2/pasal/0010/version/19960322> legal:pasalVersionHasRawText "Sisa Anggaran Lebih Tahun Anggaran 1996/1997 dapat digunakan untuk membiayai angaran belanja negara tahun - tahun anggaran berikutnya. PRESIDEN REPUBLIK INDONESIA - 9 -" .
+<http://example.org/legal/document/uu/1996/2/pasal/0010/version/19960322/text> legal:textHasTextString "Sisa Anggaran Lebih Tahun Anggaran 1996/1997 dapat digunakan untuk membiayai angaran belanja negara tahun - tahun anggaran berikutnya. PRESIDEN REPUBLIK INDONESIA - 9 -" .
+<http://example.org/legal/document/uu/1996/2/pasal/0010/version/19960322> legal:pasalVersionHasText <http://example.org/legal/document/uu/1996/2/pasal/0010/version/19960322/text> .
+<http://example.org/legal/document/uu/1996/2/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1996/2/pasal/0011> .
+<http://example.org/legal/document/uu/1996/2/pasal/0011> legal:pasalHasKey 11 .
+<http://example.org/legal/document/uu/1996/2/pasal/0011> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1996/2/pasal/0011/version/19960322> .
+<http://example.org/legal/document/uu/1996/2> legal:documentHasPasal <http://example.org/legal/document/uu/1996/2/pasal/0011> .
+<http://example.org/legal/document/uu/1996/2/pasal/0011/version/19960322> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1996/2/pasal/0011/version/19960322> legal:pasalVersionHasVersionDate "1996-03-22"^^xsd:date .
+<http://example.org/legal/document/uu/1996/2/pasal/0011/version/19960322> legal:pasalVersionHasRawText "Pemerintah mengajukan Rancangan Undang - undang tentang Perubahan atas Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1996/1997 berdasarkan Perubahan sebagaimana dimaksud dalam Pasal 8 ayat (4) untuk mendapatkan persetujuan Dewan P erwakilan Rakyat sebelum Tahun Anggaran 1996/1997 berakhir." .
+<http://example.org/legal/document/uu/1996/2/pasal/0011/version/19960322/text> legal:textHasTextString "Pemerintah mengajukan Rancangan Undang - undang tentang Perubahan atas Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1996/1997 berdasarkan Perubahan sebagaimana dimaksud dalam Pasal 8 ayat (4) untuk mendapatkan persetujuan Dewan P erwakilan Rakyat sebelum Tahun Anggaran 1996/1997 berakhir." .
+<http://example.org/legal/document/uu/1996/2/pasal/0011/version/19960322> legal:pasalVersionHasText <http://example.org/legal/document/uu/1996/2/pasal/0011/version/19960322/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0011/version/19960322/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1996/2/pasal/0011/version/19960322/ayat/0004> .
+<http://example.org/legal/document/uu/1996/2/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1996/2/pasal/0012> .
+<http://example.org/legal/document/uu/1996/2/pasal/0012> legal:pasalHasKey 12 .
+<http://example.org/legal/document/uu/1996/2/pasal/0012> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322> .
+<http://example.org/legal/document/uu/1996/2> legal:documentHasPasal <http://example.org/legal/document/uu/1996/2/pasal/0012> .
+<http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322> legal:pasalVersionHasVersionDate "1996-03-22"^^xsd:date .
+<http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322> legal:pasalVersionHasRawText "(1). Setelah Tahun Anggaran 1996/1997 berakhir, Pemerintah membuat Perhitungan Anggaran Negara mengenai pelaksanaan anggaran yang bersangkutan.\n(2). Perhitungan Anggaran Negara sebagaima na dimaksud dalam ayat (1) setelah diperiksa oleh Badan Pemeriksa Keuangan disampaikan oleh Pemerintah kepada Dewan Perwakilan Rakyat selambat - lambatnya 18 (delapan belas) bulan setelah Tahun Anggaran 1996/1997." .
+<http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322/ayat> .
+<http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322/ayat/0001> .
+<http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322/ayat/0001> legal:ayatHasRawText "Setelah Tahun Anggaran 1996/1997 berakhir, Pemerintah membuat Perhitungan Anggaran Negara mengenai pelaksanaan anggaran yang bersangkutan." .
+<http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322/ayat/0001/text> legal:textHasTextString "Setelah Tahun Anggaran 1996/1997 berakhir, Pemerintah membuat Perhitungan Anggaran Negara mengenai pelaksanaan anggaran yang bersangkutan." .
+<http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322/ayat/0001/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322/ayat/0002> .
+<http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322/ayat/0002> legal:ayatHasRawText "Perhitungan Anggaran Negara sebagaima na dimaksud dalam ayat (1) setelah diperiksa oleh Badan Pemeriksa Keuangan disampaikan oleh Pemerintah kepada Dewan Perwakilan Rakyat selambat - lambatnya 18 (delapan belas) bulan setelah Tahun Anggaran 1996/1997." .
+<http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322/ayat/0002/text> legal:textHasTextString "Perhitungan Anggaran Negara sebagaima na dimaksud dalam ayat (1) setelah diperiksa oleh Badan Pemeriksa Keuangan disampaikan oleh Pemerintah kepada Dewan Perwakilan Rakyat selambat - lambatnya 18 (delapan belas) bulan setelah Tahun Anggaran 1996/1997." .
+<http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322/ayat/0002/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322/ayat/0001> .
+<http://example.org/legal/document/uu/1996/2/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1996/2/pasal/0013> .
+<http://example.org/legal/document/uu/1996/2/pasal/0013> legal:pasalHasKey 13 .
+<http://example.org/legal/document/uu/1996/2/pasal/0013> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1996/2/pasal/0013/version/19960322> .
+<http://example.org/legal/document/uu/1996/2> legal:documentHasPasal <http://example.org/legal/document/uu/1996/2/pasal/0013> .
+<http://example.org/legal/document/uu/1996/2/pasal/0013/version/19960322> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1996/2/pasal/0013/version/19960322> legal:pasalVersionHasVersionDate "1996-03-22"^^xsd:date .
+<http://example.org/legal/document/uu/1996/2/pasal/0013/version/19960322> legal:pasalVersionHasRawText "Ketentuan - ketentuan dalam Indisch e Comptabiliteitswet (Staatsblad Tahun 1925 Nomor 448) sebagaimana telah beberapa kali diubah, terakhir dengan Undang - undang Nomor 9 Tahun 1968 tentang Perubahan Pasal 7 Indische Comptabiliteitswet (Lembaran Negara Tahun 1968 Nomor 53, Tambahan Lembaran Ne gara Nomor 2860) yang bertentangan dengan bentuk, susunan, dan isi Undang - undang ini dinyatakan tidak berlaku." .
+<http://example.org/legal/document/uu/1996/2/pasal/0013/version/19960322/text> legal:textHasTextString "Ketentuan - ketentuan dalam Indisch e Comptabiliteitswet (Staatsblad Tahun 1925 Nomor 448) sebagaimana telah beberapa kali diubah, terakhir dengan Undang - undang Nomor 9 Tahun 1968 tentang Perubahan Pasal 7 Indische Comptabiliteitswet (Lembaran Negara Tahun 1968 Nomor 53, Tambahan Lembaran Ne gara Nomor 2860) yang bertentangan dengan bentuk, susunan, dan isi Undang - undang ini dinyatakan tidak berlaku." .
+<http://example.org/legal/document/uu/1996/2/pasal/0013/version/19960322> legal:pasalVersionHasText <http://example.org/legal/document/uu/1996/2/pasal/0013/version/19960322/text> .
+<http://example.org/legal/document/uu/1996/2/pasal/0013/version/19960322/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1996/2/pasal/0007> .
+<http://example.org/legal/document/uu/1996/2/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1996/2/pasal/0014> .
+<http://example.org/legal/document/uu/1996/2/pasal/0014> legal:pasalHasKey 14 .
+<http://example.org/legal/document/uu/1996/2/pasal/0014> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1996/2/pasal/0014/version/19960322> .
+<http://example.org/legal/document/uu/1996/2> legal:documentHasPasal <http://example.org/legal/document/uu/1996/2/pasal/0014> .
+<http://example.org/legal/document/uu/1996/2/pasal/0014/version/19960322> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1996/2/pasal/0014/version/19960322> legal:pasalVersionHasVersionDate "1996-03-22"^^xsd:date .
+<http://example.org/legal/document/uu/1996/2/pasal/0014/version/19960322> legal:pasalVersionHasRawText "Undang - undang ini mulai berlaku pada tanggal 1 April 1996. PRESIDEN REPUBLIK INDONESIA - 10 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1996/2/pasal/0014/version/19960322/text> legal:textHasTextString "Undang - undang ini mulai berlaku pada tanggal 1 April 1996. PRESIDEN REPUBLIK INDONESIA - 10 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1996/2/pasal/0014/version/19960322> legal:pasalVersionHasText <http://example.org/legal/document/uu/1996/2/pasal/0014/version/19960322/text> .
 <http://example.org/legal/document/uu/1996/2> legal:documentHasDisahkanDate "1996-03-22"^^xsd:date .
 <http://example.org/legal/document/uu/1996/2> legal:documentMengingat <http://example.org/legal/document/uu/1996/2/mengingat> .
 <http://example.org/legal/document/uu/1996/2/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1996/2/mengingat/point> .
@@ -43,6 +413,153 @@
 <http://example.org/legal/document/uu/1996/2> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/1996/2> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA" .
 <http://example.org/legal/document/uu/1996/2> a legal:Document .
+<http://example.org/legal/document/uu/1996/2/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1996/2/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0003> a legal:Point .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0004> a legal:Point .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0005> a legal:Point .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0005/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0006> a legal:Point .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0006/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0007> a legal:Point .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0007/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0008> a legal:Point .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0008/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0009> a legal:Point .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0009/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0010> a legal:Point .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0010/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0011> a legal:Point .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0011/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0012> a legal:Point .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0012/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0004> a legal:Ayat .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0004> a legal:Pasal .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0004> a legal:Ayat .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0005> a legal:Pasal .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0004> a legal:Ayat .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0006> a legal:Pasal .
+<http://example.org/legal/document/uu/1996/2/pasal/0006/version/19960322> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1996/2/pasal/0006/version/19960322/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0007> a legal:Pasal .
+<http://example.org/legal/document/uu/1996/2/pasal/0007/version/19960322> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1996/2/pasal/0007/version/19960322/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0008> a legal:Pasal .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/description> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point> a legal:PointSet .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/a> a legal:Point .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/b> a legal:Point .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/c> a legal:Point .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/d> a legal:Point .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/e> a legal:Point .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/e/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/f> a legal:Point .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/f/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0004> a legal:Ayat .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0009> a legal:Pasal .
+<http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0010> a legal:Pasal .
+<http://example.org/legal/document/uu/1996/2/pasal/0010/version/19960322> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1996/2/pasal/0010/version/19960322/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0011> a legal:Pasal .
+<http://example.org/legal/document/uu/1996/2/pasal/0011/version/19960322> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1996/2/pasal/0011/version/19960322/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0012> a legal:Pasal .
+<http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0013> a legal:Pasal .
+<http://example.org/legal/document/uu/1996/2/pasal/0013/version/19960322> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1996/2/pasal/0013/version/19960322/text> a legal:Text .
+<http://example.org/legal/document/uu/1996/2/pasal/0014> a legal:Pasal .
+<http://example.org/legal/document/uu/1996/2/pasal/0014/version/19960322> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1996/2/pasal/0014/version/19960322/text> a legal:Text .
 <http://example.org/legal/document/uu/1996/2/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1996/2/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/1996/2/mengingat/point> a legal:PointSet .
@@ -63,7 +580,127 @@
 <http://example.org/legal/document/uu/1996/2/menimbang/point/d/text> a legal:Text .
 <http://example.org/legal/document/uu/1996/2/menimbang/point/e> a legal:Point .
 <http://example.org/legal/document/uu/1996/2/menimbang/point/e/text> a legal:Text .
-<http://example.org/legal/document/uu/1996/2/bab> legal:partOf <http://example.org/legal/document/uu/1996/2> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1996/2/pasals> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0001> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1996/2> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0001> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0002> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0003> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0004> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0005> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0006> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0007> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0008> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0009> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0010> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0011> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point/0012> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0001/version/19960322/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1996/2/pasals> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0002> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1996/2> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001/point/a> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001/point/b> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0001/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0002> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0003> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0004> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat> .
+<http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0002/version/19960322/ayat/0004> .
+<http://example.org/legal/document/uu/1996/2/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1996/2/pasals> .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0003> .
+<http://example.org/legal/document/uu/1996/2/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1996/2> .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322> .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat> .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001> .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point/a> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point/b> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point/c> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0001/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat> .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002/point> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002> .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002/point/a> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002/point/b> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0003/version/19960322/ayat/0002/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1996/2/pasals> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0004> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1996/2> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001/point/a> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001/point/b> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0001/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0002> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0003> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0004> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat> .
+<http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0004/version/19960322/ayat/0004> .
+<http://example.org/legal/document/uu/1996/2/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1996/2/pasals> .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0005> .
+<http://example.org/legal/document/uu/1996/2/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1996/2> .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322> .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat> .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0001> .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat> .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0002> .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat> .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0003> .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0004> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat> .
+<http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0005/version/19960322/ayat/0004> .
+<http://example.org/legal/document/uu/1996/2/pasal/0006> legal:partOf <http://example.org/legal/document/uu/1996/2/pasals> .
+<http://example.org/legal/document/uu/1996/2/pasal/0006/version/19960322> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0006> .
+<http://example.org/legal/document/uu/1996/2/pasal/0006> legal:partOf <http://example.org/legal/document/uu/1996/2> .
+<http://example.org/legal/document/uu/1996/2/pasal/0007> legal:partOf <http://example.org/legal/document/uu/1996/2/pasals> .
+<http://example.org/legal/document/uu/1996/2/pasal/0007/version/19960322> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0007> .
+<http://example.org/legal/document/uu/1996/2/pasal/0007> legal:partOf <http://example.org/legal/document/uu/1996/2> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008> legal:partOf <http://example.org/legal/document/uu/1996/2/pasals> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0008> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008> legal:partOf <http://example.org/legal/document/uu/1996/2> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/a> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/b> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/c> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/d> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/e> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point/f> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0001/point> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0002> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0003> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0004> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat> .
+<http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0008/version/19960322/ayat/0004> .
+<http://example.org/legal/document/uu/1996/2/pasal/0009> legal:partOf <http://example.org/legal/document/uu/1996/2/pasals> .
+<http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0009> .
+<http://example.org/legal/document/uu/1996/2/pasal/0009> legal:partOf <http://example.org/legal/document/uu/1996/2> .
+<http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322/ayat> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322> .
+<http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322/ayat> .
+<http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322/ayat/0001> .
+<http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322/ayat> .
+<http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0009/version/19960322/ayat/0002> .
+<http://example.org/legal/document/uu/1996/2/pasal/0010> legal:partOf <http://example.org/legal/document/uu/1996/2/pasals> .
+<http://example.org/legal/document/uu/1996/2/pasal/0010/version/19960322> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0010> .
+<http://example.org/legal/document/uu/1996/2/pasal/0010> legal:partOf <http://example.org/legal/document/uu/1996/2> .
+<http://example.org/legal/document/uu/1996/2/pasal/0011> legal:partOf <http://example.org/legal/document/uu/1996/2/pasals> .
+<http://example.org/legal/document/uu/1996/2/pasal/0011/version/19960322> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0011> .
+<http://example.org/legal/document/uu/1996/2/pasal/0011> legal:partOf <http://example.org/legal/document/uu/1996/2> .
+<http://example.org/legal/document/uu/1996/2/pasal/0012> legal:partOf <http://example.org/legal/document/uu/1996/2/pasals> .
+<http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0012> .
+<http://example.org/legal/document/uu/1996/2/pasal/0012> legal:partOf <http://example.org/legal/document/uu/1996/2> .
+<http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322/ayat> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322> .
+<http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322/ayat> .
+<http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322/ayat/0001> .
+<http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322/ayat> .
+<http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0012/version/19960322/ayat/0002> .
+<http://example.org/legal/document/uu/1996/2/pasal/0013> legal:partOf <http://example.org/legal/document/uu/1996/2/pasals> .
+<http://example.org/legal/document/uu/1996/2/pasal/0013/version/19960322> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0013> .
+<http://example.org/legal/document/uu/1996/2/pasal/0013> legal:partOf <http://example.org/legal/document/uu/1996/2> .
+<http://example.org/legal/document/uu/1996/2/pasal/0014> legal:partOf <http://example.org/legal/document/uu/1996/2/pasals> .
+<http://example.org/legal/document/uu/1996/2/pasal/0014/version/19960322> legal:partOf <http://example.org/legal/document/uu/1996/2/pasal/0014> .
+<http://example.org/legal/document/uu/1996/2/pasal/0014> legal:partOf <http://example.org/legal/document/uu/1996/2> .
 <http://example.org/legal/document/uu/1996/2/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1996/2/mengingat/point> .
 <http://example.org/legal/document/uu/1996/2/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1996/2/mengingat/point> .
 <http://example.org/legal/document/uu/1996/2/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1996/2/menimbang/point> .

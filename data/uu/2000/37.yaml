@@ -325,18 +325,71 @@ opText: |-
   TAHUN 2000 TENTANG KAWASAN PE RDAGANGAN BEBAS
   DAN PELABUHAN BEBAS SABANG MENJADI
   UNDANG - UNDANG.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_16
+          nodeType: pasalVersion
+          version: &ref_17
+            nodeType: date
+            month: 12
+            date: 21
+            year: 2000
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_16
+          textString: >-
+            Peraturan Pemerintah Pengganti Undang - undang Nomor 2 Tahun 2000 tentang Kawasan
+            Perdagangan Bebas dan Pelabuhan Bebas Sabang ( Lembaran Negara Republik Indonesia Tahun
+            2000 Nomor 148, Tambahan Lembaran Negara Nomor 3997) ditetapkan menjadi Undang - undang,
+            dan melampirkannya sebagai bagian yang tidak terpisahkan dari Undang - undang ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_18
+          nodeType: pasalVersion
+          version: *ref_17
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_18
+          textString: >-
+            Undang - undang ini mulai berlaku sejak tanggal diundangkan. Agar setiap orang
+            mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 12
-    date: 21
-    year: 2000
+  date: *ref_17
   location: Jakarta
   pengesah: ABDURRAHMAN WAHID
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

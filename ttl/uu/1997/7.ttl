@@ -1,7 +1,27 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1997/7> legal:documentHasBabSet <http://example.org/legal/document/uu/1997/7/bab> .
+<http://example.org/legal/document/uu/1997/7> legal:documentHasPasalSet <http://example.org/legal/document/uu/1997/7/pasals> .
+<http://example.org/legal/document/uu/1997/7/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1997/7/pasal/0001> .
+<http://example.org/legal/document/uu/1997/7/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1997/7/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1997/7/pasal/0001/version/19970324> .
+<http://example.org/legal/document/uu/1997/7> legal:documentHasPasal <http://example.org/legal/document/uu/1997/7/pasal/0001> .
+<http://example.org/legal/document/uu/1997/7/pasal/0001/version/19970324> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1997/7/pasal/0001/version/19970324> legal:pasalVersionHasVersionDate "1997-03-24"^^xsd:date .
+<http://example.org/legal/document/uu/1997/7/pasal/0001/version/19970324> legal:pasalVersionHasRawText "Mengesahkan United Nations Convention Against Illicit Traffic in Narcotic Drugs and Psychotropic Substances, 1988 (Konvensi Perserikatan Bangsa - Bangsa tentang Pemberantasan Peredaran Gelap Narkotika dan Psikotropika, 1988) dengan Reservation (Persyaratan ) terhadap Pasal 32 ayat (2) dan ayat (3) yang bunyi lengkap Persyaratan itu dalam bahasa Inggeris dan terjemahannya dalam bahasa Indonesia serta salinan naskah asli United Nations Convention Against Illicit Traffic in Narcotic Drugs and Psychotropic Subst ances, 1988 (Konvensi Perserikatan Bangsa - Bangsa tentang Pemberantasan Peredaran Gelap Narkotika dan Psikotropika, 1988) dalam bahasa Inggeris serta terjemahannya dalam bahasa Indonesia sebagaimana terlampir, merupakan bagian yang tidak terpisahkan dari Un dang - undang." .
+<http://example.org/legal/document/uu/1997/7/pasal/0001/version/19970324/text> legal:textHasTextString "Mengesahkan United Nations Convention Against Illicit Traffic in Narcotic Drugs and Psychotropic Substances, 1988 (Konvensi Perserikatan Bangsa - Bangsa tentang Pemberantasan Peredaran Gelap Narkotika dan Psikotropika, 1988) dengan Reservation (Persyaratan ) terhadap Pasal 32 ayat (2) dan ayat (3) yang bunyi lengkap Persyaratan itu dalam bahasa Inggeris dan terjemahannya dalam bahasa Indonesia serta salinan naskah asli United Nations Convention Against Illicit Traffic in Narcotic Drugs and Psychotropic Subst ances, 1988 (Konvensi Perserikatan Bangsa - Bangsa tentang Pemberantasan Peredaran Gelap Narkotika dan Psikotropika, 1988) dalam bahasa Inggeris serta terjemahannya dalam bahasa Indonesia sebagaimana terlampir, merupakan bagian yang tidak terpisahkan dari Un dang - undang." .
+<http://example.org/legal/document/uu/1997/7/pasal/0001/version/19970324> legal:pasalVersionHasText <http://example.org/legal/document/uu/1997/7/pasal/0001/version/19970324/text> .
+<http://example.org/legal/document/uu/1997/7/pasal/0001/version/19970324/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1997/7/pasal/0001/version/19970324/ayat/0002> .
+<http://example.org/legal/document/uu/1997/7/pasal/0001/version/19970324/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1997/7/pasal/0001/version/19970324/ayat/0003> .
+<http://example.org/legal/document/uu/1997/7/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1997/7/pasal/0002> .
+<http://example.org/legal/document/uu/1997/7/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1997/7/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1997/7/pasal/0002/version/19970324> .
+<http://example.org/legal/document/uu/1997/7> legal:documentHasPasal <http://example.org/legal/document/uu/1997/7/pasal/0002> .
+<http://example.org/legal/document/uu/1997/7/pasal/0002/version/19970324> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1997/7/pasal/0002/version/19970324> legal:pasalVersionHasVersionDate "1997-03-24"^^xsd:date .
+<http://example.org/legal/document/uu/1997/7/pasal/0002/version/19970324> legal:pasalVersionHasRawText "Undang - undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA - 4 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1997/7/pasal/0002/version/19970324/text> legal:textHasTextString "Undang - undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA - 4 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1997/7/pasal/0002/version/19970324> legal:pasalVersionHasText <http://example.org/legal/document/uu/1997/7/pasal/0002/version/19970324/text> .
 <http://example.org/legal/document/uu/1997/7> legal:documentHasDisahkanDate "1997-03-24"^^xsd:date .
 <http://example.org/legal/document/uu/1997/7> legal:documentMengingat <http://example.org/legal/document/uu/1997/7/mengingat> .
 <http://example.org/legal/document/uu/1997/7/mengingat/text> legal:textHasTextString "Pasal 5 ayat (1) Pasal 11, dan Pasal 20 ayat (1) Undang - Undang Dasar 1945; Dengan persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN Menetapkan : UNDANG - UNDANG TENTANG PENGESAHAN UNITED NATION CONVENTION AGAINST ILLICIT TRAFFIC IN NARCOTIC DRUGS AND PSYCHOTROPIC SUBSTANCES, 1988 (KONVENSI PERSERIKATAN BANGSA - BANGSA TENTANG PEMBERANTASAN PEREDARAN GELAP NARKOTIKA DAN PSIKOTROPIKA, 1988) PRESIDEN REPUBLIK INDONESIA - 3 -" .
@@ -38,6 +58,13 @@
 <http://example.org/legal/document/uu/1997/7> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/1997/7> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/1997/7> a legal:Document .
+<http://example.org/legal/document/uu/1997/7/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1997/7/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1997/7/pasal/0001/version/19970324> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1997/7/pasal/0001/version/19970324/text> a legal:Text .
+<http://example.org/legal/document/uu/1997/7/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1997/7/pasal/0002/version/19970324> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1997/7/pasal/0002/version/19970324/text> a legal:Text .
 <http://example.org/legal/document/uu/1997/7/mengingat/text> a legal:Text .
 <http://example.org/legal/document/uu/1997/7/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1997/7/menimbang> a legal:Menimbang .
@@ -55,7 +82,12 @@
 <http://example.org/legal/document/uu/1997/7/menimbang/point/e/text> a legal:Text .
 <http://example.org/legal/document/uu/1997/7/menimbang/point/f> a legal:Point .
 <http://example.org/legal/document/uu/1997/7/menimbang/point/f/text> a legal:Text .
-<http://example.org/legal/document/uu/1997/7/bab> legal:partOf <http://example.org/legal/document/uu/1997/7> .
+<http://example.org/legal/document/uu/1997/7/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1997/7/pasals> .
+<http://example.org/legal/document/uu/1997/7/pasal/0001/version/19970324> legal:partOf <http://example.org/legal/document/uu/1997/7/pasal/0001> .
+<http://example.org/legal/document/uu/1997/7/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1997/7> .
+<http://example.org/legal/document/uu/1997/7/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1997/7/pasals> .
+<http://example.org/legal/document/uu/1997/7/pasal/0002/version/19970324> legal:partOf <http://example.org/legal/document/uu/1997/7/pasal/0002> .
+<http://example.org/legal/document/uu/1997/7/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1997/7> .
 <http://example.org/legal/document/uu/1997/7/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1997/7/menimbang/point> .
 <http://example.org/legal/document/uu/1997/7/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1997/7/menimbang/point> .
 <http://example.org/legal/document/uu/1997/7/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/1997/7/menimbang/point> .

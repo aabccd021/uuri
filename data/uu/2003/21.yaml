@@ -199,18 +199,72 @@ opText: |-
   CONCERNING LABOUR INSPECTION IN INDUSTRY AND COMMERCE (KONVENSI
   ILO NO. 81 MENGENAI PENGAWASAN KETENAGAKERJAAN DALAM INDUSTRI DAN
   PERDAGANGAN).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_11
+          nodeType: pasalVersion
+          version: &ref_12
+            nodeType: date
+            month: 7
+            date: 25
+            year: 2003
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_11
+          textString: >-
+            Mengesahkan /LO Convention No. 81 Concerning Labour Inspection in Industry and Commerce
+            (Konvensi ILO No. 81 mengenai Pengawasan Ketenagakerjaan Dalam Industri dan Perdagangan)
+            yang salinan naskah aslinya dalam bahasa Inggris dan bahasa Perancis, dan terjemahannya
+            dalam bahasa Indonesia sebagaimana terlampir merupakan bagian yang tidak terpisahkan
+            dari Undang-undang ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_13
+          nodeType: pasalVersion
+          version: *ref_12
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_13
+          textString: >-
+            Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang
+            mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 7
-    date: 25
-    year: 2003
+  date: *ref_12
   location: Jakarta
   pengesah: MEGAWATI SOEKARNOPUTRI
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

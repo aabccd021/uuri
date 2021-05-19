@@ -194,18 +194,71 @@ opText: |-
   PEMERINTAH PENGGANTI UNDANG-UNDANG NOMOR 1 TAHUN
   2002 TENTANG PEMBERANTASAN TINDAK PIDANA TERORISME,
   MENJADI UNDANG-UNDANG.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_9
+          nodeType: pasalVersion
+          version: &ref_10
+            nodeType: date
+            month: 4
+            date: 4
+            year: 2003
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_9
+          textString: >-
+            Peraturan Pemerintah Pengganti Undang-undang Nomor 1 Tahun 2002 tentang Pemberantasan
+            Tindak Pidana Terorisme (Lembaran Negara Republik Indonesia Tahun 2002 Nomor 106,
+            Tambahan Lembaran Negara Republik Indonesia Nomor 4232) ditetapkan menjadi
+            Undang-undang. PRESIDEN REPUBLIK INDONESIA -3-
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_11
+          nodeType: pasalVersion
+          version: *ref_10
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_11
+          textString: >-
+            Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang
+            mengetahuinya, memerintahkan pengundangan Undang- undang ini dengan penempatannya dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 4
-    date: 4
-    year: 2003
+  date: *ref_10
   location: Jakarta
   pengesah: MEGAWATI SOEKARNOPUTRI
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

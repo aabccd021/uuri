@@ -186,18 +186,73 @@ opText: |-
   TIMBAL BALIK DALAM MASALAH PIDANA (TREATY BETWEEN
   THE REPUBLIC OF INDONESIA AND AUSTRALIA ON MUTUAL
   ASSISTANCE IN CRIMINAL MATTERS).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_9
+          nodeType: pasalVersion
+          version: &ref_10
+            nodeType: date
+            month: 1
+            date: 27
+            year: 1999
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_9
+          textString: >-
+            Mengesahkan Perjanjian Kerjasama Antara Republik Indonesia dan Australia Mengenai
+            Bantuan Timbal Balik dalam Masalah Pidana (Treaty between the Republic of Indonesia and
+            Australia on Mutual Assistance in Criminal Matters) yang telah ditandatangani pada
+            tanggal 27 Oktober 1995 di Jakarta yang salinan naskah aslinya dalam bahasa Indonesia
+            dan bahasa Inggeris sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan
+            dari Undang-undang ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_11
+          nodeType: pasalVersion
+          version: *ref_10
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_11
+          textString: >-
+            Undang-undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA 3
+            Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan
+            penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 1
-    date: 27
-    year: 1999
+  date: *ref_10
   location: Jakarta
   pengesah: BACHARUDDIN JUSUF HABIBIE
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA

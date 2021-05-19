@@ -1,7 +1,25 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1998/6> legal:documentHasBabSet <http://example.org/legal/document/uu/1998/6/bab> .
+<http://example.org/legal/document/uu/1998/6> legal:documentHasPasalSet <http://example.org/legal/document/uu/1998/6/pasals> .
+<http://example.org/legal/document/uu/1998/6/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1998/6/pasal/0001> .
+<http://example.org/legal/document/uu/1998/6/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1998/6/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1998/6/pasal/0001/version/19980930> .
+<http://example.org/legal/document/uu/1998/6> legal:documentHasPasal <http://example.org/legal/document/uu/1998/6/pasal/0001> .
+<http://example.org/legal/document/uu/1998/6/pasal/0001/version/19980930> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1998/6/pasal/0001/version/19980930> legal:pasalVersionHasVersionDate "1998-09-30"^^xsd:date .
+<http://example.org/legal/document/uu/1998/6/pasal/0001/version/19980930> legal:pasalVersionHasRawText "Mengesahkan Convention on the Prohibition of the Development, Production, Stockpiling and Use of Chemical Weapons and on their De struction (Konvensi tentang Pelarangan Pengembangan, Produksi, Penimbunan, dan Penggunaan Senjata Kimia serta tentang Pemusnahannya) yang salinan naskah asli beserta lampiran - lampirannya dalam bahasa Inggeris, dan terjemahannya dalam bahasa Indonesia sebag aimana terlampir merupakan bagian yang tidak terpisahkan dari Undang - undang ini." .
+<http://example.org/legal/document/uu/1998/6/pasal/0001/version/19980930/text> legal:textHasTextString "Mengesahkan Convention on the Prohibition of the Development, Production, Stockpiling and Use of Chemical Weapons and on their De struction (Konvensi tentang Pelarangan Pengembangan, Produksi, Penimbunan, dan Penggunaan Senjata Kimia serta tentang Pemusnahannya) yang salinan naskah asli beserta lampiran - lampirannya dalam bahasa Inggeris, dan terjemahannya dalam bahasa Indonesia sebag aimana terlampir merupakan bagian yang tidak terpisahkan dari Undang - undang ini." .
+<http://example.org/legal/document/uu/1998/6/pasal/0001/version/19980930> legal:pasalVersionHasText <http://example.org/legal/document/uu/1998/6/pasal/0001/version/19980930/text> .
+<http://example.org/legal/document/uu/1998/6/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1998/6/pasal/0002> .
+<http://example.org/legal/document/uu/1998/6/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1998/6/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1998/6/pasal/0002/version/19980930> .
+<http://example.org/legal/document/uu/1998/6> legal:documentHasPasal <http://example.org/legal/document/uu/1998/6/pasal/0002> .
+<http://example.org/legal/document/uu/1998/6/pasal/0002/version/19980930> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1998/6/pasal/0002/version/19980930> legal:pasalVersionHasVersionDate "1998-09-30"^^xsd:date .
+<http://example.org/legal/document/uu/1998/6/pasal/0002/version/19980930> legal:pasalVersionHasRawText "Undang - undang ini mulai berlaku pada tanggal diundangkan PRESIDEN REPUBLIK INDONESIA - 4 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1998/6/pasal/0002/version/19980930/text> legal:textHasTextString "Undang - undang ini mulai berlaku pada tanggal diundangkan PRESIDEN REPUBLIK INDONESIA - 4 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1998/6/pasal/0002/version/19980930> legal:pasalVersionHasText <http://example.org/legal/document/uu/1998/6/pasal/0002/version/19980930/text> .
 <http://example.org/legal/document/uu/1998/6> legal:documentHasDisahkanDate "1998-09-30"^^xsd:date .
 <http://example.org/legal/document/uu/1998/6> legal:documentMengingat <http://example.org/legal/document/uu/1998/6/mengingat> .
 <http://example.org/legal/document/uu/1998/6/mengingat/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 11, dan Pasal 20 ayat (1) Undang - Undang Dasar 1945; PRESIDEN REPUBLIK INDONESIA - 3 - Dengan persetujuan DEWAN PERWAKILAN R AKYAT REPUBLIK INDONESIA MEMUTUSKAN : Menetapkan : UNDANG - UNDANG TENTANG PENGESAHAN CONVENTION ON THE PROHIBITION OF THE DEVELOPMENT, PRODUCTION, STOCKPILING AND USE OF CHEMICAL WEAPONS AND ON THEIR DESTRUCTION (KONVEN SI TENTANG PELARANGAN PENGEMBANGAN, PRODUKSI, PENIMBUNAN, DAN PENGGUNAAN SENJATA KIMIA SERTA TENTANG PEMUSNAHANNYA)." .
@@ -34,6 +52,13 @@
 <http://example.org/legal/document/uu/1998/6> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/1998/6> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA" .
 <http://example.org/legal/document/uu/1998/6> a legal:Document .
+<http://example.org/legal/document/uu/1998/6/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1998/6/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1998/6/pasal/0001/version/19980930> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1998/6/pasal/0001/version/19980930/text> a legal:Text .
+<http://example.org/legal/document/uu/1998/6/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1998/6/pasal/0002/version/19980930> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1998/6/pasal/0002/version/19980930/text> a legal:Text .
 <http://example.org/legal/document/uu/1998/6/mengingat/text> a legal:Text .
 <http://example.org/legal/document/uu/1998/6/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1998/6/menimbang> a legal:Menimbang .
@@ -49,7 +74,12 @@
 <http://example.org/legal/document/uu/1998/6/menimbang/point/d/text> a legal:Text .
 <http://example.org/legal/document/uu/1998/6/menimbang/point/e> a legal:Point .
 <http://example.org/legal/document/uu/1998/6/menimbang/point/e/text> a legal:Text .
-<http://example.org/legal/document/uu/1998/6/bab> legal:partOf <http://example.org/legal/document/uu/1998/6> .
+<http://example.org/legal/document/uu/1998/6/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1998/6/pasals> .
+<http://example.org/legal/document/uu/1998/6/pasal/0001/version/19980930> legal:partOf <http://example.org/legal/document/uu/1998/6/pasal/0001> .
+<http://example.org/legal/document/uu/1998/6/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1998/6> .
+<http://example.org/legal/document/uu/1998/6/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1998/6/pasals> .
+<http://example.org/legal/document/uu/1998/6/pasal/0002/version/19980930> legal:partOf <http://example.org/legal/document/uu/1998/6/pasal/0002> .
+<http://example.org/legal/document/uu/1998/6/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1998/6> .
 <http://example.org/legal/document/uu/1998/6/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1998/6/menimbang/point> .
 <http://example.org/legal/document/uu/1998/6/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1998/6/menimbang/point> .
 <http://example.org/legal/document/uu/1998/6/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/1998/6/menimbang/point> .

@@ -1,7 +1,25 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1999/1> legal:documentHasBabSet <http://example.org/legal/document/uu/1999/1/bab> .
+<http://example.org/legal/document/uu/1999/1> legal:documentHasPasalSet <http://example.org/legal/document/uu/1999/1/pasals> .
+<http://example.org/legal/document/uu/1999/1/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/1/pasal/0001> .
+<http://example.org/legal/document/uu/1999/1/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/1999/1/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/1/pasal/0001/version/19990127> .
+<http://example.org/legal/document/uu/1999/1> legal:documentHasPasal <http://example.org/legal/document/uu/1999/1/pasal/0001> .
+<http://example.org/legal/document/uu/1999/1/pasal/0001/version/19990127> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/1/pasal/0001/version/19990127> legal:pasalVersionHasVersionDate "1999-01-27"^^xsd:date .
+<http://example.org/legal/document/uu/1999/1/pasal/0001/version/19990127> legal:pasalVersionHasRawText "Mengesahkan Perjanjian Kerjasama Antara Republik Indonesia dan Australia Mengenai Bantuan Timbal Balik dalam Masalah Pidana (Treaty between the Republic of Indonesia and Australia on Mutual Assistance in Criminal Matters) yang telah ditandatangani pada tanggal 27 Oktober 1995 di Jakarta yang salinan naskah aslinya dalam bahasa Indonesia dan bahasa Inggeris sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-undang ini." .
+<http://example.org/legal/document/uu/1999/1/pasal/0001/version/19990127/text> legal:textHasTextString "Mengesahkan Perjanjian Kerjasama Antara Republik Indonesia dan Australia Mengenai Bantuan Timbal Balik dalam Masalah Pidana (Treaty between the Republic of Indonesia and Australia on Mutual Assistance in Criminal Matters) yang telah ditandatangani pada tanggal 27 Oktober 1995 di Jakarta yang salinan naskah aslinya dalam bahasa Indonesia dan bahasa Inggeris sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-undang ini." .
+<http://example.org/legal/document/uu/1999/1/pasal/0001/version/19990127> legal:pasalVersionHasText <http://example.org/legal/document/uu/1999/1/pasal/0001/version/19990127/text> .
+<http://example.org/legal/document/uu/1999/1/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/1/pasal/0002> .
+<http://example.org/legal/document/uu/1999/1/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/1999/1/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/1/pasal/0002/version/19990127> .
+<http://example.org/legal/document/uu/1999/1> legal:documentHasPasal <http://example.org/legal/document/uu/1999/1/pasal/0002> .
+<http://example.org/legal/document/uu/1999/1/pasal/0002/version/19990127> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/1999/1/pasal/0002/version/19990127> legal:pasalVersionHasVersionDate "1999-01-27"^^xsd:date .
+<http://example.org/legal/document/uu/1999/1/pasal/0002/version/19990127> legal:pasalVersionHasRawText "Undang-undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA 3 Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1999/1/pasal/0002/version/19990127/text> legal:textHasTextString "Undang-undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA 3 Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/1999/1/pasal/0002/version/19990127> legal:pasalVersionHasText <http://example.org/legal/document/uu/1999/1/pasal/0002/version/19990127/text> .
 <http://example.org/legal/document/uu/1999/1> legal:documentHasDisahkanDate "1999-01-27"^^xsd:date .
 <http://example.org/legal/document/uu/1999/1> legal:documentMengingat <http://example.org/legal/document/uu/1999/1/mengingat> .
 <http://example.org/legal/document/uu/1999/1/mengingat/text> legal:textHasTextString "Pasal S ayat (1), Pasal 11, Pasal 20 ayat (1) Undang-Undang Dasar 1945. Dengan persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN : Menetapkan : UNDANG-UNDANG TENTANG PENGESAHAN PERJANJIAN ANTARA REPUBLIK INDONESIA DAN AUSTRALIA MENGENAI BANTUAN TIMBAL BALIK DALAM MASALAH PIDANA (TREATY BETWEEN THE REPUBLIC OF INDONESIA AND AUSTRALIA ON MUTUAL ASSISTANCE IN CRIMINAL MATTERS)." .
@@ -34,6 +52,13 @@
 <http://example.org/legal/document/uu/1999/1> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/1999/1> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA" .
 <http://example.org/legal/document/uu/1999/1> a legal:Document .
+<http://example.org/legal/document/uu/1999/1/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/1999/1/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/1/pasal/0001/version/19990127> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/1/pasal/0001/version/19990127/text> a legal:Text .
+<http://example.org/legal/document/uu/1999/1/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/1999/1/pasal/0002/version/19990127> a legal:PasalVersion .
+<http://example.org/legal/document/uu/1999/1/pasal/0002/version/19990127/text> a legal:Text .
 <http://example.org/legal/document/uu/1999/1/mengingat/text> a legal:Text .
 <http://example.org/legal/document/uu/1999/1/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/1999/1/menimbang> a legal:Menimbang .
@@ -49,7 +74,12 @@
 <http://example.org/legal/document/uu/1999/1/menimbang/point/d/text> a legal:Text .
 <http://example.org/legal/document/uu/1999/1/menimbang/point/e> a legal:Point .
 <http://example.org/legal/document/uu/1999/1/menimbang/point/e/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/1/bab> legal:partOf <http://example.org/legal/document/uu/1999/1> .
+<http://example.org/legal/document/uu/1999/1/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1999/1/pasals> .
+<http://example.org/legal/document/uu/1999/1/pasal/0001/version/19990127> legal:partOf <http://example.org/legal/document/uu/1999/1/pasal/0001> .
+<http://example.org/legal/document/uu/1999/1/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1999/1> .
+<http://example.org/legal/document/uu/1999/1/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1999/1/pasals> .
+<http://example.org/legal/document/uu/1999/1/pasal/0002/version/19990127> legal:partOf <http://example.org/legal/document/uu/1999/1/pasal/0002> .
+<http://example.org/legal/document/uu/1999/1/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1999/1> .
 <http://example.org/legal/document/uu/1999/1/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1999/1/menimbang/point> .
 <http://example.org/legal/document/uu/1999/1/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1999/1/menimbang/point> .
 <http://example.org/legal/document/uu/1999/1/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/1999/1/menimbang/point> .

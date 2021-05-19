@@ -219,18 +219,71 @@ opText: |-
   TAHUN 1998 TENTANG PERUBAHAN ATAS
   UNDANG - UNDANG TENTANG KEPAILITAN MENJADI
   UNDANG - UNDANG
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_12
+          nodeType: pasalVersion
+          version: &ref_13
+            nodeType: date
+            month: 9
+            date: 9
+            year: 1998
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_12
+          textString: >-
+            Peraturan Pemerintah Pengganti Undang - undang Nomor 1 Tahun 1998 tentang Perubahan Atas
+            Undang - undang tentang kepailitan (Lembaran Negara Tahun 1998 Nomor 87, Tambahan
+            Lembaran Negara Nomor 3761) ditetapkan menjadi Undang - undang, dan melampirkannya
+            sebagai bagian yang tidak terpisahkan dari Undang - undang ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_14
+          nodeType: pasalVersion
+          version: *ref_13
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_14
+          textString: >-
+            Undang - undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA
+            - 3 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini
+            dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 9
-    date: 9
-    year: 1998
+  date: *ref_13
   location: Jakarta
   pengesah: BACHARUDDIN JUSUF HABIBIE
   jabatanPengesah: PRES IDEN REPUBLIK INDONESIA
