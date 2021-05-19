@@ -303,18 +303,72 @@ opText: |-
   MUTUAL LEGAL ASSISTANCE IN CRIMINAL MATTERS
   (PERJANJIAN TENTANG BANTUAN TIMBAL BALIK DALAM
   MASALAH PIDANA).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_14
+          nodeType: pasalVersion
+          version: &ref_15
+            nodeType: date
+            month: 4
+            date: 30
+            year: 2008
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_14
+          textString: >-
+            Mengesahkan Treaty on Mutual Legal Assistance in Criminal Matters (Perjanjian tentang
+            Bantuan Timbal Balik dalam Masalah Pidana) yang telah ditandatangani pada tanggal 29
+            November 2004 di Kuala Lumpur, Malaysia, yang salinan naskah aslinya dalam bahasa
+            Inggris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir dan merupakan
+            bagian yang tidak terpisahkan dari Undang- Undang ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_16
+          nodeType: pasalVersion
+          version: *ref_15
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_16
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. - 3 - Agar setiap orang
+            mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 4
-    date: 30
-    year: 2008
+  date: *ref_15
   location: Jakarta
   pengesah: DR. H. SUSILO BAMBANG YUDHOYONO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

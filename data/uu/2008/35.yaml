@@ -322,18 +322,88 @@ opText: |-
   TAHUN 2008 TENTANG PERUBAHAN ATAS UNDANG-UNDANG
   NOMOR 21 TAHUN 2001 TENTANG OTONOMI KHUSUS BAGI
   PROVINSI PAPUA MENJADI UNDANG-UNDANG.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_13
+          nodeType: pasalVersion
+          version: &ref_14
+            nodeType: date
+            month: 7
+            date: 25
+            year: 2008
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_13
+          textString: >-
+            Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2008 tentang Perubahan Atas
+            Undang-Undang Nomor 21 Tahun 2001 tentang Otonomi Khusus Bagi Provinsi Papua (Lembaran
+            Negara Republik Indonesia Tahun 2008 Nomor 57, Tambahan Lembaran Negara Republik
+            Indonesia Nomor 4842) ditetapkan menjadi Undang-Undang dan melampirkannya sebagai bagian
+            yang tidak terpisahkan dari Undang-Undang ini.
+          references:
+            - start: 87
+              end: 120
+              node:
+                nodeType: document
+                docType: noTahun
+                docCategory: uu
+                nomor: 21
+                tahun: 2001
+            - start: 31
+              end: 63
+              node:
+                nodeType: document
+                docType: noTahun
+                docCategory: uu
+                nomor: 1
+                tahun: 2008
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_15
+          nodeType: pasalVersion
+          version: *ref_14
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_15
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. -.3- Agar setiap orang
+            mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 7
-    date: 25
-    year: 2008
+  date: *ref_14
   location: Jakarta
   pengesah: DR. H. SUSILO BAMBANG YUDHOYONO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,
