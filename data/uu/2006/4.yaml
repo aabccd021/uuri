@@ -331,18 +331,71 @@ opText: |-
   TREATY ON PLANT GENETIC RESOURCES FOR FOOD AND
   AGRICULTURE (PERJANJIAN MENGENAI SUMBER DAYA
   GENETIK TANAMAN UNTUK PANGAN DAN PERTANIAN).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_17
+          nodeType: pasalVersion
+          version: &ref_18
+            nodeType: date
+            month: 3
+            date: 20
+            year: 2006
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_17
+          textString: >-
+            Mengesahkan International Treaty on Plant Genetic Resources for Food and Agriculture
+            (Perjanjian Mengenai Sumber Daya Genetik Tanaman untuk Pangan dan Pertanian), yang
+            salinan naskah aslinya dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia
+            sebagaimana terlampir merupakan bagian yang tidak terpisahkan dari Undang-Undang ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_19
+          nodeType: pasalVersion
+          version: *ref_18
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_19
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. - 4 - Agar setiap orang
+            mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 3
-    date: 20
-    year: 2006
+  date: *ref_18
   location: Jakarta
   pengesah: DR. H. SUSILO BAMBANG YUDHOYONO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA

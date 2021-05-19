@@ -1,7 +1,25 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2004/20> legal:documentHasBabSet <http://example.org/legal/document/uu/2004/20/bab> .
+<http://example.org/legal/document/uu/2004/20> legal:documentHasPasalSet <http://example.org/legal/document/uu/2004/20/pasals> .
+<http://example.org/legal/document/uu/2004/20/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2004/20/pasal/0001> .
+<http://example.org/legal/document/uu/2004/20/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/2004/20/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2004/20/pasal/0001/version/20040813> .
+<http://example.org/legal/document/uu/2004/20> legal:documentHasPasal <http://example.org/legal/document/uu/2004/20/pasal/0001> .
+<http://example.org/legal/document/uu/2004/20/pasal/0001/version/20040813> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2004/20/pasal/0001/version/20040813> legal:pasalVersionHasVersionDate "2004-08-13"^^xsd:date .
+<http://example.org/legal/document/uu/2004/20/pasal/0001/version/20040813> legal:pasalVersionHasRawText "Peraturan Pemerintah Pengganti Undang-undang Nomor 2 Tahun 2004 tentang Perubahan Atas Undang-undang Nomor 12 Tahun 2003 tentang Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan Rakyat Daerah (Lembaran Negara Tahun 2004 Nomor 37, Tambahan Lembaran Negara Nomor 4381), ditetapkan menjadi Undang-undang." .
+<http://example.org/legal/document/uu/2004/20/pasal/0001/version/20040813/text> legal:textHasTextString "Peraturan Pemerintah Pengganti Undang-undang Nomor 2 Tahun 2004 tentang Perubahan Atas Undang-undang Nomor 12 Tahun 2003 tentang Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan Rakyat Daerah (Lembaran Negara Tahun 2004 Nomor 37, Tambahan Lembaran Negara Nomor 4381), ditetapkan menjadi Undang-undang." .
+<http://example.org/legal/document/uu/2004/20/pasal/0001/version/20040813> legal:pasalVersionHasText <http://example.org/legal/document/uu/2004/20/pasal/0001/version/20040813/text> .
+<http://example.org/legal/document/uu/2004/20/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2004/20/pasal/0002> .
+<http://example.org/legal/document/uu/2004/20/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/2004/20/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2004/20/pasal/0002/version/20040813> .
+<http://example.org/legal/document/uu/2004/20> legal:documentHasPasal <http://example.org/legal/document/uu/2004/20/pasal/0002> .
+<http://example.org/legal/document/uu/2004/20/pasal/0002/version/20040813> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2004/20/pasal/0002/version/20040813> legal:pasalVersionHasVersionDate "2004-08-13"^^xsd:date .
+<http://example.org/legal/document/uu/2004/20/pasal/0002/version/20040813> legal:pasalVersionHasRawText "Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2004/20/pasal/0002/version/20040813/text> legal:textHasTextString "Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2004/20/pasal/0002/version/20040813> legal:pasalVersionHasText <http://example.org/legal/document/uu/2004/20/pasal/0002/version/20040813/text> .
 <http://example.org/legal/document/uu/2004/20> legal:documentHasDisahkanDate "2004-08-13"^^xsd:date .
 <http://example.org/legal/document/uu/2004/20> legal:documentMengingat <http://example.org/legal/document/uu/2004/20/mengingat> .
 <http://example.org/legal/document/uu/2004/20/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2004/20/mengingat/point> .
@@ -9,12 +27,12 @@
 <http://example.org/legal/document/uu/2004/20/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2004/20/mengingat/point/description> .
 <http://example.org/legal/document/uu/2004/20/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2004/20/mengingat/point/0001> .
 <http://example.org/legal/document/uu/2004/20/mengingat/point/0001> legal:pointHasKey "1" .
-<http://example.org/legal/document/uu/2004/20/mengingat/point/0001/text> legal:textHasTextString "Pasal 5 ayat (1), Pasa l 20 dan Pasal 22 Undang-Undang Dasar Negara Republik Indonesia Tahun 1945;" .
+<http://example.org/legal/document/uu/2004/20/mengingat/point/0001/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 20 dan Pasal 22 Undang-Undang Dasar Negara Republik Indonesia Tahun 1945," .
 <http://example.org/legal/document/uu/2004/20/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/2004/20/mengingat/point/0001/text> .
 <http://example.org/legal/document/uu/2004/20/mengingat/point/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu> .
 <http://example.org/legal/document/uu/2004/20/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2004/20/mengingat/point/0002> .
 <http://example.org/legal/document/uu/2004/20/mengingat/point/0002> legal:pointHasKey "2" .
-<http://example.org/legal/document/uu/2004/20/mengingat/point/0002/text> legal:textHasTextString "Undang-undang Nomor 12 Ta hun 2003 tentang Pemilihan Umum Anggota Dewan Perwakilan Rakyat , Dewan Perwakilan Daerah, dan Dewan Perwakilan Rakyat Daer ah (Lembaran Negara Tahun 2003 Nomor 37, Tamb ahan Lembaran Nega ra Nomor 4277);" .
+<http://example.org/legal/document/uu/2004/20/mengingat/point/0002/text> legal:textHasTextString "Undang-undang Nomor 12 Tahun 2003 tentang Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan Rakyat Daerah (Lembaran Negara Tahun 2003 Nomor 37, Tambahan Lembaran Negara Nomor 4277)," .
 <http://example.org/legal/document/uu/2004/20/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/2004/20/mengingat/point/0002/text> .
 <http://example.org/legal/document/uu/2004/20> legal:documentMenimbang <http://example.org/legal/document/uu/2004/20/menimbang> .
 <http://example.org/legal/document/uu/2004/20/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/2004/20/menimbang/point> .
@@ -22,20 +40,27 @@
 <http://example.org/legal/document/uu/2004/20/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2004/20/menimbang/point/description> .
 <http://example.org/legal/document/uu/2004/20/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2004/20/menimbang/point/a> .
 <http://example.org/legal/document/uu/2004/20/menimbang/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/2004/20/menimbang/point/a/text> legal:textHasTextString "bahwa beberapa ketentua n dalam Undang-undang Nomor 12 Tahun 2003 tentang Pemilihan Umum A nggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan De wan Perwakilan Rakyat Daerah dinilai tidak memberi landasan yang luwes bagi kelancaran penyelenggaraan pemilihan umum tersebut;" .
+<http://example.org/legal/document/uu/2004/20/menimbang/point/a/text> legal:textHasTextString "bahwa beberapa ketentuan dalam Undang-undang Nomor 12 Tahun 2003 tentang Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan Rakyat Daerah dinilai tidak memberi landasan yang luwes bagi kelancaran penyelenggaraan pemilihan umum tersebut:" .
 <http://example.org/legal/document/uu/2004/20/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/2004/20/menimbang/point/a/text> .
 <http://example.org/legal/document/uu/2004/20/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2004/20/menimbang/point/b> .
 <http://example.org/legal/document/uu/2004/20/menimbang/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/2004/20/menimbang/point/b/text> legal:textHasTextString "bahwa untuk menjaga kelancaran penyelenggaraan pemilihan umum dan sesuai dengan permintaan Ketua Komisi Pemilihan Umum dalam surat Nomor 591/15/III/2004 tanggal 30 Maret 2004 kepada Presiden serta mempertimbangka n hasil pertemuan konsultasi tanggal 30 Maret 2004 dan tanggal 2 April 2004 antara Pemerintah, Dewan Perwakilan Rakyat dan Komisi Pemilihan Umum, Pemerintah telah menetapkan Peraturan Pemerintah Pengganti Undang-undang Nomor 2 Tahun 2004 tentang Perubahan Atas PRESIDEN REPUBLIK INDONESIA - 2 - Undang-undang Nomor 12 Tahun 2003 tentang Pemilihan Umum Anggota Dewan Perwakilan Rakyat , Dewan Perwakilan Daerah, dan Dewan Perwakilan Rakyat Daerah;" .
+<http://example.org/legal/document/uu/2004/20/menimbang/point/b/text> legal:textHasTextString "bahwa untuk menjaga kelancaran penyelenggaraan pemilihan umum dan sesuai dengan permintaan Ketua Komisi Pemilihan Umum dalam surat Nomor 591/15/111/2004 tanggal 30 Maret 2004 kepada Presiden serta mempertimbangkan hasil pertemuan konsultasi tanggal 30 Maret 2004 dan tanggal 2 April 2004 antara Pemerintah, Dewan Perwakilan Rakyat dan Komisi Pemilihan Umum, Pemerintah telah menetapkan Peraturan Pemerintah Pengganti Undang-undang Nomor 2 Tahun 2004 tentang Perubahan Atas 17 SN GELANN Cg Nag PRESIDEN REPUBLIK INDO NESIA .2 - Undang-undang Nomor 12 Tahun 2003 tentang Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan Rakyat Daerah:" .
 <http://example.org/legal/document/uu/2004/20/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/2004/20/menimbang/point/b/text> .
 <http://example.org/legal/document/uu/2004/20/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2004/20/menimbang/point/c> .
 <http://example.org/legal/document/uu/2004/20/menimbang/point/c> legal:pointHasKey "c" .
-<http://example.org/legal/document/uu/2004/20/menimbang/point/c/text> legal:textHasTextString "bahwa berdasarkan pertimbangan pada huruf a dan huruf b perlu menetapkan Peraturan Pemerint ah Pengganti Undang-undang Nomor 2 Tahun 2004 tentang Pe rubahan Atas Undang-undang Nomor 12 Tahun 2003 tentang Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan Rakyat Daerah, menjadi Undang-undang;" .
+<http://example.org/legal/document/uu/2004/20/menimbang/point/c/text> legal:textHasTextString "bahwa berdasarkan pertimbangan pada huruf a dan huruf b perlu menetapkan Peraturan Pemerintah Pengganti Undang-undang Nomor 2 Tahun 2004 tentang Perubahan Atas Undang-undang Nomor 12 Tahun 2003 tentang Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan Rakyat Daerah, menjadi Undang-undang," .
 <http://example.org/legal/document/uu/2004/20/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/2004/20/menimbang/point/c/text> .
 <http://example.org/legal/document/uu/2004/20> legal:documentHasDisahkanPengesah "MEGAWATI SOEKARNOPUTRI" .
 <http://example.org/legal/document/uu/2004/20> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/2004/20> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/2004/20> a legal:Document .
+<http://example.org/legal/document/uu/2004/20/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2004/20/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/2004/20/pasal/0001/version/20040813> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2004/20/pasal/0001/version/20040813/text> a legal:Text .
+<http://example.org/legal/document/uu/2004/20/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/2004/20/pasal/0002/version/20040813> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2004/20/pasal/0002/version/20040813/text> a legal:Text .
 <http://example.org/legal/document/uu/2004/20/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/2004/20/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/2004/20/mengingat/point> a legal:PointSet .
@@ -52,7 +77,12 @@
 <http://example.org/legal/document/uu/2004/20/menimbang/point/b/text> a legal:Text .
 <http://example.org/legal/document/uu/2004/20/menimbang/point/c> a legal:Point .
 <http://example.org/legal/document/uu/2004/20/menimbang/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/2004/20/bab> legal:partOf <http://example.org/legal/document/uu/2004/20> .
+<http://example.org/legal/document/uu/2004/20/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2004/20/pasals> .
+<http://example.org/legal/document/uu/2004/20/pasal/0001/version/20040813> legal:partOf <http://example.org/legal/document/uu/2004/20/pasal/0001> .
+<http://example.org/legal/document/uu/2004/20/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2004/20> .
+<http://example.org/legal/document/uu/2004/20/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2004/20/pasals> .
+<http://example.org/legal/document/uu/2004/20/pasal/0002/version/20040813> legal:partOf <http://example.org/legal/document/uu/2004/20/pasal/0002> .
+<http://example.org/legal/document/uu/2004/20/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2004/20> .
 <http://example.org/legal/document/uu/2004/20/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2004/20/mengingat/point> .
 <http://example.org/legal/document/uu/2004/20/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2004/20/mengingat/point> .
 <http://example.org/legal/document/uu/2004/20/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/2004/20/menimbang/point> .

@@ -1,7 +1,28 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2007/44> legal:documentHasBabSet <http://example.org/legal/document/uu/2007/44/bab> .
+<http://example.org/legal/document/uu/2007/44> legal:documentHasPasalSet <http://example.org/legal/document/uu/2007/44/pasals> .
+<http://example.org/legal/document/uu/2007/44/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2007/44/pasal/0001> .
+<http://example.org/legal/document/uu/2007/44/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/2007/44/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2007/44/pasal/0001/version/20071101> .
+<http://example.org/legal/document/uu/2007/44> legal:documentHasPasal <http://example.org/legal/document/uu/2007/44/pasal/0001> .
+<http://example.org/legal/document/uu/2007/44/pasal/0001/version/20071101> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2007/44/pasal/0001/version/20071101> legal:pasalVersionHasVersionDate "2007-11-01"^^xsd:date .
+<http://example.org/legal/document/uu/2007/44/pasal/0001/version/20071101> legal:pasalVersionHasRawText "Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2007 tentang Perubahan Atas Undang-Undang Nomor 36 Tahun 2000 tentang Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2000 tentang Kawasan Perdagangan Bebas dan Pelabuhan Bebas Menjadi Undang-Undang (Lembaran Negara Republik Indonesia Tahun 2007 Nomor 72, Tambahan Lembaran Negara Republik Indonesia Nomor 4729) ditetapkan menjadi Undang-Undang dan melampirkannya sebagai bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/document/uu/2007/44/pasal/0001/version/20071101/text> legal:textHasTextString "Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2007 tentang Perubahan Atas Undang-Undang Nomor 36 Tahun 2000 tentang Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2000 tentang Kawasan Perdagangan Bebas dan Pelabuhan Bebas Menjadi Undang-Undang (Lembaran Negara Republik Indonesia Tahun 2007 Nomor 72, Tambahan Lembaran Negara Republik Indonesia Nomor 4729) ditetapkan menjadi Undang-Undang dan melampirkannya sebagai bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/document/uu/2007/44/pasal/0001/version/20071101> legal:pasalVersionHasText <http://example.org/legal/document/uu/2007/44/pasal/0001/version/20071101/text> .
+<http://example.org/legal/document/uu/2007/44/pasal/0001/version/20071101/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2000/1> .
+<http://example.org/legal/document/uu/2007/44/pasal/0001/version/20071101/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2000/36> .
+<http://example.org/legal/document/uu/2007/44/pasal/0001/version/20071101/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2007/1> .
+<http://example.org/legal/document/uu/2007/44/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2007/44/pasal/0002> .
+<http://example.org/legal/document/uu/2007/44/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/2007/44/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2007/44/pasal/0002/version/20071101> .
+<http://example.org/legal/document/uu/2007/44> legal:documentHasPasal <http://example.org/legal/document/uu/2007/44/pasal/0002> .
+<http://example.org/legal/document/uu/2007/44/pasal/0002/version/20071101> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2007/44/pasal/0002/version/20071101> legal:pasalVersionHasVersionDate "2007-11-01"^^xsd:date .
+<http://example.org/legal/document/uu/2007/44/pasal/0002/version/20071101> legal:pasalVersionHasRawText "Undang-Undang ini mulai berlaku pada tanggal diundangkan. - 5 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2007/44/pasal/0002/version/20071101/text> legal:textHasTextString "Undang-Undang ini mulai berlaku pada tanggal diundangkan. - 5 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2007/44/pasal/0002/version/20071101> legal:pasalVersionHasText <http://example.org/legal/document/uu/2007/44/pasal/0002/version/20071101/text> .
 <http://example.org/legal/document/uu/2007/44> legal:documentHasDisahkanDate "2007-11-01"^^xsd:date .
 <http://example.org/legal/document/uu/2007/44> legal:documentMengingat <http://example.org/legal/document/uu/2007/44/mengingat> .
 <http://example.org/legal/document/uu/2007/44/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2007/44/mengingat/point> .
@@ -82,6 +103,13 @@
 <http://example.org/legal/document/uu/2007/44> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/2007/44> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/2007/44> a legal:Document .
+<http://example.org/legal/document/uu/2007/44/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2007/44/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/2007/44/pasal/0001/version/20071101> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2007/44/pasal/0001/version/20071101/text> a legal:Text .
+<http://example.org/legal/document/uu/2007/44/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/2007/44/pasal/0002/version/20071101> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2007/44/pasal/0002/version/20071101/text> a legal:Text .
 <http://example.org/legal/document/uu/2007/44/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/2007/44/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/2007/44/mengingat/point> a legal:PointSet .
@@ -112,7 +140,12 @@
 <http://example.org/legal/document/uu/2007/44/menimbang/point/d/text> a legal:Text .
 <http://example.org/legal/document/uu/2007/44/menimbang/point/e> a legal:Point .
 <http://example.org/legal/document/uu/2007/44/menimbang/point/e/text> a legal:Text .
-<http://example.org/legal/document/uu/2007/44/bab> legal:partOf <http://example.org/legal/document/uu/2007/44> .
+<http://example.org/legal/document/uu/2007/44/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2007/44/pasals> .
+<http://example.org/legal/document/uu/2007/44/pasal/0001/version/20071101> legal:partOf <http://example.org/legal/document/uu/2007/44/pasal/0001> .
+<http://example.org/legal/document/uu/2007/44/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2007/44> .
+<http://example.org/legal/document/uu/2007/44/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2007/44/pasals> .
+<http://example.org/legal/document/uu/2007/44/pasal/0002/version/20071101> legal:partOf <http://example.org/legal/document/uu/2007/44/pasal/0002> .
+<http://example.org/legal/document/uu/2007/44/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2007/44> .
 <http://example.org/legal/document/uu/2007/44/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2007/44/mengingat/point> .
 <http://example.org/legal/document/uu/2007/44/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2007/44/mengingat/point> .
 <http://example.org/legal/document/uu/2007/44/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/2007/44/mengingat/point> .

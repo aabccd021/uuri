@@ -198,18 +198,81 @@ opText: |-
   MASYARAKAT PROVINSI NANGGROE ACEH DARUSSALAM DAN
   KEPULAUAN NIAS, PROVINSI SUMATERA UTARA MENJADI
   UNDANG-UNDANG.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_8
+          nodeType: pasalVersion
+          version: &ref_9
+            nodeType: date
+            month: 10
+            date: 25
+            year: 2005
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_8
+          textString: >-
+            Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun 2005 tentang Badan
+            Rehabilitasi dan Rekonstruksi Wilayah dan Kehidupan Masyarakat Provinsi Nanggroe Aceh
+            Darussalam dan Kepulauan Nias Provinsi Sumatera Utara (Lembaran Negara Republik
+            Indonesia Tahun 2005 Nomor 35, Tambahan Lembaran Negara Republik Indonesia Nomor 4492)
+            ditetapkan menjadi Undang-Undang, dan melampirkannya sebagai bagian yang tidak
+            terpisahkan dari Undang-Undang ini.
+          references:
+            - start: 31
+              end: 63
+              node:
+                nodeType: document
+                docType: noTahun
+                docCategory: uu
+                nomor: 2
+                tahun: 2005
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_10
+          nodeType: pasalVersion
+          version: *ref_9
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_10
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDO NESIA
+            .4- Agar setiap orang mengatahuinya, memerintahkan pengundangan Undang- Undang ini
+            dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 10
-    date: 25
-    year: 2005
+  date: *ref_9
   location: Jakarta
   pengesah: DR. H. SUSILO BAMBANG YUDHOYONO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA

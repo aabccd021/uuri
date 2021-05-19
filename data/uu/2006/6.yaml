@@ -302,18 +302,157 @@ opText: |-
   CONVENTION FOR THE SUPPRESSION OF THE FINANCING OF
   TERRORISM, 1999 (KONVENSI INTERNASIONAL
   PEMBERANTASAN PENDANAAN TERORISME, 1999).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_14
+          nodeType: pasalVersion
+          version: &ref_20
+            nodeType: date
+            month: 4
+            date: 5
+            year: 2006
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_15
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_14
+          elements:
+            - type: ayat
+              node: &ref_16
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_15
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_16
+                textString: >-
+                  Mengesahkan International Convention for the Suppression of the Financing of
+                  Terrorism, 1999 (Konvensi Internasional Pemberantasan Pendanaan Terorisme Tahun
+                  1999) dengan Pernyataan (Declaration) terhadap Pasal 2 ayat (2) huruf a dan Pasal
+                  7 serta Pensyaratan (Reservation) terhadap Pasal 24 ayat (1).
+                references:
+                  - start: 282
+                    end: 299
+                    node:
+                      parentAyatSetNode: &ref_17
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_14
+                      key: 1
+                      nodeType: ayat
+                  - start: 204
+                    end: 220
+                    node:
+                      parentAyatSetNode: *ref_17
+                      key: 2
+                      nodeType: ayat
+                  - start: 221
+                    end: 228
+                    node:
+                      key: a
+                      parentPointSetNode:
+                        nodeType: pointSet
+                        parentNode: *ref_14
+                      nodeType: point
+                  - start: 233
+                    end: 240
+                    node:
+                      key: 7
+                      parentNode: *ref_0
+                      nodeType: pasal
+            - type: ayat
+              node: &ref_18
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_15
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_18
+                textString: >-
+                  Salinan naskah asli International Convention for the Suppression of the Financing
+                  of Terrorism, 1999 (Konvensi Internasional Pemberantasan Pendanaan Terorisme Tahun
+                  1999), Pernyataan (Declaration) terhadap Pasal 2 ayat (2) huruf a dan Pasal 7
+                  serta Pensyaratan (Reservation) terhadap Pasal 24 ayat (1) dalam bahasa Inggris
+                  dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir merupakan bagian
+                  yang tidak terpisahkan dari Undang-Undang ini.
+                references:
+                  - start: 284
+                    end: 301
+                    node:
+                      parentAyatSetNode: &ref_19
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_14
+                      key: 1
+                      nodeType: ayat
+                  - start: 206
+                    end: 222
+                    node:
+                      parentAyatSetNode: *ref_19
+                      key: 2
+                      nodeType: ayat
+                  - start: 223
+                    end: 230
+                    node:
+                      key: a
+                      parentPointSetNode:
+                        nodeType: pointSet
+                        parentNode: *ref_14
+                      nodeType: point
+                  - start: 235
+                    end: 242
+                    node:
+                      key: 7
+                      parentNode: *ref_0
+                      nodeType: pasal
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_21
+          nodeType: pasalVersion
+          version: *ref_20
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_21
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang
+            mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 4
-    date: 5
-    year: 2006
+  date: *ref_20
   location: Jakarta
   pengesah: Diundangkan di Jakarta
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

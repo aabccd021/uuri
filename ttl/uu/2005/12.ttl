@@ -1,7 +1,36 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2005/12> legal:documentHasBabSet <http://example.org/legal/document/uu/2005/12/bab> .
+<http://example.org/legal/document/uu/2005/12> legal:documentHasPasalSet <http://example.org/legal/document/uu/2005/12/pasals> .
+<http://example.org/legal/document/uu/2005/12/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2005/12/pasal/0001> .
+<http://example.org/legal/document/uu/2005/12/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/2005/12/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028> .
+<http://example.org/legal/document/uu/2005/12> legal:documentHasPasal <http://example.org/legal/document/uu/2005/12/pasal/0001> .
+<http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028> legal:pasalVersionHasVersionDate "2005-10-28"^^xsd:date .
+<http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028> legal:pasalVersionHasRawText "(1). Mengesahkan International Covenant on Civil and Political Rights (Kovenan Internasional tentang Hak-hak Sipil dan Politik) dengan Declaration (Pernyataan) terhadap Pasal 1.\n(2). Salinan naskah asli International Covenant on Civil and Political Rights (Kovenan Internasional tentang Hak-hak Sipil dan Politik) dan Declaration (Pernyataan) terhadap Pasal 1 dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028/ayat> .
+<http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028/ayat/0001> .
+<http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028/ayat/0001> legal:ayatHasRawText "Mengesahkan International Covenant on Civil and Political Rights (Kovenan Internasional tentang Hak-hak Sipil dan Politik) dengan Declaration (Pernyataan) terhadap Pasal 1." .
+<http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028/ayat/0001/text> legal:textHasTextString "Mengesahkan International Covenant on Civil and Political Rights (Kovenan Internasional tentang Hak-hak Sipil dan Politik) dengan Declaration (Pernyataan) terhadap Pasal 1." .
+<http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028/ayat/0001/text> .
+<http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2005/12/pasal/0001> .
+<http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028/ayat/0002> .
+<http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028/ayat/0002> legal:ayatHasRawText "Salinan naskah asli International Covenant on Civil and Political Rights (Kovenan Internasional tentang Hak-hak Sipil dan Politik) dan Declaration (Pernyataan) terhadap Pasal 1 dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028/ayat/0002/text> legal:textHasTextString "Salinan naskah asli International Covenant on Civil and Political Rights (Kovenan Internasional tentang Hak-hak Sipil dan Politik) dan Declaration (Pernyataan) terhadap Pasal 1 dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028/ayat/0002/text> .
+<http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2005/12/pasal/0001> .
+<http://example.org/legal/document/uu/2005/12/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2005/12/pasal/0002> .
+<http://example.org/legal/document/uu/2005/12/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/2005/12/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2005/12/pasal/0002/version/20051028> .
+<http://example.org/legal/document/uu/2005/12> legal:documentHasPasal <http://example.org/legal/document/uu/2005/12/pasal/0002> .
+<http://example.org/legal/document/uu/2005/12/pasal/0002/version/20051028> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2005/12/pasal/0002/version/20051028> legal:pasalVersionHasVersionDate "2005-10-28"^^xsd:date .
+<http://example.org/legal/document/uu/2005/12/pasal/0002/version/20051028> legal:pasalVersionHasRawText "Undang-Undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA - 4 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia," .
+<http://example.org/legal/document/uu/2005/12/pasal/0002/version/20051028/text> legal:textHasTextString "Undang-Undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA - 4 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia," .
+<http://example.org/legal/document/uu/2005/12/pasal/0002/version/20051028> legal:pasalVersionHasText <http://example.org/legal/document/uu/2005/12/pasal/0002/version/20051028/text> .
 <http://example.org/legal/document/uu/2005/12> legal:documentHasDisahkanDate "2005-10-28"^^xsd:date .
 <http://example.org/legal/document/uu/2005/12> legal:documentMengingat <http://example.org/legal/document/uu/2005/12/mengingat> .
 <http://example.org/legal/document/uu/2005/12/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2005/12/mengingat/point> .
@@ -61,6 +90,17 @@
 <http://example.org/legal/document/uu/2005/12> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/2005/12> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/2005/12> a legal:Document .
+<http://example.org/legal/document/uu/2005/12/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2005/12/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2005/12/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/2005/12/pasal/0002/version/20051028> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2005/12/pasal/0002/version/20051028/text> a legal:Text .
 <http://example.org/legal/document/uu/2005/12/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/2005/12/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/2005/12/mengingat/point> a legal:PointSet .
@@ -87,7 +127,17 @@
 <http://example.org/legal/document/uu/2005/12/menimbang/point/d/text> a legal:Text .
 <http://example.org/legal/document/uu/2005/12/menimbang/point/e> a legal:Point .
 <http://example.org/legal/document/uu/2005/12/menimbang/point/e/text> a legal:Text .
-<http://example.org/legal/document/uu/2005/12/bab> legal:partOf <http://example.org/legal/document/uu/2005/12> .
+<http://example.org/legal/document/uu/2005/12/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2005/12/pasals> .
+<http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028> legal:partOf <http://example.org/legal/document/uu/2005/12/pasal/0001> .
+<http://example.org/legal/document/uu/2005/12/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2005/12> .
+<http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028/ayat> legal:partOf <http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028> .
+<http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028/ayat> .
+<http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028/ayat/0001> .
+<http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028/ayat> .
+<http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2005/12/pasal/0001/version/20051028/ayat/0002> .
+<http://example.org/legal/document/uu/2005/12/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2005/12/pasals> .
+<http://example.org/legal/document/uu/2005/12/pasal/0002/version/20051028> legal:partOf <http://example.org/legal/document/uu/2005/12/pasal/0002> .
+<http://example.org/legal/document/uu/2005/12/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2005/12> .
 <http://example.org/legal/document/uu/2005/12/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2005/12/mengingat/point> .
 <http://example.org/legal/document/uu/2005/12/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2005/12/mengingat/point> .
 <http://example.org/legal/document/uu/2005/12/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/2005/12/mengingat/point> .

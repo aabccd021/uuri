@@ -355,18 +355,72 @@ opText: |-
   CLIMATE CHANGE (PROTOKOL KYOTO ATAS KONVENSI
   KERANGKA KERJA PERSERIKATAN BANGSA-BANGSA
   TENTANG PERUBAHAN IKLIM).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_17
+          nodeType: pasalVersion
+          version: &ref_18
+            nodeType: date
+            month: 7
+            date: 28
+            year: 2004
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_17
+          textString: >-
+            Mengesahkan Kyoto Protocol to the United Nations Framework Convention on Climate Change
+            (Protokol Kyoto atas Konvensi Kerangka Kerja Perserikatan Bangsa-Bangsa te ntang
+            Perubahan Iklim) yang salinan naskah aslinya dalam bahasa Inggris dan terjemahannya
+            dalam bahasa Indonesia sebagaimana terlampir merupa kan bagian yang tid ak terpisahkan
+            dari Undang-undang ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_19
+          nodeType: pasalVersion
+          version: *ref_18
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_19
+          textString: >-
+            Undang-Undang ini mulai be rlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA -
+            4 - Agar setiap orang mengetahuinya , memerintahkan pengundangan Undang- undang ini
+            dengan penemp atannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 7
-    date: 28
-    year: 2004
+  date: *ref_18
   location: Jakarta
   pengesah: MEGAWATI SOEKARNOPUTRI
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

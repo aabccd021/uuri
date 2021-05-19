@@ -201,18 +201,72 @@ opText: |-
   DIVERSITY (PROTOKOL CARTAGENA TENTANG KEAMANAN
   HAYATI ATAS KONVENSI TENTANG KEANFKARAGAMAN
   HAYATI)
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_7
+          nodeType: pasalVersion
+          version: &ref_8
+            nodeType: date
+            month: 8
+            date: 16
+            year: 2004
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_7
+          textString: >-
+            Mengesahkan Cartagena Protocol on Biosafety to the Convention on Biological Diversity
+            (Protokol Cartagena tentang Keamanan Hayati atas Konvensi tentang Keanekaragaman
+            Hayati), yang salinan naskah aslinya dalam bahasa Inggris dan terjemahannya dalam bahasa
+            Indonesia sebagaimana terlampir merupakan bagian yang tidak terpisahkan dengan
+            Undang-undang ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_9
+          nodeType: pasalVersion
+          version: *ref_8
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_9
+          textString: >-
+            Undang-undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDO NESIA 4
+            - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang- undang ini dengan
+            penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 8
-    date: 16
-    year: 2004
+  date: *ref_8
   location: Jakarta
   pengesah: MEGAWATI SOEKARNOPUTRI
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

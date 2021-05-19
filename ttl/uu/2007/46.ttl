@@ -1,7 +1,169 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2007/46> legal:documentHasBabSet <http://example.org/legal/document/uu/2007/46/bab> .
+<http://example.org/legal/document/uu/2007/46> legal:documentHasPasalSet <http://example.org/legal/document/uu/2007/46/pasals> .
+<http://example.org/legal/document/uu/2007/46/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2007/46/pasal/0001> .
+<http://example.org/legal/document/uu/2007/46/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/2007/46/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2007/46/pasal/0001/version/20071218> .
+<http://example.org/legal/document/uu/2007/46> legal:documentHasPasal <http://example.org/legal/document/uu/2007/46/pasal/0001> .
+<http://example.org/legal/document/uu/2007/46/pasal/0001/version/20071218> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2007/46/pasal/0001/version/20071218> legal:pasalVersionHasVersionDate "2007-12-18"^^xsd:date .
+<http://example.org/legal/document/uu/2007/46/pasal/0001/version/20071218> legal:pasalVersionHasRawText "Pertanggungjawaban atas Pelaksanaa n Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 2005 tertuang dalam Laporan Ke uangan Pemerintah Pusat Tahun Anggaran 2005 sebagaimana ditetapkan dalam Lampiran Undang-Undang ini." .
+<http://example.org/legal/document/uu/2007/46/pasal/0001/version/20071218/text> legal:textHasTextString "Pertanggungjawaban atas Pelaksanaa n Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 2005 tertuang dalam Laporan Ke uangan Pemerintah Pusat Tahun Anggaran 2005 sebagaimana ditetapkan dalam Lampiran Undang-Undang ini." .
+<http://example.org/legal/document/uu/2007/46/pasal/0001/version/20071218> legal:pasalVersionHasText <http://example.org/legal/document/uu/2007/46/pasal/0001/version/20071218/text> .
+<http://example.org/legal/document/uu/2007/46/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2007/46/pasal/0002> .
+<http://example.org/legal/document/uu/2007/46/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/2007/46/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218> .
+<http://example.org/legal/document/uu/2007/46> legal:documentHasPasal <http://example.org/legal/document/uu/2007/46/pasal/0002> .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218> legal:pasalVersionHasVersionDate "2007-12-18"^^xsd:date .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218> legal:pasalVersionHasRawText "Laporan Keuangan sebagaimana dimaks ud dalam Pasal 1, terdiri dari:\n1. Laporan Realisasi APBN Tahun Anggaran 2005;\n2. Neraca Pemerintah Pusat per 31 Desember 2005;\n3. Laporan Arus Kas Tahun Anggaran 2005; dan\n4. Catatan atas Laporan Keuangan.\n" .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point> .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/description> legal:textHasTextString "Laporan Keuangan sebagaimana dimaks ud dalam Pasal 1, terdiri dari:" .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/description> .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/0001> .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/0001> legal:pointHasKey "1" .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/0001/text> legal:textHasTextString "Laporan Realisasi APBN Tahun Anggaran 2005;" .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/0001> legal:pointHasText <http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/0001/text> .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/0002> .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/0002> legal:pointHasKey "2" .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/0002/text> legal:textHasTextString "Neraca Pemerintah Pusat per 31 Desember 2005;" .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/0002> legal:pointHasText <http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/0002/text> .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/0003> .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/0003> legal:pointHasKey "3" .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/0003/text> legal:textHasTextString "Laporan Arus Kas Tahun Anggaran 2005; dan" .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/0003> legal:pointHasText <http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/0003/text> .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/0004> .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/0004> legal:pointHasKey "4" .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/0004/text> legal:textHasTextString "Catatan atas Laporan Keuangan." .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/0004> legal:pointHasText <http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/0004/text> .
+<http://example.org/legal/document/uu/2007/46/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2007/46/pasal/0003> .
+<http://example.org/legal/document/uu/2007/46/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/2007/46/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218> .
+<http://example.org/legal/document/uu/2007/46> legal:documentHasPasal <http://example.org/legal/document/uu/2007/46/pasal/0003> .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218> legal:pasalVersionHasVersionDate "2007-12-18"^^xsd:date .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218> legal:pasalVersionHasRawText "(1). Realisasi anggaran Pendapatan da n Hibah Tahun Anggaran 2005 adalah sebesar Rp495.224.207.225.857 (empat ratus se mbilan puluh lima triliun dua ratus dua puluh empat miliar dua ratus tujuh juta dua ratus dua puluh lima ribu delapan ratus lima puluh tujuh rupiah) dan Realisasi Belanja Negara sebesar Rp509.632.418.161.360 (lima ratus sembilan triliun enam ratus tiga puluh dua miliar empa t ratus delapan belas juta seratus enam puluh satu ribu tiga ratus en am puluh rupiah), sehingga terdapat defisit anggaran sebesar Rp14.408.210.935.503 (empat belas triliun empat ratus delapan miliar dua ratus sepuluh juta sembilan ratus tiga puluh lima ribu lima ratus tiga rupiah). (2) Pembiayaan . . .\n(2). Pembiayaan atas Defisit Anggara n Tahun Anggaran 2005 sebagaimana dimaksud pada ayat (1) ad alah sebesar Rp8.872.728.723.297 (delapan triliun delapan ratus tujuh puluh dua miliar tujuh ratus dua puluh delapan juta tujuh ratus dua puluh tiga ribu dua ratus sembilan puluh tujuh rupiah), sehingga terdapat Sisa Kurang Pembiayaan Anggaran (SIKPA) sebesar Rp5.535.482.212.206 (lima triliun lima ratus tiga puluh lima miliar empat ratus delapan puluh dua juta dua ratus dua belas ribu dua ratus enam rupiah). SIKPA tersebut ditutup dari Saldo Anggaran Lebih (SAL) yang telah dialokasikan da lam Undang-Undang Nomor 9 Tahun 2005 tentang Perubahan Kedua atas Undang-Undang Nomor 36 Tahun 2004 tentang Anggaran Pendapatan da n Belanja Negara Tahun Anggaran 4 2005 sebesar Rp9.326.200.000.000 (sembilan triliun tiga ra tus dua puluh enam miliar dua ratus juta rupiah).\n(3). Sisa Anggaran Lebih (SAL) sampai dengan akhir Tahun Anggaran 2005 adalah sebesar Rp17.066.126.560.000 (tujuh belas triliun enam puluh enam miliar seratus dua puluh enam juta lima ratus enam puluh ribu rupiah) yang berasal dari SAL sa mpai dengan akhir Tahun Anggaran 2004, yakni sebesar Rp21.574.381.777.419 (dua puluh satu triliun lima ratus tujuh puluh empat m iliar tiga ratus delapan puluh satu juta tujuh ratus tujuh puluh tujuh ribu empat ra tus sembilan belas rupiah) dikurangi dengan SIKPA Tahun Anggaran 2005 sebesar Rp5.535.482.212.206 (lima triliun lima ratus tiga puluh li ma miliar empat ratus delapan puluh dua juta dua ratus dua belas ribu dua ratus enam r upiah) dan ditambah koreksi terhadap perlakuan set off utang piutang Bank Indonesia sebesar Rp1.027.227.000.000 (satu triliun dua puluh tujuh miliar dua ratus dua puluh tujuh juta rupiah).\n(4). Realisasi Anggaran Pendapatan da n Belanja Negara sebagaimana dimaksud pada ayat (1) belum term asuk realisasi penerimaan sebesar Rp1.077.306.380.000 (satu triliun tujuh puluh tujuh miliar tiga ratus enam juta tiga ratus delapan puluh ri bu rupiah) dan realisasi pengeluaran sebesar Rp4.230.867.730.000 (empat triliu n dua ratus tig a puluh miliar delapan ratus enam puluh tujuh juta tujuh ratus tiga puluh ribu rupiah) yang dikelola di luar mekanisme APBN. (5) Realisasi . . .\n(5). Realisasi Anggaran Pendapatan da n Belanja Negara sebagaimana dimaksud pada ayat (1), khususnya penerimaan dan pengeluaran sebesar Rp9.802.303.000.000 (sembilan triliun delapa n ratus dua m iliar tiga ratus tiga juta rupiah) belum memenuhi asas bruto." .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat> .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0001> .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0001> legal:ayatHasRawText "Realisasi anggaran Pendapatan da n Hibah Tahun Anggaran 2005 adalah sebesar Rp495.224.207.225.857 (empat ratus se mbilan puluh lima triliun dua ratus dua puluh empat miliar dua ratus tujuh juta dua ratus dua puluh lima ribu delapan ratus lima puluh tujuh rupiah) dan Realisasi Belanja Negara sebesar Rp509.632.418.161.360 (lima ratus sembilan triliun enam ratus tiga puluh dua miliar empa t ratus delapan belas juta seratus enam puluh satu ribu tiga ratus en am puluh rupiah), sehingga terdapat defisit anggaran sebesar Rp14.408.210.935.503 (empat belas triliun empat ratus delapan miliar dua ratus sepuluh juta sembilan ratus tiga puluh lima ribu lima ratus tiga rupiah). (2) Pembiayaan . . ." .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0001/text> legal:textHasTextString "Realisasi anggaran Pendapatan da n Hibah Tahun Anggaran 2005 adalah sebesar Rp495.224.207.225.857 (empat ratus se mbilan puluh lima triliun dua ratus dua puluh empat miliar dua ratus tujuh juta dua ratus dua puluh lima ribu delapan ratus lima puluh tujuh rupiah) dan Realisasi Belanja Negara sebesar Rp509.632.418.161.360 (lima ratus sembilan triliun enam ratus tiga puluh dua miliar empa t ratus delapan belas juta seratus enam puluh satu ribu tiga ratus en am puluh rupiah), sehingga terdapat defisit anggaran sebesar Rp14.408.210.935.503 (empat belas triliun empat ratus delapan miliar dua ratus sepuluh juta sembilan ratus tiga puluh lima ribu lima ratus tiga rupiah). (2) Pembiayaan . . ." .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0001/text> .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0002> .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0002> legal:ayatHasRawText "Pembiayaan atas Defisit Anggara n Tahun Anggaran 2005 sebagaimana dimaksud pada ayat (1) ad alah sebesar Rp8.872.728.723.297 (delapan triliun delapan ratus tujuh puluh dua miliar tujuh ratus dua puluh delapan juta tujuh ratus dua puluh tiga ribu dua ratus sembilan puluh tujuh rupiah), sehingga terdapat Sisa Kurang Pembiayaan Anggaran (SIKPA) sebesar Rp5.535.482.212.206 (lima triliun lima ratus tiga puluh lima miliar empat ratus delapan puluh dua juta dua ratus dua belas ribu dua ratus enam rupiah). SIKPA tersebut ditutup dari Saldo Anggaran Lebih (SAL) yang telah dialokasikan da lam Undang-Undang Nomor 9 Tahun 2005 tentang Perubahan Kedua atas Undang-Undang Nomor 36 Tahun 2004 tentang Anggaran Pendapatan da n Belanja Negara Tahun Anggaran 4 2005 sebesar Rp9.326.200.000.000 (sembilan triliun tiga ra tus dua puluh enam miliar dua ratus juta rupiah)." .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0002/text> legal:textHasTextString "Pembiayaan atas Defisit Anggara n Tahun Anggaran 2005 sebagaimana dimaksud pada ayat (1) ad alah sebesar Rp8.872.728.723.297 (delapan triliun delapan ratus tujuh puluh dua miliar tujuh ratus dua puluh delapan juta tujuh ratus dua puluh tiga ribu dua ratus sembilan puluh tujuh rupiah), sehingga terdapat Sisa Kurang Pembiayaan Anggaran (SIKPA) sebesar Rp5.535.482.212.206 (lima triliun lima ratus tiga puluh lima miliar empat ratus delapan puluh dua juta dua ratus dua belas ribu dua ratus enam rupiah). SIKPA tersebut ditutup dari Saldo Anggaran Lebih (SAL) yang telah dialokasikan da lam Undang-Undang Nomor 9 Tahun 2005 tentang Perubahan Kedua atas Undang-Undang Nomor 36 Tahun 2004 tentang Anggaran Pendapatan da n Belanja Negara Tahun Anggaran 4 2005 sebesar Rp9.326.200.000.000 (sembilan triliun tiga ra tus dua puluh enam miliar dua ratus juta rupiah)." .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0002/text> .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0001> .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2004/36> .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2005/9> .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0003> .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0003> legal:ayatHasRawText "Sisa Anggaran Lebih (SAL) sampai dengan akhir Tahun Anggaran 2005 adalah sebesar Rp17.066.126.560.000 (tujuh belas triliun enam puluh enam miliar seratus dua puluh enam juta lima ratus enam puluh ribu rupiah) yang berasal dari SAL sa mpai dengan akhir Tahun Anggaran 2004, yakni sebesar Rp21.574.381.777.419 (dua puluh satu triliun lima ratus tujuh puluh empat m iliar tiga ratus delapan puluh satu juta tujuh ratus tujuh puluh tujuh ribu empat ra tus sembilan belas rupiah) dikurangi dengan SIKPA Tahun Anggaran 2005 sebesar Rp5.535.482.212.206 (lima triliun lima ratus tiga puluh li ma miliar empat ratus delapan puluh dua juta dua ratus dua belas ribu dua ratus enam r upiah) dan ditambah koreksi terhadap perlakuan set off utang piutang Bank Indonesia sebesar Rp1.027.227.000.000 (satu triliun dua puluh tujuh miliar dua ratus dua puluh tujuh juta rupiah)." .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0003/text> legal:textHasTextString "Sisa Anggaran Lebih (SAL) sampai dengan akhir Tahun Anggaran 2005 adalah sebesar Rp17.066.126.560.000 (tujuh belas triliun enam puluh enam miliar seratus dua puluh enam juta lima ratus enam puluh ribu rupiah) yang berasal dari SAL sa mpai dengan akhir Tahun Anggaran 2004, yakni sebesar Rp21.574.381.777.419 (dua puluh satu triliun lima ratus tujuh puluh empat m iliar tiga ratus delapan puluh satu juta tujuh ratus tujuh puluh tujuh ribu empat ra tus sembilan belas rupiah) dikurangi dengan SIKPA Tahun Anggaran 2005 sebesar Rp5.535.482.212.206 (lima triliun lima ratus tiga puluh li ma miliar empat ratus delapan puluh dua juta dua ratus dua belas ribu dua ratus enam r upiah) dan ditambah koreksi terhadap perlakuan set off utang piutang Bank Indonesia sebesar Rp1.027.227.000.000 (satu triliun dua puluh tujuh miliar dua ratus dua puluh tujuh juta rupiah)." .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0003/text> .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0004> .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0004> legal:ayatHasKey 4 .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0004> legal:ayatHasRawText "Realisasi Anggaran Pendapatan da n Belanja Negara sebagaimana dimaksud pada ayat (1) belum term asuk realisasi penerimaan sebesar Rp1.077.306.380.000 (satu triliun tujuh puluh tujuh miliar tiga ratus enam juta tiga ratus delapan puluh ri bu rupiah) dan realisasi pengeluaran sebesar Rp4.230.867.730.000 (empat triliu n dua ratus tig a puluh miliar delapan ratus enam puluh tujuh juta tujuh ratus tiga puluh ribu rupiah) yang dikelola di luar mekanisme APBN. (5) Realisasi . . ." .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0004/text> legal:textHasTextString "Realisasi Anggaran Pendapatan da n Belanja Negara sebagaimana dimaksud pada ayat (1) belum term asuk realisasi penerimaan sebesar Rp1.077.306.380.000 (satu triliun tujuh puluh tujuh miliar tiga ratus enam juta tiga ratus delapan puluh ri bu rupiah) dan realisasi pengeluaran sebesar Rp4.230.867.730.000 (empat triliu n dua ratus tig a puluh miliar delapan ratus enam puluh tujuh juta tujuh ratus tiga puluh ribu rupiah) yang dikelola di luar mekanisme APBN. (5) Realisasi . . ." .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0004/text> .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0001> .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0005> .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0005> legal:ayatHasKey 5 .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0005> legal:ayatHasRawText "Realisasi Anggaran Pendapatan da n Belanja Negara sebagaimana dimaksud pada ayat (1), khususnya penerimaan dan pengeluaran sebesar Rp9.802.303.000.000 (sembilan triliun delapa n ratus dua m iliar tiga ratus tiga juta rupiah) belum memenuhi asas bruto." .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0005/text> legal:textHasTextString "Realisasi Anggaran Pendapatan da n Belanja Negara sebagaimana dimaksud pada ayat (1), khususnya penerimaan dan pengeluaran sebesar Rp9.802.303.000.000 (sembilan triliun delapa n ratus dua m iliar tiga ratus tiga juta rupiah) belum memenuhi asas bruto." .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0005> legal:ayatHasText <http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0005/text> .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0005/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0001> .
+<http://example.org/legal/document/uu/2007/46/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2007/46/pasal/0004> .
+<http://example.org/legal/document/uu/2007/46/pasal/0004> legal:pasalHasKey 4 .
+<http://example.org/legal/document/uu/2007/46/pasal/0004> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218> .
+<http://example.org/legal/document/uu/2007/46> legal:documentHasPasal <http://example.org/legal/document/uu/2007/46/pasal/0004> .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218> legal:pasalVersionHasVersionDate "2007-12-18"^^xsd:date .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218> legal:pasalVersionHasRawText "(1). Neraca Pemerintah Pusat per 31 Desember 2005 menginformasikan jumlah Aset sebesar Rp1.173.134.982.337.273 (seribu seratus tujuh puluh tiga triliun seratu s tiga puluh empat miliar sembilan ratus delapan puluh dua juta tiga ratus tiga puluh tujuh ribu dua ratu s tujuh puluh tiga rupiah) dan Kewajiban se besar Rp1.342.050.703.668.530 (seribu tiga ratus empat puluh dua triliun lima pul uh miliar tujuh ratus tiga juta enam ratus enam puluh delapan ribu lima ratus tiga puluh rupiah), sehingga Ekuitas Dana adalah sebesar minus Rp168.915.721.331.257 (seratus enam puluh delapan triliun sembilan ra tus lima belas mi liar tujuh ratus dua puluh satu juta tiga ratus tiga puluh satu ribu dua ratus lima puluh tujuh rupiah). 5\n(2). Neraca Pemerintah Pusat per 31 Desember 2005 belum mencakup pelaporan rekening-rekening ke menterian negara/lembaga yang ditemukan dalam pemeriksaan oleh Badan Pemeriksa Keuangan.\n(3). Pemerintah bertanggung jawab un tuk melakukan penertiban rekening sebagaimana dimaksud pada ayat (2) dan menyampaikan hasilnya kepada Dewan Perwakilan Rakyat." .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat> .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0001> .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0001> legal:ayatHasRawText "Neraca Pemerintah Pusat per 31 Desember 2005 menginformasikan jumlah Aset sebesar Rp1.173.134.982.337.273 (seribu seratus tujuh puluh tiga triliun seratu s tiga puluh empat miliar sembilan ratus delapan puluh dua juta tiga ratus tiga puluh tujuh ribu dua ratu s tujuh puluh tiga rupiah) dan Kewajiban se besar Rp1.342.050.703.668.530 (seribu tiga ratus empat puluh dua triliun lima pul uh miliar tujuh ratus tiga juta enam ratus enam puluh delapan ribu lima ratus tiga puluh rupiah), sehingga Ekuitas Dana adalah sebesar minus Rp168.915.721.331.257 (seratus enam puluh delapan triliun sembilan ra tus lima belas mi liar tujuh ratus dua puluh satu juta tiga ratus tiga puluh satu ribu dua ratus lima puluh tujuh rupiah). 5" .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0001/text> legal:textHasTextString "Neraca Pemerintah Pusat per 31 Desember 2005 menginformasikan jumlah Aset sebesar Rp1.173.134.982.337.273 (seribu seratus tujuh puluh tiga triliun seratu s tiga puluh empat miliar sembilan ratus delapan puluh dua juta tiga ratus tiga puluh tujuh ribu dua ratu s tujuh puluh tiga rupiah) dan Kewajiban se besar Rp1.342.050.703.668.530 (seribu tiga ratus empat puluh dua triliun lima pul uh miliar tujuh ratus tiga juta enam ratus enam puluh delapan ribu lima ratus tiga puluh rupiah), sehingga Ekuitas Dana adalah sebesar minus Rp168.915.721.331.257 (seratus enam puluh delapan triliun sembilan ra tus lima belas mi liar tujuh ratus dua puluh satu juta tiga ratus tiga puluh satu ribu dua ratus lima puluh tujuh rupiah). 5" .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0001/text> .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0002> .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0002> legal:ayatHasRawText "Neraca Pemerintah Pusat per 31 Desember 2005 belum mencakup pelaporan rekening-rekening ke menterian negara/lembaga yang ditemukan dalam pemeriksaan oleh Badan Pemeriksa Keuangan." .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0002/text> legal:textHasTextString "Neraca Pemerintah Pusat per 31 Desember 2005 belum mencakup pelaporan rekening-rekening ke menterian negara/lembaga yang ditemukan dalam pemeriksaan oleh Badan Pemeriksa Keuangan." .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0002/text> .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0003> .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0003> legal:ayatHasRawText "Pemerintah bertanggung jawab un tuk melakukan penertiban rekening sebagaimana dimaksud pada ayat (2) dan menyampaikan hasilnya kepada Dewan Perwakilan Rakyat." .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0003/text> legal:textHasTextString "Pemerintah bertanggung jawab un tuk melakukan penertiban rekening sebagaimana dimaksud pada ayat (2) dan menyampaikan hasilnya kepada Dewan Perwakilan Rakyat." .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0003/text> .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0002> .
+<http://example.org/legal/document/uu/2007/46/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2007/46/pasal/0005> .
+<http://example.org/legal/document/uu/2007/46/pasal/0005> legal:pasalHasKey 5 .
+<http://example.org/legal/document/uu/2007/46/pasal/0005> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2007/46/pasal/0005/version/20071218> .
+<http://example.org/legal/document/uu/2007/46> legal:documentHasPasal <http://example.org/legal/document/uu/2007/46/pasal/0005> .
+<http://example.org/legal/document/uu/2007/46/pasal/0005/version/20071218> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2007/46/pasal/0005/version/20071218> legal:pasalVersionHasVersionDate "2007-12-18"^^xsd:date .
+<http://example.org/legal/document/uu/2007/46/pasal/0005/version/20071218> legal:pasalVersionHasRawText "Laporan Arus Kas Tahun Anggaran 2005 menggambarkan jumlah arus kas bersih dari aktivitas operasi sebesar Rp22.474.991.456.467 (dua puluh dua triliun empat ratus tujuh puluh empat miliar sembilan ratus sembilan puluh satu juta empat ratus lima puluh enam ribu empat ratus enam puluh tujuh rupiah), arus kas bersih dari aktif itas investasi aset non keuangan sebesar minus Rp36.883.202.391.970 (tiga pulu h enam triliun delapan ratus delapan puluh tiga miliar dua . . . dua ratus dua juta tiga ratus sembilan puluh satu ribu sembilan ratus tujuh puluh rupiah), arus kas bersih dari aktifitas pembiayaan sebesar Rp8.872.728.723.297 (delapan triliun delapa n ratus tujuh puluh dua miliar tujuh ratus dua puluh delapan juta tuju h ratus dua puluh tiga ribu dua ratus sembilan puluh tujuh rupiah), dan arus kas bersih dari ak tifitas non anggaran sebesar Rp10.844.852.236.233 (sepuluh trili un delapan ratus empat puluh empat miliar delapan ratus lima puluh dua juta dua ratus ti ga puluh enam ribu dua ratus tiga puluh tiga rupiah)." .
+<http://example.org/legal/document/uu/2007/46/pasal/0005/version/20071218/text> legal:textHasTextString "Laporan Arus Kas Tahun Anggaran 2005 menggambarkan jumlah arus kas bersih dari aktivitas operasi sebesar Rp22.474.991.456.467 (dua puluh dua triliun empat ratus tujuh puluh empat miliar sembilan ratus sembilan puluh satu juta empat ratus lima puluh enam ribu empat ratus enam puluh tujuh rupiah), arus kas bersih dari aktif itas investasi aset non keuangan sebesar minus Rp36.883.202.391.970 (tiga pulu h enam triliun delapan ratus delapan puluh tiga miliar dua . . . dua ratus dua juta tiga ratus sembilan puluh satu ribu sembilan ratus tujuh puluh rupiah), arus kas bersih dari aktifitas pembiayaan sebesar Rp8.872.728.723.297 (delapan triliun delapa n ratus tujuh puluh dua miliar tujuh ratus dua puluh delapan juta tuju h ratus dua puluh tiga ribu dua ratus sembilan puluh tujuh rupiah), dan arus kas bersih dari ak tifitas non anggaran sebesar Rp10.844.852.236.233 (sepuluh trili un delapan ratus empat puluh empat miliar delapan ratus lima puluh dua juta dua ratus ti ga puluh enam ribu dua ratus tiga puluh tiga rupiah)." .
+<http://example.org/legal/document/uu/2007/46/pasal/0005/version/20071218> legal:pasalVersionHasText <http://example.org/legal/document/uu/2007/46/pasal/0005/version/20071218/text> .
+<http://example.org/legal/document/uu/2007/46/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2007/46/pasal/0006> .
+<http://example.org/legal/document/uu/2007/46/pasal/0006> legal:pasalHasKey 6 .
+<http://example.org/legal/document/uu/2007/46/pasal/0006> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2007/46/pasal/0006/version/20071218> .
+<http://example.org/legal/document/uu/2007/46> legal:documentHasPasal <http://example.org/legal/document/uu/2007/46/pasal/0006> .
+<http://example.org/legal/document/uu/2007/46/pasal/0006/version/20071218> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2007/46/pasal/0006/version/20071218> legal:pasalVersionHasVersionDate "2007-12-18"^^xsd:date .
+<http://example.org/legal/document/uu/2007/46/pasal/0006/version/20071218> legal:pasalVersionHasRawText "Catatan atas Laporan Keuangan meliputi penjelasan atau daftar terinci atau analisis atas nilai suatu pos yang disajikan dalam Laporan Realisasi Anggaran, Neraca, dan Laporan Arus Kas." .
+<http://example.org/legal/document/uu/2007/46/pasal/0006/version/20071218/text> legal:textHasTextString "Catatan atas Laporan Keuangan meliputi penjelasan atau daftar terinci atau analisis atas nilai suatu pos yang disajikan dalam Laporan Realisasi Anggaran, Neraca, dan Laporan Arus Kas." .
+<http://example.org/legal/document/uu/2007/46/pasal/0006/version/20071218> legal:pasalVersionHasText <http://example.org/legal/document/uu/2007/46/pasal/0006/version/20071218/text> .
+<http://example.org/legal/document/uu/2007/46/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2007/46/pasal/0007> .
+<http://example.org/legal/document/uu/2007/46/pasal/0007> legal:pasalHasKey 7 .
+<http://example.org/legal/document/uu/2007/46/pasal/0007> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2007/46/pasal/0007/version/20071218> .
+<http://example.org/legal/document/uu/2007/46> legal:documentHasPasal <http://example.org/legal/document/uu/2007/46/pasal/0007> .
+<http://example.org/legal/document/uu/2007/46/pasal/0007/version/20071218> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2007/46/pasal/0007/version/20071218> legal:pasalVersionHasVersionDate "2007-12-18"^^xsd:date .
+<http://example.org/legal/document/uu/2007/46/pasal/0007/version/20071218> legal:pasalVersionHasRawText "Laporan Keuangan sebagaimana dimaks ud dalam Pasal 2, dilampiri juga Ikhtisar Laporan Keuangan Perusahaan Negara." .
+<http://example.org/legal/document/uu/2007/46/pasal/0007/version/20071218/text> legal:textHasTextString "Laporan Keuangan sebagaimana dimaks ud dalam Pasal 2, dilampiri juga Ikhtisar Laporan Keuangan Perusahaan Negara." .
+<http://example.org/legal/document/uu/2007/46/pasal/0007/version/20071218> legal:pasalVersionHasText <http://example.org/legal/document/uu/2007/46/pasal/0007/version/20071218/text> .
+<http://example.org/legal/document/uu/2007/46/pasal/0007/version/20071218/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2007/46/pasal/0002> .
+<http://example.org/legal/document/uu/2007/46/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2007/46/pasal/0008> .
+<http://example.org/legal/document/uu/2007/46/pasal/0008> legal:pasalHasKey 8 .
+<http://example.org/legal/document/uu/2007/46/pasal/0008> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2007/46/pasal/0008/version/20071218> .
+<http://example.org/legal/document/uu/2007/46> legal:documentHasPasal <http://example.org/legal/document/uu/2007/46/pasal/0008> .
+<http://example.org/legal/document/uu/2007/46/pasal/0008/version/20071218> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2007/46/pasal/0008/version/20071218> legal:pasalVersionHasVersionDate "2007-12-18"^^xsd:date .
+<http://example.org/legal/document/uu/2007/46/pasal/0008/version/20071218> legal:pasalVersionHasRawText "Dalam hal realisasi angg aran pengeluaran melebihi realisasi anggaran penerimaan tahun anggaran berjalan, maka SAL dapat digunakan." .
+<http://example.org/legal/document/uu/2007/46/pasal/0008/version/20071218/text> legal:textHasTextString "Dalam hal realisasi angg aran pengeluaran melebihi realisasi anggaran penerimaan tahun anggaran berjalan, maka SAL dapat digunakan." .
+<http://example.org/legal/document/uu/2007/46/pasal/0008/version/20071218> legal:pasalVersionHasText <http://example.org/legal/document/uu/2007/46/pasal/0008/version/20071218/text> .
+<http://example.org/legal/document/uu/2007/46/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2007/46/pasal/0009> .
+<http://example.org/legal/document/uu/2007/46/pasal/0009> legal:pasalHasKey 9 .
+<http://example.org/legal/document/uu/2007/46/pasal/0009> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2007/46/pasal/0009/version/20071218> .
+<http://example.org/legal/document/uu/2007/46> legal:documentHasPasal <http://example.org/legal/document/uu/2007/46/pasal/0009> .
+<http://example.org/legal/document/uu/2007/46/pasal/0009/version/20071218> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2007/46/pasal/0009/version/20071218> legal:pasalVersionHasVersionDate "2007-12-18"^^xsd:date .
+<http://example.org/legal/document/uu/2007/46/pasal/0009/version/20071218> legal:pasalVersionHasRawText "Laporan Keuangan sebagaimana dimaksud dalam Pasal 2, telah diperiksa oleh Badan Pemeriksa Keuangan denga n opini tidak menyatakan pendapat. 6" .
+<http://example.org/legal/document/uu/2007/46/pasal/0009/version/20071218/text> legal:textHasTextString "Laporan Keuangan sebagaimana dimaksud dalam Pasal 2, telah diperiksa oleh Badan Pemeriksa Keuangan denga n opini tidak menyatakan pendapat. 6" .
+<http://example.org/legal/document/uu/2007/46/pasal/0009/version/20071218> legal:pasalVersionHasText <http://example.org/legal/document/uu/2007/46/pasal/0009/version/20071218/text> .
+<http://example.org/legal/document/uu/2007/46/pasal/0009/version/20071218/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2007/46/pasal/0002> .
+<http://example.org/legal/document/uu/2007/46/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2007/46/pasal/0010> .
+<http://example.org/legal/document/uu/2007/46/pasal/0010> legal:pasalHasKey 10 .
+<http://example.org/legal/document/uu/2007/46/pasal/0010> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2007/46/pasal/0010/version/20071218> .
+<http://example.org/legal/document/uu/2007/46> legal:documentHasPasal <http://example.org/legal/document/uu/2007/46/pasal/0010> .
+<http://example.org/legal/document/uu/2007/46/pasal/0010/version/20071218> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2007/46/pasal/0010/version/20071218> legal:pasalVersionHasVersionDate "2007-12-18"^^xsd:date .
+<http://example.org/legal/document/uu/2007/46/pasal/0010/version/20071218> legal:pasalVersionHasRawText "Pemerintah bertanggung jawab untuk melakukan perbaikan-perbaikan sistem pengelolaan keuangan negara sesuai dengan temuan-temuan sebagaimana yang dimaksud dalam hasil pemeri ksaan Badan Pemeriksa Keuangan." .
+<http://example.org/legal/document/uu/2007/46/pasal/0010/version/20071218/text> legal:textHasTextString "Pemerintah bertanggung jawab untuk melakukan perbaikan-perbaikan sistem pengelolaan keuangan negara sesuai dengan temuan-temuan sebagaimana yang dimaksud dalam hasil pemeri ksaan Badan Pemeriksa Keuangan." .
+<http://example.org/legal/document/uu/2007/46/pasal/0010/version/20071218> legal:pasalVersionHasText <http://example.org/legal/document/uu/2007/46/pasal/0010/version/20071218/text> .
+<http://example.org/legal/document/uu/2007/46/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2007/46/pasal/0011> .
+<http://example.org/legal/document/uu/2007/46/pasal/0011> legal:pasalHasKey 11 .
+<http://example.org/legal/document/uu/2007/46/pasal/0011> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2007/46/pasal/0011/version/20071218> .
+<http://example.org/legal/document/uu/2007/46> legal:documentHasPasal <http://example.org/legal/document/uu/2007/46/pasal/0011> .
+<http://example.org/legal/document/uu/2007/46/pasal/0011/version/20071218> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2007/46/pasal/0011/version/20071218> legal:pasalVersionHasVersionDate "2007-12-18"^^xsd:date .
+<http://example.org/legal/document/uu/2007/46/pasal/0011/version/20071218> legal:pasalVersionHasRawText "Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar . . . Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang- Undang ini, dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2007/46/pasal/0011/version/20071218/text> legal:textHasTextString "Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar . . . Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang- Undang ini, dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2007/46/pasal/0011/version/20071218> legal:pasalVersionHasText <http://example.org/legal/document/uu/2007/46/pasal/0011/version/20071218/text> .
 <http://example.org/legal/document/uu/2007/46> legal:documentHasDisahkanDate "2007-12-18"^^xsd:date .
 <http://example.org/legal/document/uu/2007/46> legal:documentMengingat <http://example.org/legal/document/uu/2007/46/mengingat> .
 <http://example.org/legal/document/uu/2007/46/mengingat/text> legal:textHasTextString ". . . Mengingat : 1. Pasal 5 ayat (1), Pasal 20 ayat (1), ayat (2), dan ayat (5), Pasal 23 ayat (1), dan Pasal 23E Undang-Undang Dasar Negara Republik Indonesia Tahun 1945; 2 2. Undang-Undang Nomor 17 Tahun 2003 tentang Keuangan Negara (Lembaran Negara Republik Indones ia Tahun 2003 Nomor 47, Tambahan Lembaran Negara Republik Indonesia Nomor 4286); 3. Undang-Undang Nomor 1 Tahun 2004 tentang Perbendaharaan Negara (Lembaran Negara Republik Indonesia Tahun 2004 Nomor 5, Tambahan Lembaran Negara Republik Indonesia Nomor 4355); 4. Undang-Undang Nomor 10 Tahun 2004 tentang Pembentukan Peraturan Perundang-undangan (Lembaran Nega ra Republik Indonesia Tahun 2004 Nomor 53, Tambahan Lembaran Negara Republik Indonesia Nomor 4389); 5. Undang-Undang Nomor 15 Tahun 2004 tentang Pemeriksaan Pengelolaan dan Tanggung Jawab Keuangan Nega ra (Lembaran Negara Republik Indonesia Tahun 2004 Nomor 66, Tambahan Lembaran Negara Republik Indonesia Nomor 4400); 6. Undang-Undang Nomor 36 Tahun 2004 tentang Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 2005 (Lembaran Negara Republik Indonesia Tahun 2004 Nomor 130, Ta mbahan Lembaran Negara Republik Indonesia Nomor 4442), sebagaimana te lah diubah untuk kedua kali dengan Undang-Undang Nomor 9 Tahun 2005 (Lembaran Negara Republik Indonesia Tahun 2005 Nomo r 110, Tambahan Lembaran Negara Republik Indonesia Tahun 2004 Nomor 4549); 7. Undang-Undang Nomor 15 Tahun 2006 tentang Badan Pemeriksa Keuangan (Lembaran Negara Republik Indonesia Tahun 2006 Nomor 85, Tambahan Lembaran Negara Republik Indonesia Nomor 4654); Dengan . . . Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA dan PRESIDEN REPUBLIK INDONESIA MEMUTUSKAN: 3 Menetapkan : UNDANG-UNDANG TENTANG PERTANGGUNGJAWABAN ATAS PELAKSANAAN ANGGARAN PENDAPATAN DAN BELANJA NEGARA TAHUN ANGGARAN 2005." .
@@ -43,6 +205,65 @@
 <http://example.org/legal/document/uu/2007/46> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/2007/46> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/2007/46> a legal:Document .
+<http://example.org/legal/document/uu/2007/46/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2007/46/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/2007/46/pasal/0001/version/20071218> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2007/46/pasal/0001/version/20071218/text> a legal:Text .
+<http://example.org/legal/document/uu/2007/46/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/0001> a legal:Point .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/0002> a legal:Point .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/0003> a legal:Point .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/0004> a legal:Point .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/2007/46/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0004> a legal:Ayat .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0005> a legal:Ayat .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0005/text> a legal:Text .
+<http://example.org/legal/document/uu/2007/46/pasal/0004> a legal:Pasal .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/2007/46/pasal/0005> a legal:Pasal .
+<http://example.org/legal/document/uu/2007/46/pasal/0005/version/20071218> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2007/46/pasal/0005/version/20071218/text> a legal:Text .
+<http://example.org/legal/document/uu/2007/46/pasal/0006> a legal:Pasal .
+<http://example.org/legal/document/uu/2007/46/pasal/0006/version/20071218> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2007/46/pasal/0006/version/20071218/text> a legal:Text .
+<http://example.org/legal/document/uu/2007/46/pasal/0007> a legal:Pasal .
+<http://example.org/legal/document/uu/2007/46/pasal/0007/version/20071218> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2007/46/pasal/0007/version/20071218/text> a legal:Text .
+<http://example.org/legal/document/uu/2007/46/pasal/0008> a legal:Pasal .
+<http://example.org/legal/document/uu/2007/46/pasal/0008/version/20071218> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2007/46/pasal/0008/version/20071218/text> a legal:Text .
+<http://example.org/legal/document/uu/2007/46/pasal/0009> a legal:Pasal .
+<http://example.org/legal/document/uu/2007/46/pasal/0009/version/20071218> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2007/46/pasal/0009/version/20071218/text> a legal:Text .
+<http://example.org/legal/document/uu/2007/46/pasal/0010> a legal:Pasal .
+<http://example.org/legal/document/uu/2007/46/pasal/0010/version/20071218> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2007/46/pasal/0010/version/20071218/text> a legal:Text .
+<http://example.org/legal/document/uu/2007/46/pasal/0011> a legal:Pasal .
+<http://example.org/legal/document/uu/2007/46/pasal/0011/version/20071218> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2007/46/pasal/0011/version/20071218/text> a legal:Text .
 <http://example.org/legal/document/uu/2007/46/mengingat/text> a legal:Text .
 <http://example.org/legal/document/uu/2007/46/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/2007/46/menimbang> a legal:Menimbang .
@@ -56,7 +277,62 @@
 <http://example.org/legal/document/uu/2007/46/menimbang/point/c/text> a legal:Text .
 <http://example.org/legal/document/uu/2007/46/menimbang/point/d> a legal:Point .
 <http://example.org/legal/document/uu/2007/46/menimbang/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/2007/46/bab> legal:partOf <http://example.org/legal/document/uu/2007/46> .
+<http://example.org/legal/document/uu/2007/46/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2007/46/pasals> .
+<http://example.org/legal/document/uu/2007/46/pasal/0001/version/20071218> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0001> .
+<http://example.org/legal/document/uu/2007/46/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2007/46> .
+<http://example.org/legal/document/uu/2007/46/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2007/46/pasals> .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0002> .
+<http://example.org/legal/document/uu/2007/46/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2007/46> .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218> .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/0001> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point> .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/0002> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point> .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/0003> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point> .
+<http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point/0004> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0002/version/20071218/point> .
+<http://example.org/legal/document/uu/2007/46/pasal/0003> legal:partOf <http://example.org/legal/document/uu/2007/46/pasals> .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0003> .
+<http://example.org/legal/document/uu/2007/46/pasal/0003> legal:partOf <http://example.org/legal/document/uu/2007/46> .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218> .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat> .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0001> .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat> .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0002> .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0003> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat> .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0003> .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0004> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat> .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0004> .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0005> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat> .
+<http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0005/text> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0003/version/20071218/ayat/0005> .
+<http://example.org/legal/document/uu/2007/46/pasal/0004> legal:partOf <http://example.org/legal/document/uu/2007/46/pasals> .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0004> .
+<http://example.org/legal/document/uu/2007/46/pasal/0004> legal:partOf <http://example.org/legal/document/uu/2007/46> .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218> .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat> .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0001> .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat> .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0002> .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0003> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat> .
+<http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0004/version/20071218/ayat/0003> .
+<http://example.org/legal/document/uu/2007/46/pasal/0005> legal:partOf <http://example.org/legal/document/uu/2007/46/pasals> .
+<http://example.org/legal/document/uu/2007/46/pasal/0005/version/20071218> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0005> .
+<http://example.org/legal/document/uu/2007/46/pasal/0005> legal:partOf <http://example.org/legal/document/uu/2007/46> .
+<http://example.org/legal/document/uu/2007/46/pasal/0006> legal:partOf <http://example.org/legal/document/uu/2007/46/pasals> .
+<http://example.org/legal/document/uu/2007/46/pasal/0006/version/20071218> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0006> .
+<http://example.org/legal/document/uu/2007/46/pasal/0006> legal:partOf <http://example.org/legal/document/uu/2007/46> .
+<http://example.org/legal/document/uu/2007/46/pasal/0007> legal:partOf <http://example.org/legal/document/uu/2007/46/pasals> .
+<http://example.org/legal/document/uu/2007/46/pasal/0007/version/20071218> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0007> .
+<http://example.org/legal/document/uu/2007/46/pasal/0007> legal:partOf <http://example.org/legal/document/uu/2007/46> .
+<http://example.org/legal/document/uu/2007/46/pasal/0008> legal:partOf <http://example.org/legal/document/uu/2007/46/pasals> .
+<http://example.org/legal/document/uu/2007/46/pasal/0008/version/20071218> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0008> .
+<http://example.org/legal/document/uu/2007/46/pasal/0008> legal:partOf <http://example.org/legal/document/uu/2007/46> .
+<http://example.org/legal/document/uu/2007/46/pasal/0009> legal:partOf <http://example.org/legal/document/uu/2007/46/pasals> .
+<http://example.org/legal/document/uu/2007/46/pasal/0009/version/20071218> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0009> .
+<http://example.org/legal/document/uu/2007/46/pasal/0009> legal:partOf <http://example.org/legal/document/uu/2007/46> .
+<http://example.org/legal/document/uu/2007/46/pasal/0010> legal:partOf <http://example.org/legal/document/uu/2007/46/pasals> .
+<http://example.org/legal/document/uu/2007/46/pasal/0010/version/20071218> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0010> .
+<http://example.org/legal/document/uu/2007/46/pasal/0010> legal:partOf <http://example.org/legal/document/uu/2007/46> .
+<http://example.org/legal/document/uu/2007/46/pasal/0011> legal:partOf <http://example.org/legal/document/uu/2007/46/pasals> .
+<http://example.org/legal/document/uu/2007/46/pasal/0011/version/20071218> legal:partOf <http://example.org/legal/document/uu/2007/46/pasal/0011> .
+<http://example.org/legal/document/uu/2007/46/pasal/0011> legal:partOf <http://example.org/legal/document/uu/2007/46> .
 <http://example.org/legal/document/uu/2007/46/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/2007/46/menimbang/point> .
 <http://example.org/legal/document/uu/2007/46/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/2007/46/menimbang/point> .
 <http://example.org/legal/document/uu/2007/46/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/2007/46/menimbang/point> .

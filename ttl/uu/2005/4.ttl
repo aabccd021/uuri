@@ -1,7 +1,70 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2005/4> legal:documentHasBabSet <http://example.org/legal/document/uu/2005/4/bab> .
+<http://example.org/legal/document/uu/2005/4> legal:documentHasPasalSet <http://example.org/legal/document/uu/2005/4/pasals> .
+<http://example.org/legal/document/uu/2005/4/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2005/4/pasal/0001> .
+<http://example.org/legal/document/uu/2005/4/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/2005/4/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2005/4/pasal/0001/version/20051019> .
+<http://example.org/legal/document/uu/2005/4> legal:documentHasPasal <http://example.org/legal/document/uu/2005/4/pasal/0001> .
+<http://example.org/legal/document/uu/2005/4/pasal/0001/version/20051019> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2005/4/pasal/0001/version/20051019> legal:pasalVersionHasVersionDate "2005-10-19"^^xsd:date .
+<http://example.org/legal/document/uu/2005/4/pasal/0001/version/20051019> legal:pasalVersionHasRawText "Membentuk Pengadilan Tinggi Agama Banten yang berkedudukan di Serang. PRESIDEN REPUBLIK IND O NESIA . 3 -" .
+<http://example.org/legal/document/uu/2005/4/pasal/0001/version/20051019/text> legal:textHasTextString "Membentuk Pengadilan Tinggi Agama Banten yang berkedudukan di Serang. PRESIDEN REPUBLIK IND O NESIA . 3 -" .
+<http://example.org/legal/document/uu/2005/4/pasal/0001/version/20051019> legal:pasalVersionHasText <http://example.org/legal/document/uu/2005/4/pasal/0001/version/20051019/text> .
+<http://example.org/legal/document/uu/2005/4/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2005/4/pasal/0002> .
+<http://example.org/legal/document/uu/2005/4/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/2005/4/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019> .
+<http://example.org/legal/document/uu/2005/4> legal:documentHasPasal <http://example.org/legal/document/uu/2005/4/pasal/0002> .
+<http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019> legal:pasalVersionHasVersionDate "2005-10-19"^^xsd:date .
+<http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019> legal:pasalVersionHasRawText "(1). Daerah hukum Pengadilan Tinggi Agama Banten meliputi wilayah Provinsi Banten.\n(2). Seluruh pengadilan agama di wilayah Provinsi Banten merupakan pengadilan tingkat pertama dari Pengadilan Tinggi Agama Banten." .
+<http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019/ayat> .
+<http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019/ayat/0001> .
+<http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019/ayat/0001> legal:ayatHasRawText "Daerah hukum Pengadilan Tinggi Agama Banten meliputi wilayah Provinsi Banten." .
+<http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019/ayat/0001/text> legal:textHasTextString "Daerah hukum Pengadilan Tinggi Agama Banten meliputi wilayah Provinsi Banten." .
+<http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019/ayat/0001/text> .
+<http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019/ayat/0002> .
+<http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019/ayat/0002> legal:ayatHasRawText "Seluruh pengadilan agama di wilayah Provinsi Banten merupakan pengadilan tingkat pertama dari Pengadilan Tinggi Agama Banten." .
+<http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019/ayat/0002/text> legal:textHasTextString "Seluruh pengadilan agama di wilayah Provinsi Banten merupakan pengadilan tingkat pertama dari Pengadilan Tinggi Agama Banten." .
+<http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019/ayat/0002/text> .
+<http://example.org/legal/document/uu/2005/4/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2005/4/pasal/0003> .
+<http://example.org/legal/document/uu/2005/4/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/2005/4/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2005/4/pasal/0003/version/20051019> .
+<http://example.org/legal/document/uu/2005/4> legal:documentHasPasal <http://example.org/legal/document/uu/2005/4/pasal/0003> .
+<http://example.org/legal/document/uu/2005/4/pasal/0003/version/20051019> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2005/4/pasal/0003/version/20051019> legal:pasalVersionHasVersionDate "2005-10-19"^^xsd:date .
+<http://example.org/legal/document/uu/2005/4/pasal/0003/version/20051019> legal:pasalVersionHasRawText "Dengan terbentuknya Pengadilan Tinggi Agama Banten, daerah hukum Pengadilan Tinggi Agama Bandung dikurangi dengan daerah hukum pengadilan agama di seluruh wilayah Provinsi Banten." .
+<http://example.org/legal/document/uu/2005/4/pasal/0003/version/20051019/text> legal:textHasTextString "Dengan terbentuknya Pengadilan Tinggi Agama Banten, daerah hukum Pengadilan Tinggi Agama Bandung dikurangi dengan daerah hukum pengadilan agama di seluruh wilayah Provinsi Banten." .
+<http://example.org/legal/document/uu/2005/4/pasal/0003/version/20051019> legal:pasalVersionHasText <http://example.org/legal/document/uu/2005/4/pasal/0003/version/20051019/text> .
+<http://example.org/legal/document/uu/2005/4/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2005/4/pasal/0004> .
+<http://example.org/legal/document/uu/2005/4/pasal/0004> legal:pasalHasKey 4 .
+<http://example.org/legal/document/uu/2005/4/pasal/0004> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019> .
+<http://example.org/legal/document/uu/2005/4> legal:documentHasPasal <http://example.org/legal/document/uu/2005/4/pasal/0004> .
+<http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019> legal:pasalVersionHasVersionDate "2005-10-19"^^xsd:date .
+<http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019> legal:pasalVersionHasRawText "Pada saat terbentuknya Pengadilan Tinggi Agama Banten, perkara yang termasuk dalam daerah hukum Pengadilan Tinggi Agama Banten ditentukan sebagai berikut:\na. perkara yang telah diperiksa tetapi belum diputus oleh Pengadilan Tinggi Agama Bandung tetap tiperiksa dan diputus oleh Pengadilan Tinggi Agama Bandung,\nb. perkara yang telah diajukan kepada Pengadilan Tinggi Agama Bandung tetapi belum diperiksa, dilimpahkan kepada Pengadilan Tinggi Agama Banten.\n" .
+<http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019/point> .
+<http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019/point/description> legal:textHasTextString "Pada saat terbentuknya Pengadilan Tinggi Agama Banten, perkara yang termasuk dalam daerah hukum Pengadilan Tinggi Agama Banten ditentukan sebagai berikut:" .
+<http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019/point/description> .
+<http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019/point/a> .
+<http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019/point/a/text> legal:textHasTextString "perkara yang telah diperiksa tetapi belum diputus oleh Pengadilan Tinggi Agama Bandung tetap tiperiksa dan diputus oleh Pengadilan Tinggi Agama Bandung," .
+<http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019/point/a> legal:pointHasText <http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019/point/a/text> .
+<http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019/point/b> .
+<http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019/point/b/text> legal:textHasTextString "perkara yang telah diajukan kepada Pengadilan Tinggi Agama Bandung tetapi belum diperiksa, dilimpahkan kepada Pengadilan Tinggi Agama Banten." .
+<http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019/point/b> legal:pointHasText <http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019/point/b/text> .
+<http://example.org/legal/document/uu/2005/4/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2005/4/pasal/0005> .
+<http://example.org/legal/document/uu/2005/4/pasal/0005> legal:pasalHasKey 5 .
+<http://example.org/legal/document/uu/2005/4/pasal/0005> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2005/4/pasal/0005/version/20051019> .
+<http://example.org/legal/document/uu/2005/4> legal:documentHasPasal <http://example.org/legal/document/uu/2005/4/pasal/0005> .
+<http://example.org/legal/document/uu/2005/4/pasal/0005/version/20051019> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2005/4/pasal/0005/version/20051019> legal:pasalVersionHasVersionDate "2005-10-19"^^xsd:date .
+<http://example.org/legal/document/uu/2005/4/pasal/0005/version/20051019> legal:pasalVersionHasRawText "Undang-Undang ini mulai berlaku pada tanggal 3 April 2006. PRESIDEN REPUBLIK INDO NESIA A4 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2005/4/pasal/0005/version/20051019/text> legal:textHasTextString "Undang-Undang ini mulai berlaku pada tanggal 3 April 2006. PRESIDEN REPUBLIK INDO NESIA A4 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2005/4/pasal/0005/version/20051019> legal:pasalVersionHasText <http://example.org/legal/document/uu/2005/4/pasal/0005/version/20051019/text> .
 <http://example.org/legal/document/uu/2005/4> legal:documentHasDisahkanDate "2005-10-19"^^xsd:date .
 <http://example.org/legal/document/uu/2005/4> legal:documentMengingat <http://example.org/legal/document/uu/2005/4/mengingat> .
 <http://example.org/legal/document/uu/2005/4/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2005/4/mengingat/point> .
@@ -9,28 +72,28 @@
 <http://example.org/legal/document/uu/2005/4/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2005/4/mengingat/point/description> .
 <http://example.org/legal/document/uu/2005/4/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2005/4/mengingat/point/0001> .
 <http://example.org/legal/document/uu/2005/4/mengingat/point/0001> legal:pointHasKey "1" .
-<http://example.org/legal/document/uu/2005/4/mengingat/point/0001/text> legal:textHasTextString "Pasal 20, Pasal 21, dan Pasal 24 Undang-Undang Dasar Negara Republik Indonesia Tahun 1945; PRESIDEN REPUBLIK INDONESIA - 2 -" .
+<http://example.org/legal/document/uu/2005/4/mengingat/point/0001/text> legal:textHasTextString "Pasal 20, Pasal 21, dan Pasal 24 Undang-Undang Dasar Negara Republik Indonesia Tahun 1945, PRESIDEN REPUBLIK INDO NESIA - 9 -" .
 <http://example.org/legal/document/uu/2005/4/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/2005/4/mengingat/point/0001/text> .
 <http://example.org/legal/document/uu/2005/4/mengingat/point/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu> .
 <http://example.org/legal/document/uu/2005/4/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2005/4/mengingat/point/0002> .
 <http://example.org/legal/document/uu/2005/4/mengingat/point/0002> legal:pointHasKey "2" .
-<http://example.org/legal/document/uu/2005/4/mengingat/point/0002/text> legal:textHasTextString "Undang-Undang Nomor 14 Tahun 1985 tentang Mahkamah Agung (Lembaran Negara Republik Indonesia Tahun 1985 Nomor 73, Tambahan Lembaran Negara Republik Indonesia Nomor 3316) sebagaimana telah diubah dengan Undang-Undang Nomor 5 Tahun 2004 (Lembaran Negara Republik Indonesia Tahun 2004 Nomor 9, Tambahan Lembaran Negara Republik Indonesia Nomor 4359);" .
+<http://example.org/legal/document/uu/2005/4/mengingat/point/0002/text> legal:textHasTextString "Undang-Undang Nomor 14 Tahun 1985 tentang Mahkamah Agung (Lembaran Negara Republik Indonesia Tahun 1985 Nomor 73, Tambahan Lembaran Negara Republik Indonesia Nomor 3316) sebagaimana telah diubah dengan Undang-Undang Nomor 5 Tahun 2004 (Lembaran Negara Republik Indonesia Tahun 2004 Nomor 9, Tambahan Lembaran Negara Republik Indonesia Nomor 4359)," .
 <http://example.org/legal/document/uu/2005/4/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/2005/4/mengingat/point/0002/text> .
 <http://example.org/legal/document/uu/2005/4/mengingat/point/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2004/5> .
 <http://example.org/legal/document/uu/2005/4/mengingat/point/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1985/14> .
 <http://example.org/legal/document/uu/2005/4/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2005/4/mengingat/point/0003> .
 <http://example.org/legal/document/uu/2005/4/mengingat/point/0003> legal:pointHasKey "3" .
-<http://example.org/legal/document/uu/2005/4/mengingat/point/0003/text> legal:textHasTextString "Undang-Undang Nomor 7 Tahun 1989 tentang Peradilan Agama (Lembaran Negara Republik Indonesia Tahun 1989 Nomor 49, Tambahan Lembaran Negara Republik Indonesia Nomor 3400);" .
+<http://example.org/legal/document/uu/2005/4/mengingat/point/0003/text> legal:textHasTextString "Undang-Undang Nomor 7 Tahun 1989 tentang Peradilan Agama (Lembaran Negara Republik Indonesia Tahun 1989 Nomor 49, Tambahan Lembaran Negara Republik Indonesia Nomor 3400)," .
 <http://example.org/legal/document/uu/2005/4/mengingat/point/0003> legal:pointHasText <http://example.org/legal/document/uu/2005/4/mengingat/point/0003/text> .
 <http://example.org/legal/document/uu/2005/4/mengingat/point/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1989/7> .
 <http://example.org/legal/document/uu/2005/4/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2005/4/mengingat/point/0004> .
 <http://example.org/legal/document/uu/2005/4/mengingat/point/0004> legal:pointHasKey "4" .
-<http://example.org/legal/document/uu/2005/4/mengingat/point/0004/text> legal:textHasTextString "Undang-Undang Nomor 23 Tahun 2000 tentang Pembentukan Provinsi Banten (Lembaran Negara Republik Indonesia Tahun 2000 Nomor 182, Tambahan Lembaran Negara Republik Indonesia Nomor 4010);" .
+<http://example.org/legal/document/uu/2005/4/mengingat/point/0004/text> legal:textHasTextString "Undang-Undang Nomor 23 Tahun 2000 tentang Pembentukan Provinsi Banten (Lembaran Negara Republik Indonesia Tahun 2000 Nomor 182, Tambahan Lembaran Negara Republik Indonesia Nomor 4010)," .
 <http://example.org/legal/document/uu/2005/4/mengingat/point/0004> legal:pointHasText <http://example.org/legal/document/uu/2005/4/mengingat/point/0004/text> .
 <http://example.org/legal/document/uu/2005/4/mengingat/point/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2000/23> .
 <http://example.org/legal/document/uu/2005/4/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2005/4/mengingat/point/0005> .
 <http://example.org/legal/document/uu/2005/4/mengingat/point/0005> legal:pointHasKey "5" .
-<http://example.org/legal/document/uu/2005/4/mengingat/point/0005/text> legal:textHasTextString "Undang-Undang Nomor 4 Tahun 2004 tentang Kekuasaan Kehakiman (Lembaran Negara Republik Indonesia Tahun 2004 Nomor 8, Tambahan Lembaran Negara Republik Indonesia Nomor 4358); Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA dan PRESIDEN REPUBLIK INDONESIA MEMUTUSKAN : Menetapkan : UNDANG-UNDANG TENTANG PEMBENTUKAN PENGADILAN TINGGI AGAMA BANTEN." .
+<http://example.org/legal/document/uu/2005/4/mengingat/point/0005/text> legal:textHasTextString "Undang-Undang Nomor 4 Tahun 2004 tentang Kekuasaan Kehakiman (Lembaran Negara Republik Indonesia Tahun 2004 Nomor 8, Tambahan Lembaran Negara Republik Indonesia Nomor 4358), Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA dan PRESIDEN REPUBLIK INDONESIA MEMUTUSKAN : Menetapkan : UNDANG-UNDANG TENTANG PEMBENTUKAN PENGADILAN TINGGI AGAMA BANTEN." .
 <http://example.org/legal/document/uu/2005/4/mengingat/point/0005> legal:pointHasText <http://example.org/legal/document/uu/2005/4/mengingat/point/0005/text> .
 <http://example.org/legal/document/uu/2005/4/mengingat/point/0005/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2004/4> .
 <http://example.org/legal/document/uu/2005/4> legal:documentMenimbang <http://example.org/legal/document/uu/2005/4/menimbang> .
@@ -39,28 +102,53 @@
 <http://example.org/legal/document/uu/2005/4/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2005/4/menimbang/point/description> .
 <http://example.org/legal/document/uu/2005/4/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2005/4/menimbang/point/a> .
 <http://example.org/legal/document/uu/2005/4/menimbang/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/2005/4/menimbang/point/a/text> legal:textHasTextString "bahwa peristiwa terbentuknya Provinsi Banten yang wilayahnya berasal dari sebagian wilayah Provinsi Jawa Barat, sejalan dengan kebutuhan perkembangan pembangunan, perlu peningkatan pelayanan hukum melalui pembangunan perangkat peradilan;" .
+<http://example.org/legal/document/uu/2005/4/menimbang/point/a/text> legal:textHasTextString "bahwa peristiwa terbentuknya Provinsi Banten yang wilayahnya berasal dari sebagian wilayah Provinsi Jawa Barat, sejalan dengan kebutuhan perkembangan pembangunan, perlu peningkatan pelayanan hukum melalui pembangunan perangkat peradilan," .
 <http://example.org/legal/document/uu/2005/4/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/2005/4/menimbang/point/a/text> .
 <http://example.org/legal/document/uu/2005/4/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2005/4/menimbang/point/b> .
 <http://example.org/legal/document/uu/2005/4/menimbang/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/2005/4/menimbang/point/b/text> legal:textHasTextString "bahwa untuk meningkatkan pelayanan hukum dalam rangka pemerataan kesempatan memperoleh keadilan serta demi tercapainya penyelesaian perkara dengan sederhana, cepat, dan biaya ringan, perlu membentuk pengadilan tinggi agama di ibukota Provinsi Banten;" .
+<http://example.org/legal/document/uu/2005/4/menimbang/point/b/text> legal:textHasTextString "bahwa untuk meningkatkan pelayanan hukum dalam rangka pemerataan kesempatan memperoleh keadilan serta demi tercapainya penyelesaian perkara dengan sederhana, cepat, dan biaya ringan, perlu membentuk pengadilan tinggi agama di ibukota Provinsi Banten," .
 <http://example.org/legal/document/uu/2005/4/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/2005/4/menimbang/point/b/text> .
 <http://example.org/legal/document/uu/2005/4/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2005/4/menimbang/point/c> .
 <http://example.org/legal/document/uu/2005/4/menimbang/point/c> legal:pointHasKey "c" .
-<http://example.org/legal/document/uu/2005/4/menimbang/point/c/text> legal:textHasTextString "bahwa dengan terbentuknya Pengadilan Tinggi Agama Banten, perlu diadakan peninjauan kembali daerah hukum Pengadilan Tinggi Agama Bandung yang meliputi daerah hukum pengadilan agama seluruh wilayah Provinsi Jawa Barat;" .
+<http://example.org/legal/document/uu/2005/4/menimbang/point/c/text> legal:textHasTextString "bahwa dengan terbentuknya Pengadilan Tinggi Agama Banten, perlu diadakan peninjauan kembali daerah hukum Pengadilan Tinggi Agama Bandung yang meliputi daerah hukum pengadilan agama seluruh wilayah Provinsi Jawa Barat:" .
 <http://example.org/legal/document/uu/2005/4/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/2005/4/menimbang/point/c/text> .
 <http://example.org/legal/document/uu/2005/4/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2005/4/menimbang/point/d> .
 <http://example.org/legal/document/uu/2005/4/menimbang/point/d> legal:pointHasKey "d" .
-<http://example.org/legal/document/uu/2005/4/menimbang/point/d/text> legal:textHasTextString "bahwa sesuai dengan ketentuan Pasal 8 Undang- Undang Nomor 7 Tahun 1989 tentang Peradilan Agama, pengadilan tinggi agama dibentuk dengan Undang- Undang;" .
+<http://example.org/legal/document/uu/2005/4/menimbang/point/d/text> legal:textHasTextString "bahwa sesuai dengan ketentuan Pasal 8 Undang- Undang Nomor 7 Tahun 1989 tentang Peradilan Agama, pengadilan tinggi agama dibentuk dengan Undang- Undang:" .
 <http://example.org/legal/document/uu/2005/4/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/2005/4/menimbang/point/d/text> .
 <http://example.org/legal/document/uu/2005/4/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2005/4/menimbang/point/e> .
 <http://example.org/legal/document/uu/2005/4/menimbang/point/e> legal:pointHasKey "e" .
-<http://example.org/legal/document/uu/2005/4/menimbang/point/e/text> legal:textHasTextString "bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a, huruf b, dan huruf c, perlu membentuk Undang-Undang tentang Pembentukan Pengadilan Tinggi Agama Banten;" .
+<http://example.org/legal/document/uu/2005/4/menimbang/point/e/text> legal:textHasTextString "bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a, huruf b, dan huruf c, perlu membentuk Undang-Undang tentang Pembentukan Pengadilan Tinggi Agama Banten:" .
 <http://example.org/legal/document/uu/2005/4/menimbang/point/e> legal:pointHasText <http://example.org/legal/document/uu/2005/4/menimbang/point/e/text> .
 <http://example.org/legal/document/uu/2005/4> legal:documentHasDisahkanPengesah "DR. H. SUSILO BAMBANG YUDHOYONO" .
 <http://example.org/legal/document/uu/2005/4> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/2005/4> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/2005/4> a legal:Document .
+<http://example.org/legal/document/uu/2005/4/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2005/4/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/2005/4/pasal/0001/version/20051019> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2005/4/pasal/0001/version/20051019/text> a legal:Text .
+<http://example.org/legal/document/uu/2005/4/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2005/4/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/2005/4/pasal/0003/version/20051019> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2005/4/pasal/0003/version/20051019/text> a legal:Text .
+<http://example.org/legal/document/uu/2005/4/pasal/0004> a legal:Pasal .
+<http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019/point/a> a legal:Point .
+<http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019/point/b> a legal:Point .
+<http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/2005/4/pasal/0005> a legal:Pasal .
+<http://example.org/legal/document/uu/2005/4/pasal/0005/version/20051019> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2005/4/pasal/0005/version/20051019/text> a legal:Text .
 <http://example.org/legal/document/uu/2005/4/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/2005/4/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/2005/4/mengingat/point> a legal:PointSet .
@@ -87,7 +175,29 @@
 <http://example.org/legal/document/uu/2005/4/menimbang/point/d/text> a legal:Text .
 <http://example.org/legal/document/uu/2005/4/menimbang/point/e> a legal:Point .
 <http://example.org/legal/document/uu/2005/4/menimbang/point/e/text> a legal:Text .
-<http://example.org/legal/document/uu/2005/4/bab> legal:partOf <http://example.org/legal/document/uu/2005/4> .
+<http://example.org/legal/document/uu/2005/4/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2005/4/pasals> .
+<http://example.org/legal/document/uu/2005/4/pasal/0001/version/20051019> legal:partOf <http://example.org/legal/document/uu/2005/4/pasal/0001> .
+<http://example.org/legal/document/uu/2005/4/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2005/4> .
+<http://example.org/legal/document/uu/2005/4/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2005/4/pasals> .
+<http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019> legal:partOf <http://example.org/legal/document/uu/2005/4/pasal/0002> .
+<http://example.org/legal/document/uu/2005/4/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2005/4> .
+<http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019/ayat> legal:partOf <http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019> .
+<http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019/ayat> .
+<http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019/ayat/0001> .
+<http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019/ayat> .
+<http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2005/4/pasal/0002/version/20051019/ayat/0002> .
+<http://example.org/legal/document/uu/2005/4/pasal/0003> legal:partOf <http://example.org/legal/document/uu/2005/4/pasals> .
+<http://example.org/legal/document/uu/2005/4/pasal/0003/version/20051019> legal:partOf <http://example.org/legal/document/uu/2005/4/pasal/0003> .
+<http://example.org/legal/document/uu/2005/4/pasal/0003> legal:partOf <http://example.org/legal/document/uu/2005/4> .
+<http://example.org/legal/document/uu/2005/4/pasal/0004> legal:partOf <http://example.org/legal/document/uu/2005/4/pasals> .
+<http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019> legal:partOf <http://example.org/legal/document/uu/2005/4/pasal/0004> .
+<http://example.org/legal/document/uu/2005/4/pasal/0004> legal:partOf <http://example.org/legal/document/uu/2005/4> .
+<http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019/point> legal:partOf <http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019> .
+<http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019/point/a> legal:partOf <http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019/point> .
+<http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019/point/b> legal:partOf <http://example.org/legal/document/uu/2005/4/pasal/0004/version/20051019/point> .
+<http://example.org/legal/document/uu/2005/4/pasal/0005> legal:partOf <http://example.org/legal/document/uu/2005/4/pasals> .
+<http://example.org/legal/document/uu/2005/4/pasal/0005/version/20051019> legal:partOf <http://example.org/legal/document/uu/2005/4/pasal/0005> .
+<http://example.org/legal/document/uu/2005/4/pasal/0005> legal:partOf <http://example.org/legal/document/uu/2005/4> .
 <http://example.org/legal/document/uu/2005/4/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2005/4/mengingat/point> .
 <http://example.org/legal/document/uu/2005/4/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2005/4/mengingat/point> .
 <http://example.org/legal/document/uu/2005/4/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/2005/4/mengingat/point> .

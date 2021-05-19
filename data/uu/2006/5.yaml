@@ -320,18 +320,107 @@ opText: |-
   BOMBINGS, 1997 (KONVENSI INTERNASIONAL
   PEMBERANTASAN PENGEBOMAN OLEH TERORIS, 1997).
   - 4 -
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_14
+          nodeType: pasalVersion
+          version: &ref_18
+            nodeType: date
+            month: 4
+            date: 5
+            year: 2006
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_15
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_14
+          elements:
+            - type: ayat
+              node: &ref_16
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_15
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_16
+                textString: >-
+                  Mengesahkan International Convention for the Suppression of Terrorist Bombings,
+                  1997 (Konvensi Internasional Pemberantasan Pengeboman oleh Teroris, 1997) dengan
+                  Pernyataan ( Declaration ) terhadap Pasal 6 dan Pensyaratan ( Reservation )
+                  terhadap Pasal 20.
+                references:
+                  - start: 246
+                    end: 254
+                    node:
+                      key: 20
+                      parentNode: *ref_0
+                      nodeType: pasal
+                  - start: 197
+                    end: 204
+                    node:
+                      key: 6
+                      parentNode: *ref_0
+                      nodeType: pasal
+            - type: ayat
+              node: &ref_17
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_15
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_17
+                textString: >-
+                  Salinan naskah asli International Convention For the Suppression of Terrorist
+                  Bombings, 1997 (Konvensi Internasional Pemberantasan Pengeboman oleh Teroris,
+                  1997), Pernyataan ( Declaration ) terhadap Pasal 6 dan Pensyaratan ( Reservation )
+                  terhadap Pasal 20 dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia
+                  sebagaimana terlampir merupakan bagian yang tidak terpisahkan dari Undang-Undang
+                  ini. Pasal 2 Undang-Undang ini mulai berlaku pada tanggal diundangkan. - 5 - Agar
+                  setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan
+                  penempatannya dalam Lembaran Negara Republik Indonesia.
+                references:
+                  - start: 405
+                    end: 412
+                    node:
+                      key: 2
+                      parentNode: *ref_0
+                      nodeType: pasal
+                  - start: 248
+                    end: 256
+                    node:
+                      key: 20
+                      parentNode: *ref_0
+                      nodeType: pasal
+                  - start: 199
+                    end: 206
+                    node:
+                      key: 6
+                      parentNode: *ref_0
+                      nodeType: pasal
 disahkan:
-  date:
-    nodeType: date
-    month: 4
-    date: 5
-    year: 2006
+  date: *ref_18
   location: Jakarta
   pengesah: Diundangkan di Jakarta
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

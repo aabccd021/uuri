@@ -1,7 +1,27 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2005/8> legal:documentHasBabSet <http://example.org/legal/document/uu/2005/8/bab> .
+<http://example.org/legal/document/uu/2005/8> legal:documentHasPasalSet <http://example.org/legal/document/uu/2005/8/pasals> .
+<http://example.org/legal/document/uu/2005/8/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2005/8/pasal/0001> .
+<http://example.org/legal/document/uu/2005/8/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/2005/8/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2005/8/pasal/0001/version/20051019> .
+<http://example.org/legal/document/uu/2005/8> legal:documentHasPasal <http://example.org/legal/document/uu/2005/8/pasal/0001> .
+<http://example.org/legal/document/uu/2005/8/pasal/0001/version/20051019> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2005/8/pasal/0001/version/20051019> legal:pasalVersionHasVersionDate "2005-10-19"^^xsd:date .
+<http://example.org/legal/document/uu/2005/8/pasal/0001/version/20051019> legal:pasalVersionHasRawText "Peraturan Pemerintah Pengganti Undang-Undang Nomor 3 Tahun 2005 tentang Perubahan Atas Undang-Undang Nomor 32 Tahun 2004 tentang Pemerintahan Daerah (Lembaran Negara Republik Indonesia Tahun 2004 Nomor 35, Tambahan Lembaran Negara Republik Indonesia Nomor 4493) ditetapkan menjadi Undang-Undang, dan melampirkannya sebagai bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/document/uu/2005/8/pasal/0001/version/20051019/text> legal:textHasTextString "Peraturan Pemerintah Pengganti Undang-Undang Nomor 3 Tahun 2005 tentang Perubahan Atas Undang-Undang Nomor 32 Tahun 2004 tentang Pemerintahan Daerah (Lembaran Negara Republik Indonesia Tahun 2004 Nomor 35, Tambahan Lembaran Negara Republik Indonesia Nomor 4493) ditetapkan menjadi Undang-Undang, dan melampirkannya sebagai bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/document/uu/2005/8/pasal/0001/version/20051019> legal:pasalVersionHasText <http://example.org/legal/document/uu/2005/8/pasal/0001/version/20051019/text> .
+<http://example.org/legal/document/uu/2005/8/pasal/0001/version/20051019/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2004/32> .
+<http://example.org/legal/document/uu/2005/8/pasal/0001/version/20051019/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2005/3> .
+<http://example.org/legal/document/uu/2005/8/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2005/8/pasal/0002> .
+<http://example.org/legal/document/uu/2005/8/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/2005/8/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2005/8/pasal/0002/version/20051019> .
+<http://example.org/legal/document/uu/2005/8> legal:documentHasPasal <http://example.org/legal/document/uu/2005/8/pasal/0002> .
+<http://example.org/legal/document/uu/2005/8/pasal/0002/version/20051019> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2005/8/pasal/0002/version/20051019> legal:pasalVersionHasVersionDate "2005-10-19"^^xsd:date .
+<http://example.org/legal/document/uu/2005/8/pasal/0002/version/20051019> legal:pasalVersionHasRawText "Undang-Undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDO NESIA -3- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2005/8/pasal/0002/version/20051019/text> legal:textHasTextString "Undang-Undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDO NESIA -3- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2005/8/pasal/0002/version/20051019> legal:pasalVersionHasText <http://example.org/legal/document/uu/2005/8/pasal/0002/version/20051019/text> .
 <http://example.org/legal/document/uu/2005/8> legal:documentHasDisahkanDate "2005-10-19"^^xsd:date .
 <http://example.org/legal/document/uu/2005/8> legal:documentMengingat <http://example.org/legal/document/uu/2005/8/mengingat> .
 <http://example.org/legal/document/uu/2005/8/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2005/8/mengingat/point> .
@@ -45,6 +65,13 @@
 <http://example.org/legal/document/uu/2005/8> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/2005/8> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/2005/8> a legal:Document .
+<http://example.org/legal/document/uu/2005/8/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2005/8/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/2005/8/pasal/0001/version/20051019> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2005/8/pasal/0001/version/20051019/text> a legal:Text .
+<http://example.org/legal/document/uu/2005/8/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/2005/8/pasal/0002/version/20051019> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2005/8/pasal/0002/version/20051019/text> a legal:Text .
 <http://example.org/legal/document/uu/2005/8/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/2005/8/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/2005/8/mengingat/point> a legal:PointSet .
@@ -63,7 +90,12 @@
 <http://example.org/legal/document/uu/2005/8/menimbang/point/c/text> a legal:Text .
 <http://example.org/legal/document/uu/2005/8/menimbang/point/d> a legal:Point .
 <http://example.org/legal/document/uu/2005/8/menimbang/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/2005/8/bab> legal:partOf <http://example.org/legal/document/uu/2005/8> .
+<http://example.org/legal/document/uu/2005/8/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2005/8/pasals> .
+<http://example.org/legal/document/uu/2005/8/pasal/0001/version/20051019> legal:partOf <http://example.org/legal/document/uu/2005/8/pasal/0001> .
+<http://example.org/legal/document/uu/2005/8/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2005/8> .
+<http://example.org/legal/document/uu/2005/8/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2005/8/pasals> .
+<http://example.org/legal/document/uu/2005/8/pasal/0002/version/20051019> legal:partOf <http://example.org/legal/document/uu/2005/8/pasal/0002> .
+<http://example.org/legal/document/uu/2005/8/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2005/8> .
 <http://example.org/legal/document/uu/2005/8/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2005/8/mengingat/point> .
 <http://example.org/legal/document/uu/2005/8/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2005/8/mengingat/point> .
 <http://example.org/legal/document/uu/2005/8/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/2005/8/menimbang/point> .

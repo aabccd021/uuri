@@ -1,7 +1,34 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2007/42> legal:documentHasBabSet <http://example.org/legal/document/uu/2007/42/bab> .
+<http://example.org/legal/document/uu/2007/42> legal:documentHasPasalSet <http://example.org/legal/document/uu/2007/42/pasals> .
+<http://example.org/legal/document/uu/2007/42/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2007/42/pasal/0001> .
+<http://example.org/legal/document/uu/2007/42/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/2007/42/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023> .
+<http://example.org/legal/document/uu/2007/42> legal:documentHasPasal <http://example.org/legal/document/uu/2007/42/pasal/0001> .
+<http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023> legal:pasalVersionHasVersionDate "2007-10-23"^^xsd:date .
+<http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023> legal:pasalVersionHasRawText "(1). Mengesahkan Perjanjian Ekstradisi antara Republik Indonesia dan Republik Korea (Treaty on Extradition Between the Republic of Indonesia and the Republic of Korea) yang telah ditandatangani pada tanggal 28 November 2000 di Jakarta.\n(2). Salinan naskah asli dalam bahasa Indonesia, bahasa Inggris, dan bahasa Korea sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang- Undang ini." .
+<http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023/ayat> .
+<http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023/ayat/0001> .
+<http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023/ayat/0001> legal:ayatHasRawText "Mengesahkan Perjanjian Ekstradisi antara Republik Indonesia dan Republik Korea (Treaty on Extradition Between the Republic of Indonesia and the Republic of Korea) yang telah ditandatangani pada tanggal 28 November 2000 di Jakarta." .
+<http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023/ayat/0001/text> legal:textHasTextString "Mengesahkan Perjanjian Ekstradisi antara Republik Indonesia dan Republik Korea (Treaty on Extradition Between the Republic of Indonesia and the Republic of Korea) yang telah ditandatangani pada tanggal 28 November 2000 di Jakarta." .
+<http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023/ayat/0001/text> .
+<http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023/ayat/0002> .
+<http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023/ayat/0002> legal:ayatHasRawText "Salinan naskah asli dalam bahasa Indonesia, bahasa Inggris, dan bahasa Korea sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang- Undang ini." .
+<http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023/ayat/0002/text> legal:textHasTextString "Salinan naskah asli dalam bahasa Indonesia, bahasa Inggris, dan bahasa Korea sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang- Undang ini." .
+<http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023/ayat/0002/text> .
+<http://example.org/legal/document/uu/2007/42/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2007/42/pasal/0002> .
+<http://example.org/legal/document/uu/2007/42/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/2007/42/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2007/42/pasal/0002/version/20071023> .
+<http://example.org/legal/document/uu/2007/42> legal:documentHasPasal <http://example.org/legal/document/uu/2007/42/pasal/0002> .
+<http://example.org/legal/document/uu/2007/42/pasal/0002/version/20071023> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2007/42/pasal/0002/version/20071023> legal:pasalVersionHasVersionDate "2007-10-23"^^xsd:date .
+<http://example.org/legal/document/uu/2007/42/pasal/0002/version/20071023> legal:pasalVersionHasRawText "Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2007/42/pasal/0002/version/20071023/text> legal:textHasTextString "Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2007/42/pasal/0002/version/20071023> legal:pasalVersionHasText <http://example.org/legal/document/uu/2007/42/pasal/0002/version/20071023/text> .
 <http://example.org/legal/document/uu/2007/42> legal:documentHasDisahkanDate "2007-10-23"^^xsd:date .
 <http://example.org/legal/document/uu/2007/42> legal:documentMengingat <http://example.org/legal/document/uu/2007/42/mengingat> .
 <http://example.org/legal/document/uu/2007/42/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2007/42/mengingat/point> .
@@ -56,6 +83,17 @@
 <http://example.org/legal/document/uu/2007/42> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/2007/42> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/2007/42> a legal:Document .
+<http://example.org/legal/document/uu/2007/42/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2007/42/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2007/42/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/2007/42/pasal/0002/version/20071023> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2007/42/pasal/0002/version/20071023/text> a legal:Text .
 <http://example.org/legal/document/uu/2007/42/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/2007/42/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/2007/42/mengingat/point> a legal:PointSet .
@@ -80,7 +118,17 @@
 <http://example.org/legal/document/uu/2007/42/menimbang/point/d/text> a legal:Text .
 <http://example.org/legal/document/uu/2007/42/menimbang/point/e> a legal:Point .
 <http://example.org/legal/document/uu/2007/42/menimbang/point/e/text> a legal:Text .
-<http://example.org/legal/document/uu/2007/42/bab> legal:partOf <http://example.org/legal/document/uu/2007/42> .
+<http://example.org/legal/document/uu/2007/42/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2007/42/pasals> .
+<http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023> legal:partOf <http://example.org/legal/document/uu/2007/42/pasal/0001> .
+<http://example.org/legal/document/uu/2007/42/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2007/42> .
+<http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023/ayat> legal:partOf <http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023> .
+<http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023/ayat> .
+<http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023/ayat/0001> .
+<http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023/ayat> .
+<http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2007/42/pasal/0001/version/20071023/ayat/0002> .
+<http://example.org/legal/document/uu/2007/42/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2007/42/pasals> .
+<http://example.org/legal/document/uu/2007/42/pasal/0002/version/20071023> legal:partOf <http://example.org/legal/document/uu/2007/42/pasal/0002> .
+<http://example.org/legal/document/uu/2007/42/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2007/42> .
 <http://example.org/legal/document/uu/2007/42/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2007/42/mengingat/point> .
 <http://example.org/legal/document/uu/2007/42/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2007/42/mengingat/point> .
 <http://example.org/legal/document/uu/2007/42/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/2007/42/mengingat/point> .

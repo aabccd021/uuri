@@ -262,18 +262,115 @@ opText: |-
   NATIONS CONVENTION AGAINST CORRUPTION, 2003
   (KONVENSI PERSERIKATAN BANGSA-BANGSA ANTI
   KORUPSI, 2003).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_13
+          nodeType: pasalVersion
+          version: &ref_17
+            nodeType: date
+            month: 4
+            date: 18
+            year: 2006
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_14
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_13
+          elements:
+            - type: ayat
+              node: &ref_15
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_14
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_15
+                textString: >-
+                  Mengesahkan United Nations Convention Against Corruption, 2003 (Konvensi
+                  Perserikatan Bangsa-Bangsa Anti Korupsi, 2003) dengan Reservation (Pensyaratan)
+                  terhadap Pasal 66 ayat (2) tentang Penyelesaian Sengketa.
+                references:
+                  - start: 162
+                    end: 179
+                    node:
+                      parentAyatSetNode:
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_13
+                      key: 2
+                      nodeType: ayat
+            - type: ayat
+              node: &ref_16
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_14
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_16
+                textString: >-
+                  Salinan naskah asli United Nations Convention Against Corruption, 2003 (Konvensi
+                  Perserikatan Bangsa-Bangsa Anti Korupsi, 2003) dengan Reservation (Pensyaratan)
+                  terhadap Pasal 66 ayat (2) tentang Penyelesaian Sengketa dalam bahasa Inggris dan
+                  terjemahannya dalam bahasa Indonesia sebagaimana terlampir dan merupakan bagian
+                  yang tidak terpisahkan dari Undang-Undang ini.
+                references:
+                  - start: 170
+                    end: 187
+                    node:
+                      parentAyatSetNode:
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_13
+                      key: 2
+                      nodeType: ayat
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_18
+          nodeType: pasalVersion
+          version: *ref_17
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_18
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. - 3 - Agar setiap orang
+            mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 4
-    date: 18
-    year: 2006
+  date: *ref_17
   location: Jakarta
   pengesah: DR. H. SUSILO BAMBANG YUDHOYONO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

@@ -1,7 +1,42 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2006/6> legal:documentHasBabSet <http://example.org/legal/document/uu/2006/6/bab> .
+<http://example.org/legal/document/uu/2006/6> legal:documentHasPasalSet <http://example.org/legal/document/uu/2006/6/pasals> .
+<http://example.org/legal/document/uu/2006/6/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2006/6/pasal/0001> .
+<http://example.org/legal/document/uu/2006/6/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/2006/6/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405> .
+<http://example.org/legal/document/uu/2006/6> legal:documentHasPasal <http://example.org/legal/document/uu/2006/6/pasal/0001> .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405> legal:pasalVersionHasVersionDate "2006-04-05"^^xsd:date .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405> legal:pasalVersionHasRawText "(1). Mengesahkan International Convention for the Suppression of the Financing of Terrorism, 1999 (Konvensi Internasional Pemberantasan Pendanaan Terorisme Tahun 1999) dengan Pernyataan (Declaration) terhadap Pasal 2 ayat (2) huruf a dan Pasal 7 serta Pensyaratan (Reservation) terhadap Pasal 24 ayat (1).\n(2). Salinan naskah asli International Convention for the Suppression of the Financing of Terrorism, 1999 (Konvensi Internasional Pemberantasan Pendanaan Terorisme Tahun 1999), Pernyataan (Declaration) terhadap Pasal 2 ayat (2) huruf a dan Pasal 7 serta Pensyaratan (Reservation) terhadap Pasal 24 ayat (1) dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat> .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0001> .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0001> legal:ayatHasRawText "Mengesahkan International Convention for the Suppression of the Financing of Terrorism, 1999 (Konvensi Internasional Pemberantasan Pendanaan Terorisme Tahun 1999) dengan Pernyataan (Declaration) terhadap Pasal 2 ayat (2) huruf a dan Pasal 7 serta Pensyaratan (Reservation) terhadap Pasal 24 ayat (1)." .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0001/text> legal:textHasTextString "Mengesahkan International Convention for the Suppression of the Financing of Terrorism, 1999 (Konvensi Internasional Pemberantasan Pendanaan Terorisme Tahun 1999) dengan Pernyataan (Declaration) terhadap Pasal 2 ayat (2) huruf a dan Pasal 7 serta Pensyaratan (Reservation) terhadap Pasal 24 ayat (1)." .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0001/text> .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0001> .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0002> .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/point/a> .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2006/6/pasal/0007> .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0002> .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0002> legal:ayatHasRawText "Salinan naskah asli International Convention for the Suppression of the Financing of Terrorism, 1999 (Konvensi Internasional Pemberantasan Pendanaan Terorisme Tahun 1999), Pernyataan (Declaration) terhadap Pasal 2 ayat (2) huruf a dan Pasal 7 serta Pensyaratan (Reservation) terhadap Pasal 24 ayat (1) dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0002/text> legal:textHasTextString "Salinan naskah asli International Convention for the Suppression of the Financing of Terrorism, 1999 (Konvensi Internasional Pemberantasan Pendanaan Terorisme Tahun 1999), Pernyataan (Declaration) terhadap Pasal 2 ayat (2) huruf a dan Pasal 7 serta Pensyaratan (Reservation) terhadap Pasal 24 ayat (1) dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0002/text> .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0001> .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0002> .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/point/a> .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2006/6/pasal/0007> .
+<http://example.org/legal/document/uu/2006/6/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2006/6/pasal/0002> .
+<http://example.org/legal/document/uu/2006/6/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/2006/6/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2006/6/pasal/0002/version/20060405> .
+<http://example.org/legal/document/uu/2006/6> legal:documentHasPasal <http://example.org/legal/document/uu/2006/6/pasal/0002> .
+<http://example.org/legal/document/uu/2006/6/pasal/0002/version/20060405> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2006/6/pasal/0002/version/20060405> legal:pasalVersionHasVersionDate "2006-04-05"^^xsd:date .
+<http://example.org/legal/document/uu/2006/6/pasal/0002/version/20060405> legal:pasalVersionHasRawText "Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2006/6/pasal/0002/version/20060405/text> legal:textHasTextString "Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2006/6/pasal/0002/version/20060405> legal:pasalVersionHasText <http://example.org/legal/document/uu/2006/6/pasal/0002/version/20060405/text> .
 <http://example.org/legal/document/uu/2006/6> legal:documentHasDisahkanDate "2006-04-05"^^xsd:date .
 <http://example.org/legal/document/uu/2006/6> legal:documentMengingat <http://example.org/legal/document/uu/2006/6/mengingat> .
 <http://example.org/legal/document/uu/2006/6/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2006/6/mengingat/point> .
@@ -57,6 +92,17 @@
 <http://example.org/legal/document/uu/2006/6> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/2006/6> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/2006/6> a legal:Document .
+<http://example.org/legal/document/uu/2006/6/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2006/6/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2006/6/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/2006/6/pasal/0002/version/20060405> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2006/6/pasal/0002/version/20060405/text> a legal:Text .
 <http://example.org/legal/document/uu/2006/6/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/2006/6/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/2006/6/mengingat/point> a legal:PointSet .
@@ -81,7 +127,17 @@
 <http://example.org/legal/document/uu/2006/6/menimbang/point/d/text> a legal:Text .
 <http://example.org/legal/document/uu/2006/6/menimbang/point/e> a legal:Point .
 <http://example.org/legal/document/uu/2006/6/menimbang/point/e/text> a legal:Text .
-<http://example.org/legal/document/uu/2006/6/bab> legal:partOf <http://example.org/legal/document/uu/2006/6> .
+<http://example.org/legal/document/uu/2006/6/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2006/6/pasals> .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405> legal:partOf <http://example.org/legal/document/uu/2006/6/pasal/0001> .
+<http://example.org/legal/document/uu/2006/6/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2006/6> .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat> legal:partOf <http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405> .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat> .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0001> .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat> .
+<http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2006/6/pasal/0001/version/20060405/ayat/0002> .
+<http://example.org/legal/document/uu/2006/6/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2006/6/pasals> .
+<http://example.org/legal/document/uu/2006/6/pasal/0002/version/20060405> legal:partOf <http://example.org/legal/document/uu/2006/6/pasal/0002> .
+<http://example.org/legal/document/uu/2006/6/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2006/6> .
 <http://example.org/legal/document/uu/2006/6/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2006/6/mengingat/point> .
 <http://example.org/legal/document/uu/2006/6/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2006/6/mengingat/point> .
 <http://example.org/legal/document/uu/2006/6/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/2006/6/mengingat/point> .

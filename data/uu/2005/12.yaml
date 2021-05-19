@@ -327,18 +327,111 @@ opText: |-
   Menetapkan : UNDANG-UNDANG TENTANG PENGESAHAN INTERNATIONAL
   COVENANT ON CIVIL AND POLITICAL RIGHTS (KOVENAN
   INTERNASIONAL TENTANG HAK-HAK SIPIL DAN POLlTIK).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_15
+          nodeType: pasalVersion
+          version: &ref_19
+            nodeType: date
+            month: 10
+            date: 28
+            year: 2005
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_16
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_15
+          elements:
+            - type: ayat
+              node: &ref_17
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_16
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_17
+                textString: >-
+                  Mengesahkan International Covenant on Civil and Political Rights (Kovenan
+                  Internasional tentang Hak-hak Sipil dan Politik) dengan Declaration (Pernyataan)
+                  terhadap Pasal 1.
+                references:
+                  - start: 164
+                    end: 171
+                    node:
+                      key: 1
+                      parentNode: *ref_0
+                      nodeType: pasal
+            - type: ayat
+              node: &ref_18
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_16
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_18
+                textString: >-
+                  Salinan naskah asli International Covenant on Civil and Political Rights (Kovenan
+                  Internasional tentang Hak-hak Sipil dan Politik) dan Declaration (Pernyataan)
+                  terhadap Pasal 1 dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia
+                  sebagaimana terlampir merupakan bagian yang tidak terpisahkan dari Undang-Undang
+                  ini.
+                references:
+                  - start: 169
+                    end: 176
+                    node:
+                      key: 1
+                      parentNode: *ref_0
+                      nodeType: pasal
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_20
+          nodeType: pasalVersion
+          version: *ref_19
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_20
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA -
+            4 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan
+            penempatannya dalam Lembaran Negara Republik Indonesia,
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 10
-    date: 28
-    year: 2005
+  date: *ref_19
   location: Jakarta
   pengesah: DR. H. SUSILO BAMBANG YUDHOYONO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,
