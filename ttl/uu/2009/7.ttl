@@ -1,7 +1,76 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2009/7> legal:documentHasBabSet <http://example.org/legal/document/uu/2009/7/bab> .
+<http://example.org/legal/document/uu/2009/7> legal:documentHasPasalSet <http://example.org/legal/document/uu/2009/7/pasals> .
+<http://example.org/legal/document/uu/2009/7/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2009/7/pasal/0001> .
+<http://example.org/legal/document/uu/2009/7/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/2009/7/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2009/7/pasal/0001/version/20081013> .
+<http://example.org/legal/document/uu/2009/7> legal:documentHasPasal <http://example.org/legal/document/uu/2009/7/pasal/0001> .
+<http://example.org/legal/document/uu/2009/7/pasal/0001/version/20081013> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2009/7/pasal/0001/version/20081013> legal:pasalVersionHasVersionDate "2008-10-13"^^xsd:date .
+<http://example.org/legal/document/uu/2009/7/pasal/0001/version/20081013> legal:pasalVersionHasRawText "Peraturan Pemerintah Pengganti Undang - Undang Nomor 3 Tahun 2008 tentang Perubahan Atas Unda ng - Undang Nomor 24 Tahun 2004 tentang Lembaga Penjamin Simpanan (Lembaran Negara Repub lik Indonesia Tahun 2008 Nomor 143 , Tambahan Lembaran Nega ra Republik Indonesia Nomor 4902 ) ditetapkan menjadi Undang - Undang dan melampirkannya sebagai bagian yang tidak terpisahkan dari Undang - Undan g ini." .
+<http://example.org/legal/document/uu/2009/7/pasal/0001/version/20081013/text> legal:textHasTextString "Peraturan Pemerintah Pengganti Undang - Undang Nomor 3 Tahun 2008 tentang Perubahan Atas Unda ng - Undang Nomor 24 Tahun 2004 tentang Lembaga Penjamin Simpanan (Lembaran Negara Repub lik Indonesia Tahun 2008 Nomor 143 , Tambahan Lembaran Nega ra Republik Indonesia Nomor 4902 ) ditetapkan menjadi Undang - Undang dan melampirkannya sebagai bagian yang tidak terpisahkan dari Undang - Undan g ini." .
+<http://example.org/legal/document/uu/2009/7/pasal/0001/version/20081013> legal:pasalVersionHasText <http://example.org/legal/document/uu/2009/7/pasal/0001/version/20081013/text> .
+<http://example.org/legal/document/uu/2009/7/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2009/7/pasal/0002> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/2009/7/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013> .
+<http://example.org/legal/document/uu/2009/7> legal:documentHasPasal <http://example.org/legal/document/uu/2009/7/pasal/0002> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013> legal:pasalVersionHasVersionDate "2008-10-13"^^xsd:date .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013> legal:pasalVersionHasRawText "(1). Nilai Simpanan yang dijamin untuk setiap nasabah pada satu b ank paling banyak Rp100.000.000,00 (seratus juta rupiah).\n(2). Nilai Simpanan yang dijamin dapat diubah apabila dipenuhi salah satu atau lebih kriteria sebagai berikut: - 5 -\na. terjadi penarikan dana perbankan dalam jumlah besar secara bersamaan;\nb. terjadi inflasi yang cukup besar dalam beberapa tahun;\nc. jumla h nasabah yang dijamin seluruh s impanannya menjadi kurang dari 90% (sembilan p uluh per seratus) dari jumlah nasabah p e nyimpan seluruh b ank; atau\nd. terjadi ancaman krisis yang berpotensi mengakibatkan merosotnya kepercayaan masyarakat terhadap perbankan dan membahayakan stabilitas sistem keuangan .\n\n(3). Dalam hal situasi sebagaimana dimaksud pada ayat (2) huruf a dan huruf d sudah teratasi, besaran nilai Simpanan yang dijamin dapat disesuaikan kembali.\n(4). Perubahan besaran nilai Simpanan yang dijamin sebagaimana dimaksud pada ayat (2) ditetapkan dengan Peraturan Pemerintah dan selanjutnya dilaporkan kepada Dewan Perwakilan Rakyat.\n(5). Penyesuaian besaran nilai Simpanan sebagaimana dimaksud pada ayat (3 ) ditetapkan dengan Peraturan Pemerintah setelah dikonsultasikan dengan Dewan Perwakilan Rakyat .\n(6). K etentuan lebih lanjut mengenai penentuan nilai Simpanan yang dijamin untuk setiap nas abah penyimpan pada satu b ank sebagaimana dimaksud pada ayat (1), diatur dengan Peraturan Lembaga Penjamin Simpanan. Pasal II Peraturan Pemerintah Pengganti Undang - undang ini mulai berlaku pada tanggal diundangkan. - 6 - Agar setiap orang mengetahuinya memerintahkan pengudangan Peraturan Pemerintah Pengganti Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0001> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0001> legal:ayatHasRawText "Nilai Simpanan yang dijamin untuk setiap nasabah pada satu b ank paling banyak Rp100.000.000,00 (seratus juta rupiah)." .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0001/text> legal:textHasTextString "Nilai Simpanan yang dijamin untuk setiap nasabah pada satu b ank paling banyak Rp100.000.000,00 (seratus juta rupiah)." .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0001/text> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002> legal:ayatHasRawText "Nilai Simpanan yang dijamin dapat diubah apabila dipenuhi salah satu atau lebih kriteria sebagai berikut: - 5 -\na. terjadi penarikan dana perbankan dalam jumlah besar secara bersamaan;\nb. terjadi inflasi yang cukup besar dalam beberapa tahun;\nc. jumla h nasabah yang dijamin seluruh s impanannya menjadi kurang dari 90% (sembilan p uluh per seratus) dari jumlah nasabah p e nyimpan seluruh b ank; atau\nd. terjadi ancaman krisis yang berpotensi mengakibatkan merosotnya kepercayaan masyarakat terhadap perbankan dan membahayakan stabilitas sistem keuangan .\n" .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002> legal:ayatHasPointSet <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/description> legal:textHasTextString "Nilai Simpanan yang dijamin dapat diubah apabila dipenuhi salah satu atau lebih kriteria sebagai berikut: - 5 -" .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/description> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/a> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/a/text> legal:textHasTextString "terjadi penarikan dana perbankan dalam jumlah besar secara bersamaan;" .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/a> legal:pointHasText <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/a/text> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/b> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/b/text> legal:textHasTextString "terjadi inflasi yang cukup besar dalam beberapa tahun;" .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/b> legal:pointHasText <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/b/text> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/c> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/c/text> legal:textHasTextString "jumla h nasabah yang dijamin seluruh s impanannya menjadi kurang dari 90% (sembilan p uluh per seratus) dari jumlah nasabah p e nyimpan seluruh b ank; atau" .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/c> legal:pointHasText <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/c/text> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/d> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/d> legal:pointHasKey "d" .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/d/text> legal:textHasTextString "terjadi ancaman krisis yang berpotensi mengakibatkan merosotnya kepercayaan masyarakat terhadap perbankan dan membahayakan stabilitas sistem keuangan ." .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/d> legal:pointHasText <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/d/text> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0003> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0003> legal:ayatHasRawText "Dalam hal situasi sebagaimana dimaksud pada ayat (2) huruf a dan huruf d sudah teratasi, besaran nilai Simpanan yang dijamin dapat disesuaikan kembali." .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0003/text> legal:textHasTextString "Dalam hal situasi sebagaimana dimaksud pada ayat (2) huruf a dan huruf d sudah teratasi, besaran nilai Simpanan yang dijamin dapat disesuaikan kembali." .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0003/text> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/d> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/point/a> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0004> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0004> legal:ayatHasKey 4 .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0004> legal:ayatHasRawText "Perubahan besaran nilai Simpanan yang dijamin sebagaimana dimaksud pada ayat (2) ditetapkan dengan Peraturan Pemerintah dan selanjutnya dilaporkan kepada Dewan Perwakilan Rakyat." .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0004/text> legal:textHasTextString "Perubahan besaran nilai Simpanan yang dijamin sebagaimana dimaksud pada ayat (2) ditetapkan dengan Peraturan Pemerintah dan selanjutnya dilaporkan kepada Dewan Perwakilan Rakyat." .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0004/text> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0005> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0005> legal:ayatHasKey 5 .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0005> legal:ayatHasRawText "Penyesuaian besaran nilai Simpanan sebagaimana dimaksud pada ayat (3 ) ditetapkan dengan Peraturan Pemerintah setelah dikonsultasikan dengan Dewan Perwakilan Rakyat ." .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0005/text> legal:textHasTextString "Penyesuaian besaran nilai Simpanan sebagaimana dimaksud pada ayat (3 ) ditetapkan dengan Peraturan Pemerintah setelah dikonsultasikan dengan Dewan Perwakilan Rakyat ." .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0005> legal:ayatHasText <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0005/text> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0006> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0006> legal:ayatHasKey 6 .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0006> legal:ayatHasRawText "K etentuan lebih lanjut mengenai penentuan nilai Simpanan yang dijamin untuk setiap nas abah penyimpan pada satu b ank sebagaimana dimaksud pada ayat (1), diatur dengan Peraturan Lembaga Penjamin Simpanan. Pasal II Peraturan Pemerintah Pengganti Undang - undang ini mulai berlaku pada tanggal diundangkan. - 6 - Agar setiap orang mengetahuinya memerintahkan pengudangan Peraturan Pemerintah Pengganti Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0006/text> legal:textHasTextString "K etentuan lebih lanjut mengenai penentuan nilai Simpanan yang dijamin untuk setiap nas abah penyimpan pada satu b ank sebagaimana dimaksud pada ayat (1), diatur dengan Peraturan Lembaga Penjamin Simpanan. Pasal II Peraturan Pemerintah Pengganti Undang - undang ini mulai berlaku pada tanggal diundangkan. - 6 - Agar setiap orang mengetahuinya memerintahkan pengudangan Peraturan Pemerintah Pengganti Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0006> legal:ayatHasText <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0006/text> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0006/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0001> .
 <http://example.org/legal/document/uu/2009/7> legal:documentHasDisahkanDate "2008-10-13"^^xsd:date .
 <http://example.org/legal/document/uu/2009/7> legal:documentMengingat <http://example.org/legal/document/uu/2009/7/mengingat> .
 <http://example.org/legal/document/uu/2009/7/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2009/7/mengingat/point> .
@@ -47,6 +116,34 @@
 <http://example.org/legal/document/uu/2009/7> legal:documentHasDisahkanLocation "Jakart" .
 <http://example.org/legal/document/uu/2009/7> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA" .
 <http://example.org/legal/document/uu/2009/7> a legal:Document .
+<http://example.org/legal/document/uu/2009/7/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2009/7/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/2009/7/pasal/0001/version/20081013> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2009/7/pasal/0001/version/20081013/text> a legal:Text .
+<http://example.org/legal/document/uu/2009/7/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/a> a legal:Point .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/b> a legal:Point .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/c> a legal:Point .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/d> a legal:Point .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/d/text> a legal:Text .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0004> a legal:Ayat .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0005> a legal:Ayat .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0005/text> a legal:Text .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0006> a legal:Ayat .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0006/text> a legal:Text .
 <http://example.org/legal/document/uu/2009/7/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/2009/7/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/2009/7/mengingat/point> a legal:PointSet .
@@ -69,7 +166,29 @@
 <http://example.org/legal/document/uu/2009/7/menimbang/point/d/text> a legal:Text .
 <http://example.org/legal/document/uu/2009/7/menimbang/point/e> a legal:Point .
 <http://example.org/legal/document/uu/2009/7/menimbang/point/e/text> a legal:Text .
-<http://example.org/legal/document/uu/2009/7/bab> legal:partOf <http://example.org/legal/document/uu/2009/7> .
+<http://example.org/legal/document/uu/2009/7/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2009/7/pasals> .
+<http://example.org/legal/document/uu/2009/7/pasal/0001/version/20081013> legal:partOf <http://example.org/legal/document/uu/2009/7/pasal/0001> .
+<http://example.org/legal/document/uu/2009/7/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2009/7> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2009/7/pasals> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013> legal:partOf <http://example.org/legal/document/uu/2009/7/pasal/0002> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2009/7> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat> legal:partOf <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0001> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point> legal:partOf <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/a> legal:partOf <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/b> legal:partOf <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/c> legal:partOf <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point/d> legal:partOf <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0002/point> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0003> legal:partOf <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0003> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0004> legal:partOf <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0004> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0005> legal:partOf <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0005/text> legal:partOf <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0005> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0006> legal:partOf <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat> .
+<http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0006/text> legal:partOf <http://example.org/legal/document/uu/2009/7/pasal/0002/version/20081013/ayat/0006> .
 <http://example.org/legal/document/uu/2009/7/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2009/7/mengingat/point> .
 <http://example.org/legal/document/uu/2009/7/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2009/7/mengingat/point> .
 <http://example.org/legal/document/uu/2009/7/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/2009/7/mengingat/point> .

@@ -1,7 +1,25 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2010/6> legal:documentHasBabSet <http://example.org/legal/document/uu/2010/6/bab> .
+<http://example.org/legal/document/uu/2010/6> legal:documentHasPasalSet <http://example.org/legal/document/uu/2010/6/pasals> .
+<http://example.org/legal/document/uu/2010/6/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2010/6/pasal/0001> .
+<http://example.org/legal/document/uu/2010/6/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/2010/6/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2010/6/pasal/0001/version/20100827> .
+<http://example.org/legal/document/uu/2010/6> legal:documentHasPasal <http://example.org/legal/document/uu/2010/6/pasal/0001> .
+<http://example.org/legal/document/uu/2010/6/pasal/0001/version/20100827> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2010/6/pasal/0001/version/20100827> legal:pasalVersionHasVersionDate "2010-08-27"^^xsd:date .
+<http://example.org/legal/document/uu/2010/6/pasal/0001/version/20100827> legal:pasalVersionHasRawText "Mengesahkan Mem0randum Saling Pengertian antara Pemerintah Republik Ind0nesia dan Kerajaan Kebawah Duli Yang Maha Mulia Paduka Seri Baginda Sultan dan Yang Di-Pertuan Negara Brunei Darussalam tentang Kerjasama di Bidang Pertahanan ( Memorandum of Understanding between the Government of the Republic of Indonesia and the Government of His Majesty the Sultan and Yang Di-Pertuan of Brunei Darussalam on Defence Cooperation ) yang telah ditandatangani pada tanggal 10 April 2003 di Jakarta yang salinan naskah aslinya dalam bahasa Ind0nesia, bahasa Melayu, dan bahasa Inggris sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang- Undang ini." .
+<http://example.org/legal/document/uu/2010/6/pasal/0001/version/20100827/text> legal:textHasTextString "Mengesahkan Mem0randum Saling Pengertian antara Pemerintah Republik Ind0nesia dan Kerajaan Kebawah Duli Yang Maha Mulia Paduka Seri Baginda Sultan dan Yang Di-Pertuan Negara Brunei Darussalam tentang Kerjasama di Bidang Pertahanan ( Memorandum of Understanding between the Government of the Republic of Indonesia and the Government of His Majesty the Sultan and Yang Di-Pertuan of Brunei Darussalam on Defence Cooperation ) yang telah ditandatangani pada tanggal 10 April 2003 di Jakarta yang salinan naskah aslinya dalam bahasa Ind0nesia, bahasa Melayu, dan bahasa Inggris sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang- Undang ini." .
+<http://example.org/legal/document/uu/2010/6/pasal/0001/version/20100827> legal:pasalVersionHasText <http://example.org/legal/document/uu/2010/6/pasal/0001/version/20100827/text> .
+<http://example.org/legal/document/uu/2010/6/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2010/6/pasal/0002> .
+<http://example.org/legal/document/uu/2010/6/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/2010/6/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2010/6/pasal/0002/version/20100827> .
+<http://example.org/legal/document/uu/2010/6> legal:documentHasPasal <http://example.org/legal/document/uu/2010/6/pasal/0002> .
+<http://example.org/legal/document/uu/2010/6/pasal/0002/version/20100827> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2010/6/pasal/0002/version/20100827> legal:pasalVersionHasVersionDate "2010-08-27"^^xsd:date .
+<http://example.org/legal/document/uu/2010/6/pasal/0002/version/20100827> legal:pasalVersionHasRawText "Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar . . . - 4 - Agar setiap 0rang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Ind0nesia." .
+<http://example.org/legal/document/uu/2010/6/pasal/0002/version/20100827/text> legal:textHasTextString "Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar . . . - 4 - Agar setiap 0rang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Ind0nesia." .
+<http://example.org/legal/document/uu/2010/6/pasal/0002/version/20100827> legal:pasalVersionHasText <http://example.org/legal/document/uu/2010/6/pasal/0002/version/20100827/text> .
 <http://example.org/legal/document/uu/2010/6> legal:documentHasDisahkanDate "2010-08-27"^^xsd:date .
 <http://example.org/legal/document/uu/2010/6> legal:documentMengingat <http://example.org/legal/document/uu/2010/6/mengingat> .
 <http://example.org/legal/document/uu/2010/6/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2010/6/mengingat/point> .
@@ -51,6 +69,13 @@
 <http://example.org/legal/document/uu/2010/6> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/2010/6> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/2010/6> a legal:Document .
+<http://example.org/legal/document/uu/2010/6/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2010/6/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/2010/6/pasal/0001/version/20100827> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2010/6/pasal/0001/version/20100827/text> a legal:Text .
+<http://example.org/legal/document/uu/2010/6/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/2010/6/pasal/0002/version/20100827> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2010/6/pasal/0002/version/20100827/text> a legal:Text .
 <http://example.org/legal/document/uu/2010/6/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/2010/6/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/2010/6/mengingat/point> a legal:PointSet .
@@ -75,7 +100,12 @@
 <http://example.org/legal/document/uu/2010/6/menimbang/point/c/text> a legal:Text .
 <http://example.org/legal/document/uu/2010/6/menimbang/point/d> a legal:Point .
 <http://example.org/legal/document/uu/2010/6/menimbang/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/2010/6/bab> legal:partOf <http://example.org/legal/document/uu/2010/6> .
+<http://example.org/legal/document/uu/2010/6/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2010/6/pasals> .
+<http://example.org/legal/document/uu/2010/6/pasal/0001/version/20100827> legal:partOf <http://example.org/legal/document/uu/2010/6/pasal/0001> .
+<http://example.org/legal/document/uu/2010/6/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2010/6> .
+<http://example.org/legal/document/uu/2010/6/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2010/6/pasals> .
+<http://example.org/legal/document/uu/2010/6/pasal/0002/version/20100827> legal:partOf <http://example.org/legal/document/uu/2010/6/pasal/0002> .
+<http://example.org/legal/document/uu/2010/6/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2010/6> .
 <http://example.org/legal/document/uu/2010/6/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2010/6/mengingat/point> .
 <http://example.org/legal/document/uu/2010/6/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2010/6/mengingat/point> .
 <http://example.org/legal/document/uu/2010/6/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/2010/6/mengingat/point> .

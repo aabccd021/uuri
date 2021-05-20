@@ -479,18 +479,75 @@ opText: |-
   DELIMITATION OF THE TERRITORIAL SEAS OF THE TWO
   COUNTRIES IN THE WESTERN PART OF THE STRAIT OF
   SINGAPORE, 2009 ).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_19
+          nodeType: pasalVersion
+          version: &ref_20
+            nodeType: date
+            month: 6
+            date: 22
+            year: 2010
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_19
+          textString: >-
+            Mengesahkan Perjanjian antara Republik Indonesia dan Republik Singapura tentang
+            Penetapan Garis Batas Laut Wilayah Kedua Negara di Bagian Barat Selat Singapura, 2009 (
+            Treaty between the Republic of Indonesia and the Republic of Singapore relating to the
+            Delimitation of the Territorial Seas of the Two Countries in the Western Part of the
+            Strait of Singapore, 2009 ) yang telah ditandatangani di Jakarta, Indonesia, pada
+            tanggal 10 Maret 2009, yang salinan naskah aslinya dalam bahasa Indonesia dan bahasa
+            Inggris sebagaimana terlampir, dan merupakan bagian yang tidak terpisahkan dari Undang-
+            Undang ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_21
+          nodeType: pasalVersion
+          version: *ref_20
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_21
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar . . . - 4 - Agar setiap
+            orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya
+            dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 6
-    date: 22
-    year: 2010
+  date: *ref_20
   location: Jakarta
   pengesah: Diundangkan di Jakarta
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

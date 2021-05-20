@@ -306,18 +306,75 @@ opText: |-
   REPUBLIC OF INDONESIA AND THE GOVERNMENT OF HIS
   djpp.depkumham.go.id MAJESTY THE SULTAN AND YANG DI-PERTUAN OF BRUNEI
   DARUSSALAM ON DEFENCE COOPERATION ).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_14
+          nodeType: pasalVersion
+          version: &ref_15
+            nodeType: date
+            month: 8
+            date: 27
+            year: 2010
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_14
+          textString: >-
+            Mengesahkan Mem0randum Saling Pengertian antara Pemerintah Republik Ind0nesia dan
+            Kerajaan Kebawah Duli Yang Maha Mulia Paduka Seri Baginda Sultan dan Yang Di-Pertuan
+            Negara Brunei Darussalam tentang Kerjasama di Bidang Pertahanan ( Memorandum of
+            Understanding between the Government of the Republic of Indonesia and the Government of
+            His Majesty the Sultan and Yang Di-Pertuan of Brunei Darussalam on Defence Cooperation )
+            yang telah ditandatangani pada tanggal 10 April 2003 di Jakarta yang salinan naskah
+            aslinya dalam bahasa Ind0nesia, bahasa Melayu, dan bahasa Inggris sebagaimana terlampir
+            dan merupakan bagian yang tidak terpisahkan dari Undang- Undang ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_16
+          nodeType: pasalVersion
+          version: *ref_15
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_16
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar . . . - 4 - Agar setiap
+            0rang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya
+            dalam Lembaran Negara Republik Ind0nesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 8
-    date: 27
-    year: 2010
+  date: *ref_15
   location: Jakarta
   pengesah: DR. H. SUSILO BAMBANG YUDHOYONO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

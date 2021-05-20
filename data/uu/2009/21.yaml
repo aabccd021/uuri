@@ -333,18 +333,75 @@ opText: |-
   KONSERVASI DAN PENGELOLAAN SEDIAAN IKAN YANG
   BERUAYA TERBATAS DAN SEDIAAN IKAN YANG BERUAYA
   JAUH).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_14
+          nodeType: pasalVersion
+          version: &ref_15
+            nodeType: date
+            month: 6
+            date: 18
+            year: 2009
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_14
+          textString: >-
+            Mengesahkan Agreement for the Implementation of the Provisions of the United Nations
+            Convention on the Law of the Sea of 10 December 1982 relating to the Conservation and
+            Management of Straddling Fish Stocks and Highly Migratory Fish Stocks (Persetujuan
+            Pelaksanaan Ketentuan-Ketentuan Konvensi Perserikatan Bangsa-Bangsa tentang Hukum Laut
+            tanggal 10 Desember 1982 yang berkaitan dengan Konservasi dan Pengelolaan Sediaan Ikan
+            yang Beruaya Terbatas dan Sediaan Ikan yang Beruaya Jauh) yang salinan naskah aslinya
+            dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir dan
+            merupakan bagian yang tidak terpisahkan dari Undang-Undang ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_16
+          nodeType: pasalVersion
+          version: *ref_15
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_16
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang “
+            mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 6
-    date: 18
-    year: 2009
+  date: *ref_15
   location: Jakarta
   pengesah: DR. H. SUSILO BAMBANG YUDHOYONO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

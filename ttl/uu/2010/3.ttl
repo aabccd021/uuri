@@ -1,7 +1,48 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2010/3> legal:documentHasBabSet <http://example.org/legal/document/uu/2010/3/bab> .
+<http://example.org/legal/document/uu/2010/3> legal:documentHasPasalSet <http://example.org/legal/document/uu/2010/3/pasals> .
+<http://example.org/legal/document/uu/2010/3/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2010/3/pasal/0001> .
+<http://example.org/legal/document/uu/2010/3/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/2010/3/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2010/3/pasal/0001/version/20100615> .
+<http://example.org/legal/document/uu/2010/3> legal:documentHasPasal <http://example.org/legal/document/uu/2010/3/pasal/0001> .
+<http://example.org/legal/document/uu/2010/3/pasal/0001/version/20100615> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2010/3/pasal/0001/version/20100615> legal:pasalVersionHasVersionDate "2010-06-15"^^xsd:date .
+<http://example.org/legal/document/uu/2010/3/pasal/0001/version/20100615> legal:pasalVersionHasRawText "Peraturan Pemerintah Pengganti Undang-Undang Nomor 4 Tahun 2009 tentang Perubahan Atas Undang-Undang Nomor 30 Tahun 2002 tentang Komisi Pemberantasan Tindak Pidana Korupsi (Lembaran Negara Republik Indonesia Tahun 2009 Nomor 132, Tambahan Lembaran Negara Republik Indonesia Nomor 5051) dicabut dan dinyatakan tidak berlaku." .
+<http://example.org/legal/document/uu/2010/3/pasal/0001/version/20100615/text> legal:textHasTextString "Peraturan Pemerintah Pengganti Undang-Undang Nomor 4 Tahun 2009 tentang Perubahan Atas Undang-Undang Nomor 30 Tahun 2002 tentang Komisi Pemberantasan Tindak Pidana Korupsi (Lembaran Negara Republik Indonesia Tahun 2009 Nomor 132, Tambahan Lembaran Negara Republik Indonesia Nomor 5051) dicabut dan dinyatakan tidak berlaku." .
+<http://example.org/legal/document/uu/2010/3/pasal/0001/version/20100615> legal:pasalVersionHasText <http://example.org/legal/document/uu/2010/3/pasal/0001/version/20100615/text> .
+<http://example.org/legal/document/uu/2010/3/pasal/0001/version/20100615/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2002/30> .
+<http://example.org/legal/document/uu/2010/3/pasal/0001/version/20100615/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2009/4> .
+<http://example.org/legal/document/uu/2010/3/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2010/3/pasal/0002> .
+<http://example.org/legal/document/uu/2010/3/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/2010/3/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2010/3/pasal/0002/version/20100615> .
+<http://example.org/legal/document/uu/2010/3> legal:documentHasPasal <http://example.org/legal/document/uu/2010/3/pasal/0002> .
+<http://example.org/legal/document/uu/2010/3/pasal/0002/version/20100615> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2010/3/pasal/0002/version/20100615> legal:pasalVersionHasVersionDate "2010-06-15"^^xsd:date .
+<http://example.org/legal/document/uu/2010/3/pasal/0002/version/20100615> legal:pasalVersionHasRawText "Peraturan Pemerintah Pengganti Undang-Undang sebagaimana dimaksud dalam Pasal 1 dinyatakan tidak berlaku sejak keputusan Rapat Paripurna Dewan Perwakilan Rakyat tanggal 4 Maret 2010." .
+<http://example.org/legal/document/uu/2010/3/pasal/0002/version/20100615/text> legal:textHasTextString "Peraturan Pemerintah Pengganti Undang-Undang sebagaimana dimaksud dalam Pasal 1 dinyatakan tidak berlaku sejak keputusan Rapat Paripurna Dewan Perwakilan Rakyat tanggal 4 Maret 2010." .
+<http://example.org/legal/document/uu/2010/3/pasal/0002/version/20100615> legal:pasalVersionHasText <http://example.org/legal/document/uu/2010/3/pasal/0002/version/20100615/text> .
+<http://example.org/legal/document/uu/2010/3/pasal/0002/version/20100615/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2010/3/pasal/0001> .
+<http://example.org/legal/document/uu/2010/3/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2010/3/pasal/0003> .
+<http://example.org/legal/document/uu/2010/3/pasal/0003> legal:pasalHasKey 3 .
+<http://example.org/legal/document/uu/2010/3/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2010/3/pasal/0003/version/20100615> .
+<http://example.org/legal/document/uu/2010/3> legal:documentHasPasal <http://example.org/legal/document/uu/2010/3/pasal/0003> .
+<http://example.org/legal/document/uu/2010/3/pasal/0003/version/20100615> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2010/3/pasal/0003/version/20100615> legal:pasalVersionHasVersionDate "2010-06-15"^^xsd:date .
+<http://example.org/legal/document/uu/2010/3/pasal/0003/version/20100615> legal:pasalVersionHasRawText "Kebijakan yang telah ditetapkan oleh Pimpinan Sementara Komisi Pemberantasan Korupsi dalam rangka melaksanakan tugas dan wewenangnya berdasarkan Peraturan Pemerintah Pengganti Undang-Undang Nomor 4 Tahun 2009 tentang Perubahan Atas Undang-Undang Nomor 30 Tahun 2002 tentang Komisi Pemberantasan Tindak Pidana Korupsi sampai dengan tanggal 4 Maret 2010 tetap sah dan mengikat." .
+<http://example.org/legal/document/uu/2010/3/pasal/0003/version/20100615/text> legal:textHasTextString "Kebijakan yang telah ditetapkan oleh Pimpinan Sementara Komisi Pemberantasan Korupsi dalam rangka melaksanakan tugas dan wewenangnya berdasarkan Peraturan Pemerintah Pengganti Undang-Undang Nomor 4 Tahun 2009 tentang Perubahan Atas Undang-Undang Nomor 30 Tahun 2002 tentang Komisi Pemberantasan Tindak Pidana Korupsi sampai dengan tanggal 4 Maret 2010 tetap sah dan mengikat." .
+<http://example.org/legal/document/uu/2010/3/pasal/0003/version/20100615> legal:pasalVersionHasText <http://example.org/legal/document/uu/2010/3/pasal/0003/version/20100615/text> .
+<http://example.org/legal/document/uu/2010/3/pasal/0003/version/20100615/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2002/30> .
+<http://example.org/legal/document/uu/2010/3/pasal/0003/version/20100615/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2009/4> .
+<http://example.org/legal/document/uu/2010/3/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2010/3/pasal/0004> .
+<http://example.org/legal/document/uu/2010/3/pasal/0004> legal:pasalHasKey 4 .
+<http://example.org/legal/document/uu/2010/3/pasal/0004> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2010/3/pasal/0004/version/20100615> .
+<http://example.org/legal/document/uu/2010/3> legal:documentHasPasal <http://example.org/legal/document/uu/2010/3/pasal/0004> .
+<http://example.org/legal/document/uu/2010/3/pasal/0004/version/20100615> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2010/3/pasal/0004/version/20100615> legal:pasalVersionHasVersionDate "2010-06-15"^^xsd:date .
+<http://example.org/legal/document/uu/2010/3/pasal/0004/version/20100615> legal:pasalVersionHasRawText "Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar . . . - 3 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2010/3/pasal/0004/version/20100615/text> legal:textHasTextString "Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar . . . - 3 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2010/3/pasal/0004/version/20100615> legal:pasalVersionHasText <http://example.org/legal/document/uu/2010/3/pasal/0004/version/20100615/text> .
 <http://example.org/legal/document/uu/2010/3> legal:documentHasDisahkanDate "2010-06-15"^^xsd:date .
 <http://example.org/legal/document/uu/2010/3> legal:documentMengingat <http://example.org/legal/document/uu/2010/3/mengingat> .
 <http://example.org/legal/document/uu/2010/3/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2010/3/mengingat/point> .
@@ -45,6 +86,19 @@
 <http://example.org/legal/document/uu/2010/3> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/2010/3> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/2010/3> a legal:Document .
+<http://example.org/legal/document/uu/2010/3/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2010/3/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/2010/3/pasal/0001/version/20100615> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2010/3/pasal/0001/version/20100615/text> a legal:Text .
+<http://example.org/legal/document/uu/2010/3/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/2010/3/pasal/0002/version/20100615> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2010/3/pasal/0002/version/20100615/text> a legal:Text .
+<http://example.org/legal/document/uu/2010/3/pasal/0003> a legal:Pasal .
+<http://example.org/legal/document/uu/2010/3/pasal/0003/version/20100615> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2010/3/pasal/0003/version/20100615/text> a legal:Text .
+<http://example.org/legal/document/uu/2010/3/pasal/0004> a legal:Pasal .
+<http://example.org/legal/document/uu/2010/3/pasal/0004/version/20100615> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2010/3/pasal/0004/version/20100615/text> a legal:Text .
 <http://example.org/legal/document/uu/2010/3/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/2010/3/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/2010/3/mengingat/point> a legal:PointSet .
@@ -63,7 +117,18 @@
 <http://example.org/legal/document/uu/2010/3/menimbang/point/c/text> a legal:Text .
 <http://example.org/legal/document/uu/2010/3/menimbang/point/d> a legal:Point .
 <http://example.org/legal/document/uu/2010/3/menimbang/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/2010/3/bab> legal:partOf <http://example.org/legal/document/uu/2010/3> .
+<http://example.org/legal/document/uu/2010/3/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2010/3/pasals> .
+<http://example.org/legal/document/uu/2010/3/pasal/0001/version/20100615> legal:partOf <http://example.org/legal/document/uu/2010/3/pasal/0001> .
+<http://example.org/legal/document/uu/2010/3/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2010/3> .
+<http://example.org/legal/document/uu/2010/3/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2010/3/pasals> .
+<http://example.org/legal/document/uu/2010/3/pasal/0002/version/20100615> legal:partOf <http://example.org/legal/document/uu/2010/3/pasal/0002> .
+<http://example.org/legal/document/uu/2010/3/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2010/3> .
+<http://example.org/legal/document/uu/2010/3/pasal/0003> legal:partOf <http://example.org/legal/document/uu/2010/3/pasals> .
+<http://example.org/legal/document/uu/2010/3/pasal/0003/version/20100615> legal:partOf <http://example.org/legal/document/uu/2010/3/pasal/0003> .
+<http://example.org/legal/document/uu/2010/3/pasal/0003> legal:partOf <http://example.org/legal/document/uu/2010/3> .
+<http://example.org/legal/document/uu/2010/3/pasal/0004> legal:partOf <http://example.org/legal/document/uu/2010/3/pasals> .
+<http://example.org/legal/document/uu/2010/3/pasal/0004/version/20100615> legal:partOf <http://example.org/legal/document/uu/2010/3/pasal/0004> .
+<http://example.org/legal/document/uu/2010/3/pasal/0004> legal:partOf <http://example.org/legal/document/uu/2010/3> .
 <http://example.org/legal/document/uu/2010/3/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2010/3/mengingat/point> .
 <http://example.org/legal/document/uu/2010/3/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2010/3/mengingat/point> .
 <http://example.org/legal/document/uu/2010/3/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/2010/3/menimbang/point> .

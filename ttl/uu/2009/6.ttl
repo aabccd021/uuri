@@ -1,7 +1,52 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2009/6> legal:documentHasBabSet <http://example.org/legal/document/uu/2009/6/bab> .
+<http://example.org/legal/document/uu/2009/6> legal:documentHasPasalSet <http://example.org/legal/document/uu/2009/6/pasals> .
+<http://example.org/legal/document/uu/2009/6/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2009/6/pasal/0001> .
+<http://example.org/legal/document/uu/2009/6/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/2009/6/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2009/6/pasal/0001/version/20081013> .
+<http://example.org/legal/document/uu/2009/6> legal:documentHasPasal <http://example.org/legal/document/uu/2009/6/pasal/0001> .
+<http://example.org/legal/document/uu/2009/6/pasal/0001/version/20081013> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2009/6/pasal/0001/version/20081013> legal:pasalVersionHasVersionDate "2008-10-13"^^xsd:date .
+<http://example.org/legal/document/uu/2009/6/pasal/0001/version/20081013> legal:pasalVersionHasRawText "Peraturan Pemerintah Pengganti Undang - Undang Nomor 2 Tahun 2008 tentang Perubahan Kedua Atas Unda ng - Undang Nomor 23 Tahun 1999 tentang Bank Indonesia (Lembaran Negara Repub lik Indonesia Tahun 2008 Nomor 142, Tambahan Lembaran Negara Republik Indonesia Nomor 4901) ditetapkan menjadi Undang - Undang dan melampirkannya sebagai bagian yang tidak terpisahkan dari Undang - Undang ini." .
+<http://example.org/legal/document/uu/2009/6/pasal/0001/version/20081013/text> legal:textHasTextString "Peraturan Pemerintah Pengganti Undang - Undang Nomor 2 Tahun 2008 tentang Perubahan Kedua Atas Unda ng - Undang Nomor 23 Tahun 1999 tentang Bank Indonesia (Lembaran Negara Repub lik Indonesia Tahun 2008 Nomor 142, Tambahan Lembaran Negara Republik Indonesia Nomor 4901) ditetapkan menjadi Undang - Undang dan melampirkannya sebagai bagian yang tidak terpisahkan dari Undang - Undang ini." .
+<http://example.org/legal/document/uu/2009/6/pasal/0001/version/20081013> legal:pasalVersionHasText <http://example.org/legal/document/uu/2009/6/pasal/0001/version/20081013/text> .
+<http://example.org/legal/document/uu/2009/6/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2009/6/pasal/0002> .
+<http://example.org/legal/document/uu/2009/6/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/2009/6/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013> .
+<http://example.org/legal/document/uu/2009/6> legal:documentHasPasal <http://example.org/legal/document/uu/2009/6/pasal/0002> .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013> legal:pasalVersionHasVersionDate "2008-10-13"^^xsd:date .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013> legal:pasalVersionHasRawText "(1). Bank Indonesia dapat memberikan kredit atau pembiayaan berdasarkan Prinsip Syariah untuk jangka waktu paling lama 9 0 (sembilan puluh) hari kepada Bank untuk mengatasi kesulitan pendanaan jangka pendek Bank yang bersangkutan.\n(2). Pelaksanaan pemberian kredit atau pembiayaan berdasarkan Prinsip Syariah sebagaimana dimaksud pada ayat (1), wajib dijamin oleh Bank penerima dengan agunan yang berkualitas tinggi yang nilainya minimal sebesar jumlah kredit atau pembiayaan yang diterimanya .\n(3). Pelaksanaan ketentuan sebagaimana dimaksud pada ayat (1) dan ayat (2) ditetapkan dengan Peraturan Bank Indonesia.\n(4). Dalam hal suatu Bank mengalami kesulitan keuangan yang berdampak sistemik dan berpotensi mengakibatkan krisis yang membahayakan sist em keuangan, Bank Indonesia dapat memberikan fasilitas pembiayaan darurat yang pendanaannya menjadi beban Pemerintah.\n(5). Ketentuan dan tata cara pengambilan keputusan mengenai kesulitan keuangan Bank yang berdampak sistemik, pemberian fasilitas pembiayaan darurat, dan sumber pendanaan yang berasal dari Anggaran Pendapatan dan Belanja Negara diatur dalam undang - undang tersendiri. Pasal II Peraturan Pemerintah Pengganti Undang - undang ini mulai berlaku pada tanggal diundangkan. - 6 - Agar setiap orang mengetahuinya memerintahkan pengudangan Peraturan Pemerintah Pengganti Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat> .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0001> .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0001> legal:ayatHasRawText "Bank Indonesia dapat memberikan kredit atau pembiayaan berdasarkan Prinsip Syariah untuk jangka waktu paling lama 9 0 (sembilan puluh) hari kepada Bank untuk mengatasi kesulitan pendanaan jangka pendek Bank yang bersangkutan." .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0001/text> legal:textHasTextString "Bank Indonesia dapat memberikan kredit atau pembiayaan berdasarkan Prinsip Syariah untuk jangka waktu paling lama 9 0 (sembilan puluh) hari kepada Bank untuk mengatasi kesulitan pendanaan jangka pendek Bank yang bersangkutan." .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0001/text> .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0002> .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0002> legal:ayatHasRawText "Pelaksanaan pemberian kredit atau pembiayaan berdasarkan Prinsip Syariah sebagaimana dimaksud pada ayat (1), wajib dijamin oleh Bank penerima dengan agunan yang berkualitas tinggi yang nilainya minimal sebesar jumlah kredit atau pembiayaan yang diterimanya ." .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0002/text> legal:textHasTextString "Pelaksanaan pemberian kredit atau pembiayaan berdasarkan Prinsip Syariah sebagaimana dimaksud pada ayat (1), wajib dijamin oleh Bank penerima dengan agunan yang berkualitas tinggi yang nilainya minimal sebesar jumlah kredit atau pembiayaan yang diterimanya ." .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0002/text> .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0001> .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0003> .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0003> legal:ayatHasRawText "Pelaksanaan ketentuan sebagaimana dimaksud pada ayat (1) dan ayat (2) ditetapkan dengan Peraturan Bank Indonesia." .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0003/text> legal:textHasTextString "Pelaksanaan ketentuan sebagaimana dimaksud pada ayat (1) dan ayat (2) ditetapkan dengan Peraturan Bank Indonesia." .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0003/text> .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0002> .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0001> .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0004> .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0004> legal:ayatHasKey 4 .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0004> legal:ayatHasRawText "Dalam hal suatu Bank mengalami kesulitan keuangan yang berdampak sistemik dan berpotensi mengakibatkan krisis yang membahayakan sist em keuangan, Bank Indonesia dapat memberikan fasilitas pembiayaan darurat yang pendanaannya menjadi beban Pemerintah." .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0004/text> legal:textHasTextString "Dalam hal suatu Bank mengalami kesulitan keuangan yang berdampak sistemik dan berpotensi mengakibatkan krisis yang membahayakan sist em keuangan, Bank Indonesia dapat memberikan fasilitas pembiayaan darurat yang pendanaannya menjadi beban Pemerintah." .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0004/text> .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0005> .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0005> legal:ayatHasKey 5 .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0005> legal:ayatHasRawText "Ketentuan dan tata cara pengambilan keputusan mengenai kesulitan keuangan Bank yang berdampak sistemik, pemberian fasilitas pembiayaan darurat, dan sumber pendanaan yang berasal dari Anggaran Pendapatan dan Belanja Negara diatur dalam undang - undang tersendiri. Pasal II Peraturan Pemerintah Pengganti Undang - undang ini mulai berlaku pada tanggal diundangkan. - 6 - Agar setiap orang mengetahuinya memerintahkan pengudangan Peraturan Pemerintah Pengganti Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0005/text> legal:textHasTextString "Ketentuan dan tata cara pengambilan keputusan mengenai kesulitan keuangan Bank yang berdampak sistemik, pemberian fasilitas pembiayaan darurat, dan sumber pendanaan yang berasal dari Anggaran Pendapatan dan Belanja Negara diatur dalam undang - undang tersendiri. Pasal II Peraturan Pemerintah Pengganti Undang - undang ini mulai berlaku pada tanggal diundangkan. - 6 - Agar setiap orang mengetahuinya memerintahkan pengudangan Peraturan Pemerintah Pengganti Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0005> legal:ayatHasText <http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0005/text> .
 <http://example.org/legal/document/uu/2009/6> legal:documentHasDisahkanDate "2008-10-13"^^xsd:date .
 <http://example.org/legal/document/uu/2009/6> legal:documentMengingat <http://example.org/legal/document/uu/2009/6/mengingat> .
 <http://example.org/legal/document/uu/2009/6/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2009/6/mengingat/point> .
@@ -47,6 +92,23 @@
 <http://example.org/legal/document/uu/2009/6> legal:documentHasDisahkanLocation "Jakar" .
 <http://example.org/legal/document/uu/2009/6> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/2009/6> a legal:Document .
+<http://example.org/legal/document/uu/2009/6/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2009/6/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/2009/6/pasal/0001/version/20081013> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2009/6/pasal/0001/version/20081013/text> a legal:Text .
+<http://example.org/legal/document/uu/2009/6/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0004> a legal:Ayat .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0005> a legal:Ayat .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0005/text> a legal:Text .
 <http://example.org/legal/document/uu/2009/6/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/2009/6/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/2009/6/mengingat/point> a legal:PointSet .
@@ -69,7 +131,23 @@
 <http://example.org/legal/document/uu/2009/6/menimbang/point/d/text> a legal:Text .
 <http://example.org/legal/document/uu/2009/6/menimbang/point/e> a legal:Point .
 <http://example.org/legal/document/uu/2009/6/menimbang/point/e/text> a legal:Text .
-<http://example.org/legal/document/uu/2009/6/bab> legal:partOf <http://example.org/legal/document/uu/2009/6> .
+<http://example.org/legal/document/uu/2009/6/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2009/6/pasals> .
+<http://example.org/legal/document/uu/2009/6/pasal/0001/version/20081013> legal:partOf <http://example.org/legal/document/uu/2009/6/pasal/0001> .
+<http://example.org/legal/document/uu/2009/6/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2009/6> .
+<http://example.org/legal/document/uu/2009/6/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2009/6/pasals> .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013> legal:partOf <http://example.org/legal/document/uu/2009/6/pasal/0002> .
+<http://example.org/legal/document/uu/2009/6/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2009/6> .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat> legal:partOf <http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013> .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat> .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0001> .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat> .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0002> .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0003> legal:partOf <http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat> .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0003> .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0004> legal:partOf <http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat> .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0004> .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0005> legal:partOf <http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat> .
+<http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0005/text> legal:partOf <http://example.org/legal/document/uu/2009/6/pasal/0002/version/20081013/ayat/0005> .
 <http://example.org/legal/document/uu/2009/6/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2009/6/mengingat/point> .
 <http://example.org/legal/document/uu/2009/6/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2009/6/mengingat/point> .
 <http://example.org/legal/document/uu/2009/6/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/2009/6/mengingat/point> .

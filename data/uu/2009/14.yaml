@@ -361,18 +361,137 @@ opText: |-
   TINDAK PIDANA TRANSNASIONAL YANG TERORGANISASI).
   Pasal 1 . . .
   - 4 -
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_15
+          nodeType: pasalVersion
+          version: &ref_20
+            nodeType: date
+            month: 3
+            date: 5
+            year: 2009
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_16
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_15
+          elements:
+            - type: ayat
+              node: &ref_17
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_16
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_17
+                textString: >-
+                  Mengesahkan Protocol to Prevent, Suppress and Punish Trafficking in Persons,
+                  Especially Women and Children, Supplementing the United Nations Convention against
+                  Transnational Organized Crime (Protokol untuk Mencegah, Menindak, dan Menghukum
+                  Perdagangan Orang, Terutama Perempuan dan Anak-Anak, Melengkapi Konvensi
+                  Perserikatan Bangsa-Bangsa Menentang Tindak Pidana Transnasional yang
+                  Terorganisasi) dengan Declaration (Pernyataan) terhadap Pasal 5 ayat (2) huruf c
+                  dan Reservation (Pensyaratan) terhadap Pasal 15 ayat (2).
+                references:
+                  - start: 503
+                    end: 520
+                    node:
+                      parentAyatSetNode: &ref_18
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_15
+                      key: 2
+                      nodeType: ayat
+                  - start: 439
+                    end: 455
+                    node:
+                      parentAyatSetNode: *ref_18
+                      key: 2
+                      nodeType: ayat
+                  - start: 456
+                    end: 463
+                    node:
+                      key: c
+                      parentPointSetNode:
+                        nodeType: pointSet
+                        parentNode: *ref_15
+                      nodeType: point
+            - type: ayat
+              node: &ref_19
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_16
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_19
+                textString: >-
+                  Salinan naskah asli Protocol to Prevent, Suppress and Punish Trafficking in
+                  Persons, Especially Women and Children, Supplementing the United Nations
+                  Convention against Transnational Organized Crime (Protokol untuk Mencegah,
+                  Menindak, dan Menghukum Perdagangan Orang, Terutama Perempuan dan Anak-Anak,
+                  Melengkapi Konvensi Perserikatan Bangsa-Bangsa Menentang Tindak Pidana
+                  Transnasional yang Terorganisasi) dengan Declaration (Pernyataan) dan Reservation
+                  (Pensyaratan) sebagaimana dimaksud pada ayat (1) dalam bahasa Inggris dan
+                  terjemahannya dalam bahasa Indonesia sebagaimana terlampir merupakan bagian yang
+                  tidak terpisahkan dari Undang-Undang ini.
+                references:
+                  - start: 494
+                    end: 502
+                    node:
+                      key: 1
+                      parentAyatSetNode:
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_15
+                      nodeType: ayat
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_21
+          nodeType: pasalVersion
+          version: *ref_20
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_21
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. - 5 - Agar setiap orang
+            mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 3
-    date: 5
-    year: 2009
+  date: *ref_20
   location: Jakarta
   pengesah: DR. H. SUSILO BAMBANG YUDHOYONO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

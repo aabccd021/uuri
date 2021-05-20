@@ -1,7 +1,27 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2009/17> legal:documentHasBabSet <http://example.org/legal/document/uu/2009/17/bab> .
+<http://example.org/legal/document/uu/2009/17> legal:documentHasPasalSet <http://example.org/legal/document/uu/2009/17/pasals> .
+<http://example.org/legal/document/uu/2009/17/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2009/17/pasal/0001> .
+<http://example.org/legal/document/uu/2009/17/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/2009/17/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2009/17/pasal/0001/version/20090529> .
+<http://example.org/legal/document/uu/2009/17> legal:documentHasPasal <http://example.org/legal/document/uu/2009/17/pasal/0001> .
+<http://example.org/legal/document/uu/2009/17/pasal/0001/version/20090529> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2009/17/pasal/0001/version/20090529> legal:pasalVersionHasVersionDate "2009-05-29"^^xsd:date .
+<http://example.org/legal/document/uu/2009/17/pasal/0001/version/20090529> legal:pasalVersionHasRawText "Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2009 tentang Perubahan atas Undang-Undang Nomor 10 Tahun 2008 tentang Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan Rakyat Daerah (Lembaran Negara Republik Indonesia Tahun 2009 Nomor 41, Tambahan Lembaran Negara Republik Indonesia Nomor 4986) ditetapkan menjadi Undang-Undang, dan melampirkannya sebagai bagian yang tidak terpisahkan dari Undang- Undang ini." .
+<http://example.org/legal/document/uu/2009/17/pasal/0001/version/20090529/text> legal:textHasTextString "Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2009 tentang Perubahan atas Undang-Undang Nomor 10 Tahun 2008 tentang Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan Rakyat Daerah (Lembaran Negara Republik Indonesia Tahun 2009 Nomor 41, Tambahan Lembaran Negara Republik Indonesia Nomor 4986) ditetapkan menjadi Undang-Undang, dan melampirkannya sebagai bagian yang tidak terpisahkan dari Undang- Undang ini." .
+<http://example.org/legal/document/uu/2009/17/pasal/0001/version/20090529> legal:pasalVersionHasText <http://example.org/legal/document/uu/2009/17/pasal/0001/version/20090529/text> .
+<http://example.org/legal/document/uu/2009/17/pasal/0001/version/20090529/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2008/10> .
+<http://example.org/legal/document/uu/2009/17/pasal/0001/version/20090529/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2009/1> .
+<http://example.org/legal/document/uu/2009/17/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2009/17/pasal/0002> .
+<http://example.org/legal/document/uu/2009/17/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/2009/17/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2009/17/pasal/0002/version/20090529> .
+<http://example.org/legal/document/uu/2009/17> legal:documentHasPasal <http://example.org/legal/document/uu/2009/17/pasal/0002> .
+<http://example.org/legal/document/uu/2009/17/pasal/0002/version/20090529> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2009/17/pasal/0002/version/20090529> legal:pasalVersionHasVersionDate "2009-05-29"^^xsd:date .
+<http://example.org/legal/document/uu/2009/17/pasal/0002/version/20090529> legal:pasalVersionHasRawText "Undang-Undang ini mulai berlaku pada tanggal diundangkan. “4 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2009/17/pasal/0002/version/20090529/text> legal:textHasTextString "Undang-Undang ini mulai berlaku pada tanggal diundangkan. “4 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2009/17/pasal/0002/version/20090529> legal:pasalVersionHasText <http://example.org/legal/document/uu/2009/17/pasal/0002/version/20090529/text> .
 <http://example.org/legal/document/uu/2009/17> legal:documentHasDisahkanDate "2009-05-29"^^xsd:date .
 <http://example.org/legal/document/uu/2009/17> legal:documentMengingat <http://example.org/legal/document/uu/2009/17/mengingat> .
 <http://example.org/legal/document/uu/2009/17/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2009/17/mengingat/point> .
@@ -9,12 +29,12 @@
 <http://example.org/legal/document/uu/2009/17/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2009/17/mengingat/point/description> .
 <http://example.org/legal/document/uu/2009/17/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2009/17/mengingat/point/0001> .
 <http://example.org/legal/document/uu/2009/17/mengingat/point/0001> legal:pointHasKey "1" .
-<http://example.org/legal/document/uu/2009/17/mengingat/point/0001/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 20 ayat (1), Pasal 22 ayat (1) dan ayat (2) Undang-Undang Dasar Negara Republik Indonesia Tahun 1945;" .
+<http://example.org/legal/document/uu/2009/17/mengingat/point/0001/text> legal:textHasTextString "Pasal S ayat (1), Pasal 20 ayat (1), Pasal 22 ayat (1) dan ayat (2) Undang-Undang Dasar Negara Republik Indonesia Tahun 1945," .
 <http://example.org/legal/document/uu/2009/17/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/2009/17/mengingat/point/0001/text> .
 <http://example.org/legal/document/uu/2009/17/mengingat/point/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu> .
 <http://example.org/legal/document/uu/2009/17/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2009/17/mengingat/point/0002> .
 <http://example.org/legal/document/uu/2009/17/mengingat/point/0002> legal:pointHasKey "2" .
-<http://example.org/legal/document/uu/2009/17/mengingat/point/0002/text> legal:textHasTextString "Undang-Undang Nomor 10 Tahun 2008 tentang Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan Rakyat Daerah (Lembaran Negara Republik Indonesia Tahun 2008 Nomor 51, Tambahan Lembaran Negara Republik Indonesia Nomor 4836); - 3 - Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA dan PRESIDEN REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG PENETAPAN PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG NOMOR 1 TAHUN 2009 TENTANG PERUBAHAN ATAS UNDANG- UNDANG NOMOR 10 TAHUN 2008 TENTANG PEMILIHAN UMUM ANGGOTA DEWAN PERWAKILAN RAKYAT, DEWAN PERWAKILAN DAERAH, DAN DEWAN PERWAKILAN RAKYAT DAERAH MENJADI UNDANG-UNDANG." .
+<http://example.org/legal/document/uu/2009/17/mengingat/point/0002/text> legal:textHasTextString "Undang-Undang Nomor 10 Tahun 2008 tentang Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan Rakyat Daerah (Lembaran Negara Republik Indonesia Tahun 2008 Nomor 51, Tambahan Lembaran Negara Republik Indonesia Nomor 4836), Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA dan PRESIDEN REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG PENETAPAN PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG NOMOR 1 TAHUN 2009 TENTANG PERUBAHAN ATAS UNDANG- UNDANG NOMOR 10 TAHUN 2008 TENTANG PEMILIHAN UMUM ANGGOTA DEWAN PERWAKILAN RAKYAT, DEWAN PERWAKILAN DAERAH, DAN DEWAN PERWAKILAN RAKYAT DAERAH MENJADI UNDANG-UNDANG." .
 <http://example.org/legal/document/uu/2009/17/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/2009/17/mengingat/point/0002/text> .
 <http://example.org/legal/document/uu/2009/17/mengingat/point/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2008/10> .
 <http://example.org/legal/document/uu/2009/17> legal:documentMenimbang <http://example.org/legal/document/uu/2009/17/menimbang> .
@@ -23,27 +43,27 @@
 <http://example.org/legal/document/uu/2009/17/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2009/17/menimbang/point/description> .
 <http://example.org/legal/document/uu/2009/17/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2009/17/menimbang/point/a> .
 <http://example.org/legal/document/uu/2009/17/menimbang/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/2009/17/menimbang/point/a/text> legal:textHasTextString "bahwa berdasarkan Pasal 1 ayat (2) Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 kedaulatan berada di tangan rakyat, sehingga dalam penyelenggaraan pemilihan umum rakyat yang telah memenuhi persyaratan berdasarkan peraturan perundang-undangan mempunyai hak konstitusional untuk memilih dan dipilih;" .
+<http://example.org/legal/document/uu/2009/17/menimbang/point/a/text> legal:textHasTextString "bahwa berdasarkan Pasal 1 ayat (2) Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 kedaulatan berada di tangan rakyat, sehingga dalam penyelenggaraan pemilihan umum rakyat yang telah memenuhi persyaratan berdasarkan peraturan perundang-undangan mempunyai hak konstitusional untuk memilih dan dipilih:" .
 <http://example.org/legal/document/uu/2009/17/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/2009/17/menimbang/point/a/text> .
 <http://example.org/legal/document/uu/2009/17/menimbang/point/a/text> legal:textReferencesLegal <http://example.org/legal/document/uu> .
 <http://example.org/legal/document/uu/2009/17/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2009/17/menimbang/point/b> .
 <http://example.org/legal/document/uu/2009/17/menimbang/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/2009/17/menimbang/point/b/text> legal:textHasTextString "bahwa sesuai dengan ketentuan Undang-Undang Nomor 10 Tahun 2008 tentang Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan Rakyat Daerah pemilih harus terdaftar dalam daftar pemilih tetap, sehingga ketidaksempurnaan rekapitulasi daftar pemilih tetap secara nasional dapat mengakibatkan sebagian pemilih tidak dapat menggunakan hak memilihnya;" .
+<http://example.org/legal/document/uu/2009/17/menimbang/point/b/text> legal:textHasTextString "bahwa sesuai dengan ketentuan Undang-Undang Nomor 10 Tahun 2008 tentang Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan Rakyat Daerah pemilih harus terdaftar dalam daftar pemilih tetap, sehingga ketidaksempurnaan rekapitulasi daftar pemilih tetap secara nasional dapat mengakibatkan sebagian pemilih tidak dapat menggunakan hak memilihnya," .
 <http://example.org/legal/document/uu/2009/17/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/2009/17/menimbang/point/b/text> .
 <http://example.org/legal/document/uu/2009/17/menimbang/point/b/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2008/10> .
 <http://example.org/legal/document/uu/2009/17/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2009/17/menimbang/point/c> .
 <http://example.org/legal/document/uu/2009/17/menimbang/point/c> legal:pointHasKey "c" .
-<http://example.org/legal/document/uu/2009/17/menimbang/point/c/text> legal:textHasTextString "bahwa untuk memberikan kepastian tidak terjadinya kehilangan suara pemilih, perlu pengaturan pemberian tanda lebih dari satu kali pada surat suara dinyatakan sebagai suara yang sah; - 2 -" .
+<http://example.org/legal/document/uu/2009/17/menimbang/point/c/text> legal:textHasTextString ". bahwa untuk memberikan kepastian tidak terjadinya kehilangan suara pemilih, perlu pengaturan pemberian tanda lebih dari satu kali pada surat suara dinyatakan sebagai suara yang sah, -. 2 -" .
 <http://example.org/legal/document/uu/2009/17/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/2009/17/menimbang/point/c/text> .
 <http://example.org/legal/document/uu/2009/17/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2009/17/menimbang/point/d> .
 <http://example.org/legal/document/uu/2009/17/menimbang/point/d> legal:pointHasKey "d" .
-<http://example.org/legal/document/uu/2009/17/menimbang/point/d/text> legal:textHasTextString "bahwa untuk mengatasi timbulnya hal ihwal kegentingan yang memaksa sebagai akibat adanya permasalahan dalam penyelenggaraan pemilihan umum, Presiden telah menetapkan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2009 tentang Perubahan atas Undang-Undang Nomor 10 Tahun 2008 tentang Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan Rakyat Daerah;" .
+<http://example.org/legal/document/uu/2009/17/menimbang/point/d/text> legal:textHasTextString "bahwa untuk mengatasi timbulnya hal ihwal kegentingan yang memaksa sebagai akibat adanya permasalahan dalam penyelenggaraan pemilihan umum, Presiden telah menetapkan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2009 tentang Perubahan atas Undang-Undang Nomor 10 Tahun 2008 tentang Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan Rakyat Daerah," .
 <http://example.org/legal/document/uu/2009/17/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/2009/17/menimbang/point/d/text> .
 <http://example.org/legal/document/uu/2009/17/menimbang/point/d/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2008/10> .
 <http://example.org/legal/document/uu/2009/17/menimbang/point/d/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2009/1> .
 <http://example.org/legal/document/uu/2009/17/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2009/17/menimbang/point/e> .
 <http://example.org/legal/document/uu/2009/17/menimbang/point/e> legal:pointHasKey "e" .
-<http://example.org/legal/document/uu/2009/17/menimbang/point/e/text> legal:textHasTextString "bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a, huruf b, huruf c, dan huruf d, perlu menetapkan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2009 tentang Perubahan atas Undang-Undang Nomor 10 Tahun 2008 tentang Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan Rakyat Daerah menjadi Undang- Undang;" .
+<http://example.org/legal/document/uu/2009/17/menimbang/point/e/text> legal:textHasTextString "bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a, huruf b, huruf c, dan huruf d, perlu menetapkan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2009 tentang Perubahan atas Undang-Undang Nomor 10 Tahun 2008 tentang Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan Rakyat Daerah menjadi Undang- Undang," .
 <http://example.org/legal/document/uu/2009/17/menimbang/point/e> legal:pointHasText <http://example.org/legal/document/uu/2009/17/menimbang/point/e/text> .
 <http://example.org/legal/document/uu/2009/17/menimbang/point/e/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2008/10> .
 <http://example.org/legal/document/uu/2009/17/menimbang/point/e/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2009/1> .
@@ -51,6 +71,13 @@
 <http://example.org/legal/document/uu/2009/17> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/2009/17> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/2009/17> a legal:Document .
+<http://example.org/legal/document/uu/2009/17/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2009/17/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/2009/17/pasal/0001/version/20090529> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2009/17/pasal/0001/version/20090529/text> a legal:Text .
+<http://example.org/legal/document/uu/2009/17/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/2009/17/pasal/0002/version/20090529> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2009/17/pasal/0002/version/20090529/text> a legal:Text .
 <http://example.org/legal/document/uu/2009/17/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/2009/17/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/2009/17/mengingat/point> a legal:PointSet .
@@ -71,7 +98,12 @@
 <http://example.org/legal/document/uu/2009/17/menimbang/point/d/text> a legal:Text .
 <http://example.org/legal/document/uu/2009/17/menimbang/point/e> a legal:Point .
 <http://example.org/legal/document/uu/2009/17/menimbang/point/e/text> a legal:Text .
-<http://example.org/legal/document/uu/2009/17/bab> legal:partOf <http://example.org/legal/document/uu/2009/17> .
+<http://example.org/legal/document/uu/2009/17/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2009/17/pasals> .
+<http://example.org/legal/document/uu/2009/17/pasal/0001/version/20090529> legal:partOf <http://example.org/legal/document/uu/2009/17/pasal/0001> .
+<http://example.org/legal/document/uu/2009/17/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2009/17> .
+<http://example.org/legal/document/uu/2009/17/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2009/17/pasals> .
+<http://example.org/legal/document/uu/2009/17/pasal/0002/version/20090529> legal:partOf <http://example.org/legal/document/uu/2009/17/pasal/0002> .
+<http://example.org/legal/document/uu/2009/17/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2009/17> .
 <http://example.org/legal/document/uu/2009/17/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2009/17/mengingat/point> .
 <http://example.org/legal/document/uu/2009/17/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2009/17/mengingat/point> .
 <http://example.org/legal/document/uu/2009/17/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/2009/17/menimbang/point> .

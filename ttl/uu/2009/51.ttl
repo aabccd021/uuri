@@ -1,7 +1,58 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2009/51> legal:documentHasBabSet <http://example.org/legal/document/uu/2009/51/bab> .
+<http://example.org/legal/document/uu/2009/51> legal:documentHasPasalSet <http://example.org/legal/document/uu/2009/51/pasals> .
+<http://example.org/legal/document/uu/2009/51/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2009/51/pasal/0001> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/2009/51/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029> .
+<http://example.org/legal/document/uu/2009/51> legal:documentHasPasal <http://example.org/legal/document/uu/2009/51/pasal/0001> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029> legal:pasalVersionHasVersionDate "2009-10-29"^^xsd:date .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029> legal:pasalVersionHasRawText "(1). Pada setiap pengadilan tata usaha negara dibentuk p os bantuan hukum untuk pencari keadilan yang tidak mampu dalam memperoleh bantuan hukum.\n(2). Bantuan hukum sebagaimana dimaksud pada ayat (1), diberikan secara cuma-cuma kepada semua tingkat peradilan sampai putusan terhadap perkara tersebut mempunyai kekuatan hukum tetap.\n(3). Bantuan hukum dan pos bantuan hukum sebagaimana dimaksud pada ayat (1) dan ayat (2) dilaksanakan sesuai dengan peraturan perundang-undangan. Pasal II Undang-Undang ini mulai berlaku pada tanggal diunda ngkan. - 23 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.\n(4). Biaya kepaniteraan sebagaimana dimaksud pada ayat (3), merupakan penerimaan negara bukan pajak yang ditetapkan sesuai dengan ketentuan peraturan perundang-undangan.\n(5). Biaya proses penyelesaian perkara sebagaimana dimaksud pada ayat (3) dibebankan pada pihak atau para pihak yang berperkara yang ditetapkan oleh Mahkamah Agung. - 22 -\n(6). Pengelolaan dan pertanggungjawaban atas biaya perkara sebagaimana dimaksud pada ayat (1) diperik sa oleh Badan Pemeriksa Keuangan sesuai dengan ketentuan peraturan perundang-undangan. Pasal 144B\n(7). Ketentuan mengenai besaran uang paksa, jenis sanksi administratif, dan tata cara pelaksanaan pembayaran uang paksa dan/atau sanksi administratif diatur dengan peraturan perundang-undangan. 31. Ketentuan Pasal 135 diubah sehingga Pasal 135 berbu nyi sebagai berikut: Pasal 135" .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0001> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0001> legal:ayatHasRawText "Pada setiap pengadilan tata usaha negara dibentuk p os bantuan hukum untuk pencari keadilan yang tidak mampu dalam memperoleh bantuan hukum." .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0001/text> legal:textHasTextString "Pada setiap pengadilan tata usaha negara dibentuk p os bantuan hukum untuk pencari keadilan yang tidak mampu dalam memperoleh bantuan hukum." .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0001/text> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0002> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0002> legal:ayatHasRawText "Bantuan hukum sebagaimana dimaksud pada ayat (1), diberikan secara cuma-cuma kepada semua tingkat peradilan sampai putusan terhadap perkara tersebut mempunyai kekuatan hukum tetap." .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0002/text> legal:textHasTextString "Bantuan hukum sebagaimana dimaksud pada ayat (1), diberikan secara cuma-cuma kepada semua tingkat peradilan sampai putusan terhadap perkara tersebut mempunyai kekuatan hukum tetap." .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0002/text> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0001> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0003> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0003> legal:ayatHasRawText "Bantuan hukum dan pos bantuan hukum sebagaimana dimaksud pada ayat (1) dan ayat (2) dilaksanakan sesuai dengan peraturan perundang-undangan. Pasal II Undang-Undang ini mulai berlaku pada tanggal diunda ngkan. - 23 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0003/text> legal:textHasTextString "Bantuan hukum dan pos bantuan hukum sebagaimana dimaksud pada ayat (1) dan ayat (2) dilaksanakan sesuai dengan peraturan perundang-undangan. Pasal II Undang-Undang ini mulai berlaku pada tanggal diunda ngkan. - 23 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0003/text> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0002> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0001> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0004> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0004> legal:ayatHasKey 4 .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0004> legal:ayatHasRawText "Biaya kepaniteraan sebagaimana dimaksud pada ayat (3), merupakan penerimaan negara bukan pajak yang ditetapkan sesuai dengan ketentuan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0004/text> legal:textHasTextString "Biaya kepaniteraan sebagaimana dimaksud pada ayat (3), merupakan penerimaan negara bukan pajak yang ditetapkan sesuai dengan ketentuan peraturan perundang-undangan." .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0004/text> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0003> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0005> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0005> legal:ayatHasKey 5 .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0005> legal:ayatHasRawText "Biaya proses penyelesaian perkara sebagaimana dimaksud pada ayat (3) dibebankan pada pihak atau para pihak yang berperkara yang ditetapkan oleh Mahkamah Agung. - 22 -" .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0005/text> legal:textHasTextString "Biaya proses penyelesaian perkara sebagaimana dimaksud pada ayat (3) dibebankan pada pihak atau para pihak yang berperkara yang ditetapkan oleh Mahkamah Agung. - 22 -" .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0005> legal:ayatHasText <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0005/text> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0005/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0003> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0006> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0006> legal:ayatHasKey 6 .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0006> legal:ayatHasRawText "Pengelolaan dan pertanggungjawaban atas biaya perkara sebagaimana dimaksud pada ayat (1) diperik sa oleh Badan Pemeriksa Keuangan sesuai dengan ketentuan peraturan perundang-undangan. Pasal 144B" .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0006/text> legal:textHasTextString "Pengelolaan dan pertanggungjawaban atas biaya perkara sebagaimana dimaksud pada ayat (1) diperik sa oleh Badan Pemeriksa Keuangan sesuai dengan ketentuan peraturan perundang-undangan. Pasal 144B" .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0006> legal:ayatHasText <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0006/text> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0006/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0001> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0006/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2009/51/pasal/0144> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0007> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0007> legal:ayatHasKey 7 .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0007> legal:ayatHasRawText "Ketentuan mengenai besaran uang paksa, jenis sanksi administratif, dan tata cara pelaksanaan pembayaran uang paksa dan/atau sanksi administratif diatur dengan peraturan perundang-undangan. 31. Ketentuan Pasal 135 diubah sehingga Pasal 135 berbu nyi sebagai berikut: Pasal 135" .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0007/text> legal:textHasTextString "Ketentuan mengenai besaran uang paksa, jenis sanksi administratif, dan tata cara pelaksanaan pembayaran uang paksa dan/atau sanksi administratif diatur dengan peraturan perundang-undangan. 31. Ketentuan Pasal 135 diubah sehingga Pasal 135 berbu nyi sebagai berikut: Pasal 135" .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0007> legal:ayatHasText <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0007/text> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0007/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2009/51/pasal/0135> .
 <http://example.org/legal/document/uu/2009/51> legal:documentHasDisahkanDate "2009-10-29"^^xsd:date .
 <http://example.org/legal/document/uu/2009/51> legal:documentMengingat <http://example.org/legal/document/uu/2009/51/mengingat> .
 <http://example.org/legal/document/uu/2009/51/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2009/51/mengingat/point> .
@@ -51,6 +102,24 @@
 <http://example.org/legal/document/uu/2009/51> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/2009/51> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/2009/51> a legal:Document .
+<http://example.org/legal/document/uu/2009/51/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2009/51/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0004> a legal:Ayat .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0005> a legal:Ayat .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0005/text> a legal:Text .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0006> a legal:Ayat .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0006/text> a legal:Text .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0007> a legal:Ayat .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0007/text> a legal:Text .
 <http://example.org/legal/document/uu/2009/51/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/2009/51/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/2009/51/mengingat/point> a legal:PointSet .
@@ -71,7 +140,24 @@
 <http://example.org/legal/document/uu/2009/51/menimbang/point/b/text> a legal:Text .
 <http://example.org/legal/document/uu/2009/51/menimbang/point/c> a legal:Point .
 <http://example.org/legal/document/uu/2009/51/menimbang/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/2009/51/bab> legal:partOf <http://example.org/legal/document/uu/2009/51> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2009/51/pasals> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029> legal:partOf <http://example.org/legal/document/uu/2009/51/pasal/0001> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2009/51> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat> legal:partOf <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0001> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0002> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0003> legal:partOf <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0003> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0004> legal:partOf <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0004> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0005> legal:partOf <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0005/text> legal:partOf <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0005> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0006> legal:partOf <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0006/text> legal:partOf <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0006> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0007> legal:partOf <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat> .
+<http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0007/text> legal:partOf <http://example.org/legal/document/uu/2009/51/pasal/0001/version/20091029/ayat/0007> .
 <http://example.org/legal/document/uu/2009/51/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2009/51/mengingat/point> .
 <http://example.org/legal/document/uu/2009/51/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2009/51/mengingat/point> .
 <http://example.org/legal/document/uu/2009/51/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/2009/51/mengingat/point> .

@@ -287,18 +287,174 @@ opText: |-
   TAHUN 2008 TENTANG PERUBAHAN KEDUA ATAS
   UNDANG - UNDANG NOMOR 23 TAHUN 1999 TENTANG
   BANK INDONESIA MENJADI UNDANG - UNDANG .
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_13
+          nodeType: pasalVersion
+          version: &ref_14
+            nodeType: date
+            month: 10
+            date: 13
+            year: 2008
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_13
+          textString: >-
+            Peraturan Pemerintah Pengganti Undang - Undang Nomor 2 Tahun 2008 tentang Perubahan
+            Kedua Atas Unda ng - Undang Nomor 23 Tahun 1999 tentang Bank Indonesia (Lembaran Negara
+            Repub lik Indonesia Tahun 2008 Nomor 142, Tambahan Lembaran Negara Republik Indonesia
+            Nomor 4901) ditetapkan menjadi Undang - Undang dan melampirkannya sebagai bagian yang
+            tidak terpisahkan dari Undang - Undang ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_15
+          nodeType: pasalVersion
+          version: *ref_14
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_16
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_15
+          elements:
+            - type: ayat
+              node: &ref_17
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_16
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_17
+                textString: >-
+                  Bank Indonesia dapat memberikan kredit atau pembiayaan berdasarkan Prinsip Syariah
+                  untuk jangka waktu paling lama 9 0 (sembilan puluh) hari kepada Bank untuk
+                  mengatasi kesulitan pendanaan jangka pendek Bank yang bersangkutan.
+                references: []
+            - type: ayat
+              node: &ref_18
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_16
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_18
+                textString: >-
+                  Pelaksanaan pemberian kredit atau pembiayaan berdasarkan Prinsip Syariah
+                  sebagaimana dimaksud pada ayat (1), wajib dijamin oleh Bank penerima dengan agunan
+                  yang berkualitas tinggi yang nilainya minimal sebesar jumlah kredit atau
+                  pembiayaan yang diterimanya .
+                references:
+                  - start: 99
+                    end: 107
+                    node:
+                      key: 1
+                      parentAyatSetNode:
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_15
+                      nodeType: ayat
+            - type: ayat
+              node: &ref_19
+                nodeType: ayat
+                key: 3
+                parentAyatSetNode: *ref_16
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_19
+                textString: >-
+                  Pelaksanaan ketentuan sebagaimana dimaksud pada ayat (1) dan ayat (2) ditetapkan
+                  dengan Peraturan Bank Indonesia.
+                references:
+                  - start: 61
+                    end: 69
+                    node:
+                      key: 2
+                      parentAyatSetNode: &ref_20
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_15
+                      nodeType: ayat
+                  - start: 48
+                    end: 56
+                    node:
+                      key: 1
+                      parentAyatSetNode: *ref_20
+                      nodeType: ayat
+            - type: ayat
+              node: &ref_21
+                nodeType: ayat
+                key: 4
+                parentAyatSetNode: *ref_16
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_21
+                textString: >-
+                  Dalam hal suatu Bank mengalami kesulitan keuangan yang berdampak sistemik dan
+                  berpotensi mengakibatkan krisis yang membahayakan sist em keuangan, Bank Indonesia
+                  dapat memberikan fasilitas pembiayaan darurat yang pendanaannya menjadi beban
+                  Pemerintah.
+                references: []
+            - type: ayat
+              node: &ref_22
+                nodeType: ayat
+                key: 5
+                parentAyatSetNode: *ref_16
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_22
+                textString: >-
+                  Ketentuan dan tata cara pengambilan keputusan mengenai kesulitan keuangan Bank
+                  yang berdampak sistemik, pemberian fasilitas pembiayaan darurat, dan sumber
+                  pendanaan yang berasal dari Anggaran Pendapatan dan Belanja Negara diatur dalam
+                  undang - undang tersendiri. Pasal II Peraturan Pemerintah Pengganti Undang -
+                  undang ini mulai berlaku pada tanggal diundangkan. - 6 - Agar setiap orang
+                  mengetahuinya memerintahkan pengudangan Peraturan Pemerintah Pengganti Undang -
+                  undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+                references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 10
-    date: 13
-    year: 2008
+  date: *ref_14
   location: Jakar
   pengesah: DR. H. SUSILO BAMBANG YUDHOYONO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

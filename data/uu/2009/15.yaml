@@ -299,18 +299,154 @@ opText: |-
   LAUT, DAN UDARA, MELENGKAPI KONVENSI
   PERSERIKATAN BANGSA-BANGSA MENENTANG TINDAK
   PIDANA TRANSNASIONAL YANG TERORGANISASI).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_13
+          nodeType: pasalVersion
+          version: &ref_19
+            nodeType: date
+            month: 3
+            date: 16
+            year: 2009
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_14
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_13
+          elements:
+            - type: ayat
+              node: &ref_15
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_14
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_15
+                textString: >-
+                  Mengesahkan Protocol against the Smuggling of Migrants by Land, Sea and Air,
+                  Supplementing the United Nations Convention against Transnational Organized Crime
+                  (Protokol Menentang Penyelundupan Migran melalui Darat, Laut, dan Udara,
+                  Melengkapi Konvensi Perserikatan Bangsa-Bangsa Menentang Tindak Pidana
+                  Transnasional yang Terorganisasi) dengan Declaration (Pernyataan) terhadap Pasal 6
+                  ayat (2) huruf c, Pasal 9 ayat (1) huruf a, dan Pasal 9 ayat (2) dan Reservation
+                  (Pensyaratan) terhadap Pasal 20 ayat (2).
+                references:
+                  - start: 490
+                    end: 507
+                    node:
+                      parentAyatSetNode: &ref_16
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_13
+                      key: 2
+                      nodeType: ayat
+                  - start: 434
+                    end: 450
+                    node:
+                      parentAyatSetNode: *ref_16
+                      key: 2
+                      nodeType: ayat
+                  - start: 404
+                    end: 420
+                    node:
+                      parentAyatSetNode: *ref_16
+                      key: 1
+                      nodeType: ayat
+                  - start: 378
+                    end: 394
+                    node:
+                      parentAyatSetNode: *ref_16
+                      key: 2
+                      nodeType: ayat
+                  - start: 421
+                    end: 428
+                    node:
+                      key: a
+                      parentPointSetNode: &ref_17
+                        nodeType: pointSet
+                        parentNode: *ref_13
+                      nodeType: point
+                  - start: 395
+                    end: 402
+                    node:
+                      key: c
+                      parentPointSetNode: *ref_17
+                      nodeType: point
+            - type: ayat
+              node: &ref_18
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_14
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_18
+                textString: >-
+                  Salinan naskah asli Protocol against the Smuggling of Migrants by Land, Sea and
+                  Air, Supplementing the United Nations Convention against Transnational Organized
+                  Crime (Protokol Menentang Penyelundupan Migran melalui Darat, Laut, dan Udara,
+                  Melengkapi Konvensi Perserikatan Bangsa-Bangsa Menentang Tindak Pidana
+                  Transnasional yang Terorganisasi) dengan Declaration (Pernyataan) dan Reservation
+                  (Pensyaratan) sebagaimana dimaksud pada ayat (1) dalam bahasa Inggris dan
+                  terjemahannya dalam bahasa Indonesia sebagaimana terlampir merupakan bagian yang
+                  tidak terpisahkan dari Undang-Undang ini.
+                references:
+                  - start: 433
+                    end: 441
+                    node:
+                      key: 1
+                      parentAyatSetNode:
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_13
+                      nodeType: ayat
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_20
+          nodeType: pasalVersion
+          version: *ref_19
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_20
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang “
+            mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 3
-    date: 16
-    year: 2009
+  date: *ref_19
   location: Jakarta
   pengesah: DR. H. SUSILO BAMBANG YUDHOYONO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,
