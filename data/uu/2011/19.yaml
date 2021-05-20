@@ -300,18 +300,71 @@ opText: |-
   Menetapkan : UNDANG-UNDANG TENTANG PENGESAHAN CONVENTION ON
   THE RIGHTS OF PERSONS WITH DISABILITIES (KONVENSI
   MENGENAI HAK-HAK PENYANDANG DISABILITAS).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_14
+          nodeType: pasalVersion
+          version: &ref_15
+            nodeType: date
+            month: 11
+            date: 10
+            year: 2011
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_14
+          textString: >-
+            Mengesahkan Convention on the Rights of Persons with Disabilittes (Konvensi mengenai
+            Hak-Hak Penyandang Disabilitas) yang salinan naskah asli dalam bahasa Inggris dan
+            terjemahannya dalam bahasa Indonesia sebagaimana terlampir dan merupakan bagian yang
+            tidak terpisahkan dari Undang-Undang ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_16
+          nodeType: pasalVersion
+          version: *ref_15
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_16
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. PI 3 Fo 4, 29, PRESIDEN
+            REPUBLIK INDONESIA - 3 - Agar setiap orang mengetahuinya, memerintahkan pengundangan
+            Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 11
-    date: 10
-    year: 2011
+  date: *ref_15
   location: Jakarta
   pengesah: DR. H. SUSILO BAMBANG YUDHOYONO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

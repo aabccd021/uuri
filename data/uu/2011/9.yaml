@@ -140,18 +140,168 @@ opText: |-
   PRESIDEN
   REPUBLIK IM DIONESIA
   -a-
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_7
+          nodeType: pasalVersion
+          version: &ref_17
+            nodeType: date
+            month: 8
+            date: 8
+            year: 2011
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_8
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_7
+          elements:
+            - type: ayat
+              node: &ref_9
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_8
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_9
+                textString: >-
+                  Urusan Sistem Resi Gudang yang pada saat berlakunya Undang-Undang ini belum dapat
+                  diselesaikan, penyelesaiannya dilakukan berdasarkan ketentuan perundang-undangan
+                  di bidang Sistem Resi Gudang yang meringankan setiap orang.
+                references: []
+            - type: ayat
+              node: &ref_10
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_8
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_10
+                textString: >-
+                  Sebelum Lembaga Jaminan dibentuk berdasarkan Undang-Undang ini dan / atau
+                  peraturan pelaksanaannya, fungsi, tugas, kewajiban, dan wewenang Lembaga Jaminan
+                  dilaksanakan oleh lembaga yang melaksanakan kegiatan penjaminan.
+                references: []
+            - type: ayat
+              node: &ref_11
+                nodeType: ayat
+                key: 3
+                parentAyatSetNode: *ref_8
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_11
+                textString: >-
+                  Persyaratan dan tata cara penetapan lembaga yang melaksanakan fungsi, tugas,
+                  kewajiban, dan wewenang Lembaga Jaminan sebagaimana dimaksud pada ayat (2) diatur
+                  lebih lanjut dengan Peraturan Pemerintah.
+                references:
+                  - start: 143
+                    end: 151
+                    node:
+                      key: 2
+                      parentAyatSetNode:
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_7
+                      nodeType: ayat
+            - type: ayat
+              node: &ref_12
+                nodeType: ayat
+                key: 4
+                parentAyatSetNode: *ref_8
+              content:
+                type: pointSet
+                node: &ref_13
+                  nodeType: pointSet
+                  parentNode: *ref_12
+                description:
+                  type: text
+                  node:
+                    nodeType: text
+                    textName: description
+                    parentNode: *ref_13
+                  textString: >-
+                    Dengan berlakunya Undang-Undang ini, segala bentuk dan jenis Resi Gudang
+                    dan/atau sejenisnya wajib menyesuaikan dengan Undang- Undang dan/atau peraturan
+                    pelaksanaannya dalam jangka waktu paling lama 1 (satu) tahun setelah
+                    diundangkannya Undang-Undang ini. Pasal II
+                  references: []
+                elements:
+                  - type: point
+                    node: &ref_14
+                      nodeType: point
+                      key: '1'
+                      parentPointSetNode: *ref_13
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_14
+                      textString: >-
+                        Pada saat Undang-Undang ini mulai berlaku, semua peraturan pelaksanaan dalam
+                        Sistem Resi Gudang yang telah ada tetap berlaku sepanjang tidak bertentangan
+                        dan/atau belum diatur dengan peraturan pelaksanaan yang baru berdasarkan
+                        Undang-Undang ini.
+                      references: []
+                  - type: point
+                    node: &ref_15
+                      nodeType: point
+                      key: '2'
+                      parentPointSetNode: *ref_13
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_15
+                      textString: >-
+                        Semua peraturan perundang-undangan yang diperlukan untuk melaksanakan
+                        Undang-Undang ini harus diselesaikan paling lambat 1 (satu) tahun sejak
+                        diundangkannya Undang-Undang ini.
+                      references: []
+                  - type: point
+                    node: &ref_16
+                      nodeType: point
+                      key: '3'
+                      parentPointSetNode: *ref_13
+                    content:
+                      type: text
+                      node:
+                        nodeType: text
+                        textName: text
+                        parentNode: *ref_16
+                      textString: >-
+                        Undang-Undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK
+                        INDONESIA -18- Agar setiap orang mengetahuinya, memerintahkan pengundangan
+                        Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik
+                        Indonesia.
+                      references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 8
-    date: 8
-    year: 2011
+  date: *ref_17
   location: Jakarta
   pengesah: DR. H. SUSILO BAMBANG YUDHOYONO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,
