@@ -1,7 +1,25 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2017/17> legal:documentHasBabSet <http://example.org/legal/document/uu/2017/17/bab> .
+<http://example.org/legal/document/uu/2017/17> legal:documentHasPasalSet <http://example.org/legal/document/uu/2017/17/pasals> .
+<http://example.org/legal/document/uu/2017/17/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2017/17/pasal/0001> .
+<http://example.org/legal/document/uu/2017/17/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/2017/17/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2017/17/pasal/0001/version/20171122> .
+<http://example.org/legal/document/uu/2017/17> legal:documentHasPasal <http://example.org/legal/document/uu/2017/17/pasal/0001> .
+<http://example.org/legal/document/uu/2017/17/pasal/0001/version/20171122> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2017/17/pasal/0001/version/20171122> legal:pasalVersionHasVersionDate "2017-11-22"^^xsd:date .
+<http://example.org/legal/document/uu/2017/17/pasal/0001/version/20171122> legal:pasalVersionHasRawText "Mengesahkan Protocol Amending the Marrakesh Agreement Establishing the World Trade Organization (Protokol Perubahan Persetujuan Marrakesh mengenai Pembentukan Organisasi Perdagangan Dunia) yang salinan naskah aslinya dalam bahasa Inggris, bahasa Perancis, bahasa Spanyol dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/document/uu/2017/17/pasal/0001/version/20171122/text> legal:textHasTextString "Mengesahkan Protocol Amending the Marrakesh Agreement Establishing the World Trade Organization (Protokol Perubahan Persetujuan Marrakesh mengenai Pembentukan Organisasi Perdagangan Dunia) yang salinan naskah aslinya dalam bahasa Inggris, bahasa Perancis, bahasa Spanyol dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/document/uu/2017/17/pasal/0001/version/20171122> legal:pasalVersionHasText <http://example.org/legal/document/uu/2017/17/pasal/0001/version/20171122/text> .
+<http://example.org/legal/document/uu/2017/17/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2017/17/pasal/0002> .
+<http://example.org/legal/document/uu/2017/17/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/2017/17/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2017/17/pasal/0002/version/20171122> .
+<http://example.org/legal/document/uu/2017/17> legal:documentHasPasal <http://example.org/legal/document/uu/2017/17/pasal/0002> .
+<http://example.org/legal/document/uu/2017/17/pasal/0002/version/20171122> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2017/17/pasal/0002/version/20171122> legal:pasalVersionHasVersionDate "2017-11-22"^^xsd:date .
+<http://example.org/legal/document/uu/2017/17/pasal/0002/version/20171122> legal:pasalVersionHasRawText "Undang-Undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA -4- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2017/17/pasal/0002/version/20171122/text> legal:textHasTextString "Undang-Undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA -4- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2017/17/pasal/0002/version/20171122> legal:pasalVersionHasText <http://example.org/legal/document/uu/2017/17/pasal/0002/version/20171122/text> .
 <http://example.org/legal/document/uu/2017/17> legal:documentHasDisahkanDate "2017-11-22"^^xsd:date .
 <http://example.org/legal/document/uu/2017/17> legal:documentMengingat <http://example.org/legal/document/uu/2017/17/mengingat> .
 <http://example.org/legal/document/uu/2017/17/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2017/17/mengingat/point> .
@@ -52,6 +70,13 @@
 <http://example.org/legal/document/uu/2017/17> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/2017/17> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/2017/17> a legal:Document .
+<http://example.org/legal/document/uu/2017/17/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2017/17/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/2017/17/pasal/0001/version/20171122> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2017/17/pasal/0001/version/20171122/text> a legal:Text .
+<http://example.org/legal/document/uu/2017/17/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/2017/17/pasal/0002/version/20171122> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2017/17/pasal/0002/version/20171122/text> a legal:Text .
 <http://example.org/legal/document/uu/2017/17/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/2017/17/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/2017/17/mengingat/point> a legal:PointSet .
@@ -74,7 +99,12 @@
 <http://example.org/legal/document/uu/2017/17/menimbang/point/c/text> a legal:Text .
 <http://example.org/legal/document/uu/2017/17/menimbang/point/d> a legal:Point .
 <http://example.org/legal/document/uu/2017/17/menimbang/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/2017/17/bab> legal:partOf <http://example.org/legal/document/uu/2017/17> .
+<http://example.org/legal/document/uu/2017/17/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2017/17/pasals> .
+<http://example.org/legal/document/uu/2017/17/pasal/0001/version/20171122> legal:partOf <http://example.org/legal/document/uu/2017/17/pasal/0001> .
+<http://example.org/legal/document/uu/2017/17/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2017/17> .
+<http://example.org/legal/document/uu/2017/17/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2017/17/pasals> .
+<http://example.org/legal/document/uu/2017/17/pasal/0002/version/20171122> legal:partOf <http://example.org/legal/document/uu/2017/17/pasal/0002> .
+<http://example.org/legal/document/uu/2017/17/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2017/17> .
 <http://example.org/legal/document/uu/2017/17/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2017/17/mengingat/point> .
 <http://example.org/legal/document/uu/2017/17/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2017/17/mengingat/point> .
 <http://example.org/legal/document/uu/2017/17/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/2017/17/mengingat/point> .

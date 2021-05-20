@@ -1,7 +1,86 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2013/24> legal:documentHasBabSet <http://example.org/legal/document/uu/2013/24/bab> .
+<http://example.org/legal/document/uu/2013/24> legal:documentHasPasalSet <http://example.org/legal/document/uu/2013/24/pasals> .
+<http://example.org/legal/document/uu/2013/24/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2013/24/pasal/0001> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/2013/24/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224> .
+<http://example.org/legal/document/uu/2013/24> legal:documentHasPasal <http://example.org/legal/document/uu/2013/24/pasal/0001> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224> legal:pasalVersionHasVersionDate "2013-12-24"^^xsd:date .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224> legal:pasalVersionHasRawText "(1). Peraturan pelaksanaan dari Undang-Undang ini harus ditetapkan paling lambat 1 (satu) tahun sejak Undang-Undang ini diundangkan.\n(2). Semua peraturan pelaksanaan dari Undang- Undang Nomor 23 Tahun 2006 tentang Administrasi Kependudukan harus disesuaikan dengan Undang-Undang ini paling lambat 1 (satu) tahun sejak Undang-Undang ini diundangkan. Pasal II Undang-Undang ini mulai berlaku pada tanggal diundangkan. DISTRIBUSI II PI 3 Fo 4, 29, PRESIDEN REPUBLIK INDONESIA - 26 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.\n(3). Penilaian kinerja pejabat struktural sebagaimana dimaksud pada ayat (1) dan ayat (2) dilakukan secara periodik oleh Menteri.\n(4). Ketentuan lebih lanjut mengenai mekanisme dan prosedur pengangkatan dan pemberhentian pejabat struktural sebagaimana dimaksud pada ayat (1) dan ayat (2), serta penilaian kinerja sebagaimana dimaksud pada ayat (3) diatur sesuai dengan ketentuan peraturan perundang- undangan. 21.Ketentuan Pasal 84 diubah, sehingga Pasal 84 berbunyi sebagai berikut: Pasal 84\n(5). Elemen data penduduk tentang agama sebagaimana dimaksud pada ayat (1) bagi Penduduk yang agamanya belum diakui sebagai agama berdasarkan ketentuan Peraturan Perundang-undangan atau bagi penghayat kepercayaan tidak diisi, tetapi tetap dilayani dan dicatat dalam database kependudukan.\n(6). Dalam KTP-el sebagaimana dimaksud pada ayat (1) tersimpan cip yang memuat rekaman elektronik data perseorangan.\n(7). KTP-el untuk:\na. Warga Negara Indonesia masa berlakunya seumur hidup, dan\nb. Orang Asing masa berlakunya disesuaikan dengan masa berlaku Izin Tinggal Tetap.\n\n(8). Dalam hal terjadi perubahan elemen data, rusak, atau hilang, Penduduk pemilik KTP-el wajib melaporkan kepada Instansi Pelaksana untuk dilakukan perubahan atau penggantian.\n(9). Dalam hal KTP-el rusak atau hilang, Penduduk pemilik KTP-el wajib melapor kepada Instansi Pelaksana melalui camat atau lurah/kepala desa paling lambat 14 (empat belas) hari dan melengkapi surat pernyataan penyebab terjadinya rusak atau hilang.\n(10). Ketentuan lebih lanjut mengenai tata cara perubahan elemen data penduduk sebagaimana dimaksud pada ayat (1) diatur dalam Peraturan Menteri. DISTRIBUSI HI AT NN . \" A9. PRESIDEN REPUBLIK INDONESIA 18 - 15. Ketentuan ayat (1) Pasal 68 ditambahkan 1 (satu) huruf, yakni huruf f, sehingga Pasal 68 berbunyi sebagai berikut: Pasal 68" .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0001> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0001> legal:ayatHasRawText "Peraturan pelaksanaan dari Undang-Undang ini harus ditetapkan paling lambat 1 (satu) tahun sejak Undang-Undang ini diundangkan." .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0001/text> legal:textHasTextString "Peraturan pelaksanaan dari Undang-Undang ini harus ditetapkan paling lambat 1 (satu) tahun sejak Undang-Undang ini diundangkan." .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0001/text> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0002> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0002> legal:ayatHasRawText "Semua peraturan pelaksanaan dari Undang- Undang Nomor 23 Tahun 2006 tentang Administrasi Kependudukan harus disesuaikan dengan Undang-Undang ini paling lambat 1 (satu) tahun sejak Undang-Undang ini diundangkan. Pasal II Undang-Undang ini mulai berlaku pada tanggal diundangkan. DISTRIBUSI II PI 3 Fo 4, 29, PRESIDEN REPUBLIK INDONESIA - 26 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0002/text> legal:textHasTextString "Semua peraturan pelaksanaan dari Undang- Undang Nomor 23 Tahun 2006 tentang Administrasi Kependudukan harus disesuaikan dengan Undang-Undang ini paling lambat 1 (satu) tahun sejak Undang-Undang ini diundangkan. Pasal II Undang-Undang ini mulai berlaku pada tanggal diundangkan. DISTRIBUSI II PI 3 Fo 4, 29, PRESIDEN REPUBLIK INDONESIA - 26 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0002/text> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0003> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0003> legal:ayatHasRawText "Penilaian kinerja pejabat struktural sebagaimana dimaksud pada ayat (1) dan ayat (2) dilakukan secara periodik oleh Menteri." .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0003/text> legal:textHasTextString "Penilaian kinerja pejabat struktural sebagaimana dimaksud pada ayat (1) dan ayat (2) dilakukan secara periodik oleh Menteri." .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0003/text> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0002> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0001> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0004> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0004> legal:ayatHasKey 4 .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0004> legal:ayatHasRawText "Ketentuan lebih lanjut mengenai mekanisme dan prosedur pengangkatan dan pemberhentian pejabat struktural sebagaimana dimaksud pada ayat (1) dan ayat (2), serta penilaian kinerja sebagaimana dimaksud pada ayat (3) diatur sesuai dengan ketentuan peraturan perundang- undangan. 21.Ketentuan Pasal 84 diubah, sehingga Pasal 84 berbunyi sebagai berikut: Pasal 84" .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0004/text> legal:textHasTextString "Ketentuan lebih lanjut mengenai mekanisme dan prosedur pengangkatan dan pemberhentian pejabat struktural sebagaimana dimaksud pada ayat (1) dan ayat (2), serta penilaian kinerja sebagaimana dimaksud pada ayat (3) diatur sesuai dengan ketentuan peraturan perundang- undangan. 21.Ketentuan Pasal 84 diubah, sehingga Pasal 84 berbunyi sebagai berikut: Pasal 84" .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0004/text> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0003> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0002> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0001> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/24/pasal/0084> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0005> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0005> legal:ayatHasKey 5 .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0005> legal:ayatHasRawText "Elemen data penduduk tentang agama sebagaimana dimaksud pada ayat (1) bagi Penduduk yang agamanya belum diakui sebagai agama berdasarkan ketentuan Peraturan Perundang-undangan atau bagi penghayat kepercayaan tidak diisi, tetapi tetap dilayani dan dicatat dalam database kependudukan." .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0005/text> legal:textHasTextString "Elemen data penduduk tentang agama sebagaimana dimaksud pada ayat (1) bagi Penduduk yang agamanya belum diakui sebagai agama berdasarkan ketentuan Peraturan Perundang-undangan atau bagi penghayat kepercayaan tidak diisi, tetapi tetap dilayani dan dicatat dalam database kependudukan." .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0005> legal:ayatHasText <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0005/text> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0005/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0001> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0006> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0006> legal:ayatHasKey 6 .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0006> legal:ayatHasRawText "Dalam KTP-el sebagaimana dimaksud pada ayat (1) tersimpan cip yang memuat rekaman elektronik data perseorangan." .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0006/text> legal:textHasTextString "Dalam KTP-el sebagaimana dimaksud pada ayat (1) tersimpan cip yang memuat rekaman elektronik data perseorangan." .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0006> legal:ayatHasText <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0006/text> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0006/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0001> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007> legal:ayatHasKey 7 .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007> legal:ayatHasRawText "KTP-el untuk:\na. Warga Negara Indonesia masa berlakunya seumur hidup, dan\nb. Orang Asing masa berlakunya disesuaikan dengan masa berlaku Izin Tinggal Tetap.\n" .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007> legal:ayatHasPointSet <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007/point> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007/point/description> legal:textHasTextString "KTP-el untuk:" .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007/point/description> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007/point/a> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007/point/a/text> legal:textHasTextString "Warga Negara Indonesia masa berlakunya seumur hidup, dan" .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007/point/a> legal:pointHasText <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007/point/a/text> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007/point/b> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007/point/b/text> legal:textHasTextString "Orang Asing masa berlakunya disesuaikan dengan masa berlaku Izin Tinggal Tetap." .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007/point/b> legal:pointHasText <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007/point/b/text> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0008> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0008> legal:ayatHasKey 8 .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0008> legal:ayatHasRawText "Dalam hal terjadi perubahan elemen data, rusak, atau hilang, Penduduk pemilik KTP-el wajib melaporkan kepada Instansi Pelaksana untuk dilakukan perubahan atau penggantian." .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0008/text> legal:textHasTextString "Dalam hal terjadi perubahan elemen data, rusak, atau hilang, Penduduk pemilik KTP-el wajib melaporkan kepada Instansi Pelaksana untuk dilakukan perubahan atau penggantian." .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0008> legal:ayatHasText <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0008/text> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0009> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0009> legal:ayatHasKey 9 .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0009> legal:ayatHasRawText "Dalam hal KTP-el rusak atau hilang, Penduduk pemilik KTP-el wajib melapor kepada Instansi Pelaksana melalui camat atau lurah/kepala desa paling lambat 14 (empat belas) hari dan melengkapi surat pernyataan penyebab terjadinya rusak atau hilang." .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0009/text> legal:textHasTextString "Dalam hal KTP-el rusak atau hilang, Penduduk pemilik KTP-el wajib melapor kepada Instansi Pelaksana melalui camat atau lurah/kepala desa paling lambat 14 (empat belas) hari dan melengkapi surat pernyataan penyebab terjadinya rusak atau hilang." .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0009> legal:ayatHasText <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0009/text> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0010> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0010> legal:ayatHasKey 10 .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0010> legal:ayatHasRawText "Ketentuan lebih lanjut mengenai tata cara perubahan elemen data penduduk sebagaimana dimaksud pada ayat (1) diatur dalam Peraturan Menteri. DISTRIBUSI HI AT NN . \" A9. PRESIDEN REPUBLIK INDONESIA 18 - 15. Ketentuan ayat (1) Pasal 68 ditambahkan 1 (satu) huruf, yakni huruf f, sehingga Pasal 68 berbunyi sebagai berikut: Pasal 68" .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0010/text> legal:textHasTextString "Ketentuan lebih lanjut mengenai tata cara perubahan elemen data penduduk sebagaimana dimaksud pada ayat (1) diatur dalam Peraturan Menteri. DISTRIBUSI HI AT NN . \" A9. PRESIDEN REPUBLIK INDONESIA 18 - 15. Ketentuan ayat (1) Pasal 68 ditambahkan 1 (satu) huruf, yakni huruf f, sehingga Pasal 68 berbunyi sebagai berikut: Pasal 68" .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0010> legal:ayatHasText <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0010/text> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0010/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0001> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0010/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/point/f> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0010/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/point/yakni> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0010/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/24/pasal/0068> .
 <http://example.org/legal/document/uu/2013/24> legal:documentHasDisahkanDate "2013-12-24"^^xsd:date .
 <http://example.org/legal/document/uu/2013/24> legal:documentMengingat <http://example.org/legal/document/uu/2013/24/mengingat> .
 <http://example.org/legal/document/uu/2013/24/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2013/24/mengingat/point> .
@@ -40,6 +119,35 @@
 <http://example.org/legal/document/uu/2013/24> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/2013/24> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/2013/24> a legal:Document .
+<http://example.org/legal/document/uu/2013/24/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2013/24/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0003/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0004> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0005> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0005/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0006> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0006/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007/point/a> a legal:Point .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007/point/b> a legal:Point .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0008> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0008/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0009> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0009/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0010> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0010/text> a legal:Text .
 <http://example.org/legal/document/uu/2013/24/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/2013/24/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/2013/24/mengingat/point> a legal:PointSet .
@@ -56,7 +164,32 @@
 <http://example.org/legal/document/uu/2013/24/menimbang/point/b/text> a legal:Text .
 <http://example.org/legal/document/uu/2013/24/menimbang/point/c> a legal:Point .
 <http://example.org/legal/document/uu/2013/24/menimbang/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/2013/24/bab> legal:partOf <http://example.org/legal/document/uu/2013/24> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2013/24/pasals> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224> legal:partOf <http://example.org/legal/document/uu/2013/24/pasal/0001> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2013/24> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat> legal:partOf <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0001> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0002> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0003> legal:partOf <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0003> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0004> legal:partOf <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0004> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0005> legal:partOf <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0005/text> legal:partOf <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0005> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0006> legal:partOf <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0006/text> legal:partOf <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0006> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007> legal:partOf <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007/point> legal:partOf <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007/point/a> legal:partOf <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007/point> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007/point/b> legal:partOf <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0007/point> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0008> legal:partOf <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0008/text> legal:partOf <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0008> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0009> legal:partOf <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0009/text> legal:partOf <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0009> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0010> legal:partOf <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat> .
+<http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0010/text> legal:partOf <http://example.org/legal/document/uu/2013/24/pasal/0001/version/20131224/ayat/0010> .
 <http://example.org/legal/document/uu/2013/24/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2013/24/mengingat/point> .
 <http://example.org/legal/document/uu/2013/24/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2013/24/mengingat/point> .
 <http://example.org/legal/document/uu/2013/24/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/2013/24/menimbang/point> .

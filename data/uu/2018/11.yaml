@@ -193,18 +193,104 @@ opText: |-
   PRESIDEN :
   REPUBLIK INDONESIA
   -3-
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_6
+          nodeType: pasalVersion
+          version: &ref_10
+            nodeType: date
+            month: 10
+            date: 30
+            year: 2018
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_7
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_6
+          elements:
+            - type: ayat
+              node: &ref_8
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_7
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_8
+                textString: >-
+                  Mengesahkan Nota Kesepahaman antara Kementerian Pertahanan Republik Indonesia dan
+                  Kementerian Pertahanan Kerajaan Belanda tentang Kerja Sama Terkait Pertahanan
+                  (Memorandum of Understanding between the Ministry of Defence of the Republic of
+                  Indonesia and the Ministry of Defence of the Kingdom of the Netherlands on
+                  Defence-Related Cooperation): yang telah ditandatangani pada tanggal 4 Februari
+                  2014 di Den Haag, Belanda.
+                references: []
+            - type: ayat
+              node: &ref_9
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_7
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_9
+                textString: >-
+                  Salinan naskah asli Nota Kesepahaman antara Kementerian Pertahanan Republik
+                  Indonesia dan Kementerian Pertahanan Kerajaan Belanda tentang Kerja Sama Terkait
+                  Pertahanan (Memorandum of Understanding between the . Ministry of Defence of the
+                  Republic of Indonesia and the Ministry of Defence of the Kingdom of the
+                  Netherlands on Defence-Related Cooperation) dalam bahasa Indonesia, bahasa
+                  Belanda, dan bahasa Inggris sebagaimana terlampir dan merupakan bagian yang tidak
+                  terpisahkan dari Undang-Undang ini.
+                references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_11
+          nodeType: pasalVersion
+          version: *ref_10
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_11
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar... FK & PRESIDEN REPUBLIK
+            INDONESIA -4- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang
+            ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 10
-    date: 30
-    year: 2018
+  date: *ref_10
   location: Jakarta
   pengesah: JOKO WIDODO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

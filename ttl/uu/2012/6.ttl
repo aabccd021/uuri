@@ -1,7 +1,34 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2012/6> legal:documentHasBabSet <http://example.org/legal/document/uu/2012/6/bab> .
+<http://example.org/legal/document/uu/2012/6> legal:documentHasPasalSet <http://example.org/legal/document/uu/2012/6/pasals> .
+<http://example.org/legal/document/uu/2012/6/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2012/6/pasal/0001> .
+<http://example.org/legal/document/uu/2012/6/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/2012/6/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502> .
+<http://example.org/legal/document/uu/2012/6> legal:documentHasPasal <http://example.org/legal/document/uu/2012/6/pasal/0001> .
+<http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502> legal:pasalVersionHasVersionDate "2012-05-02"^^xsd:date .
+<http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502> legal:pasalVersionHasRawText "(1). Mengesahkan International Convention on the Protection of the Rights of All Migrant Workers and Members of Their Families (Konvensi Internasional mengenai Perlindungan Hak - Hak Seluruh Pekerja Migran dan Anggota Keluarganya) .\n(2). S alinan naskah asli International Convention on the Protection of the Rights of All Migrant Workers and Members of Their Families (Konvensi Internasional mengenai Perlindungan Hak - Hak Seluruh Pekerja Migran dan Anggota Keluarganya) dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir merupakan bagian yang tidak terpisahkan dari Undang - Undang ini ." .
+<http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502/ayat> .
+<http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502/ayat/0001> .
+<http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502/ayat/0001> legal:ayatHasRawText "Mengesahkan International Convention on the Protection of the Rights of All Migrant Workers and Members of Their Families (Konvensi Internasional mengenai Perlindungan Hak - Hak Seluruh Pekerja Migran dan Anggota Keluarganya) ." .
+<http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502/ayat/0001/text> legal:textHasTextString "Mengesahkan International Convention on the Protection of the Rights of All Migrant Workers and Members of Their Families (Konvensi Internasional mengenai Perlindungan Hak - Hak Seluruh Pekerja Migran dan Anggota Keluarganya) ." .
+<http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502/ayat/0001/text> .
+<http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502/ayat/0002> .
+<http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502/ayat/0002> legal:ayatHasRawText "S alinan naskah asli International Convention on the Protection of the Rights of All Migrant Workers and Members of Their Families (Konvensi Internasional mengenai Perlindungan Hak - Hak Seluruh Pekerja Migran dan Anggota Keluarganya) dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir merupakan bagian yang tidak terpisahkan dari Undang - Undang ini ." .
+<http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502/ayat/0002/text> legal:textHasTextString "S alinan naskah asli International Convention on the Protection of the Rights of All Migrant Workers and Members of Their Families (Konvensi Internasional mengenai Perlindungan Hak - Hak Seluruh Pekerja Migran dan Anggota Keluarganya) dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir merupakan bagian yang tidak terpisahkan dari Undang - Undang ini ." .
+<http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502/ayat/0002/text> .
+<http://example.org/legal/document/uu/2012/6/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2012/6/pasal/0002> .
+<http://example.org/legal/document/uu/2012/6/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/2012/6/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2012/6/pasal/0002/version/20120502> .
+<http://example.org/legal/document/uu/2012/6> legal:documentHasPasal <http://example.org/legal/document/uu/2012/6/pasal/0002> .
+<http://example.org/legal/document/uu/2012/6/pasal/0002/version/20120502> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2012/6/pasal/0002/version/20120502> legal:pasalVersionHasVersionDate "2012-05-02"^^xsd:date .
+<http://example.org/legal/document/uu/2012/6/pasal/0002/version/20120502> legal:pasalVersionHasRawText "Undang - Undang ini mulai berlaku pada tanggal diundangkan. - 3 - Agar s etiap orang mengetahuinya, me merintahkan peng undangan Undang - Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2012/6/pasal/0002/version/20120502/text> legal:textHasTextString "Undang - Undang ini mulai berlaku pada tanggal diundangkan. - 3 - Agar s etiap orang mengetahuinya, me merintahkan peng undangan Undang - Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2012/6/pasal/0002/version/20120502> legal:pasalVersionHasText <http://example.org/legal/document/uu/2012/6/pasal/0002/version/20120502/text> .
 <http://example.org/legal/document/uu/2012/6> legal:documentHasDisahkanDate "2012-05-02"^^xsd:date .
 <http://example.org/legal/document/uu/2012/6> legal:documentMengingat <http://example.org/legal/document/uu/2012/6/mengingat> .
 <http://example.org/legal/document/uu/2012/6/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2012/6/mengingat/point> .
@@ -43,6 +70,17 @@
 <http://example.org/legal/document/uu/2012/6> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/2012/6> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/2012/6> a legal:Document .
+<http://example.org/legal/document/uu/2012/6/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2012/6/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2012/6/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/2012/6/pasal/0002/version/20120502> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2012/6/pasal/0002/version/20120502/text> a legal:Text .
 <http://example.org/legal/document/uu/2012/6/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/2012/6/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/2012/6/mengingat/point> a legal:PointSet .
@@ -63,7 +101,17 @@
 <http://example.org/legal/document/uu/2012/6/menimbang/point/c/text> a legal:Text .
 <http://example.org/legal/document/uu/2012/6/menimbang/point/d> a legal:Point .
 <http://example.org/legal/document/uu/2012/6/menimbang/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/2012/6/bab> legal:partOf <http://example.org/legal/document/uu/2012/6> .
+<http://example.org/legal/document/uu/2012/6/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2012/6/pasals> .
+<http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502> legal:partOf <http://example.org/legal/document/uu/2012/6/pasal/0001> .
+<http://example.org/legal/document/uu/2012/6/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2012/6> .
+<http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502/ayat> legal:partOf <http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502> .
+<http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502/ayat> .
+<http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502/ayat/0001> .
+<http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502/ayat> .
+<http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2012/6/pasal/0001/version/20120502/ayat/0002> .
+<http://example.org/legal/document/uu/2012/6/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2012/6/pasals> .
+<http://example.org/legal/document/uu/2012/6/pasal/0002/version/20120502> legal:partOf <http://example.org/legal/document/uu/2012/6/pasal/0002> .
+<http://example.org/legal/document/uu/2012/6/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2012/6> .
 <http://example.org/legal/document/uu/2012/6/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2012/6/mengingat/point> .
 <http://example.org/legal/document/uu/2012/6/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2012/6/mengingat/point> .
 <http://example.org/legal/document/uu/2012/6/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/2012/6/mengingat/point> .

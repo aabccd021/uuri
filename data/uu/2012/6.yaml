@@ -224,18 +224,99 @@ opText: |-
   (KONVENSI INTERNASIONAL MENGENAI PERLINDUNGAN
   HAK - HAK SELURUH PEKERJA MIGRAN DAN ANGGOTA
   KELUARGANYA).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_12
+          nodeType: pasalVersion
+          version: &ref_16
+            nodeType: date
+            month: 5
+            date: 2
+            year: 2012
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_13
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_12
+          elements:
+            - type: ayat
+              node: &ref_14
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_13
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_14
+                textString: >-
+                  Mengesahkan International Convention on the Protection of the Rights of All
+                  Migrant Workers and Members of Their Families (Konvensi Internasional mengenai
+                  Perlindungan Hak - Hak Seluruh Pekerja Migran dan Anggota Keluarganya) .
+                references: []
+            - type: ayat
+              node: &ref_15
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_13
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_15
+                textString: >-
+                  S alinan naskah asli International Convention on the Protection of the Rights of
+                  All Migrant Workers and Members of Their Families (Konvensi Internasional mengenai
+                  Perlindungan Hak - Hak Seluruh Pekerja Migran dan Anggota Keluarganya) dalam
+                  bahasa Inggris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir
+                  merupakan bagian yang tidak terpisahkan dari Undang - Undang ini .
+                references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_17
+          nodeType: pasalVersion
+          version: *ref_16
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_17
+          textString: >-
+            Undang - Undang ini mulai berlaku pada tanggal diundangkan. - 3 - Agar s etiap orang
+            mengetahuinya, me merintahkan peng undangan Undang - Undang ini dengan penempatannya
+            dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 5
-    date: 2
-    year: 2012
+  date: *ref_16
   location: Jakarta
   pengesah: DR. H. SUSILO BAMBANG YUDHOYONO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

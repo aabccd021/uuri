@@ -304,18 +304,72 @@ opText: |-
   THE WORLD TRADE ORGANLATION (PROTOKOL PERUBAHAN
   PERSETUJUAN MARRAKESH MENGENAI PEMBENTUKAN
   ORGANISASI PERDAGANGAN DUNIA).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_13
+          nodeType: pasalVersion
+          version: &ref_14
+            nodeType: date
+            month: 11
+            date: 22
+            year: 2017
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_13
+          textString: >-
+            Mengesahkan Protocol Amending the Marrakesh Agreement Establishing the World Trade
+            Organization (Protokol Perubahan Persetujuan Marrakesh mengenai Pembentukan Organisasi
+            Perdagangan Dunia) yang salinan naskah aslinya dalam bahasa Inggris, bahasa Perancis,
+            bahasa Spanyol dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir dan
+            merupakan bagian yang tidak terpisahkan dari Undang-Undang ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_15
+          nodeType: pasalVersion
+          version: *ref_14
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_15
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA
+            -4- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan
+            penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 11
-    date: 22
-    year: 2017
+  date: *ref_14
   location: Jakarta
   pengesah: JOKO WIDODO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

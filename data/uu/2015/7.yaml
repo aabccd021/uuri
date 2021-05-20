@@ -274,18 +274,75 @@ opText: |-
   REPUBLIC OF INDONESIA AND THE GOVERNMENT OF THE ISLAMIC
   REPUBLIC OF PAKISTAN ON COOPERATIVE ACTIVITIES IN THE FIELD
   OF DEFENCE).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_12
+          nodeType: pasalVersion
+          version: &ref_13
+            nodeType: date
+            month: 3
+            date: 10
+            year: 2015
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_12
+          textString: >-
+            Mengesahkan Persetujuan antara Pemerintah Republik Indonesia dan Pemerintah Republik
+            Islam Pakistan tentang Kegiatan Kerja Sama di Bidang Pertahanan, yang telah
+            ditandatangani pada tanggal 21 Juli 2010 di Jakarta antara Pemerintah Republik Indonesia
+            dan Pemerintah Republik Islam Pakistan tentang Kegiatan Kerja Sama di Bidang Pertahanan
+            (Agreement between the Government of the Republic of Indonesia and the Government of the
+            Islamic Republic of Pakistan on Cooperative Activities in the Field of Defence) yang
+            naskah aslinya dalam bahasa Indonesia, bahasa Pakistan, dan bahasa Inggris sebagaimana
+            terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-Undang ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_14
+          nodeType: pasalVersion
+          version: *ref_13
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_14
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar... PRESIDEN REPUBLIK
+            INDONESIA Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini
+            dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 3
-    date: 10
-    year: 2015
+  date: *ref_13
   location: Jakarta
   pengesah: JOKO WIDODO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

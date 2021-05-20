@@ -246,18 +246,71 @@ opText: |-
   Menetapkan : UNDANG-UNDANG TENTANG PENGESAHAN MARITIME
   LABOUR CONVENTION, 2006 (KONVENST
   KETENAGAKERJAAN MARITIM, 2006).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_12
+          nodeType: pasalVersion
+          version: &ref_13
+            nodeType: date
+            month: 10
+            date: 6
+            year: 2016
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_12
+          textString: >-
+            Mengesahkan Maritime Labour Conuention, 2O06 (Konvensi Ketenagakerjaan Maritim, 2006l
+            yang salinan naskah aslinya dalam bahasa Inggris dan bahasa Perancis serta terjemahannya
+            dalam bahasa Indonesia sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan
+            dari Undang-Undang ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_14
+          nodeType: pasalVersion
+          version: *ref_13
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_14
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. l,legS'OEN REPUBLIK INDONESIA
+            -4- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan
+            penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 10
-    date: 6
-    year: 2016
+  date: *ref_13
   location: Jakarta
   pengesah: JOKO WIDODO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

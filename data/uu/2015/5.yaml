@@ -277,18 +277,72 @@ opText: |-
   REPUBLIK SOSIALIS VIET NAM (EXTRADITION TREATY
   BETWEEN THE REPUBLIC OF INDONESIA AND THE
   SOCIALIST REPUBLIC OF VIET NAM).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_13
+          nodeType: pasalVersion
+          version: &ref_14
+            nodeType: date
+            month: 3
+            date: 10
+            year: 2015
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_13
+          textString: >-
+            Mengesahkan Perjanjian Ekstradisi antara Republik Indonesia dan Republik Sosialis Viet
+            Nam (Extradition Treaty between the Republic of Indonesia and the Socialist Republic of
+            Viet Nam) yang ditandatangani pada tanggal 27 Juni 2013 di Jakarta yang salinan naskah
+            aslinya dalam bahasa Indonesia, bahasa Viet Nam, dan bahasa Inggris sebagaimana
+            terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-Undang ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_15
+          nodeType: pasalVersion
+          version: *ref_14
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_15
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA
+            Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan
+            penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 3
-    date: 10
-    year: 2015
+  date: *ref_14
   location: Jakarta
   pengesah: JOKO WIDODO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

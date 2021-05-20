@@ -1,7 +1,25 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2019/9> legal:documentHasBabSet <http://example.org/legal/document/uu/2019/9/bab> .
+<http://example.org/legal/document/uu/2019/9> legal:documentHasPasalSet <http://example.org/legal/document/uu/2019/9/pasals> .
+<http://example.org/legal/document/uu/2019/9/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2019/9/pasal/0001> .
+<http://example.org/legal/document/uu/2019/9/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/2019/9/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2019/9/pasal/0001/version/20190801> .
+<http://example.org/legal/document/uu/2019/9> legal:documentHasPasal <http://example.org/legal/document/uu/2019/9/pasal/0001> .
+<http://example.org/legal/document/uu/2019/9/pasal/0001/version/20190801> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2019/9/pasal/0001/version/20190801> legal:pasalVersionHasVersionDate "2019-08-01"^^xsd:date .
+<http://example.org/legal/document/uu/2019/9/pasal/0001/version/20190801> legal:pasalVersionHasRawText "Mengesahkan Perjanjian antara Republik Indonesia dan Republik Islarn Iran terncang Ekstradisi (Treaty between the Republic of Indonesia ard the Islamic Republic of Iran on Extrcditior:) yang ditandatangani pada tanggal 14 Desember 2016 di Tehran, Iran, yar:g sainan naskah aslinya dalam bahasa Indonesia, bahasa Persia, dan hahasa Inggris sebagainiana teriampir dan meripakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/document/uu/2019/9/pasal/0001/version/20190801/text> legal:textHasTextString "Mengesahkan Perjanjian antara Republik Indonesia dan Republik Islarn Iran terncang Ekstradisi (Treaty between the Republic of Indonesia ard the Islamic Republic of Iran on Extrcditior:) yang ditandatangani pada tanggal 14 Desember 2016 di Tehran, Iran, yar:g sainan naskah aslinya dalam bahasa Indonesia, bahasa Persia, dan hahasa Inggris sebagainiana teriampir dan meripakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/document/uu/2019/9/pasal/0001/version/20190801> legal:pasalVersionHasText <http://example.org/legal/document/uu/2019/9/pasal/0001/version/20190801/text> .
+<http://example.org/legal/document/uu/2019/9/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2019/9/pasal/0002> .
+<http://example.org/legal/document/uu/2019/9/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/2019/9/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2019/9/pasal/0002/version/20190801> .
+<http://example.org/legal/document/uu/2019/9> legal:documentHasPasal <http://example.org/legal/document/uu/2019/9/pasal/0002> .
+<http://example.org/legal/document/uu/2019/9/pasal/0002/version/20190801> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2019/9/pasal/0002/version/20190801> legal:pasalVersionHasVersionDate "2019-08-01"^^xsd:date .
+<http://example.org/legal/document/uu/2019/9/pasal/0002/version/20190801> legal:pasalVersionHasRawText "Undang-Undang ini mulai berlaku pada tanggal diundangkan. En 2) PRESIDEN REPUBLIK INDONESIA -3- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2019/9/pasal/0002/version/20190801/text> legal:textHasTextString "Undang-Undang ini mulai berlaku pada tanggal diundangkan. En 2) PRESIDEN REPUBLIK INDONESIA -3- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2019/9/pasal/0002/version/20190801> legal:pasalVersionHasText <http://example.org/legal/document/uu/2019/9/pasal/0002/version/20190801/text> .
 <http://example.org/legal/document/uu/2019/9> legal:documentHasDisahkanDate "2019-08-01"^^xsd:date .
 <http://example.org/legal/document/uu/2019/9> legal:documentMengingat <http://example.org/legal/document/uu/2019/9/mengingat> .
 <http://example.org/legal/document/uu/2019/9/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2019/9/mengingat/point> .
@@ -38,6 +56,13 @@
 <http://example.org/legal/document/uu/2019/9> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/2019/9> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/2019/9> a legal:Document .
+<http://example.org/legal/document/uu/2019/9/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2019/9/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/2019/9/pasal/0001/version/20190801> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2019/9/pasal/0001/version/20190801/text> a legal:Text .
+<http://example.org/legal/document/uu/2019/9/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/2019/9/pasal/0002/version/20190801> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2019/9/pasal/0002/version/20190801/text> a legal:Text .
 <http://example.org/legal/document/uu/2019/9/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/2019/9/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/2019/9/mengingat/point> a legal:PointSet .
@@ -54,7 +79,12 @@
 <http://example.org/legal/document/uu/2019/9/menimbang/point/b/text> a legal:Text .
 <http://example.org/legal/document/uu/2019/9/menimbang/point/c> a legal:Point .
 <http://example.org/legal/document/uu/2019/9/menimbang/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/2019/9/bab> legal:partOf <http://example.org/legal/document/uu/2019/9> .
+<http://example.org/legal/document/uu/2019/9/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2019/9/pasals> .
+<http://example.org/legal/document/uu/2019/9/pasal/0001/version/20190801> legal:partOf <http://example.org/legal/document/uu/2019/9/pasal/0001> .
+<http://example.org/legal/document/uu/2019/9/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2019/9> .
+<http://example.org/legal/document/uu/2019/9/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2019/9/pasals> .
+<http://example.org/legal/document/uu/2019/9/pasal/0002/version/20190801> legal:partOf <http://example.org/legal/document/uu/2019/9/pasal/0002> .
+<http://example.org/legal/document/uu/2019/9/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2019/9> .
 <http://example.org/legal/document/uu/2019/9/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2019/9/mengingat/point> .
 <http://example.org/legal/document/uu/2019/9/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2019/9/mengingat/point> .
 <http://example.org/legal/document/uu/2019/9/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/2019/9/menimbang/point> .

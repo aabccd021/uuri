@@ -302,18 +302,103 @@ opText: |-
   PEMBAGIAN KEUNTUNGAN YANG ADIL DAN SEIMBANG
   YANG TIMBUL DARI PEMANFAATANNYA ATAS KONVENSI
   KEANEKARAGAMAN HAYATI).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_13
+          nodeType: pasalVersion
+          version: &ref_17
+            nodeType: date
+            month: 5
+            date: 8
+            year: 2013
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_14
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_13
+          elements:
+            - type: ayat
+              node: &ref_15
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_14
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_15
+                textString: >-
+                  Mengesahkan Nagoya Protocol on Access to Genetic Resources and the Fair and
+                  Eguitable Sharing of Benefits Arising from Thetr Utilization to the Convention on
+                  Biological Diversity (Protokol Nagoya tentang Akses pada Sumber Daya Genetik dan
+                  Pembagian Keuntungan yang Adil dan Seimbang yang Timbul dari Pemanfaatannya atas
+                  Konvensi Keanekaragaman Hayati).
+                references: []
+            - type: ayat
+              node: &ref_16
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_14
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_16
+                textString: >-
+                  Salinan naskah asli pengesahan Nagoya Protocol on Access to Genetic Resources and
+                  the Fatr and Eguitable Sharing of Benefits Arising from Their Utilization to the
+                  Convention on Biological Diversity (Protokol Nagoya tentang Akses pada Sumber Daya
+                  Genetik dan Pembagian Keuntungan yang Adil dan Seimbang yang Timbul dari
+                  Pemanfaatannya atas Konvensi Keanekaragaman Hayati) dalam bahasa Inggris dan
+                  terjemahannya dalam bahasa Indonesia sebagaimana terlampir dan merupakan bagian
+                  yang tidak terpisahkan dari Undang-Undang ini.
+                references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_18
+          nodeType: pasalVersion
+          version: *ref_17
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_18
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. PI 3 Fo 4, 29, PRESIDEN
+            REPUBLIK INDONESIA -4- Agar setiap orang mengetahuinya, memerintahkan pengundangan
+            Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 5
-    date: 8
-    year: 2013
+  date: *ref_17
   location: Jakarta
   pengesah: DR. H. SUSILO BAMBANG YUDHOYONO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

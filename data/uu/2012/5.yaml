@@ -271,18 +271,97 @@ opText: |-
   Menetapkan : UNDANG-UNDANG TENTANG PENGESAHAN ASEAN
   CONVENTION ON COUNTER TERRORISM (KONVENSI ASEAN
   MENGENAI PEMBERANTASAN TERORISME).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_13
+          nodeType: pasalVersion
+          version: &ref_17
+            nodeType: date
+            month: 4
+            date: 9
+            year: 2012
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_14
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_13
+          elements:
+            - type: ayat
+              node: &ref_15
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_14
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_15
+                textString: >-
+                  Mengesahkan ASEAN Convention on Counter Terrorism (Konvensi ASEAN mengenai
+                  Pemberantasan Terorisme).
+                references: []
+            - type: ayat
+              node: &ref_16
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_14
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_16
+                textString: >-
+                  Salinan naskah asli ASEAN Convention on Counter Terrorism (Konvensi ASEAN mengenai
+                  Pemberantasan Terorisme) dalam bahasa Inggris dan terjemahannya dalam bahasa
+                  Indonesia sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari
+                  Undang-Undang ini.
+                references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_18
+          nodeType: pasalVersion
+          version: *ref_17
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_18
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar... PI 3 g 4, 29, PRESIDEN
+            REPUBLIK INDONESIA - 3 - Agar setiap orang mengetahuinya, memerintahkan pengundangan
+            Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 4
-    date: 9
-    year: 2012
+  date: *ref_17
   location: Jakarta
   pengesah: DR. H. SUSILO BAMBANG YUDHOYONO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

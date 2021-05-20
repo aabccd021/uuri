@@ -1,7 +1,34 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2013/11> legal:documentHasBabSet <http://example.org/legal/document/uu/2013/11/bab> .
+<http://example.org/legal/document/uu/2013/11> legal:documentHasPasalSet <http://example.org/legal/document/uu/2013/11/pasals> .
+<http://example.org/legal/document/uu/2013/11/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2013/11/pasal/0001> .
+<http://example.org/legal/document/uu/2013/11/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/2013/11/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508> .
+<http://example.org/legal/document/uu/2013/11> legal:documentHasPasal <http://example.org/legal/document/uu/2013/11/pasal/0001> .
+<http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508> legal:pasalVersionHasVersionDate "2013-05-08"^^xsd:date .
+<http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508> legal:pasalVersionHasRawText "(1). Mengesahkan Nagoya Protocol on Access to Genetic Resources and the Fair and Eguitable Sharing of Benefits Arising from Thetr Utilization to the Convention on Biological Diversity (Protokol Nagoya tentang Akses pada Sumber Daya Genetik dan Pembagian Keuntungan yang Adil dan Seimbang yang Timbul dari Pemanfaatannya atas Konvensi Keanekaragaman Hayati).\n(2). Salinan naskah asli pengesahan Nagoya Protocol on Access to Genetic Resources and the Fatr and Eguitable Sharing of Benefits Arising from Their Utilization to the Convention on Biological Diversity (Protokol Nagoya tentang Akses pada Sumber Daya Genetik dan Pembagian Keuntungan yang Adil dan Seimbang yang Timbul dari Pemanfaatannya atas Konvensi Keanekaragaman Hayati) dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508/ayat> .
+<http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508/ayat/0001> .
+<http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508/ayat/0001> legal:ayatHasRawText "Mengesahkan Nagoya Protocol on Access to Genetic Resources and the Fair and Eguitable Sharing of Benefits Arising from Thetr Utilization to the Convention on Biological Diversity (Protokol Nagoya tentang Akses pada Sumber Daya Genetik dan Pembagian Keuntungan yang Adil dan Seimbang yang Timbul dari Pemanfaatannya atas Konvensi Keanekaragaman Hayati)." .
+<http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508/ayat/0001/text> legal:textHasTextString "Mengesahkan Nagoya Protocol on Access to Genetic Resources and the Fair and Eguitable Sharing of Benefits Arising from Thetr Utilization to the Convention on Biological Diversity (Protokol Nagoya tentang Akses pada Sumber Daya Genetik dan Pembagian Keuntungan yang Adil dan Seimbang yang Timbul dari Pemanfaatannya atas Konvensi Keanekaragaman Hayati)." .
+<http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508/ayat/0001/text> .
+<http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508/ayat/0002> .
+<http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508/ayat/0002> legal:ayatHasRawText "Salinan naskah asli pengesahan Nagoya Protocol on Access to Genetic Resources and the Fatr and Eguitable Sharing of Benefits Arising from Their Utilization to the Convention on Biological Diversity (Protokol Nagoya tentang Akses pada Sumber Daya Genetik dan Pembagian Keuntungan yang Adil dan Seimbang yang Timbul dari Pemanfaatannya atas Konvensi Keanekaragaman Hayati) dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508/ayat/0002/text> legal:textHasTextString "Salinan naskah asli pengesahan Nagoya Protocol on Access to Genetic Resources and the Fatr and Eguitable Sharing of Benefits Arising from Their Utilization to the Convention on Biological Diversity (Protokol Nagoya tentang Akses pada Sumber Daya Genetik dan Pembagian Keuntungan yang Adil dan Seimbang yang Timbul dari Pemanfaatannya atas Konvensi Keanekaragaman Hayati) dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508/ayat/0002/text> .
+<http://example.org/legal/document/uu/2013/11/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2013/11/pasal/0002> .
+<http://example.org/legal/document/uu/2013/11/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/2013/11/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2013/11/pasal/0002/version/20130508> .
+<http://example.org/legal/document/uu/2013/11> legal:documentHasPasal <http://example.org/legal/document/uu/2013/11/pasal/0002> .
+<http://example.org/legal/document/uu/2013/11/pasal/0002/version/20130508> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2013/11/pasal/0002/version/20130508> legal:pasalVersionHasVersionDate "2013-05-08"^^xsd:date .
+<http://example.org/legal/document/uu/2013/11/pasal/0002/version/20130508> legal:pasalVersionHasRawText "Undang-Undang ini mulai berlaku pada tanggal diundangkan. PI 3 Fo 4, 29, PRESIDEN REPUBLIK INDONESIA -4- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2013/11/pasal/0002/version/20130508/text> legal:textHasTextString "Undang-Undang ini mulai berlaku pada tanggal diundangkan. PI 3 Fo 4, 29, PRESIDEN REPUBLIK INDONESIA -4- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2013/11/pasal/0002/version/20130508> legal:pasalVersionHasText <http://example.org/legal/document/uu/2013/11/pasal/0002/version/20130508/text> .
 <http://example.org/legal/document/uu/2013/11> legal:documentHasDisahkanDate "2013-05-08"^^xsd:date .
 <http://example.org/legal/document/uu/2013/11> legal:documentMengingat <http://example.org/legal/document/uu/2013/11/mengingat> .
 <http://example.org/legal/document/uu/2013/11/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2013/11/mengingat/point> .
@@ -50,6 +77,17 @@
 <http://example.org/legal/document/uu/2013/11> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/2013/11> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/2013/11> a legal:Document .
+<http://example.org/legal/document/uu/2013/11/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2013/11/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2013/11/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/2013/11/pasal/0002/version/20130508> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2013/11/pasal/0002/version/20130508/text> a legal:Text .
 <http://example.org/legal/document/uu/2013/11/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/2013/11/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/2013/11/mengingat/point> a legal:PointSet .
@@ -72,7 +110,17 @@
 <http://example.org/legal/document/uu/2013/11/menimbang/point/d/text> a legal:Text .
 <http://example.org/legal/document/uu/2013/11/menimbang/point/e> a legal:Point .
 <http://example.org/legal/document/uu/2013/11/menimbang/point/e/text> a legal:Text .
-<http://example.org/legal/document/uu/2013/11/bab> legal:partOf <http://example.org/legal/document/uu/2013/11> .
+<http://example.org/legal/document/uu/2013/11/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2013/11/pasals> .
+<http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508> legal:partOf <http://example.org/legal/document/uu/2013/11/pasal/0001> .
+<http://example.org/legal/document/uu/2013/11/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2013/11> .
+<http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508/ayat> legal:partOf <http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508> .
+<http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508/ayat> .
+<http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508/ayat/0001> .
+<http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508/ayat> .
+<http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2013/11/pasal/0001/version/20130508/ayat/0002> .
+<http://example.org/legal/document/uu/2013/11/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2013/11/pasals> .
+<http://example.org/legal/document/uu/2013/11/pasal/0002/version/20130508> legal:partOf <http://example.org/legal/document/uu/2013/11/pasal/0002> .
+<http://example.org/legal/document/uu/2013/11/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2013/11> .
 <http://example.org/legal/document/uu/2013/11/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2013/11/mengingat/point> .
 <http://example.org/legal/document/uu/2013/11/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2013/11/mengingat/point> .
 <http://example.org/legal/document/uu/2013/11/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/2013/11/mengingat/point> .

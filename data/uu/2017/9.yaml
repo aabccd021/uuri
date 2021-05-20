@@ -225,18 +225,80 @@ opText: |-
   TAHUN 2017 TENTANG AKSES INFORMASI KEUANGAN
   UNTUK KEPENTINGAN PERPAJAKAN MENJADI UNDANG-
   UNDANG.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_9
+          nodeType: pasalVersion
+          version: &ref_10
+            nodeType: date
+            month: 8
+            date: 23
+            year: 2017
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_9
+          textString: >-
+            Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2017 tentang Akses Informasi
+            Keuangan Untuk Kepentingan Perpajakan (Lembaran Negara Republik Indonesia Tahun 2017
+            Nomor 95, Tambahan Lembaran Negara Republik Indonesia Nomor 6051) ditetapkan menjadi
+            Undang-Undang dan melampirkannya sebagai bagian yang tidak terpisahkan dari
+            Undang-Undang ini. )
+          references:
+            - start: 31
+              end: 63
+              node:
+                nodeType: document
+                docType: noTahun
+                docCategory: uu
+                nomor: 1
+                tahun: 2017
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_11
+          nodeType: pasalVersion
+          version: *ref_10
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_11
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar ... oat NN . AG PRESIDEN
+            REPUBLIK INDONESIA -4- Agar setiap orang mengetahuinya, memerintahkan pengundangan
+            Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 8
-    date: 23
-    year: 2017
+  date: *ref_10
   location: Jakarta
   pengesah: JOKO WIDODO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

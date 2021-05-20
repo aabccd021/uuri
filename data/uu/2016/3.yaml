@@ -233,18 +233,76 @@ opText: |-
   PRESIDEN
   REPUBLIK INDONESIA
   -4-
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_8
+          nodeType: pasalVersion
+          version: &ref_9
+            nodeType: date
+            month: 1
+            date: 15
+            year: 2016
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_8
+          textString: >-
+            Mengesahkan Memorandum Saling Pengertian antara Pemerintah Republik Indonesia dan
+            Pemerintah Republik Sosialis Vietnam tentang Peningkatan Kerja Sama antara Pejabat
+            Pertahanan dan Kegiatan Bidang Pertahanan Terkait (Memorandum of Understanding between
+            the Government of the Republic of Indonesia and the Government of the Socialist Republic
+            of Vietnam on Strengthening of Cooperation between Defence Officials and Its Related
+            Activities) yang telah ditandatangani pada tanggal 27 Oktober 2010 di Ha Noi yang
+            salinan naskah aslinya dalam bahasa Indonesia, bahasa Vietnam, dan bahasa Inggris
+            sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-Undang
+            ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_10
+          nodeType: pasalVersion
+          version: *ref_9
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_10
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar... PRESIDEN REPUBLIK
+            INDONESIA 5 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang
+            ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 1
-    date: 15
-    year: 2016
+  date: *ref_9
   location: Jakarta
   pengesah: JOKO WIDODO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

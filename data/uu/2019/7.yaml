@@ -257,18 +257,102 @@ opText: |-
   GOVERNMENT OF THE REPUBLIC OF INDONESIA AND THE
   GOVERNMENT OF THE RUSSIAN FEDERATION ON
   COOPERATION IN THE FIELD OF DEFENCE).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_11
+          nodeType: pasalVersion
+          version: &ref_15
+            nodeType: date
+            month: 4
+            date: 26
+            year: 2019
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_12
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_11
+          elements:
+            - type: ayat
+              node: &ref_13
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_12
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_13
+                textString: >-
+                  Mengesahkan Persetujuan antara Pemerintah Republik Indonesia dan Pemerintah
+                  Federasi Rusia tentang Kerja Sama di Bidang Pertahanan (Agreement between the
+                  Government of the Republic of Indonesia and the Government of the Russian
+                  Federation on Cooperation in the Field of Defence) yang telah ditandatangani pada
+                  tanggal 18 Mei 2016 di Sochi, Rusia.
+                references: []
+            - type: ayat
+              node: &ref_14
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_12
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_14
+                textString: >-
+                  Salinan naskah asli Persetujuan antara Pemerintah Republik Indonesia dan
+                  Pemerintah Federasi Rusia tentang Kerja Sama di Bidang Pertahanan (Agreement
+                  between the Government of the Republic of Indonesia and the Government of the
+                  Russian Federation on Cooperation in the Field of Defence) dalam bahasa Indonesia,
+                  bahasa Rusia, dan bahasa Inggris sebagaimana terlampir dan merupakan bagian yang
+                  tidak terpisahkan dari Undang- Undang ini.
+                references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_16
+          nodeType: pasalVersion
+          version: *ref_15
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_16
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar... sa g g 11) Hg PRESIDEN
+            REPUBLIK INDONESIA -4- Agar setiap orang mengetahuinya, memerintahkan pengundangan
+            Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 4
-    date: 26
-    year: 2019
+  date: *ref_15
   location: Jakarta
   pengesah: JOKO WIDODO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

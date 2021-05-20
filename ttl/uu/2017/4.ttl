@@ -1,7 +1,34 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2017/4> legal:documentHasBabSet <http://example.org/legal/document/uu/2017/4/bab> .
+<http://example.org/legal/document/uu/2017/4> legal:documentHasPasalSet <http://example.org/legal/document/uu/2017/4/pasals> .
+<http://example.org/legal/document/uu/2017/4/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2017/4/pasal/0001> .
+<http://example.org/legal/document/uu/2017/4/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/2017/4/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524> .
+<http://example.org/legal/document/uu/2017/4> legal:documentHasPasal <http://example.org/legal/document/uu/2017/4/pasal/0001> .
+<http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524> legal:pasalVersionHasVersionDate "2017-05-24"^^xsd:date .
+<http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524> legal:pasalVersionHasRawText "(1). Mengesahkan Persetujuan antara Pemerintah Republik Indonesia dan Pemerintah Republik Filipina mengenai Penetapan Batas Zona Ekonomi Eksklusif, 2014 (Agreement between the Government of the Republic of Indonesia and the Government of the Republic of the Philippines concerning the Delimitation of the Exclusive Economic Zone Boundary, 2014), yang telah ditandatangani pada tanggal 23 Mei 2014 di Manila, Filipina.\n(2). Salinan naskah asli Persetujuan antara Pemerintah Republik Indonesia dan Pemerintah Republik Filipina mengenai Penetapan Batas Zona Ekonomi Eksklusif, 2014 (Agreement between the Government of the Republic of Indonesia and the Government of the Republic of the Philippines concerning the Delimitation of the Exclusive Economic Zone Boundary, 2014) dalam bahasa Indonesia dan bahasa Inggris sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524/ayat> .
+<http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524/ayat/0001> .
+<http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524/ayat/0001> legal:ayatHasRawText "Mengesahkan Persetujuan antara Pemerintah Republik Indonesia dan Pemerintah Republik Filipina mengenai Penetapan Batas Zona Ekonomi Eksklusif, 2014 (Agreement between the Government of the Republic of Indonesia and the Government of the Republic of the Philippines concerning the Delimitation of the Exclusive Economic Zone Boundary, 2014), yang telah ditandatangani pada tanggal 23 Mei 2014 di Manila, Filipina." .
+<http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524/ayat/0001/text> legal:textHasTextString "Mengesahkan Persetujuan antara Pemerintah Republik Indonesia dan Pemerintah Republik Filipina mengenai Penetapan Batas Zona Ekonomi Eksklusif, 2014 (Agreement between the Government of the Republic of Indonesia and the Government of the Republic of the Philippines concerning the Delimitation of the Exclusive Economic Zone Boundary, 2014), yang telah ditandatangani pada tanggal 23 Mei 2014 di Manila, Filipina." .
+<http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524/ayat/0001/text> .
+<http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524/ayat/0002> .
+<http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524/ayat/0002> legal:ayatHasRawText "Salinan naskah asli Persetujuan antara Pemerintah Republik Indonesia dan Pemerintah Republik Filipina mengenai Penetapan Batas Zona Ekonomi Eksklusif, 2014 (Agreement between the Government of the Republic of Indonesia and the Government of the Republic of the Philippines concerning the Delimitation of the Exclusive Economic Zone Boundary, 2014) dalam bahasa Indonesia dan bahasa Inggris sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524/ayat/0002/text> legal:textHasTextString "Salinan naskah asli Persetujuan antara Pemerintah Republik Indonesia dan Pemerintah Republik Filipina mengenai Penetapan Batas Zona Ekonomi Eksklusif, 2014 (Agreement between the Government of the Republic of Indonesia and the Government of the Republic of the Philippines concerning the Delimitation of the Exclusive Economic Zone Boundary, 2014) dalam bahasa Indonesia dan bahasa Inggris sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524/ayat/0002/text> .
+<http://example.org/legal/document/uu/2017/4/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2017/4/pasal/0002> .
+<http://example.org/legal/document/uu/2017/4/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/2017/4/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2017/4/pasal/0002/version/20170524> .
+<http://example.org/legal/document/uu/2017/4> legal:documentHasPasal <http://example.org/legal/document/uu/2017/4/pasal/0002> .
+<http://example.org/legal/document/uu/2017/4/pasal/0002/version/20170524> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2017/4/pasal/0002/version/20170524> legal:pasalVersionHasVersionDate "2017-05-24"^^xsd:date .
+<http://example.org/legal/document/uu/2017/4/pasal/0002/version/20170524> legal:pasalVersionHasRawText "Undang-Undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA -5- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2017/4/pasal/0002/version/20170524/text> legal:textHasTextString "Undang-Undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA -5- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2017/4/pasal/0002/version/20170524> legal:pasalVersionHasText <http://example.org/legal/document/uu/2017/4/pasal/0002/version/20170524/text> .
 <http://example.org/legal/document/uu/2017/4> legal:documentHasDisahkanDate "2017-05-24"^^xsd:date .
 <http://example.org/legal/document/uu/2017/4> legal:documentMengingat <http://example.org/legal/document/uu/2017/4/mengingat> .
 <http://example.org/legal/document/uu/2017/4/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2017/4/mengingat/point> .
@@ -36,6 +63,17 @@
 <http://example.org/legal/document/uu/2017/4> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/2017/4> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/2017/4> a legal:Document .
+<http://example.org/legal/document/uu/2017/4/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2017/4/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2017/4/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/2017/4/pasal/0002/version/20170524> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2017/4/pasal/0002/version/20170524/text> a legal:Text .
 <http://example.org/legal/document/uu/2017/4/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/2017/4/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/2017/4/mengingat/point> a legal:PointSet .
@@ -50,7 +88,17 @@
 <http://example.org/legal/document/uu/2017/4/menimbang/point/a/text> a legal:Text .
 <http://example.org/legal/document/uu/2017/4/menimbang/point/b> a legal:Point .
 <http://example.org/legal/document/uu/2017/4/menimbang/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/2017/4/bab> legal:partOf <http://example.org/legal/document/uu/2017/4> .
+<http://example.org/legal/document/uu/2017/4/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2017/4/pasals> .
+<http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524> legal:partOf <http://example.org/legal/document/uu/2017/4/pasal/0001> .
+<http://example.org/legal/document/uu/2017/4/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2017/4> .
+<http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524/ayat> legal:partOf <http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524> .
+<http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524/ayat> .
+<http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524/ayat/0001> .
+<http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524/ayat> .
+<http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2017/4/pasal/0001/version/20170524/ayat/0002> .
+<http://example.org/legal/document/uu/2017/4/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2017/4/pasals> .
+<http://example.org/legal/document/uu/2017/4/pasal/0002/version/20170524> legal:partOf <http://example.org/legal/document/uu/2017/4/pasal/0002> .
+<http://example.org/legal/document/uu/2017/4/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2017/4> .
 <http://example.org/legal/document/uu/2017/4/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2017/4/mengingat/point> .
 <http://example.org/legal/document/uu/2017/4/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2017/4/mengingat/point> .
 <http://example.org/legal/document/uu/2017/4/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/2017/4/menimbang/point> .

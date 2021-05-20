@@ -248,18 +248,113 @@ opText: |-
   PEMERINTAH PENGGANTI UNDANG-UNDANG NOMOR 4
   TAHUN 2008 TENTANG JARING PENGAMAN SISTEM
   KEUANGAN.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_11
+          nodeType: pasalVersion
+          version: &ref_12
+            nodeType: date
+            month: 8
+            date: 6
+            year: 2015
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_11
+          textString: >-
+            Peraturan Pemerintah Pengganti Undang-Undang Nomor 4 Tahun 2008 tentang Jaring Pengaman
+            Sistem Keuangan (Lembaran Negara Republik Indonesia Tahun 2008 Nomor 149, Tambahan
+            Lembaran Negara Republik Indonesia Nomor 4907) dicabut dan dinyatakan tidak berlaku.
+          references:
+            - start: 31
+              end: 63
+              node:
+                nodeType: document
+                docType: noTahun
+                docCategory: uu
+                nomor: 4
+                tahun: 2008
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_13
+          nodeType: pasalVersion
+          version: *ref_12
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_13
+          textString: >-
+            Keputusan yang telah ditetapkan oleh Komite Stabilitas Sistem Keuangan dalam rangka
+            melaksanakan tugas dan wewenangnya berdasarkan Peraturan Pemerintah Pengganti
+            Undang-Undang Nomor 4 Tahun 2008 tentang Jaring Pengaman Sistem Keuangan tetap sah dan
+            mengikat.
+          references:
+            - start: 162
+              end: 194
+              node:
+                nodeType: document
+                docType: noTahun
+                docCategory: uu
+                nomor: 4
+                tahun: 2008
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 3
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_14
+          nodeType: pasalVersion
+          version: *ref_12
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '3'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_14
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA -3
+            - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan
+            penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 8
-    date: 6
-    year: 2015
+  date: *ref_12
   location: Jakarta
   pengesah: JOKO WIDODO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

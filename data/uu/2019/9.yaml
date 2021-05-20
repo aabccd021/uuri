@@ -219,18 +219,73 @@ opText: |-
   TENTANG EKSTRADIS!I (TREATY BETWEEN THE REPUBLIC OF
   INDONESIA AND THE ISLAMIC REPUBLIC OF IRAN ON
   EXTRAINNTION).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_10
+          nodeType: pasalVersion
+          version: &ref_11
+            nodeType: date
+            month: 8
+            date: 1
+            year: 2019
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_10
+          textString: >-
+            Mengesahkan Perjanjian antara Republik Indonesia dan Republik Islarn Iran terncang
+            Ekstradisi (Treaty between the Republic of Indonesia ard the Islamic Republic of Iran on
+            Extrcditior:) yang ditandatangani pada tanggal 14 Desember 2016 di Tehran, Iran, yar:g
+            sainan naskah aslinya dalam bahasa Indonesia, bahasa Persia, dan hahasa Inggris
+            sebagainiana teriampir dan meripakan bagian yang tidak terpisahkan dari Undang-Undang
+            ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_12
+          nodeType: pasalVersion
+          version: *ref_11
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_12
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. En 2) PRESIDEN REPUBLIK
+            INDONESIA -3- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang
+            ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 8
-    date: 1
-    year: 2019
+  date: *ref_11
   location: Jakarta
   pengesah: JOKO WIDODO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

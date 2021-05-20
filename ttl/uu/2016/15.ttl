@@ -1,7 +1,25 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2016/15> legal:documentHasBabSet <http://example.org/legal/document/uu/2016/15/bab> .
+<http://example.org/legal/document/uu/2016/15> legal:documentHasPasalSet <http://example.org/legal/document/uu/2016/15/pasals> .
+<http://example.org/legal/document/uu/2016/15/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2016/15/pasal/0001> .
+<http://example.org/legal/document/uu/2016/15/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/2016/15/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2016/15/pasal/0001/version/20161006> .
+<http://example.org/legal/document/uu/2016/15> legal:documentHasPasal <http://example.org/legal/document/uu/2016/15/pasal/0001> .
+<http://example.org/legal/document/uu/2016/15/pasal/0001/version/20161006> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2016/15/pasal/0001/version/20161006> legal:pasalVersionHasVersionDate "2016-10-06"^^xsd:date .
+<http://example.org/legal/document/uu/2016/15/pasal/0001/version/20161006> legal:pasalVersionHasRawText "Mengesahkan Maritime Labour Conuention, 2O06 (Konvensi Ketenagakerjaan Maritim, 2006l yang salinan naskah aslinya dalam bahasa Inggris dan bahasa Perancis serta terjemahannya dalam bahasa Indonesia sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/document/uu/2016/15/pasal/0001/version/20161006/text> legal:textHasTextString "Mengesahkan Maritime Labour Conuention, 2O06 (Konvensi Ketenagakerjaan Maritim, 2006l yang salinan naskah aslinya dalam bahasa Inggris dan bahasa Perancis serta terjemahannya dalam bahasa Indonesia sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/document/uu/2016/15/pasal/0001/version/20161006> legal:pasalVersionHasText <http://example.org/legal/document/uu/2016/15/pasal/0001/version/20161006/text> .
+<http://example.org/legal/document/uu/2016/15/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2016/15/pasal/0002> .
+<http://example.org/legal/document/uu/2016/15/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/2016/15/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2016/15/pasal/0002/version/20161006> .
+<http://example.org/legal/document/uu/2016/15> legal:documentHasPasal <http://example.org/legal/document/uu/2016/15/pasal/0002> .
+<http://example.org/legal/document/uu/2016/15/pasal/0002/version/20161006> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2016/15/pasal/0002/version/20161006> legal:pasalVersionHasVersionDate "2016-10-06"^^xsd:date .
+<http://example.org/legal/document/uu/2016/15/pasal/0002/version/20161006> legal:pasalVersionHasRawText "Undang-Undang ini mulai berlaku pada tanggal diundangkan. l,legS'OEN REPUBLIK INDONESIA -4- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2016/15/pasal/0002/version/20161006/text> legal:textHasTextString "Undang-Undang ini mulai berlaku pada tanggal diundangkan. l,legS'OEN REPUBLIK INDONESIA -4- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2016/15/pasal/0002/version/20161006> legal:pasalVersionHasText <http://example.org/legal/document/uu/2016/15/pasal/0002/version/20161006/text> .
 <http://example.org/legal/document/uu/2016/15> legal:documentHasDisahkanDate "2016-10-06"^^xsd:date .
 <http://example.org/legal/document/uu/2016/15> legal:documentMengingat <http://example.org/legal/document/uu/2016/15/mengingat> .
 <http://example.org/legal/document/uu/2016/15/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2016/15/mengingat/point> .
@@ -47,6 +65,13 @@
 <http://example.org/legal/document/uu/2016/15> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/2016/15> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/2016/15> a legal:Document .
+<http://example.org/legal/document/uu/2016/15/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2016/15/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/2016/15/pasal/0001/version/20161006> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2016/15/pasal/0001/version/20161006/text> a legal:Text .
+<http://example.org/legal/document/uu/2016/15/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/2016/15/pasal/0002/version/20161006> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2016/15/pasal/0002/version/20161006/text> a legal:Text .
 <http://example.org/legal/document/uu/2016/15/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/2016/15/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/2016/15/mengingat/point> a legal:PointSet .
@@ -67,7 +92,12 @@
 <http://example.org/legal/document/uu/2016/15/menimbang/point/d/text> a legal:Text .
 <http://example.org/legal/document/uu/2016/15/menimbang/point/e> a legal:Point .
 <http://example.org/legal/document/uu/2016/15/menimbang/point/e/text> a legal:Text .
-<http://example.org/legal/document/uu/2016/15/bab> legal:partOf <http://example.org/legal/document/uu/2016/15> .
+<http://example.org/legal/document/uu/2016/15/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2016/15/pasals> .
+<http://example.org/legal/document/uu/2016/15/pasal/0001/version/20161006> legal:partOf <http://example.org/legal/document/uu/2016/15/pasal/0001> .
+<http://example.org/legal/document/uu/2016/15/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2016/15> .
+<http://example.org/legal/document/uu/2016/15/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2016/15/pasals> .
+<http://example.org/legal/document/uu/2016/15/pasal/0002/version/20161006> legal:partOf <http://example.org/legal/document/uu/2016/15/pasal/0002> .
+<http://example.org/legal/document/uu/2016/15/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2016/15> .
 <http://example.org/legal/document/uu/2016/15/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2016/15/mengingat/point> .
 <http://example.org/legal/document/uu/2016/15/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2016/15/mengingat/point> .
 <http://example.org/legal/document/uu/2016/15/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/2016/15/menimbang/point> .

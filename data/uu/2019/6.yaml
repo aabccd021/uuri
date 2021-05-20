@@ -249,18 +249,74 @@ opText: |-
   ARAB (TREATY ON MUTUAL LEGAL ASSISTANCE IN CRIMINAL
   MATTERS BETWEEN THE REPUBLIC OF INDONESIA AND THE
   UNITED ARAB EMIRATES).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_11
+          nodeType: pasalVersion
+          version: &ref_12
+            nodeType: date
+            month: 3
+            date: 13
+            year: 2019
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_11
+          textString: >-
+            Mengesahkan Perjanjian mengenai Bantuan Timbal Balik dalam Masalah Pidana antara
+            Republik Indonesia dan Persatuan Emirat Arab (Treaty on Mutual Legal Assistance in
+            Criminal Matters between the Republic of Indonesia and the United Arab Emirates) yang
+            ditandatangani pada tanggal 2 Februari 2014 di Abu Dhabi, Persatuan Emirat Arab yang
+            salinan naskah aslinya dalam bahasa Indonesia, bahasa Arab, dan bahasa Inggris
+            sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-Undang
+            ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_13
+          nodeType: pasalVersion
+          version: *ref_12
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_13
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar... PE Hg Ta PRESIDEN
+            REPUBLIK INDONESIA -4- Agar setiap orang mengetahuinya, memerintahkan pengundangan
+            Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 3
-    date: 13
-    year: 2019
+  date: *ref_12
   location: Jakarta
   pengesah: JOKO WIDODO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

@@ -308,18 +308,75 @@ opText: |-
   PRESIDEN
   REPUBLIK INDONESIA
   .4-
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_12
+          nodeType: pasalVersion
+          version: &ref_13
+            nodeType: date
+            month: 1
+            date: 12
+            year: 2017
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_12
+          textString: >-
+            Mengesahkan Perjanjian antara Republik Indonesia dan Republik Singapura tentang
+            Penetapan Garis Batas Laut Wilayah Kedua Negara di Bagian Timur Selat Singapura, 2014
+            (Treaty between the Republic of Indonesia and the Republic of Singapore relating to the
+            Delimitation of the Territorial Seas of the Two Countries in the Eastern Part of the
+            Strait of Singapore, 2014) yang telah ditandatangani pada tanggal 3 September 2014 di
+            Singapura yang salinan naskah aslinya dalam bahasa Indonesia dan bahasa Inggris
+            sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-Undang
+            ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_14
+          nodeType: pasalVersion
+          version: *ref_13
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_14
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar... PRESIDEN REPUBLIK
+            INDONESIA 5. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang
+            ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 1
-    date: 12
-    year: 2017
+  date: *ref_13
   location: Jakarta
   pengesah: JOKO WIDODO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

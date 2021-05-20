@@ -194,18 +194,88 @@ opText: |-
   UNDANG NOMOR 30 TAHUN 2002 TENTANG KOMISI
   PEMBERANTASAN TINDAK PIDANA KORUPSI MENJADI
   UNDANG-UNDANG.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_8
+          nodeType: pasalVersion
+          version: &ref_9
+            nodeType: date
+            month: 5
+            date: 20
+            year: 2015
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_8
+          textString: >-
+            Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2015 tentang Perubahan Atas
+            Undang-Undang Nomor 30 Tahun 2002 tentang Komisi Pemberantasan Tindak Pidana Korupsi
+            (Lembaran Negara Republik Indonesia Tahun 2015 Nomor 31, Tambahan Lembaran Negara
+            Republik Indonesia Nomor 5661) ditetapkan menjadi Undang-Undang, dan melampirkannya
+            sebagai bagian yang tidak terpisahkan dari Undang-Undang ini.
+          references:
+            - start: 87
+              end: 120
+              node:
+                nodeType: document
+                docType: noTahun
+                docCategory: uu
+                nomor: 30
+                tahun: 2002
+            - start: 31
+              end: 63
+              node:
+                nodeType: document
+                docType: noTahun
+                docCategory: uu
+                nomor: 1
+                tahun: 2015
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_10
+          nodeType: pasalVersion
+          version: *ref_9
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_10
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. SN - £ “2 PRESIDEN REPUBLIK
+            INDONESIA -3- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang
+            ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 5
-    date: 20
-    year: 2015
+  date: *ref_9
   location: Jakarta
   pengesah: JOKO WIDODO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

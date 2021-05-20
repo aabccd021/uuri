@@ -239,18 +239,100 @@ opText: |-
   ESPECIALLY WOMEN AND CHILDREN (KONVENSI ASEAN
   MENENTANG PERDAGANGAN ORANG, TERUTAMA
   PEREMPUAN DAN ANAK).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_11
+          nodeType: pasalVersion
+          version: &ref_15
+            nodeType: date
+            month: 11
+            date: 10
+            year: 2017
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_12
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_11
+          elements:
+            - type: ayat
+              node: &ref_13
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_12
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_13
+                textString: >-
+                  Mengesahkan ASEAIV Conuention Against Trafficking in Persons, Especially Women and
+                  Children (Konvensi ASEAN Menentang Perdagangan Orang, Terutama Perempuan dan Anak)
+                  yang ditandatangani oleh Pemerintah Indonesia pada tanggal 2l November 2015 di
+                  Kuala Lumpur, Malaysia.
+                references: []
+            - type: ayat
+              node: &ref_14
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_12
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_14
+                textString: >-
+                  Salinan naskah asli ASEAN Conuention Against Trafficking in Persons, Especiallg
+                  Women and Children (Konvensi ASEAN Menentang Perdagangan Orang, Terutama Perempuan
+                  dan Anak) dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia
+                  sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari
+                  Undang-Undang ini.
+                references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_16
+          nodeType: pasalVersion
+          version: *ref_15
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_16
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. tr)ttf.slDEN RTI:'UBL IK
+            INDONESIA -4 Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang
+            ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 11
-    date: 10
-    year: 2017
+  date: *ref_15
   location: Jakarta
   pengesah: JOKO WIDODO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

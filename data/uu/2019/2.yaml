@@ -256,18 +256,104 @@ opText: |-
   PRESIDEN
   REPUBLIK INDONESIA
   -3-
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_11
+          nodeType: pasalVersion
+          version: &ref_15
+            nodeType: date
+            month: 1
+            date: 10
+            year: 2019
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_12
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_11
+          elements:
+            - type: ayat
+              node: &ref_13
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_12
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_13
+                textString: >-
+                  Mengesahkan Nota Kesepahaman antara Kementerian Pertahanan Republik Indonesia dan
+                  Kementerian Pertahanan Kerajaan Spanyol tentang Kegiatan Kerja Sama di Bidang
+                  Pertahanan (Memorandum of Understanding between the Ministry of Defence of the
+                  Republic of Indonesia and the Ministry of Defence of the Kingdom of Spain on
+                  Cooperative Activities in the Field of Defence) yang telah ditandatangani pada
+                  tanggal 13 Februari 2013 di Jakarta, Indonesia.
+                references: []
+            - type: ayat
+              node: &ref_14
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_12
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_14
+                textString: >-
+                  Salinan naskah asli Nota Kesepahaman antara Kementerian Pertahanan Republik
+                  Indonesia dan Kementerian Pertahanan Kerajaan Spanyol tentang Kegiatan Kerja Sama
+                  di Bidang Pertahanan (Memorandum of Understanding between the Ministry of Defence
+                  of the Republic of Indonesia and the Ministry of Defence of the Kingdom of Spain
+                  on Cooperative Activities in the Field of Defence) dalam bahasa Indonesia, bahasa
+                  Spanyol, dan bahasa Inggris sebagaimana terlampir dan merupakan bagian yang tidak
+                  terpisahkan dari Undang-Undang ini.
+                references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_16
+          nodeType: pasalVersion
+          version: *ref_15
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_16
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. Ia ago Li £ 3 4 4 gag PRESIDEN
+            REPUBLIK INDONESIA -4- Agar setiap orang mengetahuinya, memerintahkan pengundangan
+            Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 1
-    date: 10
-    year: 2019
+  date: *ref_15
   location: Jakarta
   pengesah: JOKO WIDODO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

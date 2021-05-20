@@ -236,18 +236,130 @@ opText: |-
   PRESIDEN
   REPUBLIK INDONESIA
   -3 -
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_11
+          nodeType: pasalVersion
+          version: &ref_15
+            nodeType: date
+            month: 3
+            date: 19
+            year: 2014
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_12
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_11
+          elements:
+            - type: ayat
+              node: &ref_13
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_12
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_13
+                textString: >-
+                  Mengesahkan International Convention for the Suppression of Acts of Nuclear
+                  Terrorism (Konvensi Internasional Penanggulangan Tindakan Terorisme Nuklir) dengan
+                  Declaration (Pernyataan) terhadap Pasal 4 dan Reservation (Pensyaratan) terhadap
+                  Pasal 23 ayat (1).
+                references:
+                  - start: 240
+                    end: 257
+                    node:
+                      parentAyatSetNode:
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_11
+                      key: 1
+                      nodeType: ayat
+                  - start: 193
+                    end: 200
+                    node:
+                      key: 4
+                      parentNode: *ref_0
+                      nodeType: pasal
+            - type: ayat
+              node: &ref_14
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_12
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_14
+                textString: >-
+                  Salinan naskah asli International Convention for the Suppression of Acts of
+                  Nuclear Terrorism (Konvensi Internasional Penanggulangan Tindakan Terorisme
+                  Nuklir) dengan Declaration (Pernyataan) terhadap Pasal 4 dan Reservation
+                  (Pensyaratan) terhadap Pasal 23 ayat (1) dalam bahasa Inggris dan terjemahannya
+                  dalam bahasa Indonesia sebagaimana terlampir dan merupakan bagian yang tidak
+                  terpisahkan dari Undang-Undang ini.
+                references:
+                  - start: 248
+                    end: 265
+                    node:
+                      parentAyatSetNode:
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_11
+                      key: 1
+                      nodeType: ayat
+                  - start: 201
+                    end: 208
+                    node:
+                      key: 4
+                      parentNode: *ref_0
+                      nodeType: pasal
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_16
+          nodeType: pasalVersion
+          version: *ref_15
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_16
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar... PI 3 Fo 4, 29,
+            PRESIDEN REPUBLIK INDONESIA -4- Agar setiap orang mengetahuinya, memerintahkan
+            pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik
+            Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 3
-    date: 19
-    year: 2014
+  date: *ref_15
   location: Jakarta
   pengesah: DR. H. SUSILO BAMBANG YUDHOYONO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

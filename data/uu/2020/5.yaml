@@ -258,18 +258,73 @@ opText: |-
   KONFEDERASI SWISS (TREATY ON MUTUAL LEGAL
   ASSISTANCE IN CRIMINAL MATTERS BETWEEN THE
   REPUBLIC OF INDONESIA AND THE SWISS CONFEDERATION).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_11
+          nodeType: pasalVersion
+          version: &ref_12
+            nodeType: date
+            month: 8
+            date: 5
+            year: 2020
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_11
+          textString: >-
+            Mengesahkan Perjanjian tentang Bantuan Hukum Timbal Balik dalam Masalah Pidana antara
+            Republik Indonesia dan Kontederasi Swiss (Treaty on Mutual Legal Assistance in Criminal
+            Matters between the Republic of Indonesia and the Swiss Confederation) yang telah
+            ditandatangani pada tanggal 4 Februari 2019 di Bern, Swiss yang salinan naskah aslinya
+            dalam bahasa Indonesia, bahasa Jerman, dan bahasa Inggris sebagaimana terlampir dan
+            merupakan bagian yang tidak terpisahkan dari Undang-Undang ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_13
+          nodeType: pasalVersion
+          version: *ref_12
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_13
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. Fa 3 3 kk Da PRESIDEN REPUBLIK
+            INDONESIA -4- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang
+            ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 8
-    date: 5
-    year: 2020
+  date: *ref_12
   location: Jakarta
   pengesah: JOKO WIDODO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

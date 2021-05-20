@@ -260,18 +260,74 @@ opText: |-
   PRESIDEN
   REPUBLIK INDONESIA
   2 Bia
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_11
+          nodeType: pasalVersion
+          version: &ref_12
+            nodeType: date
+            month: 1
+            date: 15
+            year: 2016
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_11
+          textString: >-
+            Mengesahkan Persetujuan antara Pemerintah Republik Indonesia dan Pemerintah Republik
+            Polandia tentang Kerja Sama di Bidang Pertahanan (Agreement between the Government of
+            the Republic of Indonesia and the Government of the Republic of Poland concerning Co-
+            operation in the Field of Defence) yang telah ditandatangani pada tanggal 6 Juni 2006 di
+            Jakarta yang salinan naskah aslinya dalam bahasa Indonesia, bahasa Polandia, dan bahasa
+            Inggris sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari
+            Undang-Undang ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_13
+          nodeType: pasalVersion
+          version: *ref_12
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_13
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar... PRESIDEN REPUBLIK
+            INDONESIA an Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang
+            ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 1
-    date: 15
-    year: 2016
+  date: *ref_12
   location: Jakarta
   pengesah: JOKO WIDODO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

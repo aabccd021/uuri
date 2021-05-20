@@ -264,18 +264,74 @@ opText: |-
   THE GOVERNMENT OF THE PEOPLE'S REPUBLIC OF
   CHNA ON COOPERATION ACTIVITIES N THE FIELD
   OF DEFENCE).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_11
+          nodeType: pasalVersion
+          version: &ref_12
+            nodeType: date
+            month: 3
+            date: 30
+            year: 2016
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_11
+          textString: >-
+            Mengesahkan Persetujuan antara Pemerintah Republik Indonesia dan Pemerintah Republik
+            Rakyat China tentang Kerja Sama Aktivitas dalam Bidang Pertahanan (Agreement between the
+            Government of the Republic of Indonesia and the Government of the People's Republic of
+            China on Cooperation Activities in the Field of Defence) yang telah ditandatangani pada
+            tanggal 7 November 2007 di Beijing yang salinan naskah aslinya dalam bahasa Indonesia,
+            bahasa China, dan bahasa Inggris sebagaimana terlampir dan merupakan bagian yang tidak
+            terpisahkan dari Undang-Undang ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_13
+          nodeType: pasalVersion
+          version: *ref_12
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_13
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. £ s Ro. LL PRESIDEN REPUBLIK
+            INDONESIA -4- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang
+            ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 3
-    date: 30
-    year: 2016
+  date: *ref_12
   location: Jakarta
   pengesah: JOKO WIDODO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

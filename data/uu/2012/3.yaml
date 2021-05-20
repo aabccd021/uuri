@@ -264,18 +264,75 @@ opText: >-
   REGION OF THE PEOPLE'S REPUBLIC OF CHINA CONCERNING MUTUAL LEGAL
 
   ASSISTANCE IN CRIMINAL MATTERS).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_8
+          nodeType: pasalVersion
+          version: &ref_9
+            nodeType: date
+            month: 3
+            date: 28
+            year: 2012
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_8
+          textString: >-
+            Mengesahkan Persetujuan antara Pemerintah Republik Indonesia dan Pemerintah Daerah
+            Administrasi Khusus Hong Kong Republik Rakyat China tentang Bantuan Hukum Timbal Balik
+            dalam Masalah Pidana (Agreement between the Government of the Republic of Indonesia and
+            the Government of the Hong Kong Special Administrative Region of the People's Republic
+            of China concerning Mutual Legal Assistance in Criminal Matters) yang ditandatangani
+            pada tanggal 3 April 2008 di Hong Kong yang salinan naskah aslinya dalam bahasa
+            Indonesia, bahasa China, dan bahasa Inggris sebagaimana terlampir dan merupakan bagian
+            yang tidak terpisahkan dari Undang-Undang ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_10
+          nodeType: pasalVersion
+          version: *ref_9
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_10
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang
+            mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 3
-    date: 28
-    year: 2012
+  date: *ref_9
   location: Jakarta
   pengesah: ttd.
   jabatanPengesah: PRESIDEN REPUBLIK

@@ -1,7 +1,25 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2020/13> legal:documentHasBabSet <http://example.org/legal/document/uu/2020/13/bab> .
+<http://example.org/legal/document/uu/2020/13> legal:documentHasPasalSet <http://example.org/legal/document/uu/2020/13/pasals> .
+<http://example.org/legal/document/uu/2020/13/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2020/13/pasal/0001> .
+<http://example.org/legal/document/uu/2020/13/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/2020/13/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2020/13/pasal/0001/version/20201102> .
+<http://example.org/legal/document/uu/2020/13> legal:documentHasPasal <http://example.org/legal/document/uu/2020/13/pasal/0001> .
+<http://example.org/legal/document/uu/2020/13/pasal/0001/version/20201102> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2020/13/pasal/0001/version/20201102> legal:pasalVersionHasVersionDate "2020-11-02"^^xsd:date .
+<http://example.org/legal/document/uu/2020/13/pasal/0001/version/20201102> legal:pasalVersionHasRawText "Mengesahkan Protocol to Implement the Seventh Package of Commitments on Financial Services under the ASEAN Framework Agreement on Services (Protokol untuk Melaksanakan Paket Komitmen Ketujuh Bidang Jasa Keuangan dalam Persetujuan Kerangka Kerja ASEAN di Bidang Jasa) yang telah ditandatangani pada tanggal 23 Juni 2016 di Hanoi, Vietnam, yang salinan naskah aslinya dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/document/uu/2020/13/pasal/0001/version/20201102/text> legal:textHasTextString "Mengesahkan Protocol to Implement the Seventh Package of Commitments on Financial Services under the ASEAN Framework Agreement on Services (Protokol untuk Melaksanakan Paket Komitmen Ketujuh Bidang Jasa Keuangan dalam Persetujuan Kerangka Kerja ASEAN di Bidang Jasa) yang telah ditandatangani pada tanggal 23 Juni 2016 di Hanoi, Vietnam, yang salinan naskah aslinya dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/document/uu/2020/13/pasal/0001/version/20201102> legal:pasalVersionHasText <http://example.org/legal/document/uu/2020/13/pasal/0001/version/20201102/text> .
+<http://example.org/legal/document/uu/2020/13/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2020/13/pasal/0002> .
+<http://example.org/legal/document/uu/2020/13/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/2020/13/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2020/13/pasal/0002/version/20201102> .
+<http://example.org/legal/document/uu/2020/13> legal:documentHasPasal <http://example.org/legal/document/uu/2020/13/pasal/0002> .
+<http://example.org/legal/document/uu/2020/13/pasal/0002/version/20201102> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2020/13/pasal/0002/version/20201102> legal:pasalVersionHasVersionDate "2020-11-02"^^xsd:date .
+<http://example.org/legal/document/uu/2020/13/pasal/0002/version/20201102> legal:pasalVersionHasRawText "Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar... SK No 048536 A PRESIDEN REPUBLIK INDONESIA Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2020/13/pasal/0002/version/20201102/text> legal:textHasTextString "Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar... SK No 048536 A PRESIDEN REPUBLIK INDONESIA Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2020/13/pasal/0002/version/20201102> legal:pasalVersionHasText <http://example.org/legal/document/uu/2020/13/pasal/0002/version/20201102/text> .
 <http://example.org/legal/document/uu/2020/13> legal:documentHasDisahkanDate "2020-11-02"^^xsd:date .
 <http://example.org/legal/document/uu/2020/13> legal:documentMengingat <http://example.org/legal/document/uu/2020/13/mengingat> .
 <http://example.org/legal/document/uu/2020/13/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2020/13/mengingat/point> .
@@ -51,6 +69,13 @@
 <http://example.org/legal/document/uu/2020/13> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/2020/13> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/2020/13> a legal:Document .
+<http://example.org/legal/document/uu/2020/13/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2020/13/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/2020/13/pasal/0001/version/20201102> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2020/13/pasal/0001/version/20201102/text> a legal:Text .
+<http://example.org/legal/document/uu/2020/13/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/2020/13/pasal/0002/version/20201102> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2020/13/pasal/0002/version/20201102/text> a legal:Text .
 <http://example.org/legal/document/uu/2020/13/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/2020/13/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/2020/13/mengingat/point> a legal:PointSet .
@@ -73,7 +98,12 @@
 <http://example.org/legal/document/uu/2020/13/menimbang/point/d/text> a legal:Text .
 <http://example.org/legal/document/uu/2020/13/menimbang/point/e> a legal:Point .
 <http://example.org/legal/document/uu/2020/13/menimbang/point/e/text> a legal:Text .
-<http://example.org/legal/document/uu/2020/13/bab> legal:partOf <http://example.org/legal/document/uu/2020/13> .
+<http://example.org/legal/document/uu/2020/13/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2020/13/pasals> .
+<http://example.org/legal/document/uu/2020/13/pasal/0001/version/20201102> legal:partOf <http://example.org/legal/document/uu/2020/13/pasal/0001> .
+<http://example.org/legal/document/uu/2020/13/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2020/13> .
+<http://example.org/legal/document/uu/2020/13/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2020/13/pasals> .
+<http://example.org/legal/document/uu/2020/13/pasal/0002/version/20201102> legal:partOf <http://example.org/legal/document/uu/2020/13/pasal/0002> .
+<http://example.org/legal/document/uu/2020/13/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2020/13> .
 <http://example.org/legal/document/uu/2020/13/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2020/13/mengingat/point> .
 <http://example.org/legal/document/uu/2020/13/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2020/13/mengingat/point> .
 <http://example.org/legal/document/uu/2020/13/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/2020/13/mengingat/point> .

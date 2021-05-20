@@ -309,18 +309,80 @@ opText: |-
   TAHUN 2016 TENTANG PERUBAHAN KEDUA ATAS
   UNDANG-UNDANG NOMOR 23 TAHUN 2002 TENTANG
   PERLINDUNGAN ANAK MENJADI UNDANG-UNDANG.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_11
+          nodeType: pasalVersion
+          version: &ref_12
+            nodeType: date
+            month: 11
+            date: 9
+            year: 2016
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_11
+          textString: >-
+            Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2016 tentang Perubahan Kedua
+            atas Undang- Undang Nomor 23 Tahun 2002 tentang Perlindungan Anak (Lembaran Negara
+            Republik Indonesia Tahun 2016. Nomor 99, Tambahan Lembaran Negara Republik Indonesia
+            Nomor 5882) ditetapkan menjadi Undang- Undang dan melampirkannya sebagai bagian yang
+            tidak terpisahkan dari Undang-Undang ini.
+          references:
+            - start: 31
+              end: 63
+              node:
+                nodeType: document
+                docType: noTahun
+                docCategory: uu
+                nomor: 1
+                tahun: 2016
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_13
+          nodeType: pasalVersion
+          version: *ref_12
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_13
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. PRESIDEN REPUBLIK INDONESIA 4
+            Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang Ini dengan
+            penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 11
-    date: 9
-    year: 2016
+  date: *ref_12
   location: Jakarta
   pengesah: JOKO WIDODO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESSIA,

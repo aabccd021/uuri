@@ -303,18 +303,74 @@ opText: |-
   SK No 048535 A
   PRESIDEN
   REPUBLIK INDONESIA
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_13
+          nodeType: pasalVersion
+          version: &ref_14
+            nodeType: date
+            month: 11
+            date: 2
+            year: 2020
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_13
+          textString: >-
+            Mengesahkan Protocol to Implement the Seventh Package of Commitments on Financial
+            Services under the ASEAN Framework Agreement on Services (Protokol untuk Melaksanakan
+            Paket Komitmen Ketujuh Bidang Jasa Keuangan dalam Persetujuan Kerangka Kerja ASEAN di
+            Bidang Jasa) yang telah ditandatangani pada tanggal 23 Juni 2016 di Hanoi, Vietnam, yang
+            salinan naskah aslinya dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia
+            sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-Undang
+            ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_15
+          nodeType: pasalVersion
+          version: *ref_14
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_15
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar... SK No 048536 A
+            PRESIDEN REPUBLIK INDONESIA Agar setiap orang mengetahuinya, memerintahkan pengundangan
+            Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 11
-    date: 2
-    year: 2020
+  date: *ref_14
   location: Jakarta
   pengesah: JOKO WIDODO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

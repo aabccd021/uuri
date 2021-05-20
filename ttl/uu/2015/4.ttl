@@ -1,7 +1,25 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2015/4> legal:documentHasBabSet <http://example.org/legal/document/uu/2015/4/bab> .
+<http://example.org/legal/document/uu/2015/4> legal:documentHasPasalSet <http://example.org/legal/document/uu/2015/4/pasals> .
+<http://example.org/legal/document/uu/2015/4/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2015/4/pasal/0001> .
+<http://example.org/legal/document/uu/2015/4/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/2015/4/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2015/4/pasal/0001/version/20150310> .
+<http://example.org/legal/document/uu/2015/4> legal:documentHasPasal <http://example.org/legal/document/uu/2015/4/pasal/0001> .
+<http://example.org/legal/document/uu/2015/4/pasal/0001/version/20150310> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2015/4/pasal/0001/version/20150310> legal:pasalVersionHasVersionDate "2015-03-10"^^xsd:date .
+<http://example.org/legal/document/uu/2015/4/pasal/0001/version/20150310> legal:pasalVersionHasRawText "Mengesahkan Persetujuan antara Pemerintah Republik Indonesia dan Pemerintah Republik Demokratik Timor-Leste tentang Kegiatan Kerja Sama di Bidang Pertahanan (Agreement between the Government of the Republic of Indonesia and the Government of the Democratic Republic of Timor-Leste concerning Cooperative Activities in the Field of Defence) yang telah ditandatangani pada tanggal 19 Agustus 2011 di Dili yang salinan naskah aslinya dalam bahasa Indonesia, bahasa Tetum, bahasa Inggris, dan bahasa Portugis, sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/document/uu/2015/4/pasal/0001/version/20150310/text> legal:textHasTextString "Mengesahkan Persetujuan antara Pemerintah Republik Indonesia dan Pemerintah Republik Demokratik Timor-Leste tentang Kegiatan Kerja Sama di Bidang Pertahanan (Agreement between the Government of the Republic of Indonesia and the Government of the Democratic Republic of Timor-Leste concerning Cooperative Activities in the Field of Defence) yang telah ditandatangani pada tanggal 19 Agustus 2011 di Dili yang salinan naskah aslinya dalam bahasa Indonesia, bahasa Tetum, bahasa Inggris, dan bahasa Portugis, sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/document/uu/2015/4/pasal/0001/version/20150310> legal:pasalVersionHasText <http://example.org/legal/document/uu/2015/4/pasal/0001/version/20150310/text> .
+<http://example.org/legal/document/uu/2015/4/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2015/4/pasal/0002> .
+<http://example.org/legal/document/uu/2015/4/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/2015/4/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2015/4/pasal/0002/version/20150310> .
+<http://example.org/legal/document/uu/2015/4> legal:documentHasPasal <http://example.org/legal/document/uu/2015/4/pasal/0002> .
+<http://example.org/legal/document/uu/2015/4/pasal/0002/version/20150310> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2015/4/pasal/0002/version/20150310> legal:pasalVersionHasVersionDate "2015-03-10"^^xsd:date .
+<http://example.org/legal/document/uu/2015/4/pasal/0002/version/20150310> legal:pasalVersionHasRawText "Undang-Undang ini mulai berlaku pada tanggal diundangkan. PN 3 2 Th “9. PRESIDEN REPUBLIK INDONESIA -4- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2015/4/pasal/0002/version/20150310/text> legal:textHasTextString "Undang-Undang ini mulai berlaku pada tanggal diundangkan. PN 3 2 Th “9. PRESIDEN REPUBLIK INDONESIA -4- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2015/4/pasal/0002/version/20150310> legal:pasalVersionHasText <http://example.org/legal/document/uu/2015/4/pasal/0002/version/20150310/text> .
 <http://example.org/legal/document/uu/2015/4> legal:documentHasDisahkanDate "2015-03-10"^^xsd:date .
 <http://example.org/legal/document/uu/2015/4> legal:documentMengingat <http://example.org/legal/document/uu/2015/4/mengingat> .
 <http://example.org/legal/document/uu/2015/4/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2015/4/mengingat/point> .
@@ -41,6 +59,13 @@
 <http://example.org/legal/document/uu/2015/4> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/2015/4> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/2015/4> a legal:Document .
+<http://example.org/legal/document/uu/2015/4/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2015/4/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/2015/4/pasal/0001/version/20150310> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2015/4/pasal/0001/version/20150310/text> a legal:Text .
+<http://example.org/legal/document/uu/2015/4/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/2015/4/pasal/0002/version/20150310> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2015/4/pasal/0002/version/20150310/text> a legal:Text .
 <http://example.org/legal/document/uu/2015/4/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/2015/4/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/2015/4/mengingat/point> a legal:PointSet .
@@ -59,7 +84,12 @@
 <http://example.org/legal/document/uu/2015/4/menimbang/point/c/text> a legal:Text .
 <http://example.org/legal/document/uu/2015/4/menimbang/point/d> a legal:Point .
 <http://example.org/legal/document/uu/2015/4/menimbang/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/2015/4/bab> legal:partOf <http://example.org/legal/document/uu/2015/4> .
+<http://example.org/legal/document/uu/2015/4/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2015/4/pasals> .
+<http://example.org/legal/document/uu/2015/4/pasal/0001/version/20150310> legal:partOf <http://example.org/legal/document/uu/2015/4/pasal/0001> .
+<http://example.org/legal/document/uu/2015/4/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2015/4> .
+<http://example.org/legal/document/uu/2015/4/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2015/4/pasals> .
+<http://example.org/legal/document/uu/2015/4/pasal/0002/version/20150310> legal:partOf <http://example.org/legal/document/uu/2015/4/pasal/0002> .
+<http://example.org/legal/document/uu/2015/4/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2015/4> .
 <http://example.org/legal/document/uu/2015/4/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2015/4/mengingat/point> .
 <http://example.org/legal/document/uu/2015/4/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2015/4/mengingat/point> .
 <http://example.org/legal/document/uu/2015/4/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/2015/4/menimbang/point> .

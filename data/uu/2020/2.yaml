@@ -261,18 +261,82 @@ opText: |-
   DALAM RANGKA MENGHADAPI ANCAMAN YANG
   MEMBAHAYAKAN PEREKONOMIAN NASIONAL DAN/ATAU
   STABILITAS SISTEM KEUANGAN MENJADI UNDANG-UNDANG.
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_9
+          nodeType: pasalVersion
+          version: &ref_10
+            nodeType: date
+            month: 5
+            date: 16
+            year: 2020
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_9
+          textString: >-
+            Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2020 tentang Kebijakan
+            Keuangan Negara dan Stabilitas Sistem Keuangan untuk penanganan Pandemi Corona Virus
+            Disease 2019 (COVID-19) dan/atau dalam rangka menghadapi Ancaman yang membahayakan
+            Perekonomian Nasional dan/atau Stabilitas Sistem Keuangan (Lembaran Negara Republik
+            Indonesia Nomor 87 Tahun 2020, Tambahan Lembaran Negara Republik Indonesia Nomor 6485)
+            ditetapkan menjadi Undang-Undang dan melampirkannya sebagai bagian yang tidak
+            terpisahkan dari Undang-Undang ini.
+          references:
+            - start: 31
+              end: 63
+              node:
+                nodeType: document
+                docType: noTahun
+                docCategory: uu
+                nomor: 1
+                tahun: 2020
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_11
+          nodeType: pasalVersion
+          version: *ref_10
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_11
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar... 1g ik Ta. REPUBLIK
+            INDONESIA -4- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang
+            ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 5
-    date: 16
-    year: 2020
+  date: *ref_10
   location: Jakarta
   pengesah: JOKO WIDODO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

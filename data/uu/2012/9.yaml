@@ -239,18 +239,119 @@ opText: |-
   PRESIDEN
   REPUBLIK INDONESIA
   -3-
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_11
+          nodeType: pasalVersion
+          version: &ref_15
+            nodeType: date
+            month: 7
+            date: 23
+            year: 2012
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_12
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_11
+          elements:
+            - type: ayat
+              node: &ref_13
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_12
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_13
+                textString: >-
+                  Mengesahkan Optional Protocol to the Convention on the Rights of the Child on the
+                  Involvement of Children in Armed Conflict (Protokol Opsional Konvensi Hak-hak Anak
+                  mengenai Keterlibatan Anak dalam Konflik Bersenjata) dengan Declaration
+                  (Pernyataan) sebagaimana dimaksud dalam Pasal 3 ayat (2) Protokol mengenai usia
+                  minimum untuk rekrutmen sukarela menjadi anggota angkatan bersenjata nasional.
+                references:
+                  - start: 277
+                    end: 293
+                    node:
+                      parentAyatSetNode:
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_11
+                      key: 2
+                      nodeType: ayat
+            - type: ayat
+              node: &ref_14
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_12
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_14
+                textString: >-
+                  Salinan naskah asli Optional Protocol to the Convention on the Rights of the Child
+                  on the Involvement of Children in Armed Conflict (Protokol Opsional Konvensi
+                  Hak-hak Anak mengenai Keterlibatan Anak dalam Konflik Bersenjata) dengan
+                  Declaration (Pernyataan) sebagaimana dimaksud dalam Pasal 3 ayat (2) Protokol
+                  mengenai usia minimum untuk rekrutmen sukarela menjadi anggota angkatan bersenjata
+                  nasional dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia sebagaimana
+                  terlampir merupakan bagian yang tidak terpisahkan dari Undang-Undang ini.
+                references:
+                  - start: 285
+                    end: 301
+                    node:
+                      parentAyatSetNode:
+                        nodeType: ayatSet
+                        parentPasalVersionNode: *ref_11
+                      key: 2
+                      nodeType: ayat
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_16
+          nodeType: pasalVersion
+          version: *ref_15
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_16
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar... PI 3 g 4, 29, PRESIDEN
+            REPUBLIK INDONESIA -4- Agar setiap orang mengetahuinya, memerintahkan pengundangan
+            Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 7
-    date: 23
-    year: 2012
+  date: *ref_15
   location: Jakarta
   pengesah: DR. H. SUSILO BAMBANG YUDHOYONO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

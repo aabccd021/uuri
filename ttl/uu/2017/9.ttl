@@ -1,7 +1,26 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2017/9> legal:documentHasBabSet <http://example.org/legal/document/uu/2017/9/bab> .
+<http://example.org/legal/document/uu/2017/9> legal:documentHasPasalSet <http://example.org/legal/document/uu/2017/9/pasals> .
+<http://example.org/legal/document/uu/2017/9/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2017/9/pasal/0001> .
+<http://example.org/legal/document/uu/2017/9/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/2017/9/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2017/9/pasal/0001/version/20170823> .
+<http://example.org/legal/document/uu/2017/9> legal:documentHasPasal <http://example.org/legal/document/uu/2017/9/pasal/0001> .
+<http://example.org/legal/document/uu/2017/9/pasal/0001/version/20170823> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2017/9/pasal/0001/version/20170823> legal:pasalVersionHasVersionDate "2017-08-23"^^xsd:date .
+<http://example.org/legal/document/uu/2017/9/pasal/0001/version/20170823> legal:pasalVersionHasRawText "Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2017 tentang Akses Informasi Keuangan Untuk Kepentingan Perpajakan (Lembaran Negara Republik Indonesia Tahun 2017 Nomor 95, Tambahan Lembaran Negara Republik Indonesia Nomor 6051) ditetapkan menjadi Undang-Undang dan melampirkannya sebagai bagian yang tidak terpisahkan dari Undang-Undang ini. )" .
+<http://example.org/legal/document/uu/2017/9/pasal/0001/version/20170823/text> legal:textHasTextString "Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2017 tentang Akses Informasi Keuangan Untuk Kepentingan Perpajakan (Lembaran Negara Republik Indonesia Tahun 2017 Nomor 95, Tambahan Lembaran Negara Republik Indonesia Nomor 6051) ditetapkan menjadi Undang-Undang dan melampirkannya sebagai bagian yang tidak terpisahkan dari Undang-Undang ini. )" .
+<http://example.org/legal/document/uu/2017/9/pasal/0001/version/20170823> legal:pasalVersionHasText <http://example.org/legal/document/uu/2017/9/pasal/0001/version/20170823/text> .
+<http://example.org/legal/document/uu/2017/9/pasal/0001/version/20170823/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2017/1> .
+<http://example.org/legal/document/uu/2017/9/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2017/9/pasal/0002> .
+<http://example.org/legal/document/uu/2017/9/pasal/0002> legal:pasalHasKey 2 .
+<http://example.org/legal/document/uu/2017/9/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2017/9/pasal/0002/version/20170823> .
+<http://example.org/legal/document/uu/2017/9> legal:documentHasPasal <http://example.org/legal/document/uu/2017/9/pasal/0002> .
+<http://example.org/legal/document/uu/2017/9/pasal/0002/version/20170823> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2017/9/pasal/0002/version/20170823> legal:pasalVersionHasVersionDate "2017-08-23"^^xsd:date .
+<http://example.org/legal/document/uu/2017/9/pasal/0002/version/20170823> legal:pasalVersionHasRawText "Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar ... oat NN . AG PRESIDEN REPUBLIK INDONESIA -4- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2017/9/pasal/0002/version/20170823/text> legal:textHasTextString "Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar ... oat NN . AG PRESIDEN REPUBLIK INDONESIA -4- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2017/9/pasal/0002/version/20170823> legal:pasalVersionHasText <http://example.org/legal/document/uu/2017/9/pasal/0002/version/20170823/text> .
 <http://example.org/legal/document/uu/2017/9> legal:documentHasDisahkanDate "2017-08-23"^^xsd:date .
 <http://example.org/legal/document/uu/2017/9> legal:documentMengingat <http://example.org/legal/document/uu/2017/9/mengingat> .
 <http://example.org/legal/document/uu/2017/9/mengingat/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 20, dan Pasal 22 ayat (2) Undang- Undang Dasar Negara Republik Indonesia Tahun 1945, PE MEAN £ AA ) any. Day 12 ae PRESIDEN REPUBLIK INDONESIA -3 - Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA DAN PRESIDEN REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG PENETAPAN PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG NOMOR 1 TAHUN 2017 TENTANG AKSES INFORMASI KEUANGAN UNTUK KEPENTINGAN PERPAJAKAN MENJADI UNDANG- UNDANG." .
@@ -36,6 +55,13 @@
 <http://example.org/legal/document/uu/2017/9> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/2017/9> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
 <http://example.org/legal/document/uu/2017/9> a legal:Document .
+<http://example.org/legal/document/uu/2017/9/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2017/9/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/2017/9/pasal/0001/version/20170823> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2017/9/pasal/0001/version/20170823/text> a legal:Text .
+<http://example.org/legal/document/uu/2017/9/pasal/0002> a legal:Pasal .
+<http://example.org/legal/document/uu/2017/9/pasal/0002/version/20170823> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2017/9/pasal/0002/version/20170823/text> a legal:Text .
 <http://example.org/legal/document/uu/2017/9/mengingat/text> a legal:Text .
 <http://example.org/legal/document/uu/2017/9/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/2017/9/menimbang> a legal:Menimbang .
@@ -51,7 +77,12 @@
 <http://example.org/legal/document/uu/2017/9/menimbang/point/d/text> a legal:Text .
 <http://example.org/legal/document/uu/2017/9/menimbang/point/e> a legal:Point .
 <http://example.org/legal/document/uu/2017/9/menimbang/point/e/text> a legal:Text .
-<http://example.org/legal/document/uu/2017/9/bab> legal:partOf <http://example.org/legal/document/uu/2017/9> .
+<http://example.org/legal/document/uu/2017/9/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2017/9/pasals> .
+<http://example.org/legal/document/uu/2017/9/pasal/0001/version/20170823> legal:partOf <http://example.org/legal/document/uu/2017/9/pasal/0001> .
+<http://example.org/legal/document/uu/2017/9/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2017/9> .
+<http://example.org/legal/document/uu/2017/9/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2017/9/pasals> .
+<http://example.org/legal/document/uu/2017/9/pasal/0002/version/20170823> legal:partOf <http://example.org/legal/document/uu/2017/9/pasal/0002> .
+<http://example.org/legal/document/uu/2017/9/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2017/9> .
 <http://example.org/legal/document/uu/2017/9/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/2017/9/menimbang/point> .
 <http://example.org/legal/document/uu/2017/9/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/2017/9/menimbang/point> .
 <http://example.org/legal/document/uu/2017/9/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/2017/9/menimbang/point> .

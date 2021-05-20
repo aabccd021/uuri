@@ -255,18 +255,102 @@ opText: |-
   GOVERNMENT OF THE REPUBLIC OF INDONESIA AND THE
   GOVERNMENT OF THE KINGDOM OF SWEDEN CONCERNING
   COOPERATION IN THE FIELD OF DEFENCE).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_11
+          nodeType: pasalVersion
+          version: &ref_15
+            nodeType: date
+            month: 11
+            date: 2
+            year: 2020
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: ayatSet
+          node: &ref_12
+            nodeType: ayatSet
+            parentPasalVersionNode: *ref_11
+          elements:
+            - type: ayat
+              node: &ref_13
+                nodeType: ayat
+                key: 1
+                parentAyatSetNode: *ref_12
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_13
+                textString: >-
+                  Mengesahkan Persetujuan antara Pemerintah Republik Indonesia dan Pemerintah
+                  Kerajaan Swedia tentang Kerja Sama dalam Bidang Pertahanan (Agreement between the
+                  Government of the Republic of Indonesia and the Government of the Kingdom of
+                  Sweden concerning Cooperation in the Field of Defence) yang telah ditandatangani
+                  pada tanggal 20 Desember 2016 di Jakarta, Indonesia.
+                references: []
+            - type: ayat
+              node: &ref_14
+                nodeType: ayat
+                key: 2
+                parentAyatSetNode: *ref_12
+              content:
+                type: text
+                node:
+                  nodeType: text
+                  textName: text
+                  parentNode: *ref_14
+                textString: >-
+                  Salinan naskah asli Persetujuan antara Pemerintah Republik Indonesia dan
+                  Pemerintah Kerajaan Swedia tentang Kerja Sama dalam Bidang Pertahanan (Agreement
+                  between the Government of the Republic of Indonesia and the Government of the
+                  Kingdom of Sweden concerning Cooperation in the Field of Defence) dalam bahasa
+                  Indonesia, bahasa Swedia, dan bahasa Inggris sebagaimana terlampir dan merupakan
+                  bagian yang tidak terpisahkan dari Undang-Undang ini.
+                references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_16
+          nodeType: pasalVersion
+          version: *ref_15
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_16
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. SK No 048552 A PRESIDEN
+            REPUBLIK INDONESIA -4- Agar setiap orang mengetahuinya, memerintahkan pengundangan
+            Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 11
-    date: 2
-    year: 2020
+  date: *ref_15
   location: Jakarta
   pengesah: JOKO WIDODO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

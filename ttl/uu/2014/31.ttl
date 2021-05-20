@@ -1,7 +1,65 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2014/31> legal:documentHasBabSet <http://example.org/legal/document/uu/2014/31/bab> .
+<http://example.org/legal/document/uu/2014/31> legal:documentHasPasalSet <http://example.org/legal/document/uu/2014/31/pasals> .
+<http://example.org/legal/document/uu/2014/31/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2014/31/pasal/0001> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001> legal:pasalHasKey 1 .
+<http://example.org/legal/document/uu/2014/31/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017> .
+<http://example.org/legal/document/uu/2014/31> legal:documentHasPasal <http://example.org/legal/document/uu/2014/31/pasal/0001> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017> legal:pasalVersionHasState "exists" .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017> legal:pasalVersionHasVersionDate "0002-10-17"^^xsd:date .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017> legal:pasalVersionHasRawText "(1). Dalam hal terpidana tidak mampu membayar pidana denda sebagaimana dim aksud dalam Pasal 37 sampai dengan Pasal 42 , pidana denda tersebut diganti dengan pidana penj ara paling lama 3 (tiga) tahun .\n(2). Pidana penjara sebagai pengganti pidana denda sebagaimana dimaksud pada ayat (1) dicantumkan dalam amar putusan hakim. Pasal II Undang - Undang ini mulai berlaku pada tanggal diundangkan. - 25 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang - Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.\n(3). Selain pidana denda sebagaimana dimaksud pada ayat (2), korporasi dapat dij atuhi pidana tambahan berupa:\na. pencabutan izin usaha;\nb. pencabutan status badan hukum; dan/atau\nc. pemecatan pengurus. 27. Ketentuan Pasal 43 diubah sehingga berbunyi sebagai berikut: Pasal 43\n\n(4). Syarat dan tata cara pengangkatan dan pemberhentian s ekretaris j ender al dilaksanakan sesuai dengan ketentuan peraturan perundang - undangan.\n(5). Ketentuan lebih lanjut mengenai kedudukan, susunan organisasi, tugas , fungsi, dan wewenang s ekretari s j enderal diatur dalam Peratur an P residen . 14. Ketentuan Pasal 23 diubah sehingga berbunyi sebagai berikut: Pasal 23\n(6). Ketentuan mengenai syarat dan tata cara pengangkatan dan pemberhentian dewan penasihat diatur dalam Peraturan Presiden. - 14 - 13. Ketentuan Pasal 18 diubah sehingga berbunyi sebagai berikut: Pasal 1 8" .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0001> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0001> legal:ayatHasKey 1 .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0001> legal:ayatHasRawText "Dalam hal terpidana tidak mampu membayar pidana denda sebagaimana dim aksud dalam Pasal 37 sampai dengan Pasal 42 , pidana denda tersebut diganti dengan pidana penj ara paling lama 3 (tiga) tahun ." .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0001/text> legal:textHasTextString "Dalam hal terpidana tidak mampu membayar pidana denda sebagaimana dim aksud dalam Pasal 37 sampai dengan Pasal 42 , pidana denda tersebut diganti dengan pidana penj ara paling lama 3 (tiga) tahun ." .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0001/text> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2014/31/pasal/0042> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2014/31/pasal/0037> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0002> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0002> legal:ayatHasKey 2 .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0002> legal:ayatHasRawText "Pidana penjara sebagai pengganti pidana denda sebagaimana dimaksud pada ayat (1) dicantumkan dalam amar putusan hakim. Pasal II Undang - Undang ini mulai berlaku pada tanggal diundangkan. - 25 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang - Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0002/text> legal:textHasTextString "Pidana penjara sebagai pengganti pidana denda sebagaimana dimaksud pada ayat (1) dicantumkan dalam amar putusan hakim. Pasal II Undang - Undang ini mulai berlaku pada tanggal diundangkan. - 25 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang - Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0002/text> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0001> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003> legal:ayatHasKey 3 .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003> legal:ayatHasRawText "Selain pidana denda sebagaimana dimaksud pada ayat (2), korporasi dapat dij atuhi pidana tambahan berupa:\na. pencabutan izin usaha;\nb. pencabutan status badan hukum; dan/atau\nc. pemecatan pengurus. 27. Ketentuan Pasal 43 diubah sehingga berbunyi sebagai berikut: Pasal 43\n" .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003> legal:ayatHasPointSet <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point/description> legal:textHasTextString "Selain pidana denda sebagaimana dimaksud pada ayat (2), korporasi dapat dij atuhi pidana tambahan berupa:" .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point/description> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point/a> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point/a> legal:pointHasKey "a" .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point/a/text> legal:textHasTextString "pencabutan izin usaha;" .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point/a> legal:pointHasText <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point/a/text> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point/b> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point/b> legal:pointHasKey "b" .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point/b/text> legal:textHasTextString "pencabutan status badan hukum; dan/atau" .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point/b> legal:pointHasText <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point/b/text> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point/c> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point/c> legal:pointHasKey "c" .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point/c/text> legal:textHasTextString "pemecatan pengurus. 27. Ketentuan Pasal 43 diubah sehingga berbunyi sebagai berikut: Pasal 43" .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point/c> legal:pointHasText <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point/c/text> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point/c/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2014/31/pasal/0043> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0004> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0004> legal:ayatHasKey 4 .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0004> legal:ayatHasRawText "Syarat dan tata cara pengangkatan dan pemberhentian s ekretaris j ender al dilaksanakan sesuai dengan ketentuan peraturan perundang - undangan." .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0004/text> legal:textHasTextString "Syarat dan tata cara pengangkatan dan pemberhentian s ekretaris j ender al dilaksanakan sesuai dengan ketentuan peraturan perundang - undangan." .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0004/text> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0005> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0005> legal:ayatHasKey 5 .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0005> legal:ayatHasRawText "Ketentuan lebih lanjut mengenai kedudukan, susunan organisasi, tugas , fungsi, dan wewenang s ekretari s j enderal diatur dalam Peratur an P residen . 14. Ketentuan Pasal 23 diubah sehingga berbunyi sebagai berikut: Pasal 23" .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0005/text> legal:textHasTextString "Ketentuan lebih lanjut mengenai kedudukan, susunan organisasi, tugas , fungsi, dan wewenang s ekretari s j enderal diatur dalam Peratur an P residen . 14. Ketentuan Pasal 23 diubah sehingga berbunyi sebagai berikut: Pasal 23" .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0005> legal:ayatHasText <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0005/text> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0005/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2014/31/pasal/0023> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0006> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0006> legal:ayatHasKey 6 .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0006> legal:ayatHasRawText "Ketentuan mengenai syarat dan tata cara pengangkatan dan pemberhentian dewan penasihat diatur dalam Peraturan Presiden. - 14 - 13. Ketentuan Pasal 18 diubah sehingga berbunyi sebagai berikut: Pasal 1 8" .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0006/text> legal:textHasTextString "Ketentuan mengenai syarat dan tata cara pengangkatan dan pemberhentian dewan penasihat diatur dalam Peraturan Presiden. - 14 - 13. Ketentuan Pasal 18 diubah sehingga berbunyi sebagai berikut: Pasal 1 8" .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0006> legal:ayatHasText <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0006/text> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0006/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2014/31/pasal/0001> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0006/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2014/31/pasal/0018> .
 <http://example.org/legal/document/uu/2014/31> legal:documentHasDisahkanDate "0002-10-17"^^xsd:date .
 <http://example.org/legal/document/uu/2014/31> legal:documentMengingat <http://example.org/legal/document/uu/2014/31/mengingat> .
 <http://example.org/legal/document/uu/2014/31/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2014/31/mengingat/point> .
@@ -43,6 +101,29 @@
 <http://example.org/legal/document/uu/2014/31> legal:documentHasDisahkanLocation "Jakarta" .
 <http://example.org/legal/document/uu/2014/31> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA ," .
 <http://example.org/legal/document/uu/2014/31> a legal:Document .
+<http://example.org/legal/document/uu/2014/31/pasals> a legal:PasalSet .
+<http://example.org/legal/document/uu/2014/31/pasal/0001> a legal:Pasal .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017> a legal:PasalVersion .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat> a legal:AyatSet .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0001> a legal:Ayat .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0001/text> a legal:Text .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0002> a legal:Ayat .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0002/text> a legal:Text .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003> a legal:Ayat .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point/description> a legal:Text .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point> a legal:PointSet .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point/a> a legal:Point .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point/a/text> a legal:Text .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point/b> a legal:Point .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point/b/text> a legal:Text .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point/c> a legal:Point .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point/c/text> a legal:Text .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0004> a legal:Ayat .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0004/text> a legal:Text .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0005> a legal:Ayat .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0005/text> a legal:Text .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0006> a legal:Ayat .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0006/text> a legal:Text .
 <http://example.org/legal/document/uu/2014/31/mengingat> a legal:Mengingat .
 <http://example.org/legal/document/uu/2014/31/mengingat/point/description> a legal:Text .
 <http://example.org/legal/document/uu/2014/31/mengingat/point> a legal:PointSet .
@@ -63,7 +144,25 @@
 <http://example.org/legal/document/uu/2014/31/menimbang/point/c/text> a legal:Text .
 <http://example.org/legal/document/uu/2014/31/menimbang/point/d> a legal:Point .
 <http://example.org/legal/document/uu/2014/31/menimbang/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/2014/31/bab> legal:partOf <http://example.org/legal/document/uu/2014/31> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2014/31/pasals> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017> legal:partOf <http://example.org/legal/document/uu/2014/31/pasal/0001> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2014/31> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat> legal:partOf <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0001> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0002> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003> legal:partOf <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point> legal:partOf <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point/a> legal:partOf <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point/b> legal:partOf <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point/c> legal:partOf <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0003/point> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0004> legal:partOf <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0004> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0005> legal:partOf <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0005/text> legal:partOf <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0005> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0006> legal:partOf <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat> .
+<http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0006/text> legal:partOf <http://example.org/legal/document/uu/2014/31/pasal/0001/version/00021017/ayat/0006> .
 <http://example.org/legal/document/uu/2014/31/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2014/31/mengingat/point> .
 <http://example.org/legal/document/uu/2014/31/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2014/31/mengingat/point> .
 <http://example.org/legal/document/uu/2014/31/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/2014/31/mengingat/point> .

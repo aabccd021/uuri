@@ -264,18 +264,73 @@ opText: |-
   ARAB MENGENAI EKSTRADISI (TREATY BETWEEN THE
   REPUBLIC OF INDONESIA AND THE UNITED ARAB EMIRATES
   ON EXTRADITION).
-babSet:
-  type: babSet
+content:
+  type: pasalSet
   node:
-    nodeType: babSet
-    parentDocumentNode: *ref_0
-  elements: []
+    nodeType: pasalSet
+    parentNode: *ref_0
+  elements:
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 1
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_12
+          nodeType: pasalVersion
+          version: &ref_13
+            nodeType: date
+            month: 1
+            date: 10
+            year: 2019
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '1'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_12
+          textString: >-
+            Mengesahkan Perjanjian antara Republik Indonesia dan Persatuan Emirat Arab mengenai
+            Ekstradisi (Treaty between the Republic of Indonesia and the United Arab Emirates on
+            Extradition) yang ditandatangani pada tanggal 2 Februari 2014 di Abu Dhabi, Persatuan
+            Emirat Arab, yang salinan naskah aslinya dalam bahasa Indonesia, bahasa Arab, dan bahasa
+            Inggris sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari
+            Undang-Undang ini.
+          references: []
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_14
+          nodeType: pasalVersion
+          version: *ref_13
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_14
+          textString: >-
+            Undang-Undang ini mulai berlaku pada tanggal diundangkan. Ie ix PRESIDEN REPUBLIK
+            INDONESIA -4- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang
+            ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
-  date:
-    nodeType: date
-    month: 1
-    date: 10
-    year: 2019
+  date: *ref_13
   location: Jakarta
   pengesah: JOKO WIDODO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,
