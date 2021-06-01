@@ -152,15 +152,13 @@ metadata:
             textString: >-
               Undang - undang Nomor 7 Tahun 1993 tent ang Perhitungan Anggaran Negara Tahun Anggaran
               1990/91 (Lembaran Negara Tahun 1993 Nomor 69, Tambahan Lembaran Negara Nomor 3534);
-              PRESIDEN REPUBLIK INDONESIA - 2 - Dengan... Dengan persetujuan DEWAN PERWAKILAN RAKYAT
-              REPUBLIK INDONESIA MEMUTUSKAN : Menetapkan : UNDANG - UNDANG TENTANG PERHITUNGAN
-              ANGGARAN NEGARA TAHUN ANGGARAN 1991/92.
+              Dengan... Dengan persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN :
+              Menetapkan : UNDANG - UNDANG TENTANG PERHITUNGAN ANGGARAN NEGARA TAHUN ANGGARAN
+              1991/92.
             references: []
   memutuskan: ''
   denganPersetujuan: ''
 opText: |-
-  PRESIDEN
-  REPUBLIK INDONESIA
   UNDANG - UNDANG REPUBLIK INDONESIA
   NOMOR 3 TAHUN 1994
   TENTANG
@@ -190,9 +188,6 @@ opText: |-
   5. Undang - undang Nomor 7 Tahun 1993 tent ang Perhitungan Anggaran
   Negara Tahun Anggaran 1990/91 (Lembaran Negara Tahun 1993
   Nomor 69, Tambahan Lembaran Negara Nomor 3534);
-  PRESIDEN
-  REPUBLIK INDONESIA
-  - 2 -
   Dengan...
   Dengan persetujuan
   DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA
@@ -293,10 +288,7 @@ content:
                 textString: >-
                   Perincian Perhitungan Pendapatan Negara, Belanja Negara, dan Sisa Anggaran Lebih
                   sebagaimana dimaksud dalam ayat (1), ayat (2), dan ayat (3) adalah seperti
-                  tersebut pada Lampiran Undang - undang ini. Pasal 2 PRESIDEN REPUBLIK INDONESIA -
-                  3 - Undan g - undang ini mulai berlaku pada tanggal diundangkan. Agar ... Agar
-                  setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan
-                  penempatannya dalam Lembaran Negara Republik Indonesia.
+                  tersebut pada Lampiran Undang - undang ini.
                 references:
                   - start: 132
                     end: 140
@@ -318,12 +310,32 @@ content:
                       key: 1
                       parentAyatSetNode: *ref_18
                       nodeType: ayat
-                  - start: 200
-                    end: 207
-                    node:
-                      key: 2
-                      parentNode: *ref_0
-                      nodeType: pasal
+    - type: pasal
+      node:
+        nodeType: pasal
+        key: 2
+        parentNode: *ref_0
+      version:
+        type: pasalVersion
+        node: &ref_20
+          nodeType: pasalVersion
+          version: *ref_19
+          state: exists
+          parentPasalNode:
+            nodeType: pasal
+            key: '2'
+            parentNode: *ref_0
+        content:
+          type: text
+          node:
+            nodeType: text
+            textName: text
+            parentNode: *ref_20
+          textString: >-
+            Undan g - undang ini mulai berlaku pada tanggal diundangkan. Agar ... Agar setiap orang
+            mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam
+            Lembaran Negara Republik Indonesia.
+          references: []
 disahkan:
   date: *ref_19
   location: Jakarta
