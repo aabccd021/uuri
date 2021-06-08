@@ -1,91 +1,95 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2018/11> legal:documentHasPasalSet <http://example.org/legal/document/uu/2018/11/pasals> .
-<http://example.org/legal/document/uu/2018/11/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2018/11/pasal/0001> .
-<http://example.org/legal/document/uu/2018/11/pasal/0001> legal:pasalHasKey 1 .
-<http://example.org/legal/document/uu/2018/11/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030> .
-<http://example.org/legal/document/uu/2018/11> legal:documentHasPasal <http://example.org/legal/document/uu/2018/11/pasal/0001> .
-<http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030> legal:pasalVersionHasVersionDate "2018-10-30"^^xsd:date .
-<http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030> legal:pasalVersionHasRawText "(1). Mengesahkan Nota Kesepahaman antara Kementerian Pertahanan Republik Indonesia dan Kementerian Pertahanan Kerajaan Belanda tentang Kerja Sama Terkait Pertahanan (Memorandum of Understanding between the Ministry of Defence of the Republic of Indonesia and the Ministry of Defence of the Kingdom of the Netherlands on Defence-Related Cooperation): yang telah ditandatangani pada tanggal 4 Februari 2014 di Den Haag, Belanda.\n(2). Salinan naskah asli Nota Kesepahaman antara Kementerian Pertahanan Republik Indonesia dan Kementerian Pertahanan Kerajaan Belanda tentang Kerja Sama Terkait Pertahanan (Memorandum of Understanding between the . Ministry of Defence of the Republic of Indonesia and the Ministry of Defence of the Kingdom of the Netherlands on Defence-Related Cooperation) dalam bahasa Indonesia, bahasa Belanda, dan bahasa Inggris sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
-<http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030/ayat> .
-<http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030/ayat/0001> .
-<http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030/ayat/0001> legal:ayatHasKey 1 .
-<http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030/ayat/0001> legal:ayatHasRawText "Mengesahkan Nota Kesepahaman antara Kementerian Pertahanan Republik Indonesia dan Kementerian Pertahanan Kerajaan Belanda tentang Kerja Sama Terkait Pertahanan (Memorandum of Understanding between the Ministry of Defence of the Republic of Indonesia and the Ministry of Defence of the Kingdom of the Netherlands on Defence-Related Cooperation): yang telah ditandatangani pada tanggal 4 Februari 2014 di Den Haag, Belanda." .
-<http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030/ayat/0001/text> legal:textHasTextString "Mengesahkan Nota Kesepahaman antara Kementerian Pertahanan Republik Indonesia dan Kementerian Pertahanan Kerajaan Belanda tentang Kerja Sama Terkait Pertahanan (Memorandum of Understanding between the Ministry of Defence of the Republic of Indonesia and the Ministry of Defence of the Kingdom of the Netherlands on Defence-Related Cooperation): yang telah ditandatangani pada tanggal 4 Februari 2014 di Den Haag, Belanda." .
-<http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030/ayat/0001/text> .
-<http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030/ayat/0002> .
-<http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030/ayat/0002> legal:ayatHasKey 2 .
-<http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030/ayat/0002> legal:ayatHasRawText "Salinan naskah asli Nota Kesepahaman antara Kementerian Pertahanan Republik Indonesia dan Kementerian Pertahanan Kerajaan Belanda tentang Kerja Sama Terkait Pertahanan (Memorandum of Understanding between the . Ministry of Defence of the Republic of Indonesia and the Ministry of Defence of the Kingdom of the Netherlands on Defence-Related Cooperation) dalam bahasa Indonesia, bahasa Belanda, dan bahasa Inggris sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
-<http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030/ayat/0002/text> legal:textHasTextString "Salinan naskah asli Nota Kesepahaman antara Kementerian Pertahanan Republik Indonesia dan Kementerian Pertahanan Kerajaan Belanda tentang Kerja Sama Terkait Pertahanan (Memorandum of Understanding between the . Ministry of Defence of the Republic of Indonesia and the Ministry of Defence of the Kingdom of the Netherlands on Defence-Related Cooperation) dalam bahasa Indonesia, bahasa Belanda, dan bahasa Inggris sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
-<http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030/ayat/0002/text> .
-<http://example.org/legal/document/uu/2018/11/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2018/11/pasal/0002> .
-<http://example.org/legal/document/uu/2018/11/pasal/0002> legal:pasalHasKey 2 .
-<http://example.org/legal/document/uu/2018/11/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2018/11/pasal/0002/version/20181030> .
-<http://example.org/legal/document/uu/2018/11> legal:documentHasPasal <http://example.org/legal/document/uu/2018/11/pasal/0002> .
-<http://example.org/legal/document/uu/2018/11/pasal/0002/version/20181030> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/2018/11/pasal/0002/version/20181030> legal:pasalVersionHasVersionDate "2018-10-30"^^xsd:date .
-<http://example.org/legal/document/uu/2018/11/pasal/0002/version/20181030> legal:pasalVersionHasRawText "Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar... FK & Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/2018/11/pasal/0002/version/20181030/text> legal:textHasTextString "Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar... FK & Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/2018/11/pasal/0002/version/20181030> legal:pasalVersionHasText <http://example.org/legal/document/uu/2018/11/pasal/0002/version/20181030/text> .
-<http://example.org/legal/document/uu/2018/11> legal:documentHasDisahkanDate "2018-10-30"^^xsd:date .
-<http://example.org/legal/document/uu/2018/11> legal:documentMengingat <http://example.org/legal/document/uu/2018/11/mengingat> .
-<http://example.org/legal/document/uu/2018/11/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2018/11/mengingat/point> .
-<http://example.org/legal/document/uu/2018/11/mengingat/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/2018/11/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2018/11/mengingat/point/description> .
-<http://example.org/legal/document/uu/2018/11/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2018/11/mengingat/point/0001> .
-<http://example.org/legal/document/uu/2018/11/mengingat/point/0001> legal:pointHasKey "1" .
-<http://example.org/legal/document/uu/2018/11/mengingat/point/0001/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 11, Pasal 20, dan Pasal 30 ayat (2), ayat (3), dan ayat (5) Undang-Undang Dasar Negara Republik Indonesia Tahun 1945:" .
-<http://example.org/legal/document/uu/2018/11/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/2018/11/mengingat/point/0001/text> .
-<http://example.org/legal/document/uu/2018/11/mengingat/point/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu> .
-<http://example.org/legal/document/uu/2018/11/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2018/11/mengingat/point/0002> .
-<http://example.org/legal/document/uu/2018/11/mengingat/point/0002> legal:pointHasKey "2" .
-<http://example.org/legal/document/uu/2018/11/mengingat/point/0002/text> legal:textHasTextString "Undang-Undang Nomor 24 Tahun 2000 tentang Perjanjian Internasional (Lembaran Negara Republik Indonesia Tahun 2000 Nomor 185, Tambahan Lembaran Negara Republik Indonesia Nomor 4012): Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA dan PRESIDEN REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG PENGESAHAN NOTA : KESEPAHAMAN ANTARA . KEMENTERIAN PERTAHANAN REPUBLIK INDONESIA DAN KEMENTERIAN PERTAHANAN KERAJAAN BELANDA TENTANG KERJA SAMA. TERKAIT PERTAHANAN (MEMORANDUM OF UNDERSTANDING BETWEEN THE MINISTRY OF DEFENCE OF THE REPUBLIC OF INDONESIA AND THE MINISTRY OF DEFENCE OF THE KINGDOM OF THE NETHERLANDS ON DEFENCE-RELATED COOPERATION). Kg Ka Ye ED MN PRESIDEN :" .
-<http://example.org/legal/document/uu/2018/11/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/2018/11/mengingat/point/0002/text> .
-<http://example.org/legal/document/uu/2018/11/mengingat/point/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2000/24> .
-<http://example.org/legal/document/uu/2018/11> legal:documentMenimbang <http://example.org/legal/document/uu/2018/11/menimbang> .
-<http://example.org/legal/document/uu/2018/11/menimbang/text> legal:textHasTextString "aa. bahwa hubungan luar negeri yang dilandasi politik bebas aktif merupakan salah satu perwujudan dari tujuan Pemerintah Negara Kesatuan Republik Indonesia untuk melindungi segenap bangsa dan seluruh tumpah darah Indonesia, memajukan kesejahteraan umum, mencerdaskan kehidupan bangsa dan ikut: melaksanakan ketertiban dunia yang berdasarkan kemerdekaan, perdamaian abadi, dan keadilan sosial: b. bahwa untuk meningkatkan kerja sama di bidang pertahanan antara Pemerintah Republik Indonesia dan Pemerintah Kerajaan Belanda, pada tanggal 4 Februari 2014 di Den Haag, Belanda telah ditandatangani Nota Kesepahaman antara Kementerian Pertahanan Republik Indonesia dan Kementerian Pertahanan Kerajaan Belanda tentang Kerja Sama Terkait Pertahanan (Memorandum af Understanding between the Ministry of Defence of the Republic of Indonesia and the Ministry of Defence of the Kingdom of the Netherlands on Defence- Related Cooperation): Cc. bahwa sesuai dengan ketentuan Pasal 10 Undang-Undang Nomor 24 Tahun 2000 tentang Perjanjian Internasional, pengesahan perjanjian internasional berkenaan dengan pertahanan dilakukan dengan Undang-Undang: : d. bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a, huruf b, dan huruf Cc, perlu membentuk Undang-Undang. tentang Pengesahan Nota Kesepahaman antara Kementerian Pertahanan Republik Indonesia dan Kementerian Pertahanan Kerajaan Belanda tentang Kerja Sama Terkait Pertahanan (Memorandum of Understanding between the Ministry of Defence of the Republic of Indonesia and the Ministry of Defence of the Kingdom of the Netherlands on Defence-Related Cooperation):" .
-<http://example.org/legal/document/uu/2018/11/menimbang> legal:menimbangHasText <http://example.org/legal/document/uu/2018/11/menimbang/text> .
-<http://example.org/legal/document/uu/2018/11/menimbang/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2000/24> .
-<http://example.org/legal/document/uu/2018/11> legal:documentHasDisahkanPengesah "JOKO WIDODO" .
-<http://example.org/legal/document/uu/2018/11> legal:documentHasDisahkanLocation "Jakarta" .
-<http://example.org/legal/document/uu/2018/11> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
-<http://example.org/legal/document/uu/2018/11> a legal:Document .
-<http://example.org/legal/document/uu/2018/11/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/2018/11/pasal/0001> a legal:Pasal .
-<http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030> a legal:PasalVersion .
-<http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030/ayat> a legal:AyatSet .
-<http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030/ayat/0001> a legal:Ayat .
-<http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030/ayat/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030/ayat/0002> a legal:Ayat .
-<http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030/ayat/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/2018/11/pasal/0002> a legal:Pasal .
-<http://example.org/legal/document/uu/2018/11/pasal/0002/version/20181030> a legal:PasalVersion .
-<http://example.org/legal/document/uu/2018/11/pasal/0002/version/20181030/text> a legal:Text .
-<http://example.org/legal/document/uu/2018/11/mengingat> a legal:Mengingat .
-<http://example.org/legal/document/uu/2018/11/mengingat/point/description> a legal:Text .
-<http://example.org/legal/document/uu/2018/11/mengingat/point> a legal:PointSet .
-<http://example.org/legal/document/uu/2018/11/mengingat/point/0001> a legal:Point .
-<http://example.org/legal/document/uu/2018/11/mengingat/point/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/2018/11/mengingat/point/0002> a legal:Point .
-<http://example.org/legal/document/uu/2018/11/mengingat/point/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/2018/11/menimbang/text> a legal:Text .
-<http://example.org/legal/document/uu/2018/11/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/2018/11/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2018/11/pasals> .
-<http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030> legal:partOf <http://example.org/legal/document/uu/2018/11/pasal/0001> .
-<http://example.org/legal/document/uu/2018/11/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2018/11> .
-<http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030/ayat> legal:partOf <http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030> .
-<http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030/ayat> .
-<http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030/ayat/0001> .
-<http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030/ayat> .
-<http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2018/11/pasal/0001/version/20181030/ayat/0002> .
-<http://example.org/legal/document/uu/2018/11/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2018/11/pasals> .
-<http://example.org/legal/document/uu/2018/11/pasal/0002/version/20181030> legal:partOf <http://example.org/legal/document/uu/2018/11/pasal/0002> .
-<http://example.org/legal/document/uu/2018/11/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2018/11> .
-<http://example.org/legal/document/uu/2018/11/mengingat/point> legal:partOf <http://example.org/legal/document/uu/2018/11/mengingat> .
-<http://example.org/legal/document/uu/2018/11/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2018/11/mengingat/point> .
-<http://example.org/legal/document/uu/2018/11/mengingat/point/0001/text> legal:partOf <http://example.org/legal/document/uu/2018/11/mengingat/point/0001> .
-<http://example.org/legal/document/uu/2018/11/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2018/11/mengingat/point> .
-<http://example.org/legal/document/uu/2018/11/mengingat/point/0002/text> legal:partOf <http://example.org/legal/document/uu/2018/11/mengingat/point/0002> .
-<http://example.org/legal/document/uu/2018/11/menimbang/text> legal:partOf <http://example.org/legal/document/uu/2018/11/menimbang> .
+<http://example.org/legal/peraturan/uu/2018/11> legal:daftarPasal <http://example.org/legal/peraturan/uu/2018/11/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2018/11/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/2018/11/pasal/0001> .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0001> legal:versi <http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030> .
+<http://example.org/legal/peraturan/uu/2018/11> legal:pasal <http://example.org/legal/peraturan/uu/2018/11/pasal/0001> .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030> legal:tanggal "2018-10-30"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030> legal:teks "(1). Mengesahkan Nota Kesepahaman antara Kementerian Pertahanan Republik Indonesia dan Kementerian Pertahanan Kerajaan Belanda tentang Kerja Sama Terkait Pertahanan (Memorandum of Understanding between the Ministry of Defence of the Republic of Indonesia and the Ministry of Defence of the Kingdom of the Netherlands on Defence-Related Cooperation): yang telah ditandatangani pada tanggal 4 Februari 2014 di Den Haag, Belanda.\n(2). Salinan naskah asli Nota Kesepahaman antara Kementerian Pertahanan Republik Indonesia dan Kementerian Pertahanan Kerajaan Belanda tentang Kerja Sama Terkait Pertahanan (Memorandum of Understanding between the . Ministry of Defence of the Republic of Indonesia and the Ministry of Defence of the Kingdom of the Netherlands on Defence-Related Cooperation) dalam bahasa Indonesia, bahasa Belanda, dan bahasa Inggris sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030> legal:daftarAyat <http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030/ayat> .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030/ayat> legal:ayat <http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030/ayat/0001> .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030/ayat/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030/ayat/0001> legal:teks "Mengesahkan Nota Kesepahaman antara Kementerian Pertahanan Republik Indonesia dan Kementerian Pertahanan Kerajaan Belanda tentang Kerja Sama Terkait Pertahanan (Memorandum of Understanding between the Ministry of Defence of the Republic of Indonesia and the Ministry of Defence of the Kingdom of the Netherlands on Defence-Related Cooperation): yang telah ditandatangani pada tanggal 4 Februari 2014 di Den Haag, Belanda." .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030/ayat/0001/text> legal:teks "Mengesahkan Nota Kesepahaman antara Kementerian Pertahanan Republik Indonesia dan Kementerian Pertahanan Kerajaan Belanda tentang Kerja Sama Terkait Pertahanan (Memorandum of Understanding between the Ministry of Defence of the Republic of Indonesia and the Ministry of Defence of the Kingdom of the Netherlands on Defence-Related Cooperation): yang telah ditandatangani pada tanggal 4 Februari 2014 di Den Haag, Belanda." .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030/ayat/0001> legal:segmen <http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030/ayat/0001/text> .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030/ayat> legal:ayat <http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030/ayat/0002> .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030/ayat/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030/ayat/0002> legal:teks "Salinan naskah asli Nota Kesepahaman antara Kementerian Pertahanan Republik Indonesia dan Kementerian Pertahanan Kerajaan Belanda tentang Kerja Sama Terkait Pertahanan (Memorandum of Understanding between the . Ministry of Defence of the Republic of Indonesia and the Ministry of Defence of the Kingdom of the Netherlands on Defence-Related Cooperation) dalam bahasa Indonesia, bahasa Belanda, dan bahasa Inggris sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030/ayat/0002/text> legal:teks "Salinan naskah asli Nota Kesepahaman antara Kementerian Pertahanan Republik Indonesia dan Kementerian Pertahanan Kerajaan Belanda tentang Kerja Sama Terkait Pertahanan (Memorandum of Understanding between the . Ministry of Defence of the Republic of Indonesia and the Ministry of Defence of the Kingdom of the Netherlands on Defence-Related Cooperation) dalam bahasa Indonesia, bahasa Belanda, dan bahasa Inggris sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030/ayat/0002> legal:segmen <http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030/ayat/0002/text> .
+<http://example.org/legal/peraturan/uu/2018/11/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/2018/11/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0002> legal:versi <http://example.org/legal/peraturan/uu/2018/11/pasal/0002/versi/20181030> .
+<http://example.org/legal/peraturan/uu/2018/11> legal:pasal <http://example.org/legal/peraturan/uu/2018/11/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0002/versi/20181030> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0002/versi/20181030> legal:tanggal "2018-10-30"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0002/versi/20181030> legal:teks "Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar... FK & Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0002/versi/20181030/text> legal:teks "Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar... FK & Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0002/versi/20181030> legal:segmen <http://example.org/legal/peraturan/uu/2018/11/pasal/0002/versi/20181030/text> .
+<http://example.org/legal/peraturan/uu/2018/11> legal:disahkanPada "2018-10-30"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2018/11> legal:tentang " PENGESAHAN NOTA KESEPAHAMAN ANTARA KEMENTERIAN PERTAHANAN REPUBLIK INDONESIA DAN KEMENTERIAN PERTAHANAN KERAJAAN BELANDA TENTANG KERJA SAMA TERKAIT PERTAHANAN (MEMORANDUM OF UNDERSTANDING BETWEEN THE MINISTRY OF DEFENCE OF THE REPUBLIC OF INDONESIA AND THE : MINISTRY OF DEFENCE OF THE KINGDOM OF THE NETHERLANDS ON DEFENCE-RELATED COOPERATION)" .
+<http://example.org/legal/peraturan/uu/2018/11> legal:mengingat <http://example.org/legal/peraturan/uu/2018/11/mengingat> .
+<http://example.org/legal/peraturan/uu/2018/11/mengingat> legal:daftarHuruf <http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf> legal:segmen <http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf/description> .
+<http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf/0001> .
+<http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf/0001> legal:nomor "1" .
+<http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf/0001/text> legal:teks "Pasal 5 ayat (1), Pasal 11, Pasal 20, dan Pasal 30 ayat (2), ayat (3), dan ayat (5) Undang-Undang Dasar Negara Republik Indonesia Tahun 1945:" .
+<http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf/0001> legal:segmen <http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf/0001/text> .
+<http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf/0001/text> legal:merujuk <http://example.org/legal/peraturan/uu> .
+<http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf/0002> .
+<http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf/0002> legal:nomor "2" .
+<http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf/0002/text> legal:teks "Undang-Undang Nomor 24 Tahun 2000 tentang Perjanjian Internasional (Lembaran Negara Republik Indonesia Tahun 2000 Nomor 185, Tambahan Lembaran Negara Republik Indonesia Nomor 4012): Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA dan PRESIDEN REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG PENGESAHAN NOTA : KESEPAHAMAN ANTARA . KEMENTERIAN PERTAHANAN REPUBLIK INDONESIA DAN KEMENTERIAN PERTAHANAN KERAJAAN BELANDA TENTANG KERJA SAMA. TERKAIT PERTAHANAN (MEMORANDUM OF UNDERSTANDING BETWEEN THE MINISTRY OF DEFENCE OF THE REPUBLIC OF INDONESIA AND THE MINISTRY OF DEFENCE OF THE KINGDOM OF THE NETHERLANDS ON DEFENCE-RELATED COOPERATION). Kg Ka Ye ED MN PRESIDEN :" .
+<http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf/0002> legal:segmen <http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf/0002/text> .
+<http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf/0002/text> legal:merujuk <http://example.org/legal/peraturan/uu/2000/24> .
+<http://example.org/legal/peraturan/uu/2018/11> legal:menimbang <http://example.org/legal/peraturan/uu/2018/11/menimbang> .
+<http://example.org/legal/peraturan/uu/2018/11/menimbang/text> legal:teks "aa. bahwa hubungan luar negeri yang dilandasi politik bebas aktif merupakan salah satu perwujudan dari tujuan Pemerintah Negara Kesatuan Republik Indonesia untuk melindungi segenap bangsa dan seluruh tumpah darah Indonesia, memajukan kesejahteraan umum, mencerdaskan kehidupan bangsa dan ikut: melaksanakan ketertiban dunia yang berdasarkan kemerdekaan, perdamaian abadi, dan keadilan sosial: b. bahwa untuk meningkatkan kerja sama di bidang pertahanan antara Pemerintah Republik Indonesia dan Pemerintah Kerajaan Belanda, pada tanggal 4 Februari 2014 di Den Haag, Belanda telah ditandatangani Nota Kesepahaman antara Kementerian Pertahanan Republik Indonesia dan Kementerian Pertahanan Kerajaan Belanda tentang Kerja Sama Terkait Pertahanan (Memorandum af Understanding between the Ministry of Defence of the Republic of Indonesia and the Ministry of Defence of the Kingdom of the Netherlands on Defence- Related Cooperation): Cc. bahwa sesuai dengan ketentuan Pasal 10 Undang-Undang Nomor 24 Tahun 2000 tentang Perjanjian Internasional, pengesahan perjanjian internasional berkenaan dengan pertahanan dilakukan dengan Undang-Undang: : d. bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a, huruf b, dan huruf Cc, perlu membentuk Undang-Undang. tentang Pengesahan Nota Kesepahaman antara Kementerian Pertahanan Republik Indonesia dan Kementerian Pertahanan Kerajaan Belanda tentang Kerja Sama Terkait Pertahanan (Memorandum of Understanding between the Ministry of Defence of the Republic of Indonesia and the Ministry of Defence of the Kingdom of the Netherlands on Defence-Related Cooperation):" .
+<http://example.org/legal/peraturan/uu/2018/11/menimbang> legal:segmen <http://example.org/legal/peraturan/uu/2018/11/menimbang/text> .
+<http://example.org/legal/peraturan/uu/2018/11/menimbang/text> legal:merujuk <http://example.org/legal/peraturan/uu/2000/24> .
+<http://example.org/legal/peraturan/uu/2018/11> legal:disahkanOleh "JOKO WIDODO" .
+<http://example.org/legal/peraturan/uu/2018/11> legal:disahkanDi "Jakarta" .
+<http://example.org/legal/peraturan/uu/2018/11> legal:jabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/peraturan/uu/2018/11> a legal:Peraturan .
+<http://example.org/legal/peraturan/uu/2018/11/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0001> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030/ayat> a legal:DaftarAyat .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030/ayat/0001> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030/ayat/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030/ayat/0002> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030/ayat/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0002> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0002/versi/20181030> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0002/versi/20181030/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2018/11/mengingat> a legal:Mengingat .
+<http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf/0001> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf/0002> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2018/11/menimbang/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2018/11/menimbang> a legal:Menimbang .
+<http://example.org/legal/peraturan/uu/2018/11/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/2018/11> .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2018/11/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030> legal:bagianDari <http://example.org/legal/peraturan/uu/2018/11/pasal/0001> .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2018/11> .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030/ayat> legal:bagianDari <http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030> .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030/ayat/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030/ayat> .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030/ayat/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030/ayat/0001> .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030/ayat/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030/ayat> .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030/ayat/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2018/11/pasal/0001/versi/20181030/ayat/0002> .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2018/11/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0002/versi/20181030> legal:bagianDari <http://example.org/legal/peraturan/uu/2018/11/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2018/11> .
+<http://example.org/legal/peraturan/uu/2018/11/pasal/0002/versi/20181030/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2018/11/pasal/0002/versi/20181030> .
+<http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/2018/11/mengingat> .
+<http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf/0001> .
+<http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2018/11/mengingat/huruf/0002> .
+<http://example.org/legal/peraturan/uu/2018/11/menimbang/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2018/11/menimbang> .

@@ -1,136 +1,142 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1997/9> legal:documentHasPasalSet <http://example.org/legal/document/uu/1997/9/pasals> .
-<http://example.org/legal/document/uu/1997/9/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1997/9/pasal/0001> .
-<http://example.org/legal/document/uu/1997/9/pasal/0001> legal:pasalHasKey 1 .
-<http://example.org/legal/document/uu/1997/9/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1997/9/pasal/0001/version/19970402> .
-<http://example.org/legal/document/uu/1997/9> legal:documentHasPasal <http://example.org/legal/document/uu/1997/9/pasal/0001> .
-<http://example.org/legal/document/uu/1997/9/pasal/0001/version/19970402> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1997/9/pasal/0001/version/19970402> legal:pasalVersionHasVersionDate "1997-04-02"^^xsd:date .
-<http://example.org/legal/document/uu/1997/9/pasal/0001/version/19970402> legal:pasalVersionHasRawText "Mengesahkan Treaty on the Southeast Asia Nuclear Weapon Free Zone (Traktat Kawasan Bebas Senjata Nuklir di Asia Tenggara), yang salinan naskah asli beserta Lampirannya dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia, sebagaimana terlampir, me rupakan bagian yang tidak terpisahkan dari Undang - undang ini." .
-<http://example.org/legal/document/uu/1997/9/pasal/0001/version/19970402/text> legal:textHasTextString "Mengesahkan Treaty on the Southeast Asia Nuclear Weapon Free Zone (Traktat Kawasan Bebas Senjata Nuklir di Asia Tenggara), yang salinan naskah asli beserta Lampirannya dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia, sebagaimana terlampir, me rupakan bagian yang tidak terpisahkan dari Undang - undang ini." .
-<http://example.org/legal/document/uu/1997/9/pasal/0001/version/19970402> legal:pasalVersionHasText <http://example.org/legal/document/uu/1997/9/pasal/0001/version/19970402/text> .
-<http://example.org/legal/document/uu/1997/9/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1997/9/pasal/0002> .
-<http://example.org/legal/document/uu/1997/9/pasal/0002> legal:pasalHasKey 2 .
-<http://example.org/legal/document/uu/1997/9/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1997/9/pasal/0002/version/19970402> .
-<http://example.org/legal/document/uu/1997/9> legal:documentHasPasal <http://example.org/legal/document/uu/1997/9/pasal/0002> .
-<http://example.org/legal/document/uu/1997/9/pasal/0002/version/19970402> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1997/9/pasal/0002/version/19970402> legal:pasalVersionHasVersionDate "1997-04-02"^^xsd:date .
-<http://example.org/legal/document/uu/1997/9/pasal/0002/version/19970402> legal:pasalVersionHasRawText "Undang - undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/1997/9/pasal/0002/version/19970402/text> legal:textHasTextString "Undang - undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/1997/9/pasal/0002/version/19970402> legal:pasalVersionHasText <http://example.org/legal/document/uu/1997/9/pasal/0002/version/19970402/text> .
-<http://example.org/legal/document/uu/1997/9> legal:documentHasDisahkanDate "1997-04-02"^^xsd:date .
-<http://example.org/legal/document/uu/1997/9> legal:documentMengingat <http://example.org/legal/document/uu/1997/9/mengingat> .
-<http://example.org/legal/document/uu/1997/9/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1997/9/mengingat/point> .
-<http://example.org/legal/document/uu/1997/9/mengingat/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/1997/9/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1997/9/mengingat/point/description> .
-<http://example.org/legal/document/uu/1997/9/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1997/9/mengingat/point/0001> .
-<http://example.org/legal/document/uu/1997/9/mengingat/point/0001> legal:pointHasKey "1" .
-<http://example.org/legal/document/uu/1997/9/mengingat/point/0001/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 11, dan Pasal 20 ayat (1) Undang - Undang Dasar 1945;" .
-<http://example.org/legal/document/uu/1997/9/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1997/9/mengingat/point/0001/text> .
-<http://example.org/legal/document/uu/1997/9/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1997/9/mengingat/point/0002> .
-<http://example.org/legal/document/uu/1997/9/mengingat/point/0002> legal:pointHasKey "2" .
-<http://example.org/legal/document/uu/1997/9/mengingat/point/0002/text> legal:textHasTextString "Undang - undang Nomor 8 Tahun 1978 tentang Pengesahan Perjanjian mengenai Pencegahan Penyebaran Senjata - senjata Nuklir, (Lembaran Negara Tahun 1978 Nomor 53, Tambahan Lembaran Negara Nomor 3129); Dengan persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG - UNDANG TENTANG PENGESAHAN TREATY ON THE SOUTHEAST ASIA NUCLEAR WEAPON FREE ZONE (TRAKTAT KA WASAN BEBAS SENJATA NUKLIR DI ASIA TENGGARA)." .
-<http://example.org/legal/document/uu/1997/9/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1997/9/mengingat/point/0002/text> .
-<http://example.org/legal/document/uu/1997/9> legal:documentMenimbang <http://example.org/legal/document/uu/1997/9/menimbang> .
-<http://example.org/legal/document/uu/1997/9/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/1997/9/menimbang/point> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/1997/9/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1997/9/menimbang/point/description> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1997/9/menimbang/point/a> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/a/text> legal:textHasTextString "bahwa pembangunan nasional bertujuan untuk mewujudkan masyarakat adil dan makmur yang merata materiil dan spiritual berdasarkan Pancasila dan Undang - Undang Dasar 1945 dalam wadah Negara Kesatuan Republik Indonesia yang merdeka, berdaulat, bersatu, dan berkedaulatan rakyat dalam suasana perikehidupan bangsa ya ng aman, tenteram, tertib, dan dinamis dalam lingkungan pergaulan dunia yang merdeka, adil, bersahabat, tertib, dan damai;" .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/1997/9/menimbang/point/a/text> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1997/9/menimbang/point/b> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/b/text> legal:textHasTextString "bahwa untuk mewujudkan tujuan pembangunan nasional tersebut, perlu dilakukan upaya terus - menerus dalam rangka melaksanakan kete rtiban dunia berdasarkan kemerdekaan, perdamaian abadi, dan keadilan sosial melalui kerja sama internasional dan regional, khususnya kerja sama di antara negara - negara Asia Tenggara, yang merupakan bagian dari pelaksanaan politik luar negeri bebas dan akti f yang diabdikan untuk kepentingan nasional dalam rangka memperkuat ketahanan regional yang didukung oleh dan berdampak kepada ketahanan nasional negara anggota masing - masing menuju terwujudnya kawasan Asia Tenggara yang damai, bebas, netral, sejahtera, da n bebas senjata nuklir;" .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/1997/9/menimbang/point/b/text> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1997/9/menimbang/point/c> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/c> legal:pointHasKey "c" .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/c/text> legal:textHasTextString "bahwa dengan adanya kecenderungan penggunaan dan penyebaran senjata nuklir mengancam perdamaian dan keamanan internasional, perlu dilakukan usaha perlucutan senjata serta pembatasan persenjataan, terutama senjata nuklir guna m encegah timbulnya perang nuklir sehingga pada akhirnya dapat memperkukuh perdamaian dan keamanan internasional serta usaha pencapaian kemajuan ekonomi dan sosial;" .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/1997/9/menimbang/point/c/text> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1997/9/menimbang/point/d> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/d> legal:pointHasKey "d" .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/d/text> legal:textHasTextString "bahwa ... d. bahwa salah satu wujud pembatasa n persenjataan tersebut adalah pembatasan kepemilikan serta ruang gerak senjata nuklir, sebagaimana dimaksud dalam Pasal VII Treaty on the Non Proliferation of Nuclear Weapons/NPT, 1968 (Perjanjian mengenai Pencegahan Penyebaran Senjata - senjata Nuklir), ya ng memberi hak kepada sekelompok negara untuk membuat perjanjian regional guna menjamin sepenuhnya ketidakhadiran senjata nuklir di wilayahnya masing - masing;" .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/1997/9/menimbang/point/d/text> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1997/9/menimbang/point/e> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/e> legal:pointHasKey "e" .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/e/text> legal:textHasTextString "bahwa negara - negara Asia Tenggara berkeinginan memelihara perdamaian dan keamanan di kawasan dengan semangat hidup berdampingan secara damai, saling pengertian, dan kerja sama sebagaimana tertuang dalam Deklarasi Zone of Peace, Freedom and Neutrality/ZOPFAN (Kawasan Damai, Bebas, dan Netral) yang ditandatangani di Kuala Lumpur pada tanggal 27 Nop ember 1971;" .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/e> legal:pointHasText <http://example.org/legal/document/uu/1997/9/menimbang/point/e/text> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1997/9/menimbang/point/f> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/f> legal:pointHasKey "f" .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/f/text> legal:textHasTextString "bahwa pada tanggal 24 Februari 1976 negara - negara ASEAN telah menandatangani Treaty of Amity and Cooperation/TAC (Traktat Persahabatan dan Kerja Sama) sebagai salah satu komponen penting ZOPFAN;" .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/f> legal:pointHasText <http://example.org/legal/document/uu/1997/9/menimbang/point/f/text> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1997/9/menimbang/point/g> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/g> legal:pointHasKey "g" .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/g/text> legal:textHasTextString "bahwa Treaty on the Southeast Asia Nu lear Weapon Free Zone (Traktat Kawasan Bebas Senjata Nuklir di Asia Tenggara) yang merupakan komponen penting ZOPFAN lainnya, telah ditandatangani oleh seluruh negara Asia Tenggara, termasuk negara Republik Indonesia, pada tanggal 15 Desember 1995 di Bangk ok;" .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/g> legal:pointHasText <http://example.org/legal/document/uu/1997/9/menimbang/point/g/text> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1997/9/menimbang/point/h> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/h> legal:pointHasKey "h" .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/h/text> legal:textHasTextString "bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a, b, c, d, e, f, dan g tersebut, dipandang perlu mengesahkan Treaty on the Southeast Asia Nuclear Weapon Free Zone (Traktat Kawasan Bebas Senjata Nuklir di Asia Tenggara) dengan Und ang - undang;" .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/h> legal:pointHasText <http://example.org/legal/document/uu/1997/9/menimbang/point/h/text> .
-<http://example.org/legal/document/uu/1997/9> legal:documentHasDisahkanPengesah "SOEHARTO" .
-<http://example.org/legal/document/uu/1997/9> legal:documentHasDisahkanLocation "Jakarta" .
-<http://example.org/legal/document/uu/1997/9> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA" .
-<http://example.org/legal/document/uu/1997/9> a legal:Document .
-<http://example.org/legal/document/uu/1997/9/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/1997/9/pasal/0001> a legal:Pasal .
-<http://example.org/legal/document/uu/1997/9/pasal/0001/version/19970402> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1997/9/pasal/0001/version/19970402/text> a legal:Text .
-<http://example.org/legal/document/uu/1997/9/pasal/0002> a legal:Pasal .
-<http://example.org/legal/document/uu/1997/9/pasal/0002/version/19970402> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1997/9/pasal/0002/version/19970402/text> a legal:Text .
-<http://example.org/legal/document/uu/1997/9/mengingat> a legal:Mengingat .
-<http://example.org/legal/document/uu/1997/9/mengingat/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1997/9/mengingat/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1997/9/mengingat/point/0001> a legal:Point .
-<http://example.org/legal/document/uu/1997/9/mengingat/point/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/1997/9/mengingat/point/0002> a legal:Point .
-<http://example.org/legal/document/uu/1997/9/mengingat/point/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/1997/9/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1997/9/menimbang/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/a> a legal:Point .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/a/text> a legal:Text .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/b> a legal:Point .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/c> a legal:Point .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/d> a legal:Point .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/e> a legal:Point .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/e/text> a legal:Text .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/f> a legal:Point .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/f/text> a legal:Text .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/g> a legal:Point .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/g/text> a legal:Text .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/h> a legal:Point .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/h/text> a legal:Text .
-<http://example.org/legal/document/uu/1997/9/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1997/9/pasals> .
-<http://example.org/legal/document/uu/1997/9/pasal/0001/version/19970402> legal:partOf <http://example.org/legal/document/uu/1997/9/pasal/0001> .
-<http://example.org/legal/document/uu/1997/9/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1997/9> .
-<http://example.org/legal/document/uu/1997/9/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1997/9/pasals> .
-<http://example.org/legal/document/uu/1997/9/pasal/0002/version/19970402> legal:partOf <http://example.org/legal/document/uu/1997/9/pasal/0002> .
-<http://example.org/legal/document/uu/1997/9/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1997/9> .
-<http://example.org/legal/document/uu/1997/9/mengingat/point> legal:partOf <http://example.org/legal/document/uu/1997/9/mengingat> .
-<http://example.org/legal/document/uu/1997/9/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1997/9/mengingat/point> .
-<http://example.org/legal/document/uu/1997/9/mengingat/point/0001/text> legal:partOf <http://example.org/legal/document/uu/1997/9/mengingat/point/0001> .
-<http://example.org/legal/document/uu/1997/9/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1997/9/mengingat/point> .
-<http://example.org/legal/document/uu/1997/9/mengingat/point/0002/text> legal:partOf <http://example.org/legal/document/uu/1997/9/mengingat/point/0002> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point> legal:partOf <http://example.org/legal/document/uu/1997/9/menimbang> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1997/9/menimbang/point> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/a/text> legal:partOf <http://example.org/legal/document/uu/1997/9/menimbang/point/a> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1997/9/menimbang/point> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/b/text> legal:partOf <http://example.org/legal/document/uu/1997/9/menimbang/point/b> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/1997/9/menimbang/point> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/c/text> legal:partOf <http://example.org/legal/document/uu/1997/9/menimbang/point/c> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/d> legal:partOf <http://example.org/legal/document/uu/1997/9/menimbang/point> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/d/text> legal:partOf <http://example.org/legal/document/uu/1997/9/menimbang/point/d> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/e> legal:partOf <http://example.org/legal/document/uu/1997/9/menimbang/point> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/e/text> legal:partOf <http://example.org/legal/document/uu/1997/9/menimbang/point/e> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/f> legal:partOf <http://example.org/legal/document/uu/1997/9/menimbang/point> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/f/text> legal:partOf <http://example.org/legal/document/uu/1997/9/menimbang/point/f> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/g> legal:partOf <http://example.org/legal/document/uu/1997/9/menimbang/point> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/g/text> legal:partOf <http://example.org/legal/document/uu/1997/9/menimbang/point/g> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/h> legal:partOf <http://example.org/legal/document/uu/1997/9/menimbang/point> .
-<http://example.org/legal/document/uu/1997/9/menimbang/point/h/text> legal:partOf <http://example.org/legal/document/uu/1997/9/menimbang/point/h> .
+<http://example.org/legal/peraturan/uu/1997/9> legal:daftarPasal <http://example.org/legal/peraturan/uu/1997/9/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1997/9/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1997/9/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1997/9/pasal/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1997/9/pasal/0001> legal:versi <http://example.org/legal/peraturan/uu/1997/9/pasal/0001/versi/19970402> .
+<http://example.org/legal/peraturan/uu/1997/9> legal:pasal <http://example.org/legal/peraturan/uu/1997/9/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1997/9/pasal/0001/versi/19970402> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1997/9/pasal/0001/versi/19970402> legal:tanggal "1997-04-02"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1997/9/pasal/0001/versi/19970402> legal:teks "Mengesahkan Treaty on the Southeast Asia Nuclear Weapon Free Zone (Traktat Kawasan Bebas Senjata Nuklir di Asia Tenggara), yang salinan naskah asli beserta Lampirannya dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia, sebagaimana terlampir, me rupakan bagian yang tidak terpisahkan dari Undang - undang ini." .
+<http://example.org/legal/peraturan/uu/1997/9/pasal/0001/versi/19970402/text> legal:teks "Mengesahkan Treaty on the Southeast Asia Nuclear Weapon Free Zone (Traktat Kawasan Bebas Senjata Nuklir di Asia Tenggara), yang salinan naskah asli beserta Lampirannya dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia, sebagaimana terlampir, me rupakan bagian yang tidak terpisahkan dari Undang - undang ini." .
+<http://example.org/legal/peraturan/uu/1997/9/pasal/0001/versi/19970402> legal:segmen <http://example.org/legal/peraturan/uu/1997/9/pasal/0001/versi/19970402/text> .
+<http://example.org/legal/peraturan/uu/1997/9/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1997/9/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1997/9/pasal/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1997/9/pasal/0002> legal:versi <http://example.org/legal/peraturan/uu/1997/9/pasal/0002/versi/19970402> .
+<http://example.org/legal/peraturan/uu/1997/9> legal:pasal <http://example.org/legal/peraturan/uu/1997/9/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1997/9/pasal/0002/versi/19970402> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1997/9/pasal/0002/versi/19970402> legal:tanggal "1997-04-02"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1997/9/pasal/0002/versi/19970402> legal:teks "Undang - undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/1997/9/pasal/0002/versi/19970402/text> legal:teks "Undang - undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/1997/9/pasal/0002/versi/19970402> legal:segmen <http://example.org/legal/peraturan/uu/1997/9/pasal/0002/versi/19970402/text> .
+<http://example.org/legal/peraturan/uu/1997/9> legal:disahkanPada "1997-04-02"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1997/9> legal:tentang " PENGESAHAN TREATY ON THE SOUTHEAST ASIA NUCLEAR WEAPON FREE ZONE (TRAKTAT KAWASAN BEBAS SENJATA NUKLIR DI ASIA TENGGARA)" .
+<http://example.org/legal/peraturan/uu/1997/9> legal:mengingat <http://example.org/legal/peraturan/uu/1997/9/mengingat> .
+<http://example.org/legal/peraturan/uu/1997/9/mengingat> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf/description> .
+<http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf/0001> .
+<http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf/0001> legal:nomor "1" .
+<http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf/0001/text> legal:teks "Pasal 5 ayat (1), Pasal 11, dan Pasal 20 ayat (1) Undang - Undang Dasar 1945;" .
+<http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf/0001> legal:segmen <http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf/0001/text> .
+<http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf/0002> .
+<http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf/0002> legal:nomor "2" .
+<http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf/0002/text> legal:teks "Undang - undang Nomor 8 Tahun 1978 tentang Pengesahan Perjanjian mengenai Pencegahan Penyebaran Senjata - senjata Nuklir, (Lembaran Negara Tahun 1978 Nomor 53, Tambahan Lembaran Negara Nomor 3129); Dengan persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG - UNDANG TENTANG PENGESAHAN TREATY ON THE SOUTHEAST ASIA NUCLEAR WEAPON FREE ZONE (TRAKTAT KA WASAN BEBAS SENJATA NUKLIR DI ASIA TENGGARA)." .
+<http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf/0002> legal:segmen <http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf/0002/text> .
+<http://example.org/legal/peraturan/uu/1997/9> legal:menimbang <http://example.org/legal/peraturan/uu/1997/9/menimbang> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/description> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/a> legal:nomor "a" .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/a/text> legal:teks "bahwa pembangunan nasional bertujuan untuk mewujudkan masyarakat adil dan makmur yang merata materiil dan spiritual berdasarkan Pancasila dan Undang - Undang Dasar 1945 dalam wadah Negara Kesatuan Republik Indonesia yang merdeka, berdaulat, bersatu, dan berkedaulatan rakyat dalam suasana perikehidupan bangsa ya ng aman, tenteram, tertib, dan dinamis dalam lingkungan pergaulan dunia yang merdeka, adil, bersahabat, tertib, dan damai;" .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/a> legal:segmen <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/a/text> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/b> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/b> legal:nomor "b" .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/b/text> legal:teks "bahwa untuk mewujudkan tujuan pembangunan nasional tersebut, perlu dilakukan upaya terus - menerus dalam rangka melaksanakan kete rtiban dunia berdasarkan kemerdekaan, perdamaian abadi, dan keadilan sosial melalui kerja sama internasional dan regional, khususnya kerja sama di antara negara - negara Asia Tenggara, yang merupakan bagian dari pelaksanaan politik luar negeri bebas dan akti f yang diabdikan untuk kepentingan nasional dalam rangka memperkuat ketahanan regional yang didukung oleh dan berdampak kepada ketahanan nasional negara anggota masing - masing menuju terwujudnya kawasan Asia Tenggara yang damai, bebas, netral, sejahtera, da n bebas senjata nuklir;" .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/b> legal:segmen <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/b/text> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/c> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/c> legal:nomor "c" .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/c/text> legal:teks "bahwa dengan adanya kecenderungan penggunaan dan penyebaran senjata nuklir mengancam perdamaian dan keamanan internasional, perlu dilakukan usaha perlucutan senjata serta pembatasan persenjataan, terutama senjata nuklir guna m encegah timbulnya perang nuklir sehingga pada akhirnya dapat memperkukuh perdamaian dan keamanan internasional serta usaha pencapaian kemajuan ekonomi dan sosial;" .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/c> legal:segmen <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/c/text> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/d> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/d> legal:nomor "d" .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/d/text> legal:teks "bahwa ... d. bahwa salah satu wujud pembatasa n persenjataan tersebut adalah pembatasan kepemilikan serta ruang gerak senjata nuklir, sebagaimana dimaksud dalam Pasal VII Treaty on the Non Proliferation of Nuclear Weapons/NPT, 1968 (Perjanjian mengenai Pencegahan Penyebaran Senjata - senjata Nuklir), ya ng memberi hak kepada sekelompok negara untuk membuat perjanjian regional guna menjamin sepenuhnya ketidakhadiran senjata nuklir di wilayahnya masing - masing;" .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/d> legal:segmen <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/d/text> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/e> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/e> legal:nomor "e" .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/e/text> legal:teks "bahwa negara - negara Asia Tenggara berkeinginan memelihara perdamaian dan keamanan di kawasan dengan semangat hidup berdampingan secara damai, saling pengertian, dan kerja sama sebagaimana tertuang dalam Deklarasi Zone of Peace, Freedom and Neutrality/ZOPFAN (Kawasan Damai, Bebas, dan Netral) yang ditandatangani di Kuala Lumpur pada tanggal 27 Nop ember 1971;" .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/e> legal:segmen <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/e/text> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/f> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/f> legal:nomor "f" .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/f/text> legal:teks "bahwa pada tanggal 24 Februari 1976 negara - negara ASEAN telah menandatangani Treaty of Amity and Cooperation/TAC (Traktat Persahabatan dan Kerja Sama) sebagai salah satu komponen penting ZOPFAN;" .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/f> legal:segmen <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/f/text> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/g> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/g> legal:nomor "g" .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/g/text> legal:teks "bahwa Treaty on the Southeast Asia Nu lear Weapon Free Zone (Traktat Kawasan Bebas Senjata Nuklir di Asia Tenggara) yang merupakan komponen penting ZOPFAN lainnya, telah ditandatangani oleh seluruh negara Asia Tenggara, termasuk negara Republik Indonesia, pada tanggal 15 Desember 1995 di Bangk ok;" .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/g> legal:segmen <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/g/text> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/h> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/h> legal:nomor "h" .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/h/text> legal:teks "bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a, b, c, d, e, f, dan g tersebut, dipandang perlu mengesahkan Treaty on the Southeast Asia Nuclear Weapon Free Zone (Traktat Kawasan Bebas Senjata Nuklir di Asia Tenggara) dengan Und ang - undang;" .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/h> legal:segmen <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/h/text> .
+<http://example.org/legal/peraturan/uu/1997/9> legal:disahkanOleh "SOEHARTO" .
+<http://example.org/legal/peraturan/uu/1997/9> legal:disahkanDi "Jakarta" .
+<http://example.org/legal/peraturan/uu/1997/9> legal:jabatanPengesah "PRESIDEN REPUBLIK INDONESIA" .
+<http://example.org/legal/peraturan/uu/1997/9> a legal:Peraturan .
+<http://example.org/legal/peraturan/uu/1997/9/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/1997/9/pasal/0001> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1997/9/pasal/0001/versi/19970402> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1997/9/pasal/0001/versi/19970402/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1997/9/pasal/0002> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1997/9/pasal/0002/versi/19970402> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1997/9/pasal/0002/versi/19970402/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1997/9/mengingat> a legal:Mengingat .
+<http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf/0001> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf/0002> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang> a legal:Menimbang .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/a> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/a/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/b> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/b/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/c> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/c/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/d> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/d/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/e> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/e/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/f> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/f/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/g> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/g/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/h> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/h/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1997/9/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9> .
+<http://example.org/legal/peraturan/uu/1997/9/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1997/9/pasal/0001/versi/19970402> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1997/9/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9> .
+<http://example.org/legal/peraturan/uu/1997/9/pasal/0001/versi/19970402/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9/pasal/0001/versi/19970402> .
+<http://example.org/legal/peraturan/uu/1997/9/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1997/9/pasal/0002/versi/19970402> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1997/9/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9> .
+<http://example.org/legal/peraturan/uu/1997/9/pasal/0002/versi/19970402/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9/pasal/0002/versi/19970402> .
+<http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9/mengingat> .
+<http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf/0001> .
+<http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9/mengingat/huruf/0002> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9/menimbang> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/a> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/a/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/b> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/b/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/b> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/c> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/c/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/c> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/d> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/d/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/d> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/e> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/e/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/e> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/f> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/f/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/f> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/g> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/g/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/g> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/h> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/h/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1997/9/menimbang/huruf/h> .

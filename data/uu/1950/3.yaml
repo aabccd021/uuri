@@ -1,5 +1,5 @@
 node: &ref_0
-  nodeType: document
+  nodeType: peraturan
   docType: noTahun
   docCategory: uu
   tahun: 1950
@@ -13,7 +13,7 @@ metadata:
     content:
       type: text
       node:
-        nodeType: text
+        nodeType: segmen
         textName: text
         parentNode: *ref_1
       textString: >-
@@ -26,14 +26,14 @@ metadata:
       nodeType: mengingat
       parentNode: *ref_0
     content:
-      type: pointSet
+      type: daftarHuruf
       node: &ref_3
-        nodeType: pointSet
+        nodeType: daftarHuruf
         parentNode: *ref_2
       description:
         type: text
         node:
-          nodeType: text
+          nodeType: segmen
           textName: description
           parentNode: *ref_3
         textString: >-
@@ -45,77 +45,37 @@ metadata:
       elements:
         - type: point
           node: &ref_4
-            nodeType: point
+            nodeType: huruf
             key: a
             parentPointSetNode: *ref_3
           content:
             type: text
             node:
-              nodeType: text
+              nodeType: segmen
               textName: text
               parentNode: *ref_4
             textString: Mencabut semua peraturan tentang permohonan grasi tersebut di atas.
             references: []
         - type: point
           node: &ref_5
-            nodeType: point
+            nodeType: huruf
             key: b
             parentPointSetNode: *ref_3
           content:
             type: text
             node:
-              nodeType: text
+              nodeType: segmen
               textName: text
               parentNode: *ref_5
             textString: Menetapkan peraturan sebagai berikut "UNDANG-UNDANG TENTANG PERMOHONAN GRASI".
             references: []
   memutuskan: ''
   denganPersetujuan: ''
-opText: >-
-  Teks tidak dalam format asli.
-
-  - Kembali: tekan backspace —
-
-  AP
-
-  LEMBARAN NEGARA
-
-  No. 3, 1950
-
-  UNDANG-UNDANG REPUBLIK INDONESIA
-
-  NOMOR 3 TAHUN 1950
-
-  TENTANG
-
-  PERMOHONAN GRASI
-
-  DENGAN RAHMAT TUHAN YANG MAHA ESA
-
-  PRESIDEN REPUBLIK INDONESIA SERIKAT,
-
-  Menimbang: bahwa perlu diadakan Undang-undang baru tentang permohonan grasi, yang akan berlaku
-
-  untuk seluruh daerah Republik Indonesia Serikat:
-
-  Mengingat: Pasal-pasal 127, 160 dan 192 Konstitusi Sementara, "Gratieregeling" (Staatsblad 1933
-  No.
-
-  2), Peraturan Pemerintah Republik Indonesia No. 67 Tahun 1948 tentang permohonan
-
-  grasi, dan Verordening Militair Gezag tanggal 12-X11-1941 No. 108/D.v.O:
-
-  Dengan Persetujuan Dewan Perwakilan Rakyat
-
-  MEMUTUSKAN:
-
-  A. Mencabut semua peraturan tentang permohonan grasi tersebut di atas.
-
-  B. Menetapkan peraturan sebagai berikut "UNDANG-UNDANG TENTANG PERMOHONAN GRASI".
+  tentang: ' PERMOHONAN GRASI'
 content:
-  type: pasalSet
+  type: daftarPasal
   node:
-    nodeType: pasalSet
+    nodeType: daftarPasal
     parentNode: *ref_0
   elements:
     - type: pasal
@@ -126,13 +86,13 @@ content:
       version:
         type: pasalVersion
         node: &ref_6
-          nodeType: pasalVersion
+          nodeType: versiPasal
           version: &ref_7
             nodeType: date
             month: 7
             date: 1
             year: 1950
-          state: exists
+          state: orisinal
           parentPasalNode:
             nodeType: pasal
             key: '1'
@@ -140,7 +100,7 @@ content:
         content:
           type: text
           node:
-            nodeType: text
+            nodeType: segmen
             textName: text
             parentNode: *ref_6
           textString: >-
@@ -156,9 +116,9 @@ content:
       version:
         type: pasalVersion
         node: &ref_8
-          nodeType: pasalVersion
+          nodeType: versiPasal
           version: *ref_7
-          state: exists
+          state: orisinal
           parentPasalNode:
             nodeType: pasal
             key: '2'
@@ -166,7 +126,7 @@ content:
         content:
           type: ayatSet
           node: &ref_9
-            nodeType: ayatSet
+            nodeType: daftarAyat
             parentPasalVersionNode: *ref_8
           elements:
             - type: ayat
@@ -177,7 +137,7 @@ content:
               content:
                 type: text
                 node:
-                  nodeType: text
+                  nodeType: segmen
                   textName: text
                   parentNode: *ref_10
                 textString: >-
@@ -195,7 +155,7 @@ content:
               content:
                 type: text
                 node:
-                  nodeType: text
+                  nodeType: segmen
                   textName: text
                   parentNode: *ref_11
                 textString: >-
@@ -209,7 +169,7 @@ content:
                     end: 270
                     node:
                       parentAyatSetNode: &ref_12
-                        nodeType: ayatSet
+                        nodeType: daftarAyat
                         parentPasalVersionNode: *ref_8
                       key: 1
                       nodeType: ayat
@@ -224,7 +184,7 @@ content:
                     node:
                       key: 1
                       parentAyatSetNode:
-                        nodeType: ayatSet
+                        nodeType: daftarAyat
                         parentPasalVersionNode: *ref_8
                       nodeType: ayat
                   - start: 312
@@ -241,7 +201,7 @@ content:
               content:
                 type: text
                 node:
-                  nodeType: text
+                  nodeType: segmen
                   textName: text
                   parentNode: *ref_13
                 textString: >-
@@ -253,7 +213,7 @@ content:
                     end: 131
                     node:
                       parentAyatSetNode:
-                        nodeType: ayatSet
+                        nodeType: daftarAyat
                         parentPasalVersionNode: *ref_8
                       key: 3
                       nodeType: ayat
@@ -265,9 +225,9 @@ content:
       version:
         type: pasalVersion
         node: &ref_14
-          nodeType: pasalVersion
+          nodeType: versiPasal
           version: *ref_7
-          state: exists
+          state: orisinal
           parentPasalNode:
             nodeType: pasal
             key: '3'
@@ -275,7 +235,7 @@ content:
         content:
           type: ayatSet
           node: &ref_15
-            nodeType: ayatSet
+            nodeType: daftarAyat
             parentPasalVersionNode: *ref_14
           elements:
             - type: ayat
@@ -286,7 +246,7 @@ content:
               content:
                 type: text
                 node:
-                  nodeType: text
+                  nodeType: segmen
                   textName: text
                   parentNode: *ref_16
                 textString: >-
@@ -303,7 +263,7 @@ content:
               content:
                 type: text
                 node:
-                  nodeType: text
+                  nodeType: segmen
                   textName: text
                   parentNode: *ref_17
                 textString: >-
@@ -317,7 +277,7 @@ content:
                     node:
                       key: 1
                       parentAyatSetNode:
-                        nodeType: ayatSet
+                        nodeType: daftarAyat
                         parentPasalVersionNode: *ref_14
                       nodeType: ayat
             - type: ayat
@@ -328,7 +288,7 @@ content:
               content:
                 type: text
                 node:
-                  nodeType: text
+                  nodeType: segmen
                   textName: text
                   parentNode: *ref_18
                 textString: >-
@@ -346,7 +306,7 @@ content:
                     node:
                       key: 1
                       parentAyatSetNode:
-                        nodeType: ayatSet
+                        nodeType: daftarAyat
                         parentPasalVersionNode: *ref_14
                       nodeType: ayat
             - type: ayat
@@ -355,14 +315,14 @@ content:
                 key: 4
                 parentAyatSetNode: *ref_15
               content:
-                type: pointSet
+                type: daftarHuruf
                 node: &ref_20
-                  nodeType: pointSet
+                  nodeType: daftarHuruf
                   parentNode: *ref_19
                 description:
                   type: text
                   node:
-                    nodeType: text
+                    nodeType: segmen
                     textName: description
                     parentNode: *ref_20
                   textString: >-
@@ -372,13 +332,13 @@ content:
                 elements:
                   - type: point
                     node: &ref_21
-                      nodeType: point
+                      nodeType: huruf
                       key: a
                       parentPointSetNode: *ref_20
                     content:
                       type: text
                       node:
-                        nodeType: text
+                        nodeType: segmen
                         textName: text
                         parentNode: *ref_21
                       textString: >-
@@ -387,13 +347,13 @@ content:
                       references: []
                   - type: point
                     node: &ref_22
-                      nodeType: point
+                      nodeType: huruf
                       key: b
                       parentPointSetNode: *ref_20
                     content:
                       type: text
                       node:
-                        nodeType: text
+                        nodeType: segmen
                         textName: text
                         parentNode: *ref_22
                       textString: >-
@@ -404,13 +364,13 @@ content:
                       references: []
                   - type: point
                     node: &ref_23
-                      nodeType: point
+                      nodeType: huruf
                       key: c
                       parentPointSetNode: *ref_20
                     content:
                       type: text
                       node:
-                        nodeType: text
+                        nodeType: segmen
                         textName: text
                         parentNode: *ref_23
                       textString: >-
@@ -427,9 +387,9 @@ content:
       version:
         type: pasalVersion
         node: &ref_24
-          nodeType: pasalVersion
+          nodeType: versiPasal
           version: *ref_7
-          state: exists
+          state: orisinal
           parentPasalNode:
             nodeType: pasal
             key: '4'
@@ -437,7 +397,7 @@ content:
         content:
           type: ayatSet
           node: &ref_25
-            nodeType: ayatSet
+            nodeType: daftarAyat
             parentPasalVersionNode: *ref_24
           elements:
             - type: ayat
@@ -448,7 +408,7 @@ content:
               content:
                 type: text
                 node:
-                  nodeType: text
+                  nodeType: segmen
                   textName: text
                   parentNode: *ref_26
                 textString: >-
@@ -460,7 +420,7 @@ content:
                     end: 161
                     node:
                       parentAyatSetNode:
-                        nodeType: ayatSet
+                        nodeType: daftarAyat
                         parentPasalVersionNode: *ref_24
                       key: 1
                       nodeType: ayat
@@ -472,7 +432,7 @@ content:
               content:
                 type: text
                 node:
-                  nodeType: text
+                  nodeType: segmen
                   textName: text
                   parentNode: *ref_27
                 textString: >-
@@ -487,9 +447,9 @@ content:
       version:
         type: pasalVersion
         node: &ref_28
-          nodeType: pasalVersion
+          nodeType: versiPasal
           version: *ref_7
-          state: exists
+          state: orisinal
           parentPasalNode:
             nodeType: pasal
             key: '5'
@@ -497,7 +457,7 @@ content:
         content:
           type: ayatSet
           node: &ref_29
-            nodeType: ayatSet
+            nodeType: daftarAyat
             parentPasalVersionNode: *ref_28
           elements:
             - type: ayat
@@ -508,7 +468,7 @@ content:
               content:
                 type: text
                 node:
-                  nodeType: text
+                  nodeType: segmen
                   textName: text
                   parentNode: *ref_30
                 textString: >-
@@ -520,7 +480,7 @@ content:
                     end: 91
                     node:
                       parentAyatSetNode:
-                        nodeType: ayatSet
+                        nodeType: daftarAyat
                         parentPasalVersionNode: *ref_28
                       key: 1
                       nodeType: ayat
@@ -538,7 +498,7 @@ content:
               content:
                 type: text
                 node:
-                  nodeType: text
+                  nodeType: segmen
                   textName: text
                   parentNode: *ref_31
                 textString: >-
@@ -554,7 +514,7 @@ content:
               content:
                 type: text
                 node:
-                  nodeType: text
+                  nodeType: segmen
                   textName: text
                   parentNode: *ref_32
                 textString: >-
@@ -565,7 +525,7 @@ content:
                     end: 154
                     node:
                       parentAyatSetNode:
-                        nodeType: ayatSet
+                        nodeType: daftarAyat
                         parentPasalVersionNode: *ref_28
                       key: 4
                       nodeType: ayat
@@ -574,7 +534,7 @@ content:
                     node:
                       key: 1
                       parentAyatSetNode:
-                        nodeType: ayatSet
+                        nodeType: daftarAyat
                         parentPasalVersionNode: *ref_28
                       nodeType: ayat
     - type: pasal
@@ -585,9 +545,9 @@ content:
       version:
         type: pasalVersion
         node: &ref_33
-          nodeType: pasalVersion
+          nodeType: versiPasal
           version: *ref_7
-          state: exists
+          state: orisinal
           parentPasalNode:
             nodeType: pasal
             key: '6'
@@ -595,7 +555,7 @@ content:
         content:
           type: ayatSet
           node: &ref_34
-            nodeType: ayatSet
+            nodeType: daftarAyat
             parentPasalVersionNode: *ref_33
           elements:
             - type: ayat
@@ -604,14 +564,14 @@ content:
                 key: 1
                 parentAyatSetNode: *ref_34
               content:
-                type: pointSet
+                type: daftarHuruf
                 node: &ref_36
-                  nodeType: pointSet
+                  nodeType: daftarHuruf
                   parentNode: *ref_35
                 description:
                   type: text
                   node:
-                    nodeType: text
+                    nodeType: segmen
                     textName: description
                     parentNode: *ref_36
                   textString: >-
@@ -638,26 +598,26 @@ content:
                 elements:
                   - type: point
                     node: &ref_37
-                      nodeType: point
+                      nodeType: huruf
                       key: '1'
                       parentPointSetNode: *ref_36
                     content:
                       type: text
                       node:
-                        nodeType: text
+                        nodeType: segmen
                         textName: text
                         parentNode: *ref_37
                       textString: 'apabila keputusan pengadilan itu mengenai hukuman mati:'
                       references: []
                   - type: point
                     node: &ref_38
-                      nodeType: point
+                      nodeType: huruf
                       key: '2'
                       parentPointSetNode: *ref_36
                     content:
                       type: text
                       node:
-                        nodeType: text
+                        nodeType: segmen
                         textName: text
                         parentNode: *ref_38
                       textString: >-
@@ -666,13 +626,13 @@ content:
                       references: []
                   - type: point
                     node: &ref_39
-                      nodeType: point
+                      nodeType: huruf
                       key: '3'
                       parentPointSetNode: *ref_36
                     content:
                       type: text
                       node:
-                        nodeType: text
+                        nodeType: segmen
                         textName: text
                         parentNode: *ref_39
                       textString: >-
@@ -705,7 +665,7 @@ content:
                           end: 811
                           node:
                             parentAyatSetNode:
-                              nodeType: ayatSet
+                              nodeType: daftarAyat
                               parentPasalVersionNode: *ref_33
                             key: 3
                             nodeType: ayat
@@ -714,7 +674,7 @@ content:
                           node:
                             key: 6
                             parentAyatSetNode: &ref_40
-                              nodeType: ayatSet
+                              nodeType: daftarAyat
                               parentPasalVersionNode: *ref_33
                             nodeType: ayat
                         - start: 194
@@ -779,7 +739,7 @@ content:
               content:
                 type: text
                 node:
-                  nodeType: text
+                  nodeType: segmen
                   textName: text
                   parentNode: *ref_41
                 textString: >-
@@ -800,7 +760,7 @@ content:
               content:
                 type: text
                 node:
-                  nodeType: text
+                  nodeType: segmen
                   textName: text
                   parentNode: *ref_42
                 textString: >-
@@ -813,7 +773,7 @@ content:
                     node:
                       key: 1
                       parentAyatSetNode: &ref_43
-                        nodeType: ayatSet
+                        nodeType: daftarAyat
                         parentPasalVersionNode: *ref_33
                       nodeType: ayat
                   - start: 54
@@ -830,7 +790,7 @@ content:
               content:
                 type: text
                 node:
-                  nodeType: text
+                  nodeType: segmen
                   textName: text
                   parentNode: *ref_44
                 textString: >-

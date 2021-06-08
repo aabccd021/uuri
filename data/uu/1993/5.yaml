@@ -1,5 +1,5 @@
 node: &ref_0
-  nodeType: document
+  nodeType: peraturan
   docType: noTahun
   docCategory: uu
   tahun: 1993
@@ -11,14 +11,14 @@ metadata:
       nodeType: menimbang
       parentNode: *ref_0
     content:
-      type: pointSet
+      type: daftarHuruf
       node: &ref_2
-        nodeType: pointSet
+        nodeType: daftarHuruf
         parentNode: *ref_1
       description:
         type: text
         node:
-          nodeType: text
+          nodeType: segmen
           textName: description
           parentNode: *ref_2
         textString: ''
@@ -26,13 +26,13 @@ metadata:
       elements:
         - type: point
           node: &ref_3
-            nodeType: point
+            nodeType: huruf
             key: a
             parentPointSetNode: *ref_2
           content:
             type: text
             node:
-              nodeType: text
+              nodeType: segmen
               textName: text
               parentNode: *ref_3
             textString: >-
@@ -43,13 +43,13 @@ metadata:
             references: []
         - type: point
           node: &ref_4
-            nodeType: point
+            nodeType: huruf
             key: b
             parentPointSetNode: *ref_2
           content:
             type: text
             node:
-              nodeType: text
+              nodeType: segmen
               textName: text
               parentNode: *ref_4
             textString: bahwa tambahan dan perubahan dimaksud perlu diatur dengan Undang - undang;
@@ -60,14 +60,14 @@ metadata:
       nodeType: mengingat
       parentNode: *ref_0
     content:
-      type: pointSet
+      type: daftarHuruf
       node: &ref_6
-        nodeType: pointSet
+        nodeType: daftarHuruf
         parentNode: *ref_5
       description:
         type: text
         node:
-          nodeType: text
+          nodeType: segmen
           textName: description
           parentNode: *ref_6
         textString: ''
@@ -75,26 +75,26 @@ metadata:
       elements:
         - type: point
           node: &ref_7
-            nodeType: point
+            nodeType: huruf
             key: '1'
             parentPointSetNode: *ref_6
           content:
             type: text
             node:
-              nodeType: text
+              nodeType: segmen
               textName: text
               parentNode: *ref_7
             textString: Pasal 5 ayat (1), Pasal 20 ayat (1), dan Pasal 23 ayat (1) Undang - Undang Dasar 1945;
             references: []
         - type: point
           node: &ref_8
-            nodeType: point
+            nodeType: huruf
             key: '2'
             parentPointSetNode: *ref_6
           content:
             type: text
             node:
-              nodeType: text
+              nodeType: segmen
               textName: text
               parentNode: *ref_8
             textString: >-
@@ -104,13 +104,13 @@ metadata:
             references: []
         - type: point
           node: &ref_9
-            nodeType: point
+            nodeType: huruf
             key: '3'
             parentPointSetNode: *ref_6
           content:
             type: text
             node:
-              nodeType: text
+              nodeType: segmen
               textName: text
               parentNode: *ref_9
             textString: >-
@@ -122,40 +122,11 @@ metadata:
             references: []
   memutuskan: ''
   denganPersetujuan: ''
-opText: |-
-  UNDANG - UNDANG REPUBLIK INDONESIA
-  NOMOR 5 TAHUN 1993
-  TENTANG
-  TAMBAHAN DAN PERUBAHAN ATAS ANGGARAN PENDAPATAN
-  DAN BELANJA NEGARA TAHUN ANGGARAN 1992/93
-  DENGAN RAHMAT TUHAN YANG MAHA ESA
-  PRESIDEN REPUBLIK INDONESIA,
-  Menimbang : a. bahwa untuk lebih menyesuaikan dan menyempurnakan pelaksanaan
-  program Pemerintah dala m Tahun Anggaran 1992/93 diperlukan
-  tambahan dan perubahan atas Anggaran Pendapatan dan Belanja
-  Negara Tahun Anggaran 1992/93 sebagaimana dimaksud dalam
-  Undang - undang Nomor 6 Tahun 1992;
-  b. bahwa tambahan dan perubahan dimaksud perlu diatur dengan
-  Undang - undang;
-  Mengingat : 1. Pasal 5 ayat (1), Pasal 20 ayat (1), dan Pasal 23 ayat (1)
-  Undang - Undang Dasar 1945;
-  2. Indische Comptabiliteitswet (Staatsblad Tahun 1925 Nomor 448)
-  sebagaimana telah beberapa kali diubah, terakhir dengan
-  Undang - undang Nomor 9 Ta hun 1968 (Lembaran Negara Tahun 1968
-  Nomor 53, Tambahan Lembaran Negara Nomor 2860);
-  3. Undang - undang Nomor 6 Tahun 1992 tentang Anggaran Pendapatan
-  dan Belanja Negara Tahun Anggaran 1992/93 (Lembaran Negara
-  Tahun 1992 Nomor 28, Tambahan Lembaran Negara Nomor 3471);
-  Dengan persetujuan
-  DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA
-  MEMUTUSKAN:
-  Menetapkan : UNDANG - UNDANG TENTANG TAMBAHAN DAN PERUBAHAN
-  ATAS ANGGARAN PENDAPATAN DAN BELANJA NEGARA
-  TAHUN ANGGARAN 1992/93.
+  tentang: ' TAMBAHAN DAN PERUBAHAN ATAS ANGGARAN PENDAPATAN DAN BELANJA NEGARA TAHUN ANGGARAN 1992/93'
 content:
-  type: pasalSet
+  type: daftarPasal
   node:
-    nodeType: pasalSet
+    nodeType: daftarPasal
     parentNode: *ref_0
   elements:
     - type: pasal
@@ -166,13 +137,13 @@ content:
       version:
         type: pasalVersion
         node: &ref_10
-          nodeType: pasalVersion
+          nodeType: versiPasal
           version: &ref_19
             nodeType: date
             month: 6
             date: 30
             year: 1993
-          state: exists
+          state: orisinal
           parentPasalNode:
             nodeType: pasal
             key: '1'
@@ -180,7 +151,7 @@ content:
         content:
           type: ayatSet
           node: &ref_11
-            nodeType: ayatSet
+            nodeType: daftarAyat
             parentPasalVersionNode: *ref_10
           elements:
             - type: ayat
@@ -189,14 +160,14 @@ content:
                 key: 1
                 parentAyatSetNode: *ref_11
               content:
-                type: pointSet
+                type: daftarHuruf
                 node: &ref_13
-                  nodeType: pointSet
+                  nodeType: daftarHuruf
                   parentNode: *ref_12
                 description:
                   type: text
                   node:
-                    nodeType: text
+                    nodeType: segmen
                     textName: description
                     parentNode: *ref_13
                   textString: >-
@@ -207,13 +178,13 @@ content:
                 elements:
                   - type: point
                     node: &ref_14
-                      nodeType: point
+                      nodeType: huruf
                       key: a
                       parentPointSetNode: *ref_13
                     content:
                       type: text
                       node:
-                        nodeType: text
+                        nodeType: segmen
                         textName: text
                         parentNode: *ref_14
                       textString: >-
@@ -222,18 +193,18 @@ content:
                       references: []
                   - type: point
                     node: &ref_15
-                      nodeType: point
+                      nodeType: huruf
                       key: b
                       parentPointSetNode: *ref_13
                     content:
-                      type: pointSet
+                      type: daftarHuruf
                       node: &ref_16
-                        nodeType: pointSet
+                        nodeType: daftarHuruf
                         parentNode: *ref_15
                       description:
                         type: text
                         node:
-                          nodeType: text
+                          nodeType: segmen
                           textName: description
                           parentNode: *ref_16
                         textString: Pendapatan Pembangunan bertambah dengan Rp.
@@ -241,13 +212,13 @@ content:
                       elements:
                         - type: point
                           node: &ref_17
-                            nodeType: point
+                            nodeType: huruf
                             key: '1'
                             parentPointSetNode: *ref_16
                           content:
                             type: text
                             node:
-                              nodeType: text
+                              nodeType: segmen
                               textName: text
                               parentNode: *ref_17
                             textString: >-
@@ -262,7 +233,7 @@ content:
               content:
                 type: text
                 node:
-                  nodeType: text
+                  nodeType: segmen
                   textName: text
                   parentNode: *ref_18
                 textString: >-
@@ -275,7 +246,7 @@ content:
                     node:
                       key: 1
                       parentAyatSetNode:
-                        nodeType: ayatSet
+                        nodeType: daftarAyat
                         parentPasalVersionNode: *ref_10
                       nodeType: ayat
                   - start: 92
@@ -283,22 +254,22 @@ content:
                     node:
                       key: b
                       parentPointSetNode:
-                        nodeType: pointSet
+                        nodeType: daftarHuruf
                         parentNode:
                           nodeType: ayat
                           key: 1
                           parentAyatSetNode:
-                            nodeType: ayatSet
+                            nodeType: daftarAyat
                             parentPasalVersionNode: *ref_10
-                      nodeType: point
+                      nodeType: huruf
                   - start: 80
                     end: 87
                     node:
                       key: a
                       parentPointSetNode:
-                        nodeType: pointSet
+                        nodeType: daftarHuruf
                         parentNode: *ref_10
-                      nodeType: point
+                      nodeType: huruf
     - type: pasal
       node:
         nodeType: pasal
@@ -307,9 +278,9 @@ content:
       version:
         type: pasalVersion
         node: &ref_20
-          nodeType: pasalVersion
+          nodeType: versiPasal
           version: *ref_19
-          state: exists
+          state: orisinal
           parentPasalNode:
             nodeType: pasal
             key: '2'
@@ -317,7 +288,7 @@ content:
         content:
           type: ayatSet
           node: &ref_21
-            nodeType: ayatSet
+            nodeType: daftarAyat
             parentPasalVersionNode: *ref_20
           elements:
             - type: ayat
@@ -326,14 +297,14 @@ content:
                 key: 1
                 parentAyatSetNode: *ref_21
               content:
-                type: pointSet
+                type: daftarHuruf
                 node: &ref_23
-                  nodeType: pointSet
+                  nodeType: daftarHuruf
                   parentNode: *ref_22
                 description:
                   type: text
                   node:
-                    nodeType: text
+                    nodeType: segmen
                     textName: description
                     parentNode: *ref_23
                   textString: >-
@@ -344,13 +315,13 @@ content:
                 elements:
                   - type: point
                     node: &ref_24
-                      nodeType: point
+                      nodeType: huruf
                       key: a
                       parentPointSetNode: *ref_23
                     content:
                       type: text
                       node:
-                        nodeType: text
+                        nodeType: segmen
                         textName: text
                         parentNode: *ref_24
                       textString: >-
@@ -359,18 +330,18 @@ content:
                       references: []
                   - type: point
                     node: &ref_25
-                      nodeType: point
+                      nodeType: huruf
                       key: b
                       parentPointSetNode: *ref_23
                     content:
-                      type: pointSet
+                      type: daftarHuruf
                       node: &ref_26
-                        nodeType: pointSet
+                        nodeType: daftarHuruf
                         parentNode: *ref_25
                       description:
                         type: text
                         node:
-                          nodeType: text
+                          nodeType: segmen
                           textName: description
                           parentNode: *ref_26
                         textString: Belanja Pembangunan bertambah dengan Rp.
@@ -378,13 +349,13 @@ content:
                       elements:
                         - type: point
                           node: &ref_27
-                            nodeType: point
+                            nodeType: huruf
                             key: '1'
                             parentPointSetNode: *ref_26
                           content:
                             type: text
                             node:
-                              nodeType: text
+                              nodeType: segmen
                               textName: text
                               parentNode: *ref_27
                             textString: >-
@@ -399,7 +370,7 @@ content:
               content:
                 type: text
                 node:
-                  nodeType: text
+                  nodeType: segmen
                   textName: text
                   parentNode: *ref_28
                 textString: >-
@@ -412,7 +383,7 @@ content:
                     node:
                       key: 1
                       parentAyatSetNode:
-                        nodeType: ayatSet
+                        nodeType: daftarAyat
                         parentPasalVersionNode: *ref_20
                       nodeType: ayat
                   - start: 89
@@ -420,22 +391,22 @@ content:
                     node:
                       key: b
                       parentPointSetNode:
-                        nodeType: pointSet
+                        nodeType: daftarHuruf
                         parentNode:
                           nodeType: ayat
                           key: 1
                           parentAyatSetNode:
-                            nodeType: ayatSet
+                            nodeType: daftarAyat
                             parentPasalVersionNode: *ref_20
-                      nodeType: point
+                      nodeType: huruf
                   - start: 77
                     end: 84
                     node:
                       key: a
                       parentPointSetNode:
-                        nodeType: pointSet
+                        nodeType: daftarHuruf
                         parentNode: *ref_20
-                      nodeType: point
+                      nodeType: huruf
     - type: pasal
       node:
         nodeType: pasal
@@ -444,9 +415,9 @@ content:
       version:
         type: pasalVersion
         node: &ref_29
-          nodeType: pasalVersion
+          nodeType: versiPasal
           version: *ref_19
-          state: exists
+          state: orisinal
           parentPasalNode:
             nodeType: pasal
             key: '3'
@@ -454,7 +425,7 @@ content:
         content:
           type: ayatSet
           node: &ref_30
-            nodeType: ayatSet
+            nodeType: daftarAyat
             parentPasalVersionNode: *ref_29
           elements:
             - type: ayat
@@ -465,7 +436,7 @@ content:
               content:
                 type: text
                 node:
-                  nodeType: text
+                  nodeType: segmen
                   textName: text
                   parentNode: *ref_31
                 textString: >-
@@ -483,7 +454,7 @@ content:
               content:
                 type: text
                 node:
-                  nodeType: text
+                  nodeType: segmen
                   textName: text
                   parentNode: *ref_32
                 textString: >-
@@ -499,9 +470,9 @@ content:
       version:
         type: pasalVersion
         node: &ref_33
-          nodeType: pasalVersion
+          nodeType: versiPasal
           version: *ref_19
-          state: exists
+          state: orisinal
           parentPasalNode:
             nodeType: pasal
             key: '4'
@@ -509,7 +480,7 @@ content:
         content:
           type: text
           node:
-            nodeType: text
+            nodeType: segmen
             textName: text
             parentNode: *ref_33
           textString: >-
@@ -527,9 +498,9 @@ content:
       version:
         type: pasalVersion
         node: &ref_34
-          nodeType: pasalVersion
+          nodeType: versiPasal
           version: *ref_19
-          state: exists
+          state: orisinal
           parentPasalNode:
             nodeType: pasal
             key: '5'
@@ -537,7 +508,7 @@ content:
         content:
           type: text
           node:
-            nodeType: text
+            nodeType: segmen
             textName: text
             parentNode: *ref_34
           textString: >-

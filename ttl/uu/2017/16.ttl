@@ -1,102 +1,108 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2017/16> legal:documentHasPasalSet <http://example.org/legal/document/uu/2017/16/pasals> .
-<http://example.org/legal/document/uu/2017/16/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2017/16/pasal/0001> .
-<http://example.org/legal/document/uu/2017/16/pasal/0001> legal:pasalHasKey 1 .
-<http://example.org/legal/document/uu/2017/16/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2017/16/pasal/0001/version/20171122> .
-<http://example.org/legal/document/uu/2017/16> legal:documentHasPasal <http://example.org/legal/document/uu/2017/16/pasal/0001> .
-<http://example.org/legal/document/uu/2017/16/pasal/0001/version/20171122> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/2017/16/pasal/0001/version/20171122> legal:pasalVersionHasVersionDate "2017-11-22"^^xsd:date .
-<http://example.org/legal/document/uu/2017/16/pasal/0001/version/20171122> legal:pasalVersionHasRawText "Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun 2017 tentang Perubahan atas Undang-Undang Nomor 17 Tahun 2013 tentang Organisasi Kemasyarakatan (Lembaran Negara Republik Indonesia Tahun 2017 Nomor 138, Tambahan Lembaran Negara Republik Indonesia Nomor 6084) ditetapkan menjadi Undang-Undang dan melampirkannya sebagai bagian yang tidak terpisahkan dari Undang-Undang ini." .
-<http://example.org/legal/document/uu/2017/16/pasal/0001/version/20171122/text> legal:textHasTextString "Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun 2017 tentang Perubahan atas Undang-Undang Nomor 17 Tahun 2013 tentang Organisasi Kemasyarakatan (Lembaran Negara Republik Indonesia Tahun 2017 Nomor 138, Tambahan Lembaran Negara Republik Indonesia Nomor 6084) ditetapkan menjadi Undang-Undang dan melampirkannya sebagai bagian yang tidak terpisahkan dari Undang-Undang ini." .
-<http://example.org/legal/document/uu/2017/16/pasal/0001/version/20171122> legal:pasalVersionHasText <http://example.org/legal/document/uu/2017/16/pasal/0001/version/20171122/text> .
-<http://example.org/legal/document/uu/2017/16/pasal/0001/version/20171122/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/17> .
-<http://example.org/legal/document/uu/2017/16/pasal/0001/version/20171122/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2017/2> .
-<http://example.org/legal/document/uu/2017/16/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2017/16/pasal/0002> .
-<http://example.org/legal/document/uu/2017/16/pasal/0002> legal:pasalHasKey 2 .
-<http://example.org/legal/document/uu/2017/16/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2017/16/pasal/0002/version/20171122> .
-<http://example.org/legal/document/uu/2017/16> legal:documentHasPasal <http://example.org/legal/document/uu/2017/16/pasal/0002> .
-<http://example.org/legal/document/uu/2017/16/pasal/0002/version/20171122> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/2017/16/pasal/0002/version/20171122> legal:pasalVersionHasVersionDate "2017-11-22"^^xsd:date .
-<http://example.org/legal/document/uu/2017/16/pasal/0002/version/20171122> legal:pasalVersionHasRawText "Undang-Undang ini mulai berlaku pada tanggal diundangkan. — PRESIDEN 3 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/2017/16/pasal/0002/version/20171122/text> legal:textHasTextString "Undang-Undang ini mulai berlaku pada tanggal diundangkan. — PRESIDEN 3 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/2017/16/pasal/0002/version/20171122> legal:pasalVersionHasText <http://example.org/legal/document/uu/2017/16/pasal/0002/version/20171122/text> .
-<http://example.org/legal/document/uu/2017/16> legal:documentHasDisahkanDate "2017-11-22"^^xsd:date .
-<http://example.org/legal/document/uu/2017/16> legal:documentMengingat <http://example.org/legal/document/uu/2017/16/mengingat> .
-<http://example.org/legal/document/uu/2017/16/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2017/16/mengingat/point> .
-<http://example.org/legal/document/uu/2017/16/mengingat/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/2017/16/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2017/16/mengingat/point/description> .
-<http://example.org/legal/document/uu/2017/16/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2017/16/mengingat/point/0001> .
-<http://example.org/legal/document/uu/2017/16/mengingat/point/0001> legal:pointHasKey "1" .
-<http://example.org/legal/document/uu/2017/16/mengingat/point/0001/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 20, Pasal 22 ayat (2) Undang- Undang Dasar Negara Republik Indonesia Tahun 1945:" .
-<http://example.org/legal/document/uu/2017/16/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/2017/16/mengingat/point/0001/text> .
-<http://example.org/legal/document/uu/2017/16/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2017/16/mengingat/point/0002> .
-<http://example.org/legal/document/uu/2017/16/mengingat/point/0002> legal:pointHasKey "2" .
-<http://example.org/legal/document/uu/2017/16/mengingat/point/0002/text> legal:textHasTextString "Undang-Undang ' Nomor 17 Tahun 2013 tentang Organisasi Kemasyarakatan (Lembaran Negara Republik Indonesia Tahun 2013 Nomor 116, Tambahan Lembaran Negara Republik Indonesia Nomor 5430): Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA dan PRESIDEN REPUBLIK INDONESIA, MEMUTUSKAN: Menetapkan: UNDANG-UNDANG TENTANG PENETAPAN PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG NOMOR 2 TAHUN 2017 TENTANG PERUBAHAN ATAS UNDANG- UNDANG NOMOR 17 TAHUN 2013 TENTANG ORGANISASI KEMASYARAKATAN MENJADI UNDANG-UNDANG." .
-<http://example.org/legal/document/uu/2017/16/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/2017/16/mengingat/point/0002/text> .
-<http://example.org/legal/document/uu/2017/16> legal:documentMenimbang <http://example.org/legal/document/uu/2017/16/menimbang> .
-<http://example.org/legal/document/uu/2017/16/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/2017/16/menimbang/point> .
-<http://example.org/legal/document/uu/2017/16/menimbang/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/2017/16/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2017/16/menimbang/point/description> .
-<http://example.org/legal/document/uu/2017/16/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2017/16/menimbang/point/a> .
-<http://example.org/legal/document/uu/2017/16/menimbang/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/2017/16/menimbang/point/a/text> legal:textHasTextString "bahwa dalam rangka melindungi kedaulatan Negara Kesatuan Republik Indonesia berdasarkan Pancasila dan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945, negara wajib menjaga persatuan dan kesatuan bangsa," .
-<http://example.org/legal/document/uu/2017/16/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/2017/16/menimbang/point/a/text> .
-<http://example.org/legal/document/uu/2017/16/menimbang/point/a/text> legal:textReferencesLegal <http://example.org/legal/document/uu> .
-<http://example.org/legal/document/uu/2017/16/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2017/16/menimbang/point/b> .
-<http://example.org/legal/document/uu/2017/16/menimbang/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/2017/16/menimbang/point/b/text> legal:textHasTextString "bahwa dalam rangka melindungi kedaulatan negara sebagaimana dimaksud dalam huruf a, Presiden menetapkan Peraturan Pemerintah Pengganti Undang- Undang Nomor 2 Tahun 2017 tentang Perubahan atas Undang-Undang Nomor 17 Tahun 2013 tentang Organisasi Kemasyarakatan pada tanggal 10 Juli 2017," .
-<http://example.org/legal/document/uu/2017/16/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/2017/16/menimbang/point/b/text> .
-<http://example.org/legal/document/uu/2017/16/menimbang/point/b/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/17> .
-<http://example.org/legal/document/uu/2017/16/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2017/16/menimbang/point/c> .
-<http://example.org/legal/document/uu/2017/16/menimbang/point/c> legal:pointHasKey "c" .
-<http://example.org/legal/document/uu/2017/16/menimbang/point/c/text> legal:textHasTextString "bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a dan huruf b, perlu membentuk Undang- Undang tentang Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun 2017 tentang Perubahan atas Undang-Undang Nomor 17 Tahun 2013 tentang Organisasi Kemasyarakatan menjadi Undang- Undang, ) 0 PRESIDEN -2-" .
-<http://example.org/legal/document/uu/2017/16/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/2017/16/menimbang/point/c/text> .
-<http://example.org/legal/document/uu/2017/16/menimbang/point/c/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2013/17> .
-<http://example.org/legal/document/uu/2017/16/menimbang/point/c/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2017/2> .
-<http://example.org/legal/document/uu/2017/16> legal:documentHasDisahkanPengesah "JOKO WIDODO" .
-<http://example.org/legal/document/uu/2017/16> legal:documentHasDisahkanLocation "Jakarta" .
-<http://example.org/legal/document/uu/2017/16> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
-<http://example.org/legal/document/uu/2017/16> a legal:Document .
-<http://example.org/legal/document/uu/2017/16/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/2017/16/pasal/0001> a legal:Pasal .
-<http://example.org/legal/document/uu/2017/16/pasal/0001/version/20171122> a legal:PasalVersion .
-<http://example.org/legal/document/uu/2017/16/pasal/0001/version/20171122/text> a legal:Text .
-<http://example.org/legal/document/uu/2017/16/pasal/0002> a legal:Pasal .
-<http://example.org/legal/document/uu/2017/16/pasal/0002/version/20171122> a legal:PasalVersion .
-<http://example.org/legal/document/uu/2017/16/pasal/0002/version/20171122/text> a legal:Text .
-<http://example.org/legal/document/uu/2017/16/mengingat> a legal:Mengingat .
-<http://example.org/legal/document/uu/2017/16/mengingat/point/description> a legal:Text .
-<http://example.org/legal/document/uu/2017/16/mengingat/point> a legal:PointSet .
-<http://example.org/legal/document/uu/2017/16/mengingat/point/0001> a legal:Point .
-<http://example.org/legal/document/uu/2017/16/mengingat/point/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/2017/16/mengingat/point/0002> a legal:Point .
-<http://example.org/legal/document/uu/2017/16/mengingat/point/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/2017/16/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/2017/16/menimbang/point/description> a legal:Text .
-<http://example.org/legal/document/uu/2017/16/menimbang/point> a legal:PointSet .
-<http://example.org/legal/document/uu/2017/16/menimbang/point/a> a legal:Point .
-<http://example.org/legal/document/uu/2017/16/menimbang/point/a/text> a legal:Text .
-<http://example.org/legal/document/uu/2017/16/menimbang/point/b> a legal:Point .
-<http://example.org/legal/document/uu/2017/16/menimbang/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/2017/16/menimbang/point/c> a legal:Point .
-<http://example.org/legal/document/uu/2017/16/menimbang/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/2017/16/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2017/16/pasals> .
-<http://example.org/legal/document/uu/2017/16/pasal/0001/version/20171122> legal:partOf <http://example.org/legal/document/uu/2017/16/pasal/0001> .
-<http://example.org/legal/document/uu/2017/16/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2017/16> .
-<http://example.org/legal/document/uu/2017/16/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2017/16/pasals> .
-<http://example.org/legal/document/uu/2017/16/pasal/0002/version/20171122> legal:partOf <http://example.org/legal/document/uu/2017/16/pasal/0002> .
-<http://example.org/legal/document/uu/2017/16/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2017/16> .
-<http://example.org/legal/document/uu/2017/16/mengingat/point> legal:partOf <http://example.org/legal/document/uu/2017/16/mengingat> .
-<http://example.org/legal/document/uu/2017/16/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2017/16/mengingat/point> .
-<http://example.org/legal/document/uu/2017/16/mengingat/point/0001/text> legal:partOf <http://example.org/legal/document/uu/2017/16/mengingat/point/0001> .
-<http://example.org/legal/document/uu/2017/16/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2017/16/mengingat/point> .
-<http://example.org/legal/document/uu/2017/16/mengingat/point/0002/text> legal:partOf <http://example.org/legal/document/uu/2017/16/mengingat/point/0002> .
-<http://example.org/legal/document/uu/2017/16/menimbang/point> legal:partOf <http://example.org/legal/document/uu/2017/16/menimbang> .
-<http://example.org/legal/document/uu/2017/16/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/2017/16/menimbang/point> .
-<http://example.org/legal/document/uu/2017/16/menimbang/point/a/text> legal:partOf <http://example.org/legal/document/uu/2017/16/menimbang/point/a> .
-<http://example.org/legal/document/uu/2017/16/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/2017/16/menimbang/point> .
-<http://example.org/legal/document/uu/2017/16/menimbang/point/b/text> legal:partOf <http://example.org/legal/document/uu/2017/16/menimbang/point/b> .
-<http://example.org/legal/document/uu/2017/16/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/2017/16/menimbang/point> .
-<http://example.org/legal/document/uu/2017/16/menimbang/point/c/text> legal:partOf <http://example.org/legal/document/uu/2017/16/menimbang/point/c> .
+<http://example.org/legal/peraturan/uu/2017/16> legal:daftarPasal <http://example.org/legal/peraturan/uu/2017/16/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2017/16/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/2017/16/pasal/0001> .
+<http://example.org/legal/peraturan/uu/2017/16/pasal/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/2017/16/pasal/0001> legal:versi <http://example.org/legal/peraturan/uu/2017/16/pasal/0001/versi/20171122> .
+<http://example.org/legal/peraturan/uu/2017/16> legal:pasal <http://example.org/legal/peraturan/uu/2017/16/pasal/0001> .
+<http://example.org/legal/peraturan/uu/2017/16/pasal/0001/versi/20171122> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/2017/16/pasal/0001/versi/20171122> legal:tanggal "2017-11-22"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2017/16/pasal/0001/versi/20171122> legal:teks "Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun 2017 tentang Perubahan atas Undang-Undang Nomor 17 Tahun 2013 tentang Organisasi Kemasyarakatan (Lembaran Negara Republik Indonesia Tahun 2017 Nomor 138, Tambahan Lembaran Negara Republik Indonesia Nomor 6084) ditetapkan menjadi Undang-Undang dan melampirkannya sebagai bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/peraturan/uu/2017/16/pasal/0001/versi/20171122/text> legal:teks "Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun 2017 tentang Perubahan atas Undang-Undang Nomor 17 Tahun 2013 tentang Organisasi Kemasyarakatan (Lembaran Negara Republik Indonesia Tahun 2017 Nomor 138, Tambahan Lembaran Negara Republik Indonesia Nomor 6084) ditetapkan menjadi Undang-Undang dan melampirkannya sebagai bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/peraturan/uu/2017/16/pasal/0001/versi/20171122> legal:segmen <http://example.org/legal/peraturan/uu/2017/16/pasal/0001/versi/20171122/text> .
+<http://example.org/legal/peraturan/uu/2017/16/pasal/0001/versi/20171122/text> legal:merujuk <http://example.org/legal/peraturan/uu/2013/17> .
+<http://example.org/legal/peraturan/uu/2017/16/pasal/0001/versi/20171122/text> legal:merujuk <http://example.org/legal/peraturan/uu/2017/2> .
+<http://example.org/legal/peraturan/uu/2017/16/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/2017/16/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2017/16/pasal/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/2017/16/pasal/0002> legal:versi <http://example.org/legal/peraturan/uu/2017/16/pasal/0002/versi/20171122> .
+<http://example.org/legal/peraturan/uu/2017/16> legal:pasal <http://example.org/legal/peraturan/uu/2017/16/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2017/16/pasal/0002/versi/20171122> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/2017/16/pasal/0002/versi/20171122> legal:tanggal "2017-11-22"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2017/16/pasal/0002/versi/20171122> legal:teks "Undang-Undang ini mulai berlaku pada tanggal diundangkan. — PRESIDEN 3 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/2017/16/pasal/0002/versi/20171122/text> legal:teks "Undang-Undang ini mulai berlaku pada tanggal diundangkan. — PRESIDEN 3 - Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/2017/16/pasal/0002/versi/20171122> legal:segmen <http://example.org/legal/peraturan/uu/2017/16/pasal/0002/versi/20171122/text> .
+<http://example.org/legal/peraturan/uu/2017/16> legal:disahkanPada "2017-11-22"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2017/16> legal:tentang " PENETAPAN PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG NOMOR 2 TAHUN 2017 TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 17 TAHUN 2013 TENTANG ORGANISASI KEMASYARAKATAN MENJADI UNDANG-UNDANG" .
+<http://example.org/legal/peraturan/uu/2017/16> legal:mengingat <http://example.org/legal/peraturan/uu/2017/16/mengingat> .
+<http://example.org/legal/peraturan/uu/2017/16/mengingat> legal:daftarHuruf <http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf> legal:segmen <http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf/description> .
+<http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf/0001> .
+<http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf/0001> legal:nomor "1" .
+<http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf/0001/text> legal:teks "Pasal 5 ayat (1), Pasal 20, Pasal 22 ayat (2) Undang- Undang Dasar Negara Republik Indonesia Tahun 1945:" .
+<http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf/0001> legal:segmen <http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf/0001/text> .
+<http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf/0002> .
+<http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf/0002> legal:nomor "2" .
+<http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf/0002/text> legal:teks "Undang-Undang ' Nomor 17 Tahun 2013 tentang Organisasi Kemasyarakatan (Lembaran Negara Republik Indonesia Tahun 2013 Nomor 116, Tambahan Lembaran Negara Republik Indonesia Nomor 5430): Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA dan PRESIDEN REPUBLIK INDONESIA, MEMUTUSKAN: Menetapkan: UNDANG-UNDANG TENTANG PENETAPAN PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG NOMOR 2 TAHUN 2017 TENTANG PERUBAHAN ATAS UNDANG- UNDANG NOMOR 17 TAHUN 2013 TENTANG ORGANISASI KEMASYARAKATAN MENJADI UNDANG-UNDANG." .
+<http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf/0002> legal:segmen <http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf/0002/text> .
+<http://example.org/legal/peraturan/uu/2017/16> legal:menimbang <http://example.org/legal/peraturan/uu/2017/16/menimbang> .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang> legal:daftarHuruf <http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf> legal:segmen <http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/description> .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/a> legal:nomor "a" .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/a/text> legal:teks "bahwa dalam rangka melindungi kedaulatan Negara Kesatuan Republik Indonesia berdasarkan Pancasila dan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945, negara wajib menjaga persatuan dan kesatuan bangsa," .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/a> legal:segmen <http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/a/text> .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/a/text> legal:merujuk <http://example.org/legal/peraturan/uu> .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/b> .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/b> legal:nomor "b" .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/b/text> legal:teks "bahwa dalam rangka melindungi kedaulatan negara sebagaimana dimaksud dalam huruf a, Presiden menetapkan Peraturan Pemerintah Pengganti Undang- Undang Nomor 2 Tahun 2017 tentang Perubahan atas Undang-Undang Nomor 17 Tahun 2013 tentang Organisasi Kemasyarakatan pada tanggal 10 Juli 2017," .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/b> legal:segmen <http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/b/text> .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/b/text> legal:merujuk <http://example.org/legal/peraturan/uu/2013/17> .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/c> .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/c> legal:nomor "c" .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/c/text> legal:teks "bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a dan huruf b, perlu membentuk Undang- Undang tentang Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun 2017 tentang Perubahan atas Undang-Undang Nomor 17 Tahun 2013 tentang Organisasi Kemasyarakatan menjadi Undang- Undang, ) 0 PRESIDEN -2-" .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/c> legal:segmen <http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/c/text> .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/c/text> legal:merujuk <http://example.org/legal/peraturan/uu/2013/17> .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/c/text> legal:merujuk <http://example.org/legal/peraturan/uu/2017/2> .
+<http://example.org/legal/peraturan/uu/2017/16> legal:disahkanOleh "JOKO WIDODO" .
+<http://example.org/legal/peraturan/uu/2017/16> legal:disahkanDi "Jakarta" .
+<http://example.org/legal/peraturan/uu/2017/16> legal:jabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/peraturan/uu/2017/16> a legal:Peraturan .
+<http://example.org/legal/peraturan/uu/2017/16/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/2017/16/pasal/0001> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/2017/16/pasal/0001/versi/20171122> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/2017/16/pasal/0001/versi/20171122/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2017/16/pasal/0002> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/2017/16/pasal/0002/versi/20171122> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/2017/16/pasal/0002/versi/20171122/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2017/16/mengingat> a legal:Mengingat .
+<http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf/0001> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf/0002> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang> a legal:Menimbang .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/a> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/a/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/b> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/b/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/c> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/c/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2017/16/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/2017/16> .
+<http://example.org/legal/peraturan/uu/2017/16/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2017/16/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2017/16/pasal/0001/versi/20171122> legal:bagianDari <http://example.org/legal/peraturan/uu/2017/16/pasal/0001> .
+<http://example.org/legal/peraturan/uu/2017/16/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2017/16> .
+<http://example.org/legal/peraturan/uu/2017/16/pasal/0001/versi/20171122/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2017/16/pasal/0001/versi/20171122> .
+<http://example.org/legal/peraturan/uu/2017/16/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2017/16/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2017/16/pasal/0002/versi/20171122> legal:bagianDari <http://example.org/legal/peraturan/uu/2017/16/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2017/16/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2017/16> .
+<http://example.org/legal/peraturan/uu/2017/16/pasal/0002/versi/20171122/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2017/16/pasal/0002/versi/20171122> .
+<http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/2017/16/mengingat> .
+<http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf/0001> .
+<http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2017/16/mengingat/huruf/0002> .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/2017/16/menimbang> .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/a> legal:bagianDari <http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/a/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/b> legal:bagianDari <http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/b/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/b> .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/c> legal:bagianDari <http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/c/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2017/16/menimbang/huruf/c> .

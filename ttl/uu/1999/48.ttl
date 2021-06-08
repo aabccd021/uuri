@@ -1,601 +1,617 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1999/48> legal:documentHasBabSet <http://example.org/legal/document/uu/1999/48/bab> .
-<http://example.org/legal/document/uu/1999/48/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/48/bab/0001> .
-<http://example.org/legal/document/uu/1999/48/bab/0001> legal:babHasKey 1 .
-<http://example.org/legal/document/uu/1999/48/bab/0001> legal:babHasTitle "KETENTUAN UMUM" .
-<http://example.org/legal/document/uu/1999/48/bab/0001> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/48/bab/0001/pasals> .
-<http://example.org/legal/document/uu/1999/48/bab/0001/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/48/pasal/0001> .
-<http://example.org/legal/document/uu/1999/48/pasal/0001> legal:pasalHasKey 1 .
-<http://example.org/legal/document/uu/1999/48/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004> .
-<http://example.org/legal/document/uu/1999/48> legal:documentHasPasal <http://example.org/legal/document/uu/1999/48/pasal/0001> .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004> legal:pasalVersionHasVersionDate "1999-10-04"^^xsd:date .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004> legal:pasalVersionHasRawText "Dalam Undang-undang ini yang dimaksud dengan :\na. Daerah adalah Daerah Otonom sebagaimana dimaksud dalam Pasal 1 huruf i Undang-undang Nomor 22 Tahun 1999 tentang Pemerintahan Daerah:\nb. Kabupaten Aceh Utara adalah Daerah Otonom sebagaimana dimaksud dalam Undang-undang Nomor 7 Tahun 1956 tentang Pembentukan Daerah Otonom Kabupaten-Kabupaten dalam Lingkungan Daerah Propinsi Sumatera Utara,\nc. Propinsi Daerah Istimewa Aceh adalah Daerah Otonom sebagaimana dimaksud dalam Undang-undang Nomor 24 Tahun 1956 tentang Pembentukan Daerah Otonom Propinsi Aceh dan Perubahan Peraturan Pembentukan Propinsi Sumatera Utara.\n" .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point> .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/description> legal:textHasTextString "Dalam Undang-undang ini yang dimaksud dengan :" .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/description> .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/a> .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/a/text> legal:textHasTextString "Daerah adalah Daerah Otonom sebagaimana dimaksud dalam Pasal 1 huruf i Undang-undang Nomor 22 Tahun 1999 tentang Pemerintahan Daerah:" .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/a> legal:pointHasText <http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/a/text> .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/a/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/i> .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/a/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/48/pasal/0001> .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/b> .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/b/text> legal:textHasTextString "Kabupaten Aceh Utara adalah Daerah Otonom sebagaimana dimaksud dalam Undang-undang Nomor 7 Tahun 1956 tentang Pembentukan Daerah Otonom Kabupaten-Kabupaten dalam Lingkungan Daerah Propinsi Sumatera Utara," .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/b> legal:pointHasText <http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/b/text> .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/c> .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/c> legal:pointHasKey "c" .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/c/text> legal:textHasTextString "Propinsi Daerah Istimewa Aceh adalah Daerah Otonom sebagaimana dimaksud dalam Undang-undang Nomor 24 Tahun 1956 tentang Pembentukan Daerah Otonom Propinsi Aceh dan Perubahan Peraturan Pembentukan Propinsi Sumatera Utara." .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/c> legal:pointHasText <http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/c/text> .
-<http://example.org/legal/document/uu/1999/48/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/48/bab/0002> .
-<http://example.org/legal/document/uu/1999/48/bab/0002> legal:babHasKey 2 .
-<http://example.org/legal/document/uu/1999/48/bab/0002> legal:babHasTitle "3 PEMBENTUKAN, BATAS WILAYAH, DAN IBUKOTA" .
-<http://example.org/legal/document/uu/1999/48/bab/0002> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/48/bab/0002/pasals> .
-<http://example.org/legal/document/uu/1999/48/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/48/pasal/0002> .
-<http://example.org/legal/document/uu/1999/48/pasal/0002> legal:pasalHasKey 2 .
-<http://example.org/legal/document/uu/1999/48/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/48/pasal/0002/version/19991004> .
-<http://example.org/legal/document/uu/1999/48> legal:documentHasPasal <http://example.org/legal/document/uu/1999/48/pasal/0002> .
-<http://example.org/legal/document/uu/1999/48/pasal/0002/version/19991004> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1999/48/pasal/0002/version/19991004> legal:pasalVersionHasVersionDate "1999-10-04"^^xsd:date .
-<http://example.org/legal/document/uu/1999/48/pasal/0002/version/19991004> legal:pasalVersionHasRawText "Dengan Undang-undang ini dibentuk Kabupaten Bireuen dan Kabupaten Simeulue dalam wilayah Propinsi Daerah Istimewa Aceh." .
-<http://example.org/legal/document/uu/1999/48/pasal/0002/version/19991004/text> legal:textHasTextString "Dengan Undang-undang ini dibentuk Kabupaten Bireuen dan Kabupaten Simeulue dalam wilayah Propinsi Daerah Istimewa Aceh." .
-<http://example.org/legal/document/uu/1999/48/pasal/0002/version/19991004> legal:pasalVersionHasText <http://example.org/legal/document/uu/1999/48/pasal/0002/version/19991004/text> .
-<http://example.org/legal/document/uu/1999/48/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/48/pasal/0003> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003> legal:pasalHasKey 3 .
-<http://example.org/legal/document/uu/1999/48/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004> .
-<http://example.org/legal/document/uu/1999/48> legal:documentHasPasal <http://example.org/legal/document/uu/1999/48/pasal/0003> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004> legal:pasalVersionHasVersionDate "1999-10-04"^^xsd:date .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004> legal:pasalVersionHasRawText "Kabupaten Bireuen berasal dari sebagian wilayah Kabupaten Aceh Utara yang terdiri atas wilayah :\na. Kecamatan Samalanga,\nb. Kecamatan Jeunieb:\nc. Kecamatan Peudada,\nd. Kecamatan Jeumpa,\ne. Kecamatan Peusangan,\nf. Kecamatan Makmur:\ng. Kecamatan Gandapura,\nh. Kecamatan Pandrah:\n1. Kecamatan Juli, dan J- Kecamatan Jangka.\n\n" .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/description> legal:textHasTextString "Kabupaten Bireuen berasal dari sebagian wilayah Kabupaten Aceh Utara yang terdiri atas wilayah :" .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/description> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/a> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/a/text> legal:textHasTextString "Kecamatan Samalanga," .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/a> legal:pointHasText <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/a/text> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/b> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/b/text> legal:textHasTextString "Kecamatan Jeunieb:" .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/b> legal:pointHasText <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/b/text> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/c> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/c> legal:pointHasKey "c" .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/c/text> legal:textHasTextString "Kecamatan Peudada," .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/c> legal:pointHasText <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/c/text> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/d> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/d> legal:pointHasKey "d" .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/d/text> legal:textHasTextString "Kecamatan Jeumpa," .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/d> legal:pointHasText <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/d/text> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/e> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/e> legal:pointHasKey "e" .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/e/text> legal:textHasTextString "Kecamatan Peusangan," .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/e> legal:pointHasText <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/e/text> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/f> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/f> legal:pointHasKey "f" .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/f/text> legal:textHasTextString "Kecamatan Makmur:" .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/f> legal:pointHasText <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/f/text> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/g> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/g> legal:pointHasKey "g" .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/g/text> legal:textHasTextString "Kecamatan Gandapura," .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/g> legal:pointHasText <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/g/text> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/h> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/h> legal:pointHasKey "h" .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/h> legal:pointHasPointSet <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/h/point> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/h/point/description> legal:textHasTextString "Kecamatan Pandrah:" .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/h/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/h/point/description> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/h/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/h/point/0001> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/h/point/0001> legal:pointHasKey "1" .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/h/point/0001/text> legal:textHasTextString "Kecamatan Juli, dan J- Kecamatan Jangka." .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/h/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/h/point/0001/text> .
-<http://example.org/legal/document/uu/1999/48/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/48/pasal/0004> .
-<http://example.org/legal/document/uu/1999/48/pasal/0004> legal:pasalHasKey 4 .
-<http://example.org/legal/document/uu/1999/48/pasal/0004> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004> .
-<http://example.org/legal/document/uu/1999/48> legal:documentHasPasal <http://example.org/legal/document/uu/1999/48/pasal/0004> .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004> legal:pasalVersionHasVersionDate "1999-10-04"^^xsd:date .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004> legal:pasalVersionHasRawText "Kabupaten Simeulue terdiri atas wilayah :\na. Kecamatan Simeulue Timur,\nb. Kecamatan Simeulue Tengah:\nc. Kecamatan Simeulue Barat:\nd. Kecamatan Teupah Selatan: dan\ne. Kecamatan Salang.\n" .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point> .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/description> legal:textHasTextString "Kabupaten Simeulue terdiri atas wilayah :" .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/description> .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/a> .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/a/text> legal:textHasTextString "Kecamatan Simeulue Timur," .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/a> legal:pointHasText <http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/a/text> .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/b> .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/b/text> legal:textHasTextString "Kecamatan Simeulue Tengah:" .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/b> legal:pointHasText <http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/b/text> .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/c> .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/c> legal:pointHasKey "c" .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/c/text> legal:textHasTextString "Kecamatan Simeulue Barat:" .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/c> legal:pointHasText <http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/c/text> .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/d> .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/d> legal:pointHasKey "d" .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/d/text> legal:textHasTextString "Kecamatan Teupah Selatan: dan" .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/d> legal:pointHasText <http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/d/text> .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/e> .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/e> legal:pointHasKey "e" .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/e/text> legal:textHasTextString "Kecamatan Salang." .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/e> legal:pointHasText <http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/e/text> .
-<http://example.org/legal/document/uu/1999/48/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/48/pasal/0005> .
-<http://example.org/legal/document/uu/1999/48/pasal/0005> legal:pasalHasKey 5 .
-<http://example.org/legal/document/uu/1999/48/pasal/0005> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/48/pasal/0005/version/19991004> .
-<http://example.org/legal/document/uu/1999/48> legal:documentHasPasal <http://example.org/legal/document/uu/1999/48/pasal/0005> .
-<http://example.org/legal/document/uu/1999/48/pasal/0005/version/19991004> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1999/48/pasal/0005/version/19991004> legal:pasalVersionHasVersionDate "1999-10-04"^^xsd:date .
-<http://example.org/legal/document/uu/1999/48/pasal/0005/version/19991004> legal:pasalVersionHasRawText "Dengan dibentuknya Kabupaten Bireuen, sebagaimana dimaksud dalam Pasal 2, wilayah Kabupaten Aceh Utara dikurangi dengan wilayah Kabupaten Bireuen, sebagaimana dimaksud dalam Pasal 3. 4" .
-<http://example.org/legal/document/uu/1999/48/pasal/0005/version/19991004/text> legal:textHasTextString "Dengan dibentuknya Kabupaten Bireuen, sebagaimana dimaksud dalam Pasal 2, wilayah Kabupaten Aceh Utara dikurangi dengan wilayah Kabupaten Bireuen, sebagaimana dimaksud dalam Pasal 3. 4" .
-<http://example.org/legal/document/uu/1999/48/pasal/0005/version/19991004> legal:pasalVersionHasText <http://example.org/legal/document/uu/1999/48/pasal/0005/version/19991004/text> .
-<http://example.org/legal/document/uu/1999/48/pasal/0005/version/19991004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/48/pasal/0003> .
-<http://example.org/legal/document/uu/1999/48/pasal/0005/version/19991004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/48/pasal/0002> .
-<http://example.org/legal/document/uu/1999/48/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/48/pasal/0006> .
-<http://example.org/legal/document/uu/1999/48/pasal/0006> legal:pasalHasKey 6 .
-<http://example.org/legal/document/uu/1999/48/pasal/0006> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/48/pasal/0006/version/19991004> .
-<http://example.org/legal/document/uu/1999/48> legal:documentHasPasal <http://example.org/legal/document/uu/1999/48/pasal/0006> .
-<http://example.org/legal/document/uu/1999/48/pasal/0006/version/19991004> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1999/48/pasal/0006/version/19991004> legal:pasalVersionHasVersionDate "1999-10-04"^^xsd:date .
-<http://example.org/legal/document/uu/1999/48/pasal/0006/version/19991004> legal:pasalVersionHasRawText "Dengan dibentuknya Kabupaten Simeulue, sebagaimana dimaksud dalam Pasal 2, Kabupaten Administratif Simeulue dalam wilayah Propinsi Daerah Istimewa Aceh dihapus." .
-<http://example.org/legal/document/uu/1999/48/pasal/0006/version/19991004/text> legal:textHasTextString "Dengan dibentuknya Kabupaten Simeulue, sebagaimana dimaksud dalam Pasal 2, Kabupaten Administratif Simeulue dalam wilayah Propinsi Daerah Istimewa Aceh dihapus." .
-<http://example.org/legal/document/uu/1999/48/pasal/0006/version/19991004> legal:pasalVersionHasText <http://example.org/legal/document/uu/1999/48/pasal/0006/version/19991004/text> .
-<http://example.org/legal/document/uu/1999/48/pasal/0006/version/19991004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/48/pasal/0002> .
-<http://example.org/legal/document/uu/1999/48/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/48/pasal/0007> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007> legal:pasalHasKey 7 .
-<http://example.org/legal/document/uu/1999/48/pasal/0007> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004> .
-<http://example.org/legal/document/uu/1999/48> legal:documentHasPasal <http://example.org/legal/document/uu/1999/48/pasal/0007> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004> legal:pasalVersionHasVersionDate "1999-10-04"^^xsd:date .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004> legal:pasalVersionHasRawText "(1). Kabupaten Bireuen mempunyai batas wilayah :\na. sebelah utara dengan Selat Malaka,\nb. sebelah timur dengan Kecamatan Muara Batu dan Kecamatan Sawang, Kabupaten Aceh Utara,\nc. sebelah selatan dengan Kecamatan Sirih Nara, dan Kecamatan Timang Gajah, Kabupaten Aceh Tengah, dan\nd. sebelah barat dengan Kecamatan Bandar Dua, Kecamatan Meureudu, dan Kecamatan Geumpang Kabupaten Pidie.\n\n(2). Kabupaten Simeulue mempunyai batas wilayah :\na. sebelah utara dengan Samudra Hindia,\nb. sebelah timur dengan Samudra Hindia,\nc. sebelah selatan dengan Samudra Hindia: dan\nd. sebelah barat dengan Samudra Hindia.\n\n(3). Batas wilayah sebagaimana dimaksud pada ayat (1) dan ayat (2) dituangkan dalam peta yang merupakan bagian tidak terpisahkan dari Undang-undang ini.\n(4). Penentuan batas wilayah Kabupaten Bireuen dan Kabupaten Simeulue secara pasti di lapangan, sebagaimana dimaksud pada ayat (1) dan ayat (2), ditetapkan oleh Menteri Dalam Negeri." .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001> legal:ayatHasKey 1 .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001> legal:ayatHasRawText "Kabupaten Bireuen mempunyai batas wilayah :\na. sebelah utara dengan Selat Malaka,\nb. sebelah timur dengan Kecamatan Muara Batu dan Kecamatan Sawang, Kabupaten Aceh Utara,\nc. sebelah selatan dengan Kecamatan Sirih Nara, dan Kecamatan Timang Gajah, Kabupaten Aceh Tengah, dan\nd. sebelah barat dengan Kecamatan Bandar Dua, Kecamatan Meureudu, dan Kecamatan Geumpang Kabupaten Pidie.\n" .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/description> legal:textHasTextString "Kabupaten Bireuen mempunyai batas wilayah :" .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/description> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/a> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/a/text> legal:textHasTextString "sebelah utara dengan Selat Malaka," .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/a/text> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/b> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/b/text> legal:textHasTextString "sebelah timur dengan Kecamatan Muara Batu dan Kecamatan Sawang, Kabupaten Aceh Utara," .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/b> legal:pointHasText <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/b/text> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/c> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/c> legal:pointHasKey "c" .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/c/text> legal:textHasTextString "sebelah selatan dengan Kecamatan Sirih Nara, dan Kecamatan Timang Gajah, Kabupaten Aceh Tengah, dan" .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/c> legal:pointHasText <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/c/text> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/d> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/d> legal:pointHasKey "d" .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/d/text> legal:textHasTextString "sebelah barat dengan Kecamatan Bandar Dua, Kecamatan Meureudu, dan Kecamatan Geumpang Kabupaten Pidie." .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/d> legal:pointHasText <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/d/text> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002> legal:ayatHasKey 2 .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002> legal:ayatHasRawText "Kabupaten Simeulue mempunyai batas wilayah :\na. sebelah utara dengan Samudra Hindia,\nb. sebelah timur dengan Samudra Hindia,\nc. sebelah selatan dengan Samudra Hindia: dan\nd. sebelah barat dengan Samudra Hindia.\n" .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002> legal:ayatHasPointSet <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/description> legal:textHasTextString "Kabupaten Simeulue mempunyai batas wilayah :" .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/description> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/a> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/a/text> legal:textHasTextString "sebelah utara dengan Samudra Hindia," .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/a> legal:pointHasText <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/a/text> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/b> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/b/text> legal:textHasTextString "sebelah timur dengan Samudra Hindia," .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/b> legal:pointHasText <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/b/text> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/c> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/c> legal:pointHasKey "c" .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/c/text> legal:textHasTextString "sebelah selatan dengan Samudra Hindia: dan" .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/c> legal:pointHasText <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/c/text> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/d> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/d> legal:pointHasKey "d" .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/d/text> legal:textHasTextString "sebelah barat dengan Samudra Hindia." .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/d> legal:pointHasText <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/d/text> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0003> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0003> legal:ayatHasKey 3 .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0003> legal:ayatHasRawText "Batas wilayah sebagaimana dimaksud pada ayat (1) dan ayat (2) dituangkan dalam peta yang merupakan bagian tidak terpisahkan dari Undang-undang ini." .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0003/text> legal:textHasTextString "Batas wilayah sebagaimana dimaksud pada ayat (1) dan ayat (2) dituangkan dalam peta yang merupakan bagian tidak terpisahkan dari Undang-undang ini." .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0003/text> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0004> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0004> legal:ayatHasKey 4 .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0004> legal:ayatHasRawText "Penentuan batas wilayah Kabupaten Bireuen dan Kabupaten Simeulue secara pasti di lapangan, sebagaimana dimaksud pada ayat (1) dan ayat (2), ditetapkan oleh Menteri Dalam Negeri." .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0004/text> legal:textHasTextString "Penentuan batas wilayah Kabupaten Bireuen dan Kabupaten Simeulue secara pasti di lapangan, sebagaimana dimaksud pada ayat (1) dan ayat (2), ditetapkan oleh Menteri Dalam Negeri." .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0004/text> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001> .
-<http://example.org/legal/document/uu/1999/48/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/48/pasal/0008> .
-<http://example.org/legal/document/uu/1999/48/pasal/0008> legal:pasalHasKey 8 .
-<http://example.org/legal/document/uu/1999/48/pasal/0008> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/48/pasal/0008/version/19991004> .
-<http://example.org/legal/document/uu/1999/48> legal:documentHasPasal <http://example.org/legal/document/uu/1999/48/pasal/0008> .
-<http://example.org/legal/document/uu/1999/48/pasal/0008/version/19991004> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1999/48/pasal/0008/version/19991004> legal:pasalVersionHasVersionDate "1999-10-04"^^xsd:date .
-<http://example.org/legal/document/uu/1999/48/pasal/0008/version/19991004> legal:pasalVersionHasRawText "(Jl) Dengan dibentuknya Kabupaten Bireuen dan Kabupaten Simeulue, sebagaimana dimaksud dalam Pasal 2, dan mempunyai wilayah sebagaimana dimaksud dalam Pasal 3, dan Pasal 4, Pemerintah Kabupaten Bireuen dan Pemerintah Kabupaten Simeulue wajib menetapkan Tata Ruang Wilayah Kabupaten Bireuen dan Kabupaten Simeulue, sesuai dengan peraturan perundang-undangan. .5- (2) Penetapan Tata Ruang Wilayah Kabupaten Bireuen dan Kabupaten Simeulue, sebagaimana dimaksud pada ayat (1), dilakukan secara terpadu dan tidak terpisahkan dari Tata Ruang Wilayah Nasional, Propinsi, dan Kabupaten/Kota." .
-<http://example.org/legal/document/uu/1999/48/pasal/0008/version/19991004/text> legal:textHasTextString "(Jl) Dengan dibentuknya Kabupaten Bireuen dan Kabupaten Simeulue, sebagaimana dimaksud dalam Pasal 2, dan mempunyai wilayah sebagaimana dimaksud dalam Pasal 3, dan Pasal 4, Pemerintah Kabupaten Bireuen dan Pemerintah Kabupaten Simeulue wajib menetapkan Tata Ruang Wilayah Kabupaten Bireuen dan Kabupaten Simeulue, sesuai dengan peraturan perundang-undangan. .5- (2) Penetapan Tata Ruang Wilayah Kabupaten Bireuen dan Kabupaten Simeulue, sebagaimana dimaksud pada ayat (1), dilakukan secara terpadu dan tidak terpisahkan dari Tata Ruang Wilayah Nasional, Propinsi, dan Kabupaten/Kota." .
-<http://example.org/legal/document/uu/1999/48/pasal/0008/version/19991004> legal:pasalVersionHasText <http://example.org/legal/document/uu/1999/48/pasal/0008/version/19991004/text> .
-<http://example.org/legal/document/uu/1999/48/pasal/0008/version/19991004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/48/pasal/0008/version/19991004/ayat/0001> .
-<http://example.org/legal/document/uu/1999/48/pasal/0008/version/19991004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/48/pasal/0004> .
-<http://example.org/legal/document/uu/1999/48/pasal/0008/version/19991004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/48/pasal/0003> .
-<http://example.org/legal/document/uu/1999/48/pasal/0008/version/19991004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/48/pasal/0002> .
-<http://example.org/legal/document/uu/1999/48/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/48/pasal/0009> .
-<http://example.org/legal/document/uu/1999/48/pasal/0009> legal:pasalHasKey 9 .
-<http://example.org/legal/document/uu/1999/48/pasal/0009> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004> .
-<http://example.org/legal/document/uu/1999/48> legal:documentHasPasal <http://example.org/legal/document/uu/1999/48/pasal/0009> .
-<http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004> legal:pasalVersionHasVersionDate "1999-10-04"^^xsd:date .
-<http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004> legal:pasalVersionHasRawText "(1). Ibukota Kabupaten Bireuen berkedudukan di Bireuen.\n(2). Ibukota Kabupaten Simeulue berkedudukan di Sinabang." .
-<http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004/ayat> .
-<http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004/ayat/0001> .
-<http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004/ayat/0001> legal:ayatHasKey 1 .
-<http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004/ayat/0001> legal:ayatHasRawText "Ibukota Kabupaten Bireuen berkedudukan di Bireuen." .
-<http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004/ayat/0001/text> legal:textHasTextString "Ibukota Kabupaten Bireuen berkedudukan di Bireuen." .
-<http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004/ayat/0001/text> .
-<http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004/ayat/0002> .
-<http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004/ayat/0002> legal:ayatHasKey 2 .
-<http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004/ayat/0002> legal:ayatHasRawText "Ibukota Kabupaten Simeulue berkedudukan di Sinabang." .
-<http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004/ayat/0002/text> legal:textHasTextString "Ibukota Kabupaten Simeulue berkedudukan di Sinabang." .
-<http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004/ayat/0002/text> .
-<http://example.org/legal/document/uu/1999/48/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/48/bab/0003> .
-<http://example.org/legal/document/uu/1999/48/bab/0003> legal:babHasKey 3 .
-<http://example.org/legal/document/uu/1999/48/bab/0003> legal:babHasTitle "KEWENANGAN DAERAH" .
-<http://example.org/legal/document/uu/1999/48/bab/0003> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/48/bab/0003/pasals> .
-<http://example.org/legal/document/uu/1999/48/bab/0003/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/48/pasal/0010> .
-<http://example.org/legal/document/uu/1999/48/pasal/0010> legal:pasalHasKey 10 .
-<http://example.org/legal/document/uu/1999/48/pasal/0010> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/48/pasal/0010/version/19991004> .
-<http://example.org/legal/document/uu/1999/48> legal:documentHasPasal <http://example.org/legal/document/uu/1999/48/pasal/0010> .
-<http://example.org/legal/document/uu/1999/48/pasal/0010/version/19991004> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1999/48/pasal/0010/version/19991004> legal:pasalVersionHasVersionDate "1999-10-04"^^xsd:date .
-<http://example.org/legal/document/uu/1999/48/pasal/0010/version/19991004> legal:pasalVersionHasRawText "(Jl) Dengan terbentuknya Kabupaten Bireuen dan Kabupaten Simeulue, kewenangan Daerah sebagai Daerah Otonom mencakup seluruh kewenangan bidang pemerintahan, termasuk kewenangan wajib, kecuali bidang politik luar negeri, pertahanan keamanan, peradilan, moneter dan fiskal, agama, serta kewenangan bidang lain, sesuai dengan peraturan perundang-undangan. (2) Kewenangan wajib, sebagaimana dimaksud pada ayat (1), terdiri atas pekerjaan umum, kesehatan, pendidikan dan kebudayaan, pertanian, perhubungan, industri dan perdagangan, penanaman modal, lingkungan hidup, pertanahan, koperasi, dan tenaga kerja." .
-<http://example.org/legal/document/uu/1999/48/pasal/0010/version/19991004/text> legal:textHasTextString "(Jl) Dengan terbentuknya Kabupaten Bireuen dan Kabupaten Simeulue, kewenangan Daerah sebagai Daerah Otonom mencakup seluruh kewenangan bidang pemerintahan, termasuk kewenangan wajib, kecuali bidang politik luar negeri, pertahanan keamanan, peradilan, moneter dan fiskal, agama, serta kewenangan bidang lain, sesuai dengan peraturan perundang-undangan. (2) Kewenangan wajib, sebagaimana dimaksud pada ayat (1), terdiri atas pekerjaan umum, kesehatan, pendidikan dan kebudayaan, pertanian, perhubungan, industri dan perdagangan, penanaman modal, lingkungan hidup, pertanahan, koperasi, dan tenaga kerja." .
-<http://example.org/legal/document/uu/1999/48/pasal/0010/version/19991004> legal:pasalVersionHasText <http://example.org/legal/document/uu/1999/48/pasal/0010/version/19991004/text> .
-<http://example.org/legal/document/uu/1999/48/pasal/0010/version/19991004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/48/pasal/0010/version/19991004/ayat/0001> .
-<http://example.org/legal/document/uu/1999/48/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/48/bab/0004> .
-<http://example.org/legal/document/uu/1999/48/bab/0004> legal:babHasKey 4 .
-<http://example.org/legal/document/uu/1999/48/bab/0004> legal:babHasTitle "PEMERINTAHAN DAERAH" .
-<http://example.org/legal/document/uu/1999/48/bab/0004> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/48/bab/0004/pasals> .
-<http://example.org/legal/document/uu/1999/48/bab/0004/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/48/pasal/0011> .
-<http://example.org/legal/document/uu/1999/48/pasal/0011> legal:pasalHasKey 11 .
-<http://example.org/legal/document/uu/1999/48/pasal/0011> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/48/pasal/0011/version/19991004> .
-<http://example.org/legal/document/uu/1999/48> legal:documentHasPasal <http://example.org/legal/document/uu/1999/48/pasal/0011> .
-<http://example.org/legal/document/uu/1999/48/pasal/0011/version/19991004> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1999/48/pasal/0011/version/19991004> legal:pasalVersionHasVersionDate "1999-10-04"^^xsd:date .
-<http://example.org/legal/document/uu/1999/48/pasal/0011/version/19991004> legal:pasalVersionHasRawText "Dengan terbentuknya Kabupaten Bireuen dan Kabupaten Simeulue, dibentuk Dewan Perwakilan Rakyat Daerah di Kabupaten masing-masing, sesuai dengan peraturan perundang-undangan." .
-<http://example.org/legal/document/uu/1999/48/pasal/0011/version/19991004/text> legal:textHasTextString "Dengan terbentuknya Kabupaten Bireuen dan Kabupaten Simeulue, dibentuk Dewan Perwakilan Rakyat Daerah di Kabupaten masing-masing, sesuai dengan peraturan perundang-undangan." .
-<http://example.org/legal/document/uu/1999/48/pasal/0011/version/19991004> legal:pasalVersionHasText <http://example.org/legal/document/uu/1999/48/pasal/0011/version/19991004/text> .
-<http://example.org/legal/document/uu/1999/48/bab/0004/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/48/pasal/0012> .
-<http://example.org/legal/document/uu/1999/48/pasal/0012> legal:pasalHasKey 12 .
-<http://example.org/legal/document/uu/1999/48/pasal/0012> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/48/pasal/0012/version/19991004> .
-<http://example.org/legal/document/uu/1999/48> legal:documentHasPasal <http://example.org/legal/document/uu/1999/48/pasal/0012> .
-<http://example.org/legal/document/uu/1999/48/pasal/0012/version/19991004> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1999/48/pasal/0012/version/19991004> legal:pasalVersionHasVersionDate "1999-10-04"^^xsd:date .
-<http://example.org/legal/document/uu/1999/48/pasal/0012/version/19991004> legal:pasalVersionHasRawText "Untuk memimpin jalannya pemerintahan, di Kabupaten Bireuen dan Kabupaten Simeulue, dipilih dan disahkan seorang Bupati dan Wakil Bupati di Kabupaten masing-masing, sesuai dengan peraturan perundang-undangan. Pasal 13 -G- Untuk kelengkapan perangkat pemerintahan di Kabupaten Bireuen dan Kabupaten Simeulue dibentuk Sekretariat Dewan Perwakilan Rakyat Daerah Kabupaten, Sekretariat Kabupaten, dinas-dinas Kabupaten dan lembaga teknis Kabupaten, sesuai dengan peraturan perundang-undangan." .
-<http://example.org/legal/document/uu/1999/48/pasal/0012/version/19991004/text> legal:textHasTextString "Untuk memimpin jalannya pemerintahan, di Kabupaten Bireuen dan Kabupaten Simeulue, dipilih dan disahkan seorang Bupati dan Wakil Bupati di Kabupaten masing-masing, sesuai dengan peraturan perundang-undangan. Pasal 13 -G- Untuk kelengkapan perangkat pemerintahan di Kabupaten Bireuen dan Kabupaten Simeulue dibentuk Sekretariat Dewan Perwakilan Rakyat Daerah Kabupaten, Sekretariat Kabupaten, dinas-dinas Kabupaten dan lembaga teknis Kabupaten, sesuai dengan peraturan perundang-undangan." .
-<http://example.org/legal/document/uu/1999/48/pasal/0012/version/19991004> legal:pasalVersionHasText <http://example.org/legal/document/uu/1999/48/pasal/0012/version/19991004/text> .
-<http://example.org/legal/document/uu/1999/48/pasal/0012/version/19991004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/48/pasal/0013> .
-<http://example.org/legal/document/uu/1999/48/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/48/bab/0005> .
-<http://example.org/legal/document/uu/1999/48/bab/0005> legal:babHasKey 5 .
-<http://example.org/legal/document/uu/1999/48/bab/0005> legal:babHasTitle "KETENTUAN PERALIHAN Pasal 14 (Jl) Dengan terbentuknya Kabupaten Bireuen dan Kabupaten Simeulue, pengisian keanggotaan Dewan Perwakilan Rakyat Daerah Kabupaten Bireuen dan Dewan Perwakilan Rakyat Daerah Kabupaten Simeulue diselenggarakan melalui pemilihan umum lokal selambat-lambatnya satu tahun sejak peresmian, sesuai dengan peraturan perundang-undangan. (2) Anggota Dewan Perwakilan Rakyat Daerah Kabupaten Bireuen dan Dewan Perwakilan Rakyat Daerah Kabupaten Simeulue terdiri atas : a. anggota Dewan Perwakilan Rakyat Daerah yang ditetapkan dari partai politik peserta pemilihan umum lokal yang dilaksanakan di Kabupaten masing-masing, dan b. anggota ABRI yang diangkat. (3)Jumlah dan tata cara pengisian keanggotaan Dewan Perwakilan Rakyat Daerah Kabupaten Bireuen dan Dewan Perwakilan Rakyat Daerah Kabupaten Simeulue, sebagaimana dimaksud pada ayat (2), ditetapkan sesuai dengan peraturan perundang-undangan. (4) Dengan terbentuknya Kabupaten Bireuen, jumlah anggota Dewan Perwakilan Rakyat Daerah Kabupaten Aceh Utara disesuaikan dengan jumlah penduduk Kabupaten Aceh Utara setelah dikurangi dengan jumlah penduduk Kabupaten Bireuen. Pasal 15 Pada saat terbentuknya Kabupaten Bireuen dan Kabupaten Simeulue Penjabat Bupati Bireuen dan Penjabat Bupati Simeulue untuk pertama kali diangkat oleh Menteri Dalam Negeri atas nama Presiden berdasarkan usul Gubernur Daerah Istimewa Aceh. Pasal 16 (Jl) Untuk kelancaran penyelenggaraan pemerintahan di Kabupaten Bireuen dan Kabupaten Simeulue, Gubernur Daerah Istimewa Aceh dan Bupati Aceh Utara, sesuai dengan wewenang dan tugasnya masing-masing, menginventarisasi dan mengatur penyerahan kepada Pemerintah Kabupaten Bireuen dan Pemerintah Kabupaten Simeulue sesuai dengan peraturan perundang-undangan: a. pegawai yang karena jabatannya diperlukan oleh Kabupaten Bireuen dan Kabupaten Simeulue: b. tanah, bangunan, barang bergerak, dan barang tidak bergerak yang dimiliki, dikuasai, atau dimanfaatkan oleh Propinsi Daerah Isttmewa Aceh dan Pemerintah Kabupaten Aceh Utara yang berada dalam Kabupaten Bireuen dan Kabupaten Simeulue, c. Badan Usaha Milik Daerah Propinsi Daerah Istimewa Aceh dan Kabupaten Aceh Utara yang kedudukan dan sifatnya diperlukan serta kegiatannya berada di Kabupaten Bireuen dan Badan Usaha Milik Daerah Propinsi Istimewa Aceh yang kedudukan dan sifatnya diperlukan serta kegiatannya berada di Kabupaten Simeulue, d. utang piutang Pemerintah Kabupaten Aceh Utara yang kegunaannya untuk Kabupaten Bireuen serta utang piutang Pemerintah Propinsi Daerah Istimewa Aceh yang kegunaannya untuk Kabupaten Simeulue, dan e. perlengkapan kantor, arsip, dokumen, dan perpustakaan yang karena sifatnya diperlukan oleh Kabupaten Bireuen dan Kabupaten Simeulue. (2) Pelaksanaan penyerahan sebagaimana dimaksud pada ayat (1) selambat-lambatnya harus diselesaikan dalam waktu satu tahun, terhitung sejak diresmikannya Kabupaten Bireuen dan Kabupaten Simeulue. Pasal 17 (Jl) Pembiayaan yang diperlukan akibat pembentukan Kabupaten Bireuen dan Kabupaten Simeulue,sebagaimana dimaksud dalam Pasal 2, masing-masing dibebankan pada Anggaran Pendapatan dan Belanja Daerah Kabupaten Bireuen dan Kabupaten Simeulue. (2) Untuk kelancaran penyelenggaraan pemerintahan dan pembangunan, 8 terhitung sejak diresmikannya pembentukan Kabupaten Bireuen dan Kabupaten Simeulue, segala pembiayaan yang diperlukan pada tahun pertama sebelum dapat disusun Anggaran Pendapatan dan Belanja Daerah Kabupaten yang bersangkutan dibebankan masing-masing pada Anggaran Pendapatan dan Belanja Daerah Kabupaten Aceh Utara dan Anggaran Pendapatan dan Belanja Daerah Propinsi Daerah Istimewa Aceh berdasarkan perimbangan hasil pendapatan yang diperoleh dari wilayah Kabupaten Bireuen dan Kabupaten Simeulue. (3) Pemerintah Propinsi Daerah Istimewa Aceh wajib membantu pembiayaan sebagaimana dimaksud pada ayat (1) melalui Anggaran Pendapatan dan Belanja Daerah Propinsi Daerah Istimewa Aceh selama tiga tahun berturut-turut, terhitung sejak peresmiannya. Pasal 18 (1) Semua peraturan perundang-undangan yang saat ini berlaku bagi Kabupaten Aceh Utara tetap berlaku bagi Kabupaten Bireuen sebelum diubah, diganti, atau dicabut berdasarkan Undang-undang ini. (2) Semua peraturan perundang-undangan yang saat ini berlaku bagi Kabupaten Administratif Simeulue tetap berlaku sebelum diubah, diganti, atau dicabut berdasarkan Undang-undang ini." .
-<http://example.org/legal/document/uu/1999/48/bab/0005> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/48/bab/0005/pasals> .
-<http://example.org/legal/document/uu/1999/48/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1999/48/bab/0006> .
-<http://example.org/legal/document/uu/1999/48/bab/0006> legal:babHasKey 6 .
-<http://example.org/legal/document/uu/1999/48/bab/0006> legal:babHasTitle "KETENTUAN PENUTUP Pasal 19 Pada saat berlakunya Undang-undang ini, semua peraturan perundang-undangan yang tidak sesuai dengan Undang-undang ini dinyatakan tidak berlaku. Pasal 20 Ketentuan lebih lanjut yang diperlukan sebagai pelaksanaan Undang-undang ini diatur sesuai dengan peraturan perundang-undangan. Pasal 21 Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/1999/48/bab/0006> legal:babHasPasalSet <http://example.org/legal/document/uu/1999/48/bab/0006/pasals> .
-<http://example.org/legal/document/uu/1999/48> legal:documentHasDisahkanDate "1999-10-04"^^xsd:date .
-<http://example.org/legal/document/uu/1999/48> legal:documentMengingat <http://example.org/legal/document/uu/1999/48/mengingat> .
-<http://example.org/legal/document/uu/1999/48/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1999/48/mengingat/point> .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/1999/48/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/48/mengingat/point/description> .
-<http://example.org/legal/document/uu/1999/48/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/mengingat/point/0001> .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0001> legal:pointHasKey "1" .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0001/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 18, dan Pasal 20 ayat (1) Undang-Undang Dasar 1945:" .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1999/48/mengingat/point/0001/text> .
-<http://example.org/legal/document/uu/1999/48/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/mengingat/point/0002> .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0002> legal:pointHasKey "2" .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0002/text> legal:textHasTextString "Undang-undang Nomor 22 Tahun 1999 tentang Pemerintahan Daerah (Lembaran Negara Republik Indonesia Tahun 1999 Nomor 60, Tambahan Lembaran Negara Nomor 3839):" .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1999/48/mengingat/point/0002/text> .
-<http://example.org/legal/document/uu/1999/48/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/mengingat/point/0003> .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0003> legal:pointHasKey "3" .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0003/text> legal:textHasTextString "Undang-undang Darurat Nomor 7 Tahun 1956 tentang Pembentukan Daerah Otonom Kabupaten-Kabupaten dalam Lingkungan Daerah .2- Propinsi Sumatera Utara (Lembaran Negara Republik Indonesia Tahun 1956 Nomor 58, Tambahan Lembaran Negara Nomor 1092):" .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0003> legal:pointHasText <http://example.org/legal/document/uu/1999/48/mengingat/point/0003/text> .
-<http://example.org/legal/document/uu/1999/48/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/mengingat/point/0004> .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0004> legal:pointHasKey "4" .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0004/text> legal:textHasTextString "Undang-undang Nomor 24 Tahun 1956 tentang Pembentukan Daerah Otonom Propinsi Aceh dan Perubahan Peraturan Pembentukan Propinsi Sumatera Utara (Lembaran Negara Republik Indonesia Tahun 1956 Nomor 64, Tambahan Lembaran Negara Nomor 1103):" .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0004> legal:pointHasText <http://example.org/legal/document/uu/1999/48/mengingat/point/0004/text> .
-<http://example.org/legal/document/uu/1999/48/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/mengingat/point/0005> .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0005> legal:pointHasKey "5" .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0005/text> legal:textHasTextString "Undang-undang Nomor 4 Tahun 1999 tentang Susunan dan Kedudukan Majelis Permusyawaratan Rakyat, Dewan Perwakilan Rakyat dan Dewan Perwakilan Rakyat Daerah (Lembaran Negara Republik Indonesia Tahun 1999 Nomor 24, Tambahan Lembaran Negara Nomor 3811)," .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0005> legal:pointHasText <http://example.org/legal/document/uu/1999/48/mengingat/point/0005/text> .
-<http://example.org/legal/document/uu/1999/48/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/mengingat/point/0006> .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0006> legal:pointHasKey "6" .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0006/text> legal:textHasTextString "Undang-undang Nomor 25 Tahun 1999 tentang Perimbangan Keuangan antara Pemerintah Pusat dan Daerah (Lembaran Negara Republik Indonesia Tahun 1999 Nomor 72, Tambahan Lembaran Negara Nomor 3848), Dengan Persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN : Menetapkan : UNDANG-UNDANG TENTANG PEMBENTUKAN KABUPATEN BIREUEN DAN KABUPATEN SIMEULUE." .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0006> legal:pointHasText <http://example.org/legal/document/uu/1999/48/mengingat/point/0006/text> .
-<http://example.org/legal/document/uu/1999/48> legal:documentMenimbang <http://example.org/legal/document/uu/1999/48/menimbang> .
-<http://example.org/legal/document/uu/1999/48/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/1999/48/menimbang/point> .
-<http://example.org/legal/document/uu/1999/48/menimbang/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/1999/48/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/48/menimbang/point/description> .
-<http://example.org/legal/document/uu/1999/48/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/menimbang/point/a> .
-<http://example.org/legal/document/uu/1999/48/menimbang/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/1999/48/menimbang/point/a/text> legal:textHasTextString "bahwa berhubung dengan perkembangan dan kemajuan Propinsi Daerah Istimewa Aceh pada umumnya serta Kabupaten Aceh Utara dan Kabupaten Administratif Simeulue pada khususnya dan adanya aspirasi yang berkembang dalam masyarakat, dipandang perlu meningkatkan penyelenggaraan pemerintahan, pelaksanaan pembangunan, dan pembinaan kemasyarakatan guna menjamin perkembangan dan kemajuan dimaksud pada masa mendatang," .
-<http://example.org/legal/document/uu/1999/48/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/1999/48/menimbang/point/a/text> .
-<http://example.org/legal/document/uu/1999/48/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/48/menimbang/point/b> .
-<http://example.org/legal/document/uu/1999/48/menimbang/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/1999/48/menimbang/point/b/text> legal:textHasTextString "bahwa sehubungan dengan hal tersebut di atas dan memperhatikan perkembangan jumlah penduduk, luas wilayah, potensi ekonomi, sosial budaya, sosial politik, dan meningkatnya beban tugas serta volume kerja di bidang pemerintahan, pembangunan, dan kemasyarakatan di Kabupaten Aceh Utara dan Kabupaten Administratif Simeulue, dipandang perlu membentuk Kabupaten Bireuen sebagai pemekaran dari Kabupaten Aceh Utara dan membentuk Kabupaten Simeulue, c bahwa pembentukan Kabupaten Bireuen dan Kabupaten Simeulue akan dapat mendorong peningkatan pelayanan di bidang pemerintahan, pembangunan, dan kemasyarakatan serta memberikan kemampuan dalam memanfaatkan potensi Daerah untuk menyelenggarakan Otonomi Daerah, d. bahwa sesuai butir a, b, dan c serta berdasarkan ketentuan Undang-undang Nomor 22 Tahun 1999 tentang Pemerintahan Daerah, pembentukan Kabupaten Bireuen dan Kabupaten Simeulue perlu ditetapkan dengan undang-undang," .
-<http://example.org/legal/document/uu/1999/48/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/1999/48/menimbang/point/b/text> .
-<http://example.org/legal/document/uu/1999/48> legal:documentHasDisahkanPengesah "BACHARUDDIN JUSUF HABIBIE" .
-<http://example.org/legal/document/uu/1999/48> legal:documentHasDisahkanLocation "Jakarta" .
-<http://example.org/legal/document/uu/1999/48> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
-<http://example.org/legal/document/uu/1999/48> a legal:Document .
-<http://example.org/legal/document/uu/1999/48/bab> a legal:BabSet .
-<http://example.org/legal/document/uu/1999/48/bab/0001> a legal:Bab .
-<http://example.org/legal/document/uu/1999/48/bab/0001/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/1999/48/pasal/0001> a legal:Pasal .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/a> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/a/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/b> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/c> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/bab/0002> a legal:Bab .
-<http://example.org/legal/document/uu/1999/48/bab/0002/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/1999/48/pasal/0002> a legal:Pasal .
-<http://example.org/legal/document/uu/1999/48/pasal/0002/version/19991004> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1999/48/pasal/0002/version/19991004/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0003> a legal:Pasal .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/a> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/a/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/b> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/c> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/d> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/e> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/e/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/f> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/f/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/g> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/g/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/h> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/h/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/h/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/h/point/0001> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/h/point/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0004> a legal:Pasal .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/a> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/a/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/b> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/c> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/d> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/e> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/e/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0005> a legal:Pasal .
-<http://example.org/legal/document/uu/1999/48/pasal/0005/version/19991004> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1999/48/pasal/0005/version/19991004/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0006> a legal:Pasal .
-<http://example.org/legal/document/uu/1999/48/pasal/0006/version/19991004> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1999/48/pasal/0006/version/19991004/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0007> a legal:Pasal .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat> a legal:AyatSet .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001> a legal:Ayat .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/a> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/a/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/b> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/c> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/d> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002> a legal:Ayat .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/a> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/a/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/b> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/c> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/d> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0003> a legal:Ayat .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0003/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0004> a legal:Ayat .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0004/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0008> a legal:Pasal .
-<http://example.org/legal/document/uu/1999/48/pasal/0008/version/19991004> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1999/48/pasal/0008/version/19991004/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0009> a legal:Pasal .
-<http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004/ayat> a legal:AyatSet .
-<http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004/ayat/0001> a legal:Ayat .
-<http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004/ayat/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004/ayat/0002> a legal:Ayat .
-<http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004/ayat/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/bab/0003> a legal:Bab .
-<http://example.org/legal/document/uu/1999/48/bab/0003/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/1999/48/pasal/0010> a legal:Pasal .
-<http://example.org/legal/document/uu/1999/48/pasal/0010/version/19991004> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1999/48/pasal/0010/version/19991004/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/bab/0004> a legal:Bab .
-<http://example.org/legal/document/uu/1999/48/bab/0004/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/1999/48/pasal/0011> a legal:Pasal .
-<http://example.org/legal/document/uu/1999/48/pasal/0011/version/19991004> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1999/48/pasal/0011/version/19991004/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/pasal/0012> a legal:Pasal .
-<http://example.org/legal/document/uu/1999/48/pasal/0012/version/19991004> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1999/48/pasal/0012/version/19991004/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/bab/0005> a legal:Bab .
-<http://example.org/legal/document/uu/1999/48/bab/0006> a legal:Bab .
-<http://example.org/legal/document/uu/1999/48/mengingat> a legal:Mengingat .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/mengingat/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0001> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0002> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0003> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0003/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0004> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0004/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0005> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0005/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0006> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0006/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/1999/48/menimbang/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/menimbang/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1999/48/menimbang/point/a> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/menimbang/point/a/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/menimbang/point/b> a legal:Point .
-<http://example.org/legal/document/uu/1999/48/menimbang/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/48/bab> legal:partOf <http://example.org/legal/document/uu/1999/48> .
-<http://example.org/legal/document/uu/1999/48/bab/0001> legal:partOf <http://example.org/legal/document/uu/1999/48/bab> .
-<http://example.org/legal/document/uu/1999/48/bab/0001/pasals> legal:partOf <http://example.org/legal/document/uu/1999/48/bab/0001> .
-<http://example.org/legal/document/uu/1999/48/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1999/48/bab/0001/pasals> .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0001> .
-<http://example.org/legal/document/uu/1999/48/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1999/48> .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004> .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/a> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point> .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/a/text> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/a> .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/b> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point> .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/b/text> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/b> .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/c> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point> .
-<http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/c/text> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0001/version/19991004/point/c> .
-<http://example.org/legal/document/uu/1999/48/bab/0002> legal:partOf <http://example.org/legal/document/uu/1999/48/bab> .
-<http://example.org/legal/document/uu/1999/48/bab/0002/pasals> legal:partOf <http://example.org/legal/document/uu/1999/48/bab/0002> .
-<http://example.org/legal/document/uu/1999/48/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1999/48/bab/0002/pasals> .
-<http://example.org/legal/document/uu/1999/48/pasal/0002/version/19991004> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0002> .
-<http://example.org/legal/document/uu/1999/48/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1999/48> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1999/48/bab/0002/pasals> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0003> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1999/48> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/a> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/a/text> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/a> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/b> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/b/text> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/b> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/c> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/c/text> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/c> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/d> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/d/text> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/d> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/e> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/e/text> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/e> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/f> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/f/text> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/f> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/g> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/g/text> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/g> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/h> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/h/point> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/h> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/h/point/0001> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/h/point> .
-<http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/h/point/0001/text> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0003/version/19991004/point/h/point/0001> .
-<http://example.org/legal/document/uu/1999/48/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1999/48/bab/0002/pasals> .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0004> .
-<http://example.org/legal/document/uu/1999/48/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1999/48> .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004> .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/a> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point> .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/a/text> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/a> .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/b> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point> .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/b/text> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/b> .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/c> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point> .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/c/text> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/c> .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/d> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point> .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/d/text> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/d> .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/e> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point> .
-<http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/e/text> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0004/version/19991004/point/e> .
-<http://example.org/legal/document/uu/1999/48/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1999/48/bab/0002/pasals> .
-<http://example.org/legal/document/uu/1999/48/pasal/0005/version/19991004> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0005> .
-<http://example.org/legal/document/uu/1999/48/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1999/48> .
-<http://example.org/legal/document/uu/1999/48/pasal/0006> legal:partOf <http://example.org/legal/document/uu/1999/48/bab/0002/pasals> .
-<http://example.org/legal/document/uu/1999/48/pasal/0006/version/19991004> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0006> .
-<http://example.org/legal/document/uu/1999/48/pasal/0006> legal:partOf <http://example.org/legal/document/uu/1999/48> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007> legal:partOf <http://example.org/legal/document/uu/1999/48/bab/0002/pasals> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0007> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007> legal:partOf <http://example.org/legal/document/uu/1999/48> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/a> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/a/text> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/a> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/b> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/b/text> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/b> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/c> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/c/text> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/c> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/d> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/d/text> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0001/point/d> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/a> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/a/text> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/a> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/b> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/b/text> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/b> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/c> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/c/text> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/c> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/d> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/d/text> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0002/point/d> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0003> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0004> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat> .
-<http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0007/version/19991004/ayat/0004> .
-<http://example.org/legal/document/uu/1999/48/pasal/0008> legal:partOf <http://example.org/legal/document/uu/1999/48/bab/0002/pasals> .
-<http://example.org/legal/document/uu/1999/48/pasal/0008/version/19991004> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0008> .
-<http://example.org/legal/document/uu/1999/48/pasal/0008> legal:partOf <http://example.org/legal/document/uu/1999/48> .
-<http://example.org/legal/document/uu/1999/48/pasal/0009> legal:partOf <http://example.org/legal/document/uu/1999/48/bab/0002/pasals> .
-<http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0009> .
-<http://example.org/legal/document/uu/1999/48/pasal/0009> legal:partOf <http://example.org/legal/document/uu/1999/48> .
-<http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004/ayat> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004> .
-<http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004/ayat> .
-<http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004/ayat/0001> .
-<http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004/ayat> .
-<http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0009/version/19991004/ayat/0002> .
-<http://example.org/legal/document/uu/1999/48/bab/0003> legal:partOf <http://example.org/legal/document/uu/1999/48/bab> .
-<http://example.org/legal/document/uu/1999/48/bab/0003/pasals> legal:partOf <http://example.org/legal/document/uu/1999/48/bab/0003> .
-<http://example.org/legal/document/uu/1999/48/pasal/0010> legal:partOf <http://example.org/legal/document/uu/1999/48/bab/0003/pasals> .
-<http://example.org/legal/document/uu/1999/48/pasal/0010/version/19991004> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0010> .
-<http://example.org/legal/document/uu/1999/48/pasal/0010> legal:partOf <http://example.org/legal/document/uu/1999/48> .
-<http://example.org/legal/document/uu/1999/48/bab/0004> legal:partOf <http://example.org/legal/document/uu/1999/48/bab> .
-<http://example.org/legal/document/uu/1999/48/bab/0004/pasals> legal:partOf <http://example.org/legal/document/uu/1999/48/bab/0004> .
-<http://example.org/legal/document/uu/1999/48/pasal/0011> legal:partOf <http://example.org/legal/document/uu/1999/48/bab/0004/pasals> .
-<http://example.org/legal/document/uu/1999/48/pasal/0011/version/19991004> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0011> .
-<http://example.org/legal/document/uu/1999/48/pasal/0011> legal:partOf <http://example.org/legal/document/uu/1999/48> .
-<http://example.org/legal/document/uu/1999/48/pasal/0012> legal:partOf <http://example.org/legal/document/uu/1999/48/bab/0004/pasals> .
-<http://example.org/legal/document/uu/1999/48/pasal/0012/version/19991004> legal:partOf <http://example.org/legal/document/uu/1999/48/pasal/0012> .
-<http://example.org/legal/document/uu/1999/48/pasal/0012> legal:partOf <http://example.org/legal/document/uu/1999/48> .
-<http://example.org/legal/document/uu/1999/48/bab/0005> legal:partOf <http://example.org/legal/document/uu/1999/48/bab> .
-<http://example.org/legal/document/uu/1999/48/bab/0005/pasals> legal:partOf <http://example.org/legal/document/uu/1999/48/bab/0005> .
-<http://example.org/legal/document/uu/1999/48/bab/0006> legal:partOf <http://example.org/legal/document/uu/1999/48/bab> .
-<http://example.org/legal/document/uu/1999/48/bab/0006/pasals> legal:partOf <http://example.org/legal/document/uu/1999/48/bab/0006> .
-<http://example.org/legal/document/uu/1999/48/mengingat/point> legal:partOf <http://example.org/legal/document/uu/1999/48/mengingat> .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1999/48/mengingat/point> .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0001/text> legal:partOf <http://example.org/legal/document/uu/1999/48/mengingat/point/0001> .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1999/48/mengingat/point> .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0002/text> legal:partOf <http://example.org/legal/document/uu/1999/48/mengingat/point/0002> .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/1999/48/mengingat/point> .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0003/text> legal:partOf <http://example.org/legal/document/uu/1999/48/mengingat/point/0003> .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0004> legal:partOf <http://example.org/legal/document/uu/1999/48/mengingat/point> .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0004/text> legal:partOf <http://example.org/legal/document/uu/1999/48/mengingat/point/0004> .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0005> legal:partOf <http://example.org/legal/document/uu/1999/48/mengingat/point> .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0005/text> legal:partOf <http://example.org/legal/document/uu/1999/48/mengingat/point/0005> .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0006> legal:partOf <http://example.org/legal/document/uu/1999/48/mengingat/point> .
-<http://example.org/legal/document/uu/1999/48/mengingat/point/0006/text> legal:partOf <http://example.org/legal/document/uu/1999/48/mengingat/point/0006> .
-<http://example.org/legal/document/uu/1999/48/menimbang/point> legal:partOf <http://example.org/legal/document/uu/1999/48/menimbang> .
-<http://example.org/legal/document/uu/1999/48/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1999/48/menimbang/point> .
-<http://example.org/legal/document/uu/1999/48/menimbang/point/a/text> legal:partOf <http://example.org/legal/document/uu/1999/48/menimbang/point/a> .
-<http://example.org/legal/document/uu/1999/48/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1999/48/menimbang/point> .
-<http://example.org/legal/document/uu/1999/48/menimbang/point/b/text> legal:partOf <http://example.org/legal/document/uu/1999/48/menimbang/point/b> .
+<http://example.org/legal/peraturan/uu/1999/48> legal:daftarBab <http://example.org/legal/peraturan/uu/1999/48/bab> .
+<http://example.org/legal/peraturan/uu/1999/48/bab> legal:bab <http://example.org/legal/peraturan/uu/1999/48/bab/0001> .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0001> legal:judul "KETENTUAN UMUM" .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0001> legal:daftarPasal <http://example.org/legal/peraturan/uu/1999/48/bab/0001/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0001/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1999/48/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001> legal:versi <http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004> .
+<http://example.org/legal/peraturan/uu/1999/48> legal:pasal <http://example.org/legal/peraturan/uu/1999/48/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004> legal:tanggal "1999-10-04"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004> legal:teks "Dalam Undang-undang ini yang dimaksud dengan :\na. Daerah adalah Daerah Otonom sebagaimana dimaksud dalam Pasal 1 huruf i Undang-undang Nomor 22 Tahun 1999 tentang Pemerintahan Daerah:\nb. Kabupaten Aceh Utara adalah Daerah Otonom sebagaimana dimaksud dalam Undang-undang Nomor 7 Tahun 1956 tentang Pembentukan Daerah Otonom Kabupaten-Kabupaten dalam Lingkungan Daerah Propinsi Sumatera Utara,\nc. Propinsi Daerah Istimewa Aceh adalah Daerah Otonom sebagaimana dimaksud dalam Undang-undang Nomor 24 Tahun 1956 tentang Pembentukan Daerah Otonom Propinsi Aceh dan Perubahan Peraturan Pembentukan Propinsi Sumatera Utara.\n" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/description> legal:teks "Dalam Undang-undang ini yang dimaksud dengan :" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/description> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/a> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/a> legal:nomor "a" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/a/text> legal:teks "Daerah adalah Daerah Otonom sebagaimana dimaksud dalam Pasal 1 huruf i Undang-undang Nomor 22 Tahun 1999 tentang Pemerintahan Daerah:" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/a> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/a/text> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/a/text> legal:merujuk <http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/i> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/a/text> legal:merujuk <http://example.org/legal/peraturan/uu/1999/48/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/b> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/b> legal:nomor "b" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/b/text> legal:teks "Kabupaten Aceh Utara adalah Daerah Otonom sebagaimana dimaksud dalam Undang-undang Nomor 7 Tahun 1956 tentang Pembentukan Daerah Otonom Kabupaten-Kabupaten dalam Lingkungan Daerah Propinsi Sumatera Utara," .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/b> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/b/text> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/c> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/c> legal:nomor "c" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/c/text> legal:teks "Propinsi Daerah Istimewa Aceh adalah Daerah Otonom sebagaimana dimaksud dalam Undang-undang Nomor 24 Tahun 1956 tentang Pembentukan Daerah Otonom Propinsi Aceh dan Perubahan Peraturan Pembentukan Propinsi Sumatera Utara." .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/c> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/c/text> .
+<http://example.org/legal/peraturan/uu/1999/48/bab> legal:bab <http://example.org/legal/peraturan/uu/1999/48/bab/0002> .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0002> legal:judul "3 PEMBENTUKAN, BATAS WILAYAH, DAN IBUKOTA" .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0002> legal:daftarPasal <http://example.org/legal/peraturan/uu/1999/48/bab/0002/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0002/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1999/48/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0002> legal:versi <http://example.org/legal/peraturan/uu/1999/48/pasal/0002/versi/19991004> .
+<http://example.org/legal/peraturan/uu/1999/48> legal:pasal <http://example.org/legal/peraturan/uu/1999/48/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0002/versi/19991004> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0002/versi/19991004> legal:tanggal "1999-10-04"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0002/versi/19991004> legal:teks "Dengan Undang-undang ini dibentuk Kabupaten Bireuen dan Kabupaten Simeulue dalam wilayah Propinsi Daerah Istimewa Aceh." .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0002/versi/19991004/text> legal:teks "Dengan Undang-undang ini dibentuk Kabupaten Bireuen dan Kabupaten Simeulue dalam wilayah Propinsi Daerah Istimewa Aceh." .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0002/versi/19991004> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0002/versi/19991004/text> .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0002/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1999/48/pasal/0003> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003> legal:nomor 3 .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003> legal:versi <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004> .
+<http://example.org/legal/peraturan/uu/1999/48> legal:pasal <http://example.org/legal/peraturan/uu/1999/48/pasal/0003> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004> legal:tanggal "1999-10-04"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004> legal:teks "Kabupaten Bireuen berasal dari sebagian wilayah Kabupaten Aceh Utara yang terdiri atas wilayah :\na. Kecamatan Samalanga,\nb. Kecamatan Jeunieb:\nc. Kecamatan Peudada,\nd. Kecamatan Jeumpa,\ne. Kecamatan Peusangan,\nf. Kecamatan Makmur:\ng. Kecamatan Gandapura,\nh. Kecamatan Pandrah:\n1. Kecamatan Juli, dan J- Kecamatan Jangka.\n\n" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/description> legal:teks "Kabupaten Bireuen berasal dari sebagian wilayah Kabupaten Aceh Utara yang terdiri atas wilayah :" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/description> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/a> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/a> legal:nomor "a" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/a/text> legal:teks "Kecamatan Samalanga," .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/a> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/a/text> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/b> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/b> legal:nomor "b" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/b/text> legal:teks "Kecamatan Jeunieb:" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/b> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/b/text> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/c> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/c> legal:nomor "c" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/c/text> legal:teks "Kecamatan Peudada," .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/c> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/c/text> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/d> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/d> legal:nomor "d" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/d/text> legal:teks "Kecamatan Jeumpa," .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/d> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/d/text> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/e> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/e> legal:nomor "e" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/e/text> legal:teks "Kecamatan Peusangan," .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/e> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/e/text> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/f> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/f> legal:nomor "f" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/f/text> legal:teks "Kecamatan Makmur:" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/f> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/f/text> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/g> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/g> legal:nomor "g" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/g/text> legal:teks "Kecamatan Gandapura," .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/g> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/g/text> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/h> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/h> legal:nomor "h" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/h> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/h/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/h/huruf/description> legal:teks "Kecamatan Pandrah:" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/h/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/h/huruf/description> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/h/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/h/huruf/0001> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/h/huruf/0001> legal:nomor "1" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/h/huruf/0001/text> legal:teks "Kecamatan Juli, dan J- Kecamatan Jangka." .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/h/huruf/0001> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/h/huruf/0001/text> .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0002/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1999/48/pasal/0004> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004> legal:nomor 4 .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004> legal:versi <http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004> .
+<http://example.org/legal/peraturan/uu/1999/48> legal:pasal <http://example.org/legal/peraturan/uu/1999/48/pasal/0004> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004> legal:tanggal "1999-10-04"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004> legal:teks "Kabupaten Simeulue terdiri atas wilayah :\na. Kecamatan Simeulue Timur,\nb. Kecamatan Simeulue Tengah:\nc. Kecamatan Simeulue Barat:\nd. Kecamatan Teupah Selatan: dan\ne. Kecamatan Salang.\n" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/description> legal:teks "Kabupaten Simeulue terdiri atas wilayah :" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/description> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/a> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/a> legal:nomor "a" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/a/text> legal:teks "Kecamatan Simeulue Timur," .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/a> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/a/text> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/b> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/b> legal:nomor "b" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/b/text> legal:teks "Kecamatan Simeulue Tengah:" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/b> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/b/text> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/c> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/c> legal:nomor "c" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/c/text> legal:teks "Kecamatan Simeulue Barat:" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/c> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/c/text> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/d> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/d> legal:nomor "d" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/d/text> legal:teks "Kecamatan Teupah Selatan: dan" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/d> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/d/text> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/e> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/e> legal:nomor "e" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/e/text> legal:teks "Kecamatan Salang." .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/e> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/e/text> .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0002/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1999/48/pasal/0005> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0005> legal:nomor 5 .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0005> legal:versi <http://example.org/legal/peraturan/uu/1999/48/pasal/0005/versi/19991004> .
+<http://example.org/legal/peraturan/uu/1999/48> legal:pasal <http://example.org/legal/peraturan/uu/1999/48/pasal/0005> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0005/versi/19991004> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0005/versi/19991004> legal:tanggal "1999-10-04"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0005/versi/19991004> legal:teks "Dengan dibentuknya Kabupaten Bireuen, sebagaimana dimaksud dalam Pasal 2, wilayah Kabupaten Aceh Utara dikurangi dengan wilayah Kabupaten Bireuen, sebagaimana dimaksud dalam Pasal 3. 4" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0005/versi/19991004/text> legal:teks "Dengan dibentuknya Kabupaten Bireuen, sebagaimana dimaksud dalam Pasal 2, wilayah Kabupaten Aceh Utara dikurangi dengan wilayah Kabupaten Bireuen, sebagaimana dimaksud dalam Pasal 3. 4" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0005/versi/19991004> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0005/versi/19991004/text> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0005/versi/19991004/text> legal:merujuk <http://example.org/legal/peraturan/uu/1999/48/pasal/0003> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0005/versi/19991004/text> legal:merujuk <http://example.org/legal/peraturan/uu/1999/48/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0002/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1999/48/pasal/0006> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0006> legal:nomor 6 .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0006> legal:versi <http://example.org/legal/peraturan/uu/1999/48/pasal/0006/versi/19991004> .
+<http://example.org/legal/peraturan/uu/1999/48> legal:pasal <http://example.org/legal/peraturan/uu/1999/48/pasal/0006> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0006/versi/19991004> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0006/versi/19991004> legal:tanggal "1999-10-04"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0006/versi/19991004> legal:teks "Dengan dibentuknya Kabupaten Simeulue, sebagaimana dimaksud dalam Pasal 2, Kabupaten Administratif Simeulue dalam wilayah Propinsi Daerah Istimewa Aceh dihapus." .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0006/versi/19991004/text> legal:teks "Dengan dibentuknya Kabupaten Simeulue, sebagaimana dimaksud dalam Pasal 2, Kabupaten Administratif Simeulue dalam wilayah Propinsi Daerah Istimewa Aceh dihapus." .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0006/versi/19991004> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0006/versi/19991004/text> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0006/versi/19991004/text> legal:merujuk <http://example.org/legal/peraturan/uu/1999/48/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0002/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1999/48/pasal/0007> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007> legal:nomor 7 .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007> legal:versi <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004> .
+<http://example.org/legal/peraturan/uu/1999/48> legal:pasal <http://example.org/legal/peraturan/uu/1999/48/pasal/0007> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004> legal:tanggal "1999-10-04"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004> legal:teks "(1). Kabupaten Bireuen mempunyai batas wilayah :\na. sebelah utara dengan Selat Malaka,\nb. sebelah timur dengan Kecamatan Muara Batu dan Kecamatan Sawang, Kabupaten Aceh Utara,\nc. sebelah selatan dengan Kecamatan Sirih Nara, dan Kecamatan Timang Gajah, Kabupaten Aceh Tengah, dan\nd. sebelah barat dengan Kecamatan Bandar Dua, Kecamatan Meureudu, dan Kecamatan Geumpang Kabupaten Pidie.\n\n(2). Kabupaten Simeulue mempunyai batas wilayah :\na. sebelah utara dengan Samudra Hindia,\nb. sebelah timur dengan Samudra Hindia,\nc. sebelah selatan dengan Samudra Hindia: dan\nd. sebelah barat dengan Samudra Hindia.\n\n(3). Batas wilayah sebagaimana dimaksud pada ayat (1) dan ayat (2) dituangkan dalam peta yang merupakan bagian tidak terpisahkan dari Undang-undang ini.\n(4). Penentuan batas wilayah Kabupaten Bireuen dan Kabupaten Simeulue secara pasti di lapangan, sebagaimana dimaksud pada ayat (1) dan ayat (2), ditetapkan oleh Menteri Dalam Negeri." .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004> legal:daftarAyat <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001> legal:teks "Kabupaten Bireuen mempunyai batas wilayah :\na. sebelah utara dengan Selat Malaka,\nb. sebelah timur dengan Kecamatan Muara Batu dan Kecamatan Sawang, Kabupaten Aceh Utara,\nc. sebelah selatan dengan Kecamatan Sirih Nara, dan Kecamatan Timang Gajah, Kabupaten Aceh Tengah, dan\nd. sebelah barat dengan Kecamatan Bandar Dua, Kecamatan Meureudu, dan Kecamatan Geumpang Kabupaten Pidie.\n" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/description> legal:teks "Kabupaten Bireuen mempunyai batas wilayah :" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/description> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/a> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/a> legal:nomor "a" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/a/text> legal:teks "sebelah utara dengan Selat Malaka," .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/a> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/a/text> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/b> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/b> legal:nomor "b" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/b/text> legal:teks "sebelah timur dengan Kecamatan Muara Batu dan Kecamatan Sawang, Kabupaten Aceh Utara," .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/b> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/b/text> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/c> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/c> legal:nomor "c" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/c/text> legal:teks "sebelah selatan dengan Kecamatan Sirih Nara, dan Kecamatan Timang Gajah, Kabupaten Aceh Tengah, dan" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/c> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/c/text> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/d> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/d> legal:nomor "d" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/d/text> legal:teks "sebelah barat dengan Kecamatan Bandar Dua, Kecamatan Meureudu, dan Kecamatan Geumpang Kabupaten Pidie." .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/d> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/d/text> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002> legal:teks "Kabupaten Simeulue mempunyai batas wilayah :\na. sebelah utara dengan Samudra Hindia,\nb. sebelah timur dengan Samudra Hindia,\nc. sebelah selatan dengan Samudra Hindia: dan\nd. sebelah barat dengan Samudra Hindia.\n" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/description> legal:teks "Kabupaten Simeulue mempunyai batas wilayah :" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/description> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/a> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/a> legal:nomor "a" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/a/text> legal:teks "sebelah utara dengan Samudra Hindia," .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/a> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/a/text> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/b> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/b> legal:nomor "b" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/b/text> legal:teks "sebelah timur dengan Samudra Hindia," .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/b> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/b/text> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/c> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/c> legal:nomor "c" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/c/text> legal:teks "sebelah selatan dengan Samudra Hindia: dan" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/c> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/c/text> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/d> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/d> legal:nomor "d" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/d/text> legal:teks "sebelah barat dengan Samudra Hindia." .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/d> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/d/text> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0003> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0003> legal:nomor 3 .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0003> legal:teks "Batas wilayah sebagaimana dimaksud pada ayat (1) dan ayat (2) dituangkan dalam peta yang merupakan bagian tidak terpisahkan dari Undang-undang ini." .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0003/text> legal:teks "Batas wilayah sebagaimana dimaksud pada ayat (1) dan ayat (2) dituangkan dalam peta yang merupakan bagian tidak terpisahkan dari Undang-undang ini." .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0003> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0003/text> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0003/text> legal:merujuk <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0003/text> legal:merujuk <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0004> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0004> legal:nomor 4 .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0004> legal:teks "Penentuan batas wilayah Kabupaten Bireuen dan Kabupaten Simeulue secara pasti di lapangan, sebagaimana dimaksud pada ayat (1) dan ayat (2), ditetapkan oleh Menteri Dalam Negeri." .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0004/text> legal:teks "Penentuan batas wilayah Kabupaten Bireuen dan Kabupaten Simeulue secara pasti di lapangan, sebagaimana dimaksud pada ayat (1) dan ayat (2), ditetapkan oleh Menteri Dalam Negeri." .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0004> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0004/text> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0004/text> legal:merujuk <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0004/text> legal:merujuk <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0002/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1999/48/pasal/0008> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0008> legal:nomor 8 .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0008> legal:versi <http://example.org/legal/peraturan/uu/1999/48/pasal/0008/versi/19991004> .
+<http://example.org/legal/peraturan/uu/1999/48> legal:pasal <http://example.org/legal/peraturan/uu/1999/48/pasal/0008> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0008/versi/19991004> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0008/versi/19991004> legal:tanggal "1999-10-04"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0008/versi/19991004> legal:teks "(Jl) Dengan dibentuknya Kabupaten Bireuen dan Kabupaten Simeulue, sebagaimana dimaksud dalam Pasal 2, dan mempunyai wilayah sebagaimana dimaksud dalam Pasal 3, dan Pasal 4, Pemerintah Kabupaten Bireuen dan Pemerintah Kabupaten Simeulue wajib menetapkan Tata Ruang Wilayah Kabupaten Bireuen dan Kabupaten Simeulue, sesuai dengan peraturan perundang-undangan. .5- (2) Penetapan Tata Ruang Wilayah Kabupaten Bireuen dan Kabupaten Simeulue, sebagaimana dimaksud pada ayat (1), dilakukan secara terpadu dan tidak terpisahkan dari Tata Ruang Wilayah Nasional, Propinsi, dan Kabupaten/Kota." .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0008/versi/19991004/text> legal:teks "(Jl) Dengan dibentuknya Kabupaten Bireuen dan Kabupaten Simeulue, sebagaimana dimaksud dalam Pasal 2, dan mempunyai wilayah sebagaimana dimaksud dalam Pasal 3, dan Pasal 4, Pemerintah Kabupaten Bireuen dan Pemerintah Kabupaten Simeulue wajib menetapkan Tata Ruang Wilayah Kabupaten Bireuen dan Kabupaten Simeulue, sesuai dengan peraturan perundang-undangan. .5- (2) Penetapan Tata Ruang Wilayah Kabupaten Bireuen dan Kabupaten Simeulue, sebagaimana dimaksud pada ayat (1), dilakukan secara terpadu dan tidak terpisahkan dari Tata Ruang Wilayah Nasional, Propinsi, dan Kabupaten/Kota." .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0008/versi/19991004> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0008/versi/19991004/text> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0008/versi/19991004/text> legal:merujuk <http://example.org/legal/peraturan/uu/1999/48/pasal/0008/versi/19991004/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0008/versi/19991004/text> legal:merujuk <http://example.org/legal/peraturan/uu/1999/48/pasal/0004> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0008/versi/19991004/text> legal:merujuk <http://example.org/legal/peraturan/uu/1999/48/pasal/0003> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0008/versi/19991004/text> legal:merujuk <http://example.org/legal/peraturan/uu/1999/48/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0002/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1999/48/pasal/0009> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0009> legal:nomor 9 .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0009> legal:versi <http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004> .
+<http://example.org/legal/peraturan/uu/1999/48> legal:pasal <http://example.org/legal/peraturan/uu/1999/48/pasal/0009> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004> legal:tanggal "1999-10-04"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004> legal:teks "(1). Ibukota Kabupaten Bireuen berkedudukan di Bireuen.\n(2). Ibukota Kabupaten Simeulue berkedudukan di Sinabang." .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004> legal:daftarAyat <http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004/ayat> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004/ayat/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004/ayat/0001> legal:teks "Ibukota Kabupaten Bireuen berkedudukan di Bireuen." .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004/ayat/0001/text> legal:teks "Ibukota Kabupaten Bireuen berkedudukan di Bireuen." .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004/ayat/0001> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004/ayat/0001/text> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004/ayat/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004/ayat/0002> legal:teks "Ibukota Kabupaten Simeulue berkedudukan di Sinabang." .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004/ayat/0002/text> legal:teks "Ibukota Kabupaten Simeulue berkedudukan di Sinabang." .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004/ayat/0002> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004/ayat/0002/text> .
+<http://example.org/legal/peraturan/uu/1999/48/bab> legal:bab <http://example.org/legal/peraturan/uu/1999/48/bab/0003> .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0003> legal:nomor 3 .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0003> legal:judul "KEWENANGAN DAERAH" .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0003> legal:daftarPasal <http://example.org/legal/peraturan/uu/1999/48/bab/0003/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0003/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1999/48/pasal/0010> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0010> legal:nomor 10 .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0010> legal:versi <http://example.org/legal/peraturan/uu/1999/48/pasal/0010/versi/19991004> .
+<http://example.org/legal/peraturan/uu/1999/48> legal:pasal <http://example.org/legal/peraturan/uu/1999/48/pasal/0010> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0010/versi/19991004> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0010/versi/19991004> legal:tanggal "1999-10-04"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0010/versi/19991004> legal:teks "(Jl) Dengan terbentuknya Kabupaten Bireuen dan Kabupaten Simeulue, kewenangan Daerah sebagai Daerah Otonom mencakup seluruh kewenangan bidang pemerintahan, termasuk kewenangan wajib, kecuali bidang politik luar negeri, pertahanan keamanan, peradilan, moneter dan fiskal, agama, serta kewenangan bidang lain, sesuai dengan peraturan perundang-undangan. (2) Kewenangan wajib, sebagaimana dimaksud pada ayat (1), terdiri atas pekerjaan umum, kesehatan, pendidikan dan kebudayaan, pertanian, perhubungan, industri dan perdagangan, penanaman modal, lingkungan hidup, pertanahan, koperasi, dan tenaga kerja." .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0010/versi/19991004/text> legal:teks "(Jl) Dengan terbentuknya Kabupaten Bireuen dan Kabupaten Simeulue, kewenangan Daerah sebagai Daerah Otonom mencakup seluruh kewenangan bidang pemerintahan, termasuk kewenangan wajib, kecuali bidang politik luar negeri, pertahanan keamanan, peradilan, moneter dan fiskal, agama, serta kewenangan bidang lain, sesuai dengan peraturan perundang-undangan. (2) Kewenangan wajib, sebagaimana dimaksud pada ayat (1), terdiri atas pekerjaan umum, kesehatan, pendidikan dan kebudayaan, pertanian, perhubungan, industri dan perdagangan, penanaman modal, lingkungan hidup, pertanahan, koperasi, dan tenaga kerja." .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0010/versi/19991004> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0010/versi/19991004/text> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0010/versi/19991004/text> legal:merujuk <http://example.org/legal/peraturan/uu/1999/48/pasal/0010/versi/19991004/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1999/48/bab> legal:bab <http://example.org/legal/peraturan/uu/1999/48/bab/0004> .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0004> legal:nomor 4 .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0004> legal:judul "PEMERINTAHAN DAERAH" .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0004> legal:daftarPasal <http://example.org/legal/peraturan/uu/1999/48/bab/0004/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0004/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1999/48/pasal/0011> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0011> legal:nomor 11 .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0011> legal:versi <http://example.org/legal/peraturan/uu/1999/48/pasal/0011/versi/19991004> .
+<http://example.org/legal/peraturan/uu/1999/48> legal:pasal <http://example.org/legal/peraturan/uu/1999/48/pasal/0011> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0011/versi/19991004> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0011/versi/19991004> legal:tanggal "1999-10-04"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0011/versi/19991004> legal:teks "Dengan terbentuknya Kabupaten Bireuen dan Kabupaten Simeulue, dibentuk Dewan Perwakilan Rakyat Daerah di Kabupaten masing-masing, sesuai dengan peraturan perundang-undangan." .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0011/versi/19991004/text> legal:teks "Dengan terbentuknya Kabupaten Bireuen dan Kabupaten Simeulue, dibentuk Dewan Perwakilan Rakyat Daerah di Kabupaten masing-masing, sesuai dengan peraturan perundang-undangan." .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0011/versi/19991004> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0011/versi/19991004/text> .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0004/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1999/48/pasal/0012> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0012> legal:nomor 12 .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0012> legal:versi <http://example.org/legal/peraturan/uu/1999/48/pasal/0012/versi/19991004> .
+<http://example.org/legal/peraturan/uu/1999/48> legal:pasal <http://example.org/legal/peraturan/uu/1999/48/pasal/0012> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0012/versi/19991004> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0012/versi/19991004> legal:tanggal "1999-10-04"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0012/versi/19991004> legal:teks "Untuk memimpin jalannya pemerintahan, di Kabupaten Bireuen dan Kabupaten Simeulue, dipilih dan disahkan seorang Bupati dan Wakil Bupati di Kabupaten masing-masing, sesuai dengan peraturan perundang-undangan. Pasal 13 -G- Untuk kelengkapan perangkat pemerintahan di Kabupaten Bireuen dan Kabupaten Simeulue dibentuk Sekretariat Dewan Perwakilan Rakyat Daerah Kabupaten, Sekretariat Kabupaten, dinas-dinas Kabupaten dan lembaga teknis Kabupaten, sesuai dengan peraturan perundang-undangan." .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0012/versi/19991004/text> legal:teks "Untuk memimpin jalannya pemerintahan, di Kabupaten Bireuen dan Kabupaten Simeulue, dipilih dan disahkan seorang Bupati dan Wakil Bupati di Kabupaten masing-masing, sesuai dengan peraturan perundang-undangan. Pasal 13 -G- Untuk kelengkapan perangkat pemerintahan di Kabupaten Bireuen dan Kabupaten Simeulue dibentuk Sekretariat Dewan Perwakilan Rakyat Daerah Kabupaten, Sekretariat Kabupaten, dinas-dinas Kabupaten dan lembaga teknis Kabupaten, sesuai dengan peraturan perundang-undangan." .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0012/versi/19991004> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/pasal/0012/versi/19991004/text> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0012/versi/19991004/text> legal:merujuk <http://example.org/legal/peraturan/uu/1999/48/pasal/0013> .
+<http://example.org/legal/peraturan/uu/1999/48/bab> legal:bab <http://example.org/legal/peraturan/uu/1999/48/bab/0005> .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0005> legal:nomor 5 .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0005> legal:judul "KETENTUAN PERALIHAN Pasal 14 (Jl) Dengan terbentuknya Kabupaten Bireuen dan Kabupaten Simeulue, pengisian keanggotaan Dewan Perwakilan Rakyat Daerah Kabupaten Bireuen dan Dewan Perwakilan Rakyat Daerah Kabupaten Simeulue diselenggarakan melalui pemilihan umum lokal selambat-lambatnya satu tahun sejak peresmian, sesuai dengan peraturan perundang-undangan. (2) Anggota Dewan Perwakilan Rakyat Daerah Kabupaten Bireuen dan Dewan Perwakilan Rakyat Daerah Kabupaten Simeulue terdiri atas : a. anggota Dewan Perwakilan Rakyat Daerah yang ditetapkan dari partai politik peserta pemilihan umum lokal yang dilaksanakan di Kabupaten masing-masing, dan b. anggota ABRI yang diangkat. (3)Jumlah dan tata cara pengisian keanggotaan Dewan Perwakilan Rakyat Daerah Kabupaten Bireuen dan Dewan Perwakilan Rakyat Daerah Kabupaten Simeulue, sebagaimana dimaksud pada ayat (2), ditetapkan sesuai dengan peraturan perundang-undangan. (4) Dengan terbentuknya Kabupaten Bireuen, jumlah anggota Dewan Perwakilan Rakyat Daerah Kabupaten Aceh Utara disesuaikan dengan jumlah penduduk Kabupaten Aceh Utara setelah dikurangi dengan jumlah penduduk Kabupaten Bireuen. Pasal 15 Pada saat terbentuknya Kabupaten Bireuen dan Kabupaten Simeulue Penjabat Bupati Bireuen dan Penjabat Bupati Simeulue untuk pertama kali diangkat oleh Menteri Dalam Negeri atas nama Presiden berdasarkan usul Gubernur Daerah Istimewa Aceh. Pasal 16 (Jl) Untuk kelancaran penyelenggaraan pemerintahan di Kabupaten Bireuen dan Kabupaten Simeulue, Gubernur Daerah Istimewa Aceh dan Bupati Aceh Utara, sesuai dengan wewenang dan tugasnya masing-masing, menginventarisasi dan mengatur penyerahan kepada Pemerintah Kabupaten Bireuen dan Pemerintah Kabupaten Simeulue sesuai dengan peraturan perundang-undangan: a. pegawai yang karena jabatannya diperlukan oleh Kabupaten Bireuen dan Kabupaten Simeulue: b. tanah, bangunan, barang bergerak, dan barang tidak bergerak yang dimiliki, dikuasai, atau dimanfaatkan oleh Propinsi Daerah Isttmewa Aceh dan Pemerintah Kabupaten Aceh Utara yang berada dalam Kabupaten Bireuen dan Kabupaten Simeulue, c. Badan Usaha Milik Daerah Propinsi Daerah Istimewa Aceh dan Kabupaten Aceh Utara yang kedudukan dan sifatnya diperlukan serta kegiatannya berada di Kabupaten Bireuen dan Badan Usaha Milik Daerah Propinsi Istimewa Aceh yang kedudukan dan sifatnya diperlukan serta kegiatannya berada di Kabupaten Simeulue, d. utang piutang Pemerintah Kabupaten Aceh Utara yang kegunaannya untuk Kabupaten Bireuen serta utang piutang Pemerintah Propinsi Daerah Istimewa Aceh yang kegunaannya untuk Kabupaten Simeulue, dan e. perlengkapan kantor, arsip, dokumen, dan perpustakaan yang karena sifatnya diperlukan oleh Kabupaten Bireuen dan Kabupaten Simeulue. (2) Pelaksanaan penyerahan sebagaimana dimaksud pada ayat (1) selambat-lambatnya harus diselesaikan dalam waktu satu tahun, terhitung sejak diresmikannya Kabupaten Bireuen dan Kabupaten Simeulue. Pasal 17 (Jl) Pembiayaan yang diperlukan akibat pembentukan Kabupaten Bireuen dan Kabupaten Simeulue,sebagaimana dimaksud dalam Pasal 2, masing-masing dibebankan pada Anggaran Pendapatan dan Belanja Daerah Kabupaten Bireuen dan Kabupaten Simeulue. (2) Untuk kelancaran penyelenggaraan pemerintahan dan pembangunan, 8 terhitung sejak diresmikannya pembentukan Kabupaten Bireuen dan Kabupaten Simeulue, segala pembiayaan yang diperlukan pada tahun pertama sebelum dapat disusun Anggaran Pendapatan dan Belanja Daerah Kabupaten yang bersangkutan dibebankan masing-masing pada Anggaran Pendapatan dan Belanja Daerah Kabupaten Aceh Utara dan Anggaran Pendapatan dan Belanja Daerah Propinsi Daerah Istimewa Aceh berdasarkan perimbangan hasil pendapatan yang diperoleh dari wilayah Kabupaten Bireuen dan Kabupaten Simeulue. (3) Pemerintah Propinsi Daerah Istimewa Aceh wajib membantu pembiayaan sebagaimana dimaksud pada ayat (1) melalui Anggaran Pendapatan dan Belanja Daerah Propinsi Daerah Istimewa Aceh selama tiga tahun berturut-turut, terhitung sejak peresmiannya. Pasal 18 (1) Semua peraturan perundang-undangan yang saat ini berlaku bagi Kabupaten Aceh Utara tetap berlaku bagi Kabupaten Bireuen sebelum diubah, diganti, atau dicabut berdasarkan Undang-undang ini. (2) Semua peraturan perundang-undangan yang saat ini berlaku bagi Kabupaten Administratif Simeulue tetap berlaku sebelum diubah, diganti, atau dicabut berdasarkan Undang-undang ini." .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0005> legal:daftarPasal <http://example.org/legal/peraturan/uu/1999/48/bab/0005/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1999/48/bab> legal:bab <http://example.org/legal/peraturan/uu/1999/48/bab/0006> .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0006> legal:nomor 6 .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0006> legal:judul "KETENTUAN PENUTUP Pasal 19 Pada saat berlakunya Undang-undang ini, semua peraturan perundang-undangan yang tidak sesuai dengan Undang-undang ini dinyatakan tidak berlaku. Pasal 20 Ketentuan lebih lanjut yang diperlukan sebagai pelaksanaan Undang-undang ini diatur sesuai dengan peraturan perundang-undangan. Pasal 21 Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0006> legal:daftarPasal <http://example.org/legal/peraturan/uu/1999/48/bab/0006/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1999/48> legal:disahkanPada "1999-10-04"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1999/48> legal:tentang " PEMBENTUKAN KABUPATEN BIREUEN DAN KABUPATEN SIMEULUE" .
+<http://example.org/legal/peraturan/uu/1999/48> legal:mengingat <http://example.org/legal/peraturan/uu/1999/48/mengingat> .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/description> .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0001> .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0001> legal:nomor "1" .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0001/text> legal:teks "Pasal 5 ayat (1), Pasal 18, dan Pasal 20 ayat (1) Undang-Undang Dasar 1945:" .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0001> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0001/text> .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0002> .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0002> legal:nomor "2" .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0002/text> legal:teks "Undang-undang Nomor 22 Tahun 1999 tentang Pemerintahan Daerah (Lembaran Negara Republik Indonesia Tahun 1999 Nomor 60, Tambahan Lembaran Negara Nomor 3839):" .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0002> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0002/text> .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0003> .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0003> legal:nomor "3" .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0003/text> legal:teks "Undang-undang Darurat Nomor 7 Tahun 1956 tentang Pembentukan Daerah Otonom Kabupaten-Kabupaten dalam Lingkungan Daerah .2- Propinsi Sumatera Utara (Lembaran Negara Republik Indonesia Tahun 1956 Nomor 58, Tambahan Lembaran Negara Nomor 1092):" .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0003> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0003/text> .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0004> .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0004> legal:nomor "4" .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0004/text> legal:teks "Undang-undang Nomor 24 Tahun 1956 tentang Pembentukan Daerah Otonom Propinsi Aceh dan Perubahan Peraturan Pembentukan Propinsi Sumatera Utara (Lembaran Negara Republik Indonesia Tahun 1956 Nomor 64, Tambahan Lembaran Negara Nomor 1103):" .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0004> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0004/text> .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0005> .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0005> legal:nomor "5" .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0005/text> legal:teks "Undang-undang Nomor 4 Tahun 1999 tentang Susunan dan Kedudukan Majelis Permusyawaratan Rakyat, Dewan Perwakilan Rakyat dan Dewan Perwakilan Rakyat Daerah (Lembaran Negara Republik Indonesia Tahun 1999 Nomor 24, Tambahan Lembaran Negara Nomor 3811)," .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0005> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0005/text> .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0006> .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0006> legal:nomor "6" .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0006/text> legal:teks "Undang-undang Nomor 25 Tahun 1999 tentang Perimbangan Keuangan antara Pemerintah Pusat dan Daerah (Lembaran Negara Republik Indonesia Tahun 1999 Nomor 72, Tambahan Lembaran Negara Nomor 3848), Dengan Persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN : Menetapkan : UNDANG-UNDANG TENTANG PEMBENTUKAN KABUPATEN BIREUEN DAN KABUPATEN SIMEULUE." .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0006> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0006/text> .
+<http://example.org/legal/peraturan/uu/1999/48> legal:menimbang <http://example.org/legal/peraturan/uu/1999/48/menimbang> .
+<http://example.org/legal/peraturan/uu/1999/48/menimbang> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf/description> .
+<http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf/a> legal:nomor "a" .
+<http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf/a/text> legal:teks "bahwa berhubung dengan perkembangan dan kemajuan Propinsi Daerah Istimewa Aceh pada umumnya serta Kabupaten Aceh Utara dan Kabupaten Administratif Simeulue pada khususnya dan adanya aspirasi yang berkembang dalam masyarakat, dipandang perlu meningkatkan penyelenggaraan pemerintahan, pelaksanaan pembangunan, dan pembinaan kemasyarakatan guna menjamin perkembangan dan kemajuan dimaksud pada masa mendatang," .
+<http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf/a> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf/a/text> .
+<http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf/b> .
+<http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf/b> legal:nomor "b" .
+<http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf/b/text> legal:teks "bahwa sehubungan dengan hal tersebut di atas dan memperhatikan perkembangan jumlah penduduk, luas wilayah, potensi ekonomi, sosial budaya, sosial politik, dan meningkatnya beban tugas serta volume kerja di bidang pemerintahan, pembangunan, dan kemasyarakatan di Kabupaten Aceh Utara dan Kabupaten Administratif Simeulue, dipandang perlu membentuk Kabupaten Bireuen sebagai pemekaran dari Kabupaten Aceh Utara dan membentuk Kabupaten Simeulue, c bahwa pembentukan Kabupaten Bireuen dan Kabupaten Simeulue akan dapat mendorong peningkatan pelayanan di bidang pemerintahan, pembangunan, dan kemasyarakatan serta memberikan kemampuan dalam memanfaatkan potensi Daerah untuk menyelenggarakan Otonomi Daerah, d. bahwa sesuai butir a, b, dan c serta berdasarkan ketentuan Undang-undang Nomor 22 Tahun 1999 tentang Pemerintahan Daerah, pembentukan Kabupaten Bireuen dan Kabupaten Simeulue perlu ditetapkan dengan undang-undang," .
+<http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf/b> legal:segmen <http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf/b/text> .
+<http://example.org/legal/peraturan/uu/1999/48> legal:disahkanOleh "BACHARUDDIN JUSUF HABIBIE" .
+<http://example.org/legal/peraturan/uu/1999/48> legal:disahkanDi "Jakarta" .
+<http://example.org/legal/peraturan/uu/1999/48> legal:jabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/peraturan/uu/1999/48> a legal:Peraturan .
+<http://example.org/legal/peraturan/uu/1999/48/bab> a legal:BabSet .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0001> a legal:Bab .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0001/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/a> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/a/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/b> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/b/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/c> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/c/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0002> a legal:Bab .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0002/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0002> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0002/versi/19991004> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0002/versi/19991004/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/a> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/a/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/b> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/b/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/c> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/c/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/d> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/d/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/e> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/e/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/f> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/f/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/g> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/g/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/h> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/h/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/h/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/h/huruf/0001> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/h/huruf/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/a> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/a/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/b> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/b/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/c> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/c/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/d> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/d/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/e> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/e/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0005> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0005/versi/19991004> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0005/versi/19991004/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0006> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0006/versi/19991004> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0006/versi/19991004/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat> a legal:DaftarAyat .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/a> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/a/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/b> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/b/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/c> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/c/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/d> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/d/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/a> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/a/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/b> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/b/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/c> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/c/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/d> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/d/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0003> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0003/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0004> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0004/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0008> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0008/versi/19991004> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0008/versi/19991004/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0009> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004/ayat> a legal:DaftarAyat .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004/ayat/0001> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004/ayat/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004/ayat/0002> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004/ayat/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0003> a legal:Bab .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0003/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0010> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0010/versi/19991004> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0010/versi/19991004/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0004> a legal:Bab .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0004/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0011> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0011/versi/19991004> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0011/versi/19991004/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0012> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0012/versi/19991004> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0012/versi/19991004/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0005> a legal:Bab .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0006> a legal:Bab .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat> a legal:Mengingat .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0001> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0002> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0003> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0003/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0004> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0004/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0005> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0005/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0006> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0006/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/menimbang> a legal:Menimbang .
+<http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf/a> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf/a/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf/b> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf/b/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/48/bab> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48> .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/bab> .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0001/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/bab/0001> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/bab/0001/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/a> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/a/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/a> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/b> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/b/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/b> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/c> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/c/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0001/versi/19991004/huruf/c> .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/bab> .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0002/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/bab/0002> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/bab/0002/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0002/versi/19991004> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0002/versi/19991004/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0002/versi/19991004> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/bab/0002/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0003> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/a> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/a/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/a> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/b> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/b/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/b> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/c> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/c/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/c> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/d> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/d/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/d> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/e> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/e/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/e> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/f> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/f/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/f> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/g> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/g/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/g> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/h> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/h/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/h> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/h/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/h/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/h/huruf/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/h/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/h/huruf/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0003/versi/19991004/huruf/h/huruf/0001> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/bab/0002/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0004> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/a> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/a/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/a> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/b> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/b/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/b> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/c> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/c/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/c> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/d> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/d/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/d> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/e> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/e/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0004/versi/19991004/huruf/e> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0005> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/bab/0002/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0005/versi/19991004> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0005> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0005> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0005/versi/19991004/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0005/versi/19991004> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0006> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/bab/0002/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0006/versi/19991004> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0006> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0006> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0006/versi/19991004/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0006/versi/19991004> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/bab/0002/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0007> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/a> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/a/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/a> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/b> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/b/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/b> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/c> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/c/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/c> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/d> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/d/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0001/huruf/d> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/a> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/a/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/a> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/b> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/b/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/b> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/c> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/c/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/c> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/d> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/d/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0002/huruf/d> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0003/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0003> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0004/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0007/versi/19991004/ayat/0004> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0008> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/bab/0002/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0008/versi/19991004> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0008> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0008> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0008/versi/19991004/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0008/versi/19991004> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0009> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/bab/0002/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0009> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0009> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004/ayat> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004/ayat/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004/ayat> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004/ayat/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004/ayat/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004/ayat> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004/ayat/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0009/versi/19991004/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/bab> .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0003/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/bab/0003> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0010> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/bab/0003/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0010/versi/19991004> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0010> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0010> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0010/versi/19991004/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0010/versi/19991004> .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/bab> .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0004/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/bab/0004> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0011> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/bab/0004/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0011/versi/19991004> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0011> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0011> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0011/versi/19991004/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0011/versi/19991004> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0012> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/bab/0004/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0012/versi/19991004> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0012> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0012> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48> .
+<http://example.org/legal/peraturan/uu/1999/48/pasal/0012/versi/19991004/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/pasal/0012/versi/19991004> .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0005> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/bab> .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0005/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/bab/0005> .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0006> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/bab> .
+<http://example.org/legal/peraturan/uu/1999/48/bab/0006/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/bab/0006> .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/mengingat> .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0001> .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0002> .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0003/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0003> .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0004/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0004> .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0005> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0005/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0005> .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0006> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0006/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/mengingat/huruf/0006> .
+<http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/menimbang> .
+<http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf/a> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf/a/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf/b> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf/b/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/48/menimbang/huruf/b> .

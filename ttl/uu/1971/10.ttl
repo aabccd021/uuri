@@ -1,89 +1,66 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1971/10> legal:documentHasPasalSet <http://example.org/legal/document/uu/1971/10/pasals> .
-<http://example.org/legal/document/uu/1971/10/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1971/10/pasal/0001> .
-<http://example.org/legal/document/uu/1971/10/pasal/0001> legal:pasalHasKey 1 .
-<http://example.org/legal/document/uu/1971/10/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1971/10/pasal/0001/version/19710924> .
-<http://example.org/legal/document/uu/1971/10> legal:documentHasPasal <http://example.org/legal/document/uu/1971/10/pasal/0001> .
-<http://example.org/legal/document/uu/1971/10/pasal/0001/version/19710924> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1971/10/pasal/0001/version/19710924> legal:pasalVersionHasVersionDate "1971-09-24"^^xsd:date .
-<http://example.org/legal/document/uu/1971/10/pasal/0001/version/19710924> legal:pasalVersionHasRawText "Pasal 2 ayat (1) Undang - unda ng No. 9 tahun 1953 diubah sehingga berbunyi sebagai berikut :" .
-<http://example.org/legal/document/uu/1971/10/pasal/0001/version/19710924/text> legal:textHasTextString "Pasal 2 ayat (1) Undang - unda ng No. 9 tahun 1953 diubah sehingga berbunyi sebagai berikut :" .
-<http://example.org/legal/document/uu/1971/10/pasal/0001/version/19710924> legal:pasalVersionHasText <http://example.org/legal/document/uu/1971/10/pasal/0001/version/19710924/text> .
-<http://example.org/legal/document/uu/1971/10/pasal/0001/version/19710924/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1971/10/pasal/0001/version/19710924/ayat/0001> .
-<http://example.org/legal/document/uu/1971/10/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1971/10/pasal/0002> .
-<http://example.org/legal/document/uu/1971/10/pasal/0002> legal:pasalHasKey 2 .
-<http://example.org/legal/document/uu/1971/10/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1971/10/pasal/0002/version/19710924> .
-<http://example.org/legal/document/uu/1971/10> legal:documentHasPasal <http://example.org/legal/document/uu/1971/10/pasal/0002> .
-<http://example.org/legal/document/uu/1971/10/pasal/0002/version/19710924> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1971/10/pasal/0002/version/19710924> legal:pasalVersionHasVersionDate "1971-09-24"^^xsd:date .
-<http://example.org/legal/document/uu/1971/10/pasal/0002/version/19710924> legal:pasalVersionHasRawText "(1). . Pensiun termaksud dalam Pasal 1 diatas ini diberikan atas dasar lamanya masa jabatan. Jumlah pensiun ini ialah untuk tiap - tiap satu bulan masa jabatan 3/4% (tiga perempat perseratus) dari dasar pensiun, dengan ketentuan, bahwa sedikit - dikitnya diberikan 41/2% (empat setengah perseratus) dan sebanyak - banyaknya 60% (enam puluh perseratus) dari dasar pensiun. Dasar pensiun ialah jumlah yang sama dengan gaji tertinggi atau gaji kehormatan tertinggi sebulan yang pernah ditetapkan semasa ia menjabat Ketua/ Wakil Ketua atau Anggota Dewan Perwakilan Rakyat Republik Indonesia. Pasal II Undang - undang ini m ulai berlaku pada hari diundangkan. Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/1971/10/pasal/0002/version/19710924> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1971/10/pasal/0002/version/19710924/ayat> .
-<http://example.org/legal/document/uu/1971/10/pasal/0002/version/19710924/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1971/10/pasal/0002/version/19710924/ayat/0001> .
-<http://example.org/legal/document/uu/1971/10/pasal/0002/version/19710924/ayat/0001> legal:ayatHasKey 1 .
-<http://example.org/legal/document/uu/1971/10/pasal/0002/version/19710924/ayat/0001> legal:ayatHasRawText ". Pensiun termaksud dalam Pasal 1 diatas ini diberikan atas dasar lamanya masa jabatan. Jumlah pensiun ini ialah untuk tiap - tiap satu bulan masa jabatan 3/4% (tiga perempat perseratus) dari dasar pensiun, dengan ketentuan, bahwa sedikit - dikitnya diberikan 41/2% (empat setengah perseratus) dan sebanyak - banyaknya 60% (enam puluh perseratus) dari dasar pensiun. Dasar pensiun ialah jumlah yang sama dengan gaji tertinggi atau gaji kehormatan tertinggi sebulan yang pernah ditetapkan semasa ia menjabat Ketua/ Wakil Ketua atau Anggota Dewan Perwakilan Rakyat Republik Indonesia. Pasal II Undang - undang ini m ulai berlaku pada hari diundangkan. Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/1971/10/pasal/0002/version/19710924/ayat/0001/text> legal:textHasTextString ". Pensiun termaksud dalam Pasal 1 diatas ini diberikan atas dasar lamanya masa jabatan. Jumlah pensiun ini ialah untuk tiap - tiap satu bulan masa jabatan 3/4% (tiga perempat perseratus) dari dasar pensiun, dengan ketentuan, bahwa sedikit - dikitnya diberikan 41/2% (empat setengah perseratus) dan sebanyak - banyaknya 60% (enam puluh perseratus) dari dasar pensiun. Dasar pensiun ialah jumlah yang sama dengan gaji tertinggi atau gaji kehormatan tertinggi sebulan yang pernah ditetapkan semasa ia menjabat Ketua/ Wakil Ketua atau Anggota Dewan Perwakilan Rakyat Republik Indonesia. Pasal II Undang - undang ini m ulai berlaku pada hari diundangkan. Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/1971/10/pasal/0002/version/19710924/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1971/10/pasal/0002/version/19710924/ayat/0001/text> .
-<http://example.org/legal/document/uu/1971/10/pasal/0002/version/19710924/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1971/10/pasal/0001> .
-<http://example.org/legal/document/uu/1971/10> legal:documentHasDisahkanDate "1971-09-24"^^xsd:date .
-<http://example.org/legal/document/uu/1971/10> legal:documentMengingat <http://example.org/legal/document/uu/1971/10/mengingat> .
-<http://example.org/legal/document/uu/1971/10/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1971/10/mengingat/point> .
-<http://example.org/legal/document/uu/1971/10/mengingat/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/1971/10/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1971/10/mengingat/point/description> .
-<http://example.org/legal/document/uu/1971/10/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1971/10/mengingat/point/0001> .
-<http://example.org/legal/document/uu/1971/10/mengingat/point/0001> legal:pointHasKey "1" .
-<http://example.org/legal/document/uu/1971/10/mengingat/point/0001/text> legal:textHasTextString "Pasal 5 ayat (1) Pasal 21 ayat (1) Undang - undang Dasar 1945;" .
-<http://example.org/legal/document/uu/1971/10/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1971/10/mengingat/point/0001/text> .
-<http://example.org/legal/document/uu/1971/10/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1971/10/mengingat/point/0002> .
-<http://example.org/legal/document/uu/1971/10/mengingat/point/0002> legal:pointHasKey "2" .
-<http://example.org/legal/document/uu/1971/10/mengingat/point/0002/text> legal:textHasTextString "Undang - undang No. 9 Tahun 1953 jo. Undang - undang No. 5 Tahun 1955;" .
-<http://example.org/legal/document/uu/1971/10/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1971/10/mengingat/point/0002/text> .
-<http://example.org/legal/document/uu/1971/10/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1971/10/mengingat/point/0003> .
-<http://example.org/legal/document/uu/1971/10/mengingat/point/0003> legal:pointHasKey "3" .
-<http://example.org/legal/document/uu/1971/10/mengingat/point/0003/text> legal:textHasTextString "Undang - undang No.10 Tahun l966; Dengan persetujuan Dewan Pewakilan Rakyat Gotong Royong; MEMUTUSKAN : Menetapkan : Undang - undang tentang perubahan terhadap Undang - undang No. 9 tahun 1953 tentang pemberian tunjangan yang bersifat pensiun kepada bekas Ketua dan bekas Anggota Dewan Perwakilan Rakyat Republik Indonesia." .
-<http://example.org/legal/document/uu/1971/10/mengingat/point/0003> legal:pointHasText <http://example.org/legal/document/uu/1971/10/mengingat/point/0003/text> .
-<http://example.org/legal/document/uu/1971/10> legal:documentMenimbang <http://example.org/legal/document/uu/1971/10/menimbang> .
-<http://example.org/legal/document/uu/1971/10/menimbang/text> legal:textHasTextString "bahwa untuk memberi penghargaan atas jasa - jasa dan pengabdian Anggota Dewan Perwakilan Rakyat dan sambil menunggu peninjauan masalah pensiun bagi Lembaga Negara secara keseluruhan, dianggap perlu mengadakan perubahan dalam angka - angka persentasi jumlah pen siun yang ditentukan dalam pasal 2 ayat (1) Undang - undang No. 9 Tahun 1953 tersebut diatas, sesuai dengan kebutuhan dan perkembangan pembangunan;" .
-<http://example.org/legal/document/uu/1971/10/menimbang> legal:menimbangHasText <http://example.org/legal/document/uu/1971/10/menimbang/text> .
-<http://example.org/legal/document/uu/1971/10> legal:documentHasDisahkanPengesah "Jenderal TNI" .
-<http://example.org/legal/document/uu/1971/10> legal:documentHasDisahkanLocation "Jakarta" .
-<http://example.org/legal/document/uu/1971/10> legal:documentHasDisahkanJabatanPengesah "Presiden Repub lik Indonesia" .
-<http://example.org/legal/document/uu/1971/10> a legal:Document .
-<http://example.org/legal/document/uu/1971/10/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/1971/10/pasal/0001> a legal:Pasal .
-<http://example.org/legal/document/uu/1971/10/pasal/0001/version/19710924> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1971/10/pasal/0001/version/19710924/text> a legal:Text .
-<http://example.org/legal/document/uu/1971/10/pasal/0002> a legal:Pasal .
-<http://example.org/legal/document/uu/1971/10/pasal/0002/version/19710924> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1971/10/pasal/0002/version/19710924/ayat> a legal:AyatSet .
-<http://example.org/legal/document/uu/1971/10/pasal/0002/version/19710924/ayat/0001> a legal:Ayat .
-<http://example.org/legal/document/uu/1971/10/pasal/0002/version/19710924/ayat/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/1971/10/mengingat> a legal:Mengingat .
-<http://example.org/legal/document/uu/1971/10/mengingat/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1971/10/mengingat/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1971/10/mengingat/point/0001> a legal:Point .
-<http://example.org/legal/document/uu/1971/10/mengingat/point/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/1971/10/mengingat/point/0002> a legal:Point .
-<http://example.org/legal/document/uu/1971/10/mengingat/point/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/1971/10/mengingat/point/0003> a legal:Point .
-<http://example.org/legal/document/uu/1971/10/mengingat/point/0003/text> a legal:Text .
-<http://example.org/legal/document/uu/1971/10/menimbang/text> a legal:Text .
-<http://example.org/legal/document/uu/1971/10/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/1971/10/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1971/10/pasals> .
-<http://example.org/legal/document/uu/1971/10/pasal/0001/version/19710924> legal:partOf <http://example.org/legal/document/uu/1971/10/pasal/0001> .
-<http://example.org/legal/document/uu/1971/10/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1971/10> .
-<http://example.org/legal/document/uu/1971/10/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1971/10/pasals> .
-<http://example.org/legal/document/uu/1971/10/pasal/0002/version/19710924> legal:partOf <http://example.org/legal/document/uu/1971/10/pasal/0002> .
-<http://example.org/legal/document/uu/1971/10/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1971/10> .
-<http://example.org/legal/document/uu/1971/10/pasal/0002/version/19710924/ayat> legal:partOf <http://example.org/legal/document/uu/1971/10/pasal/0002/version/19710924> .
-<http://example.org/legal/document/uu/1971/10/pasal/0002/version/19710924/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1971/10/pasal/0002/version/19710924/ayat> .
-<http://example.org/legal/document/uu/1971/10/pasal/0002/version/19710924/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1971/10/pasal/0002/version/19710924/ayat/0001> .
-<http://example.org/legal/document/uu/1971/10/mengingat/point> legal:partOf <http://example.org/legal/document/uu/1971/10/mengingat> .
-<http://example.org/legal/document/uu/1971/10/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1971/10/mengingat/point> .
-<http://example.org/legal/document/uu/1971/10/mengingat/point/0001/text> legal:partOf <http://example.org/legal/document/uu/1971/10/mengingat/point/0001> .
-<http://example.org/legal/document/uu/1971/10/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1971/10/mengingat/point> .
-<http://example.org/legal/document/uu/1971/10/mengingat/point/0002/text> legal:partOf <http://example.org/legal/document/uu/1971/10/mengingat/point/0002> .
-<http://example.org/legal/document/uu/1971/10/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/1971/10/mengingat/point> .
-<http://example.org/legal/document/uu/1971/10/mengingat/point/0003/text> legal:partOf <http://example.org/legal/document/uu/1971/10/mengingat/point/0003> .
-<http://example.org/legal/document/uu/1971/10/menimbang/text> legal:partOf <http://example.org/legal/document/uu/1971/10/menimbang> .
+<http://example.org/legal/peraturan/uu/1971/10> legal:daftarPasal <http://example.org/legal/peraturan/uu/1971/10/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1971/10/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1971/10/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0001> legal:versi <http://example.org/legal/peraturan/uu/1971/10/pasal/0001/versi/19710924> .
+<http://example.org/legal/peraturan/uu/1971/10> legal:pasal <http://example.org/legal/peraturan/uu/1971/10/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0001/versi/19710924> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0001/versi/19710924> legal:tanggal "1971-09-24"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0001/versi/19710924> legal:teks "Pasal 2 ayat (1) Undang - unda ng No. 9 tahun 1953 diubah sehingga berbunyi sebagai berikut :" .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0001/versi/19710924/text> legal:teks "Pasal 2 ayat (1) Undang - unda ng No. 9 tahun 1953 diubah sehingga berbunyi sebagai berikut :" .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0001/versi/19710924> legal:segmen <http://example.org/legal/peraturan/uu/1971/10/pasal/0001/versi/19710924/text> .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0001/versi/19710924/text> legal:merujuk <http://example.org/legal/peraturan/uu/1971/10/pasal/0001/versi/19710924/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1971/10/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1971/10/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0002> legal:versi <http://example.org/legal/peraturan/uu/1971/10/pasal/0002/versi/19710924> .
+<http://example.org/legal/peraturan/uu/1971/10> legal:pasal <http://example.org/legal/peraturan/uu/1971/10/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0002/versi/19710924> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0002/versi/19710924> legal:tanggal "1971-09-24"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0002/versi/19710924> legal:teks "(1). . Pensiun termaksud dalam Pasal 1 diatas ini diberikan atas dasar lamanya masa jabatan. Jumlah pensiun ini ialah untuk tiap - tiap satu bulan masa jabatan 3/4% (tiga perempat perseratus) dari dasar pensiun, dengan ketentuan, bahwa sedikit - dikitnya diberikan 41/2% (empat setengah perseratus) dan sebanyak - banyaknya 60% (enam puluh perseratus) dari dasar pensiun. Dasar pensiun ialah jumlah yang sama dengan gaji tertinggi atau gaji kehormatan tertinggi sebulan yang pernah ditetapkan semasa ia menjabat Ketua/ Wakil Ketua atau Anggota Dewan Perwakilan Rakyat Republik Indonesia. Pasal II Undang - undang ini m ulai berlaku pada hari diundangkan. Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0002/versi/19710924> legal:daftarAyat <http://example.org/legal/peraturan/uu/1971/10/pasal/0002/versi/19710924/ayat> .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0002/versi/19710924/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1971/10/pasal/0002/versi/19710924/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0002/versi/19710924/ayat/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0002/versi/19710924/ayat/0001> legal:teks ". Pensiun termaksud dalam Pasal 1 diatas ini diberikan atas dasar lamanya masa jabatan. Jumlah pensiun ini ialah untuk tiap - tiap satu bulan masa jabatan 3/4% (tiga perempat perseratus) dari dasar pensiun, dengan ketentuan, bahwa sedikit - dikitnya diberikan 41/2% (empat setengah perseratus) dan sebanyak - banyaknya 60% (enam puluh perseratus) dari dasar pensiun. Dasar pensiun ialah jumlah yang sama dengan gaji tertinggi atau gaji kehormatan tertinggi sebulan yang pernah ditetapkan semasa ia menjabat Ketua/ Wakil Ketua atau Anggota Dewan Perwakilan Rakyat Republik Indonesia. Pasal II Undang - undang ini m ulai berlaku pada hari diundangkan. Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0002/versi/19710924/ayat/0001/text> legal:teks ". Pensiun termaksud dalam Pasal 1 diatas ini diberikan atas dasar lamanya masa jabatan. Jumlah pensiun ini ialah untuk tiap - tiap satu bulan masa jabatan 3/4% (tiga perempat perseratus) dari dasar pensiun, dengan ketentuan, bahwa sedikit - dikitnya diberikan 41/2% (empat setengah perseratus) dan sebanyak - banyaknya 60% (enam puluh perseratus) dari dasar pensiun. Dasar pensiun ialah jumlah yang sama dengan gaji tertinggi atau gaji kehormatan tertinggi sebulan yang pernah ditetapkan semasa ia menjabat Ketua/ Wakil Ketua atau Anggota Dewan Perwakilan Rakyat Republik Indonesia. Pasal II Undang - undang ini m ulai berlaku pada hari diundangkan. Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0002/versi/19710924/ayat/0001> legal:segmen <http://example.org/legal/peraturan/uu/1971/10/pasal/0002/versi/19710924/ayat/0001/text> .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0002/versi/19710924/ayat/0001/text> legal:merujuk <http://example.org/legal/peraturan/uu/1971/10/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1971/10> legal:disahkanPada "1971-09-24"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1971/10> legal:tentang " PERUBAHAN TERHADAP UNDANG - UNDANG NO. 9 TAHUN 1953 TENTANG PEMBERIAN TUNJANGAN YANG BERSIFAT PENSIUN KEPADA BEKAS KETUA DAN BEKAS ANGGOTA DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA PRESIDEN REPUBLI K INDONESIA , Menimbang : bahwa untuk memberi penghargaan atas jasa - jasa dan pengabdian Anggota Dewan Perwakilan Rakyat dan sambil menunggu peninjauan masalah pensiun bagi Lembaga Negara secara keseluruhan, dianggap perlu mengadakan perubahan dalam angka - angka persentasi jumlah pen siun yang ditentukan dalam pasal 2 ayat (1) Undang - undang No. 9 Tahun 1953 tersebut diatas, sesuai dengan kebutuhan dan perkembangan pembangunan; Mengingat : 1. Pasal 5 ayat (1) Pasal 21 ayat (1) Undang - undang Dasar 1945; 2. Undang - undang No. 9 Tahun 1953 jo. Undang - undang No. 5 Tahun 1955; 3. Undang - undang No.10 Tahun l966; Dengan persetujuan Dewan Pewakilan Rakyat Gotong Royong; MEMUTUSKAN : Menetapkan : Undang - undang tentang perubahan terhadap Undang - undang No. 9 tahun 1953 tentang pemberian tunjangan yang bersifat pensiun kepada bekas Ketua dan bekas Anggota Dewan Perwakilan Rakyat Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/1971/10> legal:mengingat <http://example.org/legal/peraturan/uu/1971/10/mengingat> .
+<http://example.org/legal/peraturan/uu/1971/10/mengingat/text> legal:teks "" .
+<http://example.org/legal/peraturan/uu/1971/10/mengingat> legal:segmen <http://example.org/legal/peraturan/uu/1971/10/mengingat/text> .
+<http://example.org/legal/peraturan/uu/1971/10> legal:menimbang <http://example.org/legal/peraturan/uu/1971/10/menimbang> .
+<http://example.org/legal/peraturan/uu/1971/10/menimbang/text> legal:teks "" .
+<http://example.org/legal/peraturan/uu/1971/10/menimbang> legal:segmen <http://example.org/legal/peraturan/uu/1971/10/menimbang/text> .
+<http://example.org/legal/peraturan/uu/1971/10> legal:disahkanOleh "Jenderal TNI" .
+<http://example.org/legal/peraturan/uu/1971/10> legal:disahkanDi "Jakarta" .
+<http://example.org/legal/peraturan/uu/1971/10> legal:jabatanPengesah "Presiden Repub lik Indonesia" .
+<http://example.org/legal/peraturan/uu/1971/10> a legal:Peraturan .
+<http://example.org/legal/peraturan/uu/1971/10/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0001> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0001/versi/19710924> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0001/versi/19710924/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0002> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0002/versi/19710924> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0002/versi/19710924/ayat> a legal:DaftarAyat .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0002/versi/19710924/ayat/0001> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0002/versi/19710924/ayat/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1971/10/mengingat/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1971/10/mengingat> a legal:Mengingat .
+<http://example.org/legal/peraturan/uu/1971/10/menimbang/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1971/10/menimbang> a legal:Menimbang .
+<http://example.org/legal/peraturan/uu/1971/10/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/1971/10> .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1971/10/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0001/versi/19710924> legal:bagianDari <http://example.org/legal/peraturan/uu/1971/10/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1971/10> .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0001/versi/19710924/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1971/10/pasal/0001/versi/19710924> .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1971/10/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0002/versi/19710924> legal:bagianDari <http://example.org/legal/peraturan/uu/1971/10/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1971/10> .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0002/versi/19710924/ayat> legal:bagianDari <http://example.org/legal/peraturan/uu/1971/10/pasal/0002/versi/19710924> .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0002/versi/19710924/ayat/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1971/10/pasal/0002/versi/19710924/ayat> .
+<http://example.org/legal/peraturan/uu/1971/10/pasal/0002/versi/19710924/ayat/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1971/10/pasal/0002/versi/19710924/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1971/10/mengingat/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1971/10/mengingat> .
+<http://example.org/legal/peraturan/uu/1971/10/menimbang/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1971/10/menimbang> .

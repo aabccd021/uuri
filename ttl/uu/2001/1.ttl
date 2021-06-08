@@ -1,120 +1,126 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2001/1> legal:documentHasPasalSet <http://example.org/legal/document/uu/2001/1/pasals> .
-<http://example.org/legal/document/uu/2001/1/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2001/1/pasal/0001> .
-<http://example.org/legal/document/uu/2001/1/pasal/0001> legal:pasalHasKey 1 .
-<http://example.org/legal/document/uu/2001/1/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2001/1/pasal/0001/version/20010508> .
-<http://example.org/legal/document/uu/2001/1> legal:documentHasPasal <http://example.org/legal/document/uu/2001/1/pasal/0001> .
-<http://example.org/legal/document/uu/2001/1/pasal/0001/version/20010508> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/2001/1/pasal/0001/version/20010508> legal:pasalVersionHasVersionDate "2001-05-08"^^xsd:date .
-<http://example.org/legal/document/uu/2001/1/pasal/0001/version/20010508> legal:pasalVersionHasRawText "Mengesahkan Persetujuan antara Pemerintah Republik Indonesia dan Pemerintah Hongkong untuk Penyerahan Pelanggar Hukum yang Melarikan Diri (Agreement between the Government of the Republic of Indonesia and the Government of Hongkong for the surrender of Fugitive Offenders) yang telah ditandatangani pada tanggal 5 Mei 1997 di Hongkong yang salina n naskah aslinya dalam bahasa Indonesia, bahasa Inggris, dan bahasa China sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang - undang ini." .
-<http://example.org/legal/document/uu/2001/1/pasal/0001/version/20010508/text> legal:textHasTextString "Mengesahkan Persetujuan antara Pemerintah Republik Indonesia dan Pemerintah Hongkong untuk Penyerahan Pelanggar Hukum yang Melarikan Diri (Agreement between the Government of the Republic of Indonesia and the Government of Hongkong for the surrender of Fugitive Offenders) yang telah ditandatangani pada tanggal 5 Mei 1997 di Hongkong yang salina n naskah aslinya dalam bahasa Indonesia, bahasa Inggris, dan bahasa China sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang - undang ini." .
-<http://example.org/legal/document/uu/2001/1/pasal/0001/version/20010508> legal:pasalVersionHasText <http://example.org/legal/document/uu/2001/1/pasal/0001/version/20010508/text> .
-<http://example.org/legal/document/uu/2001/1/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2001/1/pasal/0002> .
-<http://example.org/legal/document/uu/2001/1/pasal/0002> legal:pasalHasKey 2 .
-<http://example.org/legal/document/uu/2001/1/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2001/1/pasal/0002/version/20010508> .
-<http://example.org/legal/document/uu/2001/1> legal:documentHasPasal <http://example.org/legal/document/uu/2001/1/pasal/0002> .
-<http://example.org/legal/document/uu/2001/1/pasal/0002/version/20010508> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/2001/1/pasal/0002/version/20010508> legal:pasalVersionHasVersionDate "2001-05-08"^^xsd:date .
-<http://example.org/legal/document/uu/2001/1/pasal/0002/version/20010508> legal:pasalVersionHasRawText "Undang - undang ini mulai berlaku sejak tanggal diundangkan. Agar setiap orang me ngetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/2001/1/pasal/0002/version/20010508/text> legal:textHasTextString "Undang - undang ini mulai berlaku sejak tanggal diundangkan. Agar setiap orang me ngetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/2001/1/pasal/0002/version/20010508> legal:pasalVersionHasText <http://example.org/legal/document/uu/2001/1/pasal/0002/version/20010508/text> .
-<http://example.org/legal/document/uu/2001/1> legal:documentHasDisahkanDate "2001-05-08"^^xsd:date .
-<http://example.org/legal/document/uu/2001/1> legal:documentMengingat <http://example.org/legal/document/uu/2001/1/mengingat> .
-<http://example.org/legal/document/uu/2001/1/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2001/1/mengingat/point> .
-<http://example.org/legal/document/uu/2001/1/mengingat/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/2001/1/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2001/1/mengingat/point/description> .
-<http://example.org/legal/document/uu/2001/1/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2001/1/mengingat/point/0001> .
-<http://example.org/legal/document/uu/2001/1/mengingat/point/0001> legal:pointHasKey "1" .
-<http://example.org/legal/document/uu/2001/1/mengingat/point/0001/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 11, dan Pasal 20 ayat (2) Undang - Undang Dasar 1945;" .
-<http://example.org/legal/document/uu/2001/1/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/2001/1/mengingat/point/0001/text> .
-<http://example.org/legal/document/uu/2001/1/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2001/1/mengingat/point/0002> .
-<http://example.org/legal/document/uu/2001/1/mengingat/point/0002> legal:pointHasKey "2" .
-<http://example.org/legal/document/uu/2001/1/mengingat/point/0002/text> legal:textHasTextString "Undang - undang Nomor 1 Tahun 1979 tentang Ekstradisi (Lembaran Negara Republik Indonesia Tahun 1979 Nomor 2, Tambahan Lembaran Negara Nomor 3130);" .
-<http://example.org/legal/document/uu/2001/1/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/2001/1/mengingat/point/0002/text> .
-<http://example.org/legal/document/uu/2001/1/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2001/1/mengingat/point/0003> .
-<http://example.org/legal/document/uu/2001/1/mengingat/point/0003> legal:pointHasKey "3" .
-<http://example.org/legal/document/uu/2001/1/mengingat/point/0003/text> legal:textHasTextString "Undang - undang Nomor 24 Tahun 2000 tentang Perjanjian Internasional (Lembaran Negara Republik Indonesia Tahun 2000 Nomor 185, Tambahan Lembaran Negara Nomor 4012);" .
-<http://example.org/legal/document/uu/2001/1/mengingat/point/0003> legal:pointHasText <http://example.org/legal/document/uu/2001/1/mengingat/point/0003/text> .
-<http://example.org/legal/document/uu/2001/1> legal:documentMenimbang <http://example.org/legal/document/uu/2001/1/menimbang> .
-<http://example.org/legal/document/uu/2001/1/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/2001/1/menimbang/point> .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/2001/1/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2001/1/menimbang/point/description> .
-<http://example.org/legal/document/uu/2001/1/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2001/1/menimbang/point/a> .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/a/text> legal:textHasTextString "bahwa pembangunan hukum nasional yang berdasarkan Pancasila dan Undang - Undang Dasar 1945 harus dapat mendukung dan menjami n kepastian, ketertiban, penegakan, dan perlindungan hukum yang berintikan keadilan dan kebenaran;" .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/2001/1/menimbang/point/a/text> .
-<http://example.org/legal/document/uu/2001/1/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2001/1/menimbang/point/b> .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/b/text> legal:textHasTextString "bahwa hubungan luar negeri yang dilandasai prinsip politik bebas dan aktif diabdikan pada kepentingan nasional, dikembangkan dengan meningkatkan persahaba tan, kerja sama bilateral dan multilateral untuk mewujudkan tatanan dunia baru berdasarkan kemerdekaan, perdamaian abadi, dan keadilan sosial;" .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/2001/1/menimbang/point/b/text> .
-<http://example.org/legal/document/uu/2001/1/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2001/1/menimbang/point/c> .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/c> legal:pointHasKey "c" .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/c/text> legal:textHasTextString "bahwa perkembangan ilmu pengetahuan dan teknologi khususnya di bidang transportasi, komunikasi, dan informasi telah mempermudah orang melakukan kejahatan yang tidak lagi mengenal batas yurisdiksi suatu negara, tetapi dapat menyangkut beberapa negara sehingga penanggulangan dan pemberantasannya diperlukan kerjasama internasional;" .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/2001/1/menimbang/point/c/text> .
-<http://example.org/legal/document/uu/2001/1/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2001/1/menimbang/point/d> .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/d> legal:pointHasKey "d" .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/d/text> legal:textHasTextString "bahwa kerjasama antara Pemerinta h Republik Indonesia dan Pemerintah Hongkong telah berkembang dengan baik dan untuk lebih meningkatkan kerja sama tersebut khususnya di bidang penegakan hukum dan pelaksanaan peradilan pidana, maka pada tanggal 5 Mei 1997 di Hongkong telah ditandatangani P ersetujuan antara Pemerintah Republik Indonesia dan Pemerintah Hongkong untuk Penyerahan Pelanggar Hukum yang Melarikan Diri (Agreement between the Government of the Republik of Indonesia and the Government of Hongkong for the surrender of Fugitive Offende rs);" .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/2001/1/menimbang/point/d/text> .
-<http://example.org/legal/document/uu/2001/1/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2001/1/menimbang/point/e> .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/e> legal:pointHasKey "e" .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/e/text> legal:textHasTextString "bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a, b, c, dan d dipandang perlu me ngesahkan Persetujuan antara Pemerintah Republik Indonesia dan Pemerintah Hongkong untuk Penyerahan Pelanggar Hukum yang Melarikan Diri (Agreement between the Government of the Republik of Indonesia and the Government of Hongkong for the Surrrender of Fugi tive Offenders) dengan Undang - undang;" .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/e> legal:pointHasText <http://example.org/legal/document/uu/2001/1/menimbang/point/e/text> .
-<http://example.org/legal/document/uu/2001/1> legal:documentHasDisahkanPengesah "ABDURRAHMAN WAHID" .
-<http://example.org/legal/document/uu/2001/1> legal:documentHasDisahkanLocation "Jakarta" .
-<http://example.org/legal/document/uu/2001/1> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
-<http://example.org/legal/document/uu/2001/1> a legal:Document .
-<http://example.org/legal/document/uu/2001/1/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/2001/1/pasal/0001> a legal:Pasal .
-<http://example.org/legal/document/uu/2001/1/pasal/0001/version/20010508> a legal:PasalVersion .
-<http://example.org/legal/document/uu/2001/1/pasal/0001/version/20010508/text> a legal:Text .
-<http://example.org/legal/document/uu/2001/1/pasal/0002> a legal:Pasal .
-<http://example.org/legal/document/uu/2001/1/pasal/0002/version/20010508> a legal:PasalVersion .
-<http://example.org/legal/document/uu/2001/1/pasal/0002/version/20010508/text> a legal:Text .
-<http://example.org/legal/document/uu/2001/1/mengingat> a legal:Mengingat .
-<http://example.org/legal/document/uu/2001/1/mengingat/point/description> a legal:Text .
-<http://example.org/legal/document/uu/2001/1/mengingat/point> a legal:PointSet .
-<http://example.org/legal/document/uu/2001/1/mengingat/point/0001> a legal:Point .
-<http://example.org/legal/document/uu/2001/1/mengingat/point/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/2001/1/mengingat/point/0002> a legal:Point .
-<http://example.org/legal/document/uu/2001/1/mengingat/point/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/2001/1/mengingat/point/0003> a legal:Point .
-<http://example.org/legal/document/uu/2001/1/mengingat/point/0003/text> a legal:Text .
-<http://example.org/legal/document/uu/2001/1/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/description> a legal:Text .
-<http://example.org/legal/document/uu/2001/1/menimbang/point> a legal:PointSet .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/a> a legal:Point .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/a/text> a legal:Text .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/b> a legal:Point .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/c> a legal:Point .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/d> a legal:Point .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/e> a legal:Point .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/e/text> a legal:Text .
-<http://example.org/legal/document/uu/2001/1/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2001/1/pasals> .
-<http://example.org/legal/document/uu/2001/1/pasal/0001/version/20010508> legal:partOf <http://example.org/legal/document/uu/2001/1/pasal/0001> .
-<http://example.org/legal/document/uu/2001/1/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2001/1> .
-<http://example.org/legal/document/uu/2001/1/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2001/1/pasals> .
-<http://example.org/legal/document/uu/2001/1/pasal/0002/version/20010508> legal:partOf <http://example.org/legal/document/uu/2001/1/pasal/0002> .
-<http://example.org/legal/document/uu/2001/1/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2001/1> .
-<http://example.org/legal/document/uu/2001/1/mengingat/point> legal:partOf <http://example.org/legal/document/uu/2001/1/mengingat> .
-<http://example.org/legal/document/uu/2001/1/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2001/1/mengingat/point> .
-<http://example.org/legal/document/uu/2001/1/mengingat/point/0001/text> legal:partOf <http://example.org/legal/document/uu/2001/1/mengingat/point/0001> .
-<http://example.org/legal/document/uu/2001/1/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2001/1/mengingat/point> .
-<http://example.org/legal/document/uu/2001/1/mengingat/point/0002/text> legal:partOf <http://example.org/legal/document/uu/2001/1/mengingat/point/0002> .
-<http://example.org/legal/document/uu/2001/1/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/2001/1/mengingat/point> .
-<http://example.org/legal/document/uu/2001/1/mengingat/point/0003/text> legal:partOf <http://example.org/legal/document/uu/2001/1/mengingat/point/0003> .
-<http://example.org/legal/document/uu/2001/1/menimbang/point> legal:partOf <http://example.org/legal/document/uu/2001/1/menimbang> .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/2001/1/menimbang/point> .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/a/text> legal:partOf <http://example.org/legal/document/uu/2001/1/menimbang/point/a> .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/2001/1/menimbang/point> .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/b/text> legal:partOf <http://example.org/legal/document/uu/2001/1/menimbang/point/b> .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/2001/1/menimbang/point> .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/c/text> legal:partOf <http://example.org/legal/document/uu/2001/1/menimbang/point/c> .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/d> legal:partOf <http://example.org/legal/document/uu/2001/1/menimbang/point> .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/d/text> legal:partOf <http://example.org/legal/document/uu/2001/1/menimbang/point/d> .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/e> legal:partOf <http://example.org/legal/document/uu/2001/1/menimbang/point> .
-<http://example.org/legal/document/uu/2001/1/menimbang/point/e/text> legal:partOf <http://example.org/legal/document/uu/2001/1/menimbang/point/e> .
+<http://example.org/legal/peraturan/uu/2001/1> legal:daftarPasal <http://example.org/legal/peraturan/uu/2001/1/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2001/1/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/2001/1/pasal/0001> .
+<http://example.org/legal/peraturan/uu/2001/1/pasal/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/2001/1/pasal/0001> legal:versi <http://example.org/legal/peraturan/uu/2001/1/pasal/0001/versi/20010508> .
+<http://example.org/legal/peraturan/uu/2001/1> legal:pasal <http://example.org/legal/peraturan/uu/2001/1/pasal/0001> .
+<http://example.org/legal/peraturan/uu/2001/1/pasal/0001/versi/20010508> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/2001/1/pasal/0001/versi/20010508> legal:tanggal "2001-05-08"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2001/1/pasal/0001/versi/20010508> legal:teks "Mengesahkan Persetujuan antara Pemerintah Republik Indonesia dan Pemerintah Hongkong untuk Penyerahan Pelanggar Hukum yang Melarikan Diri (Agreement between the Government of the Republic of Indonesia and the Government of Hongkong for the surrender of Fugitive Offenders) yang telah ditandatangani pada tanggal 5 Mei 1997 di Hongkong yang salina n naskah aslinya dalam bahasa Indonesia, bahasa Inggris, dan bahasa China sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang - undang ini." .
+<http://example.org/legal/peraturan/uu/2001/1/pasal/0001/versi/20010508/text> legal:teks "Mengesahkan Persetujuan antara Pemerintah Republik Indonesia dan Pemerintah Hongkong untuk Penyerahan Pelanggar Hukum yang Melarikan Diri (Agreement between the Government of the Republic of Indonesia and the Government of Hongkong for the surrender of Fugitive Offenders) yang telah ditandatangani pada tanggal 5 Mei 1997 di Hongkong yang salina n naskah aslinya dalam bahasa Indonesia, bahasa Inggris, dan bahasa China sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang - undang ini." .
+<http://example.org/legal/peraturan/uu/2001/1/pasal/0001/versi/20010508> legal:segmen <http://example.org/legal/peraturan/uu/2001/1/pasal/0001/versi/20010508/text> .
+<http://example.org/legal/peraturan/uu/2001/1/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/2001/1/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2001/1/pasal/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/2001/1/pasal/0002> legal:versi <http://example.org/legal/peraturan/uu/2001/1/pasal/0002/versi/20010508> .
+<http://example.org/legal/peraturan/uu/2001/1> legal:pasal <http://example.org/legal/peraturan/uu/2001/1/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2001/1/pasal/0002/versi/20010508> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/2001/1/pasal/0002/versi/20010508> legal:tanggal "2001-05-08"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2001/1/pasal/0002/versi/20010508> legal:teks "Undang - undang ini mulai berlaku sejak tanggal diundangkan. Agar setiap orang me ngetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/2001/1/pasal/0002/versi/20010508/text> legal:teks "Undang - undang ini mulai berlaku sejak tanggal diundangkan. Agar setiap orang me ngetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/2001/1/pasal/0002/versi/20010508> legal:segmen <http://example.org/legal/peraturan/uu/2001/1/pasal/0002/versi/20010508/text> .
+<http://example.org/legal/peraturan/uu/2001/1> legal:disahkanPada "2001-05-08"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2001/1> legal:tentang " PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERINTAH HONGKONG UNTUK PENYERAHAN PELANGGAR HUKUM YANG MELARIKAN DIRI (AGREEMENT BETWEEN THE GOVERNMENT OF THE REPUBLIC OF INDONESIA AND THE GOVERNMENT OF HONGKONG FOR THE SERRENDER OF FUGITIVE OFFENDERS)" .
+<http://example.org/legal/peraturan/uu/2001/1> legal:mengingat <http://example.org/legal/peraturan/uu/2001/1/mengingat> .
+<http://example.org/legal/peraturan/uu/2001/1/mengingat> legal:daftarHuruf <http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf> legal:segmen <http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/description> .
+<http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/0001> .
+<http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/0001> legal:nomor "1" .
+<http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/0001/text> legal:teks "Pasal 5 ayat (1), Pasal 11, dan Pasal 20 ayat (2) Undang - Undang Dasar 1945;" .
+<http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/0001> legal:segmen <http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/0001/text> .
+<http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/0002> .
+<http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/0002> legal:nomor "2" .
+<http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/0002/text> legal:teks "Undang - undang Nomor 1 Tahun 1979 tentang Ekstradisi (Lembaran Negara Republik Indonesia Tahun 1979 Nomor 2, Tambahan Lembaran Negara Nomor 3130);" .
+<http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/0002> legal:segmen <http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/0002/text> .
+<http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/0003> .
+<http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/0003> legal:nomor "3" .
+<http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/0003/text> legal:teks "Undang - undang Nomor 24 Tahun 2000 tentang Perjanjian Internasional (Lembaran Negara Republik Indonesia Tahun 2000 Nomor 185, Tambahan Lembaran Negara Nomor 4012);" .
+<http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/0003> legal:segmen <http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/0003/text> .
+<http://example.org/legal/peraturan/uu/2001/1> legal:menimbang <http://example.org/legal/peraturan/uu/2001/1/menimbang> .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang> legal:daftarHuruf <http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf> legal:segmen <http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/description> .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/a> legal:nomor "a" .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/a/text> legal:teks "bahwa pembangunan hukum nasional yang berdasarkan Pancasila dan Undang - Undang Dasar 1945 harus dapat mendukung dan menjami n kepastian, ketertiban, penegakan, dan perlindungan hukum yang berintikan keadilan dan kebenaran;" .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/a> legal:segmen <http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/a/text> .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/b> .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/b> legal:nomor "b" .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/b/text> legal:teks "bahwa hubungan luar negeri yang dilandasai prinsip politik bebas dan aktif diabdikan pada kepentingan nasional, dikembangkan dengan meningkatkan persahaba tan, kerja sama bilateral dan multilateral untuk mewujudkan tatanan dunia baru berdasarkan kemerdekaan, perdamaian abadi, dan keadilan sosial;" .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/b> legal:segmen <http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/b/text> .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/c> .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/c> legal:nomor "c" .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/c/text> legal:teks "bahwa perkembangan ilmu pengetahuan dan teknologi khususnya di bidang transportasi, komunikasi, dan informasi telah mempermudah orang melakukan kejahatan yang tidak lagi mengenal batas yurisdiksi suatu negara, tetapi dapat menyangkut beberapa negara sehingga penanggulangan dan pemberantasannya diperlukan kerjasama internasional;" .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/c> legal:segmen <http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/c/text> .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/d> .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/d> legal:nomor "d" .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/d/text> legal:teks "bahwa kerjasama antara Pemerinta h Republik Indonesia dan Pemerintah Hongkong telah berkembang dengan baik dan untuk lebih meningkatkan kerja sama tersebut khususnya di bidang penegakan hukum dan pelaksanaan peradilan pidana, maka pada tanggal 5 Mei 1997 di Hongkong telah ditandatangani P ersetujuan antara Pemerintah Republik Indonesia dan Pemerintah Hongkong untuk Penyerahan Pelanggar Hukum yang Melarikan Diri (Agreement between the Government of the Republik of Indonesia and the Government of Hongkong for the surrender of Fugitive Offende rs);" .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/d> legal:segmen <http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/d/text> .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/e> .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/e> legal:nomor "e" .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/e/text> legal:teks "bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a, b, c, dan d dipandang perlu me ngesahkan Persetujuan antara Pemerintah Republik Indonesia dan Pemerintah Hongkong untuk Penyerahan Pelanggar Hukum yang Melarikan Diri (Agreement between the Government of the Republik of Indonesia and the Government of Hongkong for the Surrrender of Fugi tive Offenders) dengan Undang - undang;" .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/e> legal:segmen <http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/e/text> .
+<http://example.org/legal/peraturan/uu/2001/1> legal:disahkanOleh "ABDURRAHMAN WAHID" .
+<http://example.org/legal/peraturan/uu/2001/1> legal:disahkanDi "Jakarta" .
+<http://example.org/legal/peraturan/uu/2001/1> legal:jabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/peraturan/uu/2001/1> a legal:Peraturan .
+<http://example.org/legal/peraturan/uu/2001/1/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/2001/1/pasal/0001> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/2001/1/pasal/0001/versi/20010508> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/2001/1/pasal/0001/versi/20010508/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2001/1/pasal/0002> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/2001/1/pasal/0002/versi/20010508> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/2001/1/pasal/0002/versi/20010508/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2001/1/mengingat> a legal:Mengingat .
+<http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/0001> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/0002> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/0003> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/0003/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang> a legal:Menimbang .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/a> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/a/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/b> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/b/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/c> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/c/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/d> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/d/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/e> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/e/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2001/1/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/2001/1> .
+<http://example.org/legal/peraturan/uu/2001/1/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2001/1/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2001/1/pasal/0001/versi/20010508> legal:bagianDari <http://example.org/legal/peraturan/uu/2001/1/pasal/0001> .
+<http://example.org/legal/peraturan/uu/2001/1/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2001/1> .
+<http://example.org/legal/peraturan/uu/2001/1/pasal/0001/versi/20010508/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2001/1/pasal/0001/versi/20010508> .
+<http://example.org/legal/peraturan/uu/2001/1/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2001/1/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2001/1/pasal/0002/versi/20010508> legal:bagianDari <http://example.org/legal/peraturan/uu/2001/1/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2001/1/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2001/1> .
+<http://example.org/legal/peraturan/uu/2001/1/pasal/0002/versi/20010508/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2001/1/pasal/0002/versi/20010508> .
+<http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/2001/1/mengingat> .
+<http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/0001> .
+<http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/0002> .
+<http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/0003/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2001/1/mengingat/huruf/0003> .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/2001/1/menimbang> .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/a> legal:bagianDari <http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/a/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/b> legal:bagianDari <http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/b/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/b> .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/c> legal:bagianDari <http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/c/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/c> .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/d> legal:bagianDari <http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/d/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/d> .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/e> legal:bagianDari <http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/e/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2001/1/menimbang/huruf/e> .

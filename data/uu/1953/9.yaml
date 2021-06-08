@@ -1,5 +1,5 @@
 node: &ref_0
-  nodeType: document
+  nodeType: peraturan
   docType: noTahun
   docCategory: uu
   tahun: 1953
@@ -13,12 +13,10 @@ metadata:
     content:
       type: text
       node:
-        nodeType: text
+        nodeType: segmen
         textName: text
         parentNode: *ref_1
-      textString: >-
-        perlu untuk mengadakan peraturan tentang pemberian tunjangan yang bersifat pensiun kepada
-        bekas Ketua dan bekas Anggota Dewan Perwakilan Rakyat Republik Indonesia.
+      textString: ''
       references: []
   mengingat:
     type: mengingat
@@ -28,46 +26,18 @@ metadata:
     content:
       type: text
       node:
-        nodeType: text
+        nodeType: segmen
         textName: text
         parentNode: *ref_2
-      textString: >-
-        Pasal 17 Undang-undang Nomor 6 tahun 1951 tentang kedudukan keuangan Ketua dan Anggota-Dewan
-        Perwakilan Rakyat Republik Indonesia: Mengingat pula: Pasal 90 ayat I dan pasal 92 ayat I-
-        Undang-undang Dasar Sementara Republik Indonesia, Dengan persetujuan: Dewan Perwakilan
-        Rakyat Republik Indonesia. MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG PEMBERIAN
-        TUNJANGAN YANG BERSIFAT PENSIUN KEPADA BEKAS KETUA DAN BEKAS ANGGOTA DEWAN PERWAKILAN RAKYAT
-        REPUBLIK INDONESIA.
+      textString: ''
       references: []
   memutuskan: ''
   denganPersetujuan: ''
-opText: |-
-  UNDANG-UNDANG REPUBLIK INDONESIA
-  NOMOR 9 TAHUN 1953
-  TENTANG
-  PEMBERIAN TUNJANGAN YANG BERSIFAT PENSIUN KEPADA BEKAS
-  KETUA DAN BEKAS ANGGOTA DEWAN PERWAKILAN RAKYAT REPUBLIK
-  INDONESIA
-  PRESIDEN REPUBLIK INDONESIA,
-  Menimbang : perlu untuk mengadakan peraturan tentang pemberian tunjangan yang
-  bersifat pensiun kepada bekas Ketua dan bekas Anggota Dewan
-  Perwakilan Rakyat Republik Indonesia.
-  Mengingat : Pasal 17 Undang-undang Nomor 6 tahun 1951 tentang kedudukan
-  keuangan Ketua dan Anggota-Dewan Perwakilan Rakyat Republik
-  Indonesia:
-  Mengingat pula: Pasal 90 ayat I dan pasal 92 ayat I- Undang-undang Dasar Sementara
-  Republik Indonesia,
-  Dengan persetujuan:
-  Dewan Perwakilan Rakyat Republik Indonesia.
-  MEMUTUSKAN:
-  Menetapkan : UNDANG-UNDANG TENTANG PEMBERIAN TUNJANGAN
-  YANG BERSIFAT PENSIUN KEPADA BEKAS KETUA DAN
-  BEKAS ANGGOTA DEWAN PERWAKILAN RAKYAT REPUBLIK
-  INDONESIA.
+  tentang: ' PEMBERIAN TUNJANGAN YANG BERSIFAT PENSIUN KEPADA BEKAS KETUA DAN BEKAS ANGGOTA DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA PRESIDEN REPUBLIK INDONESIA, Menimbang : perlu untuk mengadakan peraturan tentang pemberian tunjangan yang bersifat pensiun kepada bekas Ketua dan bekas Anggota Dewan Perwakilan Rakyat Republik Indonesia. Mengingat : Pasal 17 Undang-undang Nomor 6 tahun 1951 tentang kedudukan keuangan Ketua dan Anggota-Dewan Perwakilan Rakyat Republik Indonesia: Mengingat pula: Pasal 90 ayat I dan pasal 92 ayat I- Undang-undang Dasar Sementara Republik Indonesia, Dengan persetujuan: Dewan Perwakilan Rakyat Republik Indonesia. MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG PEMBERIAN TUNJANGAN YANG BERSIFAT PENSIUN KEPADA BEKAS KETUA DAN BEKAS ANGGOTA DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA.'
 content:
-  type: pasalSet
+  type: daftarPasal
   node:
-    nodeType: pasalSet
+    nodeType: daftarPasal
     parentNode: *ref_0
   elements:
     - type: pasal
@@ -78,13 +48,13 @@ content:
       version:
         type: pasalVersion
         node: &ref_3
-          nodeType: pasalVersion
+          nodeType: versiPasal
           version: &ref_4
             nodeType: date
             month: 5
             date: 4
             year: 1953
-          state: exists
+          state: orisinal
           parentPasalNode:
             nodeType: pasal
             key: '1'
@@ -92,7 +62,7 @@ content:
         content:
           type: text
           node:
-            nodeType: text
+            nodeType: segmen
             textName: text
             parentNode: *ref_3
           textString: >-
@@ -109,9 +79,9 @@ content:
       version:
         type: pasalVersion
         node: &ref_5
-          nodeType: pasalVersion
+          nodeType: versiPasal
           version: *ref_4
-          state: exists
+          state: orisinal
           parentPasalNode:
             nodeType: pasal
             key: '2'
@@ -119,7 +89,7 @@ content:
         content:
           type: ayatSet
           node: &ref_6
-            nodeType: ayatSet
+            nodeType: daftarAyat
             parentPasalVersionNode: *ref_5
           elements:
             - type: ayat
@@ -128,14 +98,14 @@ content:
                 key: 1
                 parentAyatSetNode: *ref_6
               content:
-                type: pointSet
+                type: daftarHuruf
                 node: &ref_8
-                  nodeType: pointSet
+                  nodeType: daftarHuruf
                   parentNode: *ref_7
                 description:
                   type: text
                   node:
-                    nodeType: text
+                    nodeType: segmen
                     textName: description
                     parentNode: *ref_8
                   textString: >-
@@ -148,13 +118,13 @@ content:
                 elements:
                   - type: point
                     node: &ref_9
-                      nodeType: point
+                      nodeType: huruf
                       key: a
                       parentPointSetNode: *ref_8
                     content:
                       type: text
                       node:
-                        nodeType: text
+                        nodeType: segmen
                         textName: text
                         parentNode: *ref_9
                       textString: >-
@@ -170,13 +140,13 @@ content:
                             nodeType: pasal
                   - type: point
                     node: &ref_10
-                      nodeType: point
+                      nodeType: huruf
                       key: b
                       parentPointSetNode: *ref_8
                     content:
                       type: text
                       node:
-                        nodeType: text
+                        nodeType: segmen
                         textName: text
                         parentNode: *ref_10
                       textString: >-
@@ -188,9 +158,9 @@ content:
                           node:
                             key: a
                             parentPointSetNode:
-                              nodeType: pointSet
+                              nodeType: daftarHuruf
                               parentNode: *ref_5
-                            nodeType: point
+                            nodeType: huruf
                         - start: 66
                           end: 73
                           node:
@@ -203,14 +173,14 @@ content:
                 key: 2
                 parentAyatSetNode: *ref_6
               content:
-                type: pointSet
+                type: daftarHuruf
                 node: &ref_12
-                  nodeType: pointSet
+                  nodeType: daftarHuruf
                   parentNode: *ref_11
                 description:
                   type: text
                   node:
-                    nodeType: text
+                    nodeType: segmen
                     textName: description
                     parentNode: *ref_12
                   textString: Untuk perhitungan pensiun-DPR, maka.
@@ -218,13 +188,13 @@ content:
                 elements:
                   - type: point
                     node: &ref_13
-                      nodeType: point
+                      nodeType: huruf
                       key: a
                       parentPointSetNode: *ref_12
                     content:
                       type: text
                       node:
-                        nodeType: text
+                        nodeType: segmen
                         textName: text
                         parentNode: *ref_13
                       textString: >-
@@ -236,13 +206,13 @@ content:
                       references: []
                   - type: point
                     node: &ref_14
-                      nodeType: point
+                      nodeType: huruf
                       key: b
                       parentPointSetNode: *ref_12
                     content:
                       type: text
                       node:
-                        nodeType: text
+                        nodeType: segmen
                         textName: text
                         parentNode: *ref_14
                       textString: >-
@@ -255,9 +225,9 @@ content:
                           node:
                             key: a
                             parentPointSetNode:
-                              nodeType: pointSet
+                              nodeType: daftarHuruf
                               parentNode: *ref_5
-                            nodeType: point
+                            nodeType: huruf
                         - start: 111
                           end: 118
                           node:
@@ -266,13 +236,13 @@ content:
                             nodeType: pasal
                   - type: point
                     node: &ref_15
-                      nodeType: point
+                      nodeType: huruf
                       key: c
                       parentPointSetNode: *ref_12
                     content:
                       type: text
                       node:
-                        nodeType: text
+                        nodeType: segmen
                         textName: text
                         parentNode: *ref_15
                       textString: >-
@@ -284,13 +254,13 @@ content:
                       references: []
                   - type: point
                     node: &ref_16
-                      nodeType: point
+                      nodeType: huruf
                       key: d
                       parentPointSetNode: *ref_12
                     content:
                       type: text
                       node:
-                        nodeType: text
+                        nodeType: segmen
                         textName: text
                         parentNode: *ref_16
                       textString: >-
@@ -302,21 +272,21 @@ content:
                           node:
                             key: c
                             parentPointSetNode: &ref_17
-                              nodeType: pointSet
+                              nodeType: daftarHuruf
                               parentNode: *ref_5
-                            nodeType: point
+                            nodeType: huruf
                         - start: 70
                           end: 71
                           node:
                             key: b
                             parentPointSetNode: *ref_17
-                            nodeType: point
+                            nodeType: huruf
                         - start: 61
                           end: 68
                           node:
                             key: a
                             parentPointSetNode: *ref_17
-                            nodeType: point
+                            nodeType: huruf
             - type: ayat
               node: &ref_18
                 nodeType: ayat
@@ -325,7 +295,7 @@ content:
               content:
                 type: text
                 node:
-                  nodeType: text
+                  nodeType: segmen
                   textName: text
                   parentNode: *ref_18
                 textString: >-
@@ -341,9 +311,9 @@ content:
       version:
         type: pasalVersion
         node: &ref_19
-          nodeType: pasalVersion
+          nodeType: versiPasal
           version: *ref_4
-          state: exists
+          state: orisinal
           parentPasalNode:
             nodeType: pasal
             key: '3'
@@ -351,7 +321,7 @@ content:
         content:
           type: ayatSet
           node: &ref_20
-            nodeType: ayatSet
+            nodeType: daftarAyat
             parentPasalVersionNode: *ref_19
           elements:
             - type: ayat
@@ -362,7 +332,7 @@ content:
               content:
                 type: text
                 node:
-                  nodeType: text
+                  nodeType: segmen
                   textName: text
                   parentNode: *ref_21
                 textString: Pensiun ini diberikan oleh Presiden dengan Surat Keputusan.
@@ -375,7 +345,7 @@ content:
               content:
                 type: text
                 node:
-                  nodeType: text
+                  nodeType: segmen
                   textName: text
                   parentNode: *ref_22
                 textString: >-
@@ -394,7 +364,7 @@ content:
               content:
                 type: text
                 node:
-                  nodeType: text
+                  nodeType: segmen
                   textName: text
                   parentNode: *ref_23
                 textString: >-
@@ -409,9 +379,9 @@ content:
       version:
         type: pasalVersion
         node: &ref_24
-          nodeType: pasalVersion
+          nodeType: versiPasal
           version: *ref_4
-          state: exists
+          state: orisinal
           parentPasalNode:
             nodeType: pasal
             key: '4'
@@ -419,7 +389,7 @@ content:
         content:
           type: ayatSet
           node: &ref_25
-            nodeType: ayatSet
+            nodeType: daftarAyat
             parentPasalVersionNode: *ref_24
           elements:
             - type: ayat
@@ -430,7 +400,7 @@ content:
               content:
                 type: text
                 node:
-                  nodeType: text
+                  nodeType: segmen
                   textName: text
                   parentNode: *ref_26
                 textString: >-
@@ -445,7 +415,7 @@ content:
               content:
                 type: text
                 node:
-                  nodeType: text
+                  nodeType: segmen
                   textName: text
                   parentNode: *ref_27
                 textString: >-
@@ -461,14 +431,14 @@ content:
                 key: 3
                 parentAyatSetNode: *ref_25
               content:
-                type: pointSet
+                type: daftarHuruf
                 node: &ref_29
-                  nodeType: pointSet
+                  nodeType: daftarHuruf
                   parentNode: *ref_28
                 description:
                   type: text
                   node:
-                    nodeType: text
+                    nodeType: segmen
                     textName: description
                     parentNode: *ref_29
                   textString: >-
@@ -481,13 +451,13 @@ content:
                 elements:
                   - type: point
                     node: &ref_30
-                      nodeType: point
+                      nodeType: huruf
                       key: a
                       parentPointSetNode: *ref_29
                     content:
                       type: text
                       node:
-                        nodeType: text
+                        nodeType: segmen
                         textName: text
                         parentNode: *ref_30
                       textString: >-
@@ -496,13 +466,13 @@ content:
                       references: []
                   - type: point
                     node: &ref_31
-                      nodeType: point
+                      nodeType: huruf
                       key: b
                       parentPointSetNode: *ref_29
                     content:
                       type: text
                       node:
-                        nodeType: text
+                        nodeType: segmen
                         textName: text
                         parentNode: *ref_31
                       textString: >-
@@ -511,13 +481,13 @@ content:
                       references: []
                   - type: point
                     node: &ref_32
-                      nodeType: point
+                      nodeType: huruf
                       key: c
                       parentPointSetNode: *ref_29
                     content:
                       type: text
                       node:
-                        nodeType: text
+                        nodeType: segmen
                         textName: text
                         parentNode: *ref_32
                       textString: >-
@@ -526,13 +496,13 @@ content:
                       references: []
                   - type: point
                     node: &ref_33
-                      nodeType: point
+                      nodeType: huruf
                       key: d
                       parentPointSetNode: *ref_29
                     content:
                       type: text
                       node:
-                        nodeType: text
+                        nodeType: segmen
                         textName: text
                         parentNode: *ref_33
                       textString: >-
@@ -565,7 +535,7 @@ content:
               content:
                 type: text
                 node:
-                  nodeType: text
+                  nodeType: segmen
                   textName: text
                   parentNode: *ref_34
                 textString: >-

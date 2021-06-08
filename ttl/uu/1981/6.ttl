@@ -1,105 +1,111 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1981/6> legal:documentHasPasalSet <http://example.org/legal/document/uu/1981/6/pasals> .
-<http://example.org/legal/document/uu/1981/6/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1981/6/pasal/0001> .
-<http://example.org/legal/document/uu/1981/6/pasal/0001> legal:pasalHasKey 1 .
-<http://example.org/legal/document/uu/1981/6/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1981/6/pasal/0001/version/19810721> .
-<http://example.org/legal/document/uu/1981/6> legal:documentHasPasal <http://example.org/legal/document/uu/1981/6/pasal/0001> .
-<http://example.org/legal/document/uu/1981/6/pasal/0001/version/19810721> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1981/6/pasal/0001/version/19810721> legal:pasalVersionHasVersionDate "1981-07-21"^^xsd:date .
-<http://example.org/legal/document/uu/1981/6/pasal/0001/version/19810721> legal:pasalVersionHasRawText "Mengesahkan KONVENSI INTERNASIONAL MENGENAI PEMBERANTASAN UANG PALSU BESERTA PROTOKOL (INTERNATIONAL CONVENTION FOR THE SUPPRESSION OF COUNTERFEITING CURRENCY AND PROTOCOL, GENEVE 1929) yang telah diterima baik dan disahkan oleh Sidang Liga Bangsa - Bangsa di Jenewa pada tanggal 20 April 1929, dengan pensyaratan (reservation) terhadap Pasal 19, tentang penyelesaian perselisihan mengenai penafsiran atau penerapan Konvensi ini, sebagaimana yang dilampirkan pada undang - undang ini." .
-<http://example.org/legal/document/uu/1981/6/pasal/0001/version/19810721/text> legal:textHasTextString "Mengesahkan KONVENSI INTERNASIONAL MENGENAI PEMBERANTASAN UANG PALSU BESERTA PROTOKOL (INTERNATIONAL CONVENTION FOR THE SUPPRESSION OF COUNTERFEITING CURRENCY AND PROTOCOL, GENEVE 1929) yang telah diterima baik dan disahkan oleh Sidang Liga Bangsa - Bangsa di Jenewa pada tanggal 20 April 1929, dengan pensyaratan (reservation) terhadap Pasal 19, tentang penyelesaian perselisihan mengenai penafsiran atau penerapan Konvensi ini, sebagaimana yang dilampirkan pada undang - undang ini." .
-<http://example.org/legal/document/uu/1981/6/pasal/0001/version/19810721> legal:pasalVersionHasText <http://example.org/legal/document/uu/1981/6/pasal/0001/version/19810721/text> .
-<http://example.org/legal/document/uu/1981/6/pasal/0001/version/19810721/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1981/6/pasal/0019> .
-<http://example.org/legal/document/uu/1981/6/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1981/6/pasal/0002> .
-<http://example.org/legal/document/uu/1981/6/pasal/0002> legal:pasalHasKey 2 .
-<http://example.org/legal/document/uu/1981/6/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1981/6/pasal/0002/version/19810721> .
-<http://example.org/legal/document/uu/1981/6> legal:documentHasPasal <http://example.org/legal/document/uu/1981/6/pasal/0002> .
-<http://example.org/legal/document/uu/1981/6/pasal/0002/version/19810721> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1981/6/pasal/0002/version/19810721> legal:pasalVersionHasVersionDate "1981-07-21"^^xsd:date .
-<http://example.org/legal/document/uu/1981/6/pasal/0002/version/19810721> legal:pasalVersionHasRawText "Undang - undan g ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/1981/6/pasal/0002/version/19810721/text> legal:textHasTextString "Undang - undan g ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/1981/6/pasal/0002/version/19810721> legal:pasalVersionHasText <http://example.org/legal/document/uu/1981/6/pasal/0002/version/19810721/text> .
-<http://example.org/legal/document/uu/1981/6> legal:documentHasDisahkanDate "1981-07-21"^^xsd:date .
-<http://example.org/legal/document/uu/1981/6> legal:documentMengingat <http://example.org/legal/document/uu/1981/6/mengingat> .
-<http://example.org/legal/document/uu/1981/6/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1981/6/mengingat/point> .
-<http://example.org/legal/document/uu/1981/6/mengingat/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/1981/6/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1981/6/mengingat/point/description> .
-<http://example.org/legal/document/uu/1981/6/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1981/6/mengingat/point/0001> .
-<http://example.org/legal/document/uu/1981/6/mengingat/point/0001> legal:pointHasKey "1" .
-<http://example.org/legal/document/uu/1981/6/mengingat/point/0001/text> legal:textHasTextString "Undang - Und ang Dasar 1945 Pasal 5 ayat (1), Pasal 11 dan Pasal 20 ayat (1);" .
-<http://example.org/legal/document/uu/1981/6/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1981/6/mengingat/point/0001/text> .
-<http://example.org/legal/document/uu/1981/6/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1981/6/mengingat/point/0002> .
-<http://example.org/legal/document/uu/1981/6/mengingat/point/0002> legal:pointHasKey "2" .
-<http://example.org/legal/document/uu/1981/6/mengingat/point/0002/text> legal:textHasTextString "Ketetapan Majelis Permusyawaratan Rakyat Republik Indonesia Nomor IV/MPR/1978 tentang Garis - garis Besar Haluan Negara. Dengan Persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMU TUSKAN : Menetapkan : UNDANG - UNDANG TENTANG PENGESAHAN KONVENSI INTERNASIONAL MENGENAI PEMBERANTASAN UANG PALSU BESERTA PROTOKOL (INTERNATIONAL CONVENTION FOR THE SUPPRESSION OF COUNTERFEITING CURRENCY AND PROTOCOL, GENEVE 1929)." .
-<http://example.org/legal/document/uu/1981/6/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1981/6/mengingat/point/0002/text> .
-<http://example.org/legal/document/uu/1981/6> legal:documentMenimbang <http://example.org/legal/document/uu/1981/6/menimbang> .
-<http://example.org/legal/document/uu/1981/6/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/1981/6/menimbang/point> .
-<http://example.org/legal/document/uu/1981/6/menimbang/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/1981/6/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1981/6/menimbang/point/description> .
-<http://example.org/legal/document/uu/1981/6/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1981/6/menimbang/point/a> .
-<http://example.org/legal/document/uu/1981/6/menimbang/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/1981/6/menimbang/point/a/text> legal:textHasTextString "bahwa pemalsuan uang sudah sedemikain meningkatnya sehingga dipandang perlu untuk menanggulangi masalah tersebut secara bersama dengan negara - negara lain;" .
-<http://example.org/legal/document/uu/1981/6/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/1981/6/menimbang/point/a/text> .
-<http://example.org/legal/document/uu/1981/6/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1981/6/menimbang/point/b> .
-<http://example.org/legal/document/uu/1981/6/menimbang/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/1981/6/menimbang/point/b/text> legal:textHasTextString "bahwa Liga Bangsa - Bangsa di dalam sidangnya pada tanggal 20 April 1929 di Jenewa, telah menerima baik serta mengesahkan \"International Convention for the Suppression of Counterfeiting Currency and Protocol, Geneve 1929\";" .
-<http://example.org/legal/document/uu/1981/6/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/1981/6/menimbang/point/b/text> .
-<http://example.org/legal/document/uu/1981/6/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1981/6/menimbang/point/c> .
-<http://example.org/legal/document/uu/1981/6/menimbang/point/c> legal:pointHasKey "c" .
-<http://example.org/legal/document/uu/1981/6/menimbang/point/c/text> legal:textHasTextString "bahwa ketentaun yang tercantum d i dalam Konvensi tersebut di atas tidak bertentangan dengan ketentuan yang tercantum di dalam Kitab Undang - undang Hukum Pidana Republik Indonesia;" .
-<http://example.org/legal/document/uu/1981/6/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/1981/6/menimbang/point/c/text> .
-<http://example.org/legal/document/uu/1981/6/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1981/6/menimbang/point/d> .
-<http://example.org/legal/document/uu/1981/6/menimbang/point/d> legal:pointHasKey "d" .
-<http://example.org/legal/document/uu/1981/6/menimbang/point/d/text> legal:textHasTextString "bahwa untuk menanggulangi serta memberantas masalah uang palsu sebagaimana termaktub pada huruf a di atas Pemerintah Republik Indonesia perlu menjalin kerjasama dengan negara - negara yang menjadi pihak Konvensi dan oleh karenanya dipandang perlu untuk mengesahkan Konvensi sebagaimana tersebut pada huruf b di atas dengan undang - undang." .
-<http://example.org/legal/document/uu/1981/6/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/1981/6/menimbang/point/d/text> .
-<http://example.org/legal/document/uu/1981/6> legal:documentHasDisahkanPengesah "SOEHARTO" .
-<http://example.org/legal/document/uu/1981/6> legal:documentHasDisahkanLocation "Jakarta" .
-<http://example.org/legal/document/uu/1981/6> legal:documentHasDisahkanJabatanPengesah "PRESIDEN RE PUBLIK INDONESIA," .
-<http://example.org/legal/document/uu/1981/6> a legal:Document .
-<http://example.org/legal/document/uu/1981/6/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/1981/6/pasal/0001> a legal:Pasal .
-<http://example.org/legal/document/uu/1981/6/pasal/0001/version/19810721> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1981/6/pasal/0001/version/19810721/text> a legal:Text .
-<http://example.org/legal/document/uu/1981/6/pasal/0002> a legal:Pasal .
-<http://example.org/legal/document/uu/1981/6/pasal/0002/version/19810721> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1981/6/pasal/0002/version/19810721/text> a legal:Text .
-<http://example.org/legal/document/uu/1981/6/mengingat> a legal:Mengingat .
-<http://example.org/legal/document/uu/1981/6/mengingat/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1981/6/mengingat/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1981/6/mengingat/point/0001> a legal:Point .
-<http://example.org/legal/document/uu/1981/6/mengingat/point/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/1981/6/mengingat/point/0002> a legal:Point .
-<http://example.org/legal/document/uu/1981/6/mengingat/point/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/1981/6/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/1981/6/menimbang/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1981/6/menimbang/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1981/6/menimbang/point/a> a legal:Point .
-<http://example.org/legal/document/uu/1981/6/menimbang/point/a/text> a legal:Text .
-<http://example.org/legal/document/uu/1981/6/menimbang/point/b> a legal:Point .
-<http://example.org/legal/document/uu/1981/6/menimbang/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/1981/6/menimbang/point/c> a legal:Point .
-<http://example.org/legal/document/uu/1981/6/menimbang/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/1981/6/menimbang/point/d> a legal:Point .
-<http://example.org/legal/document/uu/1981/6/menimbang/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/1981/6/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1981/6/pasals> .
-<http://example.org/legal/document/uu/1981/6/pasal/0001/version/19810721> legal:partOf <http://example.org/legal/document/uu/1981/6/pasal/0001> .
-<http://example.org/legal/document/uu/1981/6/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1981/6> .
-<http://example.org/legal/document/uu/1981/6/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1981/6/pasals> .
-<http://example.org/legal/document/uu/1981/6/pasal/0002/version/19810721> legal:partOf <http://example.org/legal/document/uu/1981/6/pasal/0002> .
-<http://example.org/legal/document/uu/1981/6/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1981/6> .
-<http://example.org/legal/document/uu/1981/6/mengingat/point> legal:partOf <http://example.org/legal/document/uu/1981/6/mengingat> .
-<http://example.org/legal/document/uu/1981/6/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1981/6/mengingat/point> .
-<http://example.org/legal/document/uu/1981/6/mengingat/point/0001/text> legal:partOf <http://example.org/legal/document/uu/1981/6/mengingat/point/0001> .
-<http://example.org/legal/document/uu/1981/6/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1981/6/mengingat/point> .
-<http://example.org/legal/document/uu/1981/6/mengingat/point/0002/text> legal:partOf <http://example.org/legal/document/uu/1981/6/mengingat/point/0002> .
-<http://example.org/legal/document/uu/1981/6/menimbang/point> legal:partOf <http://example.org/legal/document/uu/1981/6/menimbang> .
-<http://example.org/legal/document/uu/1981/6/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1981/6/menimbang/point> .
-<http://example.org/legal/document/uu/1981/6/menimbang/point/a/text> legal:partOf <http://example.org/legal/document/uu/1981/6/menimbang/point/a> .
-<http://example.org/legal/document/uu/1981/6/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1981/6/menimbang/point> .
-<http://example.org/legal/document/uu/1981/6/menimbang/point/b/text> legal:partOf <http://example.org/legal/document/uu/1981/6/menimbang/point/b> .
-<http://example.org/legal/document/uu/1981/6/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/1981/6/menimbang/point> .
-<http://example.org/legal/document/uu/1981/6/menimbang/point/c/text> legal:partOf <http://example.org/legal/document/uu/1981/6/menimbang/point/c> .
-<http://example.org/legal/document/uu/1981/6/menimbang/point/d> legal:partOf <http://example.org/legal/document/uu/1981/6/menimbang/point> .
-<http://example.org/legal/document/uu/1981/6/menimbang/point/d/text> legal:partOf <http://example.org/legal/document/uu/1981/6/menimbang/point/d> .
+<http://example.org/legal/peraturan/uu/1981/6> legal:daftarPasal <http://example.org/legal/peraturan/uu/1981/6/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1981/6/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1981/6/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1981/6/pasal/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1981/6/pasal/0001> legal:versi <http://example.org/legal/peraturan/uu/1981/6/pasal/0001/versi/19810721> .
+<http://example.org/legal/peraturan/uu/1981/6> legal:pasal <http://example.org/legal/peraturan/uu/1981/6/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1981/6/pasal/0001/versi/19810721> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1981/6/pasal/0001/versi/19810721> legal:tanggal "1981-07-21"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1981/6/pasal/0001/versi/19810721> legal:teks "Mengesahkan KONVENSI INTERNASIONAL MENGENAI PEMBERANTASAN UANG PALSU BESERTA PROTOKOL (INTERNATIONAL CONVENTION FOR THE SUPPRESSION OF COUNTERFEITING CURRENCY AND PROTOCOL, GENEVE 1929) yang telah diterima baik dan disahkan oleh Sidang Liga Bangsa - Bangsa di Jenewa pada tanggal 20 April 1929, dengan pensyaratan (reservation) terhadap Pasal 19, tentang penyelesaian perselisihan mengenai penafsiran atau penerapan Konvensi ini, sebagaimana yang dilampirkan pada undang - undang ini." .
+<http://example.org/legal/peraturan/uu/1981/6/pasal/0001/versi/19810721/text> legal:teks "Mengesahkan KONVENSI INTERNASIONAL MENGENAI PEMBERANTASAN UANG PALSU BESERTA PROTOKOL (INTERNATIONAL CONVENTION FOR THE SUPPRESSION OF COUNTERFEITING CURRENCY AND PROTOCOL, GENEVE 1929) yang telah diterima baik dan disahkan oleh Sidang Liga Bangsa - Bangsa di Jenewa pada tanggal 20 April 1929, dengan pensyaratan (reservation) terhadap Pasal 19, tentang penyelesaian perselisihan mengenai penafsiran atau penerapan Konvensi ini, sebagaimana yang dilampirkan pada undang - undang ini." .
+<http://example.org/legal/peraturan/uu/1981/6/pasal/0001/versi/19810721> legal:segmen <http://example.org/legal/peraturan/uu/1981/6/pasal/0001/versi/19810721/text> .
+<http://example.org/legal/peraturan/uu/1981/6/pasal/0001/versi/19810721/text> legal:merujuk <http://example.org/legal/peraturan/uu/1981/6/pasal/0019> .
+<http://example.org/legal/peraturan/uu/1981/6/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1981/6/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1981/6/pasal/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1981/6/pasal/0002> legal:versi <http://example.org/legal/peraturan/uu/1981/6/pasal/0002/versi/19810721> .
+<http://example.org/legal/peraturan/uu/1981/6> legal:pasal <http://example.org/legal/peraturan/uu/1981/6/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1981/6/pasal/0002/versi/19810721> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1981/6/pasal/0002/versi/19810721> legal:tanggal "1981-07-21"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1981/6/pasal/0002/versi/19810721> legal:teks "Undang - undan g ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/1981/6/pasal/0002/versi/19810721/text> legal:teks "Undang - undan g ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/1981/6/pasal/0002/versi/19810721> legal:segmen <http://example.org/legal/peraturan/uu/1981/6/pasal/0002/versi/19810721/text> .
+<http://example.org/legal/peraturan/uu/1981/6> legal:disahkanPada "1981-07-21"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1981/6> legal:tentang " PENGESAHAN KONVENSI INTERNASIONAL MENGENAI PEMBERANTASAN UANG PALSU BESERTA PROTOKOL (INTERNATIONAL CONVENTION FOR THE SUPPRESSION OF COUNTERFEITING CURRENCY AND PROTOCOL, GENEV E 1929)" .
+<http://example.org/legal/peraturan/uu/1981/6> legal:mengingat <http://example.org/legal/peraturan/uu/1981/6/mengingat> .
+<http://example.org/legal/peraturan/uu/1981/6/mengingat> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf/description> .
+<http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf/0001> .
+<http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf/0001> legal:nomor "1" .
+<http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf/0001/text> legal:teks "Undang - Und ang Dasar 1945 Pasal 5 ayat (1), Pasal 11 dan Pasal 20 ayat (1);" .
+<http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf/0001> legal:segmen <http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf/0001/text> .
+<http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf/0002> .
+<http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf/0002> legal:nomor "2" .
+<http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf/0002/text> legal:teks "Ketetapan Majelis Permusyawaratan Rakyat Republik Indonesia Nomor IV/MPR/1978 tentang Garis - garis Besar Haluan Negara. Dengan Persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMU TUSKAN : Menetapkan : UNDANG - UNDANG TENTANG PENGESAHAN KONVENSI INTERNASIONAL MENGENAI PEMBERANTASAN UANG PALSU BESERTA PROTOKOL (INTERNATIONAL CONVENTION FOR THE SUPPRESSION OF COUNTERFEITING CURRENCY AND PROTOCOL, GENEVE 1929)." .
+<http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf/0002> legal:segmen <http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf/0002/text> .
+<http://example.org/legal/peraturan/uu/1981/6> legal:menimbang <http://example.org/legal/peraturan/uu/1981/6/menimbang> .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/description> .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/a> legal:nomor "a" .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/a/text> legal:teks "bahwa pemalsuan uang sudah sedemikain meningkatnya sehingga dipandang perlu untuk menanggulangi masalah tersebut secara bersama dengan negara - negara lain;" .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/a> legal:segmen <http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/a/text> .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/b> .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/b> legal:nomor "b" .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/b/text> legal:teks "bahwa Liga Bangsa - Bangsa di dalam sidangnya pada tanggal 20 April 1929 di Jenewa, telah menerima baik serta mengesahkan \"International Convention for the Suppression of Counterfeiting Currency and Protocol, Geneve 1929\";" .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/b> legal:segmen <http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/b/text> .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/c> .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/c> legal:nomor "c" .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/c/text> legal:teks "bahwa ketentaun yang tercantum d i dalam Konvensi tersebut di atas tidak bertentangan dengan ketentuan yang tercantum di dalam Kitab Undang - undang Hukum Pidana Republik Indonesia;" .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/c> legal:segmen <http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/c/text> .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/d> .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/d> legal:nomor "d" .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/d/text> legal:teks "bahwa untuk menanggulangi serta memberantas masalah uang palsu sebagaimana termaktub pada huruf a di atas Pemerintah Republik Indonesia perlu menjalin kerjasama dengan negara - negara yang menjadi pihak Konvensi dan oleh karenanya dipandang perlu untuk mengesahkan Konvensi sebagaimana tersebut pada huruf b di atas dengan undang - undang." .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/d> legal:segmen <http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/d/text> .
+<http://example.org/legal/peraturan/uu/1981/6> legal:disahkanOleh "SOEHARTO" .
+<http://example.org/legal/peraturan/uu/1981/6> legal:disahkanDi "Jakarta" .
+<http://example.org/legal/peraturan/uu/1981/6> legal:jabatanPengesah "PRESIDEN RE PUBLIK INDONESIA," .
+<http://example.org/legal/peraturan/uu/1981/6> a legal:Peraturan .
+<http://example.org/legal/peraturan/uu/1981/6/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/1981/6/pasal/0001> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1981/6/pasal/0001/versi/19810721> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1981/6/pasal/0001/versi/19810721/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1981/6/pasal/0002> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1981/6/pasal/0002/versi/19810721> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1981/6/pasal/0002/versi/19810721/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1981/6/mengingat> a legal:Mengingat .
+<http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf/0001> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf/0002> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang> a legal:Menimbang .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/a> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/a/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/b> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/b/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/c> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/c/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/d> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/d/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1981/6/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/6> .
+<http://example.org/legal/peraturan/uu/1981/6/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/6/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1981/6/pasal/0001/versi/19810721> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/6/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1981/6/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/6> .
+<http://example.org/legal/peraturan/uu/1981/6/pasal/0001/versi/19810721/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/6/pasal/0001/versi/19810721> .
+<http://example.org/legal/peraturan/uu/1981/6/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/6/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1981/6/pasal/0002/versi/19810721> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/6/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1981/6/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/6> .
+<http://example.org/legal/peraturan/uu/1981/6/pasal/0002/versi/19810721/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/6/pasal/0002/versi/19810721> .
+<http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/6/mengingat> .
+<http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf/0001> .
+<http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/6/mengingat/huruf/0002> .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/6/menimbang> .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/a> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/a/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/b> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/b/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/b> .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/c> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/c/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/c> .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/d> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/d/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/6/menimbang/huruf/d> .

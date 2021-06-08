@@ -1,161 +1,166 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2005/11> legal:documentHasPasalSet <http://example.org/legal/document/uu/2005/11/pasals> .
-<http://example.org/legal/document/uu/2005/11/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2005/11/pasal/0001> .
-<http://example.org/legal/document/uu/2005/11/pasal/0001> legal:pasalHasKey 1 .
-<http://example.org/legal/document/uu/2005/11/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028> .
-<http://example.org/legal/document/uu/2005/11> legal:documentHasPasal <http://example.org/legal/document/uu/2005/11/pasal/0001> .
-<http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028> legal:pasalVersionHasVersionDate "2005-10-28"^^xsd:date .
-<http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028> legal:pasalVersionHasRawText "(1). Mengesahkan International Covenant on Economic, Social and Cultural Rights (Kovenan Internasional tentang Hak- hak Ekonomi, Sosial dan Budaya) dengan Declaration (Pernyataan) terhadap Pasal 1.\n(2). Salinan naskah asli International Covenant on Economic, Social and Cultural Rights (Kovenan Internasional tentang Hak-hak Ekonomi, Sosial dan Budaya) dan Declaration (Pernyataan) terhadap Pasal 1 dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir, merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
-<http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028/ayat> .
-<http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028/ayat/0001> .
-<http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028/ayat/0001> legal:ayatHasKey 1 .
-<http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028/ayat/0001> legal:ayatHasRawText "Mengesahkan International Covenant on Economic, Social and Cultural Rights (Kovenan Internasional tentang Hak- hak Ekonomi, Sosial dan Budaya) dengan Declaration (Pernyataan) terhadap Pasal 1." .
-<http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028/ayat/0001/text> legal:textHasTextString "Mengesahkan International Covenant on Economic, Social and Cultural Rights (Kovenan Internasional tentang Hak- hak Ekonomi, Sosial dan Budaya) dengan Declaration (Pernyataan) terhadap Pasal 1." .
-<http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028/ayat/0001/text> .
-<http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2005/11/pasal/0001> .
-<http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028/ayat/0002> .
-<http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028/ayat/0002> legal:ayatHasKey 2 .
-<http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028/ayat/0002> legal:ayatHasRawText "Salinan naskah asli International Covenant on Economic, Social and Cultural Rights (Kovenan Internasional tentang Hak-hak Ekonomi, Sosial dan Budaya) dan Declaration (Pernyataan) terhadap Pasal 1 dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir, merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
-<http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028/ayat/0002/text> legal:textHasTextString "Salinan naskah asli International Covenant on Economic, Social and Cultural Rights (Kovenan Internasional tentang Hak-hak Ekonomi, Sosial dan Budaya) dan Declaration (Pernyataan) terhadap Pasal 1 dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir, merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
-<http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028/ayat/0002/text> .
-<http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2005/11/pasal/0001> .
-<http://example.org/legal/document/uu/2005/11/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2005/11/pasal/0002> .
-<http://example.org/legal/document/uu/2005/11/pasal/0002> legal:pasalHasKey 2 .
-<http://example.org/legal/document/uu/2005/11/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2005/11/pasal/0002/version/20051028> .
-<http://example.org/legal/document/uu/2005/11> legal:documentHasPasal <http://example.org/legal/document/uu/2005/11/pasal/0002> .
-<http://example.org/legal/document/uu/2005/11/pasal/0002/version/20051028> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/2005/11/pasal/0002/version/20051028> legal:pasalVersionHasVersionDate "2005-10-28"^^xsd:date .
-<http://example.org/legal/document/uu/2005/11/pasal/0002/version/20051028> legal:pasalVersionHasRawText "Undang-Undang ini mulai berlaku pada tanggal diundangkan. REPUBLIK INDO NESIA -4- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/2005/11/pasal/0002/version/20051028/text> legal:textHasTextString "Undang-Undang ini mulai berlaku pada tanggal diundangkan. REPUBLIK INDO NESIA -4- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/2005/11/pasal/0002/version/20051028> legal:pasalVersionHasText <http://example.org/legal/document/uu/2005/11/pasal/0002/version/20051028/text> .
-<http://example.org/legal/document/uu/2005/11> legal:documentHasDisahkanDate "2005-10-28"^^xsd:date .
-<http://example.org/legal/document/uu/2005/11> legal:documentMengingat <http://example.org/legal/document/uu/2005/11/mengingat> .
-<http://example.org/legal/document/uu/2005/11/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2005/11/mengingat/point> .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/2005/11/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2005/11/mengingat/point/description> .
-<http://example.org/legal/document/uu/2005/11/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2005/11/mengingat/point/0001> .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0001> legal:pointHasKey "1" .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0001/text> legal:textHasTextString "Pasal S ayat (1), Pasal 11, Pasal 20 ayat (2), Pasal 27 ayat (1), Pasal 28, Pasal 28A, Pasal 28B, Pasal 28C, Pasal 28D, Pasal 28E, Pasal 28G, Pasal 281, dan Pasal 28J Undang- Undang Dasar Negara Republik Indonesia Tahun 1945," .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/2005/11/mengingat/point/0001/text> .
-<http://example.org/legal/document/uu/2005/11/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2005/11/mengingat/point/0002> .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0002> legal:pointHasKey "2" .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0002/text> legal:textHasTextString "Undang-Undang Nomor 37 Tahun 1999 tentang Hubungan Luar Negeri (Lembaran Negara Republik Indonesia Tahun 1999 Nomor 156: Tambahan Lembaran Negara Republik Indonesia Nomor 3882)," .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/2005/11/mengingat/point/0002/text> .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/37> .
-<http://example.org/legal/document/uu/2005/11/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2005/11/mengingat/point/0003> .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0003> legal:pointHasKey "3" .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0003/text> legal:textHasTextString "Undang-Undang Nomor 39 Tahun 1999 tentang Hak Asasi Manusia (Lembaran Negara Republik Indonesia Tahun 1999 Nomor 165, Tambahan Lembaran Negara Republik Indonesia Nomor 3886)," .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0003> legal:pointHasText <http://example.org/legal/document/uu/2005/11/mengingat/point/0003/text> .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/39> .
-<http://example.org/legal/document/uu/2005/11/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2005/11/mengingat/point/0004> .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0004> legal:pointHasKey "4" .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0004/text> legal:textHasTextString "Undang-Undang Nomor 24 Tahun 2000 tentang Perjanjian Internasional (Lembaran Negara Republik Indonesia Tahun 2000 Nomor 185: Tambahan Lembaran Negara Republik Indonesia Nomor 4012)," .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0004> legal:pointHasText <http://example.org/legal/document/uu/2005/11/mengingat/point/0004/text> .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2000/24> .
-<http://example.org/legal/document/uu/2005/11/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2005/11/mengingat/point/0005> .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0005> legal:pointHasKey "5" .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0005/text> legal:textHasTextString "Undang-Undang Nomor 26 Tahun 2000 tentang Pengadilan Hak Asasi Manusia (Lembaran Negara Republik Indonesia Tahun 2000 Nomor 208, Tambahan Lembaran Negara Republik Indonesia Nomor 4026), REPUBLIK INDO NESIA 3 - Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA dan PRESIDEN REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG PENGESAHAN INTERNATIONAL COVENANT ON ECONOMIC, SOCIAL AND CULTURAL RIGHTS (KOVENAN INTERNASIONAL TENTANG HAK-HAK EKONOMI, SOSIAL DAN BUDAYA)." .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0005> legal:pointHasText <http://example.org/legal/document/uu/2005/11/mengingat/point/0005/text> .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0005/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2000/26> .
-<http://example.org/legal/document/uu/2005/11> legal:documentMenimbang <http://example.org/legal/document/uu/2005/11/menimbang> .
-<http://example.org/legal/document/uu/2005/11/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/2005/11/menimbang/point> .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/2005/11/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2005/11/menimbang/point/description> .
-<http://example.org/legal/document/uu/2005/11/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2005/11/menimbang/point/a> .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/a/text> legal:textHasTextString "bahwa hak asasi manusia merupakan hak dasar yang secara kodrati melekat pada diri manusia, bersifat universal dan langgeng, dan oleh karena itu, harus dilindungi, dihormati, dipertahankan, dan tidak boleh diabaikan, dikurangi, atau dirampas oleh siapapun," .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/2005/11/menimbang/point/a/text> .
-<http://example.org/legal/document/uu/2005/11/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2005/11/menimbang/point/b> .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/b/text> legal:textHasTextString "bahwa bangsa Indonesia sebagai bagian dari masyarakat internasional, menghormati, menghargai, dan menjunjung tinggi prinsip dan tujuan Piagam Perserikatan Bangsa- Bangsa serta Deklarasi Universal Hak-hak Asasi Manusia," .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/2005/11/menimbang/point/b/text> .
-<http://example.org/legal/document/uu/2005/11/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2005/11/menimbang/point/c> .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/c> legal:pointHasKey "c" .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/c/text> legal:textHasTextString ". bahwa Majelis Umum Perserikatan Bangsa-Bangsa, dalam sidangnya tanggal 16 Desember 1966 telah mengesahkan International Covenant on Economic, Social and Cultural Rights (Kovenan Internasional tentang Hak-hak Ekonomi, Sosial dan Budaya):" .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/2005/11/menimbang/point/c/text> .
-<http://example.org/legal/document/uu/2005/11/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2005/11/menimbang/point/d> .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/d> legal:pointHasKey "d" .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/d/text> legal:textHasTextString "bahwa instrumen internasional sebagaimana dimaksud pada huruf c pada dasarnya tidak bertentangan dengan Pancasila dan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945, sesuai dengan sifat negara Republik Indonesia sebagai negara hukum yang menjunjung tinggi harkat dan martabat manusia dan yang menjamin persamaan kedudukan semua warga negara di dalam hukum, dan keinginan bangsa Indonesia untuk secara terus menerus memajukan dan melindungi hak asasi manusia dalam kehidupan berbangsa dan bernegara, REPUBLIK INDO NESIA -D-" .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/2005/11/menimbang/point/d/text> .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/d/text> legal:textReferencesLegal <http://example.org/legal/document/uu> .
-<http://example.org/legal/document/uu/2005/11/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2005/11/menimbang/point/e> .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/e> legal:pointHasKey "e" .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/e/text> legal:textHasTextString "bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a, huruf b, huruf c, dan huruf d perlu membentuk Undang-Undang tentang Pengesahan International Covenant on Economic, Social and Cultural Rights (Kovenan Internasional tentang Hak-hak Ekonomi, Sosial dan Budaya)." .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/e> legal:pointHasText <http://example.org/legal/document/uu/2005/11/menimbang/point/e/text> .
-<http://example.org/legal/document/uu/2005/11> legal:documentHasDisahkanPengesah "DR. H. SUSILO BAMBANG YUDHOYONO" .
-<http://example.org/legal/document/uu/2005/11> legal:documentHasDisahkanLocation "Jakarta" .
-<http://example.org/legal/document/uu/2005/11> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
-<http://example.org/legal/document/uu/2005/11> a legal:Document .
-<http://example.org/legal/document/uu/2005/11/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/2005/11/pasal/0001> a legal:Pasal .
-<http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028> a legal:PasalVersion .
-<http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028/ayat> a legal:AyatSet .
-<http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028/ayat/0001> a legal:Ayat .
-<http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028/ayat/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028/ayat/0002> a legal:Ayat .
-<http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028/ayat/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/2005/11/pasal/0002> a legal:Pasal .
-<http://example.org/legal/document/uu/2005/11/pasal/0002/version/20051028> a legal:PasalVersion .
-<http://example.org/legal/document/uu/2005/11/pasal/0002/version/20051028/text> a legal:Text .
-<http://example.org/legal/document/uu/2005/11/mengingat> a legal:Mengingat .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/description> a legal:Text .
-<http://example.org/legal/document/uu/2005/11/mengingat/point> a legal:PointSet .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0001> a legal:Point .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0002> a legal:Point .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0003> a legal:Point .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0003/text> a legal:Text .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0004> a legal:Point .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0004/text> a legal:Text .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0005> a legal:Point .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0005/text> a legal:Text .
-<http://example.org/legal/document/uu/2005/11/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/description> a legal:Text .
-<http://example.org/legal/document/uu/2005/11/menimbang/point> a legal:PointSet .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/a> a legal:Point .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/a/text> a legal:Text .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/b> a legal:Point .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/c> a legal:Point .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/d> a legal:Point .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/e> a legal:Point .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/e/text> a legal:Text .
-<http://example.org/legal/document/uu/2005/11/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2005/11/pasals> .
-<http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028> legal:partOf <http://example.org/legal/document/uu/2005/11/pasal/0001> .
-<http://example.org/legal/document/uu/2005/11/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2005/11> .
-<http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028/ayat> legal:partOf <http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028> .
-<http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028/ayat> .
-<http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028/ayat/0001> .
-<http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028/ayat> .
-<http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2005/11/pasal/0001/version/20051028/ayat/0002> .
-<http://example.org/legal/document/uu/2005/11/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2005/11/pasals> .
-<http://example.org/legal/document/uu/2005/11/pasal/0002/version/20051028> legal:partOf <http://example.org/legal/document/uu/2005/11/pasal/0002> .
-<http://example.org/legal/document/uu/2005/11/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2005/11> .
-<http://example.org/legal/document/uu/2005/11/mengingat/point> legal:partOf <http://example.org/legal/document/uu/2005/11/mengingat> .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2005/11/mengingat/point> .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0001/text> legal:partOf <http://example.org/legal/document/uu/2005/11/mengingat/point/0001> .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2005/11/mengingat/point> .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0002/text> legal:partOf <http://example.org/legal/document/uu/2005/11/mengingat/point/0002> .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/2005/11/mengingat/point> .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0003/text> legal:partOf <http://example.org/legal/document/uu/2005/11/mengingat/point/0003> .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0004> legal:partOf <http://example.org/legal/document/uu/2005/11/mengingat/point> .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0004/text> legal:partOf <http://example.org/legal/document/uu/2005/11/mengingat/point/0004> .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0005> legal:partOf <http://example.org/legal/document/uu/2005/11/mengingat/point> .
-<http://example.org/legal/document/uu/2005/11/mengingat/point/0005/text> legal:partOf <http://example.org/legal/document/uu/2005/11/mengingat/point/0005> .
-<http://example.org/legal/document/uu/2005/11/menimbang/point> legal:partOf <http://example.org/legal/document/uu/2005/11/menimbang> .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/2005/11/menimbang/point> .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/a/text> legal:partOf <http://example.org/legal/document/uu/2005/11/menimbang/point/a> .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/2005/11/menimbang/point> .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/b/text> legal:partOf <http://example.org/legal/document/uu/2005/11/menimbang/point/b> .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/2005/11/menimbang/point> .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/c/text> legal:partOf <http://example.org/legal/document/uu/2005/11/menimbang/point/c> .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/d> legal:partOf <http://example.org/legal/document/uu/2005/11/menimbang/point> .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/d/text> legal:partOf <http://example.org/legal/document/uu/2005/11/menimbang/point/d> .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/e> legal:partOf <http://example.org/legal/document/uu/2005/11/menimbang/point> .
-<http://example.org/legal/document/uu/2005/11/menimbang/point/e/text> legal:partOf <http://example.org/legal/document/uu/2005/11/menimbang/point/e> .
+<http://example.org/legal/peraturan/uu/2005/11> legal:daftarPasal <http://example.org/legal/peraturan/uu/2005/11/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2005/11/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/2005/11/pasal/0001> .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001> legal:versi <http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028> .
+<http://example.org/legal/peraturan/uu/2005/11> legal:pasal <http://example.org/legal/peraturan/uu/2005/11/pasal/0001> .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028> legal:tanggal "2005-10-28"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028> legal:teks "(1). Mengesahkan International Covenant on Economic, Social and Cultural Rights (Kovenan Internasional tentang Hak- hak Ekonomi, Sosial dan Budaya) dengan Declaration (Pernyataan) terhadap Pasal 1.\n(2). Salinan naskah asli International Covenant on Economic, Social and Cultural Rights (Kovenan Internasional tentang Hak-hak Ekonomi, Sosial dan Budaya) dan Declaration (Pernyataan) terhadap Pasal 1 dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir, merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028> legal:daftarAyat <http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028/ayat> .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028/ayat> legal:ayat <http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028/ayat/0001> .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028/ayat/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028/ayat/0001> legal:teks "Mengesahkan International Covenant on Economic, Social and Cultural Rights (Kovenan Internasional tentang Hak- hak Ekonomi, Sosial dan Budaya) dengan Declaration (Pernyataan) terhadap Pasal 1." .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028/ayat/0001/text> legal:teks "Mengesahkan International Covenant on Economic, Social and Cultural Rights (Kovenan Internasional tentang Hak- hak Ekonomi, Sosial dan Budaya) dengan Declaration (Pernyataan) terhadap Pasal 1." .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028/ayat/0001> legal:segmen <http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028/ayat/0001/text> .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028/ayat/0001/text> legal:merujuk <http://example.org/legal/peraturan/uu/2005/11/pasal/0001> .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028/ayat> legal:ayat <http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028/ayat/0002> .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028/ayat/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028/ayat/0002> legal:teks "Salinan naskah asli International Covenant on Economic, Social and Cultural Rights (Kovenan Internasional tentang Hak-hak Ekonomi, Sosial dan Budaya) dan Declaration (Pernyataan) terhadap Pasal 1 dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir, merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028/ayat/0002/text> legal:teks "Salinan naskah asli International Covenant on Economic, Social and Cultural Rights (Kovenan Internasional tentang Hak-hak Ekonomi, Sosial dan Budaya) dan Declaration (Pernyataan) terhadap Pasal 1 dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir, merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028/ayat/0002> legal:segmen <http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028/ayat/0002/text> .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028/ayat/0002/text> legal:merujuk <http://example.org/legal/peraturan/uu/2005/11/pasal/0001> .
+<http://example.org/legal/peraturan/uu/2005/11/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/2005/11/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0002> legal:versi <http://example.org/legal/peraturan/uu/2005/11/pasal/0002/versi/20051028> .
+<http://example.org/legal/peraturan/uu/2005/11> legal:pasal <http://example.org/legal/peraturan/uu/2005/11/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0002/versi/20051028> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0002/versi/20051028> legal:tanggal "2005-10-28"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0002/versi/20051028> legal:teks "Undang-Undang ini mulai berlaku pada tanggal diundangkan. REPUBLIK INDO NESIA -4- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0002/versi/20051028/text> legal:teks "Undang-Undang ini mulai berlaku pada tanggal diundangkan. REPUBLIK INDO NESIA -4- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0002/versi/20051028> legal:segmen <http://example.org/legal/peraturan/uu/2005/11/pasal/0002/versi/20051028/text> .
+<http://example.org/legal/peraturan/uu/2005/11> legal:disahkanPada "2005-10-28"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2005/11> legal:tentang " PENGESAHAN INTERNATIONAL COVENANT ON ECONOMIC, SOCIAL AND CULTURAL RIGHTS (KOVENAN INTERNASIONAL TENTANG HAK-HAK EKONOMI, SOSIAL DAN BUDAYA)" .
+<http://example.org/legal/peraturan/uu/2005/11> legal:mengingat <http://example.org/legal/peraturan/uu/2005/11/mengingat> .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat> legal:daftarHuruf <http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf> legal:segmen <http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/description> .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0001> .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0001> legal:nomor "1" .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0001/text> legal:teks "Pasal S ayat (1), Pasal 11, Pasal 20 ayat (2), Pasal 27 ayat (1), Pasal 28, Pasal 28A, Pasal 28B, Pasal 28C, Pasal 28D, Pasal 28E, Pasal 28G, Pasal 281, dan Pasal 28J Undang- Undang Dasar Negara Republik Indonesia Tahun 1945," .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0001> legal:segmen <http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0001/text> .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0002> .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0002> legal:nomor "2" .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0002/text> legal:teks "Undang-Undang Nomor 37 Tahun 1999 tentang Hubungan Luar Negeri (Lembaran Negara Republik Indonesia Tahun 1999 Nomor 156: Tambahan Lembaran Negara Republik Indonesia Nomor 3882)," .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0002> legal:segmen <http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0002/text> .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0002/text> legal:merujuk <http://example.org/legal/peraturan/uu/1999/37> .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0003> .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0003> legal:nomor "3" .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0003/text> legal:teks "Undang-Undang Nomor 39 Tahun 1999 tentang Hak Asasi Manusia (Lembaran Negara Republik Indonesia Tahun 1999 Nomor 165, Tambahan Lembaran Negara Republik Indonesia Nomor 3886)," .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0003> legal:segmen <http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0003/text> .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0003/text> legal:merujuk <http://example.org/legal/peraturan/uu/1999/39> .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0004> .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0004> legal:nomor "4" .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0004/text> legal:teks "Undang-Undang Nomor 24 Tahun 2000 tentang Perjanjian Internasional (Lembaran Negara Republik Indonesia Tahun 2000 Nomor 185: Tambahan Lembaran Negara Republik Indonesia Nomor 4012)," .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0004> legal:segmen <http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0004/text> .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0004/text> legal:merujuk <http://example.org/legal/peraturan/uu/2000/24> .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0005> .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0005> legal:nomor "5" .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0005/text> legal:teks "Undang-Undang Nomor 26 Tahun 2000 tentang Pengadilan Hak Asasi Manusia (Lembaran Negara Republik Indonesia Tahun 2000 Nomor 208, Tambahan Lembaran Negara Republik Indonesia Nomor 4026), REPUBLIK INDO NESIA 3 - Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA dan PRESIDEN REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG PENGESAHAN INTERNATIONAL COVENANT ON ECONOMIC, SOCIAL AND CULTURAL RIGHTS (KOVENAN INTERNASIONAL TENTANG HAK-HAK EKONOMI, SOSIAL DAN BUDAYA)." .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0005> legal:segmen <http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0005/text> .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0005/text> legal:merujuk <http://example.org/legal/peraturan/uu/2000/26> .
+<http://example.org/legal/peraturan/uu/2005/11> legal:menimbang <http://example.org/legal/peraturan/uu/2005/11/menimbang> .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang> legal:daftarHuruf <http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf> legal:segmen <http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/description> .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/a> legal:nomor "a" .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/a/text> legal:teks "bahwa hak asasi manusia merupakan hak dasar yang secara kodrati melekat pada diri manusia, bersifat universal dan langgeng, dan oleh karena itu, harus dilindungi, dihormati, dipertahankan, dan tidak boleh diabaikan, dikurangi, atau dirampas oleh siapapun," .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/a> legal:segmen <http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/a/text> .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/b> .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/b> legal:nomor "b" .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/b/text> legal:teks "bahwa bangsa Indonesia sebagai bagian dari masyarakat internasional, menghormati, menghargai, dan menjunjung tinggi prinsip dan tujuan Piagam Perserikatan Bangsa- Bangsa serta Deklarasi Universal Hak-hak Asasi Manusia," .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/b> legal:segmen <http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/b/text> .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/c> .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/c> legal:nomor "c" .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/c/text> legal:teks ". bahwa Majelis Umum Perserikatan Bangsa-Bangsa, dalam sidangnya tanggal 16 Desember 1966 telah mengesahkan International Covenant on Economic, Social and Cultural Rights (Kovenan Internasional tentang Hak-hak Ekonomi, Sosial dan Budaya):" .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/c> legal:segmen <http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/c/text> .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/d> .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/d> legal:nomor "d" .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/d/text> legal:teks "bahwa instrumen internasional sebagaimana dimaksud pada huruf c pada dasarnya tidak bertentangan dengan Pancasila dan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945, sesuai dengan sifat negara Republik Indonesia sebagai negara hukum yang menjunjung tinggi harkat dan martabat manusia dan yang menjamin persamaan kedudukan semua warga negara di dalam hukum, dan keinginan bangsa Indonesia untuk secara terus menerus memajukan dan melindungi hak asasi manusia dalam kehidupan berbangsa dan bernegara, REPUBLIK INDO NESIA -D-" .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/d> legal:segmen <http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/d/text> .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/d/text> legal:merujuk <http://example.org/legal/peraturan/uu> .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/e> .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/e> legal:nomor "e" .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/e/text> legal:teks "bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a, huruf b, huruf c, dan huruf d perlu membentuk Undang-Undang tentang Pengesahan International Covenant on Economic, Social and Cultural Rights (Kovenan Internasional tentang Hak-hak Ekonomi, Sosial dan Budaya)." .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/e> legal:segmen <http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/e/text> .
+<http://example.org/legal/peraturan/uu/2005/11> legal:disahkanOleh "DR. H. SUSILO BAMBANG YUDHOYONO" .
+<http://example.org/legal/peraturan/uu/2005/11> legal:disahkanDi "Jakarta" .
+<http://example.org/legal/peraturan/uu/2005/11> legal:jabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/peraturan/uu/2005/11> a legal:Peraturan .
+<http://example.org/legal/peraturan/uu/2005/11/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028/ayat> a legal:DaftarAyat .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028/ayat/0001> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028/ayat/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028/ayat/0002> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028/ayat/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0002> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0002/versi/20051028> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0002/versi/20051028/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat> a legal:Mengingat .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0001> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0002> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0003> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0003/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0004> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0004/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0005> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0005/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang> a legal:Menimbang .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/a> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/a/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/b> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/b/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/c> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/c/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/d> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/d/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/e> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/e/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2005/11/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11> .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/pasal/0001> .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11> .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028/ayat> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028> .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028/ayat/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028/ayat> .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028/ayat/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028/ayat/0001> .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028/ayat/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028/ayat> .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028/ayat/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/pasal/0001/versi/20051028/ayat/0002> .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0002/versi/20051028> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11> .
+<http://example.org/legal/peraturan/uu/2005/11/pasal/0002/versi/20051028/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/pasal/0002/versi/20051028> .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/mengingat> .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0001> .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0002> .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0003/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0003> .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0004/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0004> .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0005> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0005/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/mengingat/huruf/0005> .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/menimbang> .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/a> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/a/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/b> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/b/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/b> .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/c> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/c/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/c> .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/d> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/d/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/d> .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/e> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/e/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2005/11/menimbang/huruf/e> .

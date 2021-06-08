@@ -1,91 +1,96 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2012/3> legal:documentHasPasalSet <http://example.org/legal/document/uu/2012/3/pasals> .
-<http://example.org/legal/document/uu/2012/3/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2012/3/pasal/0001> .
-<http://example.org/legal/document/uu/2012/3/pasal/0001> legal:pasalHasKey 1 .
-<http://example.org/legal/document/uu/2012/3/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2012/3/pasal/0001/version/20120328> .
-<http://example.org/legal/document/uu/2012/3> legal:documentHasPasal <http://example.org/legal/document/uu/2012/3/pasal/0001> .
-<http://example.org/legal/document/uu/2012/3/pasal/0001/version/20120328> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/2012/3/pasal/0001/version/20120328> legal:pasalVersionHasVersionDate "2012-03-28"^^xsd:date .
-<http://example.org/legal/document/uu/2012/3/pasal/0001/version/20120328> legal:pasalVersionHasRawText "Mengesahkan Persetujuan antara Pemerintah Republik Indonesia dan Pemerintah Daerah Administrasi Khusus Hong Kong Republik Rakyat China tentang Bantuan Hukum Timbal Balik dalam Masalah Pidana (Agreement between the Government of the Republic of Indonesia and the Government of the Hong Kong Special Administrative Region of the People's Republic of China concerning Mutual Legal Assistance in Criminal Matters) yang ditandatangani pada tanggal 3 April 2008 di Hong Kong yang salinan naskah aslinya dalam bahasa Indonesia, bahasa China, dan bahasa Inggris sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
-<http://example.org/legal/document/uu/2012/3/pasal/0001/version/20120328/text> legal:textHasTextString "Mengesahkan Persetujuan antara Pemerintah Republik Indonesia dan Pemerintah Daerah Administrasi Khusus Hong Kong Republik Rakyat China tentang Bantuan Hukum Timbal Balik dalam Masalah Pidana (Agreement between the Government of the Republic of Indonesia and the Government of the Hong Kong Special Administrative Region of the People's Republic of China concerning Mutual Legal Assistance in Criminal Matters) yang ditandatangani pada tanggal 3 April 2008 di Hong Kong yang salinan naskah aslinya dalam bahasa Indonesia, bahasa China, dan bahasa Inggris sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
-<http://example.org/legal/document/uu/2012/3/pasal/0001/version/20120328> legal:pasalVersionHasText <http://example.org/legal/document/uu/2012/3/pasal/0001/version/20120328/text> .
-<http://example.org/legal/document/uu/2012/3/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2012/3/pasal/0002> .
-<http://example.org/legal/document/uu/2012/3/pasal/0002> legal:pasalHasKey 2 .
-<http://example.org/legal/document/uu/2012/3/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2012/3/pasal/0002/version/20120328> .
-<http://example.org/legal/document/uu/2012/3> legal:documentHasPasal <http://example.org/legal/document/uu/2012/3/pasal/0002> .
-<http://example.org/legal/document/uu/2012/3/pasal/0002/version/20120328> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/2012/3/pasal/0002/version/20120328> legal:pasalVersionHasVersionDate "2012-03-28"^^xsd:date .
-<http://example.org/legal/document/uu/2012/3/pasal/0002/version/20120328> legal:pasalVersionHasRawText "Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/2012/3/pasal/0002/version/20120328/text> legal:textHasTextString "Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/2012/3/pasal/0002/version/20120328> legal:pasalVersionHasText <http://example.org/legal/document/uu/2012/3/pasal/0002/version/20120328/text> .
-<http://example.org/legal/document/uu/2012/3> legal:documentHasDisahkanDate "2012-03-28"^^xsd:date .
-<http://example.org/legal/document/uu/2012/3> legal:documentMengingat <http://example.org/legal/document/uu/2012/3/mengingat> .
-<http://example.org/legal/document/uu/2012/3/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2012/3/mengingat/point> .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/2012/3/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2012/3/mengingat/point/description> .
-<http://example.org/legal/document/uu/2012/3/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2012/3/mengingat/point/0001> .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/0001> legal:pointHasKey "1" .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/0001/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 11, dan Pasal 20 Undang-Undang Dasar Negara Republik Indonesia Tahun 1945:" .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/2012/3/mengingat/point/0001/text> .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu> .
-<http://example.org/legal/document/uu/2012/3/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2012/3/mengingat/point/0002> .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/0002> legal:pointHasKey "2" .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/0002/text> legal:textHasTextString "Undang-Undang Nomor 37 Tahun 1999 tentang Hubungan Luar Negeri (Lembaran Negara Republik Indonesia Tahun 1999 Nomor 156, Tambahan Lembaran Negara Republik Indonesia Nomor 3882):" .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/2012/3/mengingat/point/0002/text> .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/37> .
-<http://example.org/legal/document/uu/2012/3/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2012/3/mengingat/point/0003> .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/0003> legal:pointHasKey "3" .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/0003/text> legal:textHasTextString "Undang-Undang Nomor 24 Tahun 2000 tentang Perjanjian Internasional (Lembaran Negara Republik Indonesia Tahun 2000 Nomor 185, Tambahan Lembaran Negara Republik Indonesia Nomor 4012):" .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/0003> legal:pointHasText <http://example.org/legal/document/uu/2012/3/mengingat/point/0003/text> .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2000/24> .
-<http://example.org/legal/document/uu/2012/3/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2012/3/mengingat/point/0004> .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/0004> legal:pointHasKey "4" .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/0004/text> legal:textHasTextString "Undang-Undang Nomor 1 Tahun 2006 tentang Bantuan Timbal Balik dalam Masalah Pidana (Lembaran Negara Republik Indonesia Tahun 2006 Nomor 18, Tambahan Lembaran Negara Republik Indonesia Nomor 4607): Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA dan PRESIDEN REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERINTAH DAERAH ADMINISTRASI KHUSUS HONG KONG REPUBLIK RAKYAT CHINA TENTANG BANTUAN HUKUM TIMBAL BALIK DALAM MASALAH PIDANA (AGREEMENT BETWEEN THE GOVERNMENT OF THE REPUBLIC OF INDONESIA AND THE GOVERNMENT OF THE HONG KONG SPECIAL ADMINISTRATIVE REGION OF THE PEOPLE'S REPUBLIC OF CHINA CONCERNING MUTUAL LEGAL ASSISTANCE IN CRIMINAL MATTERS)." .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/0004> legal:pointHasText <http://example.org/legal/document/uu/2012/3/mengingat/point/0004/text> .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2006/1> .
-<http://example.org/legal/document/uu/2012/3> legal:documentMenimbang <http://example.org/legal/document/uu/2012/3/menimbang> .
-<http://example.org/legal/document/uu/2012/3/menimbang/text> legal:textHasTextString " dalarn Permukaan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945, yaitu melindungi segenap bangsa Indonesia dan seluruh tumpah darah Indonesia, dan untuk memajukan kesejahteraan umum, mencerdaskan kehidupan bangsa, dan ikut melaksanakan ketertiban dunia yang berdasarkan kerrerdekaan, perdarnaian abadi dan keadian sosial, Pemerintah Reputlik Indonesia sebagai bagian dari rmesyarakat intemasional melakukan hubungan dan kerja sara internasional yang dwujudkan dalarn perjanjan irtemasional b. bawa perkembangan itu pengetahuan dan teknologi khususnya di bidang transportasi, komunikasi dan informesi, selain mempunyai dampak positif juya mempunyai dampak negatt, yaitutirmbulnya tindak pidanayang tidak lagi mengenal batas yurisdiksi suatu negara, sehingga penanggulangan dan pemberantasannya memerlukan kerja sama antarnegara yang efektif, baik herstat bilateral maupun mulilatera, 6. batwa untuk meningkatkan kerja sara di bilang hukum antara Pemerintah Republik Indonesia dan Pernerintah Daerah Adrrnistrasi Khusus Hang Kong Republik Rakyat China, pada tanggal 3 April 2008 di Hang Kong telah ditandatangani Persetujuan Bantuan Hukum Tiabal Baik dalam Masalah Pidana: d. batwa berdasarkan perimbangan sebagaimana dimaksud dalarn huruta, hurutb, dan hurut 6, perlu mengesahkan Persetijuan antara Pemerintah Republik Indonesia dan Pemerintah Daerah Administrasi Khusus Hang Kong Republik Rakyat China tentang Bantuan Hukum Timbal Baik dalam Masalah Pidana (Agreement between ihe Government of ihe Republic of Indonesia and the Govermert of the Hong Kong Spesial Adninbtrative Region of the People's Republic of China concerning Mutual Legal Assistance in Criminal Matters) dengan Undang-Undang:" .
-<http://example.org/legal/document/uu/2012/3/menimbang> legal:menimbangHasText <http://example.org/legal/document/uu/2012/3/menimbang/text> .
-<http://example.org/legal/document/uu/2012/3/menimbang/text> legal:textReferencesLegal <http://example.org/legal/document/uu> .
-<http://example.org/legal/document/uu/2012/3> legal:documentHasDisahkanPengesah "ttd." .
-<http://example.org/legal/document/uu/2012/3> legal:documentHasDisahkanLocation "Jakarta" .
-<http://example.org/legal/document/uu/2012/3> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK" .
-<http://example.org/legal/document/uu/2012/3> a legal:Document .
-<http://example.org/legal/document/uu/2012/3/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/2012/3/pasal/0001> a legal:Pasal .
-<http://example.org/legal/document/uu/2012/3/pasal/0001/version/20120328> a legal:PasalVersion .
-<http://example.org/legal/document/uu/2012/3/pasal/0001/version/20120328/text> a legal:Text .
-<http://example.org/legal/document/uu/2012/3/pasal/0002> a legal:Pasal .
-<http://example.org/legal/document/uu/2012/3/pasal/0002/version/20120328> a legal:PasalVersion .
-<http://example.org/legal/document/uu/2012/3/pasal/0002/version/20120328/text> a legal:Text .
-<http://example.org/legal/document/uu/2012/3/mengingat> a legal:Mengingat .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/description> a legal:Text .
-<http://example.org/legal/document/uu/2012/3/mengingat/point> a legal:PointSet .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/0001> a legal:Point .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/0002> a legal:Point .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/0003> a legal:Point .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/0003/text> a legal:Text .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/0004> a legal:Point .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/0004/text> a legal:Text .
-<http://example.org/legal/document/uu/2012/3/menimbang/text> a legal:Text .
-<http://example.org/legal/document/uu/2012/3/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/2012/3/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2012/3/pasals> .
-<http://example.org/legal/document/uu/2012/3/pasal/0001/version/20120328> legal:partOf <http://example.org/legal/document/uu/2012/3/pasal/0001> .
-<http://example.org/legal/document/uu/2012/3/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2012/3> .
-<http://example.org/legal/document/uu/2012/3/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2012/3/pasals> .
-<http://example.org/legal/document/uu/2012/3/pasal/0002/version/20120328> legal:partOf <http://example.org/legal/document/uu/2012/3/pasal/0002> .
-<http://example.org/legal/document/uu/2012/3/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2012/3> .
-<http://example.org/legal/document/uu/2012/3/mengingat/point> legal:partOf <http://example.org/legal/document/uu/2012/3/mengingat> .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2012/3/mengingat/point> .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/0001/text> legal:partOf <http://example.org/legal/document/uu/2012/3/mengingat/point/0001> .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2012/3/mengingat/point> .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/0002/text> legal:partOf <http://example.org/legal/document/uu/2012/3/mengingat/point/0002> .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/2012/3/mengingat/point> .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/0003/text> legal:partOf <http://example.org/legal/document/uu/2012/3/mengingat/point/0003> .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/0004> legal:partOf <http://example.org/legal/document/uu/2012/3/mengingat/point> .
-<http://example.org/legal/document/uu/2012/3/mengingat/point/0004/text> legal:partOf <http://example.org/legal/document/uu/2012/3/mengingat/point/0004> .
-<http://example.org/legal/document/uu/2012/3/menimbang/text> legal:partOf <http://example.org/legal/document/uu/2012/3/menimbang> .
+<http://example.org/legal/peraturan/uu/2012/3> legal:daftarPasal <http://example.org/legal/peraturan/uu/2012/3/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2012/3/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/2012/3/pasal/0001> .
+<http://example.org/legal/peraturan/uu/2012/3/pasal/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/2012/3/pasal/0001> legal:versi <http://example.org/legal/peraturan/uu/2012/3/pasal/0001/versi/20120328> .
+<http://example.org/legal/peraturan/uu/2012/3> legal:pasal <http://example.org/legal/peraturan/uu/2012/3/pasal/0001> .
+<http://example.org/legal/peraturan/uu/2012/3/pasal/0001/versi/20120328> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/2012/3/pasal/0001/versi/20120328> legal:tanggal "2012-03-28"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2012/3/pasal/0001/versi/20120328> legal:teks "Mengesahkan Persetujuan antara Pemerintah Republik Indonesia dan Pemerintah Daerah Administrasi Khusus Hong Kong Republik Rakyat China tentang Bantuan Hukum Timbal Balik dalam Masalah Pidana (Agreement between the Government of the Republic of Indonesia and the Government of the Hong Kong Special Administrative Region of the People's Republic of China concerning Mutual Legal Assistance in Criminal Matters) yang ditandatangani pada tanggal 3 April 2008 di Hong Kong yang salinan naskah aslinya dalam bahasa Indonesia, bahasa China, dan bahasa Inggris sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/peraturan/uu/2012/3/pasal/0001/versi/20120328/text> legal:teks "Mengesahkan Persetujuan antara Pemerintah Republik Indonesia dan Pemerintah Daerah Administrasi Khusus Hong Kong Republik Rakyat China tentang Bantuan Hukum Timbal Balik dalam Masalah Pidana (Agreement between the Government of the Republic of Indonesia and the Government of the Hong Kong Special Administrative Region of the People's Republic of China concerning Mutual Legal Assistance in Criminal Matters) yang ditandatangani pada tanggal 3 April 2008 di Hong Kong yang salinan naskah aslinya dalam bahasa Indonesia, bahasa China, dan bahasa Inggris sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/peraturan/uu/2012/3/pasal/0001/versi/20120328> legal:segmen <http://example.org/legal/peraturan/uu/2012/3/pasal/0001/versi/20120328/text> .
+<http://example.org/legal/peraturan/uu/2012/3/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/2012/3/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2012/3/pasal/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/2012/3/pasal/0002> legal:versi <http://example.org/legal/peraturan/uu/2012/3/pasal/0002/versi/20120328> .
+<http://example.org/legal/peraturan/uu/2012/3> legal:pasal <http://example.org/legal/peraturan/uu/2012/3/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2012/3/pasal/0002/versi/20120328> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/2012/3/pasal/0002/versi/20120328> legal:tanggal "2012-03-28"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2012/3/pasal/0002/versi/20120328> legal:teks "Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/2012/3/pasal/0002/versi/20120328/text> legal:teks "Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/2012/3/pasal/0002/versi/20120328> legal:segmen <http://example.org/legal/peraturan/uu/2012/3/pasal/0002/versi/20120328/text> .
+<http://example.org/legal/peraturan/uu/2012/3> legal:disahkanPada "2012-03-28"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2012/3> legal:tentang " PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERINTAH DAERAH ADMINISTRASI KHUSUS HONG KONG REPUBLIK RAKYAT CHINA TENTANG BANTUAN HUKUM, TIMBAL BALIK DALAM MASALAH PIDANA (AGREEMENT BETWEEN THE GOVERNMENT OF THE REPUBLIC OF INDONESIA AND THE GOVERNMENT OF THE HONG KONG SPECIAL ADMNISTRATIVE REGION OF THE PEOPLES REPUBLIC OF CHINA CONCERNING MUTUAL LEGAL ASSISTANCE IN CRIMNAL MATTERS)" .
+<http://example.org/legal/peraturan/uu/2012/3> legal:mengingat <http://example.org/legal/peraturan/uu/2012/3/mengingat> .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat> legal:daftarHuruf <http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf> legal:segmen <http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/description> .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0001> .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0001> legal:nomor "1" .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0001/text> legal:teks "Pasal 5 ayat (1), Pasal 11, dan Pasal 20 Undang-Undang Dasar Negara Republik Indonesia Tahun 1945:" .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0001> legal:segmen <http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0001/text> .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0001/text> legal:merujuk <http://example.org/legal/peraturan/uu> .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0002> .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0002> legal:nomor "2" .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0002/text> legal:teks "Undang-Undang Nomor 37 Tahun 1999 tentang Hubungan Luar Negeri (Lembaran Negara Republik Indonesia Tahun 1999 Nomor 156, Tambahan Lembaran Negara Republik Indonesia Nomor 3882):" .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0002> legal:segmen <http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0002/text> .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0002/text> legal:merujuk <http://example.org/legal/peraturan/uu/1999/37> .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0003> .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0003> legal:nomor "3" .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0003/text> legal:teks "Undang-Undang Nomor 24 Tahun 2000 tentang Perjanjian Internasional (Lembaran Negara Republik Indonesia Tahun 2000 Nomor 185, Tambahan Lembaran Negara Republik Indonesia Nomor 4012):" .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0003> legal:segmen <http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0003/text> .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0003/text> legal:merujuk <http://example.org/legal/peraturan/uu/2000/24> .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0004> .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0004> legal:nomor "4" .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0004/text> legal:teks "Undang-Undang Nomor 1 Tahun 2006 tentang Bantuan Timbal Balik dalam Masalah Pidana (Lembaran Negara Republik Indonesia Tahun 2006 Nomor 18, Tambahan Lembaran Negara Republik Indonesia Nomor 4607): Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA dan PRESIDEN REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERINTAH DAERAH ADMINISTRASI KHUSUS HONG KONG REPUBLIK RAKYAT CHINA TENTANG BANTUAN HUKUM TIMBAL BALIK DALAM MASALAH PIDANA (AGREEMENT BETWEEN THE GOVERNMENT OF THE REPUBLIC OF INDONESIA AND THE GOVERNMENT OF THE HONG KONG SPECIAL ADMINISTRATIVE REGION OF THE PEOPLE'S REPUBLIC OF CHINA CONCERNING MUTUAL LEGAL ASSISTANCE IN CRIMINAL MATTERS)." .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0004> legal:segmen <http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0004/text> .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0004/text> legal:merujuk <http://example.org/legal/peraturan/uu/2006/1> .
+<http://example.org/legal/peraturan/uu/2012/3> legal:menimbang <http://example.org/legal/peraturan/uu/2012/3/menimbang> .
+<http://example.org/legal/peraturan/uu/2012/3/menimbang/text> legal:teks " dalarn Permukaan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945, yaitu melindungi segenap bangsa Indonesia dan seluruh tumpah darah Indonesia, dan untuk memajukan kesejahteraan umum, mencerdaskan kehidupan bangsa, dan ikut melaksanakan ketertiban dunia yang berdasarkan kerrerdekaan, perdarnaian abadi dan keadian sosial, Pemerintah Reputlik Indonesia sebagai bagian dari rmesyarakat intemasional melakukan hubungan dan kerja sara internasional yang dwujudkan dalarn perjanjan irtemasional b. bawa perkembangan itu pengetahuan dan teknologi khususnya di bidang transportasi, komunikasi dan informesi, selain mempunyai dampak positif juya mempunyai dampak negatt, yaitutirmbulnya tindak pidanayang tidak lagi mengenal batas yurisdiksi suatu negara, sehingga penanggulangan dan pemberantasannya memerlukan kerja sama antarnegara yang efektif, baik herstat bilateral maupun mulilatera, 6. batwa untuk meningkatkan kerja sara di bilang hukum antara Pemerintah Republik Indonesia dan Pernerintah Daerah Adrrnistrasi Khusus Hang Kong Republik Rakyat China, pada tanggal 3 April 2008 di Hang Kong telah ditandatangani Persetujuan Bantuan Hukum Tiabal Baik dalam Masalah Pidana: d. batwa berdasarkan perimbangan sebagaimana dimaksud dalarn huruta, hurutb, dan hurut 6, perlu mengesahkan Persetijuan antara Pemerintah Republik Indonesia dan Pemerintah Daerah Administrasi Khusus Hang Kong Republik Rakyat China tentang Bantuan Hukum Timbal Baik dalam Masalah Pidana (Agreement between ihe Government of ihe Republic of Indonesia and the Govermert of the Hong Kong Spesial Adninbtrative Region of the People's Republic of China concerning Mutual Legal Assistance in Criminal Matters) dengan Undang-Undang:" .
+<http://example.org/legal/peraturan/uu/2012/3/menimbang> legal:segmen <http://example.org/legal/peraturan/uu/2012/3/menimbang/text> .
+<http://example.org/legal/peraturan/uu/2012/3/menimbang/text> legal:merujuk <http://example.org/legal/peraturan/uu> .
+<http://example.org/legal/peraturan/uu/2012/3> legal:disahkanOleh "ttd." .
+<http://example.org/legal/peraturan/uu/2012/3> legal:disahkanDi "Jakarta" .
+<http://example.org/legal/peraturan/uu/2012/3> legal:jabatanPengesah "PRESIDEN REPUBLIK" .
+<http://example.org/legal/peraturan/uu/2012/3> a legal:Peraturan .
+<http://example.org/legal/peraturan/uu/2012/3/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/2012/3/pasal/0001> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/2012/3/pasal/0001/versi/20120328> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/2012/3/pasal/0001/versi/20120328/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2012/3/pasal/0002> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/2012/3/pasal/0002/versi/20120328> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/2012/3/pasal/0002/versi/20120328/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat> a legal:Mengingat .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0001> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0002> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0003> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0003/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0004> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0004/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2012/3/menimbang/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2012/3/menimbang> a legal:Menimbang .
+<http://example.org/legal/peraturan/uu/2012/3/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/2012/3> .
+<http://example.org/legal/peraturan/uu/2012/3/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2012/3/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2012/3/pasal/0001/versi/20120328> legal:bagianDari <http://example.org/legal/peraturan/uu/2012/3/pasal/0001> .
+<http://example.org/legal/peraturan/uu/2012/3/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2012/3> .
+<http://example.org/legal/peraturan/uu/2012/3/pasal/0001/versi/20120328/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2012/3/pasal/0001/versi/20120328> .
+<http://example.org/legal/peraturan/uu/2012/3/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2012/3/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2012/3/pasal/0002/versi/20120328> legal:bagianDari <http://example.org/legal/peraturan/uu/2012/3/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2012/3/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2012/3> .
+<http://example.org/legal/peraturan/uu/2012/3/pasal/0002/versi/20120328/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2012/3/pasal/0002/versi/20120328> .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/2012/3/mengingat> .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0001> .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0002> .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0003/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0003> .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0004/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2012/3/mengingat/huruf/0004> .
+<http://example.org/legal/peraturan/uu/2012/3/menimbang/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2012/3/menimbang> .

@@ -1,112 +1,56 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1999/19> legal:documentHasPasalSet <http://example.org/legal/document/uu/1999/19/pasals> .
-<http://example.org/legal/document/uu/1999/19/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/19/pasal/0001> .
-<http://example.org/legal/document/uu/1999/19/pasal/0001> legal:pasalHasKey 1 .
-<http://example.org/legal/document/uu/1999/19/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/19/pasal/0001/version/19990507> .
-<http://example.org/legal/document/uu/1999/19> legal:documentHasPasal <http://example.org/legal/document/uu/1999/19/pasal/0001> .
-<http://example.org/legal/document/uu/1999/19/pasal/0001/version/19990507> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1999/19/pasal/0001/version/19990507> legal:pasalVersionHasVersionDate "1999-05-07"^^xsd:date .
-<http://example.org/legal/document/uu/1999/19/pasal/0001/version/19990507> legal:pasalVersionHasRawText "Mengesahkan ILO Convention No. 105 concerning the Abolition of Forced Labour (Konvensi ILO mengenai Penghapusan Kerja Paksa) yang salinan naskah aslinya dalam bahasa Inggeris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir merupakan bagian tidak terpisahkan dari Undang-undang ini." .
-<http://example.org/legal/document/uu/1999/19/pasal/0001/version/19990507/text> legal:textHasTextString "Mengesahkan ILO Convention No. 105 concerning the Abolition of Forced Labour (Konvensi ILO mengenai Penghapusan Kerja Paksa) yang salinan naskah aslinya dalam bahasa Inggeris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir merupakan bagian tidak terpisahkan dari Undang-undang ini." .
-<http://example.org/legal/document/uu/1999/19/pasal/0001/version/19990507> legal:pasalVersionHasText <http://example.org/legal/document/uu/1999/19/pasal/0001/version/19990507/text> .
-<http://example.org/legal/document/uu/1999/19/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1999/19/pasal/0002> .
-<http://example.org/legal/document/uu/1999/19/pasal/0002> legal:pasalHasKey 2 .
-<http://example.org/legal/document/uu/1999/19/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1999/19/pasal/0002/version/19990507> .
-<http://example.org/legal/document/uu/1999/19> legal:documentHasPasal <http://example.org/legal/document/uu/1999/19/pasal/0002> .
-<http://example.org/legal/document/uu/1999/19/pasal/0002/version/19990507> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1999/19/pasal/0002/version/19990507> legal:pasalVersionHasVersionDate "1999-05-07"^^xsd:date .
-<http://example.org/legal/document/uu/1999/19/pasal/0002/version/19990507> legal:pasalVersionHasRawText "Undang-undang ini mulai berlaku pada tanggal diundangkan. 3 Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran negara Republik Indonesia." .
-<http://example.org/legal/document/uu/1999/19/pasal/0002/version/19990507/text> legal:textHasTextString "Undang-undang ini mulai berlaku pada tanggal diundangkan. 3 Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran negara Republik Indonesia." .
-<http://example.org/legal/document/uu/1999/19/pasal/0002/version/19990507> legal:pasalVersionHasText <http://example.org/legal/document/uu/1999/19/pasal/0002/version/19990507/text> .
-<http://example.org/legal/document/uu/1999/19> legal:documentHasDisahkanDate "1999-05-07"^^xsd:date .
-<http://example.org/legal/document/uu/1999/19> legal:documentMengingat <http://example.org/legal/document/uu/1999/19/mengingat> .
-<http://example.org/legal/document/uu/1999/19/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1999/19/mengingat/point> .
-<http://example.org/legal/document/uu/1999/19/mengingat/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/1999/19/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/19/mengingat/point/description> .
-<http://example.org/legal/document/uu/1999/19/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/19/mengingat/point/0001> .
-<http://example.org/legal/document/uu/1999/19/mengingat/point/0001> legal:pointHasKey "1" .
-<http://example.org/legal/document/uu/1999/19/mengingat/point/0001/text> legal:textHasTextString "Pasal 5 ayat (1) dan Pasal 11, Pasal 20 ayat (1), dan Pasal 27 Undang-Undang Dasar 1945," .
-<http://example.org/legal/document/uu/1999/19/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1999/19/mengingat/point/0001/text> .
-<http://example.org/legal/document/uu/1999/19/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/19/mengingat/point/0002> .
-<http://example.org/legal/document/uu/1999/19/mengingat/point/0002> legal:pointHasKey "2" .
-<http://example.org/legal/document/uu/1999/19/mengingat/point/0002/text> legal:textHasTextString "Ketetapan Majelis Permusyawaratan Rakyat Nomor XVII/MPR/1998 tentang Hak Asasi Manusia. Dengan persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG NOMOR 19 TAHUN 1999 TENTANG PENGESAHAN ILO CONVENTION NO. 105 CONCERNING THE ABOLITION OF FORCED LABOUR (KONVENSI ILO MENGENAI PENGHAPUSAN KERJA PAKSA)." .
-<http://example.org/legal/document/uu/1999/19/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1999/19/mengingat/point/0002/text> .
-<http://example.org/legal/document/uu/1999/19> legal:documentMenimbang <http://example.org/legal/document/uu/1999/19/menimbang> .
-<http://example.org/legal/document/uu/1999/19/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/1999/19/menimbang/point> .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/1999/19/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1999/19/menimbang/point/description> .
-<http://example.org/legal/document/uu/1999/19/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/19/menimbang/point/a> .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/a/text> legal:textHasTextString "bahwa negara Republik Indonesia yang berdasarkan Pancasila dan Undang-Undang Dasar 1945 adalah negara hukum yang menjunjung tinggi harkat dan martabat manusia serta menjamin semua warga negara bersamaan kedudukannya di dalam hukum, sehingga segala bentuk kerja paksa harus dihapuskan:" .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/1999/19/menimbang/point/a/text> .
-<http://example.org/legal/document/uu/1999/19/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/19/menimbang/point/b> .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/b/text> legal:textHasTextString "bahwa bangsa Indonesia sebagai bagian dari masyarakat internasional menghormati, menghargai dan menjunjung tinggi prinsip dan tujuan Piagam Perserikatan bangsa-Bangsa, Deklarasi Universal Hak-hak Asasi Manusia Tahun 1948, Deklarasi Philadelphha Tahun 1944, dan Konstitusi — Organisasi Ketenagakerjaan Internasional (ILO)," .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/1999/19/menimbang/point/b/text> .
-<http://example.org/legal/document/uu/1999/19/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/19/menimbang/point/c> .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/c> legal:pointHasKey "c" .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/c/text> legal:textHasTextString "bahwa Konferensi Ketenagakerjaan Internasional keempat puluh tanggal 25 Juni 1957 di Jenewa, Swis, telah menyetuju ILO Convention No. 105 concerning the Abolition of Forced Labour (Konvensi ILO mengenai Penghapusan Kerja Paksa):" .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/1999/19/menimbang/point/c/text> .
-<http://example.org/legal/document/uu/1999/19/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/19/menimbang/point/d> .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/d> legal:pointHasKey "d" .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/d/text> legal:textHasTextString "bahwa ketentuan Konvensi tersebut selaras dengan keinginan bangsa Indonesia untuk secara terus menerus menegakkan dan memajukan pelaksanaan hak-hak dasar pekerja dalam kehidupan berbangsa dan bernegara," .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/1999/19/menimbang/point/d/text> .
-<http://example.org/legal/document/uu/1999/19/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1999/19/menimbang/point/e> .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/e> legal:pointHasKey "e" .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/e/text> legal:textHasTextString "bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a, b, c, dan d dipandang perlu mengesahkan ILO Convention No.105 concerning the Abolition of Forced Labour (Konvensi ILO mengenai Penghapusan Kerja Paksa) dengan Undang-undang. .2-" .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/e> legal:pointHasText <http://example.org/legal/document/uu/1999/19/menimbang/point/e/text> .
-<http://example.org/legal/document/uu/1999/19> legal:documentHasDisahkanPengesah "BACHARUDDIN JUSUF HABIBIE" .
-<http://example.org/legal/document/uu/1999/19> legal:documentHasDisahkanLocation "Jakarta" .
-<http://example.org/legal/document/uu/1999/19> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
-<http://example.org/legal/document/uu/1999/19> a legal:Document .
-<http://example.org/legal/document/uu/1999/19/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/1999/19/pasal/0001> a legal:Pasal .
-<http://example.org/legal/document/uu/1999/19/pasal/0001/version/19990507> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1999/19/pasal/0001/version/19990507/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/19/pasal/0002> a legal:Pasal .
-<http://example.org/legal/document/uu/1999/19/pasal/0002/version/19990507> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1999/19/pasal/0002/version/19990507/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/19/mengingat> a legal:Mengingat .
-<http://example.org/legal/document/uu/1999/19/mengingat/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1999/19/mengingat/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1999/19/mengingat/point/0001> a legal:Point .
-<http://example.org/legal/document/uu/1999/19/mengingat/point/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/19/mengingat/point/0002> a legal:Point .
-<http://example.org/legal/document/uu/1999/19/mengingat/point/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/19/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1999/19/menimbang/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/a> a legal:Point .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/a/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/b> a legal:Point .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/c> a legal:Point .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/d> a legal:Point .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/e> a legal:Point .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/e/text> a legal:Text .
-<http://example.org/legal/document/uu/1999/19/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1999/19/pasals> .
-<http://example.org/legal/document/uu/1999/19/pasal/0001/version/19990507> legal:partOf <http://example.org/legal/document/uu/1999/19/pasal/0001> .
-<http://example.org/legal/document/uu/1999/19/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1999/19> .
-<http://example.org/legal/document/uu/1999/19/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1999/19/pasals> .
-<http://example.org/legal/document/uu/1999/19/pasal/0002/version/19990507> legal:partOf <http://example.org/legal/document/uu/1999/19/pasal/0002> .
-<http://example.org/legal/document/uu/1999/19/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1999/19> .
-<http://example.org/legal/document/uu/1999/19/mengingat/point> legal:partOf <http://example.org/legal/document/uu/1999/19/mengingat> .
-<http://example.org/legal/document/uu/1999/19/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1999/19/mengingat/point> .
-<http://example.org/legal/document/uu/1999/19/mengingat/point/0001/text> legal:partOf <http://example.org/legal/document/uu/1999/19/mengingat/point/0001> .
-<http://example.org/legal/document/uu/1999/19/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1999/19/mengingat/point> .
-<http://example.org/legal/document/uu/1999/19/mengingat/point/0002/text> legal:partOf <http://example.org/legal/document/uu/1999/19/mengingat/point/0002> .
-<http://example.org/legal/document/uu/1999/19/menimbang/point> legal:partOf <http://example.org/legal/document/uu/1999/19/menimbang> .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1999/19/menimbang/point> .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/a/text> legal:partOf <http://example.org/legal/document/uu/1999/19/menimbang/point/a> .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1999/19/menimbang/point> .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/b/text> legal:partOf <http://example.org/legal/document/uu/1999/19/menimbang/point/b> .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/1999/19/menimbang/point> .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/c/text> legal:partOf <http://example.org/legal/document/uu/1999/19/menimbang/point/c> .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/d> legal:partOf <http://example.org/legal/document/uu/1999/19/menimbang/point> .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/d/text> legal:partOf <http://example.org/legal/document/uu/1999/19/menimbang/point/d> .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/e> legal:partOf <http://example.org/legal/document/uu/1999/19/menimbang/point> .
-<http://example.org/legal/document/uu/1999/19/menimbang/point/e/text> legal:partOf <http://example.org/legal/document/uu/1999/19/menimbang/point/e> .
+<http://example.org/legal/peraturan/uu/1999/19> legal:daftarPasal <http://example.org/legal/peraturan/uu/1999/19/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1999/19/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1999/19/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1999/19/pasal/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1999/19/pasal/0001> legal:versi <http://example.org/legal/peraturan/uu/1999/19/pasal/0001/versi/19990507> .
+<http://example.org/legal/peraturan/uu/1999/19> legal:pasal <http://example.org/legal/peraturan/uu/1999/19/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1999/19/pasal/0001/versi/19990507> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1999/19/pasal/0001/versi/19990507> legal:tanggal "1999-05-07"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1999/19/pasal/0001/versi/19990507> legal:teks "Mengesahkan ILO Convention No. 105 concerning the Abolition of Forced Labour (Konvensi ILO mengenai Penghapusan Kerja Paksa) yang salinan naskah aslinya dalam bahasa Inggeris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir merupakan bagian tidak terpisahkan dari Undang-undang ini." .
+<http://example.org/legal/peraturan/uu/1999/19/pasal/0001/versi/19990507/text> legal:teks "Mengesahkan ILO Convention No. 105 concerning the Abolition of Forced Labour (Konvensi ILO mengenai Penghapusan Kerja Paksa) yang salinan naskah aslinya dalam bahasa Inggeris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir merupakan bagian tidak terpisahkan dari Undang-undang ini." .
+<http://example.org/legal/peraturan/uu/1999/19/pasal/0001/versi/19990507> legal:segmen <http://example.org/legal/peraturan/uu/1999/19/pasal/0001/versi/19990507/text> .
+<http://example.org/legal/peraturan/uu/1999/19/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1999/19/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1999/19/pasal/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1999/19/pasal/0002> legal:versi <http://example.org/legal/peraturan/uu/1999/19/pasal/0002/versi/19990507> .
+<http://example.org/legal/peraturan/uu/1999/19> legal:pasal <http://example.org/legal/peraturan/uu/1999/19/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1999/19/pasal/0002/versi/19990507> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1999/19/pasal/0002/versi/19990507> legal:tanggal "1999-05-07"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1999/19/pasal/0002/versi/19990507> legal:teks "Undang-undang ini mulai berlaku pada tanggal diundangkan. 3 Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/1999/19/pasal/0002/versi/19990507/text> legal:teks "Undang-undang ini mulai berlaku pada tanggal diundangkan. 3 Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/1999/19/pasal/0002/versi/19990507> legal:segmen <http://example.org/legal/peraturan/uu/1999/19/pasal/0002/versi/19990507/text> .
+<http://example.org/legal/peraturan/uu/1999/19> legal:disahkanPada "1999-05-07"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1999/19> legal:tentang " PENGESAHAN ILO CONVENTION NO. 105 CONCERNING THE ABOLITION OF FORCED LABOUR (KONVENSI ILO MENGENAI PENGHAPUSAN KERJA PAKSA) PRESIDEN REPUBLIK INDONESIA, Menimbang : a. bahwa negara Republik Indonesia yang berdasarkan Pancasila dan Undang-Undang Dasar 1945 adalah negara hukum yang menjunjung tinggi harkat dan martabat manusia serta menjamin semua warga negara bersamaan kedudukannya di dalam hukum, sehingga segala bentuk kerja paksa harus dihapuskan: b. bahwa bangsa Indonesia sebagai bagian dari masyarakat internasional menghormati, menghargai dan menjunjung tinggi prinsip dan tujuan Piagam Perserikatan bangsa-Bangsa, Deklarasi Universal Hak-hak Asasi Manusia Tahun 1948, Deklarasi Philadelphha Tahun 1944, dan Konstitusi — Organisasi Ketenagakerjaan Internasional (ILO), c. bahwa Konferensi Ketenagakerjaan Internasional keempat puluh tanggal 25 Juni 1957 di Jenewa, Swis, telah menyetuju ILO Convention No. 105 concerning the Abolition of Forced Labour (Konvensi ILO mengenai Penghapusan Kerja Paksa): d. bahwa ketentuan Konvensi tersebut selaras dengan keinginan bangsa Indonesia untuk secara terus menerus menegakkan dan memajukan pelaksanaan hak-hak dasar pekerja dalam kehidupan berbangsa dan bernegara, e. bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a, b, c, dan d dipandang perlu mengesahkan ILO Convention No.105 concerning the Abolition of Forced Labour (Konvensi ILO mengenai Penghapusan Kerja Paksa) dengan Undang-undang. .2- Mengingat : 1. Pasal 5 ayat (1) dan Pasal 11, Pasal 20 ayat (1), dan Pasal 27 Undang-Undang Dasar 1945, 2. Ketetapan Majelis Permusyawaratan Rakyat Nomor XVII/MPR/1998 tentang Hak Asasi Manusia. Dengan persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG NOMOR 19 TAHUN 1999 TENTANG PENGESAHAN ILO CONVENTION NO. 105 CONCERNING THE ABOLITION OF FORCED LABOUR (KONVENSI ILO MENGENAI PENGHAPUSAN KERJA PAKSA)." .
+<http://example.org/legal/peraturan/uu/1999/19> legal:mengingat <http://example.org/legal/peraturan/uu/1999/19/mengingat> .
+<http://example.org/legal/peraturan/uu/1999/19/mengingat/text> legal:teks "" .
+<http://example.org/legal/peraturan/uu/1999/19/mengingat> legal:segmen <http://example.org/legal/peraturan/uu/1999/19/mengingat/text> .
+<http://example.org/legal/peraturan/uu/1999/19> legal:menimbang <http://example.org/legal/peraturan/uu/1999/19/menimbang> .
+<http://example.org/legal/peraturan/uu/1999/19/menimbang/text> legal:teks "" .
+<http://example.org/legal/peraturan/uu/1999/19/menimbang> legal:segmen <http://example.org/legal/peraturan/uu/1999/19/menimbang/text> .
+<http://example.org/legal/peraturan/uu/1999/19> legal:disahkanOleh "BACHARUDDIN JUSUF HABIBIE" .
+<http://example.org/legal/peraturan/uu/1999/19> legal:disahkanDi "Jakarta" .
+<http://example.org/legal/peraturan/uu/1999/19> legal:jabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/peraturan/uu/1999/19> a legal:Peraturan .
+<http://example.org/legal/peraturan/uu/1999/19/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/1999/19/pasal/0001> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1999/19/pasal/0001/versi/19990507> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1999/19/pasal/0001/versi/19990507/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/19/pasal/0002> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1999/19/pasal/0002/versi/19990507> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1999/19/pasal/0002/versi/19990507/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/19/mengingat/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/19/mengingat> a legal:Mengingat .
+<http://example.org/legal/peraturan/uu/1999/19/menimbang/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1999/19/menimbang> a legal:Menimbang .
+<http://example.org/legal/peraturan/uu/1999/19/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/19> .
+<http://example.org/legal/peraturan/uu/1999/19/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/19/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1999/19/pasal/0001/versi/19990507> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/19/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1999/19/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/19> .
+<http://example.org/legal/peraturan/uu/1999/19/pasal/0001/versi/19990507/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/19/pasal/0001/versi/19990507> .
+<http://example.org/legal/peraturan/uu/1999/19/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/19/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1999/19/pasal/0002/versi/19990507> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/19/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1999/19/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/19> .
+<http://example.org/legal/peraturan/uu/1999/19/pasal/0002/versi/19990507/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/19/pasal/0002/versi/19990507> .
+<http://example.org/legal/peraturan/uu/1999/19/mengingat/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/19/mengingat> .
+<http://example.org/legal/peraturan/uu/1999/19/menimbang/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1999/19/menimbang> .

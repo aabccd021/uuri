@@ -1,131 +1,137 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2008/35> legal:documentHasPasalSet <http://example.org/legal/document/uu/2008/35/pasals> .
-<http://example.org/legal/document/uu/2008/35/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2008/35/pasal/0001> .
-<http://example.org/legal/document/uu/2008/35/pasal/0001> legal:pasalHasKey 1 .
-<http://example.org/legal/document/uu/2008/35/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2008/35/pasal/0001/version/20080725> .
-<http://example.org/legal/document/uu/2008/35> legal:documentHasPasal <http://example.org/legal/document/uu/2008/35/pasal/0001> .
-<http://example.org/legal/document/uu/2008/35/pasal/0001/version/20080725> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/2008/35/pasal/0001/version/20080725> legal:pasalVersionHasVersionDate "2008-07-25"^^xsd:date .
-<http://example.org/legal/document/uu/2008/35/pasal/0001/version/20080725> legal:pasalVersionHasRawText "Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2008 tentang Perubahan Atas Undang-Undang Nomor 21 Tahun 2001 tentang Otonomi Khusus Bagi Provinsi Papua (Lembaran Negara Republik Indonesia Tahun 2008 Nomor 57, Tambahan Lembaran Negara Republik Indonesia Nomor 4842) ditetapkan menjadi Undang-Undang dan melampirkannya sebagai bagian yang tidak terpisahkan dari Undang-Undang ini." .
-<http://example.org/legal/document/uu/2008/35/pasal/0001/version/20080725/text> legal:textHasTextString "Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2008 tentang Perubahan Atas Undang-Undang Nomor 21 Tahun 2001 tentang Otonomi Khusus Bagi Provinsi Papua (Lembaran Negara Republik Indonesia Tahun 2008 Nomor 57, Tambahan Lembaran Negara Republik Indonesia Nomor 4842) ditetapkan menjadi Undang-Undang dan melampirkannya sebagai bagian yang tidak terpisahkan dari Undang-Undang ini." .
-<http://example.org/legal/document/uu/2008/35/pasal/0001/version/20080725> legal:pasalVersionHasText <http://example.org/legal/document/uu/2008/35/pasal/0001/version/20080725/text> .
-<http://example.org/legal/document/uu/2008/35/pasal/0001/version/20080725/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2001/21> .
-<http://example.org/legal/document/uu/2008/35/pasal/0001/version/20080725/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2008/1> .
-<http://example.org/legal/document/uu/2008/35/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2008/35/pasal/0002> .
-<http://example.org/legal/document/uu/2008/35/pasal/0002> legal:pasalHasKey 2 .
-<http://example.org/legal/document/uu/2008/35/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2008/35/pasal/0002/version/20080725> .
-<http://example.org/legal/document/uu/2008/35> legal:documentHasPasal <http://example.org/legal/document/uu/2008/35/pasal/0002> .
-<http://example.org/legal/document/uu/2008/35/pasal/0002/version/20080725> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/2008/35/pasal/0002/version/20080725> legal:pasalVersionHasVersionDate "2008-07-25"^^xsd:date .
-<http://example.org/legal/document/uu/2008/35/pasal/0002/version/20080725> legal:pasalVersionHasRawText "Undang-Undang ini mulai berlaku pada tanggal diundangkan. -.3- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/2008/35/pasal/0002/version/20080725/text> legal:textHasTextString "Undang-Undang ini mulai berlaku pada tanggal diundangkan. -.3- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/2008/35/pasal/0002/version/20080725> legal:pasalVersionHasText <http://example.org/legal/document/uu/2008/35/pasal/0002/version/20080725/text> .
-<http://example.org/legal/document/uu/2008/35> legal:documentHasDisahkanDate "2008-07-25"^^xsd:date .
-<http://example.org/legal/document/uu/2008/35> legal:documentMengingat <http://example.org/legal/document/uu/2008/35/mengingat> .
-<http://example.org/legal/document/uu/2008/35/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2008/35/mengingat/point> .
-<http://example.org/legal/document/uu/2008/35/mengingat/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/2008/35/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2008/35/mengingat/point/description> .
-<http://example.org/legal/document/uu/2008/35/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2008/35/mengingat/point/0001> .
-<http://example.org/legal/document/uu/2008/35/mengingat/point/0001> legal:pointHasKey "1" .
-<http://example.org/legal/document/uu/2008/35/mengingat/point/0001/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 20, dan Pasal 22 Undang-Undang Dasar Negara Republik Indonesia Tahun 1945, -a-" .
-<http://example.org/legal/document/uu/2008/35/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/2008/35/mengingat/point/0001/text> .
-<http://example.org/legal/document/uu/2008/35/mengingat/point/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu> .
-<http://example.org/legal/document/uu/2008/35/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2008/35/mengingat/point/0002> .
-<http://example.org/legal/document/uu/2008/35/mengingat/point/0002> legal:pointHasKey "2" .
-<http://example.org/legal/document/uu/2008/35/mengingat/point/0002/text> legal:textHasTextString "Undang-Undang Nomor 21 Tahun 2001 tentang Otonomi Khusus Bagi Provinsi Papua (Lembaran Negara Republik Indonesia Tahun 2001 Nomor 135, Tambahan Lembaran Negara Republik Indonesia Nomor 4151):" .
-<http://example.org/legal/document/uu/2008/35/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/2008/35/mengingat/point/0002/text> .
-<http://example.org/legal/document/uu/2008/35/mengingat/point/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2001/21> .
-<http://example.org/legal/document/uu/2008/35/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2008/35/mengingat/point/0003> .
-<http://example.org/legal/document/uu/2008/35/mengingat/point/0003> legal:pointHasKey "3" .
-<http://example.org/legal/document/uu/2008/35/mengingat/point/0003/text> legal:textHasTextString "Undang-Undang Nomor 32 Tahun 2004 tentang Pemerintahan Daerah (Lembaran Negara Republik Indonesia Tahun 2004 Nomor 125, Tambahan Lembaran Negara Republik Indonesia Nomor 4437), sebagaimana telah diubah terakhir dengan Undang-Undang Nomor 12 Tahun 2008 tentang Perubahan Kedua Atas Undang-Undang Nomor 32 Tahun 2004 tentang Pemerintahan Daerah (Lembaran Negara Republik Indonesia Tahun 2008 Nomor 59, Tambahan Lembaran Negara Republik Indonesia Nomor 4844), Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA dan PRESIDEN REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG PENETAPAN PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG NOMOR 1 TAHUN 2008 TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 21 TAHUN 2001 TENTANG OTONOMI KHUSUS BAGI PROVINSI PAPUA MENJADI UNDANG-UNDANG." .
-<http://example.org/legal/document/uu/2008/35/mengingat/point/0003> legal:pointHasText <http://example.org/legal/document/uu/2008/35/mengingat/point/0003/text> .
-<http://example.org/legal/document/uu/2008/35/mengingat/point/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2004/32> .
-<http://example.org/legal/document/uu/2008/35/mengingat/point/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2008/12> .
-<http://example.org/legal/document/uu/2008/35> legal:documentMenimbang <http://example.org/legal/document/uu/2008/35/menimbang> .
-<http://example.org/legal/document/uu/2008/35/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/2008/35/menimbang/point> .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/2008/35/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2008/35/menimbang/point/description> .
-<http://example.org/legal/document/uu/2008/35/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2008/35/menimbang/point/a> .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/a/text> legal:textHasTextString "bahwa Provinsi Papua adalah Provinsi Irian Jaya yang kemudian menjadi Provinsi Papua dan Provinsi Papua Barat dalam kerangka Negara Kesatuan Republik Indonesia," .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/2008/35/menimbang/point/a/text> .
-<http://example.org/legal/document/uu/2008/35/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2008/35/menimbang/point/b> .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/b/text> legal:textHasTextString "bahwa di Provinsi Papua Barat belum diberlakukan otonomi khusus berdasarkan Undang-Undang Nomor 21 Tahun 2001 tentang Otonomi Khusus Bagi Provinsi Papua," .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/2008/35/menimbang/point/b/text> .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/b/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2001/21> .
-<http://example.org/legal/document/uu/2008/35/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2008/35/menimbang/point/c> .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/c> legal:pointHasKey "c" .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/c/text> legal:textHasTextString "bahwa Undang-Undang Nomor 21 Tahun 2001 tentang Otonomi Khusus Bagi Provinsi Papua merupakan suatu kebijakan khusus dalam rangka peningkatan pelayanan, akselerasi pembangunan, dan pemberdayaan seluruh rakyat di Provinsi Papua agar dapat setara dengan daerah lain," .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/2008/35/menimbang/point/c/text> .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/c/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2001/21> .
-<http://example.org/legal/document/uu/2008/35/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2008/35/menimbang/point/d> .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/d> legal:pointHasKey "d" .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/d/text> legal:textHasTextString "bahwa karena pemberlakuan otonomi khusus bagi Provinsi Papua Barat memerlukan kepastian hukum yang sifatnya mendesak dan segera agar tidak menimbulkan hambatan percepatan pembangunan khususnya bidang sosial, ekonomi, dan politik serta infrastruktur di Provinsi Papua Barat, Pemerintah telah menetapkan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2008 tentang Perubahan Atas Undang-Undang Nomor 21 Tahun 2001 tentang Otonomi Khusus Bagi Provinsi Papua," .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/2008/35/menimbang/point/d/text> .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/d/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2001/21> .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/d/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2008/1> .
-<http://example.org/legal/document/uu/2008/35/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2008/35/menimbang/point/e> .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/e> legal:pointHasKey "e" .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/e/text> legal:textHasTextString "bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a, huruf b, huruf c, dan huruf d, perlu menetapkan Peraturan Pemerintah Pengganti Undang- Undang Nomor 1 Tahun 2008 tentang Perubahan Atas Undang-Undang Nomor 21 Tahun 2001 tentang Otonomi Khusus Bagi Provinsi Papua menjadi Undang-Undang," .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/e> legal:pointHasText <http://example.org/legal/document/uu/2008/35/menimbang/point/e/text> .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/e/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2001/21> .
-<http://example.org/legal/document/uu/2008/35> legal:documentHasDisahkanPengesah "DR. H. SUSILO BAMBANG YUDHOYONO" .
-<http://example.org/legal/document/uu/2008/35> legal:documentHasDisahkanLocation "Jakarta" .
-<http://example.org/legal/document/uu/2008/35> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
-<http://example.org/legal/document/uu/2008/35> a legal:Document .
-<http://example.org/legal/document/uu/2008/35/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/2008/35/pasal/0001> a legal:Pasal .
-<http://example.org/legal/document/uu/2008/35/pasal/0001/version/20080725> a legal:PasalVersion .
-<http://example.org/legal/document/uu/2008/35/pasal/0001/version/20080725/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/35/pasal/0002> a legal:Pasal .
-<http://example.org/legal/document/uu/2008/35/pasal/0002/version/20080725> a legal:PasalVersion .
-<http://example.org/legal/document/uu/2008/35/pasal/0002/version/20080725/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/35/mengingat> a legal:Mengingat .
-<http://example.org/legal/document/uu/2008/35/mengingat/point/description> a legal:Text .
-<http://example.org/legal/document/uu/2008/35/mengingat/point> a legal:PointSet .
-<http://example.org/legal/document/uu/2008/35/mengingat/point/0001> a legal:Point .
-<http://example.org/legal/document/uu/2008/35/mengingat/point/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/35/mengingat/point/0002> a legal:Point .
-<http://example.org/legal/document/uu/2008/35/mengingat/point/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/35/mengingat/point/0003> a legal:Point .
-<http://example.org/legal/document/uu/2008/35/mengingat/point/0003/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/35/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/description> a legal:Text .
-<http://example.org/legal/document/uu/2008/35/menimbang/point> a legal:PointSet .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/a> a legal:Point .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/a/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/b> a legal:Point .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/c> a legal:Point .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/d> a legal:Point .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/e> a legal:Point .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/e/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/35/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2008/35/pasals> .
-<http://example.org/legal/document/uu/2008/35/pasal/0001/version/20080725> legal:partOf <http://example.org/legal/document/uu/2008/35/pasal/0001> .
-<http://example.org/legal/document/uu/2008/35/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2008/35> .
-<http://example.org/legal/document/uu/2008/35/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2008/35/pasals> .
-<http://example.org/legal/document/uu/2008/35/pasal/0002/version/20080725> legal:partOf <http://example.org/legal/document/uu/2008/35/pasal/0002> .
-<http://example.org/legal/document/uu/2008/35/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2008/35> .
-<http://example.org/legal/document/uu/2008/35/mengingat/point> legal:partOf <http://example.org/legal/document/uu/2008/35/mengingat> .
-<http://example.org/legal/document/uu/2008/35/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2008/35/mengingat/point> .
-<http://example.org/legal/document/uu/2008/35/mengingat/point/0001/text> legal:partOf <http://example.org/legal/document/uu/2008/35/mengingat/point/0001> .
-<http://example.org/legal/document/uu/2008/35/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2008/35/mengingat/point> .
-<http://example.org/legal/document/uu/2008/35/mengingat/point/0002/text> legal:partOf <http://example.org/legal/document/uu/2008/35/mengingat/point/0002> .
-<http://example.org/legal/document/uu/2008/35/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/2008/35/mengingat/point> .
-<http://example.org/legal/document/uu/2008/35/mengingat/point/0003/text> legal:partOf <http://example.org/legal/document/uu/2008/35/mengingat/point/0003> .
-<http://example.org/legal/document/uu/2008/35/menimbang/point> legal:partOf <http://example.org/legal/document/uu/2008/35/menimbang> .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/2008/35/menimbang/point> .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/a/text> legal:partOf <http://example.org/legal/document/uu/2008/35/menimbang/point/a> .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/2008/35/menimbang/point> .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/b/text> legal:partOf <http://example.org/legal/document/uu/2008/35/menimbang/point/b> .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/2008/35/menimbang/point> .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/c/text> legal:partOf <http://example.org/legal/document/uu/2008/35/menimbang/point/c> .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/d> legal:partOf <http://example.org/legal/document/uu/2008/35/menimbang/point> .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/d/text> legal:partOf <http://example.org/legal/document/uu/2008/35/menimbang/point/d> .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/e> legal:partOf <http://example.org/legal/document/uu/2008/35/menimbang/point> .
-<http://example.org/legal/document/uu/2008/35/menimbang/point/e/text> legal:partOf <http://example.org/legal/document/uu/2008/35/menimbang/point/e> .
+<http://example.org/legal/peraturan/uu/2008/35> legal:daftarPasal <http://example.org/legal/peraturan/uu/2008/35/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2008/35/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/2008/35/pasal/0001> .
+<http://example.org/legal/peraturan/uu/2008/35/pasal/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/2008/35/pasal/0001> legal:versi <http://example.org/legal/peraturan/uu/2008/35/pasal/0001/versi/20080725> .
+<http://example.org/legal/peraturan/uu/2008/35> legal:pasal <http://example.org/legal/peraturan/uu/2008/35/pasal/0001> .
+<http://example.org/legal/peraturan/uu/2008/35/pasal/0001/versi/20080725> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/2008/35/pasal/0001/versi/20080725> legal:tanggal "2008-07-25"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2008/35/pasal/0001/versi/20080725> legal:teks "Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2008 tentang Perubahan Atas Undang-Undang Nomor 21 Tahun 2001 tentang Otonomi Khusus Bagi Provinsi Papua (Lembaran Negara Republik Indonesia Tahun 2008 Nomor 57, Tambahan Lembaran Negara Republik Indonesia Nomor 4842) ditetapkan menjadi Undang-Undang dan melampirkannya sebagai bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/peraturan/uu/2008/35/pasal/0001/versi/20080725/text> legal:teks "Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2008 tentang Perubahan Atas Undang-Undang Nomor 21 Tahun 2001 tentang Otonomi Khusus Bagi Provinsi Papua (Lembaran Negara Republik Indonesia Tahun 2008 Nomor 57, Tambahan Lembaran Negara Republik Indonesia Nomor 4842) ditetapkan menjadi Undang-Undang dan melampirkannya sebagai bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/peraturan/uu/2008/35/pasal/0001/versi/20080725> legal:segmen <http://example.org/legal/peraturan/uu/2008/35/pasal/0001/versi/20080725/text> .
+<http://example.org/legal/peraturan/uu/2008/35/pasal/0001/versi/20080725/text> legal:merujuk <http://example.org/legal/peraturan/uu/2001/21> .
+<http://example.org/legal/peraturan/uu/2008/35/pasal/0001/versi/20080725/text> legal:merujuk <http://example.org/legal/peraturan/uu/2008/1> .
+<http://example.org/legal/peraturan/uu/2008/35/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/2008/35/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2008/35/pasal/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/2008/35/pasal/0002> legal:versi <http://example.org/legal/peraturan/uu/2008/35/pasal/0002/versi/20080725> .
+<http://example.org/legal/peraturan/uu/2008/35> legal:pasal <http://example.org/legal/peraturan/uu/2008/35/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2008/35/pasal/0002/versi/20080725> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/2008/35/pasal/0002/versi/20080725> legal:tanggal "2008-07-25"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2008/35/pasal/0002/versi/20080725> legal:teks "Undang-Undang ini mulai berlaku pada tanggal diundangkan. -.3- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/2008/35/pasal/0002/versi/20080725/text> legal:teks "Undang-Undang ini mulai berlaku pada tanggal diundangkan. -.3- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/2008/35/pasal/0002/versi/20080725> legal:segmen <http://example.org/legal/peraturan/uu/2008/35/pasal/0002/versi/20080725/text> .
+<http://example.org/legal/peraturan/uu/2008/35> legal:disahkanPada "2008-07-25"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2008/35> legal:tentang " PENETAPAN PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG NOMOR 1 TAHUN 2008 TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 21 TAHUN 2001 TENTANG OTONOMI KHUSUS BAGI PROVINSI PAPUA MENJADI UNDANG-UNDANG" .
+<http://example.org/legal/peraturan/uu/2008/35> legal:mengingat <http://example.org/legal/peraturan/uu/2008/35/mengingat> .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat> legal:daftarHuruf <http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf> legal:segmen <http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/description> .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0001> .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0001> legal:nomor "1" .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0001/text> legal:teks "Pasal 5 ayat (1), Pasal 20, dan Pasal 22 Undang-Undang Dasar Negara Republik Indonesia Tahun 1945, -a-" .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0001> legal:segmen <http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0001/text> .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0001/text> legal:merujuk <http://example.org/legal/peraturan/uu> .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0002> .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0002> legal:nomor "2" .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0002/text> legal:teks "Undang-Undang Nomor 21 Tahun 2001 tentang Otonomi Khusus Bagi Provinsi Papua (Lembaran Negara Republik Indonesia Tahun 2001 Nomor 135, Tambahan Lembaran Negara Republik Indonesia Nomor 4151):" .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0002> legal:segmen <http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0002/text> .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0002/text> legal:merujuk <http://example.org/legal/peraturan/uu/2001/21> .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0003> .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0003> legal:nomor "3" .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0003/text> legal:teks "Undang-Undang Nomor 32 Tahun 2004 tentang Pemerintahan Daerah (Lembaran Negara Republik Indonesia Tahun 2004 Nomor 125, Tambahan Lembaran Negara Republik Indonesia Nomor 4437), sebagaimana telah diubah terakhir dengan Undang-Undang Nomor 12 Tahun 2008 tentang Perubahan Kedua Atas Undang-Undang Nomor 32 Tahun 2004 tentang Pemerintahan Daerah (Lembaran Negara Republik Indonesia Tahun 2008 Nomor 59, Tambahan Lembaran Negara Republik Indonesia Nomor 4844), Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA dan PRESIDEN REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG PENETAPAN PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG NOMOR 1 TAHUN 2008 TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 21 TAHUN 2001 TENTANG OTONOMI KHUSUS BAGI PROVINSI PAPUA MENJADI UNDANG-UNDANG." .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0003> legal:segmen <http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0003/text> .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0003/text> legal:merujuk <http://example.org/legal/peraturan/uu/2004/32> .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0003/text> legal:merujuk <http://example.org/legal/peraturan/uu/2008/12> .
+<http://example.org/legal/peraturan/uu/2008/35> legal:menimbang <http://example.org/legal/peraturan/uu/2008/35/menimbang> .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang> legal:daftarHuruf <http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf> legal:segmen <http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/description> .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/a> legal:nomor "a" .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/a/text> legal:teks "bahwa Provinsi Papua adalah Provinsi Irian Jaya yang kemudian menjadi Provinsi Papua dan Provinsi Papua Barat dalam kerangka Negara Kesatuan Republik Indonesia," .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/a> legal:segmen <http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/a/text> .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/b> .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/b> legal:nomor "b" .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/b/text> legal:teks "bahwa di Provinsi Papua Barat belum diberlakukan otonomi khusus berdasarkan Undang-Undang Nomor 21 Tahun 2001 tentang Otonomi Khusus Bagi Provinsi Papua," .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/b> legal:segmen <http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/b/text> .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/b/text> legal:merujuk <http://example.org/legal/peraturan/uu/2001/21> .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/c> .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/c> legal:nomor "c" .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/c/text> legal:teks "bahwa Undang-Undang Nomor 21 Tahun 2001 tentang Otonomi Khusus Bagi Provinsi Papua merupakan suatu kebijakan khusus dalam rangka peningkatan pelayanan, akselerasi pembangunan, dan pemberdayaan seluruh rakyat di Provinsi Papua agar dapat setara dengan daerah lain," .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/c> legal:segmen <http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/c/text> .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/c/text> legal:merujuk <http://example.org/legal/peraturan/uu/2001/21> .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/d> .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/d> legal:nomor "d" .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/d/text> legal:teks "bahwa karena pemberlakuan otonomi khusus bagi Provinsi Papua Barat memerlukan kepastian hukum yang sifatnya mendesak dan segera agar tidak menimbulkan hambatan percepatan pembangunan khususnya bidang sosial, ekonomi, dan politik serta infrastruktur di Provinsi Papua Barat, Pemerintah telah menetapkan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2008 tentang Perubahan Atas Undang-Undang Nomor 21 Tahun 2001 tentang Otonomi Khusus Bagi Provinsi Papua," .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/d> legal:segmen <http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/d/text> .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/d/text> legal:merujuk <http://example.org/legal/peraturan/uu/2001/21> .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/d/text> legal:merujuk <http://example.org/legal/peraturan/uu/2008/1> .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/e> .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/e> legal:nomor "e" .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/e/text> legal:teks "bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a, huruf b, huruf c, dan huruf d, perlu menetapkan Peraturan Pemerintah Pengganti Undang- Undang Nomor 1 Tahun 2008 tentang Perubahan Atas Undang-Undang Nomor 21 Tahun 2001 tentang Otonomi Khusus Bagi Provinsi Papua menjadi Undang-Undang," .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/e> legal:segmen <http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/e/text> .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/e/text> legal:merujuk <http://example.org/legal/peraturan/uu/2001/21> .
+<http://example.org/legal/peraturan/uu/2008/35> legal:disahkanOleh "DR. H. SUSILO BAMBANG YUDHOYONO" .
+<http://example.org/legal/peraturan/uu/2008/35> legal:disahkanDi "Jakarta" .
+<http://example.org/legal/peraturan/uu/2008/35> legal:jabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/peraturan/uu/2008/35> a legal:Peraturan .
+<http://example.org/legal/peraturan/uu/2008/35/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/2008/35/pasal/0001> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/2008/35/pasal/0001/versi/20080725> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/2008/35/pasal/0001/versi/20080725/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/35/pasal/0002> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/2008/35/pasal/0002/versi/20080725> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/2008/35/pasal/0002/versi/20080725/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat> a legal:Mengingat .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0001> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0002> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0003> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0003/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang> a legal:Menimbang .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/a> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/a/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/b> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/b/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/c> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/c/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/d> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/d/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/e> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/e/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/35/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/35> .
+<http://example.org/legal/peraturan/uu/2008/35/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/35/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2008/35/pasal/0001/versi/20080725> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/35/pasal/0001> .
+<http://example.org/legal/peraturan/uu/2008/35/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/35> .
+<http://example.org/legal/peraturan/uu/2008/35/pasal/0001/versi/20080725/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/35/pasal/0001/versi/20080725> .
+<http://example.org/legal/peraturan/uu/2008/35/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/35/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2008/35/pasal/0002/versi/20080725> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/35/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2008/35/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/35> .
+<http://example.org/legal/peraturan/uu/2008/35/pasal/0002/versi/20080725/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/35/pasal/0002/versi/20080725> .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/35/mengingat> .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0001> .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0002> .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0003/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/35/mengingat/huruf/0003> .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/35/menimbang> .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/a> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/a/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/b> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/b/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/b> .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/c> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/c/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/c> .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/d> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/d/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/d> .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/e> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/e/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/35/menimbang/huruf/e> .

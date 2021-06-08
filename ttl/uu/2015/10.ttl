@@ -1,91 +1,96 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2015/10> legal:documentHasPasalSet <http://example.org/legal/document/uu/2015/10/pasals> .
-<http://example.org/legal/document/uu/2015/10/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2015/10/pasal/0001> .
-<http://example.org/legal/document/uu/2015/10/pasal/0001> legal:pasalHasKey 1 .
-<http://example.org/legal/document/uu/2015/10/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2015/10/pasal/0001/version/20150520> .
-<http://example.org/legal/document/uu/2015/10> legal:documentHasPasal <http://example.org/legal/document/uu/2015/10/pasal/0001> .
-<http://example.org/legal/document/uu/2015/10/pasal/0001/version/20150520> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/2015/10/pasal/0001/version/20150520> legal:pasalVersionHasVersionDate "2015-05-20"^^xsd:date .
-<http://example.org/legal/document/uu/2015/10/pasal/0001/version/20150520> legal:pasalVersionHasRawText "Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2015 tentang Perubahan Atas Undang-Undang Nomor 30 Tahun 2002 tentang Komisi Pemberantasan Tindak Pidana Korupsi (Lembaran Negara Republik Indonesia Tahun 2015 Nomor 31, Tambahan Lembaran Negara Republik Indonesia Nomor 5661) ditetapkan menjadi Undang-Undang, dan melampirkannya sebagai bagian yang tidak terpisahkan dari Undang-Undang ini." .
-<http://example.org/legal/document/uu/2015/10/pasal/0001/version/20150520/text> legal:textHasTextString "Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2015 tentang Perubahan Atas Undang-Undang Nomor 30 Tahun 2002 tentang Komisi Pemberantasan Tindak Pidana Korupsi (Lembaran Negara Republik Indonesia Tahun 2015 Nomor 31, Tambahan Lembaran Negara Republik Indonesia Nomor 5661) ditetapkan menjadi Undang-Undang, dan melampirkannya sebagai bagian yang tidak terpisahkan dari Undang-Undang ini." .
-<http://example.org/legal/document/uu/2015/10/pasal/0001/version/20150520> legal:pasalVersionHasText <http://example.org/legal/document/uu/2015/10/pasal/0001/version/20150520/text> .
-<http://example.org/legal/document/uu/2015/10/pasal/0001/version/20150520/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2002/30> .
-<http://example.org/legal/document/uu/2015/10/pasal/0001/version/20150520/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2015/1> .
-<http://example.org/legal/document/uu/2015/10/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2015/10/pasal/0002> .
-<http://example.org/legal/document/uu/2015/10/pasal/0002> legal:pasalHasKey 2 .
-<http://example.org/legal/document/uu/2015/10/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2015/10/pasal/0002/version/20150520> .
-<http://example.org/legal/document/uu/2015/10> legal:documentHasPasal <http://example.org/legal/document/uu/2015/10/pasal/0002> .
-<http://example.org/legal/document/uu/2015/10/pasal/0002/version/20150520> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/2015/10/pasal/0002/version/20150520> legal:pasalVersionHasVersionDate "2015-05-20"^^xsd:date .
-<http://example.org/legal/document/uu/2015/10/pasal/0002/version/20150520> legal:pasalVersionHasRawText "Undang-Undang ini mulai berlaku pada tanggal diundangkan. SN - £ “2 Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/2015/10/pasal/0002/version/20150520/text> legal:textHasTextString "Undang-Undang ini mulai berlaku pada tanggal diundangkan. SN - £ “2 Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/2015/10/pasal/0002/version/20150520> legal:pasalVersionHasText <http://example.org/legal/document/uu/2015/10/pasal/0002/version/20150520/text> .
-<http://example.org/legal/document/uu/2015/10> legal:documentHasDisahkanDate "2015-05-20"^^xsd:date .
-<http://example.org/legal/document/uu/2015/10> legal:documentMengingat <http://example.org/legal/document/uu/2015/10/mengingat> .
-<http://example.org/legal/document/uu/2015/10/mengingat/text> legal:textHasTextString " Undang Dasar Negara Republik Indonesia Tahun 1945, 2. Undang-Undang Nomor 30 Tahun 2002 tentang Komisi Pemberantasan Tindak Pidana Korupsi (Lembaran Negara Republik Indonesia Tahun 2002 Nomor 137, Tambahan Lembaran Negara Republik Indonesia Nomor 4250): Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA dan PRESIDEN REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG PENETAPAN PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG NOMOR 1 TAHUN 2015 TENTANG PERUBAHAN ATAS UNDANG- UNDANG NOMOR 30 TAHUN 2002 TENTANG KOMISI PEMBERANTASAN TINDAK PIDANA KORUPSI MENJADI UNDANG-UNDANG." .
-<http://example.org/legal/document/uu/2015/10/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/2015/10/mengingat/text> .
-<http://example.org/legal/document/uu/2015/10/mengingat/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2002/30> .
-<http://example.org/legal/document/uu/2015/10> legal:documentMenimbang <http://example.org/legal/document/uu/2015/10/menimbang> .
-<http://example.org/legal/document/uu/2015/10/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/2015/10/menimbang/point> .
-<http://example.org/legal/document/uu/2015/10/menimbang/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/2015/10/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2015/10/menimbang/point/description> .
-<http://example.org/legal/document/uu/2015/10/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2015/10/menimbang/point/a> .
-<http://example.org/legal/document/uu/2015/10/menimbang/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/2015/10/menimbang/point/a/text> legal:textHasTextString "bahwa terjadinya kekosongan keanggotaan Pimpinan Komisi Pemberantasan Korupsi telah mengganggu kinerja Komisi Pemberantasan Korupsi," .
-<http://example.org/legal/document/uu/2015/10/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/2015/10/menimbang/point/a/text> .
-<http://example.org/legal/document/uu/2015/10/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2015/10/menimbang/point/b> .
-<http://example.org/legal/document/uu/2015/10/menimbang/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/2015/10/menimbang/point/b/text> legal:textHasTextString "bahwa untuk menjaga keberlangsungan dan kesinambungan upaya pencegahan dan pemberantasan tindak pidana korupsi perlu pengaturan mengenai pengisian keanggotaan sementara Pimpinan Komisi Pemberantasan Korupsi," .
-<http://example.org/legal/document/uu/2015/10/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/2015/10/menimbang/point/b/text> .
-<http://example.org/legal/document/uu/2015/10/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2015/10/menimbang/point/c> .
-<http://example.org/legal/document/uu/2015/10/menimbang/point/c> legal:pointHasKey "c" .
-<http://example.org/legal/document/uu/2015/10/menimbang/point/c/text> legal:textHasTextString "bahwa ketentuan mengenai pengisian keanggotaan sementara Pimpinan Komisi Pemberantasan Korupsi belum diatur dalam Undang-Undang Nomor 30 Tahun 2002 tentang Komisi Pemberantasan Tindak Pidana Korupsi," .
-<http://example.org/legal/document/uu/2015/10/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/2015/10/menimbang/point/c/text> .
-<http://example.org/legal/document/uu/2015/10/menimbang/point/c/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2002/30> .
-<http://example.org/legal/document/uu/2015/10/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2015/10/menimbang/point/d> .
-<http://example.org/legal/document/uu/2015/10/menimbang/point/d> legal:pointHasKey "d" .
-<http://example.org/legal/document/uu/2015/10/menimbang/point/d/text> legal:textHasTextString "bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a, huruf b, dan huruf c, serta untuk mengatasi timbulnya kegentingan yang diakibatkan terjadinya kekosongan keanggotaan Pimpinan Komisi Pemberantasan Korupsi, perlu membentuk Undang-Undang tentang Penetapan Peraturan Pemerintah Pengganti Undang-Undang tentang Perubahan Atas Undang-Undang Nomor 30 Tahun 2002 tentang Komisi Pemberantasan Tindak Pidana Korupsi Menjadi Undang-Undang: 8 FA S Sh ny LE" .
-<http://example.org/legal/document/uu/2015/10/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/2015/10/menimbang/point/d/text> .
-<http://example.org/legal/document/uu/2015/10/menimbang/point/d/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2002/30> .
-<http://example.org/legal/document/uu/2015/10> legal:documentHasDisahkanPengesah "JOKO WIDODO" .
-<http://example.org/legal/document/uu/2015/10> legal:documentHasDisahkanLocation "Jakarta" .
-<http://example.org/legal/document/uu/2015/10> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
-<http://example.org/legal/document/uu/2015/10> a legal:Document .
-<http://example.org/legal/document/uu/2015/10/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/2015/10/pasal/0001> a legal:Pasal .
-<http://example.org/legal/document/uu/2015/10/pasal/0001/version/20150520> a legal:PasalVersion .
-<http://example.org/legal/document/uu/2015/10/pasal/0001/version/20150520/text> a legal:Text .
-<http://example.org/legal/document/uu/2015/10/pasal/0002> a legal:Pasal .
-<http://example.org/legal/document/uu/2015/10/pasal/0002/version/20150520> a legal:PasalVersion .
-<http://example.org/legal/document/uu/2015/10/pasal/0002/version/20150520/text> a legal:Text .
-<http://example.org/legal/document/uu/2015/10/mengingat/text> a legal:Text .
-<http://example.org/legal/document/uu/2015/10/mengingat> a legal:Mengingat .
-<http://example.org/legal/document/uu/2015/10/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/2015/10/menimbang/point/description> a legal:Text .
-<http://example.org/legal/document/uu/2015/10/menimbang/point> a legal:PointSet .
-<http://example.org/legal/document/uu/2015/10/menimbang/point/a> a legal:Point .
-<http://example.org/legal/document/uu/2015/10/menimbang/point/a/text> a legal:Text .
-<http://example.org/legal/document/uu/2015/10/menimbang/point/b> a legal:Point .
-<http://example.org/legal/document/uu/2015/10/menimbang/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/2015/10/menimbang/point/c> a legal:Point .
-<http://example.org/legal/document/uu/2015/10/menimbang/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/2015/10/menimbang/point/d> a legal:Point .
-<http://example.org/legal/document/uu/2015/10/menimbang/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/2015/10/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2015/10/pasals> .
-<http://example.org/legal/document/uu/2015/10/pasal/0001/version/20150520> legal:partOf <http://example.org/legal/document/uu/2015/10/pasal/0001> .
-<http://example.org/legal/document/uu/2015/10/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2015/10> .
-<http://example.org/legal/document/uu/2015/10/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2015/10/pasals> .
-<http://example.org/legal/document/uu/2015/10/pasal/0002/version/20150520> legal:partOf <http://example.org/legal/document/uu/2015/10/pasal/0002> .
-<http://example.org/legal/document/uu/2015/10/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2015/10> .
-<http://example.org/legal/document/uu/2015/10/mengingat/text> legal:partOf <http://example.org/legal/document/uu/2015/10/mengingat> .
-<http://example.org/legal/document/uu/2015/10/menimbang/point> legal:partOf <http://example.org/legal/document/uu/2015/10/menimbang> .
-<http://example.org/legal/document/uu/2015/10/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/2015/10/menimbang/point> .
-<http://example.org/legal/document/uu/2015/10/menimbang/point/a/text> legal:partOf <http://example.org/legal/document/uu/2015/10/menimbang/point/a> .
-<http://example.org/legal/document/uu/2015/10/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/2015/10/menimbang/point> .
-<http://example.org/legal/document/uu/2015/10/menimbang/point/b/text> legal:partOf <http://example.org/legal/document/uu/2015/10/menimbang/point/b> .
-<http://example.org/legal/document/uu/2015/10/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/2015/10/menimbang/point> .
-<http://example.org/legal/document/uu/2015/10/menimbang/point/c/text> legal:partOf <http://example.org/legal/document/uu/2015/10/menimbang/point/c> .
-<http://example.org/legal/document/uu/2015/10/menimbang/point/d> legal:partOf <http://example.org/legal/document/uu/2015/10/menimbang/point> .
-<http://example.org/legal/document/uu/2015/10/menimbang/point/d/text> legal:partOf <http://example.org/legal/document/uu/2015/10/menimbang/point/d> .
+<http://example.org/legal/peraturan/uu/2015/10> legal:daftarPasal <http://example.org/legal/peraturan/uu/2015/10/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2015/10/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/2015/10/pasal/0001> .
+<http://example.org/legal/peraturan/uu/2015/10/pasal/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/2015/10/pasal/0001> legal:versi <http://example.org/legal/peraturan/uu/2015/10/pasal/0001/versi/20150520> .
+<http://example.org/legal/peraturan/uu/2015/10> legal:pasal <http://example.org/legal/peraturan/uu/2015/10/pasal/0001> .
+<http://example.org/legal/peraturan/uu/2015/10/pasal/0001/versi/20150520> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/2015/10/pasal/0001/versi/20150520> legal:tanggal "2015-05-20"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2015/10/pasal/0001/versi/20150520> legal:teks "Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2015 tentang Perubahan Atas Undang-Undang Nomor 30 Tahun 2002 tentang Komisi Pemberantasan Tindak Pidana Korupsi (Lembaran Negara Republik Indonesia Tahun 2015 Nomor 31, Tambahan Lembaran Negara Republik Indonesia Nomor 5661) ditetapkan menjadi Undang-Undang, dan melampirkannya sebagai bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/peraturan/uu/2015/10/pasal/0001/versi/20150520/text> legal:teks "Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2015 tentang Perubahan Atas Undang-Undang Nomor 30 Tahun 2002 tentang Komisi Pemberantasan Tindak Pidana Korupsi (Lembaran Negara Republik Indonesia Tahun 2015 Nomor 31, Tambahan Lembaran Negara Republik Indonesia Nomor 5661) ditetapkan menjadi Undang-Undang, dan melampirkannya sebagai bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/peraturan/uu/2015/10/pasal/0001/versi/20150520> legal:segmen <http://example.org/legal/peraturan/uu/2015/10/pasal/0001/versi/20150520/text> .
+<http://example.org/legal/peraturan/uu/2015/10/pasal/0001/versi/20150520/text> legal:merujuk <http://example.org/legal/peraturan/uu/2002/30> .
+<http://example.org/legal/peraturan/uu/2015/10/pasal/0001/versi/20150520/text> legal:merujuk <http://example.org/legal/peraturan/uu/2015/1> .
+<http://example.org/legal/peraturan/uu/2015/10/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/2015/10/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2015/10/pasal/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/2015/10/pasal/0002> legal:versi <http://example.org/legal/peraturan/uu/2015/10/pasal/0002/versi/20150520> .
+<http://example.org/legal/peraturan/uu/2015/10> legal:pasal <http://example.org/legal/peraturan/uu/2015/10/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2015/10/pasal/0002/versi/20150520> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/2015/10/pasal/0002/versi/20150520> legal:tanggal "2015-05-20"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2015/10/pasal/0002/versi/20150520> legal:teks "Undang-Undang ini mulai berlaku pada tanggal diundangkan. SN - £ “2 Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/2015/10/pasal/0002/versi/20150520/text> legal:teks "Undang-Undang ini mulai berlaku pada tanggal diundangkan. SN - £ “2 Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/2015/10/pasal/0002/versi/20150520> legal:segmen <http://example.org/legal/peraturan/uu/2015/10/pasal/0002/versi/20150520/text> .
+<http://example.org/legal/peraturan/uu/2015/10> legal:disahkanPada "2015-05-20"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2015/10> legal:tentang " PENETAPAN PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG NOMOR 1 TAHUN 2015 TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 30 TAHUN 2002 TENTANG KOMISI PEMBERANTASAN TINDAK PIDANA KORUPSI MENJADI UNDANG-UNDANG" .
+<http://example.org/legal/peraturan/uu/2015/10> legal:mengingat <http://example.org/legal/peraturan/uu/2015/10/mengingat> .
+<http://example.org/legal/peraturan/uu/2015/10/mengingat/text> legal:teks " Undang Dasar Negara Republik Indonesia Tahun 1945, 2. Undang-Undang Nomor 30 Tahun 2002 tentang Komisi Pemberantasan Tindak Pidana Korupsi (Lembaran Negara Republik Indonesia Tahun 2002 Nomor 137, Tambahan Lembaran Negara Republik Indonesia Nomor 4250): Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA dan PRESIDEN REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG PENETAPAN PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG NOMOR 1 TAHUN 2015 TENTANG PERUBAHAN ATAS UNDANG- UNDANG NOMOR 30 TAHUN 2002 TENTANG KOMISI PEMBERANTASAN TINDAK PIDANA KORUPSI MENJADI UNDANG-UNDANG." .
+<http://example.org/legal/peraturan/uu/2015/10/mengingat> legal:segmen <http://example.org/legal/peraturan/uu/2015/10/mengingat/text> .
+<http://example.org/legal/peraturan/uu/2015/10/mengingat/text> legal:merujuk <http://example.org/legal/peraturan/uu/2002/30> .
+<http://example.org/legal/peraturan/uu/2015/10> legal:menimbang <http://example.org/legal/peraturan/uu/2015/10/menimbang> .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang> legal:daftarHuruf <http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf> legal:segmen <http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/description> .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/a> legal:nomor "a" .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/a/text> legal:teks "bahwa terjadinya kekosongan keanggotaan Pimpinan Komisi Pemberantasan Korupsi telah mengganggu kinerja Komisi Pemberantasan Korupsi," .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/a> legal:segmen <http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/a/text> .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/b> .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/b> legal:nomor "b" .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/b/text> legal:teks "bahwa untuk menjaga keberlangsungan dan kesinambungan upaya pencegahan dan pemberantasan tindak pidana korupsi perlu pengaturan mengenai pengisian keanggotaan sementara Pimpinan Komisi Pemberantasan Korupsi," .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/b> legal:segmen <http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/b/text> .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/c> .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/c> legal:nomor "c" .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/c/text> legal:teks "bahwa ketentuan mengenai pengisian keanggotaan sementara Pimpinan Komisi Pemberantasan Korupsi belum diatur dalam Undang-Undang Nomor 30 Tahun 2002 tentang Komisi Pemberantasan Tindak Pidana Korupsi," .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/c> legal:segmen <http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/c/text> .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/c/text> legal:merujuk <http://example.org/legal/peraturan/uu/2002/30> .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/d> .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/d> legal:nomor "d" .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/d/text> legal:teks "bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a, huruf b, dan huruf c, serta untuk mengatasi timbulnya kegentingan yang diakibatkan terjadinya kekosongan keanggotaan Pimpinan Komisi Pemberantasan Korupsi, perlu membentuk Undang-Undang tentang Penetapan Peraturan Pemerintah Pengganti Undang-Undang tentang Perubahan Atas Undang-Undang Nomor 30 Tahun 2002 tentang Komisi Pemberantasan Tindak Pidana Korupsi Menjadi Undang-Undang: 8 FA S Sh ny LE" .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/d> legal:segmen <http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/d/text> .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/d/text> legal:merujuk <http://example.org/legal/peraturan/uu/2002/30> .
+<http://example.org/legal/peraturan/uu/2015/10> legal:disahkanOleh "JOKO WIDODO" .
+<http://example.org/legal/peraturan/uu/2015/10> legal:disahkanDi "Jakarta" .
+<http://example.org/legal/peraturan/uu/2015/10> legal:jabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/peraturan/uu/2015/10> a legal:Peraturan .
+<http://example.org/legal/peraturan/uu/2015/10/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/2015/10/pasal/0001> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/2015/10/pasal/0001/versi/20150520> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/2015/10/pasal/0001/versi/20150520/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2015/10/pasal/0002> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/2015/10/pasal/0002/versi/20150520> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/2015/10/pasal/0002/versi/20150520/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2015/10/mengingat/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2015/10/mengingat> a legal:Mengingat .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang> a legal:Menimbang .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/a> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/a/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/b> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/b/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/c> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/c/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/d> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/d/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2015/10/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/2015/10> .
+<http://example.org/legal/peraturan/uu/2015/10/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2015/10/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2015/10/pasal/0001/versi/20150520> legal:bagianDari <http://example.org/legal/peraturan/uu/2015/10/pasal/0001> .
+<http://example.org/legal/peraturan/uu/2015/10/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2015/10> .
+<http://example.org/legal/peraturan/uu/2015/10/pasal/0001/versi/20150520/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2015/10/pasal/0001/versi/20150520> .
+<http://example.org/legal/peraturan/uu/2015/10/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2015/10/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2015/10/pasal/0002/versi/20150520> legal:bagianDari <http://example.org/legal/peraturan/uu/2015/10/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2015/10/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2015/10> .
+<http://example.org/legal/peraturan/uu/2015/10/pasal/0002/versi/20150520/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2015/10/pasal/0002/versi/20150520> .
+<http://example.org/legal/peraturan/uu/2015/10/mengingat/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2015/10/mengingat> .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/2015/10/menimbang> .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/a> legal:bagianDari <http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/a/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/b> legal:bagianDari <http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/b/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/b> .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/c> legal:bagianDari <http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/c/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/c> .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/d> legal:bagianDari <http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/d/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2015/10/menimbang/huruf/d> .

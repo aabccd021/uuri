@@ -1,369 +1,375 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2008/3> legal:documentHasBabSet <http://example.org/legal/document/uu/2008/3/bab> .
-<http://example.org/legal/document/uu/2008/3/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2008/3/bab/0001> .
-<http://example.org/legal/document/uu/2008/3/bab/0001> legal:babHasKey 1 .
-<http://example.org/legal/document/uu/2008/3/bab/0001> legal:babHasTitle "KETENTUAN UMUM" .
-<http://example.org/legal/document/uu/2008/3/bab/0001> legal:babHasPasalSet <http://example.org/legal/document/uu/2008/3/bab/0001/pasals> .
-<http://example.org/legal/document/uu/2008/3/bab/0001/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2008/3/pasal/0001> .
-<http://example.org/legal/document/uu/2008/3/pasal/0001> legal:pasalHasKey 1 .
-<http://example.org/legal/document/uu/2008/3/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104> .
-<http://example.org/legal/document/uu/2008/3> legal:documentHasPasal <http://example.org/legal/document/uu/2008/3/pasal/0001> .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104> legal:pasalVersionHasVersionDate "2008-01-04"^^xsd:date .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104> legal:pasalVersionHasRawText "Dalam Undang-Undang ini yang dimaksud dengan:\n1. Pemerintah pusat, selanjutnya di sebut Pemerintah, adalah Presiden Republik Indonesia yang memegang kekuasaan pemerintahan negara Republik Indonesia sebagaimana dimaksud dalam Undang-Undang Dasar Negara Republik Indonesia Tahun 1945.\n2. Daerah otonom, selanjutnya di sebut daerah, adalah kesatuan masyarakat hukum yang mempunyai batas-batas wilayah yang berwenang mengatur dan mengurus urusan pemerintahan dan kepentingan masyarakat setempat me nurut prakarsa sendiri berdasarkan aspirasi masyarakat dalam sistem Negara Kesatuan Republik Indonesia.\n3. Provinsi Papua adalah Provinsi Irian Barat sebagaimana dimaksud dalam Undang-Undang Nomor 12 Tahun 1969 tentang Pembentukan Provinsi Otonom Irian Barat dan Kabupaten-Kabupaten Otonom di Provinsi Irian Barat (Lembaran Ne gara Republik Indonesia Tahun 1969 Nomor 47, Tambahan Lembaran Negara Republik Indonesia Nomor 2907) jo. Undang-Undang Nomor 21 Tahun 2001 tentang Otonomi Khusus bagi Provinsi Papua (L embaran Negara Republik Indonesia Tahun 2001 Nomor 135, Tambahan Lembaran Negara Republik Indonesia Nomor 4151). Negara . . .\n4. Kabupaten Jayawijaya adalah kabupa ten sebagaimana dimaksud dalam Undang-Undang Nomor 12 Tahun 1969 tentang Pembentukan Provinsi Otonom Irian Barat dan Kabupate n-Kabupaten Otonom Di Provinsi Irian Barat (Lembaran Negara Re publik Indonesia Tahun 1969 Nomor 47, Tambahan Lembaran Negara Republik Indonesia Nomor 2907), yang merupakan kabupaten asal Kabupaten Mamberamo Tengah.\n" .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point> .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/description> legal:textHasTextString "Dalam Undang-Undang ini yang dimaksud dengan:" .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/description> .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0001> .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0001> legal:pointHasKey "1" .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0001/text> legal:textHasTextString "Pemerintah pusat, selanjutnya di sebut Pemerintah, adalah Presiden Republik Indonesia yang memegang kekuasaan pemerintahan negara Republik Indonesia sebagaimana dimaksud dalam Undang-Undang Dasar Negara Republik Indonesia Tahun 1945." .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0001> legal:pointHasText <http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0001/text> .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu> .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0002> .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0002> legal:pointHasKey "2" .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0002/text> legal:textHasTextString "Daerah otonom, selanjutnya di sebut daerah, adalah kesatuan masyarakat hukum yang mempunyai batas-batas wilayah yang berwenang mengatur dan mengurus urusan pemerintahan dan kepentingan masyarakat setempat me nurut prakarsa sendiri berdasarkan aspirasi masyarakat dalam sistem Negara Kesatuan Republik Indonesia." .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0002> legal:pointHasText <http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0002/text> .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0003> .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0003> legal:pointHasKey "3" .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0003/text> legal:textHasTextString "Provinsi Papua adalah Provinsi Irian Barat sebagaimana dimaksud dalam Undang-Undang Nomor 12 Tahun 1969 tentang Pembentukan Provinsi Otonom Irian Barat dan Kabupaten-Kabupaten Otonom di Provinsi Irian Barat (Lembaran Ne gara Republik Indonesia Tahun 1969 Nomor 47, Tambahan Lembaran Negara Republik Indonesia Nomor 2907) jo. Undang-Undang Nomor 21 Tahun 2001 tentang Otonomi Khusus bagi Provinsi Papua (L embaran Negara Republik Indonesia Tahun 2001 Nomor 135, Tambahan Lembaran Negara Republik Indonesia Nomor 4151). Negara . . ." .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0003> legal:pointHasText <http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0003/text> .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2001/21> .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1969/12> .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0004> .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0004> legal:pointHasKey "4" .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0004/text> legal:textHasTextString "Kabupaten Jayawijaya adalah kabupa ten sebagaimana dimaksud dalam Undang-Undang Nomor 12 Tahun 1969 tentang Pembentukan Provinsi Otonom Irian Barat dan Kabupate n-Kabupaten Otonom Di Provinsi Irian Barat (Lembaran Negara Re publik Indonesia Tahun 1969 Nomor 47, Tambahan Lembaran Negara Republik Indonesia Nomor 2907), yang merupakan kabupaten asal Kabupaten Mamberamo Tengah." .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0004> legal:pointHasText <http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0004/text> .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1969/12> .
-<http://example.org/legal/document/uu/2008/3/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2008/3/bab/0002> .
-<http://example.org/legal/document/uu/2008/3/bab/0002> legal:babHasKey 2 .
-<http://example.org/legal/document/uu/2008/3/bab/0002> legal:babHasTitle "PEMBENTUKAN, CAKUPAN WILAYAH, BATAS WILAYAH, DAN IBU KOTA" .
-<http://example.org/legal/document/uu/2008/3/bab/0002> legal:babHasBagianSet <http://example.org/legal/document/uu/2008/3/bab/0002/bagian> .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian> legal:bagianSetHasBagian <http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0001> .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0001> legal:bagianHasKey 1 .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0001> legal:bagianHasTitle "Bagian Kesatu Pembentukan" .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0001> legal:bagianHasPasalSet <http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0001/pasals> .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0001/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2008/3/pasal/0002> .
-<http://example.org/legal/document/uu/2008/3/pasal/0002> legal:pasalHasKey 2 .
-<http://example.org/legal/document/uu/2008/3/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2008/3/pasal/0002/version/20080104> .
-<http://example.org/legal/document/uu/2008/3> legal:documentHasPasal <http://example.org/legal/document/uu/2008/3/pasal/0002> .
-<http://example.org/legal/document/uu/2008/3/pasal/0002/version/20080104> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/2008/3/pasal/0002/version/20080104> legal:pasalVersionHasVersionDate "2008-01-04"^^xsd:date .
-<http://example.org/legal/document/uu/2008/3/pasal/0002/version/20080104> legal:pasalVersionHasRawText "Dengan Undang-Undang ini dibent uk Kabupaten Mamberamo Tengah di wilayah Provinsi Papua dalam Negara Kesatuan Republik Indonesia. 4" .
-<http://example.org/legal/document/uu/2008/3/pasal/0002/version/20080104/text> legal:textHasTextString "Dengan Undang-Undang ini dibent uk Kabupaten Mamberamo Tengah di wilayah Provinsi Papua dalam Negara Kesatuan Republik Indonesia. 4" .
-<http://example.org/legal/document/uu/2008/3/pasal/0002/version/20080104> legal:pasalVersionHasText <http://example.org/legal/document/uu/2008/3/pasal/0002/version/20080104/text> .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian> legal:bagianSetHasBagian <http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0002> .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0002> legal:bagianHasKey 2 .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0002> legal:bagianHasTitle "Bagian Kedua Cakupan Wilayah" .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0002> legal:bagianHasPasalSet <http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0002/pasals> .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2008/3/pasal/0003> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003> legal:pasalHasKey 3 .
-<http://example.org/legal/document/uu/2008/3/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104> .
-<http://example.org/legal/document/uu/2008/3> legal:documentHasPasal <http://example.org/legal/document/uu/2008/3/pasal/0003> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104> legal:pasalVersionHasVersionDate "2008-01-04"^^xsd:date .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104> legal:pasalVersionHasRawText "(1). Kabupaten Mamberamo Tengah berasal dari sebagian wilayah Kabupaten Jayawijaya yang terdiri atas cakupan wilayah:\na. Distrik Kobakma;\nb. Distrik Kelila;\nc. Distrik Eragayam;\nd. Distrik Megambilis; dan\ne. Distrik Ilugwa.\n\n(2). Cakupan wilayah sebagaimana dima ksud pada ayat (1) digambarkan dalam peta wilayah yang tercantu m dalam lampiran dan merupakan bagian yang tidak terpisah kan dari Undang-Undang ini. Pasal 4 Pasal 4 . . . Dengan terbentuknya Kabupaten Ma mberamo Tengah, sebagaimana dimaksud dalam Pasal 2, wilayah Ka bupaten Jayawijaya dikurangi dengan wilayah Kabupaten Mamberamo Tengah sebagaimana dimaksud dalam Pasal 3." .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001> legal:ayatHasKey 1 .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001> legal:ayatHasRawText "Kabupaten Mamberamo Tengah berasal dari sebagian wilayah Kabupaten Jayawijaya yang terdiri atas cakupan wilayah:\na. Distrik Kobakma;\nb. Distrik Kelila;\nc. Distrik Eragayam;\nd. Distrik Megambilis; dan\ne. Distrik Ilugwa.\n" .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/description> legal:textHasTextString "Kabupaten Mamberamo Tengah berasal dari sebagian wilayah Kabupaten Jayawijaya yang terdiri atas cakupan wilayah:" .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/description> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/a> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/a/text> legal:textHasTextString "Distrik Kobakma;" .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/a/text> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/b> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/b/text> legal:textHasTextString "Distrik Kelila;" .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/b> legal:pointHasText <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/b/text> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/c> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/c> legal:pointHasKey "c" .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/c/text> legal:textHasTextString "Distrik Eragayam;" .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/c> legal:pointHasText <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/c/text> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/d> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/d> legal:pointHasKey "d" .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/d/text> legal:textHasTextString "Distrik Megambilis; dan" .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/d> legal:pointHasText <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/d/text> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/e> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/e> legal:pointHasKey "e" .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/e/text> legal:textHasTextString "Distrik Ilugwa." .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/e> legal:pointHasText <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/e/text> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0002> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0002> legal:ayatHasKey 2 .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0002> legal:ayatHasRawText "Cakupan wilayah sebagaimana dima ksud pada ayat (1) digambarkan dalam peta wilayah yang tercantu m dalam lampiran dan merupakan bagian yang tidak terpisah kan dari Undang-Undang ini. Pasal 4 Pasal 4 . . . Dengan terbentuknya Kabupaten Ma mberamo Tengah, sebagaimana dimaksud dalam Pasal 2, wilayah Ka bupaten Jayawijaya dikurangi dengan wilayah Kabupaten Mamberamo Tengah sebagaimana dimaksud dalam Pasal 3." .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0002/text> legal:textHasTextString "Cakupan wilayah sebagaimana dima ksud pada ayat (1) digambarkan dalam peta wilayah yang tercantu m dalam lampiran dan merupakan bagian yang tidak terpisah kan dari Undang-Undang ini. Pasal 4 Pasal 4 . . . Dengan terbentuknya Kabupaten Ma mberamo Tengah, sebagaimana dimaksud dalam Pasal 2, wilayah Ka bupaten Jayawijaya dikurangi dengan wilayah Kabupaten Mamberamo Tengah sebagaimana dimaksud dalam Pasal 3." .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0002/text> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2008/3/pasal/0003> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2008/3/pasal/0002> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2008/3/pasal/0004> .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian> legal:bagianSetHasBagian <http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0003> .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0003> legal:bagianHasKey 3 .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0003> legal:bagianHasTitle "Bagian Ketiga Batas Wilayah Pasal 5 (1) Kabupaten Mamberamo Tengah mempunyai batas-batas wilayah: a. sebelah utara berbatasan dengan Distrik Mamberamo Hulu Kabupaten Mamberamo Raya; b. sebelah timur berbatasan denga n Distrik Elelim dan Distrik Abenaho Kabupaten Yalimo; c. sebelah selatan berbatasan dengan Distrik Wolo dan Distrik Bolakme Kabupaten Jayawijaya; dan d. sebelah barat berbatasan denga n Distrik Bokondini dan Distrik Kembu Kabupaten Tolikara. (2) Batas wilayah sebagaimana dimaksud pada ayat (1) digambarkan dalam peta wilayah yang merupakan bagi an yang tidak terpisahkan dari Undang-Undang ini. (3) Penegasan batas wilayah Kabupaten Mamberamo Tengah secara pasti 5 di lapangan sebagaimana dimaksud pada ayat (1) dan ayat (2) ditetapkan oleh Menteri Dalam Negeri paling lama 5 (lima) tahun sejak diresmikannya Kabupaten Mamberamo Tengah. Pasal 6 (1) Dengan terbentuknya Kabupaten Mamberamo Tengah sebagaimana dimaksud dalam Pasal 2, Pemeri ntah Kabupaten Mamberamo Tengah menetapkan Rencana Tata Ruang Wi layah Kabupaten sesuai dengan peraturan perundang-undangan. (2) Penetapan Rencana Tata Ruang Wilayah Kabupaten Mamberamo Tengah sebagaimana dimaksud pada ayat (1) dilakukan sesuai dengan Rencana Tata Ruang Wilayah Nasional dan Re ncana Tata Ruang Wilayah Provinsi Papua serta dilakukan dengan me mperhatikan Rencana Tata Ruang Wilayah Kabupaten/Kota di sekitarnya. serta . . ." .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0003> legal:bagianHasPasalSet <http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0003/pasals> .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian> legal:bagianSetHasBagian <http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0004> .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0004> legal:bagianHasKey 4 .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0004> legal:bagianHasTitle "Bagian Keempat Ibu Kota Pasal 7 Ibu kota Kabupaten Mamberamo Tengah berkedudukan di Kobakma." .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0004> legal:bagianHasPasalSet <http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0004/pasals> .
-<http://example.org/legal/document/uu/2008/3/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2008/3/bab/0003> .
-<http://example.org/legal/document/uu/2008/3/bab/0003> legal:babHasKey 3 .
-<http://example.org/legal/document/uu/2008/3/bab/0003> legal:babHasTitle "URUSAN PEMERI NTAHAN DAERAH Pasal 8 (1) Urusan pemerintahan daerah yang menjadi kewenangan Kabupaten Mamberamo Tengah mencakup urus an wajib dan urusan pilihan sebagaimana diatur dalam peraturan perundang-undangan. (2) Urusan wajib yang menjadi kewenangan Pemerintahan Daerah Kabupaten Mamberamo Tengah sebagaim ana dimaksud pada ayat (1) meliputi: a. pendidikan; b. kesehatan; c. lingkungan hidup; d. pekerjaan umum; e. penataan ruang; f. perencanaan pembangunan; g. perumahan; h. kepemudaan dan olah raga; i. penanaman modal; j. koperasi dan usaha kecil dan menengah; k. kependudukan dan catatan sipil; 6 l. ketenagakerjaan; m. ketahanan pangan; n. pemberdayaan perempuan dan pelindungan anak; o. keluarga berencana dan keluarga sejahtera; p. perhubungan; q. komunikasi dan informatika; r. pertanahan; s. kesatuan bangsa dan politik luar negeri; t. otonomi daerah, pemerintahan umum, administrasi keuangan daerah, perangkat daerah, ke pegawaian dan persandian; u. pemberdayaan masyarakat dan desa; v. sosial; w. kebudayaan; u. pemberdayaan . . . x. statistik; y. kearsipan; dan z. perpustakaan. (3) Urusan pilihan yang menjadi kewenangan Pemerintahan Daerah Kabupaten Mamberamo Tengah sebagaimana dimaksud pada ayat (1) meliputi urusan pemerintahan yang secara nyata ada dan berpotensi untuk meningkatkan kesejahteraan masyarakat sesuai dengan kondisi, kekhasan, dan potensi unggulan daerah yang bersangkutan." .
-<http://example.org/legal/document/uu/2008/3/bab/0003> legal:babHasPasalSet <http://example.org/legal/document/uu/2008/3/bab/0003/pasals> .
-<http://example.org/legal/document/uu/2008/3/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2008/3/bab/0004> .
-<http://example.org/legal/document/uu/2008/3/bab/0004> legal:babHasKey 4 .
-<http://example.org/legal/document/uu/2008/3/bab/0004> legal:babHasTitle "PEMERINTAHAN DAERAH" .
-<http://example.org/legal/document/uu/2008/3/bab/0004> legal:babHasBagianSet <http://example.org/legal/document/uu/2008/3/bab/0004/bagian> .
-<http://example.org/legal/document/uu/2008/3/bab/0004/bagian> legal:bagianSetHasBagian <http://example.org/legal/document/uu/2008/3/bab/0004/bagian/0001> .
-<http://example.org/legal/document/uu/2008/3/bab/0004/bagian/0001> legal:bagianHasKey 1 .
-<http://example.org/legal/document/uu/2008/3/bab/0004/bagian/0001> legal:bagianHasTitle "Bagian Kesatu Peresmian Daerah Otonom Baru dan Penjabat Kepala Daerah Pasal 9 Peresmian Kabupaten Mamberamo Tengah dan pelantikan Penjabat Bupati Mamberamo Tengah dilakukan oleh Menteri Dalam Negeri atas nama Presiden paling lama 6 (enam) bulan setelah Undang-Undang ini diundangkan." .
-<http://example.org/legal/document/uu/2008/3/bab/0004/bagian/0001> legal:bagianHasPasalSet <http://example.org/legal/document/uu/2008/3/bab/0004/bagian/0001/pasals> .
-<http://example.org/legal/document/uu/2008/3/bab/0004/bagian> legal:bagianSetHasBagian <http://example.org/legal/document/uu/2008/3/bab/0004/bagian/0002> .
-<http://example.org/legal/document/uu/2008/3/bab/0004/bagian/0002> legal:bagianHasKey 2 .
-<http://example.org/legal/document/uu/2008/3/bab/0004/bagian/0002> legal:bagianHasTitle "Bagian Kedua Pemerintah Daerah Pasal 10 (1) Untuk memimpin penyelenggaraan pemerintahan di Kabupaten Mamberamo Tengah, dipilih dan disa hkan seorang Bupati dan Wakil Bupati sesuai dengan peraturan perundang-undangan paling lama 1 (satu) tahun sejak terbentuknya Kabupaten Mamberamo Tengah. 7 (2) Sebelum Bupati dan Wakil Bupa ti definitif sebagaimana dimaksud pada ayat (1) terpilih, untuk pertam a kalinya Penjabat Bupati diangkat dari pegawai negeri sipil dengan ma sa jabatan paling lama 1 (satu) tahun dan dilantik oleh Menteri Dalam Negeri atas nama Presiden berdasarkan usulan Gubernur. Menteri . . . (3) Pegawai negeri sipil sebagaiman a dimaksud pada ayat (2) adalah pegawai yang memiliki kemampua n dan pengalaman jabatan dalam bidang pemerintahan serta memenuhi persyaratan untuk menduduki jabatan itu sesuai dengan peraturan perundang-undangan. (4) Menteri Dalam Negeri dapat menunjuk Gubernur Papua untuk melantik Penjabat Bupati Mamberamo Tengah. (5) Apabila dalam waktu 1 (satu) tahun sebagaim ana dimaksud pada ayat (2) belum terpilih dan belum dilantik Bupati definitif, Menteri Dalam Negeri dapat mengangkat kembali Penj abat Bupati untuk 1 (satu) kali masa jabatan berikutnya paling lama 1 (satu) tahun atau menggantinya dengan penjabat lain sesuai dengan peraturan perundang-undangan. (6) Gubernur melakukan pembinaan, pe ngawasan, evaluasi, dan fasilitasi terhadap kinerja Penjabat Bupa ti dalam melaksanakan tugas pemerintahan, dan pemilih an Bupati/Wakil Bupati. Pasal 11 Pembiayaan pertama kali pelaksanaan pemilihan Bupati dan Wakil Bupati Mamberamo Tengah sebagaimana dima ksud dalam Pasal 10 ayat (1) dibebankan kepada Anggaran Pendapat an dan Belanja Daerah Kabupaten Jayawijaya sebesar Rp 3.000.000.000,00 (tig a miliar rupiah) dan Anggaran Pendapatan dan Belanja Daerah Prov insi Papua sebesa r Rp.1.000.000.000,00 (satu miliar rupiah). Pasal 12 (1) Untuk menyelenggarakan pemeri ntahan di Kabupaten Mamberamo Tengah, dibentuk perangkat daerah yang meliputi Sekretariat Daerah, Sekretariat Dewan Perwakilan Raky at Daerah, dinas daerah, lembaga teknis daerah, dan unsur perang kat daerah yang lain dengan mempertimbangkan kebutuhan dan kemampuan keuangan daerah sesuai dengan peraturan perundang-undangan. (2) Perangkat daerah sebagaimana dimaksud pada ayat (1) telah dibentuk (2) Perangkat . . . oleh Penjabat Bupati pa ling lama 6 (enam) bulan sejak tanggal pelantikan. 8" .
-<http://example.org/legal/document/uu/2008/3/bab/0004/bagian/0002> legal:bagianHasPasalSet <http://example.org/legal/document/uu/2008/3/bab/0004/bagian/0002/pasals> .
-<http://example.org/legal/document/uu/2008/3/bab/0004/bagian> legal:bagianSetHasBagian <http://example.org/legal/document/uu/2008/3/bab/0004/bagian/0003> .
-<http://example.org/legal/document/uu/2008/3/bab/0004/bagian/0003> legal:bagianHasKey 3 .
-<http://example.org/legal/document/uu/2008/3/bab/0004/bagian/0003> legal:bagianHasTitle "Bagian Ketiga Dewan Perwakilan Rakyat Daerah Pasal 13 (1) Pengisian keanggotaan Dewan Pe rwakilan Rakyat Daerah Kabupaten Mamberamo Tengah dilakukan sesuai dengan peraturan perundang- undangan. (2) Pengaturan tentang jumlah, meka nisme, dan tata cara pengisian keanggotaan Dewan Perwakilan Rakyat Daerah Kabupaten Mamberamo Tengah sebagaimana dimaks ud pada ayat (1) ditetapkan oleh Komisi Pemilihan Umum (KPU) sesuai dengan peraturan perundang-undangan. (3) Penetapan keanggotaan Dewan Pe rwakilan Rakyat Daerah Kabupaten Mamberamo Tengah sebagaimana dimaks ud pada ayat (1) dan ayat (2) dilakukan oleh KPU Kabupaten Jayawijaya. (4) Peresmian pelantikan anggota Dewan Perwakilan Rakyat Daerah Kabupaten Mamberamo Tengah dilaksan akan sesuai dengan peraturan perundang-undangan." .
-<http://example.org/legal/document/uu/2008/3/bab/0004/bagian/0003> legal:bagianHasPasalSet <http://example.org/legal/document/uu/2008/3/bab/0004/bagian/0003/pasals> .
-<http://example.org/legal/document/uu/2008/3/bab> legal:babSetHasBab <http://example.org/legal/document/uu/2008/3/bab/0005> .
-<http://example.org/legal/document/uu/2008/3/bab/0005> legal:babHasKey 5 .
-<http://example.org/legal/document/uu/2008/3/bab/0005> legal:babHasTitle "PERSONEL, ASET, DAN DOKUMEN Pasal 14 (1) Bupati Jayawijaya bersama Penjabat Bupati Mamberamo Tengah menginventarisasi, mengatur, dan me laksanakan pemindahan personel, penyerahan aset, serta dokumen kepada Pemerintah Kabupaten Mamberamo Tengah. (2) Pemindahan personel se bagaimana dimaksud pada ayat (1) dilakukan paling lambat 6 (enam) bulan se jak pelantikan Penjabat Bupati. (3) Penyerahan aset dan dokumen seba gaimana dimaksud pada ayat (1) dilakukan paling lambat 3 (tiga) tahun seja k pelantikan Penjabat Bupati. (4) Personel . . . (4) Personel sebagaimana dimaksud pada ayat (1) dan ayat (2) meliputi pegawai negeri sipil yang karena tugas dan kemampuannya diperlukan oleh Kabupaten Mamberamo Tengah. 9 (5) Pemindahan personel serta penye rahan aset dan dokumen kepada Kabupaten Mamberamo Tengah difa silitasi oleh Gu bernur Papua. (6) Gaji dan tunjangan pegawai negeri sipil sebagaimana dimaksud pada ayat (4) selama belum ditetapkannya An ggaran Pendapatan dan Belanja Daerah Kabupaten Mamberamo Tengah dibebankan pada anggaran pendapatan dan belanja dari asal satuan kerja personel yang bersangkutan sesuai dengan peraturan perundang-undangan. (7) Aset dan dokumen sebagaimana dimaks ud pada ayat (1) dan ayat (3) meliputi: a. barang milik/dikuasai yang berg erak dan tidak bergerak dan/atau dimanfaatkan oleh Pemerintah Kabupaten Mamberamo Tengah yang berada dalam wilayah Kabupaten Mamberamo Tengah; b. Badan Usaha Milik Daerah Kabupaten Jayawijaya yang kedudukan, kegiatan, dan lokasinya berada di Kabupaten Mamberamo Tengah; c. utang piutang Kabupaten Jaya wijaya yang kegunaannya untuk Kabupaten Mamberamo Tengah; dan d. dokumen dan arsip yang karena sifatnya diperlukan oleh Kabupaten Mamberamo Tengah. (8) Apabila penyerahan dan pemindaha n aset serta dokumen sebagaimana dimaksud pada ayat (7) tidak dila ksanakan oleh Bupati Jayawijaya, Gubernur Papua selaku wakil Peme rintah wajib menyelesaikannya. (9) Pelaksanaan pemindahan persone l serta penyeraha n aset dan dokumen sebagaimana dimaksud pada ayat (1 ) dilaporkan oleh Gubernur Papua kepada Menteri Dalam Negeri. BAB VI BAB VI . . . PENDAPATAN, ALOKASI DANA PERIMBANGAN, HIBAH, DAN BANTUAN DANA Pasal 15 (1) Kabupaten Mamberamo Tengah berhak mendapatkan alokasi dana perimbangan sesuai dengan pe raturan perundang-undangan. (2) Dalam dana perimbangan sebaga imana dimaksud pada ayat (1), Pemerintah mengalokasikan da na alokasi khusus prasarana pemerintahan sesuai dengan peraturan perundang-undangan. Pasal 16 (1) Pemerintah Kabupaten Jayawi jaya sesuai dengan kesanggupannya memberikan hibah berupa ua ng untuk menunjang kegiatan penyelenggaraan pemerintahan Kabupaten Mamberamo Tengah 10 sebesar Rp10.000.000.000,00 (sepuluh miliar rupiah) setiap tahun selama 2 (dua) tahun berturut-turut. (2) Pemerintah Provinsi Papua memberikan bantuan dana untuk menunjang kegiatan penyelenggaraan pemerintahan Kabupaten Mamberamo Tengah sebesar Rp5.000.000.000,00 (lima miliar rupiah) setiap tahun selama 2 (dua) tahun berturut-turut. (3) Pemberian hibah sebagaimana dima ksud pada ayat (1) dan pemberian bantuan dana sebagaimana dimaksud pada ayat (2) dimulai sejak pelantikan Penjabat B upati Mamberamo Tengah. (4) Apabila Kabupaten Jayawija ya tidak memenuhi kesanggupannya memberikan hibah sesuai dengan ketentuan sebagaimana dimaksud pada ayat (1), Pemerintah mengurangi penerimaan dana alokasi umum Kabupaten Jayawijaya untuk diberikan kepada Pemerintah Kabupaten Mamberamo Tengah. (5) Apabila Provinsi Papua tidak memenuhi kesanggupannya memberikan bantuan dana sesuai dengan kete ntuan sebagaimana dimaksud pada ayat (2), Pemerintah mengurangi penerimaan dana alokasi umum Provinsi Papua untuk diberikan kepada Pemerintah Kabupaten Mamberamo Tengah. (6) Penjabat Bupati Mamberamo Tengah menyampaikan realisasi penggunaan hibah sebagaimana dimaksud pada ayat (1) kepada Bupati (6) Penjabat . . . Jayawijaya. (7) Penjabat Bupati Mamberamo Tengah menyampaikan laporan pertanggungjawaban realisasi pe nggunaan dana hibah dan dana bantuan sebagaimana dimaksud pada ayat (1) dan ayat (2) kepada Gubernur Papua. Pasal 17 Penjabat Bupati Mamberamo Tengah berkewajiban melakukan penatausahaan keuangan daerah sesuai dengan peraturan perundang- undangan. BAB VII PEMBINAAN Pasal 18 (1) Untuk mengefektifkan penyele nggaraan pemerintahan daerah, Pemerintah dan Pemerintah Provinsi Papua melakukan pembinaan dan fasilitasi secara khusus terhad ap Kabupaten Mamberamo Tengah 11 dalam waktu 3 (tiga) tahun sejak diresmikan. (2) Setelah 7 (tujuh) tahun sejak diresmikan, Pemerintah bersama Gubernur Papua melakukan evaluasi terhadap penyelenggaraan Pemerintahan Kabupaten Mamberamo Tengah. (3) Hasil evaluasi sebagaimana dimaks ud pada ayat (2) dijadikan acuan kebijakan lebih lanjut oleh Pemerintah dan Gubernur Papua sesuai dengan peraturan perundang-undangan. BAB VIII KETENTUAN PERALIHAN Pasal 19 (1) Sebelum terbentuknya Dewan Pe rwakilan Rakyat Daerah, Penjabat Bupati Mamberamo Tengah menyusun Rancangan Peraturan Bupati tentang Anggaran Pendapatan dan Belanja Daerah Kabupaten Mamberamo Tengah untuk tahun anggaran berikutnya. Pendapatan . . . (2) Rancangan Peraturan Bupati Mamberamo Tengah sebagaimana dimaksud pada ayat (1) dilaksanak an setelah disahkan oleh Gubernur Papua. (3) Proses pengesahan dan penetapa n Peraturan Bupati Mamberamo Tengah sebagaimana dimaksud pada ayat (2) dilaksanakan sesuai dengan peraturan perundang-undangan. Pasal 20 (1) Sebelum Kabupaten Mamberamo Tengah menetapkan peraturan daerah dan peraturan bupati sebagai pelaksanaan Undang-Undang ini, semua peraturan daerah dan Peraturan Bupati Jayawijaya sepanjang tidak bertentangan dengan Undang- Undang ini tetap berlaku dan dilaksanakan oleh Pemerintah Kabupaten Mamberamo Tengah. (2) Semua Peraturan Daerah Kabupate n Jayawijaya serta Peraturan dan Keputusan Bupati Jayawijaya yang selama ini berlaku di Kabupaten Mamberamo Tengah harus disesuaikan dengan Undang-Undang ini. BAB IX KETENTUAN PENUTUP Pasal 21 Pada saat berlakunya Undang-Unda ng ini, semua ketentuan dalam peraturan perundang-undangan yang berkaitan dengan Kabupaten Mamberamo Tengah harus disesuaikan dengan Undang-Undang ini. 12 Pasal 22 Ketentuan lebih lanjut sebagai pe laksanaan Undang-Undang ini diatur dengan peraturan perundang-undangan. Pasal 23 Undang-Undang ini mulai berl aku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang- Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia. Agar . . ." .
-<http://example.org/legal/document/uu/2008/3/bab/0005> legal:babHasPasalSet <http://example.org/legal/document/uu/2008/3/bab/0005/pasals> .
-<http://example.org/legal/document/uu/2008/3> legal:documentHasDisahkanDate "2008-01-04"^^xsd:date .
-<http://example.org/legal/document/uu/2008/3> legal:documentMengingat <http://example.org/legal/document/uu/2008/3/mengingat> .
-<http://example.org/legal/document/uu/2008/3/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2008/3/mengingat/point> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/2008/3/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2008/3/mengingat/point/description> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2008/3/mengingat/point/0001> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0001> legal:pointHasKey "1" .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0001/text> legal:textHasTextString "Pasal 18, Pasal 18A, Pasa l 18B, Pasal 20 dan Pasal 21 Undang- Undang Dasar Negara Republik Indonesia Tahun 1945;" .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/2008/3/mengingat/point/0001/text> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2008/3/mengingat/point/0002> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0002> legal:pointHasKey "2" .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0002/text> legal:textHasTextString "Undang-Undang Nomor 12 Tahun 1969 tentang Pembentukan Provinsi Otonom Irian Barat dan Kabupaten-Kabupaten Otonom Di Provinsi Irian Barat (Lembara n Negara Republik Indonesia Tahun 1969 Nomor 47, Tambahan Lembaran Negara Republik Indonesia Nomor 2907); 2" .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/2008/3/mengingat/point/0002/text> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1969/12> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2008/3/mengingat/point/0003> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0003> legal:pointHasKey "3" .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0003/text> legal:textHasTextString "Undang-Undang Nomor 21 Tahun 2001 tentang Otonomi Khusus bagi Provinsi Papua (Lembaran Negara Republik Indonesia Tahun 2001 Nomor 135, Tambahan Lembaran Negara Nomor 4151);" .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0003> legal:pointHasText <http://example.org/legal/document/uu/2008/3/mengingat/point/0003/text> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2001/21> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2008/3/mengingat/point/0004> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0004> legal:pointHasKey "4" .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0004/text> legal:textHasTextString "Undang-Undang Nomor 12 Tahun 2003 tentang Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan Rakyat Daerah (Lembaran Negara Republik Indonesia Tahun 2003 Nomor 37, Tambahan Le mbaran Negara Republik Indonesia Nomor 4277);" .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0004> legal:pointHasText <http://example.org/legal/document/uu/2008/3/mengingat/point/0004/text> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2003/12> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2008/3/mengingat/point/0005> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0005> legal:pointHasKey "5" .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0005/text> legal:textHasTextString "Undang-Undang Nomor 22 Tahun 2003 tentang Susunan dan Kedudukan Majelis Permusyawaratan Rakyat, Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah dan Dewan Perw akilan Rakyat Daerah (Lembaran Negara Republik Indonesia Tahun 2003 Nomor 92, Tambahan Lembaran Negara Republik Indonesia Nomor 4310);" .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0005> legal:pointHasText <http://example.org/legal/document/uu/2008/3/mengingat/point/0005/text> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0005/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2003/22> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2008/3/mengingat/point/0006> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0006> legal:pointHasKey "6" .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0006/text> legal:textHasTextString "Undang-Undang Nomor 10 Tahun 2004 tentang Pembentukan Peraturan Perundang-undangan (Lembaran Negara Republik Indonesia Tahun 2004 Nomor 53, Tambahan Lembaran Negara Republik Indonesia Nomor 4389);" .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0006> legal:pointHasText <http://example.org/legal/document/uu/2008/3/mengingat/point/0006/text> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0006/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2004/10> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2008/3/mengingat/point/0007> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0007> legal:pointHasKey "7" .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0007/text> legal:textHasTextString "Undang-Undang Nomor 32 Tahun 2004 tentang Pemerintahan Daerah (Lembaran Negara Republik Indonesia Tahun 2004 Nomor 125, Tambahan Lembaran Negara Republik Indonesia Nomor 4437) sebagaimana telah diubah dengan Undang-Undang Nomor 8 Tahun 2005 tentang Penetapan Peraturan Pe merintah Pengganti Undang-Undang Nomor 3 Tahun 2005 tentang Per ubahan Undang-Undang Nomor 32 Tahun 2004 tentang Pemerintahan Daerah Menjadi Undang-Undang (Lembaran Negara Republik Indonesia Tahun 2005 Nomor 108, Tambahan Lembaran Negara Republik Indonesia Nomor 4548);" .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0007> legal:pointHasText <http://example.org/legal/document/uu/2008/3/mengingat/point/0007/text> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0007/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2004/32> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0007/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2005/3> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0007/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2005/8> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2008/3/mengingat/point/0008> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0008> legal:pointHasKey "8" .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0008/text> legal:textHasTextString "Undang-Undang Nomor 33 Tahun 2004 tentang Perimbangan Keuangan 8. Undang-Undang . . . antara Pemerintah Pusat dan Pemerintahan Daerah (Lembaran Negara Republik Indonesia Tahun 2004 Nomor 126, Tambahan Lembaran Negara Republik Indonesia Nomor 4438); Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA dan PRESIDEN REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan: UNDANG-UNDANG TE NTANG PEMBENTUKAN KABUPATEN MAMBERAMO TENGAH DI PROVINSI PAPUA. 3" .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0008> legal:pointHasText <http://example.org/legal/document/uu/2008/3/mengingat/point/0008/text> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0008/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2004/33> .
-<http://example.org/legal/document/uu/2008/3> legal:documentMenimbang <http://example.org/legal/document/uu/2008/3/menimbang> .
-<http://example.org/legal/document/uu/2008/3/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/2008/3/menimbang/point> .
-<http://example.org/legal/document/uu/2008/3/menimbang/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/2008/3/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2008/3/menimbang/point/description> .
-<http://example.org/legal/document/uu/2008/3/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2008/3/menimbang/point/a> .
-<http://example.org/legal/document/uu/2008/3/menimbang/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/2008/3/menimbang/point/a/text> legal:textHasTextString "bahwa untuk memacu perkembangan dan kemajuan Provinsi Papua pada umumnya dan Kabupaten Jaya wijaya pada khususnya serta adanya aspirasi yang berkembang dalam masyarakat, perlu dilakukan peningkatan penyelenggaraan pemerintahan, pelaksanaan pembangunan, dan pelayanan publik guna mempercepat terwujudnya kesejahteraan masyarakat;" .
-<http://example.org/legal/document/uu/2008/3/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/2008/3/menimbang/point/a/text> .
-<http://example.org/legal/document/uu/2008/3/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2008/3/menimbang/point/b> .
-<http://example.org/legal/document/uu/2008/3/menimbang/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/2008/3/menimbang/point/b/text> legal:textHasTextString "bahwa dengan memperhatikan kondisi geografis, kemampuan ekonomi, potensi daerah, luas wilayah, kependudukan, dan pertimbangan aspek sosial politik, sosial budaya, pertahanan, dan keamanan serta dengan meningkatnya beban tugas dan volume kerja dalam bidang pemerintahan, pe mbangunan, dan kemasyarakatan di Kabupaten Jayawijaya, perlu d ilakukan pembentukan Kabupaten Mamberamo Tengah di wilayah Provinsi Papua;" .
-<http://example.org/legal/document/uu/2008/3/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/2008/3/menimbang/point/b/text> .
-<http://example.org/legal/document/uu/2008/3/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2008/3/menimbang/point/c> .
-<http://example.org/legal/document/uu/2008/3/menimbang/point/c> legal:pointHasKey "c" .
-<http://example.org/legal/document/uu/2008/3/menimbang/point/c/text> legal:textHasTextString "bahwa pembentukan Kabupaten Mamberamo Tengah diharapkan akan dapat mendorong peningka tan pelayanan dalam bidang pemerintahan, pembangunan, dan kemasyarakatan, serta dapat memberikan kemampuan dalam pemanfaatan potensi daerah;" .
-<http://example.org/legal/document/uu/2008/3/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/2008/3/menimbang/point/c/text> .
-<http://example.org/legal/document/uu/2008/3/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2008/3/menimbang/point/d> .
-<http://example.org/legal/document/uu/2008/3/menimbang/point/d> legal:pointHasKey "d" .
-<http://example.org/legal/document/uu/2008/3/menimbang/point/d/text> legal:textHasTextString "bahwa berdasarkan pertimbanga n sebagaimana dimaksud dalam huruf a, huruf b, dan huruf c perlu membentuk Undang-Undang tentang Pembentukan Kabupaten Mamberamo Tengah di Provinsi Papua;" .
-<http://example.org/legal/document/uu/2008/3/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/2008/3/menimbang/point/d/text> .
-<http://example.org/legal/document/uu/2008/3> legal:documentHasDisahkanPengesah "DR. H. SUSILO BAMBANG YUDHOYONO" .
-<http://example.org/legal/document/uu/2008/3> legal:documentHasDisahkanLocation "Jakarta" .
-<http://example.org/legal/document/uu/2008/3> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
-<http://example.org/legal/document/uu/2008/3> a legal:Document .
-<http://example.org/legal/document/uu/2008/3/bab> a legal:BabSet .
-<http://example.org/legal/document/uu/2008/3/bab/0001> a legal:Bab .
-<http://example.org/legal/document/uu/2008/3/bab/0001/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/2008/3/pasal/0001> a legal:Pasal .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104> a legal:PasalVersion .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/description> a legal:Text .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point> a legal:PointSet .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0001> a legal:Point .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0002> a legal:Point .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0003> a legal:Point .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0003/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0004> a legal:Point .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0004/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/3/bab/0002> a legal:Bab .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian> a legal:BagianSet .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0001> a legal:Bagian .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0001/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/2008/3/pasal/0002> a legal:Pasal .
-<http://example.org/legal/document/uu/2008/3/pasal/0002/version/20080104> a legal:PasalVersion .
-<http://example.org/legal/document/uu/2008/3/pasal/0002/version/20080104/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0002> a legal:Bagian .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0002/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/2008/3/pasal/0003> a legal:Pasal .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104> a legal:PasalVersion .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat> a legal:AyatSet .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001> a legal:Ayat .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/description> a legal:Text .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point> a legal:PointSet .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/a> a legal:Point .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/a/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/b> a legal:Point .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/c> a legal:Point .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/d> a legal:Point .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/e> a legal:Point .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/e/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0002> a legal:Ayat .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0003> a legal:Bagian .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0004> a legal:Bagian .
-<http://example.org/legal/document/uu/2008/3/bab/0003> a legal:Bab .
-<http://example.org/legal/document/uu/2008/3/bab/0004> a legal:Bab .
-<http://example.org/legal/document/uu/2008/3/bab/0004/bagian> a legal:BagianSet .
-<http://example.org/legal/document/uu/2008/3/bab/0004/bagian/0001> a legal:Bagian .
-<http://example.org/legal/document/uu/2008/3/bab/0004/bagian/0002> a legal:Bagian .
-<http://example.org/legal/document/uu/2008/3/bab/0004/bagian/0003> a legal:Bagian .
-<http://example.org/legal/document/uu/2008/3/bab/0005> a legal:Bab .
-<http://example.org/legal/document/uu/2008/3/mengingat> a legal:Mengingat .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/description> a legal:Text .
-<http://example.org/legal/document/uu/2008/3/mengingat/point> a legal:PointSet .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0001> a legal:Point .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0002> a legal:Point .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0003> a legal:Point .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0003/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0004> a legal:Point .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0004/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0005> a legal:Point .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0005/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0006> a legal:Point .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0006/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0007> a legal:Point .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0007/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0008> a legal:Point .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0008/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/3/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/2008/3/menimbang/point/description> a legal:Text .
-<http://example.org/legal/document/uu/2008/3/menimbang/point> a legal:PointSet .
-<http://example.org/legal/document/uu/2008/3/menimbang/point/a> a legal:Point .
-<http://example.org/legal/document/uu/2008/3/menimbang/point/a/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/3/menimbang/point/b> a legal:Point .
-<http://example.org/legal/document/uu/2008/3/menimbang/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/3/menimbang/point/c> a legal:Point .
-<http://example.org/legal/document/uu/2008/3/menimbang/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/3/menimbang/point/d> a legal:Point .
-<http://example.org/legal/document/uu/2008/3/menimbang/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/2008/3/bab> legal:partOf <http://example.org/legal/document/uu/2008/3> .
-<http://example.org/legal/document/uu/2008/3/bab/0001> legal:partOf <http://example.org/legal/document/uu/2008/3/bab> .
-<http://example.org/legal/document/uu/2008/3/bab/0001/pasals> legal:partOf <http://example.org/legal/document/uu/2008/3/bab/0001> .
-<http://example.org/legal/document/uu/2008/3/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2008/3/bab/0001/pasals> .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104> legal:partOf <http://example.org/legal/document/uu/2008/3/pasal/0001> .
-<http://example.org/legal/document/uu/2008/3/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2008/3> .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point> legal:partOf <http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104> .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0001> legal:partOf <http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point> .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0001/text> legal:partOf <http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0001> .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0002> legal:partOf <http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point> .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0002/text> legal:partOf <http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0002> .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0003> legal:partOf <http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point> .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0003/text> legal:partOf <http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0003> .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0004> legal:partOf <http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point> .
-<http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0004/text> legal:partOf <http://example.org/legal/document/uu/2008/3/pasal/0001/version/20080104/point/0004> .
-<http://example.org/legal/document/uu/2008/3/bab/0002> legal:partOf <http://example.org/legal/document/uu/2008/3/bab> .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian> legal:partOf <http://example.org/legal/document/uu/2008/3/bab/0002> .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0001> legal:partOf <http://example.org/legal/document/uu/2008/3/bab/0002/bagian> .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0001/pasals> legal:partOf <http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0001> .
-<http://example.org/legal/document/uu/2008/3/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0001/pasals> .
-<http://example.org/legal/document/uu/2008/3/pasal/0002/version/20080104> legal:partOf <http://example.org/legal/document/uu/2008/3/pasal/0002> .
-<http://example.org/legal/document/uu/2008/3/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2008/3> .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0002> legal:partOf <http://example.org/legal/document/uu/2008/3/bab/0002/bagian> .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0002/pasals> legal:partOf <http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0002> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003> legal:partOf <http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0002/pasals> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104> legal:partOf <http://example.org/legal/document/uu/2008/3/pasal/0003> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003> legal:partOf <http://example.org/legal/document/uu/2008/3> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat> legal:partOf <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/a> legal:partOf <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/a/text> legal:partOf <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/a> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/b> legal:partOf <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/b/text> legal:partOf <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/b> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/c> legal:partOf <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/c/text> legal:partOf <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/c> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/d> legal:partOf <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/d/text> legal:partOf <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/d> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/e> legal:partOf <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/e/text> legal:partOf <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0001/point/e> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat> .
-<http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2008/3/pasal/0003/version/20080104/ayat/0002> .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0003> legal:partOf <http://example.org/legal/document/uu/2008/3/bab/0002/bagian> .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0003/pasals> legal:partOf <http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0003> .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0004> legal:partOf <http://example.org/legal/document/uu/2008/3/bab/0002/bagian> .
-<http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0004/pasals> legal:partOf <http://example.org/legal/document/uu/2008/3/bab/0002/bagian/0004> .
-<http://example.org/legal/document/uu/2008/3/bab/0003> legal:partOf <http://example.org/legal/document/uu/2008/3/bab> .
-<http://example.org/legal/document/uu/2008/3/bab/0003/pasals> legal:partOf <http://example.org/legal/document/uu/2008/3/bab/0003> .
-<http://example.org/legal/document/uu/2008/3/bab/0004> legal:partOf <http://example.org/legal/document/uu/2008/3/bab> .
-<http://example.org/legal/document/uu/2008/3/bab/0004/bagian> legal:partOf <http://example.org/legal/document/uu/2008/3/bab/0004> .
-<http://example.org/legal/document/uu/2008/3/bab/0004/bagian/0001> legal:partOf <http://example.org/legal/document/uu/2008/3/bab/0004/bagian> .
-<http://example.org/legal/document/uu/2008/3/bab/0004/bagian/0001/pasals> legal:partOf <http://example.org/legal/document/uu/2008/3/bab/0004/bagian/0001> .
-<http://example.org/legal/document/uu/2008/3/bab/0004/bagian/0002> legal:partOf <http://example.org/legal/document/uu/2008/3/bab/0004/bagian> .
-<http://example.org/legal/document/uu/2008/3/bab/0004/bagian/0002/pasals> legal:partOf <http://example.org/legal/document/uu/2008/3/bab/0004/bagian/0002> .
-<http://example.org/legal/document/uu/2008/3/bab/0004/bagian/0003> legal:partOf <http://example.org/legal/document/uu/2008/3/bab/0004/bagian> .
-<http://example.org/legal/document/uu/2008/3/bab/0004/bagian/0003/pasals> legal:partOf <http://example.org/legal/document/uu/2008/3/bab/0004/bagian/0003> .
-<http://example.org/legal/document/uu/2008/3/bab/0005> legal:partOf <http://example.org/legal/document/uu/2008/3/bab> .
-<http://example.org/legal/document/uu/2008/3/bab/0005/pasals> legal:partOf <http://example.org/legal/document/uu/2008/3/bab/0005> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point> legal:partOf <http://example.org/legal/document/uu/2008/3/mengingat> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2008/3/mengingat/point> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0001/text> legal:partOf <http://example.org/legal/document/uu/2008/3/mengingat/point/0001> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2008/3/mengingat/point> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0002/text> legal:partOf <http://example.org/legal/document/uu/2008/3/mengingat/point/0002> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/2008/3/mengingat/point> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0003/text> legal:partOf <http://example.org/legal/document/uu/2008/3/mengingat/point/0003> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0004> legal:partOf <http://example.org/legal/document/uu/2008/3/mengingat/point> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0004/text> legal:partOf <http://example.org/legal/document/uu/2008/3/mengingat/point/0004> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0005> legal:partOf <http://example.org/legal/document/uu/2008/3/mengingat/point> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0005/text> legal:partOf <http://example.org/legal/document/uu/2008/3/mengingat/point/0005> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0006> legal:partOf <http://example.org/legal/document/uu/2008/3/mengingat/point> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0006/text> legal:partOf <http://example.org/legal/document/uu/2008/3/mengingat/point/0006> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0007> legal:partOf <http://example.org/legal/document/uu/2008/3/mengingat/point> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0007/text> legal:partOf <http://example.org/legal/document/uu/2008/3/mengingat/point/0007> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0008> legal:partOf <http://example.org/legal/document/uu/2008/3/mengingat/point> .
-<http://example.org/legal/document/uu/2008/3/mengingat/point/0008/text> legal:partOf <http://example.org/legal/document/uu/2008/3/mengingat/point/0008> .
-<http://example.org/legal/document/uu/2008/3/menimbang/point> legal:partOf <http://example.org/legal/document/uu/2008/3/menimbang> .
-<http://example.org/legal/document/uu/2008/3/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/2008/3/menimbang/point> .
-<http://example.org/legal/document/uu/2008/3/menimbang/point/a/text> legal:partOf <http://example.org/legal/document/uu/2008/3/menimbang/point/a> .
-<http://example.org/legal/document/uu/2008/3/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/2008/3/menimbang/point> .
-<http://example.org/legal/document/uu/2008/3/menimbang/point/b/text> legal:partOf <http://example.org/legal/document/uu/2008/3/menimbang/point/b> .
-<http://example.org/legal/document/uu/2008/3/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/2008/3/menimbang/point> .
-<http://example.org/legal/document/uu/2008/3/menimbang/point/c/text> legal:partOf <http://example.org/legal/document/uu/2008/3/menimbang/point/c> .
-<http://example.org/legal/document/uu/2008/3/menimbang/point/d> legal:partOf <http://example.org/legal/document/uu/2008/3/menimbang/point> .
-<http://example.org/legal/document/uu/2008/3/menimbang/point/d/text> legal:partOf <http://example.org/legal/document/uu/2008/3/menimbang/point/d> .
+<http://example.org/legal/peraturan/uu/2008/3> legal:daftarBab <http://example.org/legal/peraturan/uu/2008/3/bab> .
+<http://example.org/legal/peraturan/uu/2008/3/bab> legal:bab <http://example.org/legal/peraturan/uu/2008/3/bab/0001> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0001> legal:judul "KETENTUAN UMUM" .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0001> legal:daftarPasal <http://example.org/legal/peraturan/uu/2008/3/bab/0001/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0001/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/2008/3/pasal/0001> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001> legal:versi <http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104> .
+<http://example.org/legal/peraturan/uu/2008/3> legal:pasal <http://example.org/legal/peraturan/uu/2008/3/pasal/0001> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104> legal:tanggal "2008-01-04"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104> legal:teks "Dalam Undang-Undang ini yang dimaksud dengan:\n1. Pemerintah pusat, selanjutnya di sebut Pemerintah, adalah Presiden Republik Indonesia yang memegang kekuasaan pemerintahan negara Republik Indonesia sebagaimana dimaksud dalam Undang-Undang Dasar Negara Republik Indonesia Tahun 1945.\n2. Daerah otonom, selanjutnya di sebut daerah, adalah kesatuan masyarakat hukum yang mempunyai batas-batas wilayah yang berwenang mengatur dan mengurus urusan pemerintahan dan kepentingan masyarakat setempat me nurut prakarsa sendiri berdasarkan aspirasi masyarakat dalam sistem Negara Kesatuan Republik Indonesia.\n3. Provinsi Papua adalah Provinsi Irian Barat sebagaimana dimaksud dalam Undang-Undang Nomor 12 Tahun 1969 tentang Pembentukan Provinsi Otonom Irian Barat dan Kabupaten-Kabupaten Otonom di Provinsi Irian Barat (Lembaran Ne gara Republik Indonesia Tahun 1969 Nomor 47, Tambahan Lembaran Negara Republik Indonesia Nomor 2907) jo. Undang-Undang Nomor 21 Tahun 2001 tentang Otonomi Khusus bagi Provinsi Papua (L embaran Negara Republik Indonesia Tahun 2001 Nomor 135, Tambahan Lembaran Negara Republik Indonesia Nomor 4151). Negara . . .\n4. Kabupaten Jayawijaya adalah kabupa ten sebagaimana dimaksud dalam Undang-Undang Nomor 12 Tahun 1969 tentang Pembentukan Provinsi Otonom Irian Barat dan Kabupate n-Kabupaten Otonom Di Provinsi Irian Barat (Lembaran Negara Re publik Indonesia Tahun 1969 Nomor 47, Tambahan Lembaran Negara Republik Indonesia Nomor 2907), yang merupakan kabupaten asal Kabupaten Mamberamo Tengah.\n" .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104> legal:daftarHuruf <http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/description> legal:teks "Dalam Undang-Undang ini yang dimaksud dengan:" .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf> legal:segmen <http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/description> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0001> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0001> legal:nomor "1" .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0001/text> legal:teks "Pemerintah pusat, selanjutnya di sebut Pemerintah, adalah Presiden Republik Indonesia yang memegang kekuasaan pemerintahan negara Republik Indonesia sebagaimana dimaksud dalam Undang-Undang Dasar Negara Republik Indonesia Tahun 1945." .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0001> legal:segmen <http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0001/text> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0001/text> legal:merujuk <http://example.org/legal/peraturan/uu> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0002> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0002> legal:nomor "2" .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0002/text> legal:teks "Daerah otonom, selanjutnya di sebut daerah, adalah kesatuan masyarakat hukum yang mempunyai batas-batas wilayah yang berwenang mengatur dan mengurus urusan pemerintahan dan kepentingan masyarakat setempat me nurut prakarsa sendiri berdasarkan aspirasi masyarakat dalam sistem Negara Kesatuan Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0002> legal:segmen <http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0002/text> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0003> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0003> legal:nomor "3" .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0003/text> legal:teks "Provinsi Papua adalah Provinsi Irian Barat sebagaimana dimaksud dalam Undang-Undang Nomor 12 Tahun 1969 tentang Pembentukan Provinsi Otonom Irian Barat dan Kabupaten-Kabupaten Otonom di Provinsi Irian Barat (Lembaran Ne gara Republik Indonesia Tahun 1969 Nomor 47, Tambahan Lembaran Negara Republik Indonesia Nomor 2907) jo. Undang-Undang Nomor 21 Tahun 2001 tentang Otonomi Khusus bagi Provinsi Papua (L embaran Negara Republik Indonesia Tahun 2001 Nomor 135, Tambahan Lembaran Negara Republik Indonesia Nomor 4151). Negara . . ." .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0003> legal:segmen <http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0003/text> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0003/text> legal:merujuk <http://example.org/legal/peraturan/uu/2001/21> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0003/text> legal:merujuk <http://example.org/legal/peraturan/uu/1969/12> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0004> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0004> legal:nomor "4" .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0004/text> legal:teks "Kabupaten Jayawijaya adalah kabupa ten sebagaimana dimaksud dalam Undang-Undang Nomor 12 Tahun 1969 tentang Pembentukan Provinsi Otonom Irian Barat dan Kabupate n-Kabupaten Otonom Di Provinsi Irian Barat (Lembaran Negara Re publik Indonesia Tahun 1969 Nomor 47, Tambahan Lembaran Negara Republik Indonesia Nomor 2907), yang merupakan kabupaten asal Kabupaten Mamberamo Tengah." .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0004> legal:segmen <http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0004/text> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0004/text> legal:merujuk <http://example.org/legal/peraturan/uu/1969/12> .
+<http://example.org/legal/peraturan/uu/2008/3/bab> legal:bab <http://example.org/legal/peraturan/uu/2008/3/bab/0002> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002> legal:judul "PEMBENTUKAN, CAKUPAN WILAYAH, BATAS WILAYAH, DAN IBU KOTA" .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002> legal:daftarBagian <http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian> legal:bagian <http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0001> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0001> legal:judul "Bagian Kesatu Pembentukan" .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0001> legal:daftarPasal <http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0001/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0001/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/2008/3/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0002> legal:versi <http://example.org/legal/peraturan/uu/2008/3/pasal/0002/versi/20080104> .
+<http://example.org/legal/peraturan/uu/2008/3> legal:pasal <http://example.org/legal/peraturan/uu/2008/3/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0002/versi/20080104> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0002/versi/20080104> legal:tanggal "2008-01-04"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0002/versi/20080104> legal:teks "Dengan Undang-Undang ini dibent uk Kabupaten Mamberamo Tengah di wilayah Provinsi Papua dalam Negara Kesatuan Republik Indonesia. 4" .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0002/versi/20080104/text> legal:teks "Dengan Undang-Undang ini dibent uk Kabupaten Mamberamo Tengah di wilayah Provinsi Papua dalam Negara Kesatuan Republik Indonesia. 4" .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0002/versi/20080104> legal:segmen <http://example.org/legal/peraturan/uu/2008/3/pasal/0002/versi/20080104/text> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian> legal:bagian <http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0002> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0002> legal:judul "Bagian Kedua Cakupan Wilayah" .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0002> legal:daftarPasal <http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0002/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0002/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/2008/3/pasal/0003> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003> legal:nomor 3 .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003> legal:versi <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104> .
+<http://example.org/legal/peraturan/uu/2008/3> legal:pasal <http://example.org/legal/peraturan/uu/2008/3/pasal/0003> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104> legal:tanggal "2008-01-04"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104> legal:teks "(1). Kabupaten Mamberamo Tengah berasal dari sebagian wilayah Kabupaten Jayawijaya yang terdiri atas cakupan wilayah:\na. Distrik Kobakma;\nb. Distrik Kelila;\nc. Distrik Eragayam;\nd. Distrik Megambilis; dan\ne. Distrik Ilugwa.\n\n(2). Cakupan wilayah sebagaimana dima ksud pada ayat (1) digambarkan dalam peta wilayah yang tercantu m dalam lampiran dan merupakan bagian yang tidak terpisah kan dari Undang-Undang ini. Pasal 4 Pasal 4 . . . Dengan terbentuknya Kabupaten Ma mberamo Tengah, sebagaimana dimaksud dalam Pasal 2, wilayah Ka bupaten Jayawijaya dikurangi dengan wilayah Kabupaten Mamberamo Tengah sebagaimana dimaksud dalam Pasal 3." .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104> legal:daftarAyat <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat> legal:ayat <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001> legal:teks "Kabupaten Mamberamo Tengah berasal dari sebagian wilayah Kabupaten Jayawijaya yang terdiri atas cakupan wilayah:\na. Distrik Kobakma;\nb. Distrik Kelila;\nc. Distrik Eragayam;\nd. Distrik Megambilis; dan\ne. Distrik Ilugwa.\n" .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001> legal:daftarHuruf <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/description> legal:teks "Kabupaten Mamberamo Tengah berasal dari sebagian wilayah Kabupaten Jayawijaya yang terdiri atas cakupan wilayah:" .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf> legal:segmen <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/description> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/a> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/a> legal:nomor "a" .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/a/text> legal:teks "Distrik Kobakma;" .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/a> legal:segmen <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/a/text> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/b> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/b> legal:nomor "b" .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/b/text> legal:teks "Distrik Kelila;" .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/b> legal:segmen <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/b/text> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/c> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/c> legal:nomor "c" .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/c/text> legal:teks "Distrik Eragayam;" .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/c> legal:segmen <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/c/text> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/d> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/d> legal:nomor "d" .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/d/text> legal:teks "Distrik Megambilis; dan" .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/d> legal:segmen <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/d/text> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/e> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/e> legal:nomor "e" .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/e/text> legal:teks "Distrik Ilugwa." .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/e> legal:segmen <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/e/text> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat> legal:ayat <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0002> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0002> legal:teks "Cakupan wilayah sebagaimana dima ksud pada ayat (1) digambarkan dalam peta wilayah yang tercantu m dalam lampiran dan merupakan bagian yang tidak terpisah kan dari Undang-Undang ini. Pasal 4 Pasal 4 . . . Dengan terbentuknya Kabupaten Ma mberamo Tengah, sebagaimana dimaksud dalam Pasal 2, wilayah Ka bupaten Jayawijaya dikurangi dengan wilayah Kabupaten Mamberamo Tengah sebagaimana dimaksud dalam Pasal 3." .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0002/text> legal:teks "Cakupan wilayah sebagaimana dima ksud pada ayat (1) digambarkan dalam peta wilayah yang tercantu m dalam lampiran dan merupakan bagian yang tidak terpisah kan dari Undang-Undang ini. Pasal 4 Pasal 4 . . . Dengan terbentuknya Kabupaten Ma mberamo Tengah, sebagaimana dimaksud dalam Pasal 2, wilayah Ka bupaten Jayawijaya dikurangi dengan wilayah Kabupaten Mamberamo Tengah sebagaimana dimaksud dalam Pasal 3." .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0002> legal:segmen <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0002/text> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0002/text> legal:merujuk <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0002/text> legal:merujuk <http://example.org/legal/peraturan/uu/2008/3/pasal/0003> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0002/text> legal:merujuk <http://example.org/legal/peraturan/uu/2008/3/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0002/text> legal:merujuk <http://example.org/legal/peraturan/uu/2008/3/pasal/0004> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian> legal:bagian <http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0003> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0003> legal:nomor 3 .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0003> legal:judul "Bagian Ketiga Batas Wilayah Pasal 5 (1) Kabupaten Mamberamo Tengah mempunyai batas-batas wilayah: a. sebelah utara berbatasan dengan Distrik Mamberamo Hulu Kabupaten Mamberamo Raya; b. sebelah timur berbatasan denga n Distrik Elelim dan Distrik Abenaho Kabupaten Yalimo; c. sebelah selatan berbatasan dengan Distrik Wolo dan Distrik Bolakme Kabupaten Jayawijaya; dan d. sebelah barat berbatasan denga n Distrik Bokondini dan Distrik Kembu Kabupaten Tolikara. (2) Batas wilayah sebagaimana dimaksud pada ayat (1) digambarkan dalam peta wilayah yang merupakan bagi an yang tidak terpisahkan dari Undang-Undang ini. (3) Penegasan batas wilayah Kabupaten Mamberamo Tengah secara pasti 5 di lapangan sebagaimana dimaksud pada ayat (1) dan ayat (2) ditetapkan oleh Menteri Dalam Negeri paling lama 5 (lima) tahun sejak diresmikannya Kabupaten Mamberamo Tengah. Pasal 6 (1) Dengan terbentuknya Kabupaten Mamberamo Tengah sebagaimana dimaksud dalam Pasal 2, Pemeri ntah Kabupaten Mamberamo Tengah menetapkan Rencana Tata Ruang Wi layah Kabupaten sesuai dengan peraturan perundang-undangan. (2) Penetapan Rencana Tata Ruang Wilayah Kabupaten Mamberamo Tengah sebagaimana dimaksud pada ayat (1) dilakukan sesuai dengan Rencana Tata Ruang Wilayah Nasional dan Re ncana Tata Ruang Wilayah Provinsi Papua serta dilakukan dengan me mperhatikan Rencana Tata Ruang Wilayah Kabupaten/Kota di sekitarnya. serta . . ." .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0003> legal:daftarPasal <http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0003/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian> legal:bagian <http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0004> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0004> legal:nomor 4 .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0004> legal:judul "Bagian Keempat Ibu Kota Pasal 7 Ibu kota Kabupaten Mamberamo Tengah berkedudukan di Kobakma." .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0004> legal:daftarPasal <http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0004/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2008/3/bab> legal:bab <http://example.org/legal/peraturan/uu/2008/3/bab/0003> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0003> legal:nomor 3 .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0003> legal:judul "URUSAN PEMERI NTAHAN DAERAH Pasal 8 (1) Urusan pemerintahan daerah yang menjadi kewenangan Kabupaten Mamberamo Tengah mencakup urus an wajib dan urusan pilihan sebagaimana diatur dalam peraturan perundang-undangan. (2) Urusan wajib yang menjadi kewenangan Pemerintahan Daerah Kabupaten Mamberamo Tengah sebagaim ana dimaksud pada ayat (1) meliputi: a. pendidikan; b. kesehatan; c. lingkungan hidup; d. pekerjaan umum; e. penataan ruang; f. perencanaan pembangunan; g. perumahan; h. kepemudaan dan olah raga; i. penanaman modal; j. koperasi dan usaha kecil dan menengah; k. kependudukan dan catatan sipil; 6 l. ketenagakerjaan; m. ketahanan pangan; n. pemberdayaan perempuan dan pelindungan anak; o. keluarga berencana dan keluarga sejahtera; p. perhubungan; q. komunikasi dan informatika; r. pertanahan; s. kesatuan bangsa dan politik luar negeri; t. otonomi daerah, pemerintahan umum, administrasi keuangan daerah, perangkat daerah, ke pegawaian dan persandian; u. pemberdayaan masyarakat dan desa; v. sosial; w. kebudayaan; u. pemberdayaan . . . x. statistik; y. kearsipan; dan z. perpustakaan. (3) Urusan pilihan yang menjadi kewenangan Pemerintahan Daerah Kabupaten Mamberamo Tengah sebagaimana dimaksud pada ayat (1) meliputi urusan pemerintahan yang secara nyata ada dan berpotensi untuk meningkatkan kesejahteraan masyarakat sesuai dengan kondisi, kekhasan, dan potensi unggulan daerah yang bersangkutan." .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0003> legal:daftarPasal <http://example.org/legal/peraturan/uu/2008/3/bab/0003/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2008/3/bab> legal:bab <http://example.org/legal/peraturan/uu/2008/3/bab/0004> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0004> legal:nomor 4 .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0004> legal:judul "PEMERINTAHAN DAERAH" .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0004> legal:daftarBagian <http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian> legal:bagian <http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian/0001> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian/0001> legal:judul "Bagian Kesatu Peresmian Daerah Otonom Baru dan Penjabat Kepala Daerah Pasal 9 Peresmian Kabupaten Mamberamo Tengah dan pelantikan Penjabat Bupati Mamberamo Tengah dilakukan oleh Menteri Dalam Negeri atas nama Presiden paling lama 6 (enam) bulan setelah Undang-Undang ini diundangkan." .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian/0001> legal:daftarPasal <http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian/0001/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian> legal:bagian <http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian/0002> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian/0002> legal:judul "Bagian Kedua Pemerintah Daerah Pasal 10 (1) Untuk memimpin penyelenggaraan pemerintahan di Kabupaten Mamberamo Tengah, dipilih dan disa hkan seorang Bupati dan Wakil Bupati sesuai dengan peraturan perundang-undangan paling lama 1 (satu) tahun sejak terbentuknya Kabupaten Mamberamo Tengah. 7 (2) Sebelum Bupati dan Wakil Bupa ti definitif sebagaimana dimaksud pada ayat (1) terpilih, untuk pertam a kalinya Penjabat Bupati diangkat dari pegawai negeri sipil dengan ma sa jabatan paling lama 1 (satu) tahun dan dilantik oleh Menteri Dalam Negeri atas nama Presiden berdasarkan usulan Gubernur. Menteri . . . (3) Pegawai negeri sipil sebagaiman a dimaksud pada ayat (2) adalah pegawai yang memiliki kemampua n dan pengalaman jabatan dalam bidang pemerintahan serta memenuhi persyaratan untuk menduduki jabatan itu sesuai dengan peraturan perundang-undangan. (4) Menteri Dalam Negeri dapat menunjuk Gubernur Papua untuk melantik Penjabat Bupati Mamberamo Tengah. (5) Apabila dalam waktu 1 (satu) tahun sebagaim ana dimaksud pada ayat (2) belum terpilih dan belum dilantik Bupati definitif, Menteri Dalam Negeri dapat mengangkat kembali Penj abat Bupati untuk 1 (satu) kali masa jabatan berikutnya paling lama 1 (satu) tahun atau menggantinya dengan penjabat lain sesuai dengan peraturan perundang-undangan. (6) Gubernur melakukan pembinaan, pe ngawasan, evaluasi, dan fasilitasi terhadap kinerja Penjabat Bupa ti dalam melaksanakan tugas pemerintahan, dan pemilih an Bupati/Wakil Bupati. Pasal 11 Pembiayaan pertama kali pelaksanaan pemilihan Bupati dan Wakil Bupati Mamberamo Tengah sebagaimana dima ksud dalam Pasal 10 ayat (1) dibebankan kepada Anggaran Pendapat an dan Belanja Daerah Kabupaten Jayawijaya sebesar Rp 3.000.000.000,00 (tig a miliar rupiah) dan Anggaran Pendapatan dan Belanja Daerah Prov insi Papua sebesa r Rp.1.000.000.000,00 (satu miliar rupiah). Pasal 12 (1) Untuk menyelenggarakan pemeri ntahan di Kabupaten Mamberamo Tengah, dibentuk perangkat daerah yang meliputi Sekretariat Daerah, Sekretariat Dewan Perwakilan Raky at Daerah, dinas daerah, lembaga teknis daerah, dan unsur perang kat daerah yang lain dengan mempertimbangkan kebutuhan dan kemampuan keuangan daerah sesuai dengan peraturan perundang-undangan. (2) Perangkat daerah sebagaimana dimaksud pada ayat (1) telah dibentuk (2) Perangkat . . . oleh Penjabat Bupati pa ling lama 6 (enam) bulan sejak tanggal pelantikan. 8" .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian/0002> legal:daftarPasal <http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian/0002/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian> legal:bagian <http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian/0003> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian/0003> legal:nomor 3 .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian/0003> legal:judul "Bagian Ketiga Dewan Perwakilan Rakyat Daerah Pasal 13 (1) Pengisian keanggotaan Dewan Pe rwakilan Rakyat Daerah Kabupaten Mamberamo Tengah dilakukan sesuai dengan peraturan perundang- undangan. (2) Pengaturan tentang jumlah, meka nisme, dan tata cara pengisian keanggotaan Dewan Perwakilan Rakyat Daerah Kabupaten Mamberamo Tengah sebagaimana dimaks ud pada ayat (1) ditetapkan oleh Komisi Pemilihan Umum (KPU) sesuai dengan peraturan perundang-undangan. (3) Penetapan keanggotaan Dewan Pe rwakilan Rakyat Daerah Kabupaten Mamberamo Tengah sebagaimana dimaks ud pada ayat (1) dan ayat (2) dilakukan oleh KPU Kabupaten Jayawijaya. (4) Peresmian pelantikan anggota Dewan Perwakilan Rakyat Daerah Kabupaten Mamberamo Tengah dilaksan akan sesuai dengan peraturan perundang-undangan." .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian/0003> legal:daftarPasal <http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian/0003/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2008/3/bab> legal:bab <http://example.org/legal/peraturan/uu/2008/3/bab/0005> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0005> legal:nomor 5 .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0005> legal:judul "PERSONEL, ASET, DAN DOKUMEN Pasal 14 (1) Bupati Jayawijaya bersama Penjabat Bupati Mamberamo Tengah menginventarisasi, mengatur, dan me laksanakan pemindahan personel, penyerahan aset, serta dokumen kepada Pemerintah Kabupaten Mamberamo Tengah. (2) Pemindahan personel se bagaimana dimaksud pada ayat (1) dilakukan paling lambat 6 (enam) bulan se jak pelantikan Penjabat Bupati. (3) Penyerahan aset dan dokumen seba gaimana dimaksud pada ayat (1) dilakukan paling lambat 3 (tiga) tahun seja k pelantikan Penjabat Bupati. (4) Personel . . . (4) Personel sebagaimana dimaksud pada ayat (1) dan ayat (2) meliputi pegawai negeri sipil yang karena tugas dan kemampuannya diperlukan oleh Kabupaten Mamberamo Tengah. 9 (5) Pemindahan personel serta penye rahan aset dan dokumen kepada Kabupaten Mamberamo Tengah difa silitasi oleh Gu bernur Papua. (6) Gaji dan tunjangan pegawai negeri sipil sebagaimana dimaksud pada ayat (4) selama belum ditetapkannya An ggaran Pendapatan dan Belanja Daerah Kabupaten Mamberamo Tengah dibebankan pada anggaran pendapatan dan belanja dari asal satuan kerja personel yang bersangkutan sesuai dengan peraturan perundang-undangan. (7) Aset dan dokumen sebagaimana dimaks ud pada ayat (1) dan ayat (3) meliputi: a. barang milik/dikuasai yang berg erak dan tidak bergerak dan/atau dimanfaatkan oleh Pemerintah Kabupaten Mamberamo Tengah yang berada dalam wilayah Kabupaten Mamberamo Tengah; b. Badan Usaha Milik Daerah Kabupaten Jayawijaya yang kedudukan, kegiatan, dan lokasinya berada di Kabupaten Mamberamo Tengah; c. utang piutang Kabupaten Jaya wijaya yang kegunaannya untuk Kabupaten Mamberamo Tengah; dan d. dokumen dan arsip yang karena sifatnya diperlukan oleh Kabupaten Mamberamo Tengah. (8) Apabila penyerahan dan pemindaha n aset serta dokumen sebagaimana dimaksud pada ayat (7) tidak dila ksanakan oleh Bupati Jayawijaya, Gubernur Papua selaku wakil Peme rintah wajib menyelesaikannya. (9) Pelaksanaan pemindahan persone l serta penyeraha n aset dan dokumen sebagaimana dimaksud pada ayat (1 ) dilaporkan oleh Gubernur Papua kepada Menteri Dalam Negeri. BAB VI BAB VI . . . PENDAPATAN, ALOKASI DANA PERIMBANGAN, HIBAH, DAN BANTUAN DANA Pasal 15 (1) Kabupaten Mamberamo Tengah berhak mendapatkan alokasi dana perimbangan sesuai dengan pe raturan perundang-undangan. (2) Dalam dana perimbangan sebaga imana dimaksud pada ayat (1), Pemerintah mengalokasikan da na alokasi khusus prasarana pemerintahan sesuai dengan peraturan perundang-undangan. Pasal 16 (1) Pemerintah Kabupaten Jayawi jaya sesuai dengan kesanggupannya memberikan hibah berupa ua ng untuk menunjang kegiatan penyelenggaraan pemerintahan Kabupaten Mamberamo Tengah 10 sebesar Rp10.000.000.000,00 (sepuluh miliar rupiah) setiap tahun selama 2 (dua) tahun berturut-turut. (2) Pemerintah Provinsi Papua memberikan bantuan dana untuk menunjang kegiatan penyelenggaraan pemerintahan Kabupaten Mamberamo Tengah sebesar Rp5.000.000.000,00 (lima miliar rupiah) setiap tahun selama 2 (dua) tahun berturut-turut. (3) Pemberian hibah sebagaimana dima ksud pada ayat (1) dan pemberian bantuan dana sebagaimana dimaksud pada ayat (2) dimulai sejak pelantikan Penjabat B upati Mamberamo Tengah. (4) Apabila Kabupaten Jayawija ya tidak memenuhi kesanggupannya memberikan hibah sesuai dengan ketentuan sebagaimana dimaksud pada ayat (1), Pemerintah mengurangi penerimaan dana alokasi umum Kabupaten Jayawijaya untuk diberikan kepada Pemerintah Kabupaten Mamberamo Tengah. (5) Apabila Provinsi Papua tidak memenuhi kesanggupannya memberikan bantuan dana sesuai dengan kete ntuan sebagaimana dimaksud pada ayat (2), Pemerintah mengurangi penerimaan dana alokasi umum Provinsi Papua untuk diberikan kepada Pemerintah Kabupaten Mamberamo Tengah. (6) Penjabat Bupati Mamberamo Tengah menyampaikan realisasi penggunaan hibah sebagaimana dimaksud pada ayat (1) kepada Bupati (6) Penjabat . . . Jayawijaya. (7) Penjabat Bupati Mamberamo Tengah menyampaikan laporan pertanggungjawaban realisasi pe nggunaan dana hibah dan dana bantuan sebagaimana dimaksud pada ayat (1) dan ayat (2) kepada Gubernur Papua. Pasal 17 Penjabat Bupati Mamberamo Tengah berkewajiban melakukan penatausahaan keuangan daerah sesuai dengan peraturan perundang- undangan. BAB VII PEMBINAAN Pasal 18 (1) Untuk mengefektifkan penyele nggaraan pemerintahan daerah, Pemerintah dan Pemerintah Provinsi Papua melakukan pembinaan dan fasilitasi secara khusus terhad ap Kabupaten Mamberamo Tengah 11 dalam waktu 3 (tiga) tahun sejak diresmikan. (2) Setelah 7 (tujuh) tahun sejak diresmikan, Pemerintah bersama Gubernur Papua melakukan evaluasi terhadap penyelenggaraan Pemerintahan Kabupaten Mamberamo Tengah. (3) Hasil evaluasi sebagaimana dimaks ud pada ayat (2) dijadikan acuan kebijakan lebih lanjut oleh Pemerintah dan Gubernur Papua sesuai dengan peraturan perundang-undangan. BAB VIII KETENTUAN PERALIHAN Pasal 19 (1) Sebelum terbentuknya Dewan Pe rwakilan Rakyat Daerah, Penjabat Bupati Mamberamo Tengah menyusun Rancangan Peraturan Bupati tentang Anggaran Pendapatan dan Belanja Daerah Kabupaten Mamberamo Tengah untuk tahun anggaran berikutnya. Pendapatan . . . (2) Rancangan Peraturan Bupati Mamberamo Tengah sebagaimana dimaksud pada ayat (1) dilaksanak an setelah disahkan oleh Gubernur Papua. (3) Proses pengesahan dan penetapa n Peraturan Bupati Mamberamo Tengah sebagaimana dimaksud pada ayat (2) dilaksanakan sesuai dengan peraturan perundang-undangan. Pasal 20 (1) Sebelum Kabupaten Mamberamo Tengah menetapkan peraturan daerah dan peraturan bupati sebagai pelaksanaan Undang-Undang ini, semua peraturan daerah dan Peraturan Bupati Jayawijaya sepanjang tidak bertentangan dengan Undang- Undang ini tetap berlaku dan dilaksanakan oleh Pemerintah Kabupaten Mamberamo Tengah. (2) Semua Peraturan Daerah Kabupate n Jayawijaya serta Peraturan dan Keputusan Bupati Jayawijaya yang selama ini berlaku di Kabupaten Mamberamo Tengah harus disesuaikan dengan Undang-Undang ini. BAB IX KETENTUAN PENUTUP Pasal 21 Pada saat berlakunya Undang-Unda ng ini, semua ketentuan dalam peraturan perundang-undangan yang berkaitan dengan Kabupaten Mamberamo Tengah harus disesuaikan dengan Undang-Undang ini. 12 Pasal 22 Ketentuan lebih lanjut sebagai pe laksanaan Undang-Undang ini diatur dengan peraturan perundang-undangan. Pasal 23 Undang-Undang ini mulai berl aku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang- Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia. Agar . . ." .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0005> legal:daftarPasal <http://example.org/legal/peraturan/uu/2008/3/bab/0005/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2008/3> legal:disahkanPada "2008-01-04"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2008/3> legal:tentang " PEMBENTUKAN KABUPATEN MAMBERAMO TENGAH DI PROVINSI PAPUA" .
+<http://example.org/legal/peraturan/uu/2008/3> legal:mengingat <http://example.org/legal/peraturan/uu/2008/3/mengingat> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat> legal:daftarHuruf <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf> legal:segmen <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/description> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0001> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0001> legal:nomor "1" .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0001/text> legal:teks "Pasal 18, Pasal 18A, Pasa l 18B, Pasal 20 dan Pasal 21 Undang- Undang Dasar Negara Republik Indonesia Tahun 1945;" .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0001> legal:segmen <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0001/text> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0002> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0002> legal:nomor "2" .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0002/text> legal:teks "Undang-Undang Nomor 12 Tahun 1969 tentang Pembentukan Provinsi Otonom Irian Barat dan Kabupaten-Kabupaten Otonom Di Provinsi Irian Barat (Lembara n Negara Republik Indonesia Tahun 1969 Nomor 47, Tambahan Lembaran Negara Republik Indonesia Nomor 2907); 2" .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0002> legal:segmen <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0002/text> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0002/text> legal:merujuk <http://example.org/legal/peraturan/uu/1969/12> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0003> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0003> legal:nomor "3" .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0003/text> legal:teks "Undang-Undang Nomor 21 Tahun 2001 tentang Otonomi Khusus bagi Provinsi Papua (Lembaran Negara Republik Indonesia Tahun 2001 Nomor 135, Tambahan Lembaran Negara Nomor 4151);" .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0003> legal:segmen <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0003/text> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0003/text> legal:merujuk <http://example.org/legal/peraturan/uu/2001/21> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0004> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0004> legal:nomor "4" .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0004/text> legal:teks "Undang-Undang Nomor 12 Tahun 2003 tentang Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan Rakyat Daerah (Lembaran Negara Republik Indonesia Tahun 2003 Nomor 37, Tambahan Le mbaran Negara Republik Indonesia Nomor 4277);" .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0004> legal:segmen <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0004/text> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0004/text> legal:merujuk <http://example.org/legal/peraturan/uu/2003/12> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0005> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0005> legal:nomor "5" .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0005/text> legal:teks "Undang-Undang Nomor 22 Tahun 2003 tentang Susunan dan Kedudukan Majelis Permusyawaratan Rakyat, Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah dan Dewan Perw akilan Rakyat Daerah (Lembaran Negara Republik Indonesia Tahun 2003 Nomor 92, Tambahan Lembaran Negara Republik Indonesia Nomor 4310);" .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0005> legal:segmen <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0005/text> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0005/text> legal:merujuk <http://example.org/legal/peraturan/uu/2003/22> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0006> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0006> legal:nomor "6" .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0006/text> legal:teks "Undang-Undang Nomor 10 Tahun 2004 tentang Pembentukan Peraturan Perundang-undangan (Lembaran Negara Republik Indonesia Tahun 2004 Nomor 53, Tambahan Lembaran Negara Republik Indonesia Nomor 4389);" .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0006> legal:segmen <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0006/text> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0006/text> legal:merujuk <http://example.org/legal/peraturan/uu/2004/10> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0007> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0007> legal:nomor "7" .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0007/text> legal:teks "Undang-Undang Nomor 32 Tahun 2004 tentang Pemerintahan Daerah (Lembaran Negara Republik Indonesia Tahun 2004 Nomor 125, Tambahan Lembaran Negara Republik Indonesia Nomor 4437) sebagaimana telah diubah dengan Undang-Undang Nomor 8 Tahun 2005 tentang Penetapan Peraturan Pe merintah Pengganti Undang-Undang Nomor 3 Tahun 2005 tentang Per ubahan Undang-Undang Nomor 32 Tahun 2004 tentang Pemerintahan Daerah Menjadi Undang-Undang (Lembaran Negara Republik Indonesia Tahun 2005 Nomor 108, Tambahan Lembaran Negara Republik Indonesia Nomor 4548);" .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0007> legal:segmen <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0007/text> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0007/text> legal:merujuk <http://example.org/legal/peraturan/uu/2004/32> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0007/text> legal:merujuk <http://example.org/legal/peraturan/uu/2005/3> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0007/text> legal:merujuk <http://example.org/legal/peraturan/uu/2005/8> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0008> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0008> legal:nomor "8" .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0008/text> legal:teks "Undang-Undang Nomor 33 Tahun 2004 tentang Perimbangan Keuangan 8. Undang-Undang . . . antara Pemerintah Pusat dan Pemerintahan Daerah (Lembaran Negara Republik Indonesia Tahun 2004 Nomor 126, Tambahan Lembaran Negara Republik Indonesia Nomor 4438); Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA dan PRESIDEN REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan: UNDANG-UNDANG TE NTANG PEMBENTUKAN KABUPATEN MAMBERAMO TENGAH DI PROVINSI PAPUA. 3" .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0008> legal:segmen <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0008/text> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0008/text> legal:merujuk <http://example.org/legal/peraturan/uu/2004/33> .
+<http://example.org/legal/peraturan/uu/2008/3> legal:menimbang <http://example.org/legal/peraturan/uu/2008/3/menimbang> .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang> legal:daftarHuruf <http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf> legal:segmen <http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/description> .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/a> legal:nomor "a" .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/a/text> legal:teks "bahwa untuk memacu perkembangan dan kemajuan Provinsi Papua pada umumnya dan Kabupaten Jaya wijaya pada khususnya serta adanya aspirasi yang berkembang dalam masyarakat, perlu dilakukan peningkatan penyelenggaraan pemerintahan, pelaksanaan pembangunan, dan pelayanan publik guna mempercepat terwujudnya kesejahteraan masyarakat;" .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/a> legal:segmen <http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/a/text> .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/b> .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/b> legal:nomor "b" .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/b/text> legal:teks "bahwa dengan memperhatikan kondisi geografis, kemampuan ekonomi, potensi daerah, luas wilayah, kependudukan, dan pertimbangan aspek sosial politik, sosial budaya, pertahanan, dan keamanan serta dengan meningkatnya beban tugas dan volume kerja dalam bidang pemerintahan, pe mbangunan, dan kemasyarakatan di Kabupaten Jayawijaya, perlu d ilakukan pembentukan Kabupaten Mamberamo Tengah di wilayah Provinsi Papua;" .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/b> legal:segmen <http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/b/text> .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/c> .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/c> legal:nomor "c" .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/c/text> legal:teks "bahwa pembentukan Kabupaten Mamberamo Tengah diharapkan akan dapat mendorong peningka tan pelayanan dalam bidang pemerintahan, pembangunan, dan kemasyarakatan, serta dapat memberikan kemampuan dalam pemanfaatan potensi daerah;" .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/c> legal:segmen <http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/c/text> .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/d> .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/d> legal:nomor "d" .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/d/text> legal:teks "bahwa berdasarkan pertimbanga n sebagaimana dimaksud dalam huruf a, huruf b, dan huruf c perlu membentuk Undang-Undang tentang Pembentukan Kabupaten Mamberamo Tengah di Provinsi Papua;" .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/d> legal:segmen <http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/d/text> .
+<http://example.org/legal/peraturan/uu/2008/3> legal:disahkanOleh "DR. H. SUSILO BAMBANG YUDHOYONO" .
+<http://example.org/legal/peraturan/uu/2008/3> legal:disahkanDi "Jakarta" .
+<http://example.org/legal/peraturan/uu/2008/3> legal:jabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/peraturan/uu/2008/3> a legal:Peraturan .
+<http://example.org/legal/peraturan/uu/2008/3/bab> a legal:BabSet .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0001> a legal:Bab .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0001/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0001> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0002> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0003> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0003/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0004> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0004/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002> a legal:Bab .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian> a legal:DaftarBagian .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0001> a legal:Bagian .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0001/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0002> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0002/versi/20080104> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0002/versi/20080104/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0002> a legal:Bagian .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0002/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat> a legal:DaftarAyat .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/a> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/a/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/b> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/b/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/c> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/c/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/d> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/d/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/e> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/e/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0002> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0003> a legal:Bagian .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0004> a legal:Bagian .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0003> a legal:Bab .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0004> a legal:Bab .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian> a legal:DaftarBagian .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian/0001> a legal:Bagian .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian/0002> a legal:Bagian .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian/0003> a legal:Bagian .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0005> a legal:Bab .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat> a legal:Mengingat .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0001> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0002> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0003> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0003/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0004> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0004/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0005> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0005/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0006> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0006/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0007> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0007/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0008> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0008/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang> a legal:Menimbang .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/a> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/a/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/b> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/b/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/c> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/c/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/d> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/d/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2008/3/bab> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/bab> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0001/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/bab/0001> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/bab/0001/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/pasal/0001> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0001> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0002> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0003/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0003> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0004/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/pasal/0001/versi/20080104/huruf/0004> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/bab> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/bab/0002> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0001/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0001> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0001/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0002/versi/20080104> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0002/versi/20080104/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/pasal/0002/versi/20080104> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0002/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0002> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0002/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/pasal/0003> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/a> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/a/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/a> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/b> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/b/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/b> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/c> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/c/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/c> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/d> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/d/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/d> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/e> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/e/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0001/huruf/e> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat> .
+<http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/pasal/0003/versi/20080104/ayat/0002> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0003/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0003> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0004/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/bab/0002/bagian/0004> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/bab> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0003/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/bab/0003> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/bab> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/bab/0004> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian/0001/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian/0001> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian/0002/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian/0002> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian/0003/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/bab/0004/bagian/0003> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0005> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/bab> .
+<http://example.org/legal/peraturan/uu/2008/3/bab/0005/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/bab/0005> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/mengingat> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0001> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0002> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0003/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0003> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0004/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0004> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0005> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0005/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0005> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0006> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0006/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0006> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0007> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0007/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0007> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0008> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0008/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/mengingat/huruf/0008> .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/menimbang> .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/a> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/a/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/b> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/b/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/b> .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/c> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/c/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/c> .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/d> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/d/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2008/3/menimbang/huruf/d> .

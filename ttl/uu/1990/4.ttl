@@ -1,528 +1,538 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1990/4> legal:documentHasBabSet <http://example.org/legal/document/uu/1990/4/bab> .
-<http://example.org/legal/document/uu/1990/4/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1990/4/bab/0001> .
-<http://example.org/legal/document/uu/1990/4/bab/0001> legal:babHasKey 1 .
-<http://example.org/legal/document/uu/1990/4/bab/0001> legal:babHasTitle "" .
-<http://example.org/legal/document/uu/1990/4/bab/0001> legal:babHasPasalSet <http://example.org/legal/document/uu/1990/4/bab/0001/pasals> .
-<http://example.org/legal/document/uu/1990/4/bab/0001/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/4/pasal/0001> .
-<http://example.org/legal/document/uu/1990/4/pasal/0001> legal:pasalHasKey 1 .
-<http://example.org/legal/document/uu/1990/4/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809> .
-<http://example.org/legal/document/uu/1990/4> legal:documentHasPasal <http://example.org/legal/document/uu/1990/4/pasal/0001> .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809> legal:pasalVersionHasVersionDate "1990-08-09"^^xsd:date .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809> legal:pasalVersionHasRawText "Dalam Undang-undang ini yang dimaksud dengan:\n1. Karya cetak adalah semua jenis terbitan dari setiap karya intelektual dan atau artistik yang dicetak dan digandakan dalam bentuk buku, majalah, surat kabar, peta, brosur, dan sejenisnya yang diperuntukkan bagi umum:\n2. Karya rekam adalah semua jenis rekaman dari setiap karya intelektual dan atau artistik yang direkam dan digandakan dalam bentuk pita, piringan, dan bentuk lain sesuai dengan perkembangan teknologi yang diperuntukkan bagi umum:\n3. Penerbit adalah setiap orang, persekutuan, badan hukum baik milik negara maupun swasta yang menerbitkan karya cetak:\n4. Pengusaha rekaman adalah setiap orang, persekutuan, badan hukum baik milik negara maupun swasta yang menghasilkan karya rekam:\n5. Perpustakaan Nasional adalah perpustakaan yang berkedudukan di ibu kota negara yang mempunyai tugas untuk menghimpun, menyimpan, melestarikan dan mendayagunakan semua karya cetak dan karya rekam yang dihasilkan di wilayah Republik Indonesia,\n6. Perpustakaan Daerah adalah perpustakaan yang berkedudukan di ibu kota propinsi yang diberi tugas untuk menghimpun, menyimpan, melestarikan dan mendayagunakan semua karya cetak dan karya rekam yang dihasilkan di daerah.\n" .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point> .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/description> legal:textHasTextString "Dalam Undang-undang ini yang dimaksud dengan:" .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/description> .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0001> .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0001> legal:pointHasKey "1" .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0001/text> legal:textHasTextString "Karya cetak adalah semua jenis terbitan dari setiap karya intelektual dan atau artistik yang dicetak dan digandakan dalam bentuk buku, majalah, surat kabar, peta, brosur, dan sejenisnya yang diperuntukkan bagi umum:" .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0001/text> .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0002> .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0002> legal:pointHasKey "2" .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0002/text> legal:textHasTextString "Karya rekam adalah semua jenis rekaman dari setiap karya intelektual dan atau artistik yang direkam dan digandakan dalam bentuk pita, piringan, dan bentuk lain sesuai dengan perkembangan teknologi yang diperuntukkan bagi umum:" .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0002/text> .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0003> .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0003> legal:pointHasKey "3" .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0003/text> legal:textHasTextString "Penerbit adalah setiap orang, persekutuan, badan hukum baik milik negara maupun swasta yang menerbitkan karya cetak:" .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0003> legal:pointHasText <http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0003/text> .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0004> .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0004> legal:pointHasKey "4" .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0004/text> legal:textHasTextString "Pengusaha rekaman adalah setiap orang, persekutuan, badan hukum baik milik negara maupun swasta yang menghasilkan karya rekam:" .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0004> legal:pointHasText <http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0004/text> .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0005> .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0005> legal:pointHasKey "5" .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0005/text> legal:textHasTextString "Perpustakaan Nasional adalah perpustakaan yang berkedudukan di ibu kota negara yang mempunyai tugas untuk menghimpun, menyimpan, melestarikan dan mendayagunakan semua karya cetak dan karya rekam yang dihasilkan di wilayah Republik Indonesia," .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0005> legal:pointHasText <http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0005/text> .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0006> .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0006> legal:pointHasKey "6" .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0006/text> legal:textHasTextString "Perpustakaan Daerah adalah perpustakaan yang berkedudukan di ibu kota propinsi yang diberi tugas untuk menghimpun, menyimpan, melestarikan dan mendayagunakan semua karya cetak dan karya rekam yang dihasilkan di daerah." .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0006> legal:pointHasText <http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0006/text> .
-<http://example.org/legal/document/uu/1990/4/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1990/4/bab/0002> .
-<http://example.org/legal/document/uu/1990/4/bab/0002> legal:babHasKey 2 .
-<http://example.org/legal/document/uu/1990/4/bab/0002> legal:babHasTitle "KEWAJIBAN SERAH-SIMPAN KARYA CETAK DAN KARYA REKAM" .
-<http://example.org/legal/document/uu/1990/4/bab/0002> legal:babHasPasalSet <http://example.org/legal/document/uu/1990/4/bab/0002/pasals> .
-<http://example.org/legal/document/uu/1990/4/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/4/pasal/0002> .
-<http://example.org/legal/document/uu/1990/4/pasal/0002> legal:pasalHasKey 2 .
-<http://example.org/legal/document/uu/1990/4/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/4/pasal/0002/version/19900809> .
-<http://example.org/legal/document/uu/1990/4> legal:documentHasPasal <http://example.org/legal/document/uu/1990/4/pasal/0002> .
-<http://example.org/legal/document/uu/1990/4/pasal/0002/version/19900809> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1990/4/pasal/0002/version/19900809> legal:pasalVersionHasVersionDate "1990-08-09"^^xsd:date .
-<http://example.org/legal/document/uu/1990/4/pasal/0002/version/19900809> legal:pasalVersionHasRawText "Setiap penerbit yang berada di wilayah negara Republik Indonesia, wajib menyerahkan 2 (dua) buah cetakan dari setiap judul karya cetak yang dihasilkan kepada Perpustakaan Nasional, dan sebuah kepada Perpustakaan Daerah di ibukota propinsi yang bersangkutan selambat-lambatnya 3 (tiga) bulan setelah diterbitkan." .
-<http://example.org/legal/document/uu/1990/4/pasal/0002/version/19900809/text> legal:textHasTextString "Setiap penerbit yang berada di wilayah negara Republik Indonesia, wajib menyerahkan 2 (dua) buah cetakan dari setiap judul karya cetak yang dihasilkan kepada Perpustakaan Nasional, dan sebuah kepada Perpustakaan Daerah di ibukota propinsi yang bersangkutan selambat-lambatnya 3 (tiga) bulan setelah diterbitkan." .
-<http://example.org/legal/document/uu/1990/4/pasal/0002/version/19900809> legal:pasalVersionHasText <http://example.org/legal/document/uu/1990/4/pasal/0002/version/19900809/text> .
-<http://example.org/legal/document/uu/1990/4/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/4/pasal/0003> .
-<http://example.org/legal/document/uu/1990/4/pasal/0003> legal:pasalHasKey 3 .
-<http://example.org/legal/document/uu/1990/4/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809> .
-<http://example.org/legal/document/uu/1990/4> legal:documentHasPasal <http://example.org/legal/document/uu/1990/4/pasal/0003> .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809> legal:pasalVersionHasVersionDate "1990-08-09"^^xsd:date .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809> legal:pasalVersionHasRawText "(1). Setiap pengusaha rekaman yang berada di wilayah negara Republik Indonesia wajib menyerahkan sebuah rekaman dari setiap judul karya rekam yang dihasilkan kepada Perpustakaan Nasional, dan sebuah kepada Perpustakaan Daerah yang bersangkutan, selambat-lambatnya 3 (tiga) bulan setelah proses rekaman selesai.\n(2). Dalam hal karya rekam tersebut menggunakan bahan baku yang memerlukan penyimpanan secara khusus, maka kewajiban menyerahkan sebagaimana dimaksud dalam ayat (1), dilakukan kepada Perpustakaan Nasional atau badan lain yang ditetapkan oleh Pemerintah.\n(3). Ketentuan mengenai badan penyimpan hasil rekaman sebagaimana dimaksud dalam ayat (2) diatur lebih lanjut dengan Peraturan Pemerintah." .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat> .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0001> .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0001> legal:ayatHasKey 1 .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0001> legal:ayatHasRawText "Setiap pengusaha rekaman yang berada di wilayah negara Republik Indonesia wajib menyerahkan sebuah rekaman dari setiap judul karya rekam yang dihasilkan kepada Perpustakaan Nasional, dan sebuah kepada Perpustakaan Daerah yang bersangkutan, selambat-lambatnya 3 (tiga) bulan setelah proses rekaman selesai." .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0001/text> legal:textHasTextString "Setiap pengusaha rekaman yang berada di wilayah negara Republik Indonesia wajib menyerahkan sebuah rekaman dari setiap judul karya rekam yang dihasilkan kepada Perpustakaan Nasional, dan sebuah kepada Perpustakaan Daerah yang bersangkutan, selambat-lambatnya 3 (tiga) bulan setelah proses rekaman selesai." .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0001/text> .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0002> .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0002> legal:ayatHasKey 2 .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0002> legal:ayatHasRawText "Dalam hal karya rekam tersebut menggunakan bahan baku yang memerlukan penyimpanan secara khusus, maka kewajiban menyerahkan sebagaimana dimaksud dalam ayat (1), dilakukan kepada Perpustakaan Nasional atau badan lain yang ditetapkan oleh Pemerintah." .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0002/text> legal:textHasTextString "Dalam hal karya rekam tersebut menggunakan bahan baku yang memerlukan penyimpanan secara khusus, maka kewajiban menyerahkan sebagaimana dimaksud dalam ayat (1), dilakukan kepada Perpustakaan Nasional atau badan lain yang ditetapkan oleh Pemerintah." .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0002/text> .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0001> .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0003> .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0003> legal:ayatHasKey 3 .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0003> legal:ayatHasRawText "Ketentuan mengenai badan penyimpan hasil rekaman sebagaimana dimaksud dalam ayat (2) diatur lebih lanjut dengan Peraturan Pemerintah." .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0003/text> legal:textHasTextString "Ketentuan mengenai badan penyimpan hasil rekaman sebagaimana dimaksud dalam ayat (2) diatur lebih lanjut dengan Peraturan Pemerintah." .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0003/text> .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0002> .
-<http://example.org/legal/document/uu/1990/4/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/4/pasal/0004> .
-<http://example.org/legal/document/uu/1990/4/pasal/0004> legal:pasalHasKey 4 .
-<http://example.org/legal/document/uu/1990/4/pasal/0004> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/4/pasal/0004/version/19900809> .
-<http://example.org/legal/document/uu/1990/4> legal:documentHasPasal <http://example.org/legal/document/uu/1990/4/pasal/0004> .
-<http://example.org/legal/document/uu/1990/4/pasal/0004/version/19900809> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1990/4/pasal/0004/version/19900809> legal:pasalVersionHasVersionDate "1990-08-09"^^xsd:date .
-<http://example.org/legal/document/uu/1990/4/pasal/0004/version/19900809> legal:pasalVersionHasRawText "Kewajiban serah-simpan karya cetak dan karya rekam sebagaimana dimaksud dalam Pasal 2 dan Pasal 3, berlaku pula terhadap setiap warga negara Republik Indonesia yang hasil karyanya diterbitkan atau direkam di luar negeri." .
-<http://example.org/legal/document/uu/1990/4/pasal/0004/version/19900809/text> legal:textHasTextString "Kewajiban serah-simpan karya cetak dan karya rekam sebagaimana dimaksud dalam Pasal 2 dan Pasal 3, berlaku pula terhadap setiap warga negara Republik Indonesia yang hasil karyanya diterbitkan atau direkam di luar negeri." .
-<http://example.org/legal/document/uu/1990/4/pasal/0004/version/19900809> legal:pasalVersionHasText <http://example.org/legal/document/uu/1990/4/pasal/0004/version/19900809/text> .
-<http://example.org/legal/document/uu/1990/4/pasal/0004/version/19900809/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/4/pasal/0003> .
-<http://example.org/legal/document/uu/1990/4/pasal/0004/version/19900809/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/4/pasal/0002> .
-<http://example.org/legal/document/uu/1990/4/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/4/pasal/0005> .
-<http://example.org/legal/document/uu/1990/4/pasal/0005> legal:pasalHasKey 5 .
-<http://example.org/legal/document/uu/1990/4/pasal/0005> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/4/pasal/0005/version/19900809> .
-<http://example.org/legal/document/uu/1990/4> legal:documentHasPasal <http://example.org/legal/document/uu/1990/4/pasal/0005> .
-<http://example.org/legal/document/uu/1990/4/pasal/0005/version/19900809> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1990/4/pasal/0005/version/19900809> legal:pasalVersionHasVersionDate "1990-08-09"^^xsd:date .
-<http://example.org/legal/document/uu/1990/4/pasal/0005/version/19900809> legal:pasalVersionHasRawText "Kewajiban serah-simpan karya cetak dan karya rekam yang diatur dalam Undang-undang ini bertujuan untuk mewujudkan koleksi nasional dan melestarikannya sebagai hasil budaya bangsa dalam rangka mencerdaskan kehidupan bangsa." .
-<http://example.org/legal/document/uu/1990/4/pasal/0005/version/19900809/text> legal:textHasTextString "Kewajiban serah-simpan karya cetak dan karya rekam yang diatur dalam Undang-undang ini bertujuan untuk mewujudkan koleksi nasional dan melestarikannya sebagai hasil budaya bangsa dalam rangka mencerdaskan kehidupan bangsa." .
-<http://example.org/legal/document/uu/1990/4/pasal/0005/version/19900809> legal:pasalVersionHasText <http://example.org/legal/document/uu/1990/4/pasal/0005/version/19900809/text> .
-<http://example.org/legal/document/uu/1990/4/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/4/pasal/0006> .
-<http://example.org/legal/document/uu/1990/4/pasal/0006> legal:pasalHasKey 6 .
-<http://example.org/legal/document/uu/1990/4/pasal/0006> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809> .
-<http://example.org/legal/document/uu/1990/4> legal:documentHasPasal <http://example.org/legal/document/uu/1990/4/pasal/0006> .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809> legal:pasalVersionHasVersionDate "1990-08-09"^^xsd:date .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809> legal:pasalVersionHasRawText "(1). Setiap orang yang memasukkan karya cetak dan atau karya rekam mengenai Indonesia dari luar negeri lebih dari 10 (sepuluh) buah setiap judulnya dengan maksud untuk diperdagangkan, wajib menyerahkan sebuah setiap judulnya kepada Perpustakaan Nasional, selambat-lambatnya 1 (satu) bulan setelah diterima oleh yang bersangkutan.\n(2). Setiap orang yang memasukkan karya cetak dan atau karya rekam mengenai Indonesia dari luar negeri kurang dari 10 (sepuluh) buah setiap judul, tetapi dalam jangka waktu 2 (dua) tahun memasukkan lagi karya yang sama sehingga jumlahnya melebihi 10 (sepuluh) buah, maka berlaku ketentuan Pasal 6 ayat (1).\n(3). Pelaksanaan kewajiban serah-simpan karya rekam dengan menggunakan bahan baku yang memerlukan penyimpanan secara khusus, diatur lebih lanjut dengan Peraturan Pemerintah." .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat> .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0001> .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0001> legal:ayatHasKey 1 .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0001> legal:ayatHasRawText "Setiap orang yang memasukkan karya cetak dan atau karya rekam mengenai Indonesia dari luar negeri lebih dari 10 (sepuluh) buah setiap judulnya dengan maksud untuk diperdagangkan, wajib menyerahkan sebuah setiap judulnya kepada Perpustakaan Nasional, selambat-lambatnya 1 (satu) bulan setelah diterima oleh yang bersangkutan." .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0001/text> legal:textHasTextString "Setiap orang yang memasukkan karya cetak dan atau karya rekam mengenai Indonesia dari luar negeri lebih dari 10 (sepuluh) buah setiap judulnya dengan maksud untuk diperdagangkan, wajib menyerahkan sebuah setiap judulnya kepada Perpustakaan Nasional, selambat-lambatnya 1 (satu) bulan setelah diterima oleh yang bersangkutan." .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0001/text> .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0002> .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0002> legal:ayatHasKey 2 .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0002> legal:ayatHasRawText "Setiap orang yang memasukkan karya cetak dan atau karya rekam mengenai Indonesia dari luar negeri kurang dari 10 (sepuluh) buah setiap judul, tetapi dalam jangka waktu 2 (dua) tahun memasukkan lagi karya yang sama sehingga jumlahnya melebihi 10 (sepuluh) buah, maka berlaku ketentuan Pasal 6 ayat (1)." .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0002/text> legal:textHasTextString "Setiap orang yang memasukkan karya cetak dan atau karya rekam mengenai Indonesia dari luar negeri kurang dari 10 (sepuluh) buah setiap judul, tetapi dalam jangka waktu 2 (dua) tahun memasukkan lagi karya yang sama sehingga jumlahnya melebihi 10 (sepuluh) buah, maka berlaku ketentuan Pasal 6 ayat (1)." .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0002/text> .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0001> .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0003> .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0003> legal:ayatHasKey 3 .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0003> legal:ayatHasRawText "Pelaksanaan kewajiban serah-simpan karya rekam dengan menggunakan bahan baku yang memerlukan penyimpanan secara khusus, diatur lebih lanjut dengan Peraturan Pemerintah." .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0003/text> legal:textHasTextString "Pelaksanaan kewajiban serah-simpan karya rekam dengan menggunakan bahan baku yang memerlukan penyimpanan secara khusus, diatur lebih lanjut dengan Peraturan Pemerintah." .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0003/text> .
-<http://example.org/legal/document/uu/1990/4/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/4/pasal/0007> .
-<http://example.org/legal/document/uu/1990/4/pasal/0007> legal:pasalHasKey 7 .
-<http://example.org/legal/document/uu/1990/4/pasal/0007> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/4/pasal/0007/version/19900809> .
-<http://example.org/legal/document/uu/1990/4> legal:documentHasPasal <http://example.org/legal/document/uu/1990/4/pasal/0007> .
-<http://example.org/legal/document/uu/1990/4/pasal/0007/version/19900809> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1990/4/pasal/0007/version/19900809> legal:pasalVersionHasVersionDate "1990-08-09"^^xsd:date .
-<http://example.org/legal/document/uu/1990/4/pasal/0007/version/19900809> legal:pasalVersionHasRawText "Karya cetak dan karya rekam yang diserahkan dan disimpan sesuai dengan ketentuan dalam Undang-undang ini, tidak dimanfaatkan untuk tujuan komersial." .
-<http://example.org/legal/document/uu/1990/4/pasal/0007/version/19900809/text> legal:textHasTextString "Karya cetak dan karya rekam yang diserahkan dan disimpan sesuai dengan ketentuan dalam Undang-undang ini, tidak dimanfaatkan untuk tujuan komersial." .
-<http://example.org/legal/document/uu/1990/4/pasal/0007/version/19900809> legal:pasalVersionHasText <http://example.org/legal/document/uu/1990/4/pasal/0007/version/19900809/text> .
-<http://example.org/legal/document/uu/1990/4/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/4/pasal/0008> .
-<http://example.org/legal/document/uu/1990/4/pasal/0008> legal:pasalHasKey 8 .
-<http://example.org/legal/document/uu/1990/4/pasal/0008> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809> .
-<http://example.org/legal/document/uu/1990/4> legal:documentHasPasal <http://example.org/legal/document/uu/1990/4/pasal/0008> .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809> legal:pasalVersionHasVersionDate "1990-08-09"^^xsd:date .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809> legal:pasalVersionHasRawText "(1). Setiap penerbit dan pengusaha rekaman wajib menyerahkan daftar judul terbitan atau rekamannya kepada Perpustakaan Nasional dan Perpustakaan Daerah di propinsi yang bersangkutan sekali setiap 6 (enam) bulan.\n(2). Dalam hal karya rekam yang berupa rekaman ceritera dan dokumenter penyerahan daftar judul tersebut dilaksanakan kepada Perpustakaan Nasional atau badan lain yang ditetapkan oleh Pemerintah.\n(3). Kewajiban menyerahkan daftar karya cetak dan karya rekam sebagaimana dimaksud dalam ayat (1) dan ayat (2) berlaku pula bagi setiap orang yang memasukkan karya cetak dan atau karya rekam mengenai Indonesia." .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat> .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0001> .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0001> legal:ayatHasKey 1 .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0001> legal:ayatHasRawText "Setiap penerbit dan pengusaha rekaman wajib menyerahkan daftar judul terbitan atau rekamannya kepada Perpustakaan Nasional dan Perpustakaan Daerah di propinsi yang bersangkutan sekali setiap 6 (enam) bulan." .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0001/text> legal:textHasTextString "Setiap penerbit dan pengusaha rekaman wajib menyerahkan daftar judul terbitan atau rekamannya kepada Perpustakaan Nasional dan Perpustakaan Daerah di propinsi yang bersangkutan sekali setiap 6 (enam) bulan." .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0001/text> .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0002> .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0002> legal:ayatHasKey 2 .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0002> legal:ayatHasRawText "Dalam hal karya rekam yang berupa rekaman ceritera dan dokumenter penyerahan daftar judul tersebut dilaksanakan kepada Perpustakaan Nasional atau badan lain yang ditetapkan oleh Pemerintah." .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0002/text> legal:textHasTextString "Dalam hal karya rekam yang berupa rekaman ceritera dan dokumenter penyerahan daftar judul tersebut dilaksanakan kepada Perpustakaan Nasional atau badan lain yang ditetapkan oleh Pemerintah." .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0002/text> .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0003> .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0003> legal:ayatHasKey 3 .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0003> legal:ayatHasRawText "Kewajiban menyerahkan daftar karya cetak dan karya rekam sebagaimana dimaksud dalam ayat (1) dan ayat (2) berlaku pula bagi setiap orang yang memasukkan karya cetak dan atau karya rekam mengenai Indonesia." .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0003/text> legal:textHasTextString "Kewajiban menyerahkan daftar karya cetak dan karya rekam sebagaimana dimaksud dalam ayat (1) dan ayat (2) berlaku pula bagi setiap orang yang memasukkan karya cetak dan atau karya rekam mengenai Indonesia." .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0003/text> .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0002> .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0001> .
-<http://example.org/legal/document/uu/1990/4/bab/0002/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/4/pasal/0009> .
-<http://example.org/legal/document/uu/1990/4/pasal/0009> legal:pasalHasKey 9 .
-<http://example.org/legal/document/uu/1990/4/pasal/0009> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/4/pasal/0009/version/19900809> .
-<http://example.org/legal/document/uu/1990/4> legal:documentHasPasal <http://example.org/legal/document/uu/1990/4/pasal/0009> .
-<http://example.org/legal/document/uu/1990/4/pasal/0009/version/19900809> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1990/4/pasal/0009/version/19900809> legal:pasalVersionHasVersionDate "1990-08-09"^^xsd:date .
-<http://example.org/legal/document/uu/1990/4/pasal/0009/version/19900809> legal:pasalVersionHasRawText "Ketentuan pelaksanaan kewajiban serah-simpan karya cetak dan karya rekam diatur lebih lanjut dengan Peraturan Pemerintah." .
-<http://example.org/legal/document/uu/1990/4/pasal/0009/version/19900809/text> legal:textHasTextString "Ketentuan pelaksanaan kewajiban serah-simpan karya cetak dan karya rekam diatur lebih lanjut dengan Peraturan Pemerintah." .
-<http://example.org/legal/document/uu/1990/4/pasal/0009/version/19900809> legal:pasalVersionHasText <http://example.org/legal/document/uu/1990/4/pasal/0009/version/19900809/text> .
-<http://example.org/legal/document/uu/1990/4/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1990/4/bab/0003> .
-<http://example.org/legal/document/uu/1990/4/bab/0003> legal:babHasKey 3 .
-<http://example.org/legal/document/uu/1990/4/bab/0003> legal:babHasTitle "PENGELOLAAN HASIL SERAH-SIMPAN KARYA CETAK DAN KARYA REKAM" .
-<http://example.org/legal/document/uu/1990/4/bab/0003> legal:babHasPasalSet <http://example.org/legal/document/uu/1990/4/bab/0003/pasals> .
-<http://example.org/legal/document/uu/1990/4/bab/0003/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/4/pasal/0010> .
-<http://example.org/legal/document/uu/1990/4/pasal/0010> legal:pasalHasKey 10 .
-<http://example.org/legal/document/uu/1990/4/pasal/0010> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809> .
-<http://example.org/legal/document/uu/1990/4> legal:documentHasPasal <http://example.org/legal/document/uu/1990/4/pasal/0010> .
-<http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809> legal:pasalVersionHasVersionDate "1990-08-09"^^xsd:date .
-<http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809> legal:pasalVersionHasRawText "(1). Pengelolaan karya cetak dan karya rekam yang diserahkan untuk disimpan berdasarkan Undang-undang ini dilakukan oleh Perpustakaan Nasional dan Perpustakaan Daerah yang menerimanya, atau badan lain yang ditetapkan oleh Pemerintah dalam hal karya rekam yang berupa film ceritera atau dokumenter.\n(2). Ketentuan lebih lanjut mengenai pengelolaan karya cetak dan karya rekam sebagaimana dimaksud dalam ayat (1) diatur lebih lanjut dengan Peraturan Pemerintah." .
-<http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809/ayat> .
-<http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809/ayat/0001> .
-<http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809/ayat/0001> legal:ayatHasKey 1 .
-<http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809/ayat/0001> legal:ayatHasRawText "Pengelolaan karya cetak dan karya rekam yang diserahkan untuk disimpan berdasarkan Undang-undang ini dilakukan oleh Perpustakaan Nasional dan Perpustakaan Daerah yang menerimanya, atau badan lain yang ditetapkan oleh Pemerintah dalam hal karya rekam yang berupa film ceritera atau dokumenter." .
-<http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809/ayat/0001/text> legal:textHasTextString "Pengelolaan karya cetak dan karya rekam yang diserahkan untuk disimpan berdasarkan Undang-undang ini dilakukan oleh Perpustakaan Nasional dan Perpustakaan Daerah yang menerimanya, atau badan lain yang ditetapkan oleh Pemerintah dalam hal karya rekam yang berupa film ceritera atau dokumenter." .
-<http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809/ayat/0001/text> .
-<http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809/ayat/0002> .
-<http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809/ayat/0002> legal:ayatHasKey 2 .
-<http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809/ayat/0002> legal:ayatHasRawText "Ketentuan lebih lanjut mengenai pengelolaan karya cetak dan karya rekam sebagaimana dimaksud dalam ayat (1) diatur lebih lanjut dengan Peraturan Pemerintah." .
-<http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809/ayat/0002/text> legal:textHasTextString "Ketentuan lebih lanjut mengenai pengelolaan karya cetak dan karya rekam sebagaimana dimaksud dalam ayat (1) diatur lebih lanjut dengan Peraturan Pemerintah." .
-<http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809/ayat/0002/text> .
-<http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809/ayat/0001> .
-<http://example.org/legal/document/uu/1990/4/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1990/4/bab/0004> .
-<http://example.org/legal/document/uu/1990/4/bab/0004> legal:babHasKey 4 .
-<http://example.org/legal/document/uu/1990/4/bab/0004> legal:babHasTitle "KETENTUAN PIDANA" .
-<http://example.org/legal/document/uu/1990/4/bab/0004> legal:babHasPasalSet <http://example.org/legal/document/uu/1990/4/bab/0004/pasals> .
-<http://example.org/legal/document/uu/1990/4/bab/0004/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/4/pasal/0011> .
-<http://example.org/legal/document/uu/1990/4/pasal/0011> legal:pasalHasKey 11 .
-<http://example.org/legal/document/uu/1990/4/pasal/0011> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809> .
-<http://example.org/legal/document/uu/1990/4> legal:documentHasPasal <http://example.org/legal/document/uu/1990/4/pasal/0011> .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809> legal:pasalVersionHasVersionDate "1990-08-09"^^xsd:date .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809> legal:pasalVersionHasRawText "(1). Barang siapa melanggar ketentuan sebagaimana dimaksud dalam Pasal 2, Pasal 3, Pasal 4, Pasal 6, dan Pasal 7, dipidana dengan pidana kurungan selama-lamanya 6 (enam) bulan atau pidana denda setinggi-tingginya Rp 5.000.000,00 (lima juta rupiah).\n(2). Barang siapa melanggar ketentuan sebagaimana dimaksud dalam Pasal 8, dipidana dengan pidana kurungan selama-lamanya 3 (tiga) bulan atau pidana denda setinggi-tingginya Rp 2.500.000,00 (dua juta lima ratus ribu rupiah).\n(3). Tindak pidana sebagaimana dimaksud dalam ayat (1) dan ayat (2) adalah pelanggaran." .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat> .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0001> .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0001> legal:ayatHasKey 1 .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0001> legal:ayatHasRawText "Barang siapa melanggar ketentuan sebagaimana dimaksud dalam Pasal 2, Pasal 3, Pasal 4, Pasal 6, dan Pasal 7, dipidana dengan pidana kurungan selama-lamanya 6 (enam) bulan atau pidana denda setinggi-tingginya Rp 5.000.000,00 (lima juta rupiah)." .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0001/text> legal:textHasTextString "Barang siapa melanggar ketentuan sebagaimana dimaksud dalam Pasal 2, Pasal 3, Pasal 4, Pasal 6, dan Pasal 7, dipidana dengan pidana kurungan selama-lamanya 6 (enam) bulan atau pidana denda setinggi-tingginya Rp 5.000.000,00 (lima juta rupiah)." .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0001/text> .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/4/pasal/0007> .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/4/pasal/0006> .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/4/pasal/0004> .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/4/pasal/0003> .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/4/pasal/0002> .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0002> .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0002> legal:ayatHasKey 2 .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0002> legal:ayatHasRawText "Barang siapa melanggar ketentuan sebagaimana dimaksud dalam Pasal 8, dipidana dengan pidana kurungan selama-lamanya 3 (tiga) bulan atau pidana denda setinggi-tingginya Rp 2.500.000,00 (dua juta lima ratus ribu rupiah)." .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0002/text> legal:textHasTextString "Barang siapa melanggar ketentuan sebagaimana dimaksud dalam Pasal 8, dipidana dengan pidana kurungan selama-lamanya 3 (tiga) bulan atau pidana denda setinggi-tingginya Rp 2.500.000,00 (dua juta lima ratus ribu rupiah)." .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0002/text> .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/4/pasal/0008> .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0003> .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0003> legal:ayatHasKey 3 .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0003> legal:ayatHasRawText "Tindak pidana sebagaimana dimaksud dalam ayat (1) dan ayat (2) adalah pelanggaran." .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0003/text> legal:textHasTextString "Tindak pidana sebagaimana dimaksud dalam ayat (1) dan ayat (2) adalah pelanggaran." .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0003/text> .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0002> .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0001> .
-<http://example.org/legal/document/uu/1990/4/bab/0004/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/4/pasal/0012> .
-<http://example.org/legal/document/uu/1990/4/pasal/0012> legal:pasalHasKey 12 .
-<http://example.org/legal/document/uu/1990/4/pasal/0012> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/4/pasal/0012/version/19900809> .
-<http://example.org/legal/document/uu/1990/4> legal:documentHasPasal <http://example.org/legal/document/uu/1990/4/pasal/0012> .
-<http://example.org/legal/document/uu/1990/4/pasal/0012/version/19900809> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1990/4/pasal/0012/version/19900809> legal:pasalVersionHasVersionDate "1990-08-09"^^xsd:date .
-<http://example.org/legal/document/uu/1990/4/pasal/0012/version/19900809> legal:pasalVersionHasRawText "Pelaksanaan ketentuan pidana sebagaimana dimaksud dalam Pasal 11, tidak meniadakan kewajiban untuk tetap menyerahkan karya cetak atau karya rekam yang diatur dalam Undang-undang itu." .
-<http://example.org/legal/document/uu/1990/4/pasal/0012/version/19900809/text> legal:textHasTextString "Pelaksanaan ketentuan pidana sebagaimana dimaksud dalam Pasal 11, tidak meniadakan kewajiban untuk tetap menyerahkan karya cetak atau karya rekam yang diatur dalam Undang-undang itu." .
-<http://example.org/legal/document/uu/1990/4/pasal/0012/version/19900809> legal:pasalVersionHasText <http://example.org/legal/document/uu/1990/4/pasal/0012/version/19900809/text> .
-<http://example.org/legal/document/uu/1990/4/pasal/0012/version/19900809/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/4/pasal/0011> .
-<http://example.org/legal/document/uu/1990/4/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1990/4/bab/0005> .
-<http://example.org/legal/document/uu/1990/4/bab/0005> legal:babHasKey 5 .
-<http://example.org/legal/document/uu/1990/4/bab/0005> legal:babHasTitle "KETENTUAN LAIN" .
-<http://example.org/legal/document/uu/1990/4/bab/0005> legal:babHasPasalSet <http://example.org/legal/document/uu/1990/4/bab/0005/pasals> .
-<http://example.org/legal/document/uu/1990/4/bab/0005/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/4/pasal/0013> .
-<http://example.org/legal/document/uu/1990/4/pasal/0013> legal:pasalHasKey 13 .
-<http://example.org/legal/document/uu/1990/4/pasal/0013> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809> .
-<http://example.org/legal/document/uu/1990/4> legal:documentHasPasal <http://example.org/legal/document/uu/1990/4/pasal/0013> .
-<http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809> legal:pasalVersionHasVersionDate "1990-08-09"^^xsd:date .
-<http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809> legal:pasalVersionHasRawText "(1). Ketentuan Bab I sampai dengan Bab III dalam Undang-undang ini, berlaku pula bagi badan-badan Pemerintah yang menerbitkan dan atau memasukkan karya cetak dan karya rekam.\n(2). Pelaksanaan kewajiban serah-simpan karya cetak dan karya rekam sebagaimana dimaksud dalam ayat (1), diatur lebih lanjut dengan Peraturan Pemerintah." .
-<http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809/ayat> .
-<http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809/ayat/0001> .
-<http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809/ayat/0001> legal:ayatHasKey 1 .
-<http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809/ayat/0001> legal:ayatHasRawText "Ketentuan Bab I sampai dengan Bab III dalam Undang-undang ini, berlaku pula bagi badan-badan Pemerintah yang menerbitkan dan atau memasukkan karya cetak dan karya rekam." .
-<http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809/ayat/0001/text> legal:textHasTextString "Ketentuan Bab I sampai dengan Bab III dalam Undang-undang ini, berlaku pula bagi badan-badan Pemerintah yang menerbitkan dan atau memasukkan karya cetak dan karya rekam." .
-<http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809/ayat/0001/text> .
-<http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809/ayat/0002> .
-<http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809/ayat/0002> legal:ayatHasKey 2 .
-<http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809/ayat/0002> legal:ayatHasRawText "Pelaksanaan kewajiban serah-simpan karya cetak dan karya rekam sebagaimana dimaksud dalam ayat (1), diatur lebih lanjut dengan Peraturan Pemerintah." .
-<http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809/ayat/0002/text> legal:textHasTextString "Pelaksanaan kewajiban serah-simpan karya cetak dan karya rekam sebagaimana dimaksud dalam ayat (1), diatur lebih lanjut dengan Peraturan Pemerintah." .
-<http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809/ayat/0002/text> .
-<http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809/ayat/0001> .
-<http://example.org/legal/document/uu/1990/4/bab> legal:babSetHasBab <http://example.org/legal/document/uu/1990/4/bab/0006> .
-<http://example.org/legal/document/uu/1990/4/bab/0006> legal:babHasKey 6 .
-<http://example.org/legal/document/uu/1990/4/bab/0006> legal:babHasTitle "KETENTUAN PENUTUP" .
-<http://example.org/legal/document/uu/1990/4/bab/0006> legal:babHasPasalSet <http://example.org/legal/document/uu/1990/4/bab/0006/pasals> .
-<http://example.org/legal/document/uu/1990/4/bab/0006/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/4/pasal/0014> .
-<http://example.org/legal/document/uu/1990/4/pasal/0014> legal:pasalHasKey 14 .
-<http://example.org/legal/document/uu/1990/4/pasal/0014> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/4/pasal/0014/version/19900809> .
-<http://example.org/legal/document/uu/1990/4> legal:documentHasPasal <http://example.org/legal/document/uu/1990/4/pasal/0014> .
-<http://example.org/legal/document/uu/1990/4/pasal/0014/version/19900809> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1990/4/pasal/0014/version/19900809> legal:pasalVersionHasVersionDate "1990-08-09"^^xsd:date .
-<http://example.org/legal/document/uu/1990/4/pasal/0014/version/19900809> legal:pasalVersionHasRawText "Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/1990/4/pasal/0014/version/19900809/text> legal:textHasTextString "Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/1990/4/pasal/0014/version/19900809> legal:pasalVersionHasText <http://example.org/legal/document/uu/1990/4/pasal/0014/version/19900809/text> .
-<http://example.org/legal/document/uu/1990/4> legal:documentHasDisahkanDate "1990-08-09"^^xsd:date .
-<http://example.org/legal/document/uu/1990/4> legal:documentMengingat <http://example.org/legal/document/uu/1990/4/mengingat> .
-<http://example.org/legal/document/uu/1990/4/mengingat/text> legal:textHasTextString "Pasal S ayat (1) dan Pasal 20 ayat (1) Undang-Undang Dasar 1945, Dengan persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA, MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG SERAH-SIMPAN KARYA CETAK DAN KARYA REKAM. BAB |" .
-<http://example.org/legal/document/uu/1990/4/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/1990/4/mengingat/text> .
-<http://example.org/legal/document/uu/1990/4> legal:documentMenimbang <http://example.org/legal/document/uu/1990/4/menimbang> .
-<http://example.org/legal/document/uu/1990/4/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/1990/4/menimbang/point> .
-<http://example.org/legal/document/uu/1990/4/menimbang/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/1990/4/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1990/4/menimbang/point/description> .
-<http://example.org/legal/document/uu/1990/4/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/4/menimbang/point/a> .
-<http://example.org/legal/document/uu/1990/4/menimbang/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/1990/4/menimbang/point/a/text> legal:textHasTextString "bahwa Undang-Undang Dasar 1945 mengamanatkan upaya untuk mencerdaskan kehidupan bangsa dan memajukan kebudayaan nasional," .
-<http://example.org/legal/document/uu/1990/4/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/1990/4/menimbang/point/a/text> .
-<http://example.org/legal/document/uu/1990/4/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/4/menimbang/point/b> .
-<http://example.org/legal/document/uu/1990/4/menimbang/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/1990/4/menimbang/point/b/text> legal:textHasTextString "bahwa karya cetak dan karya rekam merupakan salah satu hasil budaya bangsa yang sangat penting dalam menunj ang pembangunan nasional pada umumnya, khususnya pembangunan pendidikan, pengembangan ilmu pengetahuan dan teknologi, penelitian dan penyebaran informasi serta pelestarian kekayaan budaya bangsa yang berdasarkan Pancasila," .
-<http://example.org/legal/document/uu/1990/4/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/1990/4/menimbang/point/b/text> .
-<http://example.org/legal/document/uu/1990/4/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/4/menimbang/point/c> .
-<http://example.org/legal/document/uu/1990/4/menimbang/point/c> legal:pointHasKey "c" .
-<http://example.org/legal/document/uu/1990/4/menimbang/point/c/text> legal:textHasTextString "bahwa dalam rangka pemanfaatan hasil budaya bangsa tersebut, karya cetak dan karya rekam perlu dihimpun, disimpan, dipelihara, dan dilestarikan di suatu tempat tertentu sebagai koleksi nasional:" .
-<http://example.org/legal/document/uu/1990/4/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/1990/4/menimbang/point/c/text> .
-<http://example.org/legal/document/uu/1990/4/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/4/menimbang/point/d> .
-<http://example.org/legal/document/uu/1990/4/menimbang/point/d> legal:pointHasKey "d" .
-<http://example.org/legal/document/uu/1990/4/menimbang/point/d/text> legal:textHasTextString "bahwa sehubungan dengan hal tersebut di atas, dipandang perlu menetapkan Undang-undang tentang Serah-Simpan Karya Cetak dan Karya Rekam," .
-<http://example.org/legal/document/uu/1990/4/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/1990/4/menimbang/point/d/text> .
-<http://example.org/legal/document/uu/1990/4> legal:documentHasDisahkanPengesah "Diundangkan di Jakarta" .
-<http://example.org/legal/document/uu/1990/4> legal:documentHasDisahkanLocation "Jakarta" .
-<http://example.org/legal/document/uu/1990/4> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA" .
-<http://example.org/legal/document/uu/1990/4> a legal:Document .
-<http://example.org/legal/document/uu/1990/4/bab> a legal:BabSet .
-<http://example.org/legal/document/uu/1990/4/bab/0001> a legal:Bab .
-<http://example.org/legal/document/uu/1990/4/bab/0001/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/1990/4/pasal/0001> a legal:Pasal .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0001> a legal:Point .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0002> a legal:Point .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0003> a legal:Point .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0003/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0004> a legal:Point .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0004/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0005> a legal:Point .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0005/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0006> a legal:Point .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0006/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/bab/0002> a legal:Bab .
-<http://example.org/legal/document/uu/1990/4/bab/0002/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/1990/4/pasal/0002> a legal:Pasal .
-<http://example.org/legal/document/uu/1990/4/pasal/0002/version/19900809> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1990/4/pasal/0002/version/19900809/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/pasal/0003> a legal:Pasal .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat> a legal:AyatSet .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0001> a legal:Ayat .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0002> a legal:Ayat .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0003> a legal:Ayat .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0003/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/pasal/0004> a legal:Pasal .
-<http://example.org/legal/document/uu/1990/4/pasal/0004/version/19900809> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1990/4/pasal/0004/version/19900809/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/pasal/0005> a legal:Pasal .
-<http://example.org/legal/document/uu/1990/4/pasal/0005/version/19900809> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1990/4/pasal/0005/version/19900809/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/pasal/0006> a legal:Pasal .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat> a legal:AyatSet .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0001> a legal:Ayat .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0002> a legal:Ayat .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0003> a legal:Ayat .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0003/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/pasal/0007> a legal:Pasal .
-<http://example.org/legal/document/uu/1990/4/pasal/0007/version/19900809> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1990/4/pasal/0007/version/19900809/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/pasal/0008> a legal:Pasal .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat> a legal:AyatSet .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0001> a legal:Ayat .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0002> a legal:Ayat .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0003> a legal:Ayat .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0003/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/pasal/0009> a legal:Pasal .
-<http://example.org/legal/document/uu/1990/4/pasal/0009/version/19900809> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1990/4/pasal/0009/version/19900809/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/bab/0003> a legal:Bab .
-<http://example.org/legal/document/uu/1990/4/bab/0003/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/1990/4/pasal/0010> a legal:Pasal .
-<http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809/ayat> a legal:AyatSet .
-<http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809/ayat/0001> a legal:Ayat .
-<http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809/ayat/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809/ayat/0002> a legal:Ayat .
-<http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809/ayat/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/bab/0004> a legal:Bab .
-<http://example.org/legal/document/uu/1990/4/bab/0004/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/1990/4/pasal/0011> a legal:Pasal .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat> a legal:AyatSet .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0001> a legal:Ayat .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0002> a legal:Ayat .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0003> a legal:Ayat .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0003/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/pasal/0012> a legal:Pasal .
-<http://example.org/legal/document/uu/1990/4/pasal/0012/version/19900809> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1990/4/pasal/0012/version/19900809/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/bab/0005> a legal:Bab .
-<http://example.org/legal/document/uu/1990/4/bab/0005/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/1990/4/pasal/0013> a legal:Pasal .
-<http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809/ayat> a legal:AyatSet .
-<http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809/ayat/0001> a legal:Ayat .
-<http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809/ayat/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809/ayat/0002> a legal:Ayat .
-<http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809/ayat/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/bab/0006> a legal:Bab .
-<http://example.org/legal/document/uu/1990/4/bab/0006/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/1990/4/pasal/0014> a legal:Pasal .
-<http://example.org/legal/document/uu/1990/4/pasal/0014/version/19900809> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1990/4/pasal/0014/version/19900809/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/mengingat/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/mengingat> a legal:Mengingat .
-<http://example.org/legal/document/uu/1990/4/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/1990/4/menimbang/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/menimbang/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1990/4/menimbang/point/a> a legal:Point .
-<http://example.org/legal/document/uu/1990/4/menimbang/point/a/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/menimbang/point/b> a legal:Point .
-<http://example.org/legal/document/uu/1990/4/menimbang/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/menimbang/point/c> a legal:Point .
-<http://example.org/legal/document/uu/1990/4/menimbang/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/menimbang/point/d> a legal:Point .
-<http://example.org/legal/document/uu/1990/4/menimbang/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/4/bab> legal:partOf <http://example.org/legal/document/uu/1990/4> .
-<http://example.org/legal/document/uu/1990/4/bab/0001> legal:partOf <http://example.org/legal/document/uu/1990/4/bab> .
-<http://example.org/legal/document/uu/1990/4/bab/0001/pasals> legal:partOf <http://example.org/legal/document/uu/1990/4/bab/0001> .
-<http://example.org/legal/document/uu/1990/4/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1990/4/bab/0001/pasals> .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0001> .
-<http://example.org/legal/document/uu/1990/4/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1990/4> .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809> .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0001> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point> .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0001/text> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0001> .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0002> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point> .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0002/text> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0002> .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0003> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point> .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0003/text> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0003> .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0004> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point> .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0004/text> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0004> .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0005> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point> .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0005/text> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0005> .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0006> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point> .
-<http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0006/text> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0001/version/19900809/point/0006> .
-<http://example.org/legal/document/uu/1990/4/bab/0002> legal:partOf <http://example.org/legal/document/uu/1990/4/bab> .
-<http://example.org/legal/document/uu/1990/4/bab/0002/pasals> legal:partOf <http://example.org/legal/document/uu/1990/4/bab/0002> .
-<http://example.org/legal/document/uu/1990/4/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1990/4/bab/0002/pasals> .
-<http://example.org/legal/document/uu/1990/4/pasal/0002/version/19900809> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0002> .
-<http://example.org/legal/document/uu/1990/4/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1990/4> .
-<http://example.org/legal/document/uu/1990/4/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1990/4/bab/0002/pasals> .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0003> .
-<http://example.org/legal/document/uu/1990/4/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1990/4> .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809> .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat> .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0001> .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat> .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0002> .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat> .
-<http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0003/version/19900809/ayat/0003> .
-<http://example.org/legal/document/uu/1990/4/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1990/4/bab/0002/pasals> .
-<http://example.org/legal/document/uu/1990/4/pasal/0004/version/19900809> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0004> .
-<http://example.org/legal/document/uu/1990/4/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1990/4> .
-<http://example.org/legal/document/uu/1990/4/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1990/4/bab/0002/pasals> .
-<http://example.org/legal/document/uu/1990/4/pasal/0005/version/19900809> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0005> .
-<http://example.org/legal/document/uu/1990/4/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1990/4> .
-<http://example.org/legal/document/uu/1990/4/pasal/0006> legal:partOf <http://example.org/legal/document/uu/1990/4/bab/0002/pasals> .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0006> .
-<http://example.org/legal/document/uu/1990/4/pasal/0006> legal:partOf <http://example.org/legal/document/uu/1990/4> .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809> .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat> .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0001> .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat> .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0002> .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat> .
-<http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0006/version/19900809/ayat/0003> .
-<http://example.org/legal/document/uu/1990/4/pasal/0007> legal:partOf <http://example.org/legal/document/uu/1990/4/bab/0002/pasals> .
-<http://example.org/legal/document/uu/1990/4/pasal/0007/version/19900809> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0007> .
-<http://example.org/legal/document/uu/1990/4/pasal/0007> legal:partOf <http://example.org/legal/document/uu/1990/4> .
-<http://example.org/legal/document/uu/1990/4/pasal/0008> legal:partOf <http://example.org/legal/document/uu/1990/4/bab/0002/pasals> .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0008> .
-<http://example.org/legal/document/uu/1990/4/pasal/0008> legal:partOf <http://example.org/legal/document/uu/1990/4> .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809> .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat> .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0001> .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat> .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0002> .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat> .
-<http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0008/version/19900809/ayat/0003> .
-<http://example.org/legal/document/uu/1990/4/pasal/0009> legal:partOf <http://example.org/legal/document/uu/1990/4/bab/0002/pasals> .
-<http://example.org/legal/document/uu/1990/4/pasal/0009/version/19900809> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0009> .
-<http://example.org/legal/document/uu/1990/4/pasal/0009> legal:partOf <http://example.org/legal/document/uu/1990/4> .
-<http://example.org/legal/document/uu/1990/4/bab/0003> legal:partOf <http://example.org/legal/document/uu/1990/4/bab> .
-<http://example.org/legal/document/uu/1990/4/bab/0003/pasals> legal:partOf <http://example.org/legal/document/uu/1990/4/bab/0003> .
-<http://example.org/legal/document/uu/1990/4/pasal/0010> legal:partOf <http://example.org/legal/document/uu/1990/4/bab/0003/pasals> .
-<http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0010> .
-<http://example.org/legal/document/uu/1990/4/pasal/0010> legal:partOf <http://example.org/legal/document/uu/1990/4> .
-<http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809/ayat> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809> .
-<http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809/ayat> .
-<http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809/ayat/0001> .
-<http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809/ayat> .
-<http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0010/version/19900809/ayat/0002> .
-<http://example.org/legal/document/uu/1990/4/bab/0004> legal:partOf <http://example.org/legal/document/uu/1990/4/bab> .
-<http://example.org/legal/document/uu/1990/4/bab/0004/pasals> legal:partOf <http://example.org/legal/document/uu/1990/4/bab/0004> .
-<http://example.org/legal/document/uu/1990/4/pasal/0011> legal:partOf <http://example.org/legal/document/uu/1990/4/bab/0004/pasals> .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0011> .
-<http://example.org/legal/document/uu/1990/4/pasal/0011> legal:partOf <http://example.org/legal/document/uu/1990/4> .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809> .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat> .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0001> .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat> .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0002> .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat> .
-<http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0011/version/19900809/ayat/0003> .
-<http://example.org/legal/document/uu/1990/4/pasal/0012> legal:partOf <http://example.org/legal/document/uu/1990/4/bab/0004/pasals> .
-<http://example.org/legal/document/uu/1990/4/pasal/0012/version/19900809> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0012> .
-<http://example.org/legal/document/uu/1990/4/pasal/0012> legal:partOf <http://example.org/legal/document/uu/1990/4> .
-<http://example.org/legal/document/uu/1990/4/bab/0005> legal:partOf <http://example.org/legal/document/uu/1990/4/bab> .
-<http://example.org/legal/document/uu/1990/4/bab/0005/pasals> legal:partOf <http://example.org/legal/document/uu/1990/4/bab/0005> .
-<http://example.org/legal/document/uu/1990/4/pasal/0013> legal:partOf <http://example.org/legal/document/uu/1990/4/bab/0005/pasals> .
-<http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0013> .
-<http://example.org/legal/document/uu/1990/4/pasal/0013> legal:partOf <http://example.org/legal/document/uu/1990/4> .
-<http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809/ayat> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809> .
-<http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809/ayat> .
-<http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809/ayat/0001> .
-<http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809/ayat> .
-<http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0013/version/19900809/ayat/0002> .
-<http://example.org/legal/document/uu/1990/4/bab/0006> legal:partOf <http://example.org/legal/document/uu/1990/4/bab> .
-<http://example.org/legal/document/uu/1990/4/bab/0006/pasals> legal:partOf <http://example.org/legal/document/uu/1990/4/bab/0006> .
-<http://example.org/legal/document/uu/1990/4/pasal/0014> legal:partOf <http://example.org/legal/document/uu/1990/4/bab/0006/pasals> .
-<http://example.org/legal/document/uu/1990/4/pasal/0014/version/19900809> legal:partOf <http://example.org/legal/document/uu/1990/4/pasal/0014> .
-<http://example.org/legal/document/uu/1990/4/pasal/0014> legal:partOf <http://example.org/legal/document/uu/1990/4> .
-<http://example.org/legal/document/uu/1990/4/mengingat/text> legal:partOf <http://example.org/legal/document/uu/1990/4/mengingat> .
-<http://example.org/legal/document/uu/1990/4/menimbang/point> legal:partOf <http://example.org/legal/document/uu/1990/4/menimbang> .
-<http://example.org/legal/document/uu/1990/4/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1990/4/menimbang/point> .
-<http://example.org/legal/document/uu/1990/4/menimbang/point/a/text> legal:partOf <http://example.org/legal/document/uu/1990/4/menimbang/point/a> .
-<http://example.org/legal/document/uu/1990/4/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1990/4/menimbang/point> .
-<http://example.org/legal/document/uu/1990/4/menimbang/point/b/text> legal:partOf <http://example.org/legal/document/uu/1990/4/menimbang/point/b> .
-<http://example.org/legal/document/uu/1990/4/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/1990/4/menimbang/point> .
-<http://example.org/legal/document/uu/1990/4/menimbang/point/c/text> legal:partOf <http://example.org/legal/document/uu/1990/4/menimbang/point/c> .
-<http://example.org/legal/document/uu/1990/4/menimbang/point/d> legal:partOf <http://example.org/legal/document/uu/1990/4/menimbang/point> .
-<http://example.org/legal/document/uu/1990/4/menimbang/point/d/text> legal:partOf <http://example.org/legal/document/uu/1990/4/menimbang/point/d> .
+<http://example.org/legal/peraturan/uu/1990/4> legal:daftarBab <http://example.org/legal/peraturan/uu/1990/4/bab> .
+<http://example.org/legal/peraturan/uu/1990/4/bab> legal:bab <http://example.org/legal/peraturan/uu/1990/4/bab/0001> .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0001> legal:judul "" .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0001> legal:daftarPasal <http://example.org/legal/peraturan/uu/1990/4/bab/0001/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0001/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1990/4/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001> legal:versi <http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809> .
+<http://example.org/legal/peraturan/uu/1990/4> legal:pasal <http://example.org/legal/peraturan/uu/1990/4/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809> legal:tanggal "1990-08-09"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809> legal:teks "Dalam Undang-undang ini yang dimaksud dengan:\n1. Karya cetak adalah semua jenis terbitan dari setiap karya intelektual dan atau artistik yang dicetak dan digandakan dalam bentuk buku, majalah, surat kabar, peta, brosur, dan sejenisnya yang diperuntukkan bagi umum:\n2. Karya rekam adalah semua jenis rekaman dari setiap karya intelektual dan atau artistik yang direkam dan digandakan dalam bentuk pita, piringan, dan bentuk lain sesuai dengan perkembangan teknologi yang diperuntukkan bagi umum:\n3. Penerbit adalah setiap orang, persekutuan, badan hukum baik milik negara maupun swasta yang menerbitkan karya cetak:\n4. Pengusaha rekaman adalah setiap orang, persekutuan, badan hukum baik milik negara maupun swasta yang menghasilkan karya rekam:\n5. Perpustakaan Nasional adalah perpustakaan yang berkedudukan di ibu kota negara yang mempunyai tugas untuk menghimpun, menyimpan, melestarikan dan mendayagunakan semua karya cetak dan karya rekam yang dihasilkan di wilayah Republik Indonesia,\n6. Perpustakaan Daerah adalah perpustakaan yang berkedudukan di ibu kota propinsi yang diberi tugas untuk menghimpun, menyimpan, melestarikan dan mendayagunakan semua karya cetak dan karya rekam yang dihasilkan di daerah.\n" .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/description> legal:teks "Dalam Undang-undang ini yang dimaksud dengan:" .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/description> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0001> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0001> legal:nomor "1" .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0001/text> legal:teks "Karya cetak adalah semua jenis terbitan dari setiap karya intelektual dan atau artistik yang dicetak dan digandakan dalam bentuk buku, majalah, surat kabar, peta, brosur, dan sejenisnya yang diperuntukkan bagi umum:" .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0001> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0001/text> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0002> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0002> legal:nomor "2" .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0002/text> legal:teks "Karya rekam adalah semua jenis rekaman dari setiap karya intelektual dan atau artistik yang direkam dan digandakan dalam bentuk pita, piringan, dan bentuk lain sesuai dengan perkembangan teknologi yang diperuntukkan bagi umum:" .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0002> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0002/text> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0003> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0003> legal:nomor "3" .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0003/text> legal:teks "Penerbit adalah setiap orang, persekutuan, badan hukum baik milik negara maupun swasta yang menerbitkan karya cetak:" .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0003> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0003/text> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0004> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0004> legal:nomor "4" .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0004/text> legal:teks "Pengusaha rekaman adalah setiap orang, persekutuan, badan hukum baik milik negara maupun swasta yang menghasilkan karya rekam:" .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0004> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0004/text> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0005> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0005> legal:nomor "5" .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0005/text> legal:teks "Perpustakaan Nasional adalah perpustakaan yang berkedudukan di ibu kota negara yang mempunyai tugas untuk menghimpun, menyimpan, melestarikan dan mendayagunakan semua karya cetak dan karya rekam yang dihasilkan di wilayah Republik Indonesia," .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0005> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0005/text> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0006> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0006> legal:nomor "6" .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0006/text> legal:teks "Perpustakaan Daerah adalah perpustakaan yang berkedudukan di ibu kota propinsi yang diberi tugas untuk menghimpun, menyimpan, melestarikan dan mendayagunakan semua karya cetak dan karya rekam yang dihasilkan di daerah." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0006> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0006/text> .
+<http://example.org/legal/peraturan/uu/1990/4/bab> legal:bab <http://example.org/legal/peraturan/uu/1990/4/bab/0002> .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0002> legal:judul "KEWAJIBAN SERAH-SIMPAN KARYA CETAK DAN KARYA REKAM" .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0002> legal:daftarPasal <http://example.org/legal/peraturan/uu/1990/4/bab/0002/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0002/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1990/4/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0002> legal:versi <http://example.org/legal/peraturan/uu/1990/4/pasal/0002/versi/19900809> .
+<http://example.org/legal/peraturan/uu/1990/4> legal:pasal <http://example.org/legal/peraturan/uu/1990/4/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0002/versi/19900809> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0002/versi/19900809> legal:tanggal "1990-08-09"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0002/versi/19900809> legal:teks "Setiap penerbit yang berada di wilayah negara Republik Indonesia, wajib menyerahkan 2 (dua) buah cetakan dari setiap judul karya cetak yang dihasilkan kepada Perpustakaan Nasional, dan sebuah kepada Perpustakaan Daerah di ibukota propinsi yang bersangkutan selambat-lambatnya 3 (tiga) bulan setelah diterbitkan." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0002/versi/19900809/text> legal:teks "Setiap penerbit yang berada di wilayah negara Republik Indonesia, wajib menyerahkan 2 (dua) buah cetakan dari setiap judul karya cetak yang dihasilkan kepada Perpustakaan Nasional, dan sebuah kepada Perpustakaan Daerah di ibukota propinsi yang bersangkutan selambat-lambatnya 3 (tiga) bulan setelah diterbitkan." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0002/versi/19900809> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/pasal/0002/versi/19900809/text> .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0002/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1990/4/pasal/0003> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003> legal:nomor 3 .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003> legal:versi <http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809> .
+<http://example.org/legal/peraturan/uu/1990/4> legal:pasal <http://example.org/legal/peraturan/uu/1990/4/pasal/0003> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809> legal:tanggal "1990-08-09"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809> legal:teks "(1). Setiap pengusaha rekaman yang berada di wilayah negara Republik Indonesia wajib menyerahkan sebuah rekaman dari setiap judul karya rekam yang dihasilkan kepada Perpustakaan Nasional, dan sebuah kepada Perpustakaan Daerah yang bersangkutan, selambat-lambatnya 3 (tiga) bulan setelah proses rekaman selesai.\n(2). Dalam hal karya rekam tersebut menggunakan bahan baku yang memerlukan penyimpanan secara khusus, maka kewajiban menyerahkan sebagaimana dimaksud dalam ayat (1), dilakukan kepada Perpustakaan Nasional atau badan lain yang ditetapkan oleh Pemerintah.\n(3). Ketentuan mengenai badan penyimpan hasil rekaman sebagaimana dimaksud dalam ayat (2) diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809> legal:daftarAyat <http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0001> legal:teks "Setiap pengusaha rekaman yang berada di wilayah negara Republik Indonesia wajib menyerahkan sebuah rekaman dari setiap judul karya rekam yang dihasilkan kepada Perpustakaan Nasional, dan sebuah kepada Perpustakaan Daerah yang bersangkutan, selambat-lambatnya 3 (tiga) bulan setelah proses rekaman selesai." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0001/text> legal:teks "Setiap pengusaha rekaman yang berada di wilayah negara Republik Indonesia wajib menyerahkan sebuah rekaman dari setiap judul karya rekam yang dihasilkan kepada Perpustakaan Nasional, dan sebuah kepada Perpustakaan Daerah yang bersangkutan, selambat-lambatnya 3 (tiga) bulan setelah proses rekaman selesai." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0001> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0001/text> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0002> legal:teks "Dalam hal karya rekam tersebut menggunakan bahan baku yang memerlukan penyimpanan secara khusus, maka kewajiban menyerahkan sebagaimana dimaksud dalam ayat (1), dilakukan kepada Perpustakaan Nasional atau badan lain yang ditetapkan oleh Pemerintah." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0002/text> legal:teks "Dalam hal karya rekam tersebut menggunakan bahan baku yang memerlukan penyimpanan secara khusus, maka kewajiban menyerahkan sebagaimana dimaksud dalam ayat (1), dilakukan kepada Perpustakaan Nasional atau badan lain yang ditetapkan oleh Pemerintah." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0002> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0002/text> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0002/text> legal:merujuk <http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0003> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0003> legal:nomor 3 .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0003> legal:teks "Ketentuan mengenai badan penyimpan hasil rekaman sebagaimana dimaksud dalam ayat (2) diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0003/text> legal:teks "Ketentuan mengenai badan penyimpan hasil rekaman sebagaimana dimaksud dalam ayat (2) diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0003> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0003/text> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0003/text> legal:merujuk <http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0002/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1990/4/pasal/0004> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0004> legal:nomor 4 .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0004> legal:versi <http://example.org/legal/peraturan/uu/1990/4/pasal/0004/versi/19900809> .
+<http://example.org/legal/peraturan/uu/1990/4> legal:pasal <http://example.org/legal/peraturan/uu/1990/4/pasal/0004> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0004/versi/19900809> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0004/versi/19900809> legal:tanggal "1990-08-09"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0004/versi/19900809> legal:teks "Kewajiban serah-simpan karya cetak dan karya rekam sebagaimana dimaksud dalam Pasal 2 dan Pasal 3, berlaku pula terhadap setiap warga negara Republik Indonesia yang hasil karyanya diterbitkan atau direkam di luar negeri." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0004/versi/19900809/text> legal:teks "Kewajiban serah-simpan karya cetak dan karya rekam sebagaimana dimaksud dalam Pasal 2 dan Pasal 3, berlaku pula terhadap setiap warga negara Republik Indonesia yang hasil karyanya diterbitkan atau direkam di luar negeri." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0004/versi/19900809> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/pasal/0004/versi/19900809/text> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0004/versi/19900809/text> legal:merujuk <http://example.org/legal/peraturan/uu/1990/4/pasal/0003> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0004/versi/19900809/text> legal:merujuk <http://example.org/legal/peraturan/uu/1990/4/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0002/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1990/4/pasal/0005> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0005> legal:nomor 5 .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0005> legal:versi <http://example.org/legal/peraturan/uu/1990/4/pasal/0005/versi/19900809> .
+<http://example.org/legal/peraturan/uu/1990/4> legal:pasal <http://example.org/legal/peraturan/uu/1990/4/pasal/0005> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0005/versi/19900809> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0005/versi/19900809> legal:tanggal "1990-08-09"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0005/versi/19900809> legal:teks "Kewajiban serah-simpan karya cetak dan karya rekam yang diatur dalam Undang-undang ini bertujuan untuk mewujudkan koleksi nasional dan melestarikannya sebagai hasil budaya bangsa dalam rangka mencerdaskan kehidupan bangsa." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0005/versi/19900809/text> legal:teks "Kewajiban serah-simpan karya cetak dan karya rekam yang diatur dalam Undang-undang ini bertujuan untuk mewujudkan koleksi nasional dan melestarikannya sebagai hasil budaya bangsa dalam rangka mencerdaskan kehidupan bangsa." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0005/versi/19900809> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/pasal/0005/versi/19900809/text> .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0002/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1990/4/pasal/0006> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006> legal:nomor 6 .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006> legal:versi <http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809> .
+<http://example.org/legal/peraturan/uu/1990/4> legal:pasal <http://example.org/legal/peraturan/uu/1990/4/pasal/0006> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809> legal:tanggal "1990-08-09"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809> legal:teks "(1). Setiap orang yang memasukkan karya cetak dan atau karya rekam mengenai Indonesia dari luar negeri lebih dari 10 (sepuluh) buah setiap judulnya dengan maksud untuk diperdagangkan, wajib menyerahkan sebuah setiap judulnya kepada Perpustakaan Nasional, selambat-lambatnya 1 (satu) bulan setelah diterima oleh yang bersangkutan.\n(2). Setiap orang yang memasukkan karya cetak dan atau karya rekam mengenai Indonesia dari luar negeri kurang dari 10 (sepuluh) buah setiap judul, tetapi dalam jangka waktu 2 (dua) tahun memasukkan lagi karya yang sama sehingga jumlahnya melebihi 10 (sepuluh) buah, maka berlaku ketentuan Pasal 6 ayat (1).\n(3). Pelaksanaan kewajiban serah-simpan karya rekam dengan menggunakan bahan baku yang memerlukan penyimpanan secara khusus, diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809> legal:daftarAyat <http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0001> legal:teks "Setiap orang yang memasukkan karya cetak dan atau karya rekam mengenai Indonesia dari luar negeri lebih dari 10 (sepuluh) buah setiap judulnya dengan maksud untuk diperdagangkan, wajib menyerahkan sebuah setiap judulnya kepada Perpustakaan Nasional, selambat-lambatnya 1 (satu) bulan setelah diterima oleh yang bersangkutan." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0001/text> legal:teks "Setiap orang yang memasukkan karya cetak dan atau karya rekam mengenai Indonesia dari luar negeri lebih dari 10 (sepuluh) buah setiap judulnya dengan maksud untuk diperdagangkan, wajib menyerahkan sebuah setiap judulnya kepada Perpustakaan Nasional, selambat-lambatnya 1 (satu) bulan setelah diterima oleh yang bersangkutan." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0001> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0001/text> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0002> legal:teks "Setiap orang yang memasukkan karya cetak dan atau karya rekam mengenai Indonesia dari luar negeri kurang dari 10 (sepuluh) buah setiap judul, tetapi dalam jangka waktu 2 (dua) tahun memasukkan lagi karya yang sama sehingga jumlahnya melebihi 10 (sepuluh) buah, maka berlaku ketentuan Pasal 6 ayat (1)." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0002/text> legal:teks "Setiap orang yang memasukkan karya cetak dan atau karya rekam mengenai Indonesia dari luar negeri kurang dari 10 (sepuluh) buah setiap judul, tetapi dalam jangka waktu 2 (dua) tahun memasukkan lagi karya yang sama sehingga jumlahnya melebihi 10 (sepuluh) buah, maka berlaku ketentuan Pasal 6 ayat (1)." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0002> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0002/text> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0002/text> legal:merujuk <http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0003> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0003> legal:nomor 3 .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0003> legal:teks "Pelaksanaan kewajiban serah-simpan karya rekam dengan menggunakan bahan baku yang memerlukan penyimpanan secara khusus, diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0003/text> legal:teks "Pelaksanaan kewajiban serah-simpan karya rekam dengan menggunakan bahan baku yang memerlukan penyimpanan secara khusus, diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0003> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0003/text> .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0002/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1990/4/pasal/0007> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0007> legal:nomor 7 .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0007> legal:versi <http://example.org/legal/peraturan/uu/1990/4/pasal/0007/versi/19900809> .
+<http://example.org/legal/peraturan/uu/1990/4> legal:pasal <http://example.org/legal/peraturan/uu/1990/4/pasal/0007> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0007/versi/19900809> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0007/versi/19900809> legal:tanggal "1990-08-09"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0007/versi/19900809> legal:teks "Karya cetak dan karya rekam yang diserahkan dan disimpan sesuai dengan ketentuan dalam Undang-undang ini, tidak dimanfaatkan untuk tujuan komersial." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0007/versi/19900809/text> legal:teks "Karya cetak dan karya rekam yang diserahkan dan disimpan sesuai dengan ketentuan dalam Undang-undang ini, tidak dimanfaatkan untuk tujuan komersial." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0007/versi/19900809> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/pasal/0007/versi/19900809/text> .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0002/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1990/4/pasal/0008> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008> legal:nomor 8 .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008> legal:versi <http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809> .
+<http://example.org/legal/peraturan/uu/1990/4> legal:pasal <http://example.org/legal/peraturan/uu/1990/4/pasal/0008> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809> legal:tanggal "1990-08-09"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809> legal:teks "(1). Setiap penerbit dan pengusaha rekaman wajib menyerahkan daftar judul terbitan atau rekamannya kepada Perpustakaan Nasional dan Perpustakaan Daerah di propinsi yang bersangkutan sekali setiap 6 (enam) bulan.\n(2). Dalam hal karya rekam yang berupa rekaman ceritera dan dokumenter penyerahan daftar judul tersebut dilaksanakan kepada Perpustakaan Nasional atau badan lain yang ditetapkan oleh Pemerintah.\n(3). Kewajiban menyerahkan daftar karya cetak dan karya rekam sebagaimana dimaksud dalam ayat (1) dan ayat (2) berlaku pula bagi setiap orang yang memasukkan karya cetak dan atau karya rekam mengenai Indonesia." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809> legal:daftarAyat <http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0001> legal:teks "Setiap penerbit dan pengusaha rekaman wajib menyerahkan daftar judul terbitan atau rekamannya kepada Perpustakaan Nasional dan Perpustakaan Daerah di propinsi yang bersangkutan sekali setiap 6 (enam) bulan." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0001/text> legal:teks "Setiap penerbit dan pengusaha rekaman wajib menyerahkan daftar judul terbitan atau rekamannya kepada Perpustakaan Nasional dan Perpustakaan Daerah di propinsi yang bersangkutan sekali setiap 6 (enam) bulan." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0001> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0001/text> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0002> legal:teks "Dalam hal karya rekam yang berupa rekaman ceritera dan dokumenter penyerahan daftar judul tersebut dilaksanakan kepada Perpustakaan Nasional atau badan lain yang ditetapkan oleh Pemerintah." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0002/text> legal:teks "Dalam hal karya rekam yang berupa rekaman ceritera dan dokumenter penyerahan daftar judul tersebut dilaksanakan kepada Perpustakaan Nasional atau badan lain yang ditetapkan oleh Pemerintah." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0002> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0002/text> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0003> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0003> legal:nomor 3 .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0003> legal:teks "Kewajiban menyerahkan daftar karya cetak dan karya rekam sebagaimana dimaksud dalam ayat (1) dan ayat (2) berlaku pula bagi setiap orang yang memasukkan karya cetak dan atau karya rekam mengenai Indonesia." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0003/text> legal:teks "Kewajiban menyerahkan daftar karya cetak dan karya rekam sebagaimana dimaksud dalam ayat (1) dan ayat (2) berlaku pula bagi setiap orang yang memasukkan karya cetak dan atau karya rekam mengenai Indonesia." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0003> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0003/text> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0003/text> legal:merujuk <http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0003/text> legal:merujuk <http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0002/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1990/4/pasal/0009> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0009> legal:nomor 9 .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0009> legal:versi <http://example.org/legal/peraturan/uu/1990/4/pasal/0009/versi/19900809> .
+<http://example.org/legal/peraturan/uu/1990/4> legal:pasal <http://example.org/legal/peraturan/uu/1990/4/pasal/0009> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0009/versi/19900809> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0009/versi/19900809> legal:tanggal "1990-08-09"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0009/versi/19900809> legal:teks "Ketentuan pelaksanaan kewajiban serah-simpan karya cetak dan karya rekam diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0009/versi/19900809/text> legal:teks "Ketentuan pelaksanaan kewajiban serah-simpan karya cetak dan karya rekam diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0009/versi/19900809> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/pasal/0009/versi/19900809/text> .
+<http://example.org/legal/peraturan/uu/1990/4/bab> legal:bab <http://example.org/legal/peraturan/uu/1990/4/bab/0003> .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0003> legal:nomor 3 .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0003> legal:judul "PENGELOLAAN HASIL SERAH-SIMPAN KARYA CETAK DAN KARYA REKAM" .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0003> legal:daftarPasal <http://example.org/legal/peraturan/uu/1990/4/bab/0003/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0003/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1990/4/pasal/0010> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0010> legal:nomor 10 .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0010> legal:versi <http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809> .
+<http://example.org/legal/peraturan/uu/1990/4> legal:pasal <http://example.org/legal/peraturan/uu/1990/4/pasal/0010> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809> legal:tanggal "1990-08-09"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809> legal:teks "(1). Pengelolaan karya cetak dan karya rekam yang diserahkan untuk disimpan berdasarkan Undang-undang ini dilakukan oleh Perpustakaan Nasional dan Perpustakaan Daerah yang menerimanya, atau badan lain yang ditetapkan oleh Pemerintah dalam hal karya rekam yang berupa film ceritera atau dokumenter.\n(2). Ketentuan lebih lanjut mengenai pengelolaan karya cetak dan karya rekam sebagaimana dimaksud dalam ayat (1) diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809> legal:daftarAyat <http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809/ayat> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809/ayat/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809/ayat/0001> legal:teks "Pengelolaan karya cetak dan karya rekam yang diserahkan untuk disimpan berdasarkan Undang-undang ini dilakukan oleh Perpustakaan Nasional dan Perpustakaan Daerah yang menerimanya, atau badan lain yang ditetapkan oleh Pemerintah dalam hal karya rekam yang berupa film ceritera atau dokumenter." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809/ayat/0001/text> legal:teks "Pengelolaan karya cetak dan karya rekam yang diserahkan untuk disimpan berdasarkan Undang-undang ini dilakukan oleh Perpustakaan Nasional dan Perpustakaan Daerah yang menerimanya, atau badan lain yang ditetapkan oleh Pemerintah dalam hal karya rekam yang berupa film ceritera atau dokumenter." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809/ayat/0001> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809/ayat/0001/text> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809/ayat/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809/ayat/0002> legal:teks "Ketentuan lebih lanjut mengenai pengelolaan karya cetak dan karya rekam sebagaimana dimaksud dalam ayat (1) diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809/ayat/0002/text> legal:teks "Ketentuan lebih lanjut mengenai pengelolaan karya cetak dan karya rekam sebagaimana dimaksud dalam ayat (1) diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809/ayat/0002> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809/ayat/0002/text> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809/ayat/0002/text> legal:merujuk <http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1990/4/bab> legal:bab <http://example.org/legal/peraturan/uu/1990/4/bab/0004> .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0004> legal:nomor 4 .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0004> legal:judul "KETENTUAN PIDANA" .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0004> legal:daftarPasal <http://example.org/legal/peraturan/uu/1990/4/bab/0004/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0004/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1990/4/pasal/0011> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011> legal:nomor 11 .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011> legal:versi <http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809> .
+<http://example.org/legal/peraturan/uu/1990/4> legal:pasal <http://example.org/legal/peraturan/uu/1990/4/pasal/0011> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809> legal:tanggal "1990-08-09"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809> legal:teks "(1). Barang siapa melanggar ketentuan sebagaimana dimaksud dalam Pasal 2, Pasal 3, Pasal 4, Pasal 6, dan Pasal 7, dipidana dengan pidana kurungan selama-lamanya 6 (enam) bulan atau pidana denda setinggi-tingginya Rp 5.000.000,00 (lima juta rupiah).\n(2). Barang siapa melanggar ketentuan sebagaimana dimaksud dalam Pasal 8, dipidana dengan pidana kurungan selama-lamanya 3 (tiga) bulan atau pidana denda setinggi-tingginya Rp 2.500.000,00 (dua juta lima ratus ribu rupiah).\n(3). Tindak pidana sebagaimana dimaksud dalam ayat (1) dan ayat (2) adalah pelanggaran." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809> legal:daftarAyat <http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0001> legal:teks "Barang siapa melanggar ketentuan sebagaimana dimaksud dalam Pasal 2, Pasal 3, Pasal 4, Pasal 6, dan Pasal 7, dipidana dengan pidana kurungan selama-lamanya 6 (enam) bulan atau pidana denda setinggi-tingginya Rp 5.000.000,00 (lima juta rupiah)." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0001/text> legal:teks "Barang siapa melanggar ketentuan sebagaimana dimaksud dalam Pasal 2, Pasal 3, Pasal 4, Pasal 6, dan Pasal 7, dipidana dengan pidana kurungan selama-lamanya 6 (enam) bulan atau pidana denda setinggi-tingginya Rp 5.000.000,00 (lima juta rupiah)." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0001> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0001/text> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0001/text> legal:merujuk <http://example.org/legal/peraturan/uu/1990/4/pasal/0007> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0001/text> legal:merujuk <http://example.org/legal/peraturan/uu/1990/4/pasal/0006> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0001/text> legal:merujuk <http://example.org/legal/peraturan/uu/1990/4/pasal/0004> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0001/text> legal:merujuk <http://example.org/legal/peraturan/uu/1990/4/pasal/0003> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0001/text> legal:merujuk <http://example.org/legal/peraturan/uu/1990/4/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0002> legal:teks "Barang siapa melanggar ketentuan sebagaimana dimaksud dalam Pasal 8, dipidana dengan pidana kurungan selama-lamanya 3 (tiga) bulan atau pidana denda setinggi-tingginya Rp 2.500.000,00 (dua juta lima ratus ribu rupiah)." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0002/text> legal:teks "Barang siapa melanggar ketentuan sebagaimana dimaksud dalam Pasal 8, dipidana dengan pidana kurungan selama-lamanya 3 (tiga) bulan atau pidana denda setinggi-tingginya Rp 2.500.000,00 (dua juta lima ratus ribu rupiah)." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0002> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0002/text> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0002/text> legal:merujuk <http://example.org/legal/peraturan/uu/1990/4/pasal/0008> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0003> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0003> legal:nomor 3 .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0003> legal:teks "Tindak pidana sebagaimana dimaksud dalam ayat (1) dan ayat (2) adalah pelanggaran." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0003/text> legal:teks "Tindak pidana sebagaimana dimaksud dalam ayat (1) dan ayat (2) adalah pelanggaran." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0003> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0003/text> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0003/text> legal:merujuk <http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0003/text> legal:merujuk <http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0004/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1990/4/pasal/0012> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0012> legal:nomor 12 .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0012> legal:versi <http://example.org/legal/peraturan/uu/1990/4/pasal/0012/versi/19900809> .
+<http://example.org/legal/peraturan/uu/1990/4> legal:pasal <http://example.org/legal/peraturan/uu/1990/4/pasal/0012> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0012/versi/19900809> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0012/versi/19900809> legal:tanggal "1990-08-09"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0012/versi/19900809> legal:teks "Pelaksanaan ketentuan pidana sebagaimana dimaksud dalam Pasal 11, tidak meniadakan kewajiban untuk tetap menyerahkan karya cetak atau karya rekam yang diatur dalam Undang-undang itu." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0012/versi/19900809/text> legal:teks "Pelaksanaan ketentuan pidana sebagaimana dimaksud dalam Pasal 11, tidak meniadakan kewajiban untuk tetap menyerahkan karya cetak atau karya rekam yang diatur dalam Undang-undang itu." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0012/versi/19900809> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/pasal/0012/versi/19900809/text> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0012/versi/19900809/text> legal:merujuk <http://example.org/legal/peraturan/uu/1990/4/pasal/0011> .
+<http://example.org/legal/peraturan/uu/1990/4/bab> legal:bab <http://example.org/legal/peraturan/uu/1990/4/bab/0005> .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0005> legal:nomor 5 .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0005> legal:judul "KETENTUAN LAIN" .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0005> legal:daftarPasal <http://example.org/legal/peraturan/uu/1990/4/bab/0005/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0005/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1990/4/pasal/0013> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0013> legal:nomor 13 .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0013> legal:versi <http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809> .
+<http://example.org/legal/peraturan/uu/1990/4> legal:pasal <http://example.org/legal/peraturan/uu/1990/4/pasal/0013> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809> legal:tanggal "1990-08-09"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809> legal:teks "(1). Ketentuan Bab I sampai dengan Bab III dalam Undang-undang ini, berlaku pula bagi badan-badan Pemerintah yang menerbitkan dan atau memasukkan karya cetak dan karya rekam.\n(2). Pelaksanaan kewajiban serah-simpan karya cetak dan karya rekam sebagaimana dimaksud dalam ayat (1), diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809> legal:daftarAyat <http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809/ayat> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809/ayat/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809/ayat/0001> legal:teks "Ketentuan Bab I sampai dengan Bab III dalam Undang-undang ini, berlaku pula bagi badan-badan Pemerintah yang menerbitkan dan atau memasukkan karya cetak dan karya rekam." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809/ayat/0001/text> legal:teks "Ketentuan Bab I sampai dengan Bab III dalam Undang-undang ini, berlaku pula bagi badan-badan Pemerintah yang menerbitkan dan atau memasukkan karya cetak dan karya rekam." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809/ayat/0001> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809/ayat/0001/text> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809/ayat/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809/ayat/0002> legal:teks "Pelaksanaan kewajiban serah-simpan karya cetak dan karya rekam sebagaimana dimaksud dalam ayat (1), diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809/ayat/0002/text> legal:teks "Pelaksanaan kewajiban serah-simpan karya cetak dan karya rekam sebagaimana dimaksud dalam ayat (1), diatur lebih lanjut dengan Peraturan Pemerintah." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809/ayat/0002> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809/ayat/0002/text> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809/ayat/0002/text> legal:merujuk <http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1990/4/bab> legal:bab <http://example.org/legal/peraturan/uu/1990/4/bab/0006> .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0006> legal:nomor 6 .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0006> legal:judul "KETENTUAN PENUTUP" .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0006> legal:daftarPasal <http://example.org/legal/peraturan/uu/1990/4/bab/0006/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0006/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1990/4/pasal/0014> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0014> legal:nomor 14 .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0014> legal:versi <http://example.org/legal/peraturan/uu/1990/4/pasal/0014/versi/19900809> .
+<http://example.org/legal/peraturan/uu/1990/4> legal:pasal <http://example.org/legal/peraturan/uu/1990/4/pasal/0014> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0014/versi/19900809> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0014/versi/19900809> legal:tanggal "1990-08-09"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0014/versi/19900809> legal:teks "Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0014/versi/19900809/text> legal:teks "Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0014/versi/19900809> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/pasal/0014/versi/19900809/text> .
+<http://example.org/legal/peraturan/uu/1990/4> legal:disahkanPada "1990-08-09"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1990/4> legal:tentang " SERAH-SIMPAN KARYA CETAK DAN KARYA REKAM" .
+<http://example.org/legal/peraturan/uu/1990/4> legal:mengingat <http://example.org/legal/peraturan/uu/1990/4/mengingat> .
+<http://example.org/legal/peraturan/uu/1990/4/mengingat/text> legal:teks "Pasal S ayat (1) dan Pasal 20 ayat (1) Undang-Undang Dasar 1945, Dengan persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA, MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG SERAH-SIMPAN KARYA CETAK DAN KARYA REKAM. BAB |" .
+<http://example.org/legal/peraturan/uu/1990/4/mengingat> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/mengingat/text> .
+<http://example.org/legal/peraturan/uu/1990/4> legal:menimbang <http://example.org/legal/peraturan/uu/1990/4/menimbang> .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/description> .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/a> legal:nomor "a" .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/a/text> legal:teks "bahwa Undang-Undang Dasar 1945 mengamanatkan upaya untuk mencerdaskan kehidupan bangsa dan memajukan kebudayaan nasional," .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/a> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/a/text> .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/b> .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/b> legal:nomor "b" .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/b/text> legal:teks "bahwa karya cetak dan karya rekam merupakan salah satu hasil budaya bangsa yang sangat penting dalam menunj ang pembangunan nasional pada umumnya, khususnya pembangunan pendidikan, pengembangan ilmu pengetahuan dan teknologi, penelitian dan penyebaran informasi serta pelestarian kekayaan budaya bangsa yang berdasarkan Pancasila," .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/b> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/b/text> .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/c> .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/c> legal:nomor "c" .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/c/text> legal:teks "bahwa dalam rangka pemanfaatan hasil budaya bangsa tersebut, karya cetak dan karya rekam perlu dihimpun, disimpan, dipelihara, dan dilestarikan di suatu tempat tertentu sebagai koleksi nasional:" .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/c> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/c/text> .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/d> .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/d> legal:nomor "d" .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/d/text> legal:teks "bahwa sehubungan dengan hal tersebut di atas, dipandang perlu menetapkan Undang-undang tentang Serah-Simpan Karya Cetak dan Karya Rekam," .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/d> legal:segmen <http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/d/text> .
+<http://example.org/legal/peraturan/uu/1990/4> legal:disahkanOleh "Diundangkan di Jakarta" .
+<http://example.org/legal/peraturan/uu/1990/4> legal:disahkanDi "Jakarta" .
+<http://example.org/legal/peraturan/uu/1990/4> legal:jabatanPengesah "PRESIDEN REPUBLIK INDONESIA" .
+<http://example.org/legal/peraturan/uu/1990/4> a legal:Peraturan .
+<http://example.org/legal/peraturan/uu/1990/4/bab> a legal:BabSet .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0001> a legal:Bab .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0001/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0001> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0002> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0003> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0003/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0004> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0004/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0005> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0005/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0006> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0006/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0002> a legal:Bab .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0002/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0002> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0002/versi/19900809> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0002/versi/19900809/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat> a legal:DaftarAyat .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0001> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0002> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0003> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0003/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0004> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0004/versi/19900809> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0004/versi/19900809/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0005> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0005/versi/19900809> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0005/versi/19900809/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat> a legal:DaftarAyat .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0001> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0002> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0003> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0003/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0007> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0007/versi/19900809> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0007/versi/19900809/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat> a legal:DaftarAyat .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0001> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0002> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0003> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0003/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0009> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0009/versi/19900809> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0009/versi/19900809/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0003> a legal:Bab .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0003/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0010> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809/ayat> a legal:DaftarAyat .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809/ayat/0001> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809/ayat/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809/ayat/0002> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809/ayat/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0004> a legal:Bab .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0004/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat> a legal:DaftarAyat .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0001> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0002> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0003> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0003/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0012> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0012/versi/19900809> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0012/versi/19900809/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0005> a legal:Bab .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0005/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0013> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809/ayat> a legal:DaftarAyat .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809/ayat/0001> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809/ayat/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809/ayat/0002> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809/ayat/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0006> a legal:Bab .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0006/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0014> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0014/versi/19900809> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0014/versi/19900809/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/mengingat/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/mengingat> a legal:Mengingat .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang> a legal:Menimbang .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/a> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/a/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/b> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/b/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/c> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/c/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/d> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/d/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/4/bab> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4> .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/bab> .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0001/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/bab/0001> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/bab/0001/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0001> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0002> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0003/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0003> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0004/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0004> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0005> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0005/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0005> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0006> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0006/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0001/versi/19900809/huruf/0006> .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/bab> .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0002/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/bab/0002> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/bab/0002/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0002/versi/19900809> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0002/versi/19900809/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0002/versi/19900809> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/bab/0002/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0003> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0003/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0003/versi/19900809/ayat/0003> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/bab/0002/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0004/versi/19900809> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0004> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0004/versi/19900809/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0004/versi/19900809> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0005> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/bab/0002/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0005/versi/19900809> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0005> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0005> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0005/versi/19900809/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0005/versi/19900809> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/bab/0002/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0006> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0003/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0006/versi/19900809/ayat/0003> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0007> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/bab/0002/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0007/versi/19900809> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0007> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0007> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0007/versi/19900809/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0007/versi/19900809> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/bab/0002/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0008> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0003/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0008/versi/19900809/ayat/0003> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0009> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/bab/0002/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0009/versi/19900809> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0009> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0009> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0009/versi/19900809/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0009/versi/19900809> .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/bab> .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0003/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/bab/0003> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0010> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/bab/0003/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0010> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0010> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809/ayat> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809/ayat/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809/ayat> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809/ayat/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809/ayat/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809/ayat> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809/ayat/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0010/versi/19900809/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/bab> .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0004/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/bab/0004> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/bab/0004/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0011> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0003/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0011/versi/19900809/ayat/0003> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0012> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/bab/0004/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0012/versi/19900809> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0012> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0012> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0012/versi/19900809/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0012/versi/19900809> .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0005> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/bab> .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0005/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/bab/0005> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0013> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/bab/0005/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0013> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0013> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809/ayat> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809/ayat/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809/ayat> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809/ayat/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809/ayat/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809/ayat> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809/ayat/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0013/versi/19900809/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0006> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/bab> .
+<http://example.org/legal/peraturan/uu/1990/4/bab/0006/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/bab/0006> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0014> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/bab/0006/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0014/versi/19900809> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0014> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0014> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4> .
+<http://example.org/legal/peraturan/uu/1990/4/pasal/0014/versi/19900809/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/pasal/0014/versi/19900809> .
+<http://example.org/legal/peraturan/uu/1990/4/mengingat/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/mengingat> .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/menimbang> .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/a> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/a/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/b> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/b/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/b> .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/c> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/c/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/c> .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/d> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/d/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/4/menimbang/huruf/d> .

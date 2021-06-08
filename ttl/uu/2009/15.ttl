@@ -1,148 +1,153 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2009/15> legal:documentHasPasalSet <http://example.org/legal/document/uu/2009/15/pasals> .
-<http://example.org/legal/document/uu/2009/15/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2009/15/pasal/0001> .
-<http://example.org/legal/document/uu/2009/15/pasal/0001> legal:pasalHasKey 1 .
-<http://example.org/legal/document/uu/2009/15/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316> .
-<http://example.org/legal/document/uu/2009/15> legal:documentHasPasal <http://example.org/legal/document/uu/2009/15/pasal/0001> .
-<http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316> legal:pasalVersionHasVersionDate "2009-03-16"^^xsd:date .
-<http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316> legal:pasalVersionHasRawText "(1). Mengesahkan Protocol against the Smuggling of Migrants by Land, Sea and Air, Supplementing the United Nations Convention against Transnational Organized Crime (Protokol Menentang Penyelundupan Migran melalui Darat, Laut, dan Udara, Melengkapi Konvensi Perserikatan Bangsa-Bangsa Menentang Tindak Pidana Transnasional yang Terorganisasi) dengan Declaration (Pernyataan) terhadap Pasal 6 ayat (2) huruf c, Pasal 9 ayat (1) huruf a, dan Pasal 9 ayat (2) dan Reservation (Pensyaratan) terhadap Pasal 20 ayat (2).\n(2). Salinan naskah asli Protocol against the Smuggling of Migrants by Land, Sea and Air, Supplementing the United Nations Convention against Transnational Organized Crime (Protokol Menentang Penyelundupan Migran melalui Darat, Laut, dan Udara, Melengkapi Konvensi Perserikatan Bangsa-Bangsa Menentang Tindak Pidana Transnasional yang Terorganisasi) dengan Declaration (Pernyataan) dan Reservation (Pensyaratan) sebagaimana dimaksud pada ayat (1) dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
-<http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat> .
-<http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat/0001> .
-<http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat/0001> legal:ayatHasKey 1 .
-<http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat/0001> legal:ayatHasRawText "Mengesahkan Protocol against the Smuggling of Migrants by Land, Sea and Air, Supplementing the United Nations Convention against Transnational Organized Crime (Protokol Menentang Penyelundupan Migran melalui Darat, Laut, dan Udara, Melengkapi Konvensi Perserikatan Bangsa-Bangsa Menentang Tindak Pidana Transnasional yang Terorganisasi) dengan Declaration (Pernyataan) terhadap Pasal 6 ayat (2) huruf c, Pasal 9 ayat (1) huruf a, dan Pasal 9 ayat (2) dan Reservation (Pensyaratan) terhadap Pasal 20 ayat (2)." .
-<http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat/0001/text> legal:textHasTextString "Mengesahkan Protocol against the Smuggling of Migrants by Land, Sea and Air, Supplementing the United Nations Convention against Transnational Organized Crime (Protokol Menentang Penyelundupan Migran melalui Darat, Laut, dan Udara, Melengkapi Konvensi Perserikatan Bangsa-Bangsa Menentang Tindak Pidana Transnasional yang Terorganisasi) dengan Declaration (Pernyataan) terhadap Pasal 6 ayat (2) huruf c, Pasal 9 ayat (1) huruf a, dan Pasal 9 ayat (2) dan Reservation (Pensyaratan) terhadap Pasal 20 ayat (2)." .
-<http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat/0001/text> .
-<http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat/0002> .
-<http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat/0001> .
-<http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/point/a> .
-<http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/point/c> .
-<http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat/0002> .
-<http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat/0002> legal:ayatHasKey 2 .
-<http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat/0002> legal:ayatHasRawText "Salinan naskah asli Protocol against the Smuggling of Migrants by Land, Sea and Air, Supplementing the United Nations Convention against Transnational Organized Crime (Protokol Menentang Penyelundupan Migran melalui Darat, Laut, dan Udara, Melengkapi Konvensi Perserikatan Bangsa-Bangsa Menentang Tindak Pidana Transnasional yang Terorganisasi) dengan Declaration (Pernyataan) dan Reservation (Pensyaratan) sebagaimana dimaksud pada ayat (1) dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
-<http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat/0002/text> legal:textHasTextString "Salinan naskah asli Protocol against the Smuggling of Migrants by Land, Sea and Air, Supplementing the United Nations Convention against Transnational Organized Crime (Protokol Menentang Penyelundupan Migran melalui Darat, Laut, dan Udara, Melengkapi Konvensi Perserikatan Bangsa-Bangsa Menentang Tindak Pidana Transnasional yang Terorganisasi) dengan Declaration (Pernyataan) dan Reservation (Pensyaratan) sebagaimana dimaksud pada ayat (1) dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
-<http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat/0002/text> .
-<http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat/0001> .
-<http://example.org/legal/document/uu/2009/15/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2009/15/pasal/0002> .
-<http://example.org/legal/document/uu/2009/15/pasal/0002> legal:pasalHasKey 2 .
-<http://example.org/legal/document/uu/2009/15/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2009/15/pasal/0002/version/20090316> .
-<http://example.org/legal/document/uu/2009/15> legal:documentHasPasal <http://example.org/legal/document/uu/2009/15/pasal/0002> .
-<http://example.org/legal/document/uu/2009/15/pasal/0002/version/20090316> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/2009/15/pasal/0002/version/20090316> legal:pasalVersionHasVersionDate "2009-03-16"^^xsd:date .
-<http://example.org/legal/document/uu/2009/15/pasal/0002/version/20090316> legal:pasalVersionHasRawText "Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang “ mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/2009/15/pasal/0002/version/20090316/text> legal:textHasTextString "Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang “ mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/2009/15/pasal/0002/version/20090316> legal:pasalVersionHasText <http://example.org/legal/document/uu/2009/15/pasal/0002/version/20090316/text> .
-<http://example.org/legal/document/uu/2009/15> legal:documentHasDisahkanDate "2009-03-16"^^xsd:date .
-<http://example.org/legal/document/uu/2009/15> legal:documentMengingat <http://example.org/legal/document/uu/2009/15/mengingat> .
-<http://example.org/legal/document/uu/2009/15/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2009/15/mengingat/point> .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/2009/15/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2009/15/mengingat/point/description> .
-<http://example.org/legal/document/uu/2009/15/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2009/15/mengingat/point/0001> .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/0001> legal:pointHasKey "1" .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/0001/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 11, dan Pasal 20 Undang-Undang Dasar Negara Republik Indonesia Tahun 1945," .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/2009/15/mengingat/point/0001/text> .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu> .
-<http://example.org/legal/document/uu/2009/15/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2009/15/mengingat/point/0002> .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/0002> legal:pointHasKey "2" .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/0002/text> legal:textHasTextString "Undang-Undang Nomor 37 Tahun 1999 tentang Hubungan Luar Negeri (Lembaran Negara Republik Indonesia Tahun 1999 Nomor 156, Tambahan Lembaran Negara Republik Indonesia Nomor 3882)," .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/2009/15/mengingat/point/0002/text> .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1999/37> .
-<http://example.org/legal/document/uu/2009/15/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2009/15/mengingat/point/0003> .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/0003> legal:pointHasKey "3" .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/0003/text> legal:textHasTextString "Undang-Undang Nomor 24 Tahun 2000 tentang Perjanjian Internasional (Lembaran Negara Republik Indonesia Tahun 2000 Nomor 185, Tambahan Lembaran Negara Republik Indonesia Nomor 4012):" .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/0003> legal:pointHasText <http://example.org/legal/document/uu/2009/15/mengingat/point/0003/text> .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2000/24> .
-<http://example.org/legal/document/uu/2009/15/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2009/15/mengingat/point/0004> .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/0004> legal:pointHasKey "4" .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/0004/text> legal:textHasTextString "Undang-Undang Nomor 5 Tahun 2009 tentang Pengesahan United Nations Convention — Against Transnational Organized Crime (Konvensi Perserikatan Bangsa-Bangsa Menentang Tindak Pidana Transnasional yang Terorganisasi) (Lembaran Negara Republik Indonesia Tahun 2009 Nomor 5, Tambahan Lembaran Negara Republik Indonesia Nomor 4960): Dengan... Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA dan PRESIDEN REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG PENGESAHAN PROTOCOL AGAINST THE SMUGGLING OF MIGRANTS BY LAND, SEA AND AIR, SUPPLEMENTING THE UNITED NATIONS CONVENTION AGAINST TRANSNATIONAL ORGANLZED CRIME (PROTOKOL MENENTANG PENYELUNDUPAN MIGRAN MELALUI DARAT, LAUT, DAN UDARA, MELENGKAPI KONVENSI PERSERIKATAN BANGSA-BANGSA MENENTANG TINDAK PIDANA TRANSNASIONAL YANG TERORGANISASI)." .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/0004> legal:pointHasText <http://example.org/legal/document/uu/2009/15/mengingat/point/0004/text> .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2009/5> .
-<http://example.org/legal/document/uu/2009/15> legal:documentMenimbang <http://example.org/legal/document/uu/2009/15/menimbang> .
-<http://example.org/legal/document/uu/2009/15/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/2009/15/menimbang/point> .
-<http://example.org/legal/document/uu/2009/15/menimbang/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/2009/15/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2009/15/menimbang/point/description> .
-<http://example.org/legal/document/uu/2009/15/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2009/15/menimbang/point/a> .
-<http://example.org/legal/document/uu/2009/15/menimbang/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/2009/15/menimbang/point/a/text> legal:textHasTextString "bahwa berdasarkan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945, bangsa Indonesia sebagai bagian dari masyarakat internasional berkewajiban ikut serta melaksanakan ketertiban dunia yang berdasarkan kemerdekaan, perdamaian abadi, dan keadilan sosial:" .
-<http://example.org/legal/document/uu/2009/15/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/2009/15/menimbang/point/a/text> .
-<http://example.org/legal/document/uu/2009/15/menimbang/point/a/text> legal:textReferencesLegal <http://example.org/legal/document/uu> .
-<http://example.org/legal/document/uu/2009/15/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2009/15/menimbang/point/b> .
-<http://example.org/legal/document/uu/2009/15/menimbang/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/2009/15/menimbang/point/b/text> legal:textHasTextString "bahwa Protokol Menentang Penyelundupan Migran melalui Darat, Laut, dan Udara, Melengkapi Konvensi Perserikatan Bangsa-Bangsa Menentang Tindak Pidana Transnasional yang Terorganisasi merupakan salah satu bagian yang tidak terpisahkan dari Konvensi Perserikatan Bangsa-Bangsa Menentang Tindak Pidana Transnasional yang Terorganisasi sehingga pencegahan dan pemberantasan penyelundupan migran perlu dilakukan, baik pada tingkat nasional, regional maupun internasional," .
-<http://example.org/legal/document/uu/2009/15/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/2009/15/menimbang/point/b/text> .
-<http://example.org/legal/document/uu/2009/15/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2009/15/menimbang/point/c> .
-<http://example.org/legal/document/uu/2009/15/menimbang/point/c> legal:pointHasKey "c" .
-<http://example.org/legal/document/uu/2009/15/menimbang/point/c/text> legal:textHasTextString "bahwa penandatanganan Protokol Menentang Penyelundupan Migran melalui Darat, Laut, dan Udara, Melengkapi Konvensi Perserikatan Bangsa-Bangsa Menentang Tindak Pidana Transnasional yang Terorganisasi oleh Pemerintah Republik Indonesia merupakan pencerminan keikutsertaan bangsa Indonesia dalam melaksanakan ketertiban dunia:" .
-<http://example.org/legal/document/uu/2009/15/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/2009/15/menimbang/point/c/text> .
-<http://example.org/legal/document/uu/2009/15/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2009/15/menimbang/point/d> .
-<http://example.org/legal/document/uu/2009/15/menimbang/point/d> legal:pointHasKey "d" .
-<http://example.org/legal/document/uu/2009/15/menimbang/point/d/text> legal:textHasTextString "bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a, huruf b, dan huruf c, perlu membentuk Undang-Undang tentang Pengesahan Protocol against the Smuggling of Migrants by Land, Sea and Ar, Supplementing the United Nations Convention against Transnational Organized Crime (Protokol Menentang Penyelundupan Migran melalui Darat, Laut, dan Udara, Melengkapi Konvensi Perserikatan Bangsa- Bangsa Menentang Tindak Pidana Transnasional yang Terorganisasi)," .
-<http://example.org/legal/document/uu/2009/15/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/2009/15/menimbang/point/d/text> .
-<http://example.org/legal/document/uu/2009/15> legal:documentHasDisahkanPengesah "DR. H. SUSILO BAMBANG YUDHOYONO" .
-<http://example.org/legal/document/uu/2009/15> legal:documentHasDisahkanLocation "Jakarta" .
-<http://example.org/legal/document/uu/2009/15> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
-<http://example.org/legal/document/uu/2009/15> a legal:Document .
-<http://example.org/legal/document/uu/2009/15/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/2009/15/pasal/0001> a legal:Pasal .
-<http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316> a legal:PasalVersion .
-<http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat> a legal:AyatSet .
-<http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat/0001> a legal:Ayat .
-<http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat/0002> a legal:Ayat .
-<http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/2009/15/pasal/0002> a legal:Pasal .
-<http://example.org/legal/document/uu/2009/15/pasal/0002/version/20090316> a legal:PasalVersion .
-<http://example.org/legal/document/uu/2009/15/pasal/0002/version/20090316/text> a legal:Text .
-<http://example.org/legal/document/uu/2009/15/mengingat> a legal:Mengingat .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/description> a legal:Text .
-<http://example.org/legal/document/uu/2009/15/mengingat/point> a legal:PointSet .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/0001> a legal:Point .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/0002> a legal:Point .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/0003> a legal:Point .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/0003/text> a legal:Text .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/0004> a legal:Point .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/0004/text> a legal:Text .
-<http://example.org/legal/document/uu/2009/15/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/2009/15/menimbang/point/description> a legal:Text .
-<http://example.org/legal/document/uu/2009/15/menimbang/point> a legal:PointSet .
-<http://example.org/legal/document/uu/2009/15/menimbang/point/a> a legal:Point .
-<http://example.org/legal/document/uu/2009/15/menimbang/point/a/text> a legal:Text .
-<http://example.org/legal/document/uu/2009/15/menimbang/point/b> a legal:Point .
-<http://example.org/legal/document/uu/2009/15/menimbang/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/2009/15/menimbang/point/c> a legal:Point .
-<http://example.org/legal/document/uu/2009/15/menimbang/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/2009/15/menimbang/point/d> a legal:Point .
-<http://example.org/legal/document/uu/2009/15/menimbang/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/2009/15/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2009/15/pasals> .
-<http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316> legal:partOf <http://example.org/legal/document/uu/2009/15/pasal/0001> .
-<http://example.org/legal/document/uu/2009/15/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2009/15> .
-<http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat> legal:partOf <http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316> .
-<http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat> .
-<http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat/0001> .
-<http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat> .
-<http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2009/15/pasal/0001/version/20090316/ayat/0002> .
-<http://example.org/legal/document/uu/2009/15/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2009/15/pasals> .
-<http://example.org/legal/document/uu/2009/15/pasal/0002/version/20090316> legal:partOf <http://example.org/legal/document/uu/2009/15/pasal/0002> .
-<http://example.org/legal/document/uu/2009/15/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2009/15> .
-<http://example.org/legal/document/uu/2009/15/mengingat/point> legal:partOf <http://example.org/legal/document/uu/2009/15/mengingat> .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2009/15/mengingat/point> .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/0001/text> legal:partOf <http://example.org/legal/document/uu/2009/15/mengingat/point/0001> .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2009/15/mengingat/point> .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/0002/text> legal:partOf <http://example.org/legal/document/uu/2009/15/mengingat/point/0002> .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/2009/15/mengingat/point> .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/0003/text> legal:partOf <http://example.org/legal/document/uu/2009/15/mengingat/point/0003> .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/0004> legal:partOf <http://example.org/legal/document/uu/2009/15/mengingat/point> .
-<http://example.org/legal/document/uu/2009/15/mengingat/point/0004/text> legal:partOf <http://example.org/legal/document/uu/2009/15/mengingat/point/0004> .
-<http://example.org/legal/document/uu/2009/15/menimbang/point> legal:partOf <http://example.org/legal/document/uu/2009/15/menimbang> .
-<http://example.org/legal/document/uu/2009/15/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/2009/15/menimbang/point> .
-<http://example.org/legal/document/uu/2009/15/menimbang/point/a/text> legal:partOf <http://example.org/legal/document/uu/2009/15/menimbang/point/a> .
-<http://example.org/legal/document/uu/2009/15/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/2009/15/menimbang/point> .
-<http://example.org/legal/document/uu/2009/15/menimbang/point/b/text> legal:partOf <http://example.org/legal/document/uu/2009/15/menimbang/point/b> .
-<http://example.org/legal/document/uu/2009/15/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/2009/15/menimbang/point> .
-<http://example.org/legal/document/uu/2009/15/menimbang/point/c/text> legal:partOf <http://example.org/legal/document/uu/2009/15/menimbang/point/c> .
-<http://example.org/legal/document/uu/2009/15/menimbang/point/d> legal:partOf <http://example.org/legal/document/uu/2009/15/menimbang/point> .
-<http://example.org/legal/document/uu/2009/15/menimbang/point/d/text> legal:partOf <http://example.org/legal/document/uu/2009/15/menimbang/point/d> .
+<http://example.org/legal/peraturan/uu/2009/15> legal:daftarPasal <http://example.org/legal/peraturan/uu/2009/15/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2009/15/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/2009/15/pasal/0001> .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001> legal:versi <http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316> .
+<http://example.org/legal/peraturan/uu/2009/15> legal:pasal <http://example.org/legal/peraturan/uu/2009/15/pasal/0001> .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316> legal:tanggal "2009-03-16"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316> legal:teks "(1). Mengesahkan Protocol against the Smuggling of Migrants by Land, Sea and Air, Supplementing the United Nations Convention against Transnational Organized Crime (Protokol Menentang Penyelundupan Migran melalui Darat, Laut, dan Udara, Melengkapi Konvensi Perserikatan Bangsa-Bangsa Menentang Tindak Pidana Transnasional yang Terorganisasi) dengan Declaration (Pernyataan) terhadap Pasal 6 ayat (2) huruf c, Pasal 9 ayat (1) huruf a, dan Pasal 9 ayat (2) dan Reservation (Pensyaratan) terhadap Pasal 20 ayat (2).\n(2). Salinan naskah asli Protocol against the Smuggling of Migrants by Land, Sea and Air, Supplementing the United Nations Convention against Transnational Organized Crime (Protokol Menentang Penyelundupan Migran melalui Darat, Laut, dan Udara, Melengkapi Konvensi Perserikatan Bangsa-Bangsa Menentang Tindak Pidana Transnasional yang Terorganisasi) dengan Declaration (Pernyataan) dan Reservation (Pensyaratan) sebagaimana dimaksud pada ayat (1) dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316> legal:daftarAyat <http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat> .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat> legal:ayat <http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat/0001> .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat/0001> legal:teks "Mengesahkan Protocol against the Smuggling of Migrants by Land, Sea and Air, Supplementing the United Nations Convention against Transnational Organized Crime (Protokol Menentang Penyelundupan Migran melalui Darat, Laut, dan Udara, Melengkapi Konvensi Perserikatan Bangsa-Bangsa Menentang Tindak Pidana Transnasional yang Terorganisasi) dengan Declaration (Pernyataan) terhadap Pasal 6 ayat (2) huruf c, Pasal 9 ayat (1) huruf a, dan Pasal 9 ayat (2) dan Reservation (Pensyaratan) terhadap Pasal 20 ayat (2)." .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat/0001/text> legal:teks "Mengesahkan Protocol against the Smuggling of Migrants by Land, Sea and Air, Supplementing the United Nations Convention against Transnational Organized Crime (Protokol Menentang Penyelundupan Migran melalui Darat, Laut, dan Udara, Melengkapi Konvensi Perserikatan Bangsa-Bangsa Menentang Tindak Pidana Transnasional yang Terorganisasi) dengan Declaration (Pernyataan) terhadap Pasal 6 ayat (2) huruf c, Pasal 9 ayat (1) huruf a, dan Pasal 9 ayat (2) dan Reservation (Pensyaratan) terhadap Pasal 20 ayat (2)." .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat/0001> legal:segmen <http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat/0001/text> .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat/0001/text> legal:merujuk <http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat/0002> .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat/0001/text> legal:merujuk <http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat/0001> .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat/0001/text> legal:merujuk <http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/huruf/a> .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat/0001/text> legal:merujuk <http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/huruf/c> .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat> legal:ayat <http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat/0002> .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat/0002> legal:teks "Salinan naskah asli Protocol against the Smuggling of Migrants by Land, Sea and Air, Supplementing the United Nations Convention against Transnational Organized Crime (Protokol Menentang Penyelundupan Migran melalui Darat, Laut, dan Udara, Melengkapi Konvensi Perserikatan Bangsa-Bangsa Menentang Tindak Pidana Transnasional yang Terorganisasi) dengan Declaration (Pernyataan) dan Reservation (Pensyaratan) sebagaimana dimaksud pada ayat (1) dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat/0002/text> legal:teks "Salinan naskah asli Protocol against the Smuggling of Migrants by Land, Sea and Air, Supplementing the United Nations Convention against Transnational Organized Crime (Protokol Menentang Penyelundupan Migran melalui Darat, Laut, dan Udara, Melengkapi Konvensi Perserikatan Bangsa-Bangsa Menentang Tindak Pidana Transnasional yang Terorganisasi) dengan Declaration (Pernyataan) dan Reservation (Pensyaratan) sebagaimana dimaksud pada ayat (1) dalam bahasa Inggris dan terjemahannya dalam bahasa Indonesia sebagaimana terlampir merupakan bagian yang tidak terpisahkan dari Undang-Undang ini." .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat/0002> legal:segmen <http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat/0002/text> .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat/0002/text> legal:merujuk <http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat/0001> .
+<http://example.org/legal/peraturan/uu/2009/15/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/2009/15/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0002> legal:versi <http://example.org/legal/peraturan/uu/2009/15/pasal/0002/versi/20090316> .
+<http://example.org/legal/peraturan/uu/2009/15> legal:pasal <http://example.org/legal/peraturan/uu/2009/15/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0002/versi/20090316> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0002/versi/20090316> legal:tanggal "2009-03-16"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0002/versi/20090316> legal:teks "Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang “ mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0002/versi/20090316/text> legal:teks "Undang-Undang ini mulai berlaku pada tanggal diundangkan. Agar setiap orang “ mengetahuinya, memerintahkan pengundangan Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0002/versi/20090316> legal:segmen <http://example.org/legal/peraturan/uu/2009/15/pasal/0002/versi/20090316/text> .
+<http://example.org/legal/peraturan/uu/2009/15> legal:disahkanPada "2009-03-16"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2009/15> legal:tentang " PENGESAHAN PROTOCOL AGAINST THE SMUGGLING OF MIGRANTS BY LAND, SEA AND AIR, SUPPLEMENTING THE UNITED NATIONS CONVENTION AGAINST TRANSNATIONAL ORGANLZED CRIME (PROTOKOL MENENTANG PENYELUNDUPAN MIGRAN MELALUI DARAT, LAUT, DAN UDARA, MELENGKAPI KONVENSI PERSERIKATAN BANGSA-BANGSA MENENTANG TINDAK PIDANA TRANSNASIONAL YANG TERORGANISASI)" .
+<http://example.org/legal/peraturan/uu/2009/15> legal:mengingat <http://example.org/legal/peraturan/uu/2009/15/mengingat> .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat> legal:daftarHuruf <http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf> legal:segmen <http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/description> .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0001> .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0001> legal:nomor "1" .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0001/text> legal:teks "Pasal 5 ayat (1), Pasal 11, dan Pasal 20 Undang-Undang Dasar Negara Republik Indonesia Tahun 1945," .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0001> legal:segmen <http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0001/text> .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0001/text> legal:merujuk <http://example.org/legal/peraturan/uu> .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0002> .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0002> legal:nomor "2" .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0002/text> legal:teks "Undang-Undang Nomor 37 Tahun 1999 tentang Hubungan Luar Negeri (Lembaran Negara Republik Indonesia Tahun 1999 Nomor 156, Tambahan Lembaran Negara Republik Indonesia Nomor 3882)," .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0002> legal:segmen <http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0002/text> .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0002/text> legal:merujuk <http://example.org/legal/peraturan/uu/1999/37> .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0003> .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0003> legal:nomor "3" .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0003/text> legal:teks "Undang-Undang Nomor 24 Tahun 2000 tentang Perjanjian Internasional (Lembaran Negara Republik Indonesia Tahun 2000 Nomor 185, Tambahan Lembaran Negara Republik Indonesia Nomor 4012):" .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0003> legal:segmen <http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0003/text> .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0003/text> legal:merujuk <http://example.org/legal/peraturan/uu/2000/24> .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0004> .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0004> legal:nomor "4" .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0004/text> legal:teks "Undang-Undang Nomor 5 Tahun 2009 tentang Pengesahan United Nations Convention — Against Transnational Organized Crime (Konvensi Perserikatan Bangsa-Bangsa Menentang Tindak Pidana Transnasional yang Terorganisasi) (Lembaran Negara Republik Indonesia Tahun 2009 Nomor 5, Tambahan Lembaran Negara Republik Indonesia Nomor 4960): Dengan... Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA dan PRESIDEN REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG PENGESAHAN PROTOCOL AGAINST THE SMUGGLING OF MIGRANTS BY LAND, SEA AND AIR, SUPPLEMENTING THE UNITED NATIONS CONVENTION AGAINST TRANSNATIONAL ORGANLZED CRIME (PROTOKOL MENENTANG PENYELUNDUPAN MIGRAN MELALUI DARAT, LAUT, DAN UDARA, MELENGKAPI KONVENSI PERSERIKATAN BANGSA-BANGSA MENENTANG TINDAK PIDANA TRANSNASIONAL YANG TERORGANISASI)." .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0004> legal:segmen <http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0004/text> .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0004/text> legal:merujuk <http://example.org/legal/peraturan/uu/2009/5> .
+<http://example.org/legal/peraturan/uu/2009/15> legal:menimbang <http://example.org/legal/peraturan/uu/2009/15/menimbang> .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang> legal:daftarHuruf <http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf> legal:segmen <http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/description> .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/a> legal:nomor "a" .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/a/text> legal:teks "bahwa berdasarkan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945, bangsa Indonesia sebagai bagian dari masyarakat internasional berkewajiban ikut serta melaksanakan ketertiban dunia yang berdasarkan kemerdekaan, perdamaian abadi, dan keadilan sosial:" .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/a> legal:segmen <http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/a/text> .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/a/text> legal:merujuk <http://example.org/legal/peraturan/uu> .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/b> .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/b> legal:nomor "b" .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/b/text> legal:teks "bahwa Protokol Menentang Penyelundupan Migran melalui Darat, Laut, dan Udara, Melengkapi Konvensi Perserikatan Bangsa-Bangsa Menentang Tindak Pidana Transnasional yang Terorganisasi merupakan salah satu bagian yang tidak terpisahkan dari Konvensi Perserikatan Bangsa-Bangsa Menentang Tindak Pidana Transnasional yang Terorganisasi sehingga pencegahan dan pemberantasan penyelundupan migran perlu dilakukan, baik pada tingkat nasional, regional maupun internasional," .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/b> legal:segmen <http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/b/text> .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/c> .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/c> legal:nomor "c" .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/c/text> legal:teks "bahwa penandatanganan Protokol Menentang Penyelundupan Migran melalui Darat, Laut, dan Udara, Melengkapi Konvensi Perserikatan Bangsa-Bangsa Menentang Tindak Pidana Transnasional yang Terorganisasi oleh Pemerintah Republik Indonesia merupakan pencerminan keikutsertaan bangsa Indonesia dalam melaksanakan ketertiban dunia:" .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/c> legal:segmen <http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/c/text> .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/d> .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/d> legal:nomor "d" .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/d/text> legal:teks "bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a, huruf b, dan huruf c, perlu membentuk Undang-Undang tentang Pengesahan Protocol against the Smuggling of Migrants by Land, Sea and Ar, Supplementing the United Nations Convention against Transnational Organized Crime (Protokol Menentang Penyelundupan Migran melalui Darat, Laut, dan Udara, Melengkapi Konvensi Perserikatan Bangsa- Bangsa Menentang Tindak Pidana Transnasional yang Terorganisasi)," .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/d> legal:segmen <http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/d/text> .
+<http://example.org/legal/peraturan/uu/2009/15> legal:disahkanOleh "DR. H. SUSILO BAMBANG YUDHOYONO" .
+<http://example.org/legal/peraturan/uu/2009/15> legal:disahkanDi "Jakarta" .
+<http://example.org/legal/peraturan/uu/2009/15> legal:jabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/peraturan/uu/2009/15> a legal:Peraturan .
+<http://example.org/legal/peraturan/uu/2009/15/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat> a legal:DaftarAyat .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat/0001> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat/0002> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0002> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0002/versi/20090316> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0002/versi/20090316/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat> a legal:Mengingat .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0001> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0002> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0003> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0003/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0004> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0004/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang> a legal:Menimbang .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/a> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/a/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/b> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/b/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/c> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/c/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/d> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/d/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2009/15/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15> .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15/pasal/0001> .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15> .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316> .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat> .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat/0001> .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat> .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15/pasal/0001/versi/20090316/ayat/0002> .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0002/versi/20090316> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15> .
+<http://example.org/legal/peraturan/uu/2009/15/pasal/0002/versi/20090316/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15/pasal/0002/versi/20090316> .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15/mengingat> .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0001> .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0002> .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0003/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0003> .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0004/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15/mengingat/huruf/0004> .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15/menimbang> .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/a> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/a/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/b> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/b/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/b> .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/c> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/c/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/c> .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/d> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/d/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2009/15/menimbang/huruf/d> .

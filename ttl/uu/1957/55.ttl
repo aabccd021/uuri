@@ -1,52 +1,56 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1957/55> legal:documentHasPasalSet <http://example.org/legal/document/uu/1957/55/pasals> .
-<http://example.org/legal/document/uu/1957/55/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1957/55/pasal/0001> .
-<http://example.org/legal/document/uu/1957/55/pasal/0001> legal:pasalHasKey 1 .
-<http://example.org/legal/document/uu/1957/55/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1957/55/pasal/0001/version/19571026> .
-<http://example.org/legal/document/uu/1957/55> legal:documentHasPasal <http://example.org/legal/document/uu/1957/55/pasal/0001> .
-<http://example.org/legal/document/uu/1957/55/pasal/0001/version/19571026> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1957/55/pasal/0001/version/19571026> legal:pasalVersionHasVersionDate "1957-10-26"^^xsd:date .
-<http://example.org/legal/document/uu/1957/55/pasal/0001/version/19571026> legal:pasalVersionHasRawText "Bagian IBW VI (Perusahaan Negeri untuk Pembangkit Tenaga Listrik) dari Anggaran Republik Indonesia untuk tahun dinas 1954 ditetapkan seperti yang dinyatakan pada lampiran - lampiran Undang - undang ini." .
-<http://example.org/legal/document/uu/1957/55/pasal/0001/version/19571026/text> legal:textHasTextString "Bagian IBW VI (Perusahaan Negeri untuk Pembangkit Tenaga Listrik) dari Anggaran Republik Indonesia untuk tahun dinas 1954 ditetapkan seperti yang dinyatakan pada lampiran - lampiran Undang - undang ini." .
-<http://example.org/legal/document/uu/1957/55/pasal/0001/version/19571026> legal:pasalVersionHasText <http://example.org/legal/document/uu/1957/55/pasal/0001/version/19571026/text> .
-<http://example.org/legal/document/uu/1957/55/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1957/55/pasal/0002> .
-<http://example.org/legal/document/uu/1957/55/pasal/0002> legal:pasalHasKey 2 .
-<http://example.org/legal/document/uu/1957/55/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1957/55/pasal/0002/version/19571026> .
-<http://example.org/legal/document/uu/1957/55> legal:documentHasPasal <http://example.org/legal/document/uu/1957/55/pasal/0002> .
-<http://example.org/legal/document/uu/1957/55/pasal/0002/version/19571026> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1957/55/pasal/0002/version/19571026> legal:pasalVersionHasVersionDate "1957-10-26"^^xsd:date .
-<http://example.org/legal/document/uu/1957/55/pasal/0002/version/19571026> legal:pasalVersionHasRawText "Undang - undang ini mulai berlaku pada hari diund angkan dan berlaku surut sampai pada tanggal I Januari 1954. Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan undang - undang ini dengan penempatan dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/1957/55/pasal/0002/version/19571026/text> legal:textHasTextString "Undang - undang ini mulai berlaku pada hari diund angkan dan berlaku surut sampai pada tanggal I Januari 1954. Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan undang - undang ini dengan penempatan dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/1957/55/pasal/0002/version/19571026> legal:pasalVersionHasText <http://example.org/legal/document/uu/1957/55/pasal/0002/version/19571026/text> .
-<http://example.org/legal/document/uu/1957/55> legal:documentHasDisahkanDate "1957-10-26"^^xsd:date .
-<http://example.org/legal/document/uu/1957/55> legal:documentMengingat <http://example.org/legal/document/uu/1957/55/mengingat> .
-<http://example.org/legal/document/uu/1957/55/mengingat/text> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/1957/55/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/1957/55/mengingat/text> .
-<http://example.org/legal/document/uu/1957/55> legal:documentMenimbang <http://example.org/legal/document/uu/1957/55/menimbang> .
-<http://example.org/legal/document/uu/1957/55/menimbang/text> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/1957/55/menimbang> legal:menimbangHasText <http://example.org/legal/document/uu/1957/55/menimbang/text> .
-<http://example.org/legal/document/uu/1957/55> legal:documentHasDisahkanPengesah "SOEKARNO" .
-<http://example.org/legal/document/uu/1957/55> legal:documentHasDisahkanLocation "Jakarta" .
-<http://example.org/legal/document/uu/1957/55> legal:documentHasDisahkanJabatanPengesah "Presiden Republik Indonesia," .
-<http://example.org/legal/document/uu/1957/55> a legal:Document .
-<http://example.org/legal/document/uu/1957/55/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/1957/55/pasal/0001> a legal:Pasal .
-<http://example.org/legal/document/uu/1957/55/pasal/0001/version/19571026> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1957/55/pasal/0001/version/19571026/text> a legal:Text .
-<http://example.org/legal/document/uu/1957/55/pasal/0002> a legal:Pasal .
-<http://example.org/legal/document/uu/1957/55/pasal/0002/version/19571026> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1957/55/pasal/0002/version/19571026/text> a legal:Text .
-<http://example.org/legal/document/uu/1957/55/mengingat/text> a legal:Text .
-<http://example.org/legal/document/uu/1957/55/mengingat> a legal:Mengingat .
-<http://example.org/legal/document/uu/1957/55/menimbang/text> a legal:Text .
-<http://example.org/legal/document/uu/1957/55/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/1957/55/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1957/55/pasals> .
-<http://example.org/legal/document/uu/1957/55/pasal/0001/version/19571026> legal:partOf <http://example.org/legal/document/uu/1957/55/pasal/0001> .
-<http://example.org/legal/document/uu/1957/55/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1957/55> .
-<http://example.org/legal/document/uu/1957/55/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1957/55/pasals> .
-<http://example.org/legal/document/uu/1957/55/pasal/0002/version/19571026> legal:partOf <http://example.org/legal/document/uu/1957/55/pasal/0002> .
-<http://example.org/legal/document/uu/1957/55/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1957/55> .
-<http://example.org/legal/document/uu/1957/55/mengingat/text> legal:partOf <http://example.org/legal/document/uu/1957/55/mengingat> .
-<http://example.org/legal/document/uu/1957/55/menimbang/text> legal:partOf <http://example.org/legal/document/uu/1957/55/menimbang> .
+<http://example.org/legal/peraturan/uu/1957/55> legal:daftarPasal <http://example.org/legal/peraturan/uu/1957/55/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1957/55/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1957/55/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1957/55/pasal/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1957/55/pasal/0001> legal:versi <http://example.org/legal/peraturan/uu/1957/55/pasal/0001/versi/19571026> .
+<http://example.org/legal/peraturan/uu/1957/55> legal:pasal <http://example.org/legal/peraturan/uu/1957/55/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1957/55/pasal/0001/versi/19571026> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1957/55/pasal/0001/versi/19571026> legal:tanggal "1957-10-26"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1957/55/pasal/0001/versi/19571026> legal:teks "Bagian IBW VI (Perusahaan Negeri untuk Pembangkit Tenaga Listrik) dari Anggaran Republik Indonesia untuk tahun dinas 1954 ditetapkan seperti yang dinyatakan pada lampiran - lampiran Undang - undang ini." .
+<http://example.org/legal/peraturan/uu/1957/55/pasal/0001/versi/19571026/text> legal:teks "Bagian IBW VI (Perusahaan Negeri untuk Pembangkit Tenaga Listrik) dari Anggaran Republik Indonesia untuk tahun dinas 1954 ditetapkan seperti yang dinyatakan pada lampiran - lampiran Undang - undang ini." .
+<http://example.org/legal/peraturan/uu/1957/55/pasal/0001/versi/19571026> legal:segmen <http://example.org/legal/peraturan/uu/1957/55/pasal/0001/versi/19571026/text> .
+<http://example.org/legal/peraturan/uu/1957/55/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1957/55/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1957/55/pasal/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1957/55/pasal/0002> legal:versi <http://example.org/legal/peraturan/uu/1957/55/pasal/0002/versi/19571026> .
+<http://example.org/legal/peraturan/uu/1957/55> legal:pasal <http://example.org/legal/peraturan/uu/1957/55/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1957/55/pasal/0002/versi/19571026> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1957/55/pasal/0002/versi/19571026> legal:tanggal "1957-10-26"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1957/55/pasal/0002/versi/19571026> legal:teks "Undang - undang ini mulai berlaku pada hari diund angkan dan berlaku surut sampai pada tanggal I Januari 1954. Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan undang - undang ini dengan penempatan dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/1957/55/pasal/0002/versi/19571026/text> legal:teks "Undang - undang ini mulai berlaku pada hari diund angkan dan berlaku surut sampai pada tanggal I Januari 1954. Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan undang - undang ini dengan penempatan dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/1957/55/pasal/0002/versi/19571026> legal:segmen <http://example.org/legal/peraturan/uu/1957/55/pasal/0002/versi/19571026/text> .
+<http://example.org/legal/peraturan/uu/1957/55> legal:disahkanPada "1957-10-26"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1957/55> legal:tentang " PENETAPAN BAGIAN IBW VI (PERUSAHAAN NEGERI UNTUK PEMBANGKIT TENAGA LISTRIK) DARI ANGGARAN REPUBLIK INDONESIA TAHUN DINAS 1954 PRESIDEN REPUBLIK INDONESIA, Mengingat : Pasal 113 dari Undang - undang Das ar Sementara Republik In donesia dan Pasal 1 dari Undang - undang Perusahaan Indonesia (IBW); Dengan persetujuan Dewan Perwakilan Rakyat; Memutuskan :" .
+<http://example.org/legal/peraturan/uu/1957/55> legal:mengingat <http://example.org/legal/peraturan/uu/1957/55/mengingat> .
+<http://example.org/legal/peraturan/uu/1957/55/mengingat/text> legal:teks "" .
+<http://example.org/legal/peraturan/uu/1957/55/mengingat> legal:segmen <http://example.org/legal/peraturan/uu/1957/55/mengingat/text> .
+<http://example.org/legal/peraturan/uu/1957/55> legal:menimbang <http://example.org/legal/peraturan/uu/1957/55/menimbang> .
+<http://example.org/legal/peraturan/uu/1957/55/menimbang/text> legal:teks "" .
+<http://example.org/legal/peraturan/uu/1957/55/menimbang> legal:segmen <http://example.org/legal/peraturan/uu/1957/55/menimbang/text> .
+<http://example.org/legal/peraturan/uu/1957/55> legal:disahkanOleh "SOEKARNO" .
+<http://example.org/legal/peraturan/uu/1957/55> legal:disahkanDi "Jakarta" .
+<http://example.org/legal/peraturan/uu/1957/55> legal:jabatanPengesah "Presiden Republik Indonesia," .
+<http://example.org/legal/peraturan/uu/1957/55> a legal:Peraturan .
+<http://example.org/legal/peraturan/uu/1957/55/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/1957/55/pasal/0001> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1957/55/pasal/0001/versi/19571026> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1957/55/pasal/0001/versi/19571026/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1957/55/pasal/0002> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1957/55/pasal/0002/versi/19571026> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1957/55/pasal/0002/versi/19571026/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1957/55/mengingat/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1957/55/mengingat> a legal:Mengingat .
+<http://example.org/legal/peraturan/uu/1957/55/menimbang/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1957/55/menimbang> a legal:Menimbang .
+<http://example.org/legal/peraturan/uu/1957/55/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/1957/55> .
+<http://example.org/legal/peraturan/uu/1957/55/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1957/55/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1957/55/pasal/0001/versi/19571026> legal:bagianDari <http://example.org/legal/peraturan/uu/1957/55/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1957/55/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1957/55> .
+<http://example.org/legal/peraturan/uu/1957/55/pasal/0001/versi/19571026/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1957/55/pasal/0001/versi/19571026> .
+<http://example.org/legal/peraturan/uu/1957/55/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1957/55/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1957/55/pasal/0002/versi/19571026> legal:bagianDari <http://example.org/legal/peraturan/uu/1957/55/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1957/55/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1957/55> .
+<http://example.org/legal/peraturan/uu/1957/55/pasal/0002/versi/19571026/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1957/55/pasal/0002/versi/19571026> .
+<http://example.org/legal/peraturan/uu/1957/55/mengingat/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1957/55/mengingat> .
+<http://example.org/legal/peraturan/uu/1957/55/menimbang/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1957/55/menimbang> .

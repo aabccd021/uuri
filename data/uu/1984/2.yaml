@@ -1,5 +1,5 @@
 node: &ref_0
-  nodeType: document
+  nodeType: peraturan
   docType: noTahun
   docCategory: uu
   tahun: 1984
@@ -13,7 +13,7 @@ metadata:
     content:
       type: text
       node:
-        nodeType: text
+        nodeType: segmen
         textName: text
         parentNode: *ref_1
       textString: >-
@@ -26,14 +26,14 @@ metadata:
       nodeType: mengingat
       parentNode: *ref_0
     content:
-      type: pointSet
+      type: daftarHuruf
       node: &ref_3
-        nodeType: pointSet
+        nodeType: daftarHuruf
         parentNode: *ref_2
       description:
         type: text
         node:
-          nodeType: text
+          nodeType: segmen
           textName: description
           parentNode: *ref_3
         textString: ''
@@ -41,26 +41,26 @@ metadata:
       elements:
         - type: point
           node: &ref_4
-            nodeType: point
+            nodeType: huruf
             key: '1'
             parentPointSetNode: *ref_3
           content:
             type: text
             node:
-              nodeType: text
+              nodeType: segmen
               textName: text
               parentNode: *ref_4
             textString: Pasal 23 ayat (5) Undang-Undang Dasar 1945;
             references: []
         - type: point
           node: &ref_5
-            nodeType: point
+            nodeType: huruf
             key: '2'
             parentPointSetNode: *ref_3
           content:
             type: text
             node:
-              nodeType: text
+              nodeType: segmen
               textName: text
               parentNode: *ref_5
             textString: >-
@@ -72,20 +72,20 @@ metadata:
               - start: 110
                 end: 142
                 node:
-                  nodeType: document
+                  nodeType: peraturan
                   docType: noTahun
                   docCategory: uu
                   nomor: 9
                   tahun: 1968
         - type: point
           node: &ref_6
-            nodeType: point
+            nodeType: huruf
             key: '3'
             parentPointSetNode: *ref_3
           content:
             type: text
             node:
-              nodeType: text
+              nodeType: segmen
               textName: text
               parentNode: *ref_6
             textString: >-
@@ -96,20 +96,20 @@ metadata:
               - start: 0
                 end: 32
                 node:
-                  nodeType: document
+                  nodeType: peraturan
                   docType: noTahun
                   docCategory: uu
                   nomor: 1
                   tahun: 1980
         - type: point
           node: &ref_7
-            nodeType: point
+            nodeType: huruf
             key: '4'
             parentPointSetNode: *ref_3
           content:
             type: text
             node:
-              nodeType: text
+              nodeType: segmen
               textName: text
               parentNode: *ref_7
             textString: >-
@@ -124,47 +124,18 @@ metadata:
               - start: 0
                 end: 32
                 node:
-                  nodeType: document
+                  nodeType: peraturan
                   docType: noTahun
                   docCategory: uu
                   nomor: 3
                   tahun: 1981
   memutuskan: ''
   denganPersetujuan: ''
-opText: |-
-  UNDANG-UNDANG REPUBLIK INDONESIA
-  NOMOR 2 TAHUN 1984
-  TENTANG
-  PERHITUNGAN ANGGARAN NEGARA TAHUN ANGGARAN 1980/1981
-  DENGAN RAHMAT TUHAN YANG MAHA ESA
-  PRESIDEN REPUBLIK INDONESIA,
-  Menimbang : bahwa Perhitungan Anggaran Negara Tahun Anggaran 1980/1981 perlu
-  ditetapkan dengan Undang-Undang;
-  Mengingat : 1. Pasal 23 ayat (5) Undang-Undang Dasar 1945;
-  2. Indische Comptabiliteitswet (Staatsblad Tahun 1925 Nomor 448)
-  sebagaimana diubah dan ditambah terakhir dengan Undang-Undang Nomor 9
-  Tahun 1968 tentang Perubahan Pasal 7 Indische Comptabiliteitswet
-  (Lembaran Negara Tahun 1968 Nomor 53, Tambahan Lembaran Negara
-  Nomor 2860);
-  3. Undang-Undang Nomor 1 Tahun 1980 tentang Anggaran Pendapatan dan
-  Belanja Negara Tahun Anggaran 1980/1981 (Lembaran Negara Tahun 1980
-  Nomor 14, Tambahan Lembaran Negara Nomor 3159);
-  4. Undang-Undang Nomor 3 Tahun 1981 tentang Tambahan dan Perubahan
-  atas Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1980/ 1981
-  (Lembaran Negara Tahun 1981 Nomor 24, Tambahan Lembaran Negara
-  Nomor 3196);
-  Memperhatikan : Surat Badan Pemeriksa Keuangan Nomor K.253/WK/3/1984 tanggal 26 Maret
-  1984 tentang Hasil Pemeriksaan atas Perhitungan Anggaran Negara Tahun
-  Anggaran 1980/1981.
-  Dengan persetujuan
-  DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA
-  MEMUTUSKAN :
-  Menetapkan : UNDANG-UNDANG TENTANG PERHITUNGAN ANGGARAN NEGARA
-  TAHUN ANGGARAN 1980/1981.
+  tentang: ' PERHITUNGAN ANGGARAN NEGARA TAHUN ANGGARAN 1980/1981'
 content:
-  type: pasalSet
+  type: daftarPasal
   node:
-    nodeType: pasalSet
+    nodeType: daftarPasal
     parentNode: *ref_0
   elements:
     - type: pasal
@@ -175,13 +146,13 @@ content:
       version:
         type: pasalVersion
         node: &ref_8
-          nodeType: pasalVersion
+          nodeType: versiPasal
           version: &ref_13
             nodeType: date
             month: 6
             date: 5
             year: 1984
-          state: exists
+          state: orisinal
           parentPasalNode:
             nodeType: pasal
             key: '1'
@@ -189,7 +160,7 @@ content:
         content:
           type: ayatSet
           node: &ref_9
-            nodeType: ayatSet
+            nodeType: daftarAyat
             parentPasalVersionNode: *ref_8
           elements:
             - type: ayat
@@ -200,7 +171,7 @@ content:
               content:
                 type: text
                 node:
-                  nodeType: text
+                  nodeType: segmen
                   textName: text
                   parentNode: *ref_10
                 textString: >-
@@ -217,7 +188,7 @@ content:
               content:
                 type: text
                 node:
-                  nodeType: text
+                  nodeType: segmen
                   textName: text
                   parentNode: *ref_11
                 textString: >-
@@ -234,7 +205,7 @@ content:
               content:
                 type: text
                 node:
-                  nodeType: text
+                  nodeType: segmen
                   textName: text
                   parentNode: *ref_12
                 textString: >-
@@ -251,9 +222,9 @@ content:
       version:
         type: pasalVersion
         node: &ref_14
-          nodeType: pasalVersion
+          nodeType: versiPasal
           version: *ref_13
-          state: exists
+          state: orisinal
           parentPasalNode:
             nodeType: pasal
             key: '2'
@@ -261,7 +232,7 @@ content:
         content:
           type: text
           node:
-            nodeType: text
+            nodeType: segmen
             textName: text
             parentNode: *ref_14
           textString: >-

@@ -1,5 +1,5 @@
 node: &ref_0
-  nodeType: document
+  nodeType: peraturan
   docType: noTahun
   docCategory: uu
   tahun: 1957
@@ -13,13 +13,10 @@ metadata:
     content:
       type: text
       node:
-        nodeType: text
+        nodeType: segmen
         textName: text
         parentNode: *ref_1
-      textString: >-
-        bahwa de ngan terjadinya perubahan Kementerian - kementerian, perlu diadakan penggantian
-        mengenai keanggotaan wakil Kementerian Perekonomian dan Kementerian Perhubungan dalam
-        Panitia Penyelesaian Perselisihan Perburuhan Pusat/Daerah,
+      textString: ''
       references: []
   mengingat:
     type: mengingat
@@ -27,74 +24,20 @@ metadata:
       nodeType: mengingat
       parentNode: *ref_0
     content:
-      type: pointSet
-      node: &ref_3
-        nodeType: pointSet
+      type: text
+      node:
+        nodeType: segmen
+        textName: text
         parentNode: *ref_2
-      description:
-        type: text
-        node:
-          nodeType: text
-          textName: description
-          parentNode: *ref_3
-        textString: ''
-        references: []
-      elements:
-        - type: point
-          node: &ref_4
-            nodeType: point
-            key: a
-            parentPointSetNode: *ref_3
-          content:
-            type: text
-            node:
-              nodeType: text
-              textName: text
-              parentNode: *ref_4
-            textString: >-
-              Pasal 5 ayat (2) d an Pasal 12 ayat (1) Undang - undang tentang Penyelesaian
-              Perselisihan Perburuhan.
-            references: []
-        - type: point
-          node: &ref_5
-            nodeType: point
-            key: b
-            parentPointSetNode: *ref_3
-          content:
-            type: text
-            node:
-              nodeType: text
-              textName: text
-              parentNode: *ref_5
-            textString: >-
-              Pasal 89 Undang - undang Dasar Sementara Republik Indonesia, Dengan persetujuan Dewan
-              Perwakilan Rakyat, MEMUTUSKAN : Menetapkan : UNDANG - UNDANG PERUBAHAN UNDANG - UNDANG
-              TENTANG PENYELESAIAN PERSELISIHAN PERBURUHAN.
-            references: []
+      textString: ''
+      references: []
   memutuskan: ''
   denganPersetujuan: ''
-opText: |-
-  UNDANG - UNDANG REPUBLIK INDONESIA
-  NOMOR 26 TAHUN 1957
-  TENTANG
-  PERUBAHAN UNDANG - UNDANG TENTANG PEN YELESAIAN
-  PERSELISIHAN PERBURUHAN
-  PRESIDEN REPUBLIK INDONESIA,
-  Menimbang : bahwa de ngan terjadinya perubahan Kementerian - kementerian, perlu
-  diadakan penggantian mengenai keanggotaan wakil Kementerian
-  Perekonomian dan Kementerian Perhubungan dalam Panitia Penyelesaian
-  Perselisihan Perburuhan Pusat/Daerah,
-  Mengingat : a. Pasal 5 ayat (2) d an Pasal 12 ayat (1) Undang - undang tentang
-  Penyelesaian Perselisihan Perburuhan.
-  b. Pasal 89 Undang - undang Dasar Sementara Republik Indonesia,
-  Dengan persetujuan Dewan Perwakilan Rakyat,
-  MEMUTUSKAN :
-  Menetapkan : UNDANG - UNDANG PERUBAHAN UNDANG - UNDANG
-  TENTANG PENYELESAIAN PERSELISIHAN PERBURUHAN.
+  tentang: ' PERUBAHAN UNDANG - UNDANG TENTANG PEN YELESAIAN PERSELISIHAN PERBURUHAN PRESIDEN REPUBLIK INDONESIA, Menimbang : bahwa de ngan terjadinya perubahan Kementerian - kementerian, perlu diadakan penggantian mengenai keanggotaan wakil Kementerian Perekonomian dan Kementerian Perhubungan dalam Panitia Penyelesaian Perselisihan Perburuhan Pusat/Daerah, Mengingat : a. Pasal 5 ayat (2) d an Pasal 12 ayat (1) Undang - undang tentang Penyelesaian Perselisihan Perburuhan. b. Pasal 89 Undang - undang Dasar Sementara Republik Indonesia, Dengan persetujuan Dewan Perwakilan Rakyat, MEMUTUSKAN : Menetapkan : UNDANG - UNDANG PERUBAHAN UNDANG - UNDANG TENTANG PENYELESAIAN PERSELISIHAN PERBURUHAN.'
 content:
-  type: pasalSet
+  type: daftarPasal
   node:
-    nodeType: pasalSet
+    nodeType: daftarPasal
     parentNode: *ref_0
   elements:
     - type: pasal
@@ -104,14 +47,14 @@ content:
         parentNode: *ref_0
       version:
         type: pasalVersion
-        node: &ref_6
-          nodeType: pasalVersion
-          version: &ref_8
+        node: &ref_3
+          nodeType: versiPasal
+          version: &ref_5
             nodeType: date
             month: 7
             date: 27
             year: 1957
-          state: exists
+          state: orisinal
           parentPasalNode:
             nodeType: pasal
             key: '1'
@@ -119,9 +62,9 @@ content:
         content:
           type: text
           node:
-            nodeType: text
+            nodeType: segmen
             textName: text
-            parentNode: *ref_6
+            parentNode: *ref_3
           textString: >-
             Pada Pasal 5 ayat (2) serta Pasal 12 ayat (1) Undang - undang tentang Penyelesaian
             Perselisihan Perburuhan (Undang - undang Nomor 22 tahun 1957, Lembaran Negara tahun 1957
@@ -132,15 +75,15 @@ content:
             - start: 28
               end: 45
               node:
-                parentAyatSetNode: &ref_7
-                  nodeType: ayatSet
-                  parentPasalVersionNode: *ref_6
+                parentAyatSetNode: &ref_4
+                  nodeType: daftarAyat
+                  parentPasalVersionNode: *ref_3
                 key: 1
                 nodeType: ayat
             - start: 5
               end: 21
               node:
-                parentAyatSetNode: *ref_7
+                parentAyatSetNode: *ref_4
                 key: 2
                 nodeType: ayat
     - type: pasal
@@ -150,10 +93,10 @@ content:
         parentNode: *ref_0
       version:
         type: pasalVersion
-        node: &ref_9
-          nodeType: pasalVersion
-          version: *ref_8
-          state: exists
+        node: &ref_6
+          nodeType: versiPasal
+          version: *ref_5
+          state: orisinal
           parentPasalNode:
             nodeType: pasal
             key: '2'
@@ -161,16 +104,16 @@ content:
         content:
           type: text
           node:
-            nodeType: text
+            nodeType: segmen
             textName: text
-            parentNode: *ref_9
+            parentNode: *ref_6
           textString: >-
             Undang - undang ini mulai berlaku pada hari diundangkan. Agar supa ya setiap orang dapat
             mengetahuinya, memerintahkan pengundangan undang - undang ini dengan penempatan dalam
             Lembaran Negara Republik Indonesia.
           references: []
 disahkan:
-  date: *ref_8
+  date: *ref_5
   location: Jakarta
   pengesah: SUKARNO
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

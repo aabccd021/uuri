@@ -1,133 +1,104 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1981/5> legal:documentHasPasalSet <http://example.org/legal/document/uu/1981/5/pasals> .
-<http://example.org/legal/document/uu/1981/5/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1981/5/pasal/0001> .
-<http://example.org/legal/document/uu/1981/5/pasal/0001> legal:pasalHasKey 1 .
-<http://example.org/legal/document/uu/1981/5/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704> .
-<http://example.org/legal/document/uu/1981/5> legal:documentHasPasal <http://example.org/legal/document/uu/1981/5/pasal/0001> .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704> legal:pasalVersionHasVersionDate "1981-07-04"^^xsd:date .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704> legal:pasalVersionHasRawText "(1). Penerimaan Negara dalam Tahun Anggaran 1973/1974 adalah sebesar Rp.\n1. 118.076.016.534,26 (satu trilyun seratus delapanbelas milyar tujuhpuluh enam juta enambelas ribu limaratus tigapuluh empat dua puluh enam perseratus rupiah).\n\n(2). Pengeluaran Negara dalam Tahun Anggaran 1973/1974 adalah sebesar Rp.\n1. 106.074.164.434,67 (satu trilyun seratus enam milyar tujuhpuluh empat juta seratus enampuluh empat ribu empatratus tigap uluh empat enampuluh tujuh perseratus rupiah).\n\n(3). Sisa lebih Perhitungan Anggaran Negara Tahun 1973 /1974 adalah sebesar Rp. 12.001.852.099,59 (duabelas milyar satu juta delapan ratus limapuluh dua ribu sembilanpuluh sembilan limapuluh sembilan perseratus rupiah)." .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat> .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0001> .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0001> legal:ayatHasKey 1 .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0001> legal:ayatHasRawText "Penerimaan Negara dalam Tahun Anggaran 1973/1974 adalah sebesar Rp.\n1. 118.076.016.534,26 (satu trilyun seratus delapanbelas milyar tujuhpuluh enam juta enambelas ribu limaratus tigapuluh empat dua puluh enam perseratus rupiah).\n" .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0001/point> .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0001/point/description> legal:textHasTextString "Penerimaan Negara dalam Tahun Anggaran 1973/1974 adalah sebesar Rp." .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0001/point/description> .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0001/point/0001> .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0001/point/0001> legal:pointHasKey "1" .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0001/point/0001/text> legal:textHasTextString "118.076.016.534,26 (satu trilyun seratus delapanbelas milyar tujuhpuluh enam juta enambelas ribu limaratus tigapuluh empat dua puluh enam perseratus rupiah)." .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0001/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0001/point/0001/text> .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0002> .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0002> legal:ayatHasKey 2 .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0002> legal:ayatHasRawText "Pengeluaran Negara dalam Tahun Anggaran 1973/1974 adalah sebesar Rp.\n1. 106.074.164.434,67 (satu trilyun seratus enam milyar tujuhpuluh empat juta seratus enampuluh empat ribu empatratus tigap uluh empat enampuluh tujuh perseratus rupiah).\n" .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0002> legal:ayatHasPointSet <http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0002/point> .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0002/point/description> legal:textHasTextString "Pengeluaran Negara dalam Tahun Anggaran 1973/1974 adalah sebesar Rp." .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0002/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0002/point/description> .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0002/point/0001> .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0002/point/0001> legal:pointHasKey "1" .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0002/point/0001/text> legal:textHasTextString "106.074.164.434,67 (satu trilyun seratus enam milyar tujuhpuluh empat juta seratus enampuluh empat ribu empatratus tigap uluh empat enampuluh tujuh perseratus rupiah)." .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0002/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0002/point/0001/text> .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0003> .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0003> legal:ayatHasKey 3 .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0003> legal:ayatHasRawText "Sisa lebih Perhitungan Anggaran Negara Tahun 1973 /1974 adalah sebesar Rp. 12.001.852.099,59 (duabelas milyar satu juta delapan ratus limapuluh dua ribu sembilanpuluh sembilan limapuluh sembilan perseratus rupiah)." .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0003/text> legal:textHasTextString "Sisa lebih Perhitungan Anggaran Negara Tahun 1973 /1974 adalah sebesar Rp. 12.001.852.099,59 (duabelas milyar satu juta delapan ratus limapuluh dua ribu sembilanpuluh sembilan limapuluh sembilan perseratus rupiah)." .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0003/text> .
-<http://example.org/legal/document/uu/1981/5/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1981/5/pasal/0002> .
-<http://example.org/legal/document/uu/1981/5/pasal/0002> legal:pasalHasKey 2 .
-<http://example.org/legal/document/uu/1981/5/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1981/5/pasal/0002/version/19810704> .
-<http://example.org/legal/document/uu/1981/5> legal:documentHasPasal <http://example.org/legal/document/uu/1981/5/pasal/0002> .
-<http://example.org/legal/document/uu/1981/5/pasal/0002/version/19810704> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1981/5/pasal/0002/version/19810704> legal:pasalVersionHasVersionDate "1981-07-04"^^xsd:date .
-<http://example.org/legal/document/uu/1981/5/pasal/0002/version/19810704> legal:pasalVersionHasRawText "Undang - undang ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/1981/5/pasal/0002/version/19810704/text> legal:textHasTextString "Undang - undang ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/1981/5/pasal/0002/version/19810704> legal:pasalVersionHasText <http://example.org/legal/document/uu/1981/5/pasal/0002/version/19810704/text> .
-<http://example.org/legal/document/uu/1981/5> legal:documentHasDisahkanDate "1981-07-04"^^xsd:date .
-<http://example.org/legal/document/uu/1981/5> legal:documentMengingat <http://example.org/legal/document/uu/1981/5/mengingat> .
-<http://example.org/legal/document/uu/1981/5/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1981/5/mengingat/point> .
-<http://example.org/legal/document/uu/1981/5/mengingat/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/1981/5/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1981/5/mengingat/point/description> .
-<http://example.org/legal/document/uu/1981/5/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1981/5/mengingat/point/0001> .
-<http://example.org/legal/document/uu/1981/5/mengingat/point/0001> legal:pointHasKey "1" .
-<http://example.org/legal/document/uu/1981/5/mengingat/point/0001/text> legal:textHasTextString "Pasal 23 ayat (5) Undang - Undang Dasar 1945;" .
-<http://example.org/legal/document/uu/1981/5/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1981/5/mengingat/point/0001/text> .
-<http://example.org/legal/document/uu/1981/5/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1981/5/mengingat/point/0002> .
-<http://example.org/legal/document/uu/1981/5/mengingat/point/0002> legal:pointHasKey "2" .
-<http://example.org/legal/document/uu/1981/5/mengingat/point/0002/text> legal:textHasTextString "Indische Comptabiliteitswet (Staatsblad 1925 Nomor 448) sebagaimana diubah dan ditambah terakhir dengan Undang - undang Nomor 9 Tahun 1968 tentang Perubahan Pasal 7 Indische Comptabiliteitswet (Lembaran Negara Tahun 1968 Nomor 53);" .
-<http://example.org/legal/document/uu/1981/5/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1981/5/mengingat/point/0002/text> .
-<http://example.org/legal/document/uu/1981/5/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1981/5/mengingat/point/0003> .
-<http://example.org/legal/document/uu/1981/5/mengingat/point/0003> legal:pointHasKey "3" .
-<http://example.org/legal/document/uu/1981/5/mengingat/point/0003/text> legal:textHasTextString "Undang - undang Nomor 3 T ahun 1973 tentang Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1973/1974 (Lembaran Negara Tahun 1973 Nomor 10, Tambahan Lembaran Negara Nomor 2998);" .
-<http://example.org/legal/document/uu/1981/5/mengingat/point/0003> legal:pointHasText <http://example.org/legal/document/uu/1981/5/mengingat/point/0003/text> .
-<http://example.org/legal/document/uu/1981/5/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1981/5/mengingat/point/0004> .
-<http://example.org/legal/document/uu/1981/5/mengingat/point/0004> legal:pointHasKey "4" .
-<http://example.org/legal/document/uu/1981/5/mengingat/point/0004/text> legal:textHasTextString "Undang - undang Nomor 3 Tahun 1974. tentang Tambahan dan Perubahan atas Anggaran Pendapatan dan B elanja Negara Tahun Auggaran 1973/ 1974 (Lembaran Negara Tahun 1974 Nomor 29, Tambahan Lembaran Negara Nomor 3033); Memperhatikan : Surat Badan Pemeriksa Keuangan Nomor K 435/I.U/II/5/1980 beserta lampirannya yang berupa Nota Hasil Pemeriksaan Keuangan atas Perhitungan Anggaran Negara Tahun 1973/1974; Dengan Persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN : Meneta pkan : UNDANG - UNDANG TENTANG PERHITUNGAN ANGGARAN NEGARA TAHUN 1973/1974" .
-<http://example.org/legal/document/uu/1981/5/mengingat/point/0004> legal:pointHasText <http://example.org/legal/document/uu/1981/5/mengingat/point/0004/text> .
-<http://example.org/legal/document/uu/1981/5> legal:documentMenimbang <http://example.org/legal/document/uu/1981/5/menimbang> .
-<http://example.org/legal/document/uu/1981/5/menimbang/text> legal:textHasTextString "bahwa Perhitungan Anggaran Negara Tahun 1973/1974 perlu ditetapkan dengan Undang - undang;" .
-<http://example.org/legal/document/uu/1981/5/menimbang> legal:menimbangHasText <http://example.org/legal/document/uu/1981/5/menimbang/text> .
-<http://example.org/legal/document/uu/1981/5> legal:documentHasDisahkanPengesah "SOEHARTO" .
-<http://example.org/legal/document/uu/1981/5> legal:documentHasDisahkanLocation "Jakarta" .
-<http://example.org/legal/document/uu/1981/5> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
-<http://example.org/legal/document/uu/1981/5> a legal:Document .
-<http://example.org/legal/document/uu/1981/5/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/1981/5/pasal/0001> a legal:Pasal .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat> a legal:AyatSet .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0001> a legal:Ayat .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0001/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0001/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0001/point/0001> a legal:Point .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0001/point/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0002> a legal:Ayat .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0002/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0002/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0002/point/0001> a legal:Point .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0002/point/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0003> a legal:Ayat .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0003/text> a legal:Text .
-<http://example.org/legal/document/uu/1981/5/pasal/0002> a legal:Pasal .
-<http://example.org/legal/document/uu/1981/5/pasal/0002/version/19810704> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1981/5/pasal/0002/version/19810704/text> a legal:Text .
-<http://example.org/legal/document/uu/1981/5/mengingat> a legal:Mengingat .
-<http://example.org/legal/document/uu/1981/5/mengingat/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1981/5/mengingat/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1981/5/mengingat/point/0001> a legal:Point .
-<http://example.org/legal/document/uu/1981/5/mengingat/point/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/1981/5/mengingat/point/0002> a legal:Point .
-<http://example.org/legal/document/uu/1981/5/mengingat/point/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/1981/5/mengingat/point/0003> a legal:Point .
-<http://example.org/legal/document/uu/1981/5/mengingat/point/0003/text> a legal:Text .
-<http://example.org/legal/document/uu/1981/5/mengingat/point/0004> a legal:Point .
-<http://example.org/legal/document/uu/1981/5/mengingat/point/0004/text> a legal:Text .
-<http://example.org/legal/document/uu/1981/5/menimbang/text> a legal:Text .
-<http://example.org/legal/document/uu/1981/5/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/1981/5/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1981/5/pasals> .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704> legal:partOf <http://example.org/legal/document/uu/1981/5/pasal/0001> .
-<http://example.org/legal/document/uu/1981/5/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1981/5> .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat> legal:partOf <http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704> .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat> .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0001> .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0001/point/0001> legal:partOf <http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0001/point> .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0001/point/0001/text> legal:partOf <http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0001/point/0001> .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat> .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0002/point> legal:partOf <http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0002> .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0002/point/0001> legal:partOf <http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0002/point> .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0002/point/0001/text> legal:partOf <http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0002/point/0001> .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat> .
-<http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1981/5/pasal/0001/version/19810704/ayat/0003> .
-<http://example.org/legal/document/uu/1981/5/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1981/5/pasals> .
-<http://example.org/legal/document/uu/1981/5/pasal/0002/version/19810704> legal:partOf <http://example.org/legal/document/uu/1981/5/pasal/0002> .
-<http://example.org/legal/document/uu/1981/5/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1981/5> .
-<http://example.org/legal/document/uu/1981/5/mengingat/point> legal:partOf <http://example.org/legal/document/uu/1981/5/mengingat> .
-<http://example.org/legal/document/uu/1981/5/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1981/5/mengingat/point> .
-<http://example.org/legal/document/uu/1981/5/mengingat/point/0001/text> legal:partOf <http://example.org/legal/document/uu/1981/5/mengingat/point/0001> .
-<http://example.org/legal/document/uu/1981/5/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1981/5/mengingat/point> .
-<http://example.org/legal/document/uu/1981/5/mengingat/point/0002/text> legal:partOf <http://example.org/legal/document/uu/1981/5/mengingat/point/0002> .
-<http://example.org/legal/document/uu/1981/5/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/1981/5/mengingat/point> .
-<http://example.org/legal/document/uu/1981/5/mengingat/point/0003/text> legal:partOf <http://example.org/legal/document/uu/1981/5/mengingat/point/0003> .
-<http://example.org/legal/document/uu/1981/5/mengingat/point/0004> legal:partOf <http://example.org/legal/document/uu/1981/5/mengingat/point> .
-<http://example.org/legal/document/uu/1981/5/mengingat/point/0004/text> legal:partOf <http://example.org/legal/document/uu/1981/5/mengingat/point/0004> .
-<http://example.org/legal/document/uu/1981/5/menimbang/text> legal:partOf <http://example.org/legal/document/uu/1981/5/menimbang> .
+<http://example.org/legal/peraturan/uu/1981/5> legal:daftarPasal <http://example.org/legal/peraturan/uu/1981/5/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1981/5/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1981/5/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001> legal:versi <http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704> .
+<http://example.org/legal/peraturan/uu/1981/5> legal:pasal <http://example.org/legal/peraturan/uu/1981/5/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704> legal:tanggal "1981-07-04"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704> legal:teks "(1). Penerimaan Negara dalam Tahun Anggaran 1973/1974 adalah sebesar Rp.\n1. 118.076.016.534,26 (satu trilyun seratus delapanbelas milyar tujuhpuluh enam juta enambelas ribu limaratus tigapuluh empat dua puluh enam perseratus rupiah).\n\n(2). Pengeluaran Negara dalam Tahun Anggaran 1973/1974 adalah sebesar Rp.\n1. 106.074.164.434,67 (satu trilyun seratus enam milyar tujuhpuluh empat juta seratus enampuluh empat ribu empatratus tigap uluh empat enampuluh tujuh perseratus rupiah).\n\n(3). Sisa lebih Perhitungan Anggaran Negara Tahun 1973 /1974 adalah sebesar Rp. 12.001.852.099,59 (duabelas milyar satu juta delapan ratus limapuluh dua ribu sembilanpuluh sembilan limapuluh sembilan perseratus rupiah)." .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704> legal:daftarAyat <http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0001> legal:teks "Penerimaan Negara dalam Tahun Anggaran 1973/1974 adalah sebesar Rp.\n1. 118.076.016.534,26 (satu trilyun seratus delapanbelas milyar tujuhpuluh enam juta enambelas ribu limaratus tigapuluh empat dua puluh enam perseratus rupiah).\n" .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0001> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0001/huruf/description> legal:teks "Penerimaan Negara dalam Tahun Anggaran 1973/1974 adalah sebesar Rp." .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0001/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0001/huruf/description> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0001/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0001/huruf/0001> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0001/huruf/0001> legal:nomor "1" .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0001/huruf/0001/text> legal:teks "118.076.016.534,26 (satu trilyun seratus delapanbelas milyar tujuhpuluh enam juta enambelas ribu limaratus tigapuluh empat dua puluh enam perseratus rupiah)." .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0001/huruf/0001> legal:segmen <http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0001/huruf/0001/text> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0002> legal:teks "Pengeluaran Negara dalam Tahun Anggaran 1973/1974 adalah sebesar Rp.\n1. 106.074.164.434,67 (satu trilyun seratus enam milyar tujuhpuluh empat juta seratus enampuluh empat ribu empatratus tigap uluh empat enampuluh tujuh perseratus rupiah).\n" .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0002> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0002/huruf> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0002/huruf/description> legal:teks "Pengeluaran Negara dalam Tahun Anggaran 1973/1974 adalah sebesar Rp." .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0002/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0002/huruf/description> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0002/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0002/huruf/0001> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0002/huruf/0001> legal:nomor "1" .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0002/huruf/0001/text> legal:teks "106.074.164.434,67 (satu trilyun seratus enam milyar tujuhpuluh empat juta seratus enampuluh empat ribu empatratus tigap uluh empat enampuluh tujuh perseratus rupiah)." .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0002/huruf/0001> legal:segmen <http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0002/huruf/0001/text> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0003> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0003> legal:nomor 3 .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0003> legal:teks "Sisa lebih Perhitungan Anggaran Negara Tahun 1973 /1974 adalah sebesar Rp. 12.001.852.099,59 (duabelas milyar satu juta delapan ratus limapuluh dua ribu sembilanpuluh sembilan limapuluh sembilan perseratus rupiah)." .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0003/text> legal:teks "Sisa lebih Perhitungan Anggaran Negara Tahun 1973 /1974 adalah sebesar Rp. 12.001.852.099,59 (duabelas milyar satu juta delapan ratus limapuluh dua ribu sembilanpuluh sembilan limapuluh sembilan perseratus rupiah)." .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0003> legal:segmen <http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0003/text> .
+<http://example.org/legal/peraturan/uu/1981/5/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1981/5/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0002> legal:versi <http://example.org/legal/peraturan/uu/1981/5/pasal/0002/versi/19810704> .
+<http://example.org/legal/peraturan/uu/1981/5> legal:pasal <http://example.org/legal/peraturan/uu/1981/5/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0002/versi/19810704> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0002/versi/19810704> legal:tanggal "1981-07-04"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0002/versi/19810704> legal:teks "Undang - undang ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0002/versi/19810704/text> legal:teks "Undang - undang ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0002/versi/19810704> legal:segmen <http://example.org/legal/peraturan/uu/1981/5/pasal/0002/versi/19810704/text> .
+<http://example.org/legal/peraturan/uu/1981/5> legal:disahkanPada "1981-07-04"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1981/5> legal:tentang " PERHITUNGAN ANGGARAN NEGARA TAHUN 197 3/1974 DENGAN RAKHMAT TUHAN YANG MAHA ESA PRESIDEN REPUBLIK INDONESIA, Menimbang : bahwa Perhitungan Anggaran Negara Tahun 1973/1974 perlu ditetapkan dengan Undang - undang; Mengingat : 1. Pasal 23 ayat (5) Undang - Undang Dasar 1945; 2. Indische Comptabiliteitswet (Staatsblad 1925 Nomor 448) sebagaimana diubah dan ditambah terakhir dengan Undang - undang Nomor 9 Tahun 1968 tentang Perubahan Pasal 7 Indische Comptabiliteitswet (Lembaran Negara Tahun 1968 Nomor 53); 3. Undang - undang Nomor 3 T ahun 1973 tentang Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1973/1974 (Lembaran Negara Tahun 1973 Nomor 10, Tambahan Lembaran Negara Nomor 2998); 4. Undang - undang Nomor 3 Tahun 1974. tentang Tambahan dan Perubahan atas Anggaran Pendapatan dan B elanja Negara Tahun Auggaran 1973/ 1974 (Lembaran Negara Tahun 1974 Nomor 29, Tambahan Lembaran Negara Nomor 3033); Memperhatikan : Surat Badan Pemeriksa Keuangan Nomor K 435/I.U/II/5/1980 beserta lampirannya yang berupa Nota Hasil Pemeriksaan Keuangan atas Perhitungan Anggaran Negara Tahun 1973/1974; Dengan Persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN : Meneta pkan : UNDANG - UNDANG TENTANG PERHITUNGAN ANGGARAN NEGARA TAHUN 1973/1974" .
+<http://example.org/legal/peraturan/uu/1981/5> legal:mengingat <http://example.org/legal/peraturan/uu/1981/5/mengingat> .
+<http://example.org/legal/peraturan/uu/1981/5/mengingat/text> legal:teks "" .
+<http://example.org/legal/peraturan/uu/1981/5/mengingat> legal:segmen <http://example.org/legal/peraturan/uu/1981/5/mengingat/text> .
+<http://example.org/legal/peraturan/uu/1981/5> legal:menimbang <http://example.org/legal/peraturan/uu/1981/5/menimbang> .
+<http://example.org/legal/peraturan/uu/1981/5/menimbang/text> legal:teks "" .
+<http://example.org/legal/peraturan/uu/1981/5/menimbang> legal:segmen <http://example.org/legal/peraturan/uu/1981/5/menimbang/text> .
+<http://example.org/legal/peraturan/uu/1981/5> legal:disahkanOleh "SOEHARTO" .
+<http://example.org/legal/peraturan/uu/1981/5> legal:disahkanDi "Jakarta" .
+<http://example.org/legal/peraturan/uu/1981/5> legal:jabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/peraturan/uu/1981/5> a legal:Peraturan .
+<http://example.org/legal/peraturan/uu/1981/5/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat> a legal:DaftarAyat .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0001> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0001/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0001/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0001/huruf/0001> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0001/huruf/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0002> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0002/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0002/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0002/huruf/0001> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0002/huruf/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0003> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0003/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0002> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0002/versi/19810704> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0002/versi/19810704/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1981/5/mengingat/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1981/5/mengingat> a legal:Mengingat .
+<http://example.org/legal/peraturan/uu/1981/5/menimbang/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1981/5/menimbang> a legal:Menimbang .
+<http://example.org/legal/peraturan/uu/1981/5/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/5> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/5/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/5/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/5> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0001/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0001/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0001/huruf/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0001/huruf/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0001/huruf/0001> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0002/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0002/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0002/huruf> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0002/huruf/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0002/huruf> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0002/huruf/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0002/huruf/0001> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0003/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/5/pasal/0001/versi/19810704/ayat/0003> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/5/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0002/versi/19810704> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/5/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/5> .
+<http://example.org/legal/peraturan/uu/1981/5/pasal/0002/versi/19810704/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/5/pasal/0002/versi/19810704> .
+<http://example.org/legal/peraturan/uu/1981/5/mengingat/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/5/mengingat> .
+<http://example.org/legal/peraturan/uu/1981/5/menimbang/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1981/5/menimbang> .

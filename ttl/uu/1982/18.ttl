@@ -1,119 +1,125 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1982/18> legal:documentHasPasalSet <http://example.org/legal/document/uu/1982/18/pasals> .
-<http://example.org/legal/document/uu/1982/18/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1982/18/pasal/0001> .
-<http://example.org/legal/document/uu/1982/18/pasal/0001> legal:pasalHasKey 1 .
-<http://example.org/legal/document/uu/1982/18/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820> .
-<http://example.org/legal/document/uu/1982/18> legal:documentHasPasal <http://example.org/legal/document/uu/1982/18/pasal/0001> .
-<http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820> legal:pasalVersionHasVersionDate "1982-08-20"^^xsd:date .
-<http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820> legal:pasalVersionHasRawText "(1). Membentuk pengadilan tinggi Sulawesi Tengah yang berkedudukan di Palu.\n(2). Wilayah hukum pengadilan tinggi seba gaimana dimaksud dalam ayat (1) meliputi wilayah hukum semua pengadilan negeri dalam Propinsi Daerah Tingkat I Sulawesi Tengah." .
-<http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820/ayat> .
-<http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820/ayat/0001> .
-<http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820/ayat/0001> legal:ayatHasKey 1 .
-<http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820/ayat/0001> legal:ayatHasRawText "Membentuk pengadilan tinggi Sulawesi Tengah yang berkedudukan di Palu." .
-<http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820/ayat/0001/text> legal:textHasTextString "Membentuk pengadilan tinggi Sulawesi Tengah yang berkedudukan di Palu." .
-<http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820/ayat/0001/text> .
-<http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820/ayat/0002> .
-<http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820/ayat/0002> legal:ayatHasKey 2 .
-<http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820/ayat/0002> legal:ayatHasRawText "Wilayah hukum pengadilan tinggi seba gaimana dimaksud dalam ayat (1) meliputi wilayah hukum semua pengadilan negeri dalam Propinsi Daerah Tingkat I Sulawesi Tengah." .
-<http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820/ayat/0002/text> legal:textHasTextString "Wilayah hukum pengadilan tinggi seba gaimana dimaksud dalam ayat (1) meliputi wilayah hukum semua pengadilan negeri dalam Propinsi Daerah Tingkat I Sulawesi Tengah." .
-<http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820/ayat/0002/text> .
-<http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820/ayat/0001> .
-<http://example.org/legal/document/uu/1982/18/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1982/18/pasal/0002> .
-<http://example.org/legal/document/uu/1982/18/pasal/0002> legal:pasalHasKey 2 .
-<http://example.org/legal/document/uu/1982/18/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1982/18/pasal/0002/version/19820820> .
-<http://example.org/legal/document/uu/1982/18> legal:documentHasPasal <http://example.org/legal/document/uu/1982/18/pasal/0002> .
-<http://example.org/legal/document/uu/1982/18/pasal/0002/version/19820820> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1982/18/pasal/0002/version/19820820> legal:pasalVersionHasVersionDate "1982-08-20"^^xsd:date .
-<http://example.org/legal/document/uu/1982/18/pasal/0002/version/19820820> legal:pasalVersionHasRawText "Wilayah hukum Pengadilan Tinggi Manado dikurangi dengan wilayah hukum semua pengadilan negeri dalam Propinsi Daerah Ti ngkat I Sulawesi Tengah." .
-<http://example.org/legal/document/uu/1982/18/pasal/0002/version/19820820/text> legal:textHasTextString "Wilayah hukum Pengadilan Tinggi Manado dikurangi dengan wilayah hukum semua pengadilan negeri dalam Propinsi Daerah Ti ngkat I Sulawesi Tengah." .
-<http://example.org/legal/document/uu/1982/18/pasal/0002/version/19820820> legal:pasalVersionHasText <http://example.org/legal/document/uu/1982/18/pasal/0002/version/19820820/text> .
-<http://example.org/legal/document/uu/1982/18/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1982/18/pasal/0003> .
-<http://example.org/legal/document/uu/1982/18/pasal/0003> legal:pasalHasKey 3 .
-<http://example.org/legal/document/uu/1982/18/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1982/18/pasal/0003/version/19820820> .
-<http://example.org/legal/document/uu/1982/18> legal:documentHasPasal <http://example.org/legal/document/uu/1982/18/pasal/0003> .
-<http://example.org/legal/document/uu/1982/18/pasal/0003/version/19820820> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1982/18/pasal/0003/version/19820820> legal:pasalVersionHasVersionDate "1982-08-20"^^xsd:date .
-<http://example.org/legal/document/uu/1982/18/pasal/0003/version/19820820> legal:pasalVersionHasRawText "Perkara - perkara yang berasal dari pengadilan negeri dalam Propinsi Daerah Tingkat I Sulawesi Tengah yang pada saat mulai berlakunya undang - undang ini, belum diputus oleh Pengadilan Tinggi Manado, tetap didaftar, diperiksa dan diputus oleh Pengadilan Tinggi Manado sampai saat diresmikannya Pengadilan Tinggi Sulawesi Tengah." .
-<http://example.org/legal/document/uu/1982/18/pasal/0003/version/19820820/text> legal:textHasTextString "Perkara - perkara yang berasal dari pengadilan negeri dalam Propinsi Daerah Tingkat I Sulawesi Tengah yang pada saat mulai berlakunya undang - undang ini, belum diputus oleh Pengadilan Tinggi Manado, tetap didaftar, diperiksa dan diputus oleh Pengadilan Tinggi Manado sampai saat diresmikannya Pengadilan Tinggi Sulawesi Tengah." .
-<http://example.org/legal/document/uu/1982/18/pasal/0003/version/19820820> legal:pasalVersionHasText <http://example.org/legal/document/uu/1982/18/pasal/0003/version/19820820/text> .
-<http://example.org/legal/document/uu/1982/18/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1982/18/pasal/0004> .
-<http://example.org/legal/document/uu/1982/18/pasal/0004> legal:pasalHasKey 4 .
-<http://example.org/legal/document/uu/1982/18/pasal/0004> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1982/18/pasal/0004/version/19820820> .
-<http://example.org/legal/document/uu/1982/18> legal:documentHasPasal <http://example.org/legal/document/uu/1982/18/pasal/0004> .
-<http://example.org/legal/document/uu/1982/18/pasal/0004/version/19820820> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1982/18/pasal/0004/version/19820820> legal:pasalVersionHasVersionDate "1982-08-20"^^xsd:date .
-<http://example.org/legal/document/uu/1982/18/pasal/0004/version/19820820> legal:pasalVersionHasRawText "Undang - undang ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/1982/18/pasal/0004/version/19820820/text> legal:textHasTextString "Undang - undang ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/1982/18/pasal/0004/version/19820820> legal:pasalVersionHasText <http://example.org/legal/document/uu/1982/18/pasal/0004/version/19820820/text> .
-<http://example.org/legal/document/uu/1982/18> legal:documentHasDisahkanDate "1982-08-20"^^xsd:date .
-<http://example.org/legal/document/uu/1982/18> legal:documentMengingat <http://example.org/legal/document/uu/1982/18/mengingat> .
-<http://example.org/legal/document/uu/1982/18/mengingat/text> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/1982/18/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/1982/18/mengingat/text> .
-<http://example.org/legal/document/uu/1982/18> legal:documentMenimbang <http://example.org/legal/document/uu/1982/18/menimbang> .
-<http://example.org/legal/document/uu/1982/18/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/1982/18/menimbang/point> .
-<http://example.org/legal/document/uu/1982/18/menimbang/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/1982/18/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1982/18/menimbang/point/description> .
-<http://example.org/legal/document/uu/1982/18/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1982/18/menimbang/point/a> .
-<http://example.org/legal/document/uu/1982/18/menimbang/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/1982/18/menimbang/point/a/text> legal:textHasTextString "bahwa guna peningkatan pelayanan hukum kepada masyarakat dalam rangka pemerataan kesempatan memperoleh keadilan dan untuk tercapainya penyelesaian perkara secara sederhana, cepat dan biaya ringan serta berhubung dengan perkembangan ketatanegaraan, perlu di bentuk Pengadilan Tinggi Sulawesi Tengah di Palu;" .
-<http://example.org/legal/document/uu/1982/18/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/1982/18/menimbang/point/a/text> .
-<http://example.org/legal/document/uu/1982/18/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1982/18/menimbang/point/b> .
-<http://example.org/legal/document/uu/1982/18/menimbang/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/1982/18/menimbang/point/b/text> legal:textHasTextString "bahwa berhubung dengan huruf a, perlu mengadakan perubahan wilayah hukum Pengadilan Tinggi Manado; Menginpt : 1. Pasal 5 ayat (1) dan Pasal 20 ayat (1) Undang - Undang Dasar 1945; 2. Undang - undang No mor 1 Drt. Tahun 1951 tentang Tindakan tindakan Sementara untuk menyelenggarakan Kesatuan Susunan, Kekuasaan dan Acara Pengadilan - pengadilan Sipil (Lembaran Negara Tahun 1951 Nomor 9, Tambahan Lembaran Negara Nomor 81) jo. Undang - undang Nomor 11 Drt. Tahun 1955 tentang Perubahan Undang - undang Nomor 1 Drt. Tahun 1951 tentang Tindakan - tindakan Sementara untuk menyelenggarakan Kesatuan Susunan, Kekuasaan dan Acara Pengadilan - pengadilan Sipil (Lembaran Negara Tahun 1955 Nomor 36, Tambahan Lembaran Negara Nomor 816); 3. Undang - undang Nomor 13 Tahun 1965 tentang Pengadilan dalam Ling - kungan Peradilan Umum dan Mahkamah Agung (Lembaran Negara Tahun 1965 Nomor 70, Tambahan Lembaran Negara Nomor 2767) jo. Undang - undang Nomor 6 Tahun 1969 tentang Pernyataan tidak be rlakunya berbagai Undang - undang dan Peraturan Pemerintah Pengganti Undang - undang (Lembaran Negara Tahun 1969 Nomor 37, Tambahan Lembaran Negara Nomor 2901); 4. Undang - undang Nomor 12 Tahun 1968 tentang Pembentukan Pengadilan Tinggi di Manado dan Perubaha n Daerah Hukum Pengadilan Tinggi di Makasar (Lembaran Negara Tahun 1968 Nomor 62, Tambahan Lembaran Negara Nomor 2864); 5. Undang - undang Nomor 14 Tahun 1970 tentang Ketentuan - ketentuan Pokok Kekuasaan Kehakiman (Lembaran Negara Tahun 1970 Nomor 74, Tambahan Lembaran Negara Nomor 2951). Dengan persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN : Menetapkan : UNDANG - UNDANG TENTANG PEMBENTUKAN PENGADILAN TINGGI SULAWESI TENGAH DI PALU DAN PERUBAHAN WILAYAH HUKUM PENGADILAN TINGGI MANADO." .
-<http://example.org/legal/document/uu/1982/18/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/1982/18/menimbang/point/b/text> .
-<http://example.org/legal/document/uu/1982/18> legal:documentHasDisahkanPengesah "SOEHARTO" .
-<http://example.org/legal/document/uu/1982/18> legal:documentHasDisahkanLocation "Jakarta" .
-<http://example.org/legal/document/uu/1982/18> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
-<http://example.org/legal/document/uu/1982/18> a legal:Document .
-<http://example.org/legal/document/uu/1982/18/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/1982/18/pasal/0001> a legal:Pasal .
-<http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820/ayat> a legal:AyatSet .
-<http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820/ayat/0001> a legal:Ayat .
-<http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820/ayat/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820/ayat/0002> a legal:Ayat .
-<http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820/ayat/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/1982/18/pasal/0002> a legal:Pasal .
-<http://example.org/legal/document/uu/1982/18/pasal/0002/version/19820820> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1982/18/pasal/0002/version/19820820/text> a legal:Text .
-<http://example.org/legal/document/uu/1982/18/pasal/0003> a legal:Pasal .
-<http://example.org/legal/document/uu/1982/18/pasal/0003/version/19820820> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1982/18/pasal/0003/version/19820820/text> a legal:Text .
-<http://example.org/legal/document/uu/1982/18/pasal/0004> a legal:Pasal .
-<http://example.org/legal/document/uu/1982/18/pasal/0004/version/19820820> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1982/18/pasal/0004/version/19820820/text> a legal:Text .
-<http://example.org/legal/document/uu/1982/18/mengingat/text> a legal:Text .
-<http://example.org/legal/document/uu/1982/18/mengingat> a legal:Mengingat .
-<http://example.org/legal/document/uu/1982/18/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/1982/18/menimbang/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1982/18/menimbang/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1982/18/menimbang/point/a> a legal:Point .
-<http://example.org/legal/document/uu/1982/18/menimbang/point/a/text> a legal:Text .
-<http://example.org/legal/document/uu/1982/18/menimbang/point/b> a legal:Point .
-<http://example.org/legal/document/uu/1982/18/menimbang/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/1982/18/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1982/18/pasals> .
-<http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820> legal:partOf <http://example.org/legal/document/uu/1982/18/pasal/0001> .
-<http://example.org/legal/document/uu/1982/18/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1982/18> .
-<http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820/ayat> legal:partOf <http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820> .
-<http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820/ayat> .
-<http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820/ayat/0001> .
-<http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820/ayat> .
-<http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1982/18/pasal/0001/version/19820820/ayat/0002> .
-<http://example.org/legal/document/uu/1982/18/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1982/18/pasals> .
-<http://example.org/legal/document/uu/1982/18/pasal/0002/version/19820820> legal:partOf <http://example.org/legal/document/uu/1982/18/pasal/0002> .
-<http://example.org/legal/document/uu/1982/18/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1982/18> .
-<http://example.org/legal/document/uu/1982/18/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1982/18/pasals> .
-<http://example.org/legal/document/uu/1982/18/pasal/0003/version/19820820> legal:partOf <http://example.org/legal/document/uu/1982/18/pasal/0003> .
-<http://example.org/legal/document/uu/1982/18/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1982/18> .
-<http://example.org/legal/document/uu/1982/18/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1982/18/pasals> .
-<http://example.org/legal/document/uu/1982/18/pasal/0004/version/19820820> legal:partOf <http://example.org/legal/document/uu/1982/18/pasal/0004> .
-<http://example.org/legal/document/uu/1982/18/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1982/18> .
-<http://example.org/legal/document/uu/1982/18/mengingat/text> legal:partOf <http://example.org/legal/document/uu/1982/18/mengingat> .
-<http://example.org/legal/document/uu/1982/18/menimbang/point> legal:partOf <http://example.org/legal/document/uu/1982/18/menimbang> .
-<http://example.org/legal/document/uu/1982/18/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1982/18/menimbang/point> .
-<http://example.org/legal/document/uu/1982/18/menimbang/point/a/text> legal:partOf <http://example.org/legal/document/uu/1982/18/menimbang/point/a> .
-<http://example.org/legal/document/uu/1982/18/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1982/18/menimbang/point> .
-<http://example.org/legal/document/uu/1982/18/menimbang/point/b/text> legal:partOf <http://example.org/legal/document/uu/1982/18/menimbang/point/b> .
+<http://example.org/legal/peraturan/uu/1982/18> legal:daftarPasal <http://example.org/legal/peraturan/uu/1982/18/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1982/18/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1982/18/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0001> legal:versi <http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820> .
+<http://example.org/legal/peraturan/uu/1982/18> legal:pasal <http://example.org/legal/peraturan/uu/1982/18/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820> legal:tanggal "1982-08-20"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820> legal:teks "(1). Membentuk pengadilan tinggi Sulawesi Tengah yang berkedudukan di Palu.\n(2). Wilayah hukum pengadilan tinggi seba gaimana dimaksud dalam ayat (1) meliputi wilayah hukum semua pengadilan negeri dalam Propinsi Daerah Tingkat I Sulawesi Tengah." .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820> legal:daftarAyat <http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820/ayat> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820/ayat/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820/ayat/0001> legal:teks "Membentuk pengadilan tinggi Sulawesi Tengah yang berkedudukan di Palu." .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820/ayat/0001/text> legal:teks "Membentuk pengadilan tinggi Sulawesi Tengah yang berkedudukan di Palu." .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820/ayat/0001> legal:segmen <http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820/ayat/0001/text> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820/ayat/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820/ayat/0002> legal:teks "Wilayah hukum pengadilan tinggi seba gaimana dimaksud dalam ayat (1) meliputi wilayah hukum semua pengadilan negeri dalam Propinsi Daerah Tingkat I Sulawesi Tengah." .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820/ayat/0002/text> legal:teks "Wilayah hukum pengadilan tinggi seba gaimana dimaksud dalam ayat (1) meliputi wilayah hukum semua pengadilan negeri dalam Propinsi Daerah Tingkat I Sulawesi Tengah." .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820/ayat/0002> legal:segmen <http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820/ayat/0002/text> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820/ayat/0002/text> legal:merujuk <http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1982/18/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1982/18/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0002> legal:versi <http://example.org/legal/peraturan/uu/1982/18/pasal/0002/versi/19820820> .
+<http://example.org/legal/peraturan/uu/1982/18> legal:pasal <http://example.org/legal/peraturan/uu/1982/18/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0002/versi/19820820> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0002/versi/19820820> legal:tanggal "1982-08-20"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0002/versi/19820820> legal:teks "Wilayah hukum Pengadilan Tinggi Manado dikurangi dengan wilayah hukum semua pengadilan negeri dalam Propinsi Daerah Ti ngkat I Sulawesi Tengah." .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0002/versi/19820820/text> legal:teks "Wilayah hukum Pengadilan Tinggi Manado dikurangi dengan wilayah hukum semua pengadilan negeri dalam Propinsi Daerah Ti ngkat I Sulawesi Tengah." .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0002/versi/19820820> legal:segmen <http://example.org/legal/peraturan/uu/1982/18/pasal/0002/versi/19820820/text> .
+<http://example.org/legal/peraturan/uu/1982/18/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1982/18/pasal/0003> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0003> legal:nomor 3 .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0003> legal:versi <http://example.org/legal/peraturan/uu/1982/18/pasal/0003/versi/19820820> .
+<http://example.org/legal/peraturan/uu/1982/18> legal:pasal <http://example.org/legal/peraturan/uu/1982/18/pasal/0003> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0003/versi/19820820> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0003/versi/19820820> legal:tanggal "1982-08-20"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0003/versi/19820820> legal:teks "Perkara - perkara yang berasal dari pengadilan negeri dalam Propinsi Daerah Tingkat I Sulawesi Tengah yang pada saat mulai berlakunya undang - undang ini, belum diputus oleh Pengadilan Tinggi Manado, tetap didaftar, diperiksa dan diputus oleh Pengadilan Tinggi Manado sampai saat diresmikannya Pengadilan Tinggi Sulawesi Tengah." .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0003/versi/19820820/text> legal:teks "Perkara - perkara yang berasal dari pengadilan negeri dalam Propinsi Daerah Tingkat I Sulawesi Tengah yang pada saat mulai berlakunya undang - undang ini, belum diputus oleh Pengadilan Tinggi Manado, tetap didaftar, diperiksa dan diputus oleh Pengadilan Tinggi Manado sampai saat diresmikannya Pengadilan Tinggi Sulawesi Tengah." .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0003/versi/19820820> legal:segmen <http://example.org/legal/peraturan/uu/1982/18/pasal/0003/versi/19820820/text> .
+<http://example.org/legal/peraturan/uu/1982/18/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1982/18/pasal/0004> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0004> legal:nomor 4 .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0004> legal:versi <http://example.org/legal/peraturan/uu/1982/18/pasal/0004/versi/19820820> .
+<http://example.org/legal/peraturan/uu/1982/18> legal:pasal <http://example.org/legal/peraturan/uu/1982/18/pasal/0004> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0004/versi/19820820> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0004/versi/19820820> legal:tanggal "1982-08-20"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0004/versi/19820820> legal:teks "Undang - undang ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0004/versi/19820820/text> legal:teks "Undang - undang ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0004/versi/19820820> legal:segmen <http://example.org/legal/peraturan/uu/1982/18/pasal/0004/versi/19820820/text> .
+<http://example.org/legal/peraturan/uu/1982/18> legal:disahkanPada "1982-08-20"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1982/18> legal:tentang " PEMBENTUKAN PENGADILAN TINGGI SULAWESI TENGAH DI PALU DAN PERUBAHAN WILAYAH HUKUM PENGADILAN TINGGI MANADO" .
+<http://example.org/legal/peraturan/uu/1982/18> legal:mengingat <http://example.org/legal/peraturan/uu/1982/18/mengingat> .
+<http://example.org/legal/peraturan/uu/1982/18/mengingat/text> legal:teks "" .
+<http://example.org/legal/peraturan/uu/1982/18/mengingat> legal:segmen <http://example.org/legal/peraturan/uu/1982/18/mengingat/text> .
+<http://example.org/legal/peraturan/uu/1982/18> legal:menimbang <http://example.org/legal/peraturan/uu/1982/18/menimbang> .
+<http://example.org/legal/peraturan/uu/1982/18/menimbang> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf/description> .
+<http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf/a> legal:nomor "a" .
+<http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf/a/text> legal:teks "bahwa guna peningkatan pelayanan hukum kepada masyarakat dalam rangka pemerataan kesempatan memperoleh keadilan dan untuk tercapainya penyelesaian perkara secara sederhana, cepat dan biaya ringan serta berhubung dengan perkembangan ketatanegaraan, perlu di bentuk Pengadilan Tinggi Sulawesi Tengah di Palu;" .
+<http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf/a> legal:segmen <http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf/a/text> .
+<http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf/b> .
+<http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf/b> legal:nomor "b" .
+<http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf/b/text> legal:teks "bahwa berhubung dengan huruf a, perlu mengadakan perubahan wilayah hukum Pengadilan Tinggi Manado; Menginpt : 1. Pasal 5 ayat (1) dan Pasal 20 ayat (1) Undang - Undang Dasar 1945; 2. Undang - undang No mor 1 Drt. Tahun 1951 tentang Tindakan tindakan Sementara untuk menyelenggarakan Kesatuan Susunan, Kekuasaan dan Acara Pengadilan - pengadilan Sipil (Lembaran Negara Tahun 1951 Nomor 9, Tambahan Lembaran Negara Nomor 81) jo. Undang - undang Nomor 11 Drt. Tahun 1955 tentang Perubahan Undang - undang Nomor 1 Drt. Tahun 1951 tentang Tindakan - tindakan Sementara untuk menyelenggarakan Kesatuan Susunan, Kekuasaan dan Acara Pengadilan - pengadilan Sipil (Lembaran Negara Tahun 1955 Nomor 36, Tambahan Lembaran Negara Nomor 816); 3. Undang - undang Nomor 13 Tahun 1965 tentang Pengadilan dalam Ling - kungan Peradilan Umum dan Mahkamah Agung (Lembaran Negara Tahun 1965 Nomor 70, Tambahan Lembaran Negara Nomor 2767) jo. Undang - undang Nomor 6 Tahun 1969 tentang Pernyataan tidak be rlakunya berbagai Undang - undang dan Peraturan Pemerintah Pengganti Undang - undang (Lembaran Negara Tahun 1969 Nomor 37, Tambahan Lembaran Negara Nomor 2901); 4. Undang - undang Nomor 12 Tahun 1968 tentang Pembentukan Pengadilan Tinggi di Manado dan Perubaha n Daerah Hukum Pengadilan Tinggi di Makasar (Lembaran Negara Tahun 1968 Nomor 62, Tambahan Lembaran Negara Nomor 2864); 5. Undang - undang Nomor 14 Tahun 1970 tentang Ketentuan - ketentuan Pokok Kekuasaan Kehakiman (Lembaran Negara Tahun 1970 Nomor 74, Tambahan Lembaran Negara Nomor 2951). Dengan persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN : Menetapkan : UNDANG - UNDANG TENTANG PEMBENTUKAN PENGADILAN TINGGI SULAWESI TENGAH DI PALU DAN PERUBAHAN WILAYAH HUKUM PENGADILAN TINGGI MANADO." .
+<http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf/b> legal:segmen <http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf/b/text> .
+<http://example.org/legal/peraturan/uu/1982/18> legal:disahkanOleh "SOEHARTO" .
+<http://example.org/legal/peraturan/uu/1982/18> legal:disahkanDi "Jakarta" .
+<http://example.org/legal/peraturan/uu/1982/18> legal:jabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/peraturan/uu/1982/18> a legal:Peraturan .
+<http://example.org/legal/peraturan/uu/1982/18/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0001> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820/ayat> a legal:DaftarAyat .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820/ayat/0001> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820/ayat/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820/ayat/0002> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820/ayat/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0002> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0002/versi/19820820> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0002/versi/19820820/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0003> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0003/versi/19820820> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0003/versi/19820820/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0004> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0004/versi/19820820> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0004/versi/19820820/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1982/18/mengingat/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1982/18/mengingat> a legal:Mengingat .
+<http://example.org/legal/peraturan/uu/1982/18/menimbang> a legal:Menimbang .
+<http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf/a> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf/a/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf/b> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf/b/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1982/18/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/18> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/18/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/18/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/18> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820/ayat> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820/ayat/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820/ayat> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820/ayat/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820/ayat/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820/ayat> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820/ayat/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/18/pasal/0001/versi/19820820/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/18/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0002/versi/19820820> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/18/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/18> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0002/versi/19820820/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/18/pasal/0002/versi/19820820> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/18/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0003/versi/19820820> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/18/pasal/0003> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/18> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0003/versi/19820820/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/18/pasal/0003/versi/19820820> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/18/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0004/versi/19820820> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/18/pasal/0004> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/18> .
+<http://example.org/legal/peraturan/uu/1982/18/pasal/0004/versi/19820820/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/18/pasal/0004/versi/19820820> .
+<http://example.org/legal/peraturan/uu/1982/18/mengingat/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/18/mengingat> .
+<http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/18/menimbang> .
+<http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf/a> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf/a/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf/b> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf/b/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/18/menimbang/huruf/b> .

@@ -1,134 +1,140 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1976/2> legal:documentHasPasalSet <http://example.org/legal/document/uu/1976/2/pasals> .
-<http://example.org/legal/document/uu/1976/2/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1976/2/pasal/0001> .
-<http://example.org/legal/document/uu/1976/2/pasal/0001> legal:pasalHasKey 1 .
-<http://example.org/legal/document/uu/1976/2/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331> .
-<http://example.org/legal/document/uu/1976/2> legal:documentHasPasal <http://example.org/legal/document/uu/1976/2/pasal/0001> .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331> legal:pasalVersionHasVersionDate "1976-03-31"^^xsd:date .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331> legal:pasalVersionHasRawText "Mengesahkan :\n1. Konvensi Tokyo 1963 tentang \"Offences and Certain Other Acts Committed on Board Aircraft\" (Pelanggaran-pelanggaran dan Tindakan- tindakan tertentu lainnya yang dilakukan dalam Pesawat Udara), dengan persyaratan (reservation) terhadap Pasal 24 ayat (1) tentang penyelesaian perselisihan mengenai penafsiran atau penerapan konvensi ini:\n2. Konvensi The Hague 1970 tentang \"The Suppression of Unlawful Seizure of Aircraft\" (Pemberantasan Penguasaan Pesawat Udara Secara Melawan Hukum), dengan persyaratan (reservation) terhadap Pasal 12 ayat (1) tentang penyelesaian perselisihan mengenai penafsiran atau penerapan konvensi ini:\n3. Konvensi Montreal 1971 tentang \"The Suppression of Unlawful Acts Against the Safety of Civil Aviation\" (Pemberantasan Tindakan-tindakan Melawan Hukum yang Mengancam Keamanan Penerbangan Sipil), dengan persyaratan (reservation) terhadap Pasal 14 ayat (1) tentang penyelesaian perselisihan mengenai penafsiran atau penerapan konvensi ini: yang salinan-salinan naskahnya dilampirkan pada Undang-undang ini.\n" .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point> .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/description> legal:textHasTextString "Mengesahkan :" .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/description> .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0001> .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0001> legal:pointHasKey "1" .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0001/text> legal:textHasTextString "Konvensi Tokyo 1963 tentang \"Offences and Certain Other Acts Committed on Board Aircraft\" (Pelanggaran-pelanggaran dan Tindakan- tindakan tertentu lainnya yang dilakukan dalam Pesawat Udara), dengan persyaratan (reservation) terhadap Pasal 24 ayat (1) tentang penyelesaian perselisihan mengenai penafsiran atau penerapan konvensi ini:" .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0001/text> .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/ayat/0001> .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0002> .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0002> legal:pointHasKey "2" .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0002/text> legal:textHasTextString "Konvensi The Hague 1970 tentang \"The Suppression of Unlawful Seizure of Aircraft\" (Pemberantasan Penguasaan Pesawat Udara Secara Melawan Hukum), dengan persyaratan (reservation) terhadap Pasal 12 ayat (1) tentang penyelesaian perselisihan mengenai penafsiran atau penerapan konvensi ini:" .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0002/text> .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/ayat/0001> .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0003> .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0003> legal:pointHasKey "3" .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0003/text> legal:textHasTextString "Konvensi Montreal 1971 tentang \"The Suppression of Unlawful Acts Against the Safety of Civil Aviation\" (Pemberantasan Tindakan-tindakan Melawan Hukum yang Mengancam Keamanan Penerbangan Sipil), dengan persyaratan (reservation) terhadap Pasal 14 ayat (1) tentang penyelesaian perselisihan mengenai penafsiran atau penerapan konvensi ini: yang salinan-salinan naskahnya dilampirkan pada Undang-undang ini." .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0003> legal:pointHasText <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0003/text> .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/ayat/0001> .
-<http://example.org/legal/document/uu/1976/2/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1976/2/pasal/0002> .
-<http://example.org/legal/document/uu/1976/2/pasal/0002> legal:pasalHasKey 2 .
-<http://example.org/legal/document/uu/1976/2/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1976/2/pasal/0002/version/19760331> .
-<http://example.org/legal/document/uu/1976/2> legal:documentHasPasal <http://example.org/legal/document/uu/1976/2/pasal/0002> .
-<http://example.org/legal/document/uu/1976/2/pasal/0002/version/19760331> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1976/2/pasal/0002/version/19760331> legal:pasalVersionHasVersionDate "1976-03-31"^^xsd:date .
-<http://example.org/legal/document/uu/1976/2/pasal/0002/version/19760331> legal:pasalVersionHasRawText "Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/1976/2/pasal/0002/version/19760331/text> legal:textHasTextString "Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/1976/2/pasal/0002/version/19760331> legal:pasalVersionHasText <http://example.org/legal/document/uu/1976/2/pasal/0002/version/19760331/text> .
-<http://example.org/legal/document/uu/1976/2> legal:documentHasDisahkanDate "1976-03-31"^^xsd:date .
-<http://example.org/legal/document/uu/1976/2> legal:documentMengingat <http://example.org/legal/document/uu/1976/2/mengingat> .
-<http://example.org/legal/document/uu/1976/2/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1976/2/mengingat/point> .
-<http://example.org/legal/document/uu/1976/2/mengingat/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/1976/2/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1976/2/mengingat/point/description> .
-<http://example.org/legal/document/uu/1976/2/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1976/2/mengingat/point/0001> .
-<http://example.org/legal/document/uu/1976/2/mengingat/point/0001> legal:pointHasKey "1" .
-<http://example.org/legal/document/uu/1976/2/mengingat/point/0001/text> legal:textHasTextString "Pasal b ayat (1), Pasal 11, dan Pasal 20 ayat (1) Undang-Undang Dasar 1945:" .
-<http://example.org/legal/document/uu/1976/2/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1976/2/mengingat/point/0001/text> .
-<http://example.org/legal/document/uu/1976/2/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1976/2/mengingat/point/0002> .
-<http://example.org/legal/document/uu/1976/2/mengingat/point/0002> legal:pointHasKey "2" .
-<http://example.org/legal/document/uu/1976/2/mengingat/point/0002/text> legal:textHasTextString "Undang-undang Nomor 83 Tahun 1958 tentang Penerbangan (Lembaran Negara Republik Indonesia Tahun 1958 Nomor 159, Tambahan Lembaran Negara Republik Indonesia Nomor 1687): Dengan persetujuan Dewan Perwakilan Rakyat Republik Indonesia, MEMUTUSKAN : Menetapkan — : UNDANG-UNDANG TENTANG PENGESAHAN KONVENSI TOKYO 1963, KONVENSI THE HAGUE 1970, DAN KONVENSI MONTREAL 1971." .
-<http://example.org/legal/document/uu/1976/2/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1976/2/mengingat/point/0002/text> .
-<http://example.org/legal/document/uu/1976/2> legal:documentMenimbang <http://example.org/legal/document/uu/1976/2/menimbang> .
-<http://example.org/legal/document/uu/1976/2/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/1976/2/menimbang/point> .
-<http://example.org/legal/document/uu/1976/2/menimbang/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/1976/2/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1976/2/menimbang/point/description> .
-<http://example.org/legal/document/uu/1976/2/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1976/2/menimbang/point/a> .
-<http://example.org/legal/document/uu/1976/2/menimbang/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/1976/2/menimbang/point/a/text> legal:textHasTextString "bahwa meningkatnya kejahatan penerbangan yang mengancam keselamatan para penumpang dan pesawat udara sangat merugikan perkembangan angkutan udara internasional serta sangat mengurangi kepercayaan masyarakat dunia terhadap keamanan penerbangan sipil," .
-<http://example.org/legal/document/uu/1976/2/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/1976/2/menimbang/point/a/text> .
-<http://example.org/legal/document/uu/1976/2/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1976/2/menimbang/point/b> .
-<http://example.org/legal/document/uu/1976/2/menimbang/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/1976/2/menimbang/point/b/text> legal:textHasTextString "bahwa kejahatan penerbangan pada hakekatnya merupakan kejahatan yang menimbulkan keprihatinan yang sungguh- sungguh bagi umat manusia sehingga perlu diusahakan pencegahannya dan setiap pelakunya diancam dengan hukuman yang berat dimanapun ia berada," .
-<http://example.org/legal/document/uu/1976/2/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/1976/2/menimbang/point/b/text> .
-<http://example.org/legal/document/uu/1976/2/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1976/2/menimbang/point/c> .
-<http://example.org/legal/document/uu/1976/2/menimbang/point/c> legal:pointHasKey "c" .
-<http://example.org/legal/document/uu/1976/2/menimbang/point/c/text> legal:textHasTextString "bahwa Konvensi Tokyo 1963 tentang \"Offences And Certain Other Acts Committed on Board Aircraft\" (Pelanggaran- pelanggaran dan Tindakan-tindakan tertentu lainnya yang dilakukan dalam Pesawat Udara), Konvensi The Hague 1970 tentang \"The Suppression of Unlawful Seizure of Aircraft\" (Pemberantasan Penguasaan Pesawat Udara Secara Melawan Hukum dan Konvensi Montreal 1971 tentang \"The Suppression of Unlawful Acts Against the Safety of Civil Aviation\" (Pemberantasan Tindakan-tindakan Melawan Hukum yang Mengancam Keamanan Penerbangan Sipil) adalah merupakan Konvensi-konvensi antar Negara dalam usaha mencegah kejahatan penerbangan" .
-<http://example.org/legal/document/uu/1976/2/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/1976/2/menimbang/point/c/text> .
-<http://example.org/legal/document/uu/1976/2/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1976/2/menimbang/point/d> .
-<http://example.org/legal/document/uu/1976/2/menimbang/point/d> legal:pointHasKey "d" .
-<http://example.org/legal/document/uu/1976/2/menimbang/point/d/text> legal:textHasTextString "bahwa Republik Indonesia telah menandatangani Konvensi Tokyo 1963 dan Konvensi The Hague 1970 serta hadir pada Konperensi Montreal 1971, sehingga memandang perlu untuk mengesahkan ketentuan-ketentuan di dalam ketiga Konvensi dimaksud diatas dengan Undang-undang," .
-<http://example.org/legal/document/uu/1976/2/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/1976/2/menimbang/point/d/text> .
-<http://example.org/legal/document/uu/1976/2> legal:documentHasDisahkanPengesah "JENDERAL TNI." .
-<http://example.org/legal/document/uu/1976/2> legal:documentHasDisahkanLocation "Jakarta" .
-<http://example.org/legal/document/uu/1976/2> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
-<http://example.org/legal/document/uu/1976/2> a legal:Document .
-<http://example.org/legal/document/uu/1976/2/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/1976/2/pasal/0001> a legal:Pasal .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0001> a legal:Point .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0002> a legal:Point .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0003> a legal:Point .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0003/text> a legal:Text .
-<http://example.org/legal/document/uu/1976/2/pasal/0002> a legal:Pasal .
-<http://example.org/legal/document/uu/1976/2/pasal/0002/version/19760331> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1976/2/pasal/0002/version/19760331/text> a legal:Text .
-<http://example.org/legal/document/uu/1976/2/mengingat> a legal:Mengingat .
-<http://example.org/legal/document/uu/1976/2/mengingat/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1976/2/mengingat/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1976/2/mengingat/point/0001> a legal:Point .
-<http://example.org/legal/document/uu/1976/2/mengingat/point/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/1976/2/mengingat/point/0002> a legal:Point .
-<http://example.org/legal/document/uu/1976/2/mengingat/point/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/1976/2/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/1976/2/menimbang/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1976/2/menimbang/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1976/2/menimbang/point/a> a legal:Point .
-<http://example.org/legal/document/uu/1976/2/menimbang/point/a/text> a legal:Text .
-<http://example.org/legal/document/uu/1976/2/menimbang/point/b> a legal:Point .
-<http://example.org/legal/document/uu/1976/2/menimbang/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/1976/2/menimbang/point/c> a legal:Point .
-<http://example.org/legal/document/uu/1976/2/menimbang/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/1976/2/menimbang/point/d> a legal:Point .
-<http://example.org/legal/document/uu/1976/2/menimbang/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/1976/2/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1976/2/pasals> .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331> legal:partOf <http://example.org/legal/document/uu/1976/2/pasal/0001> .
-<http://example.org/legal/document/uu/1976/2/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1976/2> .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point> legal:partOf <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331> .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0001> legal:partOf <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point> .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0001/text> legal:partOf <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0001> .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0002> legal:partOf <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point> .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0002/text> legal:partOf <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0002> .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0003> legal:partOf <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point> .
-<http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0003/text> legal:partOf <http://example.org/legal/document/uu/1976/2/pasal/0001/version/19760331/point/0003> .
-<http://example.org/legal/document/uu/1976/2/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1976/2/pasals> .
-<http://example.org/legal/document/uu/1976/2/pasal/0002/version/19760331> legal:partOf <http://example.org/legal/document/uu/1976/2/pasal/0002> .
-<http://example.org/legal/document/uu/1976/2/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1976/2> .
-<http://example.org/legal/document/uu/1976/2/mengingat/point> legal:partOf <http://example.org/legal/document/uu/1976/2/mengingat> .
-<http://example.org/legal/document/uu/1976/2/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1976/2/mengingat/point> .
-<http://example.org/legal/document/uu/1976/2/mengingat/point/0001/text> legal:partOf <http://example.org/legal/document/uu/1976/2/mengingat/point/0001> .
-<http://example.org/legal/document/uu/1976/2/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1976/2/mengingat/point> .
-<http://example.org/legal/document/uu/1976/2/mengingat/point/0002/text> legal:partOf <http://example.org/legal/document/uu/1976/2/mengingat/point/0002> .
-<http://example.org/legal/document/uu/1976/2/menimbang/point> legal:partOf <http://example.org/legal/document/uu/1976/2/menimbang> .
-<http://example.org/legal/document/uu/1976/2/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1976/2/menimbang/point> .
-<http://example.org/legal/document/uu/1976/2/menimbang/point/a/text> legal:partOf <http://example.org/legal/document/uu/1976/2/menimbang/point/a> .
-<http://example.org/legal/document/uu/1976/2/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1976/2/menimbang/point> .
-<http://example.org/legal/document/uu/1976/2/menimbang/point/b/text> legal:partOf <http://example.org/legal/document/uu/1976/2/menimbang/point/b> .
-<http://example.org/legal/document/uu/1976/2/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/1976/2/menimbang/point> .
-<http://example.org/legal/document/uu/1976/2/menimbang/point/c/text> legal:partOf <http://example.org/legal/document/uu/1976/2/menimbang/point/c> .
-<http://example.org/legal/document/uu/1976/2/menimbang/point/d> legal:partOf <http://example.org/legal/document/uu/1976/2/menimbang/point> .
-<http://example.org/legal/document/uu/1976/2/menimbang/point/d/text> legal:partOf <http://example.org/legal/document/uu/1976/2/menimbang/point/d> .
+<http://example.org/legal/peraturan/uu/1976/2> legal:daftarPasal <http://example.org/legal/peraturan/uu/1976/2/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1976/2/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1976/2/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001> legal:versi <http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331> .
+<http://example.org/legal/peraturan/uu/1976/2> legal:pasal <http://example.org/legal/peraturan/uu/1976/2/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331> legal:tanggal "1976-03-31"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331> legal:teks "Mengesahkan :\n1. Konvensi Tokyo 1963 tentang \"Offences and Certain Other Acts Committed on Board Aircraft\" (Pelanggaran-pelanggaran dan Tindakan- tindakan tertentu lainnya yang dilakukan dalam Pesawat Udara), dengan persyaratan (reservation) terhadap Pasal 24 ayat (1) tentang penyelesaian perselisihan mengenai penafsiran atau penerapan konvensi ini:\n2. Konvensi The Hague 1970 tentang \"The Suppression of Unlawful Seizure of Aircraft\" (Pemberantasan Penguasaan Pesawat Udara Secara Melawan Hukum), dengan persyaratan (reservation) terhadap Pasal 12 ayat (1) tentang penyelesaian perselisihan mengenai penafsiran atau penerapan konvensi ini:\n3. Konvensi Montreal 1971 tentang \"The Suppression of Unlawful Acts Against the Safety of Civil Aviation\" (Pemberantasan Tindakan-tindakan Melawan Hukum yang Mengancam Keamanan Penerbangan Sipil), dengan persyaratan (reservation) terhadap Pasal 14 ayat (1) tentang penyelesaian perselisihan mengenai penafsiran atau penerapan konvensi ini: yang salinan-salinan naskahnya dilampirkan pada Undang-undang ini.\n" .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf> .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/description> legal:teks "Mengesahkan :" .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/description> .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0001> .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0001> legal:nomor "1" .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0001/text> legal:teks "Konvensi Tokyo 1963 tentang \"Offences and Certain Other Acts Committed on Board Aircraft\" (Pelanggaran-pelanggaran dan Tindakan- tindakan tertentu lainnya yang dilakukan dalam Pesawat Udara), dengan persyaratan (reservation) terhadap Pasal 24 ayat (1) tentang penyelesaian perselisihan mengenai penafsiran atau penerapan konvensi ini:" .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0001> legal:segmen <http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0001/text> .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0001/text> legal:merujuk <http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0002> .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0002> legal:nomor "2" .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0002/text> legal:teks "Konvensi The Hague 1970 tentang \"The Suppression of Unlawful Seizure of Aircraft\" (Pemberantasan Penguasaan Pesawat Udara Secara Melawan Hukum), dengan persyaratan (reservation) terhadap Pasal 12 ayat (1) tentang penyelesaian perselisihan mengenai penafsiran atau penerapan konvensi ini:" .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0002> legal:segmen <http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0002/text> .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0002/text> legal:merujuk <http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0003> .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0003> legal:nomor "3" .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0003/text> legal:teks "Konvensi Montreal 1971 tentang \"The Suppression of Unlawful Acts Against the Safety of Civil Aviation\" (Pemberantasan Tindakan-tindakan Melawan Hukum yang Mengancam Keamanan Penerbangan Sipil), dengan persyaratan (reservation) terhadap Pasal 14 ayat (1) tentang penyelesaian perselisihan mengenai penafsiran atau penerapan konvensi ini: yang salinan-salinan naskahnya dilampirkan pada Undang-undang ini." .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0003> legal:segmen <http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0003/text> .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0003/text> legal:merujuk <http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1976/2/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1976/2/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0002> legal:versi <http://example.org/legal/peraturan/uu/1976/2/pasal/0002/versi/19760331> .
+<http://example.org/legal/peraturan/uu/1976/2> legal:pasal <http://example.org/legal/peraturan/uu/1976/2/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0002/versi/19760331> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0002/versi/19760331> legal:tanggal "1976-03-31"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0002/versi/19760331> legal:teks "Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0002/versi/19760331/text> legal:teks "Undang-undang ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0002/versi/19760331> legal:segmen <http://example.org/legal/peraturan/uu/1976/2/pasal/0002/versi/19760331/text> .
+<http://example.org/legal/peraturan/uu/1976/2> legal:disahkanPada "1976-03-31"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1976/2> legal:tentang " PENGESAHAN KONVENSI TOKYO 1963, KONVENSI THE HAGUE 1970, DAN KONVENSI MONTREAL 1971" .
+<http://example.org/legal/peraturan/uu/1976/2> legal:mengingat <http://example.org/legal/peraturan/uu/1976/2/mengingat> .
+<http://example.org/legal/peraturan/uu/1976/2/mengingat> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf/description> .
+<http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf/0001> .
+<http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf/0001> legal:nomor "1" .
+<http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf/0001/text> legal:teks "Pasal b ayat (1), Pasal 11, dan Pasal 20 ayat (1) Undang-Undang Dasar 1945:" .
+<http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf/0001> legal:segmen <http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf/0001/text> .
+<http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf/0002> .
+<http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf/0002> legal:nomor "2" .
+<http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf/0002/text> legal:teks "Undang-undang Nomor 83 Tahun 1958 tentang Penerbangan (Lembaran Negara Republik Indonesia Tahun 1958 Nomor 159, Tambahan Lembaran Negara Republik Indonesia Nomor 1687): Dengan persetujuan Dewan Perwakilan Rakyat Republik Indonesia, MEMUTUSKAN : Menetapkan — : UNDANG-UNDANG TENTANG PENGESAHAN KONVENSI TOKYO 1963, KONVENSI THE HAGUE 1970, DAN KONVENSI MONTREAL 1971." .
+<http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf/0002> legal:segmen <http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf/0002/text> .
+<http://example.org/legal/peraturan/uu/1976/2> legal:menimbang <http://example.org/legal/peraturan/uu/1976/2/menimbang> .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/description> .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/a> legal:nomor "a" .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/a/text> legal:teks "bahwa meningkatnya kejahatan penerbangan yang mengancam keselamatan para penumpang dan pesawat udara sangat merugikan perkembangan angkutan udara internasional serta sangat mengurangi kepercayaan masyarakat dunia terhadap keamanan penerbangan sipil," .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/a> legal:segmen <http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/a/text> .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/b> .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/b> legal:nomor "b" .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/b/text> legal:teks "bahwa kejahatan penerbangan pada hakekatnya merupakan kejahatan yang menimbulkan keprihatinan yang sungguh- sungguh bagi umat manusia sehingga perlu diusahakan pencegahannya dan setiap pelakunya diancam dengan hukuman yang berat dimanapun ia berada," .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/b> legal:segmen <http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/b/text> .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/c> .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/c> legal:nomor "c" .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/c/text> legal:teks "bahwa Konvensi Tokyo 1963 tentang \"Offences And Certain Other Acts Committed on Board Aircraft\" (Pelanggaran- pelanggaran dan Tindakan-tindakan tertentu lainnya yang dilakukan dalam Pesawat Udara), Konvensi The Hague 1970 tentang \"The Suppression of Unlawful Seizure of Aircraft\" (Pemberantasan Penguasaan Pesawat Udara Secara Melawan Hukum dan Konvensi Montreal 1971 tentang \"The Suppression of Unlawful Acts Against the Safety of Civil Aviation\" (Pemberantasan Tindakan-tindakan Melawan Hukum yang Mengancam Keamanan Penerbangan Sipil) adalah merupakan Konvensi-konvensi antar Negara dalam usaha mencegah kejahatan penerbangan" .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/c> legal:segmen <http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/c/text> .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/d> .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/d> legal:nomor "d" .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/d/text> legal:teks "bahwa Republik Indonesia telah menandatangani Konvensi Tokyo 1963 dan Konvensi The Hague 1970 serta hadir pada Konperensi Montreal 1971, sehingga memandang perlu untuk mengesahkan ketentuan-ketentuan di dalam ketiga Konvensi dimaksud diatas dengan Undang-undang," .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/d> legal:segmen <http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/d/text> .
+<http://example.org/legal/peraturan/uu/1976/2> legal:disahkanOleh "JENDERAL TNI." .
+<http://example.org/legal/peraturan/uu/1976/2> legal:disahkanDi "Jakarta" .
+<http://example.org/legal/peraturan/uu/1976/2> legal:jabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/peraturan/uu/1976/2> a legal:Peraturan .
+<http://example.org/legal/peraturan/uu/1976/2/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0001> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0002> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0003> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0003/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0002> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0002/versi/19760331> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0002/versi/19760331/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1976/2/mengingat> a legal:Mengingat .
+<http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf/0001> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf/0002> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang> a legal:Menimbang .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/a> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/a/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/b> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/b/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/c> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/c/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/d> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/d/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1976/2/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/2> .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/2/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/2/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/2> .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331> .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf> .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf> .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0001> .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf> .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0002> .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf> .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0003/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/2/pasal/0001/versi/19760331/huruf/0003> .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/2/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0002/versi/19760331> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/2/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/2> .
+<http://example.org/legal/peraturan/uu/1976/2/pasal/0002/versi/19760331/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/2/pasal/0002/versi/19760331> .
+<http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/2/mengingat> .
+<http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf/0001> .
+<http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/2/mengingat/huruf/0002> .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/2/menimbang> .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/a> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/a/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/b> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/b/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/b> .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/c> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/c/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/c> .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/d> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/d/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/2/menimbang/huruf/d> .

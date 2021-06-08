@@ -1,242 +1,250 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1990/10> legal:documentHasPasalSet <http://example.org/legal/document/uu/1990/10/pasals> .
-<http://example.org/legal/document/uu/1990/10/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/10/pasal/0001> .
-<http://example.org/legal/document/uu/1990/10/pasal/0001> legal:pasalHasKey 1 .
-<http://example.org/legal/document/uu/1990/10/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030> .
-<http://example.org/legal/document/uu/1990/10> legal:documentHasPasal <http://example.org/legal/document/uu/1990/10/pasal/0001> .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030> legal:pasalVersionHasVersionDate "1990-10-30"^^xsd:date .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030> legal:pasalVersionHasRawText "Membentuk tiga Pengadilan Tinggi Tata Usaha Negara masing-masing:\n1. Pengadilan Tinggi Tata Usaha Negara Jakarta, berkedudukan di Jakarta:\n2. Pengadilan Tinggi Tata Usaha Negara Medan, berkedudukan di Medan:\n3. Pengadilan Tinggi Tata Usaha Negara Ujung Pandang, berkedudukan di Ujung Pandang.\n" .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point> .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/description> legal:textHasTextString "Membentuk tiga Pengadilan Tinggi Tata Usaha Negara masing-masing:" .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/description> .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/0001> .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/0001> legal:pointHasKey "1" .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/0001/text> legal:textHasTextString "Pengadilan Tinggi Tata Usaha Negara Jakarta, berkedudukan di Jakarta:" .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/0001/text> .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/0002> .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/0002> legal:pointHasKey "2" .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/0002/text> legal:textHasTextString "Pengadilan Tinggi Tata Usaha Negara Medan, berkedudukan di Medan:" .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/0002/text> .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/0003> .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/0003> legal:pointHasKey "3" .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/0003/text> legal:textHasTextString "Pengadilan Tinggi Tata Usaha Negara Ujung Pandang, berkedudukan di Ujung Pandang." .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/0003> legal:pointHasText <http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/0003/text> .
-<http://example.org/legal/document/uu/1990/10/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/10/pasal/0002> .
-<http://example.org/legal/document/uu/1990/10/pasal/0002> legal:pasalHasKey 2 .
-<http://example.org/legal/document/uu/1990/10/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030> .
-<http://example.org/legal/document/uu/1990/10> legal:documentHasPasal <http://example.org/legal/document/uu/1990/10/pasal/0002> .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030> legal:pasalVersionHasVersionDate "1990-10-30"^^xsd:date .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030> legal:pasalVersionHasRawText "(1). Pengadilan Tinggi Tata Usaha Negara Jakarta, daerah hukumnya meliputi Wilayah Daerah Khusus Ibukota Jakarta, Propinsi Jawa Barat, Jawa Tengah, Daerah Istimewa Yogyakarta, Jawa Timur, Kalimantan Barat, Kalimantan Selatan, Kalimantan Tengah dan Kalimantan Timur.\n(2). Pengadilan Tinggi Tata Usaha Negara Medan, daerah hukumnya meliputi wilayah Propinsi Sumatera Utara, Daerah Istimewa Aceh, Sumatera Barat, Riau, Sumatera Selatan, Jambi, Bengkulu, dan Lampung.\n(3). Pengadilan Tinggi Tata Usaha Negara Ujung Pandang, daerah hukumnya meliputi wilayah Propinsi Sulawesi Selatan, Sulawesi Utara, Sulawesi Tengah, Sulawesi Tenggara, Maluku, Bali, Nusa Tenggara Barat, Nusa Tenggara Timur, Timor Timur, dan Irian Jaya." .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat> .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0001> .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0001> legal:ayatHasKey 1 .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0001> legal:ayatHasRawText "Pengadilan Tinggi Tata Usaha Negara Jakarta, daerah hukumnya meliputi Wilayah Daerah Khusus Ibukota Jakarta, Propinsi Jawa Barat, Jawa Tengah, Daerah Istimewa Yogyakarta, Jawa Timur, Kalimantan Barat, Kalimantan Selatan, Kalimantan Tengah dan Kalimantan Timur." .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0001/text> legal:textHasTextString "Pengadilan Tinggi Tata Usaha Negara Jakarta, daerah hukumnya meliputi Wilayah Daerah Khusus Ibukota Jakarta, Propinsi Jawa Barat, Jawa Tengah, Daerah Istimewa Yogyakarta, Jawa Timur, Kalimantan Barat, Kalimantan Selatan, Kalimantan Tengah dan Kalimantan Timur." .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0001/text> .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0002> .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0002> legal:ayatHasKey 2 .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0002> legal:ayatHasRawText "Pengadilan Tinggi Tata Usaha Negara Medan, daerah hukumnya meliputi wilayah Propinsi Sumatera Utara, Daerah Istimewa Aceh, Sumatera Barat, Riau, Sumatera Selatan, Jambi, Bengkulu, dan Lampung." .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0002/text> legal:textHasTextString "Pengadilan Tinggi Tata Usaha Negara Medan, daerah hukumnya meliputi wilayah Propinsi Sumatera Utara, Daerah Istimewa Aceh, Sumatera Barat, Riau, Sumatera Selatan, Jambi, Bengkulu, dan Lampung." .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0002/text> .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0003> .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0003> legal:ayatHasKey 3 .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0003> legal:ayatHasRawText "Pengadilan Tinggi Tata Usaha Negara Ujung Pandang, daerah hukumnya meliputi wilayah Propinsi Sulawesi Selatan, Sulawesi Utara, Sulawesi Tengah, Sulawesi Tenggara, Maluku, Bali, Nusa Tenggara Barat, Nusa Tenggara Timur, Timor Timur, dan Irian Jaya." .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0003/text> legal:textHasTextString "Pengadilan Tinggi Tata Usaha Negara Ujung Pandang, daerah hukumnya meliputi wilayah Propinsi Sulawesi Selatan, Sulawesi Utara, Sulawesi Tengah, Sulawesi Tenggara, Maluku, Bali, Nusa Tenggara Barat, Nusa Tenggara Timur, Timor Timur, dan Irian Jaya." .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0003/text> .
-<http://example.org/legal/document/uu/1990/10/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/10/pasal/0003> .
-<http://example.org/legal/document/uu/1990/10/pasal/0003> legal:pasalHasKey 3 .
-<http://example.org/legal/document/uu/1990/10/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/10/pasal/0003/version/19901030> .
-<http://example.org/legal/document/uu/1990/10> legal:documentHasPasal <http://example.org/legal/document/uu/1990/10/pasal/0003> .
-<http://example.org/legal/document/uu/1990/10/pasal/0003/version/19901030> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1990/10/pasal/0003/version/19901030> legal:pasalVersionHasVersionDate "1990-10-30"^^xsd:date .
-<http://example.org/legal/document/uu/1990/10/pasal/0003/version/19901030> legal:pasalVersionHasRawText "Daerah hukum Pengadilan Tinggi Tata Usaha Negara Jakarta, Medan, dan Ujung Pandang sebagaimana ditemukan dalam Pasal 2 Undang-undang ini, berlaku sampai terbentuknya Pengadilan Tinggi Tata Usaha Negara lainnya sebagaimana dimaksud dalam Pasal 6 ayat (2) Undang-undang Nomor 5 Tahun 1986 tentang Peradilan Tata Usaha Negara." .
-<http://example.org/legal/document/uu/1990/10/pasal/0003/version/19901030/text> legal:textHasTextString "Daerah hukum Pengadilan Tinggi Tata Usaha Negara Jakarta, Medan, dan Ujung Pandang sebagaimana ditemukan dalam Pasal 2 Undang-undang ini, berlaku sampai terbentuknya Pengadilan Tinggi Tata Usaha Negara lainnya sebagaimana dimaksud dalam Pasal 6 ayat (2) Undang-undang Nomor 5 Tahun 1986 tentang Peradilan Tata Usaha Negara." .
-<http://example.org/legal/document/uu/1990/10/pasal/0003/version/19901030> legal:pasalVersionHasText <http://example.org/legal/document/uu/1990/10/pasal/0003/version/19901030/text> .
-<http://example.org/legal/document/uu/1990/10/pasal/0003/version/19901030/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/10/pasal/0003/version/19901030/ayat/0002> .
-<http://example.org/legal/document/uu/1990/10/pasal/0003/version/19901030/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/10/pasal/0002> .
-<http://example.org/legal/document/uu/1990/10/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/10/pasal/0004> .
-<http://example.org/legal/document/uu/1990/10/pasal/0004> legal:pasalHasKey 4 .
-<http://example.org/legal/document/uu/1990/10/pasal/0004> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030> .
-<http://example.org/legal/document/uu/1990/10> legal:documentHasPasal <http://example.org/legal/document/uu/1990/10/pasal/0004> .
-<http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030> legal:pasalVersionHasVersionDate "1990-10-30"^^xsd:date .
-<http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030> legal:pasalVersionHasRawText "Sengketa Tata Usaha Negara yang pada saat terbentuknya Pengadilan Tinggi Tata Usaha Negara sebagaimana dimaksud dalam Pasal 1 :\na. telah diperiksa tetapi belum diputus oleh Pengadilan Tinggi dalam lingkungan Peradilan Umum di seluruh daerah hukum sebagaimana dimaksud dalam Pasal 2, tetap diperiksa oleh Pengadilan Tinggi tersebut:\nb. sudah diajukan kepada Pengadilan Tinggi dalam lingkungan Peradilan Umum di seluruh daerah hukum sebagaimana dimaksud dalam Pasal 2 tetapi belum diperiksa, dilimpahkan kepada Pengadilan Tinggi Tata Usaha Negara yang daerah hukumnya meliputi daerah hukum Pengadilan Tinggi yang bersangkutan.\n" .
-<http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point> .
-<http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point/description> legal:textHasTextString "Sengketa Tata Usaha Negara yang pada saat terbentuknya Pengadilan Tinggi Tata Usaha Negara sebagaimana dimaksud dalam Pasal 1 :" .
-<http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point/description> .
-<http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point/a> .
-<http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point/a/text> legal:textHasTextString "telah diperiksa tetapi belum diputus oleh Pengadilan Tinggi dalam lingkungan Peradilan Umum di seluruh daerah hukum sebagaimana dimaksud dalam Pasal 2, tetap diperiksa oleh Pengadilan Tinggi tersebut:" .
-<http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point/a> legal:pointHasText <http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point/a/text> .
-<http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point/a/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/10/pasal/0002> .
-<http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point/b> .
-<http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point/b/text> legal:textHasTextString "sudah diajukan kepada Pengadilan Tinggi dalam lingkungan Peradilan Umum di seluruh daerah hukum sebagaimana dimaksud dalam Pasal 2 tetapi belum diperiksa, dilimpahkan kepada Pengadilan Tinggi Tata Usaha Negara yang daerah hukumnya meliputi daerah hukum Pengadilan Tinggi yang bersangkutan." .
-<http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point/b> legal:pointHasText <http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point/b/text> .
-<http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point/b/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1990/10/pasal/0002> .
-<http://example.org/legal/document/uu/1990/10/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1990/10/pasal/0005> .
-<http://example.org/legal/document/uu/1990/10/pasal/0005> legal:pasalHasKey 5 .
-<http://example.org/legal/document/uu/1990/10/pasal/0005> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1990/10/pasal/0005/version/19901030> .
-<http://example.org/legal/document/uu/1990/10> legal:documentHasPasal <http://example.org/legal/document/uu/1990/10/pasal/0005> .
-<http://example.org/legal/document/uu/1990/10/pasal/0005/version/19901030> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1990/10/pasal/0005/version/19901030> legal:pasalVersionHasVersionDate "1990-10-30"^^xsd:date .
-<http://example.org/legal/document/uu/1990/10/pasal/0005/version/19901030> legal:pasalVersionHasRawText "Undang-undang ini mulai berlaku pada tanggal mulai diterapkannya Undang-undang Nomor 5 Tahun 1986 tentang Peradilan Tata Usaha Negara. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/1990/10/pasal/0005/version/19901030/text> legal:textHasTextString "Undang-undang ini mulai berlaku pada tanggal mulai diterapkannya Undang-undang Nomor 5 Tahun 1986 tentang Peradilan Tata Usaha Negara. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/1990/10/pasal/0005/version/19901030> legal:pasalVersionHasText <http://example.org/legal/document/uu/1990/10/pasal/0005/version/19901030/text> .
-<http://example.org/legal/document/uu/1990/10> legal:documentHasDisahkanDate "1990-10-30"^^xsd:date .
-<http://example.org/legal/document/uu/1990/10> legal:documentMengingat <http://example.org/legal/document/uu/1990/10/mengingat> .
-<http://example.org/legal/document/uu/1990/10/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1990/10/mengingat/point> .
-<http://example.org/legal/document/uu/1990/10/mengingat/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/1990/10/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1990/10/mengingat/point/description> .
-<http://example.org/legal/document/uu/1990/10/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/10/mengingat/point/0001> .
-<http://example.org/legal/document/uu/1990/10/mengingat/point/0001> legal:pointHasKey "1" .
-<http://example.org/legal/document/uu/1990/10/mengingat/point/0001/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 20 ayat (1), dan Pasal 24 Undang-Undang Dasar 1945:" .
-<http://example.org/legal/document/uu/1990/10/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1990/10/mengingat/point/0001/text> .
-<http://example.org/legal/document/uu/1990/10/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/10/mengingat/point/0002> .
-<http://example.org/legal/document/uu/1990/10/mengingat/point/0002> legal:pointHasKey "2" .
-<http://example.org/legal/document/uu/1990/10/mengingat/point/0002/text> legal:textHasTextString "Undang-undang Nomor 14 Tahun 1970 tentang Ketentuan-ketentuan Pokok Kekuasaan Kehakiman (Lembaran Negara Tahun 1970 Nomor 74, Tambahan Lembaran Negara Nomor 2951):" .
-<http://example.org/legal/document/uu/1990/10/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1990/10/mengingat/point/0002/text> .
-<http://example.org/legal/document/uu/1990/10/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/10/mengingat/point/0003> .
-<http://example.org/legal/document/uu/1990/10/mengingat/point/0003> legal:pointHasKey "3" .
-<http://example.org/legal/document/uu/1990/10/mengingat/point/0003/text> legal:textHasTextString "Undang-undang Nomor 14 Tahun 1985 tentang Mahkamah Agung (Lembaran Negara Tahun 1985 Nomor 73, Tambahan Lembaran Negara Nomor 3316):" .
-<http://example.org/legal/document/uu/1990/10/mengingat/point/0003> legal:pointHasText <http://example.org/legal/document/uu/1990/10/mengingat/point/0003/text> .
-<http://example.org/legal/document/uu/1990/10/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/10/mengingat/point/0004> .
-<http://example.org/legal/document/uu/1990/10/mengingat/point/0004> legal:pointHasKey "4" .
-<http://example.org/legal/document/uu/1990/10/mengingat/point/0004/text> legal:textHasTextString "Undang-undang Nomor 5 Tahun 1986 tentang Peradilan Tata Usaha Negara (Lembaran Negara Tahun 1986 Nomor 77, Tambahan Lembaran Negara Nomor 3344): Dengan persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG PEMBENTUKAN PENGADILAN TINGGI TATA USAHA NEGARA JAKARTA, MEDAN, DAN UJUNG PANDANG." .
-<http://example.org/legal/document/uu/1990/10/mengingat/point/0004> legal:pointHasText <http://example.org/legal/document/uu/1990/10/mengingat/point/0004/text> .
-<http://example.org/legal/document/uu/1990/10> legal:documentMenimbang <http://example.org/legal/document/uu/1990/10/menimbang> .
-<http://example.org/legal/document/uu/1990/10/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/1990/10/menimbang/point> .
-<http://example.org/legal/document/uu/1990/10/menimbang/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/1990/10/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1990/10/menimbang/point/description> .
-<http://example.org/legal/document/uu/1990/10/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/10/menimbang/point/a> .
-<http://example.org/legal/document/uu/1990/10/menimbang/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/1990/10/menimbang/point/a/text> legal:textHasTextString "bahwa sesuai dengan ketentuan Pasal 6 ayat (2) Undang-undang Nomor 5 Tahun 1986 tentang Peradilan Tata Usaha Negara, Pengadilan Tinggi Tata Usaha Negara perlu dibentuk di setiap ibukota propinsi:" .
-<http://example.org/legal/document/uu/1990/10/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/1990/10/menimbang/point/a/text> .
-<http://example.org/legal/document/uu/1990/10/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/10/menimbang/point/b> .
-<http://example.org/legal/document/uu/1990/10/menimbang/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/1990/10/menimbang/point/b/text> legal:textHasTextString "bahwa Pengadilan di lingkungan Peradilan Tata Usaha Negara merupakan lembaga baru yang pembentukannya memerlukan perencanaan serta persiapan yang sebaik-baiknya, sehingga pelaksanaannya dilakukan secara bertahap:" .
-<http://example.org/legal/document/uu/1990/10/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/1990/10/menimbang/point/b/text> .
-<http://example.org/legal/document/uu/1990/10/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/10/menimbang/point/c> .
-<http://example.org/legal/document/uu/1990/10/menimbang/point/c> legal:pointHasKey "c" .
-<http://example.org/legal/document/uu/1990/10/menimbang/point/c/text> legal:textHasTextString ". bahwa untuk tahap pertama, dipandang perlu membentuk Pengadilan Tinggi Tata Usaha Negara yang berkedudukan di Jakarta, Medan, dan Ujung Pandang:" .
-<http://example.org/legal/document/uu/1990/10/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/1990/10/menimbang/point/c/text> .
-<http://example.org/legal/document/uu/1990/10/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1990/10/menimbang/point/d> .
-<http://example.org/legal/document/uu/1990/10/menimbang/point/d> legal:pointHasKey "d" .
-<http://example.org/legal/document/uu/1990/10/menimbang/point/d/text> legal:textHasTextString "bahwa sehubungan dengan pertimbangan tersebut dan sesuai pula dengan ketentuan Pasal 10 Undang-undang Nomor 5 Tahun 1986 tentang Peradilan Tata Usaha Negara, maka pembentukan Pengadilan Tinggi Tata Usaha Negara Jakarta, Medan, dan Ujung Pandang perlu ditetapkan dengan undang-undang:" .
-<http://example.org/legal/document/uu/1990/10/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/1990/10/menimbang/point/d/text> .
-<http://example.org/legal/document/uu/1990/10> legal:documentHasDisahkanPengesah "Diundangkan di Jakarta" .
-<http://example.org/legal/document/uu/1990/10> legal:documentHasDisahkanLocation "Jakarta" .
-<http://example.org/legal/document/uu/1990/10> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA" .
-<http://example.org/legal/document/uu/1990/10> a legal:Document .
-<http://example.org/legal/document/uu/1990/10/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/1990/10/pasal/0001> a legal:Pasal .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/0001> a legal:Point .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/0002> a legal:Point .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/0003> a legal:Point .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/0003/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/10/pasal/0002> a legal:Pasal .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat> a legal:AyatSet .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0001> a legal:Ayat .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0002> a legal:Ayat .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0003> a legal:Ayat .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0003/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/10/pasal/0003> a legal:Pasal .
-<http://example.org/legal/document/uu/1990/10/pasal/0003/version/19901030> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1990/10/pasal/0003/version/19901030/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/10/pasal/0004> a legal:Pasal .
-<http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point/a> a legal:Point .
-<http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point/a/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point/b> a legal:Point .
-<http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/10/pasal/0005> a legal:Pasal .
-<http://example.org/legal/document/uu/1990/10/pasal/0005/version/19901030> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1990/10/pasal/0005/version/19901030/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/10/mengingat> a legal:Mengingat .
-<http://example.org/legal/document/uu/1990/10/mengingat/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1990/10/mengingat/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1990/10/mengingat/point/0001> a legal:Point .
-<http://example.org/legal/document/uu/1990/10/mengingat/point/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/10/mengingat/point/0002> a legal:Point .
-<http://example.org/legal/document/uu/1990/10/mengingat/point/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/10/mengingat/point/0003> a legal:Point .
-<http://example.org/legal/document/uu/1990/10/mengingat/point/0003/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/10/mengingat/point/0004> a legal:Point .
-<http://example.org/legal/document/uu/1990/10/mengingat/point/0004/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/10/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/1990/10/menimbang/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1990/10/menimbang/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1990/10/menimbang/point/a> a legal:Point .
-<http://example.org/legal/document/uu/1990/10/menimbang/point/a/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/10/menimbang/point/b> a legal:Point .
-<http://example.org/legal/document/uu/1990/10/menimbang/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/10/menimbang/point/c> a legal:Point .
-<http://example.org/legal/document/uu/1990/10/menimbang/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/10/menimbang/point/d> a legal:Point .
-<http://example.org/legal/document/uu/1990/10/menimbang/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/1990/10/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1990/10/pasals> .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030> legal:partOf <http://example.org/legal/document/uu/1990/10/pasal/0001> .
-<http://example.org/legal/document/uu/1990/10/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1990/10> .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point> legal:partOf <http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030> .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/0001> legal:partOf <http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point> .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/0001/text> legal:partOf <http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/0001> .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/0002> legal:partOf <http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point> .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/0002/text> legal:partOf <http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/0002> .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/0003> legal:partOf <http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point> .
-<http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/0003/text> legal:partOf <http://example.org/legal/document/uu/1990/10/pasal/0001/version/19901030/point/0003> .
-<http://example.org/legal/document/uu/1990/10/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1990/10/pasals> .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030> legal:partOf <http://example.org/legal/document/uu/1990/10/pasal/0002> .
-<http://example.org/legal/document/uu/1990/10/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1990/10> .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat> legal:partOf <http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030> .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat> .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0001> .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat> .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0002> .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat> .
-<http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1990/10/pasal/0002/version/19901030/ayat/0003> .
-<http://example.org/legal/document/uu/1990/10/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1990/10/pasals> .
-<http://example.org/legal/document/uu/1990/10/pasal/0003/version/19901030> legal:partOf <http://example.org/legal/document/uu/1990/10/pasal/0003> .
-<http://example.org/legal/document/uu/1990/10/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1990/10> .
-<http://example.org/legal/document/uu/1990/10/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1990/10/pasals> .
-<http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030> legal:partOf <http://example.org/legal/document/uu/1990/10/pasal/0004> .
-<http://example.org/legal/document/uu/1990/10/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1990/10> .
-<http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point> legal:partOf <http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030> .
-<http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point/a> legal:partOf <http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point> .
-<http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point/a/text> legal:partOf <http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point/a> .
-<http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point/b> legal:partOf <http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point> .
-<http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point/b/text> legal:partOf <http://example.org/legal/document/uu/1990/10/pasal/0004/version/19901030/point/b> .
-<http://example.org/legal/document/uu/1990/10/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1990/10/pasals> .
-<http://example.org/legal/document/uu/1990/10/pasal/0005/version/19901030> legal:partOf <http://example.org/legal/document/uu/1990/10/pasal/0005> .
-<http://example.org/legal/document/uu/1990/10/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1990/10> .
-<http://example.org/legal/document/uu/1990/10/mengingat/point> legal:partOf <http://example.org/legal/document/uu/1990/10/mengingat> .
-<http://example.org/legal/document/uu/1990/10/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1990/10/mengingat/point> .
-<http://example.org/legal/document/uu/1990/10/mengingat/point/0001/text> legal:partOf <http://example.org/legal/document/uu/1990/10/mengingat/point/0001> .
-<http://example.org/legal/document/uu/1990/10/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1990/10/mengingat/point> .
-<http://example.org/legal/document/uu/1990/10/mengingat/point/0002/text> legal:partOf <http://example.org/legal/document/uu/1990/10/mengingat/point/0002> .
-<http://example.org/legal/document/uu/1990/10/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/1990/10/mengingat/point> .
-<http://example.org/legal/document/uu/1990/10/mengingat/point/0003/text> legal:partOf <http://example.org/legal/document/uu/1990/10/mengingat/point/0003> .
-<http://example.org/legal/document/uu/1990/10/mengingat/point/0004> legal:partOf <http://example.org/legal/document/uu/1990/10/mengingat/point> .
-<http://example.org/legal/document/uu/1990/10/mengingat/point/0004/text> legal:partOf <http://example.org/legal/document/uu/1990/10/mengingat/point/0004> .
-<http://example.org/legal/document/uu/1990/10/menimbang/point> legal:partOf <http://example.org/legal/document/uu/1990/10/menimbang> .
-<http://example.org/legal/document/uu/1990/10/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1990/10/menimbang/point> .
-<http://example.org/legal/document/uu/1990/10/menimbang/point/a/text> legal:partOf <http://example.org/legal/document/uu/1990/10/menimbang/point/a> .
-<http://example.org/legal/document/uu/1990/10/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1990/10/menimbang/point> .
-<http://example.org/legal/document/uu/1990/10/menimbang/point/b/text> legal:partOf <http://example.org/legal/document/uu/1990/10/menimbang/point/b> .
-<http://example.org/legal/document/uu/1990/10/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/1990/10/menimbang/point> .
-<http://example.org/legal/document/uu/1990/10/menimbang/point/c/text> legal:partOf <http://example.org/legal/document/uu/1990/10/menimbang/point/c> .
-<http://example.org/legal/document/uu/1990/10/menimbang/point/d> legal:partOf <http://example.org/legal/document/uu/1990/10/menimbang/point> .
-<http://example.org/legal/document/uu/1990/10/menimbang/point/d/text> legal:partOf <http://example.org/legal/document/uu/1990/10/menimbang/point/d> .
+<http://example.org/legal/peraturan/uu/1990/10> legal:daftarPasal <http://example.org/legal/peraturan/uu/1990/10/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1990/10/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1990/10/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001> legal:versi <http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030> .
+<http://example.org/legal/peraturan/uu/1990/10> legal:pasal <http://example.org/legal/peraturan/uu/1990/10/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030> legal:tanggal "1990-10-30"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030> legal:teks "Membentuk tiga Pengadilan Tinggi Tata Usaha Negara masing-masing:\n1. Pengadilan Tinggi Tata Usaha Negara Jakarta, berkedudukan di Jakarta:\n2. Pengadilan Tinggi Tata Usaha Negara Medan, berkedudukan di Medan:\n3. Pengadilan Tinggi Tata Usaha Negara Ujung Pandang, berkedudukan di Ujung Pandang.\n" .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/description> legal:teks "Membentuk tiga Pengadilan Tinggi Tata Usaha Negara masing-masing:" .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/description> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/0001> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/0001> legal:nomor "1" .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/0001/text> legal:teks "Pengadilan Tinggi Tata Usaha Negara Jakarta, berkedudukan di Jakarta:" .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/0001> legal:segmen <http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/0001/text> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/0002> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/0002> legal:nomor "2" .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/0002/text> legal:teks "Pengadilan Tinggi Tata Usaha Negara Medan, berkedudukan di Medan:" .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/0002> legal:segmen <http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/0002/text> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/0003> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/0003> legal:nomor "3" .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/0003/text> legal:teks "Pengadilan Tinggi Tata Usaha Negara Ujung Pandang, berkedudukan di Ujung Pandang." .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/0003> legal:segmen <http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/0003/text> .
+<http://example.org/legal/peraturan/uu/1990/10/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1990/10/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002> legal:versi <http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030> .
+<http://example.org/legal/peraturan/uu/1990/10> legal:pasal <http://example.org/legal/peraturan/uu/1990/10/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030> legal:tanggal "1990-10-30"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030> legal:teks "(1). Pengadilan Tinggi Tata Usaha Negara Jakarta, daerah hukumnya meliputi Wilayah Daerah Khusus Ibukota Jakarta, Propinsi Jawa Barat, Jawa Tengah, Daerah Istimewa Yogyakarta, Jawa Timur, Kalimantan Barat, Kalimantan Selatan, Kalimantan Tengah dan Kalimantan Timur.\n(2). Pengadilan Tinggi Tata Usaha Negara Medan, daerah hukumnya meliputi wilayah Propinsi Sumatera Utara, Daerah Istimewa Aceh, Sumatera Barat, Riau, Sumatera Selatan, Jambi, Bengkulu, dan Lampung.\n(3). Pengadilan Tinggi Tata Usaha Negara Ujung Pandang, daerah hukumnya meliputi wilayah Propinsi Sulawesi Selatan, Sulawesi Utara, Sulawesi Tengah, Sulawesi Tenggara, Maluku, Bali, Nusa Tenggara Barat, Nusa Tenggara Timur, Timor Timur, dan Irian Jaya." .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030> legal:daftarAyat <http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0001> legal:teks "Pengadilan Tinggi Tata Usaha Negara Jakarta, daerah hukumnya meliputi Wilayah Daerah Khusus Ibukota Jakarta, Propinsi Jawa Barat, Jawa Tengah, Daerah Istimewa Yogyakarta, Jawa Timur, Kalimantan Barat, Kalimantan Selatan, Kalimantan Tengah dan Kalimantan Timur." .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0001/text> legal:teks "Pengadilan Tinggi Tata Usaha Negara Jakarta, daerah hukumnya meliputi Wilayah Daerah Khusus Ibukota Jakarta, Propinsi Jawa Barat, Jawa Tengah, Daerah Istimewa Yogyakarta, Jawa Timur, Kalimantan Barat, Kalimantan Selatan, Kalimantan Tengah dan Kalimantan Timur." .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0001> legal:segmen <http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0001/text> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0002> legal:teks "Pengadilan Tinggi Tata Usaha Negara Medan, daerah hukumnya meliputi wilayah Propinsi Sumatera Utara, Daerah Istimewa Aceh, Sumatera Barat, Riau, Sumatera Selatan, Jambi, Bengkulu, dan Lampung." .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0002/text> legal:teks "Pengadilan Tinggi Tata Usaha Negara Medan, daerah hukumnya meliputi wilayah Propinsi Sumatera Utara, Daerah Istimewa Aceh, Sumatera Barat, Riau, Sumatera Selatan, Jambi, Bengkulu, dan Lampung." .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0002> legal:segmen <http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0002/text> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0003> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0003> legal:nomor 3 .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0003> legal:teks "Pengadilan Tinggi Tata Usaha Negara Ujung Pandang, daerah hukumnya meliputi wilayah Propinsi Sulawesi Selatan, Sulawesi Utara, Sulawesi Tengah, Sulawesi Tenggara, Maluku, Bali, Nusa Tenggara Barat, Nusa Tenggara Timur, Timor Timur, dan Irian Jaya." .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0003/text> legal:teks "Pengadilan Tinggi Tata Usaha Negara Ujung Pandang, daerah hukumnya meliputi wilayah Propinsi Sulawesi Selatan, Sulawesi Utara, Sulawesi Tengah, Sulawesi Tenggara, Maluku, Bali, Nusa Tenggara Barat, Nusa Tenggara Timur, Timor Timur, dan Irian Jaya." .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0003> legal:segmen <http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0003/text> .
+<http://example.org/legal/peraturan/uu/1990/10/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1990/10/pasal/0003> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0003> legal:nomor 3 .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0003> legal:versi <http://example.org/legal/peraturan/uu/1990/10/pasal/0003/versi/19901030> .
+<http://example.org/legal/peraturan/uu/1990/10> legal:pasal <http://example.org/legal/peraturan/uu/1990/10/pasal/0003> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0003/versi/19901030> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0003/versi/19901030> legal:tanggal "1990-10-30"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0003/versi/19901030> legal:teks "Daerah hukum Pengadilan Tinggi Tata Usaha Negara Jakarta, Medan, dan Ujung Pandang sebagaimana ditemukan dalam Pasal 2 Undang-undang ini, berlaku sampai terbentuknya Pengadilan Tinggi Tata Usaha Negara lainnya sebagaimana dimaksud dalam Pasal 6 ayat (2) Undang-undang Nomor 5 Tahun 1986 tentang Peradilan Tata Usaha Negara." .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0003/versi/19901030/text> legal:teks "Daerah hukum Pengadilan Tinggi Tata Usaha Negara Jakarta, Medan, dan Ujung Pandang sebagaimana ditemukan dalam Pasal 2 Undang-undang ini, berlaku sampai terbentuknya Pengadilan Tinggi Tata Usaha Negara lainnya sebagaimana dimaksud dalam Pasal 6 ayat (2) Undang-undang Nomor 5 Tahun 1986 tentang Peradilan Tata Usaha Negara." .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0003/versi/19901030> legal:segmen <http://example.org/legal/peraturan/uu/1990/10/pasal/0003/versi/19901030/text> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0003/versi/19901030/text> legal:merujuk <http://example.org/legal/peraturan/uu/1990/10/pasal/0003/versi/19901030/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0003/versi/19901030/text> legal:merujuk <http://example.org/legal/peraturan/uu/1990/10/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1990/10/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1990/10/pasal/0004> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004> legal:nomor 4 .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004> legal:versi <http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030> .
+<http://example.org/legal/peraturan/uu/1990/10> legal:pasal <http://example.org/legal/peraturan/uu/1990/10/pasal/0004> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030> legal:tanggal "1990-10-30"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030> legal:teks "Sengketa Tata Usaha Negara yang pada saat terbentuknya Pengadilan Tinggi Tata Usaha Negara sebagaimana dimaksud dalam Pasal 1 :\na. telah diperiksa tetapi belum diputus oleh Pengadilan Tinggi dalam lingkungan Peradilan Umum di seluruh daerah hukum sebagaimana dimaksud dalam Pasal 2, tetap diperiksa oleh Pengadilan Tinggi tersebut:\nb. sudah diajukan kepada Pengadilan Tinggi dalam lingkungan Peradilan Umum di seluruh daerah hukum sebagaimana dimaksud dalam Pasal 2 tetapi belum diperiksa, dilimpahkan kepada Pengadilan Tinggi Tata Usaha Negara yang daerah hukumnya meliputi daerah hukum Pengadilan Tinggi yang bersangkutan.\n" .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf/description> legal:teks "Sengketa Tata Usaha Negara yang pada saat terbentuknya Pengadilan Tinggi Tata Usaha Negara sebagaimana dimaksud dalam Pasal 1 :" .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf/description> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf/a> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf/a> legal:nomor "a" .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf/a/text> legal:teks "telah diperiksa tetapi belum diputus oleh Pengadilan Tinggi dalam lingkungan Peradilan Umum di seluruh daerah hukum sebagaimana dimaksud dalam Pasal 2, tetap diperiksa oleh Pengadilan Tinggi tersebut:" .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf/a> legal:segmen <http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf/a/text> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf/a/text> legal:merujuk <http://example.org/legal/peraturan/uu/1990/10/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf/b> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf/b> legal:nomor "b" .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf/b/text> legal:teks "sudah diajukan kepada Pengadilan Tinggi dalam lingkungan Peradilan Umum di seluruh daerah hukum sebagaimana dimaksud dalam Pasal 2 tetapi belum diperiksa, dilimpahkan kepada Pengadilan Tinggi Tata Usaha Negara yang daerah hukumnya meliputi daerah hukum Pengadilan Tinggi yang bersangkutan." .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf/b> legal:segmen <http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf/b/text> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf/b/text> legal:merujuk <http://example.org/legal/peraturan/uu/1990/10/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1990/10/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1990/10/pasal/0005> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0005> legal:nomor 5 .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0005> legal:versi <http://example.org/legal/peraturan/uu/1990/10/pasal/0005/versi/19901030> .
+<http://example.org/legal/peraturan/uu/1990/10> legal:pasal <http://example.org/legal/peraturan/uu/1990/10/pasal/0005> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0005/versi/19901030> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0005/versi/19901030> legal:tanggal "1990-10-30"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0005/versi/19901030> legal:teks "Undang-undang ini mulai berlaku pada tanggal mulai diterapkannya Undang-undang Nomor 5 Tahun 1986 tentang Peradilan Tata Usaha Negara. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0005/versi/19901030/text> legal:teks "Undang-undang ini mulai berlaku pada tanggal mulai diterapkannya Undang-undang Nomor 5 Tahun 1986 tentang Peradilan Tata Usaha Negara. Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0005/versi/19901030> legal:segmen <http://example.org/legal/peraturan/uu/1990/10/pasal/0005/versi/19901030/text> .
+<http://example.org/legal/peraturan/uu/1990/10> legal:disahkanPada "1990-10-30"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1990/10> legal:tentang " PEMBENTUKAN PENGADILAN TINGGI TATA USAHA NEGARA JAKARTA, MEDAN, DAN UJUNG PANDANG" .
+<http://example.org/legal/peraturan/uu/1990/10> legal:mengingat <http://example.org/legal/peraturan/uu/1990/10/mengingat> .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/description> .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0001> .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0001> legal:nomor "1" .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0001/text> legal:teks "Pasal 5 ayat (1), Pasal 20 ayat (1), dan Pasal 24 Undang-Undang Dasar 1945:" .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0001> legal:segmen <http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0001/text> .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0002> .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0002> legal:nomor "2" .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0002/text> legal:teks "Undang-undang Nomor 14 Tahun 1970 tentang Ketentuan-ketentuan Pokok Kekuasaan Kehakiman (Lembaran Negara Tahun 1970 Nomor 74, Tambahan Lembaran Negara Nomor 2951):" .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0002> legal:segmen <http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0002/text> .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0003> .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0003> legal:nomor "3" .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0003/text> legal:teks "Undang-undang Nomor 14 Tahun 1985 tentang Mahkamah Agung (Lembaran Negara Tahun 1985 Nomor 73, Tambahan Lembaran Negara Nomor 3316):" .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0003> legal:segmen <http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0003/text> .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0004> .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0004> legal:nomor "4" .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0004/text> legal:teks "Undang-undang Nomor 5 Tahun 1986 tentang Peradilan Tata Usaha Negara (Lembaran Negara Tahun 1986 Nomor 77, Tambahan Lembaran Negara Nomor 3344): Dengan persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG PEMBENTUKAN PENGADILAN TINGGI TATA USAHA NEGARA JAKARTA, MEDAN, DAN UJUNG PANDANG." .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0004> legal:segmen <http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0004/text> .
+<http://example.org/legal/peraturan/uu/1990/10> legal:menimbang <http://example.org/legal/peraturan/uu/1990/10/menimbang> .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/description> .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/a> legal:nomor "a" .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/a/text> legal:teks "bahwa sesuai dengan ketentuan Pasal 6 ayat (2) Undang-undang Nomor 5 Tahun 1986 tentang Peradilan Tata Usaha Negara, Pengadilan Tinggi Tata Usaha Negara perlu dibentuk di setiap ibukota propinsi:" .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/a> legal:segmen <http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/a/text> .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/b> .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/b> legal:nomor "b" .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/b/text> legal:teks "bahwa Pengadilan di lingkungan Peradilan Tata Usaha Negara merupakan lembaga baru yang pembentukannya memerlukan perencanaan serta persiapan yang sebaik-baiknya, sehingga pelaksanaannya dilakukan secara bertahap:" .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/b> legal:segmen <http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/b/text> .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/c> .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/c> legal:nomor "c" .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/c/text> legal:teks ". bahwa untuk tahap pertama, dipandang perlu membentuk Pengadilan Tinggi Tata Usaha Negara yang berkedudukan di Jakarta, Medan, dan Ujung Pandang:" .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/c> legal:segmen <http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/c/text> .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/d> .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/d> legal:nomor "d" .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/d/text> legal:teks "bahwa sehubungan dengan pertimbangan tersebut dan sesuai pula dengan ketentuan Pasal 10 Undang-undang Nomor 5 Tahun 1986 tentang Peradilan Tata Usaha Negara, maka pembentukan Pengadilan Tinggi Tata Usaha Negara Jakarta, Medan, dan Ujung Pandang perlu ditetapkan dengan undang-undang:" .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/d> legal:segmen <http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/d/text> .
+<http://example.org/legal/peraturan/uu/1990/10> legal:disahkanOleh "Diundangkan di Jakarta" .
+<http://example.org/legal/peraturan/uu/1990/10> legal:disahkanDi "Jakarta" .
+<http://example.org/legal/peraturan/uu/1990/10> legal:jabatanPengesah "PRESIDEN REPUBLIK INDONESIA" .
+<http://example.org/legal/peraturan/uu/1990/10> a legal:Peraturan .
+<http://example.org/legal/peraturan/uu/1990/10/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/0001> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/0002> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/0003> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/0003/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat> a legal:DaftarAyat .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0001> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0002> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0003> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0003/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0003> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0003/versi/19901030> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0003/versi/19901030/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf/a> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf/a/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf/b> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf/b/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0005> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0005/versi/19901030> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0005/versi/19901030/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat> a legal:Mengingat .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0001> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0002> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0003> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0003/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0004> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0004/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang> a legal:Menimbang .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/a> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/a/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/b> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/b/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/c> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/c/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/d> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/d/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1990/10/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/0001> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/0002> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/0003/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/pasal/0001/versi/19901030/huruf/0003> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0003/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/pasal/0002/versi/19901030/ayat/0003> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0003/versi/19901030> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/pasal/0003> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0003/versi/19901030/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/pasal/0003/versi/19901030> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/pasal/0004> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf/a> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf/a/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf/a> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf/b> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf/b/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/pasal/0004/versi/19901030/huruf/b> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0005> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0005/versi/19901030> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/pasal/0005> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0005> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10> .
+<http://example.org/legal/peraturan/uu/1990/10/pasal/0005/versi/19901030/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/pasal/0005/versi/19901030> .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/mengingat> .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0001> .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0002> .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0003/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0003> .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0004/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/mengingat/huruf/0004> .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/menimbang> .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/a> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/a/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/b> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/b/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/b> .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/c> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/c/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/c> .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/d> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/d/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1990/10/menimbang/huruf/d> .

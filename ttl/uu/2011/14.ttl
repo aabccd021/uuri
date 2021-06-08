@@ -1,499 +1,510 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/2011/14> legal:documentHasPasalSet <http://example.org/legal/document/uu/2011/14/pasals> .
-<http://example.org/legal/document/uu/2011/14/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2011/14/pasal/0001> .
-<http://example.org/legal/document/uu/2011/14/pasal/0001> legal:pasalHasKey 1 .
-<http://example.org/legal/document/uu/2011/14/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2011/14/pasal/0001/version/20110919> .
-<http://example.org/legal/document/uu/2011/14> legal:documentHasPasal <http://example.org/legal/document/uu/2011/14/pasal/0001> .
-<http://example.org/legal/document/uu/2011/14/pasal/0001/version/20110919> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/2011/14/pasal/0001/version/20110919> legal:pasalVersionHasVersionDate "2011-09-19"^^xsd:date .
-<http://example.org/legal/document/uu/2011/14/pasal/0001/version/20110919> legal:pasalVersionHasRawText "Pertanggungjawaban atas pelaksanaan APBN Tahun Anggaran 2010 tertuang dalam Laporan Keuangan Pemerintah Pusat (LKPP) Tahun 2010 sebagaimana ditetapkan dalam Lampiran Undang-Undang ini. REPUBLIK IM DONESIA “4 -" .
-<http://example.org/legal/document/uu/2011/14/pasal/0001/version/20110919/text> legal:textHasTextString "Pertanggungjawaban atas pelaksanaan APBN Tahun Anggaran 2010 tertuang dalam Laporan Keuangan Pemerintah Pusat (LKPP) Tahun 2010 sebagaimana ditetapkan dalam Lampiran Undang-Undang ini. REPUBLIK IM DONESIA “4 -" .
-<http://example.org/legal/document/uu/2011/14/pasal/0001/version/20110919> legal:pasalVersionHasText <http://example.org/legal/document/uu/2011/14/pasal/0001/version/20110919/text> .
-<http://example.org/legal/document/uu/2011/14/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2011/14/pasal/0002> .
-<http://example.org/legal/document/uu/2011/14/pasal/0002> legal:pasalHasKey 2 .
-<http://example.org/legal/document/uu/2011/14/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919> .
-<http://example.org/legal/document/uu/2011/14> legal:documentHasPasal <http://example.org/legal/document/uu/2011/14/pasal/0002> .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919> legal:pasalVersionHasVersionDate "2011-09-19"^^xsd:date .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919> legal:pasalVersionHasRawText "Laporan Keuangan sebagaimana dimaksud dalam Pasal 1, terdiri dari:\n1. Laporan Realisasi APBN Tahun Anggaran 2010,\n2. Neraca Pemerintah Pusat per 31 Desember 2010,\n3. Laporan Arus Kas Tahun Anggaran 2010, dan\n4. Catatan atas Laporan Keuangan.\n" .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919> legal:pasalVersionHasPointSet <http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point> .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/description> legal:textHasTextString "Laporan Keuangan sebagaimana dimaksud dalam Pasal 1, terdiri dari:" .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/description> .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0001> .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0001> legal:pointHasKey "1" .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0001/text> legal:textHasTextString "Laporan Realisasi APBN Tahun Anggaran 2010," .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0001> legal:pointHasText <http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0001/text> .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0002> .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0002> legal:pointHasKey "2" .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0002/text> legal:textHasTextString "Neraca Pemerintah Pusat per 31 Desember 2010," .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0002> legal:pointHasText <http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0002/text> .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0003> .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0003> legal:pointHasKey "3" .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0003/text> legal:textHasTextString "Laporan Arus Kas Tahun Anggaran 2010, dan" .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0003> legal:pointHasText <http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0003/text> .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0004> .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0004> legal:pointHasKey "4" .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0004/text> legal:textHasTextString "Catatan atas Laporan Keuangan." .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0004> legal:pointHasText <http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0004/text> .
-<http://example.org/legal/document/uu/2011/14/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2011/14/pasal/0003> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003> legal:pasalHasKey 3 .
-<http://example.org/legal/document/uu/2011/14/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919> .
-<http://example.org/legal/document/uu/2011/14> legal:documentHasPasal <http://example.org/legal/document/uu/2011/14/pasal/0003> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919> legal:pasalVersionHasVersionDate "2011-09-19"^^xsd:date .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919> legal:pasalVersionHasRawText "(1). Realisasi Pendapatan Negara dan Hibah Tahun Anggaran 2010 adalah sebesar Rp995.271.511.391.343 (sembilan ratus sembilan puluh lima triliun dua ratus tujuh puluh satu miliar lima ratus sebelas juta tiga ratus sembilan puluh satu ribu tiga ratus empat puluh tiga rupiah).\n(2). Realisasi Belanja Negara Tahun Anggaran 2010 adalah sebesar Rp1.042.117.219.744.817 (satu kuadriliun empat puluh dua triliun seratus tujuh belas miliar dua ratus sembilan belas juta tujuh ratus empat puluh empat ribu delapan ratus tujuh belas rupiah).\n(3). Berdasarkan realisasi Pendapatan Negara dan Hibah sebagaimana dimaksud pada ayat (1) dan Belanja Negara sebagaimana dimaksud pada ayat (2), maka terjadi Defisit Anggaran Tahun Anggaran 2010 sebesar Rp46.845.708.353.474 (empat puluh enam triliun delapan ratus empat puluh lima miliar tujuh ratus delapan juta tiga ratus lima puluh tiga ribu empat ratus tujuh puluh empat rupiah).\n(4). Pembiayaan untuk menutup Defisit Anggaran Tahun Anggaran 2010 sebagaimana dimaksud pada ayat (3) adalah sebesar Rp91.552.011.400.615 (sembilan puluh satu triliun lima ratus lima puluh dua miliar sebelas juta empat ratus ribu enam ratus lima belas rupiah). REPUBLIK IM DONESIA -.5-\n(5). Berdasarkan Defisit Anggaran sebagaimana dimaksud pada ayat (3) dan Pembiayaan sebagaimana dimaksud pada ayat (4), maka terdapat Sisa Lebih Pembiayaan Anggaran (SiLPA) sebesar Rp44.706.303.047.141 (empat puluh empat triliun tujuh ratus enam miliar tiga ratus tiga juta empat puluh tujuh ribu seratus empat puluh satu rupiah).\n(6). Saldo Anggaran Lebih (SAL) sampai dengan akhir Tahun Anggaran 2010 adalah sebesar Rp98.909.703.335.446 (sembilan puluh delapan triliun sembilan ratus sembilan miliar tujuh ratus tiga juta tiga ratus tiga puluh lima ribu empat ratus empat puluh enam rupiah) yang berasal dari SAL sampai dengan akhir Tahun Anggaran 2009, yakni sebesar Rp66.523.922.425.799 (enam puluh enam triliun lima ratus dua puluh tiga miliar sembilan ratus dua puluh dua juta empat ratus dua puluh lima ribu tujuh ratus sembilan puluh sembilan rupiah) ditambah dengan SiLPA Tahun Anggaran 2010 sebesar Rp44.706.303.047.141 (empat puluh empat triliun tujuh ratus enam miliar tiga ratus tiga juta empat puluh tujuh ribu seratus empat puluh satu rupiah), ditambah selisih kas lebih Tahun Anggaran 2009 sebesar Rp261.781.092.126 (dua ratus enam puluh satu miliar tujuh ratus delapan puluh satu juta sembilan puluh dua ribu seratus dua puluh enam rupiah), ditambah dengan koreksi atas SAL dan SiLPA sebesar Rp4.765.643.588.380 (empat triliun tujuh ratus enam puluh lima miliar enam ratus empat puluh tiga juta lima ratus delapan puluh delapan ribu tiga ratus delapan puluh rupiah), dan dikurangi penggunaan SAL sebesar Rp17.347.946.818.000 (tujuh belas triliun tiga ratus empat puluh tujuh miliar sembilan ratus empat puluh enam juta delapan ratus delapan belas ribu rupiah).\n(7). Realisasi Anggaran Pendapatan dan Belanja Negara sebagaimana dimaksud pada ayat (1) dan ayat (2), termasuk realisasi penerimaan minyak bumi dan gas alam yang dilaporkan berdasarkan asas neto. REPUBLIK IM DONESIA" .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0001> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0001> legal:ayatHasKey 1 .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0001> legal:ayatHasRawText "Realisasi Pendapatan Negara dan Hibah Tahun Anggaran 2010 adalah sebesar Rp995.271.511.391.343 (sembilan ratus sembilan puluh lima triliun dua ratus tujuh puluh satu miliar lima ratus sebelas juta tiga ratus sembilan puluh satu ribu tiga ratus empat puluh tiga rupiah)." .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0001/text> legal:textHasTextString "Realisasi Pendapatan Negara dan Hibah Tahun Anggaran 2010 adalah sebesar Rp995.271.511.391.343 (sembilan ratus sembilan puluh lima triliun dua ratus tujuh puluh satu miliar lima ratus sebelas juta tiga ratus sembilan puluh satu ribu tiga ratus empat puluh tiga rupiah)." .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0001/text> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0002> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0002> legal:ayatHasKey 2 .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0002> legal:ayatHasRawText "Realisasi Belanja Negara Tahun Anggaran 2010 adalah sebesar Rp1.042.117.219.744.817 (satu kuadriliun empat puluh dua triliun seratus tujuh belas miliar dua ratus sembilan belas juta tujuh ratus empat puluh empat ribu delapan ratus tujuh belas rupiah)." .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0002/text> legal:textHasTextString "Realisasi Belanja Negara Tahun Anggaran 2010 adalah sebesar Rp1.042.117.219.744.817 (satu kuadriliun empat puluh dua triliun seratus tujuh belas miliar dua ratus sembilan belas juta tujuh ratus empat puluh empat ribu delapan ratus tujuh belas rupiah)." .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0002/text> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0003> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0003> legal:ayatHasKey 3 .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0003> legal:ayatHasRawText "Berdasarkan realisasi Pendapatan Negara dan Hibah sebagaimana dimaksud pada ayat (1) dan Belanja Negara sebagaimana dimaksud pada ayat (2), maka terjadi Defisit Anggaran Tahun Anggaran 2010 sebesar Rp46.845.708.353.474 (empat puluh enam triliun delapan ratus empat puluh lima miliar tujuh ratus delapan juta tiga ratus lima puluh tiga ribu empat ratus tujuh puluh empat rupiah)." .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0003/text> legal:textHasTextString "Berdasarkan realisasi Pendapatan Negara dan Hibah sebagaimana dimaksud pada ayat (1) dan Belanja Negara sebagaimana dimaksud pada ayat (2), maka terjadi Defisit Anggaran Tahun Anggaran 2010 sebesar Rp46.845.708.353.474 (empat puluh enam triliun delapan ratus empat puluh lima miliar tujuh ratus delapan juta tiga ratus lima puluh tiga ribu empat ratus tujuh puluh empat rupiah)." .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0003/text> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0002> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0001> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0004> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0004> legal:ayatHasKey 4 .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0004> legal:ayatHasRawText "Pembiayaan untuk menutup Defisit Anggaran Tahun Anggaran 2010 sebagaimana dimaksud pada ayat (3) adalah sebesar Rp91.552.011.400.615 (sembilan puluh satu triliun lima ratus lima puluh dua miliar sebelas juta empat ratus ribu enam ratus lima belas rupiah). REPUBLIK IM DONESIA -.5-" .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0004/text> legal:textHasTextString "Pembiayaan untuk menutup Defisit Anggaran Tahun Anggaran 2010 sebagaimana dimaksud pada ayat (3) adalah sebesar Rp91.552.011.400.615 (sembilan puluh satu triliun lima ratus lima puluh dua miliar sebelas juta empat ratus ribu enam ratus lima belas rupiah). REPUBLIK IM DONESIA -.5-" .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0004/text> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0003> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0005> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0005> legal:ayatHasKey 5 .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0005> legal:ayatHasRawText "Berdasarkan Defisit Anggaran sebagaimana dimaksud pada ayat (3) dan Pembiayaan sebagaimana dimaksud pada ayat (4), maka terdapat Sisa Lebih Pembiayaan Anggaran (SiLPA) sebesar Rp44.706.303.047.141 (empat puluh empat triliun tujuh ratus enam miliar tiga ratus tiga juta empat puluh tujuh ribu seratus empat puluh satu rupiah)." .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0005/text> legal:textHasTextString "Berdasarkan Defisit Anggaran sebagaimana dimaksud pada ayat (3) dan Pembiayaan sebagaimana dimaksud pada ayat (4), maka terdapat Sisa Lebih Pembiayaan Anggaran (SiLPA) sebesar Rp44.706.303.047.141 (empat puluh empat triliun tujuh ratus enam miliar tiga ratus tiga juta empat puluh tujuh ribu seratus empat puluh satu rupiah)." .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0005> legal:ayatHasText <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0005/text> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0005/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0004> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0005/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0003> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0006> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0006> legal:ayatHasKey 6 .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0006> legal:ayatHasRawText "Saldo Anggaran Lebih (SAL) sampai dengan akhir Tahun Anggaran 2010 adalah sebesar Rp98.909.703.335.446 (sembilan puluh delapan triliun sembilan ratus sembilan miliar tujuh ratus tiga juta tiga ratus tiga puluh lima ribu empat ratus empat puluh enam rupiah) yang berasal dari SAL sampai dengan akhir Tahun Anggaran 2009, yakni sebesar Rp66.523.922.425.799 (enam puluh enam triliun lima ratus dua puluh tiga miliar sembilan ratus dua puluh dua juta empat ratus dua puluh lima ribu tujuh ratus sembilan puluh sembilan rupiah) ditambah dengan SiLPA Tahun Anggaran 2010 sebesar Rp44.706.303.047.141 (empat puluh empat triliun tujuh ratus enam miliar tiga ratus tiga juta empat puluh tujuh ribu seratus empat puluh satu rupiah), ditambah selisih kas lebih Tahun Anggaran 2009 sebesar Rp261.781.092.126 (dua ratus enam puluh satu miliar tujuh ratus delapan puluh satu juta sembilan puluh dua ribu seratus dua puluh enam rupiah), ditambah dengan koreksi atas SAL dan SiLPA sebesar Rp4.765.643.588.380 (empat triliun tujuh ratus enam puluh lima miliar enam ratus empat puluh tiga juta lima ratus delapan puluh delapan ribu tiga ratus delapan puluh rupiah), dan dikurangi penggunaan SAL sebesar Rp17.347.946.818.000 (tujuh belas triliun tiga ratus empat puluh tujuh miliar sembilan ratus empat puluh enam juta delapan ratus delapan belas ribu rupiah)." .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0006/text> legal:textHasTextString "Saldo Anggaran Lebih (SAL) sampai dengan akhir Tahun Anggaran 2010 adalah sebesar Rp98.909.703.335.446 (sembilan puluh delapan triliun sembilan ratus sembilan miliar tujuh ratus tiga juta tiga ratus tiga puluh lima ribu empat ratus empat puluh enam rupiah) yang berasal dari SAL sampai dengan akhir Tahun Anggaran 2009, yakni sebesar Rp66.523.922.425.799 (enam puluh enam triliun lima ratus dua puluh tiga miliar sembilan ratus dua puluh dua juta empat ratus dua puluh lima ribu tujuh ratus sembilan puluh sembilan rupiah) ditambah dengan SiLPA Tahun Anggaran 2010 sebesar Rp44.706.303.047.141 (empat puluh empat triliun tujuh ratus enam miliar tiga ratus tiga juta empat puluh tujuh ribu seratus empat puluh satu rupiah), ditambah selisih kas lebih Tahun Anggaran 2009 sebesar Rp261.781.092.126 (dua ratus enam puluh satu miliar tujuh ratus delapan puluh satu juta sembilan puluh dua ribu seratus dua puluh enam rupiah), ditambah dengan koreksi atas SAL dan SiLPA sebesar Rp4.765.643.588.380 (empat triliun tujuh ratus enam puluh lima miliar enam ratus empat puluh tiga juta lima ratus delapan puluh delapan ribu tiga ratus delapan puluh rupiah), dan dikurangi penggunaan SAL sebesar Rp17.347.946.818.000 (tujuh belas triliun tiga ratus empat puluh tujuh miliar sembilan ratus empat puluh enam juta delapan ratus delapan belas ribu rupiah)." .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0006> legal:ayatHasText <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0006/text> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0007> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0007> legal:ayatHasKey 7 .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0007> legal:ayatHasRawText "Realisasi Anggaran Pendapatan dan Belanja Negara sebagaimana dimaksud pada ayat (1) dan ayat (2), termasuk realisasi penerimaan minyak bumi dan gas alam yang dilaporkan berdasarkan asas neto. REPUBLIK IM DONESIA" .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0007/text> legal:textHasTextString "Realisasi Anggaran Pendapatan dan Belanja Negara sebagaimana dimaksud pada ayat (1) dan ayat (2), termasuk realisasi penerimaan minyak bumi dan gas alam yang dilaporkan berdasarkan asas neto. REPUBLIK IM DONESIA" .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0007> legal:ayatHasText <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0007/text> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0007/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0002> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0007/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0001> .
-<http://example.org/legal/document/uu/2011/14/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2011/14/pasal/0004> .
-<http://example.org/legal/document/uu/2011/14/pasal/0004> legal:pasalHasKey 4 .
-<http://example.org/legal/document/uu/2011/14/pasal/0004> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919> .
-<http://example.org/legal/document/uu/2011/14> legal:documentHasPasal <http://example.org/legal/document/uu/2011/14/pasal/0004> .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919> legal:pasalVersionHasVersionDate "2011-09-19"^^xsd:date .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919> legal:pasalVersionHasRawText "(1). Neraca Pemerintah Pusat per 31 Desember 2010 menginformasikan jumlah Aset sebesar Rp2.423.688.352.538.014 (dua kuadrillun empat ratus dua puluh tiga triliun enam ratus delapan puluh delapan miliar tiga ratus lima puluh dua juta lima ratus tiga puluh delapan ribu empat belas rupiah) dan Kewajiban sebesar Rp1.796.078.207.812.447 (satu kuadriliun tujuh ratus sembilan puluh enam triliun tujuh puluh delapan miliar dua ratus tujuh juta delapan ratus dua belas ribu empat ratus empat puluh tujuh rupiah), sehingga Ekuitas Dana adalah sebesar Rp627.610.144.725.567 (enam ratus dua puluh tujuh trillun enam ratus sepuluh miliar seratus empat puluh empat juta tujuh ratus dua puluh lima ribu lima ratus enam puluh tujuh rupiah).\n(2). Aset pada Neraca Pemerintah Pusat per 31 Desember 2010 telah mencakup pelaporan rekening-rekening kementerian negara/lembaga.\n(3). Pemerintah bertanggung jawab untuk melakukan penertiban rekening sebagaimana dimaksud pada ayat (2) dan menyampaikan hasilnya kepada DPR.\n(4). Dalam rangka meningkatkan pengelolaan dan keandalan penyajian aset, Pemerintah melakukan penertiban aset yang mencakup inventarisasi, penilaian, pemanfaatan, dan legalitas aset tetap pada seluruh kementerian negara/lembaga." .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat> .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0001> .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0001> legal:ayatHasKey 1 .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0001> legal:ayatHasRawText "Neraca Pemerintah Pusat per 31 Desember 2010 menginformasikan jumlah Aset sebesar Rp2.423.688.352.538.014 (dua kuadrillun empat ratus dua puluh tiga triliun enam ratus delapan puluh delapan miliar tiga ratus lima puluh dua juta lima ratus tiga puluh delapan ribu empat belas rupiah) dan Kewajiban sebesar Rp1.796.078.207.812.447 (satu kuadriliun tujuh ratus sembilan puluh enam triliun tujuh puluh delapan miliar dua ratus tujuh juta delapan ratus dua belas ribu empat ratus empat puluh tujuh rupiah), sehingga Ekuitas Dana adalah sebesar Rp627.610.144.725.567 (enam ratus dua puluh tujuh trillun enam ratus sepuluh miliar seratus empat puluh empat juta tujuh ratus dua puluh lima ribu lima ratus enam puluh tujuh rupiah)." .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0001/text> legal:textHasTextString "Neraca Pemerintah Pusat per 31 Desember 2010 menginformasikan jumlah Aset sebesar Rp2.423.688.352.538.014 (dua kuadrillun empat ratus dua puluh tiga triliun enam ratus delapan puluh delapan miliar tiga ratus lima puluh dua juta lima ratus tiga puluh delapan ribu empat belas rupiah) dan Kewajiban sebesar Rp1.796.078.207.812.447 (satu kuadriliun tujuh ratus sembilan puluh enam triliun tujuh puluh delapan miliar dua ratus tujuh juta delapan ratus dua belas ribu empat ratus empat puluh tujuh rupiah), sehingga Ekuitas Dana adalah sebesar Rp627.610.144.725.567 (enam ratus dua puluh tujuh trillun enam ratus sepuluh miliar seratus empat puluh empat juta tujuh ratus dua puluh lima ribu lima ratus enam puluh tujuh rupiah)." .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0001/text> .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0002> .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0002> legal:ayatHasKey 2 .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0002> legal:ayatHasRawText "Aset pada Neraca Pemerintah Pusat per 31 Desember 2010 telah mencakup pelaporan rekening-rekening kementerian negara/lembaga." .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0002/text> legal:textHasTextString "Aset pada Neraca Pemerintah Pusat per 31 Desember 2010 telah mencakup pelaporan rekening-rekening kementerian negara/lembaga." .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0002/text> .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0003> .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0003> legal:ayatHasKey 3 .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0003> legal:ayatHasRawText "Pemerintah bertanggung jawab untuk melakukan penertiban rekening sebagaimana dimaksud pada ayat (2) dan menyampaikan hasilnya kepada DPR." .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0003/text> legal:textHasTextString "Pemerintah bertanggung jawab untuk melakukan penertiban rekening sebagaimana dimaksud pada ayat (2) dan menyampaikan hasilnya kepada DPR." .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0003/text> .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0002> .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0004> .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0004> legal:ayatHasKey 4 .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0004> legal:ayatHasRawText "Dalam rangka meningkatkan pengelolaan dan keandalan penyajian aset, Pemerintah melakukan penertiban aset yang mencakup inventarisasi, penilaian, pemanfaatan, dan legalitas aset tetap pada seluruh kementerian negara/lembaga." .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0004/text> legal:textHasTextString "Dalam rangka meningkatkan pengelolaan dan keandalan penyajian aset, Pemerintah melakukan penertiban aset yang mencakup inventarisasi, penilaian, pemanfaatan, dan legalitas aset tetap pada seluruh kementerian negara/lembaga." .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0004/text> .
-<http://example.org/legal/document/uu/2011/14/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2011/14/pasal/0005> .
-<http://example.org/legal/document/uu/2011/14/pasal/0005> legal:pasalHasKey 5 .
-<http://example.org/legal/document/uu/2011/14/pasal/0005> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2011/14/pasal/0005/version/20110919> .
-<http://example.org/legal/document/uu/2011/14> legal:documentHasPasal <http://example.org/legal/document/uu/2011/14/pasal/0005> .
-<http://example.org/legal/document/uu/2011/14/pasal/0005/version/20110919> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/2011/14/pasal/0005/version/20110919> legal:pasalVersionHasVersionDate "2011-09-19"^^xsd:date .
-<http://example.org/legal/document/uu/2011/14/pasal/0005/version/20110919> legal:pasalVersionHasRawText "Laporan Arus Kas Tahun Anggaran 2010 menggambarkan jumlah arus kas bersih dari aktivitas operasi sebesar Rp33.197.591.404.914 (tiga puluh tiga triliun seratus sembilan puluh tujuh miliar lima ratus sembilan puluh satu juta empat ratus empat ribu sembilan ratus empat belas rupiah), arus kas bersih dari aktivitas investasi aset non keuangan sebesar minus Rp80.043.299.758.387 (delapan puluh triliun REPUBLIK IM DONESIA .7- empat puluh tiga miliar dua ratus sembilan puluh sembilan juta tujuh ratus lima puluh delapan ribu tiga ratus delapan puluh tujuh rupiah), arus kas bersih dari aktivitas pembiayaan sebesar Rp91.552.011.400.614 (sembilan puluh satu triliun lima ratus lima puluh dua miliar sebelas juta empat ratus ribu enam ratus empat belas rupiah), dan arus kas bersih dari aktivitas non anggaran sebesar Rp2.927.386.748.278 (dua trillun sembilan ratus dua puluh tujuh miliar tiga ratus delapan puluh enam juta tujuh ratus empat puluh delapan ribu dua ratus tujuh puluh delapan rupiah)." .
-<http://example.org/legal/document/uu/2011/14/pasal/0005/version/20110919/text> legal:textHasTextString "Laporan Arus Kas Tahun Anggaran 2010 menggambarkan jumlah arus kas bersih dari aktivitas operasi sebesar Rp33.197.591.404.914 (tiga puluh tiga triliun seratus sembilan puluh tujuh miliar lima ratus sembilan puluh satu juta empat ratus empat ribu sembilan ratus empat belas rupiah), arus kas bersih dari aktivitas investasi aset non keuangan sebesar minus Rp80.043.299.758.387 (delapan puluh triliun REPUBLIK IM DONESIA .7- empat puluh tiga miliar dua ratus sembilan puluh sembilan juta tujuh ratus lima puluh delapan ribu tiga ratus delapan puluh tujuh rupiah), arus kas bersih dari aktivitas pembiayaan sebesar Rp91.552.011.400.614 (sembilan puluh satu triliun lima ratus lima puluh dua miliar sebelas juta empat ratus ribu enam ratus empat belas rupiah), dan arus kas bersih dari aktivitas non anggaran sebesar Rp2.927.386.748.278 (dua trillun sembilan ratus dua puluh tujuh miliar tiga ratus delapan puluh enam juta tujuh ratus empat puluh delapan ribu dua ratus tujuh puluh delapan rupiah)." .
-<http://example.org/legal/document/uu/2011/14/pasal/0005/version/20110919> legal:pasalVersionHasText <http://example.org/legal/document/uu/2011/14/pasal/0005/version/20110919/text> .
-<http://example.org/legal/document/uu/2011/14/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2011/14/pasal/0006> .
-<http://example.org/legal/document/uu/2011/14/pasal/0006> legal:pasalHasKey 6 .
-<http://example.org/legal/document/uu/2011/14/pasal/0006> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2011/14/pasal/0006/version/20110919> .
-<http://example.org/legal/document/uu/2011/14> legal:documentHasPasal <http://example.org/legal/document/uu/2011/14/pasal/0006> .
-<http://example.org/legal/document/uu/2011/14/pasal/0006/version/20110919> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/2011/14/pasal/0006/version/20110919> legal:pasalVersionHasVersionDate "2011-09-19"^^xsd:date .
-<http://example.org/legal/document/uu/2011/14/pasal/0006/version/20110919> legal:pasalVersionHasRawText "Catatan atas Laporan Keuangan meliputi penjelasan atau daftar terinci atau analisis atas nilai suatu pos yang disajikan dalam Laporan Realisasi APBN, Neraca, dan Laporan Arus Kas." .
-<http://example.org/legal/document/uu/2011/14/pasal/0006/version/20110919/text> legal:textHasTextString "Catatan atas Laporan Keuangan meliputi penjelasan atau daftar terinci atau analisis atas nilai suatu pos yang disajikan dalam Laporan Realisasi APBN, Neraca, dan Laporan Arus Kas." .
-<http://example.org/legal/document/uu/2011/14/pasal/0006/version/20110919> legal:pasalVersionHasText <http://example.org/legal/document/uu/2011/14/pasal/0006/version/20110919/text> .
-<http://example.org/legal/document/uu/2011/14/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2011/14/pasal/0007> .
-<http://example.org/legal/document/uu/2011/14/pasal/0007> legal:pasalHasKey 7 .
-<http://example.org/legal/document/uu/2011/14/pasal/0007> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2011/14/pasal/0007/version/20110919> .
-<http://example.org/legal/document/uu/2011/14> legal:documentHasPasal <http://example.org/legal/document/uu/2011/14/pasal/0007> .
-<http://example.org/legal/document/uu/2011/14/pasal/0007/version/20110919> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/2011/14/pasal/0007/version/20110919> legal:pasalVersionHasVersionDate "2011-09-19"^^xsd:date .
-<http://example.org/legal/document/uu/2011/14/pasal/0007/version/20110919> legal:pasalVersionHasRawText "Laporan Keuangan sebagaimana dimaksud dalam Pasal 2, dilampiri juga Ikhtisar Laporan Keuangan Perusahaan Negara, Badan Layanan Umum, dan Badan Lainnya, dan disertai dengan suplemen berupa Laporan Penertiban Rekening Pemerintah pada Kementerian Negara/Lembaga, Ikhtisar Laporan Kinerja Pemerintah Pusat, dan Informasi Pendapatan dan Belanja secara Akrual." .
-<http://example.org/legal/document/uu/2011/14/pasal/0007/version/20110919/text> legal:textHasTextString "Laporan Keuangan sebagaimana dimaksud dalam Pasal 2, dilampiri juga Ikhtisar Laporan Keuangan Perusahaan Negara, Badan Layanan Umum, dan Badan Lainnya, dan disertai dengan suplemen berupa Laporan Penertiban Rekening Pemerintah pada Kementerian Negara/Lembaga, Ikhtisar Laporan Kinerja Pemerintah Pusat, dan Informasi Pendapatan dan Belanja secara Akrual." .
-<http://example.org/legal/document/uu/2011/14/pasal/0007/version/20110919> legal:pasalVersionHasText <http://example.org/legal/document/uu/2011/14/pasal/0007/version/20110919/text> .
-<http://example.org/legal/document/uu/2011/14/pasal/0007/version/20110919/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2011/14/pasal/0002> .
-<http://example.org/legal/document/uu/2011/14/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2011/14/pasal/0008> .
-<http://example.org/legal/document/uu/2011/14/pasal/0008> legal:pasalHasKey 8 .
-<http://example.org/legal/document/uu/2011/14/pasal/0008> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919> .
-<http://example.org/legal/document/uu/2011/14> legal:documentHasPasal <http://example.org/legal/document/uu/2011/14/pasal/0008> .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919> legal:pasalVersionHasVersionDate "2011-09-19"^^xsd:date .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919> legal:pasalVersionHasRawText "(1). Dalam hal realisasi anggaran pengeluaran melebihi realisasi anggaran penerimaan tahun anggaran berjalan, dan terdapat pengembalian pendapatan tahun-tahun yang lalu, maka SAL dapat digunakan.\n(2). Dalam rangka meyakini keandalan angka SAL, Pemerintah melakukan penelusuran jumlah SAL dan mengembangkan sistem pengelolaan kas/rekening Bendahara Umum Negara (BUN). REPUBLIK IM DONESIA -.8-\n(3). Dalam hal terjadi selisih lebih fisik kas SAL dari saldo bukunya, maka selisih lebih tersebut ditetapkan menjadi penambah SAL awal tahun anggaran berikutnya." .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat> .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0001> .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0001> legal:ayatHasKey 1 .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0001> legal:ayatHasRawText "Dalam hal realisasi anggaran pengeluaran melebihi realisasi anggaran penerimaan tahun anggaran berjalan, dan terdapat pengembalian pendapatan tahun-tahun yang lalu, maka SAL dapat digunakan." .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0001/text> legal:textHasTextString "Dalam hal realisasi anggaran pengeluaran melebihi realisasi anggaran penerimaan tahun anggaran berjalan, dan terdapat pengembalian pendapatan tahun-tahun yang lalu, maka SAL dapat digunakan." .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0001/text> .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0002> .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0002> legal:ayatHasKey 2 .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0002> legal:ayatHasRawText "Dalam rangka meyakini keandalan angka SAL, Pemerintah melakukan penelusuran jumlah SAL dan mengembangkan sistem pengelolaan kas/rekening Bendahara Umum Negara (BUN). REPUBLIK IM DONESIA -.8-" .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0002/text> legal:textHasTextString "Dalam rangka meyakini keandalan angka SAL, Pemerintah melakukan penelusuran jumlah SAL dan mengembangkan sistem pengelolaan kas/rekening Bendahara Umum Negara (BUN). REPUBLIK IM DONESIA -.8-" .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0002/text> .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0003> .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0003> legal:ayatHasKey 3 .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0003> legal:ayatHasRawText "Dalam hal terjadi selisih lebih fisik kas SAL dari saldo bukunya, maka selisih lebih tersebut ditetapkan menjadi penambah SAL awal tahun anggaran berikutnya." .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0003/text> legal:textHasTextString "Dalam hal terjadi selisih lebih fisik kas SAL dari saldo bukunya, maka selisih lebih tersebut ditetapkan menjadi penambah SAL awal tahun anggaran berikutnya." .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0003/text> .
-<http://example.org/legal/document/uu/2011/14/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2011/14/pasal/0009> .
-<http://example.org/legal/document/uu/2011/14/pasal/0009> legal:pasalHasKey 9 .
-<http://example.org/legal/document/uu/2011/14/pasal/0009> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2011/14/pasal/0009/version/20110919> .
-<http://example.org/legal/document/uu/2011/14> legal:documentHasPasal <http://example.org/legal/document/uu/2011/14/pasal/0009> .
-<http://example.org/legal/document/uu/2011/14/pasal/0009/version/20110919> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/2011/14/pasal/0009/version/20110919> legal:pasalVersionHasVersionDate "2011-09-19"^^xsd:date .
-<http://example.org/legal/document/uu/2011/14/pasal/0009/version/20110919> legal:pasalVersionHasRawText "Laporan Keuangan sebagaimana dimaksud dalam Pasal 2, telah diperiksa oleh BPK dengan opini Wajar Dengan Pengecualian." .
-<http://example.org/legal/document/uu/2011/14/pasal/0009/version/20110919/text> legal:textHasTextString "Laporan Keuangan sebagaimana dimaksud dalam Pasal 2, telah diperiksa oleh BPK dengan opini Wajar Dengan Pengecualian." .
-<http://example.org/legal/document/uu/2011/14/pasal/0009/version/20110919> legal:pasalVersionHasText <http://example.org/legal/document/uu/2011/14/pasal/0009/version/20110919/text> .
-<http://example.org/legal/document/uu/2011/14/pasal/0009/version/20110919/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2011/14/pasal/0002> .
-<http://example.org/legal/document/uu/2011/14/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2011/14/pasal/0010> .
-<http://example.org/legal/document/uu/2011/14/pasal/0010> legal:pasalHasKey 10 .
-<http://example.org/legal/document/uu/2011/14/pasal/0010> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919> .
-<http://example.org/legal/document/uu/2011/14> legal:documentHasPasal <http://example.org/legal/document/uu/2011/14/pasal/0010> .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919> legal:pasalVersionHasVersionDate "2011-09-19"^^xsd:date .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919> legal:pasalVersionHasRawText "(1). Pemerintah bertanggung jawab untuk melakukan perbaikan-perbaikan sistem pengelolaan keuangan negara sesuai dengan temuan-temuan sebagaimana yang dimaksud dalam hasil pemeriksaan BPK.\n(2). Pemerintah melakukan penilaaan kinerja terhadap kementerian negara/lembaga berkaitan dengan perencanaan, pelaksanaan, dan pertanggungjawaban dalam disiplin anggaran, serta menerapkan sistem pemberian penghargaan dan sanksi kepada kementerian negara/lembaga, termasuk satuan kerja pengguna anggaran di lingkungan kementerian negara/lembaga yang bersangkutan.\n(3). DPR dapat meminta BPK untuk menyampaikan laporan monitoring tindak lanjut Pemerintah dalam rangka pelaksanaan perbaikan-perbaikan sebagaimana dimaksud pada ayat (1)." .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat> .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0001> .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0001> legal:ayatHasKey 1 .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0001> legal:ayatHasRawText "Pemerintah bertanggung jawab untuk melakukan perbaikan-perbaikan sistem pengelolaan keuangan negara sesuai dengan temuan-temuan sebagaimana yang dimaksud dalam hasil pemeriksaan BPK." .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0001/text> legal:textHasTextString "Pemerintah bertanggung jawab untuk melakukan perbaikan-perbaikan sistem pengelolaan keuangan negara sesuai dengan temuan-temuan sebagaimana yang dimaksud dalam hasil pemeriksaan BPK." .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0001/text> .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0002> .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0002> legal:ayatHasKey 2 .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0002> legal:ayatHasRawText "Pemerintah melakukan penilaaan kinerja terhadap kementerian negara/lembaga berkaitan dengan perencanaan, pelaksanaan, dan pertanggungjawaban dalam disiplin anggaran, serta menerapkan sistem pemberian penghargaan dan sanksi kepada kementerian negara/lembaga, termasuk satuan kerja pengguna anggaran di lingkungan kementerian negara/lembaga yang bersangkutan." .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0002/text> legal:textHasTextString "Pemerintah melakukan penilaaan kinerja terhadap kementerian negara/lembaga berkaitan dengan perencanaan, pelaksanaan, dan pertanggungjawaban dalam disiplin anggaran, serta menerapkan sistem pemberian penghargaan dan sanksi kepada kementerian negara/lembaga, termasuk satuan kerja pengguna anggaran di lingkungan kementerian negara/lembaga yang bersangkutan." .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0002/text> .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0003> .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0003> legal:ayatHasKey 3 .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0003> legal:ayatHasRawText "DPR dapat meminta BPK untuk menyampaikan laporan monitoring tindak lanjut Pemerintah dalam rangka pelaksanaan perbaikan-perbaikan sebagaimana dimaksud pada ayat (1)." .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0003/text> legal:textHasTextString "DPR dapat meminta BPK untuk menyampaikan laporan monitoring tindak lanjut Pemerintah dalam rangka pelaksanaan perbaikan-perbaikan sebagaimana dimaksud pada ayat (1)." .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0003/text> .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0001> .
-<http://example.org/legal/document/uu/2011/14/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/2011/14/pasal/0011> .
-<http://example.org/legal/document/uu/2011/14/pasal/0011> legal:pasalHasKey 11 .
-<http://example.org/legal/document/uu/2011/14/pasal/0011> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/2011/14/pasal/0011/version/20110919> .
-<http://example.org/legal/document/uu/2011/14> legal:documentHasPasal <http://example.org/legal/document/uu/2011/14/pasal/0011> .
-<http://example.org/legal/document/uu/2011/14/pasal/0011/version/20110919> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/2011/14/pasal/0011/version/20110919> legal:pasalVersionHasVersionDate "2011-09-19"^^xsd:date .
-<http://example.org/legal/document/uu/2011/14/pasal/0011/version/20110919> legal:pasalVersionHasRawText "Undang-Undang ini mulai berlaku pada tanggal diundangkan. REPUBLIK IM DONESIA -.9- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini, dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/2011/14/pasal/0011/version/20110919/text> legal:textHasTextString "Undang-Undang ini mulai berlaku pada tanggal diundangkan. REPUBLIK IM DONESIA -.9- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini, dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/2011/14/pasal/0011/version/20110919> legal:pasalVersionHasText <http://example.org/legal/document/uu/2011/14/pasal/0011/version/20110919/text> .
-<http://example.org/legal/document/uu/2011/14> legal:documentHasDisahkanDate "2011-09-19"^^xsd:date .
-<http://example.org/legal/document/uu/2011/14> legal:documentMengingat <http://example.org/legal/document/uu/2011/14/mengingat> .
-<http://example.org/legal/document/uu/2011/14/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/2011/14/mengingat/point> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/2011/14/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2011/14/mengingat/point/description> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2011/14/mengingat/point/0001> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0001> legal:pointHasKey "1" .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0001/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 20 ayat (1), ayat (2) dan ayat (s5), Pasal 23 ayat (1) dan Pasal 23E Undang-Undang Dasar Negara Republik Indonesia Tahun 1945," .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/2011/14/mengingat/point/0001/text> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0001/text> legal:textReferencesLegal <http://example.org/legal/document/uu> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2011/14/mengingat/point/0002> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0002> legal:pointHasKey "2" .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0002/text> legal:textHasTextString "Undang-Undang Nomor 17 Tahun 2003 tentang Keuangan Negara (Lembaran Negara Republik Indonesia Tahun 2003 Nomor 47, Tambahan Lembaran Negara Republik Indonesia Nomor 4286):" .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/2011/14/mengingat/point/0002/text> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2003/17> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2011/14/mengingat/point/0003> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0003> legal:pointHasKey "3" .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0003/text> legal:textHasTextString "Undang-Undang Nomor 1 Tahun 2004 tentang Perbendaharaan Negara (Lembaran Negara Republik Indonesia Tahun 2004 Nomor 5, Tambahan Lembaran Negara Republik Indonesia Nomor 4355):" .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0003> legal:pointHasText <http://example.org/legal/document/uu/2011/14/mengingat/point/0003/text> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2004/1> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2011/14/mengingat/point/0004> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0004> legal:pointHasKey "4" .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0004/text> legal:textHasTextString "Undang-Undang Nomor 10 Tahun 2004 tentang Pembentukan Peraturan Perundang-undangan (Lembaran Negara Republik Indonesia Tahun 2004 Nomor 53, Tambahan Lembaran Negara Republik Indonesia Nomor 4389):" .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0004> legal:pointHasText <http://example.org/legal/document/uu/2011/14/mengingat/point/0004/text> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2004/10> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2011/14/mengingat/point/0005> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0005> legal:pointHasKey "5" .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0005/text> legal:textHasTextString "Undang-Undang Nomor 15 Tahun 2004 tentang Pemeriksaan Pengelolaan dan Tanggung Jawab Keuangan Negara (Lembaran Negara Republik Indonesia Tahun 2004 Nomor 66, Tambahan Lembaran Negara Republik Indonesia Nomor 4400): REPUBLIK IM DONESIA -.3-" .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0005> legal:pointHasText <http://example.org/legal/document/uu/2011/14/mengingat/point/0005/text> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0005/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2004/15> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2011/14/mengingat/point/0006> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0006> legal:pointHasKey "6" .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0006/text> legal:textHasTextString "Undang-Undang Nomor 15 Tahun 2006 tentang Badan Pemeriksa Keuangan (Lembaran Negara Republik Indonesia Tahun 2006 Nomor 85, Tambahan Lembaran Negara Republik Indonesia Nomor 4654)," .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0006> legal:pointHasText <http://example.org/legal/document/uu/2011/14/mengingat/point/0006/text> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0006/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2006/15> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2011/14/mengingat/point/0007> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0007> legal:pointHasKey "7" .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0007/text> legal:textHasTextString "Undang-Undang Nomor 47 Tahun 2009 tentang Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 2010 (Lembaran Negara Republik Indonesia Tahun 2009 Nomor 156 Tambahan Lembaran Negara Republik Indonesia Nomor 5075), sebagaimana telah diubah dengan Undang-Undang Nomor 2 Tahun 2010 (Lembaran Negara Republik Indonesia Tahun 2010 Nomor 69, Tambahan Lembaran Negara Republik Indonesia Nomor 5132): Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA dan PRESIDEN REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG PERTANGGUNGJAWABAN ATAS PELAKSANAAN ANGGARAN PENDAPATAN DAN BELANJA NEGARA TAHUN ANGGARAN 2010." .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0007> legal:pointHasText <http://example.org/legal/document/uu/2011/14/mengingat/point/0007/text> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0007/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2010/2> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0007/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2009/47> .
-<http://example.org/legal/document/uu/2011/14> legal:documentMenimbang <http://example.org/legal/document/uu/2011/14/menimbang> .
-<http://example.org/legal/document/uu/2011/14/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/2011/14/menimbang/point> .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/2011/14/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/2011/14/menimbang/point/description> .
-<http://example.org/legal/document/uu/2011/14/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2011/14/menimbang/point/a> .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/a/text> legal:textHasTextString "bahwa Anggaran Pendapatan dan Belanja Negara (APBN) Tahun Anggaran 2010 yang diundangkan berdasarkan Undang-Undang Nomor 47 Tahun 2009 sebagaimana telah diubah dengan Undang-Undang Nomor 2 Tahun 2010 tentang Perubahan atas Undang-Undang Nomor 47 Tahun 2009, pelaksanaannya perlu dilakukan pemeriksaan dan dipertanggungjawabkan sesuai Undang- Undang Nomor 15 Tahun 2004 tentang Pemeriksaan Pengelolaan dan Tanggung Jawab Keuangan Negara," .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/2011/14/menimbang/point/a/text> .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/a/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2009/47> .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/a/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2010/2> .
-<http://example.org/legal/document/uu/2011/14/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2011/14/menimbang/point/b> .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/b/text> legal:textHasTextString "bahwa sesuai dengan ketentuan Pasal 30 ayat (1) Undang- Undang Nomor 17 Tahun 2003 tentang Keuangan Negara dan Pasal 4 ayat (2) Undang-Undang Nomor 15 Tahun 2004 tentang Pemeriksaan Pengelolaan dan Tanggung Jawab Keuangan Negara, terhadap pelaksanaan APBN Tahun Anggaran 2010 telah dilakukan pemeriksaan oleh Badan Pemeriksa Keuangan (BPK)," .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/2011/14/menimbang/point/b/text> .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/b/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2004/15> .
-<http://example.org/legal/document/uu/2011/14/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2011/14/menimbang/point/c> .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/c> legal:pointHasKey "c" .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/c/text> legal:textHasTextString "bahwa sesuai ketentuan Pasal 3 ayat (2), Pasal 30, dan Pasal 32 Undang-Undang Nomor 17 Tahun 2003 tentang Keuangan Negara, dan Pasal 28 Undang-Undang Nomor 47 Tahun 2009 tentang Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 2010, pertanggungjawaban atas pelaksanaan APBN Tahun Anggaran 2010 harus ditetapkan dengan Undang-Undang, REPUBLIK IM DONESIA -a-" .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/2011/14/menimbang/point/c/text> .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/c/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2009/47> .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/c/text> legal:textReferencesLegal <http://example.org/legal/document/uu/2003/17> .
-<http://example.org/legal/document/uu/2011/14/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2011/14/menimbang/point/d> .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/d> legal:pointHasKey "d" .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/d/text> legal:textHasTextString "bahwa pembahasan Undang-Undang tentang Pertanggungjawaban atas Pelaksanaan Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 2010 dilakukan Dewan Perwakilan Rakyat (DPR) bersama Pemerintah dan dengan memperhatikan pertimbangan Dewan Perwakilan Daerah (DPD) sesuai Surat Keputusan Dewan Perwakilan Daerah Nomor 54/DPD RI/IV/2010- 2011 tanggal 15 Juli 2011," .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/2011/14/menimbang/point/d/text> .
-<http://example.org/legal/document/uu/2011/14/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/2011/14/menimbang/point/e> .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/e> legal:pointHasKey "e" .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/e/text> legal:textHasTextString "bahwa berdasarkan pertimbangan sebagaimana dimaksud pada huruf a, huruf b, huruf c, dan huruf d, perlu membentuk Undang-Undang tentang Pertanggungjawaban atas Pelaksanaan Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 2010," .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/e> legal:pointHasText <http://example.org/legal/document/uu/2011/14/menimbang/point/e/text> .
-<http://example.org/legal/document/uu/2011/14> legal:documentHasDisahkanPengesah "DR. H. SUSILO BAMBANG YUDHOYONO" .
-<http://example.org/legal/document/uu/2011/14> legal:documentHasDisahkanLocation "Jakarta" .
-<http://example.org/legal/document/uu/2011/14> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
-<http://example.org/legal/document/uu/2011/14> a legal:Document .
-<http://example.org/legal/document/uu/2011/14/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/2011/14/pasal/0001> a legal:Pasal .
-<http://example.org/legal/document/uu/2011/14/pasal/0001/version/20110919> a legal:PasalVersion .
-<http://example.org/legal/document/uu/2011/14/pasal/0001/version/20110919/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/pasal/0002> a legal:Pasal .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919> a legal:PasalVersion .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/description> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point> a legal:PointSet .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0001> a legal:Point .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0002> a legal:Point .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0003> a legal:Point .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0003/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0004> a legal:Point .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0004/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/pasal/0003> a legal:Pasal .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919> a legal:PasalVersion .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat> a legal:AyatSet .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0001> a legal:Ayat .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0002> a legal:Ayat .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0003> a legal:Ayat .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0003/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0004> a legal:Ayat .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0004/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0005> a legal:Ayat .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0005/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0006> a legal:Ayat .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0006/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0007> a legal:Ayat .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0007/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/pasal/0004> a legal:Pasal .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919> a legal:PasalVersion .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat> a legal:AyatSet .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0001> a legal:Ayat .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0002> a legal:Ayat .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0003> a legal:Ayat .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0003/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0004> a legal:Ayat .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0004/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/pasal/0005> a legal:Pasal .
-<http://example.org/legal/document/uu/2011/14/pasal/0005/version/20110919> a legal:PasalVersion .
-<http://example.org/legal/document/uu/2011/14/pasal/0005/version/20110919/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/pasal/0006> a legal:Pasal .
-<http://example.org/legal/document/uu/2011/14/pasal/0006/version/20110919> a legal:PasalVersion .
-<http://example.org/legal/document/uu/2011/14/pasal/0006/version/20110919/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/pasal/0007> a legal:Pasal .
-<http://example.org/legal/document/uu/2011/14/pasal/0007/version/20110919> a legal:PasalVersion .
-<http://example.org/legal/document/uu/2011/14/pasal/0007/version/20110919/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/pasal/0008> a legal:Pasal .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919> a legal:PasalVersion .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat> a legal:AyatSet .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0001> a legal:Ayat .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0002> a legal:Ayat .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0003> a legal:Ayat .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0003/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/pasal/0009> a legal:Pasal .
-<http://example.org/legal/document/uu/2011/14/pasal/0009/version/20110919> a legal:PasalVersion .
-<http://example.org/legal/document/uu/2011/14/pasal/0009/version/20110919/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/pasal/0010> a legal:Pasal .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919> a legal:PasalVersion .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat> a legal:AyatSet .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0001> a legal:Ayat .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0002> a legal:Ayat .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0003> a legal:Ayat .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0003/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/pasal/0011> a legal:Pasal .
-<http://example.org/legal/document/uu/2011/14/pasal/0011/version/20110919> a legal:PasalVersion .
-<http://example.org/legal/document/uu/2011/14/pasal/0011/version/20110919/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/mengingat> a legal:Mengingat .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/description> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/mengingat/point> a legal:PointSet .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0001> a legal:Point .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0002> a legal:Point .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0003> a legal:Point .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0003/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0004> a legal:Point .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0004/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0005> a legal:Point .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0005/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0006> a legal:Point .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0006/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0007> a legal:Point .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0007/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/description> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/menimbang/point> a legal:PointSet .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/a> a legal:Point .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/a/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/b> a legal:Point .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/c> a legal:Point .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/d> a legal:Point .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/e> a legal:Point .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/e/text> a legal:Text .
-<http://example.org/legal/document/uu/2011/14/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2011/14/pasals> .
-<http://example.org/legal/document/uu/2011/14/pasal/0001/version/20110919> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0001> .
-<http://example.org/legal/document/uu/2011/14/pasal/0001> legal:partOf <http://example.org/legal/document/uu/2011/14> .
-<http://example.org/legal/document/uu/2011/14/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2011/14/pasals> .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0002> .
-<http://example.org/legal/document/uu/2011/14/pasal/0002> legal:partOf <http://example.org/legal/document/uu/2011/14> .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919> .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0001> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point> .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0001/text> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0001> .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0002> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point> .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0002/text> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0002> .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0003> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point> .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0003/text> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0003> .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0004> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point> .
-<http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0004/text> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0002/version/20110919/point/0004> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003> legal:partOf <http://example.org/legal/document/uu/2011/14/pasals> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0003> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003> legal:partOf <http://example.org/legal/document/uu/2011/14> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0001> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0002> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0003> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0003> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0004> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0004> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0005> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0005/text> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0005> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0006> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0006/text> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0006> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0007> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat> .
-<http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0007/text> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0003/version/20110919/ayat/0007> .
-<http://example.org/legal/document/uu/2011/14/pasal/0004> legal:partOf <http://example.org/legal/document/uu/2011/14/pasals> .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0004> .
-<http://example.org/legal/document/uu/2011/14/pasal/0004> legal:partOf <http://example.org/legal/document/uu/2011/14> .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919> .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat> .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0001> .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat> .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0002> .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0003> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat> .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0003> .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0004> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat> .
-<http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0004/version/20110919/ayat/0004> .
-<http://example.org/legal/document/uu/2011/14/pasal/0005> legal:partOf <http://example.org/legal/document/uu/2011/14/pasals> .
-<http://example.org/legal/document/uu/2011/14/pasal/0005/version/20110919> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0005> .
-<http://example.org/legal/document/uu/2011/14/pasal/0005> legal:partOf <http://example.org/legal/document/uu/2011/14> .
-<http://example.org/legal/document/uu/2011/14/pasal/0006> legal:partOf <http://example.org/legal/document/uu/2011/14/pasals> .
-<http://example.org/legal/document/uu/2011/14/pasal/0006/version/20110919> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0006> .
-<http://example.org/legal/document/uu/2011/14/pasal/0006> legal:partOf <http://example.org/legal/document/uu/2011/14> .
-<http://example.org/legal/document/uu/2011/14/pasal/0007> legal:partOf <http://example.org/legal/document/uu/2011/14/pasals> .
-<http://example.org/legal/document/uu/2011/14/pasal/0007/version/20110919> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0007> .
-<http://example.org/legal/document/uu/2011/14/pasal/0007> legal:partOf <http://example.org/legal/document/uu/2011/14> .
-<http://example.org/legal/document/uu/2011/14/pasal/0008> legal:partOf <http://example.org/legal/document/uu/2011/14/pasals> .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0008> .
-<http://example.org/legal/document/uu/2011/14/pasal/0008> legal:partOf <http://example.org/legal/document/uu/2011/14> .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919> .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat> .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0001> .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat> .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0002> .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0003> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat> .
-<http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0008/version/20110919/ayat/0003> .
-<http://example.org/legal/document/uu/2011/14/pasal/0009> legal:partOf <http://example.org/legal/document/uu/2011/14/pasals> .
-<http://example.org/legal/document/uu/2011/14/pasal/0009/version/20110919> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0009> .
-<http://example.org/legal/document/uu/2011/14/pasal/0009> legal:partOf <http://example.org/legal/document/uu/2011/14> .
-<http://example.org/legal/document/uu/2011/14/pasal/0010> legal:partOf <http://example.org/legal/document/uu/2011/14/pasals> .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0010> .
-<http://example.org/legal/document/uu/2011/14/pasal/0010> legal:partOf <http://example.org/legal/document/uu/2011/14> .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919> .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0001> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat> .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0001> .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0002> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat> .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0002> .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0003> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat> .
-<http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0010/version/20110919/ayat/0003> .
-<http://example.org/legal/document/uu/2011/14/pasal/0011> legal:partOf <http://example.org/legal/document/uu/2011/14/pasals> .
-<http://example.org/legal/document/uu/2011/14/pasal/0011/version/20110919> legal:partOf <http://example.org/legal/document/uu/2011/14/pasal/0011> .
-<http://example.org/legal/document/uu/2011/14/pasal/0011> legal:partOf <http://example.org/legal/document/uu/2011/14> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point> legal:partOf <http://example.org/legal/document/uu/2011/14/mengingat> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/2011/14/mengingat/point> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0001/text> legal:partOf <http://example.org/legal/document/uu/2011/14/mengingat/point/0001> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/2011/14/mengingat/point> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0002/text> legal:partOf <http://example.org/legal/document/uu/2011/14/mengingat/point/0002> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/2011/14/mengingat/point> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0003/text> legal:partOf <http://example.org/legal/document/uu/2011/14/mengingat/point/0003> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0004> legal:partOf <http://example.org/legal/document/uu/2011/14/mengingat/point> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0004/text> legal:partOf <http://example.org/legal/document/uu/2011/14/mengingat/point/0004> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0005> legal:partOf <http://example.org/legal/document/uu/2011/14/mengingat/point> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0005/text> legal:partOf <http://example.org/legal/document/uu/2011/14/mengingat/point/0005> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0006> legal:partOf <http://example.org/legal/document/uu/2011/14/mengingat/point> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0006/text> legal:partOf <http://example.org/legal/document/uu/2011/14/mengingat/point/0006> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0007> legal:partOf <http://example.org/legal/document/uu/2011/14/mengingat/point> .
-<http://example.org/legal/document/uu/2011/14/mengingat/point/0007/text> legal:partOf <http://example.org/legal/document/uu/2011/14/mengingat/point/0007> .
-<http://example.org/legal/document/uu/2011/14/menimbang/point> legal:partOf <http://example.org/legal/document/uu/2011/14/menimbang> .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/2011/14/menimbang/point> .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/a/text> legal:partOf <http://example.org/legal/document/uu/2011/14/menimbang/point/a> .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/2011/14/menimbang/point> .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/b/text> legal:partOf <http://example.org/legal/document/uu/2011/14/menimbang/point/b> .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/2011/14/menimbang/point> .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/c/text> legal:partOf <http://example.org/legal/document/uu/2011/14/menimbang/point/c> .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/d> legal:partOf <http://example.org/legal/document/uu/2011/14/menimbang/point> .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/d/text> legal:partOf <http://example.org/legal/document/uu/2011/14/menimbang/point/d> .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/e> legal:partOf <http://example.org/legal/document/uu/2011/14/menimbang/point> .
-<http://example.org/legal/document/uu/2011/14/menimbang/point/e/text> legal:partOf <http://example.org/legal/document/uu/2011/14/menimbang/point/e> .
+<http://example.org/legal/peraturan/uu/2011/14> legal:daftarPasal <http://example.org/legal/peraturan/uu/2011/14/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2011/14/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/2011/14/pasal/0001> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0001> legal:versi <http://example.org/legal/peraturan/uu/2011/14/pasal/0001/versi/20110919> .
+<http://example.org/legal/peraturan/uu/2011/14> legal:pasal <http://example.org/legal/peraturan/uu/2011/14/pasal/0001> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0001/versi/20110919> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0001/versi/20110919> legal:tanggal "2011-09-19"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0001/versi/20110919> legal:teks "Pertanggungjawaban atas pelaksanaan APBN Tahun Anggaran 2010 tertuang dalam Laporan Keuangan Pemerintah Pusat (LKPP) Tahun 2010 sebagaimana ditetapkan dalam Lampiran Undang-Undang ini. REPUBLIK IM DONESIA “4 -" .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0001/versi/20110919/text> legal:teks "Pertanggungjawaban atas pelaksanaan APBN Tahun Anggaran 2010 tertuang dalam Laporan Keuangan Pemerintah Pusat (LKPP) Tahun 2010 sebagaimana ditetapkan dalam Lampiran Undang-Undang ini. REPUBLIK IM DONESIA “4 -" .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0001/versi/20110919> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/pasal/0001/versi/20110919/text> .
+<http://example.org/legal/peraturan/uu/2011/14/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/2011/14/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002> legal:versi <http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919> .
+<http://example.org/legal/peraturan/uu/2011/14> legal:pasal <http://example.org/legal/peraturan/uu/2011/14/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919> legal:tanggal "2011-09-19"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919> legal:teks "Laporan Keuangan sebagaimana dimaksud dalam Pasal 1, terdiri dari:\n1. Laporan Realisasi APBN Tahun Anggaran 2010,\n2. Neraca Pemerintah Pusat per 31 Desember 2010,\n3. Laporan Arus Kas Tahun Anggaran 2010, dan\n4. Catatan atas Laporan Keuangan.\n" .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919> legal:daftarHuruf <http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/description> legal:teks "Laporan Keuangan sebagaimana dimaksud dalam Pasal 1, terdiri dari:" .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/description> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0001> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0001> legal:nomor "1" .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0001/text> legal:teks "Laporan Realisasi APBN Tahun Anggaran 2010," .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0001> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0001/text> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0002> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0002> legal:nomor "2" .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0002/text> legal:teks "Neraca Pemerintah Pusat per 31 Desember 2010," .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0002> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0002/text> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0003> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0003> legal:nomor "3" .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0003/text> legal:teks "Laporan Arus Kas Tahun Anggaran 2010, dan" .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0003> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0003/text> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0004> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0004> legal:nomor "4" .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0004/text> legal:teks "Catatan atas Laporan Keuangan." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0004> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0004/text> .
+<http://example.org/legal/peraturan/uu/2011/14/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/2011/14/pasal/0003> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003> legal:nomor 3 .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003> legal:versi <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919> .
+<http://example.org/legal/peraturan/uu/2011/14> legal:pasal <http://example.org/legal/peraturan/uu/2011/14/pasal/0003> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919> legal:tanggal "2011-09-19"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919> legal:teks "(1). Realisasi Pendapatan Negara dan Hibah Tahun Anggaran 2010 adalah sebesar Rp995.271.511.391.343 (sembilan ratus sembilan puluh lima triliun dua ratus tujuh puluh satu miliar lima ratus sebelas juta tiga ratus sembilan puluh satu ribu tiga ratus empat puluh tiga rupiah).\n(2). Realisasi Belanja Negara Tahun Anggaran 2010 adalah sebesar Rp1.042.117.219.744.817 (satu kuadriliun empat puluh dua triliun seratus tujuh belas miliar dua ratus sembilan belas juta tujuh ratus empat puluh empat ribu delapan ratus tujuh belas rupiah).\n(3). Berdasarkan realisasi Pendapatan Negara dan Hibah sebagaimana dimaksud pada ayat (1) dan Belanja Negara sebagaimana dimaksud pada ayat (2), maka terjadi Defisit Anggaran Tahun Anggaran 2010 sebesar Rp46.845.708.353.474 (empat puluh enam triliun delapan ratus empat puluh lima miliar tujuh ratus delapan juta tiga ratus lima puluh tiga ribu empat ratus tujuh puluh empat rupiah).\n(4). Pembiayaan untuk menutup Defisit Anggaran Tahun Anggaran 2010 sebagaimana dimaksud pada ayat (3) adalah sebesar Rp91.552.011.400.615 (sembilan puluh satu triliun lima ratus lima puluh dua miliar sebelas juta empat ratus ribu enam ratus lima belas rupiah). REPUBLIK IM DONESIA -.5-\n(5). Berdasarkan Defisit Anggaran sebagaimana dimaksud pada ayat (3) dan Pembiayaan sebagaimana dimaksud pada ayat (4), maka terdapat Sisa Lebih Pembiayaan Anggaran (SiLPA) sebesar Rp44.706.303.047.141 (empat puluh empat triliun tujuh ratus enam miliar tiga ratus tiga juta empat puluh tujuh ribu seratus empat puluh satu rupiah).\n(6). Saldo Anggaran Lebih (SAL) sampai dengan akhir Tahun Anggaran 2010 adalah sebesar Rp98.909.703.335.446 (sembilan puluh delapan triliun sembilan ratus sembilan miliar tujuh ratus tiga juta tiga ratus tiga puluh lima ribu empat ratus empat puluh enam rupiah) yang berasal dari SAL sampai dengan akhir Tahun Anggaran 2009, yakni sebesar Rp66.523.922.425.799 (enam puluh enam triliun lima ratus dua puluh tiga miliar sembilan ratus dua puluh dua juta empat ratus dua puluh lima ribu tujuh ratus sembilan puluh sembilan rupiah) ditambah dengan SiLPA Tahun Anggaran 2010 sebesar Rp44.706.303.047.141 (empat puluh empat triliun tujuh ratus enam miliar tiga ratus tiga juta empat puluh tujuh ribu seratus empat puluh satu rupiah), ditambah selisih kas lebih Tahun Anggaran 2009 sebesar Rp261.781.092.126 (dua ratus enam puluh satu miliar tujuh ratus delapan puluh satu juta sembilan puluh dua ribu seratus dua puluh enam rupiah), ditambah dengan koreksi atas SAL dan SiLPA sebesar Rp4.765.643.588.380 (empat triliun tujuh ratus enam puluh lima miliar enam ratus empat puluh tiga juta lima ratus delapan puluh delapan ribu tiga ratus delapan puluh rupiah), dan dikurangi penggunaan SAL sebesar Rp17.347.946.818.000 (tujuh belas triliun tiga ratus empat puluh tujuh miliar sembilan ratus empat puluh enam juta delapan ratus delapan belas ribu rupiah).\n(7). Realisasi Anggaran Pendapatan dan Belanja Negara sebagaimana dimaksud pada ayat (1) dan ayat (2), termasuk realisasi penerimaan minyak bumi dan gas alam yang dilaporkan berdasarkan asas neto. REPUBLIK IM DONESIA" .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919> legal:daftarAyat <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat> legal:ayat <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0001> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0001> legal:teks "Realisasi Pendapatan Negara dan Hibah Tahun Anggaran 2010 adalah sebesar Rp995.271.511.391.343 (sembilan ratus sembilan puluh lima triliun dua ratus tujuh puluh satu miliar lima ratus sebelas juta tiga ratus sembilan puluh satu ribu tiga ratus empat puluh tiga rupiah)." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0001/text> legal:teks "Realisasi Pendapatan Negara dan Hibah Tahun Anggaran 2010 adalah sebesar Rp995.271.511.391.343 (sembilan ratus sembilan puluh lima triliun dua ratus tujuh puluh satu miliar lima ratus sebelas juta tiga ratus sembilan puluh satu ribu tiga ratus empat puluh tiga rupiah)." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0001> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0001/text> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat> legal:ayat <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0002> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0002> legal:teks "Realisasi Belanja Negara Tahun Anggaran 2010 adalah sebesar Rp1.042.117.219.744.817 (satu kuadriliun empat puluh dua triliun seratus tujuh belas miliar dua ratus sembilan belas juta tujuh ratus empat puluh empat ribu delapan ratus tujuh belas rupiah)." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0002/text> legal:teks "Realisasi Belanja Negara Tahun Anggaran 2010 adalah sebesar Rp1.042.117.219.744.817 (satu kuadriliun empat puluh dua triliun seratus tujuh belas miliar dua ratus sembilan belas juta tujuh ratus empat puluh empat ribu delapan ratus tujuh belas rupiah)." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0002> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0002/text> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat> legal:ayat <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0003> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0003> legal:nomor 3 .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0003> legal:teks "Berdasarkan realisasi Pendapatan Negara dan Hibah sebagaimana dimaksud pada ayat (1) dan Belanja Negara sebagaimana dimaksud pada ayat (2), maka terjadi Defisit Anggaran Tahun Anggaran 2010 sebesar Rp46.845.708.353.474 (empat puluh enam triliun delapan ratus empat puluh lima miliar tujuh ratus delapan juta tiga ratus lima puluh tiga ribu empat ratus tujuh puluh empat rupiah)." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0003/text> legal:teks "Berdasarkan realisasi Pendapatan Negara dan Hibah sebagaimana dimaksud pada ayat (1) dan Belanja Negara sebagaimana dimaksud pada ayat (2), maka terjadi Defisit Anggaran Tahun Anggaran 2010 sebesar Rp46.845.708.353.474 (empat puluh enam triliun delapan ratus empat puluh lima miliar tujuh ratus delapan juta tiga ratus lima puluh tiga ribu empat ratus tujuh puluh empat rupiah)." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0003> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0003/text> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0003/text> legal:merujuk <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0002> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0003/text> legal:merujuk <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0001> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat> legal:ayat <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0004> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0004> legal:nomor 4 .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0004> legal:teks "Pembiayaan untuk menutup Defisit Anggaran Tahun Anggaran 2010 sebagaimana dimaksud pada ayat (3) adalah sebesar Rp91.552.011.400.615 (sembilan puluh satu triliun lima ratus lima puluh dua miliar sebelas juta empat ratus ribu enam ratus lima belas rupiah). REPUBLIK IM DONESIA -.5-" .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0004/text> legal:teks "Pembiayaan untuk menutup Defisit Anggaran Tahun Anggaran 2010 sebagaimana dimaksud pada ayat (3) adalah sebesar Rp91.552.011.400.615 (sembilan puluh satu triliun lima ratus lima puluh dua miliar sebelas juta empat ratus ribu enam ratus lima belas rupiah). REPUBLIK IM DONESIA -.5-" .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0004> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0004/text> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0004/text> legal:merujuk <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0003> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat> legal:ayat <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0005> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0005> legal:nomor 5 .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0005> legal:teks "Berdasarkan Defisit Anggaran sebagaimana dimaksud pada ayat (3) dan Pembiayaan sebagaimana dimaksud pada ayat (4), maka terdapat Sisa Lebih Pembiayaan Anggaran (SiLPA) sebesar Rp44.706.303.047.141 (empat puluh empat triliun tujuh ratus enam miliar tiga ratus tiga juta empat puluh tujuh ribu seratus empat puluh satu rupiah)." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0005/text> legal:teks "Berdasarkan Defisit Anggaran sebagaimana dimaksud pada ayat (3) dan Pembiayaan sebagaimana dimaksud pada ayat (4), maka terdapat Sisa Lebih Pembiayaan Anggaran (SiLPA) sebesar Rp44.706.303.047.141 (empat puluh empat triliun tujuh ratus enam miliar tiga ratus tiga juta empat puluh tujuh ribu seratus empat puluh satu rupiah)." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0005> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0005/text> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0005/text> legal:merujuk <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0004> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0005/text> legal:merujuk <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0003> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat> legal:ayat <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0006> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0006> legal:nomor 6 .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0006> legal:teks "Saldo Anggaran Lebih (SAL) sampai dengan akhir Tahun Anggaran 2010 adalah sebesar Rp98.909.703.335.446 (sembilan puluh delapan triliun sembilan ratus sembilan miliar tujuh ratus tiga juta tiga ratus tiga puluh lima ribu empat ratus empat puluh enam rupiah) yang berasal dari SAL sampai dengan akhir Tahun Anggaran 2009, yakni sebesar Rp66.523.922.425.799 (enam puluh enam triliun lima ratus dua puluh tiga miliar sembilan ratus dua puluh dua juta empat ratus dua puluh lima ribu tujuh ratus sembilan puluh sembilan rupiah) ditambah dengan SiLPA Tahun Anggaran 2010 sebesar Rp44.706.303.047.141 (empat puluh empat triliun tujuh ratus enam miliar tiga ratus tiga juta empat puluh tujuh ribu seratus empat puluh satu rupiah), ditambah selisih kas lebih Tahun Anggaran 2009 sebesar Rp261.781.092.126 (dua ratus enam puluh satu miliar tujuh ratus delapan puluh satu juta sembilan puluh dua ribu seratus dua puluh enam rupiah), ditambah dengan koreksi atas SAL dan SiLPA sebesar Rp4.765.643.588.380 (empat triliun tujuh ratus enam puluh lima miliar enam ratus empat puluh tiga juta lima ratus delapan puluh delapan ribu tiga ratus delapan puluh rupiah), dan dikurangi penggunaan SAL sebesar Rp17.347.946.818.000 (tujuh belas triliun tiga ratus empat puluh tujuh miliar sembilan ratus empat puluh enam juta delapan ratus delapan belas ribu rupiah)." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0006/text> legal:teks "Saldo Anggaran Lebih (SAL) sampai dengan akhir Tahun Anggaran 2010 adalah sebesar Rp98.909.703.335.446 (sembilan puluh delapan triliun sembilan ratus sembilan miliar tujuh ratus tiga juta tiga ratus tiga puluh lima ribu empat ratus empat puluh enam rupiah) yang berasal dari SAL sampai dengan akhir Tahun Anggaran 2009, yakni sebesar Rp66.523.922.425.799 (enam puluh enam triliun lima ratus dua puluh tiga miliar sembilan ratus dua puluh dua juta empat ratus dua puluh lima ribu tujuh ratus sembilan puluh sembilan rupiah) ditambah dengan SiLPA Tahun Anggaran 2010 sebesar Rp44.706.303.047.141 (empat puluh empat triliun tujuh ratus enam miliar tiga ratus tiga juta empat puluh tujuh ribu seratus empat puluh satu rupiah), ditambah selisih kas lebih Tahun Anggaran 2009 sebesar Rp261.781.092.126 (dua ratus enam puluh satu miliar tujuh ratus delapan puluh satu juta sembilan puluh dua ribu seratus dua puluh enam rupiah), ditambah dengan koreksi atas SAL dan SiLPA sebesar Rp4.765.643.588.380 (empat triliun tujuh ratus enam puluh lima miliar enam ratus empat puluh tiga juta lima ratus delapan puluh delapan ribu tiga ratus delapan puluh rupiah), dan dikurangi penggunaan SAL sebesar Rp17.347.946.818.000 (tujuh belas triliun tiga ratus empat puluh tujuh miliar sembilan ratus empat puluh enam juta delapan ratus delapan belas ribu rupiah)." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0006> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0006/text> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat> legal:ayat <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0007> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0007> legal:nomor 7 .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0007> legal:teks "Realisasi Anggaran Pendapatan dan Belanja Negara sebagaimana dimaksud pada ayat (1) dan ayat (2), termasuk realisasi penerimaan minyak bumi dan gas alam yang dilaporkan berdasarkan asas neto. REPUBLIK IM DONESIA" .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0007/text> legal:teks "Realisasi Anggaran Pendapatan dan Belanja Negara sebagaimana dimaksud pada ayat (1) dan ayat (2), termasuk realisasi penerimaan minyak bumi dan gas alam yang dilaporkan berdasarkan asas neto. REPUBLIK IM DONESIA" .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0007> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0007/text> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0007/text> legal:merujuk <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0002> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0007/text> legal:merujuk <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0001> .
+<http://example.org/legal/peraturan/uu/2011/14/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/2011/14/pasal/0004> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004> legal:nomor 4 .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004> legal:versi <http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919> .
+<http://example.org/legal/peraturan/uu/2011/14> legal:pasal <http://example.org/legal/peraturan/uu/2011/14/pasal/0004> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919> legal:tanggal "2011-09-19"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919> legal:teks "(1). Neraca Pemerintah Pusat per 31 Desember 2010 menginformasikan jumlah Aset sebesar Rp2.423.688.352.538.014 (dua kuadrillun empat ratus dua puluh tiga triliun enam ratus delapan puluh delapan miliar tiga ratus lima puluh dua juta lima ratus tiga puluh delapan ribu empat belas rupiah) dan Kewajiban sebesar Rp1.796.078.207.812.447 (satu kuadriliun tujuh ratus sembilan puluh enam triliun tujuh puluh delapan miliar dua ratus tujuh juta delapan ratus dua belas ribu empat ratus empat puluh tujuh rupiah), sehingga Ekuitas Dana adalah sebesar Rp627.610.144.725.567 (enam ratus dua puluh tujuh trillun enam ratus sepuluh miliar seratus empat puluh empat juta tujuh ratus dua puluh lima ribu lima ratus enam puluh tujuh rupiah).\n(2). Aset pada Neraca Pemerintah Pusat per 31 Desember 2010 telah mencakup pelaporan rekening-rekening kementerian negara/lembaga.\n(3). Pemerintah bertanggung jawab untuk melakukan penertiban rekening sebagaimana dimaksud pada ayat (2) dan menyampaikan hasilnya kepada DPR.\n(4). Dalam rangka meningkatkan pengelolaan dan keandalan penyajian aset, Pemerintah melakukan penertiban aset yang mencakup inventarisasi, penilaian, pemanfaatan, dan legalitas aset tetap pada seluruh kementerian negara/lembaga." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919> legal:daftarAyat <http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat> legal:ayat <http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0001> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0001> legal:teks "Neraca Pemerintah Pusat per 31 Desember 2010 menginformasikan jumlah Aset sebesar Rp2.423.688.352.538.014 (dua kuadrillun empat ratus dua puluh tiga triliun enam ratus delapan puluh delapan miliar tiga ratus lima puluh dua juta lima ratus tiga puluh delapan ribu empat belas rupiah) dan Kewajiban sebesar Rp1.796.078.207.812.447 (satu kuadriliun tujuh ratus sembilan puluh enam triliun tujuh puluh delapan miliar dua ratus tujuh juta delapan ratus dua belas ribu empat ratus empat puluh tujuh rupiah), sehingga Ekuitas Dana adalah sebesar Rp627.610.144.725.567 (enam ratus dua puluh tujuh trillun enam ratus sepuluh miliar seratus empat puluh empat juta tujuh ratus dua puluh lima ribu lima ratus enam puluh tujuh rupiah)." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0001/text> legal:teks "Neraca Pemerintah Pusat per 31 Desember 2010 menginformasikan jumlah Aset sebesar Rp2.423.688.352.538.014 (dua kuadrillun empat ratus dua puluh tiga triliun enam ratus delapan puluh delapan miliar tiga ratus lima puluh dua juta lima ratus tiga puluh delapan ribu empat belas rupiah) dan Kewajiban sebesar Rp1.796.078.207.812.447 (satu kuadriliun tujuh ratus sembilan puluh enam triliun tujuh puluh delapan miliar dua ratus tujuh juta delapan ratus dua belas ribu empat ratus empat puluh tujuh rupiah), sehingga Ekuitas Dana adalah sebesar Rp627.610.144.725.567 (enam ratus dua puluh tujuh trillun enam ratus sepuluh miliar seratus empat puluh empat juta tujuh ratus dua puluh lima ribu lima ratus enam puluh tujuh rupiah)." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0001> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0001/text> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat> legal:ayat <http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0002> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0002> legal:teks "Aset pada Neraca Pemerintah Pusat per 31 Desember 2010 telah mencakup pelaporan rekening-rekening kementerian negara/lembaga." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0002/text> legal:teks "Aset pada Neraca Pemerintah Pusat per 31 Desember 2010 telah mencakup pelaporan rekening-rekening kementerian negara/lembaga." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0002> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0002/text> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat> legal:ayat <http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0003> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0003> legal:nomor 3 .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0003> legal:teks "Pemerintah bertanggung jawab untuk melakukan penertiban rekening sebagaimana dimaksud pada ayat (2) dan menyampaikan hasilnya kepada DPR." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0003/text> legal:teks "Pemerintah bertanggung jawab untuk melakukan penertiban rekening sebagaimana dimaksud pada ayat (2) dan menyampaikan hasilnya kepada DPR." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0003> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0003/text> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0003/text> legal:merujuk <http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0002> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat> legal:ayat <http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0004> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0004> legal:nomor 4 .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0004> legal:teks "Dalam rangka meningkatkan pengelolaan dan keandalan penyajian aset, Pemerintah melakukan penertiban aset yang mencakup inventarisasi, penilaian, pemanfaatan, dan legalitas aset tetap pada seluruh kementerian negara/lembaga." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0004/text> legal:teks "Dalam rangka meningkatkan pengelolaan dan keandalan penyajian aset, Pemerintah melakukan penertiban aset yang mencakup inventarisasi, penilaian, pemanfaatan, dan legalitas aset tetap pada seluruh kementerian negara/lembaga." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0004> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0004/text> .
+<http://example.org/legal/peraturan/uu/2011/14/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/2011/14/pasal/0005> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0005> legal:nomor 5 .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0005> legal:versi <http://example.org/legal/peraturan/uu/2011/14/pasal/0005/versi/20110919> .
+<http://example.org/legal/peraturan/uu/2011/14> legal:pasal <http://example.org/legal/peraturan/uu/2011/14/pasal/0005> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0005/versi/20110919> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0005/versi/20110919> legal:tanggal "2011-09-19"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0005/versi/20110919> legal:teks "Laporan Arus Kas Tahun Anggaran 2010 menggambarkan jumlah arus kas bersih dari aktivitas operasi sebesar Rp33.197.591.404.914 (tiga puluh tiga triliun seratus sembilan puluh tujuh miliar lima ratus sembilan puluh satu juta empat ratus empat ribu sembilan ratus empat belas rupiah), arus kas bersih dari aktivitas investasi aset non keuangan sebesar minus Rp80.043.299.758.387 (delapan puluh triliun REPUBLIK IM DONESIA .7- empat puluh tiga miliar dua ratus sembilan puluh sembilan juta tujuh ratus lima puluh delapan ribu tiga ratus delapan puluh tujuh rupiah), arus kas bersih dari aktivitas pembiayaan sebesar Rp91.552.011.400.614 (sembilan puluh satu triliun lima ratus lima puluh dua miliar sebelas juta empat ratus ribu enam ratus empat belas rupiah), dan arus kas bersih dari aktivitas non anggaran sebesar Rp2.927.386.748.278 (dua trillun sembilan ratus dua puluh tujuh miliar tiga ratus delapan puluh enam juta tujuh ratus empat puluh delapan ribu dua ratus tujuh puluh delapan rupiah)." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0005/versi/20110919/text> legal:teks "Laporan Arus Kas Tahun Anggaran 2010 menggambarkan jumlah arus kas bersih dari aktivitas operasi sebesar Rp33.197.591.404.914 (tiga puluh tiga triliun seratus sembilan puluh tujuh miliar lima ratus sembilan puluh satu juta empat ratus empat ribu sembilan ratus empat belas rupiah), arus kas bersih dari aktivitas investasi aset non keuangan sebesar minus Rp80.043.299.758.387 (delapan puluh triliun REPUBLIK IM DONESIA .7- empat puluh tiga miliar dua ratus sembilan puluh sembilan juta tujuh ratus lima puluh delapan ribu tiga ratus delapan puluh tujuh rupiah), arus kas bersih dari aktivitas pembiayaan sebesar Rp91.552.011.400.614 (sembilan puluh satu triliun lima ratus lima puluh dua miliar sebelas juta empat ratus ribu enam ratus empat belas rupiah), dan arus kas bersih dari aktivitas non anggaran sebesar Rp2.927.386.748.278 (dua trillun sembilan ratus dua puluh tujuh miliar tiga ratus delapan puluh enam juta tujuh ratus empat puluh delapan ribu dua ratus tujuh puluh delapan rupiah)." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0005/versi/20110919> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/pasal/0005/versi/20110919/text> .
+<http://example.org/legal/peraturan/uu/2011/14/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/2011/14/pasal/0006> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0006> legal:nomor 6 .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0006> legal:versi <http://example.org/legal/peraturan/uu/2011/14/pasal/0006/versi/20110919> .
+<http://example.org/legal/peraturan/uu/2011/14> legal:pasal <http://example.org/legal/peraturan/uu/2011/14/pasal/0006> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0006/versi/20110919> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0006/versi/20110919> legal:tanggal "2011-09-19"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0006/versi/20110919> legal:teks "Catatan atas Laporan Keuangan meliputi penjelasan atau daftar terinci atau analisis atas nilai suatu pos yang disajikan dalam Laporan Realisasi APBN, Neraca, dan Laporan Arus Kas." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0006/versi/20110919/text> legal:teks "Catatan atas Laporan Keuangan meliputi penjelasan atau daftar terinci atau analisis atas nilai suatu pos yang disajikan dalam Laporan Realisasi APBN, Neraca, dan Laporan Arus Kas." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0006/versi/20110919> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/pasal/0006/versi/20110919/text> .
+<http://example.org/legal/peraturan/uu/2011/14/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/2011/14/pasal/0007> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0007> legal:nomor 7 .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0007> legal:versi <http://example.org/legal/peraturan/uu/2011/14/pasal/0007/versi/20110919> .
+<http://example.org/legal/peraturan/uu/2011/14> legal:pasal <http://example.org/legal/peraturan/uu/2011/14/pasal/0007> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0007/versi/20110919> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0007/versi/20110919> legal:tanggal "2011-09-19"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0007/versi/20110919> legal:teks "Laporan Keuangan sebagaimana dimaksud dalam Pasal 2, dilampiri juga Ikhtisar Laporan Keuangan Perusahaan Negara, Badan Layanan Umum, dan Badan Lainnya, dan disertai dengan suplemen berupa Laporan Penertiban Rekening Pemerintah pada Kementerian Negara/Lembaga, Ikhtisar Laporan Kinerja Pemerintah Pusat, dan Informasi Pendapatan dan Belanja secara Akrual." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0007/versi/20110919/text> legal:teks "Laporan Keuangan sebagaimana dimaksud dalam Pasal 2, dilampiri juga Ikhtisar Laporan Keuangan Perusahaan Negara, Badan Layanan Umum, dan Badan Lainnya, dan disertai dengan suplemen berupa Laporan Penertiban Rekening Pemerintah pada Kementerian Negara/Lembaga, Ikhtisar Laporan Kinerja Pemerintah Pusat, dan Informasi Pendapatan dan Belanja secara Akrual." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0007/versi/20110919> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/pasal/0007/versi/20110919/text> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0007/versi/20110919/text> legal:merujuk <http://example.org/legal/peraturan/uu/2011/14/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2011/14/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/2011/14/pasal/0008> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008> legal:nomor 8 .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008> legal:versi <http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919> .
+<http://example.org/legal/peraturan/uu/2011/14> legal:pasal <http://example.org/legal/peraturan/uu/2011/14/pasal/0008> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919> legal:tanggal "2011-09-19"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919> legal:teks "(1). Dalam hal realisasi anggaran pengeluaran melebihi realisasi anggaran penerimaan tahun anggaran berjalan, dan terdapat pengembalian pendapatan tahun-tahun yang lalu, maka SAL dapat digunakan.\n(2). Dalam rangka meyakini keandalan angka SAL, Pemerintah melakukan penelusuran jumlah SAL dan mengembangkan sistem pengelolaan kas/rekening Bendahara Umum Negara (BUN). REPUBLIK IM DONESIA -.8-\n(3). Dalam hal terjadi selisih lebih fisik kas SAL dari saldo bukunya, maka selisih lebih tersebut ditetapkan menjadi penambah SAL awal tahun anggaran berikutnya." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919> legal:daftarAyat <http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat> legal:ayat <http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0001> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0001> legal:teks "Dalam hal realisasi anggaran pengeluaran melebihi realisasi anggaran penerimaan tahun anggaran berjalan, dan terdapat pengembalian pendapatan tahun-tahun yang lalu, maka SAL dapat digunakan." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0001/text> legal:teks "Dalam hal realisasi anggaran pengeluaran melebihi realisasi anggaran penerimaan tahun anggaran berjalan, dan terdapat pengembalian pendapatan tahun-tahun yang lalu, maka SAL dapat digunakan." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0001> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0001/text> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat> legal:ayat <http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0002> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0002> legal:teks "Dalam rangka meyakini keandalan angka SAL, Pemerintah melakukan penelusuran jumlah SAL dan mengembangkan sistem pengelolaan kas/rekening Bendahara Umum Negara (BUN). REPUBLIK IM DONESIA -.8-" .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0002/text> legal:teks "Dalam rangka meyakini keandalan angka SAL, Pemerintah melakukan penelusuran jumlah SAL dan mengembangkan sistem pengelolaan kas/rekening Bendahara Umum Negara (BUN). REPUBLIK IM DONESIA -.8-" .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0002> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0002/text> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat> legal:ayat <http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0003> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0003> legal:nomor 3 .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0003> legal:teks "Dalam hal terjadi selisih lebih fisik kas SAL dari saldo bukunya, maka selisih lebih tersebut ditetapkan menjadi penambah SAL awal tahun anggaran berikutnya." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0003/text> legal:teks "Dalam hal terjadi selisih lebih fisik kas SAL dari saldo bukunya, maka selisih lebih tersebut ditetapkan menjadi penambah SAL awal tahun anggaran berikutnya." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0003> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0003/text> .
+<http://example.org/legal/peraturan/uu/2011/14/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/2011/14/pasal/0009> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0009> legal:nomor 9 .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0009> legal:versi <http://example.org/legal/peraturan/uu/2011/14/pasal/0009/versi/20110919> .
+<http://example.org/legal/peraturan/uu/2011/14> legal:pasal <http://example.org/legal/peraturan/uu/2011/14/pasal/0009> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0009/versi/20110919> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0009/versi/20110919> legal:tanggal "2011-09-19"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0009/versi/20110919> legal:teks "Laporan Keuangan sebagaimana dimaksud dalam Pasal 2, telah diperiksa oleh BPK dengan opini Wajar Dengan Pengecualian." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0009/versi/20110919/text> legal:teks "Laporan Keuangan sebagaimana dimaksud dalam Pasal 2, telah diperiksa oleh BPK dengan opini Wajar Dengan Pengecualian." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0009/versi/20110919> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/pasal/0009/versi/20110919/text> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0009/versi/20110919/text> legal:merujuk <http://example.org/legal/peraturan/uu/2011/14/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2011/14/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/2011/14/pasal/0010> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010> legal:nomor 10 .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010> legal:versi <http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919> .
+<http://example.org/legal/peraturan/uu/2011/14> legal:pasal <http://example.org/legal/peraturan/uu/2011/14/pasal/0010> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919> legal:tanggal "2011-09-19"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919> legal:teks "(1). Pemerintah bertanggung jawab untuk melakukan perbaikan-perbaikan sistem pengelolaan keuangan negara sesuai dengan temuan-temuan sebagaimana yang dimaksud dalam hasil pemeriksaan BPK.\n(2). Pemerintah melakukan penilaaan kinerja terhadap kementerian negara/lembaga berkaitan dengan perencanaan, pelaksanaan, dan pertanggungjawaban dalam disiplin anggaran, serta menerapkan sistem pemberian penghargaan dan sanksi kepada kementerian negara/lembaga, termasuk satuan kerja pengguna anggaran di lingkungan kementerian negara/lembaga yang bersangkutan.\n(3). DPR dapat meminta BPK untuk menyampaikan laporan monitoring tindak lanjut Pemerintah dalam rangka pelaksanaan perbaikan-perbaikan sebagaimana dimaksud pada ayat (1)." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919> legal:daftarAyat <http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat> legal:ayat <http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0001> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0001> legal:teks "Pemerintah bertanggung jawab untuk melakukan perbaikan-perbaikan sistem pengelolaan keuangan negara sesuai dengan temuan-temuan sebagaimana yang dimaksud dalam hasil pemeriksaan BPK." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0001/text> legal:teks "Pemerintah bertanggung jawab untuk melakukan perbaikan-perbaikan sistem pengelolaan keuangan negara sesuai dengan temuan-temuan sebagaimana yang dimaksud dalam hasil pemeriksaan BPK." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0001> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0001/text> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat> legal:ayat <http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0002> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0002> legal:teks "Pemerintah melakukan penilaaan kinerja terhadap kementerian negara/lembaga berkaitan dengan perencanaan, pelaksanaan, dan pertanggungjawaban dalam disiplin anggaran, serta menerapkan sistem pemberian penghargaan dan sanksi kepada kementerian negara/lembaga, termasuk satuan kerja pengguna anggaran di lingkungan kementerian negara/lembaga yang bersangkutan." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0002/text> legal:teks "Pemerintah melakukan penilaaan kinerja terhadap kementerian negara/lembaga berkaitan dengan perencanaan, pelaksanaan, dan pertanggungjawaban dalam disiplin anggaran, serta menerapkan sistem pemberian penghargaan dan sanksi kepada kementerian negara/lembaga, termasuk satuan kerja pengguna anggaran di lingkungan kementerian negara/lembaga yang bersangkutan." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0002> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0002/text> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat> legal:ayat <http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0003> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0003> legal:nomor 3 .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0003> legal:teks "DPR dapat meminta BPK untuk menyampaikan laporan monitoring tindak lanjut Pemerintah dalam rangka pelaksanaan perbaikan-perbaikan sebagaimana dimaksud pada ayat (1)." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0003/text> legal:teks "DPR dapat meminta BPK untuk menyampaikan laporan monitoring tindak lanjut Pemerintah dalam rangka pelaksanaan perbaikan-perbaikan sebagaimana dimaksud pada ayat (1)." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0003> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0003/text> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0003/text> legal:merujuk <http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0001> .
+<http://example.org/legal/peraturan/uu/2011/14/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/2011/14/pasal/0011> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0011> legal:nomor 11 .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0011> legal:versi <http://example.org/legal/peraturan/uu/2011/14/pasal/0011/versi/20110919> .
+<http://example.org/legal/peraturan/uu/2011/14> legal:pasal <http://example.org/legal/peraturan/uu/2011/14/pasal/0011> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0011/versi/20110919> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0011/versi/20110919> legal:tanggal "2011-09-19"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0011/versi/20110919> legal:teks "Undang-Undang ini mulai berlaku pada tanggal diundangkan. REPUBLIK IM DONESIA -.9- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini, dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0011/versi/20110919/text> legal:teks "Undang-Undang ini mulai berlaku pada tanggal diundangkan. REPUBLIK IM DONESIA -.9- Agar setiap orang mengetahuinya, memerintahkan pengundangan Undang-Undang ini, dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0011/versi/20110919> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/pasal/0011/versi/20110919/text> .
+<http://example.org/legal/peraturan/uu/2011/14> legal:disahkanPada "2011-09-19"^^xsd:date .
+<http://example.org/legal/peraturan/uu/2011/14> legal:tentang " PERTANGGUNGJAWABAN ATAS PELAKSANAAN ANGGARAN PENDAPATAN DAN BELANJA NEGARA TAHUN ANGGARAN 2010" .
+<http://example.org/legal/peraturan/uu/2011/14> legal:mengingat <http://example.org/legal/peraturan/uu/2011/14/mengingat> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat> legal:daftarHuruf <http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/description> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0001> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0001> legal:nomor "1" .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0001/text> legal:teks "Pasal 5 ayat (1), Pasal 20 ayat (1), ayat (2) dan ayat (s5), Pasal 23 ayat (1) dan Pasal 23E Undang-Undang Dasar Negara Republik Indonesia Tahun 1945," .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0001> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0001/text> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0001/text> legal:merujuk <http://example.org/legal/peraturan/uu> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0002> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0002> legal:nomor "2" .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0002/text> legal:teks "Undang-Undang Nomor 17 Tahun 2003 tentang Keuangan Negara (Lembaran Negara Republik Indonesia Tahun 2003 Nomor 47, Tambahan Lembaran Negara Republik Indonesia Nomor 4286):" .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0002> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0002/text> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0002/text> legal:merujuk <http://example.org/legal/peraturan/uu/2003/17> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0003> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0003> legal:nomor "3" .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0003/text> legal:teks "Undang-Undang Nomor 1 Tahun 2004 tentang Perbendaharaan Negara (Lembaran Negara Republik Indonesia Tahun 2004 Nomor 5, Tambahan Lembaran Negara Republik Indonesia Nomor 4355):" .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0003> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0003/text> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0003/text> legal:merujuk <http://example.org/legal/peraturan/uu/2004/1> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0004> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0004> legal:nomor "4" .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0004/text> legal:teks "Undang-Undang Nomor 10 Tahun 2004 tentang Pembentukan Peraturan Perundang-undangan (Lembaran Negara Republik Indonesia Tahun 2004 Nomor 53, Tambahan Lembaran Negara Republik Indonesia Nomor 4389):" .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0004> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0004/text> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0004/text> legal:merujuk <http://example.org/legal/peraturan/uu/2004/10> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0005> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0005> legal:nomor "5" .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0005/text> legal:teks "Undang-Undang Nomor 15 Tahun 2004 tentang Pemeriksaan Pengelolaan dan Tanggung Jawab Keuangan Negara (Lembaran Negara Republik Indonesia Tahun 2004 Nomor 66, Tambahan Lembaran Negara Republik Indonesia Nomor 4400): REPUBLIK IM DONESIA -.3-" .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0005> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0005/text> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0005/text> legal:merujuk <http://example.org/legal/peraturan/uu/2004/15> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0006> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0006> legal:nomor "6" .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0006/text> legal:teks "Undang-Undang Nomor 15 Tahun 2006 tentang Badan Pemeriksa Keuangan (Lembaran Negara Republik Indonesia Tahun 2006 Nomor 85, Tambahan Lembaran Negara Republik Indonesia Nomor 4654)," .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0006> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0006/text> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0006/text> legal:merujuk <http://example.org/legal/peraturan/uu/2006/15> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0007> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0007> legal:nomor "7" .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0007/text> legal:teks "Undang-Undang Nomor 47 Tahun 2009 tentang Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 2010 (Lembaran Negara Republik Indonesia Tahun 2009 Nomor 156 Tambahan Lembaran Negara Republik Indonesia Nomor 5075), sebagaimana telah diubah dengan Undang-Undang Nomor 2 Tahun 2010 (Lembaran Negara Republik Indonesia Tahun 2010 Nomor 69, Tambahan Lembaran Negara Republik Indonesia Nomor 5132): Dengan Persetujuan Bersama DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA dan PRESIDEN REPUBLIK INDONESIA MEMUTUSKAN: Menetapkan : UNDANG-UNDANG TENTANG PERTANGGUNGJAWABAN ATAS PELAKSANAAN ANGGARAN PENDAPATAN DAN BELANJA NEGARA TAHUN ANGGARAN 2010." .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0007> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0007/text> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0007/text> legal:merujuk <http://example.org/legal/peraturan/uu/2010/2> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0007/text> legal:merujuk <http://example.org/legal/peraturan/uu/2009/47> .
+<http://example.org/legal/peraturan/uu/2011/14> legal:menimbang <http://example.org/legal/peraturan/uu/2011/14/menimbang> .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang> legal:daftarHuruf <http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/description> .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/a> legal:nomor "a" .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/a/text> legal:teks "bahwa Anggaran Pendapatan dan Belanja Negara (APBN) Tahun Anggaran 2010 yang diundangkan berdasarkan Undang-Undang Nomor 47 Tahun 2009 sebagaimana telah diubah dengan Undang-Undang Nomor 2 Tahun 2010 tentang Perubahan atas Undang-Undang Nomor 47 Tahun 2009, pelaksanaannya perlu dilakukan pemeriksaan dan dipertanggungjawabkan sesuai Undang- Undang Nomor 15 Tahun 2004 tentang Pemeriksaan Pengelolaan dan Tanggung Jawab Keuangan Negara," .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/a> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/a/text> .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/a/text> legal:merujuk <http://example.org/legal/peraturan/uu/2009/47> .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/a/text> legal:merujuk <http://example.org/legal/peraturan/uu/2010/2> .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/b> .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/b> legal:nomor "b" .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/b/text> legal:teks "bahwa sesuai dengan ketentuan Pasal 30 ayat (1) Undang- Undang Nomor 17 Tahun 2003 tentang Keuangan Negara dan Pasal 4 ayat (2) Undang-Undang Nomor 15 Tahun 2004 tentang Pemeriksaan Pengelolaan dan Tanggung Jawab Keuangan Negara, terhadap pelaksanaan APBN Tahun Anggaran 2010 telah dilakukan pemeriksaan oleh Badan Pemeriksa Keuangan (BPK)," .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/b> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/b/text> .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/b/text> legal:merujuk <http://example.org/legal/peraturan/uu/2004/15> .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/c> .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/c> legal:nomor "c" .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/c/text> legal:teks "bahwa sesuai ketentuan Pasal 3 ayat (2), Pasal 30, dan Pasal 32 Undang-Undang Nomor 17 Tahun 2003 tentang Keuangan Negara, dan Pasal 28 Undang-Undang Nomor 47 Tahun 2009 tentang Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 2010, pertanggungjawaban atas pelaksanaan APBN Tahun Anggaran 2010 harus ditetapkan dengan Undang-Undang, REPUBLIK IM DONESIA -a-" .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/c> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/c/text> .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/c/text> legal:merujuk <http://example.org/legal/peraturan/uu/2009/47> .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/c/text> legal:merujuk <http://example.org/legal/peraturan/uu/2003/17> .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/d> .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/d> legal:nomor "d" .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/d/text> legal:teks "bahwa pembahasan Undang-Undang tentang Pertanggungjawaban atas Pelaksanaan Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 2010 dilakukan Dewan Perwakilan Rakyat (DPR) bersama Pemerintah dan dengan memperhatikan pertimbangan Dewan Perwakilan Daerah (DPD) sesuai Surat Keputusan Dewan Perwakilan Daerah Nomor 54/DPD RI/IV/2010- 2011 tanggal 15 Juli 2011," .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/d> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/d/text> .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/e> .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/e> legal:nomor "e" .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/e/text> legal:teks "bahwa berdasarkan pertimbangan sebagaimana dimaksud pada huruf a, huruf b, huruf c, dan huruf d, perlu membentuk Undang-Undang tentang Pertanggungjawaban atas Pelaksanaan Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 2010," .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/e> legal:segmen <http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/e/text> .
+<http://example.org/legal/peraturan/uu/2011/14> legal:disahkanOleh "DR. H. SUSILO BAMBANG YUDHOYONO" .
+<http://example.org/legal/peraturan/uu/2011/14> legal:disahkanDi "Jakarta" .
+<http://example.org/legal/peraturan/uu/2011/14> legal:jabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/peraturan/uu/2011/14> a legal:Peraturan .
+<http://example.org/legal/peraturan/uu/2011/14/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0001> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0001/versi/20110919> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0001/versi/20110919/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0001> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0002> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0003> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0003/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0004> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0004/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat> a legal:DaftarAyat .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0001> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0002> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0003> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0003/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0004> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0004/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0005> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0005/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0006> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0006/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0007> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0007/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat> a legal:DaftarAyat .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0001> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0002> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0003> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0003/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0004> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0004/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0005> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0005/versi/20110919> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0005/versi/20110919/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0006> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0006/versi/20110919> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0006/versi/20110919/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0007> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0007/versi/20110919> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0007/versi/20110919/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat> a legal:DaftarAyat .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0001> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0002> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0003> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0003/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0009> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0009/versi/20110919> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0009/versi/20110919/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat> a legal:DaftarAyat .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0001> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0002> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0003> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0003/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0011> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0011/versi/20110919> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0011/versi/20110919/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat> a legal:Mengingat .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0001> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0002> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0003> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0003/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0004> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0004/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0005> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0005/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0006> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0006/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0007> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0007/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang> a legal:Menimbang .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/a> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/a/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/b> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/b/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/c> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/c/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/d> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/d/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/e> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/e/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/2011/14/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0001/versi/20110919> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0001> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0001/versi/20110919/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0001/versi/20110919> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0002> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0001> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0002> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0003/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0003> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0004/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0002/versi/20110919/huruf/0004> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0003> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0001> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0002> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0003/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0003> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0004/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0004> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0005> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0005/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0005> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0006> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0006/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0006> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0007> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0007/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0003/versi/20110919/ayat/0007> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0004> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0001> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0002> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0003/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0003> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0004/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0004/versi/20110919/ayat/0004> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0005> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0005/versi/20110919> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0005> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0005> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0005/versi/20110919/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0005/versi/20110919> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0006> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0006/versi/20110919> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0006> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0006> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0006/versi/20110919/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0006/versi/20110919> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0007> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0007/versi/20110919> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0007> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0007> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0007/versi/20110919/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0007/versi/20110919> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0008> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0001> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0002> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0003/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0008/versi/20110919/ayat/0003> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0009> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0009/versi/20110919> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0009> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0009> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0009/versi/20110919/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0009/versi/20110919> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0010> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0001> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0002> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0003/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0010/versi/20110919/ayat/0003> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0011> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/daftarPasal> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0011/versi/20110919> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0011> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0011> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14> .
+<http://example.org/legal/peraturan/uu/2011/14/pasal/0011/versi/20110919/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/pasal/0011/versi/20110919> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/mengingat> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0001> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0002> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0003/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0003> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0004/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0004> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0005> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0005/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0005> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0006> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0006/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0006> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0007> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0007/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/mengingat/huruf/0007> .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/menimbang> .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/a> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/a/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/b> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/b/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/b> .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/c> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/c/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/c> .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/d> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/d/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/d> .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/e> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/e/text> legal:bagianDari <http://example.org/legal/peraturan/uu/2011/14/menimbang/huruf/e> .

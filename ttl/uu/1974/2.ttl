@@ -1,429 +1,438 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1974/2> legal:documentHasPasalSet <http://example.org/legal/document/uu/1974/2/pasals> .
-<http://example.org/legal/document/uu/1974/2/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1974/2/pasal/0001> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001> legal:pasalHasKey 1 .
-<http://example.org/legal/document/uu/1974/2/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314> .
-<http://example.org/legal/document/uu/1974/2> legal:documentHasPasal <http://example.org/legal/document/uu/1974/2/pasal/0001> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314> legal:pasalVersionHasVersionDate "1974-03-14"^^xsd:date .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314> legal:pasalVersionHasRawText "(1). Pendapatan Negara Tahun Anggaran 1974/1975 diperoleh dari :\na. Sumber-sumber Anggaran Rutin dan\nb. Sumber-sumber Anggaran Pembangunan.\n\n(2). Pendapatan Rutin dimaksud pada ayat (1) sub a pasal ini menurut perkiraan berjumlah Rp. 1.363.400.000.000,00.\n(3). Pendapatan Pembangunan dimaksud pada ayat (1) sub b asal ini menurut perkiraan berjumlah Rp. 213.900.000.000,00. 3 -\n(4). Jumlah seluruh Pendapatan Negara Tahun Anggaran 1974/1975 menurut perkiraan berjumlah Rp. 1.577.300.000.000,00.\n(5). Perincian pendapatan dimaksud pada ayat (2) dan (3) pasal ini berturut-turut dimuat dalam Lampiran I dan 11 Undang-undang ini." .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001> legal:ayatHasKey 1 .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001> legal:ayatHasRawText "Pendapatan Negara Tahun Anggaran 1974/1975 diperoleh dari :\na. Sumber-sumber Anggaran Rutin dan\nb. Sumber-sumber Anggaran Pembangunan.\n" .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001/point> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001/point/description> legal:textHasTextString "Pendapatan Negara Tahun Anggaran 1974/1975 diperoleh dari :" .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001/point/description> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001/point/a> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001/point/a/text> legal:textHasTextString "Sumber-sumber Anggaran Rutin dan" .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001/point/a/text> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001/point/b> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001/point/b/text> legal:textHasTextString "Sumber-sumber Anggaran Pembangunan." .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001/point/b> legal:pointHasText <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001/point/b/text> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0002> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0002> legal:ayatHasKey 2 .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0002> legal:ayatHasRawText "Pendapatan Rutin dimaksud pada ayat (1) sub a pasal ini menurut perkiraan berjumlah Rp. 1.363.400.000.000,00." .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0002/text> legal:textHasTextString "Pendapatan Rutin dimaksud pada ayat (1) sub a pasal ini menurut perkiraan berjumlah Rp. 1.363.400.000.000,00." .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0002/text> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0003> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0003> legal:ayatHasKey 3 .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0003> legal:ayatHasRawText "Pendapatan Pembangunan dimaksud pada ayat (1) sub b asal ini menurut perkiraan berjumlah Rp. 213.900.000.000,00. 3 -" .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0003/text> legal:textHasTextString "Pendapatan Pembangunan dimaksud pada ayat (1) sub b asal ini menurut perkiraan berjumlah Rp. 213.900.000.000,00. 3 -" .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0003/text> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0004> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0004> legal:ayatHasKey 4 .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0004> legal:ayatHasRawText "Jumlah seluruh Pendapatan Negara Tahun Anggaran 1974/1975 menurut perkiraan berjumlah Rp. 1.577.300.000.000,00." .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0004/text> legal:textHasTextString "Jumlah seluruh Pendapatan Negara Tahun Anggaran 1974/1975 menurut perkiraan berjumlah Rp. 1.577.300.000.000,00." .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0004/text> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0005> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0005> legal:ayatHasKey 5 .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0005> legal:ayatHasRawText "Perincian pendapatan dimaksud pada ayat (2) dan (3) pasal ini berturut-turut dimuat dalam Lampiran I dan 11 Undang-undang ini." .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0005/text> legal:textHasTextString "Perincian pendapatan dimaksud pada ayat (2) dan (3) pasal ini berturut-turut dimuat dalam Lampiran I dan 11 Undang-undang ini." .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0005> legal:ayatHasText <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0005/text> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0005/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0002> .
-<http://example.org/legal/document/uu/1974/2/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1974/2/pasal/0002> .
-<http://example.org/legal/document/uu/1974/2/pasal/0002> legal:pasalHasKey 2 .
-<http://example.org/legal/document/uu/1974/2/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314> .
-<http://example.org/legal/document/uu/1974/2> legal:documentHasPasal <http://example.org/legal/document/uu/1974/2/pasal/0002> .
-<http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314> legal:pasalVersionHasVersionDate "1974-03-14"^^xsd:date .
-<http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314> legal:pasalVersionHasRawText "(6). Perincian dalam Lampiran III dimaksud dalam ayat (5) pasal ini memuat bidang dan sektor, sedang perincian lebih lanjut sampai pada kegiatan ditentukan dengan Keputusan Presiden.\n(7). Perincian dalam Lampiran IV dimaksud dalam ayat (5) pasal ini memuat sektor dan sub sektor, sedangkan perincian lebih lanjut sampai pada proyek-proyek ditentukan dengan Keputusan Presiden. .4-" .
-<http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat> .
-<http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat/0006> .
-<http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat/0006> legal:ayatHasKey 6 .
-<http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat/0006> legal:ayatHasRawText "Perincian dalam Lampiran III dimaksud dalam ayat (5) pasal ini memuat bidang dan sektor, sedang perincian lebih lanjut sampai pada kegiatan ditentukan dengan Keputusan Presiden." .
-<http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat/0006/text> legal:textHasTextString "Perincian dalam Lampiran III dimaksud dalam ayat (5) pasal ini memuat bidang dan sektor, sedang perincian lebih lanjut sampai pada kegiatan ditentukan dengan Keputusan Presiden." .
-<http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat/0006> legal:ayatHasText <http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat/0006/text> .
-<http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat/0006/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat/0005> .
-<http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat/0007> .
-<http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat/0007> legal:ayatHasKey 7 .
-<http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat/0007> legal:ayatHasRawText "Perincian dalam Lampiran IV dimaksud dalam ayat (5) pasal ini memuat sektor dan sub sektor, sedangkan perincian lebih lanjut sampai pada proyek-proyek ditentukan dengan Keputusan Presiden. .4-" .
-<http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat/0007/text> legal:textHasTextString "Perincian dalam Lampiran IV dimaksud dalam ayat (5) pasal ini memuat sektor dan sub sektor, sedangkan perincian lebih lanjut sampai pada proyek-proyek ditentukan dengan Keputusan Presiden. .4-" .
-<http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat/0007> legal:ayatHasText <http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat/0007/text> .
-<http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat/0007/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat/0005> .
-<http://example.org/legal/document/uu/1974/2/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1974/2/pasal/0003> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003> legal:pasalHasKey 3 .
-<http://example.org/legal/document/uu/1974/2/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314> .
-<http://example.org/legal/document/uu/1974/2> legal:documentHasPasal <http://example.org/legal/document/uu/1974/2/pasal/0003> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314> legal:pasalVersionHasVersionDate "1974-03-14"^^xsd:date .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314> legal:pasalVersionHasRawText "(1). Pada pertengahan Tahun Anggaran dibuat laporan realisasi mengenai:\na. Anggaran Pendapatan Rutin,\nb. Anggaran Pendapatan Pembangunan,\nc. Anggaran Belanja Rutin.\nd. Anggaran Belanja Pembangunan.\n\n(2). Pada pertengahan Tahun Anggaran dibuat laporan realisasi mengenai:\na. Kebijaksanaan perkreditan,\nb. Perkembangan lalu-lintas pembayaran luar negeri.\n\n(3). Dalam laporan dimaksud pada ayat (1) dan (2) pasal ini disusun prognosa untuk enam bulan berikutnya.\n(4). Laporan dimaksud dalam ayat (1) dan (2) pasal ini dibahas bersama antara Pemerintah dengan Dewan Perwakilan Rakyat.\n(5). Penyesuaian anggaran dengan perkembangan/perubahan keadaan, dibahas bersama antara Pemerintah dengan Dewan Perwakilan Rakyat. .5-" .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001> legal:ayatHasKey 1 .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001> legal:ayatHasRawText "Pada pertengahan Tahun Anggaran dibuat laporan realisasi mengenai:\na. Anggaran Pendapatan Rutin,\nb. Anggaran Pendapatan Pembangunan,\nc. Anggaran Belanja Rutin.\nd. Anggaran Belanja Pembangunan.\n" .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/description> legal:textHasTextString "Pada pertengahan Tahun Anggaran dibuat laporan realisasi mengenai:" .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/description> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/a> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/a/text> legal:textHasTextString "Anggaran Pendapatan Rutin," .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/a/text> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/b> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/b/text> legal:textHasTextString "Anggaran Pendapatan Pembangunan," .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/b> legal:pointHasText <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/b/text> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/c> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/c> legal:pointHasKey "c" .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/c/text> legal:textHasTextString "Anggaran Belanja Rutin." .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/c> legal:pointHasText <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/c/text> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/d> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/d> legal:pointHasKey "d" .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/d/text> legal:textHasTextString "Anggaran Belanja Pembangunan." .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/d> legal:pointHasText <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/d/text> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002> legal:ayatHasKey 2 .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002> legal:ayatHasRawText "Pada pertengahan Tahun Anggaran dibuat laporan realisasi mengenai:\na. Kebijaksanaan perkreditan,\nb. Perkembangan lalu-lintas pembayaran luar negeri.\n" .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002> legal:ayatHasPointSet <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002/point> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002/point/description> legal:textHasTextString "Pada pertengahan Tahun Anggaran dibuat laporan realisasi mengenai:" .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002/point/description> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002/point/a> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002/point/a/text> legal:textHasTextString "Kebijaksanaan perkreditan," .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002/point/a> legal:pointHasText <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002/point/a/text> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002/point/b> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002/point/b/text> legal:textHasTextString "Perkembangan lalu-lintas pembayaran luar negeri." .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002/point/b> legal:pointHasText <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002/point/b/text> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0003> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0003> legal:ayatHasKey 3 .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0003> legal:ayatHasRawText "Dalam laporan dimaksud pada ayat (1) dan (2) pasal ini disusun prognosa untuk enam bulan berikutnya." .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0003/text> legal:textHasTextString "Dalam laporan dimaksud pada ayat (1) dan (2) pasal ini disusun prognosa untuk enam bulan berikutnya." .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0003/text> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0004> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0004> legal:ayatHasKey 4 .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0004> legal:ayatHasRawText "Laporan dimaksud dalam ayat (1) dan (2) pasal ini dibahas bersama antara Pemerintah dengan Dewan Perwakilan Rakyat." .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0004/text> legal:textHasTextString "Laporan dimaksud dalam ayat (1) dan (2) pasal ini dibahas bersama antara Pemerintah dengan Dewan Perwakilan Rakyat." .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0004/text> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0005> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0005> legal:ayatHasKey 5 .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0005> legal:ayatHasRawText "Penyesuaian anggaran dengan perkembangan/perubahan keadaan, dibahas bersama antara Pemerintah dengan Dewan Perwakilan Rakyat. .5-" .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0005/text> legal:textHasTextString "Penyesuaian anggaran dengan perkembangan/perubahan keadaan, dibahas bersama antara Pemerintah dengan Dewan Perwakilan Rakyat. .5-" .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0005> legal:ayatHasText <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0005/text> .
-<http://example.org/legal/document/uu/1974/2/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1974/2/pasal/0004> .
-<http://example.org/legal/document/uu/1974/2/pasal/0004> legal:pasalHasKey 4 .
-<http://example.org/legal/document/uu/1974/2/pasal/0004> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314> .
-<http://example.org/legal/document/uu/1974/2> legal:documentHasPasal <http://example.org/legal/document/uu/1974/2/pasal/0004> .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314> legal:pasalVersionHasVersionDate "1974-03-14"^^xsd:date .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314> legal:pasalVersionHasRawText "(1). Kredit anggaran proyek-proyek pada Anggaran Pembangunan tahun 1974/1975 yang pada akhir tahun anggaran menunjukkan sisa, dengan Peraturan Pemerintah dipindahkan kepada tahun anggaran 1975/1976 dengan menambahkannya kepada kredit anggaran 1975/1976.\n(2). Saldo anggaran lebih tahun 1974/1975 ditambahkan kepada anggaran tahun 1975/1976 dan dipergunakan untuk membiayai Anggaran Pembangunan Tahun 1975/1976.\n(3). Peraturan Pemerintah yang dimaksud dalam ayat (1) pasal ini menyatakan pula bahwa sisa. kredit anggaran yang ditambahkan itu, dikurangkan dari kredit anggaran tahun 1974/1975.\n(4). Sisa kredit anggaran dimaksud pada ayat (1) pasal ini sebelum ditambahkan kepada Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1975/1976 terlebih dahulu diperiksa dan dinyatakan kebenarannya oleh Menteri Keuangan.\n(5). Peraturan Pemerintah yang dimaksud dalam ayat (1) pasal ini disampaikan kepada Dewan Perwakilan Rakyat dan Badan Pemeriksa Keuangan selambat-lambatnya pada akhir triwulan I Tahun Anggaran 1975/1976. -6G-" .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat> .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0001> .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0001> legal:ayatHasKey 1 .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0001> legal:ayatHasRawText "Kredit anggaran proyek-proyek pada Anggaran Pembangunan tahun 1974/1975 yang pada akhir tahun anggaran menunjukkan sisa, dengan Peraturan Pemerintah dipindahkan kepada tahun anggaran 1975/1976 dengan menambahkannya kepada kredit anggaran 1975/1976." .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0001/text> legal:textHasTextString "Kredit anggaran proyek-proyek pada Anggaran Pembangunan tahun 1974/1975 yang pada akhir tahun anggaran menunjukkan sisa, dengan Peraturan Pemerintah dipindahkan kepada tahun anggaran 1975/1976 dengan menambahkannya kepada kredit anggaran 1975/1976." .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0001/text> .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0002> .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0002> legal:ayatHasKey 2 .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0002> legal:ayatHasRawText "Saldo anggaran lebih tahun 1974/1975 ditambahkan kepada anggaran tahun 1975/1976 dan dipergunakan untuk membiayai Anggaran Pembangunan Tahun 1975/1976." .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0002/text> legal:textHasTextString "Saldo anggaran lebih tahun 1974/1975 ditambahkan kepada anggaran tahun 1975/1976 dan dipergunakan untuk membiayai Anggaran Pembangunan Tahun 1975/1976." .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0002/text> .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0003> .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0003> legal:ayatHasKey 3 .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0003> legal:ayatHasRawText "Peraturan Pemerintah yang dimaksud dalam ayat (1) pasal ini menyatakan pula bahwa sisa. kredit anggaran yang ditambahkan itu, dikurangkan dari kredit anggaran tahun 1974/1975." .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0003/text> legal:textHasTextString "Peraturan Pemerintah yang dimaksud dalam ayat (1) pasal ini menyatakan pula bahwa sisa. kredit anggaran yang ditambahkan itu, dikurangkan dari kredit anggaran tahun 1974/1975." .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0003> legal:ayatHasText <http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0003/text> .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0003/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0001> .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0004> .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0004> legal:ayatHasKey 4 .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0004> legal:ayatHasRawText "Sisa kredit anggaran dimaksud pada ayat (1) pasal ini sebelum ditambahkan kepada Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1975/1976 terlebih dahulu diperiksa dan dinyatakan kebenarannya oleh Menteri Keuangan." .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0004/text> legal:textHasTextString "Sisa kredit anggaran dimaksud pada ayat (1) pasal ini sebelum ditambahkan kepada Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1975/1976 terlebih dahulu diperiksa dan dinyatakan kebenarannya oleh Menteri Keuangan." .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0004> legal:ayatHasText <http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0004/text> .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0004/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0001> .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0005> .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0005> legal:ayatHasKey 5 .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0005> legal:ayatHasRawText "Peraturan Pemerintah yang dimaksud dalam ayat (1) pasal ini disampaikan kepada Dewan Perwakilan Rakyat dan Badan Pemeriksa Keuangan selambat-lambatnya pada akhir triwulan I Tahun Anggaran 1975/1976. -6G-" .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0005/text> legal:textHasTextString "Peraturan Pemerintah yang dimaksud dalam ayat (1) pasal ini disampaikan kepada Dewan Perwakilan Rakyat dan Badan Pemeriksa Keuangan selambat-lambatnya pada akhir triwulan I Tahun Anggaran 1975/1976. -6G-" .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0005> legal:ayatHasText <http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0005/text> .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0005/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0001> .
-<http://example.org/legal/document/uu/1974/2/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1974/2/pasal/0005> .
-<http://example.org/legal/document/uu/1974/2/pasal/0005> legal:pasalHasKey 5 .
-<http://example.org/legal/document/uu/1974/2/pasal/0005> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1974/2/pasal/0005/version/19740314> .
-<http://example.org/legal/document/uu/1974/2> legal:documentHasPasal <http://example.org/legal/document/uu/1974/2/pasal/0005> .
-<http://example.org/legal/document/uu/1974/2/pasal/0005/version/19740314> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1974/2/pasal/0005/version/19740314> legal:pasalVersionHasVersionDate "1974-03-14"^^xsd:date .
-<http://example.org/legal/document/uu/1974/2/pasal/0005/version/19740314> legal:pasalVersionHasRawText "Selambat-lambatnya pada akhir Tahun Anggaran 1974/1975 oleh Pemerintah diajukan Rancangan Undang-undang tentang Tambahan dan Perubahan atas Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1974/1975 berdasarkan tambahan dan perubahan sebagai hasil penyesuaian dimaksud dalam Pasal 3 ayat (5) Undang-undang ini untuk mendapatkan persetujuan dari Dewan Perwakilan Rakyat." .
-<http://example.org/legal/document/uu/1974/2/pasal/0005/version/19740314/text> legal:textHasTextString "Selambat-lambatnya pada akhir Tahun Anggaran 1974/1975 oleh Pemerintah diajukan Rancangan Undang-undang tentang Tambahan dan Perubahan atas Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1974/1975 berdasarkan tambahan dan perubahan sebagai hasil penyesuaian dimaksud dalam Pasal 3 ayat (5) Undang-undang ini untuk mendapatkan persetujuan dari Dewan Perwakilan Rakyat." .
-<http://example.org/legal/document/uu/1974/2/pasal/0005/version/19740314> legal:pasalVersionHasText <http://example.org/legal/document/uu/1974/2/pasal/0005/version/19740314/text> .
-<http://example.org/legal/document/uu/1974/2/pasal/0005/version/19740314/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1974/2/pasal/0005/version/19740314/ayat/0005> .
-<http://example.org/legal/document/uu/1974/2/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1974/2/pasal/0006> .
-<http://example.org/legal/document/uu/1974/2/pasal/0006> legal:pasalHasKey 6 .
-<http://example.org/legal/document/uu/1974/2/pasal/0006> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314> .
-<http://example.org/legal/document/uu/1974/2> legal:documentHasPasal <http://example.org/legal/document/uu/1974/2/pasal/0006> .
-<http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314> legal:pasalVersionHasVersionDate "1974-03-14"^^xsd:date .
-<http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314> legal:pasalVersionHasRawText "(1). Setelah Tahun Anggaran 1974/1975 berakhir, dibuat Perhitungan Anggaran mengenai pelaksanaan Anggaran.\n(2). Perhitungan Anggaran dalam ayat (1) pasal ini setelah diperiksa oleh Badan Pemeriksa Keuangan diberitahukan oleh Pemerintah kepada Dewan Perwakilan Rakyat." .
-<http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314/ayat> .
-<http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314/ayat/0001> .
-<http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314/ayat/0001> legal:ayatHasKey 1 .
-<http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314/ayat/0001> legal:ayatHasRawText "Setelah Tahun Anggaran 1974/1975 berakhir, dibuat Perhitungan Anggaran mengenai pelaksanaan Anggaran." .
-<http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314/ayat/0001/text> legal:textHasTextString "Setelah Tahun Anggaran 1974/1975 berakhir, dibuat Perhitungan Anggaran mengenai pelaksanaan Anggaran." .
-<http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314/ayat/0001/text> .
-<http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314/ayat/0002> .
-<http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314/ayat/0002> legal:ayatHasKey 2 .
-<http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314/ayat/0002> legal:ayatHasRawText "Perhitungan Anggaran dalam ayat (1) pasal ini setelah diperiksa oleh Badan Pemeriksa Keuangan diberitahukan oleh Pemerintah kepada Dewan Perwakilan Rakyat." .
-<http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314/ayat/0002/text> legal:textHasTextString "Perhitungan Anggaran dalam ayat (1) pasal ini setelah diperiksa oleh Badan Pemeriksa Keuangan diberitahukan oleh Pemerintah kepada Dewan Perwakilan Rakyat." .
-<http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314/ayat/0002/text> .
-<http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314/ayat/0001> .
-<http://example.org/legal/document/uu/1974/2/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1974/2/pasal/0007> .
-<http://example.org/legal/document/uu/1974/2/pasal/0007> legal:pasalHasKey 7 .
-<http://example.org/legal/document/uu/1974/2/pasal/0007> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1974/2/pasal/0007/version/19740314> .
-<http://example.org/legal/document/uu/1974/2> legal:documentHasPasal <http://example.org/legal/document/uu/1974/2/pasal/0007> .
-<http://example.org/legal/document/uu/1974/2/pasal/0007/version/19740314> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1974/2/pasal/0007/version/19740314> legal:pasalVersionHasVersionDate "1974-03-14"^^xsd:date .
-<http://example.org/legal/document/uu/1974/2/pasal/0007/version/19740314> legal:pasalVersionHasRawText "Ketentuan-ketentuan dalam Undang-undang Perbendaharaan (Indische Comptabiliteitswet) yang bertentangan dengan bentuk, susunan dan isi Undang-undang ini, dinyatakan tidak berlaku." .
-<http://example.org/legal/document/uu/1974/2/pasal/0007/version/19740314/text> legal:textHasTextString "Ketentuan-ketentuan dalam Undang-undang Perbendaharaan (Indische Comptabiliteitswet) yang bertentangan dengan bentuk, susunan dan isi Undang-undang ini, dinyatakan tidak berlaku." .
-<http://example.org/legal/document/uu/1974/2/pasal/0007/version/19740314> legal:pasalVersionHasText <http://example.org/legal/document/uu/1974/2/pasal/0007/version/19740314/text> .
-<http://example.org/legal/document/uu/1974/2/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1974/2/pasal/0008> .
-<http://example.org/legal/document/uu/1974/2/pasal/0008> legal:pasalHasKey 8 .
-<http://example.org/legal/document/uu/1974/2/pasal/0008> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1974/2/pasal/0008/version/19740314> .
-<http://example.org/legal/document/uu/1974/2> legal:documentHasPasal <http://example.org/legal/document/uu/1974/2/pasal/0008> .
-<http://example.org/legal/document/uu/1974/2/pasal/0008/version/19740314> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1974/2/pasal/0008/version/19740314> legal:pasalVersionHasVersionDate "1974-03-14"^^xsd:date .
-<http://example.org/legal/document/uu/1974/2/pasal/0008/version/19740314> legal:pasalVersionHasRawText "Undang-undang ini mulai berlaku pada tanggal 1 April 1974. Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/1974/2/pasal/0008/version/19740314/text> legal:textHasTextString "Undang-undang ini mulai berlaku pada tanggal 1 April 1974. Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/1974/2/pasal/0008/version/19740314> legal:pasalVersionHasText <http://example.org/legal/document/uu/1974/2/pasal/0008/version/19740314/text> .
-<http://example.org/legal/document/uu/1974/2> legal:documentHasDisahkanDate "1974-03-14"^^xsd:date .
-<http://example.org/legal/document/uu/1974/2> legal:documentMengingat <http://example.org/legal/document/uu/1974/2/mengingat> .
-<http://example.org/legal/document/uu/1974/2/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1974/2/mengingat/point> .
-<http://example.org/legal/document/uu/1974/2/mengingat/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/1974/2/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1974/2/mengingat/point/description> .
-<http://example.org/legal/document/uu/1974/2/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/2/mengingat/point/0001> .
-<http://example.org/legal/document/uu/1974/2/mengingat/point/0001> legal:pointHasKey "1" .
-<http://example.org/legal/document/uu/1974/2/mengingat/point/0001/text> legal:textHasTextString "Pasal 5 ayat (1)jo. Pasal 23 ayat (1) Undang-Undang Dasar 1945," .
-<http://example.org/legal/document/uu/1974/2/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1974/2/mengingat/point/0001/text> .
-<http://example.org/legal/document/uu/1974/2/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/2/mengingat/point/0002> .
-<http://example.org/legal/document/uu/1974/2/mengingat/point/0002> legal:pointHasKey "2" .
-<http://example.org/legal/document/uu/1974/2/mengingat/point/0002/text> legal:textHasTextString "Ketetapan Majelis Permusyawaratan Rakyat Nomor IV/MPR/1973," .
-<http://example.org/legal/document/uu/1974/2/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1974/2/mengingat/point/0002/text> .
-<http://example.org/legal/document/uu/1974/2/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/2/mengingat/point/0003> .
-<http://example.org/legal/document/uu/1974/2/mengingat/point/0003> legal:pointHasKey "3" .
-<http://example.org/legal/document/uu/1974/2/mengingat/point/0003/text> legal:textHasTextString "Ketetapan Majelis Permusyawaratan Rakyat Nomor X/MPR/1973," .
-<http://example.org/legal/document/uu/1974/2/mengingat/point/0003> legal:pointHasText <http://example.org/legal/document/uu/1974/2/mengingat/point/0003/text> .
-<http://example.org/legal/document/uu/1974/2/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1974/2/mengingat/point/0004> .
-<http://example.org/legal/document/uu/1974/2/mengingat/point/0004> legal:pointHasKey "4" .
-<http://example.org/legal/document/uu/1974/2/mengingat/point/0004/text> legal:textHasTextString "Indische Comptabiliteitswet sebagaimana diubah dan ditambah terakhir dengan Undang-undang Nomor 9 Tahun 1968 tentang Perubahan Pasal 7 Indische Comptabiliteitswet (Lembaran Negara Republik Indonesia Tahun 1968 Nomor 53). Dengan persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN : Menetapkan : UNDANG-UNDANG TENTANG ANGGARAN PENDAPATAN DAN BELANJA NEGARA TAHUN ANGGARAN 1974/1975." .
-<http://example.org/legal/document/uu/1974/2/mengingat/point/0004> legal:pointHasText <http://example.org/legal/document/uu/1974/2/mengingat/point/0004/text> .
-<http://example.org/legal/document/uu/1974/2> legal:documentMenimbang <http://example.org/legal/document/uu/1974/2/menimbang> .
-<http://example.org/legal/document/uu/1974/2/menimbang/text> legal:textHasTextString "aa. bahwa Anggaran Pendapatan dan Belanja Negara untuk Tahun Anggaran 1974/1975 perlu ditetapkan dengan Undang-undang, b. bahwa sebagai Anggaran Pendapatan dan Belanja Negara tahun pertama dalam rangka Rencana Pembangunan Lima Tahun II, Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1974/1975 mengikuti prioritas nasional sebagaimana ditetapkan di dalam pola umum PELITA II Ketetapan Majelis Permusyawaratan Rakyat Nomor IV/MPR/1973 tentang Garis-garis Besar Haluan Negara, c. bahwa Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1974/1975 adalah rencana kerja Pemerintah, khususnya pelaksanaan tahun pertama rencana tahunan Pembangunan Lima Tahun II, d. bahwa Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1974/1975 disamping memelihara dan meneruskan hasil-hasil yang telah dicapai dalam PELITA I, juga meletakkan landasan-landasan baru bagi usaha-usaha pembangunan selanjutnya, e. bahwa untuk lebih menjaga kelangsungan jalannya pembangunan, maka saldo-anggaran-lebih dan sisa kredit anggaran proyek-proyek pada anggaran pembangunan tahun 1974/1975 perlu diatur dalam Undang-undang ini. 2-" .
-<http://example.org/legal/document/uu/1974/2/menimbang> legal:menimbangHasText <http://example.org/legal/document/uu/1974/2/menimbang/text> .
-<http://example.org/legal/document/uu/1974/2> legal:documentHasDisahkanPengesah "SOEHARTO" .
-<http://example.org/legal/document/uu/1974/2> legal:documentHasDisahkanLocation "Jakarta" .
-<http://example.org/legal/document/uu/1974/2> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
-<http://example.org/legal/document/uu/1974/2> a legal:Document .
-<http://example.org/legal/document/uu/1974/2/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/1974/2/pasal/0001> a legal:Pasal .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat> a legal:AyatSet .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001> a legal:Ayat .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001/point/a> a legal:Point .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001/point/a/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001/point/b> a legal:Point .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0002> a legal:Ayat .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0003> a legal:Ayat .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0003/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0004> a legal:Ayat .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0004/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0005> a legal:Ayat .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0005/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/pasal/0002> a legal:Pasal .
-<http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat> a legal:AyatSet .
-<http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat/0006> a legal:Ayat .
-<http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat/0006/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat/0007> a legal:Ayat .
-<http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat/0007/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/pasal/0003> a legal:Pasal .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat> a legal:AyatSet .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001> a legal:Ayat .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/a> a legal:Point .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/a/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/b> a legal:Point .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/c> a legal:Point .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/d> a legal:Point .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002> a legal:Ayat .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002/point/a> a legal:Point .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002/point/a/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002/point/b> a legal:Point .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0003> a legal:Ayat .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0003/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0004> a legal:Ayat .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0004/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0005> a legal:Ayat .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0005/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/pasal/0004> a legal:Pasal .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat> a legal:AyatSet .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0001> a legal:Ayat .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0002> a legal:Ayat .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0003> a legal:Ayat .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0003/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0004> a legal:Ayat .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0004/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0005> a legal:Ayat .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0005/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/pasal/0005> a legal:Pasal .
-<http://example.org/legal/document/uu/1974/2/pasal/0005/version/19740314> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1974/2/pasal/0005/version/19740314/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/pasal/0006> a legal:Pasal .
-<http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314/ayat> a legal:AyatSet .
-<http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314/ayat/0001> a legal:Ayat .
-<http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314/ayat/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314/ayat/0002> a legal:Ayat .
-<http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314/ayat/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/pasal/0007> a legal:Pasal .
-<http://example.org/legal/document/uu/1974/2/pasal/0007/version/19740314> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1974/2/pasal/0007/version/19740314/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/pasal/0008> a legal:Pasal .
-<http://example.org/legal/document/uu/1974/2/pasal/0008/version/19740314> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1974/2/pasal/0008/version/19740314/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/mengingat> a legal:Mengingat .
-<http://example.org/legal/document/uu/1974/2/mengingat/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/mengingat/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1974/2/mengingat/point/0001> a legal:Point .
-<http://example.org/legal/document/uu/1974/2/mengingat/point/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/mengingat/point/0002> a legal:Point .
-<http://example.org/legal/document/uu/1974/2/mengingat/point/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/mengingat/point/0003> a legal:Point .
-<http://example.org/legal/document/uu/1974/2/mengingat/point/0003/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/mengingat/point/0004> a legal:Point .
-<http://example.org/legal/document/uu/1974/2/mengingat/point/0004/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/menimbang/text> a legal:Text .
-<http://example.org/legal/document/uu/1974/2/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/1974/2/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1974/2/pasals> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0001> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1974/2> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001/point/a> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001/point> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001/point/a/text> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001/point/a> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001/point/b> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001/point> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001/point/b/text> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0001/point/b> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0002> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0003> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0004> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0004> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0005> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat> .
-<http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0005/text> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0001/version/19740314/ayat/0005> .
-<http://example.org/legal/document/uu/1974/2/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1974/2/pasals> .
-<http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0002> .
-<http://example.org/legal/document/uu/1974/2/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1974/2> .
-<http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314> .
-<http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat/0006> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat> .
-<http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat/0006/text> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat/0006> .
-<http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat/0007> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat> .
-<http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat/0007/text> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0002/version/19740314/ayat/0007> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1974/2/pasals> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0003> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1974/2> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/a> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/a/text> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/a> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/b> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/b/text> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/b> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/c> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/c/text> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/c> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/d> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/d/text> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0001/point/d> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002/point> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002/point/a> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002/point> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002/point/a/text> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002/point/a> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002/point/b> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002/point> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002/point/b/text> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0002/point/b> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0003> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0004> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0004> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0005> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat> .
-<http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0005/text> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0003/version/19740314/ayat/0005> .
-<http://example.org/legal/document/uu/1974/2/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1974/2/pasals> .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0004> .
-<http://example.org/legal/document/uu/1974/2/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1974/2> .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314> .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat> .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0001> .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat> .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0002> .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0003> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat> .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0003/text> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0003> .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0004> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat> .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0004/text> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0004> .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0005> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat> .
-<http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0005/text> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0004/version/19740314/ayat/0005> .
-<http://example.org/legal/document/uu/1974/2/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1974/2/pasals> .
-<http://example.org/legal/document/uu/1974/2/pasal/0005/version/19740314> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0005> .
-<http://example.org/legal/document/uu/1974/2/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1974/2> .
-<http://example.org/legal/document/uu/1974/2/pasal/0006> legal:partOf <http://example.org/legal/document/uu/1974/2/pasals> .
-<http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0006> .
-<http://example.org/legal/document/uu/1974/2/pasal/0006> legal:partOf <http://example.org/legal/document/uu/1974/2> .
-<http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314/ayat> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314> .
-<http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314/ayat> .
-<http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314/ayat/0001> .
-<http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314/ayat> .
-<http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0006/version/19740314/ayat/0002> .
-<http://example.org/legal/document/uu/1974/2/pasal/0007> legal:partOf <http://example.org/legal/document/uu/1974/2/pasals> .
-<http://example.org/legal/document/uu/1974/2/pasal/0007/version/19740314> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0007> .
-<http://example.org/legal/document/uu/1974/2/pasal/0007> legal:partOf <http://example.org/legal/document/uu/1974/2> .
-<http://example.org/legal/document/uu/1974/2/pasal/0008> legal:partOf <http://example.org/legal/document/uu/1974/2/pasals> .
-<http://example.org/legal/document/uu/1974/2/pasal/0008/version/19740314> legal:partOf <http://example.org/legal/document/uu/1974/2/pasal/0008> .
-<http://example.org/legal/document/uu/1974/2/pasal/0008> legal:partOf <http://example.org/legal/document/uu/1974/2> .
-<http://example.org/legal/document/uu/1974/2/mengingat/point> legal:partOf <http://example.org/legal/document/uu/1974/2/mengingat> .
-<http://example.org/legal/document/uu/1974/2/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1974/2/mengingat/point> .
-<http://example.org/legal/document/uu/1974/2/mengingat/point/0001/text> legal:partOf <http://example.org/legal/document/uu/1974/2/mengingat/point/0001> .
-<http://example.org/legal/document/uu/1974/2/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1974/2/mengingat/point> .
-<http://example.org/legal/document/uu/1974/2/mengingat/point/0002/text> legal:partOf <http://example.org/legal/document/uu/1974/2/mengingat/point/0002> .
-<http://example.org/legal/document/uu/1974/2/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/1974/2/mengingat/point> .
-<http://example.org/legal/document/uu/1974/2/mengingat/point/0003/text> legal:partOf <http://example.org/legal/document/uu/1974/2/mengingat/point/0003> .
-<http://example.org/legal/document/uu/1974/2/mengingat/point/0004> legal:partOf <http://example.org/legal/document/uu/1974/2/mengingat/point> .
-<http://example.org/legal/document/uu/1974/2/mengingat/point/0004/text> legal:partOf <http://example.org/legal/document/uu/1974/2/mengingat/point/0004> .
-<http://example.org/legal/document/uu/1974/2/menimbang/text> legal:partOf <http://example.org/legal/document/uu/1974/2/menimbang> .
+<http://example.org/legal/peraturan/uu/1974/2> legal:daftarPasal <http://example.org/legal/peraturan/uu/1974/2/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1974/2/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1974/2/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001> legal:versi <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314> .
+<http://example.org/legal/peraturan/uu/1974/2> legal:pasal <http://example.org/legal/peraturan/uu/1974/2/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314> legal:tanggal "1974-03-14"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314> legal:teks "(1). Pendapatan Negara Tahun Anggaran 1974/1975 diperoleh dari :\na. Sumber-sumber Anggaran Rutin dan\nb. Sumber-sumber Anggaran Pembangunan.\n\n(2). Pendapatan Rutin dimaksud pada ayat (1) sub a pasal ini menurut perkiraan berjumlah Rp. 1.363.400.000.000,00.\n(3). Pendapatan Pembangunan dimaksud pada ayat (1) sub b asal ini menurut perkiraan berjumlah Rp. 213.900.000.000,00. 3 -\n(4). Jumlah seluruh Pendapatan Negara Tahun Anggaran 1974/1975 menurut perkiraan berjumlah Rp. 1.577.300.000.000,00.\n(5). Perincian pendapatan dimaksud pada ayat (2) dan (3) pasal ini berturut-turut dimuat dalam Lampiran I dan 11 Undang-undang ini." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314> legal:daftarAyat <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001> legal:teks "Pendapatan Negara Tahun Anggaran 1974/1975 diperoleh dari :\na. Sumber-sumber Anggaran Rutin dan\nb. Sumber-sumber Anggaran Pembangunan.\n" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf/description> legal:teks "Pendapatan Negara Tahun Anggaran 1974/1975 diperoleh dari :" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf/description> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf/a> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf/a> legal:nomor "a" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf/a/text> legal:teks "Sumber-sumber Anggaran Rutin dan" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf/a> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf/a/text> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf/b> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf/b> legal:nomor "b" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf/b/text> legal:teks "Sumber-sumber Anggaran Pembangunan." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf/b> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf/b/text> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0002> legal:teks "Pendapatan Rutin dimaksud pada ayat (1) sub a pasal ini menurut perkiraan berjumlah Rp. 1.363.400.000.000,00." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0002/text> legal:teks "Pendapatan Rutin dimaksud pada ayat (1) sub a pasal ini menurut perkiraan berjumlah Rp. 1.363.400.000.000,00." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0002> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0002/text> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0002/text> legal:merujuk <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0003> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0003> legal:nomor 3 .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0003> legal:teks "Pendapatan Pembangunan dimaksud pada ayat (1) sub b asal ini menurut perkiraan berjumlah Rp. 213.900.000.000,00. 3 -" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0003/text> legal:teks "Pendapatan Pembangunan dimaksud pada ayat (1) sub b asal ini menurut perkiraan berjumlah Rp. 213.900.000.000,00. 3 -" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0003> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0003/text> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0003/text> legal:merujuk <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0004> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0004> legal:nomor 4 .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0004> legal:teks "Jumlah seluruh Pendapatan Negara Tahun Anggaran 1974/1975 menurut perkiraan berjumlah Rp. 1.577.300.000.000,00." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0004/text> legal:teks "Jumlah seluruh Pendapatan Negara Tahun Anggaran 1974/1975 menurut perkiraan berjumlah Rp. 1.577.300.000.000,00." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0004> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0004/text> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0005> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0005> legal:nomor 5 .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0005> legal:teks "Perincian pendapatan dimaksud pada ayat (2) dan (3) pasal ini berturut-turut dimuat dalam Lampiran I dan 11 Undang-undang ini." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0005/text> legal:teks "Perincian pendapatan dimaksud pada ayat (2) dan (3) pasal ini berturut-turut dimuat dalam Lampiran I dan 11 Undang-undang ini." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0005> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0005/text> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0005/text> legal:merujuk <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1974/2/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1974/2/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002> legal:versi <http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314> .
+<http://example.org/legal/peraturan/uu/1974/2> legal:pasal <http://example.org/legal/peraturan/uu/1974/2/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314> legal:tanggal "1974-03-14"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314> legal:teks "(6). Perincian dalam Lampiran III dimaksud dalam ayat (5) pasal ini memuat bidang dan sektor, sedang perincian lebih lanjut sampai pada kegiatan ditentukan dengan Keputusan Presiden.\n(7). Perincian dalam Lampiran IV dimaksud dalam ayat (5) pasal ini memuat sektor dan sub sektor, sedangkan perincian lebih lanjut sampai pada proyek-proyek ditentukan dengan Keputusan Presiden. .4-" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314> legal:daftarAyat <http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat/0006> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat/0006> legal:nomor 6 .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat/0006> legal:teks "Perincian dalam Lampiran III dimaksud dalam ayat (5) pasal ini memuat bidang dan sektor, sedang perincian lebih lanjut sampai pada kegiatan ditentukan dengan Keputusan Presiden." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat/0006/text> legal:teks "Perincian dalam Lampiran III dimaksud dalam ayat (5) pasal ini memuat bidang dan sektor, sedang perincian lebih lanjut sampai pada kegiatan ditentukan dengan Keputusan Presiden." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat/0006> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat/0006/text> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat/0006/text> legal:merujuk <http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat/0005> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat/0007> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat/0007> legal:nomor 7 .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat/0007> legal:teks "Perincian dalam Lampiran IV dimaksud dalam ayat (5) pasal ini memuat sektor dan sub sektor, sedangkan perincian lebih lanjut sampai pada proyek-proyek ditentukan dengan Keputusan Presiden. .4-" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat/0007/text> legal:teks "Perincian dalam Lampiran IV dimaksud dalam ayat (5) pasal ini memuat sektor dan sub sektor, sedangkan perincian lebih lanjut sampai pada proyek-proyek ditentukan dengan Keputusan Presiden. .4-" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat/0007> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat/0007/text> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat/0007/text> legal:merujuk <http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat/0005> .
+<http://example.org/legal/peraturan/uu/1974/2/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1974/2/pasal/0003> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003> legal:nomor 3 .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003> legal:versi <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314> .
+<http://example.org/legal/peraturan/uu/1974/2> legal:pasal <http://example.org/legal/peraturan/uu/1974/2/pasal/0003> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314> legal:tanggal "1974-03-14"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314> legal:teks "(1). Pada pertengahan Tahun Anggaran dibuat laporan realisasi mengenai:\na. Anggaran Pendapatan Rutin,\nb. Anggaran Pendapatan Pembangunan,\nc. Anggaran Belanja Rutin.\nd. Anggaran Belanja Pembangunan.\n\n(2). Pada pertengahan Tahun Anggaran dibuat laporan realisasi mengenai:\na. Kebijaksanaan perkreditan,\nb. Perkembangan lalu-lintas pembayaran luar negeri.\n\n(3). Dalam laporan dimaksud pada ayat (1) dan (2) pasal ini disusun prognosa untuk enam bulan berikutnya.\n(4). Laporan dimaksud dalam ayat (1) dan (2) pasal ini dibahas bersama antara Pemerintah dengan Dewan Perwakilan Rakyat.\n(5). Penyesuaian anggaran dengan perkembangan/perubahan keadaan, dibahas bersama antara Pemerintah dengan Dewan Perwakilan Rakyat. .5-" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314> legal:daftarAyat <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001> legal:teks "Pada pertengahan Tahun Anggaran dibuat laporan realisasi mengenai:\na. Anggaran Pendapatan Rutin,\nb. Anggaran Pendapatan Pembangunan,\nc. Anggaran Belanja Rutin.\nd. Anggaran Belanja Pembangunan.\n" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/description> legal:teks "Pada pertengahan Tahun Anggaran dibuat laporan realisasi mengenai:" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/description> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/a> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/a> legal:nomor "a" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/a/text> legal:teks "Anggaran Pendapatan Rutin," .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/a> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/a/text> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/b> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/b> legal:nomor "b" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/b/text> legal:teks "Anggaran Pendapatan Pembangunan," .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/b> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/b/text> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/c> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/c> legal:nomor "c" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/c/text> legal:teks "Anggaran Belanja Rutin." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/c> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/c/text> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/d> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/d> legal:nomor "d" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/d/text> legal:teks "Anggaran Belanja Pembangunan." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/d> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/d/text> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002> legal:teks "Pada pertengahan Tahun Anggaran dibuat laporan realisasi mengenai:\na. Kebijaksanaan perkreditan,\nb. Perkembangan lalu-lintas pembayaran luar negeri.\n" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf/description> legal:teks "Pada pertengahan Tahun Anggaran dibuat laporan realisasi mengenai:" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf/description> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf/a> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf/a> legal:nomor "a" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf/a/text> legal:teks "Kebijaksanaan perkreditan," .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf/a> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf/a/text> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf/b> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf/b> legal:nomor "b" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf/b/text> legal:teks "Perkembangan lalu-lintas pembayaran luar negeri." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf/b> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf/b/text> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0003> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0003> legal:nomor 3 .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0003> legal:teks "Dalam laporan dimaksud pada ayat (1) dan (2) pasal ini disusun prognosa untuk enam bulan berikutnya." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0003/text> legal:teks "Dalam laporan dimaksud pada ayat (1) dan (2) pasal ini disusun prognosa untuk enam bulan berikutnya." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0003> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0003/text> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0003/text> legal:merujuk <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0004> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0004> legal:nomor 4 .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0004> legal:teks "Laporan dimaksud dalam ayat (1) dan (2) pasal ini dibahas bersama antara Pemerintah dengan Dewan Perwakilan Rakyat." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0004/text> legal:teks "Laporan dimaksud dalam ayat (1) dan (2) pasal ini dibahas bersama antara Pemerintah dengan Dewan Perwakilan Rakyat." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0004> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0004/text> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0004/text> legal:merujuk <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0005> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0005> legal:nomor 5 .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0005> legal:teks "Penyesuaian anggaran dengan perkembangan/perubahan keadaan, dibahas bersama antara Pemerintah dengan Dewan Perwakilan Rakyat. .5-" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0005/text> legal:teks "Penyesuaian anggaran dengan perkembangan/perubahan keadaan, dibahas bersama antara Pemerintah dengan Dewan Perwakilan Rakyat. .5-" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0005> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0005/text> .
+<http://example.org/legal/peraturan/uu/1974/2/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1974/2/pasal/0004> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004> legal:nomor 4 .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004> legal:versi <http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314> .
+<http://example.org/legal/peraturan/uu/1974/2> legal:pasal <http://example.org/legal/peraturan/uu/1974/2/pasal/0004> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314> legal:tanggal "1974-03-14"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314> legal:teks "(1). Kredit anggaran proyek-proyek pada Anggaran Pembangunan tahun 1974/1975 yang pada akhir tahun anggaran menunjukkan sisa, dengan Peraturan Pemerintah dipindahkan kepada tahun anggaran 1975/1976 dengan menambahkannya kepada kredit anggaran 1975/1976.\n(2). Saldo anggaran lebih tahun 1974/1975 ditambahkan kepada anggaran tahun 1975/1976 dan dipergunakan untuk membiayai Anggaran Pembangunan Tahun 1975/1976.\n(3). Peraturan Pemerintah yang dimaksud dalam ayat (1) pasal ini menyatakan pula bahwa sisa. kredit anggaran yang ditambahkan itu, dikurangkan dari kredit anggaran tahun 1974/1975.\n(4). Sisa kredit anggaran dimaksud pada ayat (1) pasal ini sebelum ditambahkan kepada Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1975/1976 terlebih dahulu diperiksa dan dinyatakan kebenarannya oleh Menteri Keuangan.\n(5). Peraturan Pemerintah yang dimaksud dalam ayat (1) pasal ini disampaikan kepada Dewan Perwakilan Rakyat dan Badan Pemeriksa Keuangan selambat-lambatnya pada akhir triwulan I Tahun Anggaran 1975/1976. -6G-" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314> legal:daftarAyat <http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0001> legal:teks "Kredit anggaran proyek-proyek pada Anggaran Pembangunan tahun 1974/1975 yang pada akhir tahun anggaran menunjukkan sisa, dengan Peraturan Pemerintah dipindahkan kepada tahun anggaran 1975/1976 dengan menambahkannya kepada kredit anggaran 1975/1976." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0001/text> legal:teks "Kredit anggaran proyek-proyek pada Anggaran Pembangunan tahun 1974/1975 yang pada akhir tahun anggaran menunjukkan sisa, dengan Peraturan Pemerintah dipindahkan kepada tahun anggaran 1975/1976 dengan menambahkannya kepada kredit anggaran 1975/1976." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0001> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0001/text> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0002> legal:teks "Saldo anggaran lebih tahun 1974/1975 ditambahkan kepada anggaran tahun 1975/1976 dan dipergunakan untuk membiayai Anggaran Pembangunan Tahun 1975/1976." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0002/text> legal:teks "Saldo anggaran lebih tahun 1974/1975 ditambahkan kepada anggaran tahun 1975/1976 dan dipergunakan untuk membiayai Anggaran Pembangunan Tahun 1975/1976." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0002> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0002/text> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0003> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0003> legal:nomor 3 .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0003> legal:teks "Peraturan Pemerintah yang dimaksud dalam ayat (1) pasal ini menyatakan pula bahwa sisa. kredit anggaran yang ditambahkan itu, dikurangkan dari kredit anggaran tahun 1974/1975." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0003/text> legal:teks "Peraturan Pemerintah yang dimaksud dalam ayat (1) pasal ini menyatakan pula bahwa sisa. kredit anggaran yang ditambahkan itu, dikurangkan dari kredit anggaran tahun 1974/1975." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0003> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0003/text> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0003/text> legal:merujuk <http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0004> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0004> legal:nomor 4 .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0004> legal:teks "Sisa kredit anggaran dimaksud pada ayat (1) pasal ini sebelum ditambahkan kepada Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1975/1976 terlebih dahulu diperiksa dan dinyatakan kebenarannya oleh Menteri Keuangan." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0004/text> legal:teks "Sisa kredit anggaran dimaksud pada ayat (1) pasal ini sebelum ditambahkan kepada Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1975/1976 terlebih dahulu diperiksa dan dinyatakan kebenarannya oleh Menteri Keuangan." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0004> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0004/text> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0004/text> legal:merujuk <http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0005> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0005> legal:nomor 5 .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0005> legal:teks "Peraturan Pemerintah yang dimaksud dalam ayat (1) pasal ini disampaikan kepada Dewan Perwakilan Rakyat dan Badan Pemeriksa Keuangan selambat-lambatnya pada akhir triwulan I Tahun Anggaran 1975/1976. -6G-" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0005/text> legal:teks "Peraturan Pemerintah yang dimaksud dalam ayat (1) pasal ini disampaikan kepada Dewan Perwakilan Rakyat dan Badan Pemeriksa Keuangan selambat-lambatnya pada akhir triwulan I Tahun Anggaran 1975/1976. -6G-" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0005> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0005/text> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0005/text> legal:merujuk <http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1974/2/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1974/2/pasal/0005> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0005> legal:nomor 5 .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0005> legal:versi <http://example.org/legal/peraturan/uu/1974/2/pasal/0005/versi/19740314> .
+<http://example.org/legal/peraturan/uu/1974/2> legal:pasal <http://example.org/legal/peraturan/uu/1974/2/pasal/0005> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0005/versi/19740314> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0005/versi/19740314> legal:tanggal "1974-03-14"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0005/versi/19740314> legal:teks "Selambat-lambatnya pada akhir Tahun Anggaran 1974/1975 oleh Pemerintah diajukan Rancangan Undang-undang tentang Tambahan dan Perubahan atas Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1974/1975 berdasarkan tambahan dan perubahan sebagai hasil penyesuaian dimaksud dalam Pasal 3 ayat (5) Undang-undang ini untuk mendapatkan persetujuan dari Dewan Perwakilan Rakyat." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0005/versi/19740314/text> legal:teks "Selambat-lambatnya pada akhir Tahun Anggaran 1974/1975 oleh Pemerintah diajukan Rancangan Undang-undang tentang Tambahan dan Perubahan atas Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1974/1975 berdasarkan tambahan dan perubahan sebagai hasil penyesuaian dimaksud dalam Pasal 3 ayat (5) Undang-undang ini untuk mendapatkan persetujuan dari Dewan Perwakilan Rakyat." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0005/versi/19740314> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/pasal/0005/versi/19740314/text> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0005/versi/19740314/text> legal:merujuk <http://example.org/legal/peraturan/uu/1974/2/pasal/0005/versi/19740314/ayat/0005> .
+<http://example.org/legal/peraturan/uu/1974/2/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1974/2/pasal/0006> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0006> legal:nomor 6 .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0006> legal:versi <http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314> .
+<http://example.org/legal/peraturan/uu/1974/2> legal:pasal <http://example.org/legal/peraturan/uu/1974/2/pasal/0006> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314> legal:tanggal "1974-03-14"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314> legal:teks "(1). Setelah Tahun Anggaran 1974/1975 berakhir, dibuat Perhitungan Anggaran mengenai pelaksanaan Anggaran.\n(2). Perhitungan Anggaran dalam ayat (1) pasal ini setelah diperiksa oleh Badan Pemeriksa Keuangan diberitahukan oleh Pemerintah kepada Dewan Perwakilan Rakyat." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314> legal:daftarAyat <http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314/ayat> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314/ayat/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314/ayat/0001> legal:teks "Setelah Tahun Anggaran 1974/1975 berakhir, dibuat Perhitungan Anggaran mengenai pelaksanaan Anggaran." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314/ayat/0001/text> legal:teks "Setelah Tahun Anggaran 1974/1975 berakhir, dibuat Perhitungan Anggaran mengenai pelaksanaan Anggaran." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314/ayat/0001> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314/ayat/0001/text> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314/ayat/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314/ayat/0002> legal:teks "Perhitungan Anggaran dalam ayat (1) pasal ini setelah diperiksa oleh Badan Pemeriksa Keuangan diberitahukan oleh Pemerintah kepada Dewan Perwakilan Rakyat." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314/ayat/0002/text> legal:teks "Perhitungan Anggaran dalam ayat (1) pasal ini setelah diperiksa oleh Badan Pemeriksa Keuangan diberitahukan oleh Pemerintah kepada Dewan Perwakilan Rakyat." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314/ayat/0002> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314/ayat/0002/text> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314/ayat/0002/text> legal:merujuk <http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1974/2/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1974/2/pasal/0007> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0007> legal:nomor 7 .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0007> legal:versi <http://example.org/legal/peraturan/uu/1974/2/pasal/0007/versi/19740314> .
+<http://example.org/legal/peraturan/uu/1974/2> legal:pasal <http://example.org/legal/peraturan/uu/1974/2/pasal/0007> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0007/versi/19740314> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0007/versi/19740314> legal:tanggal "1974-03-14"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0007/versi/19740314> legal:teks "Ketentuan-ketentuan dalam Undang-undang Perbendaharaan (Indische Comptabiliteitswet) yang bertentangan dengan bentuk, susunan dan isi Undang-undang ini, dinyatakan tidak berlaku." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0007/versi/19740314/text> legal:teks "Ketentuan-ketentuan dalam Undang-undang Perbendaharaan (Indische Comptabiliteitswet) yang bertentangan dengan bentuk, susunan dan isi Undang-undang ini, dinyatakan tidak berlaku." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0007/versi/19740314> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/pasal/0007/versi/19740314/text> .
+<http://example.org/legal/peraturan/uu/1974/2/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1974/2/pasal/0008> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0008> legal:nomor 8 .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0008> legal:versi <http://example.org/legal/peraturan/uu/1974/2/pasal/0008/versi/19740314> .
+<http://example.org/legal/peraturan/uu/1974/2> legal:pasal <http://example.org/legal/peraturan/uu/1974/2/pasal/0008> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0008/versi/19740314> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0008/versi/19740314> legal:tanggal "1974-03-14"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0008/versi/19740314> legal:teks "Undang-undang ini mulai berlaku pada tanggal 1 April 1974. Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0008/versi/19740314/text> legal:teks "Undang-undang ini mulai berlaku pada tanggal 1 April 1974. Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0008/versi/19740314> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/pasal/0008/versi/19740314/text> .
+<http://example.org/legal/peraturan/uu/1974/2> legal:disahkanPada "1974-03-14"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1974/2> legal:tentang " ANGGARAN PENDAPATAN DAN BELANJA NEGARA TAHUN ANGGARAN 1974/1975" .
+<http://example.org/legal/peraturan/uu/1974/2> legal:mengingat <http://example.org/legal/peraturan/uu/1974/2/mengingat> .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/description> .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0001> .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0001> legal:nomor "1" .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0001/text> legal:teks "Pasal 5 ayat (1)jo. Pasal 23 ayat (1) Undang-Undang Dasar 1945," .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0001> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0001/text> .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0002> .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0002> legal:nomor "2" .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0002/text> legal:teks "Ketetapan Majelis Permusyawaratan Rakyat Nomor IV/MPR/1973," .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0002> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0002/text> .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0003> .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0003> legal:nomor "3" .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0003/text> legal:teks "Ketetapan Majelis Permusyawaratan Rakyat Nomor X/MPR/1973," .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0003> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0003/text> .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0004> .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0004> legal:nomor "4" .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0004/text> legal:teks "Indische Comptabiliteitswet sebagaimana diubah dan ditambah terakhir dengan Undang-undang Nomor 9 Tahun 1968 tentang Perubahan Pasal 7 Indische Comptabiliteitswet (Lembaran Negara Republik Indonesia Tahun 1968 Nomor 53). Dengan persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA MEMUTUSKAN : Menetapkan : UNDANG-UNDANG TENTANG ANGGARAN PENDAPATAN DAN BELANJA NEGARA TAHUN ANGGARAN 1974/1975." .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0004> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0004/text> .
+<http://example.org/legal/peraturan/uu/1974/2> legal:menimbang <http://example.org/legal/peraturan/uu/1974/2/menimbang> .
+<http://example.org/legal/peraturan/uu/1974/2/menimbang/text> legal:teks "aa. bahwa Anggaran Pendapatan dan Belanja Negara untuk Tahun Anggaran 1974/1975 perlu ditetapkan dengan Undang-undang, b. bahwa sebagai Anggaran Pendapatan dan Belanja Negara tahun pertama dalam rangka Rencana Pembangunan Lima Tahun II, Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1974/1975 mengikuti prioritas nasional sebagaimana ditetapkan di dalam pola umum PELITA II Ketetapan Majelis Permusyawaratan Rakyat Nomor IV/MPR/1973 tentang Garis-garis Besar Haluan Negara, c. bahwa Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1974/1975 adalah rencana kerja Pemerintah, khususnya pelaksanaan tahun pertama rencana tahunan Pembangunan Lima Tahun II, d. bahwa Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1974/1975 disamping memelihara dan meneruskan hasil-hasil yang telah dicapai dalam PELITA I, juga meletakkan landasan-landasan baru bagi usaha-usaha pembangunan selanjutnya, e. bahwa untuk lebih menjaga kelangsungan jalannya pembangunan, maka saldo-anggaran-lebih dan sisa kredit anggaran proyek-proyek pada anggaran pembangunan tahun 1974/1975 perlu diatur dalam Undang-undang ini. 2-" .
+<http://example.org/legal/peraturan/uu/1974/2/menimbang> legal:segmen <http://example.org/legal/peraturan/uu/1974/2/menimbang/text> .
+<http://example.org/legal/peraturan/uu/1974/2> legal:disahkanOleh "SOEHARTO" .
+<http://example.org/legal/peraturan/uu/1974/2> legal:disahkanDi "Jakarta" .
+<http://example.org/legal/peraturan/uu/1974/2> legal:jabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/peraturan/uu/1974/2> a legal:Peraturan .
+<http://example.org/legal/peraturan/uu/1974/2/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat> a legal:DaftarAyat .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf/a> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf/a/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf/b> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf/b/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0002> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0003> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0003/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0004> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0004/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0005> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0005/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat> a legal:DaftarAyat .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat/0006> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat/0006/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat/0007> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat/0007/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat> a legal:DaftarAyat .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/a> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/a/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/b> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/b/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/c> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/c/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/d> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/d/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf/a> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf/a/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf/b> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf/b/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0003> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0003/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0004> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0004/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0005> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0005/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat> a legal:DaftarAyat .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0001> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0002> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0003> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0003/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0004> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0004/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0005> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0005/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0005> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0005/versi/19740314> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0005/versi/19740314/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0006> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314/ayat> a legal:DaftarAyat .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314/ayat/0001> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314/ayat/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314/ayat/0002> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314/ayat/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0007> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0007/versi/19740314> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0007/versi/19740314/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0008> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0008/versi/19740314> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0008/versi/19740314/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat> a legal:Mengingat .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0001> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0002> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0003> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0003/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0004> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0004/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/menimbang/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1974/2/menimbang> a legal:Menimbang .
+<http://example.org/legal/peraturan/uu/1974/2/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf/a> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf/a/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf/a> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf/b> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf/b/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0001/huruf/b> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0003/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0003> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0004/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0004> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0005> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0005/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0001/versi/19740314/ayat/0005> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat/0006> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat/0006/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat/0006> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat/0007> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat/0007/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0002/versi/19740314/ayat/0007> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0003> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/a> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/a/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/a> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/b> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/b/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/b> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/c> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/c/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/c> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/d> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/d/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0001/huruf/d> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf/a> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf/a/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf/a> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf/b> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf/b/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0002/huruf/b> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0003/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0003> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0004/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0004> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0005> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0005/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0003/versi/19740314/ayat/0005> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0004> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0003/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0003> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0004/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0004> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0005> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0005/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0004/versi/19740314/ayat/0005> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0005> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0005/versi/19740314> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0005> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0005> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0005/versi/19740314/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0005/versi/19740314> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0006> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0006> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0006> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314/ayat> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314/ayat/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314/ayat> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314/ayat/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314/ayat/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314/ayat> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314/ayat/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0006/versi/19740314/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0007> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0007/versi/19740314> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0007> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0007> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0007/versi/19740314/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0007/versi/19740314> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0008> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0008/versi/19740314> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0008> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0008> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2> .
+<http://example.org/legal/peraturan/uu/1974/2/pasal/0008/versi/19740314/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/pasal/0008/versi/19740314> .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/mengingat> .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0001> .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0002> .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0003/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0003> .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0004/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/mengingat/huruf/0004> .
+<http://example.org/legal/peraturan/uu/1974/2/menimbang/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1974/2/menimbang> .

@@ -1,87 +1,92 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1976/8> legal:documentHasPasalSet <http://example.org/legal/document/uu/1976/8/pasals> .
-<http://example.org/legal/document/uu/1976/8/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1976/8/pasal/0001> .
-<http://example.org/legal/document/uu/1976/8/pasal/0001> legal:pasalHasKey 1 .
-<http://example.org/legal/document/uu/1976/8/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1976/8/pasal/0001/version/19760726> .
-<http://example.org/legal/document/uu/1976/8> legal:documentHasPasal <http://example.org/legal/document/uu/1976/8/pasal/0001> .
-<http://example.org/legal/document/uu/1976/8/pasal/0001/version/19760726> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1976/8/pasal/0001/version/19760726> legal:pasalVersionHasVersionDate "1976-07-26"^^xsd:date .
-<http://example.org/legal/document/uu/1976/8/pasal/0001/version/19760726> legal:pasalVersionHasRawText "Mengesahkan : 1. Konvensi Tunggal Narkotika 1961 (Single Convention on Narcotic Drugs, 1961) dengan persyaratan (reservation) terhadap Pasal 48 ayat (2) ; dan 2. Protokol yang mengubah Konvensi Tunggal Narkotika 1961 (Protocol Ame nding the Single Convention on Narcotic Drugs, 1961) ; yang salinan - salinan naskahnya dilampirkan pada undang - undang ini." .
-<http://example.org/legal/document/uu/1976/8/pasal/0001/version/19760726/text> legal:textHasTextString "Mengesahkan : 1. Konvensi Tunggal Narkotika 1961 (Single Convention on Narcotic Drugs, 1961) dengan persyaratan (reservation) terhadap Pasal 48 ayat (2) ; dan 2. Protokol yang mengubah Konvensi Tunggal Narkotika 1961 (Protocol Ame nding the Single Convention on Narcotic Drugs, 1961) ; yang salinan - salinan naskahnya dilampirkan pada undang - undang ini." .
-<http://example.org/legal/document/uu/1976/8/pasal/0001/version/19760726> legal:pasalVersionHasText <http://example.org/legal/document/uu/1976/8/pasal/0001/version/19760726/text> .
-<http://example.org/legal/document/uu/1976/8/pasal/0001/version/19760726/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1976/8/pasal/0001/version/19760726/ayat/0002> .
-<http://example.org/legal/document/uu/1976/8/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1976/8/pasal/0002> .
-<http://example.org/legal/document/uu/1976/8/pasal/0002> legal:pasalHasKey 2 .
-<http://example.org/legal/document/uu/1976/8/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1976/8/pasal/0002/version/19760726> .
-<http://example.org/legal/document/uu/1976/8> legal:documentHasPasal <http://example.org/legal/document/uu/1976/8/pasal/0002> .
-<http://example.org/legal/document/uu/1976/8/pasal/0002/version/19760726> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1976/8/pasal/0002/version/19760726> legal:pasalVersionHasVersionDate "1976-07-26"^^xsd:date .
-<http://example.org/legal/document/uu/1976/8/pasal/0002/version/19760726> legal:pasalVersionHasRawText "Undang - undang ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/1976/8/pasal/0002/version/19760726/text> legal:textHasTextString "Undang - undang ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/1976/8/pasal/0002/version/19760726> legal:pasalVersionHasText <http://example.org/legal/document/uu/1976/8/pasal/0002/version/19760726/text> .
-<http://example.org/legal/document/uu/1976/8> legal:documentHasDisahkanDate "1976-07-26"^^xsd:date .
-<http://example.org/legal/document/uu/1976/8> legal:documentMengingat <http://example.org/legal/document/uu/1976/8/mengingat> .
-<http://example.org/legal/document/uu/1976/8/mengingat/text> legal:textHasTextString "Pasal 5 ayat (1), Pasal 11, dan Pasal 20 ayat (1) Undang - Undang Dasar 1945 Dengan persetujuan Dewan Perwakilan Rakyat Republik Indonesia, MEMUTUSKAN : Menetapkan : UNDANG - UNDANG TENTANG PENGESAHAN KONVENSI TUNGGAL NARKOTIKA 1961 BESERTA PROTOKOL YANG MENGUBAHNYA." .
-<http://example.org/legal/document/uu/1976/8/mengingat> legal:mengingatHasText <http://example.org/legal/document/uu/1976/8/mengingat/text> .
-<http://example.org/legal/document/uu/1976/8> legal:documentMenimbang <http://example.org/legal/document/uu/1976/8/menimbang> .
-<http://example.org/legal/document/uu/1976/8/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/1976/8/menimbang/point> .
-<http://example.org/legal/document/uu/1976/8/menimbang/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/1976/8/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1976/8/menimbang/point/description> .
-<http://example.org/legal/document/uu/1976/8/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1976/8/menimbang/point/a> .
-<http://example.org/legal/document/uu/1976/8/menimbang/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/1976/8/menimbang/point/a/text> legal:textHasTextString "bahwa meningkatnya kejahatan dan penyalahgunaan narkotika akhir - akhir ini dapat melemahkan ketahanan nasional bangsa Indonesia dalam melaksanakan pembangunan ;" .
-<http://example.org/legal/document/uu/1976/8/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/1976/8/menimbang/point/a/text> .
-<http://example.org/legal/document/uu/1976/8/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1976/8/menimbang/point/b> .
-<http://example.org/legal/document/uu/1976/8/menimbang/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/1976/8/menimbang/point/b/text> legal:textHasTextString "bahwa Konvensi Tunggal Narkotika 1961 beserta Protokol yang ubah Konvensi Tunggal Narkotika 1961 merupakan usaha bersama a ntara negara - negara untuk mencegah dan memberantas kejahatan narkotika ;" .
-<http://example.org/legal/document/uu/1976/8/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/1976/8/menimbang/point/b/text> .
-<http://example.org/legal/document/uu/1976/8/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1976/8/menimbang/point/c> .
-<http://example.org/legal/document/uu/1976/8/menimbang/point/c> legal:pointHasKey "c" .
-<http://example.org/legal/document/uu/1976/8/menimbang/point/c/text> legal:textHasTextString "bahwa Republik Indonesia telah menandatangani Konvensi Tunggal Narkotika 1961 (Single Convention on Narcotic Drugs, 1961) dengan mengajukan persyaratan dan telah menandatangani pul a Protokol yang Mengubah Konvensi Tunggal Narkotika 1961 (Protocol Amending the Single Convention on Narcotic Drugs, 1961)" .
-<http://example.org/legal/document/uu/1976/8/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/1976/8/menimbang/point/c/text> .
-<http://example.org/legal/document/uu/1976/8/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1976/8/menimbang/point/d> .
-<http://example.org/legal/document/uu/1976/8/menimbang/point/d> legal:pointHasKey "d" .
-<http://example.org/legal/document/uu/1976/8/menimbang/point/d/text> legal:textHasTextString "bahwa Konvensi tersebut beserta Protokol yang Mengubahnya perlu disahkan dengan undang - undang" .
-<http://example.org/legal/document/uu/1976/8/menimbang/point/d> legal:pointHasText <http://example.org/legal/document/uu/1976/8/menimbang/point/d/text> .
-<http://example.org/legal/document/uu/1976/8> legal:documentHasDisahkanPengesah "JENDERAL TNI" .
-<http://example.org/legal/document/uu/1976/8> legal:documentHasDisahkanLocation "Jakarta" .
-<http://example.org/legal/document/uu/1976/8> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
-<http://example.org/legal/document/uu/1976/8> a legal:Document .
-<http://example.org/legal/document/uu/1976/8/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/1976/8/pasal/0001> a legal:Pasal .
-<http://example.org/legal/document/uu/1976/8/pasal/0001/version/19760726> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1976/8/pasal/0001/version/19760726/text> a legal:Text .
-<http://example.org/legal/document/uu/1976/8/pasal/0002> a legal:Pasal .
-<http://example.org/legal/document/uu/1976/8/pasal/0002/version/19760726> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1976/8/pasal/0002/version/19760726/text> a legal:Text .
-<http://example.org/legal/document/uu/1976/8/mengingat/text> a legal:Text .
-<http://example.org/legal/document/uu/1976/8/mengingat> a legal:Mengingat .
-<http://example.org/legal/document/uu/1976/8/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/1976/8/menimbang/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1976/8/menimbang/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1976/8/menimbang/point/a> a legal:Point .
-<http://example.org/legal/document/uu/1976/8/menimbang/point/a/text> a legal:Text .
-<http://example.org/legal/document/uu/1976/8/menimbang/point/b> a legal:Point .
-<http://example.org/legal/document/uu/1976/8/menimbang/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/1976/8/menimbang/point/c> a legal:Point .
-<http://example.org/legal/document/uu/1976/8/menimbang/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/1976/8/menimbang/point/d> a legal:Point .
-<http://example.org/legal/document/uu/1976/8/menimbang/point/d/text> a legal:Text .
-<http://example.org/legal/document/uu/1976/8/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1976/8/pasals> .
-<http://example.org/legal/document/uu/1976/8/pasal/0001/version/19760726> legal:partOf <http://example.org/legal/document/uu/1976/8/pasal/0001> .
-<http://example.org/legal/document/uu/1976/8/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1976/8> .
-<http://example.org/legal/document/uu/1976/8/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1976/8/pasals> .
-<http://example.org/legal/document/uu/1976/8/pasal/0002/version/19760726> legal:partOf <http://example.org/legal/document/uu/1976/8/pasal/0002> .
-<http://example.org/legal/document/uu/1976/8/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1976/8> .
-<http://example.org/legal/document/uu/1976/8/mengingat/text> legal:partOf <http://example.org/legal/document/uu/1976/8/mengingat> .
-<http://example.org/legal/document/uu/1976/8/menimbang/point> legal:partOf <http://example.org/legal/document/uu/1976/8/menimbang> .
-<http://example.org/legal/document/uu/1976/8/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1976/8/menimbang/point> .
-<http://example.org/legal/document/uu/1976/8/menimbang/point/a/text> legal:partOf <http://example.org/legal/document/uu/1976/8/menimbang/point/a> .
-<http://example.org/legal/document/uu/1976/8/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1976/8/menimbang/point> .
-<http://example.org/legal/document/uu/1976/8/menimbang/point/b/text> legal:partOf <http://example.org/legal/document/uu/1976/8/menimbang/point/b> .
-<http://example.org/legal/document/uu/1976/8/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/1976/8/menimbang/point> .
-<http://example.org/legal/document/uu/1976/8/menimbang/point/c/text> legal:partOf <http://example.org/legal/document/uu/1976/8/menimbang/point/c> .
-<http://example.org/legal/document/uu/1976/8/menimbang/point/d> legal:partOf <http://example.org/legal/document/uu/1976/8/menimbang/point> .
-<http://example.org/legal/document/uu/1976/8/menimbang/point/d/text> legal:partOf <http://example.org/legal/document/uu/1976/8/menimbang/point/d> .
+<http://example.org/legal/peraturan/uu/1976/8> legal:daftarPasal <http://example.org/legal/peraturan/uu/1976/8/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1976/8/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1976/8/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1976/8/pasal/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1976/8/pasal/0001> legal:versi <http://example.org/legal/peraturan/uu/1976/8/pasal/0001/versi/19760726> .
+<http://example.org/legal/peraturan/uu/1976/8> legal:pasal <http://example.org/legal/peraturan/uu/1976/8/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1976/8/pasal/0001/versi/19760726> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1976/8/pasal/0001/versi/19760726> legal:tanggal "1976-07-26"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1976/8/pasal/0001/versi/19760726> legal:teks "Mengesahkan : 1. Konvensi Tunggal Narkotika 1961 (Single Convention on Narcotic Drugs, 1961) dengan persyaratan (reservation) terhadap Pasal 48 ayat (2) ; dan 2. Protokol yang mengubah Konvensi Tunggal Narkotika 1961 (Protocol Ame nding the Single Convention on Narcotic Drugs, 1961) ; yang salinan - salinan naskahnya dilampirkan pada undang - undang ini." .
+<http://example.org/legal/peraturan/uu/1976/8/pasal/0001/versi/19760726/text> legal:teks "Mengesahkan : 1. Konvensi Tunggal Narkotika 1961 (Single Convention on Narcotic Drugs, 1961) dengan persyaratan (reservation) terhadap Pasal 48 ayat (2) ; dan 2. Protokol yang mengubah Konvensi Tunggal Narkotika 1961 (Protocol Ame nding the Single Convention on Narcotic Drugs, 1961) ; yang salinan - salinan naskahnya dilampirkan pada undang - undang ini." .
+<http://example.org/legal/peraturan/uu/1976/8/pasal/0001/versi/19760726> legal:segmen <http://example.org/legal/peraturan/uu/1976/8/pasal/0001/versi/19760726/text> .
+<http://example.org/legal/peraturan/uu/1976/8/pasal/0001/versi/19760726/text> legal:merujuk <http://example.org/legal/peraturan/uu/1976/8/pasal/0001/versi/19760726/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1976/8/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1976/8/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1976/8/pasal/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1976/8/pasal/0002> legal:versi <http://example.org/legal/peraturan/uu/1976/8/pasal/0002/versi/19760726> .
+<http://example.org/legal/peraturan/uu/1976/8> legal:pasal <http://example.org/legal/peraturan/uu/1976/8/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1976/8/pasal/0002/versi/19760726> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1976/8/pasal/0002/versi/19760726> legal:tanggal "1976-07-26"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1976/8/pasal/0002/versi/19760726> legal:teks "Undang - undang ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/1976/8/pasal/0002/versi/19760726/text> legal:teks "Undang - undang ini mulai berlaku pada tanggal diundangkan. Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/1976/8/pasal/0002/versi/19760726> legal:segmen <http://example.org/legal/peraturan/uu/1976/8/pasal/0002/versi/19760726/text> .
+<http://example.org/legal/peraturan/uu/1976/8> legal:disahkanPada "1976-07-26"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1976/8> legal:tentang " PENGESAHAN KONVENSI TUNGGAL NARKOTIKA 1961 BESERTA PROTOKOL YANG MENGUBAHNYA" .
+<http://example.org/legal/peraturan/uu/1976/8> legal:mengingat <http://example.org/legal/peraturan/uu/1976/8/mengingat> .
+<http://example.org/legal/peraturan/uu/1976/8/mengingat/text> legal:teks "Pasal 5 ayat (1), Pasal 11, dan Pasal 20 ayat (1) Undang - Undang Dasar 1945 Dengan persetujuan Dewan Perwakilan Rakyat Republik Indonesia, MEMUTUSKAN : Menetapkan : UNDANG - UNDANG TENTANG PENGESAHAN KONVENSI TUNGGAL NARKOTIKA 1961 BESERTA PROTOKOL YANG MENGUBAHNYA." .
+<http://example.org/legal/peraturan/uu/1976/8/mengingat> legal:segmen <http://example.org/legal/peraturan/uu/1976/8/mengingat/text> .
+<http://example.org/legal/peraturan/uu/1976/8> legal:menimbang <http://example.org/legal/peraturan/uu/1976/8/menimbang> .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/description> .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/a> legal:nomor "a" .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/a/text> legal:teks "bahwa meningkatnya kejahatan dan penyalahgunaan narkotika akhir - akhir ini dapat melemahkan ketahanan nasional bangsa Indonesia dalam melaksanakan pembangunan ;" .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/a> legal:segmen <http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/a/text> .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/b> .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/b> legal:nomor "b" .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/b/text> legal:teks "bahwa Konvensi Tunggal Narkotika 1961 beserta Protokol yang ubah Konvensi Tunggal Narkotika 1961 merupakan usaha bersama a ntara negara - negara untuk mencegah dan memberantas kejahatan narkotika ;" .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/b> legal:segmen <http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/b/text> .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/c> .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/c> legal:nomor "c" .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/c/text> legal:teks "bahwa Republik Indonesia telah menandatangani Konvensi Tunggal Narkotika 1961 (Single Convention on Narcotic Drugs, 1961) dengan mengajukan persyaratan dan telah menandatangani pul a Protokol yang Mengubah Konvensi Tunggal Narkotika 1961 (Protocol Amending the Single Convention on Narcotic Drugs, 1961)" .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/c> legal:segmen <http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/c/text> .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/d> .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/d> legal:nomor "d" .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/d/text> legal:teks "bahwa Konvensi tersebut beserta Protokol yang Mengubahnya perlu disahkan dengan undang - undang" .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/d> legal:segmen <http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/d/text> .
+<http://example.org/legal/peraturan/uu/1976/8> legal:disahkanOleh "JENDERAL TNI" .
+<http://example.org/legal/peraturan/uu/1976/8> legal:disahkanDi "Jakarta" .
+<http://example.org/legal/peraturan/uu/1976/8> legal:jabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/peraturan/uu/1976/8> a legal:Peraturan .
+<http://example.org/legal/peraturan/uu/1976/8/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/1976/8/pasal/0001> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1976/8/pasal/0001/versi/19760726> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1976/8/pasal/0001/versi/19760726/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1976/8/pasal/0002> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1976/8/pasal/0002/versi/19760726> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1976/8/pasal/0002/versi/19760726/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1976/8/mengingat/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1976/8/mengingat> a legal:Mengingat .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang> a legal:Menimbang .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/a> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/a/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/b> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/b/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/c> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/c/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/d> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/d/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1976/8/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/8> .
+<http://example.org/legal/peraturan/uu/1976/8/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/8/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1976/8/pasal/0001/versi/19760726> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/8/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1976/8/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/8> .
+<http://example.org/legal/peraturan/uu/1976/8/pasal/0001/versi/19760726/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/8/pasal/0001/versi/19760726> .
+<http://example.org/legal/peraturan/uu/1976/8/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/8/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1976/8/pasal/0002/versi/19760726> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/8/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1976/8/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/8> .
+<http://example.org/legal/peraturan/uu/1976/8/pasal/0002/versi/19760726/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/8/pasal/0002/versi/19760726> .
+<http://example.org/legal/peraturan/uu/1976/8/mengingat/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/8/mengingat> .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/8/menimbang> .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/a> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/a/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/b> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/b/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/b> .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/c> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/c/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/c> .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/d> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/d/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1976/8/menimbang/huruf/d> .

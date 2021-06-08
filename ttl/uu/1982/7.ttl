@@ -1,245 +1,253 @@
 @prefix legal: <http://example.org/legal/ontology/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/legal/document/uu/1982/7> legal:documentHasPasalSet <http://example.org/legal/document/uu/1982/7/pasals> .
-<http://example.org/legal/document/uu/1982/7/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1982/7/pasal/0001> .
-<http://example.org/legal/document/uu/1982/7/pasal/0001> legal:pasalHasKey 1 .
-<http://example.org/legal/document/uu/1982/7/pasal/0001> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629> .
-<http://example.org/legal/document/uu/1982/7> legal:documentHasPasal <http://example.org/legal/document/uu/1982/7/pasal/0001> .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629> legal:pasalVersionHasVersionDate "1982-06-29"^^xsd:date .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629> legal:pasalVersionHasRawText "(1). Anggaran Pendapatan Negara Tahun Anggaran 1981/1982 diperkirakan bertambah dengan Rp 21.295.000.000,00 yang terdiri dari:\na. Pendapatan Rutin berkurang dengan Rp 61.783.000.000,00;\nb. Pendapatan Pembangunan bertambah dengan Rp.83.078.000.000,00\n\n(2). Peri ncian pendapatan tambahan dan perubahan dimaksud pada ayat (1) huruf a dan b pasal ini masing - masing dimuat dalam Lampiran I dan II Undang - undang ini." .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat> .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001> .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001> legal:ayatHasKey 1 .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001> legal:ayatHasRawText "Anggaran Pendapatan Negara Tahun Anggaran 1981/1982 diperkirakan bertambah dengan Rp 21.295.000.000,00 yang terdiri dari:\na. Pendapatan Rutin berkurang dengan Rp 61.783.000.000,00;\nb. Pendapatan Pembangunan bertambah dengan Rp.83.078.000.000,00\n" .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001/point> .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001/point/description> legal:textHasTextString "Anggaran Pendapatan Negara Tahun Anggaran 1981/1982 diperkirakan bertambah dengan Rp 21.295.000.000,00 yang terdiri dari:" .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001/point/description> .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001/point/a> .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001/point/a/text> legal:textHasTextString "Pendapatan Rutin berkurang dengan Rp 61.783.000.000,00;" .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001/point/a/text> .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001/point/b> .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001/point/b/text> legal:textHasTextString "Pendapatan Pembangunan bertambah dengan Rp.83.078.000.000,00" .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001/point/b> legal:pointHasText <http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001/point/b/text> .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0002> .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0002> legal:ayatHasKey 2 .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0002> legal:ayatHasRawText "Peri ncian pendapatan tambahan dan perubahan dimaksud pada ayat (1) huruf a dan b pasal ini masing - masing dimuat dalam Lampiran I dan II Undang - undang ini." .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0002/text> legal:textHasTextString "Peri ncian pendapatan tambahan dan perubahan dimaksud pada ayat (1) huruf a dan b pasal ini masing - masing dimuat dalam Lampiran I dan II Undang - undang ini." .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0002/text> .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001> .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001/point/b> .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/point/a> .
-<http://example.org/legal/document/uu/1982/7/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1982/7/pasal/0002> .
-<http://example.org/legal/document/uu/1982/7/pasal/0002> legal:pasalHasKey 2 .
-<http://example.org/legal/document/uu/1982/7/pasal/0002> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629> .
-<http://example.org/legal/document/uu/1982/7> legal:documentHasPasal <http://example.org/legal/document/uu/1982/7/pasal/0002> .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629> legal:pasalVersionHasVersionDate "1982-06-29"^^xsd:date .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629> legal:pasalVersionHasRawText "(1). Anggaran Belanja Negara Tahun Anggaran 1981/1982 diperkirakan bertambah dengan Rp 17.442.00 0.000,00 yang terdiri dari :\na. Belanja Rutin berkurang dengan Rp 523.461.000.000,00;\nb. Belanja Pembangunan bertambah dengan Rp 540.903.000.000,00\n\n(2). Perincian pengeluaran tambahan dan perubahan dimaksud pada ayat (1) huruf a dan b pasal ini masing - m asing dimuat dalam Lampiran III dan IV Undang - undang ini." .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat> .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001> .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001> legal:ayatHasKey 1 .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001> legal:ayatHasRawText "Anggaran Belanja Negara Tahun Anggaran 1981/1982 diperkirakan bertambah dengan Rp 17.442.00 0.000,00 yang terdiri dari :\na. Belanja Rutin berkurang dengan Rp 523.461.000.000,00;\nb. Belanja Pembangunan bertambah dengan Rp 540.903.000.000,00\n" .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001> legal:ayatHasPointSet <http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001/point> .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001/point/description> legal:textHasTextString "Anggaran Belanja Negara Tahun Anggaran 1981/1982 diperkirakan bertambah dengan Rp 17.442.00 0.000,00 yang terdiri dari :" .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001/point/description> .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001/point/a> .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001/point/a/text> legal:textHasTextString "Belanja Rutin berkurang dengan Rp 523.461.000.000,00;" .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001/point/a> legal:pointHasText <http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001/point/a/text> .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001/point/b> .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001/point/b/text> legal:textHasTextString "Belanja Pembangunan bertambah dengan Rp 540.903.000.000,00" .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001/point/b> legal:pointHasText <http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001/point/b/text> .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0002> .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0002> legal:ayatHasKey 2 .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0002> legal:ayatHasRawText "Perincian pengeluaran tambahan dan perubahan dimaksud pada ayat (1) huruf a dan b pasal ini masing - m asing dimuat dalam Lampiran III dan IV Undang - undang ini." .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0002/text> legal:textHasTextString "Perincian pengeluaran tambahan dan perubahan dimaksud pada ayat (1) huruf a dan b pasal ini masing - m asing dimuat dalam Lampiran III dan IV Undang - undang ini." .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0002/text> .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001> .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001/point/b> .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0002/text> legal:textReferencesLegal <http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/point/a> .
-<http://example.org/legal/document/uu/1982/7/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1982/7/pasal/0003> .
-<http://example.org/legal/document/uu/1982/7/pasal/0003> legal:pasalHasKey 3 .
-<http://example.org/legal/document/uu/1982/7/pasal/0003> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629> .
-<http://example.org/legal/document/uu/1982/7> legal:documentHasPasal <http://example.org/legal/document/uu/1982/7/pasal/0003> .
-<http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629> legal:pasalVersionHasVersionDate "1982-06-29"^^xsd:date .
-<http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629> legal:pasalVersionHasRawText "(1). Kredit anggaran proyek - proyek pada Anggaran Pembangunan Tahun Anggaran 1981/1982 yang telah disahkan dalam Undang - undang Nomor 1 Tahun 1981 tentang Anggaran Pendapatan dan Belanja Neg ara Tahun Anggaran 1981/1982 yang pada akhir Tahun Anggaran 1981/1982 menunjukkan sisa, dengan Peraturan Pemerintah dipindahkan ke Tahun Anggaran 1982/1983 dengan menambahkannya kepada kredit anggaran Tahun Anggaran 1982/1983.\n(2). Saldo - anggaran - lebih Tah un Anggaran 1981/1982 ditambahkan kepada Anggaran Tahun Anggaran 1982/1983 dan dipergunakan untuk membiayai Anggaran Pembangunan Tahun Anggaran 1982/1983." .
-<http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629> legal:pasalVersionHasAyatSet <http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629/ayat> .
-<http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629/ayat/0001> .
-<http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629/ayat/0001> legal:ayatHasKey 1 .
-<http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629/ayat/0001> legal:ayatHasRawText "Kredit anggaran proyek - proyek pada Anggaran Pembangunan Tahun Anggaran 1981/1982 yang telah disahkan dalam Undang - undang Nomor 1 Tahun 1981 tentang Anggaran Pendapatan dan Belanja Neg ara Tahun Anggaran 1981/1982 yang pada akhir Tahun Anggaran 1981/1982 menunjukkan sisa, dengan Peraturan Pemerintah dipindahkan ke Tahun Anggaran 1982/1983 dengan menambahkannya kepada kredit anggaran Tahun Anggaran 1982/1983." .
-<http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629/ayat/0001/text> legal:textHasTextString "Kredit anggaran proyek - proyek pada Anggaran Pembangunan Tahun Anggaran 1981/1982 yang telah disahkan dalam Undang - undang Nomor 1 Tahun 1981 tentang Anggaran Pendapatan dan Belanja Neg ara Tahun Anggaran 1981/1982 yang pada akhir Tahun Anggaran 1981/1982 menunjukkan sisa, dengan Peraturan Pemerintah dipindahkan ke Tahun Anggaran 1982/1983 dengan menambahkannya kepada kredit anggaran Tahun Anggaran 1982/1983." .
-<http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629/ayat/0001> legal:ayatHasText <http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629/ayat/0001/text> .
-<http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629/ayat> legal:ayatSetHasAyat <http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629/ayat/0002> .
-<http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629/ayat/0002> legal:ayatHasKey 2 .
-<http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629/ayat/0002> legal:ayatHasRawText "Saldo - anggaran - lebih Tah un Anggaran 1981/1982 ditambahkan kepada Anggaran Tahun Anggaran 1982/1983 dan dipergunakan untuk membiayai Anggaran Pembangunan Tahun Anggaran 1982/1983." .
-<http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629/ayat/0002/text> legal:textHasTextString "Saldo - anggaran - lebih Tah un Anggaran 1981/1982 ditambahkan kepada Anggaran Tahun Anggaran 1982/1983 dan dipergunakan untuk membiayai Anggaran Pembangunan Tahun Anggaran 1982/1983." .
-<http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629/ayat/0002> legal:ayatHasText <http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629/ayat/0002/text> .
-<http://example.org/legal/document/uu/1982/7/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1982/7/pasal/0004> .
-<http://example.org/legal/document/uu/1982/7/pasal/0004> legal:pasalHasKey 4 .
-<http://example.org/legal/document/uu/1982/7/pasal/0004> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1982/7/pasal/0004/version/19820629> .
-<http://example.org/legal/document/uu/1982/7> legal:documentHasPasal <http://example.org/legal/document/uu/1982/7/pasal/0004> .
-<http://example.org/legal/document/uu/1982/7/pasal/0004/version/19820629> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1982/7/pasal/0004/version/19820629> legal:pasalVersionHasVersionDate "1982-06-29"^^xsd:date .
-<http://example.org/legal/document/uu/1982/7/pasal/0004/version/19820629> legal:pasalVersionHasRawText "Ketentuan - ketentuan dalam Indische Comptabiliteitswet (Undang - Undang Perbe ndaharaan) yang bertentangan dengan bentuk, susunan dan isi Undang - undang ini dinyatakan tidak berlaku." .
-<http://example.org/legal/document/uu/1982/7/pasal/0004/version/19820629/text> legal:textHasTextString "Ketentuan - ketentuan dalam Indische Comptabiliteitswet (Undang - Undang Perbe ndaharaan) yang bertentangan dengan bentuk, susunan dan isi Undang - undang ini dinyatakan tidak berlaku." .
-<http://example.org/legal/document/uu/1982/7/pasal/0004/version/19820629> legal:pasalVersionHasText <http://example.org/legal/document/uu/1982/7/pasal/0004/version/19820629/text> .
-<http://example.org/legal/document/uu/1982/7/pasals> legal:pasalSetHasPasal <http://example.org/legal/document/uu/1982/7/pasal/0005> .
-<http://example.org/legal/document/uu/1982/7/pasal/0005> legal:pasalHasKey 5 .
-<http://example.org/legal/document/uu/1982/7/pasal/0005> legal:pasalHasPasalVersion <http://example.org/legal/document/uu/1982/7/pasal/0005/version/19820629> .
-<http://example.org/legal/document/uu/1982/7> legal:documentHasPasal <http://example.org/legal/document/uu/1982/7/pasal/0005> .
-<http://example.org/legal/document/uu/1982/7/pasal/0005/version/19820629> legal:pasalVersionHasState "exists" .
-<http://example.org/legal/document/uu/1982/7/pasal/0005/version/19820629> legal:pasalVersionHasVersionDate "1982-06-29"^^xsd:date .
-<http://example.org/legal/document/uu/1982/7/pasal/0005/version/19820629> legal:pasalVersionHasRawText "Undang - undang ini mulai berlaku pada tanggal diundangkan dan mempunyai daya laku surut sejak tanggal 1 April 1981. Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/1982/7/pasal/0005/version/19820629/text> legal:textHasTextString "Undang - undang ini mulai berlaku pada tanggal diundangkan dan mempunyai daya laku surut sejak tanggal 1 April 1981. Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
-<http://example.org/legal/document/uu/1982/7/pasal/0005/version/19820629> legal:pasalVersionHasText <http://example.org/legal/document/uu/1982/7/pasal/0005/version/19820629/text> .
-<http://example.org/legal/document/uu/1982/7> legal:documentHasDisahkanDate "1982-06-29"^^xsd:date .
-<http://example.org/legal/document/uu/1982/7> legal:documentMengingat <http://example.org/legal/document/uu/1982/7/mengingat> .
-<http://example.org/legal/document/uu/1982/7/mengingat> legal:mengingatHasPointSet <http://example.org/legal/document/uu/1982/7/mengingat/point> .
-<http://example.org/legal/document/uu/1982/7/mengingat/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/1982/7/mengingat/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1982/7/mengingat/point/description> .
-<http://example.org/legal/document/uu/1982/7/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1982/7/mengingat/point/0001> .
-<http://example.org/legal/document/uu/1982/7/mengingat/point/0001> legal:pointHasKey "1" .
-<http://example.org/legal/document/uu/1982/7/mengingat/point/0001/text> legal:textHasTextString "Pasal 5 ayat (1) jo. Pasal 23 ayat (1) UndAng - Undang Dasar 1945;" .
-<http://example.org/legal/document/uu/1982/7/mengingat/point/0001> legal:pointHasText <http://example.org/legal/document/uu/1982/7/mengingat/point/0001/text> .
-<http://example.org/legal/document/uu/1982/7/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1982/7/mengingat/point/0002> .
-<http://example.org/legal/document/uu/1982/7/mengingat/point/0002> legal:pointHasKey "2" .
-<http://example.org/legal/document/uu/1982/7/mengingat/point/0002/text> legal:textHasTextString "Indische Comptabiliteitswet (Staatsblad Tahun 1925 Nomor 448) sebagaimana diubah dan ditambah terakhir dengan Undang - undang Nomor 9 Tahun 1968 tentang Perubahan Pasal 7 Indische Comptabiliteitswet (Lembaran Negara Tahun 1968 Nomor 53, Tambahan Lembaran Negara Nomor 2860);" .
-<http://example.org/legal/document/uu/1982/7/mengingat/point/0002> legal:pointHasText <http://example.org/legal/document/uu/1982/7/mengingat/point/0002/text> .
-<http://example.org/legal/document/uu/1982/7/mengingat/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1982/7/mengingat/point/0003> .
-<http://example.org/legal/document/uu/1982/7/mengingat/point/0003> legal:pointHasKey "3" .
-<http://example.org/legal/document/uu/1982/7/mengingat/point/0003/text> legal:textHasTextString "Undang - undang Nomor 1 Tahun 1981 tentang Anggaran Pendapatan dan Belanja Negara Tahun A nggaran 1981/1982 (Lembaran Negara Tahun 1981 Nomor 9, Tambahan Lembaran Negara Nomor 3191). Dengan persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA, MEMUTUSKAN : Menetapkan : UNDANG - UNDANG TENTANG TAMBAHAN DAN PERUBAHAN ATAS ANGGARAN PENDAPATAN DAN BELANJA NEGARA TAHUN ANGGARAN 1981/1982." .
-<http://example.org/legal/document/uu/1982/7/mengingat/point/0003> legal:pointHasText <http://example.org/legal/document/uu/1982/7/mengingat/point/0003/text> .
-<http://example.org/legal/document/uu/1982/7> legal:documentMenimbang <http://example.org/legal/document/uu/1982/7/menimbang> .
-<http://example.org/legal/document/uu/1982/7/menimbang> legal:menimbangHasPointSet <http://example.org/legal/document/uu/1982/7/menimbang/point> .
-<http://example.org/legal/document/uu/1982/7/menimbang/point/description> legal:textHasTextString "" .
-<http://example.org/legal/document/uu/1982/7/menimbang/point> legal:pointSetHasDescription <http://example.org/legal/document/uu/1982/7/menimbang/point/description> .
-<http://example.org/legal/document/uu/1982/7/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1982/7/menimbang/point/a> .
-<http://example.org/legal/document/uu/1982/7/menimbang/point/a> legal:pointHasKey "a" .
-<http://example.org/legal/document/uu/1982/7/menimbang/point/a/text> legal:textHasTextString "bahwa u ntuk lebih menyesuaikan dan menyempurnakan pelaksanaan program Pemerintah dalam Tahun Anggaran 1981/1982 diperlukan tambahan dan perubahan atas Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1981/1982 dimaksud dalam Undang - undang Nomor 1 Tahun 1981;" .
-<http://example.org/legal/document/uu/1982/7/menimbang/point/a> legal:pointHasText <http://example.org/legal/document/uu/1982/7/menimbang/point/a/text> .
-<http://example.org/legal/document/uu/1982/7/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1982/7/menimbang/point/b> .
-<http://example.org/legal/document/uu/1982/7/menimbang/point/b> legal:pointHasKey "b" .
-<http://example.org/legal/document/uu/1982/7/menimbang/point/b/text> legal:textHasTextString "bahwa untuk lebih menjaga kelangsungan jalannya pembangunan saldoanggaran - lebih dan sisa kredit anggaran proyek - proyek pada Anggaran Pembangunan Tahun Anggaran 1981/1982 ditambahkan kepada kredit anggaran Tahun Anggaran 1982/1983;" .
-<http://example.org/legal/document/uu/1982/7/menimbang/point/b> legal:pointHasText <http://example.org/legal/document/uu/1982/7/menimbang/point/b/text> .
-<http://example.org/legal/document/uu/1982/7/menimbang/point> legal:pointSetHasPoint <http://example.org/legal/document/uu/1982/7/menimbang/point/c> .
-<http://example.org/legal/document/uu/1982/7/menimbang/point/c> legal:pointHasKey "c" .
-<http://example.org/legal/document/uu/1982/7/menimbang/point/c/text> legal:textHasTextString "bahwa tambaha n dan perubahan dimaksud perlu diatur dengan Undang - undang." .
-<http://example.org/legal/document/uu/1982/7/menimbang/point/c> legal:pointHasText <http://example.org/legal/document/uu/1982/7/menimbang/point/c/text> .
-<http://example.org/legal/document/uu/1982/7> legal:documentHasDisahkanPengesah "SOEHARTO" .
-<http://example.org/legal/document/uu/1982/7> legal:documentHasDisahkanLocation "Jakarta" .
-<http://example.org/legal/document/uu/1982/7> legal:documentHasDisahkanJabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
-<http://example.org/legal/document/uu/1982/7> a legal:Document .
-<http://example.org/legal/document/uu/1982/7/pasals> a legal:PasalSet .
-<http://example.org/legal/document/uu/1982/7/pasal/0001> a legal:Pasal .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat> a legal:AyatSet .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001> a legal:Ayat .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001/point/a> a legal:Point .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001/point/a/text> a legal:Text .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001/point/b> a legal:Point .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0002> a legal:Ayat .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/1982/7/pasal/0002> a legal:Pasal .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat> a legal:AyatSet .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001> a legal:Ayat .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001/point/a> a legal:Point .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001/point/a/text> a legal:Text .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001/point/b> a legal:Point .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0002> a legal:Ayat .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/1982/7/pasal/0003> a legal:Pasal .
-<http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629/ayat> a legal:AyatSet .
-<http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629/ayat/0001> a legal:Ayat .
-<http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629/ayat/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629/ayat/0002> a legal:Ayat .
-<http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629/ayat/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/1982/7/pasal/0004> a legal:Pasal .
-<http://example.org/legal/document/uu/1982/7/pasal/0004/version/19820629> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1982/7/pasal/0004/version/19820629/text> a legal:Text .
-<http://example.org/legal/document/uu/1982/7/pasal/0005> a legal:Pasal .
-<http://example.org/legal/document/uu/1982/7/pasal/0005/version/19820629> a legal:PasalVersion .
-<http://example.org/legal/document/uu/1982/7/pasal/0005/version/19820629/text> a legal:Text .
-<http://example.org/legal/document/uu/1982/7/mengingat> a legal:Mengingat .
-<http://example.org/legal/document/uu/1982/7/mengingat/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1982/7/mengingat/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1982/7/mengingat/point/0001> a legal:Point .
-<http://example.org/legal/document/uu/1982/7/mengingat/point/0001/text> a legal:Text .
-<http://example.org/legal/document/uu/1982/7/mengingat/point/0002> a legal:Point .
-<http://example.org/legal/document/uu/1982/7/mengingat/point/0002/text> a legal:Text .
-<http://example.org/legal/document/uu/1982/7/mengingat/point/0003> a legal:Point .
-<http://example.org/legal/document/uu/1982/7/mengingat/point/0003/text> a legal:Text .
-<http://example.org/legal/document/uu/1982/7/menimbang> a legal:Menimbang .
-<http://example.org/legal/document/uu/1982/7/menimbang/point/description> a legal:Text .
-<http://example.org/legal/document/uu/1982/7/menimbang/point> a legal:PointSet .
-<http://example.org/legal/document/uu/1982/7/menimbang/point/a> a legal:Point .
-<http://example.org/legal/document/uu/1982/7/menimbang/point/a/text> a legal:Text .
-<http://example.org/legal/document/uu/1982/7/menimbang/point/b> a legal:Point .
-<http://example.org/legal/document/uu/1982/7/menimbang/point/b/text> a legal:Text .
-<http://example.org/legal/document/uu/1982/7/menimbang/point/c> a legal:Point .
-<http://example.org/legal/document/uu/1982/7/menimbang/point/c/text> a legal:Text .
-<http://example.org/legal/document/uu/1982/7/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1982/7/pasals> .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629> legal:partOf <http://example.org/legal/document/uu/1982/7/pasal/0001> .
-<http://example.org/legal/document/uu/1982/7/pasal/0001> legal:partOf <http://example.org/legal/document/uu/1982/7> .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat> legal:partOf <http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629> .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat> .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001> .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001/point/a> legal:partOf <http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001/point> .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001/point/a/text> legal:partOf <http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001/point/a> .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001/point/b> legal:partOf <http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001/point> .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001/point/b/text> legal:partOf <http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0001/point/b> .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat> .
-<http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1982/7/pasal/0001/version/19820629/ayat/0002> .
-<http://example.org/legal/document/uu/1982/7/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1982/7/pasals> .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629> legal:partOf <http://example.org/legal/document/uu/1982/7/pasal/0002> .
-<http://example.org/legal/document/uu/1982/7/pasal/0002> legal:partOf <http://example.org/legal/document/uu/1982/7> .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat> legal:partOf <http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629> .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat> .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001/point> legal:partOf <http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001> .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001/point/a> legal:partOf <http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001/point> .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001/point/a/text> legal:partOf <http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001/point/a> .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001/point/b> legal:partOf <http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001/point> .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001/point/b/text> legal:partOf <http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0001/point/b> .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat> .
-<http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1982/7/pasal/0002/version/19820629/ayat/0002> .
-<http://example.org/legal/document/uu/1982/7/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1982/7/pasals> .
-<http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629> legal:partOf <http://example.org/legal/document/uu/1982/7/pasal/0003> .
-<http://example.org/legal/document/uu/1982/7/pasal/0003> legal:partOf <http://example.org/legal/document/uu/1982/7> .
-<http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629/ayat> legal:partOf <http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629> .
-<http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629/ayat/0001> legal:partOf <http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629/ayat> .
-<http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629/ayat/0001/text> legal:partOf <http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629/ayat/0001> .
-<http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629/ayat/0002> legal:partOf <http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629/ayat> .
-<http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629/ayat/0002/text> legal:partOf <http://example.org/legal/document/uu/1982/7/pasal/0003/version/19820629/ayat/0002> .
-<http://example.org/legal/document/uu/1982/7/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1982/7/pasals> .
-<http://example.org/legal/document/uu/1982/7/pasal/0004/version/19820629> legal:partOf <http://example.org/legal/document/uu/1982/7/pasal/0004> .
-<http://example.org/legal/document/uu/1982/7/pasal/0004> legal:partOf <http://example.org/legal/document/uu/1982/7> .
-<http://example.org/legal/document/uu/1982/7/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1982/7/pasals> .
-<http://example.org/legal/document/uu/1982/7/pasal/0005/version/19820629> legal:partOf <http://example.org/legal/document/uu/1982/7/pasal/0005> .
-<http://example.org/legal/document/uu/1982/7/pasal/0005> legal:partOf <http://example.org/legal/document/uu/1982/7> .
-<http://example.org/legal/document/uu/1982/7/mengingat/point> legal:partOf <http://example.org/legal/document/uu/1982/7/mengingat> .
-<http://example.org/legal/document/uu/1982/7/mengingat/point/0001> legal:partOf <http://example.org/legal/document/uu/1982/7/mengingat/point> .
-<http://example.org/legal/document/uu/1982/7/mengingat/point/0001/text> legal:partOf <http://example.org/legal/document/uu/1982/7/mengingat/point/0001> .
-<http://example.org/legal/document/uu/1982/7/mengingat/point/0002> legal:partOf <http://example.org/legal/document/uu/1982/7/mengingat/point> .
-<http://example.org/legal/document/uu/1982/7/mengingat/point/0002/text> legal:partOf <http://example.org/legal/document/uu/1982/7/mengingat/point/0002> .
-<http://example.org/legal/document/uu/1982/7/mengingat/point/0003> legal:partOf <http://example.org/legal/document/uu/1982/7/mengingat/point> .
-<http://example.org/legal/document/uu/1982/7/mengingat/point/0003/text> legal:partOf <http://example.org/legal/document/uu/1982/7/mengingat/point/0003> .
-<http://example.org/legal/document/uu/1982/7/menimbang/point> legal:partOf <http://example.org/legal/document/uu/1982/7/menimbang> .
-<http://example.org/legal/document/uu/1982/7/menimbang/point/a> legal:partOf <http://example.org/legal/document/uu/1982/7/menimbang/point> .
-<http://example.org/legal/document/uu/1982/7/menimbang/point/a/text> legal:partOf <http://example.org/legal/document/uu/1982/7/menimbang/point/a> .
-<http://example.org/legal/document/uu/1982/7/menimbang/point/b> legal:partOf <http://example.org/legal/document/uu/1982/7/menimbang/point> .
-<http://example.org/legal/document/uu/1982/7/menimbang/point/b/text> legal:partOf <http://example.org/legal/document/uu/1982/7/menimbang/point/b> .
-<http://example.org/legal/document/uu/1982/7/menimbang/point/c> legal:partOf <http://example.org/legal/document/uu/1982/7/menimbang/point> .
-<http://example.org/legal/document/uu/1982/7/menimbang/point/c/text> legal:partOf <http://example.org/legal/document/uu/1982/7/menimbang/point/c> .
+<http://example.org/legal/peraturan/uu/1982/7> legal:daftarPasal <http://example.org/legal/peraturan/uu/1982/7/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1982/7/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1982/7/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001> legal:versi <http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629> .
+<http://example.org/legal/peraturan/uu/1982/7> legal:pasal <http://example.org/legal/peraturan/uu/1982/7/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629> legal:tanggal "1982-06-29"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629> legal:teks "(1). Anggaran Pendapatan Negara Tahun Anggaran 1981/1982 diperkirakan bertambah dengan Rp 21.295.000.000,00 yang terdiri dari:\na. Pendapatan Rutin berkurang dengan Rp 61.783.000.000,00;\nb. Pendapatan Pembangunan bertambah dengan Rp.83.078.000.000,00\n\n(2). Peri ncian pendapatan tambahan dan perubahan dimaksud pada ayat (1) huruf a dan b pasal ini masing - masing dimuat dalam Lampiran I dan II Undang - undang ini." .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629> legal:daftarAyat <http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001> legal:teks "Anggaran Pendapatan Negara Tahun Anggaran 1981/1982 diperkirakan bertambah dengan Rp 21.295.000.000,00 yang terdiri dari:\na. Pendapatan Rutin berkurang dengan Rp 61.783.000.000,00;\nb. Pendapatan Pembangunan bertambah dengan Rp.83.078.000.000,00\n" .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf/description> legal:teks "Anggaran Pendapatan Negara Tahun Anggaran 1981/1982 diperkirakan bertambah dengan Rp 21.295.000.000,00 yang terdiri dari:" .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf/description> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf/a> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf/a> legal:nomor "a" .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf/a/text> legal:teks "Pendapatan Rutin berkurang dengan Rp 61.783.000.000,00;" .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf/a> legal:segmen <http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf/a/text> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf/b> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf/b> legal:nomor "b" .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf/b/text> legal:teks "Pendapatan Pembangunan bertambah dengan Rp.83.078.000.000,00" .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf/b> legal:segmen <http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf/b/text> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0002> legal:teks "Peri ncian pendapatan tambahan dan perubahan dimaksud pada ayat (1) huruf a dan b pasal ini masing - masing dimuat dalam Lampiran I dan II Undang - undang ini." .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0002/text> legal:teks "Peri ncian pendapatan tambahan dan perubahan dimaksud pada ayat (1) huruf a dan b pasal ini masing - masing dimuat dalam Lampiran I dan II Undang - undang ini." .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0002> legal:segmen <http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0002/text> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0002/text> legal:merujuk <http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0002/text> legal:merujuk <http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf/b> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0002/text> legal:merujuk <http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/huruf/a> .
+<http://example.org/legal/peraturan/uu/1982/7/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1982/7/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002> legal:versi <http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629> .
+<http://example.org/legal/peraturan/uu/1982/7> legal:pasal <http://example.org/legal/peraturan/uu/1982/7/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629> legal:tanggal "1982-06-29"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629> legal:teks "(1). Anggaran Belanja Negara Tahun Anggaran 1981/1982 diperkirakan bertambah dengan Rp 17.442.00 0.000,00 yang terdiri dari :\na. Belanja Rutin berkurang dengan Rp 523.461.000.000,00;\nb. Belanja Pembangunan bertambah dengan Rp 540.903.000.000,00\n\n(2). Perincian pengeluaran tambahan dan perubahan dimaksud pada ayat (1) huruf a dan b pasal ini masing - m asing dimuat dalam Lampiran III dan IV Undang - undang ini." .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629> legal:daftarAyat <http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001> legal:teks "Anggaran Belanja Negara Tahun Anggaran 1981/1982 diperkirakan bertambah dengan Rp 17.442.00 0.000,00 yang terdiri dari :\na. Belanja Rutin berkurang dengan Rp 523.461.000.000,00;\nb. Belanja Pembangunan bertambah dengan Rp 540.903.000.000,00\n" .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf/description> legal:teks "Anggaran Belanja Negara Tahun Anggaran 1981/1982 diperkirakan bertambah dengan Rp 17.442.00 0.000,00 yang terdiri dari :" .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf/description> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf/a> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf/a> legal:nomor "a" .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf/a/text> legal:teks "Belanja Rutin berkurang dengan Rp 523.461.000.000,00;" .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf/a> legal:segmen <http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf/a/text> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf/b> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf/b> legal:nomor "b" .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf/b/text> legal:teks "Belanja Pembangunan bertambah dengan Rp 540.903.000.000,00" .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf/b> legal:segmen <http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf/b/text> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0002> legal:teks "Perincian pengeluaran tambahan dan perubahan dimaksud pada ayat (1) huruf a dan b pasal ini masing - m asing dimuat dalam Lampiran III dan IV Undang - undang ini." .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0002/text> legal:teks "Perincian pengeluaran tambahan dan perubahan dimaksud pada ayat (1) huruf a dan b pasal ini masing - m asing dimuat dalam Lampiran III dan IV Undang - undang ini." .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0002> legal:segmen <http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0002/text> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0002/text> legal:merujuk <http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0002/text> legal:merujuk <http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf/b> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0002/text> legal:merujuk <http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/huruf/a> .
+<http://example.org/legal/peraturan/uu/1982/7/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1982/7/pasal/0003> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0003> legal:nomor 3 .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0003> legal:versi <http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629> .
+<http://example.org/legal/peraturan/uu/1982/7> legal:pasal <http://example.org/legal/peraturan/uu/1982/7/pasal/0003> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629> legal:tanggal "1982-06-29"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629> legal:teks "(1). Kredit anggaran proyek - proyek pada Anggaran Pembangunan Tahun Anggaran 1981/1982 yang telah disahkan dalam Undang - undang Nomor 1 Tahun 1981 tentang Anggaran Pendapatan dan Belanja Neg ara Tahun Anggaran 1981/1982 yang pada akhir Tahun Anggaran 1981/1982 menunjukkan sisa, dengan Peraturan Pemerintah dipindahkan ke Tahun Anggaran 1982/1983 dengan menambahkannya kepada kredit anggaran Tahun Anggaran 1982/1983.\n(2). Saldo - anggaran - lebih Tah un Anggaran 1981/1982 ditambahkan kepada Anggaran Tahun Anggaran 1982/1983 dan dipergunakan untuk membiayai Anggaran Pembangunan Tahun Anggaran 1982/1983." .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629> legal:daftarAyat <http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629/ayat> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629/ayat/0001> legal:nomor 1 .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629/ayat/0001> legal:teks "Kredit anggaran proyek - proyek pada Anggaran Pembangunan Tahun Anggaran 1981/1982 yang telah disahkan dalam Undang - undang Nomor 1 Tahun 1981 tentang Anggaran Pendapatan dan Belanja Neg ara Tahun Anggaran 1981/1982 yang pada akhir Tahun Anggaran 1981/1982 menunjukkan sisa, dengan Peraturan Pemerintah dipindahkan ke Tahun Anggaran 1982/1983 dengan menambahkannya kepada kredit anggaran Tahun Anggaran 1982/1983." .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629/ayat/0001/text> legal:teks "Kredit anggaran proyek - proyek pada Anggaran Pembangunan Tahun Anggaran 1981/1982 yang telah disahkan dalam Undang - undang Nomor 1 Tahun 1981 tentang Anggaran Pendapatan dan Belanja Neg ara Tahun Anggaran 1981/1982 yang pada akhir Tahun Anggaran 1981/1982 menunjukkan sisa, dengan Peraturan Pemerintah dipindahkan ke Tahun Anggaran 1982/1983 dengan menambahkannya kepada kredit anggaran Tahun Anggaran 1982/1983." .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629/ayat/0001> legal:segmen <http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629/ayat/0001/text> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629/ayat> legal:ayat <http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629/ayat/0002> legal:nomor 2 .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629/ayat/0002> legal:teks "Saldo - anggaran - lebih Tah un Anggaran 1981/1982 ditambahkan kepada Anggaran Tahun Anggaran 1982/1983 dan dipergunakan untuk membiayai Anggaran Pembangunan Tahun Anggaran 1982/1983." .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629/ayat/0002/text> legal:teks "Saldo - anggaran - lebih Tah un Anggaran 1981/1982 ditambahkan kepada Anggaran Tahun Anggaran 1982/1983 dan dipergunakan untuk membiayai Anggaran Pembangunan Tahun Anggaran 1982/1983." .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629/ayat/0002> legal:segmen <http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629/ayat/0002/text> .
+<http://example.org/legal/peraturan/uu/1982/7/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1982/7/pasal/0004> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0004> legal:nomor 4 .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0004> legal:versi <http://example.org/legal/peraturan/uu/1982/7/pasal/0004/versi/19820629> .
+<http://example.org/legal/peraturan/uu/1982/7> legal:pasal <http://example.org/legal/peraturan/uu/1982/7/pasal/0004> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0004/versi/19820629> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0004/versi/19820629> legal:tanggal "1982-06-29"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0004/versi/19820629> legal:teks "Ketentuan - ketentuan dalam Indische Comptabiliteitswet (Undang - Undang Perbe ndaharaan) yang bertentangan dengan bentuk, susunan dan isi Undang - undang ini dinyatakan tidak berlaku." .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0004/versi/19820629/text> legal:teks "Ketentuan - ketentuan dalam Indische Comptabiliteitswet (Undang - Undang Perbe ndaharaan) yang bertentangan dengan bentuk, susunan dan isi Undang - undang ini dinyatakan tidak berlaku." .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0004/versi/19820629> legal:segmen <http://example.org/legal/peraturan/uu/1982/7/pasal/0004/versi/19820629/text> .
+<http://example.org/legal/peraturan/uu/1982/7/daftarPasal> legal:pasal <http://example.org/legal/peraturan/uu/1982/7/pasal/0005> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0005> legal:nomor 5 .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0005> legal:versi <http://example.org/legal/peraturan/uu/1982/7/pasal/0005/versi/19820629> .
+<http://example.org/legal/peraturan/uu/1982/7> legal:pasal <http://example.org/legal/peraturan/uu/1982/7/pasal/0005> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0005/versi/19820629> legal:jenisVersi "orisinal" .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0005/versi/19820629> legal:tanggal "1982-06-29"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0005/versi/19820629> legal:teks "Undang - undang ini mulai berlaku pada tanggal diundangkan dan mempunyai daya laku surut sejak tanggal 1 April 1981. Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0005/versi/19820629/text> legal:teks "Undang - undang ini mulai berlaku pada tanggal diundangkan dan mempunyai daya laku surut sejak tanggal 1 April 1981. Agar supaya setiap orang mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia." .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0005/versi/19820629> legal:segmen <http://example.org/legal/peraturan/uu/1982/7/pasal/0005/versi/19820629/text> .
+<http://example.org/legal/peraturan/uu/1982/7> legal:disahkanPada "1982-06-29"^^xsd:date .
+<http://example.org/legal/peraturan/uu/1982/7> legal:tentang " TAMBAHAN DAN PERUBAHAN ATAS ANGGARAN PENDAPATAN DAN BELANJA NEGARA TAHUN ANGGARAN 1981/1982" .
+<http://example.org/legal/peraturan/uu/1982/7> legal:mengingat <http://example.org/legal/peraturan/uu/1982/7/mengingat> .
+<http://example.org/legal/peraturan/uu/1982/7/mengingat> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/description> .
+<http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/0001> .
+<http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/0001> legal:nomor "1" .
+<http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/0001/text> legal:teks "Pasal 5 ayat (1) jo. Pasal 23 ayat (1) UndAng - Undang Dasar 1945;" .
+<http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/0001> legal:segmen <http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/0001/text> .
+<http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/0002> .
+<http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/0002> legal:nomor "2" .
+<http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/0002/text> legal:teks "Indische Comptabiliteitswet (Staatsblad Tahun 1925 Nomor 448) sebagaimana diubah dan ditambah terakhir dengan Undang - undang Nomor 9 Tahun 1968 tentang Perubahan Pasal 7 Indische Comptabiliteitswet (Lembaran Negara Tahun 1968 Nomor 53, Tambahan Lembaran Negara Nomor 2860);" .
+<http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/0002> legal:segmen <http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/0002/text> .
+<http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/0003> .
+<http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/0003> legal:nomor "3" .
+<http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/0003/text> legal:teks "Undang - undang Nomor 1 Tahun 1981 tentang Anggaran Pendapatan dan Belanja Negara Tahun A nggaran 1981/1982 (Lembaran Negara Tahun 1981 Nomor 9, Tambahan Lembaran Negara Nomor 3191). Dengan persetujuan DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA, MEMUTUSKAN : Menetapkan : UNDANG - UNDANG TENTANG TAMBAHAN DAN PERUBAHAN ATAS ANGGARAN PENDAPATAN DAN BELANJA NEGARA TAHUN ANGGARAN 1981/1982." .
+<http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/0003> legal:segmen <http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/0003/text> .
+<http://example.org/legal/peraturan/uu/1982/7> legal:menimbang <http://example.org/legal/peraturan/uu/1982/7/menimbang> .
+<http://example.org/legal/peraturan/uu/1982/7/menimbang> legal:daftarHuruf <http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/description> legal:teks "" .
+<http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf> legal:segmen <http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/description> .
+<http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/a> legal:nomor "a" .
+<http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/a/text> legal:teks "bahwa u ntuk lebih menyesuaikan dan menyempurnakan pelaksanaan program Pemerintah dalam Tahun Anggaran 1981/1982 diperlukan tambahan dan perubahan atas Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1981/1982 dimaksud dalam Undang - undang Nomor 1 Tahun 1981;" .
+<http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/a> legal:segmen <http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/a/text> .
+<http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/b> .
+<http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/b> legal:nomor "b" .
+<http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/b/text> legal:teks "bahwa untuk lebih menjaga kelangsungan jalannya pembangunan saldoanggaran - lebih dan sisa kredit anggaran proyek - proyek pada Anggaran Pembangunan Tahun Anggaran 1981/1982 ditambahkan kepada kredit anggaran Tahun Anggaran 1982/1983;" .
+<http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/b> legal:segmen <http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/b/text> .
+<http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf> legal:huruf <http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/c> .
+<http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/c> legal:nomor "c" .
+<http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/c/text> legal:teks "bahwa tambaha n dan perubahan dimaksud perlu diatur dengan Undang - undang." .
+<http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/c> legal:segmen <http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/c/text> .
+<http://example.org/legal/peraturan/uu/1982/7> legal:disahkanOleh "SOEHARTO" .
+<http://example.org/legal/peraturan/uu/1982/7> legal:disahkanDi "Jakarta" .
+<http://example.org/legal/peraturan/uu/1982/7> legal:jabatanPengesah "PRESIDEN REPUBLIK INDONESIA," .
+<http://example.org/legal/peraturan/uu/1982/7> a legal:Peraturan .
+<http://example.org/legal/peraturan/uu/1982/7/daftarPasal> a legal:DaftarPasal .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat> a legal:DaftarAyat .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf/a> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf/a/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf/b> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf/b/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0002> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat> a legal:DaftarAyat .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf/a> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf/a/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf/b> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf/b/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0002> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0003> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629/ayat> a legal:DaftarAyat .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629/ayat/0001> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629/ayat/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629/ayat/0002> a legal:Ayat .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629/ayat/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0004> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0004/versi/19820629> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0004/versi/19820629/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0005> a legal:Pasal .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0005/versi/19820629> a legal:VersiPasal .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0005/versi/19820629/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1982/7/mengingat> a legal:Mengingat .
+<http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/0001> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/0001/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/0002> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/0002/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/0003> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/0003/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1982/7/menimbang> a legal:Menimbang .
+<http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/description> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf> a legal:DaftarHuruf .
+<http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/a> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/a/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/b> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/b/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/c> a legal:Huruf .
+<http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/c/text> a legal:Segmen .
+<http://example.org/legal/peraturan/uu/1982/7/daftarPasal> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/pasal/0001> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf/a> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf/a/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf/a> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf/b> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf/b/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0001/huruf/b> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/pasal/0001/versi/19820629/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/pasal/0002> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf/a> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf/a/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf/a> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf/b> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf/b/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0001/huruf/b> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/pasal/0002/versi/19820629/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/pasal/0003> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629/ayat> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629/ayat/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629/ayat> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629/ayat/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629/ayat/0001> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629/ayat/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629/ayat> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629/ayat/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/pasal/0003/versi/19820629/ayat/0002> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0004/versi/19820629> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/pasal/0004> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0004> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0004/versi/19820629/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/pasal/0004/versi/19820629> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0005> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/daftarPasal> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0005/versi/19820629> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/pasal/0005> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0005> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7> .
+<http://example.org/legal/peraturan/uu/1982/7/pasal/0005/versi/19820629/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/pasal/0005/versi/19820629> .
+<http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/mengingat> .
+<http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/0001> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/0001/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/0001> .
+<http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/0002> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/0002/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/0002> .
+<http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/0003> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf> .
+<http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/0003/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/mengingat/huruf/0003> .
+<http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/menimbang> .
+<http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/description> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/a> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/a/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/a> .
+<http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/b> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/b/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/b> .
+<http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/c> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf> .
+<http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/c/text> legal:bagianDari <http://example.org/legal/peraturan/uu/1982/7/menimbang/huruf/c> .

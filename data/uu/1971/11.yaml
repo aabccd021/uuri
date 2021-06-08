@@ -1,5 +1,5 @@
 node: &ref_0
-  nodeType: document
+  nodeType: peraturan
   docType: noTahun
   docCategory: uu
   tahun: 1971
@@ -13,10 +13,10 @@ metadata:
     content:
       type: text
       node:
-        nodeType: text
+        nodeType: segmen
         textName: text
         parentNode: *ref_1
-      textString: bahwa perhitungan Anggaran tahun 1967 perlu ditetapkan dengan Undang - undang;
+      textString: ''
       references: []
   mengingat:
     type: mengingat
@@ -24,87 +24,20 @@ metadata:
       nodeType: mengingat
       parentNode: *ref_0
     content:
-      type: pointSet
-      node: &ref_3
-        nodeType: pointSet
+      type: text
+      node:
+        nodeType: segmen
+        textName: text
         parentNode: *ref_2
-      description:
-        type: text
-        node:
-          nodeType: text
-          textName: description
-          parentNode: *ref_3
-        textString: ''
-        references: []
-      elements:
-        - type: point
-          node: &ref_4
-            nodeType: point
-            key: '1'
-            parentPointSetNode: *ref_3
-          content:
-            type: text
-            node:
-              nodeType: text
-              textName: text
-              parentNode: *ref_4
-            textString: Undang - undang Dasar 1945 pasal 23 (5);
-            references: []
-        - type: point
-          node: &ref_5
-            nodeType: point
-            key: '2'
-            parentPointSetNode: *ref_3
-          content:
-            type: text
-            node:
-              nodeType: text
-              textName: text
-              parentNode: *ref_5
-            textString: >-
-              Undang - undang Perbendaharaan Indonesia (I.C.W.) sebagaimana beberapa kali diubah dan
-              ditambah;
-            references: []
-        - type: point
-          node: &ref_6
-            nodeType: point
-            key: '3'
-            parentPointSetNode: *ref_3
-          content:
-            type: text
-            node:
-              nodeType: text
-              textName: text
-              parentNode: *ref_6
-            textString: >-
-              Undang - undang No . 14 Tahun 1966 pasal 6. Memperhatikan : Ketetapan Badan Pemeriksa
-              Keuangan No. A/BPK/ 1968 jo. Surat Badan Pemeriksa Keuangan No. I.752/F/8/1971; Dengan
-              persetujuan Dewan Perwakilan Rakyat Gotong Royong. MEMUTUSKAN : Menetapkan : Undang -
-              undang tentang Perhitungan Anggaran Tahun 1967.
-            references: []
+      textString: ''
+      references: []
   memutuskan: ''
   denganPersetujuan: ''
-opText: |-
-  UNDANG - UNDANG REPUBLIK INDONESIA
-  NOMOR 11 TAHUN 1971
-  TENTANG
-  PERHITUNGAN ANGGARAN TAHUN 1967
-  PRESIDEN REPUBLIK INDONESIA ,
-  Menimbang : bahwa perhitungan Anggaran tahun 1967 perlu ditetapkan dengan
-  Undang - undang;
-  Mengingat : 1. Undang - undang Dasar 1945 pasal 23 (5);
-  2. Undang - undang Perbendaharaan Indonesia (I.C.W.) sebagaimana
-  beberapa kali diubah dan ditambah;
-  3. Undang - undang No . 14 Tahun 1966 pasal 6.
-  Memperhatikan : Ketetapan Badan Pemeriksa Keuangan No. A/BPK/ 1968 jo. Surat Badan
-  Pemeriksa Keuangan No. I.752/F/8/1971;
-  Dengan persetujuan Dewan Perwakilan Rakyat Gotong Royong.
-  MEMUTUSKAN :
-  Menetapkan : Undang - undang tentang Perhitungan Anggaran Tahun 1967.
+  tentang: ' PERHITUNGAN ANGGARAN TAHUN 1967 PRESIDEN REPUBLIK INDONESIA , Menimbang : bahwa perhitungan Anggaran tahun 1967 perlu ditetapkan dengan Undang - undang; Mengingat : 1. Undang - undang Dasar 1945 pasal 23 (5); 2. Undang - undang Perbendaharaan Indonesia (I.C.W.) sebagaimana beberapa kali diubah dan ditambah; 3. Undang - undang No . 14 Tahun 1966 pasal 6. Memperhatikan : Ketetapan Badan Pemeriksa Keuangan No. A/BPK/ 1968 jo. Surat Badan Pemeriksa Keuangan No. I.752/F/8/1971; Dengan persetujuan Dewan Perwakilan Rakyat Gotong Royong. MEMUTUSKAN : Menetapkan : Undang - undang tentang Perhitungan Anggaran Tahun 1967.'
 content:
-  type: pasalSet
+  type: daftarPasal
   node:
-    nodeType: pasalSet
+    nodeType: daftarPasal
     parentNode: *ref_0
   elements:
     - type: pasal
@@ -114,67 +47,67 @@ content:
         parentNode: *ref_0
       version:
         type: pasalVersion
-        node: &ref_7
-          nodeType: pasalVersion
-          version: &ref_12
+        node: &ref_3
+          nodeType: versiPasal
+          version: &ref_8
             nodeType: date
             month: 9
             date: 24
             year: 1971
-          state: exists
+          state: orisinal
           parentPasalNode:
             nodeType: pasal
             key: '1'
             parentNode: *ref_0
         content:
           type: ayatSet
-          node: &ref_8
-            nodeType: ayatSet
-            parentPasalVersionNode: *ref_7
+          node: &ref_4
+            nodeType: daftarAyat
+            parentPasalVersionNode: *ref_3
           elements:
             - type: ayat
-              node: &ref_9
+              node: &ref_5
                 nodeType: ayat
                 key: 1
-                parentAyatSetNode: *ref_8
+                parentAyatSetNode: *ref_4
               content:
                 type: text
                 node:
-                  nodeType: text
+                  nodeType: segmen
                   textName: text
-                  parentNode: *ref_9
+                  parentNode: *ref_5
                 textString: >-
                   . Penerimaan Negara dalam tahun 1967 adalah sebesar Rp. 83.727. 240.662,37
                   (delapan puluh tiga milyar tujuh ratus dua puluh tujuh juta dua ratus empat puluh
                   ribu enam ratu s enam puluh dua dan tiga puluh tujuh perseratus rupiah);
                 references: []
             - type: ayat
-              node: &ref_10
+              node: &ref_6
                 nodeType: ayat
                 key: 2
-                parentAyatSetNode: *ref_8
+                parentAyatSetNode: *ref_4
               content:
                 type: text
                 node:
-                  nodeType: text
+                  nodeType: segmen
                   textName: text
-                  parentNode: *ref_10
+                  parentNode: *ref_6
                 textString: >-
                   . Pengeluaran Negara dalam tahun 1967 adalah sebesar Rp. 87.634. 810.982,60
                   (delapan puluh tujuh milyar enam ratus tiga puluh empat juta delapan ratus sepuluh
                   ribu sembilan ratus delapan puluh du a dan enam puluh perseratus rupiah);
                 references: []
             - type: ayat
-              node: &ref_11
+              node: &ref_7
                 nodeType: ayat
                 key: 3
-                parentAyatSetNode: *ref_8
+                parentAyatSetNode: *ref_4
               content:
                 type: text
                 node:
-                  nodeType: text
+                  nodeType: segmen
                   textName: text
-                  parentNode: *ref_11
+                  parentNode: *ref_7
                 textString: >-
                   . Sisa kurang Perhitungan Anggaran tahun 1967 adalah sebesar Rp. 3.907.570.320,23
                   (tiga miliar sembilan ratus tujuh juta lima ratus tujuh puluh ribu tiga ratus dua
@@ -187,10 +120,10 @@ content:
         parentNode: *ref_0
       version:
         type: pasalVersion
-        node: &ref_13
-          nodeType: pasalVersion
-          version: *ref_12
-          state: exists
+        node: &ref_9
+          nodeType: versiPasal
+          version: *ref_8
+          state: orisinal
           parentPasalNode:
             nodeType: pasal
             key: '2'
@@ -198,16 +131,16 @@ content:
         content:
           type: text
           node:
-            nodeType: text
+            nodeType: segmen
             textName: text
-            parentNode: *ref_13
+            parentNode: *ref_9
           textString: >-
             Undang - undang ini mulai berlaku pada ha ri ditetapkan. Agar setiap orang
             mengetahuinya, memerintahkan pengundangan Undang - undang ini dengan penempatannya dalam
             Lembaran - Negara Republik Indonesia.
           references: []
 disahkan:
-  date: *ref_12
+  date: *ref_8
   location: Jakarta
   pengesah: Jenderal T NI
   jabatanPengesah: Presiden Republik Indonesia

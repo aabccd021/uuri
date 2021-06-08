@@ -1,5 +1,5 @@
 node: &ref_0
-  nodeType: document
+  nodeType: peraturan
   docType: noTahun
   docCategory: uu
   tahun: 1973
@@ -11,14 +11,14 @@ metadata:
       nodeType: menimbang
       parentNode: *ref_0
     content:
-      type: pointSet
+      type: daftarHuruf
       node: &ref_2
-        nodeType: pointSet
+        nodeType: daftarHuruf
         parentNode: *ref_1
       description:
         type: text
         node:
-          nodeType: text
+          nodeType: segmen
           textName: description
           parentNode: *ref_2
         textString: ''
@@ -26,13 +26,13 @@ metadata:
       elements:
         - type: point
           node: &ref_3
-            nodeType: point
+            nodeType: huruf
             key: a
             parentPointSetNode: *ref_2
           content:
             type: text
             node:
-              nodeType: text
+              nodeType: segmen
               textName: text
               parentNode: *ref_3
             textString: >-
@@ -42,13 +42,13 @@ metadata:
             references: []
         - type: point
           node: &ref_4
-            nodeType: point
+            nodeType: huruf
             key: b
             parentPointSetNode: *ref_2
           content:
             type: text
             node:
-              nodeType: text
+              nodeType: segmen
               textName: text
               parentNode: *ref_4
             textString: bahwa Perjanjian ini perlu disetujui dengan Undang - undang.
@@ -59,14 +59,14 @@ metadata:
       nodeType: mengingat
       parentNode: *ref_0
     content:
-      type: pointSet
+      type: daftarHuruf
       node: &ref_6
-        nodeType: pointSet
+        nodeType: daftarHuruf
         parentNode: *ref_5
       description:
         type: text
         node:
-          nodeType: text
+          nodeType: segmen
           textName: description
           parentNode: *ref_6
         textString: ''
@@ -74,26 +74,26 @@ metadata:
       elements:
         - type: point
           node: &ref_7
-            nodeType: point
+            nodeType: huruf
             key: '1'
             parentPointSetNode: *ref_6
           content:
             type: text
             node:
-              nodeType: text
+              nodeType: segmen
               textName: text
               parentNode: *ref_7
             textString: Pasal 5 ayat (1), Pasal 11 dan Pasal 20 ayat (1) Undang - Undang Dasar 1945;
             references: []
         - type: point
           node: &ref_8
-            nodeType: point
+            nodeType: huruf
             key: '2'
             parentPointSetNode: *ref_6
           content:
             type: text
             node:
-              nodeType: text
+              nodeType: segmen
               textName: text
               parentNode: *ref_8
             textString: >-
@@ -105,34 +105,11 @@ metadata:
             references: []
   memutuskan: ''
   denganPersetujuan: ''
-opText: |-
-  UNDANG - UNDANG REPUBLIK INDONESIA
-  NOMOR 6 TAHUN 1973
-  TENTANG
-  PERJANJIAN ANTARA INDONESIA DAN AUSTRALIA
-  MENGENAI GARIS - GARIS BATAS TERTENTU
-  ANTARA INDONESIA DAN PAPUA NEW GUINEA
-  DENGAN RAHMAT TUHAN YANG MAHA ESA
-  PRESIDEN REPUBLIK INDONESA ,
-  Menimbang : a. bahwa pada tanggal 12 Pebruari 1973 telah ditandatangani
-  Perjanjian antara Indonesia dan Australia mengenai Garis -
-  garis Batas Tertentu antara Indonesia dan Papua New Guinea;
-  b. bahwa Perjanjian ini perlu disetujui dengan Undang - undang.
-  Mengingat : 1. Pasal 5 ayat (1), Pasal 11 dan Pasal 20 ayat (1) Undang -
-  Undang Dasar 1945;
-  2. Ketetapan Majelis Permusyawaratan Rakyat Republik
-  Indonesia Nomor IV/MPR/1973 tentang Garis - garis Besar
-  Haluan Negara, mengenai Wawasan Nusantara.
-  Dengan persetujuan Dewan Perwakilan Rakyat Republik Indonesia.
-  MEMUTUSKAN:
-  Menetapkan : UNDANG - UNDANG TENTANG PERJANJIAN ANTARA
-  INDONESIA DAN AUSTRALIA MENGENAI GARIS - GARIS
-  BATAS TERTENTU ANTARA INDONESIA DAN PAPUA NEW
-  GUINEA.
+  tentang: ' PERJANJIAN ANTARA INDONESIA DAN AUSTRALIA MENGENAI GARIS - GARIS BATAS TERTENTU ANTARA INDONESIA DAN PAPUA NEW GUINEA'
 content:
-  type: pasalSet
+  type: daftarPasal
   node:
-    nodeType: pasalSet
+    nodeType: daftarPasal
     parentNode: *ref_0
   elements:
     - type: pasal
@@ -143,13 +120,13 @@ content:
       version:
         type: pasalVersion
         node: &ref_9
-          nodeType: pasalVersion
+          nodeType: versiPasal
           version: &ref_10
             nodeType: date
             month: 12
             date: 8
             year: 1973
-          state: exists
+          state: orisinal
           parentPasalNode:
             nodeType: pasal
             key: '1'
@@ -157,7 +134,7 @@ content:
         content:
           type: text
           node:
-            nodeType: text
+            nodeType: segmen
             textName: text
             parentNode: *ref_9
           textString: >-
@@ -173,9 +150,9 @@ content:
       version:
         type: pasalVersion
         node: &ref_11
-          nodeType: pasalVersion
+          nodeType: versiPasal
           version: *ref_10
-          state: exists
+          state: orisinal
           parentPasalNode:
             nodeType: pasal
             key: '2'
@@ -183,7 +160,7 @@ content:
         content:
           type: text
           node:
-            nodeType: text
+            nodeType: segmen
             textName: text
             parentNode: *ref_11
           textString: Perjanjian tersebut diatas mulai berlaku pada tanggal pertukaran Piagam Pengesahannya.
@@ -196,9 +173,9 @@ content:
       version:
         type: pasalVersion
         node: &ref_12
-          nodeType: pasalVersion
+          nodeType: versiPasal
           version: *ref_10
-          state: exists
+          state: orisinal
           parentPasalNode:
             nodeType: pasal
             key: '3'
@@ -206,7 +183,7 @@ content:
         content:
           type: text
           node:
-            nodeType: text
+            nodeType: segmen
             textName: text
             parentNode: *ref_12
           textString: >-

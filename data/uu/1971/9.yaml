@@ -1,5 +1,5 @@
 node: &ref_0
-  nodeType: document
+  nodeType: peraturan
   docType: noTahun
   docCategory: uu
   tahun: 1971
@@ -11,119 +11,33 @@ metadata:
       nodeType: menimbang
       parentNode: *ref_0
     content:
-      type: pointSet
-      node: &ref_2
-        nodeType: pointSet
+      type: text
+      node:
+        nodeType: segmen
+        textName: text
         parentNode: *ref_1
-      description:
-        type: text
-        node:
-          nodeType: text
-          textName: description
-          parentNode: *ref_2
-        textString: ''
-        references: []
-      elements:
-        - type: point
-          node: &ref_3
-            nodeType: point
-            key: a
-            parentPointSetNode: *ref_2
-          content:
-            type: text
-            node:
-              nodeType: text
-              textName: text
-              parentNode: *ref_3
-            textString: >-
-              bahwa pada tanggal 24 Nopember 1970 telah ditanda-tangani Perjanjian Persahabatan
-              antara Republik Indonesia dan Kerajaan Saudi Arabia:
-            references: []
-        - type: point
-          node: &ref_4
-            nodeType: point
-            key: b
-            parentPointSetNode: *ref_2
-          content:
-            type: text
-            node:
-              nodeType: text
-              textName: text
-              parentNode: *ref_4
-            textString: bahwa Perjanjian Persahabatan ini perlu disetujui dengan Undang-undang.
-            references: []
+      textString: ''
+      references: []
   mengingat:
     type: mengingat
-    node: &ref_5
+    node: &ref_2
       nodeType: mengingat
       parentNode: *ref_0
     content:
-      type: pointSet
-      node: &ref_6
-        nodeType: pointSet
-        parentNode: *ref_5
-      description:
-        type: text
-        node:
-          nodeType: text
-          textName: description
-          parentNode: *ref_6
-        textString: ''
-        references: []
-      elements:
-        - type: point
-          node: &ref_7
-            nodeType: point
-            key: '1'
-            parentPointSetNode: *ref_6
-          content:
-            type: text
-            node:
-              nodeType: text
-              textName: text
-              parentNode: *ref_7
-            textString: Pasal S ayat (1), pasal 11 dan pasal 20 ayat (1) Undang-undang Dasar 1945,
-            references: []
-        - type: point
-          node: &ref_8
-            nodeType: point
-            key: '2'
-            parentPointSetNode: *ref_6
-          content:
-            type: text
-            node:
-              nodeType: text
-              textName: text
-              parentNode: *ref_8
-            textString: >-
-              Amanat Presiden Republik Indonesia kepada Ketua Dewan Perwakilan Rakyat tanggal 22
-              Agustus 1960 No. 2826/HK/ 1960. Dengan persetujuan Dewan Perwakilan Rakyat Gotong
-              Royong. MEMUTUSKAN : Menetapkan : UNDANG-UNDANG TENTANG PERJANJIAN PERSAHABATAN ANTARA
-              REPUBLIK INDONESIA DAN KERAJAAN SAUDI ARABIA.
-            references: []
+      type: text
+      node:
+        nodeType: segmen
+        textName: text
+        parentNode: *ref_2
+      textString: ''
+      references: []
   memutuskan: ''
   denganPersetujuan: ''
-opText: |-
-  UNDANG-UNDANG REPUBLIK INDONESIA
-  NOMOR 9 TAHUN 1971
-  TENTANG
-  PERJANJIAN PERSAHABATAN ANTARA REPUBLIK INDONESIA
-  DAN KERAJAAN SAUDI ARABIA
-  PRESIDEN REPUBLIK INDONESIA,
-  Menimbang : a. bahwa pada tanggal 24 Nopember 1970 telah ditanda-tangani Perjanjian Persahabatan
-  antara Republik Indonesia dan Kerajaan Saudi Arabia:
-  b. bahwa Perjanjian Persahabatan ini perlu disetujui dengan Undang-undang.
-  Mengingat: 1. Pasal S ayat (1), pasal 11 dan pasal 20 ayat (1) Undang-undang Dasar 1945,
-  2. Amanat Presiden Republik Indonesia kepada Ketua Dewan Perwakilan Rakyat tanggal
-  22 Agustus 1960 No. 2826/HK/ 1960.
-  Dengan persetujuan Dewan Perwakilan Rakyat Gotong Royong.
-  MEMUTUSKAN :
-  Menetapkan : UNDANG-UNDANG TENTANG PERJANJIAN PERSAHABATAN ANTARA REPUBLIK
-  INDONESIA DAN KERAJAAN SAUDI ARABIA.
+  tentang: ' PERJANJIAN PERSAHABATAN ANTARA REPUBLIK INDONESIA DAN KERAJAAN SAUDI ARABIA PRESIDEN REPUBLIK INDONESIA, Menimbang : a. bahwa pada tanggal 24 Nopember 1970 telah ditanda-tangani Perjanjian Persahabatan antara Republik Indonesia dan Kerajaan Saudi Arabia: b. bahwa Perjanjian Persahabatan ini perlu disetujui dengan Undang-undang. Mengingat: 1. Pasal S ayat (1), pasal 11 dan pasal 20 ayat (1) Undang-undang Dasar 1945, 2. Amanat Presiden Republik Indonesia kepada Ketua Dewan Perwakilan Rakyat tanggal 22 Agustus 1960 No. 2826/HK/ 1960. Dengan persetujuan Dewan Perwakilan Rakyat Gotong Royong. MEMUTUSKAN : Menetapkan : UNDANG-UNDANG TENTANG PERJANJIAN PERSAHABATAN ANTARA REPUBLIK INDONESIA DAN KERAJAAN SAUDI ARABIA.'
 content:
-  type: pasalSet
+  type: daftarPasal
   node:
-    nodeType: pasalSet
+    nodeType: daftarPasal
     parentNode: *ref_0
   elements:
     - type: pasal
@@ -133,14 +47,14 @@ content:
         parentNode: *ref_0
       version:
         type: pasalVersion
-        node: &ref_9
-          nodeType: pasalVersion
-          version: &ref_10
+        node: &ref_3
+          nodeType: versiPasal
+          version: &ref_4
             nodeType: date
             month: 9
             date: 18
             year: 1971
-          state: exists
+          state: orisinal
           parentPasalNode:
             nodeType: pasal
             key: '1'
@@ -148,9 +62,9 @@ content:
         content:
           type: text
           node:
-            nodeType: text
+            nodeType: segmen
             textName: text
-            parentNode: *ref_9
+            parentNode: *ref_3
           textString: >-
             Perjanjian Persahabatan antara Republik Indonesia dan Kerajaan Saudi Arabia tertanggal
             24 Nopember 1970, yang salinannya dilampirkan pada Undang-undang ini, dengan ini,
@@ -163,10 +77,10 @@ content:
         parentNode: *ref_0
       version:
         type: pasalVersion
-        node: &ref_11
-          nodeType: pasalVersion
-          version: *ref_10
-          state: exists
+        node: &ref_5
+          nodeType: versiPasal
+          version: *ref_4
+          state: orisinal
           parentPasalNode:
             nodeType: pasal
             key: '2'
@@ -174,9 +88,9 @@ content:
         content:
           type: text
           node:
-            nodeType: text
+            nodeType: segmen
             textName: text
-            parentNode: *ref_11
+            parentNode: *ref_5
           textString: >-
             Perjanjian tersebut di atas mulai berlaku pada tanggal pertukaran Piagam Pengesahan yang
             akan dilakukan di Jakarta.
@@ -188,10 +102,10 @@ content:
         parentNode: *ref_0
       version:
         type: pasalVersion
-        node: &ref_12
-          nodeType: pasalVersion
-          version: *ref_10
-          state: exists
+        node: &ref_6
+          nodeType: versiPasal
+          version: *ref_4
+          state: orisinal
           parentPasalNode:
             nodeType: pasal
             key: '3'
@@ -199,16 +113,16 @@ content:
         content:
           type: text
           node:
-            nodeType: text
+            nodeType: segmen
             textName: text
-            parentNode: *ref_12
+            parentNode: *ref_6
           textString: >-
             Undang-undang ini mulai berlaku pada hari tanggal diundangkan. Agar supaya setiap orang
             dapat mengetahuinya, memerintahkan pengundangan Undang-undang ini dengan penempatannya
             dalam Lembaran-Negara Republik Indonesia.
           references: []
 disahkan:
-  date: *ref_10
+  date: *ref_4
   location: Jakarta
   pengesah: Jenderal TNI
   jabatanPengesah: PRESIDEN REPUBLIK INDONESIA,

@@ -1,5 +1,5 @@
 node: &ref_0
-  nodeType: document
+  nodeType: peraturan
   docType: noTahun
   docCategory: uu
   tahun: 1998
@@ -13,7 +13,7 @@ metadata:
     content:
       type: text
       node:
-        nodeType: text
+        nodeType: segmen
         textName: text
         parentNode: *ref_1
       textString: >-
@@ -43,14 +43,14 @@ metadata:
       nodeType: mengingat
       parentNode: *ref_0
     content:
-      type: pointSet
+      type: daftarHuruf
       node: &ref_3
-        nodeType: pointSet
+        nodeType: daftarHuruf
         parentNode: *ref_2
       description:
         type: text
         node:
-          nodeType: text
+          nodeType: segmen
           textName: description
           parentNode: *ref_3
         textString: ''
@@ -58,13 +58,13 @@ metadata:
       elements:
         - type: point
           node: &ref_4
-            nodeType: point
+            nodeType: huruf
             key: '1'
             parentPointSetNode: *ref_3
           content:
             type: text
             node:
-              nodeType: text
+              nodeType: segmen
               textName: text
               parentNode: *ref_4
             textString: >-
@@ -77,62 +77,11 @@ metadata:
             references: []
   memutuskan: ''
   denganPersetujuan: ''
-opText: |-
-  UNDANG-UNDANG REPUBLIK INDONESIA
-  NOMOR 5 TAHUN 1998
-  TENTANG
-  PENGESAHAN CONVENTION AGAINST TORTURE AND OTHER CRUEL,
-  INHUMAN OR DEGRADING TREATMENT OR PUNISHMENT
-  (KONVENSI MENENTANG PENYIKSAAN DAN PERLAKUAN
-  ATAU PENGHUKUMAN LAIN YANG KEJAM, TIDAK MANUSIAWI,
-  ATAU MERENDAHKAN MARTABAT MANUSIA)
-  DENGAN RAHMAT TUHAN YANG MAHA ESA
-  PRESIDEN REPUBLIK INDONESIA,
-  Menimbang : aa. bahwa negara Republik Indonesia yang berdasarkan Pancasila dan
-  Undang-Undang Dasar 1945 adalah negara hukum yang menjunjung
-  tinggi harkat dan martabat manusia serta menjamin semua warga
-  negara bersamaan kedudukannya di dalam hukum, sehingga segala
-  bentuk penyiksaan dan perlakuan atau penghukuman lain yang
-  kejam, tidak manusiawi, atau merendahkan martabat manusia harus
-  dicegah dan dilarang,
-  b. bahwa bangsa Indonesia sebagai bagian masyarakat internasional
-  menghormati, menghargai dan menjunjung tinggi prinsip dan tujuan
-  Piagam Perserikatan Bangsa-Bangsa serta Deklarasi Universal
-  Hak-Hak Asasi Manusia:
-  c. bahwa Majelis Umum Perserikatan Bangsa-Bangsa, di dalam
-  sidangnya pada tanggal 10 Desember 1984, telah menyetujui
-  Convention Against Torture and Other Cruel, Inhuman or Degrading
-  Treatment or Punishment (Konvensi Menentang Penyiksaan dan
-  Perlakuan atau Penghukuman Lain yang Kejam, Tidak Manusiawi,
-  atau Merendahkan Martabat Manusia) dan Pemerintah Republik
-  Indonesia telah menandatangani konvensi tersebut pada tanggal 23
-  Oktober 1985:
-  d. bahwa konvensi tersebut pada dasarnya tidak bertentangan dengan
-  Pancasila — Undang-Undang Dasar 1945 dan peraturan
-  perundang-undangan Republik Indonesia untuk secara terus menerus
-  menegakkan dan memajukan pelaksanaan hak asasi manusia dalam
-  kehidupan berbangsa dan bernegara,
-  e. bahwa berdasarkan pertimbangan tersebut dalam huruf a, b, c dan d
-  dipandang perlu mengesahkan Convention Against Torture and
-  Other Cruel, Inhuman or Degrading Treatment or Punishment
-  (Konvensi Menentang Penyiksaan dan Perlakuan atau Penghukuman
-  Lain yang Kejam, Tidak Manusiawi, atau Merendahkan Martabat
-  Manusia) dengan Undang-undang.
-  Mengingat : 1. Pasal 5 ayat (1), Pasal 11, Pasal 20 ayat (1) dan Pasal 21 ayat (1) dan
-  Pasal 27 ayat (1) Undang-Undang Dasar 1945,
-  Dengan persetujuan
-  DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA
-  MEMUTUSKAN :
-  Menetapkan : UNDANG-UNDANG TENTANG PENGESAHAN CONVENTION
-  AGAINST TORTURE AND OTHER CRUEL, INHUMAN OR
-  DEGRADING TREATMENT OR PUNISHMENT (KONVENSI
-  MENENTANG PENYIKSAAN DAN PERLAKUAN ATAU
-  PENGHUKUMAN LAIN YANG KEJAM, TIDAK MANUSIAWI,
-  ATAU MERENDAHKAN MARTABAT MANUSIA).
+  tentang: ' PENGESAHAN CONVENTION AGAINST TORTURE AND OTHER CRUEL, INHUMAN OR DEGRADING TREATMENT OR PUNISHMENT (KONVENSI MENENTANG PENYIKSAAN DAN PERLAKUAN ATAU PENGHUKUMAN LAIN YANG KEJAM, TIDAK MANUSIAWI, ATAU MERENDAHKAN MARTABAT MANUSIA)'
 content:
-  type: pasalSet
+  type: daftarPasal
   node:
-    nodeType: pasalSet
+    nodeType: daftarPasal
     parentNode: *ref_0
   elements:
     - type: pasal
@@ -143,13 +92,13 @@ content:
       version:
         type: pasalVersion
         node: &ref_5
-          nodeType: pasalVersion
+          nodeType: versiPasal
           version: &ref_7
             nodeType: date
             month: 9
             date: 28
             year: 1998
-          state: exists
+          state: orisinal
           parentPasalNode:
             nodeType: pasal
             key: '1'
@@ -157,7 +106,7 @@ content:
         content:
           type: text
           node:
-            nodeType: text
+            nodeType: segmen
             textName: text
             parentNode: *ref_5
           textString: >-
@@ -176,7 +125,7 @@ content:
               end: 695
               node:
                 parentAyatSetNode: &ref_6
-                  nodeType: ayatSet
+                  nodeType: daftarAyat
                   parentPasalVersionNode: *ref_5
                 key: 1
                 nodeType: ayat
@@ -206,9 +155,9 @@ content:
       version:
         type: pasalVersion
         node: &ref_8
-          nodeType: pasalVersion
+          nodeType: versiPasal
           version: *ref_7
-          state: exists
+          state: orisinal
           parentPasalNode:
             nodeType: pasal
             key: '2'
@@ -216,7 +165,7 @@ content:
         content:
           type: text
           node:
-            nodeType: text
+            nodeType: segmen
             textName: text
             parentNode: *ref_8
           textString: >-
